@@ -73,8 +73,8 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 47.0,
-    "generations": 18,
+    "spent": 55.0,
+    "generations": 22,
     "regenerations": 7,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
@@ -89,7 +89,8 @@
       "2026-09-29 씬1: c02 승인, c03(표정)·c04(욕실 일관성) 재생성 결정 / 잉코 시트 승인·Elements 등록",
       "2026-09-29 욕실 세트 묘사 고정(sets.bathroom) — 욕실 컷 프롬프트에 반영",
       "2026-09-29 씬1 이미지 3장(c02·c03·c04) 승인 → c02·c03 영상 변환",
-      "2026-09-29 c02·c03 클립 승인 → 씬2 이미지 진행"
+      "2026-09-29 c02·c03 클립 승인 → 씬2 이미지 진행",
+      "2026-09-29 씬2 이미지 4장(c05·c06·c07·c09) 승인 → c06·c09 영상 + 씬3 이미지"
     ],
     "next_time": [],
     "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도"
@@ -259,7 +260,7 @@
       "momo": false,
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "1c1d4c1a-a58b-4379-b619-30b415ac3ad1",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075828_1c1d4c1a-a58b-4379-b619-30b415ac3ad1.png",
           "attempts": 1,
@@ -268,7 +269,7 @@
             {
               "job_id": "1c1d4c1a-a58b-4379-b619-30b415ac3ad1",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075828_1c1d4c1a-a58b-4379-b619-30b415ac3ad1.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -290,7 +291,7 @@
       "motion": "lifts the toothbrush up a little and smiles, ears bounce",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "c408f6e8-66d8-4fb0-872b-cad6023b267c",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080200_c408f6e8-66d8-4fb0-872b-cad6023b267c.png",
           "attempts": 2,
@@ -305,7 +306,7 @@
             {
               "job_id": "c408f6e8-66d8-4fb0-872b-cad6023b267c",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080200_c408f6e8-66d8-4fb0-872b-cad6023b267c.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -327,7 +328,7 @@
       "momo": false,
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "00803120-6a5d-4503-abd5-94ae246e9386",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080207_00803120-6a5d-4503-abd5-94ae246e9386.png",
           "attempts": 2,
@@ -342,7 +343,7 @@
             {
               "job_id": "00803120-6a5d-4503-abd5-94ae246e9386",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080207_00803120-6a5d-4503-abd5-94ae246e9386.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -378,7 +379,7 @@
       "motion": "gently squeezes the tube over the toothbrush, small nod",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "7bb7c1af-aa6c-423c-8e7d-8bbf4d78b987",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080209_7bb7c1af-aa6c-423c-8e7d-8bbf4d78b987.png",
           "attempts": 2,
@@ -393,7 +394,7 @@
             {
               "job_id": "7bb7c1af-aa6c-423c-8e7d-8bbf4d78b987",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080209_7bb7c1af-aa6c-423c-8e7d-8bbf4d78b987.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -411,8 +412,24 @@
         "en": "BRUSH",
         "ko": "치카치카"
       },
-      "image_prompt": "[Momo] facing the viewer holding a small toothbrush at the front teeth, big smile with a little white foam, a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
-      "motion": "brushes the teeth with small up and down strokes, ears bounce"
+      "image_prompt": "[Momo] facing the viewer holding a small toothbrush with a yellow handle and mint-green bristles at the front teeth, big smile with a little white foam, a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
+      "motion": "brushes the teeth with small up and down strokes, ears bounce",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "caa2d793-c563-4bda-abd0-a5a67f5588f2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080859_caa2d793-c563-4bda-abd0-a5a67f5588f2.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "caa2d793-c563-4bda-abd0-a5a67f5588f2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080859_caa2d793-c563-4bda-abd0-a5a67f5588f2.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c11",
@@ -426,8 +443,24 @@
         "en": "UP",
         "ko": "위로"
       },
-      "image_prompt": "[Momo] seen from the waist up, brushing the top teeth with a small toothbrush, eyes looking up playfully, soft pastel-blue background with empty space above the head",
-      "motion": "brushes with small upward strokes and blinks"
+      "image_prompt": "[Momo] seen from the waist up, brushing the top teeth with a small toothbrush with a yellow handle and mint-green bristles, eyes looking up playfully, soft pastel-blue background with empty space above the head",
+      "motion": "brushes with small upward strokes and blinks",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "3cd3c337-916c-4c56-9d34-d91c0b24e234",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080906_3cd3c337-916c-4c56-9d34-d91c0b24e234.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "3cd3c337-916c-4c56-9d34-d91c0b24e234",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080906_3cd3c337-916c-4c56-9d34-d91c0b24e234.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c12",
@@ -441,8 +474,24 @@
         "en": "DOWN",
         "ko": "아래로"
       },
-      "image_prompt": "[Momo] seen from the waist up, brushing the bottom teeth with a small toothbrush, eyes looking down playfully, soft pastel-blue background with empty space above the head",
-      "motion": "brushes with small downward strokes, small nod"
+      "image_prompt": "[Momo] seen from the waist up, brushing the bottom teeth with a small toothbrush with a yellow handle and mint-green bristles, eyes looking down playfully, soft pastel-blue background with empty space above the head",
+      "motion": "brushes with small downward strokes, small nod",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "65f918b9-ff61-45af-802d-3a04c27db5a2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080912_65f918b9-ff61-45af-802d-3a04c27db5a2.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "65f918b9-ff61-45af-802d-3a04c27db5a2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080912_65f918b9-ff61-45af-802d-3a04c27db5a2.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c13",
@@ -456,7 +505,23 @@
         "en": "UP",
         "ko": "위로"
       },
-      "image_prompt": "[Momo] seen from the waist up with a big foamy smile, holding a small toothbrush near the mouth, twinkling eyes, soft pastel-yellow background with empty space above the head"
+      "image_prompt": "[Momo] seen from the waist up with a big foamy smile, holding a small toothbrush with a yellow handle and mint-green bristles near the mouth, twinkling eyes, soft pastel-yellow background with empty space above the head",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "b68e4cb5-698e-45f2-8255-91d8f0ea156d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080916_b68e4cb5-698e-45f2-8255-91d8f0ea156d.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b68e4cb5-698e-45f2-8255-91d8f0ea156d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080916_b68e4cb5-698e-45f2-8255-91d8f0ea156d.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c14",
@@ -559,7 +624,7 @@
         "en": "TOOTHBRUSH",
         "ko": "칫솔"
       },
-      "image_prompt": "a neat row of a small toothbrush with a yellow handle, a plain white toothpaste tube and a small mint-green cup on the edge of the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, soft morning light, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "a neat row of a small toothbrush with a yellow handle and mint-green bristles, a plain white toothpaste tube and a small mint-green cup on the edge of the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, soft morning light, clear empty pastel wall space in the upper third of the frame",
       "momo": false
     },
     {
@@ -574,7 +639,7 @@
         "en": "BRUSH",
         "ko": "치카치카"
       },
-      "image_prompt": "[Momo] happily dancing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush up high in one paw, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] happily dancing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush with a yellow handle and mint-green bristles up high in one paw, clear empty pastel wall space in the upper third of the frame",
       "motion": "small hop in place holding the toothbrush up, ears bounce"
     },
     {
@@ -604,7 +669,7 @@
         "en": "SMILE",
         "ko": "반짝반짝"
       },
-      "image_prompt": "[Momo] close-up holding a small toothbrush with a yellow handle next to the cheek, huge happy smile with shiny teeth, [Ducky] peeking in from the side, bright pastel-blue background with empty space above the head"
+      "image_prompt": "[Momo] close-up holding a small toothbrush with a yellow handle and mint-green bristles next to the cheek, huge happy smile with shiny teeth, [Ducky] peeking in from the side, bright pastel-blue background with empty space above the head"
     },
     {
       "id": "c24",
