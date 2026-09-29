@@ -493,3 +493,7 @@ status 가 컷별 상태표와 **다음 작업** 목록(검토 대기 ●, 생�
     → `/tmp/previews/ep02/c05_image.jpg`, `/tmp/previews/library/sheet_momo.jpg` 등을 Read (`index.json` 에 목록).
   - 조립은 파일이 있어야 하므로 네트워크 허용 전에는 `momo-publish` 를 `upload: false` 로 돌려 러너에서 build 하고
     아티팩트(mp4·썸네일·timeline·확인 시트 `check_<lang>.jpg`)를 사용자가 받아 확인한다.
+    같은 결과가 `momo-out` 브랜치(강제 푸시, 이력 없음)에도 올라가므로 세션에서 받아 Read·SendUserFile 할 수 있다:
+    `git fetch origin momo-out && git archive origin/momo-out | tar -x -C /tmp/out`.
+  - BGM 이 아직 없으면 `no_bgm: true` 로 확인용 빌드만 한다 (`build.py --allow-missing`, BGM 무음, 업로드 단계는 항상 건너뜀).
+    최종본은 BGM 을 넣은 뒤 `no_bgm: false` 로 다시 돌린다.

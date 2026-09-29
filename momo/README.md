@@ -54,7 +54,7 @@ python momo/upload.py --ep ep03 --lang all --dry-run
 python momo/upload.py --ep ep03 --lang all --privacy private
 ```
 
-원격 실행: GitHub Actions → **momo-publish** (ep, langs, privacy, publish_at, upload) — 에셋 복원 → 조립 → 업로드 → 기록 커밋.
+원격 실행: GitHub Actions → **momo-publish** (ep, langs, privacy, publish_at, upload, no_bgm) — 에셋 복원 → 조립 → 업로드 → 기록 커밋.
 
 ## 무엇이 자동이고 무엇이 승인인가
 

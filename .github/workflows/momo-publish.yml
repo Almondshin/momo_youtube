@@ -32,6 +32,11 @@ on:
         required: true
         default: true
         type: boolean
+      no_bgm:
+        description: 'Check build without BGM (build.py --allow-missing). Never uploaded.'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -54,6 +59,7 @@ jobs:
       LANGS: ${{ inputs.langs }}
       PRIVACY: ${{ inputs.privacy }}
       PUBLISH_AT: ${{ inputs.publish_at }}
+      NO_BGM: ${{ inputs.no_bgm }}
       BRANCH: ${{ github.ref_name }}
       PYTHONUNBUFFERED: '1'
     steps:
@@ -100,7 +106,10 @@ jobs:
         run: python -m pip install -q -r momo/requirements.txt
 
       - name: 점검 (doctor --ci)
-        run: python momo/doctor.py --ep "$EP" --ci
+        run: |
+          # no_bgm: the missing-BGM ✖ is expected, so the check is informational only
+          if [ "$NO_BGM" = "true" ]; then python momo/doctor.py --ep "$EP" --ci || true
+          else python momo/doctor.py --ep "$EP" --ci; fi
 
       - name: 에셋 복원 (manifest·library 의 URL)
         run: python momo/fetch_assets.py --ep "$EP" --library
@@ -110,9 +119,11 @@ jobs:
         env:
           LANG_LIST: ${{ steps.in.outputs.langs }}
         run: |
+          extra=()
+          if [ "$NO_BGM" = "true" ]; then extra=(--allow-missing); fi
           for lang in $LANG_LIST; do
             echo "::group::build $EP $lang"
-            python momo/build.py --ep "$EP" --lang "$lang" --check
+            python momo/build.py --ep "$EP" --lang "$lang" --check "${extra[@]}"
             echo "::endgroup::"
           done
 
@@ -128,8 +139,32 @@ jobs:
           retention-days: 7
           if-no-files-found: error
 
+      - name: momo-out 브랜치로 푸시 (세션에서 받아 사용자에게 전달)
+        # Single force-pushed commit, no history. Files near GitHub's 100 MB limit get a smaller copy.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+        run: |
+          src="momo/episodes/$EP/out"
+          dst="$RUNNER_TEMP/momo-out/$EP"
+          mkdir -p "$dst"
+          cp "$src"/*.jpg "$src"/*_timeline.json "$dst"/ 2>/dev/null || true
+          for d in "$src"/check_*; do [ -d "$d" ] && cp "$d"/check_*.jpg "$dst"/ || true; done
+          for f in "$src"/*.mp4; do
+            if [ "$(stat -c %s "$f")" -lt 90000000 ]; then cp "$f" "$dst"/
+            else ffmpeg -v error -y -i "$f" -c:v libx264 -crf 24 -preset medium -c:a copy "$dst/$(basename "$f")"; fi
+          done
+          cd "$RUNNER_TEMP/momo-out"
+          git init -q -b momo-out
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "$EP build for ${SHA}${NO_BGM:+ (no_bgm=$NO_BGM)}"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" momo-out
+
       - name: YouTube 업로드 (아동용 고정)
-        if: inputs.upload
+        if: inputs.upload && !inputs.no_bgm
         env:
           LANG_LIST: ${{ steps.in.outputs.langs }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
