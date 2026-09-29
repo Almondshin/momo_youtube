@@ -73,8 +73,8 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 12.0,
-    "generations": 6,
+    "spent": 16.0,
+    "generations": 8,
     "regenerations": 2
   },
   "notes": {
@@ -149,7 +149,23 @@
         "ko": "이"
       },
       "image_prompt": "[Momo] standing in a bright pastel bathroom, one paw touching the cheek, curious puzzled face, small white teeth showing, clear empty pastel wall space in the upper third of the frame",
-      "motion": "tilts head to one side and touches the cheek with one paw, ears bounce"
+      "motion": "tilts head to one side and touches the cheek with one paw, ears bounce",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "d33ba903-34ab-48d3-a10b-e8cbd0cc6f05",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074720_d33ba903-34ab-48d3-a10b-e8cbd0cc6f05.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "d33ba903-34ab-48d3-a10b-e8cbd0cc6f05",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074720_d33ba903-34ab-48d3-a10b-e8cbd0cc6f05.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c04",
@@ -164,7 +180,23 @@
         "ko": "치카치카"
       },
       "image_prompt": "a clean child-size bathroom sink with one round mint-green cup holding one small toothbrush, soft morning light, pastel tiles, clear empty pastel wall space in the upper third of the frame",
-      "momo": false
+      "momo": false,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "1bb562c9-859c-4b28-b74f-57b259b8f0cc",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074723_1bb562c9-859c-4b28-b74f-57b259b8f0cc.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "1bb562c9-859c-4b28-b74f-57b259b8f0cc",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074723_1bb562c9-859c-4b28-b74f-57b259b8f0cc.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c05",

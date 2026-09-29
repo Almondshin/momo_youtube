@@ -95,6 +95,26 @@
           "at": "2026-09-29T07:38Z"
         }
       ]
+    },
+    "octo": {
+      "file": "sheets/octo.png",
+      "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - sneaky grin, surprised, sorry and shy, happy, pure white seamless background, professional character sheet presentation, Inko, a chubby round baby octopus, bright grape-purple body with pale lilac spots, eight short curly tentacles, big mischievous eyes behind a tiny black bandit eye-mask, a sly closed-mouth smirk with no teeth, rosy cheeks, same proportions on all views, the tiny black bandit eye-mask visible in every front and three-quarter view, playful sneaky-but-cute prankster personality, not scary, no teeth visible, stylized 3D character render, appealing chubby proportions, soft rounded features, smooth soft skin, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+      "momo": false,
+      "status": "generated",
+      "job_id": "2f630cdb-7038-4b20-91b5-8828e4086cdf",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074726_2f630cdb-7038-4b20-91b5-8828e4086cdf.png",
+      "element_id": null,
+      "attempts": 1,
+      "credits": 2,
+      "role": "villain (장난꾸러기)",
+      "history": [
+        {
+          "job_id": "2f630cdb-7038-4b20-91b5-8828e4086cdf",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074726_2f630cdb-7038-4b20-91b5-8828e4086cdf.png",
+          "status": "generated",
+          "at": "2026-09-29T07:47Z"
+        }
+      ]
     }
   },
   "clips": {
