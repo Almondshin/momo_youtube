@@ -290,7 +290,9 @@ def make_clip(image: Image.Image, out: Path, with_audio: bool) -> None:
            "-i", "-"]
     if with_audio:
         cmd += ["-f", "lavfi", "-i", "sine=f=660:d=5", "-c:a", "aac", "-shortest"]
-    cmd += ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", str(out)]
+    cmd += ["-vf", "scale=out_color_matrix=bt709:out_range=tv,format=yuv420p", "-c:v", "libx264", "-preset",
+            "veryfast", "-crf", "20", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
+            str(out)]
     out.parent.mkdir(parents=True, exist_ok=True)
     pipe_frames(cmd, frames())
 

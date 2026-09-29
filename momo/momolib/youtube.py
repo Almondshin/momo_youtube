@@ -196,7 +196,8 @@ def _backoff(attempt: int, exc: BaseException, what: str, max_retries: int) -> N
     if attempt > max_retries:
         raise MomoError(f"{what}: 재시도 {max_retries}회 모두 실패.\n  원문: {exc}") from exc
     delay = min(64.0, 2.0 ** attempt) * (0.5 + random.random() / 2)
-    label = f"HTTP {http_status(exc)}" if http_status(exc) else type(exc).__name__
+    status = http_status(exc)
+    label = f"HTTP {status}" if status else type(exc).__name__
     print(f"  △ 일시 오류 ({label}) — {delay:.1f}초 후 재시도 ({attempt}/{max_retries})", flush=True)
     _sleep(delay)
 
@@ -241,5 +242,4 @@ def resumable_upload(request: Any, what: str, max_retries: int = MAX_RETRIES,
 
 def media_file(path: Path, mimetype: str, resumable: bool = True) -> Any:
     from googleapiclient.http import MediaFileUpload
-    return MediaFileUpload(str(path), mimetype=mimetype, chunksize=CHUNK_SIZE if resumable else -1,
-                           resumable=resumable)
+    return MediaFileUpload(str(path), mimetype=mimetype, chunksize=CHUNK_SIZE, resumable=resumable)

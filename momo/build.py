@@ -331,7 +331,7 @@ def check_sheet(final: Path, plans: list[CutPlan], out_dir: Path, lang: str, fon
             for p in plans]
     uniq = sorted(set(want))
     sel = "+".join(f"eq(n,{f})" for f in uniq)
-    run(["ffmpeg", "-v", "error", "-nostdin", "-i", str(final), "-vf", f"select='{sel}',scale=1280:-2",
+    run(["ffmpeg", "-v", "error", "-nostdin", "-i", str(final), "-vf", f"select='{sel}',scale=1280:-2,format=rgb24",
          "-fps_mode", "passthrough", "-q:v", "3", str(d / "_%03d.jpg")])
     items = []
     for p, f in zip(plans, want):

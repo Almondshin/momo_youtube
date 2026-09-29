@@ -919,9 +919,14 @@ def render_report(d: dict) -> str:
     add(f"- 기준 시각(UTC): {d['now']} · 수집 백엔드: **{backend}** ({d.get('source')})")
     part = f" — **일부 기준** (상한 {fmt_int(ch.get('limit'))}개까지만 받음)" if ch.get("partial") else ""
     add(f"- 목록: {fmt_int(ch.get('listed'))}개{part} · 구독자: {fmt_int(ch.get('subscribers'))}")
-    dates = {"exact": "정확(API)", "approx": "목록은 대략(yt-dlp approximate_date), 20개는 개별 메타로 정확",
-             "none": "20개만 개별 메타, 나머지는 목록 순서로 추정"}.get(ch.get("dates"), ch.get("dates"))
+    no_meta = [vid for vid, v in V.items() if not v.get("has_meta", True)] if isinstance(V, dict) else []
+    n_meta = len(V) - len(no_meta) if isinstance(V, dict) else 0
+    dates = {"exact": "정확(API)", "approx": f"목록은 대략(yt-dlp approximate_date), 개별 메타 {n_meta}개는 정확",
+             "none": f"개별 메타 {n_meta}개만 정확, 나머지는 목록 순서로 추정"}.get(ch.get("dates"), ch.get("dates"))
     add(f"- 업로드 시각: {dates}")
+    if no_meta:
+        add(f"- ⚠️ 개별 메타 없음 {len(no_meta)}개 — 좋아요·댓글·태그·정확한 업로드 시각 미수집, "
+            "목록의 대략 날짜·조회수로만 계산")
     add("")
     add("## 1. 판정 요약")
     add("")

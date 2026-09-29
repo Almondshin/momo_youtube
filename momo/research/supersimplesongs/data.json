@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-09-29T07:18:26Z",
+  "generated_at": "2026-09-29T07:22:41Z",
   "now": "2026-09-29T07:18:00Z",
   "backend": "ytdlp",
   "source": "offline:channel_flat.json",
@@ -250,14 +250,23 @@
         },
         {
           "value": "기타",
-          "n": 4,
-          "mean_views": 2300000.0,
-          "median_views": 2450000.0,
+          "n": 3,
+          "mean_views": 2700000.0,
+          "median_views": 2900000.0,
           "ids": [
-            "YaFSwBg1qvg",
             "wtX9hMdLuew",
             "hDqWTltrGJ8",
             "CXb9llX_LoU"
+          ],
+          "separate": false
+        },
+        {
+          "value": "생활습관",
+          "n": 1,
+          "mean_views": 1100000.0,
+          "median_views": 1100000.0,
+          "ids": [
+            "YaFSwBg1qvg"
           ],
           "separate": false
         },
@@ -290,15 +299,24 @@
         },
         {
           "value": "동요",
-          "n": 5,
-          "mean_views": 2035400.0,
-          "median_views": 2000000.0,
+          "n": 4,
+          "mean_views": 2350000.0,
+          "median_views": 2550000.0,
           "ids": [
-            "uBweptmCYZg",
             "YaFSwBg1qvg",
             "-HOQGg7uuQQ",
             "hDqWTltrGJ8",
             "CXb9llX_LoU"
+          ],
+          "separate": false
+        },
+        {
+          "value": "퀴즈·따라하기",
+          "n": 1,
+          "mean_views": 777000.0,
+          "median_views": 777000.0,
+          "ids": [
+            "uBweptmCYZg"
           ],
           "separate": false
         },
@@ -380,7 +398,7 @@
       "name": "썸네일 주인공",
       "groups": [
         {
-          "value": "미분류",
+          "value": "캐릭터 클로즈업",
           "n": 6,
           "mean_views": 2179500.0,
           "median_views": 2450000.0,
@@ -396,7 +414,7 @@
         }
       ],
       "gap": null,
-      "note": "labels.json 으로 썸네일 주인공을 채워야 비교 가능"
+      "note": "n≥2 인 그룹이 2개 미만이라 비교 불가"
     },
     "search_keyword": {
       "name": "제목 검색 키워드",
@@ -450,7 +468,7 @@
   "top3_vs_alltime": {
     "alltime_modes": {
       "format": "동요",
-      "topic": "기타",
+      "topic": "생활습관",
       "length_bucket": "≤3분"
     },
     "recent_top3": [
@@ -482,15 +500,15 @@
         "length_bucket": "≤3분",
         "same_count": {
           "format": 5,
-          "topic": 2,
+          "topic": 1,
           "length_bucket": 5
         },
         "matches_mode": {
           "format": true,
-          "topic": true,
+          "topic": false,
           "length_bucket": true
         },
-        "same_format_as_alltime": true
+        "same_format_as_alltime": false
       },
       {
         "id": "-HOQGg7uuQQ",
@@ -512,7 +530,7 @@
         "same_format_as_alltime": false
       }
     ],
-    "n_same_format": 1
+    "n_same_format": 0
   },
   "targets": {
     "sample": [
@@ -550,7 +568,28 @@
       }
     ]
   },
-  "labels_applied": [],
+  "labels_applied": [
+    "-HOQGg7uuQQ",
+    "1GDFa-nEzlg",
+    "2QtoaV22rpY",
+    "4XLQpRI_wOQ",
+    "BG8HLIvuK24",
+    "CXb9llX_LoU",
+    "GzIObE7uR8Q",
+    "LLgTFZP3IQQ",
+    "LuJe0ad1Ygk",
+    "M6LoRZsHMSs",
+    "N8gOM-A3cUw",
+    "YaFSwBg1qvg",
+    "hDqWTltrGJ8",
+    "iHP8FGwzjJg",
+    "jZnBNf0GJyU",
+    "pZw9veQ76fo",
+    "q1DinydBRNE",
+    "uBweptmCYZg",
+    "wtX9hMdLuew",
+    "yCjJyiqpAuU"
+  ],
   "videos": {
     "LuJe0ad1Ygk": {
       "id": "LuJe0ad1Ygk",
@@ -571,7 +610,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -591,7 +630,9 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 1,
       "upload": "2026-09-25T00:00:00Z",
@@ -616,7 +657,7 @@
         "topic": "기타",
         "format": "모음집",
         "length_bucket": "30분+",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "텍스트 위주",
         "search_keyword": false
       },
       "axes_auto": {
@@ -633,7 +674,9 @@
         ],
         "search_keyword": []
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 2,
       "upload": "2026-09-18T00:00:00Z",
@@ -656,9 +699,9 @@
       "tags": [],
       "axes": {
         "topic": "동물",
-        "format": "동요",
+        "format": "퀴즈·따라하기",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -679,7 +722,10 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "format",
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 3,
       "upload": "2026-09-15T00:00:00Z",
@@ -704,7 +750,7 @@
         "topic": "기타",
         "format": "모음집",
         "length_bucket": "30분+",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "텍스트 위주",
         "search_keyword": true
       },
       "axes_auto": {
@@ -723,7 +769,9 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 4,
       "upload": "2026-09-08T00:00:00Z",
@@ -748,7 +796,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -768,7 +816,9 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 5,
       "upload": "2026-08-29T00:00:00Z",
@@ -793,7 +843,7 @@
         "topic": "알파벳·단어",
         "format": "모음집",
         "length_bucket": "30분+",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "텍스트 위주",
         "search_keyword": true
       },
       "axes_auto": {
@@ -814,7 +864,9 @@
           "learn"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 6,
       "upload": "2026-08-29T00:00:00Z",
@@ -836,10 +888,10 @@
       "has_meta": false,
       "tags": [],
       "axes": {
-        "topic": "기타",
+        "topic": "생활습관",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": false
       },
       "axes_auto": {
@@ -856,7 +908,10 @@
         ],
         "search_keyword": []
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject",
+        "topic"
+      ],
       "popular_rank": null,
       "recent_rank": 7,
       "upload": "2026-08-29T00:00:00Z",
@@ -881,7 +936,7 @@
         "topic": "숫자",
         "format": "모음집",
         "length_bucket": "30분+",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "텍스트 위주",
         "search_keyword": true
       },
       "axes_auto": {
@@ -905,7 +960,9 @@
           "preschool"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 8,
       "upload": "2026-08-29T00:00:00Z",
@@ -930,7 +987,7 @@
         "topic": "숫자",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -954,7 +1011,9 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 9,
       "upload": "2026-08-29T00:00:00Z",
@@ -979,7 +1038,7 @@
         "topic": "기타",
         "format": "모음집",
         "length_bucket": "30분+",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "텍스트 위주",
         "search_keyword": false
       },
       "axes_auto": {
@@ -996,7 +1055,9 @@
         ],
         "search_keyword": []
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 10,
       "upload": "2026-07-29T00:00:00Z",
@@ -1021,7 +1082,7 @@
         "topic": "기타",
         "format": "스토리",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": false
       },
       "axes_auto": {
@@ -1038,7 +1099,9 @@
         ],
         "search_keyword": []
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 11,
       "upload": "2026-07-29T00:00:00Z",
@@ -1063,7 +1126,7 @@
         "topic": "기타",
         "format": "모음집",
         "length_bucket": "30분+",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "텍스트 위주",
         "search_keyword": false
       },
       "axes_auto": {
@@ -1080,7 +1143,9 @@
         ],
         "search_keyword": []
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 12,
       "upload": "2026-07-29T00:00:00Z",
@@ -1105,7 +1170,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1124,7 +1189,9 @@
           "shapes"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 13,
       "upload": "2026-07-29T00:00:00Z",
@@ -1149,7 +1216,7 @@
         "topic": "기타",
         "format": "모음집",
         "length_bucket": "30분+",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "텍스트 위주",
         "search_keyword": false
       },
       "axes_auto": {
@@ -1166,7 +1233,9 @@
         ],
         "search_keyword": []
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 14,
       "upload": "2026-06-29T00:00:00Z",
@@ -1191,7 +1260,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1211,7 +1280,9 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 15,
       "upload": "2026-06-29T00:00:00Z",
@@ -1233,10 +1304,10 @@
       "has_meta": false,
       "tags": [],
       "axes": {
-        "topic": "기타",
+        "topic": "생활습관",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1255,7 +1326,10 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject",
+        "topic"
+      ],
       "popular_rank": 1,
       "recent_rank": null,
       "upload": "2016-09-29T00:00:00Z",
@@ -1280,7 +1354,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1302,7 +1376,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 2,
       "recent_rank": null,
       "upload": "2010-09-29T00:00:00Z",
@@ -1327,7 +1403,7 @@
         "topic": "생활습관",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1348,7 +1424,9 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 3,
       "recent_rank": null,
       "upload": "2018-09-29T00:00:00Z",
@@ -1373,7 +1451,7 @@
         "topic": "숫자",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1394,7 +1472,9 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 4,
       "recent_rank": null,
       "upload": "2016-09-29T00:00:00Z",
@@ -1419,7 +1499,7 @@
         "topic": "감정",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1440,7 +1520,9 @@
           "kids"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 5,
       "recent_rank": null,
       "upload": "2019-09-29T00:00:00Z",

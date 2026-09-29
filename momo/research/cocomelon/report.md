@@ -3,7 +3,8 @@
 - 채널: https://www.youtube.com/@CoComelon (@CoComelon)
 - 기준 시각(UTC): 2026-09-29T07:18:00Z · 수집 백엔드: **yt-dlp** (offline:channel_flat.json)
 - 목록: 1,351개 · 구독자: 203,000,000
-- 업로드 시각: 목록은 대략(yt-dlp approximate_date), 20개는 개별 메타로 정확
+- 업로드 시각: 목록은 대략(yt-dlp approximate_date), 개별 메타 0개는 정확
+- ⚠️ 개별 메타 없음 20개 — 좋아요·댓글·태그·정확한 업로드 시각 미수집, 목록의 대략 날짜·조회수로만 계산
 
 ## 1. 판정 요약
 
@@ -39,21 +40,21 @@
 
 | # | 제목 | 조회수 | 길이 | 경과 | 소재 | 형식 | 길이 구간 | 썸네일 | 검색 키워드 | 비고 |
 |---|---|---:|---:|---:|---|---|---|---|---|---|
-| 1 | [Mary Had a Little Lamb \| Adventure on the Farm \| …](https://www.youtube.com/watch?v=KPh2Efv66Aw) | 3,200 | 2:56 | 0시간 | 동물 | 스토리 | ≤3분 | 미분류 | 포함 (kids, nursery) | 72h 미만·평균 제외 |
-| 2 | [Jump in the Puddles \| Rainy Day with Toddlers \| C…](https://www.youtube.com/watch?v=WjZ2f71dFck) | 1,100,000 | 6:18 | 3일 | 생활습관 | 동요 | 3~10분 | 미분류 | 포함 (toddlers, kids, nursery) |  |
-| 3 | [Finger Family + Emmy's Haunted House \| CoComelon …](https://www.youtube.com/watch?v=O7-GZ_xOAg8) | 843,000 | 5:27 | 5일 | 기타 | 모음집 | 3~10분 | 미분류 | 포함 (kids, nursery) |  |
-| 4 | [My Best Friend - Boba Bear Helps JJ's Boo Boos \| …](https://www.youtube.com/watch?v=Goau5pVgjTM) | 869,000 | 2:49 | 7일 | 기타 | 동요 | ≤3분 | 미분류 | 포함 (kids, nursery) |  |
-| 5 | [Wheels on the Halloween Bus \| Costume Party for K…](https://www.youtube.com/watch?v=Dq2mT4C1B30) | 1,600,000 | 6:15 | 10일 | 탈것 | 동요 | 3~10분 | 미분류 | 포함 (kids, nursery) |  |
-| 6 | [CeCe's Bubble Bath Mix \| Bathtime Fun \| CoComelon…](https://www.youtube.com/watch?v=6j38CYnpq9g) | 1,400,000 | 5:30 | 12일 | 생활습관 | 모음집 | 3~10분 | 미분류 | 포함 (kids, nursery) |  |
-| 7 | [I like to Wiggle & Dance \| Mommy & Baby JJ Play T…](https://www.youtube.com/watch?v=UjZtlE_7PMo) | 1,200,000 | 2:55 | 14일 | 기타 | 동요 | ≤3분 | 미분류 | 포함 (kids, baby, nursery) |  |
-| 8 | [Twinkle Star is in Trouble! ⭐ Night Time Songs 😴 …](https://www.youtube.com/watch?v=PxvLQcW0tJU) | 2,300,000 | 6:10 | 14일 | 기타 | 동요 | 3~10분 | 미분류 | 포함 (kids, nursery) |  |
-| 9 | [Learn Your ABCs with JJ and Bella! 🩷 \| CoComelon …](https://www.youtube.com/watch?v=h5SVBuetBSA) | 1,400,000 | 5:38 | 14일 | 알파벳·단어 | 동요 | 3~10분 | 미분류 | 포함 (kids, nursery, learn) |  |
-| 10 | [The Farmer in the Dell \| Farm Animals Play Preten…](https://www.youtube.com/watch?v=WMtSPnsgr1U) | 1,400,000 | 2:40 | 21일 | 동물 | 동요 | ≤3분 | 미분류 | 포함 (kids, nursery) |  |
-| 11 | [I Love My Bed + More Bedtime Routine Songs for Ba…](https://www.youtube.com/watch?v=TIy5Iy6V54E) | 1,400,000 | 5:33 | 21일 | 생활습관 | 모음집 | 3~10분 | 미분류 | 포함 (kids, babies, nursery) |  |
-| 12 | [Nina Builds a New Best Friend! 🎨 Pin Pon Paper Do…](https://www.youtube.com/watch?v=bL4drdg-41Y) | 1,000,000 | 5:48 | 21일 | 기타 | 동요 | 3~10분 | 미분류 | 포함 (kids, nursery) |  |
-| 13 | [Finger Family - Classic Nursery Rhymes \| CoComelo…](https://www.youtube.com/watch?v=vTLfOqEolsk) | 12,000,000 | 2:37 | 28일 | 기타 | 동요 | ≤3분 | 미분류 | 포함 (kids, nursery) |  |
-| 14 | [Yes Yes Let’s Get Dressed & Time To Go to School!…](https://www.youtube.com/watch?v=7Qfq7vsVWWQ) | 11,000,000 | 5:44 | 31일 | 생활습관 | 동요 | 3~10분 | 미분류 | 포함 (kids, nursery) |  |
-| 15 | [Oh No! Cody dropped his Ice Cream \| Happy, and Yo…](https://www.youtube.com/watch?v=enI7IxrqyuM) | 8,300,000 | 5:39 | 31일 | 기타 | 동요 | 3~10분 | 미분류 | 포함 (kids, nursery) |  |
+| 1 | [Mary Had a Little Lamb \| Adventure on the Farm \| …](https://www.youtube.com/watch?v=KPh2Efv66Aw) | 3,200 | 2:56 | 0시간 | 동물 | 동요 | ≤3분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | 72h 미만·평균 제외; labels: 형식,썸네일 주인공 |
+| 2 | [Jump in the Puddles \| Rainy Day with Toddlers \| C…](https://www.youtube.com/watch?v=WjZ2f71dFck) | 1,100,000 | 6:18 | 3일 | 생활습관 | 동요 | 3~10분 | 캐릭터 클로즈업 | 포함 (toddlers, kids, nursery) | labels: 썸네일 주인공 |
+| 3 | [Finger Family + Emmy's Haunted House \| CoComelon …](https://www.youtube.com/watch?v=O7-GZ_xOAg8) | 843,000 | 5:27 | 5일 | 기타 | 모음집 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공 |
+| 4 | [My Best Friend - Boba Bear Helps JJ's Boo Boos \| …](https://www.youtube.com/watch?v=Goau5pVgjTM) | 869,000 | 2:49 | 7일 | 기타 | 동요 | ≤3분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공 |
+| 5 | [Wheels on the Halloween Bus \| Costume Party for K…](https://www.youtube.com/watch?v=Dq2mT4C1B30) | 1,600,000 | 6:15 | 10일 | 탈것 | 동요 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공 |
+| 6 | [CeCe's Bubble Bath Mix \| Bathtime Fun \| CoComelon…](https://www.youtube.com/watch?v=6j38CYnpq9g) | 1,400,000 | 5:30 | 12일 | 생활습관 | 모음집 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공 |
+| 7 | [I like to Wiggle & Dance \| Mommy & Baby JJ Play T…](https://www.youtube.com/watch?v=UjZtlE_7PMo) | 1,200,000 | 2:55 | 14일 | 기타 | 동요 | ≤3분 | 캐릭터 클로즈업 | 포함 (kids, baby, nursery) | labels: 썸네일 주인공 |
+| 8 | [Twinkle Star is in Trouble! ⭐ Night Time Songs 😴 …](https://www.youtube.com/watch?v=PxvLQcW0tJU) | 2,300,000 | 6:10 | 14일 | 생활습관 | 동요 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공,학습 소재 |
+| 9 | [Learn Your ABCs with JJ and Bella! 🩷 \| CoComelon …](https://www.youtube.com/watch?v=h5SVBuetBSA) | 1,400,000 | 5:38 | 14일 | 알파벳·단어 | 동요 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, nursery, learn) | labels: 썸네일 주인공 |
+| 10 | [The Farmer in the Dell \| Farm Animals Play Preten…](https://www.youtube.com/watch?v=WMtSPnsgr1U) | 1,400,000 | 2:40 | 21일 | 동물 | 동요 | ≤3분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공 |
+| 11 | [I Love My Bed + More Bedtime Routine Songs for Ba…](https://www.youtube.com/watch?v=TIy5Iy6V54E) | 1,400,000 | 5:33 | 21일 | 생활습관 | 모음집 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, babies, nursery) | labels: 썸네일 주인공 |
+| 12 | [Nina Builds a New Best Friend! 🎨 Pin Pon Paper Do…](https://www.youtube.com/watch?v=bL4drdg-41Y) | 1,000,000 | 5:48 | 21일 | 기타 | 동요 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공 |
+| 13 | [Finger Family - Classic Nursery Rhymes \| CoComelo…](https://www.youtube.com/watch?v=vTLfOqEolsk) | 12,000,000 | 2:37 | 28일 | 기타 | 동요 | ≤3분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공 |
+| 14 | [Yes Yes Let’s Get Dressed & Time To Go to School!…](https://www.youtube.com/watch?v=7Qfq7vsVWWQ) | 11,000,000 | 5:44 | 31일 | 생활습관 | 동요 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공 |
+| 15 | [Oh No! Cody dropped his Ice Cream \| Happy, and Yo…](https://www.youtube.com/watch?v=enI7IxrqyuM) | 8,300,000 | 5:39 | 31일 | 감정 | 동요 | 3~10분 | 캐릭터 클로즈업 | 포함 (kids, nursery) | labels: 썸네일 주인공,학습 소재 |
 
 자동 판정 근거 키워드(#은 태그에서 찾음):
 
@@ -110,13 +111,14 @@
 
 | 그룹 | 개수 | 평균 조회수 | 중앙값 | 영상 |
 |---|---:|---:|---:|---|
-| 기타 | 7 | 3,787,429 | 1,200,000 | `O7-GZ_xOAg8`, `Goau5pVgjTM`, `UjZtlE_7PMo`, `PxvLQcW0tJU`, `bL4drdg-41Y`, `vTLfOqEolsk`, `enI7IxrqyuM` |
-| 생활습관 | 4 | 3,725,000 | 1,400,000 | `WjZ2f71dFck`, `6j38CYnpq9g`, `TIy5Iy6V54E`, `7Qfq7vsVWWQ` |
+| 감정 | 1 | 8,300,000 | 8,300,000 | `enI7IxrqyuM` |
+| 생활습관 | 5 | 3,440,000 | 1,400,000 | `WjZ2f71dFck`, `6j38CYnpq9g`, `PxvLQcW0tJU`, `TIy5Iy6V54E`, `7Qfq7vsVWWQ` |
+| 기타 | 5 | 3,182,400 | 1,000,000 | `O7-GZ_xOAg8`, `Goau5pVgjTM`, `UjZtlE_7PMo`, `bL4drdg-41Y`, `vTLfOqEolsk` |
 | 탈것 | 1 | 1,600,000 | 1,600,000 | `Dq2mT4C1B30` |
 | 알파벳·단어 | 1 | 1,400,000 | 1,400,000 | `h5SVBuetBSA` |
 | 동물 | 1 | 1,400,000 | 1,400,000 | `WMtSPnsgr1U` |
 
-격차: 기타 vs 생활습관 = **1.02배** (차이 62,429)
+격차: 생활습관 vs 기타 = **1.08배** (차이 257,600)
 
 ### 형식
 
@@ -140,9 +142,9 @@
 
 | 그룹 | 개수 | 평균 조회수 | 중앙값 | 영상 |
 |---|---:|---:|---:|---|
-| 미분류 | 14 | 3,272,286 | 1,400,000 | `WjZ2f71dFck`, `O7-GZ_xOAg8`, `Goau5pVgjTM`, `Dq2mT4C1B30`, `6j38CYnpq9g`, `UjZtlE_7PMo`, `PxvLQcW0tJU`, `h5SVBuetBSA`, `WMtSPnsgr1U`, `TIy5Iy6V54E`, `bL4drdg-41Y`, `vTLfOqEolsk`, `7Qfq7vsVWWQ`, `enI7IxrqyuM` |
+| 캐릭터 클로즈업 | 14 | 3,272,286 | 1,400,000 | `WjZ2f71dFck`, `O7-GZ_xOAg8`, `Goau5pVgjTM`, `Dq2mT4C1B30`, `6j38CYnpq9g`, `UjZtlE_7PMo`, `PxvLQcW0tJU`, `h5SVBuetBSA`, `WMtSPnsgr1U`, `TIy5Iy6V54E`, `bL4drdg-41Y`, `vTLfOqEolsk`, `7Qfq7vsVWWQ`, `enI7IxrqyuM` |
 
-격차: — (labels.json 으로 썸네일 주인공을 채워야 비교 가능)
+격차: — (n≥2 인 그룹이 2개 미만이라 비교 불가)
 
 ### 제목 검색 키워드
 
@@ -158,7 +160,7 @@
 |---|---|---:|---|---|
 | 1 | 형식 | 3.16배 | 동요 (3,833,545) | 모음집 (1,214,333) |
 | 2 | 길이 구간 | 1.27배 | ≤3분 (3,867,250) | 3~10분 (3,034,300) |
-| 3 | 학습 소재 | 1.02배 | 기타 (3,787,429) | 생활습관 (3,725,000) |
+| 3 | 학습 소재 | 1.08배 | 생활습관 (3,440,000) | 기타 (3,182,400) |
 
 → 원인 후보: **형식** — 이번 에피소드 주제 3개는 '동요' 쪽으로 제안하고 승인받는다.
 
@@ -170,7 +172,7 @@
 |---|---:|---|---|---|---|---|
 | [Finger Family - Classic Nursery Rhymes \| CoComelon Nursery …](https://www.youtube.com/watch?v=vTLfOqEolsk) | 12,000,000 | 동요 | 기타 | ≤3분 | 5/1/3 | 아니오 |
 | [Yes Yes Let’s Get Dressed & Time To Go to School! \| CoComel…](https://www.youtube.com/watch?v=7Qfq7vsVWWQ) | 11,000,000 | 동요 | 생활습관 | 3~10분 | 5/2/2 | 아니오 |
-| [Oh No! Cody dropped his Ice Cream \| Happy, and You Know It …](https://www.youtube.com/watch?v=enI7IxrqyuM) | 8,300,000 | 동요 | 기타 | 3~10분 | 5/1/2 | 아니오 |
+| [Oh No! Cody dropped his Ice Cream \| Happy, and You Know It …](https://www.youtube.com/watch?v=enI7IxrqyuM) | 8,300,000 | 동요 | 감정 | 3~10분 | 5/0/2 | 아니오 |
 
 ## 10. 다음 단계
 

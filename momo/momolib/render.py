@@ -362,8 +362,9 @@ TO_709 = "out_color_matrix=bt709:out_range=tv"   # scale 필터 인자: RGB/YUV 
 
 
 def grab_frame(path: Path, t: float) -> Image.Image:
+    vf = f"scale={in_matrix(video_stream(path))}out_color_matrix=bt709,format=rgb24"
     proc = run(["ffmpeg", "-v", "error", "-nostdin", "-ss", f"{max(0.0, t):.3f}", "-i", str(path),
-                "-frames:v", "1", "-f", "image2pipe", "-vcodec", "png", "-"])
+                "-frames:v", "1", "-vf", vf, "-f", "image2pipe", "-vcodec", "png", "-"])
     if not proc.stdout:
         raise MomoError(f"프레임을 뽑지 못함: {path} @ {t:.2f}s")
     return Image.open(io.BytesIO(proc.stdout)).convert("RGB")

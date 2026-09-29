@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-09-29T07:18:26Z",
+  "generated_at": "2026-09-29T07:22:41Z",
   "now": "2026-09-29T07:18:00Z",
   "backend": "ytdlp",
   "source": "offline:channel_flat.json",
@@ -246,31 +246,40 @@
       "name": "학습 소재",
       "groups": [
         {
-          "value": "기타",
-          "n": 7,
-          "mean_views": 3787428.5714285714,
-          "median_views": 1200000.0,
+          "value": "감정",
+          "n": 1,
+          "mean_views": 8300000.0,
+          "median_views": 8300000.0,
           "ids": [
-            "O7-GZ_xOAg8",
-            "Goau5pVgjTM",
-            "UjZtlE_7PMo",
-            "PxvLQcW0tJU",
-            "bL4drdg-41Y",
-            "vTLfOqEolsk",
             "enI7IxrqyuM"
           ],
           "separate": false
         },
         {
           "value": "생활습관",
-          "n": 4,
-          "mean_views": 3725000.0,
+          "n": 5,
+          "mean_views": 3440000.0,
           "median_views": 1400000.0,
           "ids": [
             "WjZ2f71dFck",
             "6j38CYnpq9g",
+            "PxvLQcW0tJU",
             "TIy5Iy6V54E",
             "7Qfq7vsVWWQ"
+          ],
+          "separate": false
+        },
+        {
+          "value": "기타",
+          "n": 5,
+          "mean_views": 3182400.0,
+          "median_views": 1000000.0,
+          "ids": [
+            "O7-GZ_xOAg8",
+            "Goau5pVgjTM",
+            "UjZtlE_7PMo",
+            "bL4drdg-41Y",
+            "vTLfOqEolsk"
           ],
           "separate": false
         },
@@ -306,12 +315,12 @@
         }
       ],
       "gap": {
-        "ratio": 1.0167593480345158,
-        "abs": 62428.57142857136,
-        "high": "기타",
-        "low": "생활습관",
-        "high_mean": 3787428.5714285714,
-        "low_mean": 3725000.0
+        "ratio": 1.0809451985922574,
+        "abs": 257600.0,
+        "high": "생활습관",
+        "low": "기타",
+        "high_mean": 3440000.0,
+        "low_mean": 3182400.0
       },
       "note": null
     },
@@ -411,7 +420,7 @@
       "name": "썸네일 주인공",
       "groups": [
         {
-          "value": "미분류",
+          "value": "캐릭터 클로즈업",
           "n": 14,
           "mean_views": 3272285.714285714,
           "median_views": 1400000.0,
@@ -435,7 +444,7 @@
         }
       ],
       "gap": null,
-      "note": "labels.json 으로 썸네일 주인공을 채워야 비교 가능"
+      "note": "n≥2 인 그룹이 2개 미만이라 비교 불가"
     },
     "search_keyword": {
       "name": "제목 검색 키워드",
@@ -528,11 +537,11 @@
         "title": "Oh No! Cody dropped his Ice Cream | Happy, and You Know It | CoComelon Nursery Rhymes & Kids Songs",
         "view_count": 8300000,
         "format": "동요",
-        "topic": "기타",
+        "topic": "감정",
         "length_bucket": "3~10분",
         "same_count": {
           "format": 5,
-          "topic": 1,
+          "topic": 0,
           "length_bucket": 2
         },
         "matches_mode": {
@@ -581,7 +590,28 @@
       }
     ]
   },
-  "labels_applied": [],
+  "labels_applied": [
+    "020g-0hhCAU",
+    "6j38CYnpq9g",
+    "7Qfq7vsVWWQ",
+    "Dq2mT4C1B30",
+    "Goau5pVgjTM",
+    "KPh2Efv66Aw",
+    "MR5XSOdjKMA",
+    "O7-GZ_xOAg8",
+    "PxvLQcW0tJU",
+    "TIy5Iy6V54E",
+    "UjZtlE_7PMo",
+    "WMtSPnsgr1U",
+    "WRVsOCh907o",
+    "WjZ2f71dFck",
+    "bL4drdg-41Y",
+    "e_04ZrNroTo",
+    "enI7IxrqyuM",
+    "h5SVBuetBSA",
+    "ohHYABXMqUQ",
+    "vTLfOqEolsk"
+  ],
   "videos": {
     "KPh2Efv66Aw": {
       "id": "KPh2Efv66Aw",
@@ -600,9 +630,9 @@
       "tags": [],
       "axes": {
         "topic": "동물",
-        "format": "스토리",
+        "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -624,7 +654,10 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "format",
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 1,
       "upload": "2026-09-29T07:01:00Z",
@@ -649,7 +682,7 @@
         "topic": "생활습관",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -674,7 +707,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 2,
       "upload": "2026-09-26T00:00:00Z",
@@ -699,7 +734,7 @@
         "topic": "기타",
         "format": "모음집",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -719,7 +754,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 3,
       "upload": "2026-09-24T00:00:00Z",
@@ -744,7 +781,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -766,7 +803,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 4,
       "upload": "2026-09-22T00:00:00Z",
@@ -791,7 +830,7 @@
         "topic": "탈것",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -815,7 +854,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 5,
       "upload": "2026-09-19T00:00:00Z",
@@ -840,7 +881,7 @@
         "topic": "생활습관",
         "format": "모음집",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -863,7 +904,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 6,
       "upload": "2026-09-17T00:00:00Z",
@@ -888,7 +931,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -912,7 +955,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 7,
       "upload": "2026-09-15T00:00:00Z",
@@ -934,10 +979,10 @@
       "has_meta": false,
       "tags": [],
       "axes": {
-        "topic": "기타",
+        "topic": "생활습관",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -959,7 +1004,10 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject",
+        "topic"
+      ],
       "popular_rank": null,
       "recent_rank": 8,
       "upload": "2026-09-15T00:00:00Z",
@@ -984,7 +1032,7 @@
         "topic": "알파벳·단어",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1009,7 +1057,9 @@
           "learn"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 9,
       "upload": "2026-09-15T00:00:00Z",
@@ -1034,7 +1084,7 @@
         "topic": "동물",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1059,7 +1109,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 10,
       "upload": "2026-09-08T00:00:00Z",
@@ -1084,7 +1136,7 @@
         "topic": "생활습관",
         "format": "모음집",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1107,7 +1159,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 11,
       "upload": "2026-09-08T00:00:00Z",
@@ -1132,7 +1186,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1155,7 +1209,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 12,
       "upload": "2026-09-08T00:00:00Z",
@@ -1180,7 +1236,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1202,7 +1258,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 13,
       "upload": "2026-09-01T00:00:00Z",
@@ -1227,7 +1285,7 @@
         "topic": "생활습관",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1251,7 +1309,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": null,
       "recent_rank": 14,
       "upload": "2026-08-29T00:00:00Z",
@@ -1273,10 +1333,10 @@
       "has_meta": false,
       "tags": [],
       "axes": {
-        "topic": "기타",
+        "topic": "감정",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1298,7 +1358,10 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject",
+        "topic"
+      ],
       "popular_rank": null,
       "recent_rank": 15,
       "upload": "2026-08-29T00:00:00Z",
@@ -1323,7 +1386,7 @@
         "topic": "탈것",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "사물",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1347,7 +1410,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 1,
       "recent_rank": null,
       "upload": "2018-09-29T00:00:00Z",
@@ -1372,7 +1437,7 @@
         "topic": "생활습관",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1397,7 +1462,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 2,
       "recent_rank": null,
       "upload": "2018-09-29T00:00:00Z",
@@ -1422,7 +1489,7 @@
         "topic": "기타",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1444,7 +1511,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 3,
       "recent_rank": null,
       "upload": "2018-09-29T00:00:00Z",
@@ -1469,7 +1538,7 @@
         "topic": "동물",
         "format": "동요",
         "length_bucket": "≤3분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1494,7 +1563,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 4,
       "recent_rank": null,
       "upload": "2018-09-29T00:00:00Z",
@@ -1519,7 +1590,7 @@
         "topic": "생활습관",
         "format": "동요",
         "length_bucket": "3~10분",
-        "thumbnail_subject": "미분류",
+        "thumbnail_subject": "캐릭터 클로즈업",
         "search_keyword": true
       },
       "axes_auto": {
@@ -1544,7 +1615,9 @@
           "nursery"
         ]
       },
-      "labeled": [],
+      "labeled": [
+        "thumbnail_subject"
+      ],
       "popular_rank": 5,
       "recent_rank": null,
       "upload": "2018-09-29T00:00:00Z",
