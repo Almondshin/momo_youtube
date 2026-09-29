@@ -253,12 +253,12 @@ def fetch_channel(ch: dict, req: dict, research: Path, pubkey: Path, sealed: Pat
         def ts(e):
             return metas.get(e["id"], {}).get("timestamp") or e.get("timestamp")
         old_recent = [e for e in recent if not (ts(e) and now - ts(e) < 72 * 3600)]
-        picks = [("역대1", by_views[0]["id"])]
+        picks = [("TOP1", by_views[0]["id"])]  # 러너 기본 폰트는 한글이 없어 ASCII 라벨
         if len(by_views) > 1:
-            picks.append(("역대2", by_views[1]["id"]))
+            picks.append(("TOP2", by_views[1]["id"]))
         if old_recent:
-            picks.append(("최근1", max(old_recent, key=lambda e: e.get("view_count") or 0)["id"]))
-            picks.append(("최근최하", min(old_recent, key=lambda e: e.get("view_count") or 0)["id"]))
+            picks.append(("RECENT_TOP", max(old_recent, key=lambda e: e.get("view_count") or 0)["id"]))
+            picks.append(("RECENT_LOW", min(old_recent, key=lambda e: e.get("view_count") or 0)["id"]))
         tdir = work / "thumbs"
         tdir.mkdir(exist_ok=True)
         got, labs = [], []
