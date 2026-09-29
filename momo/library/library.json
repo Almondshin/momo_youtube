@@ -6,11 +6,11 @@
       "file": "sheets/momo.png",
       "prompt": "Character turnaround model sheet of [Momo]: front view, three-quarter view, side view and back view in one row, plus four facial expressions (happy, surprised, curious, sleepy) in a second row, plain pure white background, even spacing, full body, consistent proportions",
       "status": "generated",
-      "job_id": "2a072594-0913-454c-8897-6b8eb1802fb0",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073654_2a072594-0913-454c-8897-6b8eb1802fb0.png",
+      "job_id": "e8dbb71b-b817-4de9-8287-afe98851c9e2",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074046_e8dbb71b-b817-4de9-8287-afe98851c9e2.png",
       "element_id": null,
-      "attempts": 2,
-      "credits": 4,
+      "attempts": 3,
+      "credits": 6,
       "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - happy, surprised, curious, sleepy, pure white seamless background, professional character sheet presentation, Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with one yellow button, big expressive smile, the one yellow button clearly visible on the front bib of the mint-green overalls in every front and three-quarter view, same outfit on all views, stylized 3D character render, appealing chubby proportions, soft rounded features, soft fur detail, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
       "history": [
         {
@@ -24,9 +24,16 @@
         {
           "job_id": "2a072594-0913-454c-8897-6b8eb1802fb0",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073654_2a072594-0913-454c-8897-6b8eb1802fb0.png",
-          "status": "generated",
+          "status": "rejected",
           "at": "2026-09-29T07:36Z",
-          "reason": "재생성: 1차 시트에 노란 단추가 양쪽 멜빵에 2개 → '단추 하나' 규칙 위반"
+          "reason": "여전히 멜빵 단추 2개 + 털 질감이 점토처럼 매끈해짐"
+        },
+        {
+          "job_id": "e8dbb71b-b817-4de9-8287-afe98851c9e2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074046_e8dbb71b-b817-4de9-8287-afe98851c9e2.png",
+          "status": "generated",
+          "at": "2026-09-29T07:41Z",
+          "method": "1차 시트(6a2dfca4)를 image_references 로 넣고 단추만 편집"
         }
       ]
     },
