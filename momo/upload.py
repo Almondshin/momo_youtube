@@ -244,7 +244,9 @@ def upload_one(paths: Paths, cfg: dict, job: Job, body: dict, thumb: Path | None
     request = service.videos().insert(part="snippet,status", body=body, notifySubscribers=notify,
                                       media_body=yt.media_file(job.video, "video/mp4"))
     print(f"  업로드 시작 ({mb(size)})", flush=True)
-    resp = yt.resumable_upload(request, f"{job.label} 영상 업로드", on_progress=progress_printer(job.lang))
+    show = progress_printer(job.lang)
+    resp = yt.resumable_upload(request, f"{job.label} 영상 업로드", on_progress=show)
+    show(size, size)
     vid = resp["id"]
     st = resp.get("status") or {}
     wanted = body["status"]["privacyStatus"]

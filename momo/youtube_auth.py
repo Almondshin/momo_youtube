@@ -68,7 +68,7 @@ def run_flow(conf: dict, port: int, open_browser: bool):
         raise MomoError(f"OAuth 인증 실패 (거부했거나 client 설정 오류).\n  원문: {type(e).__name__}: {e}") from e
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="YouTube 업로드용 refresh token 발급",
                                  formatter_class=argparse.RawDescriptionHelpFormatter, epilog=__doc__)
     add_root_arg(ap)
@@ -77,7 +77,9 @@ def main() -> int:
     ap.add_argument("--port", type=int, default=8080, help="로컬 리디렉션 포트 (기본 8080, 0 = 빈 포트)")
     ap.add_argument("--no-browser", action="store_true", help="브라우저를 열지 않고 URL 만 출력")
     ap.add_argument("--print-token", action="store_true", help="refresh token 값을 화면에 출력 (주의)")
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
+    if hasattr(sys.stdout, "reconfigure"):  # 파이프로 받아도 인증 URL 이 바로 보이게
+        sys.stdout.reconfigure(line_buffering=True)
     paths = get_paths(args)
     lang = check_lang(args.lang)
     conf = client_config(args.client_secrets)

@@ -1,0 +1,446 @@
+{
+  "schema": 1,
+  "ep": "ep02",
+  "status": "planning",
+  "topic": {
+    "en": "Brush Your Teeth",
+    "ko": "양치하기"
+  },
+  "benchmark": {
+    "channel_url": [
+      "https://www.youtube.com/@CoComelon",
+      "https://www.youtube.com/@SuperSimpleSongs"
+    ],
+    "research_dir": "research/SUMMARY.md",
+    "chosen_axis": "형식(단일 동요형 > 믹스) + 길이(≤3분) + 제목 검색어 — 소재: 생활습관(양치)",
+    "structure_check": "2단계(자막·프레임) 봇 확인 차단 → 지시서 기본 구조로 진행, 벤치마크 구조 검증 미수행 (사용자 승인 2026-09-29)"
+  },
+  "characters": [
+    "momo",
+    "ducky"
+  ],
+  "title": {
+    "en": "Brush Your Teeth Song with Momo the Bunny | Morning Routine for Toddlers",
+    "ko": "양치 동요 | 치카치카 이 닦기 | 아기토끼 모모"
+  },
+  "thumbnail": {
+    "cut": "c23",
+    "text": {
+      "en": "BRUSH BRUSH!",
+      "ko": "치카치카!"
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "Brush Your Teeth Song with Momo the Bunny | Morning Routine for Toddlers",
+      "description": "Brush, brush, up and down! Join Momo the Bunny and Ducky for a happy morning tooth-brushing routine. A gentle say-along chant for toddlers and preschoolers (ages 2-5).\n\nWhat we learn today:\n1. A toothbrush and just a tiny dot of toothpaste\n2. Brush up and down - top teeth and bottom teeth\n3. Sip, swish and rinse with a cup of water\n\nSay it with Momo and brush together every morning and every night!\n\n#BrushYourTeeth #ToddlerLearning #KidsSongs #NurseryRhymes #MorningRoutine #PreschoolLearning #HealthyHabits #MomoTheBunny #BabySongs #LearnWithMomo",
+      "tags": [
+        "brush your teeth song",
+        "brushing teeth for kids",
+        "toddler songs",
+        "kids songs",
+        "nursery rhymes",
+        "morning routine for kids",
+        "healthy habits for kids",
+        "preschool learning",
+        "Momo the Bunny",
+        "tooth brushing song",
+        "learning videos for toddlers",
+        "baby songs"
+      ],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "양치 동요 | 치카치카 이 닦기 | 아기토끼 모모",
+      "description": "치카치카, 위로 아래로! 아기토끼 모모와 오리 더키가 아침 양치 습관을 알려줘요. 2~5세 아이를 위한 따라 말하기 챈트예요.\n\n오늘 배우는 것:\n1. 칫솔과 콩알만큼의 치약\n2. 윗니는 위로, 아랫니는 아래로 치카치카\n3. 물을 머금고 오물오물, 퉤! 헹구기\n\n아침에도 밤에도 모모랑 같이 이를 닦아요!\n\n#양치동요 #치카치카 #유아동요 #키즈송 #생활습관 #아침습관 #유아교육 #아기토끼모모 #양치습관 #모모랑배워요",
+      "tags": [
+        "양치 동요",
+        "치카치카",
+        "이 닦기",
+        "유아 동요",
+        "키즈 동요",
+        "생활습관 동요",
+        "아침 습관",
+        "유아 교육",
+        "아기토끼 모모",
+        "양치 습관",
+        "어린이 동요"
+      ],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [
+      "2026-09-29 주제 A(양치하기) 승인",
+      "2026-09-29 2단계 생략·기본 구조 진행 승인"
+    ],
+    "next_time": []
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "narration": {
+        "en": "Hi friends! It's Momo!",
+        "ko": "안녕, 친구들! 나는 모모야!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      },
+      "library_clip": "intro_wave",
+      "library_audio": "intro"
+    },
+    {
+      "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "narration": {
+        "en": "Good morning, friends! The sun is up. Yawn! Time to start the day!",
+        "ko": "좋은 아침이야! 해님이 떴어. 하아암! 오늘도 신나게 시작해 볼까?"
+      },
+      "keyword": {
+        "en": "MORNING",
+        "ko": "아침"
+      },
+      "image_prompt": "[Momo] sitting up in a small cozy bed, stretching both arms up after waking, bright morning sunlight from a round window, soft pastel bedroom, clear empty pastel wall space in the upper third of the frame",
+      "motion": "stretches both arms up slowly and yawns, ears bounce gently"
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "narration": {
+        "en": "Hmm... my teeth feel fuzzy and sticky. What should we do, friends?",
+        "ko": "음... 이가 까끌까끌 끈적끈적해. 친구들, 어떻게 하면 좋을까?"
+      },
+      "keyword": {
+        "en": "TEETH",
+        "ko": "이"
+      },
+      "image_prompt": "[Momo] standing in a bright pastel bathroom, one paw touching the cheek, curious puzzled face, small white teeth showing, clear empty pastel wall space in the upper third of the frame",
+      "motion": "tilts head to one side and touches the cheek with one paw, ears bounce"
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "S",
+      "narration": {
+        "en": "It's morning! Let's brush our teeth together! Brush, brush, brush!",
+        "ko": "아침이야! 우리 같이 이를 닦자! 치카치카 치카!"
+      },
+      "keyword": {
+        "en": "BRUSH",
+        "ko": "치카치카"
+      },
+      "image_prompt": "a clean child-size bathroom sink with one round mint-green cup holding one small toothbrush, soft morning light, pastel tiles, clear empty pastel wall space in the upper third of the frame",
+      "momo": false
+    },
+    {
+      "id": "c05",
+      "scene": 2,
+      "type": "S",
+      "narration": {
+        "en": "Look! This is a toothbrush. A little toothbrush. Toothbrush!",
+        "ko": "이것 봐! 이건 칫솔이야. 작고 귀여운 칫솔! 칫솔!"
+      },
+      "keyword": {
+        "en": "TOOTHBRUSH",
+        "ko": "칫솔"
+      },
+      "image_prompt": "close-up of one small child toothbrush with soft mint-green bristles and a yellow handle lying on a soft cream counter, plain pastel background",
+      "momo": false
+    },
+    {
+      "id": "c06",
+      "scene": 2,
+      "type": "V",
+      "narration": {
+        "en": "Momo holds the toothbrush. My very own toothbrush! Hello, toothbrush!",
+        "ko": "모모의 칫솔이야. 손에 꼭 잡아요. 안녕, 칫솔!"
+      },
+      "keyword": {
+        "en": "TOOTHBRUSH",
+        "ko": "칫솔"
+      },
+      "image_prompt": "[Momo] standing at a small bathroom sink, holding up a small toothbrush with a yellow handle in one paw, proud happy face, clear empty pastel wall space in the upper third of the frame",
+      "motion": "lifts the toothbrush up a little and smiles, ears bounce"
+    },
+    {
+      "id": "c07",
+      "scene": 2,
+      "type": "S",
+      "narration": {
+        "en": "Now a little toothpaste. Not too much. Just a tiny dot!",
+        "ko": "이제 치약을 짜요. 많이 말고, 콩알만큼만 쏙!"
+      },
+      "keyword": {
+        "en": "TOOTHPASTE",
+        "ko": "치약"
+      },
+      "image_prompt": "close-up of a small toothbrush with a tiny pea-size dot of white toothpaste on the bristles, next to a plain white toothpaste tube, soft pastel background",
+      "momo": false
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "L",
+      "narration": {
+        "en": "Can you say toothpaste? [pause 1.5] Toothpaste! Yay, great job!",
+        "ko": "치약, 따라 해볼까? [pause 1.5] 치약! 우와, 잘했어!"
+      },
+      "keyword": {
+        "en": "TOOTHPASTE",
+        "ko": "치약"
+      },
+      "library_clip": "say_with_me"
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "narration": {
+        "en": "Squeeze, squeeze, just a little bit of toothpaste. Perfect!",
+        "ko": "쭉~ 치약을 아주 조금만. 딱 좋아!"
+      },
+      "keyword": {
+        "en": "TOOTHPASTE",
+        "ko": "치약"
+      },
+      "image_prompt": "[Momo] at the bathroom sink holding a small toothbrush in one paw and a plain white toothpaste tube in the other paw, focused cute face, clear empty pastel wall space in the upper third of the frame",
+      "motion": "gently squeezes the tube over the toothbrush, small nod"
+    },
+    {
+      "id": "c10",
+      "scene": 3,
+      "type": "V",
+      "narration": {
+        "en": "[chant] Brush up, brush down, brush your teeth all around! Brush up, brush down!",
+        "ko": "[chant] 위로 치카, 아래로 치카, 구석구석 치카치카! 위로 치카, 아래로 치카!"
+      },
+      "keyword": {
+        "en": "BRUSH",
+        "ko": "치카치카"
+      },
+      "image_prompt": "[Momo] facing the viewer holding a small toothbrush at the front teeth, big smile with a little white foam, bright pastel bathroom, clear empty pastel wall space in the upper third of the frame",
+      "motion": "brushes the teeth with small up and down strokes, ears bounce"
+    },
+    {
+      "id": "c11",
+      "scene": 3,
+      "type": "V",
+      "narration": {
+        "en": "Brush the top teeth. Up, up, up! Gently up, up, up!",
+        "ko": "윗니를 닦아요. 위로, 위로, 위로! 살살 위로!"
+      },
+      "keyword": {
+        "en": "UP",
+        "ko": "위로"
+      },
+      "image_prompt": "[Momo] seen from the waist up, brushing the top teeth with a small toothbrush, eyes looking up playfully, soft pastel-blue background with empty space above the head",
+      "motion": "brushes with small upward strokes and blinks"
+    },
+    {
+      "id": "c12",
+      "scene": 3,
+      "type": "V",
+      "narration": {
+        "en": "Brush the bottom teeth. Down, down, down! Gently down, down, down!",
+        "ko": "아랫니를 닦아요. 아래로, 아래로, 아래로! 살살 아래로!"
+      },
+      "keyword": {
+        "en": "DOWN",
+        "ko": "아래로"
+      },
+      "image_prompt": "[Momo] seen from the waist up, brushing the bottom teeth with a small toothbrush, eyes looking down playfully, soft pastel-blue background with empty space above the head",
+      "motion": "brushes with small downward strokes, small nod"
+    },
+    {
+      "id": "c13",
+      "scene": 3,
+      "type": "S",
+      "narration": {
+        "en": "Up and down, up and down. Can you do it too? [pause 1.5] Yes!",
+        "ko": "위로 아래로, 위로 아래로. 너도 해볼래? [pause 1.5] 그렇지!"
+      },
+      "keyword": {
+        "en": "UP",
+        "ko": "위로"
+      },
+      "image_prompt": "[Momo] seen from the waist up with a big foamy smile, holding a small toothbrush near the mouth, twinkling eyes, soft pastel-yellow background with empty space above the head"
+    },
+    {
+      "id": "c14",
+      "scene": 3,
+      "type": "L",
+      "narration": {
+        "en": "You did it! Great brushing, friends!",
+        "ko": "잘했어! 치카치카 최고야, 친구들!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      },
+      "library_clip": "cheer"
+    },
+    {
+      "id": "c15",
+      "scene": 4,
+      "type": "V",
+      "narration": {
+        "en": "Quack, quack! Here comes Ducky with a little cup of water!",
+        "ko": "꽥꽥! 더키가 작은 물컵을 가져왔어!"
+      },
+      "keyword": {
+        "en": "CUP",
+        "ko": "컵"
+      },
+      "image_prompt": "[Momo] standing at the bathroom sink on the right side, [Ducky] waddling in from the left carrying a small mint-green cup, happy surprised faces, clear empty pastel wall space in the upper third of the frame",
+      "motion": "Ducky waddles forward a little, Momo's ears bounce happily"
+    },
+    {
+      "id": "c16",
+      "scene": 4,
+      "type": "S",
+      "narration": {
+        "en": "Water in the cup helps us rinse. Rinse, rinse, rinse!",
+        "ko": "컵에 담긴 물로 입을 헹궈요. 헹구기, 헹구기!"
+      },
+      "keyword": {
+        "en": "RINSE",
+        "ko": "헹구기"
+      },
+      "image_prompt": "close-up of a small mint-green cup filled with clear water on a clean white sink edge, soft sparkles on the water, plain pastel background",
+      "momo": false
+    },
+    {
+      "id": "c17",
+      "scene": 4,
+      "type": "V",
+      "narration": {
+        "en": "Sip a little water. Swish, swish, swish! Funny puffy cheeks!",
+        "ko": "물을 조금 머금고, 오물오물 오물! 볼이 빵빵해!"
+      },
+      "keyword": {
+        "en": "RINSE",
+        "ko": "헹구기"
+      },
+      "image_prompt": "[Momo] holding a small mint-green cup, cheeks puffed out full of water, funny happy eyes, bathroom sink, clear empty pastel wall space in the upper third of the frame",
+      "motion": "cheeks wobble gently side to side, ears bounce"
+    },
+    {
+      "id": "c18",
+      "scene": 4,
+      "type": "V",
+      "narration": {
+        "en": "And spit it out! Ptooey! All clean and fresh!",
+        "ko": "그리고 퉤! 깨끗하게 헹궜어. 상쾌해!"
+      },
+      "keyword": {
+        "en": "RINSE",
+        "ko": "헹구기"
+      },
+      "image_prompt": "[Momo] leaning over a small bathroom sink, gently spitting a little water into the sink, [Ducky] watching from the counter, cheerful mood, clear empty pastel wall space in the upper third of the frame",
+      "motion": "leans forward a little over the sink and smiles, Ducky flaps its wings"
+    },
+    {
+      "id": "c19",
+      "scene": 4,
+      "type": "V",
+      "narration": {
+        "en": "Ducky asks: can you say rinse? [pause 1.5] Rinse! Hooray!",
+        "ko": "더키랑 같이 말해볼까? 헹구기! [pause 1.5] 헹구기! 야호!"
+      },
+      "keyword": {
+        "en": "RINSE",
+        "ko": "헹구기"
+      },
+      "image_prompt": "[Momo] and [Ducky] side by side at the bathroom counter, both smiling at the viewer, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both nod gently, Ducky flaps its wings once"
+    },
+    {
+      "id": "c20",
+      "scene": 5,
+      "type": "S",
+      "narration": {
+        "en": "Let's remember! Toothbrush, toothpaste, and a cup of water!",
+        "ko": "다시 한번 볼까? 칫솔, 치약, 그리고 물컵!"
+      },
+      "keyword": {
+        "en": "TOOTHBRUSH",
+        "ko": "칫솔"
+      },
+      "image_prompt": "a neat row of a small toothbrush with a yellow handle, a plain white toothpaste tube and a small mint-green cup on a clean bathroom counter, soft morning light, clear empty pastel wall space in the upper third of the frame",
+      "momo": false
+    },
+    {
+      "id": "c21",
+      "scene": 5,
+      "type": "V",
+      "narration": {
+        "en": "[chant] Brush up, brush down, swish and spit, all around! Swish and spit!",
+        "ko": "[chant] 위로 치카, 아래로 치카, 오물오물 퉤! 오물오물 퉤!"
+      },
+      "keyword": {
+        "en": "BRUSH",
+        "ko": "치카치카"
+      },
+      "image_prompt": "[Momo] happily dancing in the bathroom, holding a small toothbrush up high in one paw, clear empty pastel wall space in the upper third of the frame",
+      "motion": "small hop in place holding the toothbrush up, ears bounce"
+    },
+    {
+      "id": "c22",
+      "scene": 5,
+      "type": "V",
+      "narration": {
+        "en": "Show me your smile! Big, sparkly smile! Sparkly clean teeth!",
+        "ko": "웃어 봐! 반짝반짝, 이가 반짝반짝!"
+      },
+      "keyword": {
+        "en": "SMILE",
+        "ko": "반짝반짝"
+      },
+      "image_prompt": "[Momo] facing the viewer with the biggest smile showing clean shiny white teeth, one tiny sparkle near the teeth, soft pastel background with empty space above the head",
+      "motion": "smiles wider and blinks, ears bounce"
+    },
+    {
+      "id": "c23",
+      "scene": 5,
+      "type": "S",
+      "narration": {
+        "en": "Brush every morning and every night. Keep a big, bright smile!",
+        "ko": "아침에도 밤에도 치카치카! 반짝반짝 웃어요!"
+      },
+      "keyword": {
+        "en": "SMILE",
+        "ko": "반짝반짝"
+      },
+      "image_prompt": "[Momo] close-up holding a small toothbrush with a yellow handle next to the cheek, huge happy smile with shiny teeth, [Ducky] peeking in from the side, bright pastel-blue background with empty space above the head"
+    },
+    {
+      "id": "c24",
+      "scene": 5,
+      "type": "L",
+      "narration": {
+        "en": "Bye-bye, friends! See you next time!",
+        "ko": "친구들, 안녕! 다음에 또 만나!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      },
+      "library_clip": "outro_bye",
+      "library_audio": "outro"
+    }
+  ]
+}
