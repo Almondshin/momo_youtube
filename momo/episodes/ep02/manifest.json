@@ -73,8 +73,8 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 175.5,
-    "generations": 52,
+    "spent": 213.0,
+    "generations": 57,
     "regenerations": 12,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
@@ -935,7 +935,7 @@
           "reason": null
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "68ae3d74-81d0-4586-9877-f397d07ca610",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105033_68ae3d74-81d0-4586-9877-f397d07ca610.mp4",
           "attempts": 1,
@@ -944,7 +944,7 @@
             {
               "job_id": "68ae3d74-81d0-4586-9877-f397d07ca610",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105033_68ae3d74-81d0-4586-9877-f397d07ca610.mp4",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-29T10:50Z",
               "credits": 7.5,
@@ -989,7 +989,7 @@
           "reason": null
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "ef6d437d-5444-4052-99e9-39bdb3c3492f",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105036_ef6d437d-5444-4052-99e9-39bdb3c3492f.mp4",
           "attempts": 1,
@@ -998,7 +998,7 @@
             {
               "job_id": "ef6d437d-5444-4052-99e9-39bdb3c3492f",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105036_ef6d437d-5444-4052-99e9-39bdb3c3492f.mp4",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-29T10:50Z",
               "credits": 7.5,

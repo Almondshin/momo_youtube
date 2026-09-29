@@ -123,7 +123,7 @@
       "image_prompt": "[Momo] standing in the center of a sunny soft-green meadow, facing the viewer, one paw raised to say hello, lots of clear pale-blue sky in the upper third",
       "motion": "waves one paw at the viewer, ears bounce gently",
       "image": {
-        "status": "generated",
+        "status": "approved",
         "job_id": "a0a58c26-b14d-4dce-8407-c062dfa297e6",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105039_a0a58c26-b14d-4dce-8407-c062dfa297e6.png",
         "attempts": 1,
@@ -132,7 +132,7 @@
           {
             "job_id": "a0a58c26-b14d-4dce-8407-c062dfa297e6",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105039_a0a58c26-b14d-4dce-8407-c062dfa297e6.png",
-            "status": "generated",
+            "status": "approved",
             "reason": null,
             "at": "2026-09-29T10:50Z",
             "credits": 2.0
@@ -140,18 +140,30 @@
         ],
         "reason": null
       },
-      "status": "missing",
-      "job_id": null,
+      "status": "generated",
+      "job_id": "32398925-844f-44f7-82ea-10e2125c0a55",
       "url": null,
-      "attempts": 0,
-      "credits": 0
+      "attempts": 1,
+      "credits": 7.5,
+      "history": [
+        {
+          "job_id": "32398925-844f-44f7-82ea-10e2125c0a55",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-09-29T11:01Z",
+          "credits": 7.5,
+          "start_image": "a0a58c26-b14d-4dce-8407-c062dfa297e6"
+        }
+      ],
+      "reason": null
     },
     "outro_bye": {
       "file": "clips/outro_bye.mp4",
       "image_prompt": "[Momo] standing in the center of a sunny soft-green meadow at golden afternoon light, facing the viewer with a warm smile, one paw raised, clear sky in the upper third",
       "motion": "waves one paw goodbye slowly, small nod",
       "image": {
-        "status": "generated",
+        "status": "approved",
         "job_id": "ffad3de3-24dd-41aa-90af-b2c48f8d6919",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105043_ffad3de3-24dd-41aa-90af-b2c48f8d6919.png",
         "attempts": 1,
@@ -160,7 +172,7 @@
           {
             "job_id": "ffad3de3-24dd-41aa-90af-b2c48f8d6919",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105043_ffad3de3-24dd-41aa-90af-b2c48f8d6919.png",
-            "status": "generated",
+            "status": "approved",
             "reason": null,
             "at": "2026-09-29T10:50Z",
             "credits": 2.0
@@ -168,18 +180,30 @@
         ],
         "reason": null
       },
-      "status": "missing",
-      "job_id": null,
+      "status": "generated",
+      "job_id": "7458d080-60a7-4b43-9326-a87f449edc7b",
       "url": null,
-      "attempts": 0,
-      "credits": 0
+      "attempts": 1,
+      "credits": 7.5,
+      "history": [
+        {
+          "job_id": "7458d080-60a7-4b43-9326-a87f449edc7b",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-09-29T11:01Z",
+          "credits": 7.5,
+          "start_image": "ffad3de3-24dd-41aa-90af-b2c48f8d6919"
+        }
+      ],
+      "reason": null
     },
     "say_with_me": {
       "file": "clips/say_with_me.mp4",
       "image_prompt": "[Momo] close-up from the waist up, facing the viewer with an encouraging open-mouth smile, soft pastel-yellow simple background with empty space above the head",
       "motion": "nods head gently twice, ears bounce",
       "image": {
-        "status": "generated",
+        "status": "approved",
         "job_id": "013ff281-b519-45ba-82f5-936c39dd7511",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105046_013ff281-b519-45ba-82f5-936c39dd7511.png",
         "attempts": 1,
@@ -188,7 +212,7 @@
           {
             "job_id": "013ff281-b519-45ba-82f5-936c39dd7511",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105046_013ff281-b519-45ba-82f5-936c39dd7511.png",
-            "status": "generated",
+            "status": "approved",
             "reason": null,
             "at": "2026-09-29T10:50Z",
             "credits": 2.0
@@ -196,18 +220,30 @@
         ],
         "reason": null
       },
-      "status": "missing",
-      "job_id": null,
+      "status": "generated",
+      "job_id": "bcd6e291-bd0e-4cf6-ab34-33212e923259",
       "url": null,
-      "attempts": 0,
-      "credits": 0
+      "attempts": 1,
+      "credits": 7.5,
+      "history": [
+        {
+          "job_id": "bcd6e291-bd0e-4cf6-ab34-33212e923259",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-09-29T11:01Z",
+          "credits": 7.5,
+          "start_image": "013ff281-b519-45ba-82f5-936c39dd7511"
+        }
+      ],
+      "reason": null
     },
     "cheer": {
       "file": "clips/cheer.mp4",
       "image_prompt": "[Momo] standing in the center facing the viewer, very happy, paws together in front of the chest, soft pastel-pink simple background with empty space above the head",
       "motion": "claps paws happily, one small hop in place",
       "image": {
-        "status": "generated",
+        "status": "approved",
         "job_id": "5fca7eb8-824b-437e-8760-d0d29c3334f3",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105050_5fca7eb8-824b-437e-8760-d0d29c3334f3.png",
         "attempts": 1,
@@ -216,7 +252,7 @@
           {
             "job_id": "5fca7eb8-824b-437e-8760-d0d29c3334f3",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105050_5fca7eb8-824b-437e-8760-d0d29c3334f3.png",
-            "status": "generated",
+            "status": "approved",
             "reason": null,
             "at": "2026-09-29T10:50Z",
             "credits": 2.0
@@ -224,18 +260,30 @@
         ],
         "reason": null
       },
-      "status": "missing",
-      "job_id": null,
+      "status": "generated",
+      "job_id": "35a5b5ff-9a7d-469d-a2b8-c35f2c56085f",
       "url": null,
-      "attempts": 0,
-      "credits": 0
+      "attempts": 1,
+      "credits": 7.5,
+      "history": [
+        {
+          "job_id": "35a5b5ff-9a7d-469d-a2b8-c35f2c56085f",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-09-29T11:01Z",
+          "credits": 7.5,
+          "start_image": "5fca7eb8-824b-437e-8760-d0d29c3334f3"
+        }
+      ],
+      "reason": null
     },
     "transition": {
       "file": "clips/transition.mp4",
       "image_prompt": "[Momo] one single full-body shot in a simple scene, not a character sheet, no turnaround, no multiple views, only one single Momo in the frame, standing slightly left of center on a plain soft mint-green background, body turned toward the right side, one foot lifted, ready to hop to the right, empty space on the right side",
       "motion": "hops happily to the right and out of the frame with small bouncy hops, camera stays still",
       "image": {
-        "status": "generated",
+        "status": "approved",
         "job_id": "901d59e9-2085-46e1-804c-20049b4c51ad",
         "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105642_901d59e9-2085-46e1-804c-20049b4c51ad.png",
         "attempts": 2,
@@ -252,7 +300,7 @@
           {
             "job_id": "901d59e9-2085-46e1-804c-20049b4c51ad",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105642_901d59e9-2085-46e1-804c-20049b4c51ad.png",
-            "status": "generated",
+            "status": "approved",
             "reason": null,
             "at": "2026-09-29T10:56Z",
             "credits": 2.0
@@ -260,11 +308,23 @@
         ],
         "reason": null
       },
-      "status": "missing",
-      "job_id": null,
+      "status": "generated",
+      "job_id": "bb54105a-ab2a-4964-94c1-770529069fc0",
       "url": null,
-      "attempts": 0,
-      "credits": 0
+      "attempts": 1,
+      "credits": 7.5,
+      "history": [
+        {
+          "job_id": "bb54105a-ab2a-4964-94c1-770529069fc0",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-09-29T11:01Z",
+          "credits": 7.5,
+          "start_image": "901d59e9-2085-46e1-804c-20049b4c51ad"
+        }
+      ],
+      "reason": null
     }
   },
   "audio": {
