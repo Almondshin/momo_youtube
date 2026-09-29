@@ -73,9 +73,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 55.0,
-    "generations": 22,
-    "regenerations": 7,
+    "spent": 72.0,
+    "generations": 25,
+    "regenerations": 8,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
   "notes": {
@@ -309,6 +309,20 @@
               "status": "approved"
             }
           ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "ab2ecdaa-425b-4dc1-acab-a4ccade25f48",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080852_ab2ecdaa-425b-4dc1-acab-a4ccade25f48.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "ab2ecdaa-425b-4dc1-acab-a4ccade25f48",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080852_ab2ecdaa-425b-4dc1-acab-a4ccade25f48.mp4",
+              "status": "generated"
+            }
+          ]
         }
       }
     },
@@ -395,6 +409,20 @@
               "job_id": "7bb7c1af-aa6c-423c-8e7d-8bbf4d78b987",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080209_7bb7c1af-aa6c-423c-8e7d-8bbf4d78b987.png",
               "status": "approved"
+            }
+          ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "401facef-4d85-4dd0-8094-1a3a01c51817",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080856_401facef-4d85-4dd0-8094-1a3a01c51817.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "401facef-4d85-4dd0-8094-1a3a01c51817",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080856_401facef-4d85-4dd0-8094-1a3a01c51817.mp4",
+              "status": "generated"
             }
           ]
         }
@@ -505,18 +533,24 @@
         "en": "UP",
         "ko": "위로"
       },
-      "image_prompt": "[Momo] seen from the waist up with a big foamy smile, holding a small toothbrush with a yellow handle and mint-green bristles near the mouth, twinkling eyes, soft pastel-yellow background with empty space above the head",
+      "image_prompt": "[Momo] seen from the waist up with a big foamy smile, holding a small toothbrush with a yellow handle and mint-green bristles near the mouth, twinkling eyes, soft pastel-yellow background with empty space above the head, only one single Momo in the frame, no duplicate heads, no second character",
       "gen": {
         "image": {
           "status": "generated",
-          "job_id": "b68e4cb5-698e-45f2-8255-91d8f0ea156d",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080916_b68e4cb5-698e-45f2-8255-91d8f0ea156d.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "c46e24d2-e8e4-4609-b777-64a6aa326cd1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_081333_c46e24d2-e8e4-4609-b777-64a6aa326cd1.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "b68e4cb5-698e-45f2-8255-91d8f0ea156d",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080916_b68e4cb5-698e-45f2-8255-91d8f0ea156d.png",
+              "status": "rejected",
+              "reason": "모모 머리 2개 겹침 오류"
+            },
+            {
+              "job_id": "c46e24d2-e8e4-4609-b777-64a6aa326cd1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_081333_c46e24d2-e8e4-4609-b777-64a6aa326cd1.png",
               "status": "generated"
             }
           ]
