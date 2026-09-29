@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Iterator
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 from .common import MomoError, ffprobe_json, run
 
@@ -152,10 +152,13 @@ def text_image(text: str, font: ImageFont.FreeTypeFont, fill, stroke: int,
     pad = 4 + shadow
     size = (r - l + 2 * pad, b - t + 2 * pad)
     org = (pad - l, pad - t)
-    # 외곽선 마스크: FreeType stroker 가 겹친 윤곽에서 남기는 바늘구멍을 closing(5x5)으로 메운다
+    # 외곽선 마스크. FreeType stroker 가 겹친 윤곽에서 남기는 바늘구멍(과 닫힌 속공간)은 검정으로 메운다
     outline = Image.new("L", size, 0)
     ImageDraw.Draw(outline).text(org, text, font=font, fill=255, stroke_width=stroke, stroke_fill=255)
-    outline = outline.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.MinFilter(5))
+    outside = outline.point(lambda v: 255 if v >= 128 else 0)
+    ImageDraw.floodfill(outside, (0, 0), 128)
+    holes = outside.point(lambda v: 255 if v == 0 else 0).filter(ImageFilter.MaxFilter(3))
+    outline = ImageChops.lighter(outline, holes)
     im = Image.new("RGBA", size, (0, 0, 0, 0))
     if shadow:
         sh = Image.new("L", size, 0)
@@ -302,8 +305,8 @@ def make_thumbnail(image: Image.Image, text: str, font_path: Path, cfg: dict, ou
         fill = parse_color("yellow", cfg)
         best = None
         for lines in _split_two(text):
-            # 1줄은 글자 높이 ≤ 20% H, 2줄은 줄당 ≤ 17% H
-            gh = H * (0.20 if len(lines) == 1 else 0.17)
+            # 글자 높이: 1줄 ≤ 20% H, 2줄은 줄당 ≤ 15.5% H (문구 블록이 화면 절반을 넘지 않게)
+            gh = H * (0.20 if len(lines) == 1 else 0.155)
             font, stroke = fit_font(font_path, lines, gh, W * 0.9, 0.14)
             imgs = [text_image(s, font, fill, stroke, shadow=max(3, stroke // 2)) for s in lines]
             balance = max(i.width for i in imgs) - min(i.width for i in imgs)

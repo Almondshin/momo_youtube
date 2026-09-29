@@ -180,11 +180,11 @@ def fake_calls(env: dict) -> list[list[str]]:
 
 def make_cards_video(path: Path) -> list[float]:
     """색 카드 + testsrc2(움직임) 5샷 영상. 반환: 기대 전환 시각."""
-    specs = [("color=c=red", 2.0), ("color=c=blue", 1.5), ("testsrc2", 3.0), ("color=c=yellow", 1.0),
-             ("color=c=black", 2.5)]
+    specs = [("color=c=red:", 2.0), ("color=c=blue:", 1.5), ("testsrc2=", 3.0), ("color=c=yellow:", 1.0),
+             ("color=c=black:", 2.5)]
     cmd = ["ffmpeg", "-v", "error", "-y"]
     for src, dur in specs:
-        cmd += ["-f", "lavfi", "-i", f"{src}:s=640x360:r=25:d={dur}"]
+        cmd += ["-f", "lavfi", "-i", f"{src}s=640x360:r=25:d={dur}"]
     cmd += ["-filter_complex", "".join(f"[{i}]" for i in range(len(specs))) + f"concat=n={len(specs)}:v=1:a=0[v]",
             "-map", "[v]", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(path)]
     subprocess.run(cmd, check=True)
@@ -319,7 +319,7 @@ def test_status_rule():
     assert S([120] * 15, [200] * 45)["label"] == "정체"                        # 0.6
     assert S([60] * 15, [200] * 45, recent_age=100)["label"] == "하락"         # 0.3, 일평균 0.6
     assert S([60] * 15, [200] * 45, recent_age=20)["label"] == "정체"          # 0.3 이지만 일평균 3.0
-    assert S([100] * 2, [200] * 45)["label"] == "판단 불가"
+    assert S([100] * 10, [])["label"] == "판단 불가" and S([100] * 2, [])["recent_n"] == 2
     st = S([100] * 15, [200] * 45)
     assert st["recent_n"] == 15 and st["prev_n"] == 45 and approx(st["median_ratio"], 0.5)
     # 날짜가 없으면 일평균 없이 중앙값 비 < 0.3 만 하락
@@ -417,6 +417,12 @@ def test_popular_fallback_and_truncation():
     assert s["popular"]["ids"] == [e["id"] for e in sorted(entries, key=lambda e: -e["view_count"])[:5]]
     s = fixture_summary(popular_flat=None, popular_note="오프라인")
     assert s["popular"]["method"] == "view_count_sort" and "오프라인" in s["popular"]["note"]
+    # 예정 프리미어·라이브 중은 목록에서 뺀다 (조회수 없음, 최신 15 자리 차지 방지)
+    flat = load(FIX / "channel.json")
+    flat["entries"].insert(0, {**flat["entries"][0], "id": "tts999Upcom", "view_count": None,
+                               "live_status": "is_upcoming"})
+    s = R.build_summary(flat, url=None, backend="ytdlp", source="t", limit=2000, top_n=5)
+    assert s["listed"] == 70 and s["entries"][0]["id"] == "tts000VidA0"
     # 상한에 걸리면 일부 기준
     flat = load(FIX / "channel.json")
     flat["entries"] = flat["entries"][:40]
@@ -603,26 +609,40 @@ def test_ytdlp_escalation(tmp: Path):
 
 @test
 def test_update_pip_branch(tmp: Path):
-    env = fake_env(tmp, "ok", FAKE_UPDATE_MSG="ERROR: You installed yt-dlp with pip or using the wheel from PyPi; "
-                                              "Use that to update")
     fake_py = tmp / "fake_python.sh"
     pip_log = tmp / "pip.log"
     fake_py.write_text(f"#!/bin/sh\necho \"$@\" >> {shlex.quote(str(pip_log))}\n"
-                       "echo 'Successfully installed yt-dlp-2099.1.1'\n")
+                       'case "$3" in show) echo "Name: yt-dlp";; '
+                       "install) echo 'Successfully installed yt-dlp-2099.1.1';; esac\n")
     fake_py.chmod(0o755)
-    saved_env, saved_exe = dict(os.environ), sys.executable
-    os.environ.update(env)
-    sys.executable = str(fake_py)
-    try:
-        msgs: list[str] = []
-        res = R.update_ytdlp(msgs.append)
-    finally:
-        sys.executable = saved_exe
-        os.environ.clear()
-        os.environ.update(saved_env)
+
+    def update(msg: str | None) -> tuple[dict, list[str], list[str]]:
+        env = fake_env(tmp, "ok", **({"FAKE_UPDATE_MSG": msg} if msg else {}))
+        pip_log.unlink(missing_ok=True)
+        saved_env, saved_exe = dict(os.environ), sys.executable
+        os.environ.update(env)
+        sys.executable = str(fake_py)
+        try:
+            msgs: list[str] = []
+            res = R.update_ytdlp(msgs.append)
+        finally:
+            sys.executable = saved_exe
+            os.environ.clear()
+            os.environ.update(saved_env)
+        return res, msgs, pip_log.read_text().splitlines() if pip_log.exists() else []
+
+    # -U 가 pip 설치본이라고 알려주면 바로 pip
+    res, msgs, pip = update("ERROR: You installed yt-dlp with pip or using the wheel from PyPi; Use that to update")
     assert res["pip"]["exit"] == 0 and "Successfully installed" in res["pip"]["output"]
-    assert pip_log.read_text().strip() == "-m pip install -U yt-dlp"
-    assert any("pip install -U yt-dlp" in m for m in msgs) and res["after"] == "2026.08.19"
+    assert pip == ["-m pip install -U yt-dlp"] and res["after"] == "2026.08.19"
+    assert any("pip install -U yt-dlp" in m for m in msgs)
+    # -U 가 네트워크 등으로 실패 + pip 설치본이면 pip
+    res, msgs, pip = update("ERROR: Unable to obtain version info ([SSL: CERTIFICATE_VERIFY_FAILED]); "
+                            "Please try again later")
+    assert pip == ["-m pip show yt-dlp", "-m pip install -U yt-dlp"] and res["pip"]["exit"] == 0
+    # 최신이면 pip 안 건드림
+    res, msgs, pip = update(None)
+    assert pip == [] and "pip" not in res and res["self_update"]["exit"] == 0
 
 
 # ================================================================ Data API 백엔드 (로컬 흉내)

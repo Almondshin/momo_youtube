@@ -213,6 +213,7 @@ def render_all(segs: list[Seg], cfg: dict, font: Path, work: Path, jobs: int, us
     log(f"세그먼트 {len(segs)}개 — 캐시 {len(segs) - len(todo)}개, 렌더 {len(todo)}개 (병렬 {jobs})")
     if not todo:
         return
+    todo.sort(key=lambda s: -s.frames * (3 if s.plan.source_kind == "image" else 1))  # 오래 걸리는 것부터
     done = 0
     with ThreadPoolExecutor(max_workers=jobs) as ex:
         futs = {ex.submit(_timed, render_seg, s, cfg, font, work): s for s in todo}

@@ -7,6 +7,7 @@
 """
 from __future__ import annotations
 
+import importlib.util
 import json
 import os
 import re
@@ -249,11 +250,9 @@ def ytdlp_cmd() -> list[str]:
     exe = shutil.which("yt-dlp")
     if exe:
         return [exe]
-    try:
-        import yt_dlp  # noqa: F401
+    if importlib.util.find_spec("yt_dlp"):
         return [sys.executable, "-m", "yt_dlp"]
-    except ImportError:
-        raise MomoError("yt-dlp 가 없음: pip install -U yt-dlp") from None
+    raise MomoError("yt-dlp 가 없음: pip install -U yt-dlp")
 
 
 def _tail(text: str, n: int = 30) -> str:
@@ -268,21 +267,33 @@ def ytdlp_version() -> str | None:
         return None
 
 
+def _pip_has_ytdlp() -> bool:
+    try:
+        q = subprocess.run([sys.executable, "-m", "pip", "show", "yt-dlp"], capture_output=True, text=True, timeout=60)
+    except (OSError, subprocess.TimeoutExpired):
+        return False
+    return q.returncode == 0 and "Name: yt-dlp" in q.stdout
+
+
 def update_ytdlp(log: Callable[[str], None] = print) -> dict:
-    """yt-dlp -U → pip 설치본이라 안 되면 pip install -U yt-dlp. 실패해도 계속 (기록만)."""
+    """yt-dlp -U → pip 설치본이라 안 되면(또는 -U 가 실패했는데 pip 설치본이면) pip install -U yt-dlp.
+
+    실패해도 계속 진행하고 결과만 기록한다.
+    """
     res: dict[str, Any] = {"before": ytdlp_version()}
     try:
         p = subprocess.run(ytdlp_cmd() + ["-U"], capture_output=True, text=True, timeout=300)
         out = _tail(p.stdout + "\n" + p.stderr, 6)
         res["self_update"] = {"exit": p.returncode, "output": out}
-        if re.search(r"\bpip\b|pypi|package manager|cannot update", out, re.I):
-            log("  yt-dlp -U 로는 갱신할 수 없는 설치 → pip install -U yt-dlp 시도")
+        failed = p.returncode != 0 or "ERROR" in out
+        if re.search(r"\bpip\b|pypi|package manager|cannot update", out, re.I) or (failed and _pip_has_ytdlp()):
+            log(f"  yt-dlp -U 로 갱신 못함:\n{out}\n  → pip install -U yt-dlp 시도")
             q = subprocess.run([sys.executable, "-m", "pip", "install", "-U", "yt-dlp"],
                                capture_output=True, text=True, timeout=600)
             res["pip"] = {"exit": q.returncode, "output": _tail(q.stdout + "\n" + q.stderr, 4)}
             if q.returncode != 0:
                 log(f"  pip 갱신 실패 (계속 진행):\n{res['pip']['output']}")
-        elif p.returncode != 0 or "ERROR" in out:
+        elif failed:
             log(f"  yt-dlp -U 실패 (계속 진행):\n{out}")
     except (OSError, subprocess.TimeoutExpired, MomoError) as e:
         res["error"] = str(e)
@@ -313,7 +324,7 @@ class YtDlp:
         self.calls = 0
 
     def _opts(self) -> list[str]:
-        opts = ["--no-progress", "--ignore-config"]
+        opts = ["--no-progress"]
         if self.sleep:
             opts += ["--sleep-requests", "1"]
         if self.use_cookies:
@@ -321,11 +332,14 @@ class YtDlp:
         return opts
 
     def run(self, args: list[str], what: str, want_json: bool = False) -> Any:
-        """성공하면 stdout(want_json 이면 파싱된 dict). 봇 계열이 아닌 실패는 MomoError(bot=False)."""
+        """성공하면 stdout(want_json 이면 파싱된 dict). 실패는 YtDlpError(bot=봇 차단 여부)."""
         tried = ["기본"] + (["--sleep-requests 1"] if self.sleep else []) + (["쿠키"] if self.use_cookies else [])
         while True:
             self.calls += 1
-            p = subprocess.run(self.cmd + self._opts() + args, capture_output=True, text=True)
+            try:
+                p = subprocess.run(self.cmd + self._opts() + args, capture_output=True, text=True)
+            except OSError as e:
+                raise MomoError(f"yt-dlp 실행 실패 ({' '.join(self.cmd)}): {e}") from e
             if want_json:
                 try:
                     data = json.loads(p.stdout) if p.stdout.strip() else None
@@ -353,6 +367,8 @@ class YtDlp:
                     continue
                 hint = "" if self.cookie_args else (
                     "\n→ 브라우저 쿠키로 재시도하려면 --cookies-from-browser chrome (또는 --cookies cookies.txt) 를 붙여 다시 실행.")
+                if re.search(r"proxy|tunnel connection", err, re.I):
+                    hint += "\n→ 프록시/네트워크에서 youtube.com 이 막힌 것으로 보임: 1단계는 --backend api (YOUTUBE_API_KEY) 로 대체 가능."
                 raise YtDlpError(f"yt-dlp 차단으로 중단 ({what}). 시도: {' → '.join(tried)}{hint}\n"
                                  f"--- yt-dlp 에러 원문 ---\n{_tail(err, 40)}", bot=True)
             raise YtDlpError(f"yt-dlp 실패 ({what}, exit {p.returncode})\n--- yt-dlp 에러 원문 ---\n{_tail(err, 40)}",
@@ -523,7 +539,7 @@ def build_summary(flat: dict, *, url: str | None, backend: str, source: str, lim
                   popular_flat: dict | None = None, popular_note: str | None = None,
                   fetched_at: datetime | None = None) -> dict:
     """flat-playlist(또는 API 가 만든 같은 모양) → channel_summary.json. 인기순 방법도 여기서 결정."""
-    entries = [_slim(e) for e in flat_entries(flat)]
+    entries = [_slim(e) for e in flat_entries(flat) if e.get("live_status") not in ("is_upcoming", "is_live")]
     if not entries:
         raise MomoError("영상 목록이 비어 있음 (채널 URL 확인: /videos 탭에 영상이 있어야 함)")
     by_views = sorted((e for e in entries if e.get("view_count") is not None),

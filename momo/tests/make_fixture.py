@@ -96,7 +96,7 @@ SKELETON = [
          ko="이제 여기를 봐. 이건 뭘까? [pause 2] {kb}이야! 커다란 {kb} {kob}!", kw="b", obj=1, color="yellow",
          beeps={"en": [4.4, 4.1], "ko": [4.9, 4.5]}, img="[Momo] looking at a big {b} {ob} on the grass"),
     dict(scene=3, type="S", en="{Bc} {ob}! {Bc}!", ko="{kb} {kob}! {kb}!", kw="b", obj=1, momo=False, border=True,
-         img="a big {b} {ob} on a soft pastel background, close-up"),
+         size=(1536, 864), img="a big {b} {ob} on a soft pastel background, close-up"),
     dict(scene=3, type="V", en="Momo smiles at the {b} {ob}.", ko="모모가 {kb} {kob}를 보고 웃어.", kw="b", obj=1,
          clip_audio=True, img="[Momo] smiling at a {b} {ob}"),
     dict(scene=3, type="V", en="Can you find {b}? [pause 1.5] Yes, {b}!", ko="{kb}을 찾아볼까? [pause 1.5] 맞아, {kb}!",
@@ -230,7 +230,7 @@ def draw_duck(d: ImageDraw.ImageDraw, cx: float, by: float, u: float) -> None:
     d.ellipse([cx + 0.01 * u, by - 0.27 * u, cx + 0.035 * u, by - 0.245 * u], fill=(20, 20, 20))
 
 
-def draw_image(size: tuple[int, int], cut: dict, spec: dict, rgb, label: str, font_path: Path, seed: float) -> Image.Image:
+def draw_image(size: tuple[int, int], spec: dict, rgb, label: str, font_path: Path, seed: float) -> Image.Image:
     W, H = size
     hue_top = np.array([150 + 60 * seed, 205 + 30 * seed, 250])
     t = np.linspace(0, 1, H)[:, None, None]
@@ -394,10 +394,10 @@ def make_episode(root: Path, ep: str, topic_idx: int) -> None:
             if sk.get("border"):
                 cut["inset"] = None  # 자동 감지 경로
             cut["gen"] = {}
-            size = IMAGE_SIZES[n_img % len(IMAGE_SIZES)]
+            size = sk.get("size") or IMAGE_SIZES[n_img % len(IMAGE_SIZES)]
             n_img += 1
             rgb = tp["rgb"][sk["obj"]] if "obj" in sk else None
-            img = draw_image(size, cut, sk, rgb, f"{ep} {cid} {size[0]}x{size[1]}", font, h01(ep, cid))
+            img = draw_image(size, sk, rgb, f"{ep} {cid} {size[0]}x{size[1]}", font, h01(ep, cid))
             src = remote / "images" / f"{cid}.png"
             src.parent.mkdir(parents=True, exist_ok=True)
             img.save(src)

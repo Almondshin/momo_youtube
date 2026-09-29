@@ -1,0 +1,11 @@
+{
+  "channels": [
+    {"slug": "cocomelon", "url": "https://www.youtube.com/@CoComelon"},
+    {"slug": "supersimplesongs", "url": "https://www.youtube.com/@SuperSimpleSongs"}
+  ],
+  "limit": 2000,
+  "top": 5,
+  "recent": 15,
+  "samples": true,
+  "frames": 36
+}

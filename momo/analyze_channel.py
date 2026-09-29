@@ -107,7 +107,8 @@ def fetch_offline(args, url: str | None, limit: int, bench: dict) -> tuple[dict,
     return summary, metas, {"channel.json": flat, "popular.json": pop}
 
 
-def write_outputs(out: Path, summary: dict, metas: dict, labels_arg: str | None, now, bench: dict) -> dict:
+def write_outputs(out: Path, summary: dict, metas: dict, labels_arg: str | None, now, bench: dict,
+                  keep_samples: bool = False) -> dict:
     labels_path = Path(labels_arg) if labels_arg else out / "labels.json"
     if labels_arg and not labels_path.is_absolute() and not labels_path.exists():
         labels_path = out / labels_arg
@@ -117,12 +118,12 @@ def write_outputs(out: Path, summary: dict, metas: dict, labels_arg: str | None,
     data = analyze(summary, metas, labels, now, bench)
     data["fetch"] = {"ytdlp": summary.get("ytdlp"), "api": summary.get("api"),
                      "meta_failures": summary.get("meta_failures") or []}
-    old = out / "data.json"
-    if old.exists():
-        prev = load_json(old)
-        if prev.get("samples"):
-            data["samples"] = prev["samples"]
-    save_json(old, data)
+    data_path = out / "data.json"
+    if keep_samples and data_path.exists():  # report 재계산은 2단계 결과를 보존
+        prev = load_json(data_path).get("samples")
+        if prev:
+            data["samples"] = prev
+    save_json(data_path, data)
     (out / "report.md").write_text(render_report(data), encoding="utf-8")
     save_json(out / "labels.template.json", labels_template(data))
 
@@ -163,7 +164,7 @@ def cmd_report(argv: list[str]) -> int:
     metas = {p.stem: load_json(p) for p in sorted((out / "meta").glob("*.json"))}
     prev_now = load_json(out / "data.json").get("now") if (out / "data.json").exists() else None
     now = parse_now(args.now or prev_now or summary.get("fetched_at"))
-    write_outputs(out, summary, metas, args.labels, now, bench)
+    write_outputs(out, summary, metas, args.labels, now, bench, keep_samples=True)
     return 0
 
 
@@ -193,7 +194,7 @@ def main(argv: list[str] | None = None) -> int:
     limit = args.limit or int(bench.get("playlist_end") or 2000)
     if limit < 1:
         raise MomoError("--limit 은 1 이상")
-    url = args.url or bench.get("channel_url")
+    url = args.url or (None if args.offline_json else bench.get("channel_url"))
     url = normalize_channel_url(url) if url else None
     if not url and not args.offline_json:
         raise MomoError("--url 로 벤치마킹 채널 링크를 줘 (영상 링크가 아니라 채널 링크)")

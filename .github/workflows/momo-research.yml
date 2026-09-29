@@ -1,0 +1,93 @@
+name: momo-research
+
+# 벤치마킹 1~2단계 원격 수집. 세션 네트워크가 youtube.com 을 막을 때 러너에서 yt-dlp 를 돌린다.
+# 트리거: momo/research/requests/*.json 을 커밋·푸시하거나, Actions 탭에서 요청 파일 이름으로 수동 실행.
+on:
+  push:
+    paths:
+      - 'momo/research/requests/*.json'
+  workflow_dispatch:
+    inputs:
+      request:
+        description: 'momo/research/requests/ 아래 요청 파일 이름 (예: bench1.json)'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: momo-research
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 도구 설치
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg
+          python -m pip install -q -U yt-dlp Pillow
+
+      - name: 요청 파일 결정
+        id: req
+        env:
+          INPUT_REQUEST: ${{ inputs.request }}
+        run: |
+          if [ -n "${INPUT_REQUEST:-}" ]; then
+            f="momo/research/requests/${INPUT_REQUEST}"
+          else
+            f=$(git log -1 --diff-filter=AM --name-only --format= -- 'momo/research/requests/*.json' | head -1)
+          fi
+          if ! [[ "$f" =~ ^momo/research/requests/[A-Za-z0-9_.-]+\.json$ ]] || [ ! -f "$f" ]; then
+            echo "요청 파일 경로가 잘못됨: '$f'" >&2
+            exit 1
+          fi
+          echo "file=$f" >> "$GITHUB_OUTPUT"
+
+      - name: 수집 (yt-dlp)
+        env:
+          REQ: ${{ steps.req.outputs.file }}
+        run: python momo/remote_research.py fetch --request "$REQ" --sealed-dir "$RUNNER_TEMP/sealed"
+
+      - name: 결과 커밋 (목록·메타·자막 텍스트·샷 통계)
+        if: always()
+        env:
+          REQ: ${{ steps.req.outputs.file }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git add momo/research
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -q -m "research: ${REQ##*/} 원격 수집 결과"
+          for i in 1 2 3 4; do
+            if git pull -q --rebase origin "$BRANCH" && git push -q origin "HEAD:$BRANCH"; then exit 0; fi
+            sleep $((i * 5))
+          done
+          exit 1
+
+      - name: 암호화된 프레임·썸네일 시트 → momo-research-sealed 브랜치
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          d="$RUNNER_TEMP/sealed"
+          if [ ! -d "$d" ] || [ -z "$(ls -A "$d")" ]; then echo "암호화된 시트 없음"; exit 0; fi
+          cd "$d"
+          git init -q -b momo-research-sealed
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "sealed research sheets (RSA-OAEP + AES-256, 세션 비공개키로만 복호화)"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" momo-research-sealed
