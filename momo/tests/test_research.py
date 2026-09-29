@@ -502,9 +502,9 @@ def test_cli_offline_and_report(tmp: Path):
                "--offline-popular", str(FIX / "channel_popular.json"), "--now", NOW)
     out = root / "research" / "tinytotssing"
     assert "채널 상태: 정체" in p.stdout and "격차 최대 축: 학습 소재" in p.stdout
-    for f in ("report.md", "data.json", "channel_summary.json", "labels.template.json", "raw/channel.json",
-              "raw/popular.json"):
+    for f in ("report.md", "data.json", "channel_summary.json", "labels.template.json"):
         assert (out / f).exists(), f
+    assert not (out / "raw").exists()  # 오프라인 입력은 복사하지 않음
     assert len(list((out / "meta").glob("*.json"))) == 20
     meta = load(out / "meta" / "tts003VidD3.json")
     assert set(meta) == set(R.META_FIELDS)  # 필요한 필드만
@@ -533,6 +533,33 @@ def test_cli_offline_and_report(tmp: Path):
     p = script("analyze_channel.py", "--root", str(root), "--url", "https://www.youtube.com/watch?v=abcdefghijk",
                check=False)
     assert p.returncode == 1 and "채널 링크" in p.stderr
+
+
+@test
+def test_offline_remote_layout(tmp: Path):
+    """remote_research.py 가 받아온 배치 (research/<slug>/raw + meta) 에서 제자리 분석. 입력은 그대로 둔다."""
+    root = new_root(tmp)
+    out = root / "research" / "tinytotssing"
+    (out / "raw").mkdir(parents=True)
+    shutil.copy(FIX / "channel.json", out / "raw" / "channel.json")
+    shutil.copy(FIX / "channel_popular.json", out / "raw" / "popular.json")
+    shutil.copytree(FIX / "meta", out / "meta")
+    before = {p.name: p.read_bytes() for p in (out / "meta").glob("*.json")}
+    raw_before = (out / "raw" / "channel.json").read_bytes()
+    elsewhere = tmp / "cwd"
+    elsewhere.mkdir()
+    p = subprocess.run([sys.executable, str(MOMO / "analyze_channel.py"), "--root", str(root),
+                        "--offline-json", "research/tinytotssing/raw/channel.json",
+                        "--offline-popular", "research/tinytotssing/raw/popular.json", "--now", NOW],
+                       capture_output=True, text=True, cwd=elsewhere)
+    assert p.returncode == 0, p.stderr
+    assert {p.name: p.read_bytes() for p in (out / "meta").glob("*.json")} == before
+    assert (out / "raw" / "channel.json").read_bytes() == raw_before
+    d = load(out / "data.json")
+    assert d["popular"]["method"] == "sort=p" and d["status"]["label"] == "정체" and not d["fetch"]["meta_failures"]
+    assert d["videos"]["tts003VidD3"]["tags"] == ["colors", "kids songs"]  # 메타(../meta)를 찾아 씀
+    script("analyze_channel.py", "report", "--dir", str(out), "--root", str(root))
+    assert load(out / "data.json")["metrics"] == d["metrics"]
 
 
 # ================================================================ yt-dlp 경로 (가짜 yt-dlp)

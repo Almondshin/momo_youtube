@@ -89,14 +89,19 @@ def fetch_api(url: str, limit: int, bench: dict) -> tuple[dict, dict, dict]:
     return summary, metas, {"channel.json": raw, "popular.json": None}
 
 
-def fetch_offline(args, url: str | None, limit: int, bench: dict) -> tuple[dict, dict, dict]:
-    src = Path(args.offline_json)
+def fetch_offline(paths, args, url: str | None, limit: int, bench: dict) -> tuple[dict, dict, Path]:
+    """→ (summary, metas, 메타 폴더). 상대 경로는 현재 폴더 → --root 순으로 찾는다."""
+    src = resolve_dir(paths, args.offline_json)
     flat = load_json(src)
-    pop = load_json(Path(args.offline_popular)) if args.offline_popular else None
+    pop = load_json(resolve_dir(paths, args.offline_popular)) if args.offline_popular else None
     summary = build_summary(flat, url=url, backend="ytdlp", source=f"offline:{src.name}", limit=limit,
                             top_n=bench["top_count"], popular_flat=pop,
                             popular_note=None if pop else "오프라인: 인기순 결과 없음")
-    meta_dir = Path(args.offline_meta) if args.offline_meta else src.parent / "meta"
+    if args.offline_meta:
+        meta_dir = resolve_dir(paths, args.offline_meta)
+    else:  # <폴더>/channel.json 옆 meta/ 또는 research/<slug>/raw/channel.json 의 ../meta/
+        meta_dir = next((d for d in (src.parent / "meta", src.parent.parent / "meta") if d.is_dir()),
+                        src.parent / "meta")
     metas = {}
     for vid in union_ids(summary, bench["recent_count"]):
         p = meta_dir / f"{vid}.json"
@@ -104,7 +109,7 @@ def fetch_offline(args, url: str | None, limit: int, bench: dict) -> tuple[dict,
             metas[vid] = trim_meta(load_json(p))
     summary["meta_failures"] = [{"id": v, "error": "오프라인 메타 없음"}
                                 for v in union_ids(summary, bench["recent_count"]) if v not in metas]
-    return summary, metas, {"channel.json": flat, "popular.json": pop}
+    return summary, metas, meta_dir
 
 
 def write_outputs(out: Path, summary: dict, metas: dict, labels_arg: str | None, now, bench: dict,
@@ -200,8 +205,10 @@ def main(argv: list[str] | None = None) -> int:
         raise MomoError("--url 로 벤치마킹 채널 링크를 줘 (영상 링크가 아니라 채널 링크)")
     now = parse_now(args.now)
 
+    meta_src = None
     if args.offline_json:
-        summary, metas, raw = fetch_offline(args, url, limit, bench)
+        summary, metas, meta_src = fetch_offline(paths, args, url, limit, bench)
+        raw = {}  # 입력 파일을 그대로 둔다
     else:
         if args.backend == "ytdlp" and not args.no_update:
             log("yt-dlp 최신화 시도 (yt-dlp -U)")
@@ -215,16 +222,16 @@ def main(argv: list[str] | None = None) -> int:
 
     slug = channel_slug(url, fallback=summary["channel"].get("handle") or summary["channel"].get("id"))
     out = resolve_dir(paths, args.out) if args.out else paths.research / slug
-    (out / "raw").mkdir(parents=True, exist_ok=True)
     for name, obj in raw.items():
         if obj is not None:
             save_json(out / "raw" / name, obj)
     save_json(out / "channel_summary.json", summary)
     meta_dir = out / "meta"
-    if meta_dir.exists():
-        shutil.rmtree(meta_dir)  # 이전 수집의 메타가 섞이지 않게
-    for vid, m in metas.items():
-        save_json(meta_dir / f"{vid}.json", m)
+    if not (meta_src and meta_src.resolve() == meta_dir.resolve()):  # 입력 메타 폴더면 건드리지 않음
+        if meta_dir.exists():
+            shutil.rmtree(meta_dir)  # 이전 수집의 메타가 섞이지 않게
+        for vid, m in metas.items():
+            save_json(meta_dir / f"{vid}.json", m)
     write_outputs(out, summary, metas, args.labels, now, bench)
     return 0
 
