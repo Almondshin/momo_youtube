@@ -73,9 +73,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 146.5,
-    "generations": 43,
-    "regenerations": 10,
+    "spent": 148.5,
+    "generations": 44,
+    "regenerations": 11,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
   "notes": {
@@ -870,22 +870,30 @@
         "en": "TOOTHBRUSH",
         "ko": "칫솔"
       },
-      "image_prompt": "a neat row of a small toothbrush with a yellow handle and mint-green bristles, a plain white toothpaste tube and a small mint-green cup on the edge of the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, soft morning light, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "close-up still life of three items standing side by side in a neat row on the edge of a white rounded sink: a small toothbrush with a yellow handle and mint-green bristles, a plain white toothpaste tube and a small mint-green cup, no characters, soft light-blue square tiles softly blurred behind, soft morning light, clear empty pastel wall space in the upper third of the frame",
       "momo": false,
       "gen": {
         "image": {
           "status": "generated",
-          "job_id": "dff497ef-182a-4f04-b6bf-f137e30cc02e",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093051_dff497ef-182a-4f04-b6bf-f137e30cc02e.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "3705088d-3ea0-42ec-a282-b2a19bee86aa",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093637_3705088d-3ea0-42ec-a282-b2a19bee86aa.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "dff497ef-182a-4f04-b6bf-f137e30cc02e",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093051_dff497ef-182a-4f04-b6bf-f137e30cc02e.png",
+              "status": "rejected",
+              "reason": "c15 참조를 거의 복사 — 모모·더키 등장, 소품 3종이 작게 보임 (S 컷 정물 아님)",
+              "at": "2026-09-29T09:31Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "3705088d-3ea0-42ec-a282-b2a19bee86aa",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093637_3705088d-3ea0-42ec-a282-b2a19bee86aa.png",
               "status": "generated",
               "reason": null,
-              "at": "2026-09-29T09:31Z",
+              "at": "2026-09-29T09:36Z",
               "credits": 2.0
             }
           ],
