@@ -110,8 +110,9 @@ def compose_image_prompt(cfg: dict, cut: dict) -> str:
     has_tag = "[Momo]" in raw
     body = raw.replace("[Momo]", " ")
     tags = cfg["character"].get("tags") or {"[Ducky]": "ducky"}
-    for tag, key in tags.items():  # 조연 태그는 그 자리에서 캐릭터 블록으로 치환
-        body = body.replace(tag, (cfg["character"].get(key) or "").strip())
+    for tag, key in tags.items():  # 조연 태그는 그 자리에서 캐릭터 블록으로 치환 (블록 끝에 쉼표로 문장 분리)
+        body = body.replace(tag, (cfg["character"].get(key) or "").strip().rstrip(",.") + ",")
+    body = re.sub(r",\s*,", ",", body)
     body = WS_RE.sub(" ", body).strip(" ,.;")
     parts = []
     if has_tag or cut.get("momo", True):

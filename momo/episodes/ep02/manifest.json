@@ -90,7 +90,8 @@
       "2026-09-29 욕실 세트 묘사 고정(sets.bathroom) — 욕실 컷 프롬프트에 반영",
       "2026-09-29 씬1 이미지 3장(c02·c03·c04) 승인 → c02·c03 영상 변환",
       "2026-09-29 c02·c03 클립 승인 → 씬2 이미지 진행",
-      "2026-09-29 씬2 이미지 4장(c05·c06·c07·c09) 승인 → c06·c09 영상 + 씬3 이미지"
+      "2026-09-29 씬2 이미지 4장(c05·c06·c07·c09) 승인 → c06·c09 영상 + 씬3 이미지",
+      "2026-09-29 c06·c09 클립, 씬3 이미지 4장 승인 → c10~c12 클립 + 씬4 이미지"
     ],
     "next_time": [],
     "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도"
@@ -311,7 +312,7 @@
           ]
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "ab2ecdaa-425b-4dc1-acab-a4ccade25f48",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080852_ab2ecdaa-425b-4dc1-acab-a4ccade25f48.mp4",
           "attempts": 1,
@@ -320,7 +321,7 @@
             {
               "job_id": "ab2ecdaa-425b-4dc1-acab-a4ccade25f48",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080852_ab2ecdaa-425b-4dc1-acab-a4ccade25f48.mp4",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -413,7 +414,7 @@
           ]
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "401facef-4d85-4dd0-8094-1a3a01c51817",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080856_401facef-4d85-4dd0-8094-1a3a01c51817.mp4",
           "attempts": 1,
@@ -422,7 +423,7 @@
             {
               "job_id": "401facef-4d85-4dd0-8094-1a3a01c51817",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080856_401facef-4d85-4dd0-8094-1a3a01c51817.mp4",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -444,7 +445,7 @@
       "motion": "brushes the teeth with small up and down strokes, ears bounce",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "caa2d793-c563-4bda-abd0-a5a67f5588f2",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080859_caa2d793-c563-4bda-abd0-a5a67f5588f2.png",
           "attempts": 1,
@@ -453,7 +454,7 @@
             {
               "job_id": "caa2d793-c563-4bda-abd0-a5a67f5588f2",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080859_caa2d793-c563-4bda-abd0-a5a67f5588f2.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -475,7 +476,7 @@
       "motion": "brushes with small upward strokes and blinks",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "3cd3c337-916c-4c56-9d34-d91c0b24e234",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080906_3cd3c337-916c-4c56-9d34-d91c0b24e234.png",
           "attempts": 1,
@@ -484,7 +485,7 @@
             {
               "job_id": "3cd3c337-916c-4c56-9d34-d91c0b24e234",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080906_3cd3c337-916c-4c56-9d34-d91c0b24e234.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -506,7 +507,7 @@
       "motion": "brushes with small downward strokes, small nod",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "65f918b9-ff61-45af-802d-3a04c27db5a2",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080912_65f918b9-ff61-45af-802d-3a04c27db5a2.png",
           "attempts": 1,
@@ -515,7 +516,7 @@
             {
               "job_id": "65f918b9-ff61-45af-802d-3a04c27db5a2",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080912_65f918b9-ff61-45af-802d-3a04c27db5a2.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -536,7 +537,7 @@
       "image_prompt": "[Momo] seen from the waist up with a big foamy smile, holding a small toothbrush with a yellow handle and mint-green bristles near the mouth, twinkling eyes, soft pastel-yellow background with empty space above the head, only one single Momo in the frame, no duplicate heads, no second character",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "c46e24d2-e8e4-4609-b777-64a6aa326cd1",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_081333_c46e24d2-e8e4-4609-b777-64a6aa326cd1.png",
           "attempts": 2,
@@ -551,11 +552,12 @@
             {
               "job_id": "c46e24d2-e8e4-4609-b777-64a6aa326cd1",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_081333_c46e24d2-e8e4-4609-b777-64a6aa326cd1.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
-      }
+      },
+      "text_pos": "bottom"
     },
     {
       "id": "c14",
