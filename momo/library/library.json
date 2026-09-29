@@ -332,40 +332,84 @@
       "intro": {
         "file": "audio/en/intro.wav",
         "text": "Hi friends! It's Momo!",
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "107e5993-35e2-485b-bb0e-87c45d3e409c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110931_107e5993-35e2-485b-bb0e-87c45d3e409c.wav",
+        "attempts": 1,
+        "credits": 0.2,
+        "history": [
+          {
+            "job_id": "107e5993-35e2-485b-bb0e-87c45d3e409c",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110931_107e5993-35e2-485b-bb0e-87c45d3e409c.wav",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T11:09Z",
+            "credits": 0.2
+          }
+        ],
+        "reason": null
       },
       "outro": {
         "file": "audio/en/outro.wav",
         "text": "Bye-bye, friends! See you next time!",
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "f8c7e0be-24d4-4e7f-bdb1-8602d82cdc6f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110929_f8c7e0be-24d4-4e7f-bdb1-8602d82cdc6f.wav",
+        "attempts": 1,
+        "credits": 0.2,
+        "history": [
+          {
+            "job_id": "f8c7e0be-24d4-4e7f-bdb1-8602d82cdc6f",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110929_f8c7e0be-24d4-4e7f-bdb1-8602d82cdc6f.wav",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T11:09Z",
+            "credits": 0.2
+          }
+        ],
+        "reason": null
       }
     },
     "ko": {
       "intro": {
         "file": "audio/ko/intro.wav",
         "text": "안녕, 친구들! 나는 모모야!",
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "84627c39-1a51-4096-b399-ae376608054c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110931_84627c39-1a51-4096-b399-ae376608054c.wav",
+        "attempts": 1,
+        "credits": 0.2,
+        "history": [
+          {
+            "job_id": "84627c39-1a51-4096-b399-ae376608054c",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110931_84627c39-1a51-4096-b399-ae376608054c.wav",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T11:09Z",
+            "credits": 0.2
+          }
+        ],
+        "reason": null
       },
       "outro": {
         "file": "audio/ko/outro.wav",
         "text": "친구들, 안녕! 다음에 또 만나!",
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "a42d07c6-e26f-4491-8398-c60cb532f955",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_a42d07c6-e26f-4491-8398-c60cb532f955.wav",
+        "attempts": 1,
+        "credits": 0.2,
+        "history": [
+          {
+            "job_id": "a42d07c6-e26f-4491-8398-c60cb532f955",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_a42d07c6-e26f-4491-8398-c60cb532f955.wav",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T11:09Z",
+            "credits": 0.2
+          }
+        ],
+        "reason": null
       }
     }
   },
