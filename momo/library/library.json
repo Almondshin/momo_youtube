@@ -232,21 +232,29 @@
     },
     "transition": {
       "file": "clips/transition.mp4",
-      "image_prompt": "[Momo] standing slightly left of center on a soft mint-green simple background, body turned toward the right side, ready to hop",
+      "image_prompt": "[Momo] one single full-body shot in a simple scene, not a character sheet, no turnaround, no multiple views, only one single Momo in the frame, standing slightly left of center on a plain soft mint-green background, body turned toward the right side, one foot lifted, ready to hop to the right, empty space on the right side",
       "motion": "hops happily to the right and out of the frame with small bouncy hops, camera stays still",
       "image": {
         "status": "generated",
-        "job_id": "674a9689-ae96-482e-ae11-9ec67a317591",
-        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105150_674a9689-ae96-482e-ae11-9ec67a317591.png",
-        "attempts": 1,
-        "credits": 2.0,
+        "job_id": "901d59e9-2085-46e1-804c-20049b4c51ad",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105642_901d59e9-2085-46e1-804c-20049b4c51ad.png",
+        "attempts": 2,
+        "credits": 4.0,
         "history": [
           {
             "job_id": "674a9689-ae96-482e-ae11-9ec67a317591",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105150_674a9689-ae96-482e-ae11-9ec67a317591.png",
+            "status": "rejected",
+            "reason": "장면 대신 캐릭터 시트(턴어라운드+표정)를 다시 그림",
+            "at": "2026-09-29T10:51Z",
+            "credits": 2.0
+          },
+          {
+            "job_id": "901d59e9-2085-46e1-804c-20049b4c51ad",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105642_901d59e9-2085-46e1-804c-20049b4c51ad.png",
             "status": "generated",
             "reason": null,
-            "at": "2026-09-29T10:51Z",
+            "at": "2026-09-29T10:56Z",
             "credits": 2.0
           }
         ],
