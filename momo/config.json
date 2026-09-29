@@ -28,11 +28,11 @@
     "compilation_min_seconds": 1800
   },
   "character": {
-    "momo": "Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with one yellow button, big expressive smile",
+    "momo": "Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile",
     "ducky": "Ducky, a tiny round yellow duckling with an orange beak, no clothes",
     "rules": [
       "의상·색·비율을 바꾸지 말 것. 우비 등은 멜빵바지 위에 덧입힌다.",
-      "노란 단추 하나는 항상 보이게 (씬 간 일관성 시그니처).",
+      "노란 멜빵 단추(양쪽 2개)는 항상 보이게 — 씬 간 일관성 시그니처. (원 지시서는 '단추 하나'였으나 모델이 3회 연속 2개로 그려 1차 시트를 승인, 2026-09-29 사용자 결정)",
       "조연(Ducky·Toto·Sunny)은 필요한 에피소드에서만. 이빨·날카로운 발톱 등 무서운 요소 금지.",
       "Toto 의 주황 반다나, Sunny 의 산호색 별 무늬는 항상 보이게 (씬 간 식별 표식)."
     ],
@@ -65,8 +65,8 @@
     "workspace_id": "fb766d72-66ff-4adc-ab14-0d3e5f907d58",
     "project_id": "53b4c309-6284-47c1-9349-6f90ff1bbf29",
     "folder_id": "53b4c309-6284-47c1-9349-6f90ff1bbf29",
-    "momo_element_id": null,
-    "ducky_element_id": null,
+    "momo_element_id": "751ad258-9d01-47d8-8bf8-94de57a74b0c",
+    "ducky_element_id": "698be761-b69a-4ba3-9dad-089aeab4d954",
     "image_resolution": "2k",
     "video_resolution": "720p",
     "max_parallel_images": 4,
@@ -76,6 +76,12 @@
       "video_1080p_5s": 10,
       "audio_block": 0.2,
       "checked_at": "2026-09-29"
+    },
+    "element_ids": {
+      "momo": "751ad258-9d01-47d8-8bf8-94de57a74b0c",
+      "ducky": "698be761-b69a-4ba3-9dad-089aeab4d954",
+      "croc": "ae63002c-f8e5-4546-8c2a-e3afa29dc4df",
+      "shark": "3bc5d0bb-4984-4065-9ae0-3a7038503ce4"
     }
   },
   "voices": {

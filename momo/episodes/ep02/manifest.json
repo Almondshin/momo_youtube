@@ -73,8 +73,8 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 8,
-    "generations": 4,
+    "spent": 12.0,
+    "generations": 6,
     "regenerations": 2
   },
   "notes": {
@@ -83,7 +83,8 @@
       "2026-09-29 주제 A(양치하기) 승인",
       "2026-09-29 2단계 생략·기본 구조 진행 승인",
       "2026-09-29 4단계 기획표(plan.md) 승인 — 사물 5컷 캐릭터 블록 생략 해석 포함",
-      "2026-09-29 폰트: 나눔스퀘어라운드 Bold (OFL)"
+      "2026-09-29 폰트: 나눔스퀘어라운드 Bold (OFL)",
+      "2026-09-29 캐릭터 시트 승인: 모모(1차, 멜빵 단추 2개 시그니처), 더키, 토토(악어), 써니(상어) → Elements 등록"
     ],
     "next_time": [],
     "library_extra": "악어 Toto·상어 Sunny 캐릭터 시트 (사용자 요청, 다음 편용) — 4크레딧, ep02 예산과 별도"
@@ -117,7 +118,23 @@
         "ko": "아침"
       },
       "image_prompt": "[Momo] sitting up in a small cozy bed, stretching both arms up after waking, bright morning sunlight from a round window, soft pastel bedroom, clear empty pastel wall space in the upper third of the frame",
-      "motion": "stretches both arms up slowly and yawns, ears bounce gently"
+      "motion": "stretches both arms up slowly and yawns, ears bounce gently",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "7de22d4d-6a76-45c5-94f7-3068c856d850",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074451_7de22d4d-6a76-45c5-94f7-3068c856d850.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "7de22d4d-6a76-45c5-94f7-3068c856d850",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074451_7de22d4d-6a76-45c5-94f7-3068c856d850.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c03",
