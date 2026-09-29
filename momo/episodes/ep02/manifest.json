@@ -73,9 +73,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 106.5,
-    "generations": 34,
-    "regenerations": 9,
+    "spent": 108.5,
+    "generations": 35,
+    "regenerations": 10,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
   "notes": {
@@ -762,14 +762,20 @@
       "gen": {
         "image": {
           "status": "generated",
-          "job_id": "db3f6d59-287d-4563-9787-35f9964d89ba",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082725_db3f6d59-287d-4563-9787-35f9964d89ba.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "75ad1d14-8438-40ae-bb8f-d465c22c35c4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_083746_75ad1d14-8438-40ae-bb8f-d465c22c35c4.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "db3f6d59-287d-4563-9787-35f9964d89ba",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082725_db3f6d59-287d-4563-9787-35f9964d89ba.png",
+              "status": "rejected",
+              "reason": "화풍 이탈 (점토 질감, 작은 점눈)"
+            },
+            {
+              "job_id": "75ad1d14-8438-40ae-bb8f-d465c22c35c4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_083746_75ad1d14-8438-40ae-bb8f-d465c22c35c4.png",
               "status": "generated"
             }
           ]
