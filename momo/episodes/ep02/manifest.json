@@ -73,9 +73,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 234.0,
-    "generations": 118,
-    "regenerations": 12,
+    "spent": 247.5,
+    "generations": 119,
+    "regenerations": 13,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)",
     "cap": 525
   },
@@ -1959,18 +1959,27 @@
         },
         "clip_en": {
           "status": "generated",
-          "job_id": "767445fe-adf8-449a-9d45-fc3e3b900a3a",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_233452_767445fe-adf8-449a-9d45-fc3e3b900a3a.mp4",
-          "attempts": 1,
-          "credits": 9.0,
+          "job_id": "73f276f4-1aad-4c35-91ea-96079f29a8ed",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_234230_73f276f4-1aad-4c35-91ea-96079f29a8ed.mp4",
+          "attempts": 2,
+          "credits": 22.5,
           "history": [
             {
               "job_id": "767445fe-adf8-449a-9d45-fc3e3b900a3a",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_233452_767445fe-adf8-449a-9d45-fc3e3b900a3a.mp4",
-              "status": "generated",
-              "reason": null,
+              "status": "rejected",
+              "reason": "seedance_2_0_mini audio_references does not lip-sync (mouth closed during loud speech)",
               "at": "2026-09-29T23:34Z",
               "credits": 9.0,
+              "start_image": "220e611b-1880-4313-b135-f2e0b863faf0"
+            },
+            {
+              "job_id": "73f276f4-1aad-4c35-91ea-96079f29a8ed",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_234230_73f276f4-1aad-4c35-91ea-96079f29a8ed.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T23:42Z",
+              "credits": 13.5,
               "start_image": "220e611b-1880-4313-b135-f2e0b863faf0"
             }
           ],
@@ -2020,7 +2029,7 @@
         }
       },
       "lipsync": true,
-      "clip_model": "seedance_2_0_mini",
+      "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 9,
         "ko": 5
