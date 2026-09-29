@@ -1,5 +1,7 @@
-== cocomelon (https://www.youtube.com/@CoComelon) — 2026-09-29 07:17:23 UTC
+== cocomelon (https://www.youtube.com/@CoComelon) — 2026-09-29 07:20:09 UTC
 yt-dlp 2026.08.19
 (a) 목록 1351개, 구독자 203000000
 (d) 개별 메타 0개
+(썸네일 전체) 20/20장 시트
+(썸네일) 4장 시트
 완료

@@ -1,5 +1,7 @@
-== supersimplesongs (https://www.youtube.com/@SuperSimpleSongs) — 2026-09-29 07:17:38 UTC
+== supersimplesongs (https://www.youtube.com/@SuperSimpleSongs) — 2026-09-29 07:20:30 UTC
 yt-dlp 2026.08.19
 (a) 목록 777개, 구독자 47000000
 (d) 개별 메타 0개
+(썸네일 전체) 20/20장 시트
+(썸네일) 4장 시트
 완료
