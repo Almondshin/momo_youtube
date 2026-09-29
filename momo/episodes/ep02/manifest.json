@@ -73,8 +73,8 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 33.0,
-    "generations": 11,
+    "spent": 41.0,
+    "generations": 15,
     "regenerations": 4,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
@@ -88,7 +88,8 @@
       "2026-09-29 캐릭터 시트 승인: 모모(1차, 멜빵 단추 2개 시그니처), 더키, 토토(악어), 써니(상어) → Elements 등록",
       "2026-09-29 씬1: c02 승인, c03(표정)·c04(욕실 일관성) 재생성 결정 / 잉코 시트 승인·Elements 등록",
       "2026-09-29 욕실 세트 묘사 고정(sets.bathroom) — 욕실 컷 프롬프트에 반영",
-      "2026-09-29 씬1 이미지 3장(c02·c03·c04) 승인 → c02·c03 영상 변환"
+      "2026-09-29 씬1 이미지 3장(c02·c03·c04) 승인 → c02·c03 영상 변환",
+      "2026-09-29 c02·c03 클립 승인 → 씬2 이미지 진행"
     ],
     "next_time": [],
     "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도"
@@ -139,7 +140,7 @@
           ]
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "c0be571b-4a49-488b-b9f5-3776edb4433f",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075449_c0be571b-4a49-488b-b9f5-3776edb4433f.mp4",
           "attempts": 1,
@@ -148,7 +149,7 @@
             {
               "job_id": "c0be571b-4a49-488b-b9f5-3776edb4433f",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075449_c0be571b-4a49-488b-b9f5-3776edb4433f.mp4",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -190,7 +191,7 @@
           ]
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "741ee8f0-24de-43e3-80f8-bfa61d24ea8e",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075452_741ee8f0-24de-43e3-80f8-bfa61d24ea8e.mp4",
           "attempts": 1,
@@ -199,7 +200,7 @@
             {
               "job_id": "741ee8f0-24de-43e3-80f8-bfa61d24ea8e",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075452_741ee8f0-24de-43e3-80f8-bfa61d24ea8e.mp4",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -255,7 +256,23 @@
         "ko": "칫솔"
       },
       "image_prompt": "close-up of one small child toothbrush with soft mint-green bristles and a yellow handle lying on a soft cream counter, plain pastel background",
-      "momo": false
+      "momo": false,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "1c1d4c1a-a58b-4379-b619-30b415ac3ad1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075828_1c1d4c1a-a58b-4379-b619-30b415ac3ad1.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "1c1d4c1a-a58b-4379-b619-30b415ac3ad1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075828_1c1d4c1a-a58b-4379-b619-30b415ac3ad1.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c06",
@@ -270,7 +287,23 @@
         "ko": "칫솔"
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding up a small toothbrush with a yellow handle in one paw, proud happy face, clear empty pastel wall space in the upper third of the frame",
-      "motion": "lifts the toothbrush up a little and smiles, ears bounce"
+      "motion": "lifts the toothbrush up a little and smiles, ears bounce",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "0667541f-6c7d-4ea6-98f5-1c14ba5a5fa8",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075833_0667541f-6c7d-4ea6-98f5-1c14ba5a5fa8.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "0667541f-6c7d-4ea6-98f5-1c14ba5a5fa8",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075833_0667541f-6c7d-4ea6-98f5-1c14ba5a5fa8.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c07",
@@ -285,7 +318,23 @@
         "ko": "치약"
       },
       "image_prompt": "close-up of a small toothbrush with a tiny pea-size dot of white toothpaste on the bristles, next to a plain white toothpaste tube, soft pastel background",
-      "momo": false
+      "momo": false,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "bac8e5c5-a12e-4814-b032-dace16658db9",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075838_bac8e5c5-a12e-4814-b032-dace16658db9.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "bac8e5c5-a12e-4814-b032-dace16658db9",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075838_bac8e5c5-a12e-4814-b032-dace16658db9.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c08",
@@ -313,8 +362,24 @@
         "en": "TOOTHPASTE",
         "ko": "치약"
       },
-      "image_prompt": "[Momo] at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat holding a small toothbrush in one paw and a plain white toothpaste tube in the other paw, focused cute face, clear empty pastel wall space in the upper third of the frame",
-      "motion": "gently squeezes the tube over the toothbrush, small nod"
+      "image_prompt": "[Momo] at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush in one paw and a plain white toothpaste tube in the other paw, focused cute face, clear empty pastel wall space in the upper third of the frame",
+      "motion": "gently squeezes the tube over the toothbrush, small nod",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "964a12f9-4719-4743-b980-70efd4fb00d4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075844_964a12f9-4719-4743-b980-70efd4fb00d4.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "964a12f9-4719-4743-b980-70efd4fb00d4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075844_964a12f9-4719-4743-b980-70efd4fb00d4.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c10",
