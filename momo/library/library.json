@@ -140,7 +140,7 @@
         ],
         "reason": null
       },
-      "status": "generated",
+      "status": "approved",
       "job_id": "32398925-844f-44f7-82ea-10e2125c0a55",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110113_32398925-844f-44f7-82ea-10e2125c0a55.mp4",
       "attempts": 1,
@@ -149,7 +149,7 @@
         {
           "job_id": "32398925-844f-44f7-82ea-10e2125c0a55",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110113_32398925-844f-44f7-82ea-10e2125c0a55.mp4",
-          "status": "generated",
+          "status": "approved",
           "reason": null,
           "at": "2026-09-29T11:01Z",
           "credits": 7.5,
@@ -180,7 +180,7 @@
         ],
         "reason": null
       },
-      "status": "generated",
+      "status": "approved",
       "job_id": "7458d080-60a7-4b43-9326-a87f449edc7b",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110117_7458d080-60a7-4b43-9326-a87f449edc7b.mp4",
       "attempts": 1,
@@ -189,7 +189,7 @@
         {
           "job_id": "7458d080-60a7-4b43-9326-a87f449edc7b",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110117_7458d080-60a7-4b43-9326-a87f449edc7b.mp4",
-          "status": "generated",
+          "status": "approved",
           "reason": null,
           "at": "2026-09-29T11:01Z",
           "credits": 7.5,
@@ -220,7 +220,7 @@
         ],
         "reason": null
       },
-      "status": "generated",
+      "status": "approved",
       "job_id": "bcd6e291-bd0e-4cf6-ab34-33212e923259",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110121_bcd6e291-bd0e-4cf6-ab34-33212e923259.mp4",
       "attempts": 1,
@@ -229,7 +229,7 @@
         {
           "job_id": "bcd6e291-bd0e-4cf6-ab34-33212e923259",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110121_bcd6e291-bd0e-4cf6-ab34-33212e923259.mp4",
-          "status": "generated",
+          "status": "approved",
           "reason": null,
           "at": "2026-09-29T11:01Z",
           "credits": 7.5,
@@ -260,7 +260,7 @@
         ],
         "reason": null
       },
-      "status": "generated",
+      "status": "approved",
       "job_id": "35a5b5ff-9a7d-469d-a2b8-c35f2c56085f",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110127_35a5b5ff-9a7d-469d-a2b8-c35f2c56085f.mp4",
       "attempts": 1,
@@ -269,7 +269,7 @@
         {
           "job_id": "35a5b5ff-9a7d-469d-a2b8-c35f2c56085f",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110127_35a5b5ff-9a7d-469d-a2b8-c35f2c56085f.mp4",
-          "status": "generated",
+          "status": "approved",
           "reason": null,
           "at": "2026-09-29T11:01Z",
           "credits": 7.5,
@@ -308,7 +308,7 @@
         ],
         "reason": null
       },
-      "status": "generated",
+      "status": "approved",
       "job_id": "bb54105a-ab2a-4964-94c1-770529069fc0",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110141_bb54105a-ab2a-4964-94c1-770529069fc0.mp4",
       "attempts": 1,
@@ -317,7 +317,7 @@
         {
           "job_id": "bb54105a-ab2a-4964-94c1-770529069fc0",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110141_bb54105a-ab2a-4964-94c1-770529069fc0.mp4",
-          "status": "generated",
+          "status": "approved",
           "reason": null,
           "at": "2026-09-29T11:01Z",
           "credits": 7.5,
@@ -375,7 +375,7 @@
       "voice_id": "0178ef57-ada4-43d9-992b-8d9221045bb4",
       "name": "0178ef57-ada4-43d9-992b-8d9221045bb4",
       "text": "Hi friends! It's Momo! Can you say hello? Hello! Great job!",
-      "status": "generated",
+      "status": "rejected",
       "job_id": "1f3d406d-decd-4700-9fdd-0f10bef347e0",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110238_1f3d406d-decd-4700-9fdd-0f10bef347e0.wav",
       "attempts": 1,
@@ -384,20 +384,20 @@
         {
           "job_id": "1f3d406d-decd-4700-9fdd-0f10bef347e0",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110238_1f3d406d-decd-4700-9fdd-0f10bef347e0.wav",
-          "status": "generated",
-          "reason": null,
+          "status": "rejected",
+          "reason": "사용자 선택: Gracie",
           "at": "2026-09-29T11:03Z",
           "credits": 0.2
         }
       ],
-      "reason": null
+      "reason": "사용자 선택: Gracie"
     },
     {
       "lang": "en",
       "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d",
       "name": "032386ec-491b-5bdc-81ac-49e9a6a2c89d",
       "text": "Hi friends! It's Momo! Can you say hello? Hello! Great job!",
-      "status": "generated",
+      "status": "rejected",
       "job_id": "8312ea3e-cdd3-49f0-94aa-27ce4d9905c8",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110241_8312ea3e-cdd3-49f0-94aa-27ce4d9905c8.wav",
       "attempts": 1,
@@ -406,20 +406,20 @@
         {
           "job_id": "8312ea3e-cdd3-49f0-94aa-27ce4d9905c8",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110241_8312ea3e-cdd3-49f0-94aa-27ce4d9905c8.wav",
-          "status": "generated",
-          "reason": null,
+          "status": "rejected",
+          "reason": "사용자 선택: Gracie",
           "at": "2026-09-29T11:03Z",
           "credits": 0.2
         }
       ],
-      "reason": null
+      "reason": "사용자 선택: Gracie"
     },
     {
       "lang": "en",
       "voice_id": "09878754-f20b-5330-9790-58a8027ab5b2",
       "name": "09878754-f20b-5330-9790-58a8027ab5b2",
       "text": "Hi friends! It's Momo! Can you say hello? Hello! Great job!",
-      "status": "generated",
+      "status": "approved",
       "job_id": "41105fd9-b223-4347-bdbe-1ef824e67d6f",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110245_41105fd9-b223-4347-bdbe-1ef824e67d6f.wav",
       "attempts": 1,
@@ -428,7 +428,7 @@
         {
           "job_id": "41105fd9-b223-4347-bdbe-1ef824e67d6f",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110245_41105fd9-b223-4347-bdbe-1ef824e67d6f.wav",
-          "status": "generated",
+          "status": "approved",
           "reason": null,
           "at": "2026-09-29T11:03Z",
           "credits": 0.2
@@ -441,7 +441,7 @@
       "voice_id": "c25f78a0-714e-42af-8da3-a399cef94968",
       "name": "c25f78a0-714e-42af-8da3-a399cef94968",
       "text": "안녕, 친구들! 나는 모모야! 같이 말해볼까? 안녕! 잘했어!",
-      "status": "generated",
+      "status": "rejected",
       "job_id": "196260ee-5458-4ce5-99c2-fb32ebaa95b6",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110250_196260ee-5458-4ce5-99c2-fb32ebaa95b6.wav",
       "attempts": 1,
@@ -450,20 +450,20 @@
         {
           "job_id": "196260ee-5458-4ce5-99c2-fb32ebaa95b6",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110250_196260ee-5458-4ce5-99c2-fb32ebaa95b6.wav",
-          "status": "generated",
-          "reason": null,
+          "status": "rejected",
+          "reason": "사용자 선택: Luna",
           "at": "2026-09-29T11:03Z",
           "credits": 0.2
         }
       ],
-      "reason": null
+      "reason": "사용자 선택: Luna"
     },
     {
       "lang": "ko",
       "voice_id": "2d51d9d0-b2a4-5e8b-9c63-f310adafd5f7",
       "name": "2d51d9d0-b2a4-5e8b-9c63-f310adafd5f7",
       "text": "안녕, 친구들! 나는 모모야! 같이 말해볼까? 안녕! 잘했어!",
-      "status": "generated",
+      "status": "rejected",
       "job_id": "907b80cf-e473-41e0-8b89-b420ee275825",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110254_907b80cf-e473-41e0-8b89-b420ee275825.wav",
       "attempts": 1,
@@ -472,20 +472,20 @@
         {
           "job_id": "907b80cf-e473-41e0-8b89-b420ee275825",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110254_907b80cf-e473-41e0-8b89-b420ee275825.wav",
-          "status": "generated",
-          "reason": null,
+          "status": "rejected",
+          "reason": "사용자 선택: Luna",
           "at": "2026-09-29T11:03Z",
           "credits": 0.2
         }
       ],
-      "reason": null
+      "reason": "사용자 선택: Luna"
     },
     {
       "lang": "ko",
       "voice_id": "375a3398-e3b4-4f91-845d-42181e352899",
       "name": "375a3398-e3b4-4f91-845d-42181e352899",
       "text": "안녕, 친구들! 나는 모모야! 같이 말해볼까? 안녕! 잘했어!",
-      "status": "generated",
+      "status": "approved",
       "job_id": "b63a7975-a169-407a-b36f-8085ee9b2e2d",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110257_b63a7975-a169-407a-b36f-8085ee9b2e2d.wav",
       "attempts": 1,
@@ -494,7 +494,7 @@
         {
           "job_id": "b63a7975-a169-407a-b36f-8085ee9b2e2d",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110257_b63a7975-a169-407a-b36f-8085ee9b2e2d.wav",
-          "status": "generated",
+          "status": "approved",
           "reason": null,
           "at": "2026-09-29T11:03Z",
           "credits": 0.2
