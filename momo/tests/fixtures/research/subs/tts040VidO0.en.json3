@@ -1,0 +1,180 @@
+{
+ "wireMagic": "pb3",
+ "pens": [
+  {}
+ ],
+ "wsWinStyles": [
+  {},
+  {
+   "mhModeHint": 2,
+   "juJustifCode": 0,
+   "sdScrollDir": 3
+  }
+ ],
+ "events": [
+  {
+   "tStartMs": 0,
+   "dDurationMs": 120000,
+   "id": 1,
+   "wpWinPosId": 1,
+   "wsWinStyleId": 1
+  },
+  {
+   "tStartMs": 500,
+   "dDurationMs": 1500,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "[Music]"
+    }
+   ]
+  },
+  {
+   "tStartMs": 2000,
+   "dDurationMs": 900,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "red"
+    },
+    {
+     "utf8": ", red"
+    }
+   ]
+  },
+  {
+   "tStartMs": 2900,
+   "dDurationMs": 1200,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "red, red"
+    },
+    {
+     "utf8": ", what do you see?"
+    }
+   ]
+  },
+  {
+   "tStartMs": 4100,
+   "dDurationMs": 10,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "red, red, what do you see?"
+    }
+   ]
+  },
+  {
+   "tStartMs": 4110,
+   "dDurationMs": 2000,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "red, red, what do you see?\nI see a yellow sun"
+    }
+   ]
+  },
+  {
+   "tStartMs": 6100,
+   "dDurationMs": 10,
+   "wWinId": 1,
+   "aAppend": 1,
+   "segs": [
+    {
+     "utf8": "\n"
+    }
+   ]
+  },
+  {
+   "tStartMs": 6110,
+   "dDurationMs": 2000,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "I see a yellow sun\nlooking at me"
+    }
+   ]
+  },
+  {
+   "tStartMs": 8110,
+   "dDurationMs": 10,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "looking at me"
+    }
+   ]
+  },
+  {
+   "tStartMs": 8200,
+   "dDurationMs": 1800,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "round and round"
+    }
+   ]
+  },
+  {
+   "tStartMs": 10000,
+   "dDurationMs": 1800,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "round and round"
+    }
+   ]
+  },
+  {
+   "tStartMs": 11800,
+   "dDurationMs": 1800,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "round and round"
+    }
+   ]
+  },
+  {
+   "tStartMs": 13600,
+   "dDurationMs": 2500,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "Can you say blue?"
+    }
+   ]
+  },
+  {
+   "tStartMs": 13600,
+   "dDurationMs": 2500,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "can you say blue"
+    }
+   ]
+  },
+  {
+   "tStartMs": 19000,
+   "dDurationMs": 2000,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "Blue!"
+    }
+   ]
+  },
+  {
+   "tStartMs": 65500,
+   "dDurationMs": 3000,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "Bye bye, friends!"
+    }
+   ]
+  }
+ ]
+}

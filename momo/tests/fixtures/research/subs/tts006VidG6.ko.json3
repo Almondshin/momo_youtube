@@ -1,0 +1,44 @@
+{
+ "events": [
+  {
+   "tStartMs": 1000,
+   "dDurationMs": 2000,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "안녕 친구들"
+    }
+   ]
+  },
+  {
+   "tStartMs": 3000,
+   "dDurationMs": 2000,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "안녕 친구들\n오늘은 색깔을 배워요"
+    }
+   ]
+  },
+  {
+   "tStartMs": 5000,
+   "dDurationMs": 2000,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "오늘은 색깔을 배워요\n빨강!"
+    }
+   ]
+  },
+  {
+   "tStartMs": 7000,
+   "dDurationMs": 2500,
+   "wWinId": 1,
+   "segs": [
+    {
+     "utf8": "빨강!"
+    }
+   ]
+  }
+ ]
+}

@@ -5,11 +5,13 @@
 - render_keyword_frames(): 키워드 팝 애니메이션 RGBA 밴드 PNG 시퀀스
 - kenburns_frames(): S 컷 켄번즈 프레임 (Pillow float 정밀도, rawvideo rgb24 로 ffmpeg 에 파이프)
 - make_thumbnail(), placeholder_card(), contact_sheet()
+- ffmpeg 영상 헬퍼: 프레임 추출, 색공간(bt709) 인자, 출력 검증
 """
 from __future__ import annotations
 
 import colorsys
 import hashlib
+import io
 import math
 import re
 from pathlib import Path
@@ -18,7 +20,7 @@ from typing import Iterator
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
-from .common import MomoError
+from .common import MomoError, ffprobe_json, run
 
 HANGUL_RE = re.compile(r"[ᄀ-ᇿ㄰-㆏가-힣]")
 STROKE_COLOR = (0, 0, 0)
@@ -337,3 +339,57 @@ def contact_sheet(items: list[tuple[Path, str]], out_path: Path, font_path: Path
     out_path.parent.mkdir(parents=True, exist_ok=True)
     sheet.save(out_path, "JPEG", quality=88)
     return out_path
+
+
+# ---------------------------------------------------------------- ffmpeg 영상 헬퍼
+
+COLOR_TAGS = ["-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv"]
+TO_709 = "out_color_matrix=bt709:out_range=tv"   # scale 필터 인자: RGB/YUV → bt709 limited
+
+
+def grab_frame(path: Path, t: float) -> Image.Image:
+    proc = run(["ffmpeg", "-v", "error", "-nostdin", "-ss", f"{max(0.0, t):.3f}", "-i", str(path),
+                "-frames:v", "1", "-f", "image2pipe", "-vcodec", "png", "-"])
+    if not proc.stdout:
+        raise MomoError(f"프레임을 뽑지 못함: {path} @ {t:.2f}s")
+    return Image.open(io.BytesIO(proc.stdout)).convert("RGB")
+
+
+def video_stream(path: Path) -> dict:
+    for s in ffprobe_json(path).get("streams", []):
+        if s.get("codec_type") == "video" and not (s.get("disposition") or {}).get("attached_pic"):
+            return s
+    raise MomoError(f"영상 스트림 없음: {path}")
+
+
+def in_matrix(stream: dict) -> str:
+    """scale 필터 입력 행렬. 태그 없는 HD 소스는 bt709 로 본다 (swscale 기본 bt601 로 색이 틀어지는 것 방지)."""
+    if stream.get("color_space") in ("bt709", "bt470bg", "smpte170m", "bt2020nc", "bt2020c"):
+        return ""
+    return "in_color_matrix=" + ("bt709:" if int(stream.get("height") or 0) >= 720 else "bt601:")
+
+
+def verify_output(path: Path, total: float, cfg: dict) -> dict:
+    """1920x1080 / fps / yuv420p / h264 / aac 48k, 영상·음성 길이 = total ± 1프레임. 어긋나면 MomoError."""
+    r = cfg["render"]
+    fps = int(r["fps"])
+    streams = ffprobe_json(path).get("streams", [])
+    v = next((s for s in streams if s.get("codec_type") == "video"), None)
+    a = next((s for s in streams if s.get("codec_type") == "audio"), None)
+    if not v or not a:
+        raise MomoError(f"출력에 영상/음성 스트림이 없음: {path}")
+    want = {"codec_name": "h264", "width": int(r["width"]), "height": int(r["height"]), "pix_fmt": "yuv420p",
+            "r_frame_rate": f"{fps}/1"}
+    problems = [f"영상 {k}={v.get(k)!r} (기대 {w!r})" for k, w in want.items() if v.get(k) != w]
+    sr = int(cfg["audio"]["sample_rate"])
+    if a.get("codec_name") != "aac" or int(a.get("sample_rate") or 0) != sr:
+        problems.append(f"음성 {a.get('codec_name')} {a.get('sample_rate')}Hz (기대 aac {sr})")
+    vdur, adur = float(v.get("duration") or 0), float(a.get("duration") or 0)
+    tol = 1.0 / fps + 1e-3
+    if abs(vdur - total) > tol:
+        problems.append(f"영상 길이 {vdur:.3f}s ≠ 계획 {total:.3f}s")
+    if abs(adur - total) > tol:
+        problems.append(f"음성 길이 {adur:.3f}s ≠ 계획 {total:.3f}s")
+    if problems:
+        raise MomoError(f"출력 검증 실패 ({path.name}):\n  - " + "\n  - ".join(problems))
+    return {"video_duration": vdur, "audio_duration": adur, "frames": int(v.get("nb_frames") or 0)}

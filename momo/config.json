@@ -5,7 +5,11 @@
     "languages": ["en", "ko"]
   },
   "benchmark": {
-    "channel_url": null,
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "channels": [
+      {"name": "Cocomelon - Nursery Rhymes", "url": "https://www.youtube.com/@CoComelon", "slug": "cocomelon"},
+      {"name": "Super Simple Songs", "url": "https://www.youtube.com/@SuperSimpleSongs", "slug": "supersimplesongs"}
+    ],
     "playlist_end": 2000,
     "recent_count": 15,
     "top_count": 5,
