@@ -48,7 +48,8 @@
     "villain_rules": [
       "잉코(문어)는 장난꾸러기 악당: 물건 숨기기·먹물 장난 정도. 위협·공격·무서운 표정·어두운 조명 금지.",
       "매 에피소드 끝에는 잘못을 깨닫거나 화해 (2~5세용). 검은 도둑 눈가면은 식별 표식으로 항상 보이게."
-    ]
+    ],
+    "momo_reinforce": "both long floppy ears always hang down beside the cheeks, the ears never stand upright"
   },
   "style_lock": "bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
   "video_prompt_suffix": "Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",

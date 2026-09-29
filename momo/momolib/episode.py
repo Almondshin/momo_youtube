@@ -116,6 +116,8 @@ def compose_image_prompt(cfg: dict, cut: dict) -> str:
     parts = []
     if has_tag or cut.get("momo", True):
         parts.append(cfg["character"]["momo"].strip().rstrip(",."))
+        if cfg["character"].get("momo_reinforce"):  # 블록은 그대로 두고 자주 틀리는 부분만 덧붙여 고정
+            parts.append(cfg["character"]["momo_reinforce"].strip().rstrip(",."))
     if body:
         parts.append(body)
     parts.append(cfg["style_lock"].strip().rstrip(",."))
