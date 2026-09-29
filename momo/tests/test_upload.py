@@ -10,7 +10,6 @@ youtube.json 기록, 자격증명 우선순위(env LANG → env 공통 → .secr
 from __future__ import annotations
 
 import contextlib
-import copy
 import hashlib
 import io
 import json

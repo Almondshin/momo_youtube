@@ -24,7 +24,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from momolib import youtube as yt  # noqa: E402
-from momolib.common import MomoError, add_root_arg, check_lang, get_paths, load_json, main_wrapper, save_json  # noqa: E402
+from momolib.common import (MomoError, add_root_arg, check_lang, get_paths, load_json, main_wrapper,  # noqa: E402
+                            save_json)
 
 
 def client_config(path: str | None) -> dict:

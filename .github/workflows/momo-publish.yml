@@ -1,0 +1,174 @@
+name: momo-publish
+run-name: momo-publish ${{ inputs.ep }} (${{ inputs.langs }}, ${{ inputs.privacy }})
+
+# 6~7단계 원격 실행: 에셋 복원(fetch_assets) → 조립(build) → 아티팩트 → YouTube 업로드(아동용 고정) → 기록 커밋.
+# 필요한 저장소 Secrets: YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN (또는 _EN / _KO).
+# 설정 방법: momo/docs/YOUTUBE_SETUP.md
+on:
+  workflow_dispatch:
+    inputs:
+      ep:
+        description: '에피소드 번호 (예: ep02)'
+        required: true
+        type: string
+      langs:
+        description: '언어 (쉼표 구분: en,ko / en / ko)'
+        required: true
+        default: 'en,ko'
+        type: string
+      privacy:
+        description: '공개 상태 (publish_at 이 있으면 private 로 올리고 그 시각에 공개)'
+        required: true
+        default: private
+        type: choice
+        options: [private, unlisted, public]
+      publish_at:
+        description: '예약 공개 시각 ISO8601, 시간대 필수 (예: 2026-10-03T18:00+09:00). 비우면 예약 없음'
+        required: false
+        default: ''
+        type: string
+      upload:
+        description: 'YouTube 에 업로드 (끄면 조립·아티팩트만)'
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: momo-publish-${{ inputs.ep }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    # 입력은 전부 env 로만 넘긴다 (run 스크립트에 ${{ }} 를 직접 넣지 않음 — 명령 주입 방지)
+    env:
+      EP: ${{ inputs.ep }}
+      LANGS: ${{ inputs.langs }}
+      PRIVACY: ${{ inputs.privacy }}
+      PUBLISH_AT: ${{ inputs.publish_at }}
+      BRANCH: ${{ github.ref_name }}
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - name: 입력 검증
+        id: in
+        run: |
+          bad() { echo "::error::$1"; exit 1; }
+          [[ "$EP" =~ ^ep[0-9]{2,3}$ ]] || bad "ep 형식 오류: $(printf '%q' "$EP") (예: ep02)"
+          list=""
+          IFS=',' read -ra parts <<< "${LANGS// /}"
+          for l in "${parts[@]}"; do
+            [[ "$l" =~ ^(en|ko)$ ]] || bad "langs 는 en, ko 만 (쉼표 구분): $(printf '%q' "$LANGS")"
+            [[ " $list " == *" $l "* ]] || list="${list:+$list }$l"
+          done
+          [ -n "$list" ] || bad "langs 가 비어 있음"
+          [[ "$PRIVACY" =~ ^(private|unlisted|public)$ ]] || bad "privacy 오류: $(printf '%q' "$PRIVACY")"
+          if [ -n "$PUBLISH_AT" ] && ! [[ "$PUBLISH_AT" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}[T\ ][0-9]{2}:[0-9]{2}(:[0-9]{2}(\.[0-9]+)?)?(Z|[+-][0-9]{2}:[0-9]{2})$ ]]; then
+            bad "publish_at 은 시간대가 붙은 ISO8601 (예: 2026-10-03T18:00+09:00): $(printf '%q' "$PUBLISH_AT")"
+          fi
+          echo "ep=$EP" >> "$GITHUB_OUTPUT"
+          echo "langs=$list" >> "$GITHUB_OUTPUT"
+          echo "에피소드 $EP / 언어 $list / $PRIVACY${PUBLISH_AT:+ / 예약 $PUBLISH_AT}"
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: manifest 확인
+        run: |
+          [ -f "momo/episodes/$EP/manifest.json" ] || { echo "::error::momo/episodes/$EP/manifest.json 없음"; exit 1; }
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: momo/requirements.txt
+
+      - name: 도구 설치 (ffmpeg, 한글 폰트)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends ffmpeg fonts-nanum
+
+      - name: Python 패키지
+        run: python -m pip install -q -r momo/requirements.txt
+
+      - name: 점검 (doctor --ci)
+        run: python momo/doctor.py --ep "$EP" --ci
+
+      - name: 에셋 복원 (manifest·library 의 URL)
+        run: python momo/fetch_assets.py --ep "$EP" --library
+
+      - name: 조립 (build.py)
+        id: build
+        env:
+          LANG_LIST: ${{ steps.in.outputs.langs }}
+        run: |
+          for lang in $LANG_LIST; do
+            echo "::group::build $EP $lang"
+            python momo/build.py --ep "$EP" --lang "$lang"
+            echo "::endgroup::"
+          done
+
+      - name: 완성본 아티팩트 (7일)
+        uses: actions/upload-artifact@v4
+        with:
+          name: momo-${{ steps.in.outputs.ep }}-${{ github.run_id }}
+          path: |
+            momo/episodes/${{ steps.in.outputs.ep }}/out/*.mp4
+            momo/episodes/${{ steps.in.outputs.ep }}/out/*.jpg
+            momo/episodes/${{ steps.in.outputs.ep }}/out/*_timeline.json
+          retention-days: 7
+          if-no-files-found: error
+
+      - name: YouTube 업로드 (아동용 고정)
+        if: inputs.upload
+        env:
+          LANG_LIST: ${{ steps.in.outputs.langs }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_REFRESH_TOKEN_EN: ${{ secrets.YOUTUBE_REFRESH_TOKEN_EN }}
+          YOUTUBE_REFRESH_TOKEN_KO: ${{ secrets.YOUTUBE_REFRESH_TOKEN_KO }}
+        run: |
+          args=(--privacy "$PRIVACY")
+          if [ -n "$PUBLISH_AT" ]; then args+=(--publish-at "$PUBLISH_AT"); fi
+          fail=0
+          # 한 언어가 실패해도 다른 언어는 올리고, 성공분은 아래 단계에서 커밋한다
+          for lang in $LANG_LIST; do
+            echo "::group::upload $EP $lang"
+            python momo/upload.py --ep "$EP" --lang "$lang" "${args[@]}" || fail=1
+            echo "::endgroup::"
+          done
+          exit "$fail"
+
+      - name: 에피소드 README
+        if: ${{ always() && steps.build.outcome == 'success' }}
+        run: python momo/episode_readme.py --ep "$EP"
+
+      - name: 기록 커밋 (youtube.json, README.md, manifest.json)
+        # 업로드가 일부 실패·취소돼도 성공분 video_id 는 남겨야 다음 실행에서 중복 업로드가 안 된다
+        if: ${{ always() && steps.build.outcome == 'success' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          d="momo/episodes/$EP"
+          for f in youtube.json README.md manifest.json; do
+            if [ -f "$d/$f" ]; then git add -- "$d/$f"; fi
+          done
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -q -m "momo: $EP 게시 기록 (youtube.json, README)"
+          for i in 1 2 3 4 5; do
+            if git push -q origin "HEAD:$BRANCH"; then exit 0; fi
+            echo "push 거부 — 원격 변경을 rebase 후 재시도 ($i/5)"
+            sleep $((i * 5))
+            git pull -q --rebase --autostash origin "$BRANCH" || { git rebase --abort || true; echo "::error::rebase 충돌"; exit 1; }
+          done
+          echo "::error::push 실패 — youtube.json 을 직접 커밋할 것 (중복 업로드 주의)"
+          exit 1

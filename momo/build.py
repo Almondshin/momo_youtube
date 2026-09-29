@@ -8,6 +8,8 @@
   python build.py --ep ep02 --lang ko --thumbnail-only
   옵션: --jobs N (세그먼트 병렬, 기본 min(4, CPU)), --keep-temp, --no-cache
 
+출력(episodes/<ep>/out/): <ep>_<lang>.mp4, <ep>_<lang>_thumb.jpg, <ep>_<lang>_timeline.json,
+  --check 시 check_<lang>/<cut>.jpg (컷별 start+text_at+0.5 프레임) + check_<lang>/check_<lang>.jpg (contact sheet).
 컷 길이·텍스트 타이밍은 매번 manifest 와 음성 파일 길이로 다시 계산한다 (episode.plan_timeline).
 컷 세그먼트는 .build/<lang>/seg_<cut>.mp4 에 캐시되고 입력·파라미터 해시(seg_<cut>.json)가 같으면
 다시 렌더하지 않는다 → 음성 하나를 다시 뽑으면 그 컷만 다시 렌더된다.

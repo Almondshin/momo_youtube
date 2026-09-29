@@ -321,14 +321,22 @@ def main(argv: list[str] | None = None) -> int:
     if errs:
         raise MomoError("업로드 메타데이터 오류:\n  - " + "\n  - ".join(errs))
 
-    done = []
+    todo = []
     for job in jobs:
-        print(f"\n━━ {job.label}" + (" — DRY RUN (자격증명·네트워크 사용 안 함)" if args.dry_run else ""))
         prev = ((load_json(job.record) if job.record.exists() else {}).get(job.lang) or {})
         if prev.get("video_id") and not args.force:
-            print(f"= 이미 업로드됨: {prev.get('url') or prev['video_id']} — 건너뜀 "
+            print(f"= {job.label} 이미 업로드됨: {prev.get('url') or prev['video_id']} — 건너뜀 "
                   "(--force 로 다시 올리면 새 영상이 하나 더 생김)")
-            continue
+        else:
+            todo.append((job, prev))
+    missing = [j for j, _ in todo if not j.video.is_file()]
+    if missing and not args.dry_run:  # 한 언어만 올라가고 멈추지 않게 먼저 확인
+        hint = f"build.py --ep {missing[0].ep} --lang {missing[0].lang}" if missing[0].ep else "compile.py"
+        raise MomoError("영상 파일 없음: " + ", ".join(str(j.video) for j in missing) + f" — 먼저 {hint}")
+
+    done = []
+    for job, prev in todo:
+        print(f"\n━━ {job.label}" + (" — DRY RUN (자격증명·네트워크 사용 안 함)" if args.dry_run else ""))
         body, warns = build_body(cfg, job, privacy, publish_at)
         for w in warns:
             print(f"△ {w}")
@@ -340,9 +348,6 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"△ 영상 없음 — 실제 업로드 전에 {'build.py' if job.ep else 'compile.py'} 필요")
             print_plan(job, body, thumb, bool(cfg["youtube"].get("notify_subscribers", True)))
             continue
-        if not job.video.is_file():
-            hint = f"build.py --ep {job.ep} --lang {job.lang}" if job.ep else "compile.py"
-            raise MomoError(f"영상 파일 없음: {job.video} — 먼저 {hint}")
         if prev.get("video_id"):
             print(f"△ --force: 기존 영상 {prev['video_id']} 은 그대로 남는다 (필요하면 YouTube Studio 에서 삭제)")
         rec = upload_one(paths, cfg, job, body, thumb)

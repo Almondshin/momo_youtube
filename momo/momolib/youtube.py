@@ -1,4 +1,4 @@
-"""YouTube Data API v3 공용 헬퍼 — upload.py / youtube_auth.py / doctor.py 가 쓴다.
+"""YouTube Data API v3 공용 헬퍼 — upload.py · youtube_auth.py (doctor 는 credentials_source 로 존재만 확인).
 
 - 자격증명: env YOUTUBE_CLIENT_ID + YOUTUBE_CLIENT_SECRET + YOUTUBE_REFRESH_TOKEN_<LANG>
   → YOUTUBE_REFRESH_TOKEN → <root>/.secrets/youtube_<lang>.json (youtube_auth.py 가 만든 파일).
@@ -75,17 +75,16 @@ def resolve_credentials(paths: Paths, lang: str, env: dict | None = None) -> tup
                   "client_secret": env.get("YOUTUBE_CLIENT_SECRET", "").strip()}
     file_client = {k: str(saved.get(k) or "").strip() for k in ("client_id", "client_secret")}
 
-    token, source, client = "", "", env_client
+    token, source, from_file = "", "", False
     for var in token_vars:
         if env.get(var, "").strip():
             token, source = env[var].strip(), f"환경변수 {var}"
             break
     if not token and saved.get("refresh_token"):
-        # 파일의 refresh token 은 같은 파일의 client 로 발급된 것 → 파일 client 우선
-        token, source = str(saved["refresh_token"]).strip(), str(file)
-        client = file_client if all(file_client.values()) else env_client
-    if not all(client.values()):
-        client = {k: client[k] or env_client[k] or file_client[k] for k in client}
+        token, source, from_file = str(saved["refresh_token"]).strip(), str(file), True
+    # 파일의 refresh token 은 같은 파일의 client 로 발급된 것 → 그때는 파일 client 우선
+    first, second = (file_client, env_client) if from_file else (env_client, file_client)
+    client = {k: first[k] or second[k] for k in first}
 
     missing = [n for n, v in (("YOUTUBE_CLIENT_ID", client["client_id"]),
                               ("YOUTUBE_CLIENT_SECRET", client["client_secret"])) if not v]
