@@ -329,9 +329,12 @@ def make_base(root: Path) -> None:
         run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "testsrc2=s=1280x720:r=24:d=5",
              "-vf", f"drawbox=x=0:y=0:w=iw:h=ih:color={color}@0.45:t=fill", "-c:v", "libx264", "-preset",
              "veryfast", "-crf", "22", "-pix_fmt", "yuv420p", str(src)])
+        still = remote / "images" / f"{name}.png"
+        still.parent.mkdir(parents=True, exist_ok=True)
+        run(["ffmpeg", "-y", "-v", "error", "-i", str(src), "-frames:v", "1", str(still)])
         rec = lib["clips"][name]
         rec.update(genrec("lib", name, file_url(src), 7.5))
-        rec["image"] = genrec("lib", name + "-img", file_url(src), 2)
+        rec["image"] = genrec("lib", name + "-img", file_url(still), 2)
     for lang, lines in LIB_AUDIO_LEN.items():
         for name, dur in lines.items():
             src = write_wav(remote / "audio" / lang / f"{name}.wav", beep(dur, 44100, 300 if lang == "en" else 340,
@@ -347,7 +350,8 @@ def make_base(root: Path) -> None:
         sheet.save(src)
         lib["character_sheets"][name].update(genrec("lib", f"sheet-{name}", file_url(src), 2))
     save_json(root / "library/library.json", lib)
-    shutil.copytree(remote, root / "library", dirs_exist_ok=True)
+    for sub in ("clips", "audio", "sheets"):
+        shutil.copytree(remote / sub, root / "library" / sub, dirs_exist_ok=True)
 
 
 # ---------------------------------------------------------------- 에피소드
