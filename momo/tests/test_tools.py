@@ -135,6 +135,23 @@ def write_mp4(p: Path) -> Path:
     return p
 
 
+def fresh_library(lib: dict) -> dict:
+    """실제 library.json 의 진행 상태와 무관하게 — 시트만 승인, 클립·고정 음성·음성 샘플은 첫 편 전 상태로."""
+    blank = {"status": "missing", "job_id": None, "url": None, "attempts": 0, "credits": 0}
+    for rec in lib["clips"].values():
+        for k in ("history", "reason"):
+            rec.pop(k, None)
+        rec.update(blank)
+        rec["image"] = dict(blank)
+    for lines in lib["audio"].values():
+        for rec in lines.values():
+            for k in ("history", "reason"):
+                rec.pop(k, None)
+            rec.update(blank)
+    lib["voice_samples"] = []
+    return lib
+
+
 def make_root(tmp: Path, cfg_patch: dict | None = None, assets: bool = True) -> Path:
     """config/library/templates 복사 + 폰트·BGM + ep42 manifest (컷 6개, L3 V2 S1)."""
     root = tmp / "root"
@@ -143,7 +160,7 @@ def make_root(tmp: Path, cfg_patch: dict | None = None, assets: bool = True) -> 
     cfg["voices"].update({"en": None, "ko": None})
     wj(root / "config.json", deep_merge(cfg, cfg_patch or {}))
     shutil.copytree(MOMO / "templates", root / "templates")
-    lib = rj(MOMO / "library/library.json")
+    lib = fresh_library(rj(MOMO / "library/library.json"))
     sheet = write_png(tmp / "remote/sheet.png", (250, 250, 250))
     for e in lib["character_sheets"].values():  # 테스트는 네트워크 없이 — 시트 URL 을 로컬 파일로
         e["url"] = sheet.as_uri()
