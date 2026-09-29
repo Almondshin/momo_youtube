@@ -73,9 +73,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 14,
-    "generations": 7,
-    "regenerations": 2,
+    "spent": 18.0,
+    "generations": 9,
+    "regenerations": 4,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
   "notes": {
@@ -85,7 +85,9 @@
       "2026-09-29 2단계 생략·기본 구조 진행 승인",
       "2026-09-29 4단계 기획표(plan.md) 승인 — 사물 5컷 캐릭터 블록 생략 해석 포함",
       "2026-09-29 폰트: 나눔스퀘어라운드 Bold (OFL)",
-      "2026-09-29 캐릭터 시트 승인: 모모(1차, 멜빵 단추 2개 시그니처), 더키, 토토(악어), 써니(상어) → Elements 등록"
+      "2026-09-29 캐릭터 시트 승인: 모모(1차, 멜빵 단추 2개 시그니처), 더키, 토토(악어), 써니(상어) → Elements 등록",
+      "2026-09-29 씬1: c02 승인, c03(표정)·c04(욕실 일관성) 재생성 결정 / 잉코 시트 승인·Elements 등록",
+      "2026-09-29 욕실 세트 묘사 고정(sets.bathroom) — 욕실 컷 프롬프트에 반영"
     ],
     "next_time": [],
     "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도"
@@ -122,7 +124,7 @@
       "motion": "stretches both arms up slowly and yawns, ears bounce gently",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "7de22d4d-6a76-45c5-94f7-3068c856d850",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074451_7de22d4d-6a76-45c5-94f7-3068c856d850.png",
           "attempts": 1,
@@ -131,7 +133,7 @@
             {
               "job_id": "7de22d4d-6a76-45c5-94f7-3068c856d850",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074451_7de22d4d-6a76-45c5-94f7-3068c856d850.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -149,19 +151,25 @@
         "en": "TEETH",
         "ko": "이"
       },
-      "image_prompt": "[Momo] standing in a bright pastel bathroom, one paw touching the cheek, curious puzzled face, small white teeth showing, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, one paw touching the cheek, worried puzzled expression, not smiling, eyebrows raised in the middle, small frown, mouth slightly open, clear empty pastel wall space in the upper third of the frame",
       "motion": "tilts head to one side and touches the cheek with one paw, ears bounce",
       "gen": {
         "image": {
           "status": "generated",
-          "job_id": "d33ba903-34ab-48d3-a10b-e8cbd0cc6f05",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074720_d33ba903-34ab-48d3-a10b-e8cbd0cc6f05.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "9667c1db-b65e-41f6-a8d7-21ca49d9a073",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075113_9667c1db-b65e-41f6-a8d7-21ca49d9a073.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "d33ba903-34ab-48d3-a10b-e8cbd0cc6f05",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074720_d33ba903-34ab-48d3-a10b-e8cbd0cc6f05.png",
+              "status": "rejected",
+              "reason": "웃는 표정 — 대사(이가 까끌까끌)와 불일치"
+            },
+            {
+              "job_id": "9667c1db-b65e-41f6-a8d7-21ca49d9a073",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075113_9667c1db-b65e-41f6-a8d7-21ca49d9a073.png",
               "status": "generated"
             }
           ]
@@ -180,19 +188,25 @@
         "en": "BRUSH",
         "ko": "치카치카"
       },
-      "image_prompt": "a clean child-size bathroom sink with one round mint-green cup holding one small toothbrush, soft morning light, pastel tiles, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "close-up of the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, one round mint-green cup holding one small toothbrush with a yellow handle standing on the sink edge in the center of the frame, soft morning light, clear empty pastel wall space in the upper third of the frame",
       "momo": false,
       "gen": {
         "image": {
           "status": "generated",
-          "job_id": "1bb562c9-859c-4b28-b74f-57b259b8f0cc",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074723_1bb562c9-859c-4b28-b74f-57b259b8f0cc.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "d7d149c8-dc82-4dc3-85d3-d96025c804e3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075209_d7d149c8-dc82-4dc3-85d3-d96025c804e3.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "1bb562c9-859c-4b28-b74f-57b259b8f0cc",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_074723_1bb562c9-859c-4b28-b74f-57b259b8f0cc.png",
+              "status": "rejected",
+              "reason": "c03 과 욕실 디자인 불일치, 칫솔컵 작음"
+            },
+            {
+              "job_id": "d7d149c8-dc82-4dc3-85d3-d96025c804e3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075209_d7d149c8-dc82-4dc3-85d3-d96025c804e3.png",
               "status": "generated"
             }
           ]
@@ -226,7 +240,7 @@
         "en": "TOOTHBRUSH",
         "ko": "칫솔"
       },
-      "image_prompt": "[Momo] standing at a small bathroom sink, holding up a small toothbrush with a yellow handle in one paw, proud happy face, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding up a small toothbrush with a yellow handle in one paw, proud happy face, clear empty pastel wall space in the upper third of the frame",
       "motion": "lifts the toothbrush up a little and smiles, ears bounce"
     },
     {
@@ -270,7 +284,7 @@
         "en": "TOOTHPASTE",
         "ko": "치약"
       },
-      "image_prompt": "[Momo] at the bathroom sink holding a small toothbrush in one paw and a plain white toothpaste tube in the other paw, focused cute face, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat holding a small toothbrush in one paw and a plain white toothpaste tube in the other paw, focused cute face, clear empty pastel wall space in the upper third of the frame",
       "motion": "gently squeezes the tube over the toothbrush, small nod"
     },
     {
@@ -285,7 +299,7 @@
         "en": "BRUSH",
         "ko": "치카치카"
       },
-      "image_prompt": "[Momo] facing the viewer holding a small toothbrush at the front teeth, big smile with a little white foam, bright pastel bathroom, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] facing the viewer holding a small toothbrush at the front teeth, big smile with a little white foam, a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
       "motion": "brushes the teeth with small up and down strokes, ears bounce"
     },
     {
@@ -358,7 +372,7 @@
         "en": "CUP",
         "ko": "컵"
       },
-      "image_prompt": "[Momo] standing at the bathroom sink on the right side, [Ducky] waddling in from the left carrying a small mint-green cup, happy surprised faces, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] standing at the white rounded pedestal sink on the right side of a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, [Ducky] waddling in from the left carrying a small mint-green cup, happy surprised faces, clear empty pastel wall space in the upper third of the frame",
       "motion": "Ducky waddles forward a little, Momo's ears bounce happily"
     },
     {
@@ -388,7 +402,7 @@
         "en": "RINSE",
         "ko": "헹구기"
       },
-      "image_prompt": "[Momo] holding a small mint-green cup, cheeks puffed out full of water, funny happy eyes, bathroom sink, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] holding a small mint-green cup, cheeks puffed out full of water, funny happy eyes, at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
       "motion": "cheeks wobble gently side to side, ears bounce"
     },
     {
@@ -403,7 +417,7 @@
         "en": "RINSE",
         "ko": "헹구기"
       },
-      "image_prompt": "[Momo] leaning over a small bathroom sink, gently spitting a little water into the sink, [Ducky] watching from the counter, cheerful mood, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] leaning over the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, gently spitting a little water into the sink, [Ducky] watching from the counter, cheerful mood, clear empty pastel wall space in the upper third of the frame",
       "motion": "leans forward a little over the sink and smiles, Ducky flaps its wings"
     },
     {
@@ -418,7 +432,7 @@
         "en": "RINSE",
         "ko": "헹구기"
       },
-      "image_prompt": "[Momo] and [Ducky] side by side at the bathroom counter, both smiling at the viewer, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] and [Ducky] side by side next to the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, both smiling at the viewer, clear empty pastel wall space in the upper third of the frame",
       "motion": "both nod gently, Ducky flaps its wings once"
     },
     {
@@ -433,7 +447,7 @@
         "en": "TOOTHBRUSH",
         "ko": "칫솔"
       },
-      "image_prompt": "a neat row of a small toothbrush with a yellow handle, a plain white toothpaste tube and a small mint-green cup on a clean bathroom counter, soft morning light, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "a neat row of a small toothbrush with a yellow handle, a plain white toothpaste tube and a small mint-green cup on the edge of the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, soft morning light, clear empty pastel wall space in the upper third of the frame",
       "momo": false
     },
     {
@@ -448,7 +462,7 @@
         "en": "BRUSH",
         "ko": "치카치카"
       },
-      "image_prompt": "[Momo] happily dancing in the bathroom, holding a small toothbrush up high in one paw, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] happily dancing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush up high in one paw, clear empty pastel wall space in the upper third of the frame",
       "motion": "small hop in place holding the toothbrush up, ears bounce"
     },
     {
@@ -495,5 +509,9 @@
       "library_clip": "outro_bye",
       "library_audio": "outro"
     }
-  ]
+  ],
+  "sets": {
+    "bathroom": "a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat",
+    "note": "욕실 컷마다 같은 세트 묘사를 넣어 장소 일관성 유지 (c03 기준)"
+  }
 }
