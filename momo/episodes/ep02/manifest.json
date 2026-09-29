@@ -72,9 +72,9 @@
     }
   },
   "credits": {
-    "estimate": null,
-    "spent": 0,
-    "generations": 0,
+    "estimate": 238.8,
+    "spent": 2,
+    "generations": 1,
     "regenerations": 0
   },
   "notes": {

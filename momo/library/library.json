@@ -5,12 +5,22 @@
     "momo": {
       "file": "sheets/momo.png",
       "prompt": "Character turnaround model sheet of [Momo]: front view, three-quarter view, side view and back view in one row, plus four facial expressions (happy, surprised, curious, sleepy) in a second row, plain pure white background, even spacing, full body, consistent proportions",
-      "status": "missing",
-      "job_id": null,
-      "url": null,
+      "status": "generated",
+      "job_id": "6a2dfca4-a6ad-42c7-aa1e-87338d7bd410",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073147_6a2dfca4-a6ad-42c7-aa1e-87338d7bd410.png",
       "element_id": null,
-      "attempts": 0,
-      "credits": 0
+      "attempts": 1,
+      "credits": 2,
+      "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - happy, surprised, curious, sleepy, pure white seamless background, professional character sheet presentation, Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with one yellow button, big expressive smile, the one yellow button clearly visible on the front bib of the mint-green overalls in every front and three-quarter view, same outfit on all views, stylized 3D character render, appealing chubby proportions, soft rounded features, soft fur detail, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+      "history": [
+        {
+          "job_id": "6a2dfca4-a6ad-42c7-aa1e-87338d7bd410",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073147_6a2dfca4-a6ad-42c7-aa1e-87338d7bd410.png",
+          "status": "generated",
+          "model": "nano_banana_pro(응답 표기: nano_banana_2)",
+          "at": "2026-09-29T07:31Z"
+        }
+      ]
     },
     "ducky": {
       "file": "sheets/ducky.png",
@@ -21,7 +31,8 @@
       "url": null,
       "element_id": null,
       "attempts": 0,
-      "credits": 0
+      "credits": 0,
+      "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - happy, surprised, curious, sleepy, pure white seamless background, professional character sheet presentation, Ducky, a tiny round yellow duckling with an orange beak, no clothes, same proportions on all views, stylized 3D character render, appealing chubby proportions, soft rounded features, soft fur detail, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks"
     }
   },
   "clips": {
@@ -29,7 +40,13 @@
       "file": "clips/intro_wave.mp4",
       "image_prompt": "[Momo] standing in the center of a sunny soft-green meadow, facing the viewer, one paw raised to say hello, lots of clear pale-blue sky in the upper third",
       "motion": "waves one paw at the viewer, ears bounce gently",
-      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "image": {
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      },
       "status": "missing",
       "job_id": null,
       "url": null,
@@ -40,7 +57,13 @@
       "file": "clips/outro_bye.mp4",
       "image_prompt": "[Momo] standing in the center of a sunny soft-green meadow at golden afternoon light, facing the viewer with a warm smile, one paw raised, clear sky in the upper third",
       "motion": "waves one paw goodbye slowly, small nod",
-      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "image": {
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      },
       "status": "missing",
       "job_id": null,
       "url": null,
@@ -51,7 +74,13 @@
       "file": "clips/say_with_me.mp4",
       "image_prompt": "[Momo] close-up from the waist up, facing the viewer with an encouraging open-mouth smile, soft pastel-yellow simple background with empty space above the head",
       "motion": "nods head gently twice, ears bounce",
-      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "image": {
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      },
       "status": "missing",
       "job_id": null,
       "url": null,
@@ -62,7 +91,13 @@
       "file": "clips/cheer.mp4",
       "image_prompt": "[Momo] standing in the center facing the viewer, very happy, paws together in front of the chest, soft pastel-pink simple background with empty space above the head",
       "motion": "claps paws happily, one small hop in place",
-      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "image": {
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      },
       "status": "missing",
       "job_id": null,
       "url": null,
@@ -73,7 +108,13 @@
       "file": "clips/transition.mp4",
       "image_prompt": "[Momo] standing slightly left of center on a soft mint-green simple background, body turned toward the right side, ready to hop",
       "motion": "hops happily to the right and out of the frame with small bouncy hops, camera stays still",
-      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "image": {
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      },
       "status": "missing",
       "job_id": null,
       "url": null,
@@ -83,12 +124,44 @@
   },
   "audio": {
     "en": {
-      "intro": {"file": "audio/en/intro.wav", "text": "Hi friends! It's Momo!", "status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
-      "outro": {"file": "audio/en/outro.wav", "text": "Bye-bye, friends! See you next time!", "status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0}
+      "intro": {
+        "file": "audio/en/intro.wav",
+        "text": "Hi friends! It's Momo!",
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      },
+      "outro": {
+        "file": "audio/en/outro.wav",
+        "text": "Bye-bye, friends! See you next time!",
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      }
     },
     "ko": {
-      "intro": {"file": "audio/ko/intro.wav", "text": "안녕, 친구들! 나는 모모야!", "status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
-      "outro": {"file": "audio/ko/outro.wav", "text": "친구들, 안녕! 다음에 또 만나!", "status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0}
+      "intro": {
+        "file": "audio/ko/intro.wav",
+        "text": "안녕, 친구들! 나는 모모야!",
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      },
+      "outro": {
+        "file": "audio/ko/outro.wav",
+        "text": "친구들, 안녕! 다음에 또 만나!",
+        "status": "missing",
+        "job_id": null,
+        "url": null,
+        "attempts": 0,
+        "credits": 0
+      }
     }
   },
   "voice_samples": []
