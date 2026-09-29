@@ -115,7 +115,9 @@ def parse_now(value: str | None) -> datetime:
     if not value:
         return datetime.now(timezone.utc).replace(microsecond=0)
     try:
-        dt = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+        s = re.sub(r"(:\d{2})\.(\d+)", lambda m: f"{m[1]}.{(m[2] + '000000')[:6]}",  # 3.10: 소수 초 6자리
+                   value.strip().replace("Z", "+00:00"), count=1)
+        dt = datetime.fromisoformat(s)
     except ValueError as e:
         raise MomoError(f"--now 형식 오류: {value!r} (예: 2026-09-29T12:00:00Z)") from e
     return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)

@@ -8,10 +8,13 @@
   3) 러너:   python remote_research.py fetch --request ... → 목록·메타·자막 텍스트·샷 통계는 브랜치에 커밋,
              프레임/썸네일 시트는 공개키로 암호화해 momo-research-sealed 브랜치에만 올림
              (공개 저장소에 타 채널 프레임 원본을 올리지 않기 위함)
-  4) 세션:   git fetch origin momo-research-sealed && python remote_research.py unseal
+  4) 세션:   git fetch origin momo-research-sealed
+             mkdir -p /tmp/sealed && git archive origin/momo-research-sealed | tar -x -C /tmp/sealed
+             python remote_research.py unseal --sealed /tmp/sealed
              → research/<slug>/frames/ (git 제외) 에 복호화 → Claude 가 보고 분석 → sample_videos.py --cleanup 로 삭제
-  5) 세션:   python analyze_channel.py --offline-json research/<slug>/raw/channel.json \
-               --offline-popular research/<slug>/raw/popular.json --offline-meta research/<slug>/meta
+  5) 세션:   python analyze_channel.py --offline-json research/<slug>/channel_flat.json \
+               --offline-popular research/<slug>/popular_flat.json --out research/<slug>
+             (개별 메타는 offline-json 옆 meta/ 를 쓴다)
 
 요청 파일 예 (research/requests/bench1.json):
   {"channels": [{"slug": "cocomelon", "url": "https://www.youtube.com/@CoComelon"}],

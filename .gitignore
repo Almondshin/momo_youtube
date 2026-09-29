@@ -31,3 +31,6 @@ momo/compilations/
 momo/research/*/videos/
 momo/research/*/frames/
 momo/research/*/raw/
+
+# new_episode.py --force 백업
+momo/episodes/*/manifest.json.bak

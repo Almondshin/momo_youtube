@@ -5,7 +5,7 @@
   python compile.py --lang en ep01 ep02 ep03
   python compile.py --lang ko ep01 ep02 ep03 --name colors_best --title-prefix
 
-- 입력: episodes/<ep>/out/<ep>_<lang>.mp4 (없으면 build.py 를 먼저 돌리라고 멈춤)
+- 입력: episodes/<ep>/out/<ep>_<lang>.mp4 (없거나 애니매틱(--allow-missing) 빌드면 build.py 를 다시 돌리라고 멈춤)
 - 에피소드 사이에 library/clips/transition.mp4 (1920x1080/30fps 로 정규화, 원래 소리는 버림 → BGM 없음,
   assets/sfx 에 whoosh/transition 효과음이 있으면 얹음)
 - 출력: compilations/<name>_<lang>.mp4 (loudnorm -14 LUFS 재적용), compilations/<name>_<lang>_chapters.txt
@@ -26,7 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from momolib import audio, render  # noqa: E402
 from momolib.common import (AUDIO_EXTS, VIDEO_EXTS, MomoError, add_root_arg, check_ep, check_lang,  # noqa: E402
-                            find_media, fmt_ts, get_paths, list_files, load_config, load_manifest, main_wrapper,
+                            find_media, fmt_ts, get_paths, list_files, load_config, load_json, load_manifest, main_wrapper,
                             probe_duration, run)
 
 NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]{0,80}$")
@@ -68,6 +68,10 @@ def main() -> int:
     if missing:
         raise MomoError("에피소드 완성본이 없음 — 먼저 build 하세요:\n  "
                         + "\n  ".join(f"python build.py --ep {ep} --lang {lang}" for ep in missing))
+    animatic = [ep for ep in eps if (load_json(paths.out(ep) / f"{ep}_{lang}_timeline.json", default={})
+                                     .get("allow_missing"))]
+    if animatic:
+        raise MomoError(f"애니매틱(--allow-missing) 빌드는 모음집에 넣지 않는다: {', '.join(animatic)} — 다시 build")
     frames = []
     for f in files:
         st = render.video_stream(f)

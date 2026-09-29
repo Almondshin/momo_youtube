@@ -459,7 +459,7 @@
           ]
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "daeb18fa-444b-4c2b-b6a4-5b23d35f5540",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082506_daeb18fa-444b-4c2b-b6a4-5b23d35f5540.mp4",
           "attempts": 1,
@@ -468,7 +468,7 @@
             {
               "job_id": "daeb18fa-444b-4c2b-b6a4-5b23d35f5540",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082506_daeb18fa-444b-4c2b-b6a4-5b23d35f5540.mp4",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -504,7 +504,7 @@
           ]
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "67bf25b3-ee0c-4c6d-ade7-178074a17df1",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082511_67bf25b3-ee0c-4c6d-ade7-178074a17df1.mp4",
           "attempts": 1,
@@ -513,7 +513,7 @@
             {
               "job_id": "67bf25b3-ee0c-4c6d-ade7-178074a17df1",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082511_67bf25b3-ee0c-4c6d-ade7-178074a17df1.mp4",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -549,7 +549,7 @@
           ]
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "2abffab4-210c-47dc-85c5-ebb62a54bde9",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082516_2abffab4-210c-47dc-85c5-ebb62a54bde9.mp4",
           "attempts": 1,
@@ -558,7 +558,7 @@
             {
               "job_id": "2abffab4-210c-47dc-85c5-ebb62a54bde9",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082516_2abffab4-210c-47dc-85c5-ebb62a54bde9.mp4",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -631,7 +631,7 @@
       "motion": "Ducky waddles forward a little, Momo's ears bounce happily",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "8b826a0f-115f-48f7-b7a3-d264d297a5e3",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082519_8b826a0f-115f-48f7-b7a3-d264d297a5e3.png",
           "attempts": 1,
@@ -640,7 +640,7 @@
             {
               "job_id": "8b826a0f-115f-48f7-b7a3-d264d297a5e3",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082519_8b826a0f-115f-48f7-b7a3-d264d297a5e3.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -662,7 +662,7 @@
       "momo": false,
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "2a1d3fc1-0e4c-4252-b163-8eef889d38c1",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082523_2a1d3fc1-0e4c-4252-b163-8eef889d38c1.png",
           "attempts": 1,
@@ -671,7 +671,7 @@
             {
               "job_id": "2a1d3fc1-0e4c-4252-b163-8eef889d38c1",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082523_2a1d3fc1-0e4c-4252-b163-8eef889d38c1.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -693,7 +693,7 @@
       "motion": "cheeks wobble gently side to side, ears bounce",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "777e820f-1546-4ad1-a661-3e21938385fd",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_083357_777e820f-1546-4ad1-a661-3e21938385fd.png",
           "attempts": 2,
@@ -708,7 +708,7 @@
             {
               "job_id": "777e820f-1546-4ad1-a661-3e21938385fd",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_083357_777e820f-1546-4ad1-a661-3e21938385fd.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -730,7 +730,7 @@
       "motion": "leans forward a little over the sink and smiles, Ducky flaps its wings",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "05773212-dec0-496d-8f3b-b1fec68ee453",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082529_05773212-dec0-496d-8f3b-b1fec68ee453.png",
           "attempts": 1,
@@ -739,7 +739,7 @@
             {
               "job_id": "05773212-dec0-496d-8f3b-b1fec68ee453",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082529_05773212-dec0-496d-8f3b-b1fec68ee453.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
@@ -761,7 +761,7 @@
       "motion": "both nod gently, Ducky flaps its wings once",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "75ad1d14-8438-40ae-bb8f-d465c22c35c4",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_083746_75ad1d14-8438-40ae-bb8f-d465c22c35c4.png",
           "attempts": 2,
@@ -776,7 +776,7 @@
             {
               "job_id": "75ad1d14-8438-40ae-bb8f-d465c22c35c4",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_083746_75ad1d14-8438-40ae-bb8f-d465c22c35c4.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }

@@ -342,7 +342,8 @@ def make_base(root: Path) -> None:
             src = write_wav(remote / "audio" / lang / f"{name}.wav", beep(dur, 44100, 300 if lang == "en" else 340,
                                                                           h01(lang, name)), 44100)
             lib["audio"][lang][name].update(genrec("lib", f"{lang}-{name}", file_url(src), 0.2))
-    for name in ("momo", "ducky"):
+    lib["voice_samples"] = []  # 음성은 fixture_voice_* 로 고정 — 실제 샘플 URL 을 받지 않게
+    for name in lib["character_sheets"]:  # 모든 시트를 file:// 로 (CI 가 외부 CDN 에 의존하지 않게)
         src = remote / "sheets" / f"{name}.png"
         src.parent.mkdir(parents=True, exist_ok=True)
         sheet = Image.new("RGB", (1536, 864), (255, 255, 255))

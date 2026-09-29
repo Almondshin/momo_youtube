@@ -112,11 +112,11 @@ jobs:
         run: |
           for lang in $LANG_LIST; do
             echo "::group::build $EP $lang"
-            python momo/build.py --ep "$EP" --lang "$lang"
+            python momo/build.py --ep "$EP" --lang "$lang" --check
             echo "::endgroup::"
           done
 
-      - name: 완성본 아티팩트 (7일)
+      - name: 완성본 아티팩트 (mp4·썸네일·타임라인·확인 시트, 7일)
         uses: actions/upload-artifact@v4
         with:
           name: momo-${{ steps.in.outputs.ep }}-${{ github.run_id }}
@@ -124,6 +124,7 @@ jobs:
             momo/episodes/${{ steps.in.outputs.ep }}/out/*.mp4
             momo/episodes/${{ steps.in.outputs.ep }}/out/*.jpg
             momo/episodes/${{ steps.in.outputs.ep }}/out/*_timeline.json
+            momo/episodes/${{ steps.in.outputs.ep }}/out/check_*/check_*.jpg
           retention-days: 7
           if-no-files-found: error
 

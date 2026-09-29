@@ -12,6 +12,7 @@
 - 메타: manifest.upload[lang] (title 이 비면 manifest.title[lang]). validate_manifest 와 같은 규칙으로 검증.
 - status.selfDeclaredMadeForKids 는 항상 true (아동용 채널). containsSyntheticMedia 는 config 가 true 일 때만.
 - 이미 youtube.json[lang].video_id 가 있으면 건너뜀. --force 는 새 영상을 하나 더 만든다 (기존 영상은 남음).
+- 애니매틱(build.py --allow-missing, timeline.json 의 allow_missing) 완성본은 올리지 않는다 (dry-run 은 경고만).
 - 자격증명: env YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET / YOUTUBE_REFRESH_TOKEN_<LANG> → YOUTUBE_REFRESH_TOKEN
   → .secrets/youtube_<lang>.json (youtube_auth.py 로 생성). 값은 출력하지 않는다. 설정: docs/YOUTUBE_SETUP.md
 - 모음집: compilations/<NAME>_<lang>.mp4, 설명 끝에 <NAME>_<lang>_chapters.txt, 기록은 compilations/<NAME>_youtube.json
@@ -64,6 +65,8 @@ def parse_publish_at(value: str, now: datetime | None = None) -> str:
     s = value.strip()
     if s[-1:] in ("Z", "z"):
         s = s[:-1] + "+00:00"
+    # Python 3.10 fromisoformat 은 소수 초가 3·6자리일 때만 읽는다 → 6자리로 맞춤
+    s = re.sub(r"(:\d{2})\.(\d+)", lambda m: f"{m[1]}.{(m[2] + '000000')[:6]}", s, count=1)
     try:
         dt = datetime.fromisoformat(s)
     except ValueError as e:
@@ -74,6 +77,12 @@ def parse_publish_at(value: str, now: datetime | None = None) -> str:
     if dt <= now:
         raise MomoError(f"--publish-at 이 과거임: {value} (= {utc_iso(dt)}, 지금 {utc_iso(now)})")
     return utc_iso(dt)
+
+
+def is_animatic(paths: Paths, ep: str, lang: str) -> bool:
+    """build.py 가 --allow-missing 으로 만든 완성본인가 (timeline.json 기준)."""
+    tl = paths.out(ep) / f"{ep}_{lang}_timeline.json"
+    return tl.exists() and bool(load_json(tl).get("allow_missing"))
 
 
 def clean_tags(tags) -> list[str]:
@@ -197,7 +206,9 @@ def pick_thumbnail(job: Job, enabled: bool) -> Path | None:
     if not enabled or job.thumb is None:
         return None
     if not job.thumb.is_file():
-        print(f"△ 썸네일 없음: {job.thumb} — 썸네일 없이 올림 (build.py --thumbnail-only 로 생성)")
+        how = (f"build.py --ep {job.ep} --lang {job.lang} --thumbnail-only 로 생성" if job.ep
+               else "--thumbnail <jpg> 로 지정, 예: 에피소드 썸네일 episodes/<ep>/out/<ep>_<lang>_thumb.jpg")
+        print(f"△ 썸네일 없음: {job.thumb} — 썸네일 없이 올림 ({how})")
         return None
     if job.thumb.stat().st_size >= THUMB_MAX:
         print(f"△ 썸네일이 2MB 이상 ({mb(job.thumb.stat().st_size)}) — YouTube 제한으로 건너뜀")
@@ -333,6 +344,13 @@ def main(argv: list[str] | None = None) -> int:
     if missing and not args.dry_run:  # 한 언어만 올라가고 멈추지 않게 먼저 확인
         hint = f"build.py --ep {missing[0].ep} --lang {missing[0].lang}" if missing[0].ep else "compile.py"
         raise MomoError("영상 파일 없음: " + ", ".join(str(j.video) for j in missing) + f" — 먼저 {hint}")
+    animatic = [j.label for j, _ in todo if j.ep and is_animatic(paths, j.ep, j.lang)]
+    if animatic:
+        msg = (f"애니매틱(build.py --allow-missing) 빌드는 올리지 않는다: {', '.join(animatic)}"
+               " — 에셋을 받은 뒤 --allow-missing 없이 다시 build")
+        if not args.dry_run:
+            raise MomoError(msg)
+        print(f"△ {msg}")
 
     done = []
     for job, prev in todo:

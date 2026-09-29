@@ -237,6 +237,16 @@ def test_dry_run_needs_no_credentials(tmp: Path) -> None:
     assert not (root / "episodes" / EP / "youtube.json").exists()
 
 
+def test_refuses_animatic_build(tmp: Path) -> None:
+    root = make_root(tmp)
+    (root / "episodes" / EP / "out" / f"{EP}_ko_timeline.json").write_text('{"allow_missing": true}', encoding="utf-8")
+    install(None)
+    with env(**SECRET):
+        raises(lambda: upload.main(["--root", str(root), "--ep", EP, "--lang", "all"]), "애니매틱", f"{EP} [ko]")
+        assert "애니매틱" in run(root, "--ep", EP, "--lang", "ko", "--dry-run")  # dry-run 은 경고만
+    assert not (root / "episodes" / EP / "youtube.json").exists()
+
+
 def test_upload_retry_then_success_and_record(tmp: Path) -> None:
     root = make_root(tmp)
     svc = FakeService(script=[http_error(503, "backendError", "Backend Error"), "ok", "reset", "ok", "ok"])
