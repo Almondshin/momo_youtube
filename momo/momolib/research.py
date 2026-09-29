@@ -1035,7 +1035,7 @@ def render_report(d: dict) -> str:
         add("| 그룹 | 개수 | 평균 조회수 | 중앙값 | 영상 |")
         add("|---|---:|---:|---:|---|")
         for g in ax["groups"]:
-            label = md(g["value"]) + (" (30분+ 모음집, 별도)" if g["separate"] else "")
+            label = md(g["value"]) + (" — 30분+ 모음집 (별도 축, 격차 제외)" if g["separate"] else "")
             add(f"| {label} | {g['n']} | {fmt_int(g['mean_views'])} | {fmt_int(g['median_views'])} | "
                 f"{', '.join('`' + i + '`' for i in g['ids'])} |")
         gp = ax["gap"]
