@@ -42,8 +42,9 @@ from momolib.common import (LANGS, LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoE
                             load_library, load_manifest, main_wrapper, save_json)
 from momolib.episode import compose_image_prompt, compose_motion_prompt, tts_blocks  # noqa: E402
 from momolib.genrec import (KIND_EXTS, NA, SYMBOL, Slot, add_credits, apply_record, char_tags,  # noqa: E402
-                            characters_used, cut_slots, element_prefix, episode_slots, estimate,
-                            library_slots, needs_generation, status_of, stop_message, unit_cost)
+                            characters_used, clip_cost, clip_seconds, cut_slots, element_prefix, episode_cap,
+                            episode_slots,
+                            estimate, library_slots, needs_generation, status_of, stop_message, unit_cost)
 
 AUDIO_BATCH = 12  # generate_audio_batch 최대 / "12개 이상 동시 요청 금지"
 SAMPLE_TEXT = {"en": "Hi friends! It's Momo! Can you say hello? Hello! Great job!",
@@ -68,11 +69,23 @@ def image_params(cfg: dict, prompt: str, prefix: str = "") -> dict:
                          "aspect_ratio": hf.get("aspect_ratio") or "16:9", "resolution": hf["image_resolution"]})
 
 
-def clip_params(cfg: dict, prompt: str, start_job: str) -> dict:
+def clip_params(cfg: dict, prompt: str, start_job: str, cut: dict | None = None, lang: str | None = None,
+                end_job: str | None = None, audio_job: str | None = None) -> dict:
+    """Video payload. cut.clip_model picks another model (its fixed extras come from higgsfield.clip_models);
+    end_job chains the clip into the next cut's frame, audio_job drives lip-sync (audio_references)."""
     hf = cfg["higgsfield"]
-    return _folder(cfg, {"model": hf["video_model"], "prompt": prompt, "aspect_ratio": hf.get("aspect_ratio") or "16:9",
-                         "duration": int(hf["video_duration"]), "resolution": hf["video_resolution"],
-                         "medias": [{"role": "start_image", "value": start_job}]})
+    model = (cut or {}).get("clip_model") or hf["video_model"]
+    p = {"model": model, "prompt": prompt, "aspect_ratio": hf.get("aspect_ratio") or "16:9",
+         "duration": clip_seconds(cfg, cut, lang)}
+    extras = (hf.get("clip_models") or {}).get(model)
+    p.update(extras if extras is not None else {"resolution": hf["video_resolution"]})
+    medias = [{"role": "start_image", "value": start_job}]
+    if end_job:
+        medias.append({"role": "end_image", "value": end_job})
+    if audio_job:
+        medias.append({"role": "audio_references", "value": audio_job})
+    p["medias"] = medias
+    return _folder(cfg, p)
 
 
 def audio_params(cfg: dict, text: str, lang: str, voice: str | None = None) -> dict:
@@ -150,7 +163,14 @@ def plan_episode(paths: Paths, cfg: dict, args) -> dict:
             if status_of(img) != "approved" or not img.get("job_id"):
                 blocked.append(f"{s.key}: 이미지 승인 전 ({status_of(img)}) — text-to-video 금지, 승인된 이미지로만")
                 continue
-            tool, params = "generate_video", clip_params(cfg, compose_motion_prompt(cfg, s.cut), img["job_id"])
+            end_job, audio_job, why = clip_links(m, s)
+            if why:
+                blocked.append(f"{s.key}: {why}")
+                continue
+            tool, params = "generate_video", clip_params(cfg, compose_motion_prompt(cfg, s.cut), img["job_id"],
+                                                         s.cut, s.lang, end_job, audio_job)
+            if s.lang:
+                target += ["--lang", s.lang]
         else:
             tool, params = "generate_audio", audio_params(cfg, s.text, s.lang)
             target += ["--lang", s.lang, "--block", str(s.block)]
@@ -170,6 +190,31 @@ def plan_episode(paths: Paths, cfg: dict, args) -> dict:
             "batch_limit": None if args.all else limit, "items": shown,
             "awaiting_review": review, "blocked": blocked, "notes": notes,
             "credits": credit_check(paths, cfg, m, load_library(paths))}
+
+
+def clip_links(m: dict, s: Slot) -> tuple[str | None, str | None, str | None]:
+    """(end_image job, audio_references job, reason it is blocked) for an episode clip slot.
+
+    cut.end_frame = "c11" → that cut's approved image is the end frame (continuous hand-off).
+    Lip-sync clips use the language's narration audio; the cut must have exactly one approved speech block.
+    """
+    end_job = None
+    ef = s.cut.get("end_frame")
+    if ef:
+        other = next((c for c in m.get("cuts") or [] if c.get("id") == ef), None)
+        img = ((other or {}).get("gen") or {}).get("image") or {}
+        if status_of(img) != "approved" or not img.get("job_id"):
+            return None, None, f"end_frame {ef} 이미지가 승인 전"
+        end_job = img["job_id"]
+    if not s.lang:
+        return end_job, None, None
+    blocks = (s.cut.get("audio_src") or {}).get(s.lang) or {}
+    if len(blocks) != 1:
+        return None, None, f"lipsync 는 음성 블록 1개인 컷만 ({s.lang} {len(blocks)}개)"
+    rec = next(iter(blocks.values()))
+    if status_of(rec) != "approved" or not rec.get("job_id"):
+        return None, None, f"{s.lang} 나레이션 승인 전 — 립싱크는 승인된 음성으로만"
+    return end_job, rec["job_id"], None
 
 
 def sheet_prompt(cfg: dict, name: str, entry: dict) -> str:
@@ -311,6 +356,10 @@ def cut_slot(paths: Paths, cfg: dict, m: dict, args) -> Slot:
     if kind == "clip" and t != "V":
         raise MomoError(f"{cid} 는 {t} 컷 — clip 은 V 컷만")
     lang, block = None, None
+    if kind == "clip" and cut.get("lipsync"):
+        if not args.lang:
+            raise MomoError(f"{cid} 는 lipsync 컷 — clip 은 언어별: --lang en|ko 필요")
+        lang = check_lang(args.lang)
     if kind == "audio":
         if not args.lang:
             raise MomoError("audio 는 --lang en|ko 필요")
@@ -389,7 +438,12 @@ def cmd_record(paths: Paths, cfg: dict, args) -> int:
     else:
         lib = load_library(paths)
         slot = library_slot(paths, cfg, lib, args)
-    cost = float(args.credits) if args.credits is not None else unit_cost(cfg, slot.kind)
+    if args.credits is not None:
+        cost = float(args.credits)
+    elif slot.kind == "clip" and slot.cut is not None:
+        cost = clip_cost(cfg, slot.cut, slot.lang)
+    else:
+        cost = unit_cost(cfg, slot.kind)
     extra = None
     if slot.kind == "clip":
         img = (slot.cut.get("gen") or {}).get("image") if slot.cut else slot.holder.get("image")
@@ -412,7 +466,7 @@ def cmd_record(paths: Paths, cfg: dict, args) -> int:
         if m.get("status") in (None, "planning"):
             m["status"] = "producing"
         save_json(paths.manifest(m["ep"]), m)
-        cap = float(cfg["credits"]["episode_cap"])
+        cap = episode_cap(cfg, m)
         lines.append(f"  {m['ep']} 크레딧: 사용 {cr['spent']:g} / 캡 {cap:g} "
                      f"(생성 {cr['generations']}회, 재생성 {cr['regenerations']}회)")
         if cr["spent"] > cap:
@@ -446,7 +500,9 @@ def episode_status(paths: Paths, cfg: dict, m: dict, lib: dict) -> dict:
         if t == "L":
             row["clip"] = "library:" + status_of(lclips.get(c.get("library_clip")))
         else:
-            row["clip"] = by[("clip", None)][0].status if ("clip", None) in by else "n/a"
+            clips = [x for x in cs if x.kind == "clip"]
+            order = ("pending", "rejected", "generated", "approved")  # show the least-done language
+            row["clip"] = min((x.status for x in clips), key=order.index) if clips else "n/a"
         row["audio"] = {}
         for lang in LANGS:
             if t == "L" and c.get("library_audio"):

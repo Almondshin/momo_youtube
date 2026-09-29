@@ -3,6 +3,7 @@
 GenRec = {"status": "pending|generated|approved|rejected", "job_id", "url", "attempts", "credits", "reason",
           "history": [{"job_id", "url", "status", "reason", "at", "credits"}]}
 - 에피소드: cut.gen.image / cut.gen.clip (V) / cut.audio_src[lang]["<블록 번호>"]
+  lip-synced V cuts (cut.lipsync) have one clip per language instead: cut.gen.clip_en / cut.gen.clip_ko
 - 라이브러리(library.json): character_sheets[name], clips[name].image(시작 이미지)와 clips[name](클립),
   audio[lang][intro|outro], voice_samples[] — 초기값 "missing" 은 pending 으로 본다.
 - Slot = GenRec 하나의 위치(어느 dict 의 어느 경로) + 내려받을 파일 이름 규칙.
@@ -60,6 +61,30 @@ def video_cost(cfg: dict) -> float:
     if f"video_{res}_5s" in uc:
         return float(uc[f"video_{res}_5s"]) * dur / 5
     raise MomoError(f"config.higgsfield.unit_costs 에 {key} 단가가 없음 — get_cost:true 로 확인해서 적어줘")
+
+
+def clip_seconds(cfg: dict, cut: dict | None, lang: str | None = None) -> int:
+    """Generated clip length: cut.clip_seconds (number, or {"en": 8, "ko": 9}), else config video_duration."""
+    cs = (cut or {}).get("clip_seconds")
+    if isinstance(cs, dict):
+        vals = [v for v in cs.values() if isinstance(v, (int, float))]
+        cs = cs.get(lang) if lang in cs else (max(vals) if vals else None)
+    return int(cs) if isinstance(cs, (int, float)) and cs > 0 else int(cfg["higgsfield"]["video_duration"])
+
+
+def clip_cost(cfg: dict, cut: dict | None, lang: str | None = None) -> float:
+    """Per-clip credits: per-second rate for cut.clip_model (unit_costs.per_second), else the 5 s Kling price."""
+    model = (cut or {}).get("clip_model")
+    rate = ((cfg["higgsfield"]["unit_costs"].get("per_second") or {}).get(model)) if model else None
+    if rate is None:
+        return video_cost(cfg)
+    return round(float(rate) * clip_seconds(cfg, cut, lang), 4)
+
+
+def episode_cap(cfg: dict, manifest: dict | None) -> float:
+    """manifest.credits.cap (a per-episode budget the user approved) overrides config.credits.episode_cap."""
+    own = ((manifest or {}).get("credits") or {}).get("cap")
+    return float(own) if isinstance(own, (int, float)) and own > 0 else float(cfg["credits"]["episode_cap"])
 
 
 def unit_cost(cfg: dict, kind: str) -> float:
@@ -155,7 +180,11 @@ def cut_slots(paths: Paths, cfg: dict, ep: str, cut: dict) -> list[Slot]:
     out = []
     if t in ("V", "S"):
         out.append(Slot(f"{cid} image", "image", "cut", cut, ("gen", "image"), paths.images(ep), cid, cut=cut))
-    if t == "V":
+    if t == "V" and cut.get("lipsync"):  # mouth follows the narration → one clip per language
+        for lang in LANGS:
+            out.append(Slot(f"{cid} clip {lang}", "clip", "cut", cut, ("gen", f"clip_{lang}"), paths.clips(ep),
+                            f"{cid}_{lang}", cut=cut, lang=lang))
+    elif t == "V":
         out.append(Slot(f"{cid} clip", "clip", "cut", cut, ("gen", "clip"), paths.clips(ep), cid, cut=cut))
     for lang in LANGS:
         for it in tts_blocks(cut, lang, cfg):
@@ -318,8 +347,11 @@ def estimate(paths: Paths, cfg: dict, manifest: dict, lib: dict, regen_rate: flo
     review += [s.key for s in eslots if s.status == "generated"]
     n_v = sum(1 for s in need if s.kind == "image" and s.cut.get("type") == "V")
     n_s = sum(1 for s in need if s.kind == "image" and s.cut.get("type") == "S")
+    need_clips = [s for s in need if s.kind == "clip"]
+    clip_total = sum(clip_cost(cfg, s.cut, s.lang) for s in need_clips)
     rows += [Row("에피소드", f"컷 이미지 (V {n_v} + S {n_s})", n_v + n_s, img, "image"),
-             Row("에피소드", "V 클립", sum(1 for s in need if s.kind == "clip"), vid, "clip")]
+             Row("에피소드", "V 클립", len(need_clips),
+                 round(clip_total / len(need_clips), 4) if need_clips else vid, "clip")]
     for lang in LANGS:
         rows.append(Row("에피소드", f"나레이션 블록 {lang.upper()}",
                         sum(1 for s in need if s.kind == "audio" and s.lang == lang), aud, "audio"))
@@ -329,7 +361,7 @@ def estimate(paths: Paths, cfg: dict, manifest: dict, lib: dict, regen_rate: flo
     remaining = round(sum(r.credits for r in rows), 4)
     spent = float((manifest.get("credits") or {}).get("spent") or 0)
     total = round(spent + remaining + regen, 4)
-    cap = float(cfg["credits"]["episode_cap"])
+    cap = episode_cap(cfg, manifest)
     gens = sum(r.count for r in rows) + math.ceil(regen_rate * sum(r.count for r in visual))
     lib_left = sum(r.count for r in rows if r.group == "라이브러리")
     return {"ep": manifest.get("ep"), "rows": rows, "review": review, "regen_rate": regen_rate, "regen": regen,

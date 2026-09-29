@@ -82,7 +82,13 @@
       "video_720p_5s": 7.5,
       "video_1080p_5s": 10,
       "audio_block": 0.2,
-      "checked_at": "2026-09-29"
+      "checked_at": "2026-09-29",
+      "per_second": {
+        "seedance_2_0_mini": 1.0,
+        "wan2_7": 1.5,
+        "kling3_0": 1.5,
+        "kling3_0_turbo": 1.5
+      }
     },
     "element_ids": {
       "momo": "751ad258-9d01-47d8-8bf8-94de57a74b0c",
@@ -90,6 +96,22 @@
       "croc": "ae63002c-f8e5-4546-8c2a-e3afa29dc4df",
       "shark": "3bc5d0bb-4984-4065-9ae0-3a7038503ce4",
       "octo": "e5232eb7-bc9e-4d33-a35e-3cf0d9e9e69c"
+    },
+    "clip_models": {
+      "kling3_0_turbo": {
+        "resolution": "720p"
+      },
+      "seedance_2_0_mini": {
+        "resolution": "720p",
+        "generate_audio": false
+      },
+      "wan2_7": {
+        "resolution": "720p"
+      },
+      "kling3_0": {
+        "mode": "std",
+        "sound": "off"
+      }
     }
   },
   "voices": {

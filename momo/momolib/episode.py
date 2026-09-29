@@ -19,8 +19,12 @@ manifest 의 컷(cut) 필드 요약 (자세한 건 docs/MANIFEST.md)
   lead / tail   nothing-but-picture seconds before / after the narration (default 0 / render.tail_pad)
                 — e.g. a musical lead-in on the first cut, an outro tail for the BGM fade
   fill          how a V/L clip shorter than its cut is extended: "hold" (default — slow-mo ≤1.25x +
-                hold the last frame, gentle push-in), "loop" (crossfade into another pass),
-                "pingpong" (forward then reversed, the old behaviour)
+                hold the last frame, gentle push-in), "fit" (speed the whole clip to exactly the cut length,
+                0.8–1.25x, longer or shorter — keeps an end_frame hand-off intact), "loop" (crossfade into
+                another pass), "pingpong" (forward then reversed, the old behaviour)
+  lipsync       true → one clip per language (clips/<cut>_<lang>.mp4), mouth driven by that narration
+  clip_model / clip_seconds / end_frame   continuous-animation clips: model override, generated length
+                (number or {"en":…, "ko":…}), and a cut id whose approved image is the clip's last frame
   inset         테두리 제거용 인셋 크롭 비율(0.03~0.04). null=자동 감지, 0=끔
   sfx           [{"file": "pop.wav", "at": 0.5, "gain_db": -6}]
   gen / audio_src  생성 기록 (job_id, url, status, attempts) — fetch_assets.py 가 사용
@@ -40,7 +44,7 @@ from .common import (AUDIO_EXTS, CUT_ID_RE, CUT_TYPES, IMAGE_EXTS, LANGS, LIBRAR
 PAUSE_RE = re.compile(r"\[\s*pause(?:\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?))?\s*(?:s|sec|초)?\s*\]", re.I)
 CHANT_RE = re.compile(r"\[\s*chant\s*\]", re.I)
 ANY_MARKER_RE = re.compile(r"\[[^\]]*\]")
-FILL_MODES = ("hold", "loop", "pingpong")  # cut.fill — see build.render_seg
+FILL_MODES = ("hold", "fit", "loop", "pingpong")  # cut.fill — see build.render_seg
 WS_RE = re.compile(r"\s+")
 
 
@@ -421,7 +425,8 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
             else:
                 missing.append(f"library/clips/{c.get('library_clip')}.mp4 ({cid})")
         elif t == "V":
-            source = find_media(paths.clips(ep), cid, VIDEO_EXTS)
+            source = find_media(paths.clips(ep), f"{cid}_{lang}", VIDEO_EXTS) or find_media(paths.clips(ep), cid,
+                                                                                            VIDEO_EXTS)
             if source:
                 kind = "video"
             else:

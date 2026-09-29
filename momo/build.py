@@ -177,7 +177,7 @@ def read_frames(cmd: list[str], frame_bytes: int, n: int):
             proc.wait()
 
 
-def stretch_chain(fill: str, L: float, need: float, fps: int) -> tuple[str, str, int, float]:
+def stretch_chain(fill: str, L: float, need: float, fps: int, max_slow: float = SLOW_MAX) -> tuple[str, str, int, float]:
     """Filter chain pieces for a clip shorter than its cut → (per-input chain, join filter, #inputs, slow factor).
 
     hold: slow-mo ≤ SLOW_MAX with motion interpolation, then the last frame is held (tpad).
@@ -185,7 +185,7 @@ def stretch_chain(fill: str, L: float, need: float, fps: int) -> tuple[str, str,
     """
     passes = 2 if fill == "loop" else 1
     span = passes * L - (LOOP_XF if passes == 2 else 0.0)
-    k = min(max(need / span, 1.0), SLOW_MAX)
+    k = min(max(need / span, 1.0), max_slow)
     slow = f",setpts={k:.5f}*PTS,{MINTERP.format(fps=fps)}" if k > 1.02 else f",fps={fps}"
     join = ""
     if passes == 2:
@@ -213,9 +213,22 @@ def render_seg(seg: Seg, cfg: dict, font: Path, work: Path) -> None:
         crop = f"setpts=PTS-STARTPTS,crop={cw}:{ch}:{cx}:{cy}"
         fill = seg.fill
         pad = f"setsar=1,tpad=stop_mode=clone:stop_duration={need + 1:.3f}"
-        if need > L + 0.5 / fps and fill != "pingpong":
+        if p.cut.get("lipsync"):
+            # mouth is locked to the narration: never time-stretch; hold frame 0 until the narration starts
+            fill = "hold" if fill == "fit" else fill
+            if p.nar_offset > 0:
+                crop += f",tpad=start_mode=clone:start_duration={p.nar_offset:.4f}"
+                L += p.nar_offset
+        fit = fill == "fit" and abs(need - L) > 0.5 / fps and 0.8 * L - 1e-6 <= need <= SLOW_MAX * L + 1e-6
+        if fit:  # time-stretch the whole clip onto the cut: no freeze, no trim, the last frame lands on the cut end
+            k = need / L
+            slow = f",setpts={k:.5f}*PTS," + (MINTERP.format(fps=fps) if k > 1.02 else f"fps={fps}")
+            chain = f"[0:v]{crop}{slow},scale={W}:{H}:flags=lanczos:{render.in_matrix(st)}{TO_709},{pad}"
+            run(head + ["-i", str(p.source)] + kw + ["-filter_complex", overlay_graph(chain, seg, cfg, kw_idx)] + out)
+            mode = f"fit x{k:.2f}"
+        elif need > L + 0.5 / fps and fill != "pingpong":
             # stretched clip: decode (slow-mo / loop, hold) → Python push-in → encode with the keyword overlay
-            slow, join, passes, k = stretch_chain(fill, L, need, fps)
+            slow, join, passes, k = stretch_chain(fill, L, need, fps, 1.0 if p.cut.get("lipsync") else SLOW_MAX)
             to_rgb = f"scale={W}:{H}:flags=lanczos" + (f":{render.in_matrix(st).rstrip(':')}" if render.in_matrix(st) else "")
             if passes == 2:
                 graph = (f"[0:v]{crop}{slow}[a];[1:v]{crop}{slow}[b];[a][b]{join},"

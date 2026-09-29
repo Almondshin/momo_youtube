@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from momolib.common import (LANGS, Paths, add_root_arg, check_ep, get_paths, load_config, load_json,  # noqa: E402
                             load_manifest, main_wrapper)
 from momolib.episode import count_types  # noqa: E402
-from momolib.genrec import episode_slots, status_of  # noqa: E402
+from momolib.genrec import episode_cap, episode_slots, status_of  # noqa: E402
 
 KIDS_NOTE = ("이 영상은 YouTube 에서 반드시 **\"아동용(made for kids)\"** 으로 설정해야 한다 "
              "(2~5세 대상 키즈 채널 — 지시서 7단계). upload.py 는 config 와 상관없이 "
@@ -75,7 +75,7 @@ def render(paths: Paths, cfg: dict, m: dict) -> str:
     scenes = len({c.get("scene") for c in cuts})
     yt_path = paths.youtube_json(ep)
     yt = load_json(yt_path) if yt_path.exists() else {}
-    cap = cfg["credits"]["episode_cap"]
+    cap = episode_cap(cfg, m)
     L = [f"# {ep} — {topic.get('ko') or '(주제 미정)'}" + (f" ({topic['en']})" if topic.get("en") else ""), "",
          f"> episode_readme.py 가 생성 ({datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC). "
          "다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.", "",

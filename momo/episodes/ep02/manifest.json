@@ -73,10 +73,11 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 225.0,
-    "generations": 117,
+    "spent": 234.0,
+    "generations": 118,
     "regenerations": 12,
-    "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
+    "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)",
+    "cap": 525
   },
   "notes": {
     "v_over_reason": null,
@@ -94,7 +95,8 @@
       "2026-09-29 c06·c09 클립, 씬3 이미지 4장 승인 → c10~c12 클립 + 씬4 이미지"
     ],
     "next_time": [],
-    "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도"
+    "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도",
+    "remake_2026_09_29": "User asked for natural kids animation (no word-cut-word slideshow). Approved full remake: continuous full-length clips + lip-sync on talking cuts, ~250-300 extra credits; ep02 cap 250 -> 525."
   },
   "cuts": [
     {
@@ -1916,7 +1918,7 @@
         "ko": "반짝반짝"
       },
       "image_prompt": "[Momo] facing the viewer with the biggest smile showing clean shiny white teeth, one tiny sparkle near the teeth, soft pastel background with empty space above the head",
-      "motion": "smiles wider and blinks, ears bounce",
+      "motion": "talks cheerfully to the viewer with the mouth moving in sync with the voice, big sparkly smile between words, small happy head bobs, ears sway gently",
       "gen": {
         "image": {
           "status": "approved",
@@ -1950,6 +1952,25 @@
               "reason": null,
               "at": "2026-09-29T10:50Z",
               "credits": 7.5,
+              "start_image": "220e611b-1880-4313-b135-f2e0b863faf0"
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "767445fe-adf8-449a-9d45-fc3e3b900a3a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_233452_767445fe-adf8-449a-9d45-fc3e3b900a3a.mp4",
+          "attempts": 1,
+          "credits": 9.0,
+          "history": [
+            {
+              "job_id": "767445fe-adf8-449a-9d45-fc3e3b900a3a",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_233452_767445fe-adf8-449a-9d45-fc3e3b900a3a.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T23:34Z",
+              "credits": 9.0,
               "start_image": "220e611b-1880-4313-b135-f2e0b863faf0"
             }
           ],
@@ -1997,6 +2018,12 @@
             "reason": null
           }
         }
+      },
+      "lipsync": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": {
+        "en": 9,
+        "ko": 5
       }
     },
     {

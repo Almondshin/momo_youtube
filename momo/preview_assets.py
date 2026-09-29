@@ -46,6 +46,9 @@ def iter_records(paths, only_ep: str | None):
             gen = c.get("gen") or {}
             yield f"{ep}/{c['id']}_image", "image", gen.get("image") or {}
             yield f"{ep}/{c['id']}_clip", "video", gen.get("clip") or {}
+            for lang in ("en", "ko"):  # lip-synced cuts: one clip per language
+                if gen.get(f"clip_{lang}"):
+                    yield f"{ep}/{c['id']}_clip_{lang}", "video", gen[f"clip_{lang}"]
             for lang, blocks in (c.get("audio_src") or {}).items():
                 for n, rec in blocks.items():
                     yield f"{ep}/{c['id']}_audio_{lang}_{n}", "audio", rec
@@ -105,6 +108,7 @@ def main() -> int:
     out.mkdir(parents=True, exist_ok=True)
     work = Path(tempfile.mkdtemp())
     index = []
+    raws: dict[str, Path] = {}
     for name, kind, rec in iter_records(paths, args.ep):
         url = rec.get("url")
         if not url:
@@ -114,6 +118,7 @@ def main() -> int:
         raw = work / (Path(name).name + Path(url.split("?")[0]).suffix)
         try:
             fetch(url, raw)
+            raws[name] = raw
             if kind == "image":
                 meta = preview_image(raw, dest_dir / f"{Path(name).name}.jpg")
             elif kind == "video":
@@ -128,6 +133,22 @@ def main() -> int:
         except Exception as e:  # 하나 실패해도 나머지는 계속
             index.append({"name": name, "kind": kind, "error": str(e)[:300]})
             print(f"✖ {name}: {e}", file=sys.stderr)
+    for name, v in raws.items():  # lip-sync check: small mp4 = the language clip + its narration, both from t=0
+        if "_clip_" not in name or not name.rsplit("_", 1)[-1] in ("en", "ko"):
+            continue
+        lang = name.rsplit("_", 1)[-1]
+        a = raws.get(name.replace(f"_clip_{lang}", f"_audio_{lang}_1"))
+        if not a:
+            continue
+        dst = out / f"{name}_sync.mp4"
+        try:
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(v), "-i", str(a), "-map", "0:v:0", "-map", "1:a:0",
+                            "-vf", "scale=854:-2", "-c:v", "libx264", "-preset", "veryfast", "-crf", "27",
+                            "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(dst)], check=True)
+            index.append({"name": f"{name}_sync", "kind": "sync", "meta": "clip + narration"})
+            print(f"✔ {name}_sync.mp4")
+        except Exception as e:
+            print(f"✖ {name}_sync: {e}", file=sys.stderr)
     (out / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
     return 0
 
