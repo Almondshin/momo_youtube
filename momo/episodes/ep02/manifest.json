@@ -73,9 +73,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 102.5,
-    "generations": 32,
-    "regenerations": 8,
+    "spent": 106.5,
+    "generations": 34,
+    "regenerations": 9,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
   "notes": {
@@ -689,19 +689,25 @@
         "en": "RINSE",
         "ko": "헹구기"
       },
-      "image_prompt": "[Momo] holding a small mint-green cup, cheeks puffed out full of water, funny happy eyes, at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] holding a small mint-green mug, mouth closed and both cheeks puffed out round like little balloons full of water while swishing, funny wide happy eyes, not smiling with open mouth, at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
       "motion": "cheeks wobble gently side to side, ears bounce",
       "gen": {
         "image": {
           "status": "generated",
-          "job_id": "72be3cd8-a428-4a53-88a3-fd452edd7b0e",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082526_72be3cd8-a428-4a53-88a3-fd452edd7b0e.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "777e820f-1546-4ad1-a661-3e21938385fd",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_083357_777e820f-1546-4ad1-a661-3e21938385fd.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "72be3cd8-a428-4a53-88a3-fd452edd7b0e",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082526_72be3cd8-a428-4a53-88a3-fd452edd7b0e.png",
+              "status": "rejected",
+              "reason": "볼 빵빵 표현 없음 (대사 불일치)"
+            },
+            {
+              "job_id": "777e820f-1546-4ad1-a661-3e21938385fd",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_083357_777e820f-1546-4ad1-a661-3e21938385fd.png",
               "status": "generated"
             }
           ]
@@ -752,7 +758,23 @@
         "ko": "헹구기"
       },
       "image_prompt": "[Momo] and [Ducky] side by side next to the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, both smiling at the viewer, clear empty pastel wall space in the upper third of the frame",
-      "motion": "both nod gently, Ducky flaps its wings once"
+      "motion": "both nod gently, Ducky flaps its wings once",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "db3f6d59-287d-4563-9787-35f9964d89ba",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082725_db3f6d59-287d-4563-9787-35f9964d89ba.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "db3f6d59-287d-4563-9787-35f9964d89ba",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082725_db3f6d59-287d-4563-9787-35f9964d89ba.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c20",
