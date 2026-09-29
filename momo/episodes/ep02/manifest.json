@@ -73,8 +73,8 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 18.0,
-    "generations": 9,
+    "spent": 33.0,
+    "generations": 11,
     "regenerations": 4,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
@@ -87,7 +87,8 @@
       "2026-09-29 폰트: 나눔스퀘어라운드 Bold (OFL)",
       "2026-09-29 캐릭터 시트 승인: 모모(1차, 멜빵 단추 2개 시그니처), 더키, 토토(악어), 써니(상어) → Elements 등록",
       "2026-09-29 씬1: c02 승인, c03(표정)·c04(욕실 일관성) 재생성 결정 / 잉코 시트 승인·Elements 등록",
-      "2026-09-29 욕실 세트 묘사 고정(sets.bathroom) — 욕실 컷 프롬프트에 반영"
+      "2026-09-29 욕실 세트 묘사 고정(sets.bathroom) — 욕실 컷 프롬프트에 반영",
+      "2026-09-29 씬1 이미지 3장(c02·c03·c04) 승인 → c02·c03 영상 변환"
     ],
     "next_time": [],
     "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도"
@@ -136,6 +137,20 @@
               "status": "approved"
             }
           ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "c0be571b-4a49-488b-b9f5-3776edb4433f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075449_c0be571b-4a49-488b-b9f5-3776edb4433f.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "c0be571b-4a49-488b-b9f5-3776edb4433f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075449_c0be571b-4a49-488b-b9f5-3776edb4433f.mp4",
+              "status": "generated"
+            }
+          ]
         }
       }
     },
@@ -155,7 +170,7 @@
       "motion": "tilts head to one side and touches the cheek with one paw, ears bounce",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "9667c1db-b65e-41f6-a8d7-21ca49d9a073",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075113_9667c1db-b65e-41f6-a8d7-21ca49d9a073.png",
           "attempts": 2,
@@ -170,6 +185,20 @@
             {
               "job_id": "9667c1db-b65e-41f6-a8d7-21ca49d9a073",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075113_9667c1db-b65e-41f6-a8d7-21ca49d9a073.png",
+              "status": "approved"
+            }
+          ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "741ee8f0-24de-43e3-80f8-bfa61d24ea8e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075452_741ee8f0-24de-43e3-80f8-bfa61d24ea8e.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "741ee8f0-24de-43e3-80f8-bfa61d24ea8e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075452_741ee8f0-24de-43e3-80f8-bfa61d24ea8e.mp4",
               "status": "generated"
             }
           ]
@@ -192,7 +221,7 @@
       "momo": false,
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "d7d149c8-dc82-4dc3-85d3-d96025c804e3",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075209_d7d149c8-dc82-4dc3-85d3-d96025c804e3.png",
           "attempts": 2,
@@ -207,7 +236,7 @@
             {
               "job_id": "d7d149c8-dc82-4dc3-85d3-d96025c804e3",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_075209_d7d149c8-dc82-4dc3-85d3-d96025c804e3.png",
-              "status": "generated"
+              "status": "approved"
             }
           ]
         }
