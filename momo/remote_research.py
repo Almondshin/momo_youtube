@@ -160,13 +160,13 @@ def fetch_channel(ch: dict, req: dict, research: Path, pubkey: Path, sealed: Pat
     flat_t = trim_flat(flat)
     flat_t["_fetched_at"] = int(time.time())
     flat_t["_limit"] = limit
-    save_json(base / "raw" / "channel.json", flat_t)
+    save_json(base / "channel_flat.json", flat_t)  # raw/ 는 git 제외라 여기 저장
     entries = flat_t["entries"]
     log(f"(a) 목록 {len(entries)}개, 구독자 {flat_t.get('channel_follower_count')}")
     try:
         pop = ytdlp(["--flat-playlist", "-J", "--playlist-end", "50", f"{url}/videos?view=0&sort=p&flow=grid"],
                     log, "인기순 목록", want_json=True)
-        save_json(base / "raw" / "popular.json", trim_flat(pop))
+        save_json(base / "popular_flat.json", trim_flat(pop))
     except MomoError as e:
         log(f"(b) 인기순 요청 실패 → 조회수 정렬로 대체: {str(e).splitlines()[0]}")
 
@@ -174,8 +174,10 @@ def fetch_channel(ch: dict, req: dict, research: Path, pubkey: Path, sealed: Pat
     by_views = sorted((e for e in entries if e.get("view_count") is not None), key=lambda e: -e["view_count"])
     recent = entries[:recent_n]
     ids = list(dict.fromkeys([e["id"] for e in recent] + [e["id"] for e in by_views[:top_n]]))
-    log(f"(d) 개별 메타 {len(ids)}개")
     metas = {}
+    if not req.get("meta", True):
+        ids = []
+    log(f"(d) 개별 메타 {len(ids)}개")
     for vid in ids:
         try:
             m = ytdlp(["--skip-download", "-J", "--sleep-requests", "1", f"https://www.youtube.com/watch?v={vid}"],
@@ -245,10 +247,12 @@ def fetch_channel(ch: dict, req: dict, research: Path, pubkey: Path, sealed: Pat
         result["samples"] = samples
         save_json(base / "remote_samples.json", samples)
 
+    if req.get("thumbs", True) and by_views:
         # (c) 썸네일: 역대 1·2위 + 최근 1위·최하위 (72시간 미만 제외)
         now = time.time()
-        old_recent = [e for e in recent if not (metas.get(e["id"], {}).get("timestamp")
-                                                and now - metas[e["id"]]["timestamp"] < 72 * 3600)]
+        def ts(e):
+            return metas.get(e["id"], {}).get("timestamp") or e.get("timestamp")
+        old_recent = [e for e in recent if not (ts(e) and now - ts(e) < 72 * 3600)]
         picks = [("역대1", by_views[0]["id"])]
         if len(by_views) > 1:
             picks.append(("역대2", by_views[1]["id"]))

@@ -1,0 +1,13 @@
+{
+  "channels": [
+    {"slug": "cocomelon", "url": "https://www.youtube.com/@CoComelon"},
+    {"slug": "supersimplesongs", "url": "https://www.youtube.com/@SuperSimpleSongs"}
+  ],
+  "limit": 2000,
+  "top": 5,
+  "recent": 15,
+  "meta": false,
+  "samples": false,
+  "thumbs": false,
+  "note": "bench1 에서 목록 JSON 이 git 제외 폴더(raw/)에 저장돼 커밋되지 않아 목록만 다시 받음. 영상별 페이지는 러너 IP 봇 확인으로 차단됨."
+}
