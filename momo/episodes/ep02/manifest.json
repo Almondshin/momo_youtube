@@ -73,9 +73,10 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 16.0,
-    "generations": 8,
-    "regenerations": 2
+    "spent": 14,
+    "generations": 7,
+    "regenerations": 2,
+    "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
   "notes": {
     "v_over_reason": null,
@@ -87,7 +88,7 @@
       "2026-09-29 캐릭터 시트 승인: 모모(1차, 멜빵 단추 2개 시그니처), 더키, 토토(악어), 써니(상어) → Elements 등록"
     ],
     "next_time": [],
-    "library_extra": "악어 Toto·상어 Sunny 캐릭터 시트 (사용자 요청, 다음 편용) — 4크레딧, ep02 예산과 별도"
+    "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도"
   },
   "cuts": [
     {
