@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Iterator
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 from .common import MomoError, ffprobe_json, run
 
@@ -149,13 +149,22 @@ def text_image(text: str, font: ImageFont.FreeTypeFont, fill, stroke: int,
                shadow: int = 0) -> Image.Image:
     """글자 + 두꺼운 검정 외곽선 RGBA (여백 최소). shadow>0 이면 아래쪽 그림자."""
     l, t, r, b = font.getbbox(text, stroke_width=stroke)
-    pad = 2 + shadow
-    im = Image.new("RGBA", (r - l + 2 * pad, b - t + 2 * pad), (0, 0, 0, 0))
-    d = ImageDraw.Draw(im)
+    pad = 4 + shadow
+    size = (r - l + 2 * pad, b - t + 2 * pad)
+    org = (pad - l, pad - t)
+    # 외곽선 마스크: FreeType stroker 가 겹친 윤곽에서 남기는 바늘구멍을 closing(5x5)으로 메운다
+    outline = Image.new("L", size, 0)
+    ImageDraw.Draw(outline).text(org, text, font=font, fill=255, stroke_width=stroke, stroke_fill=255)
+    outline = outline.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.MinFilter(5))
+    im = Image.new("RGBA", size, (0, 0, 0, 0))
     if shadow:
-        d.text((pad - l + shadow * 0.4, pad - t + shadow), text, font=font, fill=(0, 0, 0, 150),
-               stroke_width=stroke, stroke_fill=(0, 0, 0, 150))
-    d.text((pad - l, pad - t), text, font=font, fill=fill, stroke_width=stroke, stroke_fill=STROKE_COLOR)
+        sh = Image.new("L", size, 0)
+        sh.paste(outline.point(lambda v: v * 150 // 255), (int(shadow * 0.4), shadow))
+        im.paste((0, 0, 0, 255), mask=sh)
+    black = Image.new("RGBA", size, STROKE_COLOR + (255,))
+    black.putalpha(outline)
+    im.alpha_composite(black)
+    ImageDraw.Draw(im).text(org, text, font=font, fill=fill)
     return im
 
 
