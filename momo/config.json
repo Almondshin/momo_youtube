@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "channel": {
+    "name": "Momo the Bunny",
+    "languages": ["en", "ko"]
+  },
+  "benchmark": {
+    "channel_url": null,
+    "playlist_end": 2000,
+    "recent_count": 15,
+    "top_count": 5,
+    "min_age_hours": 72,
+    "compilation_min_seconds": 1800
+  },
+  "character": {
+    "momo": "Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with one yellow button, big expressive smile",
+    "ducky": "Ducky, a tiny round yellow duckling with an orange beak, no clothes",
+    "rules": [
+      "의상·색·비율을 바꾸지 말 것. 우비 등은 멜빵바지 위에 덧입힌다.",
+      "노란 단추 하나는 항상 보이게 (씬 간 일관성 시그니처)."
+    ]
+  },
+  "style_lock": "bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+  "video_prompt_suffix": "Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+  "fixed_lines": {
+    "en": {"intro": "Hi friends! It's Momo!", "outro": "Bye-bye, friends! See you next time!"},
+    "ko": {"intro": "안녕, 친구들! 나는 모모야!", "outro": "친구들, 안녕! 다음에 또 만나!"}
+  },
+  "higgsfield": {
+    "image_model": "nano_banana_pro",
+    "video_model": "kling3_0_turbo",
+    "video_duration": 5,
+    "audio_model": "seed_audio",
+    "aspect_ratio": "16:9",
+    "workspace_id": null,
+    "project_id": null,
+    "folder_id": null,
+    "momo_element_id": null,
+    "ducky_element_id": null,
+    "image_resolution": "2k",
+    "video_resolution": "720p",
+    "max_parallel_images": 4,
+    "unit_costs": {
+      "image": 2,
+      "video_720p_5s": 7.5,
+      "video_1080p_5s": 10,
+      "audio_block": 0.2,
+      "checked_at": "2026-09-29"
+    }
+  },
+  "voices": {
+    "en": null,
+    "ko": null,
+    "tone": "warm, slightly high-pitched, slow pace, rising sentence endings"
+  },
+  "credits": {
+    "episode_cap": 250,
+    "estimate_first_episode": [200, 250],
+    "estimate_later_episode": [120, 160]
+  },
+  "plan_rules": {
+    "cuts_min": 22,
+    "cuts_max": 28,
+    "v_range": [12, 15],
+    "s_range": [6, 8],
+    "l_range": [3, 4],
+    "scenes": 5,
+    "narration_max_words_en": 25,
+    "narration_max_chars_ko": 40,
+    "keyword_min_repeats": 3
+  },
+  "fonts": {
+    "keyword": null,
+    "thumbnail": null
+  },
+  "render": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "crf": 18,
+    "preset": "medium",
+    "xfade": 0.3,
+    "tail_pad": 0.4,
+    "min_cut": 3.0,
+    "default_pause": 1.5,
+    "text_height_ratio": 0.125,
+    "text_band_ratio": 0.25,
+    "text_delay": 0.5,
+    "text_pop_seconds": 0.3,
+    "text_colors": {"white": "#FFFFFF", "yellow": "#FFD83B"},
+    "text_stroke_ratio": 0.12,
+    "kenburns_zoom": [0.05, 0.08],
+    "kenburns_drift": 0.015,
+    "inset_default": 0.035,
+    "thumbnail_size": [1280, 720]
+  },
+  "audio": {
+    "sample_rate": 48000,
+    "bgm_file": null,
+    "bgm_gain_db": -12.0,
+    "duck_db": -16.0,
+    "duck_attack": 0.15,
+    "duck_release": 0.35,
+    "bgm_fade_in": 1.0,
+    "bgm_fade_out": 2.0,
+    "narration_gain_db": 0.0,
+    "loudness_lufs": -14.0,
+    "true_peak": -1.5,
+    "aac_bitrate": "192k"
+  },
+  "youtube": {
+    "made_for_kids": true,
+    "category_id": "27",
+    "default_privacy": "private",
+    "contains_synthetic_media": false,
+    "notify_subscribers": true,
+    "languages": {"en": "en", "ko": "ko"},
+    "playlist_id": {"en": null, "ko": null},
+    "channel_note": "EN/KO 를 서로 다른 채널에 올리면 언어별 refresh token(YOUTUBE_REFRESH_TOKEN_EN / _KO)을 쓴다."
+  }
+}

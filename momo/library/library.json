@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "note": "첫 편에서 한 번만 생성하고 이후 에피소드에서는 재생성 금지. 파일은 clips/, audio/<lang>/, sheets/ 에 두고 URL 은 여기 기록 (fetch_assets.py --library 로 복원).",
+  "character_sheets": {
+    "momo": {
+      "file": "sheets/momo.png",
+      "prompt": "Character turnaround model sheet of [Momo]: front view, three-quarter view, side view and back view in one row, plus four facial expressions (happy, surprised, curious, sleepy) in a second row, plain pure white background, even spacing, full body, consistent proportions",
+      "status": "missing",
+      "job_id": null,
+      "url": null,
+      "element_id": null,
+      "attempts": 0,
+      "credits": 0
+    },
+    "ducky": {
+      "file": "sheets/ducky.png",
+      "prompt": "Character turnaround model sheet of [Ducky]: front view, three-quarter view, side view and back view in one row, plus four facial expressions (happy, surprised, curious, sleepy) in a second row, plain pure white background, even spacing, full body, consistent proportions",
+      "momo": false,
+      "status": "missing",
+      "job_id": null,
+      "url": null,
+      "element_id": null,
+      "attempts": 0,
+      "credits": 0
+    }
+  },
+  "clips": {
+    "intro_wave": {
+      "file": "clips/intro_wave.mp4",
+      "image_prompt": "[Momo] standing in the center of a sunny soft-green meadow, facing the viewer, one paw raised to say hello, lots of clear pale-blue sky in the upper third",
+      "motion": "waves one paw at the viewer, ears bounce gently",
+      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "status": "missing",
+      "job_id": null,
+      "url": null,
+      "attempts": 0,
+      "credits": 0
+    },
+    "outro_bye": {
+      "file": "clips/outro_bye.mp4",
+      "image_prompt": "[Momo] standing in the center of a sunny soft-green meadow at golden afternoon light, facing the viewer with a warm smile, one paw raised, clear sky in the upper third",
+      "motion": "waves one paw goodbye slowly, small nod",
+      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "status": "missing",
+      "job_id": null,
+      "url": null,
+      "attempts": 0,
+      "credits": 0
+    },
+    "say_with_me": {
+      "file": "clips/say_with_me.mp4",
+      "image_prompt": "[Momo] close-up from the waist up, facing the viewer with an encouraging open-mouth smile, soft pastel-yellow simple background with empty space above the head",
+      "motion": "nods head gently twice, ears bounce",
+      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "status": "missing",
+      "job_id": null,
+      "url": null,
+      "attempts": 0,
+      "credits": 0
+    },
+    "cheer": {
+      "file": "clips/cheer.mp4",
+      "image_prompt": "[Momo] standing in the center facing the viewer, very happy, paws together in front of the chest, soft pastel-pink simple background with empty space above the head",
+      "motion": "claps paws happily, one small hop in place",
+      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "status": "missing",
+      "job_id": null,
+      "url": null,
+      "attempts": 0,
+      "credits": 0
+    },
+    "transition": {
+      "file": "clips/transition.mp4",
+      "image_prompt": "[Momo] standing slightly left of center on a soft mint-green simple background, body turned toward the right side, ready to hop",
+      "motion": "hops happily to the right and out of the frame with small bouncy hops, camera stays still",
+      "image": {"status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "status": "missing",
+      "job_id": null,
+      "url": null,
+      "attempts": 0,
+      "credits": 0
+    }
+  },
+  "audio": {
+    "en": {
+      "intro": {"file": "audio/en/intro.wav", "text": "Hi friends! It's Momo!", "status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "outro": {"file": "audio/en/outro.wav", "text": "Bye-bye, friends! See you next time!", "status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0}
+    },
+    "ko": {
+      "intro": {"file": "audio/ko/intro.wav", "text": "안녕, 친구들! 나는 모모야!", "status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0},
+      "outro": {"file": "audio/ko/outro.wav", "text": "친구들, 안녕! 다음에 또 만나!", "status": "missing", "job_id": null, "url": null, "attempts": 0, "credits": 0}
+    }
+  },
+  "voice_samples": []
+}

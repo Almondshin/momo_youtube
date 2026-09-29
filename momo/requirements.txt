@@ -1,0 +1,7 @@
+yt-dlp>=2025.1.1
+Pillow>=10.0
+numpy>=1.26
+google-api-python-client>=2.100
+google-auth>=2.20
+google-auth-oauthlib>=1.2
+google-auth-httplib2>=0.2

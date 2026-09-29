@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 비밀 정보 — 절대 커밋하지 말 것 (YouTube OAuth 토큰, client_secret 등)
+momo/.secrets/
+client_secret*.json
+*.token.json
+
+# 무거운 생성물 — manifest.json / library.json 에 원본 URL 이 남아 있으므로
+# `python momo/fetch_assets.py --ep <ep>` 로 언제든 복원할 수 있다.
+momo/episodes/*/images/
+momo/episodes/*/clips/
+momo/episodes/*/audio/
+momo/episodes/*/out/
+momo/episodes/*/.build/
+momo/library/clips/
+momo/library/audio/
+momo/library/sheets/
+momo/compilations/
+
+# 벤치마킹 원본 영상/프레임 — 분석 용도로만 쓰고 삭제 (재사용 금지)
+momo/research/*/videos/
+momo/research/*/frames/
+momo/research/*/raw/
