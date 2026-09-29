@@ -1,0 +1,3 @@
+Sound effects (pop, sparkle, boing, whoosh, brush, swish, splash, chime) synthesized from code by
+momo/make_music.py — original, owned by the channel, no attribution required.
+Regenerate: python momo/make_music.py --only sfx

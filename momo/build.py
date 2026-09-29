@@ -40,7 +40,11 @@ from momolib.common import (IMAGE_EXTS, VIDEO_EXTS, MomoError, add_root_arg, che
                             main_wrapper, run, save_json)
 from momolib.episode import CutPlan, plan_timeline, validate_manifest  # noqa: E402
 
-SEG_VERSION = 1                      # 세그먼트 렌더 방식이 바뀌면 올린다 (캐시 무효화)
+SEG_VERSION = 2                      # 세그먼트 렌더 방식이 바뀌면 올린다 (캐시 무효화)
+SLOW_MAX = 1.25                      # fill=hold|loop: clips may be slowed down at most this much
+PUSH_PER_SEC, PUSH_MAX = 0.007, 0.06  # push-in zoom while a clip is stretched (per second of cut, cap)
+LOOP_XF = 0.5                        # fill=loop: crossfade between the two passes (s)
+MINTERP = "minterpolate=fps={fps}:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1"
 SEG_ENC = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "12", "-pix_fmt", "yuv420p"]
 COLOR_TAGS, TO_709 = render.COLOR_TAGS, render.TO_709
 _print_lock = threading.Lock()
@@ -71,6 +75,7 @@ class Seg:
     key: str = ""
     info: dict = field(default_factory=dict)
     cached: bool = False
+    fill: str = "hold"
 
 
 def make_segs(plans: list[CutPlan], cfg: dict, tmp: Path, font: Path) -> list[Seg]:
@@ -87,9 +92,10 @@ def make_segs(plans: list[CutPlan], cfg: dict, tmp: Path, font: Path) -> list[Se
         if p.source_kind == "image":
             kb = render.kenburns_params(p.id, s_ord if p.type == "S" else p.index + 1, cfg)
         frames = int(round(p.dur * fps))
-        seg = Seg(p, frames, int(round(p.text_at * fps)), kb, tmp / f"seg_{p.id}.mp4", tmp / f"seg_{p.id}.json")
+        seg = Seg(p, frames, int(round(p.text_at * fps)), kb, tmp / f"seg_{p.id}.mp4", tmp / f"seg_{p.id}.json",
+                  fill=p.cut.get("fill") or "hold")
         seg.key = hashlib.sha1(json.dumps({
-            "v": SEG_VERSION, "type": p.type, "kind": p.source_kind, "src": file_sig(p.source),
+            "v": SEG_VERSION, "type": p.type, "kind": p.source_kind, "src": file_sig(p.source), "fill": seg.fill,
             "frames": frames, "inset": p.inset, "kb": kb, "kw": p.keyword, "pos": p.text_pos,
             "color": p.text_color, "text_at": seg.text_at_f, "font": file_sig(font) if p.keyword else None,
             "card": card_lines(p) if p.source_kind == "placeholder" else None,
@@ -151,6 +157,42 @@ def run_piped(cmd: list[str], frames) -> None:
             raise MomoError(f"ffmpeg 실패 (exit {code}): {' '.join(cmd[:8])} ...\n{tail}")
 
 
+def read_frames(cmd: list[str], frame_bytes: int, n: int):
+    """rawvideo 프레임 n 장을 ffmpeg stdout 에서 하나씩 읽는다 (decoder side of a decode → Python → encode pipe)."""
+    with tempfile.TemporaryFile() as err:
+        proc = subprocess.Popen(cmd, stdin=subprocess.DEVNULL, stdout=subprocess.PIPE, stderr=err)
+        try:
+            for i in range(n):
+                buf = proc.stdout.read(frame_bytes)
+                if len(buf) < frame_bytes:
+                    proc.wait()
+                    err.seek(0)
+                    tail = "\n".join(err.read().decode("utf-8", "replace").strip().splitlines()[-20:])
+                    raise MomoError(f"디코딩 프레임 부족 ({i}/{n}): {' '.join(cmd[:8])} ...\n{tail}")
+                yield buf
+        finally:
+            proc.stdout.close()
+            if proc.poll() is None:
+                proc.kill()
+            proc.wait()
+
+
+def stretch_chain(fill: str, L: float, need: float, fps: int) -> tuple[str, str, int, float]:
+    """Filter chain pieces for a clip shorter than its cut → (per-input chain, join filter, #inputs, slow factor).
+
+    hold: slow-mo ≤ SLOW_MAX with motion interpolation, then the last frame is held (tpad).
+    loop: two slowed passes of the clip joined by a LOOP_XF crossfade, then held if still short.
+    """
+    passes = 2 if fill == "loop" else 1
+    span = passes * L - (LOOP_XF if passes == 2 else 0.0)
+    k = min(max(need / span, 1.0), SLOW_MAX)
+    slow = f",setpts={k:.5f}*PTS,{MINTERP.format(fps=fps)}" if k > 1.02 else f",fps={fps}"
+    join = ""
+    if passes == 2:
+        join = f"xfade=transition=fade:duration={LOOP_XF}:offset={L * k - LOOP_XF:.4f}"
+    return slow, join, passes, k
+
+
 def render_seg(seg: Seg, cfg: dict, font: Path, work: Path) -> None:
     p = seg.plan
     r = cfg["render"]
@@ -168,18 +210,38 @@ def render_seg(seg: Seg, cfg: dict, font: Path, work: Path) -> None:
         L = float(p.source_len or 0.0)
         inset = resolve_inset(p, cfg, lambda: render.grab_frame(p.source, min(1.0, L / 2)))
         cw, ch, cx, cy = render.fill_box_int(sw, sh, W, H, inset)
-        chain = f"[0:v]setpts=PTS-STARTPTS,crop={cw}:{ch}:{cx}:{cy}"
-        mode = "clip"
-        if need > L + 0.5 / fps:  # 나레이션이 더 길다 → 정방향 + 역방향 1회, 그래도 모자라면 정지
-            rev = min(L, need - L + 0.2)
-            chain += (f",split[fw][bw];[bw]trim=start={max(0.0, L - rev):.4f},setpts=PTS-STARTPTS,reverse[rv];"
-                      f"[fw][rv]concat=n=2:v=1:a=0")
-            mode = "pingpong" if need <= 2 * L else "pingpong+freeze"
-        elif need < L - 0.5 / fps:
-            mode = "trim"
-        chain += (f",fps={fps},scale={W}:{H}:flags=lanczos:{render.in_matrix(st)}{TO_709},setsar=1,"
-                  f"tpad=stop_mode=clone:stop_duration={need + 1:.3f}")
-        run(head + ["-i", str(p.source)] + kw + ["-filter_complex", overlay_graph(chain, seg, cfg, kw_idx)] + out)
+        crop = f"setpts=PTS-STARTPTS,crop={cw}:{ch}:{cx}:{cy}"
+        fill = seg.fill
+        pad = f"setsar=1,tpad=stop_mode=clone:stop_duration={need + 1:.3f}"
+        if need > L + 0.5 / fps and fill != "pingpong":
+            # stretched clip: decode (slow-mo / loop, hold) → Python push-in → encode with the keyword overlay
+            slow, join, passes, k = stretch_chain(fill, L, need, fps)
+            to_rgb = f"scale={W}:{H}:flags=lanczos" + (f":{render.in_matrix(st).rstrip(':')}" if render.in_matrix(st) else "")
+            if passes == 2:
+                graph = (f"[0:v]{crop}{slow}[a];[1:v]{crop}{slow}[b];[a][b]{join},"
+                         f"{to_rgb},format=rgb24,{pad}[v]")
+            else:
+                graph = f"[0:v]{crop}{slow},{to_rgb},format=rgb24,{pad}[v]"
+            dec = head + ["-i", str(p.source)] * passes + ["-filter_complex", graph, "-map", "[v]",
+                                                           "-frames:v", str(seg.frames), "-f", "rawvideo",
+                                                           "-pix_fmt", "rgb24", "-"]
+            zoom = min(PUSH_MAX, PUSH_PER_SEC * need)
+            enc = head + ["-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-framerate", str(fps), "-i", "-"]
+            enc += kw + ["-filter_complex", overlay_graph(f"[0:v]scale={TO_709}", seg, cfg, kw_idx)] + out
+            run_piped(enc, render.push_frames(read_frames(dec, W * H * 3, seg.frames), seg.frames, (W, H), zoom))
+            mode = f"{fill} x{k:.2f} push {zoom * 100:.1f}%"
+        else:
+            chain = f"[0:v]{crop}"
+            mode = "clip"
+            if need > L + 0.5 / fps:  # fill=pingpong: 정방향 + 역방향 1회, 그래도 모자라면 정지
+                rev = min(L, need - L + 0.2)
+                chain += (f",split[fw][bw];[bw]trim=start={max(0.0, L - rev):.4f},setpts=PTS-STARTPTS,reverse[rv];"
+                          f"[fw][rv]concat=n=2:v=1:a=0")
+                mode = "pingpong" if need <= 2 * L else "pingpong+freeze"
+            elif need < L - 0.5 / fps:
+                mode = "trim"
+            chain += f",fps={fps},scale={W}:{H}:flags=lanczos:{render.in_matrix(st)}{TO_709},{pad}"
+            run(head + ["-i", str(p.source)] + kw + ["-filter_complex", overlay_graph(chain, seg, cfg, kw_idx)] + out)
     elif p.source_kind == "image":
         im = render.load_image(p.source)
         inset = resolve_inset(p, cfg, lambda: im)
@@ -361,7 +423,8 @@ def write_timeline(paths, ep: str, lang: str, plans, segs, total: float, fps: in
     cuts = []
     for p, s in zip(plans, segs):
         cuts.append({"id": p.id, "type": p.type, "scene": p.scene, "start": round(p.start, 4),
-                     "dur": round(p.dur, 4), "xf_in": round(p.xf_in, 4), "nar_len": round(p.nar_len, 3),
+                     "dur": round(p.dur, 4), "xf_in": round(p.xf_in, 4), "nar_offset": round(p.nar_offset, 4),
+                     "nar_len": round(p.nar_len, 3),
                      "keyword": p.keyword, "text_at": round(p.text_at, 3), "text_pos": p.text_pos,
                      "source": rel(paths, p.source), "source_kind": p.source_kind,
                      "estimated_audio": p.estimated_audio, "inset": s.info.get("inset"),

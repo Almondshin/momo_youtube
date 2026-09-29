@@ -16,6 +16,11 @@ manifest 의 컷(cut) 필드 요약 (자세한 건 docs/MANIFEST.md)
   text_pos      "top"(기본) | "bottom"   — 모모 얼굴이 위쪽이면 bottom
   text_color    "white"(기본) | "yellow"
   duration      최소 길이 강제(초). 나레이션보다 짧게는 못 줄임
+  lead / tail   nothing-but-picture seconds before / after the narration (default 0 / render.tail_pad)
+                — e.g. a musical lead-in on the first cut, an outro tail for the BGM fade
+  fill          how a V/L clip shorter than its cut is extended: "hold" (default — slow-mo ≤1.25x +
+                hold the last frame, gentle push-in), "loop" (crossfade into another pass),
+                "pingpong" (forward then reversed, the old behaviour)
   inset         테두리 제거용 인셋 크롭 비율(0.03~0.04). null=자동 감지, 0=끔
   sfx           [{"file": "pop.wav", "at": 0.5, "gain_db": -6}]
   gen / audio_src  생성 기록 (job_id, url, status, attempts) — fetch_assets.py 가 사용
@@ -35,6 +40,7 @@ from .common import (AUDIO_EXTS, CUT_ID_RE, CUT_TYPES, IMAGE_EXTS, LANGS, LIBRAR
 PAUSE_RE = re.compile(r"\[\s*pause(?:\s*[:=]?\s*([0-9]+(?:\.[0-9]+)?))?\s*(?:s|sec|초)?\s*\]", re.I)
 CHANT_RE = re.compile(r"\[\s*chant\s*\]", re.I)
 ANY_MARKER_RE = re.compile(r"\[[^\]]*\]")
+FILL_MODES = ("hold", "loop", "pingpong")  # cut.fill — see build.render_seg
 WS_RE = re.compile(r"\s+")
 
 
@@ -271,6 +277,12 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
             E.append(f"{cid}: text_pos 는 top|bottom")
         if c.get("transition") not in (None, "fade", "cut"):
             E.append(f"{cid}: transition 은 fade|cut")
+        if c.get("fill") not in (None,) + FILL_MODES:
+            E.append(f"{cid}: fill 은 {'|'.join(FILL_MODES)}")
+        for k in ("lead", "tail"):
+            v = c.get(k)
+            if v is not None and (not isinstance(v, (int, float)) or isinstance(v, bool) or not 0 <= v <= 5):
+                E.append(f"{cid}: {k} 는 0~5 초")
 
     first, last = cuts[0], cuts[-1]
     if not (first.get("type") == "L" and first.get("library_clip") == "intro_wave"):
@@ -376,7 +388,7 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
                   allow_missing: bool = False) -> tuple[list[CutPlan], float, list[str]]:
     """컷 길이·시작 시각·키워드 타이밍을 매번 새로 계산한다.
 
-    컷 길이 = max(크로스페이드 + 나레이션(음성+pause) + tail_pad, min_cut, cut.duration)
+    컷 길이 = max(크로스페이드 + lead + 나레이션(음성+pause) + tail(기본 tail_pad), min_cut, cut.duration)
       - V/L 컷에 나레이션이 없으면 클립 길이
       - 프레임 경계(1/fps)로 올림 → 영상·음성 싱크가 누적 오차 없이 맞음
     fade 로 들어오는 컷은 이전 컷과 xfade 초만큼 겹친다. 나레이션은 겹침이 끝난 뒤 시작하므로
@@ -464,8 +476,10 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         xf = xf_f / fps
 
         # ---- 길이
+        lead = float(c.get("lead") or 0.0)
+        tail_c = tail if c.get("tail") is None else float(c["tail"])
         if nar_len > 0:
-            base = xf + nar_len + tail
+            base = xf + lead + nar_len + tail_c
         elif kind == "video" and src_len:
             base = src_len
         else:
@@ -488,7 +502,7 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
 
         plans.append(CutPlan(
             index=i, id=cid, type=t, scene=scene, cut=c, items=items, speech_files=files,
-            speech_durs=durs, nar_len=nar_len, nar_offset=xf, xf_in=xf, dur=dur_f / fps,
+            speech_durs=durs, nar_len=nar_len, nar_offset=xf + lead, xf_in=xf, dur=dur_f / fps,
             start=start_f / fps, source=source, source_kind=kind, source_len=src_len, keyword=kw,
             text_at=text_at, text_pos=c.get("text_pos") or "top", text_color=c.get("text_color") or "white",
             inset=None if inset is None else float(inset), sfx=sfx, estimated_audio=estimated))

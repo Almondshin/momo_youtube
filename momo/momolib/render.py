@@ -15,7 +15,7 @@ import io
 import math
 import re
 from pathlib import Path
-from typing import Iterator
+from typing import Iterable, Iterator
 
 import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageOps
@@ -263,6 +263,21 @@ def kenburns_frames(im: Image.Image, n: int, size: tuple[int, int], zoom: float,
         cx = min(max(cx, rw / 2), SW - rw / 2)
         x0, y0 = cx - rw / 2, (SH - rh) / 2
         yield src.resize((W, H), Image.BICUBIC, box=(x0, y0, x0 + rw, y0 + rh)).tobytes()
+
+
+def push_frames(frames: Iterable[bytes], n: int, size: tuple[int, int], zoom: float) -> Iterator[bytes]:
+    """Gentle camera push-in over already-rendered rgb24 frames: 1 → 1+zoom, easeInOut, sub-pixel boxes
+    (same idea as kenburns_frames, so a held last frame keeps moving instead of freezing)."""
+    W, H = size
+    for f, buf in enumerate(frames):
+        z = 1.0 + zoom * (_ease(f / (n - 1)) if n > 1 else 0.0)
+        if z <= 1.0 + 1e-6:
+            yield buf
+            continue
+        rw, rh = W / z, H / z
+        x0, y0 = (W - rw) / 2, (H - rh) / 2
+        im = Image.frombuffer("RGB", (W, H), buf, "raw", "RGB", 0, 1)
+        yield im.resize((W, H), Image.BICUBIC, box=(x0, y0, x0 + rw, y0 + rh)).tobytes()
 
 
 # ---------------------------------------------------------------- 카드 / 썸네일 / contact sheet

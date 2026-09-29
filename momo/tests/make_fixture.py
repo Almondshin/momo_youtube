@@ -74,7 +74,7 @@ TOPICS = [
 
 # 컷 24개 스켈레톤. kw: a/b/c/theme, obj: 사물 번호, beeps: 음성 블록 길이 고정(초)
 SKELETON = [
-    dict(scene=1, type="L", library_clip="intro_wave", library_audio="intro"),
+    dict(scene=1, type="L", library_clip="intro_wave", library_audio="intro", lead=0.6),
     dict(scene=1, type="V", en="Look! Momo found a magic box.", ko="와! 모모가 마법 상자를 찾았어.",
          img="[Momo] standing next to a small gift box on a sunny meadow"),
     dict(scene=1, type="S", en="What is inside? Let's find out together!", ko="안에 뭐가 있을까? 같이 보자!",
@@ -93,14 +93,14 @@ SKELETON = [
     dict(scene=2, type="V", en="Momo gives the {oa} a little hug.", ko="모모가 {koa}를 꼭 안아.", kw="a", obj=0,
          pos="bottom", img="[Momo] hugging a {a} {oa}, lots of sky above"),
     dict(scene=3, type="V", en="Now look over here. What is this? [pause 2] It is {b}! A big {b} {ob}!",
-         ko="이제 여기를 봐. 이건 뭘까? [pause 2] {kb}이야! 커다란 {kb} {kob}!", kw="b", obj=1, color="yellow",
+         ko="이제 여기를 봐. 이건 뭘까? [pause 2] {kb}이야! 커다란 {kb} {kob}!", kw="b", obj=1, color="yellow", fill="loop",
          beeps={"en": [4.4, 4.1], "ko": [4.9, 4.5]}, img="[Momo] looking at a big {b} {ob} on the grass"),
     dict(scene=3, type="S", en="{Bc} {ob}! {Bc}!", ko="{kb} {kob}! {kb}!", kw="b", obj=1, momo=False, border=True,
          size=(1536, 864), img="a big {b} {ob} on a soft pastel background, close-up"),
     dict(scene=3, type="V", en="Momo smiles at the {b} {ob}.", ko="모모가 {kb} {kob}를 보고 웃어.", kw="b", obj=1,
          clip_audio=True, img="[Momo] smiling at a {b} {ob}"),
     dict(scene=3, type="V", en="Can you find {b}? [pause 1.5] Yes, {b}!", ko="{kb}을 찾아볼까? [pause 1.5] 맞아, {kb}!",
-         kw="b", obj=1, pos="bottom", img="[Momo] searching for a {b} {ob} behind a bush, sky above"),
+         kw="b", obj=1, pos="bottom", fill="pingpong", img="[Momo] searching for a {b} {ob} behind a bush, sky above"),
     dict(scene=3, type="S", en="[chant] {Bc}, {b}, {b} {ob}!", ko="[chant] {kb}, {kb}, {kb} {kob}!", kw="b", obj=1,
          transition="fade", text_at=1.0, img="[Momo] sitting beside a {b} {ob}, soft pastel background"),
     dict(scene=4, type="V", en="Pop! Here comes {c}!", ko="뿅! {kc}이 나왔어!", kw="c", obj=2,
@@ -121,7 +121,7 @@ SKELETON = [
          ko="같이 말해볼까? [pause 1.5] {ka}, {kb}, {kc}!", img="[Momo] standing in front of three toys, pastel background"),
     dict(scene=5, type="V", en="Momo is so happy. Thank you for playing!", ko="모모는 정말 행복해. 같이 놀아줘서 고마워!",
          img="[Momo] waving in a sunny meadow", motion="waves one paw"),
-    dict(scene=5, type="L", library_clip="outro_bye", library_audio="outro"),
+    dict(scene=5, type="L", library_clip="outro_bye", library_audio="outro", tail=1.5),
 ]
 
 
@@ -391,7 +391,8 @@ def make_episode(root: Path, ep: str, topic_idx: int) -> None:
         kw = kw_map.get(sk.get("kw"))
         cut["keyword"] = {"en": kw[0], "ko": kw[1]} if kw else {"en": "", "ko": ""}
         for key, field in (("pos", "text_pos"), ("color", "text_color"), ("transition", "transition"),
-                           ("text_at", "text_at"), ("sfx", "sfx")):
+                           ("text_at", "text_at"), ("sfx", "sfx"), ("fill", "fill"), ("lead", "lead"),
+                           ("tail", "tail")):
             if key in sk:
                 cut[field] = sk[key]
         if sk["type"] != "L":

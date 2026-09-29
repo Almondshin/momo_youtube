@@ -1,0 +1,4 @@
+"Momo's Morning" — original BGM loop for the Momo the Bunny channel.
+Synthesized from code by momo/make_music.py (numpy; no samples, no third-party music or recordings).
+Owned by the channel; free to use, monetize and modify. No attribution required. Not registered in Content ID.
+Regenerate: python momo/make_music.py --only bgm

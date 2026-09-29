@@ -59,8 +59,10 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `text_pos` | ○ | ○ | ○ | `top`(기본, 상단 25% 밴드 중앙) / `bottom`(하단 25% 밴드) — 모모 얼굴이 위쪽이면 bottom |
 | `text_color` | ○ | ○ | ○ | `white`(기본) / `yellow` |
 | `duration` | ○ | ○ | ○ | 최소 길이(초). 나레이션보다 짧게는 못 줄인다(경고 후 무시) |
+| `lead` / `tail` | ○ | ○ | ○ | Picture-only seconds before / after the narration (0~5; default 0 / `render.tail_pad`). E.g. a musical lead-in on the first cut, a tail on the last cut for the BGM fade-out |
+| `fill` | ○ | ○ |   | How a clip shorter than its cut is extended: `hold` (default — slow-mo ≤1.25x with motion interpolation, then hold the last frame, gentle push-in), `loop` (crossfade into a second pass), `pingpong` (old) |
 | `inset` | ○ | ○ | ○ | 테두리 제거 인셋 크롭 비율. `null`(기본) = 자동 감지 후 감지되면 3.5%, `0` = 끔, `0.03`~`0.04` = 강제 |
-| `sfx` | ○ | ○ | ○ | `[{"file":"pop.wav","at":0.5,"gain_db":-6}]` — `assets/sfx/` 파일, 컷 시작 + `at` 초. 파일이 없으면 경고 후 생략 |
+| `sfx` | ○ | ○ | ○ | `[{"file":"pop.wav","at":0.5,"gain_db":-6}]` — `assets/sfx/` 파일, 컷 시작 + `at` 초. 파일이 없으면 경고 후 생략. Stock set from `make_music.py`: pop, sparkle, boing, whoosh, brush, swish, splash, chime |
 | `gen` | | ● | ● | `{"image": GenRec, "clip": GenRec}` (clip 은 V 만) — hf_jobs.py 가 기록 |
 | `audio_src` | ○ | ○ | ○ | `{"en": {"1": GenRec, "2": GenRec}, "ko": {...}}` — 키 = speech 블록 번호(문자열) |
 
