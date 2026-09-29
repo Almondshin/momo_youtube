@@ -73,9 +73,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 2,
-    "generations": 1,
-    "regenerations": 0
+    "spent": 6,
+    "generations": 3,
+    "regenerations": 1
   },
   "notes": {
     "v_over_reason": null,
@@ -85,7 +85,8 @@
       "2026-09-29 4단계 기획표(plan.md) 승인 — 사물 5컷 캐릭터 블록 생략 해석 포함",
       "2026-09-29 폰트: 나눔스퀘어라운드 Bold (OFL)"
     ],
-    "next_time": []
+    "next_time": [],
+    "library_extra": "악어 Toto·상어 Sunny 캐릭터 시트 (사용자 요청, 다음 편용) — 4크레딧, ep02 예산과 별도"
   },
   "cuts": [
     {

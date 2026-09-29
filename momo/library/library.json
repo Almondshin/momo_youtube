@@ -6,19 +6,27 @@
       "file": "sheets/momo.png",
       "prompt": "Character turnaround model sheet of [Momo]: front view, three-quarter view, side view and back view in one row, plus four facial expressions (happy, surprised, curious, sleepy) in a second row, plain pure white background, even spacing, full body, consistent proportions",
       "status": "generated",
-      "job_id": "6a2dfca4-a6ad-42c7-aa1e-87338d7bd410",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073147_6a2dfca4-a6ad-42c7-aa1e-87338d7bd410.png",
+      "job_id": "2a072594-0913-454c-8897-6b8eb1802fb0",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073654_2a072594-0913-454c-8897-6b8eb1802fb0.png",
       "element_id": null,
-      "attempts": 1,
-      "credits": 2,
+      "attempts": 2,
+      "credits": 4,
       "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - happy, surprised, curious, sleepy, pure white seamless background, professional character sheet presentation, Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with one yellow button, big expressive smile, the one yellow button clearly visible on the front bib of the mint-green overalls in every front and three-quarter view, same outfit on all views, stylized 3D character render, appealing chubby proportions, soft rounded features, soft fur detail, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
       "history": [
         {
           "job_id": "6a2dfca4-a6ad-42c7-aa1e-87338d7bd410",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073147_6a2dfca4-a6ad-42c7-aa1e-87338d7bd410.png",
-          "status": "generated",
+          "status": "rejected",
           "model": "nano_banana_pro(응답 표기: nano_banana_2)",
-          "at": "2026-09-29T07:31Z"
+          "at": "2026-09-29T07:31Z",
+          "reason": "노란 단추 2개 (멜빵 양쪽) — 규칙: 단추 하나"
+        },
+        {
+          "job_id": "2a072594-0913-454c-8897-6b8eb1802fb0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073654_2a072594-0913-454c-8897-6b8eb1802fb0.png",
+          "status": "generated",
+          "at": "2026-09-29T07:36Z",
+          "reason": "재생성: 1차 시트에 노란 단추가 양쪽 멜빵에 2개 → '단추 하나' 규칙 위반"
         }
       ]
     },
@@ -26,13 +34,59 @@
       "file": "sheets/ducky.png",
       "prompt": "Character turnaround model sheet of [Ducky]: front view, three-quarter view, side view and back view in one row, plus four facial expressions (happy, surprised, curious, sleepy) in a second row, plain pure white background, even spacing, full body, consistent proportions",
       "momo": false,
-      "status": "missing",
-      "job_id": null,
-      "url": null,
+      "status": "generated",
+      "job_id": "32f97d5e-8496-4b27-9f4f-30304aa93963",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073557_32f97d5e-8496-4b27-9f4f-30304aa93963.png",
       "element_id": null,
-      "attempts": 0,
-      "credits": 0,
-      "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - happy, surprised, curious, sleepy, pure white seamless background, professional character sheet presentation, Ducky, a tiny round yellow duckling with an orange beak, no clothes, same proportions on all views, stylized 3D character render, appealing chubby proportions, soft rounded features, soft fur detail, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks"
+      "attempts": 1,
+      "credits": 2,
+      "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - happy, surprised, curious, sleepy, pure white seamless background, professional character sheet presentation, Ducky, a tiny round yellow duckling with an orange beak, no clothes, same proportions on all views, stylized 3D character render, appealing chubby proportions, soft rounded features, soft fluffy down feathers, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+      "history": [
+        {
+          "job_id": "32f97d5e-8496-4b27-9f4f-30304aa93963",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073557_32f97d5e-8496-4b27-9f4f-30304aa93963.png",
+          "status": "generated",
+          "at": "2026-09-29T07:36Z"
+        }
+      ]
+    },
+    "croc": {
+      "file": "sheets/croc.png",
+      "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - happy, surprised, curious, sleepy, pure white seamless background, professional character sheet presentation, Toto, a chubby round baby crocodile, soft lime-green body with a pale yellow belly, short rounded snout with no visible teeth, big round friendly eyes, tiny stubby legs, small soft rounded bumps on the back, a small orange bandana tied around the neck, same proportions on all views, the small orange bandana visible in every view, no teeth visible, stylized 3D character render, appealing chubby proportions, soft rounded features, smooth soft skin, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+      "momo": false,
+      "status": "generated",
+      "job_id": "c97e1ed9-e4ae-44c0-bdc3-7f4bcad7ea45",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073757_c97e1ed9-e4ae-44c0-bdc3-7f4bcad7ea45.png",
+      "element_id": null,
+      "attempts": 1,
+      "credits": 2,
+      "history": [
+        {
+          "job_id": "c97e1ed9-e4ae-44c0-bdc3-7f4bcad7ea45",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073757_c97e1ed9-e4ae-44c0-bdc3-7f4bcad7ea45.png",
+          "status": "generated",
+          "at": "2026-09-29T07:38Z"
+        }
+      ]
+    },
+    "shark": {
+      "file": "sheets/shark.png",
+      "prompt_full": "Character turnaround model sheet, identical original character on all views, top row: four consistent full-body views evenly spaced - front view, three-quarter view, side profile view, back view; bottom row: four head-and-shoulders portraits of the same character with four expressions - happy, surprised, curious, sleepy, pure white seamless background, professional character sheet presentation, Sunny, a chubby round baby shark, soft lavender-blue body with a white belly, small rounded fins, big sparkly eyes, rosy cheeks, a gentle closed-mouth smile with no teeth, a small coral-orange star-shaped mark on the forehead, same proportions on all views, the coral-orange star mark visible on the forehead in every front and three-quarter view, no teeth visible, stylized 3D character render, appealing chubby proportions, soft rounded features, smooth soft skin, soft global illumination, even studio lighting, single character only, no other characters, no props, original character not resembling any existing copyrighted character, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+      "momo": false,
+      "status": "generated",
+      "job_id": "920ae0f9-089a-44bc-913f-4da291e48fba",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073800_920ae0f9-089a-44bc-913f-4da291e48fba.png",
+      "element_id": null,
+      "attempts": 1,
+      "credits": 2,
+      "history": [
+        {
+          "job_id": "920ae0f9-089a-44bc-913f-4da291e48fba",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_073800_920ae0f9-089a-44bc-913f-4da291e48fba.png",
+          "status": "generated",
+          "at": "2026-09-29T07:38Z"
+        }
+      ]
     }
   },
   "clips": {

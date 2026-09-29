@@ -103,12 +103,15 @@ def spoken_text(cut: dict, lang: str) -> str:
 def compose_image_prompt(cfg: dict, cut: dict) -> str:
     """[Momo] 캐릭터 블록을 맨 앞에, 스타일 락을 맨 뒤에 그대로 붙인다.
 
-    - [Ducky] 는 그 자리에서 조연 블록으로 치환
+    - [Ducky]·[Croc]·[Shark] 등 조연 태그(config.character.tags)는 그 자리에서 조연 블록으로 치환
     - cut.momo == false 이고 [Momo] 태그가 없으면 캐릭터 블록 생략 (사물 클로즈업 등)
     """
     raw = (cut.get("image_prompt") or "").strip()
     has_tag = "[Momo]" in raw
-    body = raw.replace("[Momo]", " ").replace("[Ducky]", (cfg["character"].get("ducky") or "").strip())
+    body = raw.replace("[Momo]", " ")
+    tags = cfg["character"].get("tags") or {"[Ducky]": "ducky"}
+    for tag, key in tags.items():  # 조연 태그는 그 자리에서 캐릭터 블록으로 치환
+        body = body.replace(tag, (cfg["character"].get(key) or "").strip())
     body = WS_RE.sub(" ", body).strip(" ,.;")
     parts = []
     if has_tag or cut.get("momo", True):

@@ -32,8 +32,17 @@
     "ducky": "Ducky, a tiny round yellow duckling with an orange beak, no clothes",
     "rules": [
       "의상·색·비율을 바꾸지 말 것. 우비 등은 멜빵바지 위에 덧입힌다.",
-      "노란 단추 하나는 항상 보이게 (씬 간 일관성 시그니처)."
-    ]
+      "노란 단추 하나는 항상 보이게 (씬 간 일관성 시그니처).",
+      "조연(Ducky·Toto·Sunny)은 필요한 에피소드에서만. 이빨·날카로운 발톱 등 무서운 요소 금지.",
+      "Toto 의 주황 반다나, Sunny 의 산호색 별 무늬는 항상 보이게 (씬 간 식별 표식)."
+    ],
+    "croc": "Toto, a chubby round baby crocodile, soft lime-green body with a pale yellow belly, short rounded snout with no visible teeth, big round friendly eyes, tiny stubby legs, small soft rounded bumps on the back, a small orange bandana tied around the neck",
+    "shark": "Sunny, a chubby round baby shark, soft lavender-blue body with a white belly, small rounded fins, big sparkly eyes, rosy cheeks, a gentle closed-mouth smile with no teeth, a small coral-orange star-shaped mark on the forehead",
+    "tags": {
+      "[Ducky]": "ducky",
+      "[Croc]": "croc",
+      "[Shark]": "shark"
+    }
   },
   "style_lock": "bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
   "video_prompt_suffix": "Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
