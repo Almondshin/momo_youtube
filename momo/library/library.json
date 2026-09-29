@@ -123,11 +123,22 @@
       "image_prompt": "[Momo] standing in the center of a sunny soft-green meadow, facing the viewer, one paw raised to say hello, lots of clear pale-blue sky in the upper third",
       "motion": "waves one paw at the viewer, ears bounce gently",
       "image": {
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "a0a58c26-b14d-4dce-8407-c062dfa297e6",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105039_a0a58c26-b14d-4dce-8407-c062dfa297e6.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "a0a58c26-b14d-4dce-8407-c062dfa297e6",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105039_a0a58c26-b14d-4dce-8407-c062dfa297e6.png",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T10:50Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": null
       },
       "status": "missing",
       "job_id": null,
@@ -140,11 +151,22 @@
       "image_prompt": "[Momo] standing in the center of a sunny soft-green meadow at golden afternoon light, facing the viewer with a warm smile, one paw raised, clear sky in the upper third",
       "motion": "waves one paw goodbye slowly, small nod",
       "image": {
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "ffad3de3-24dd-41aa-90af-b2c48f8d6919",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105043_ffad3de3-24dd-41aa-90af-b2c48f8d6919.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "ffad3de3-24dd-41aa-90af-b2c48f8d6919",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105043_ffad3de3-24dd-41aa-90af-b2c48f8d6919.png",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T10:50Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": null
       },
       "status": "missing",
       "job_id": null,
@@ -157,11 +179,22 @@
       "image_prompt": "[Momo] close-up from the waist up, facing the viewer with an encouraging open-mouth smile, soft pastel-yellow simple background with empty space above the head",
       "motion": "nods head gently twice, ears bounce",
       "image": {
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "013ff281-b519-45ba-82f5-936c39dd7511",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105046_013ff281-b519-45ba-82f5-936c39dd7511.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "013ff281-b519-45ba-82f5-936c39dd7511",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105046_013ff281-b519-45ba-82f5-936c39dd7511.png",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T10:50Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": null
       },
       "status": "missing",
       "job_id": null,
@@ -174,11 +207,22 @@
       "image_prompt": "[Momo] standing in the center facing the viewer, very happy, paws together in front of the chest, soft pastel-pink simple background with empty space above the head",
       "motion": "claps paws happily, one small hop in place",
       "image": {
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "5fca7eb8-824b-437e-8760-d0d29c3334f3",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105050_5fca7eb8-824b-437e-8760-d0d29c3334f3.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "5fca7eb8-824b-437e-8760-d0d29c3334f3",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105050_5fca7eb8-824b-437e-8760-d0d29c3334f3.png",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T10:50Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": null
       },
       "status": "missing",
       "job_id": null,
@@ -191,11 +235,22 @@
       "image_prompt": "[Momo] standing slightly left of center on a soft mint-green simple background, body turned toward the right side, ready to hop",
       "motion": "hops happily to the right and out of the frame with small bouncy hops, camera stays still",
       "image": {
-        "status": "missing",
-        "job_id": null,
-        "url": null,
-        "attempts": 0,
-        "credits": 0
+        "status": "generated",
+        "job_id": "674a9689-ae96-482e-ae11-9ec67a317591",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105150_674a9689-ae96-482e-ae11-9ec67a317591.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "674a9689-ae96-482e-ae11-9ec67a317591",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_105150_674a9689-ae96-482e-ae11-9ec67a317591.png",
+            "status": "generated",
+            "reason": null,
+            "at": "2026-09-29T10:51Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": null
       },
       "status": "missing",
       "job_id": null,
