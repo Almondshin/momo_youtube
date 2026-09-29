@@ -98,7 +98,8 @@ def make_segs(plans: list[CutPlan], cfg: dict, tmp: Path, font: Path) -> list[Se
 
 def card_lines(p: CutPlan) -> list[str]:
     what = f"library clip: {p.cut.get('library_clip')}" if p.type == "L" else "NO IMAGE (animatic)"
-    return [f"{p.id}  {p.type}", what, p.keyword]
+    speech = " / ".join(it.text for it in p.items if it.kind == "speech")
+    return [f"{p.id}  {p.type}", what, speech[:60] + ("…" if len(speech) > 60 else "")]
 
 
 def resolve_inset(p: CutPlan, cfg: dict, sample) -> float:
@@ -136,7 +137,11 @@ def run_piped(cmd: list[str], frames) -> None:
                 proc.stdin.write(fr)
             proc.stdin.close()
         except BrokenPipeError:
-            pass
+            pass  # ffmpeg 가 먼저 죽음 → 아래에서 stderr 로 보고
+        except BaseException:
+            proc.kill()
+            proc.wait()
+            raise
         code = proc.wait()
         if code != 0:
             err.seek(0)
@@ -421,6 +426,8 @@ def main() -> int:
 
     plans, total, pwarn = plan_timeline(paths, cfg, manifest, lang, allow_missing=args.allow_missing)
     font = find_font(paths, cfg, "keyword", need_hangul=(lang == "ko"))
+    if audio.find_bgm(paths, cfg, manifest) is None and not args.allow_missing:
+        raise MomoError(f"BGM 없음: assets/bgm/ 에 BGM 을 넣어줘 ({paths.bgm})")
     log(f"▶ {ep} [{lang}] 컷 {len(plans)}개, 총 {mmss(total)} ({int(round(total * fps))}프레임), 폰트 {font.name}")
     for w in pwarn:
         log(f"△ {w}")

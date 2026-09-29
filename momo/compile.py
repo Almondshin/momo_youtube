@@ -164,6 +164,10 @@ def main() -> int:
               "→ 설명란에 넣어도 챕터로 표시되지 않을 수 있음")
     if not args.keep_temp:
         shutil.rmtree(tmp, ignore_errors=True)
+        try:
+            tmp.parent.rmdir()  # 비었을 때만
+        except OSError:
+            pass
 
     print(f"\n✔ {out} ({out.stat().st_size / 1e6:.1f} MB, {fmt_ts(total)})")
     print(f"  챕터: {chapters.name}")

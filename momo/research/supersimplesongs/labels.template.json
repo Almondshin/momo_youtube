@@ -1,0 +1,220 @@
+{
+  "_안내": "썸네일을 직접 보고 thumbnail_subject 를 채운 뒤 labels.json 으로 저장하고 `python analyze_channel.py report --dir <폴더>` 로 재계산. 값은 자동 판정을 덮어쓴다 (빈 값 = 자동 유지).",
+  "_허용값": {
+    "topic": [
+      "색",
+      "숫자",
+      "알파벳·단어",
+      "동물",
+      "생활습관",
+      "탈것",
+      "감정",
+      "기타"
+    ],
+    "format": [
+      "모음집",
+      "퀴즈·따라하기",
+      "스토리",
+      "동요",
+      "미분류"
+    ],
+    "length_bucket": [
+      "≤3분",
+      "3~10분",
+      "10~30분",
+      "30분+"
+    ],
+    "thumbnail_subject": [
+      "캐릭터 클로즈업",
+      "사물",
+      "텍스트 위주",
+      "미분류"
+    ],
+    "search_keyword": [
+      true,
+      false
+    ]
+  },
+  "videos": {
+    "LuJe0ad1Ygk": {
+      "title": "When We Play Hockey 🏒 | Super Simple Songs & ‪@NHL Hockey Song for Kids",
+      "role": "최신 1",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "GzIObE7uR8Q": {
+      "title": "Top 20 Anniversary Hit Songs 🎶 | \"20 Years of Super Simple\" now on Vinyl!",
+      "role": "최신 2",
+      "topic": "기타",
+      "format": "모음집",
+      "length_bucket": "30분+",
+      "thumbnail_subject": "",
+      "search_keyword": false
+    },
+    "uBweptmCYZg": {
+      "title": "Our Listening Ears 👂 | Animal Sounds & Guessing Game for Kids! | Super Simple Songs",
+      "role": "최신 3",
+      "topic": "동물",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "2QtoaV22rpY": {
+      "title": "Top 20 Circle Time Songs ⭕️ | Kids Classroom Favorites | Super Simple's 20th Anniversary!",
+      "role": "최신 4",
+      "topic": "기타",
+      "format": "모음집",
+      "length_bucket": "30분+",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "iHP8FGwzjJg": {
+      "title": "🎉 Everybody Celebrate 🎉 | Best Celebration Song for Kids | 20 Years of Super Simple Songs!",
+      "role": "최신 5",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "LLgTFZP3IQQ": {
+      "title": "Top 20 Back To School Songs | 🍎 📚 Learn and Sing ABCs + More! | Super Simple’s 20th Anniversary!",
+      "role": "최신 6",
+      "topic": "알파벳·단어",
+      "format": "모음집",
+      "length_bucket": "30분+",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "YaFSwBg1qvg": {
+      "title": "Put on Your Shoes | Featuring Tobee and the Super Simple Puppets! | Super Simple Songs",
+      "role": "최신 7",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": false
+    },
+    "BG8HLIvuK24": {
+      "title": "Top 20 Counting Songs | Numbers Practice for Preschool + Up | 20th Anniversary of Super Simple Songs",
+      "role": "최신 8",
+      "topic": "숫자",
+      "format": "모음집",
+      "length_bucket": "30분+",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "-HOQGg7uuQQ": {
+      "title": "Counting Up To 20 | Sea Animals Kids Math Song with @NoodleAndPals | Super Simple Songs",
+      "role": "최신 9",
+      "topic": "숫자",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "jZnBNf0GJyU": {
+      "title": "Top 20 Book Songs 📚 | Super Simple’s 20th Anniversary! | Let's Read!",
+      "role": "최신 10",
+      "topic": "기타",
+      "format": "모음집",
+      "length_bucket": "30분+",
+      "thumbnail_subject": "",
+      "search_keyword": false
+    },
+    "wtX9hMdLuew": {
+      "title": "I'm Going On A Trip | 🗺️ 🎒 Pack your bag for your adventure! | Super Simple Songs",
+      "role": "최신 11",
+      "topic": "기타",
+      "format": "스토리",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": false
+    },
+    "q1DinydBRNE": {
+      "title": "Top 20 Summer Songs 🌞 | Best of Super Simple Hits of 2026!",
+      "role": "최신 12",
+      "topic": "기타",
+      "format": "모음집",
+      "length_bucket": "30분+",
+      "thumbnail_subject": "",
+      "search_keyword": false
+    },
+    "hDqWTltrGJ8": {
+      "title": "Shapes I See At The Beach 🏖️ | Oval, Star, Rectangle | Super Simple Songs",
+      "role": "최신 13",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "N8gOM-A3cUw": {
+      "title": "Top 20 Active Songs! | Super Simple’s 20th Anniversary! | Let's Move!",
+      "role": "최신 14",
+      "topic": "기타",
+      "format": "모음집",
+      "length_bucket": "30분+",
+      "thumbnail_subject": "",
+      "search_keyword": false
+    },
+    "CXb9llX_LoU": {
+      "title": "Sports! | Kids Song | Song of Summer ⚽️ | Super Simple Songs",
+      "role": "최신 15",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "4XLQpRI_wOQ": {
+      "title": "This Is The Way | Kids Songs | Super Simple Songs",
+      "role": "역대 1",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "yCjJyiqpAuU": {
+      "title": "Twinkle Twinkle Little Star | Nursery Rhymes for Kids | Super Simple Songs",
+      "role": "역대 2",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "1GDFa-nEzlg": {
+      "title": "This Is The Way We Get Dressed | Kids Songs | Super Simple Songs",
+      "role": "역대 3",
+      "topic": "생활습관",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "pZw9veQ76fo": {
+      "title": "Five Little Ducks | Kids Songs | Super Simple Songs",
+      "role": "역대 4",
+      "topic": "숫자",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "M6LoRZsHMSs": {
+      "title": "If You’re Happy And You Know It | Kids Songs | Super Simple Songs",
+      "role": "역대 5",
+      "topic": "감정",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    }
+  }
+}

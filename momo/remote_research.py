@@ -247,6 +247,25 @@ def fetch_channel(ch: dict, req: dict, research: Path, pubkey: Path, sealed: Pat
         result["samples"] = samples
         save_json(base / "remote_samples.json", samples)
 
+    if req.get("thumbs_all") and by_views:
+        # 축 분류(썸네일 주인공)용: 최신 N + 역대 top N 전부를 한 시트로
+        tdir = work / "thumbs_all"
+        tdir.mkdir(exist_ok=True)
+        rows = [(f"R{i + 1:02d}", e) for i, e in enumerate(recent)] + \
+               [(f"T{i + 1}", e) for i, e in enumerate(by_views[:top_n])]
+        got, labs = [], []
+        for lab, e in rows:
+            dest = tdir / f"{lab}_{e['id']}.jpg"
+            if download(f"https://i.ytimg.com/vi/{e['id']}/hqdefault.jpg", dest):
+                got.append(dest)
+                v = e.get("view_count")
+                labs.append(f"{lab} {e['id']} {v:,}" if v else f"{lab} {e['id']}")
+        if got:
+            sheet = work / f"{slug}_thumbs_all.jpg"
+            contact_sheet(got, labs, sheet, cols=5, cell_w=384)
+            seal(sheet, pubkey, sealed / slug)
+        log(f"(썸네일 전체) {len(got)}/{len(rows)}장 시트")
+
     if req.get("thumbs", True) and by_views:
         # (c) 썸네일: 역대 1·2위 + 최근 1위·최하위 (72시간 미만 제외)
         now = time.time()

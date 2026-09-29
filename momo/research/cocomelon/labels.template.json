@@ -1,0 +1,220 @@
+{
+  "_안내": "썸네일을 직접 보고 thumbnail_subject 를 채운 뒤 labels.json 으로 저장하고 `python analyze_channel.py report --dir <폴더>` 로 재계산. 값은 자동 판정을 덮어쓴다 (빈 값 = 자동 유지).",
+  "_허용값": {
+    "topic": [
+      "색",
+      "숫자",
+      "알파벳·단어",
+      "동물",
+      "생활습관",
+      "탈것",
+      "감정",
+      "기타"
+    ],
+    "format": [
+      "모음집",
+      "퀴즈·따라하기",
+      "스토리",
+      "동요",
+      "미분류"
+    ],
+    "length_bucket": [
+      "≤3분",
+      "3~10분",
+      "10~30분",
+      "30분+"
+    ],
+    "thumbnail_subject": [
+      "캐릭터 클로즈업",
+      "사물",
+      "텍스트 위주",
+      "미분류"
+    ],
+    "search_keyword": [
+      true,
+      false
+    ]
+  },
+  "videos": {
+    "KPh2Efv66Aw": {
+      "title": "Mary Had a Little Lamb | Adventure on the Farm | CoComelon Nursery Rhymes and Kids Songs",
+      "role": "최신 1",
+      "topic": "동물",
+      "format": "스토리",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "WjZ2f71dFck": {
+      "title": "Jump in the Puddles | Rainy Day with Toddlers | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 2",
+      "topic": "생활습관",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "O7-GZ_xOAg8": {
+      "title": "Finger Family + Emmy's Haunted House | CoComelon Halloween Mix | Nursery Rhymes & Kids Songs",
+      "role": "최신 3",
+      "topic": "기타",
+      "format": "모음집",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "Goau5pVgjTM": {
+      "title": "My Best Friend - Boba Bear Helps JJ's Boo Boos | CoComelon Nursery Rhymes and Kids Songs",
+      "role": "최신 4",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "Dq2mT4C1B30": {
+      "title": "Wheels on the Halloween Bus | Costume Party for Kids | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 5",
+      "topic": "탈것",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "6j38CYnpq9g": {
+      "title": "CeCe's Bubble Bath Mix | Bathtime Fun | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 6",
+      "topic": "생활습관",
+      "format": "모음집",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "UjZtlE_7PMo": {
+      "title": "I like to Wiggle & Dance | Mommy & Baby JJ Play Time | CoComelon Nursery Rhymes and Kids Song",
+      "role": "최신 7",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "PxvLQcW0tJU": {
+      "title": "Twinkle Star is in Trouble! ⭐ Night Time Songs 😴 | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 8",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "h5SVBuetBSA": {
+      "title": "Learn Your ABCs with JJ and Bella! 🩷 | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 9",
+      "topic": "알파벳·단어",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "WMtSPnsgr1U": {
+      "title": "The Farmer in the Dell | Farm Animals Play Pretend | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 10",
+      "topic": "동물",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "TIy5Iy6V54E": {
+      "title": "I Love My Bed + More Bedtime Routine Songs for Babies | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 11",
+      "topic": "생활습관",
+      "format": "모음집",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "bL4drdg-41Y": {
+      "title": "Nina Builds a New Best Friend! 🎨 Pin Pon Paper Doll Song | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 12",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "vTLfOqEolsk": {
+      "title": "Finger Family - Classic Nursery Rhymes | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 13",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "7Qfq7vsVWWQ": {
+      "title": "Yes Yes Let’s Get Dressed & Time To Go to School! | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 14",
+      "topic": "생활습관",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "enI7IxrqyuM": {
+      "title": "Oh No! Cody dropped his Ice Cream | Happy, and You Know It | CoComelon Nursery Rhymes & Kids Songs",
+      "role": "최신 15",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "e_04ZrNroTo": {
+      "title": "Wheels on the Bus | @CoComelon Nursery Rhymes & Kids Songs",
+      "role": "역대 1",
+      "topic": "탈것",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "WRVsOCh907o": {
+      "title": "Bath Song | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs",
+      "role": "역대 2",
+      "topic": "생활습관",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "MR5XSOdjKMA": {
+      "title": "Baa Baa Black Sheep | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs",
+      "role": "역대 3",
+      "topic": "기타",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "020g-0hhCAU": {
+      "title": "Baby Shark | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs",
+      "role": "역대 4",
+      "topic": "동물",
+      "format": "동요",
+      "length_bucket": "≤3분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    },
+    "ohHYABXMqUQ": {
+      "title": "Yes Yes Vegetables Song | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs",
+      "role": "역대 5",
+      "topic": "생활습관",
+      "format": "동요",
+      "length_bucket": "3~10분",
+      "thumbnail_subject": "",
+      "search_keyword": true
+    }
+  }
+}

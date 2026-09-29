@@ -1,0 +1,1640 @@
+{
+  "schema": 1,
+  "generated_at": "2026-09-29T07:18:26Z",
+  "now": "2026-09-29T07:18:00Z",
+  "backend": "ytdlp",
+  "source": "offline:channel_flat.json",
+  "channel": {
+    "id": "UCbCmjCuTUZos6Inko4u57UQ",
+    "name": "Cocomelon - Nursery Rhymes",
+    "handle": "@CoComelon",
+    "url": "https://www.youtube.com/@CoComelon",
+    "subscribers": 203000000,
+    "listed": 1351,
+    "limit": 2000,
+    "truncated": false,
+    "total_reported": 1351,
+    "partial": false,
+    "dates": "approx"
+  },
+  "bench": {
+    "recent_count": 15,
+    "top_count": 5,
+    "min_age_hours": 72,
+    "compilation_min_seconds": 1800
+  },
+  "popular": {
+    "method": "view_count_sort",
+    "note": "인기순(sort=p) 결과가 조회수 내림차순이 아님 → (a) 목록을 조회수 내림차순 정렬",
+    "check": {
+      "checked": 30,
+      "missing_views": 0,
+      "inversions": 15,
+      "descending": false
+    },
+    "ids": [
+      "e_04ZrNroTo",
+      "WRVsOCh907o",
+      "MR5XSOdjKMA",
+      "020g-0hhCAU",
+      "ohHYABXMqUQ"
+    ]
+  },
+  "top": [
+    "e_04ZrNroTo",
+    "WRVsOCh907o",
+    "MR5XSOdjKMA",
+    "020g-0hhCAU",
+    "ohHYABXMqUQ"
+  ],
+  "recent": [
+    "KPh2Efv66Aw",
+    "WjZ2f71dFck",
+    "O7-GZ_xOAg8",
+    "Goau5pVgjTM",
+    "Dq2mT4C1B30",
+    "6j38CYnpq9g",
+    "UjZtlE_7PMo",
+    "PxvLQcW0tJU",
+    "h5SVBuetBSA",
+    "WMtSPnsgr1U",
+    "TIy5Iy6V54E",
+    "bL4drdg-41Y",
+    "vTLfOqEolsk",
+    "7Qfq7vsVWWQ",
+    "enI7IxrqyuM"
+  ],
+  "excluded_new": [
+    {
+      "id": "KPh2Efv66Aw",
+      "title": "Mary Had a Little Lamb | Adventure on the Farm | CoComelon Nursery Rhymes and Kids Songs",
+      "age_hours": 0.3,
+      "view_count": 3200
+    }
+  ],
+  "unknown_age": [],
+  "metrics": {
+    "best_overall": {
+      "id": "e_04ZrNroTo",
+      "title": "Wheels on the Bus | @CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 9400000000,
+      "duration": 229
+    },
+    "best_short": {
+      "id": "e_04ZrNroTo",
+      "title": "Wheels on the Bus | @CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 9400000000,
+      "duration": 229
+    },
+    "recent_short_avg": 3272285.714285714,
+    "recent_short_n": 14,
+    "recent_short_ids": [
+      "WjZ2f71dFck",
+      "O7-GZ_xOAg8",
+      "Goau5pVgjTM",
+      "Dq2mT4C1B30",
+      "6j38CYnpq9g",
+      "UjZtlE_7PMo",
+      "PxvLQcW0tJU",
+      "h5SVBuetBSA",
+      "WMtSPnsgr1U",
+      "TIy5Iy6V54E",
+      "bL4drdg-41Y",
+      "vTLfOqEolsk",
+      "7Qfq7vsVWWQ",
+      "enI7IxrqyuM"
+    ],
+    "best_vs_recent_avg": 2872.6097965598533,
+    "best_short_vs_recent_avg": 2872.6097965598533,
+    "subscribers": 203000000,
+    "best_per_subscriber": 46.30541871921182,
+    "recent_avg_per_subscriber": 0.01611963406052076,
+    "listed_total_views": 211053676200,
+    "top_total_views": 29900000000,
+    "top_share": 0.14167012173560045
+  },
+  "compilations": {
+    "min_seconds": 1800,
+    "count": 496,
+    "eligible_n": 496,
+    "mean_views": 113920161.29032259,
+    "median_views": 42000000.0,
+    "total_views": 56504400000,
+    "share_of_listed_total": 0.2677252584146175,
+    "mean_vs_recent_short_avg": 34.813635249814816,
+    "in_top": [],
+    "in_recent": [],
+    "top": [
+      {
+        "id": "w_IINnpSjY8",
+        "title": "Beach Song + More Nursery Rhymes & Kids Songs - CoComelon",
+        "view_count": 1800000000,
+        "duration": 2049
+      },
+      {
+        "id": "wV3N-wCRL2k",
+        "title": "Wheels on the Bus + More Nursery Rhymes & Kids Songs - CoComelon",
+        "view_count": 1800000000,
+        "duration": 1976
+      },
+      {
+        "id": "_UR-l3QI2nE",
+        "title": "ABC SONG | ABC Songs for Children - 13 Alphabet Songs & 26 Videos",
+        "view_count": 1700000000,
+        "duration": 3052
+      },
+      {
+        "id": "ZzAm13KsBCc",
+        "title": "Bath Song + More Nursery Rhymes & Kids Songs - CoComelon",
+        "view_count": 1600000000,
+        "duration": 1986
+      },
+      {
+        "id": "DruYNHN4FYY",
+        "title": "Yes Yes Vegetables Song + More Nursery Rhymes & Kids Songs - CoComelon",
+        "view_count": 1400000000,
+        "duration": 2264
+      }
+    ]
+  },
+  "status": {
+    "label": "정체",
+    "recent_n": 15,
+    "prev_n": 45,
+    "recent_median": 1400000.0,
+    "prev_median": 4000000.0,
+    "median_ratio": 0.35,
+    "recent_daily_median": 118973.18881916713,
+    "prev_daily_median": 67169.2321581727,
+    "daily_ratio": 1.771245330585356,
+    "recent_ids": [
+      "WjZ2f71dFck",
+      "O7-GZ_xOAg8",
+      "Goau5pVgjTM",
+      "Dq2mT4C1B30",
+      "6j38CYnpq9g",
+      "UjZtlE_7PMo",
+      "PxvLQcW0tJU",
+      "h5SVBuetBSA",
+      "WMtSPnsgr1U",
+      "TIy5Iy6V54E",
+      "bL4drdg-41Y",
+      "vTLfOqEolsk",
+      "7Qfq7vsVWWQ",
+      "enI7IxrqyuM",
+      "MEAR7ENkieM"
+    ],
+    "prev_ids": [
+      "wBv_ywwaAfk",
+      "_cmxOYRWYQA",
+      "vFdBQ64gZf4",
+      "O0nV7hJ9qzk",
+      "Gfcybr0q-HA",
+      "3G8OSUZgPCw",
+      "tgFynI0l06U",
+      "-rzG116pLbw",
+      "hqehvbhky5k",
+      "F_wuTLqVY7k",
+      "vMH1M0px_-s",
+      "joP2XFA9WGA",
+      "NzWX-S_ZRH4",
+      "VVrT0wnLcT0",
+      "wfwvrawZDs8",
+      "5temoFssh1g",
+      "ycabAQONvgY",
+      "2wxa2T-J1hM",
+      "-znoP8-rfDE",
+      "49l-6Mo5gRI",
+      "n2puCPKOGFI",
+      "lZlonwcIQ5w",
+      "IOB7iTsG1G0",
+      "egyghUUQt4s",
+      "gtif4EVEYBU",
+      "N-FV1LGtCqg",
+      "i1yHAg9cpU4",
+      "RV9qK05aBQ0",
+      "_Lw5pHXGZhs",
+      "0D_-pW_GgvI",
+      "HACCFmy1vCI",
+      "qFcYmJ86o3k",
+      "CJkOp4bkNak",
+      "9POF21wXLxw",
+      "D7L_hNbq3do",
+      "6td9DWmD8XM",
+      "5mJsNhh2V6E",
+      "-Uv4BF6iSfE",
+      "y8tEumj-rOQ",
+      "FWx3IFnvoas",
+      "5Es-WhgMM1o",
+      "wLZ1AEgwxzQ",
+      "9_R9sQHrzLY",
+      "Z11F-qAXrzw",
+      "j-4oEegdLrE"
+    ],
+    "rule": {
+      "growth_median": 1.0,
+      "growth_daily": 3.0,
+      "growth_daily_min_median": 0.7,
+      "decline_median": 0.5,
+      "decline_daily": 1.0,
+      "decline_median_nodaily": 0.3
+    },
+    "rule_text": "성장: 중앙값 비 ≥ 1.0, 또는 (일평균 비 ≥ 3.0 이고 중앙값 비 ≥ 0.7) / 하락: 중앙값 비 < 0.5 이고 일평균 비 < 1.0 (일평균을 못 구하면 중앙값 비 < 0.3) / 그 외 정체. 최근 영상은 노출 기간이 짧아 누적 중앙값은 불리하고 일평균은 유리하므로 둘을 함께 본다."
+  },
+  "axes": {
+    "topic": {
+      "name": "학습 소재",
+      "groups": [
+        {
+          "value": "기타",
+          "n": 7,
+          "mean_views": 3787428.5714285714,
+          "median_views": 1200000.0,
+          "ids": [
+            "O7-GZ_xOAg8",
+            "Goau5pVgjTM",
+            "UjZtlE_7PMo",
+            "PxvLQcW0tJU",
+            "bL4drdg-41Y",
+            "vTLfOqEolsk",
+            "enI7IxrqyuM"
+          ],
+          "separate": false
+        },
+        {
+          "value": "생활습관",
+          "n": 4,
+          "mean_views": 3725000.0,
+          "median_views": 1400000.0,
+          "ids": [
+            "WjZ2f71dFck",
+            "6j38CYnpq9g",
+            "TIy5Iy6V54E",
+            "7Qfq7vsVWWQ"
+          ],
+          "separate": false
+        },
+        {
+          "value": "탈것",
+          "n": 1,
+          "mean_views": 1600000.0,
+          "median_views": 1600000.0,
+          "ids": [
+            "Dq2mT4C1B30"
+          ],
+          "separate": false
+        },
+        {
+          "value": "알파벳·단어",
+          "n": 1,
+          "mean_views": 1400000.0,
+          "median_views": 1400000.0,
+          "ids": [
+            "h5SVBuetBSA"
+          ],
+          "separate": false
+        },
+        {
+          "value": "동물",
+          "n": 1,
+          "mean_views": 1400000.0,
+          "median_views": 1400000.0,
+          "ids": [
+            "WMtSPnsgr1U"
+          ],
+          "separate": false
+        }
+      ],
+      "gap": {
+        "ratio": 1.0167593480345158,
+        "abs": 62428.57142857136,
+        "high": "기타",
+        "low": "생활습관",
+        "high_mean": 3787428.5714285714,
+        "low_mean": 3725000.0
+      },
+      "note": null
+    },
+    "format": {
+      "name": "형식",
+      "groups": [
+        {
+          "value": "동요",
+          "n": 11,
+          "mean_views": 3833545.4545454546,
+          "median_views": 1400000.0,
+          "ids": [
+            "WjZ2f71dFck",
+            "Goau5pVgjTM",
+            "Dq2mT4C1B30",
+            "UjZtlE_7PMo",
+            "PxvLQcW0tJU",
+            "h5SVBuetBSA",
+            "WMtSPnsgr1U",
+            "bL4drdg-41Y",
+            "vTLfOqEolsk",
+            "7Qfq7vsVWWQ",
+            "enI7IxrqyuM"
+          ],
+          "separate": false
+        },
+        {
+          "value": "모음집",
+          "n": 3,
+          "mean_views": 1214333.3333333333,
+          "median_views": 1400000.0,
+          "ids": [
+            "O7-GZ_xOAg8",
+            "6j38CYnpq9g",
+            "TIy5Iy6V54E"
+          ],
+          "separate": false
+        }
+      ],
+      "gap": {
+        "ratio": 3.156913632620468,
+        "abs": 2619212.121212121,
+        "high": "동요",
+        "low": "모음집",
+        "high_mean": 3833545.4545454546,
+        "low_mean": 1214333.3333333333
+      },
+      "note": null
+    },
+    "length_bucket": {
+      "name": "길이 구간",
+      "groups": [
+        {
+          "value": "≤3분",
+          "n": 4,
+          "mean_views": 3867250.0,
+          "median_views": 1300000.0,
+          "ids": [
+            "Goau5pVgjTM",
+            "UjZtlE_7PMo",
+            "WMtSPnsgr1U",
+            "vTLfOqEolsk"
+          ],
+          "separate": false
+        },
+        {
+          "value": "3~10분",
+          "n": 10,
+          "mean_views": 3034300.0,
+          "median_views": 1400000.0,
+          "ids": [
+            "WjZ2f71dFck",
+            "O7-GZ_xOAg8",
+            "Dq2mT4C1B30",
+            "6j38CYnpq9g",
+            "PxvLQcW0tJU",
+            "h5SVBuetBSA",
+            "TIy5Iy6V54E",
+            "bL4drdg-41Y",
+            "7Qfq7vsVWWQ",
+            "enI7IxrqyuM"
+          ],
+          "separate": false
+        }
+      ],
+      "gap": {
+        "ratio": 1.2745114194377616,
+        "abs": 832950.0,
+        "high": "≤3분",
+        "low": "3~10분",
+        "high_mean": 3867250.0,
+        "low_mean": 3034300.0
+      },
+      "note": null
+    },
+    "thumbnail_subject": {
+      "name": "썸네일 주인공",
+      "groups": [
+        {
+          "value": "미분류",
+          "n": 14,
+          "mean_views": 3272285.714285714,
+          "median_views": 1400000.0,
+          "ids": [
+            "WjZ2f71dFck",
+            "O7-GZ_xOAg8",
+            "Goau5pVgjTM",
+            "Dq2mT4C1B30",
+            "6j38CYnpq9g",
+            "UjZtlE_7PMo",
+            "PxvLQcW0tJU",
+            "h5SVBuetBSA",
+            "WMtSPnsgr1U",
+            "TIy5Iy6V54E",
+            "bL4drdg-41Y",
+            "vTLfOqEolsk",
+            "7Qfq7vsVWWQ",
+            "enI7IxrqyuM"
+          ],
+          "separate": false
+        }
+      ],
+      "gap": null,
+      "note": "labels.json 으로 썸네일 주인공을 채워야 비교 가능"
+    },
+    "search_keyword": {
+      "name": "제목 검색 키워드",
+      "groups": [
+        {
+          "value": "포함",
+          "n": 14,
+          "mean_views": 3272285.714285714,
+          "median_views": 1400000.0,
+          "ids": [
+            "WjZ2f71dFck",
+            "O7-GZ_xOAg8",
+            "Goau5pVgjTM",
+            "Dq2mT4C1B30",
+            "6j38CYnpq9g",
+            "UjZtlE_7PMo",
+            "PxvLQcW0tJU",
+            "h5SVBuetBSA",
+            "WMtSPnsgr1U",
+            "TIy5Iy6V54E",
+            "bL4drdg-41Y",
+            "vTLfOqEolsk",
+            "7Qfq7vsVWWQ",
+            "enI7IxrqyuM"
+          ],
+          "separate": false
+        }
+      ],
+      "gap": null,
+      "note": "n≥2 인 그룹이 2개 미만이라 비교 불가"
+    }
+  },
+  "largest_gap_axis": {
+    "axis": "format",
+    "name": "형식",
+    "ratio": 3.156913632620468,
+    "abs": 2619212.121212121,
+    "high": "동요",
+    "low": "모음집",
+    "high_mean": 3833545.4545454546,
+    "low_mean": 1214333.3333333333
+  },
+  "top3_vs_alltime": {
+    "alltime_modes": {
+      "format": "동요",
+      "topic": "생활습관",
+      "length_bucket": "≤3분"
+    },
+    "recent_top3": [
+      {
+        "id": "vTLfOqEolsk",
+        "title": "Finger Family - Classic Nursery Rhymes | CoComelon Nursery Rhymes & Kids Songs",
+        "view_count": 12000000,
+        "format": "동요",
+        "topic": "기타",
+        "length_bucket": "≤3분",
+        "same_count": {
+          "format": 5,
+          "topic": 1,
+          "length_bucket": 3
+        },
+        "matches_mode": {
+          "format": true,
+          "topic": false,
+          "length_bucket": true
+        },
+        "same_format_as_alltime": false
+      },
+      {
+        "id": "7Qfq7vsVWWQ",
+        "title": "Yes Yes Let’s Get Dressed & Time To Go to School! | CoComelon Nursery Rhymes & Kids Songs",
+        "view_count": 11000000,
+        "format": "동요",
+        "topic": "생활습관",
+        "length_bucket": "3~10분",
+        "same_count": {
+          "format": 5,
+          "topic": 2,
+          "length_bucket": 2
+        },
+        "matches_mode": {
+          "format": true,
+          "topic": true,
+          "length_bucket": false
+        },
+        "same_format_as_alltime": false
+      },
+      {
+        "id": "enI7IxrqyuM",
+        "title": "Oh No! Cody dropped his Ice Cream | Happy, and You Know It | CoComelon Nursery Rhymes & Kids Songs",
+        "view_count": 8300000,
+        "format": "동요",
+        "topic": "기타",
+        "length_bucket": "3~10분",
+        "same_count": {
+          "format": 5,
+          "topic": 1,
+          "length_bucket": 2
+        },
+        "matches_mode": {
+          "format": true,
+          "topic": false,
+          "length_bucket": false
+        },
+        "same_format_as_alltime": false
+      }
+    ],
+    "n_same_format": 0
+  },
+  "targets": {
+    "sample": [
+      {
+        "id": "e_04ZrNroTo",
+        "role": "역대 1위",
+        "reason": null
+      },
+      {
+        "id": "vTLfOqEolsk",
+        "role": "최근 1위",
+        "reason": null
+      }
+    ],
+    "thumbs": [
+      {
+        "id": "e_04ZrNroTo",
+        "role": "역대 1위",
+        "title": "Wheels on the Bus | @CoComelon Nursery Rhymes & Kids Songs"
+      },
+      {
+        "id": "WRVsOCh907o",
+        "role": "역대 2위",
+        "title": "Bath Song | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs"
+      },
+      {
+        "id": "vTLfOqEolsk",
+        "role": "최근 1위",
+        "title": "Finger Family - Classic Nursery Rhymes | CoComelon Nursery Rhymes & Kids Songs"
+      },
+      {
+        "id": "O7-GZ_xOAg8",
+        "role": "최근 최하위",
+        "title": "Finger Family + Emmy's Haunted House | CoComelon Halloween Mix | Nursery Rhymes & Kids Songs"
+      }
+    ]
+  },
+  "labels_applied": [],
+  "videos": {
+    "KPh2Efv66Aw": {
+      "id": "KPh2Efv66Aw",
+      "title": "Mary Had a Little Lamb | Adventure on the Farm | CoComelon Nursery Rhymes and Kids Songs",
+      "view_count": 3200,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 176,
+      "timestamp": 1790665260,
+      "date_source": "approx",
+      "age_hours": 0.3,
+      "is_new": true,
+      "is_compilation": false,
+      "list_index": 0,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "동물",
+        "format": "스토리",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "동물",
+        "format": "스토리",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "farm"
+        ],
+        "format": [
+          "adventure"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 1,
+      "upload": "2026-09-29T07:01:00Z",
+      "url": "https://www.youtube.com/watch?v=KPh2Efv66Aw"
+    },
+    "WjZ2f71dFck": {
+      "id": "WjZ2f71dFck",
+      "title": "Jump in the Puddles | Rainy Day with Toddlers | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 1100000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 378,
+      "timestamp": 1790380800,
+      "date_source": "approx",
+      "age_hours": 79.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 1,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "rainy day"
+        ],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "toddlers",
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 2,
+      "upload": "2026-09-26T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=WjZ2f71dFck"
+    },
+    "O7-GZ_xOAg8": {
+      "id": "O7-GZ_xOAg8",
+      "title": "Finger Family + Emmy's Haunted House | CoComelon Halloween Mix | Nursery Rhymes & Kids Songs",
+      "view_count": 843000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 327,
+      "timestamp": 1790208000,
+      "date_source": "approx",
+      "age_hours": 127.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 2,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "mix"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 3,
+      "upload": "2026-09-24T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=O7-GZ_xOAg8"
+    },
+    "Goau5pVgjTM": {
+      "id": "Goau5pVgjTM",
+      "title": "My Best Friend - Boba Bear Helps JJ's Boo Boos | CoComelon Nursery Rhymes and Kids Songs",
+      "view_count": 869000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 169,
+      "timestamp": 1790035200,
+      "date_source": "approx",
+      "age_hours": 175.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 3,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 4,
+      "upload": "2026-09-22T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=Goau5pVgjTM"
+    },
+    "Dq2mT4C1B30": {
+      "id": "Dq2mT4C1B30",
+      "title": "Wheels on the Halloween Bus | Costume Party for Kids | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 1600000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 375,
+      "timestamp": 1789776000,
+      "date_source": "approx",
+      "age_hours": 247.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 4,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "탈것",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "탈것",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "bus"
+        ],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 5,
+      "upload": "2026-09-19T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=Dq2mT4C1B30"
+    },
+    "6j38CYnpq9g": {
+      "id": "6j38CYnpq9g",
+      "title": "CeCe's Bubble Bath Mix | Bathtime Fun | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 1400000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 330,
+      "timestamp": 1789603200,
+      "date_source": "approx",
+      "age_hours": 295.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 5,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "생활습관",
+        "format": "모음집",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "생활습관",
+        "format": "모음집",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "bath",
+          "bathtime"
+        ],
+        "format": [
+          "mix"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 6,
+      "upload": "2026-09-17T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=6j38CYnpq9g"
+    },
+    "UjZtlE_7PMo": {
+      "id": "UjZtlE_7PMo",
+      "title": "I like to Wiggle & Dance | Mommy & Baby JJ Play Time | CoComelon Nursery Rhymes and Kids Song",
+      "view_count": 1200000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 175,
+      "timestamp": 1789430400,
+      "date_source": "approx",
+      "age_hours": 343.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 6,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "song",
+          "nursery rhymes",
+          "rhymes",
+          "dance"
+        ],
+        "search_keyword": [
+          "kids",
+          "baby",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 7,
+      "upload": "2026-09-15T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=UjZtlE_7PMo"
+    },
+    "PxvLQcW0tJU": {
+      "id": "PxvLQcW0tJU",
+      "title": "Twinkle Star is in Trouble! ⭐ Night Time Songs 😴 | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 2300000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 370,
+      "timestamp": 1789430400,
+      "date_source": "approx",
+      "age_hours": 343.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 7,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 8,
+      "upload": "2026-09-15T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=PxvLQcW0tJU"
+    },
+    "h5SVBuetBSA": {
+      "id": "h5SVBuetBSA",
+      "title": "Learn Your ABCs with JJ and Bella! 🩷 | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 1400000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 338,
+      "timestamp": 1789430400,
+      "date_source": "approx",
+      "age_hours": 343.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 8,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "알파벳·단어",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "알파벳·단어",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "abcs"
+        ],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery",
+          "learn"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 9,
+      "upload": "2026-09-15T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=h5SVBuetBSA"
+    },
+    "WMtSPnsgr1U": {
+      "id": "WMtSPnsgr1U",
+      "title": "The Farmer in the Dell | Farm Animals Play Pretend | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 1400000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 160,
+      "timestamp": 1788825600,
+      "date_source": "approx",
+      "age_hours": 511.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 9,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "동물",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "동물",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "animals",
+          "farm"
+        ],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 10,
+      "upload": "2026-09-08T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=WMtSPnsgr1U"
+    },
+    "TIy5Iy6V54E": {
+      "id": "TIy5Iy6V54E",
+      "title": "I Love My Bed + More Bedtime Routine Songs for Babies | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 1400000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 333,
+      "timestamp": 1788825600,
+      "date_source": "approx",
+      "age_hours": 511.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 10,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "생활습관",
+        "format": "모음집",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "생활습관",
+        "format": "모음집",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "bedtime"
+        ],
+        "format": [
+          "+ more"
+        ],
+        "search_keyword": [
+          "kids",
+          "babies",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 11,
+      "upload": "2026-09-08T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=TIy5Iy6V54E"
+    },
+    "bL4drdg-41Y": {
+      "id": "bL4drdg-41Y",
+      "title": "Nina Builds a New Best Friend! 🎨 Pin Pon Paper Doll Song | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 1000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 348,
+      "timestamp": 1788825600,
+      "date_source": "approx",
+      "age_hours": 511.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 11,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "song",
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 12,
+      "upload": "2026-09-08T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=bL4drdg-41Y"
+    },
+    "vTLfOqEolsk": {
+      "id": "vTLfOqEolsk",
+      "title": "Finger Family - Classic Nursery Rhymes | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 12000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 157,
+      "timestamp": 1788220800,
+      "date_source": "approx",
+      "age_hours": 679.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 12,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 13,
+      "upload": "2026-09-01T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=vTLfOqEolsk"
+    },
+    "7Qfq7vsVWWQ": {
+      "id": "7Qfq7vsVWWQ",
+      "title": "Yes Yes Let’s Get Dressed & Time To Go to School! | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 11000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 344,
+      "timestamp": 1787961600,
+      "date_source": "approx",
+      "age_hours": 751.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 13,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "get dressed"
+        ],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 14,
+      "upload": "2026-08-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=7Qfq7vsVWWQ"
+    },
+    "enI7IxrqyuM": {
+      "id": "enI7IxrqyuM",
+      "title": "Oh No! Cody dropped his Ice Cream | Happy, and You Know It | CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 8300000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 339,
+      "timestamp": 1787961600,
+      "date_source": "approx",
+      "age_hours": 751.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 14,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 15,
+      "upload": "2026-08-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=enI7IxrqyuM"
+    },
+    "e_04ZrNroTo": {
+      "id": "e_04ZrNroTo",
+      "title": "Wheels on the Bus | @CoComelon Nursery Rhymes & Kids Songs",
+      "view_count": 9400000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 229,
+      "timestamp": 1538179200,
+      "date_source": "approx",
+      "age_hours": 70135.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 1031,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "탈것",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "탈것",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "bus"
+        ],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 1,
+      "recent_rank": null,
+      "upload": "2018-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=e_04ZrNroTo"
+    },
+    "WRVsOCh907o": {
+      "id": "WRVsOCh907o",
+      "title": "Bath Song | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs",
+      "view_count": 7600000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 173,
+      "timestamp": 1538179200,
+      "date_source": "approx",
+      "age_hours": 70135.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 1036,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "bath"
+        ],
+        "format": [
+          "song",
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 2,
+      "recent_rank": null,
+      "upload": "2018-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=WRVsOCh907o"
+    },
+    "MR5XSOdjKMA": {
+      "id": "MR5XSOdjKMA",
+      "title": "Baa Baa Black Sheep | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs",
+      "view_count": 4900000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 165,
+      "timestamp": 1538179200,
+      "date_source": "approx",
+      "age_hours": 70135.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 1023,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 3,
+      "recent_rank": null,
+      "upload": "2018-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=MR5XSOdjKMA"
+    },
+    "020g-0hhCAU": {
+      "id": "020g-0hhCAU",
+      "title": "Baby Shark | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs",
+      "view_count": 4600000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 145,
+      "timestamp": 1538179200,
+      "date_source": "approx",
+      "age_hours": 70135.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 1075,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "동물",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "동물",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "shark"
+        ],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "baby",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 4,
+      "recent_rank": null,
+      "upload": "2018-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=020g-0hhCAU"
+    },
+    "ohHYABXMqUQ": {
+      "id": "ohHYABXMqUQ",
+      "title": "Yes Yes Vegetables Song | @Cocomelon - Nursery Rhymes Nursery Rhymes & Kids Songs",
+      "view_count": 3400000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 248,
+      "timestamp": 1538179200,
+      "date_source": "approx",
+      "age_hours": 70135.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 1010,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "vegetables"
+        ],
+        "format": [
+          "song",
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 5,
+      "recent_rank": null,
+      "upload": "2018-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=ohHYABXMqUQ"
+    }
+  },
+  "fetch": {
+    "ytdlp": null,
+    "api": null,
+    "meta_failures": [
+      {
+        "id": "KPh2Efv66Aw",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "WjZ2f71dFck",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "O7-GZ_xOAg8",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "Goau5pVgjTM",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "Dq2mT4C1B30",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "6j38CYnpq9g",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "UjZtlE_7PMo",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "PxvLQcW0tJU",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "h5SVBuetBSA",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "WMtSPnsgr1U",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "TIy5Iy6V54E",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "bL4drdg-41Y",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "vTLfOqEolsk",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "7Qfq7vsVWWQ",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "enI7IxrqyuM",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "e_04ZrNroTo",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "WRVsOCh907o",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "MR5XSOdjKMA",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "020g-0hhCAU",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "ohHYABXMqUQ",
+        "error": "오프라인 메타 없음"
+      }
+    ]
+  }
+}

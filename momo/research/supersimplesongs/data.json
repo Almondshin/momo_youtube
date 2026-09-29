@@ -1,0 +1,1536 @@
+{
+  "schema": 1,
+  "generated_at": "2026-09-29T07:18:26Z",
+  "now": "2026-09-29T07:18:00Z",
+  "backend": "ytdlp",
+  "source": "offline:channel_flat.json",
+  "channel": {
+    "id": "UCLsooMJoIpl_7ux2jvdPB-Q",
+    "name": "Super Simple Songs - Kids Songs",
+    "handle": "@SuperSimpleSongs",
+    "url": "https://www.youtube.com/@SuperSimpleSongs",
+    "subscribers": 47000000,
+    "listed": 777,
+    "limit": 2000,
+    "truncated": false,
+    "total_reported": 777,
+    "partial": false,
+    "dates": "approx"
+  },
+  "bench": {
+    "recent_count": 15,
+    "top_count": 5,
+    "min_age_hours": 72,
+    "compilation_min_seconds": 1800
+  },
+  "popular": {
+    "method": "view_count_sort",
+    "note": "인기순(sort=p) 결과가 조회수 내림차순이 아님 → (a) 목록을 조회수 내림차순 정렬",
+    "check": {
+      "checked": 28,
+      "missing_views": 2,
+      "inversions": 16,
+      "descending": false
+    },
+    "ids": [
+      "4XLQpRI_wOQ",
+      "yCjJyiqpAuU",
+      "1GDFa-nEzlg",
+      "pZw9veQ76fo",
+      "M6LoRZsHMSs"
+    ]
+  },
+  "top": [
+    "4XLQpRI_wOQ",
+    "yCjJyiqpAuU",
+    "1GDFa-nEzlg",
+    "pZw9veQ76fo",
+    "M6LoRZsHMSs"
+  ],
+  "recent": [
+    "LuJe0ad1Ygk",
+    "GzIObE7uR8Q",
+    "uBweptmCYZg",
+    "2QtoaV22rpY",
+    "iHP8FGwzjJg",
+    "LLgTFZP3IQQ",
+    "YaFSwBg1qvg",
+    "BG8HLIvuK24",
+    "-HOQGg7uuQQ",
+    "jZnBNf0GJyU",
+    "wtX9hMdLuew",
+    "q1DinydBRNE",
+    "hDqWTltrGJ8",
+    "N8gOM-A3cUw",
+    "CXb9llX_LoU"
+  ],
+  "excluded_new": [],
+  "unknown_age": [],
+  "metrics": {
+    "best_overall": {
+      "id": "4XLQpRI_wOQ",
+      "title": "This Is The Way | Kids Songs | Super Simple Songs",
+      "view_count": 2500000000,
+      "duration": 139
+    },
+    "best_short": {
+      "id": "4XLQpRI_wOQ",
+      "title": "This Is The Way | Kids Songs | Super Simple Songs",
+      "view_count": 2500000000,
+      "duration": 139
+    },
+    "recent_short_avg": 2179500.0,
+    "recent_short_n": 6,
+    "recent_short_ids": [
+      "uBweptmCYZg",
+      "YaFSwBg1qvg",
+      "-HOQGg7uuQQ",
+      "wtX9hMdLuew",
+      "hDqWTltrGJ8",
+      "CXb9llX_LoU"
+    ],
+    "best_vs_recent_avg": 1147.0520761642579,
+    "best_short_vs_recent_avg": 1147.0520761642579,
+    "subscribers": 47000000,
+    "best_per_subscriber": 53.191489361702125,
+    "recent_avg_per_subscriber": 0.04637234042553191,
+    "listed_total_views": 62755584000,
+    "top_total_views": 10100000000,
+    "top_share": 0.16094185339746023
+  },
+  "compilations": {
+    "min_seconds": 1800,
+    "count": 295,
+    "eligible_n": 295,
+    "mean_views": 39535616.949152544,
+    "median_views": 20000000.0,
+    "total_views": 11663007000,
+    "share_of_listed_total": 0.18584811512550023,
+    "mean_vs_recent_short_avg": 18.139764601584098,
+    "in_top": [],
+    "in_recent": [
+      "GzIObE7uR8Q",
+      "2QtoaV22rpY",
+      "LLgTFZP3IQQ",
+      "BG8HLIvuK24",
+      "jZnBNf0GJyU",
+      "q1DinydBRNE",
+      "N8gOM-A3cUw"
+    ],
+    "top": [
+      {
+        "id": "8ljHzljQrY8",
+        "title": "Baby Shark - featuring @Finny The Shark  | + More Kids Songs | Super Simple Songs",
+        "view_count": 401000000,
+        "duration": 3288
+      },
+      {
+        "id": "wk4KHNJjpjQ",
+        "title": "Twinkle Twinkle Little Star & More | Kids Songs | Super Simple Songs",
+        "view_count": 401000000,
+        "duration": 3750
+      },
+      {
+        "id": "CG8F-6dZk8k",
+        "title": "The Bath Song + More | Songs for Kids! | Super Simple Songs",
+        "view_count": 383000000,
+        "duration": 3323
+      },
+      {
+        "id": "TqfMHH67KJA",
+        "title": "Sweet Dreams + More | Nursery Rhymes & Lullabies | Super Simple Songs",
+        "view_count": 251000000,
+        "duration": 3017
+      },
+      {
+        "id": "lWhqORImND0",
+        "title": "Old MacDonald Had A Farm + More | Kids Songs and Nursery Rhymes | Super Simple Songs",
+        "view_count": 245000000,
+        "duration": 4832
+      }
+    ]
+  },
+  "status": {
+    "label": "정체",
+    "recent_n": 15,
+    "prev_n": 45,
+    "recent_median": 6500000.0,
+    "prev_median": 14000000.0,
+    "median_ratio": 0.4642857142857143,
+    "recent_daily_median": 46119.413107860644,
+    "prev_daily_median": 32849.33788053335,
+    "daily_ratio": 1.4039678143768979,
+    "recent_ids": [
+      "uBweptmCYZg",
+      "YaFSwBg1qvg",
+      "-HOQGg7uuQQ",
+      "wtX9hMdLuew",
+      "hDqWTltrGJ8",
+      "CXb9llX_LoU",
+      "DDjOLRNby20",
+      "tjT_nFtKTas",
+      "ecm9HEFcfdQ",
+      "j9PpVDuoVAo",
+      "PmpJzVCIisc",
+      "lryBhooR8gE",
+      "NcE4XUUXDhU",
+      "k765VI7gWx0",
+      "pZ7H3XuEFkQ"
+    ],
+    "prev_ids": [
+      "9FcCV286-gA",
+      "l7QHIxqi6kM",
+      "WQtbFDPOdT8",
+      "j6_CZXNAmAw",
+      "aWAOqzudtSM",
+      "0DqkEfKXT5Y",
+      "dbklZrO5H78",
+      "AKnUdOnsMWs",
+      "OjmWon9KebI",
+      "UXt2bNp77u0",
+      "6-Y-q5eql5o",
+      "9PAQzsYmCKU",
+      "8ChQVaEAKsk",
+      "AIgJJV6-stM",
+      "DX48LXcG0bk",
+      "3zm5JMGIsRU",
+      "uZrFDgO0sMQ",
+      "h42mCV2utyk",
+      "0W0zEJ9uR2U",
+      "1jX8XyYvtWs",
+      "B1u-ylQR6Fo",
+      "DO41xyuo1MM",
+      "T4-StWTYK7E",
+      "EifnWKPSwBE",
+      "yDua9ms9_eg",
+      "AlB6ZNqykXU",
+      "6TJQMNKDPfM",
+      "mOZiy3EnH8Y",
+      "QrHO-43Ibo0",
+      "o44zT2S0SWs",
+      "zQ5bQ6tjl_M",
+      "-5eV4TtlDSo",
+      "eREwH764WGM",
+      "f9vIk_DvljU",
+      "iH1ObZVqtsA",
+      "HR5Gckafp_o",
+      "_djvsC6ekTY",
+      "7p38bHv7Zxc",
+      "9UasekNr8KI",
+      "CEFL-4weVsI",
+      "7SxqpsDI2ho",
+      "K53J44ioDxI",
+      "GbDiJcYYO28",
+      "EO1GV4qUxgE",
+      "AvCcpY3UBCM"
+    ],
+    "rule": {
+      "growth_median": 1.0,
+      "growth_daily": 3.0,
+      "growth_daily_min_median": 0.7,
+      "decline_median": 0.5,
+      "decline_daily": 1.0,
+      "decline_median_nodaily": 0.3
+    },
+    "rule_text": "성장: 중앙값 비 ≥ 1.0, 또는 (일평균 비 ≥ 3.0 이고 중앙값 비 ≥ 0.7) / 하락: 중앙값 비 < 0.5 이고 일평균 비 < 1.0 (일평균을 못 구하면 중앙값 비 < 0.3) / 그 외 정체. 최근 영상은 노출 기간이 짧아 누적 중앙값은 불리하고 일평균은 유리하므로 둘을 함께 본다."
+  },
+  "axes": {
+    "topic": {
+      "name": "학습 소재",
+      "groups": [
+        {
+          "value": "숫자",
+          "n": 1,
+          "mean_views": 3100000.0,
+          "median_views": 3100000.0,
+          "ids": [
+            "-HOQGg7uuQQ"
+          ],
+          "separate": false
+        },
+        {
+          "value": "기타",
+          "n": 4,
+          "mean_views": 2300000.0,
+          "median_views": 2450000.0,
+          "ids": [
+            "YaFSwBg1qvg",
+            "wtX9hMdLuew",
+            "hDqWTltrGJ8",
+            "CXb9llX_LoU"
+          ],
+          "separate": false
+        },
+        {
+          "value": "동물",
+          "n": 1,
+          "mean_views": 777000.0,
+          "median_views": 777000.0,
+          "ids": [
+            "uBweptmCYZg"
+          ],
+          "separate": false
+        }
+      ],
+      "gap": null,
+      "note": "n≥2 인 그룹이 2개 미만이라 비교 불가"
+    },
+    "format": {
+      "name": "형식",
+      "groups": [
+        {
+          "value": "스토리",
+          "n": 1,
+          "mean_views": 2900000.0,
+          "median_views": 2900000.0,
+          "ids": [
+            "wtX9hMdLuew"
+          ],
+          "separate": false
+        },
+        {
+          "value": "동요",
+          "n": 5,
+          "mean_views": 2035400.0,
+          "median_views": 2000000.0,
+          "ids": [
+            "uBweptmCYZg",
+            "YaFSwBg1qvg",
+            "-HOQGg7uuQQ",
+            "hDqWTltrGJ8",
+            "CXb9llX_LoU"
+          ],
+          "separate": false
+        },
+        {
+          "value": "모음집",
+          "n": 7,
+          "mean_views": 1343857.142857143,
+          "median_views": 1000000.0,
+          "ids": [
+            "GzIObE7uR8Q",
+            "2QtoaV22rpY",
+            "LLgTFZP3IQQ",
+            "BG8HLIvuK24",
+            "jZnBNf0GJyU",
+            "q1DinydBRNE",
+            "N8gOM-A3cUw"
+          ],
+          "separate": true
+        }
+      ],
+      "gap": null,
+      "note": "n≥2 인 그룹이 2개 미만이라 비교 불가"
+    },
+    "length_bucket": {
+      "name": "길이 구간",
+      "groups": [
+        {
+          "value": "≤3분",
+          "n": 4,
+          "mean_views": 2269250.0,
+          "median_views": 2550000.0,
+          "ids": [
+            "uBweptmCYZg",
+            "-HOQGg7uuQQ",
+            "hDqWTltrGJ8",
+            "CXb9llX_LoU"
+          ],
+          "separate": false
+        },
+        {
+          "value": "3~10분",
+          "n": 2,
+          "mean_views": 2000000.0,
+          "median_views": 2000000.0,
+          "ids": [
+            "YaFSwBg1qvg",
+            "wtX9hMdLuew"
+          ],
+          "separate": false
+        },
+        {
+          "value": "30분+",
+          "n": 7,
+          "mean_views": 1343857.142857143,
+          "median_views": 1000000.0,
+          "ids": [
+            "GzIObE7uR8Q",
+            "2QtoaV22rpY",
+            "LLgTFZP3IQQ",
+            "BG8HLIvuK24",
+            "jZnBNf0GJyU",
+            "q1DinydBRNE",
+            "N8gOM-A3cUw"
+          ],
+          "separate": true
+        }
+      ],
+      "gap": {
+        "ratio": 1.134625,
+        "abs": 269250.0,
+        "high": "≤3분",
+        "low": "3~10분",
+        "high_mean": 2269250.0,
+        "low_mean": 2000000.0
+      },
+      "note": null
+    },
+    "thumbnail_subject": {
+      "name": "썸네일 주인공",
+      "groups": [
+        {
+          "value": "미분류",
+          "n": 6,
+          "mean_views": 2179500.0,
+          "median_views": 2450000.0,
+          "ids": [
+            "uBweptmCYZg",
+            "YaFSwBg1qvg",
+            "-HOQGg7uuQQ",
+            "wtX9hMdLuew",
+            "hDqWTltrGJ8",
+            "CXb9llX_LoU"
+          ],
+          "separate": false
+        }
+      ],
+      "gap": null,
+      "note": "labels.json 으로 썸네일 주인공을 채워야 비교 가능"
+    },
+    "search_keyword": {
+      "name": "제목 검색 키워드",
+      "groups": [
+        {
+          "value": "포함",
+          "n": 4,
+          "mean_views": 2269250.0,
+          "median_views": 2550000.0,
+          "ids": [
+            "uBweptmCYZg",
+            "-HOQGg7uuQQ",
+            "hDqWTltrGJ8",
+            "CXb9llX_LoU"
+          ],
+          "separate": false
+        },
+        {
+          "value": "미포함",
+          "n": 2,
+          "mean_views": 2000000.0,
+          "median_views": 2000000.0,
+          "ids": [
+            "YaFSwBg1qvg",
+            "wtX9hMdLuew"
+          ],
+          "separate": false
+        }
+      ],
+      "gap": {
+        "ratio": 1.134625,
+        "abs": 269250.0,
+        "high": "포함",
+        "low": "미포함",
+        "high_mean": 2269250.0,
+        "low_mean": 2000000.0
+      },
+      "note": null
+    }
+  },
+  "largest_gap_axis": {
+    "axis": "length_bucket",
+    "name": "길이 구간",
+    "ratio": 1.134625,
+    "abs": 269250.0,
+    "high": "≤3분",
+    "low": "3~10분",
+    "high_mean": 2269250.0,
+    "low_mean": 2000000.0
+  },
+  "top3_vs_alltime": {
+    "alltime_modes": {
+      "format": "동요",
+      "topic": "기타",
+      "length_bucket": "≤3분"
+    },
+    "recent_top3": [
+      {
+        "id": "BG8HLIvuK24",
+        "title": "Top 20 Counting Songs | Numbers Practice for Preschool + Up | 20th Anniversary of Super Simple Songs",
+        "view_count": 3300000,
+        "format": "모음집",
+        "topic": "숫자",
+        "length_bucket": "30분+",
+        "same_count": {
+          "format": 0,
+          "topic": 1,
+          "length_bucket": 0
+        },
+        "matches_mode": {
+          "format": false,
+          "topic": false,
+          "length_bucket": false
+        },
+        "same_format_as_alltime": false
+      },
+      {
+        "id": "CXb9llX_LoU",
+        "title": "Sports! | Kids Song | Song of Summer ⚽️ | Super Simple Songs",
+        "view_count": 3200000,
+        "format": "동요",
+        "topic": "기타",
+        "length_bucket": "≤3분",
+        "same_count": {
+          "format": 5,
+          "topic": 2,
+          "length_bucket": 5
+        },
+        "matches_mode": {
+          "format": true,
+          "topic": true,
+          "length_bucket": true
+        },
+        "same_format_as_alltime": true
+      },
+      {
+        "id": "-HOQGg7uuQQ",
+        "title": "Counting Up To 20 | Sea Animals Kids Math Song with @NoodleAndPals | Super Simple Songs",
+        "view_count": 3100000,
+        "format": "동요",
+        "topic": "숫자",
+        "length_bucket": "≤3분",
+        "same_count": {
+          "format": 5,
+          "topic": 1,
+          "length_bucket": 5
+        },
+        "matches_mode": {
+          "format": true,
+          "topic": false,
+          "length_bucket": true
+        },
+        "same_format_as_alltime": false
+      }
+    ],
+    "n_same_format": 1
+  },
+  "targets": {
+    "sample": [
+      {
+        "id": "4XLQpRI_wOQ",
+        "role": "역대 1위",
+        "reason": null
+      },
+      {
+        "id": "CXb9llX_LoU",
+        "role": "최근 1위",
+        "reason": "1위(BG8HLIvuK24)가 30분+ 모음집이라 단편 1위로 대체"
+      }
+    ],
+    "thumbs": [
+      {
+        "id": "4XLQpRI_wOQ",
+        "role": "역대 1위",
+        "title": "This Is The Way | Kids Songs | Super Simple Songs"
+      },
+      {
+        "id": "yCjJyiqpAuU",
+        "role": "역대 2위",
+        "title": "Twinkle Twinkle Little Star | Nursery Rhymes for Kids | Super Simple Songs"
+      },
+      {
+        "id": "BG8HLIvuK24",
+        "role": "최근 1위",
+        "title": "Top 20 Counting Songs | Numbers Practice for Preschool + Up | 20th Anniversary of Super Simple Songs"
+      },
+      {
+        "id": "GzIObE7uR8Q",
+        "role": "최근 최하위",
+        "title": "Top 20 Anniversary Hit Songs 🎶 | \"20 Years of Super Simple\" now on Vinyl!"
+      }
+    ]
+  },
+  "labels_applied": [],
+  "videos": {
+    "LuJe0ad1Ygk": {
+      "id": "LuJe0ad1Ygk",
+      "title": "When We Play Hockey 🏒 | Super Simple Songs & ‪@NHL Hockey Song for Kids",
+      "view_count": null,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 135,
+      "timestamp": 1790294400,
+      "date_source": "approx",
+      "age_hours": 103.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 0,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "song",
+          "songs"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 1,
+      "upload": "2026-09-25T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=LuJe0ad1Ygk"
+    },
+    "GzIObE7uR8Q": {
+      "id": "GzIObE7uR8Q",
+      "title": "Top 20 Anniversary Hit Songs 🎶 | \"20 Years of Super Simple\" now on Vinyl!",
+      "view_count": 397000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 2871,
+      "timestamp": 1789689600,
+      "date_source": "approx",
+      "age_hours": 271.3,
+      "is_new": false,
+      "is_compilation": true,
+      "list_index": 1,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "길이 47:51"
+        ],
+        "search_keyword": []
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 2,
+      "upload": "2026-09-18T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=GzIObE7uR8Q"
+    },
+    "uBweptmCYZg": {
+      "id": "uBweptmCYZg",
+      "title": "Our Listening Ears 👂 | Animal Sounds & Guessing Game for Kids! | Super Simple Songs",
+      "view_count": 777000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 139,
+      "timestamp": 1789430400,
+      "date_source": "approx",
+      "age_hours": 343.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 2,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "동물",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "동물",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "animal"
+        ],
+        "format": [
+          "songs"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 3,
+      "upload": "2026-09-15T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=uBweptmCYZg"
+    },
+    "2QtoaV22rpY": {
+      "id": "2QtoaV22rpY",
+      "title": "Top 20 Circle Time Songs ⭕️ | Kids Classroom Favorites | Super Simple's 20th Anniversary!",
+      "view_count": 835000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 2817,
+      "timestamp": 1788825600,
+      "date_source": "approx",
+      "age_hours": 511.3,
+      "is_new": false,
+      "is_compilation": true,
+      "list_index": 3,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "길이 46:57"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 4,
+      "upload": "2026-09-08T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=2QtoaV22rpY"
+    },
+    "iHP8FGwzjJg": {
+      "id": "iHP8FGwzjJg",
+      "title": "🎉 Everybody Celebrate 🎉 | Best Celebration Song for Kids | 20 Years of Super Simple Songs!",
+      "view_count": null,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 153,
+      "timestamp": 1787961600,
+      "date_source": "approx",
+      "age_hours": 751.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 4,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "song",
+          "songs"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 5,
+      "upload": "2026-08-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=iHP8FGwzjJg"
+    },
+    "LLgTFZP3IQQ": {
+      "id": "LLgTFZP3IQQ",
+      "title": "Top 20 Back To School Songs | 🍎 📚 Learn and Sing ABCs + More! | Super Simple’s 20th Anniversary!",
+      "view_count": 975000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 3302,
+      "timestamp": 1787961600,
+      "date_source": "approx",
+      "age_hours": 751.3,
+      "is_new": false,
+      "is_compilation": true,
+      "list_index": 5,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "알파벳·단어",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "알파벳·단어",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "abcs"
+        ],
+        "format": [
+          "길이 55:02"
+        ],
+        "search_keyword": [
+          "learn"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 6,
+      "upload": "2026-08-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=LLgTFZP3IQQ"
+    },
+    "YaFSwBg1qvg": {
+      "id": "YaFSwBg1qvg",
+      "title": "Put on Your Shoes | Featuring Tobee and the Super Simple Puppets! | Super Simple Songs",
+      "view_count": 1100000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 185,
+      "timestamp": 1787961600,
+      "date_source": "approx",
+      "age_hours": 751.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 6,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs"
+        ],
+        "search_keyword": []
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 7,
+      "upload": "2026-08-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=YaFSwBg1qvg"
+    },
+    "BG8HLIvuK24": {
+      "id": "BG8HLIvuK24",
+      "title": "Top 20 Counting Songs | Numbers Practice for Preschool + Up | 20th Anniversary of Super Simple Songs",
+      "view_count": 3300000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 2974,
+      "timestamp": 1787961600,
+      "date_source": "approx",
+      "age_hours": 751.3,
+      "is_new": false,
+      "is_compilation": true,
+      "list_index": 7,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "숫자",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "숫자",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "numbers",
+          "counting"
+        ],
+        "format": [
+          "길이 49:34"
+        ],
+        "search_keyword": [
+          "numbers",
+          "counting",
+          "preschool"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 8,
+      "upload": "2026-08-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=BG8HLIvuK24"
+    },
+    "-HOQGg7uuQQ": {
+      "id": "-HOQGg7uuQQ",
+      "title": "Counting Up To 20 | Sea Animals Kids Math Song with @NoodleAndPals | Super Simple Songs",
+      "view_count": 3100000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 154,
+      "timestamp": 1787961600,
+      "date_source": "approx",
+      "age_hours": 751.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 8,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "숫자",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "숫자",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "counting",
+          "math"
+        ],
+        "format": [
+          "song",
+          "songs"
+        ],
+        "search_keyword": [
+          "counting",
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 9,
+      "upload": "2026-08-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=-HOQGg7uuQQ"
+    },
+    "jZnBNf0GJyU": {
+      "id": "jZnBNf0GJyU",
+      "title": "Top 20 Book Songs 📚 | Super Simple’s 20th Anniversary! | Let's Read!",
+      "view_count": 1600000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 3417,
+      "timestamp": 1785283200,
+      "date_source": "approx",
+      "age_hours": 1495.3,
+      "is_new": false,
+      "is_compilation": true,
+      "list_index": 9,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "길이 56:57"
+        ],
+        "search_keyword": []
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 10,
+      "upload": "2026-07-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=jZnBNf0GJyU"
+    },
+    "wtX9hMdLuew": {
+      "id": "wtX9hMdLuew",
+      "title": "I'm Going On A Trip | 🗺️ 🎒 Pack your bag for your adventure! | Super Simple Songs",
+      "view_count": 2900000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 196,
+      "timestamp": 1785283200,
+      "date_source": "approx",
+      "age_hours": 1495.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 10,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "스토리",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "스토리",
+        "length_bucket": "3~10분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "adventure"
+        ],
+        "search_keyword": []
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 11,
+      "upload": "2026-07-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=wtX9hMdLuew"
+    },
+    "q1DinydBRNE": {
+      "id": "q1DinydBRNE",
+      "title": "Top 20 Summer Songs 🌞 | Best of Super Simple Hits of 2026!",
+      "view_count": 1300000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 3047,
+      "timestamp": 1785283200,
+      "date_source": "approx",
+      "age_hours": 1495.3,
+      "is_new": false,
+      "is_compilation": true,
+      "list_index": 11,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "길이 50:47"
+        ],
+        "search_keyword": []
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 12,
+      "upload": "2026-07-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=q1DinydBRNE"
+    },
+    "hDqWTltrGJ8": {
+      "id": "hDqWTltrGJ8",
+      "title": "Shapes I See At The Beach 🏖️ | Oval, Star, Rectangle | Super Simple Songs",
+      "view_count": 2000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 175,
+      "timestamp": 1785283200,
+      "date_source": "approx",
+      "age_hours": 1495.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 12,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs"
+        ],
+        "search_keyword": [
+          "shapes"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 13,
+      "upload": "2026-07-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=hDqWTltrGJ8"
+    },
+    "N8gOM-A3cUw": {
+      "id": "N8gOM-A3cUw",
+      "title": "Top 20 Active Songs! | Super Simple’s 20th Anniversary! | Let's Move!",
+      "view_count": 1000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 3182,
+      "timestamp": 1782691200,
+      "date_source": "approx",
+      "age_hours": 2215.3,
+      "is_new": false,
+      "is_compilation": true,
+      "list_index": 13,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "모음집",
+        "length_bucket": "30분+",
+        "thumbnail_subject": "미분류",
+        "search_keyword": false
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "길이 53:02"
+        ],
+        "search_keyword": []
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 14,
+      "upload": "2026-06-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=N8gOM-A3cUw"
+    },
+    "CXb9llX_LoU": {
+      "id": "CXb9llX_LoU",
+      "title": "Sports! | Kids Song | Song of Summer ⚽️ | Super Simple Songs",
+      "view_count": 3200000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 163,
+      "timestamp": 1782691200,
+      "date_source": "approx",
+      "age_hours": 2215.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 14,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "song",
+          "songs"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": null,
+      "recent_rank": 15,
+      "upload": "2026-06-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=CXb9llX_LoU"
+    },
+    "4XLQpRI_wOQ": {
+      "id": "4XLQpRI_wOQ",
+      "title": "This Is The Way | Kids Songs | Super Simple Songs",
+      "view_count": 2500000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 139,
+      "timestamp": 1475107200,
+      "date_source": "approx",
+      "age_hours": 87655.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 559,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 1,
+      "recent_rank": null,
+      "upload": "2016-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=4XLQpRI_wOQ"
+    },
+    "yCjJyiqpAuU": {
+      "id": "yCjJyiqpAuU",
+      "title": "Twinkle Twinkle Little Star | Nursery Rhymes for Kids | Super Simple Songs",
+      "view_count": 2400000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 154,
+      "timestamp": 1285718400,
+      "date_source": "approx",
+      "age_hours": 140263.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 735,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "기타",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [],
+        "format": [
+          "songs",
+          "nursery rhymes",
+          "rhymes"
+        ],
+        "search_keyword": [
+          "kids",
+          "nursery"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 2,
+      "recent_rank": null,
+      "upload": "2010-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=yCjJyiqpAuU"
+    },
+    "1GDFa-nEzlg": {
+      "id": "1GDFa-nEzlg",
+      "title": "This Is The Way We Get Dressed | Kids Songs | Super Simple Songs",
+      "view_count": 2000000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 115,
+      "timestamp": 1538179200,
+      "date_source": "approx",
+      "age_hours": 70135.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 427,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "생활습관",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "get dressed"
+        ],
+        "format": [
+          "songs"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 3,
+      "recent_rank": null,
+      "upload": "2018-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=1GDFa-nEzlg"
+    },
+    "pZw9veQ76fo": {
+      "id": "pZw9veQ76fo",
+      "title": "Five Little Ducks | Kids Songs | Super Simple Songs",
+      "view_count": 1900000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 174,
+      "timestamp": 1475107200,
+      "date_source": "approx",
+      "age_hours": 87655.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 535,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "숫자",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "숫자",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "five little"
+        ],
+        "format": [
+          "songs"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 4,
+      "recent_rank": null,
+      "upload": "2016-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=pZw9veQ76fo"
+    },
+    "M6LoRZsHMSs": {
+      "id": "M6LoRZsHMSs",
+      "title": "If You’re Happy And You Know It | Kids Songs | Super Simple Songs",
+      "view_count": 1300000000,
+      "like_count": null,
+      "comment_count": null,
+      "duration": 98,
+      "timestamp": 1569715200,
+      "date_source": "approx",
+      "age_hours": 61375.3,
+      "is_new": false,
+      "is_compilation": false,
+      "list_index": 361,
+      "has_meta": false,
+      "tags": [],
+      "axes": {
+        "topic": "감정",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "axes_auto": {
+        "topic": "감정",
+        "format": "동요",
+        "length_bucket": "≤3분",
+        "thumbnail_subject": "미분류",
+        "search_keyword": true
+      },
+      "matched": {
+        "topic": [
+          "happy and you know it"
+        ],
+        "format": [
+          "songs"
+        ],
+        "search_keyword": [
+          "kids"
+        ]
+      },
+      "labeled": [],
+      "popular_rank": 5,
+      "recent_rank": null,
+      "upload": "2019-09-29T00:00:00Z",
+      "url": "https://www.youtube.com/watch?v=M6LoRZsHMSs"
+    }
+  },
+  "fetch": {
+    "ytdlp": null,
+    "api": null,
+    "meta_failures": [
+      {
+        "id": "LuJe0ad1Ygk",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "GzIObE7uR8Q",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "uBweptmCYZg",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "2QtoaV22rpY",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "iHP8FGwzjJg",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "LLgTFZP3IQQ",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "YaFSwBg1qvg",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "BG8HLIvuK24",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "-HOQGg7uuQQ",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "jZnBNf0GJyU",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "wtX9hMdLuew",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "q1DinydBRNE",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "hDqWTltrGJ8",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "N8gOM-A3cUw",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "CXb9llX_LoU",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "4XLQpRI_wOQ",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "yCjJyiqpAuU",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "1GDFa-nEzlg",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "pZw9veQ76fo",
+        "error": "오프라인 메타 없음"
+      },
+      {
+        "id": "M6LoRZsHMSs",
+        "error": "오프라인 메타 없음"
+      }
+    ]
+  }
+}

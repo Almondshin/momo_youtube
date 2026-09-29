@@ -1,0 +1,14 @@
+{
+  "channels": [
+    {"slug": "cocomelon", "url": "https://www.youtube.com/@CoComelon"},
+    {"slug": "supersimplesongs", "url": "https://www.youtube.com/@SuperSimpleSongs"}
+  ],
+  "limit": 2000,
+  "top": 5,
+  "recent": 15,
+  "meta": false,
+  "samples": false,
+  "thumbs": true,
+  "thumbs_all": true,
+  "note": "썸네일 주인공 축 분류용 — 최신 15 + 역대 5 썸네일 시트 (암호화). 영상별 페이지는 러너 IP 봇 확인으로 여전히 불가."
+}

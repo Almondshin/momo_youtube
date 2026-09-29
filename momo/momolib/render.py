@@ -22,7 +22,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 from .common import MomoError, ffprobe_json, run
 
-HANGUL_RE = re.compile(r"[ᄀ-ᇿ㄰-㆏가-힣]")
+HANGUL_RE = re.compile("[\u1100-\u11ff\u3130-\u318f\uac00-\ud7a3]")  # 한글 자모·음절
 STROKE_COLOR = (0, 0, 0)
 
 
@@ -185,6 +185,8 @@ def _ease(p: float) -> float:
 
 def pop_curve(p: float) -> tuple[float, float]:
     """팝 진행도 p(0..1) → (scale, alpha). 0.85 → 1.04 (60%) → 1.0, alpha 0→1 (60%)."""
+    if p >= 1.0:
+        return 1.0, 1.0
     if p <= 0.6:
         scale = 0.85 + 0.19 * _ease(p / 0.6)
     else:
