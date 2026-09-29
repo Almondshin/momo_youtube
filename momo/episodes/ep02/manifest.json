@@ -73,8 +73,8 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 72.0,
-    "generations": 25,
+    "spent": 102.5,
+    "generations": 32,
     "regenerations": 8,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
@@ -457,6 +457,20 @@
               "status": "approved"
             }
           ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "daeb18fa-444b-4c2b-b6a4-5b23d35f5540",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082506_daeb18fa-444b-4c2b-b6a4-5b23d35f5540.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "daeb18fa-444b-4c2b-b6a4-5b23d35f5540",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082506_daeb18fa-444b-4c2b-b6a4-5b23d35f5540.mp4",
+              "status": "generated"
+            }
+          ]
         }
       }
     },
@@ -488,6 +502,20 @@
               "status": "approved"
             }
           ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "67bf25b3-ee0c-4c6d-ade7-178074a17df1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082511_67bf25b3-ee0c-4c6d-ade7-178074a17df1.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "67bf25b3-ee0c-4c6d-ade7-178074a17df1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082511_67bf25b3-ee0c-4c6d-ade7-178074a17df1.mp4",
+              "status": "generated"
+            }
+          ]
         }
       }
     },
@@ -517,6 +545,20 @@
               "job_id": "65f918b9-ff61-45af-802d-3a04c27db5a2",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_080912_65f918b9-ff61-45af-802d-3a04c27db5a2.png",
               "status": "approved"
+            }
+          ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "2abffab4-210c-47dc-85c5-ebb62a54bde9",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082516_2abffab4-210c-47dc-85c5-ebb62a54bde9.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "2abffab4-210c-47dc-85c5-ebb62a54bde9",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082516_2abffab4-210c-47dc-85c5-ebb62a54bde9.mp4",
+              "status": "generated"
             }
           ]
         }
@@ -586,7 +628,23 @@
         "ko": "컵"
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink on the right side of a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, [Ducky] waddling in from the left carrying a small mint-green cup, happy surprised faces, clear empty pastel wall space in the upper third of the frame",
-      "motion": "Ducky waddles forward a little, Momo's ears bounce happily"
+      "motion": "Ducky waddles forward a little, Momo's ears bounce happily",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "8b826a0f-115f-48f7-b7a3-d264d297a5e3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082519_8b826a0f-115f-48f7-b7a3-d264d297a5e3.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8b826a0f-115f-48f7-b7a3-d264d297a5e3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082519_8b826a0f-115f-48f7-b7a3-d264d297a5e3.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c16",
@@ -601,7 +659,23 @@
         "ko": "헹구기"
       },
       "image_prompt": "close-up of a small mint-green cup filled with clear water on a clean white sink edge, soft sparkles on the water, plain pastel background",
-      "momo": false
+      "momo": false,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "2a1d3fc1-0e4c-4252-b163-8eef889d38c1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082523_2a1d3fc1-0e4c-4252-b163-8eef889d38c1.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "2a1d3fc1-0e4c-4252-b163-8eef889d38c1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082523_2a1d3fc1-0e4c-4252-b163-8eef889d38c1.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c17",
@@ -616,7 +690,23 @@
         "ko": "헹구기"
       },
       "image_prompt": "[Momo] holding a small mint-green cup, cheeks puffed out full of water, funny happy eyes, at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
-      "motion": "cheeks wobble gently side to side, ears bounce"
+      "motion": "cheeks wobble gently side to side, ears bounce",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "72be3cd8-a428-4a53-88a3-fd452edd7b0e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082526_72be3cd8-a428-4a53-88a3-fd452edd7b0e.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "72be3cd8-a428-4a53-88a3-fd452edd7b0e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082526_72be3cd8-a428-4a53-88a3-fd452edd7b0e.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c18",
@@ -631,7 +721,23 @@
         "ko": "헹구기"
       },
       "image_prompt": "[Momo] leaning over the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, gently spitting a little water into the sink, [Ducky] watching from the counter, cheerful mood, clear empty pastel wall space in the upper third of the frame",
-      "motion": "leans forward a little over the sink and smiles, Ducky flaps its wings"
+      "motion": "leans forward a little over the sink and smiles, Ducky flaps its wings",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "05773212-dec0-496d-8f3b-b1fec68ee453",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082529_05773212-dec0-496d-8f3b-b1fec68ee453.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "05773212-dec0-496d-8f3b-b1fec68ee453",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_082529_05773212-dec0-496d-8f3b-b1fec68ee453.png",
+              "status": "generated"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "c19",
