@@ -73,8 +73,8 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 108.5,
-    "generations": 35,
+    "spent": 146.5,
+    "generations": 43,
     "regenerations": 10,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)"
   },
@@ -643,6 +643,25 @@
               "status": "approved"
             }
           ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "c2cd83ff-222e-4974-b648-7e9e635502f6",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "c2cd83ff-222e-4974-b648-7e9e635502f6",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T09:30Z",
+              "credits": 7.5,
+              "start_image": "8b826a0f-115f-48f7-b7a3-d264d297a5e3"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -711,6 +730,25 @@
               "status": "approved"
             }
           ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "34844a8f-9b62-4c47-a0a3-c0fc8bd17a59",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "34844a8f-9b62-4c47-a0a3-c0fc8bd17a59",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T09:30Z",
+              "credits": 7.5,
+              "start_image": "777e820f-1546-4ad1-a661-3e21938385fd"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -742,6 +780,25 @@
               "status": "approved"
             }
           ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "1f7918d1-cd3a-4597-8352-527f8739f50b",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "1f7918d1-cd3a-4597-8352-527f8739f50b",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T09:30Z",
+              "credits": 7.5,
+              "start_image": "05773212-dec0-496d-8f3b-b1fec68ee453"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -779,6 +836,25 @@
               "status": "approved"
             }
           ]
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "e70c64a6-468c-4fd1-8205-8dd0f45062ec",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "e70c64a6-468c-4fd1-8205-8dd0f45062ec",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T09:30Z",
+              "credits": 7.5,
+              "start_image": "75ad1d14-8438-40ae-bb8f-d465c22c35c4"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -795,7 +871,27 @@
         "ko": "칫솔"
       },
       "image_prompt": "a neat row of a small toothbrush with a yellow handle and mint-green bristles, a plain white toothpaste tube and a small mint-green cup on the edge of the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, soft morning light, clear empty pastel wall space in the upper third of the frame",
-      "momo": false
+      "momo": false,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "dff497ef-182a-4f04-b6bf-f137e30cc02e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093051_dff497ef-182a-4f04-b6bf-f137e30cc02e.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "dff497ef-182a-4f04-b6bf-f137e30cc02e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093051_dff497ef-182a-4f04-b6bf-f137e30cc02e.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T09:31Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c21",
@@ -810,7 +906,27 @@
         "ko": "치카치카"
       },
       "image_prompt": "[Momo] happily dancing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush with a yellow handle and mint-green bristles up high in one paw, clear empty pastel wall space in the upper third of the frame",
-      "motion": "small hop in place holding the toothbrush up, ears bounce"
+      "motion": "small hop in place holding the toothbrush up, ears bounce",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "29c9025b-0482-4fa8-a297-f69f348c5bab",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093055_29c9025b-0482-4fa8-a297-f69f348c5bab.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "29c9025b-0482-4fa8-a297-f69f348c5bab",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093055_29c9025b-0482-4fa8-a297-f69f348c5bab.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T09:31Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c22",
@@ -825,7 +941,27 @@
         "ko": "반짝반짝"
       },
       "image_prompt": "[Momo] facing the viewer with the biggest smile showing clean shiny white teeth, one tiny sparkle near the teeth, soft pastel background with empty space above the head",
-      "motion": "smiles wider and blinks, ears bounce"
+      "motion": "smiles wider and blinks, ears bounce",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "220e611b-1880-4313-b135-f2e0b863faf0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093059_220e611b-1880-4313-b135-f2e0b863faf0.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "220e611b-1880-4313-b135-f2e0b863faf0",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093059_220e611b-1880-4313-b135-f2e0b863faf0.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T09:31Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c23",
@@ -839,7 +975,27 @@
         "en": "SMILE",
         "ko": "반짝반짝"
       },
-      "image_prompt": "[Momo] close-up holding a small toothbrush with a yellow handle and mint-green bristles next to the cheek, huge happy smile with shiny teeth, [Ducky] peeking in from the side, bright pastel-blue background with empty space above the head"
+      "image_prompt": "[Momo] close-up holding a small toothbrush with a yellow handle and mint-green bristles next to the cheek, huge happy smile with shiny teeth, [Ducky] peeking in from the side, bright pastel-blue background with empty space above the head",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "aad6c1fa-7fcd-4277-bc5e-d64bd689aa4d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093105_aad6c1fa-7fcd-4277-bc5e-d64bd689aa4d.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "aad6c1fa-7fcd-4277-bc5e-d64bd689aa4d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_093105_aad6c1fa-7fcd-4277-bc5e-d64bd689aa4d.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-29T09:31Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c24",
