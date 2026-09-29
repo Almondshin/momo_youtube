@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep02",
-  "status": "planning",
+  "status": "producing",
   "topic": {
     "en": "Brush Your Teeth",
     "ko": "양치하기"
@@ -81,7 +81,9 @@
     "v_over_reason": null,
     "approvals": [
       "2026-09-29 주제 A(양치하기) 승인",
-      "2026-09-29 2단계 생략·기본 구조 진행 승인"
+      "2026-09-29 2단계 생략·기본 구조 진행 승인",
+      "2026-09-29 4단계 기획표(plan.md) 승인 — 사물 5컷 캐릭터 블록 생략 해석 포함",
+      "2026-09-29 폰트: 나눔스퀘어라운드 Bold (OFL)"
     ],
     "next_time": []
   },

@@ -2,13 +2,24 @@
   "schema": 1,
   "channel": {
     "name": "Momo the Bunny",
-    "languages": ["en", "ko"]
+    "languages": [
+      "en",
+      "ko"
+    ]
   },
   "benchmark": {
     "channel_url": "https://www.youtube.com/@CoComelon",
     "channels": [
-      {"name": "Cocomelon - Nursery Rhymes", "url": "https://www.youtube.com/@CoComelon", "slug": "cocomelon"},
-      {"name": "Super Simple Songs", "url": "https://www.youtube.com/@SuperSimpleSongs", "slug": "supersimplesongs"}
+      {
+        "name": "Cocomelon - Nursery Rhymes",
+        "url": "https://www.youtube.com/@CoComelon",
+        "slug": "cocomelon"
+      },
+      {
+        "name": "Super Simple Songs",
+        "url": "https://www.youtube.com/@SuperSimpleSongs",
+        "slug": "supersimplesongs"
+      }
     ],
     "playlist_end": 2000,
     "recent_count": 15,
@@ -27,8 +38,14 @@
   "style_lock": "bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
   "video_prompt_suffix": "Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
   "fixed_lines": {
-    "en": {"intro": "Hi friends! It's Momo!", "outro": "Bye-bye, friends! See you next time!"},
-    "ko": {"intro": "안녕, 친구들! 나는 모모야!", "outro": "친구들, 안녕! 다음에 또 만나!"}
+    "en": {
+      "intro": "Hi friends! It's Momo!",
+      "outro": "Bye-bye, friends! See you next time!"
+    },
+    "ko": {
+      "intro": "안녕, 친구들! 나는 모모야!",
+      "outro": "친구들, 안녕! 다음에 또 만나!"
+    }
   },
   "higgsfield": {
     "image_model": "nano_banana_pro",
@@ -59,23 +76,39 @@
   },
   "credits": {
     "episode_cap": 250,
-    "estimate_first_episode": [200, 250],
-    "estimate_later_episode": [120, 160]
+    "estimate_first_episode": [
+      200,
+      250
+    ],
+    "estimate_later_episode": [
+      120,
+      160
+    ]
   },
   "plan_rules": {
     "cuts_min": 22,
     "cuts_max": 28,
-    "v_range": [12, 15],
-    "s_range": [6, 8],
-    "l_range": [3, 4],
+    "v_range": [
+      12,
+      15
+    ],
+    "s_range": [
+      6,
+      8
+    ],
+    "l_range": [
+      3,
+      4
+    ],
     "scenes": 5,
     "narration_max_words_en": 25,
     "narration_max_chars_ko": 40,
     "keyword_min_repeats": 3
   },
   "fonts": {
-    "keyword": null,
-    "thumbnail": null
+    "keyword": "assets/fonts/NanumSquareRoundB.ttf",
+    "thumbnail": "assets/fonts/NanumSquareRoundB.ttf",
+    "license": "NanumSquareRound — SIL Open Font License 1.1 (assets/fonts/NanumSquareRound-OFL.txt)"
   },
   "render": {
     "width": 1920,
@@ -91,12 +124,21 @@
     "text_band_ratio": 0.25,
     "text_delay": 0.5,
     "text_pop_seconds": 0.3,
-    "text_colors": {"white": "#FFFFFF", "yellow": "#FFD83B"},
+    "text_colors": {
+      "white": "#FFFFFF",
+      "yellow": "#FFD83B"
+    },
     "text_stroke_ratio": 0.12,
-    "kenburns_zoom": [0.05, 0.08],
+    "kenburns_zoom": [
+      0.05,
+      0.08
+    ],
     "kenburns_drift": 0.015,
     "inset_default": 0.035,
-    "thumbnail_size": [1280, 720]
+    "thumbnail_size": [
+      1280,
+      720
+    ]
   },
   "audio": {
     "sample_rate": 48000,
@@ -118,8 +160,14 @@
     "default_privacy": "private",
     "contains_synthetic_media": false,
     "notify_subscribers": true,
-    "languages": {"en": "en", "ko": "ko"},
-    "playlist_id": {"en": null, "ko": null},
+    "languages": {
+      "en": "en",
+      "ko": "ko"
+    },
+    "playlist_id": {
+      "en": null,
+      "ko": null
+    },
     "channel_note": "EN/KO 를 서로 다른 채널에 올리면 언어별 refresh token(YOUTUBE_REFRESH_TOKEN_EN / _KO)을 쓴다."
   }
 }
