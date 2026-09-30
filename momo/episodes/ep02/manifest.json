@@ -52,9 +52,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 522.63,
-    "generations": 149,
-    "regenerations": 16,
+    "spent": 529.23,
+    "generations": 182,
+    "regenerations": 18,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)",
     "cap": 690
   },
@@ -76,7 +76,8 @@
     "next_time": [],
     "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도",
     "remake_2026_09_29": "User asked for natural kids animation (no word-cut-word slideshow). Approved full remake: continuous full-length clips + lip-sync on talking cuts, ~250-300 extra credits; ep02 cap 250 -> 525.",
-    "song_remake_2026_09_30": "User chose 'English song (chant)' on 2026-09-30: English only (Korean removed), AI instrumental (sonilo_music) with Momo chanting on the beat, karaoke lyric captions, word cards; talking cuts re-lip-synced; episode credit cap raised to 690 with that choice."
+    "song_remake_2026_09_30": "User chose 'English song (chant)' on 2026-09-30: English only (Korean removed), AI instrumental (sonilo_music) with Momo chanting on the beat, karaoke lyric captions, word cards; talking cuts re-lip-synced; episode credit cap raised to 690 with that choice.",
+    "song_lyrics_2026_09_30": "Song lyrics v1 (100 BPM, 67 bars). Old narration + TTS records kept under archive.narration_v1."
   },
   "cuts": [
     {
@@ -86,22 +87,19 @@
       "narration": {
         "en": "Hi friends! It's Momo!"
       },
-      "keyword": {
-        "en": ""
-      },
       "library_clip": "intro_wave",
       "library_audio": "intro",
-      "lead": 0.6
+      "bars": 2,
+      "beats": [
+        2
+      ]
     },
     {
       "id": "c02",
       "scene": 1,
       "type": "V",
       "narration": {
-        "en": "Good morning, friends! The sun is up. Yawn! Time to start the day!"
-      },
-      "keyword": {
-        "en": "MORNING"
+        "en": "Good morning, sunshine! Time to wake up! [pause 0.1] Stretch up high, and a big yawn!"
       },
       "image_prompt": "[Momo] sitting up in a small cozy bed, stretching both arms up after waking, bright morning sunlight from a round window, soft pastel bedroom, clear empty pastel wall space in the upper third of the frame",
       "motion": "sits up in bed and talks cheerfully to the viewer with the mouth moving in sync with the voice, a small sleepy stretch with both arms and a little yawn, both long floppy ears stay hanging down beside the cheeks the whole time, warm morning sunlight",
@@ -163,32 +161,55 @@
           "reason": null
         }
       },
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 7
+      },
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "6418a2c0-0514-46d8-bf8f-61504187fb06",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_6418a2c0-0514-46d8-bf8f-61504187fb06.wav",
+            "status": "generated",
+            "job_id": "6119517a-32de-4c19-97ca-07da920e1e57",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_6119517a-32de-4c19-97ca-07da920e1e57.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "6418a2c0-0514-46d8-bf8f-61504187fb06",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_6418a2c0-0514-46d8-bf8f-61504187fb06.wav",
-                "status": "approved",
+                "job_id": "6119517a-32de-4c19-97ca-07da920e1e57",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_6119517a-32de-4c19-97ca-07da920e1e57.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:09Z",
+                "at": "2026-09-30T04:13Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          },
+          "2": {
+            "status": "generated",
+            "job_id": "6202be6c-9cd3-4ae2-93e6-199098eac1b7",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_6202be6c-9cd3-4ae2-93e6-199098eac1b7.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "6202be6c-9cd3-4ae2-93e6-199098eac1b7",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_6202be6c-9cd3-4ae2-93e6-199098eac1b7.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:13Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "lipsync": true,
-      "clip_model": "wan2_7",
-      "clip_seconds": {
-        "en": 7
       }
     },
     {
@@ -196,10 +217,7 @@
       "scene": 1,
       "type": "V",
       "narration": {
-        "en": "Hmm... my teeth feel fuzzy and sticky. What should we do, friends?"
-      },
-      "keyword": {
-        "en": "TEETH"
+        "en": "Hmm, my teeth feel fuzzy. What should we do?"
       },
       "image_prompt": "[Momo] standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, one paw touching the cheek, worried puzzled expression, not smiling, eyebrows raised in the middle, small frown, mouth slightly open, clear empty pastel wall space in the upper third of the frame",
       "motion": "talks to the viewer with a puzzled little face, the mouth moving in sync with the voice, touches the cheek with one paw and tilts the head, ears droop a little",
@@ -258,32 +276,33 @@
           "reason": null
         }
       },
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 6
+      },
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "9cdc5585-afd0-4be4-8732-7a0028d7e345",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110935_9cdc5585-afd0-4be4-8732-7a0028d7e345.wav",
+            "status": "generated",
+            "job_id": "f116ba5e-7ff8-43b9-9e3a-597b1175fd4b",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_f116ba5e-7ff8-43b9-9e3a-597b1175fd4b.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "9cdc5585-afd0-4be4-8732-7a0028d7e345",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110935_9cdc5585-afd0-4be4-8732-7a0028d7e345.wav",
-                "status": "approved",
+                "job_id": "f116ba5e-7ff8-43b9-9e3a-597b1175fd4b",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_f116ba5e-7ff8-43b9-9e3a-597b1175fd4b.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:09Z",
+                "at": "2026-09-30T04:13Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "lipsync": true,
-      "clip_model": "wan2_7",
-      "clip_seconds": {
-        "en": 6
       }
     },
     {
@@ -291,10 +310,7 @@
       "scene": 1,
       "type": "V",
       "narration": {
-        "en": "It's morning! Let's brush our teeth together! Brush, brush, brush!"
-      },
-      "keyword": {
-        "en": "BRUSH"
+        "en": "Time to brush our teeth! Come on, here we go!"
       },
       "image_prompt": "close-up of the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, one round mint-green cup holding one small toothbrush with a yellow handle standing on the sink edge in the center of the frame, soft morning light, clear empty pastel wall space in the upper third of the frame",
       "momo": false,
@@ -339,28 +355,6 @@
           "reason": null
         }
       },
-      "audio_src": {
-        "en": {
-          "1": {
-            "status": "approved",
-            "job_id": "a32b1392-bf3b-4818-8fb0-7bca3729acca",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_a32b1392-bf3b-4818-8fb0-7bca3729acca.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "a32b1392-bf3b-4818-8fb0-7bca3729acca",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_a32b1392-bf3b-4818-8fb0-7bca3729acca.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:09Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
-        }
-      },
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 6,
       "motion": "a clear water drop falls from the faucet with a soft sparkle, light shimmers gently on the tiles, the little toothbrush in the cup wiggles happily",
@@ -368,20 +362,56 @@
       "sfx": [
         {
           "file": "sparkle.wav",
-          "at": 0.8,
-          "gain_db": -10
+          "at": 2.4,
+          "gain_db": -12
         }
-      ]
+      ],
+      "bars": 2,
+      "audio_src": {
+        "en": {
+          "1": {
+            "status": "generated",
+            "job_id": "623e9627-ee80-4a05-98ce-e09c69659de7",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041705_623e9627-ee80-4a05-98ce-e09c69659de7.wav",
+            "attempts": 3,
+            "credits": 0.6,
+            "history": [
+              {
+                "job_id": "d30a4149-560a-4c57-a7f0-adf41baa7d24",
+                "url": null,
+                "status": "rejected",
+                "reason": "generation failed (server)",
+                "at": "2026-09-30T04:13Z",
+                "credits": 0.2
+              },
+              {
+                "job_id": "b52fc1a3-49f2-47a6-86f8-cfc7f2c97134",
+                "url": null,
+                "status": "rejected",
+                "reason": "generation failed (server)",
+                "at": "2026-09-30T04:15Z",
+                "credits": 0.2
+              },
+              {
+                "job_id": "623e9627-ee80-4a05-98ce-e09c69659de7",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041705_623e9627-ee80-4a05-98ce-e09c69659de7.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:17Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          }
+        }
+      }
     },
     {
       "id": "c05",
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Look! This is a toothbrush. A little toothbrush. Toothbrush!"
-      },
-      "keyword": {
-        "en": "TOOTHBRUSH"
+        "en": "This is a toothbrush, soft and small. [pause 0.1] It helps us brush our teeth!"
       },
       "image_prompt": "close-up of one small child toothbrush with soft mint-green bristles and a yellow handle lying on a soft cream counter, plain pastel background",
       "momo": false,
@@ -420,49 +450,74 @@
           "reason": null
         }
       },
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 6,
+      "motion": "the toothbrush gently wiggles and bounces a little like it is happy, soft sparkles twinkle on the bristles",
+      "fill": "loop",
+      "sfx": [
+        {
+          "file": "sparkle.wav",
+          "at": 1.2,
+          "gain_db": -12
+        }
+      ],
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
+      "card": {
+        "word": "toothbrush",
+        "text": "We brush our teeth with it",
+        "pos": "left"
+      },
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "7028cd58-2ffb-4065-aa4f-341ea2a00bca",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111924_7028cd58-2ffb-4065-aa4f-341ea2a00bca.wav",
+            "status": "generated",
+            "job_id": "cbcbb60d-1247-496b-8c41-c8c23688b0b9",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_cbcbb60d-1247-496b-8c41-c8c23688b0b9.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "7028cd58-2ffb-4065-aa4f-341ea2a00bca",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111924_7028cd58-2ffb-4065-aa4f-341ea2a00bca.wav",
-                "status": "approved",
+                "job_id": "cbcbb60d-1247-496b-8c41-c8c23688b0b9",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_cbcbb60d-1247-496b-8c41-c8c23688b0b9.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:19Z",
+                "at": "2026-09-30T04:13Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          },
+          "2": {
+            "status": "generated",
+            "job_id": "f7a15bf1-51b4-4801-ac3a-291172efc7c7",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_f7a15bf1-51b4-4801-ac3a-291172efc7c7.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "f7a15bf1-51b4-4801-ac3a-291172efc7c7",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_f7a15bf1-51b4-4801-ac3a-291172efc7c7.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:13Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 6,
-      "motion": "the toothbrush gently wiggles and bounces a little like it is happy, soft sparkles twinkle on the bristles",
-      "fill": "fit",
-      "sfx": [
-        {
-          "file": "sparkle.wav",
-          "at": 0.6,
-          "gain_db": -9
-        }
-      ]
+      }
     },
     {
       "id": "c06",
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Momo holds the toothbrush. My very own toothbrush! Hello, toothbrush!"
-      },
-      "keyword": {
-        "en": "TOOTHBRUSH"
+        "en": "My very own toothbrush! Hello, toothbrush!"
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding up a small toothbrush with a yellow handle in one paw, proud happy face, clear empty pastel wall space in the upper third of the frame",
       "motion": "holds the toothbrush up proudly and talks happily to the viewer, the mouth moving in sync with the voice, small happy wiggle, ears bounce",
@@ -521,32 +576,33 @@
           "reason": null
         }
       },
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "24f3dda4-af4f-4519-acd2-04c5c8aa81b7",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_24f3dda4-af4f-4519-acd2-04c5c8aa81b7.wav",
+            "status": "generated",
+            "job_id": "a98cdc21-72ef-4438-acc1-06046c4ff210",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_a98cdc21-72ef-4438-acc1-06046c4ff210.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "24f3dda4-af4f-4519-acd2-04c5c8aa81b7",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_24f3dda4-af4f-4519-acd2-04c5c8aa81b7.wav",
-                "status": "approved",
+                "job_id": "a98cdc21-72ef-4438-acc1-06046c4ff210",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_a98cdc21-72ef-4438-acc1-06046c4ff210.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:19Z",
+                "at": "2026-09-30T04:13Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "lipsync": true,
-      "clip_model": "wan2_7",
-      "clip_seconds": {
-        "en": 4
       }
     },
     {
@@ -554,10 +610,7 @@
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Now a little toothpaste. Not too much. Just a tiny dot!"
-      },
-      "keyword": {
-        "en": "TOOTHPASTE"
+        "en": "This is toothpaste, minty and white. [pause 0.1] Just a tiny dot, that's right!"
       },
       "image_prompt": "close-up of the same small toothbrush with soft mint-green bristles and a yellow handle, with a tiny pea-size dot of white toothpaste on the bristles, next to a plain white toothpaste tube, soft pastel background",
       "momo": false,
@@ -602,89 +655,74 @@
           "reason": null
         }
       },
-      "audio_src": {
-        "en": {
-          "1": {
-            "status": "approved",
-            "job_id": "647d53fc-ad81-4e45-8699-afaa7343bce5",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_647d53fc-ad81-4e45-8699-afaa7343bce5.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "647d53fc-ad81-4e45-8699-afaa7343bce5",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_647d53fc-ad81-4e45-8699-afaa7343bce5.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:19Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
-        }
-      },
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 6,
       "motion": "the tiny dot of toothpaste wobbles softly like jelly and a small sparkle twinkles on it, the toothbrush rocks gently",
-      "fill": "fit",
+      "fill": "loop",
       "sfx": [
         {
           "file": "pop.wav",
-          "at": 0.9,
-          "gain_db": -8
+          "at": 6.0,
+          "gain_db": -10
         }
-      ]
-    },
-    {
-      "id": "c08",
-      "scene": 2,
-      "type": "V",
-      "narration": {
-        "en": "Can you say toothpaste? [pause 1.5] Toothpaste! Yay, great job!"
-      },
-      "keyword": {
-        "en": "TOOTHPASTE"
+      ],
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
+      "card": {
+        "word": "toothpaste",
+        "text": "It makes our teeth clean and fresh",
+        "pos": "right"
       },
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "82be39d4-1100-4e99-833a-5d733d9aa4ee",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111924_82be39d4-1100-4e99-833a-5d733d9aa4ee.wav",
+            "status": "generated",
+            "job_id": "de233f1a-08ac-4c53-9e38-94165c5fa54b",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_de233f1a-08ac-4c53-9e38-94165c5fa54b.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "82be39d4-1100-4e99-833a-5d733d9aa4ee",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111924_82be39d4-1100-4e99-833a-5d733d9aa4ee.wav",
-                "status": "approved",
+                "job_id": "de233f1a-08ac-4c53-9e38-94165c5fa54b",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_de233f1a-08ac-4c53-9e38-94165c5fa54b.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:19Z",
+                "at": "2026-09-30T04:13Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           },
           "2": {
-            "status": "approved",
-            "job_id": "f8d065e9-88fe-40a9-91f5-dd9afdec0e0c",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_f8d065e9-88fe-40a9-91f5-dd9afdec0e0c.wav",
+            "status": "generated",
+            "job_id": "72c33e4a-6baa-4855-b6e6-8d5c7491f3df",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_72c33e4a-6baa-4855-b6e6-8d5c7491f3df.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "f8d065e9-88fe-40a9-91f5-dd9afdec0e0c",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_f8d065e9-88fe-40a9-91f5-dd9afdec0e0c.wav",
-                "status": "approved",
+                "job_id": "72c33e4a-6baa-4855-b6e6-8d5c7491f3df",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_72c33e4a-6baa-4855-b6e6-8d5c7491f3df.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:19Z",
+                "at": "2026-09-30T04:13Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "narration": {
+        "en": "Can you say toothpaste? [pause 0.1] Toothpaste! Yay, great job!"
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, facing the viewer and holding up a small white toothpaste tube in one paw, curious happy smile, clear empty space above the head",
       "lipsync": true,
@@ -732,14 +770,49 @@
           "reason": null
         }
       },
-      "nar_ref": {
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
+      "audio_src": {
         "en": {
-          "media_id": "aa6b29df-0cde-41f7-8120-5c75c13db4a6",
-          "blocks": [
-            "82be39d4-1100-4e99-833a-5d733d9aa4ee",
-            "f8d065e9-88fe-40a9-91f5-dd9afdec0e0c"
-          ],
-          "at": "2026-09-30T00:28Z"
+          "1": {
+            "status": "generated",
+            "job_id": "e55e2301-bc56-4e60-a287-5183276d918e",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_e55e2301-bc56-4e60-a287-5183276d918e.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "e55e2301-bc56-4e60-a287-5183276d918e",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_e55e2301-bc56-4e60-a287-5183276d918e.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:13Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          },
+          "2": {
+            "status": "generated",
+            "job_id": "b9762b52-545b-42aa-8279-d86c75f58362",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_b9762b52-545b-42aa-8279-d86c75f58362.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "b9762b52-545b-42aa-8279-d86c75f58362",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_b9762b52-545b-42aa-8279-d86c75f58362.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:13Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          }
         }
       }
     },
@@ -748,10 +821,7 @@
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Squeeze, squeeze, just a little bit of toothpaste. Perfect!"
-      },
-      "keyword": {
-        "en": "TOOTHPASTE"
+        "en": "Squeeze, squeeze, just a little bit!"
       },
       "image_prompt": "[Momo] at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush with a yellow handle and mint-green bristles in one paw and gently squeezing a tiny pea-size dot of white toothpaste from a plain white tube onto the bristles with the other paw, looking at the brush with a focused cute face, not brushing yet, clear empty pastel wall space in the upper third of the frame",
       "motion": "gently squeezes the tube over the toothbrush, small nod",
@@ -791,39 +861,37 @@
           ]
         }
       },
+      "fill": "loop",
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "84434f2c-0550-475f-836d-370ea3b12ecf",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_84434f2c-0550-475f-836d-370ea3b12ecf.wav",
+            "status": "generated",
+            "job_id": "8a9a5b07-3166-4b75-80a6-73450f7c9e39",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_8a9a5b07-3166-4b75-80a6-73450f7c9e39.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "84434f2c-0550-475f-836d-370ea3b12ecf",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_84434f2c-0550-475f-836d-370ea3b12ecf.wav",
-                "status": "approved",
+                "job_id": "8a9a5b07-3166-4b75-80a6-73450f7c9e39",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_8a9a5b07-3166-4b75-80a6-73450f7c9e39.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:19Z",
+                "at": "2026-09-30T04:13Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "fill": "loop"
+      }
     },
     {
       "id": "c10",
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "[chant] Brush up, brush down, brush your teeth all around! Brush up, brush down!"
-      },
-      "keyword": {
-        "en": "BRUSH"
+        "en": "Brush up, brush down, brush your teeth all around! [pause 0.1] Brush up, brush down, what a happy sound!"
       },
       "image_prompt": "[Momo] facing the viewer holding a small toothbrush with a yellow handle and mint-green bristles at the front teeth, big smile with a little white foam, a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
       "motion": "brushes the teeth with small up and down strokes, ears bounce",
@@ -857,46 +925,66 @@
           ]
         }
       },
+      "fill": "loop",
+      "sfx": [
+        {
+          "file": "brush.wav",
+          "at": 0.0,
+          "gain_db": -16
+        }
+      ],
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "198eecfa-61b4-49be-9627-3623e0d26cac",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_198eecfa-61b4-49be-9627-3623e0d26cac.wav",
+            "status": "generated",
+            "job_id": "8d3c1dc5-b21e-4d45-9a1c-7b7649ba8b11",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_8d3c1dc5-b21e-4d45-9a1c-7b7649ba8b11.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "198eecfa-61b4-49be-9627-3623e0d26cac",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_198eecfa-61b4-49be-9627-3623e0d26cac.wav",
-                "status": "approved",
+                "job_id": "8d3c1dc5-b21e-4d45-9a1c-7b7649ba8b11",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_8d3c1dc5-b21e-4d45-9a1c-7b7649ba8b11.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:19Z",
+                "at": "2026-09-30T04:14Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          },
+          "2": {
+            "status": "generated",
+            "job_id": "29ad5b2a-d0db-412e-bb50-5f1f322d15f1",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_29ad5b2a-d0db-412e-bb50-5f1f322d15f1.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "29ad5b2a-d0db-412e-bb50-5f1f322d15f1",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_29ad5b2a-d0db-412e-bb50-5f1f322d15f1.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:14Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "fill": "loop",
-      "sfx": [
-        {
-          "file": "brush.wav",
-          "at": 0.5,
-          "gain_db": -12
-        }
-      ]
+      }
     },
     {
       "id": "c11",
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "Brush the top teeth. Up, up, up! Gently up, up, up!"
-      },
-      "keyword": {
-        "en": "UP"
+        "en": "Top teeth, up, up, up!"
       },
       "image_prompt": "[Momo] seen from the waist up, brushing the top teeth with a small toothbrush with a yellow handle and mint-green bristles, eyes looking up playfully, soft pastel-blue background with empty space above the head",
       "motion": "brushes with small upward strokes and blinks",
@@ -930,39 +1018,37 @@
           ]
         }
       },
+      "fill": "loop",
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "51213994-0d73-4330-a7e4-73c1255bd1e5",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_51213994-0d73-4330-a7e4-73c1255bd1e5.wav",
+            "status": "generated",
+            "job_id": "41c18adc-1676-42ad-8359-73150eed1e02",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_41c18adc-1676-42ad-8359-73150eed1e02.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "51213994-0d73-4330-a7e4-73c1255bd1e5",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_51213994-0d73-4330-a7e4-73c1255bd1e5.wav",
-                "status": "approved",
+                "job_id": "41c18adc-1676-42ad-8359-73150eed1e02",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_41c18adc-1676-42ad-8359-73150eed1e02.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:19Z",
+                "at": "2026-09-30T04:14Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "fill": "loop"
+      }
     },
     {
       "id": "c12",
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "Brush the bottom teeth. Down, down, down! Gently down, down, down!"
-      },
-      "keyword": {
-        "en": "DOWN"
+        "en": "Bottom teeth, down, down, down!"
       },
       "image_prompt": "[Momo] seen from the waist up, brushing the bottom teeth with a small toothbrush with a yellow handle and mint-green bristles, eyes looking down playfully, soft pastel-blue background with empty space above the head",
       "motion": "brushes with small downward strokes, small nod",
@@ -996,39 +1082,37 @@
           ]
         }
       },
+      "fill": "loop",
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "f873d1f1-d9df-461c-8bc0-cbafb9e81fcb",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_f873d1f1-d9df-461c-8bc0-cbafb9e81fcb.wav",
+            "status": "generated",
+            "job_id": "9b2245e7-d936-4c1c-a9cb-c72d19f2006e",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041404_9b2245e7-d936-4c1c-a9cb-c72d19f2006e.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "f873d1f1-d9df-461c-8bc0-cbafb9e81fcb",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_f873d1f1-d9df-461c-8bc0-cbafb9e81fcb.wav",
-                "status": "approved",
+                "job_id": "9b2245e7-d936-4c1c-a9cb-c72d19f2006e",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041404_9b2245e7-d936-4c1c-a9cb-c72d19f2006e.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:19Z",
+                "at": "2026-09-30T04:14Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "fill": "loop"
+      }
     },
     {
       "id": "c13",
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "Up and down, up and down. Can you do it too? [pause 1.5] Yes!"
-      },
-      "keyword": {
-        "en": "UP"
+        "en": "Up and down, can you do it too? [pause 0.1] Yes, you can! Brush, brush, brush!"
       },
       "image_prompt": "[Momo] seen from the waist up with a big foamy smile, holding a small toothbrush with a yellow handle and mint-green bristles near the mouth, twinkling eyes, soft pastel-yellow background with empty space above the head, only one single Momo in the frame, no duplicate heads, no second character",
       "gen": {
@@ -1072,61 +1156,55 @@
           "reason": null
         }
       },
-      "text_pos": "bottom",
-      "audio_src": {
-        "en": {
-          "1": {
-            "status": "approved",
-            "job_id": "a042e558-bd29-4c2a-ab8d-d656afd3bbcb",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_a042e558-bd29-4c2a-ab8d-d656afd3bbcb.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "a042e558-bd29-4c2a-ab8d-d656afd3bbcb",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_a042e558-bd29-4c2a-ab8d-d656afd3bbcb.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:19Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          },
-          "2": {
-            "status": "approved",
-            "job_id": "4e9a4880-7c22-4ffd-8e62-bd0e65c61739",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_4e9a4880-7c22-4ffd-8e62-bd0e65c61739.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "4e9a4880-7c22-4ffd-8e62-bd0e65c61739",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_4e9a4880-7c22-4ffd-8e62-bd0e65c61739.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:19Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
-        }
-      },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 7
       },
       "motion": "talks to the viewer with a foamy smile, the mouth moving in sync with the voice, moves the toothbrush up and down beside the mouth, nods encouragingly, both long floppy ears stay hanging down beside the cheeks",
-      "nar_ref": {
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
+      "audio_src": {
         "en": {
-          "media_id": "2c72ad9a-0717-483f-9c25-6773743bcbeb",
-          "blocks": [
-            "a042e558-bd29-4c2a-ab8d-d656afd3bbcb",
-            "4e9a4880-7c22-4ffd-8e62-bd0e65c61739"
-          ],
-          "at": "2026-09-30T00:28Z"
+          "1": {
+            "status": "generated",
+            "job_id": "61c9521d-44dd-4e23-b154-5f4cd083eeb9",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_61c9521d-44dd-4e23-b154-5f4cd083eeb9.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "61c9521d-44dd-4e23-b154-5f4cd083eeb9",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_61c9521d-44dd-4e23-b154-5f4cd083eeb9.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:14Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          },
+          "2": {
+            "status": "generated",
+            "job_id": "863545f9-2a2f-4532-ba34-3754ccb9f259",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_863545f9-2a2f-4532-ba34-3754ccb9f259.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "863545f9-2a2f-4532-ba34-3754ccb9f259",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_863545f9-2a2f-4532-ba34-3754ccb9f259.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:14Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          }
         }
       }
     },
@@ -1136,31 +1214,6 @@
       "type": "V",
       "narration": {
         "en": "You did it! Great brushing, friends!"
-      },
-      "keyword": {
-        "en": ""
-      },
-      "audio_src": {
-        "en": {
-          "1": {
-            "status": "approved",
-            "job_id": "6cbafe45-023e-4b2c-8269-f8ab636aeee7",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_6cbafe45-023e-4b2c-8269-f8ab636aeee7.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "6cbafe45-023e-4b2c-8269-f8ab636aeee7",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_6cbafe45-023e-4b2c-8269-f8ab636aeee7.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:19Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
-        }
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, facing the viewer with a proud big smile and both paws raised in a happy cheer, holding a small toothbrush with a yellow handle and mint-green bristles, clear empty space above the head",
       "lipsync": true,
@@ -1172,8 +1225,8 @@
       "sfx": [
         {
           "file": "chime.wav",
-          "at": 0.3,
-          "gain_db": -10
+          "at": 0.0,
+          "gain_db": -12
         }
       ],
       "gen": {
@@ -1214,6 +1267,29 @@
           ],
           "reason": null
         }
+      },
+      "bars": 2,
+      "audio_src": {
+        "en": {
+          "1": {
+            "status": "generated",
+            "job_id": "56ec654c-1e45-47a7-96f9-731f91d519aa",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_56ec654c-1e45-47a7-96f9-731f91d519aa.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "56ec654c-1e45-47a7-96f9-731f91d519aa",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_56ec654c-1e45-47a7-96f9-731f91d519aa.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:14Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          }
+        }
       }
     },
     {
@@ -1221,10 +1297,7 @@
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Quack, quack! Here comes Ducky with a little cup of water!"
-      },
-      "keyword": {
-        "en": "CUP"
+        "en": "Quack, quack! Here comes Ducky with a cup!"
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink on the right side of a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, [Ducky] waddling in from the left carrying a small mint-green cup, happy surprised faces, clear empty pastel wall space in the upper third of the frame",
       "motion": "Ducky waddles forward a little, Momo's ears bounce happily",
@@ -1263,45 +1336,36 @@
           "reason": null
         }
       },
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "7bbe98ac-3104-4509-91dc-c70d0f3c5a60",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112514_7bbe98ac-3104-4509-91dc-c70d0f3c5a60.wav",
+            "status": "generated",
+            "job_id": "91bb8abb-6a53-447b-8ff3-2c66461a9754",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041404_91bb8abb-6a53-447b-8ff3-2c66461a9754.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "7bbe98ac-3104-4509-91dc-c70d0f3c5a60",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112514_7bbe98ac-3104-4509-91dc-c70d0f3c5a60.wav",
-                "status": "approved",
+                "job_id": "91bb8abb-6a53-447b-8ff3-2c66461a9754",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041404_91bb8abb-6a53-447b-8ff3-2c66461a9754.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:25Z",
+                "at": "2026-09-30T04:14Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "sfx": [
-        {
-          "file": "boing.wav",
-          "at": 0.4,
-          "gain_db": -12
-        }
-      ]
+      }
     },
     {
       "id": "c16",
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Water in the cup helps us rinse. Rinse, rinse, rinse!"
-      },
-      "keyword": {
-        "en": "RINSE"
+        "en": "This is a cup of water. [pause 0.1] We sip, and we rinse our mouth!"
       },
       "image_prompt": "close-up of a small mint-green cup filled with clear water on a clean white sink edge, soft sparkles on the water, plain pastel background",
       "momo": false,
@@ -1340,49 +1404,74 @@
           "reason": null
         }
       },
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 6,
+      "motion": "the water in the cup ripples gently and soft sparkles twinkle on the surface, the cup gives a tiny happy wobble",
+      "fill": "loop",
+      "sfx": [
+        {
+          "file": "splash.wav",
+          "at": 1.2,
+          "gain_db": -12
+        }
+      ],
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
+      "card": {
+        "word": "cup",
+        "text": "It holds water for rinsing",
+        "pos": "left"
+      },
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "de33ad03-e0cb-4166-a38c-d78428c1d20c",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112513_de33ad03-e0cb-4166-a38c-d78428c1d20c.wav",
+            "status": "generated",
+            "job_id": "139e2df9-fac4-4565-96ba-ef745f3b72bc",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_139e2df9-fac4-4565-96ba-ef745f3b72bc.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "de33ad03-e0cb-4166-a38c-d78428c1d20c",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112513_de33ad03-e0cb-4166-a38c-d78428c1d20c.wav",
-                "status": "approved",
+                "job_id": "139e2df9-fac4-4565-96ba-ef745f3b72bc",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_139e2df9-fac4-4565-96ba-ef745f3b72bc.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:25Z",
+                "at": "2026-09-30T04:14Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          },
+          "2": {
+            "status": "generated",
+            "job_id": "6b12f16f-99f1-4993-9c23-ba57cc2318b4",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041527_6b12f16f-99f1-4993-9c23-ba57cc2318b4.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "6b12f16f-99f1-4993-9c23-ba57cc2318b4",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041527_6b12f16f-99f1-4993-9c23-ba57cc2318b4.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:15Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 6,
-      "motion": "the water in the cup ripples gently and soft sparkles twinkle on the surface, the cup gives a tiny happy wobble",
-      "fill": "fit",
-      "sfx": [
-        {
-          "file": "splash.wav",
-          "at": 0.6,
-          "gain_db": -12
-        }
-      ]
+      }
     },
     {
       "id": "c17",
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Sip a little water. Swish, swish, swish! Funny puffy cheeks!"
-      },
-      "keyword": {
-        "en": "RINSE"
+        "en": "Sip and swish, swish, swish!"
       },
       "image_prompt": "[Momo] holding a small mint-green mug, mouth closed and both cheeks puffed out round like little balloons full of water while swishing, funny wide happy eyes, not smiling with open mouth, at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
       "motion": "cheeks wobble gently side to side, ears bounce",
@@ -1427,46 +1516,44 @@
           "reason": null
         }
       },
+      "fill": "loop",
+      "sfx": [
+        {
+          "file": "swish.wav",
+          "at": 1.8,
+          "gain_db": -12
+        }
+      ],
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "f162a993-a866-415f-ade6-b2d67da9d6f2",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112512_f162a993-a866-415f-ade6-b2d67da9d6f2.wav",
+            "status": "generated",
+            "job_id": "f9c4cea0-9c9e-405b-b8ce-6e84caa84426",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_f9c4cea0-9c9e-405b-b8ce-6e84caa84426.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "f162a993-a866-415f-ade6-b2d67da9d6f2",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112512_f162a993-a866-415f-ade6-b2d67da9d6f2.wav",
-                "status": "approved",
+                "job_id": "f9c4cea0-9c9e-405b-b8ce-6e84caa84426",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_f9c4cea0-9c9e-405b-b8ce-6e84caa84426.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:25Z",
+                "at": "2026-09-30T04:14Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "fill": "loop",
-      "sfx": [
-        {
-          "file": "swish.wav",
-          "at": 1.2,
-          "gain_db": -10
-        }
-      ]
+      }
     },
     {
       "id": "c18",
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "And spit it out! Ptooey! All clean and fresh!"
-      },
-      "keyword": {
-        "en": "RINSE"
+        "en": "Now spit it out! Ptooey! All clean!"
       },
       "image_prompt": "[Momo] leaning over the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, gently spitting a little water into the sink, [Ducky] watching from the counter, cheerful mood, clear empty pastel wall space in the upper third of the frame",
       "motion": "leans forward a little over the sink and smiles, Ducky flaps its wings",
@@ -1505,45 +1592,43 @@
           "reason": null
         }
       },
+      "sfx": [
+        {
+          "file": "splash.wav",
+          "at": 1.8,
+          "gain_db": -12
+        }
+      ],
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "cadf7221-69ad-42fa-a69b-bd2883fec287",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112512_cadf7221-69ad-42fa-a69b-bd2883fec287.wav",
+            "status": "generated",
+            "job_id": "b827f88c-6779-4cf3-97f0-69277a251fb8",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_b827f88c-6779-4cf3-97f0-69277a251fb8.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "cadf7221-69ad-42fa-a69b-bd2883fec287",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112512_cadf7221-69ad-42fa-a69b-bd2883fec287.wav",
-                "status": "approved",
+                "job_id": "b827f88c-6779-4cf3-97f0-69277a251fb8",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_b827f88c-6779-4cf3-97f0-69277a251fb8.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:25Z",
+                "at": "2026-09-30T04:14Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "sfx": [
-        {
-          "file": "splash.wav",
-          "at": 1.0,
-          "gain_db": -10
-        }
-      ]
+      }
     },
     {
       "id": "c19",
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Ducky asks: can you say rinse? [pause 1.5] Rinse! Hooray!"
-      },
-      "keyword": {
-        "en": "RINSE"
+        "en": "Can you say rinse? [pause 0.1] Rinse! Hooray! Well done!"
       },
       "image_prompt": "[Momo] and [Ducky] side by side next to the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, both smiling at the viewer, clear empty pastel wall space in the upper third of the frame",
       "motion": "Momo turns to the viewer and talks, the mouth moving in sync with the voice, Ducky flaps its wings happily, both nod, Momo's long floppy ears stay hanging down",
@@ -1607,59 +1692,54 @@
           "reason": null
         }
       },
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 7
+      },
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "717f6b26-a6fe-44b0-84f4-2fbb4080794b",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112559_717f6b26-a6fe-44b0-84f4-2fbb4080794b.wav",
+            "status": "generated",
+            "job_id": "a819146c-8fa2-424f-9966-10e380b6887b",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041526_a819146c-8fa2-424f-9966-10e380b6887b.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "717f6b26-a6fe-44b0-84f4-2fbb4080794b",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112559_717f6b26-a6fe-44b0-84f4-2fbb4080794b.wav",
-                "status": "approved",
+                "job_id": "a819146c-8fa2-424f-9966-10e380b6887b",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041526_a819146c-8fa2-424f-9966-10e380b6887b.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:26Z",
+                "at": "2026-09-30T04:15Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           },
           "2": {
-            "status": "approved",
-            "job_id": "393a5e0e-88b1-4aed-8145-221ff2567eae",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_393a5e0e-88b1-4aed-8145-221ff2567eae.wav",
+            "status": "generated",
+            "job_id": "78b07474-9af3-450e-9a3d-9d1797d2f5cf",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041526_78b07474-9af3-450e-9a3d-9d1797d2f5cf.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "393a5e0e-88b1-4aed-8145-221ff2567eae",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_393a5e0e-88b1-4aed-8145-221ff2567eae.wav",
-                "status": "approved",
+                "job_id": "78b07474-9af3-450e-9a3d-9d1797d2f5cf",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041526_78b07474-9af3-450e-9a3d-9d1797d2f5cf.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:26Z",
+                "at": "2026-09-30T04:15Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
-        }
-      },
-      "lipsync": true,
-      "clip_model": "wan2_7",
-      "clip_seconds": {
-        "en": 7
-      },
-      "nar_ref": {
-        "en": {
-          "media_id": "7d232708-c6a2-48d2-9e7c-5a6db0da35a0",
-          "blocks": [
-            "717f6b26-a6fe-44b0-84f4-2fbb4080794b",
-            "393a5e0e-88b1-4aed-8145-221ff2567eae"
-          ],
-          "at": "2026-09-30T00:28Z"
         }
       }
     },
@@ -1668,10 +1748,7 @@
       "scene": 5,
       "type": "V",
       "narration": {
-        "en": "Let's remember! Toothbrush, toothpaste, and a cup of water!"
-      },
-      "keyword": {
-        "en": "TOOTHBRUSH"
+        "en": "Toothbrush, toothpaste, and a cup!"
       },
       "image_prompt": "close-up still life of three items standing side by side in a neat row on the edge of a white rounded sink: a small toothbrush with a yellow handle and mint-green bristles, a plain white toothpaste tube and a small mint-green cup, no characters, soft light-blue square tiles softly blurred behind, soft morning light, clear empty pastel wall space in the upper third of the frame",
       "momo": false,
@@ -1722,42 +1799,40 @@
           "reason": null
         }
       },
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 7,
+      "motion": "the toothbrush, the toothpaste tube and the cup each give a small happy bounce one after another, soft sparkles twinkle",
+      "fill": "fit",
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "f688f285-451f-4686-be7f-2bd10667382e",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_f688f285-451f-4686-be7f-2bd10667382e.wav",
+            "status": "generated",
+            "job_id": "35268728-b356-4aa4-a754-b1250dacd907",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041527_35268728-b356-4aa4-a754-b1250dacd907.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "f688f285-451f-4686-be7f-2bd10667382e",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_f688f285-451f-4686-be7f-2bd10667382e.wav",
-                "status": "approved",
+                "job_id": "35268728-b356-4aa4-a754-b1250dacd907",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041527_35268728-b356-4aa4-a754-b1250dacd907.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:26Z",
+                "at": "2026-09-30T04:15Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 7,
-      "motion": "the toothbrush, the toothpaste tube and the cup each give a small happy bounce one after another, soft sparkles twinkle",
-      "fill": "fit"
+      }
     },
     {
       "id": "c21",
       "scene": 5,
       "type": "V",
       "narration": {
-        "en": "[chant] Brush up, brush down, swish and spit, all around! Swish and spit!"
-      },
-      "keyword": {
-        "en": "BRUSH"
+        "en": "Brush up, brush down, swish and spit! [pause 0.1] Morning and night, we never quit!"
       },
       "image_prompt": "[Momo] happily dancing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush with a yellow handle and mint-green bristles up high in one paw, clear empty pastel wall space in the upper third of the frame",
       "motion": "sings and dances happily holding the toothbrush up, the mouth moving in sync with the song, small hops and sways side to side, ears bounce",
@@ -1819,32 +1894,55 @@
           "reason": null
         }
       },
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 8
+      },
+      "bars": 4,
+      "beats": [
+        0,
+        8
+      ],
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "2ee70bde-24b9-4a0e-bfce-f99cdd68181f",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_2ee70bde-24b9-4a0e-bfce-f99cdd68181f.wav",
+            "status": "generated",
+            "job_id": "cc8002ca-3a0e-40f3-a64a-3fa9fa905efc",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041542_cc8002ca-3a0e-40f3-a64a-3fa9fa905efc.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "2ee70bde-24b9-4a0e-bfce-f99cdd68181f",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_2ee70bde-24b9-4a0e-bfce-f99cdd68181f.wav",
-                "status": "approved",
+                "job_id": "cc8002ca-3a0e-40f3-a64a-3fa9fa905efc",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041542_cc8002ca-3a0e-40f3-a64a-3fa9fa905efc.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:26Z",
+                "at": "2026-09-30T04:15Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          },
+          "2": {
+            "status": "generated",
+            "job_id": "e371a438-3550-4162-8e5e-a3af297c6830",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041542_e371a438-3550-4162-8e5e-a3af297c6830.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "e371a438-3550-4162-8e5e-a3af297c6830",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041542_e371a438-3550-4162-8e5e-a3af297c6830.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:15Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "lipsync": true,
-      "clip_model": "wan2_7",
-      "clip_seconds": {
-        "en": 8
       }
     },
     {
@@ -1852,10 +1950,7 @@
       "scene": 5,
       "type": "V",
       "narration": {
-        "en": "Show me your smile! Big, sparkly smile! Sparkly clean teeth!"
-      },
-      "keyword": {
-        "en": "SMILE"
+        "en": "Show me your smile, big and bright!"
       },
       "image_prompt": "[Momo] facing the viewer with the biggest smile showing clean shiny white teeth, one tiny sparkle near the teeth, soft pastel background with empty space above the head",
       "motion": "talks cheerfully to the viewer with the mouth moving in sync with the voice, big sparkly smile between words, small happy head bobs, ears sway gently",
@@ -1926,28 +2021,6 @@
           "reason": null
         }
       },
-      "audio_src": {
-        "en": {
-          "1": {
-            "status": "approved",
-            "job_id": "8f3b90c6-2636-4c8a-8c54-c5b57c710f65",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112650_8f3b90c6-2636-4c8a-8c54-c5b57c710f65.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "8f3b90c6-2636-4c8a-8c54-c5b57c710f65",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112650_8f3b90c6-2636-4c8a-8c54-c5b57c710f65.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:27Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
-        }
-      },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -1956,20 +2029,40 @@
       "sfx": [
         {
           "file": "sparkle.wav",
-          "at": 2.2,
-          "gain_db": -10
+          "at": 2.4,
+          "gain_db": -12
         }
-      ]
+      ],
+      "bars": 2,
+      "audio_src": {
+        "en": {
+          "1": {
+            "status": "generated",
+            "job_id": "e620de1b-c586-4871-bac4-4a1995d1af83",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041644_e620de1b-c586-4871-bac4-4a1995d1af83.wav",
+            "attempts": 1,
+            "credits": 0.2,
+            "history": [
+              {
+                "job_id": "e620de1b-c586-4871-bac4-4a1995d1af83",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041644_e620de1b-c586-4871-bac4-4a1995d1af83.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:16Z",
+                "credits": 0.2
+              }
+            ],
+            "reason": null
+          }
+        }
+      }
     },
     {
       "id": "c23",
       "scene": 5,
       "type": "V",
       "narration": {
-        "en": "Brush every morning and every night. Keep a big, bright smile!"
-      },
-      "keyword": {
-        "en": "SMILE"
+        "en": "Sparkly teeth, morning and night!"
       },
       "image_prompt": "[Momo] close-up holding a small toothbrush with a yellow handle and mint-green bristles next to the cheek, huge happy smile with shiny teeth, [Ducky] peeking in from the side, bright pastel-blue background with empty space above the head",
       "gen": {
@@ -2011,34 +2104,35 @@
           "reason": null
         }
       },
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 6
+      },
+      "motion": "talks cheerfully to the viewer with a big bright smile, the mouth moving in sync with the voice, holds the toothbrush next to the cheek, Ducky peeks in and waves a wing",
+      "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "approved",
-            "job_id": "e68705cf-f5c2-42ea-af2f-076cf12880fc",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112648_e68705cf-f5c2-42ea-af2f-076cf12880fc.wav",
+            "status": "generated",
+            "job_id": "db93912f-286d-45a2-a5d5-8704c6f09ec1",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041655_db93912f-286d-45a2-a5d5-8704c6f09ec1.wav",
             "attempts": 1,
             "credits": 0.2,
             "history": [
               {
-                "job_id": "e68705cf-f5c2-42ea-af2f-076cf12880fc",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112648_e68705cf-f5c2-42ea-af2f-076cf12880fc.wav",
-                "status": "approved",
+                "job_id": "db93912f-286d-45a2-a5d5-8704c6f09ec1",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041655_db93912f-286d-45a2-a5d5-8704c6f09ec1.wav",
+                "status": "generated",
                 "reason": null,
-                "at": "2026-09-29T11:27Z",
+                "at": "2026-09-30T04:16Z",
                 "credits": 0.2
               }
             ],
             "reason": null
           }
         }
-      },
-      "lipsync": true,
-      "clip_model": "wan2_7",
-      "clip_seconds": {
-        "en": 6
-      },
-      "motion": "talks cheerfully to the viewer with a big bright smile, the mouth moving in sync with the voice, holds the toothbrush next to the cheek, Ducky peeks in and waves a wing"
+      }
     },
     {
       "id": "c24",
@@ -2047,12 +2141,12 @@
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
       },
-      "keyword": {
-        "en": ""
-      },
       "library_clip": "outro_bye",
       "library_audio": "outro",
-      "tail": 1.5
+      "bars": 3,
+      "beats": [
+        0
+      ]
     }
   ],
   "sets": {
@@ -2080,6 +2174,707 @@
           "credits": 10.63
         }
       ]
+    }
+  },
+  "archive": {
+    "narration_v1": {
+      "c02": {
+        "narration": {
+          "en": "Good morning, friends! The sun is up. Yawn! Time to start the day!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "6418a2c0-0514-46d8-bf8f-61504187fb06",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_6418a2c0-0514-46d8-bf8f-61504187fb06.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "6418a2c0-0514-46d8-bf8f-61504187fb06",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_6418a2c0-0514-46d8-bf8f-61504187fb06.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:09Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c03": {
+        "narration": {
+          "en": "Hmm... my teeth feel fuzzy and sticky. What should we do, friends?"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "9cdc5585-afd0-4be4-8732-7a0028d7e345",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110935_9cdc5585-afd0-4be4-8732-7a0028d7e345.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "9cdc5585-afd0-4be4-8732-7a0028d7e345",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110935_9cdc5585-afd0-4be4-8732-7a0028d7e345.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:09Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c04": {
+        "narration": {
+          "en": "It's morning! Let's brush our teeth together! Brush, brush, brush!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "a32b1392-bf3b-4818-8fb0-7bca3729acca",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_a32b1392-bf3b-4818-8fb0-7bca3729acca.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "a32b1392-bf3b-4818-8fb0-7bca3729acca",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_a32b1392-bf3b-4818-8fb0-7bca3729acca.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:09Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c05": {
+        "narration": {
+          "en": "Look! This is a toothbrush. A little toothbrush. Toothbrush!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "7028cd58-2ffb-4065-aa4f-341ea2a00bca",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111924_7028cd58-2ffb-4065-aa4f-341ea2a00bca.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "7028cd58-2ffb-4065-aa4f-341ea2a00bca",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111924_7028cd58-2ffb-4065-aa4f-341ea2a00bca.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c06": {
+        "narration": {
+          "en": "Momo holds the toothbrush. My very own toothbrush! Hello, toothbrush!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "24f3dda4-af4f-4519-acd2-04c5c8aa81b7",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_24f3dda4-af4f-4519-acd2-04c5c8aa81b7.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "24f3dda4-af4f-4519-acd2-04c5c8aa81b7",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_24f3dda4-af4f-4519-acd2-04c5c8aa81b7.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c07": {
+        "narration": {
+          "en": "Now a little toothpaste. Not too much. Just a tiny dot!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "647d53fc-ad81-4e45-8699-afaa7343bce5",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_647d53fc-ad81-4e45-8699-afaa7343bce5.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "647d53fc-ad81-4e45-8699-afaa7343bce5",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_647d53fc-ad81-4e45-8699-afaa7343bce5.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c08": {
+        "narration": {
+          "en": "Can you say toothpaste? [pause 1.5] Toothpaste! Yay, great job!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "82be39d4-1100-4e99-833a-5d733d9aa4ee",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111924_82be39d4-1100-4e99-833a-5d733d9aa4ee.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "82be39d4-1100-4e99-833a-5d733d9aa4ee",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111924_82be39d4-1100-4e99-833a-5d733d9aa4ee.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            },
+            "2": {
+              "status": "approved",
+              "job_id": "f8d065e9-88fe-40a9-91f5-dd9afdec0e0c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_f8d065e9-88fe-40a9-91f5-dd9afdec0e0c.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "f8d065e9-88fe-40a9-91f5-dd9afdec0e0c",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_f8d065e9-88fe-40a9-91f5-dd9afdec0e0c.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": {
+          "en": {
+            "media_id": "aa6b29df-0cde-41f7-8120-5c75c13db4a6",
+            "blocks": [
+              "82be39d4-1100-4e99-833a-5d733d9aa4ee",
+              "f8d065e9-88fe-40a9-91f5-dd9afdec0e0c"
+            ],
+            "at": "2026-09-30T00:28Z"
+          }
+        }
+      },
+      "c09": {
+        "narration": {
+          "en": "Squeeze, squeeze, just a little bit of toothpaste. Perfect!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "84434f2c-0550-475f-836d-370ea3b12ecf",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_84434f2c-0550-475f-836d-370ea3b12ecf.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "84434f2c-0550-475f-836d-370ea3b12ecf",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_84434f2c-0550-475f-836d-370ea3b12ecf.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c10": {
+        "narration": {
+          "en": "[chant] Brush up, brush down, brush your teeth all around! Brush up, brush down!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "198eecfa-61b4-49be-9627-3623e0d26cac",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_198eecfa-61b4-49be-9627-3623e0d26cac.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "198eecfa-61b4-49be-9627-3623e0d26cac",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_198eecfa-61b4-49be-9627-3623e0d26cac.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c11": {
+        "narration": {
+          "en": "Brush the top teeth. Up, up, up! Gently up, up, up!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "51213994-0d73-4330-a7e4-73c1255bd1e5",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_51213994-0d73-4330-a7e4-73c1255bd1e5.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "51213994-0d73-4330-a7e4-73c1255bd1e5",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_51213994-0d73-4330-a7e4-73c1255bd1e5.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c12": {
+        "narration": {
+          "en": "Brush the bottom teeth. Down, down, down! Gently down, down, down!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "f873d1f1-d9df-461c-8bc0-cbafb9e81fcb",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_f873d1f1-d9df-461c-8bc0-cbafb9e81fcb.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "f873d1f1-d9df-461c-8bc0-cbafb9e81fcb",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_f873d1f1-d9df-461c-8bc0-cbafb9e81fcb.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c13": {
+        "narration": {
+          "en": "Up and down, up and down. Can you do it too? [pause 1.5] Yes!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "a042e558-bd29-4c2a-ab8d-d656afd3bbcb",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_a042e558-bd29-4c2a-ab8d-d656afd3bbcb.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "a042e558-bd29-4c2a-ab8d-d656afd3bbcb",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111922_a042e558-bd29-4c2a-ab8d-d656afd3bbcb.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            },
+            "2": {
+              "status": "approved",
+              "job_id": "4e9a4880-7c22-4ffd-8e62-bd0e65c61739",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_4e9a4880-7c22-4ffd-8e62-bd0e65c61739.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "4e9a4880-7c22-4ffd-8e62-bd0e65c61739",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_4e9a4880-7c22-4ffd-8e62-bd0e65c61739.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": {
+          "en": {
+            "media_id": "2c72ad9a-0717-483f-9c25-6773743bcbeb",
+            "blocks": [
+              "a042e558-bd29-4c2a-ab8d-d656afd3bbcb",
+              "4e9a4880-7c22-4ffd-8e62-bd0e65c61739"
+            ],
+            "at": "2026-09-30T00:28Z"
+          }
+        }
+      },
+      "c14": {
+        "narration": {
+          "en": "You did it! Great brushing, friends!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "6cbafe45-023e-4b2c-8269-f8ab636aeee7",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_6cbafe45-023e-4b2c-8269-f8ab636aeee7.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "6cbafe45-023e-4b2c-8269-f8ab636aeee7",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_111923_6cbafe45-023e-4b2c-8269-f8ab636aeee7.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:19Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c15": {
+        "narration": {
+          "en": "Quack, quack! Here comes Ducky with a little cup of water!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "7bbe98ac-3104-4509-91dc-c70d0f3c5a60",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112514_7bbe98ac-3104-4509-91dc-c70d0f3c5a60.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "7bbe98ac-3104-4509-91dc-c70d0f3c5a60",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112514_7bbe98ac-3104-4509-91dc-c70d0f3c5a60.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:25Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c16": {
+        "narration": {
+          "en": "Water in the cup helps us rinse. Rinse, rinse, rinse!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "de33ad03-e0cb-4166-a38c-d78428c1d20c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112513_de33ad03-e0cb-4166-a38c-d78428c1d20c.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "de33ad03-e0cb-4166-a38c-d78428c1d20c",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112513_de33ad03-e0cb-4166-a38c-d78428c1d20c.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:25Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c17": {
+        "narration": {
+          "en": "Sip a little water. Swish, swish, swish! Funny puffy cheeks!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "f162a993-a866-415f-ade6-b2d67da9d6f2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112512_f162a993-a866-415f-ade6-b2d67da9d6f2.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "f162a993-a866-415f-ade6-b2d67da9d6f2",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112512_f162a993-a866-415f-ade6-b2d67da9d6f2.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:25Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c18": {
+        "narration": {
+          "en": "And spit it out! Ptooey! All clean and fresh!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "cadf7221-69ad-42fa-a69b-bd2883fec287",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112512_cadf7221-69ad-42fa-a69b-bd2883fec287.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "cadf7221-69ad-42fa-a69b-bd2883fec287",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112512_cadf7221-69ad-42fa-a69b-bd2883fec287.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:25Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c19": {
+        "narration": {
+          "en": "Ducky asks: can you say rinse? [pause 1.5] Rinse! Hooray!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "717f6b26-a6fe-44b0-84f4-2fbb4080794b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112559_717f6b26-a6fe-44b0-84f4-2fbb4080794b.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "717f6b26-a6fe-44b0-84f4-2fbb4080794b",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112559_717f6b26-a6fe-44b0-84f4-2fbb4080794b.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:26Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            },
+            "2": {
+              "status": "approved",
+              "job_id": "393a5e0e-88b1-4aed-8145-221ff2567eae",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_393a5e0e-88b1-4aed-8145-221ff2567eae.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "393a5e0e-88b1-4aed-8145-221ff2567eae",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_393a5e0e-88b1-4aed-8145-221ff2567eae.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:26Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": {
+          "en": {
+            "media_id": "7d232708-c6a2-48d2-9e7c-5a6db0da35a0",
+            "blocks": [
+              "717f6b26-a6fe-44b0-84f4-2fbb4080794b",
+              "393a5e0e-88b1-4aed-8145-221ff2567eae"
+            ],
+            "at": "2026-09-30T00:28Z"
+          }
+        }
+      },
+      "c20": {
+        "narration": {
+          "en": "Let's remember! Toothbrush, toothpaste, and a cup of water!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "f688f285-451f-4686-be7f-2bd10667382e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_f688f285-451f-4686-be7f-2bd10667382e.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "f688f285-451f-4686-be7f-2bd10667382e",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_f688f285-451f-4686-be7f-2bd10667382e.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:26Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c21": {
+        "narration": {
+          "en": "[chant] Brush up, brush down, swish and spit, all around! Swish and spit!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "2ee70bde-24b9-4a0e-bfce-f99cdd68181f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_2ee70bde-24b9-4a0e-bfce-f99cdd68181f.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "2ee70bde-24b9-4a0e-bfce-f99cdd68181f",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112556_2ee70bde-24b9-4a0e-bfce-f99cdd68181f.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:26Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c22": {
+        "narration": {
+          "en": "Show me your smile! Big, sparkly smile! Sparkly clean teeth!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "8f3b90c6-2636-4c8a-8c54-c5b57c710f65",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112650_8f3b90c6-2636-4c8a-8c54-c5b57c710f65.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "8f3b90c6-2636-4c8a-8c54-c5b57c710f65",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112650_8f3b90c6-2636-4c8a-8c54-c5b57c710f65.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:27Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      },
+      "c23": {
+        "narration": {
+          "en": "Brush every morning and every night. Keep a big, bright smile!"
+        },
+        "audio_src": {
+          "en": {
+            "1": {
+              "status": "approved",
+              "job_id": "e68705cf-f5c2-42ea-af2f-076cf12880fc",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112648_e68705cf-f5c2-42ea-af2f-076cf12880fc.wav",
+              "attempts": 1,
+              "credits": 0.2,
+              "history": [
+                {
+                  "job_id": "e68705cf-f5c2-42ea-af2f-076cf12880fc",
+                  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112648_e68705cf-f5c2-42ea-af2f-076cf12880fc.wav",
+                  "status": "approved",
+                  "reason": null,
+                  "at": "2026-09-29T11:27Z",
+                  "credits": 0.2
+                }
+              ],
+              "reason": null
+            }
+          }
+        },
+        "nar_ref": null
+      }
     }
   }
 }
