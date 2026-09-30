@@ -92,6 +92,11 @@ def test_clean_speech_removes_tail_click(tmp: Path) -> None:
     z = audio.clean_speech(x, SR, trim=True)
     assert 1.0 <= len(z) / SR <= 1.1, len(z) / SR
     assert audio.voiced_bounds(np.zeros(SR, np.float32), SR) is None
+    w = speech_like(1.0, tail=0.4)  # a click right after the last word, inside the kept tail
+    w[int(1.315 * SR):int(1.319 * SR)] = 0.6
+    assert np.abs(audio.clean_speech(w, SR)[int(1.31 * SR):int(1.33 * SR)]).max() < 0.05
+    t = tone(1.0, 220)
+    assert np.array_equal(audio.declick(t, SR), t), "steady voice must be untouched"
 
 
 def test_detect_beats(tmp: Path) -> None:

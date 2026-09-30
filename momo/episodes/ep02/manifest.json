@@ -52,9 +52,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 529.23,
-    "generations": 182,
-    "regenerations": 18,
+    "spent": 529.43,
+    "generations": 183,
+    "regenerations": 19,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)",
     "cap": 690
   },
@@ -1554,7 +1554,7 @@
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Now spit it out! Ptooey! All clean!"
+        "en": "Spit it out! Ptooey!"
       },
       "image_prompt": "[Momo] leaning over the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, gently spitting a little water into the sink, [Ducky] watching from the counter, cheerful mood, clear empty pastel wall space in the upper third of the frame",
       "motion": "leans forward a little over the sink and smiles, Ducky flaps its wings",
@@ -1605,10 +1605,10 @@
         "en": {
           "1": {
             "status": "generated",
-            "job_id": "b827f88c-6779-4cf3-97f0-69277a251fb8",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_b827f88c-6779-4cf3-97f0-69277a251fb8.wav",
-            "attempts": 1,
-            "credits": 0.2,
+            "job_id": "71996363-2613-4af5-ad7a-14557a668e35",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_043502_71996363-2613-4af5-ad7a-14557a668e35.wav",
+            "attempts": 2,
+            "credits": 0.4,
             "history": [
               {
                 "job_id": "b827f88c-6779-4cf3-97f0-69277a251fb8",
@@ -1616,6 +1616,14 @@
                 "status": "generated",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
+                "credits": 0.2
+              },
+              {
+                "job_id": "71996363-2613-4af5-ad7a-14557a668e35",
+                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_043502_71996363-2613-4af5-ad7a-14557a668e35.wav",
+                "status": "generated",
+                "reason": null,
+                "at": "2026-09-30T04:35Z",
                 "credits": 0.2
               }
             ],

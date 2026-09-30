@@ -320,11 +320,11 @@ def card_image(card: dict, font_path: Path, cfg: dict) -> Image.Image:
     """Word card: the word big (mint), a short explanation under it, on a rounded white card with a soft shadow."""
     r = cfg["render"]
     W, H = int(r["width"]), int(r["height"])
-    cw = int(W * 0.30)
+    cw = int(W * 0.32)
     word = str(card.get("word") or "").strip().upper()
     text = str(card.get("text") or "").strip()
-    wfont, _ = fit_font(font_path, [word], H * 0.06, cw * 0.84, 0.0)
-    tfont = load_font(font_path, H * 0.034)
+    wfont, _ = fit_font(font_path, [word], H * 0.07, cw * 0.84, 0.0)
+    tfont = load_font(font_path, H * 0.045)
     words, lines, cur = text.split(), [], ""
     for w in words:
         nxt = (cur + " " + w).strip()

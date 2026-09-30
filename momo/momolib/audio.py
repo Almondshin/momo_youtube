@@ -81,11 +81,42 @@ def voiced_bounds(x: np.ndarray, sr: int) -> tuple[int, int] | None:
     return int(starts[0] * hop), int(min(len(x), (starts[-1] + GATE_SUSTAIN) * hop))
 
 
+def declick(x: np.ndarray, sr: int) -> np.ndarray:
+    """Mute isolated clicks: a 5 ms window ≥ CLICK_RATIO × louder than everything 10–30 ms around it.
+
+    Running speech always has energy next to a loud window, so only stray TTS clicks (typically right after the
+    last word) are hit. The muted window gets 2 ms ramps.
+    """
+    w = max(1, int(sr * 0.005))
+    n = len(x) // w
+    if n < 12:
+        return x
+    e = np.sqrt((x[:n * w].reshape(n, w).astype(np.float64) ** 2).mean(axis=1)) + 1e-9
+    floor = e.max() * 0.03
+    y = x.copy()
+    ramp = max(1, int(sr * 0.002))
+    for i in range(n):
+        if e[i] < floor:
+            continue
+        nb = np.concatenate([e[max(0, i - 6):max(0, i - 1)], e[i + 2:i + 7]])
+        if len(nb) >= 6 and e[i] > CLICK_RATIO * nb.max():
+            a, b = max(0, i * w - w // 2), min(len(y), (i + 1) * w + w // 2)
+            g = np.zeros(b - a, dtype=np.float32)
+            g[:ramp] = np.linspace(1.0, 0.0, ramp, dtype=np.float32)[:b - a]
+            g[-ramp:] = np.linspace(0.0, 1.0, ramp, dtype=np.float32)[-(b - a):]
+            y[a:b] *= g
+    return y
+
+
+CLICK_RATIO = 4.0
+
+
 def clean_speech(x: np.ndarray, sr: int, trim: bool = False) -> np.ndarray:
     """Zero the silence around a speech block (and its stray clicks) with short fades.
 
     trim=False keeps the length (timing unchanged); trim=True cuts to the voice ± pads (song lines start on beats).
     """
+    x = declick(x, sr)
     b = voiced_bounds(x, sr)
     if b is None:
         return x[:0].copy() if trim else np.zeros_like(x)
