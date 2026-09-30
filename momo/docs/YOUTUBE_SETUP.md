@@ -58,6 +58,28 @@ python momo/youtube_auth.py --lang ko --client-secrets client_secret.json     # 
 - EN/KO 를 **같은 채널**에 올리면 한 번만 발급해서 `YOUTUBE_REFRESH_TOKEN` 하나로 쓴다.
 - 토큰이 폐기되면(비밀번호 변경, 권한 해제, 오래 미사용, 테스트 상태 7일) 다시 발급하고 Secrets 를 갱신한다.
 
+## 4B. PC 없이 — OAuth Playground 로 refresh token 발급
+
+로컬에 파이썬을 설치하기 어려우면 브라우저만으로 발급할 수 있다 (채널이 하나일 때 권장).
+
+1. 3절 대신 OAuth 클라이언트를 **웹 애플리케이션** 유형으로 만들고, **승인된 리디렉션 URI** 에
+   `https://developers.google.com/oauthplayground` 를 정확히 넣는다 (끝에 `/` 없이).
+2. <https://developers.google.com/oauthplayground> → 오른쪽 위 ⚙ → **Use your own OAuth credentials** 체크 →
+   Client ID / Client secret 입력 → Close. (Access type 은 기본값 Offline 그대로)
+3. 왼쪽 Step 1 아래 입력칸 "Input your own scopes" 에
+   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube` → **Authorize APIs**.
+4. 채널을 가진 구글 계정으로 로그인. 채널이 브랜드 계정이면 채널 선택 화면이 나오고, 채널이 계정 자체에 있으면
+   선택 화면 없이 넘어간다 (정상). "Google 에서 확인하지 않은 앱" → 고급 → (앱 이름)(으)로 이동 → 권한 두 개 모두 허용.
+5. Playground 로 돌아오면 Step 2 → **Exchange authorization code for tokens** → 같은 칸에 **Refresh token** 이 보인다
+   (Step 3 으로 넘어가 접혔으면 "Step 2" 제목을 눌러 다시 연다). 이 값을 `YOUTUBE_REFRESH_TOKEN` 으로 쓴다.
+
+자주 나는 오류:
+
+- **403 access_denied** ("앱이 Google 인증 절차를 완료하지 않았습니다"): 동의 화면이 **테스트** 상태인데 로그인한 계정이
+  테스트 사용자가 아니다 → 대상(Audience)에서 **앱 게시(프로덕션)** 하거나 테스트 사용자에 그 계정을 추가.
+- **redirect_uri_mismatch**: 1번의 리디렉션 URI 가 다르거나, 데스크톱 앱 클라이언트를 넣었다.
+- **invalid_client**: Client ID/secret 을 다른 클라이언트 것과 섞었다.
+
 ## 5. 비밀값 넣기
 
 | 이름 | 값 | 필요할 때 |
@@ -81,7 +103,11 @@ upload.py 가 찾는 순서: `YOUTUBE_CLIENT_ID`·`YOUTUBE_CLIENT_SECRET` + `YOU
 ```bash
 python momo/doctor.py                                   # 자격증명 env 가 있는지
 python momo/upload.py --ep ep02 --lang all --dry-run    # 요청 body 만 출력 (자격증명·네트워크 불필요)
+python momo/youtube_check.py                            # 실제로 토큰을 받아 어느 채널에 연결되는지 (업로드 없음)
 ```
+
+GitHub Secrets 를 넣은 뒤에는 Actions → **momo-youtube-check** → Run workflow (1분, 빌드·업로드 없음)로
+채널 이름이 맞는지 먼저 확인하고, 그다음 momo-publish 로 올린다.
 
 ## 6. 할당량 (quota)
 

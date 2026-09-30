@@ -440,6 +440,7 @@ git commit -m "ep02 업로드 기록" && git push          # youtube.json 을 �
 ```
 
 **B. GitHub Action `momo-publish`** — 저장소 Secrets 필요. 러너가 fetch_assets → build → 업로드 → youtube.json·README 커밋을 한다.
+Secrets 를 처음 넣었거나 바꿨으면 먼저 **momo-youtube-check** (`momo-youtube-check.yml`, 입력 `langs`)로 연결된 채널을 확인한다.
 러너는 manifest·library.json 에 기록된 URL 로 에셋을 받으므로, 승인본이 전부 기록된 manifest 를 **먼저 푸시**해야 한다.
 GitHub MCP 로:
 

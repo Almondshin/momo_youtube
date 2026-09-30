@@ -55,6 +55,7 @@ python momo/upload.py --ep ep03 --lang all --privacy private
 ```
 
 원격 실행: GitHub Actions → **momo-publish** (ep, langs, privacy, publish_at, upload, no_bgm) — 에셋 복원 → 조립 → 업로드 → 기록 커밋.
+연결 점검: **momo-youtube-check** — Secrets 의 토큰으로 어느 채널에 올라갈지만 확인 (1분, 업로드 없음).
 
 ## 무엇이 자동이고 무엇이 승인인가
 

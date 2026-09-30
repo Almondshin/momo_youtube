@@ -5,7 +5,8 @@
 
 확인하는 것: 요청 body(아동용 true 고정, publishAt UTC 변환, 합성 미디어 플래그), dry-run 은 자격증명 불필요,
 이미 올린 언어 건너뜀/--force, 503·연결 끊김 재시도 후 성공, 재시도 소진, 썸네일 실패는 경고,
-youtube.json 기록, 자격증명 우선순위(env LANG → env 공통 → .secrets 파일), 비밀 값 비출력, 메타 검증, 모음집.
+youtube.json 기록, 자격증명 우선순위(env LANG → env 공통 → .secrets 파일), 비밀 값 비출력, 메타 검증, 모음집,
+youtube_check(채널 확인·오류·자격증명 없음).
 """
 from __future__ import annotations
 
@@ -389,6 +390,43 @@ def test_compilation_dry_run(tmp: Path) -> None:
         raises(lambda: run(root, "--ep", EP, "--lang", "en", "--title", "x", "--dry-run"), "--compilation 전용")
     assert '"description": "Three songs.\\n\\n0:00 Colors\\n2:35 Numbers\\n5:10 Shapes"' in out, out
     assert '"tags": [\n' in out and "best_youtube.json" in out
+
+
+def test_youtube_check(tmp: Path) -> None:
+    import youtube_check
+    root = make_root(tmp)
+
+    def check(*args: str) -> tuple[int, str]:
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+            code = youtube_check.main(["--root", str(root), *args])
+        return code, buf.getvalue()
+
+    ch = {"items": [{"id": "UCmomo", "snippet": {"title": "Momo the Bunny"},
+                     "status": {"madeForKids": True, "longUploadsStatus": "allowed"}}]}
+    svc = FakeService(results={"channels.list": ch})
+    install(svc)
+    with env(**SECRET):
+        code, out = check()
+    assert code == 0 and out.count("Momo the Bunny") == 2 and "같은 채널" in out, out
+    assert "YOUTUBE_REFRESH_TOKEN_EN" in out and "SENTINEL" not in out, out
+    assert [i["refresh_token"] for i in svc.infos] == ["rt-en-SENTINEL-3", "rt-all-SENTINEL-4"]
+    assert svc.calls[0] == ("channels.list", {"part": "snippet,status", "mine": True})
+
+    install(FakeService(results={"channels.list": {"items": []}}))
+    with env(**SECRET):
+        code, out = check("--lang", "ko")
+    assert code == 1 and "채널이 없음" in out, out
+
+    install(FakeService(errors={"channels.list": [http_error(403, "forbidden", "API not enabled")]}))
+    with env(**SECRET):
+        code, out = check("--lang", "en")
+    assert code == 1 and "API not enabled" in out and "SENTINEL" not in out, out
+
+    install(None)
+    with env():
+        code, out = check("--lang", "en")
+    assert code == 1 and "YOUTUBE_CLIENT_ID" in out, out
 
 
 def test_auth_saves_secret_file(tmp: Path) -> None:
