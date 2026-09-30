@@ -23,8 +23,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from momolib.common import (LANGS, MomoError, Paths, active_langs, add_root_arg, check_ep, get_paths, load_config,  # noqa: E402
                             load_manifest, main_wrapper)
 from momolib.episode import (compose_image_prompt, compose_motion_prompt, count_types, plan_timeline,  # noqa: E402
-                             tts_blocks, validate_manifest)
-from momolib.genrec import STATUSES  # noqa: E402
+                             song_track, track_lines, track_spans, tts_blocks, validate_manifest)
+from momolib.genrec import STATUSES, clip_cost, clip_seconds  # noqa: E402
 
 
 def record_warnings(cfg: dict, manifest: dict) -> list[str]:
@@ -73,6 +73,44 @@ def md(text) -> str:
     return str(text or "").replace("|", "\\|").replace("\n", " ").strip()
 
 
+def track_table(cfg: dict, m: dict) -> list[str]:
+    """Cut table of a finished-song episode: bars, time, what is shown, the lyrics sung over it, the new asset."""
+    song, cuts = m["song"], m.get("cuts") or []
+    spans = track_spans(song, cuts)
+    lines = track_lines(song)
+    t0 = float((song_track(song) or {}).get("start") or 0.0)
+    L = ["", f"## 컷 표 — 노래 {song.get('bpm', 0):.2f} BPM, 컷은 마디 첫 박에서 바뀜", "",
+         "| 컷 | 씬 | 마디 | 시각 | 종류 | 부르는 가사 | 이미지 프롬프트 (조립된 전체) | 모션 지시 | 새로 만들 것 |",
+         "|---|---|---|---|---|---|---|---|---|"]
+    k = 0
+    for c, (s, e) in zip(cuts, spans):
+        bars = c.get("bars") or 0
+        sung = [ln["text"] for ln in lines if ln["t0"] - t0 < e - 0.7 and ln["t1"] - t0 > s + 0.3]  # pickups belong to the next cut
+        t = c.get("type")
+        cf = c.get("clip_from") if isinstance(c.get("clip_from"), dict) else None
+        if t == "L":
+            kind, prompt, motion, new = f"L `{c.get('library_clip')}`", "(라이브러리)", "", "—"
+        elif cf:
+            kind, prompt, motion, new = f"재사용 {cf.get('cut')} {float(cf.get('at') or 0):g}s~", "", "", "0"
+        else:
+            kind = "립싱크" if c.get("lipsync") else "움직임"
+            try:
+                prompt = compose_image_prompt(cfg, c)
+            except Exception as ex:  # noqa: BLE001
+                prompt = f"(조립 실패: {ex})"
+            motion = compose_motion_prompt(cfg, c) if c.get("motion") else ""
+            new = f"이미지 + {c.get('clip_model') or 'kling'} {clip_seconds(cfg, c, 'en')}초 ({clip_cost(cfg, c, 'en'):g})"
+        card = f" · 카드 {c['card']['word'].upper()}" if isinstance(c.get("card"), dict) else ""
+        L.append(f"| {md(c.get('id'))} | {md(c.get('scene'))} | {k + 1}–{k + bars} | {mmss_f(s)}–{mmss_f(e)} "
+                 f"| {md(kind + card)} | {md(' / '.join(sung))} | {md(prompt)} | {md(motion)} | {md(new)} |")
+        k += bars
+    return L
+
+
+def mmss_f(sec: float) -> str:
+    return f"{int(sec // 60)}:{sec % 60:04.1f}"
+
+
 def render_plan(cfg: dict, m: dict, errors: list[str], warns: list[str], durs: dict) -> str:
     rules = cfg["plan_rules"]
     cuts = m.get("cuts") or []
@@ -106,14 +144,18 @@ def render_plan(cfg: dict, m: dict, errors: list[str], warns: list[str], durs: d
             parts.append(f"{lang.upper()} 계산 불가 — {d.get('error', '?').splitlines()[0]}")
     L.append("- 예상 길이: " + " · ".join(parts) + " — 목표 2~3분, build.py 가 실제 음성으로 다시 계산")
     blocks = {lang: sum(len(tts_blocks(c, lang, cfg)) for c in cuts) for lang in active_langs(cfg)}
-    L.append(f"- 생성할 것: 이미지 {counts['V'] + counts['S']}장 (V {counts['V']} + S {counts['S']}), "
-             f"V 클립 {counts['V']}개, 음성 블록 EN {blocks['en']} · KO {blocks['ko']} (L 컷은 라이브러리)")
+    reuse = sum(1 for c in cuts if c.get("type") == "V" and isinstance(c.get("clip_from"), dict))
+    L.append(f"- 생성할 것: 이미지 {counts['V'] - reuse + counts['S']}장 (V {counts['V'] - reuse} + S {counts['S']}), "
+             f"V 클립 {counts['V'] - reuse}개" + (f" (+ 재사용 {reuse}컷)" if reuse else "") + ", 음성 블록 "
+             + " · ".join(f"{lg.upper()} {n}" for lg, n in blocks.items()) + " (L 컷은 라이브러리)")
     if (m.get("notes") or {}).get("v_over_reason"):
         L.append(f"- V 15개 초과 사유: {m['notes']['v_over_reason']}")
     L += ["", "## 검증", ""]
     L += [f"- ✖ {md(e)}" for e in errors] + [f"- △ {md(w)}" for w in warns]
     if not errors and not warns:
         L.append("- ✔ 문제 없음")
+    if song_track(m.get("song")) is not None:
+        return "\n".join(L + track_table(cfg, m)) + "\n"
     L += ["", "## 컷 표", "",
           "| 컷 | 씬 | 타입 | 나레이션 EN | 나레이션 KO | 화면 키워드 EN / KO | 이미지 프롬프트 (조립된 전체) "
           "| 모션 지시 (V만) | 예상 길이 EN/KO |",
