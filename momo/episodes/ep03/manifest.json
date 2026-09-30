@@ -59,7 +59,8 @@
       "2026-09-30 주제 승인: ① 채소 먹기 (Crunchy Veggies — carrot · broccoli · corn, 조연 Ducky)",
       "2026-09-30 형식 승인: 120 BPM · 약 2:02 (61마디) · 컷 38개 평균 3.2초 · 노래 비중 85~90% · 후렴 4회 · 반복 후렴 구간 영상 재사용",
       "2026-09-30 노래 방식 승인: ACE-Step 1.5 로컬 생성(보컬 포함, 크레딧 0) — 가수 목소리는 밝은 여성 보컬, 인트로·아웃트로는 라이브러리 Gracie",
-      "2026-09-30 노래 승인: 후보 1 (ACE-Step b_s202, 120.005 BPM, 2:06) — 사용자 선택"
+      "2026-09-30 노래 승인: 후보 1 (ACE-Step b_s202, 120.005 BPM, 2:06) — 사용자 선택",
+      "2026-09-30 노래 소스 변경: Suno Pro (사용자 결정) — ACE-Step 후보 1 은 보류, 컷 구성은 Suno 곡에 맞춰 다시 짠다"
     ],
     "next_time": []
   },
@@ -515,12 +516,12 @@
   ],
   "song": {
     "track": {
-      "status": "approved",
+      "status": "rejected",
       "job_id": "local:99a518e30427",
       "url": null,
       "attempts": 1,
       "credits": 0,
-      "reason": "사용자 선택: 후보 1 (b_s202, ACE-Step)",
+      "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
       "sha1": "99a518e30427848a48f4982d6f335d05741700cc",
       "tool": "ace-step-1.5",
       "source_file": "b_s202.wav",
@@ -536,8 +537,8 @@
         {
           "job_id": "local:99a518e30427",
           "url": null,
-          "status": "approved",
-          "reason": "사용자 선택: 후보 1 (b_s202, ACE-Step)",
+          "status": "rejected",
+          "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
           "at": "2026-09-30T07:21Z",
           "credits": 0
         }
@@ -618,20 +619,20 @@
       "end": 126.0
     },
     "vocals": {
-      "status": "approved",
+      "status": "rejected",
       "job_id": "local:746fcadd3867",
       "url": null,
       "attempts": 1,
       "credits": 0,
-      "reason": "사용자 선택: 후보 1 (b_s202, ACE-Step)",
+      "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
       "sha1": "746fcadd3867c0b4ab3214556d5777396c40e5d0",
       "of": "99a518e30427848a48f4982d6f335d05741700cc",
       "history": [
         {
           "job_id": "local:746fcadd3867",
           "url": null,
-          "status": "approved",
-          "reason": "사용자 선택: 후보 1 (b_s202, ACE-Step)",
+          "status": "rejected",
+          "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
           "at": "2026-09-30T07:21Z",
           "credits": 0
         }

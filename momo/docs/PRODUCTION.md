@@ -395,6 +395,32 @@ python momo/fetch_assets.py --ep ep02
 6. Lip-sync cuts: media_import_url each `<cut>_nar_en.wav` (raw.githubusercontent.com on momo-previews) →
    `hf_jobs.py narref` → `plan --kind clip` → generate → review mouth vs voice → approve → final build.
 
+### (9) Finished-song episodes (`manifest.song.track`, since ep03) — the house format
+
+Real sung nursery song, tight cuts: ~120 BPM, a new shot every 1–2 bars on the downbeat, singing ≥85 % of the
+runtime (user decision 2026-09-30 after ep02 felt slow). The song comes from **Suno Pro** (user's plan since
+2026-09-30; no official API — the user makes it on suno.com, never an unofficial MCP/automation, Suno's terms
+forbid bots). Steps (all local, 0 Higgsfield credits until 6):
+
+1. Lyrics: `episodes/<ep>/lyrics.md` (fenced block with [Intro]/[Chorus]/[Verse]/[Bridge]/[Outro] tags,
+   (parentheses) = backing voices / echoes) + a style line. Give both to the user to paste into Suno (Custom).
+2. **[승인]** The user picks a take and puts its WAV + stems (Vocals, Instrumental) in
+   `~/ml/<ep>/suno/<take>/`. Check it: `tools/align_lyrics.py` (sidecar venv) must hear ≥95 % of the lyric words
+   and report no "sung but not in lyrics" runs — otherwise fix `lyrics.md` to what is sung and re-align.
+3. `song_track.py import --ep <ep> --mix … --vocals … --inst … --note "Suno …"` → `analyze` (tempo, bar grid,
+   drift) → `lyrics --align …` → `sections` (lyric lines by bar).
+4. Cuts: `bars` per cut from `sections` (first cut = intro to the first sung downbeat, L `intro_wave` with the
+   library line; last cut = L `outro_bye` to `track.end`). Frontal Momo during singing = lip-sync (`wan2_7`,
+   `clip_seconds` = ceil(window)); wide / object / listening shots = `seedance_2_0_mini` 4 s; repeats =
+   `clip_from`. Word cards on the vocabulary close-ups. `validate_manifest.py --table` → plan.md,
+   `estimate_credits.py` (cap 250).
+5. **[승인]** plan.md (cut table with the lyrics under each cut, credits).
+6. Images → clips as in 5단계 (one image, then scene 1, then the rest). Lip-sync clips: `song_track.py refs` →
+   `publish` (release `media-<ep>`: song, vocals, refs) → media_import_url each ref URL → `hf_jobs.py narref`
+   (window + track sha1 are pinned) → `plan --kind clip`. Review with `song_track.py sync` (clip + its slice).
+7. `song_track.py status --approve` once the song is final, then build / publish as usual (the runner restores
+   the song and stems from the release assets).
+
 ---
 
 ## 6. 조립 (6단계)

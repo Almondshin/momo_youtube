@@ -370,6 +370,60 @@ def detect_beats(path: Path, bpm_hint: float | None = None) -> dict:
             "confidence": round(sc / (off_beat + 1e-9), 3)}
 
 
+GRID_SEARCH = 0.06     # refine_downbeats: look for each beat this far (s) around where the last one predicts it
+GRID_KEEP = 0.025      # … and keep the straight grid when the song never strays further than this
+
+
+def refine_downbeats(path: Path, ana: dict, n_bars: int, beats_per_bar: int = 4) -> tuple[list[float], dict]:
+    """Bar lines that follow a song whose tempo wanders a little (e.g. Suno).
+
+    Beat tracking from downbeat0: each beat is looked for within ±GRID_SEARCH of where the previous beat and the
+    running period put it (strongest onset, kick-weighted); a found beat nudges the period, a missing one is
+    predicted. The tracked beats' offsets from the straight grid are median-smoothed over 9 beats and each bar
+    line takes its beat's offset. Returns (downbeats, stats); a song within GRID_KEEP keeps the straight grid.
+    """
+    sr, win = 22050, 2048
+    env, low, _, fps = _onsets(decode(path, sr, 1)[:, 0], sr, win=win)
+    lag = win / 2 / sr
+    beat = 60.0 / float(ana["bpm"])
+    d0 = float(ana["downbeat0"])
+    n_beats = n_bars * beats_per_bar
+    strength = env / (env.max() + 1e-9) + low / (low.max() + 1e-9)
+    rad = int(round(GRID_SEARCH * fps))
+
+    def snap(pred: float) -> float | None:
+        c = int(round((pred - lag) * fps))
+        a, b = max(0, c - rad), min(len(strength), c + rad + 1)
+        if b - a < 3:
+            return None
+        seg = strength[a:b] * (1.0 - 0.5 * np.abs(np.arange(a, b) - c) / (rad + 1))  # prefer near the prediction
+        return (a + int(np.argmax(seg))) / fps + lag if seg.max() >= 0.08 else None
+
+    first = snap(d0)
+    times, found = [first if first is not None else d0], 0
+    period = beat
+    for _ in range(1, n_beats):
+        pred = times[-1] + period
+        t = snap(pred)
+        if t is None:
+            t = pred
+        else:
+            found += 1
+            period = min(max(0.8 * period + 0.2 * (t - times[-1]), beat * 0.95), beat * 1.05)
+        times.append(t)
+    straight = d0 + beat * np.arange(n_beats)
+    if found < max(8, n_beats // 4):
+        return [round(float(straight[k * beats_per_bar]), 4) for k in range(n_bars)], {"refined": False,
+                                                                                      "reason": "few onsets"}
+    offs = np.array(times) - straight
+    sm = np.array([np.median(offs[max(0, j - 4):j + 5]) for j in range(n_beats)])
+    stats = {"beats_found": f"{found}/{n_beats - 1}", "max_drift_ms": round(float(np.abs(sm).max()) * 1000, 1)}
+    if np.abs(sm).max() < GRID_KEEP:
+        return [round(float(straight[k * beats_per_bar]), 4) for k in range(n_bars)], {"refined": False, **stats}
+    return [round(float(straight[k * beats_per_bar] + sm[k * beats_per_bar]), 4) for k in range(n_bars)], \
+        {"refined": True, **stats}
+
+
 def music_file(paths: Paths, ep: str) -> Path | None:
     return find_media(paths.ep(ep) / "audio", "music", AUDIO_EXTS)
 

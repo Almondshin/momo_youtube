@@ -114,6 +114,35 @@ def test_detect_beats(tmp: Path) -> None:
     assert min(off, bar - off) < 0.12, ana  # beat 1 of the bar (beats are 0.625 s apart), onset lag ≤ ~0.1 s
 
 
+def test_refine_downbeats(tmp: Path) -> None:
+    sr = 22050
+    beats = [0.5]
+    for j in range(1, 4 * 30):  # 30 bars that slow from 120 to ~117 BPM and back (a wandering human-ish tempo)
+        bpm = 120 - 3 * math.sin(math.pi * j / 120)
+        beats.append(beats[-1] + 60 / bpm)
+    n = int((beats[-1] + 2) * sr)
+    x = np.zeros(n, np.float32)
+    kick_t = np.arange(int(0.12 * sr)) / sr
+    kick = (np.sin(2 * np.pi * (60 + 80 * np.exp(-kick_t / 0.03)) * kick_t) * np.exp(-kick_t / 0.05)).astype(np.float32)
+    for j, t in enumerate(beats):
+        i = int(t * sr)
+        x[i:i + len(kick)] += (0.9 if j % 4 == 0 else 0.45) * kick[:n - i]
+    f = audio.write_wav(tmp / "drift.wav", x, sr)
+    ana = {"bpm": 60 * (len(beats) - 1) / (beats[-1] - beats[0]), "downbeat0": beats[0]}
+    downs, st = audio.refine_downbeats(f, ana, 30)
+    true = np.array(beats[::4][:30])
+    straight = np.array([beats[0] + k * 240 / ana["bpm"] for k in range(30)])
+
+    def spread(t):  # onset detection has a constant bias; what matters is following the wandering tempo
+        e = np.asarray(t) - true
+        return float(np.abs(e - np.median(e)).max())
+    assert st["refined"] and spread(downs) < 0.03 < 0.06 < spread(straight), (st, spread(downs), spread(straight))
+    steady = audio.write_wav(tmp / "m.wav", music(40, 96), 22050)
+    a2 = audio.detect_beats(steady, 100)
+    _, st2 = audio.refine_downbeats(steady, a2, 14)
+    assert not st2["refined"], st2
+
+
 def test_overlay_frames(tmp: Path) -> None:
     root = tmp / "root"
     cfg = load_config(Paths(root)) if (root / "config.json").exists() else json.loads((MOMO / "config.json").read_text())

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Finished-song episodes (manifest.song.track): bring a song made outside Higgsfield into the pipeline.
 
-The song (vocals + music in one file, e.g. from ACE-Step on the local Mac) is the episode's timeline: cuts sit on
+The song (vocals + music in one file — Suno Pro WAV + stems since ep03, or ACE-Step on the local Mac) is the
+episode's timeline: cuts sit on
 its bar grid, the karaoke captions come from its aligned lyrics, lip-sync clips are driven by slices of its
 vocal stem. Local tool → 0 credits; the files are hosted as GitHub release assets so fetch_assets.py (and the
 momo-publish runner) can restore them.
@@ -16,9 +17,9 @@ momo-publish runner) can restore them.
   status    approve / reject the song (song.track + song.vocals)
 
 Examples
-  python momo/song_track.py import --ep ep03 --mix ~/ml/momo_ep03/full1/a_s202.wav \\
-      --vocals ~/ml/momo_ep03/full1/sep/htdemucs/a_s202/vocals.wav --meta ~/ml/momo_ep03/full1/takes.json
-  python momo/song_track.py analyze --ep ep03 --inst ~/ml/momo_ep03/full1/sep/htdemucs/a_s202/no_vocals.wav
+  python momo/song_track.py import --ep ep03 --mix ~/ml/momo_ep03/suno/v1/song.wav \\
+      --vocals ~/ml/momo_ep03/suno/v1/Vocals.wav --inst ~/ml/momo_ep03/suno/v1/Instrumental.wav --note "Suno v1"
+  python momo/song_track.py analyze --ep ep03
   python momo/song_track.py lyrics --ep ep03 --align ~/ml/momo_ep03/full1/align_a_s202.json
   python momo/song_track.py sections --ep ep03
   python momo/song_track.py refs --ep ep03 && python momo/song_track.py publish --ep ep03
@@ -96,9 +97,24 @@ def cmd_import(paths, cfg, args) -> int:
         if not f.exists():
             raise MomoError(f"파일 없음: {f}")
     d = audio_dir(paths, ep)
+    if old:  # keep what the previous song was, then drop everything that was timed to it
+        song.setdefault("history", []).append({k: song.get(k) for k in ("track", "vocals", "refs_urls")
+                                                if song.get(k) is not None} | {"replaced_at": now_iso()})
+        for k in ("lyrics", "refs_urls"):
+            song.pop(k, None)
+        for c in m.get("cuts") or []:
+            if isinstance(c.get("nar_ref"), dict) and any("window" in r for r in c["nar_ref"].values()
+                                                          if isinstance(r, dict)):
+                c.pop("nar_ref")
+        for f in (d / "refs").glob("*.wav") if (d / "refs").exists() else []:
+            f.unlink()
     to_flac(mix, d / "song.flac")
     to_flac(vocals, d / "song_vocals.flac")
+    if args.inst:
+        to_flac(Path(args.inst).expanduser(), d / "song_inst.flac")  # local only: the beat grid is cleaner on it
     meta: dict = {"tool": args.tool, "source_file": mix.name}
+    if args.note:
+        meta["note"] = args.note
     if args.meta:
         tk = json.loads(Path(args.meta).expanduser().read_text())
         take = next((t for t in tk.get("takes") or [] if t.get("file") == mix.name), None)
@@ -127,18 +143,25 @@ def cmd_analyze(paths, cfg, args) -> int:
     ep = check_ep(args.ep)
     m = load_manifest(paths, ep)
     song, tr = m["song"], need_track(m)
-    src = Path(args.inst).expanduser() if args.inst else audio_dir(paths, ep) / "song.flac"
+    inst = audio_dir(paths, ep) / "song_inst.flac"
+    src = Path(args.inst).expanduser() if args.inst else (inst if inst.exists() else audio_dir(paths, ep) / "song.flac")
     hint = float(args.bpm or song.get("bpm") or tr.get("bpm") or 110)
     ana = audio.detect_beats(src, hint)
-    bar = 60.0 / ana["bpm"] * int(song.get("beats_per_bar") or 4)
+    bpb = int(song.get("beats_per_bar") or 4)
+    bar = 60.0 / ana["bpm"] * bpb
     n = int((float(tr.get("duration") or probe_duration(src)) - ana["downbeat0"]) // bar) + 1
-    ana["downbeats"] = [round(ana["downbeat0"] + k * bar, 4) for k in range(n)]
-    ana["source"] = "instrumental stem" if args.inst else "mix"
+    ana["downbeats"], grid = audio.refine_downbeats(src, ana, n, bpb)
+    ana["grid"] = grid
+    ana["source"] = "mix" if src.name == "song.flac" else "instrumental stem"
     tr["analysis"] = ana
     song["bpm"] = ana["bpm"]
     save_json(paths.manifest(ep), m)
     print(f"✔ 템포 {ana['bpm']:.3f} BPM, 첫 강박 {ana['downbeat0']:.3f}s, 마디 {bar:.3f}s × {n}, "
-          f"신뢰도 {ana['confidence']}")
+          f"신뢰도 {ana['confidence']} ({ana['source']})")
+    if grid.get("refined"):
+        print(f"  △ 템포가 조금 흔들림 (최대 {grid['max_drift_ms']} ms) — 마디선을 실제 박에 맞춤")
+    elif "max_drift_ms" in grid:
+        print(f"  ✔ 박자 일정 (최대 흔들림 {grid['max_drift_ms']} ms) — 곧은 격자")
     if abs(ana["bpm"] - hint) > 2:
         print(f"  △ 요청 템포 {hint} 와 {ana['bpm'] - hint:+.2f} BPM 차이 — 실제 값으로 격자를 만든다")
     return 0
@@ -339,8 +362,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--ep", required=True)
     p.add_argument("--mix", required=True)
     p.add_argument("--vocals", required=True, help="보컬 스템 (demucs vocals.wav)")
-    p.add_argument("--meta", help="생성 기록 JSON (takes.json)")
-    p.add_argument("--tool", default="ace-step-1.5")
+    p.add_argument("--inst", help="반주 스템 (있으면 박자 분석에 씀, 로컬에만 둠)")
+    p.add_argument("--meta", help="생성 기록 JSON (ACE-Step takes.json)")
+    p.add_argument("--tool", default="suno", help="만든 도구 (suno | ace-step-1.5 …)")
+    p.add_argument("--note", help="곡 메모 (Suno 곡 제목·버전 등)")
     p.add_argument("--force", action="store_true")
     p = sub.add_parser("analyze")
     p.add_argument("--ep", required=True)

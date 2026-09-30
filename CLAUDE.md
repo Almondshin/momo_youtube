@@ -4,6 +4,10 @@
 (`config.languages = ["en"]`, 사용자 결정 — 지시서의 EN/KO 두 벌보다 우선). 작업은 전부 `momo/` 안에서 하고,
 사용자에게는 한국어로 보고한다.
 
+노래는 ep03 부터 **Suno Pro** 로 만든다 (사용자가 suno.com 에서 생성 → WAV·스템을 받아 줌. 공식 API 가 없고
+약관이 자동화를 금지하므로 비공식 MCP·브라우저 자동화 금지). 곡 파일 한 곡에 맞춰 컷을 짜는 방법은
+`momo/docs/PRODUCTION.md` (9) 와 `momo/song_track.py`.
+
 ## 규칙의 원천
 
 - `momo/docs/ORIGINAL_BRIEF.md` — 사용자 원 지시서. 모든 규칙이 여기서 나온다. 수정하지 말 것.

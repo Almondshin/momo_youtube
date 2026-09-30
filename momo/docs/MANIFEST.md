@@ -28,6 +28,7 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `upload` | `{"en": {...}, "ko": {...}}` | 7단계 업로드 메타 — 아래 표 |
 | `credits` | `{"estimate","spent","generations","regenerations"}` | `estimate` 는 `estimate_credits.py --save` 가 적는 예상치. 나머지는 `hf_jobs.py record` 가 자동 누적 |
 | `notes` | `{"v_over_reason","approvals":[],"next_time":[]}` | V 컷 15개 초과 사유(없으면 validate error), 승인 기록(날짜 + 무엇을), 다음 편에 반영할 점(README 에 들어감) |
+| `song.track` / `song.vocals` / `song.lyrics` | `track`: GenRec+`{"tool", "sha1", "duration", "start", "end", "analysis": {bpm, downbeat0, downbeats[], grid}}`, `vocals`: GenRec+`{"sha1"}`, `lyrics`: `[{"text", "section", "words": [[word, t0, t1]]}]`, `history`: replaced songs | **Finished-song episode** (7-C, since ep03): one song file with vocals (Suno Pro WAV + stems, or ACE-Step) is the timeline. Written by `song_track.py` (import / analyze / lyrics / publish); files are GitHub release assets (`media-<ep>`) so fetch_assets can restore them. 0 Higgsfield credits |
 | `song` | `{"bpm": 96, "beats_per_bar": 4, "music": GenRec+{"model","duration","analysis"}, "music_gain_db": -6, "duck_db": -5, "music_start": 0}` | **Song episode** (7-B): lyrics chanted on the beat over an AI instrumental (`music`, generate_audio sonilo_music → `audio/music.*`). `analysis` = `{bpm, downbeat0}` from preview_assets (build detects it when missing). Set `bpm` to the instrumental's own tempo to avoid time-stretching it |
 | `cuts` | `[컷, ...]` | 순서 = 재생 순서 |
 
@@ -67,6 +68,7 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `end_frame` | | ○ |   | Cut id whose approved image becomes this clip's last frame (continuous hand-off) |
 | `nar_ref` | | ○ |   | Lip-sync cut with 2+ speech blocks: `{"en": {"media_id", "blocks": [block jobs]}}` — the blocks + `[pause]` silences in one file. `preview_assets.py` writes `<ep>/<cut>_nar_<lang>.wav` to momo-previews → `media_import_url` (raw.githubusercontent URL) → `hf_jobs.py narref`. A regenerated block voids it |
 | `bars` / `beats` | ○ | ○ | ○ | Song episodes: cut length in bars (required, 1–16) and the start beat of each lyric line (`[0, 8]`; missing entries start on the next free beat). Lines are trimmed to the voice and sped up ≤1.3x to fit |
+| `clip_from` / `lipsync_ok` | | ○ |   | Finished-song episodes: `{"cut": "c03", "at": 2.0}` plays another V cut's clip from `at` s (no image, no clip of its own — 0 credits). The source must be a V cut without `clip_from`; a lip-sync source only matches when the song audio is the same there (`lipsync_ok: true` silences the warning) |
 | `card` | ○ | ○ | ○ | Word card beside the picture: `{"word": "toothbrush", "text": "We brush our teeth with it", "pos": "left"|"right", "at": 0.3}` |
 | `inset` | ○ | ○ | ○ | 테두리 제거 인셋 크롭 비율. `null`(기본) = 자동 감지 후 감지되면 3.5%, `0` = 끔, `0.03`~`0.04` = 강제 |
 | `sfx` | ○ | ○ | ○ | `[{"file":"pop.wav","at":0.5,"gain_db":-6}]` — `assets/sfx/` 파일, 컷 시작 + `at` 초. 파일이 없으면 경고 후 생략. Stock set from `make_music.py`: pop, sparkle, boing, whoosh, brush, swish, splash, chime |
@@ -206,6 +208,26 @@ line k   = cut start + cut.beats[k] × beat              (default: first free be
   shows a word card. Keywords are not drawn in songs.
 - Lip-sync cuts always use `nar_ref`: preview_assets writes `<cut>_nar_en.wav` (the cut's lines on their beats,
   from the first line) → media_import_url → `hf_jobs.py narref`.
+
+### 7-C. Finished-song episodes (`manifest.song.track`)
+
+```
+video t      = song-file t − track.start
+cut i        = bars [k, k + bars) of the song: starts on analysis.downbeats[k] (the first cut starts at 0 and
+               holds the pickup before the first downbeat), the last cut runs to track.end when that is later
+karaoke line = song.lyrics words (aligned) — each word lights at its sung start; a line stays 1.2 s after its
+               last word unless the next line starts
+lip-sync ref = the vocal stem sliced to exactly the cut window (song_track.py refs), pinned per cut as
+               nar_ref.en = {media_id, track_sha1, window} — moving a bar line or changing the song voids it
+```
+
+- `analysis.downbeats` follows small tempo drift (beat tracking, `refine_downbeats`); a steady song keeps the
+  straight grid. `song_track.py sections` lists every lyric line by bar to write the cuts' `bars`.
+- The song is the bed: no BGM, no instrumental, ducked (`duck_db`, default −6) only under the library
+  intro/outro lines, which L cuts still speak over the song (`lead` = seconds after the cut start).
+- V cuts have no narration; `clip_from` reuses part of another clip (repeated choruses, answer bars).
+- Tools outside momo's dependencies: the song itself (Suno web / ACE-Step), stems (Suno "Get Stems" or demucs),
+  `tools/align_lyrics.py` (mlx-whisper, sidecar venv ~/.venvs/momo-audio).
 
 V 클립(5초)과 컷 길이의 관계:
 

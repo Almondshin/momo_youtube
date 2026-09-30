@@ -1,6 +1,6 @@
 # ep03 기획표 —  (Crunchy Veggies)
 
-> validate_manifest.py --table 이 생성 (2026-09-30 07:26 UTC). 직접 고치지 말고 manifest.json 을 고친 뒤 다시 실행.
+> validate_manifest.py --table 이 생성 (2026-09-30 07:35 UTC). 직접 고치지 말고 manifest.json 을 고친 뒤 다시 실행.
 
 - 제목 EN: Crunchy Veggies Song with Momo the Bunny | Carrot, Broccoli and Corn for Toddlers
 - 제목 KO: (미정)
