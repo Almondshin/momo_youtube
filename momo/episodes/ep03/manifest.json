@@ -49,8 +49,8 @@
   },
   "credits": {
     "estimate": 205.2,
-    "spent": 2.0,
-    "generations": 1,
+    "spent": 6.0,
+    "generations": 3,
     "regenerations": 0
   },
   "notes": {
@@ -109,7 +109,27 @@
       "image_prompt": "[Momo] standing next to the small round wooden table in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, full body wide shot, one paw on the round tummy, big happy smile, clear empty pastel wall space in the upper third of the frame",
       "motion": "pats the round tummy twice and does one small happy bounce in place to the beat, mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "116af221-53d0-4c7e-9072-760e5f67a872",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_116af221-53d0-4c7e-9072-760e5f67a872.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "116af221-53d0-4c7e-9072-760e5f67a872",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_116af221-53d0-4c7e-9072-760e5f67a872.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T07:57Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c03",
@@ -125,6 +145,26 @@
         "word": "carrot",
         "text": "Orange and crunchy!",
         "pos": "left"
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "fbc8deb7-dc47-4551-a2c5-055fc6659a76",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_fbc8deb7-dc47-4551-a2c5-055fc6659a76.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "fbc8deb7-dc47-4551-a2c5-055fc6659a76",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_fbc8deb7-dc47-4551-a2c5-055fc6659a76.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T07:57Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
