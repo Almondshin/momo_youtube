@@ -19,7 +19,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from momolib import youtube as yt  # noqa: E402
-from momolib.common import LANGS, MomoError, add_root_arg, check_lang, get_paths, main_wrapper  # noqa: E402
+from momolib.common import MomoError, active_langs, add_root_arg, check_lang, get_paths, load_config, main_wrapper  # noqa: E402
 
 SCOPE_REASONS = {"insufficientPermissions", "ACCESS_TOKEN_SCOPE_INSUFFICIENT", "PERMISSION_DENIED"}
 
@@ -54,7 +54,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--lang", default="all", help="en | ko | all (기본)")
     args = ap.parse_args(argv)
     paths = get_paths(args)
-    langs = list(LANGS) if args.lang == "all" else [check_lang(args.lang)]
+    cfg = load_config(paths)
+    langs = list(active_langs(cfg)) if args.lang == "all" else [check_lang(args.lang)]
     ok, seen = True, {}
     for lang in langs:
         try:

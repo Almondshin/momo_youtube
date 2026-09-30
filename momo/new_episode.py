@@ -17,7 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (LANGS, MomoError, add_root_arg, check_ep, get_paths, load_config,  # noqa: E402
+from momolib.common import (MomoError, active_langs, add_root_arg, check_ep, get_paths, load_config,  # noqa: E402
                             load_json, main_wrapper, save_json)
 
 
@@ -51,9 +51,9 @@ def main(argv: list[str] | None = None) -> int:
     for c in m.get("cuts") or []:
         la = c.get("library_audio")
         if la:  # 고정 문장은 config 가 기준
-            c["narration"] = {lang: cfg["fixed_lines"][lang][la] for lang in LANGS}
+            c["narration"] = {lang: cfg["fixed_lines"][lang][la] for lang in active_langs(cfg)}
     save_json(target, m)
-    for d in (paths.images(ep), paths.clips(ep), *(paths.audio(ep, lang) for lang in LANGS), paths.out(ep)):
+    for d in (paths.images(ep), paths.clips(ep), *(paths.audio(ep, lang) for lang in active_langs(cfg)), paths.out(ep)):
         d.mkdir(parents=True, exist_ok=True)
     print(f"✔ {ep} 준비됨: {paths.ep(ep)}")
     print("  manifest.json (인트로 c01 · 아웃트로 c02 만 있음), images/ clips/ audio/en/ audio/ko/ out/")

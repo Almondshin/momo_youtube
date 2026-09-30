@@ -38,8 +38,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (LANGS, LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoError, Paths,  # noqa: E402
-                            add_root_arg, check_ep, check_lang, find_media, get_paths, load_config, load_json,
+from momolib.common import (LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoError, Paths,  # noqa: E402
+                            active_langs, add_root_arg, check_ep, check_lang, find_media, get_paths, load_config, load_json,
                             load_library, load_manifest, main_wrapper, save_json)
 from momolib.episode import compose_image_prompt, compose_motion_prompt, tts_blocks  # noqa: E402
 from momolib.genrec import (KIND_EXTS, NA, SYMBOL, Slot, add_credits, apply_record, char_tags,  # noqa: E402
@@ -519,7 +519,7 @@ def episode_status(paths: Paths, cfg: dict, m: dict, lib: dict) -> dict:
             order = ("pending", "rejected", "generated", "approved")  # show the least-done language
             row["clip"] = min((x.status for x in clips), key=order.index) if clips else "n/a"
         row["audio"] = {}
-        for lang in LANGS:
+        for lang in active_langs(cfg):
             if t == "L" and c.get("library_audio"):
                 row["audio"][lang] = ["library:" + status_of((laudio.get(lang) or {}).get(c["library_audio"]))]
             else:
@@ -536,7 +536,7 @@ def episode_status(paths: Paths, cfg: dict, m: dict, lib: dict) -> dict:
     clip_wait = ids(lambda s: s.kind == "clip" and needs_generation(s.rec)
                     and status_of((s.cut.get("gen") or {}).get("image")) != "approved")
     audio_todo = {lang: len(ids(lambda s: s.kind == "audio" and s.lang == lang and needs_generation(s.rec)))
-                  for lang in LANGS}
+                  for lang in active_langs(cfg)}
     to_fetch = ids(lambda s: s.status in ("generated", "approved") and s.rec.get("url") and not local_file(s))
     lib_left = [s.key for s in library_slots(paths, cfg, lib) if s.group in ("lib_image", "lib_clip", "lib_audio")
                 and s.status != "approved" and not (s.group == "lib_image" and status_of(s.holder) == "approved")]
@@ -556,7 +556,7 @@ def episode_status(paths: Paths, cfg: dict, m: dict, lib: dict) -> dict:
                    f"→ hf_jobs.py plan --ep {ep} --kind clip")
     if clip_wait:
         nxt.append(f"클립 대기 {len(clip_wait)}개 (이미지 승인 전): {', '.join(k.split()[0] for k in clip_wait)}")
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         if audio_todo[lang]:
             v = (cfg.get("voices") or {}).get(lang)
             nxt.append(f"음성 {lang.upper()} {audio_todo[lang]}블록 → hf_jobs.py plan --ep {ep} --kind audio --lang {lang}"
@@ -579,10 +579,10 @@ def library_status(cfg: dict, lib: dict) -> dict:
             "clips": {k: {"image": status_of(v.get("image")), "clip": status_of(v)}
                       for k, v in (lib.get("clips") or {}).items()},
             "audio": {lang: {k: status_of(v) for k, v in ((lib.get("audio") or {}).get(lang) or {}).items()}
-                      for lang in LANGS},
+                      for lang in active_langs(cfg)},
             "voice_samples": [{"lang": e.get("lang"), "voice_id": e.get("voice_id"), "status": status_of(e)}
                               for e in lib.get("voice_samples") or []],
-            "voices": {lang: (cfg.get("voices") or {}).get(lang) for lang in LANGS}}
+            "voices": {lang: (cfg.get("voices") or {}).get(lang) for lang in active_langs(cfg)}}
 
 
 def cell(v: str) -> str:
@@ -601,11 +601,11 @@ def pad(s: str, width: int) -> str:
 
 def print_episode_status(st: dict) -> None:
     print(f"{st['ep']} 생성 현황 (manifest.status: {st['status']})\n")
-    head = ["컷", "타입", "이미지", "클립", "음성 EN", "음성 KO"]
-    rows = [[r["id"], r["type"], cell(r["image"]), cell(r["clip"]),
-             "".join(cell(x) for x in r["audio"]["en"]) or NA, "".join(cell(x) for x in r["audio"]["ko"]) or NA]
-            for r in st["cuts"]]
-    widths = [6, 6, 8, 6, 10, 10]
+    langs = list(st["cuts"][0]["audio"]) if st["cuts"] else ["en"]
+    head = ["컷", "타입", "이미지", "클립"] + [f"음성 {lang.upper()}" for lang in langs]
+    rows = [[r["id"], r["type"], cell(r["image"]), cell(r["clip"])]
+            + ["".join(cell(x) for x in r["audio"][lang]) or NA for lang in langs] for r in st["cuts"]]
+    widths = [6, 6, 8, 6] + [10] * len(langs)
     for r in [head] + rows:
         print("  " + "".join(pad(str(v), w) for v, w in zip(r, widths)).rstrip())
     print("\n  범례: ✔ 승인 · ● 생성됨(검토 대기) · ✖ 거절 · · 대기 · — 해당 없음 · L=라이브러리")

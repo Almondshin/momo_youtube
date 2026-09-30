@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (LANGS, Paths, add_root_arg, check_ep, get_paths, load_config, load_json,  # noqa: E402
+from momolib.common import (Paths, active_langs, add_root_arg, check_ep, get_paths, load_config, load_json,  # noqa: E402
                             load_manifest, main_wrapper)
 from momolib.episode import count_types  # noqa: E402
 from momolib.genrec import episode_cap, episode_slots, status_of  # noqa: E402
@@ -87,13 +87,13 @@ def render(paths: Paths, cfg: dict, m: dict) -> str:
          f"| 사용 크레딧 | {float(cr.get('spent') or 0):g} / 캡 {cap:g}"
          + (f" (예상 {cr['estimate']:g})" if isinstance(cr.get("estimate"), (int, float)) else "") + " |",
          f"| 생성 / 재생성 횟수 | {int(cr.get('generations') or 0)} / {int(cr.get('regenerations') or 0)} |"]
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         L.append(f"| 길이 {lang.upper()} | {md(length_line(paths, ep, lang))} |")
     L.append(f"| 썸네일 | {md((m.get('thumbnail') or {}).get('cut'))} — "
-             + " / ".join(md(((m.get('thumbnail') or {}).get('text') or {}).get(lang)) for lang in LANGS) + " |")
+             + " / ".join(md(((m.get('thumbnail') or {}).get('text') or {}).get(lang)) for lang in active_langs(cfg)) + " |")
 
     L += ["", "## 아동용(made for kids) 설정", "", f"> {KIDS_NOTE}", ""]
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         rec = yt.get(lang) or {}
         if not rec.get("video_id"):
             L.append(f"- {lang.upper()}: 아직 업로드 전 — upload.py 로 올리면 아동용 true 로 자동 설정됨")
@@ -103,9 +103,9 @@ def render(paths: Paths, cfg: dict, m: dict) -> str:
             L.append(f"- {lang.upper()}: △ youtube.json 에 아동용 기록이 없음 — YouTube Studio 에서 '아동용' 설정을 직접 확인")
 
     L += ["", "## 업로드 결과 (youtube.json)", ""]
-    if any((yt.get(lang) or {}).get("video_id") for lang in LANGS):
+    if any((yt.get(lang) or {}).get("video_id") for lang in active_langs(cfg)):
         L += ["| 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |", "|---|---|---|---|---|---|---|"]
-        for lang in LANGS:
+        for lang in active_langs(cfg):
             r = yt.get(lang) or {}
             if not r.get("video_id"):
                 L.append(f"| {lang.upper()} | (업로드 전) | | | | | |")
@@ -119,7 +119,7 @@ def render(paths: Paths, cfg: dict, m: dict) -> str:
 
     L += ["", "## 제목·설명·태그"]
     up = m.get("upload") or {}
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         meta = up.get(lang) or {}
         L += ["", f"### {lang.upper()}", "",
               f"- 제목: {meta.get('title') or title.get(lang) or '(미정)'}",

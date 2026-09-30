@@ -315,6 +315,7 @@ def make_base(root: Path) -> None:
     (root / MARKER).write_text("momo test fixture — make_fixture.py 가 만든 폴더 (지워도 됨)\n", encoding="utf-8")
     cfg = load_json(MOMO_DIR / "config.json")
     cfg["voices"].update({"en": "fixture_voice_en", "ko": "fixture_voice_ko"})
+    cfg["languages"] = ["en", "ko"]  # the fixture covers both languages whatever the channel uses
     save_json(root / "config.json", cfg)
     shutil.copytree(MOMO_DIR / "templates", root / "templates", dirs_exist_ok=True)
     font = find_hangul_font()

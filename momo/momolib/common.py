@@ -148,6 +148,12 @@ def check_ep(ep: str) -> str:
     return ep
 
 
+def active_langs(cfg: dict) -> tuple[str, ...]:
+    """Production languages — config.languages (e.g. ["en"]), default both. LANGS stays the supported set."""
+    langs = tuple(lg for lg in (cfg.get("languages") or LANGS) if lg in LANGS)
+    return langs or LANGS
+
+
 def check_lang(lang: str) -> str:
     if lang not in LANGS:
         raise MomoError(f"언어는 {LANGS} 중 하나여야 함: {lang!r}")

@@ -154,6 +154,7 @@ def env(**values):
 def make_root(tmp: Path, cfg_patch: dict | None = None, upload_patch: dict | None = None) -> Path:
     root = tmp / "root"
     cfg = json.loads((MOMO / "config.json").read_text(encoding="utf-8"))
+    cfg["languages"] = ["en", "ko"]
     (root / "episodes" / EP / "out").mkdir(parents=True)
     (root / "config.json").write_text(json.dumps(deep_merge(cfg, cfg_patch or {})), encoding="utf-8")
     up = {"en": {"title": "Learn Colors with Momo the Bunny | Red, Yellow, Blue for Toddlers",

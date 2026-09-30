@@ -33,7 +33,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from momolib import youtube as yt  # noqa: E402
-from momolib.common import (LANGS, MomoError, Paths, add_root_arg, check_ep, check_lang, get_paths,  # noqa: E402
+from momolib.common import (MomoError, Paths, active_langs, add_root_arg, check_ep, check_lang, get_paths,  # noqa: E402
                             load_config, load_json, load_manifest, main_wrapper, save_json)
 
 NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]{0,80}$")
@@ -311,7 +311,7 @@ def main(argv: list[str] | None = None) -> int:
 
     paths = get_paths(args)
     cfg = load_config(paths)
-    langs = list(LANGS) if args.lang == "all" else [check_lang(args.lang)]
+    langs = list(active_langs(cfg)) if args.lang == "all" else [check_lang(args.lang)]
     privacy = args.privacy or cfg["youtube"].get("default_privacy") or "private"
     if privacy not in yt.PRIVACY:
         raise MomoError(f"config.youtube.default_privacy 는 {yt.PRIVACY} 중 하나: {privacy!r}")

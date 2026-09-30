@@ -3,8 +3,7 @@
   "ep": "ep02",
   "status": "uploaded",
   "topic": {
-    "en": "Brush Your Teeth",
-    "ko": "양치하기"
+    "en": "Brush Your Teeth"
   },
   "benchmark": {
     "channel_url": [
@@ -20,14 +19,12 @@
     "ducky"
   ],
   "title": {
-    "en": "Brush Your Teeth Song with Momo the Bunny | Morning Routine for Toddlers",
-    "ko": "양치 동요 | 치카치카 이 닦기 | 아기토끼 모모"
+    "en": "Brush Your Teeth Song with Momo the Bunny | Morning Routine for Toddlers"
   },
   "thumbnail": {
     "cut": "c23",
     "text": {
-      "en": "BRUSH BRUSH!",
-      "ko": "치카치카!"
+      "en": "BRUSH BRUSH!"
     },
     "text_pos": "top"
   },
@@ -51,33 +48,15 @@
         "baby songs"
       ],
       "playlist_id": null
-    },
-    "ko": {
-      "title": "양치 동요 | 치카치카 이 닦기 | 아기토끼 모모",
-      "description": "치카치카, 위로 아래로! 아기토끼 모모와 오리 더키가 아침 양치 습관을 알려줘요. 2~5세 아이를 위한 따라 말하기 챈트예요.\n\n오늘 배우는 것:\n1. 칫솔과 콩알만큼의 치약\n2. 윗니는 위로, 아랫니는 아래로 치카치카\n3. 물을 머금고 오물오물, 퉤! 헹구기\n\n아침에도 밤에도 모모랑 같이 이를 닦아요!\n\n#양치동요 #치카치카 #유아동요 #키즈송 #생활습관 #아침습관 #유아교육 #아기토끼모모 #양치습관 #모모랑배워요",
-      "tags": [
-        "양치 동요",
-        "치카치카",
-        "이 닦기",
-        "유아 동요",
-        "키즈 동요",
-        "생활습관 동요",
-        "아침 습관",
-        "유아 교육",
-        "아기토끼 모모",
-        "양치 습관",
-        "어린이 동요"
-      ],
-      "playlist_id": null
     }
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 512.0,
-    "generations": 148,
+    "spent": 522.63,
+    "generations": 149,
     "regenerations": 16,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)",
-    "cap": 525
+    "cap": 690
   },
   "notes": {
     "v_over_reason": "2026-09-29 remake (user-approved): every cut is continuous animation; talking cuts are lip-synced per language (wan2_7 + narration audio reference)",
@@ -96,7 +75,8 @@
     ],
     "next_time": [],
     "library_extra": "악어 토토·상어 써니·문어 잉코(악당) 캐릭터 시트 (사용자 요청, 다음 편용) — 6크레딧, ep02 예산과 별도",
-    "remake_2026_09_29": "User asked for natural kids animation (no word-cut-word slideshow). Approved full remake: continuous full-length clips + lip-sync on talking cuts, ~250-300 extra credits; ep02 cap 250 -> 525."
+    "remake_2026_09_29": "User asked for natural kids animation (no word-cut-word slideshow). Approved full remake: continuous full-length clips + lip-sync on talking cuts, ~250-300 extra credits; ep02 cap 250 -> 525.",
+    "song_remake_2026_09_30": "User chose 'English song (chant)' on 2026-09-30: English only (Korean removed), AI instrumental (sonilo_music) with Momo chanting on the beat, karaoke lyric captions, word cards; talking cuts re-lip-synced; episode credit cap raised to 690 with that choice."
   },
   "cuts": [
     {
@@ -104,12 +84,10 @@
       "scene": 1,
       "type": "L",
       "narration": {
-        "en": "Hi friends! It's Momo!",
-        "ko": "안녕, 친구들! 나는 모모야!"
+        "en": "Hi friends! It's Momo!"
       },
       "keyword": {
-        "en": "",
-        "ko": ""
+        "en": ""
       },
       "library_clip": "intro_wave",
       "library_audio": "intro",
@@ -120,12 +98,10 @@
       "scene": 1,
       "type": "V",
       "narration": {
-        "en": "Good morning, friends! The sun is up. Yawn! Time to start the day!",
-        "ko": "좋은 아침이야! 해님이 떴어. 하아암! 오늘도 신나게 시작해 볼까?"
+        "en": "Good morning, friends! The sun is up. Yawn! Time to start the day!"
       },
       "keyword": {
-        "en": "MORNING",
-        "ko": "아침"
+        "en": "MORNING"
       },
       "image_prompt": "[Momo] sitting up in a small cozy bed, stretching both arms up after waking, bright morning sunlight from a round window, soft pastel bedroom, clear empty pastel wall space in the upper third of the frame",
       "motion": "sits up in bed and talks cheerfully to the viewer with the mouth moving in sync with the voice, a small sleepy stretch with both arms and a little yawn, both long floppy ears stay hanging down beside the cheeks the whole time, warm morning sunlight",
@@ -185,34 +161,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "509e25b7-af0b-4d82-ba51-6e44d5b87429",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_509e25b7-af0b-4d82-ba51-6e44d5b87429.mp4",
-          "attempts": 2,
-          "credits": 27.0,
-          "history": [
-            {
-              "job_id": "1f62fa90-2289-4592-b7e2-d7973311be20",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_235916_1f62fa90-2289-4592-b7e2-d7973311be20.mp4",
-              "status": "rejected",
-              "reason": "ears stand upright during the stretch/yawn (character rule: ears always hang down)",
-              "at": "2026-09-29T23:59Z",
-              "credits": 13.5,
-              "start_image": "7de22d4d-6a76-45c5-94f7-3068c856d850"
-            },
-            {
-              "job_id": "509e25b7-af0b-4d82-ba51-6e44d5b87429",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_509e25b7-af0b-4d82-ba51-6e44d5b87429.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:11Z",
-              "credits": 13.5,
-              "start_image": "7de22d4d-6a76-45c5-94f7-3068c856d850"
-            }
-          ],
-          "reason": null
         }
       },
       "audio_src": {
@@ -235,33 +183,12 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "c634eb03-c8e9-4331-b798-f325a23fe5cb",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_c634eb03-c8e9-4331-b798-f325a23fe5cb.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "c634eb03-c8e9-4331-b798-f325a23fe5cb",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_c634eb03-c8e9-4331-b798-f325a23fe5cb.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:09Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 7,
-        "ko": 9
+        "en": 7
       }
     },
     {
@@ -269,12 +196,10 @@
       "scene": 1,
       "type": "V",
       "narration": {
-        "en": "Hmm... my teeth feel fuzzy and sticky. What should we do, friends?",
-        "ko": "음... 이가 까끌까끌 끈적끈적해. 친구들, 어떻게 하면 좋을까?"
+        "en": "Hmm... my teeth feel fuzzy and sticky. What should we do, friends?"
       },
       "keyword": {
-        "en": "TEETH",
-        "ko": "이"
+        "en": "TEETH"
       },
       "image_prompt": "[Momo] standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, one paw touching the cheek, worried puzzled expression, not smiling, eyebrows raised in the middle, small frown, mouth slightly open, clear empty pastel wall space in the upper third of the frame",
       "motion": "talks to the viewer with a puzzled little face, the mouth moving in sync with the voice, touches the cheek with one paw and tilts the head, ears droop a little",
@@ -331,25 +256,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "9bf59a36-d79e-4455-909e-952b721d7c7b",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_235917_9bf59a36-d79e-4455-909e-952b721d7c7b.mp4",
-          "attempts": 1,
-          "credits": 9.0,
-          "history": [
-            {
-              "job_id": "9bf59a36-d79e-4455-909e-952b721d7c7b",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_235917_9bf59a36-d79e-4455-909e-952b721d7c7b.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-29T23:59Z",
-              "credits": 9.0,
-              "start_image": "9667c1db-b65e-41f6-a8d7-21ca49d9a073"
-            }
-          ],
-          "reason": null
         }
       },
       "audio_src": {
@@ -372,33 +278,12 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "c8d8db28-5a8d-479b-90b9-8eec2a45ba09",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110929_c8d8db28-5a8d-479b-90b9-8eec2a45ba09.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "c8d8db28-5a8d-479b-90b9-8eec2a45ba09",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110929_c8d8db28-5a8d-479b-90b9-8eec2a45ba09.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:09Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 6,
-        "ko": 6
+        "en": 6
       }
     },
     {
@@ -406,12 +291,10 @@
       "scene": 1,
       "type": "V",
       "narration": {
-        "en": "It's morning! Let's brush our teeth together! Brush, brush, brush!",
-        "ko": "아침이야! 우리 같이 이를 닦자! 치카치카 치카!"
+        "en": "It's morning! Let's brush our teeth together! Brush, brush, brush!"
       },
       "keyword": {
-        "en": "BRUSH",
-        "ko": "치카치카"
+        "en": "BRUSH"
       },
       "image_prompt": "close-up of the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, one round mint-green cup holding one small toothbrush with a yellow handle standing on the sink edge in the center of the frame, soft morning light, clear empty pastel wall space in the upper third of the frame",
       "momo": false,
@@ -476,26 +359,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "7f5172d3-faed-4c98-92c5-ea5c44baec99",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_7f5172d3-faed-4c98-92c5-ea5c44baec99.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "7f5172d3-faed-4c98-92c5-ea5c44baec99",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_110930_7f5172d3-faed-4c98-92c5-ea5c44baec99.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:09Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "clip_model": "seedance_2_0_mini",
@@ -515,12 +378,10 @@
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Look! This is a toothbrush. A little toothbrush. Toothbrush!",
-        "ko": "이것 봐! 이건 칫솔이야. 작고 귀여운 칫솔! 칫솔!"
+        "en": "Look! This is a toothbrush. A little toothbrush. Toothbrush!"
       },
       "keyword": {
-        "en": "TOOTHBRUSH",
-        "ko": "칫솔"
+        "en": "TOOTHBRUSH"
       },
       "image_prompt": "close-up of one small child toothbrush with soft mint-green bristles and a yellow handle lying on a soft cream counter, plain pastel background",
       "momo": false,
@@ -579,26 +440,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "7a162fa6-4d23-4838-a42c-c3840c661f1c",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112648_7a162fa6-4d23-4838-a42c-c3840c661f1c.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "7a162fa6-4d23-4838-a42c-c3840c661f1c",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112648_7a162fa6-4d23-4838-a42c-c3840c661f1c.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:27Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "clip_model": "seedance_2_0_mini",
@@ -618,12 +459,10 @@
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Momo holds the toothbrush. My very own toothbrush! Hello, toothbrush!",
-        "ko": "모모의 칫솔이야. 손에 꼭 잡아요. 안녕, 칫솔!"
+        "en": "Momo holds the toothbrush. My very own toothbrush! Hello, toothbrush!"
       },
       "keyword": {
-        "en": "TOOTHBRUSH",
-        "ko": "칫솔"
+        "en": "TOOTHBRUSH"
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding up a small toothbrush with a yellow handle in one paw, proud happy face, clear empty pastel wall space in the upper third of the frame",
       "motion": "holds the toothbrush up proudly and talks happily to the viewer, the mouth moving in sync with the voice, small happy wiggle, ears bounce",
@@ -680,25 +519,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "1e590a2b-2cd2-475a-b801-d94726c366f2",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000332_1e590a2b-2cd2-475a-b801-d94726c366f2.mp4",
-          "attempts": 1,
-          "credits": 13.5,
-          "history": [
-            {
-              "job_id": "1e590a2b-2cd2-475a-b801-d94726c366f2",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000332_1e590a2b-2cd2-475a-b801-d94726c366f2.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:03Z",
-              "credits": 13.5,
-              "start_image": "c408f6e8-66d8-4fb0-872b-cad6023b267c"
-            }
-          ],
-          "reason": null
         }
       },
       "audio_src": {
@@ -721,33 +541,12 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "0e1b9f74-471d-459e-92b5-1d71eaaba702",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112651_0e1b9f74-471d-459e-92b5-1d71eaaba702.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "0e1b9f74-471d-459e-92b5-1d71eaaba702",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112651_0e1b9f74-471d-459e-92b5-1d71eaaba702.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:27Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 4,
-        "ko": 9
+        "en": 4
       }
     },
     {
@@ -755,12 +554,10 @@
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Now a little toothpaste. Not too much. Just a tiny dot!",
-        "ko": "이제 치약을 짜요. 많이 말고, 콩알만큼만 쏙!"
+        "en": "Now a little toothpaste. Not too much. Just a tiny dot!"
       },
       "keyword": {
-        "en": "TOOTHPASTE",
-        "ko": "치약"
+        "en": "TOOTHPASTE"
       },
       "image_prompt": "close-up of the same small toothbrush with soft mint-green bristles and a yellow handle, with a tiny pea-size dot of white toothpaste on the bristles, next to a plain white toothpaste tube, soft pastel background",
       "momo": false,
@@ -825,26 +622,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "6134f536-020c-4a60-93c7-dcf9d9127a48",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112751_6134f536-020c-4a60-93c7-dcf9d9127a48.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "6134f536-020c-4a60-93c7-dcf9d9127a48",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112751_6134f536-020c-4a60-93c7-dcf9d9127a48.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:28Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "clip_model": "seedance_2_0_mini",
@@ -864,12 +641,10 @@
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Can you say toothpaste? [pause 1.5] Toothpaste! Yay, great job!",
-        "ko": "치약, 따라 해볼까? [pause 1.5] 치약! 우와, 잘했어!"
+        "en": "Can you say toothpaste? [pause 1.5] Toothpaste! Yay, great job!"
       },
       "keyword": {
-        "en": "TOOTHPASTE",
-        "ko": "치약"
+        "en": "TOOTHPASTE"
       },
       "audio_src": {
         "en": {
@@ -909,52 +684,13 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "d82cb80a-604d-4e18-952d-9e3e7bc4d575",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112751_d82cb80a-604d-4e18-952d-9e3e7bc4d575.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "d82cb80a-604d-4e18-952d-9e3e7bc4d575",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112751_d82cb80a-604d-4e18-952d-9e3e7bc4d575.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:28Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          },
-          "2": {
-            "status": "approved",
-            "job_id": "4aa91206-7c73-4bc9-ab66-a5c4dfa0ca9c",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112754_4aa91206-7c73-4bc9-ab66-a5c4dfa0ca9c.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "4aa91206-7c73-4bc9-ab66-a5c4dfa0ca9c",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112754_4aa91206-7c73-4bc9-ab66-a5c4dfa0ca9c.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:28Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, facing the viewer and holding up a small white toothpaste tube in one paw, curious happy smile, clear empty space above the head",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 9,
-        "ko": 7
+        "en": 9
       },
       "motion": "holds up the toothpaste tube and talks to the viewer, the mouth moving in sync with the voice, waits with a curious smile during the pause, then smiles happily and nods, both long floppy ears stay hanging down beside the cheeks the whole time",
       "gen": {
@@ -994,34 +730,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "53c42621-ac9e-48bc-b74c-f8cefbc2d7a0",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003510_53c42621-ac9e-48bc-b74c-f8cefbc2d7a0.mp4",
-          "attempts": 2,
-          "credits": 21.0,
-          "history": [
-            {
-              "job_id": "0883dcbd-73c2-4589-950d-3474f3ee4a37",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_0883dcbd-73c2-4589-950d-3474f3ee4a37.mp4",
-              "status": "rejected",
-              "reason": "ears flare out sideways during the final cheer (~1.5s)",
-              "at": "2026-09-30T00:29Z",
-              "credits": 10.5,
-              "start_image": "785f034b-f4dc-4cf6-bede-b60a917d745d"
-            },
-            {
-              "job_id": "53c42621-ac9e-48bc-b74c-f8cefbc2d7a0",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003510_53c42621-ac9e-48bc-b74c-f8cefbc2d7a0.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:35Z",
-              "credits": 10.5,
-              "start_image": "785f034b-f4dc-4cf6-bede-b60a917d745d"
-            }
-          ],
-          "reason": null
         }
       },
       "nar_ref": {
@@ -1032,14 +740,6 @@
             "f8d065e9-88fe-40a9-91f5-dd9afdec0e0c"
           ],
           "at": "2026-09-30T00:28Z"
-        },
-        "ko": {
-          "media_id": "9ea5aeeb-2ea4-43a6-9dcd-3cbdfb39c6b6",
-          "blocks": [
-            "d82cb80a-604d-4e18-952d-9e3e7bc4d575",
-            "4aa91206-7c73-4bc9-ab66-a5c4dfa0ca9c"
-          ],
-          "at": "2026-09-30T00:28Z"
         }
       }
     },
@@ -1048,12 +748,10 @@
       "scene": 2,
       "type": "V",
       "narration": {
-        "en": "Squeeze, squeeze, just a little bit of toothpaste. Perfect!",
-        "ko": "쭉~ 치약을 아주 조금만. 딱 좋아!"
+        "en": "Squeeze, squeeze, just a little bit of toothpaste. Perfect!"
       },
       "keyword": {
-        "en": "TOOTHPASTE",
-        "ko": "치약"
+        "en": "TOOTHPASTE"
       },
       "image_prompt": "[Momo] at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush with a yellow handle and mint-green bristles in one paw and gently squeezing a tiny pea-size dot of white toothpaste from a plain white tube onto the bristles with the other paw, looking at the brush with a focused cute face, not brushing yet, clear empty pastel wall space in the upper third of the frame",
       "motion": "gently squeezes the tube over the toothbrush, small nod",
@@ -1113,26 +811,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "7e34ceb6-3faf-4c05-a8c3-9295ac6e2fe5",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112752_7e34ceb6-3faf-4c05-a8c3-9295ac6e2fe5.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "7e34ceb6-3faf-4c05-a8c3-9295ac6e2fe5",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112752_7e34ceb6-3faf-4c05-a8c3-9295ac6e2fe5.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:28Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "fill": "loop"
@@ -1142,12 +820,10 @@
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "[chant] Brush up, brush down, brush your teeth all around! Brush up, brush down!",
-        "ko": "[chant] 위로 치카, 아래로 치카, 구석구석 치카치카! 위로 치카, 아래로 치카!"
+        "en": "[chant] Brush up, brush down, brush your teeth all around! Brush up, brush down!"
       },
       "keyword": {
-        "en": "BRUSH",
-        "ko": "치카치카"
+        "en": "BRUSH"
       },
       "image_prompt": "[Momo] facing the viewer holding a small toothbrush with a yellow handle and mint-green bristles at the front teeth, big smile with a little white foam, a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
       "motion": "brushes the teeth with small up and down strokes, ears bounce",
@@ -1201,26 +877,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "7505d046-b027-4469-97fe-34b71f6fd283",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112838_7505d046-b027-4469-97fe-34b71f6fd283.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "7505d046-b027-4469-97fe-34b71f6fd283",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112838_7505d046-b027-4469-97fe-34b71f6fd283.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:28Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "fill": "loop",
@@ -1237,12 +893,10 @@
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "Brush the top teeth. Up, up, up! Gently up, up, up!",
-        "ko": "윗니를 닦아요. 위로, 위로, 위로! 살살 위로!"
+        "en": "Brush the top teeth. Up, up, up! Gently up, up, up!"
       },
       "keyword": {
-        "en": "UP",
-        "ko": "위로"
+        "en": "UP"
       },
       "image_prompt": "[Momo] seen from the waist up, brushing the top teeth with a small toothbrush with a yellow handle and mint-green bristles, eyes looking up playfully, soft pastel-blue background with empty space above the head",
       "motion": "brushes with small upward strokes and blinks",
@@ -1296,26 +950,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "bcf4d392-750c-4301-96b9-cecbfee8fac8",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112839_bcf4d392-750c-4301-96b9-cecbfee8fac8.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "bcf4d392-750c-4301-96b9-cecbfee8fac8",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112839_bcf4d392-750c-4301-96b9-cecbfee8fac8.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:28Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "fill": "loop"
@@ -1325,12 +959,10 @@
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "Brush the bottom teeth. Down, down, down! Gently down, down, down!",
-        "ko": "아랫니를 닦아요. 아래로, 아래로, 아래로! 살살 아래로!"
+        "en": "Brush the bottom teeth. Down, down, down! Gently down, down, down!"
       },
       "keyword": {
-        "en": "DOWN",
-        "ko": "아래로"
+        "en": "DOWN"
       },
       "image_prompt": "[Momo] seen from the waist up, brushing the bottom teeth with a small toothbrush with a yellow handle and mint-green bristles, eyes looking down playfully, soft pastel-blue background with empty space above the head",
       "motion": "brushes with small downward strokes, small nod",
@@ -1384,26 +1016,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "9a483bc6-5704-4c84-b404-318fc2e6afcd",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112915_9a483bc6-5704-4c84-b404-318fc2e6afcd.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "9a483bc6-5704-4c84-b404-318fc2e6afcd",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112915_9a483bc6-5704-4c84-b404-318fc2e6afcd.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:29Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "fill": "loop"
@@ -1413,12 +1025,10 @@
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "Up and down, up and down. Can you do it too? [pause 1.5] Yes!",
-        "ko": "위로 아래로, 위로 아래로. 너도 해볼래? [pause 1.5] 그렇지!"
+        "en": "Up and down, up and down. Can you do it too? [pause 1.5] Yes!"
       },
       "keyword": {
-        "en": "UP",
-        "ko": "위로"
+        "en": "UP"
       },
       "image_prompt": "[Momo] seen from the waist up with a big foamy smile, holding a small toothbrush with a yellow handle and mint-green bristles near the mouth, twinkling eyes, soft pastel-yellow background with empty space above the head, only one single Momo in the frame, no duplicate heads, no second character",
       "gen": {
@@ -1456,25 +1066,6 @@
               "reason": null,
               "at": "2026-09-30T00:29Z",
               "credits": 10.5,
-              "start_image": "c46e24d2-e8e4-4609-b777-64a6aa326cd1"
-            }
-          ],
-          "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "c674e343-29d2-4445-967c-725500f0b0f9",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_c674e343-29d2-4445-967c-725500f0b0f9.mp4",
-          "attempts": 1,
-          "credits": 12.0,
-          "history": [
-            {
-              "job_id": "c674e343-29d2-4445-967c-725500f0b0f9",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_c674e343-29d2-4445-967c-725500f0b0f9.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:29Z",
-              "credits": 12.0,
               "start_image": "c46e24d2-e8e4-4609-b777-64a6aa326cd1"
             }
           ],
@@ -1520,51 +1111,12 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "e62c8ea8-6ae7-4398-a17a-c1d415454162",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112838_e62c8ea8-6ae7-4398-a17a-c1d415454162.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "e62c8ea8-6ae7-4398-a17a-c1d415454162",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112838_e62c8ea8-6ae7-4398-a17a-c1d415454162.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:28Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          },
-          "2": {
-            "status": "approved",
-            "job_id": "9e79b9b8-87fe-4df3-beb6-b97ce4ae893c",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112917_9e79b9b8-87fe-4df3-beb6-b97ce4ae893c.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "9e79b9b8-87fe-4df3-beb6-b97ce4ae893c",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112917_9e79b9b8-87fe-4df3-beb6-b97ce4ae893c.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:29Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 7,
-        "ko": 8
+        "en": 7
       },
       "motion": "talks to the viewer with a foamy smile, the mouth moving in sync with the voice, moves the toothbrush up and down beside the mouth, nods encouragingly, both long floppy ears stay hanging down beside the cheeks",
       "nar_ref": {
@@ -1575,14 +1127,6 @@
             "4e9a4880-7c22-4ffd-8e62-bd0e65c61739"
           ],
           "at": "2026-09-30T00:28Z"
-        },
-        "ko": {
-          "media_id": "dd30a267-e613-4409-b6ec-094e96ad8bdc",
-          "blocks": [
-            "e62c8ea8-6ae7-4398-a17a-c1d415454162",
-            "9e79b9b8-87fe-4df3-beb6-b97ce4ae893c"
-          ],
-          "at": "2026-09-30T00:28Z"
         }
       }
     },
@@ -1591,12 +1135,10 @@
       "scene": 3,
       "type": "V",
       "narration": {
-        "en": "You did it! Great brushing, friends!",
-        "ko": "잘했어! 치카치카 최고야, 친구들!"
+        "en": "You did it! Great brushing, friends!"
       },
       "keyword": {
-        "en": "",
-        "ko": ""
+        "en": ""
       },
       "audio_src": {
         "en": {
@@ -1618,34 +1160,13 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "01ce9b7f-3539-4c29-8a09-faffa9c9a4e7",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112914_01ce9b7f-3539-4c29-8a09-faffa9c9a4e7.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "01ce9b7f-3539-4c29-8a09-faffa9c9a4e7",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112914_01ce9b7f-3539-4c29-8a09-faffa9c9a4e7.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:29Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, facing the viewer with a proud big smile and both paws raised in a happy cheer, holding a small toothbrush with a yellow handle and mint-green bristles, clear empty space above the head",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 5,
-        "ko": 6
+        "en": 5
       },
       "motion": "cheers and talks happily to the viewer, the mouth moving in sync with the voice, raises both paws, both long floppy ears stay hanging down beside the cheeks",
       "sfx": [
@@ -1692,25 +1213,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "1e75ecca-08ed-4a58-b056-2d75cc56ed0c",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_1e75ecca-08ed-4a58-b056-2d75cc56ed0c.mp4",
-          "attempts": 1,
-          "credits": 9.0,
-          "history": [
-            {
-              "job_id": "1e75ecca-08ed-4a58-b056-2d75cc56ed0c",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_1e75ecca-08ed-4a58-b056-2d75cc56ed0c.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:11Z",
-              "credits": 9.0,
-              "start_image": "1e626d89-9b74-4c01-9ba0-49ecc3e7d48e"
-            }
-          ],
-          "reason": null
         }
       }
     },
@@ -1719,12 +1221,10 @@
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Quack, quack! Here comes Ducky with a little cup of water!",
-        "ko": "꽥꽥! 더키가 작은 물컵을 가져왔어!"
+        "en": "Quack, quack! Here comes Ducky with a little cup of water!"
       },
       "keyword": {
-        "en": "CUP",
-        "ko": "컵"
+        "en": "CUP"
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink on the right side of a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, [Ducky] waddling in from the left carrying a small mint-green cup, happy surprised faces, clear empty pastel wall space in the upper third of the frame",
       "motion": "Ducky waddles forward a little, Momo's ears bounce happily",
@@ -1783,26 +1283,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "dc0a9050-6c69-498d-bec5-29bb81cb56a9",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112914_dc0a9050-6c69-498d-bec5-29bb81cb56a9.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "dc0a9050-6c69-498d-bec5-29bb81cb56a9",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_112914_dc0a9050-6c69-498d-bec5-29bb81cb56a9.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:29Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "sfx": [
@@ -1818,12 +1298,10 @@
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Water in the cup helps us rinse. Rinse, rinse, rinse!",
-        "ko": "컵에 담긴 물로 입을 헹궈요. 헹구기, 헹구기!"
+        "en": "Water in the cup helps us rinse. Rinse, rinse, rinse!"
       },
       "keyword": {
-        "en": "RINSE",
-        "ko": "헹구기"
+        "en": "RINSE"
       },
       "image_prompt": "close-up of a small mint-green cup filled with clear water on a clean white sink edge, soft sparkles on the water, plain pastel background",
       "momo": false,
@@ -1882,26 +1360,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "914fe5f4-7134-4dad-be56-cef496aa8302",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113020_914fe5f4-7134-4dad-be56-cef496aa8302.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "914fe5f4-7134-4dad-be56-cef496aa8302",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113020_914fe5f4-7134-4dad-be56-cef496aa8302.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:30Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "clip_model": "seedance_2_0_mini",
@@ -1921,12 +1379,10 @@
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Sip a little water. Swish, swish, swish! Funny puffy cheeks!",
-        "ko": "물을 조금 머금고, 오물오물 오물! 볼이 빵빵해!"
+        "en": "Sip a little water. Swish, swish, swish! Funny puffy cheeks!"
       },
       "keyword": {
-        "en": "RINSE",
-        "ko": "헹구기"
+        "en": "RINSE"
       },
       "image_prompt": "[Momo] holding a small mint-green mug, mouth closed and both cheeks puffed out round like little balloons full of water while swishing, funny wide happy eyes, not smiling with open mouth, at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, clear empty pastel wall space in the upper third of the frame",
       "motion": "cheeks wobble gently side to side, ears bounce",
@@ -1991,26 +1447,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "9d05542d-d314-495c-9b00-c7ad610084ba",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113022_9d05542d-d314-495c-9b00-c7ad610084ba.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "9d05542d-d314-495c-9b00-c7ad610084ba",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113022_9d05542d-d314-495c-9b00-c7ad610084ba.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:30Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "fill": "loop",
@@ -2027,12 +1463,10 @@
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "And spit it out! Ptooey! All clean and fresh!",
-        "ko": "그리고 퉤! 깨끗하게 헹궜어. 상쾌해!"
+        "en": "And spit it out! Ptooey! All clean and fresh!"
       },
       "keyword": {
-        "en": "RINSE",
-        "ko": "헹구기"
+        "en": "RINSE"
       },
       "image_prompt": "[Momo] leaning over the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, gently spitting a little water into the sink, [Ducky] watching from the counter, cheerful mood, clear empty pastel wall space in the upper third of the frame",
       "motion": "leans forward a little over the sink and smiles, Ducky flaps its wings",
@@ -2091,26 +1525,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "f79551b3-3172-4785-b498-74b10a900ec6",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113020_f79551b3-3172-4785-b498-74b10a900ec6.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "f79551b3-3172-4785-b498-74b10a900ec6",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113020_f79551b3-3172-4785-b498-74b10a900ec6.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:30Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "sfx": [
@@ -2126,12 +1540,10 @@
       "scene": 4,
       "type": "V",
       "narration": {
-        "en": "Ducky asks: can you say rinse? [pause 1.5] Rinse! Hooray!",
-        "ko": "더키랑 같이 말해볼까? 헹구기! [pause 1.5] 헹구기! 야호!"
+        "en": "Ducky asks: can you say rinse? [pause 1.5] Rinse! Hooray!"
       },
       "keyword": {
-        "en": "RINSE",
-        "ko": "헹구기"
+        "en": "RINSE"
       },
       "image_prompt": "[Momo] and [Ducky] side by side next to the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, both smiling at the viewer, clear empty pastel wall space in the upper third of the frame",
       "motion": "Momo turns to the viewer and talks, the mouth moving in sync with the voice, Ducky flaps its wings happily, both nod, Momo's long floppy ears stay hanging down",
@@ -2193,25 +1605,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "ec3f52ac-c999-4915-9904-ddeeca6f8cea",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003040_ec3f52ac-c999-4915-9904-ddeeca6f8cea.mp4",
-          "attempts": 1,
-          "credits": 12.0,
-          "history": [
-            {
-              "job_id": "ec3f52ac-c999-4915-9904-ddeeca6f8cea",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003040_ec3f52ac-c999-4915-9904-ddeeca6f8cea.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:30Z",
-              "credits": 12.0,
-              "start_image": "75ad1d14-8438-40ae-bb8f-d465c22c35c4"
-            }
-          ],
-          "reason": null
         }
       },
       "audio_src": {
@@ -2252,51 +1645,12 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "e47f4605-6947-41ea-be73-a2bed0fc826a",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113021_e47f4605-6947-41ea-be73-a2bed0fc826a.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "e47f4605-6947-41ea-be73-a2bed0fc826a",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113021_e47f4605-6947-41ea-be73-a2bed0fc826a.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:30Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          },
-          "2": {
-            "status": "approved",
-            "job_id": "83bc7e50-bb99-4f3d-979e-aee1d949def3",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113104_83bc7e50-bb99-4f3d-979e-aee1d949def3.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "83bc7e50-bb99-4f3d-979e-aee1d949def3",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113104_83bc7e50-bb99-4f3d-979e-aee1d949def3.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:31Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 7,
-        "ko": 8
+        "en": 7
       },
       "nar_ref": {
         "en": {
@@ -2304,14 +1658,6 @@
           "blocks": [
             "717f6b26-a6fe-44b0-84f4-2fbb4080794b",
             "393a5e0e-88b1-4aed-8145-221ff2567eae"
-          ],
-          "at": "2026-09-30T00:28Z"
-        },
-        "ko": {
-          "media_id": "5cd46002-2ab7-4ecd-8160-80611e027f16",
-          "blocks": [
-            "e47f4605-6947-41ea-be73-a2bed0fc826a",
-            "83bc7e50-bb99-4f3d-979e-aee1d949def3"
           ],
           "at": "2026-09-30T00:28Z"
         }
@@ -2322,12 +1668,10 @@
       "scene": 5,
       "type": "V",
       "narration": {
-        "en": "Let's remember! Toothbrush, toothpaste, and a cup of water!",
-        "ko": "다시 한번 볼까? 칫솔, 치약, 그리고 물컵!"
+        "en": "Let's remember! Toothbrush, toothpaste, and a cup of water!"
       },
       "keyword": {
-        "en": "TOOTHBRUSH",
-        "ko": "칫솔"
+        "en": "TOOTHBRUSH"
       },
       "image_prompt": "close-up still life of three items standing side by side in a neat row on the edge of a white rounded sink: a small toothbrush with a yellow handle and mint-green bristles, a plain white toothpaste tube and a small mint-green cup, no characters, soft light-blue square tiles softly blurred behind, soft morning light, clear empty pastel wall space in the upper third of the frame",
       "momo": false,
@@ -2398,26 +1742,6 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "6adca039-a293-490a-8e51-4b6434f1482e",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113104_6adca039-a293-490a-8e51-4b6434f1482e.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "6adca039-a293-490a-8e51-4b6434f1482e",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113104_6adca039-a293-490a-8e51-4b6434f1482e.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:31Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "clip_model": "seedance_2_0_mini",
@@ -2430,12 +1754,10 @@
       "scene": 5,
       "type": "V",
       "narration": {
-        "en": "[chant] Brush up, brush down, swish and spit, all around! Swish and spit!",
-        "ko": "[chant] 위로 치카, 아래로 치카, 오물오물 퉤! 오물오물 퉤!"
+        "en": "[chant] Brush up, brush down, swish and spit, all around! Swish and spit!"
       },
       "keyword": {
-        "en": "BRUSH",
-        "ko": "치카치카"
+        "en": "BRUSH"
       },
       "image_prompt": "[Momo] happily dancing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush with a yellow handle and mint-green bristles up high in one paw, clear empty pastel wall space in the upper third of the frame",
       "motion": "sings and dances happily holding the toothbrush up, the mouth moving in sync with the song, small hops and sways side to side, ears bounce",
@@ -2495,25 +1817,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "33adce4e-43ad-472f-bb1e-095cdb75f519",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000612_33adce4e-43ad-472f-bb1e-095cdb75f519.mp4",
-          "attempts": 1,
-          "credits": 12.0,
-          "history": [
-            {
-              "job_id": "33adce4e-43ad-472f-bb1e-095cdb75f519",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000612_33adce4e-43ad-472f-bb1e-095cdb75f519.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:06Z",
-              "credits": 12.0,
-              "start_image": "29c9025b-0482-4fa8-a297-f69f348c5bab"
-            }
-          ],
-          "reason": null
         }
       },
       "audio_src": {
@@ -2536,33 +1839,12 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "1c7f2d89-22db-41af-9635-7cf3afed7e2c",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113102_1c7f2d89-22db-41af-9635-7cf3afed7e2c.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "1c7f2d89-22db-41af-9635-7cf3afed7e2c",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113102_1c7f2d89-22db-41af-9635-7cf3afed7e2c.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:31Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 8,
-        "ko": 8
+        "en": 8
       }
     },
     {
@@ -2570,12 +1852,10 @@
       "scene": 5,
       "type": "V",
       "narration": {
-        "en": "Show me your smile! Big, sparkly smile! Sparkly clean teeth!",
-        "ko": "웃어 봐! 반짝반짝, 이가 반짝반짝!"
+        "en": "Show me your smile! Big, sparkly smile! Sparkly clean teeth!"
       },
       "keyword": {
-        "en": "SMILE",
-        "ko": "반짝반짝"
+        "en": "SMILE"
       },
       "image_prompt": "[Momo] facing the viewer with the biggest smile showing clean shiny white teeth, one tiny sparkle near the teeth, soft pastel background with empty space above the head",
       "motion": "talks cheerfully to the viewer with the mouth moving in sync with the voice, big sparkly smile between words, small happy head bobs, ears sway gently",
@@ -2644,25 +1924,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "c66d83b9-ada6-42e2-9eca-2c89f782fd1f",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000611_c66d83b9-ada6-42e2-9eca-2c89f782fd1f.mp4",
-          "attempts": 1,
-          "credits": 7.5,
-          "history": [
-            {
-              "job_id": "c66d83b9-ada6-42e2-9eca-2c89f782fd1f",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000611_c66d83b9-ada6-42e2-9eca-2c89f782fd1f.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:06Z",
-              "credits": 7.5,
-              "start_image": "220e611b-1880-4313-b135-f2e0b863faf0"
-            }
-          ],
-          "reason": null
         }
       },
       "audio_src": {
@@ -2685,33 +1946,12 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "39d89e23-e020-44f1-9d0b-e0e2594d0cf4",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113102_39d89e23-e020-44f1-9d0b-e0e2594d0cf4.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "39d89e23-e020-44f1-9d0b-e0e2594d0cf4",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113102_39d89e23-e020-44f1-9d0b-e0e2594d0cf4.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:31Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 9,
-        "ko": 5
+        "en": 9
       },
       "sfx": [
         {
@@ -2726,12 +1966,10 @@
       "scene": 5,
       "type": "V",
       "narration": {
-        "en": "Brush every morning and every night. Keep a big, bright smile!",
-        "ko": "아침에도 밤에도 치카치카! 반짝반짝 웃어요!"
+        "en": "Brush every morning and every night. Keep a big, bright smile!"
       },
       "keyword": {
-        "en": "SMILE",
-        "ko": "반짝반짝"
+        "en": "SMILE"
       },
       "image_prompt": "[Momo] close-up holding a small toothbrush with a yellow handle and mint-green bristles next to the cheek, huge happy smile with shiny teeth, [Ducky] peeking in from the side, bright pastel-blue background with empty space above the head",
       "gen": {
@@ -2771,25 +2009,6 @@
             }
           ],
           "reason": null
-        },
-        "clip_ko": {
-          "status": "approved",
-          "job_id": "bf7eb7b4-66fe-4f36-8210-e9a10c707c18",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000718_bf7eb7b4-66fe-4f36-8210-e9a10c707c18.mp4",
-          "attempts": 1,
-          "credits": 7.5,
-          "history": [
-            {
-              "job_id": "bf7eb7b4-66fe-4f36-8210-e9a10c707c18",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000718_bf7eb7b4-66fe-4f36-8210-e9a10c707c18.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T00:07Z",
-              "credits": 7.5,
-              "start_image": "aad6c1fa-7fcd-4277-bc5e-d64bd689aa4d"
-            }
-          ],
-          "reason": null
         }
       },
       "audio_src": {
@@ -2812,33 +2031,12 @@
             ],
             "reason": null
           }
-        },
-        "ko": {
-          "1": {
-            "status": "approved",
-            "job_id": "5e154a9a-3475-46ce-a95d-a4aee1476fe5",
-            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113118_5e154a9a-3475-46ce-a95d-a4aee1476fe5.wav",
-            "attempts": 1,
-            "credits": 0.2,
-            "history": [
-              {
-                "job_id": "5e154a9a-3475-46ce-a95d-a4aee1476fe5",
-                "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_113118_5e154a9a-3475-46ce-a95d-a4aee1476fe5.wav",
-                "status": "approved",
-                "reason": null,
-                "at": "2026-09-29T11:31Z",
-                "credits": 0.2
-              }
-            ],
-            "reason": null
-          }
         }
       },
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 6,
-        "ko": 5
+        "en": 6
       },
       "motion": "talks cheerfully to the viewer with a big bright smile, the mouth moving in sync with the voice, holds the toothbrush next to the cheek, Ducky peeks in and waves a wing"
     },
@@ -2847,12 +2045,10 @@
       "scene": 5,
       "type": "L",
       "narration": {
-        "en": "Bye-bye, friends! See you next time!",
-        "ko": "친구들, 안녕! 다음에 또 만나!"
+        "en": "Bye-bye, friends! See you next time!"
       },
       "keyword": {
-        "en": "",
-        "ko": ""
+        "en": ""
       },
       "library_clip": "outro_bye",
       "library_audio": "outro",
@@ -2862,5 +2058,28 @@
   "sets": {
     "bathroom": "a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat",
     "note": "욕실 컷마다 같은 세트 묘사를 넣어 장소 일관성 유지 (c03 기준)"
+  },
+  "song": {
+    "bpm": 100,
+    "beats_per_bar": 4,
+    "music": {
+      "status": "generated",
+      "job_id": "6723b40c-5a20-4f52-8b4a-1610fd923a90",
+      "url": null,
+      "attempts": 1,
+      "credits": 10.63,
+      "model": "sonilo_music",
+      "duration": 170,
+      "history": [
+        {
+          "job_id": "6723b40c-5a20-4f52-8b4a-1610fd923a90",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-09-30T03:57Z",
+          "credits": 10.63
+        }
+      ]
+    }
   }
 }

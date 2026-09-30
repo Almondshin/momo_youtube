@@ -1,4 +1,7 @@
 {
+  "languages": [
+    "en"
+  ],
   "schema": 1,
   "channel": {
     "name": "Momo the Bunny",

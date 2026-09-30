@@ -12,9 +12,9 @@ on:
         required: true
         type: string
       langs:
-        description: '언어 (쉼표 구분: en,ko / en / ko)'
+        description: '언어 (쉼표 구분: en / en,ko — 채널은 현재 영어 전용, config.languages)'
         required: true
-        default: 'en,ko'
+        default: 'en'
         type: string
       privacy:
         description: '공개 상태 (publish_at 이 있으면 private 로 올리고 그 시각에 공개)'

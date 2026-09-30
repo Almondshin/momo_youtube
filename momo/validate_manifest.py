@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (LANGS, MomoError, Paths, add_root_arg, check_ep, get_paths, load_config,  # noqa: E402
+from momolib.common import (LANGS, MomoError, Paths, active_langs, add_root_arg, check_ep, get_paths, load_config,  # noqa: E402
                             load_manifest, main_wrapper)
 from momolib.episode import (compose_image_prompt, compose_motion_prompt, count_types, plan_timeline,  # noqa: E402
                              tts_blocks, validate_manifest)
@@ -53,7 +53,7 @@ def record_warnings(cfg: dict, manifest: dict) -> list[str]:
 def durations(paths: Paths, cfg: dict, manifest: dict) -> dict:
     """언어별 예상 길이. 음성이 없으면 글자 수 추정 (plan_timeline allow_missing)."""
     out = {}
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         try:
             plans, total, _ = plan_timeline(paths, cfg, manifest, lang, allow_missing=True)
         except MomoError as e:
@@ -97,7 +97,7 @@ def render_plan(cfg: dict, m: dict, errors: list[str], warns: list[str], durs: d
                       for t, k in (("V", "v_range"), ("S", "s_range"), ("L", "l_range")))
          + f" · 씬 {len(scenes)} (목표 {rules['scenes']}) — 씬별 " + "/".join(str(n) for n in scenes.values())]
     parts = []
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         d = durs.get(lang) or {}
         if "total" in d:
             parts.append(f"{lang.upper()} {mmss(d['total'])} ({d['total']:.1f}초"
@@ -105,7 +105,7 @@ def render_plan(cfg: dict, m: dict, errors: list[str], warns: list[str], durs: d
         else:
             parts.append(f"{lang.upper()} 계산 불가 — {d.get('error', '?').splitlines()[0]}")
     L.append("- 예상 길이: " + " · ".join(parts) + " — 목표 2~3분, build.py 가 실제 음성으로 다시 계산")
-    blocks = {lang: sum(len(tts_blocks(c, lang, cfg)) for c in cuts) for lang in LANGS}
+    blocks = {lang: sum(len(tts_blocks(c, lang, cfg)) for c in cuts) for lang in active_langs(cfg)}
     L.append(f"- 생성할 것: 이미지 {counts['V'] + counts['S']}장 (V {counts['V']} + S {counts['S']}), "
              f"V 클립 {counts['V']}개, 음성 블록 EN {blocks['en']} · KO {blocks['ko']} (L 컷은 라이브러리)")
     if (m.get("notes") or {}).get("v_over_reason"):
@@ -133,7 +133,7 @@ def render_plan(cfg: dict, m: dict, errors: list[str], warns: list[str], durs: d
                 prompt = f"(조립 실패: {e})"
         motion = compose_motion_prompt(cfg, c) if t == "V" and c.get("motion") else ""
         dl = "/".join(f"{durs[lang]['cuts'].get(c.get('id'), 0):.1f}" if "cuts" in durs.get(lang, {}) else "?"
-                      for lang in LANGS)
+                      for lang in active_langs(cfg))
         L.append(f"| {md(c.get('id'))} | {md(c.get('scene'))} | {md(t)} | {md(nar.get('en'))} | {md(nar.get('ko'))} "
                  f"| {md(kw_s)} | {md(prompt)} | {md(motion)} | {dl} |")
     return "\n".join(L) + "\n"
@@ -156,7 +156,7 @@ def main(argv: list[str] | None = None) -> int:
     if m.get("ep") != ep:
         errors.insert(0, f"manifest.ep {m.get('ep')!r} 가 폴더 이름 {ep!r} 와 다름")
     warns += record_warnings(cfg, m)
-    durs = durations(paths, cfg, m) if not errors else {lang: {"error": "manifest 오류를 고친 뒤 계산"} for lang in LANGS}
+    durs = durations(paths, cfg, m) if not errors else {lang: {"error": "manifest 오류를 고친 뒤 계산"} for lang in active_langs(cfg)}
     plan_path = None
     if args.table:
         plan_path = paths.ep(ep) / "plan.md"

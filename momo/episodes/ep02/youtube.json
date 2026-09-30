@@ -10,17 +10,5 @@
     "thumbnail_set": true,
     "playlist_id": null,
     "file_sha256": "ad49b57ced0f8e1ae4470f3961097be77b222a166475dc8283fdf3cba6c5b2b4"
-  },
-  "ko": {
-    "video_id": "SvQl6E8mdJk",
-    "url": "https://www.youtube.com/watch?v=SvQl6E8mdJk",
-    "title": "양치 동요 | 치카치카 이 닦기 | 아기토끼 모모",
-    "privacy": "private",
-    "publish_at": null,
-    "uploaded_at": "2026-09-30T02:19:26Z",
-    "made_for_kids": true,
-    "thumbnail_set": true,
-    "playlist_id": null,
-    "file_sha256": "bc0308b1a4939ee79f4c4c2ffa9c969e7b92cad8a1648b3c16c920867acd6b4c"
   }
 }

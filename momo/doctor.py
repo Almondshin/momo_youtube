@@ -25,8 +25,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (AUDIO_EXTS, FONT_EXTS, LANGS, LIBRARY_AUDIO, LIBRARY_CLIPS, MomoError,  # noqa: E402
-                            Paths, add_root_arg, check_ep, find_font, find_media, get_paths, list_files,
+from momolib.common import (AUDIO_EXTS, FONT_EXTS, LIBRARY_AUDIO, LIBRARY_CLIPS, MomoError,  # noqa: E402
+                            Paths, active_langs, add_root_arg, check_ep, find_font, find_media, get_paths, list_files,
                             load_config, load_library, load_manifest, main_wrapper, probe, which)
 from momolib.genrec import FETCHABLE, KIND_EXTS, characters_used, episode_slots, status_of  # noqa: E402
 
@@ -231,7 +231,7 @@ def check_library(r: Report, paths: Paths, cfg: dict, lib: dict, manifest: dict 
                          for n in LIBRARY_CLIPS])
     audio = lib.get("audio") or {}
     group("고정 음성", [(f"{lang}/{n}", (audio.get(lang) or {}).get(n) or {},
-                      find_media(paths.library_audio(lang), n, AUDIO_EXTS)) for lang in LANGS for n in LIBRARY_AUDIO])
+                      find_media(paths.library_audio(lang), n, AUDIO_EXTS)) for lang in active_langs(cfg) for n in LIBRARY_AUDIO])
     if manifest:
         used = {c.get("library_clip") for c in manifest.get("cuts") or [] if c.get("type") == "L"}
         gone = sorted(n for n in used if n and not find_media(paths.library_clips, n, KIND_EXTS["clip"]))
@@ -241,7 +241,7 @@ def check_library(r: Report, paths: Paths, cfg: dict, lib: dict, manifest: dict 
 
 def check_config(r: Report, cfg: dict) -> None:
     voices = cfg.get("voices") or {}
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         if voices.get(lang):
             r.ok(f"config.voices.{lang} = {voices[lang]} (고정 — 바꾸지 말 것)")
         else:
@@ -255,13 +255,13 @@ def check_config(r: Report, cfg: dict) -> None:
     r.note(f"단가 확인일: {checked or '기록 없음'} (get_cost:true 로 재확인) · Higgsfield MCP 연결은 Claude 가 balance 로 확인")
 
 
-def check_youtube(r: Report, paths: Paths) -> None:
+def check_youtube(r: Report, paths: Paths, cfg: dict) -> None:
     present = [n for n in CRED_ENV if os.environ.get(n, "").strip()]
     try:
         from momolib.youtube import credentials_source
     except ImportError:
         credentials_source = None
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         src = credentials_source(paths, lang) if credentials_source else None
         if src:
             r.ok(f"YouTube 자격증명 [{lang}]: {src}")
@@ -290,7 +290,7 @@ def check_episode(r: Report, paths: Paths, cfg: dict, m: dict) -> None:
         r.ok(f"생성 기록 {len(slots)}개 모두 승인")
     if errors:
         return
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         try:
             _, total, warn = plan_timeline(paths, cfg, m, lang, allow_missing=True)
         except MomoError as e:
@@ -332,7 +332,7 @@ def main(argv: list[str] | None = None) -> int:
     check_library(r, paths, cfg, load_library(paths), m)
     r.section("설정")
     check_config(r, cfg)
-    check_youtube(r, paths)
+    check_youtube(r, paths, cfg)
     if m is not None:
         r.section(f"에피소드 {args.ep}")
         check_episode(r, paths, cfg, m)

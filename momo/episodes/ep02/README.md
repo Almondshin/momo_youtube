@@ -1,33 +1,30 @@
-# ep02 — 양치하기 (Brush Your Teeth)
+# ep02 — (주제 미정) (Brush Your Teeth)
 
-> episode_readme.py 가 생성 (2026-09-30 02:19 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-09-30 04:00 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
 | 항목 | 값 |
 |---|---|
 | 상태 | uploaded |
-| 주제 | 양치하기 / Brush Your Teeth |
+| 주제 |  / Brush Your Teeth |
 | 컷 수 | 24개 (V 22 · S 0 · L 2), 씬 5개 |
-| 사용 크레딧 | 512 / 캡 525 (예상 238.8) |
-| 생성 / 재생성 횟수 | 148 / 16 |
-| 길이 EN | 2:37 (156.6초, 컷 24개, 빌드 2026-09-30T02:10:56+00:00) |
-| 길이 KO | 2:28 (148.4초, 컷 24개, 빌드 2026-09-30T02:16:59+00:00) |
-| 썸네일 | c23 — BRUSH BRUSH! / 치카치카! |
+| 사용 크레딧 | 522.63 / 캡 690 (예상 238.8) |
+| 생성 / 재생성 횟수 | 149 / 16 |
+| 길이 EN | 2:37 (156.6초, 컷 24개, 빌드 2026-09-30T00:47:43+00:00) |
+| 썸네일 | c23 — BRUSH BRUSH! |
 
 ## 아동용(made for kids) 설정
 
 > 이 영상은 YouTube 에서 반드시 **"아동용(made for kids)"** 으로 설정해야 한다 (2~5세 대상 키즈 채널 — 지시서 7단계). upload.py 는 config 와 상관없이 `status.selfDeclaredMadeForKids = true` 로 올린다. Studio 에서 직접 올릴 때는 '예, 아동용입니다'를 선택할 것.
 
 - EN: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (m11xXTqn8T8)
-- KO: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (SvQl6E8mdJk)
 
 ## 업로드 결과 (youtube.json)
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
 | EN | [m11xXTqn8T8](https://www.youtube.com/watch?v=m11xXTqn8T8) | private | — | 2026-09-30T02:19:14Z | ✔ | — |
-| KO | [SvQl6E8mdJk](https://www.youtube.com/watch?v=SvQl6E8mdJk) | private | — | 2026-09-30T02:19:26Z | ✔ | — |
 
 ## 제목·설명·태그
 
@@ -50,32 +47,13 @@ Say it with Momo and brush together every morning and every night!
 #BrushYourTeeth #ToddlerLearning #KidsSongs #NurseryRhymes #MorningRoutine #PreschoolLearning #HealthyHabits #MomoTheBunny #BabySongs #LearnWithMomo
 ```
 
-### KO
-
-- 제목: 양치 동요 | 치카치카 이 닦기 | 아기토끼 모모
-- 태그: 양치 동요, 치카치카, 이 닦기, 유아 동요, 키즈 동요, 생활습관 동요, 아침 습관, 유아 교육, 아기토끼 모모, 양치 습관, 어린이 동요
-- 설명:
-
-```text
-치카치카, 위로 아래로! 아기토끼 모모와 오리 더키가 아침 양치 습관을 알려줘요. 2~5세 아이를 위한 따라 말하기 챈트예요.
-
-오늘 배우는 것:
-1. 칫솔과 콩알만큼의 치약
-2. 윗니는 위로, 아랫니는 아래로 치카치카
-3. 물을 머금고 오물오물, 퉤! 헹구기
-
-아침에도 밤에도 모모랑 같이 이를 닦아요!
-
-#양치동요 #치카치카 #유아동요 #키즈송 #생활습관 #아침습관 #유아교육 #아기토끼모모 #양치습관 #모모랑배워요
-```
-
 ## 생성 기록
 
 | 종류 | 승인 | 시도 | 크레딧 |
 |---|---:|---:|---:|
 | 컷 이미지 | 22/22 | 31 | 62 |
-| V 클립 | 32/32 | 36 | 335.5 |
-| 음성 블록 | 50/50 | 50 | 10 |
+| V 클립 | 22/22 | 24 | 205 |
+| 음성 블록 | 25/25 | 25 | 5 |
 
 라이브러리 L 컷은 0 크레딧 (라이브러리 클립·고정 음성 재사용). 자세한 진행표: `python hf_jobs.py status --ep ep02`
 

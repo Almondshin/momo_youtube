@@ -16,7 +16,8 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .common import AUDIO_EXTS, IMAGE_EXTS, LANGS, LIBRARY_AUDIO, LIBRARY_CLIPS, VIDEO_EXTS, MomoError, Paths
+from .common import (AUDIO_EXTS, IMAGE_EXTS, LANGS, LIBRARY_AUDIO, LIBRARY_CLIPS, VIDEO_EXTS, MomoError, Paths,
+                     active_langs)
 from .episode import tts_blocks
 
 STATUSES = ("pending", "generated", "approved", "rejected")
@@ -181,12 +182,12 @@ def cut_slots(paths: Paths, cfg: dict, ep: str, cut: dict) -> list[Slot]:
     if t in ("V", "S"):
         out.append(Slot(f"{cid} image", "image", "cut", cut, ("gen", "image"), paths.images(ep), cid, cut=cut))
     if t == "V" and cut.get("lipsync"):  # mouth follows the narration → one clip per language
-        for lang in LANGS:
+        for lang in active_langs(cfg):
             out.append(Slot(f"{cid} clip {lang}", "clip", "cut", cut, ("gen", f"clip_{lang}"), paths.clips(ep),
                             f"{cid}_{lang}", cut=cut, lang=lang))
     elif t == "V":
         out.append(Slot(f"{cid} clip", "clip", "cut", cut, ("gen", "clip"), paths.clips(ep), cid, cut=cut))
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         for it in tts_blocks(cut, lang, cfg):
             out.append(Slot(f"{cid} audio {lang} #{it.index}", "audio", "cut", cut, ("audio_src", lang, str(it.index)),
                             paths.audio(ep, lang), f"{cid}_{it.index}", cut=cut, lang=lang, block=it.index,
@@ -211,7 +212,7 @@ def library_slots(paths: Paths, cfg: dict, lib: dict) -> list[Slot]:
                         name=name))
         out.append(Slot(f"library {name} clip", "clip", "lib_clip", e, (), paths.library_clips, name, name=name))
     audio = lib.setdefault("audio", {})
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         for name in LIBRARY_AUDIO:
             e = audio.setdefault(lang, {}).setdefault(name, {"file": f"audio/{lang}/{name}.wav"})
             text = e.get("text") or cfg["fixed_lines"][lang][name]
@@ -330,7 +331,7 @@ def estimate(paths: Paths, cfg: dict, manifest: dict, lib: dict, regen_rate: flo
     lib_clip = [s for s in lslots if s.group == "lib_clip" and needs_generation(s.rec)]
     lib_aud = [s for s in lslots if s.group == "lib_audio" and needs_generation(s.rec)]
     samples = 0
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         if not (cfg.get("voices") or {}).get(lang):
             done = sum(1 for s in lslots if s.group == "voice" and s.lang == lang and s.status != "pending")
             samples += max(0, VOICE_SAMPLES_PER_LANG - done)
@@ -352,7 +353,7 @@ def estimate(paths: Paths, cfg: dict, manifest: dict, lib: dict, regen_rate: flo
     rows += [Row("에피소드", f"컷 이미지 (V {n_v} + S {n_s})", n_v + n_s, img, "image"),
              Row("에피소드", "V 클립", len(need_clips),
                  round(clip_total / len(need_clips), 4) if need_clips else vid, "clip")]
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         rows.append(Row("에피소드", f"나레이션 블록 {lang.upper()}",
                         sum(1 for s in need if s.kind == "audio" and s.lang == lang), aud, "audio"))
 

@@ -39,7 +39,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from .common import (AUDIO_EXTS, CUT_ID_RE, CUT_TYPES, IMAGE_EXTS, LANGS, LIBRARY_AUDIO, LIBRARY_CLIPS,
-                     VIDEO_EXTS, MomoError, Paths, check_ep, find_media, probe_duration)
+                     VIDEO_EXTS, MomoError, Paths, active_langs, check_ep, find_media, probe_duration)
 
 # ---------------------------------------------------------------- 나레이션 마커
 
@@ -234,7 +234,7 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
                 if la not in LIBRARY_AUDIO:
                     E.append(f"{cid}: library_audio 는 {LIBRARY_AUDIO} 중 하나")
                 else:
-                    for lang in LANGS:
+                    for lang in active_langs(cfg):
                         want = cfg["fixed_lines"][lang][la]
                         if spoken_text(c, lang) != want:
                             E.append(f"{cid}: {lang} 나레이션이 고정 문장과 다름 — {want!r} 이어야 함")
@@ -266,7 +266,7 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
                     risk = _word_hit(mo, MOTION_RISK)
                     if risk:
                         W.append(f"{cid}: 모션 지시에 위험 단어 {risk} — 작게, 카메라 고정")
-        for lang in LANGS:
+        for lang in active_langs(cfg):
             spoken = spoken_text(c, lang)
             if lang == "en":
                 words = len(spoken.split())
@@ -304,7 +304,7 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
         W.append(f"씬 {len(scenes)}개 — 목표 {rules['scenes']}개")
 
     # 핵심 단어 반복 (키워드가 나레이션에 최소 N번)
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         all_text = " ".join(spoken_text(c, lang) for c in cuts).lower()
         for kw in sorted({((c.get("keyword") or {}).get(lang) or "").strip() for c in cuts} - {""}):
             cnt = all_text.count(kw.lower())
@@ -315,12 +315,12 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
     th = manifest.get("thumbnail") or {}
     if th.get("cut") and th["cut"] not in ids:
         E.append(f"thumbnail.cut {th['cut']!r} 가 컷 목록에 없음")
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         tt = ((th.get("text") or {}).get(lang) or "").strip()
         if tt and len(tt.split()) > 3:
             W.append(f"썸네일 문구({lang}) 3단어 이하 권장: {tt!r}")
     up = manifest.get("upload") or {}
-    for lang in LANGS:
+    for lang in active_langs(cfg):
         meta = up.get(lang) or {}
         title = meta.get("title") or (manifest.get("title") or {}).get(lang) or ""
         if title:

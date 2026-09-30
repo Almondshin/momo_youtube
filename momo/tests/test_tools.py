@@ -158,6 +158,7 @@ def make_root(tmp: Path, cfg_patch: dict | None = None, assets: bool = True) -> 
     (root / "library").mkdir(parents=True)
     cfg = json.loads((MOMO / "config.json").read_text(encoding="utf-8"))
     cfg["voices"].update({"en": None, "ko": None})
+    cfg["languages"] = ["en", "ko"]  # bilingual coverage; test_english_only checks ["en"]
     wj(root / "config.json", deep_merge(cfg, cfg_patch or {}))
     shutil.copytree(MOMO / "templates", root / "templates")
     lib = fresh_library(rj(MOMO / "library/library.json"))
@@ -423,6 +424,18 @@ def test_plan_lipsync_clips(tmp: Path) -> None:
     next(c for c in m["cuts"] if c["id"] == "c02")["nar_ref"]["ko"] = {"media_id": "x"}
     wj(root / "episodes" / EP / "manifest.json", m)
     fails(validate_manifest, "--root", str(root), "--ep", EP, needle="nar_ref.ko")
+
+
+def test_english_only(tmp: Path) -> None:
+    root = make_root(tmp, {"languages": ["en"]})
+    set_voices(root)
+    p = plan(root, "--ep", EP, "--kind", "audio", "--all")
+    assert p["items"] and {i["params"]["voice_id"] for i in p["items"]} == {"v_en"}, p
+    assert all(" audio en " in i["key"] for i in p["items"]), [i["key"] for i in p["items"]]
+    out = ok(hf_jobs, "status", "--root", str(root), "--ep", EP)
+    assert "음성 EN" in out and "음성 KO" not in out, out
+    est = okj(estimate_credits, "--root", str(root), "--ep", EP, "--json")
+    assert not any("KO" in r["label"] for r in est["rows"]), est["rows"]
 
 
 def test_status_text_json_and_cli(tmp: Path) -> None:
