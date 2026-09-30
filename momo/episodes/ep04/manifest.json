@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "ep": "ep04",
+  "status": "planning",
+  "topic": {
+    "en": "Count to Five",
+    "ko": ""
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": "research",
+    "chosen_axis": "topic: numbers/counting (SSS recent strongest short)"
+  },
+  "characters": [
+    "momo",
+    "ducky"
+  ],
+  "title": {
+    "en": "",
+    "ko": ""
+  },
+  "thumbnail": {
+    "cut": null,
+    "text": {
+      "en": "",
+      "ko": ""
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [
+      "2026-09-30 주제 승인: 숫자 세기 1~5 (Count to Five) — 사용자 선택",
+      "2026-09-30 형식: ep03 과 같은 노래 형식 (Suno Pro 곡, 컷 1~3마디, 립싱크 + 움직임 + 재사용)"
+    ],
+    "next_time": []
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "library_clip": "intro_wave",
+      "library_audio": "intro",
+      "narration": {
+        "en": "Hi friends! It's Momo!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 5,
+      "type": "L",
+      "library_clip": "outro_bye",
+      "library_audio": "outro",
+      "narration": {
+        "en": "Bye-bye, friends! See you next time!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    }
+  ]
+}

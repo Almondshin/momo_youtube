@@ -421,6 +421,17 @@ forbid bots). Steps (all local, 0 Higgsfield credits until 6):
 7. `song_track.py status --approve` once the song is final, then build / publish as usual (the runner restores
    the song and stems from the release assets).
 
+Lessons from ep03 (apply from ep04):
+- Lyrics start with `[Intro - 2 bars, ukulele and hand claps]` so the library greeting has room (the ep03 Suno take
+  sang from 1.6 s and the intro line had to go).
+- Suno stems are optional — `demucs --two-stems vocals -n htdemucs_ft` on the Mac gives vocals + instrumental.
+- Image prompts for songs: no "clear empty wall space in the upper third" (captions sit at the bottom; it caused flat
+  bands) and no "holding X up high" framings (twice a stacked double-frame seam). Object close-ups name the set
+  ("the pastel kitchen with mint cabinets softly blurred behind") so backgrounds match.
+- Lip-sync refs upload straight to Higgsfield (`media_upload` presigned PUT, mp3) — no public hosting needed until
+  publish; refs shorter than 3 s are padded (wan2_7 failed twice on a 1.93 s reference).
+- Failed generations are not charged: reconcile `credits.spent` with `balance` at the end.
+
 ---
 
 ## 6. 조립 (6단계)
