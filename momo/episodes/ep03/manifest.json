@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep03",
-  "status": "producing",
+  "status": "assembled",
   "topic": {
     "en": "Crunchy Veggies",
     "ko": ""
@@ -1589,7 +1589,7 @@
     "track": {
       "status": "approved",
       "job_id": "local:8b075ba23718",
-      "url": null,
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_song_8b075ba2.flac",
       "attempts": 1,
       "credits": 0,
       "reason": "사용자 선택: Suno v1 (기획 승인과 함께)",
@@ -1602,7 +1602,7 @@
       "history": [
         {
           "job_id": "local:8b075ba23718",
-          "url": null,
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_song_8b075ba2.flac",
           "status": "approved",
           "reason": "사용자 선택: Suno v1 (기획 승인과 함께)",
           "at": "2026-09-30T07:50Z",
@@ -1707,7 +1707,7 @@
     "vocals": {
       "status": "approved",
       "job_id": "local:35154f159fbb",
-      "url": null,
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_song_vocals_35154f15.flac",
       "attempts": 1,
       "credits": 0,
       "reason": "사용자 선택: Suno v1 (기획 승인과 함께)",
@@ -1716,7 +1716,7 @@
       "history": [
         {
           "job_id": "local:35154f159fbb",
-          "url": null,
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_song_vocals_35154f15.flac",
           "status": "approved",
           "reason": "사용자 선택: Suno v1 (기획 승인과 함께)",
           "at": "2026-09-30T07:50Z",
@@ -2876,6 +2876,23 @@
           ]
         ]
       }
-    ]
+    ],
+    "refs_urls": {
+      "c01_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c01_en_370dbca4.wav",
+      "c04_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c04_en_01bd88f2.wav",
+      "c05_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c05_en_101435b1.wav",
+      "c06_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c06_en_378e9900.wav",
+      "c07_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c07_en_5dbcb931.wav",
+      "c10_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c10_en_e479e42e.wav",
+      "c12_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c12_en_e2748911.wav",
+      "c13_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c13_en_a1af02a1.wav",
+      "c14_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c14_en_2e0c270a.wav",
+      "c15_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c15_en_e10e332b.wav",
+      "c18_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c18_en_2a024abc.wav",
+      "c22_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c22_en_1cc2e18c.wav",
+      "c23_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c23_en_1dbb5ede.wav",
+      "c27_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c27_en_60cfda70.wav",
+      "c30_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep03/ep03_ref_c30_en_44f48a86.wav"
+    }
   }
 }
