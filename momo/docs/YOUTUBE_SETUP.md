@@ -30,7 +30,11 @@ Google Cloud 프로젝트 ─ YouTube Data API v3 사용
 2. 범위(데이터 액세스): `https://www.googleapis.com/auth/youtube.upload`, `https://www.googleapis.com/auth/youtube`
    (후자는 재생목록 추가용).
 3. 테스트 사용자: 채널을 소유·관리하는 본인 구글 계정을 추가.
-4. **게시 상태를 "프로덕션(In production)"으로 바꾼다.** "테스트(Testing)" 상태 앱의 refresh token 은
+4. 프로덕션 게시에는 브랜딩의 **앱 이름·지원 이메일·홈페이지 URL·개인정보처리방침 URL** 이 필요하다. 저장소 `docs/` 에
+   페이지가 있다 — Settings → Pages → Deploy from a branch → (기본 브랜치) `/docs` → Save 후:
+   홈페이지 `https://almondshin.github.io/momo_youtube/`, 개인정보처리방침 `…/privacy.html`, 서비스 약관 `…/terms.html`,
+   승인된 도메인 `almondshin.github.io`. **로고는 올리지 않는다** (로고가 있으면 게시 전에 인증 심사가 필요).
+5. **게시 상태를 "프로덕션(In production)"으로 바꾼다.** "테스트(Testing)" 상태 앱의 refresh token 은
    **7일 뒤 만료**되어 그 뒤 업로드가 `invalid_grant` 로 실패한다.
    - 민감한 범위라서 Google 검증을 요구하는 안내가 뜰 수 있다. 본인만 쓰는 앱은 검증 없이도 쓸 수 있고,
      로그인 때 "Google 에서 확인하지 않은 앱" 화면이 나오면 고급 → (앱 이름)(으)로 이동을 누른다
