@@ -12,6 +12,9 @@ Thumbs.db
 
 # 비밀 정보 — 절대 커밋하지 말 것 (YouTube OAuth 토큰, client_secret 등)
 momo/.secrets/
+.env
+.env.local
+.env.*.local
 client_secret*.json
 *.token.json
 
