@@ -443,6 +443,13 @@ Lessons from ep04 (apply from ep05):
 - Lip-sync close-ups: a paw raised near the head can hide an ear (c20) — keep the paw "beside the cheek below the
   ear" and add "both long ears fully visible". Mid-air jump stills lift an ear — use "knees bent, ready to jump".
 - A declined Higgsfield preset suggestion submits nothing; resend the same item with `declined_preset_id`.
+- ep04 v1 felt unnatural (user): 51 one-bar cuts, the picture changed on the bar line while lines start ~0.4–0.8 s
+  earlier (pickups), and 29 cuts had singing with Momo's mouth closed. v2 (the format from ep05 on):
+  - cuts start on each sung line (`cut_at` ≈ first word − 0.1 s — check the vocal stem, the aligner can be 0.3 s off);
+  - every shot where Momo is visible is a wan2_7 lip-sync clip with the action in the prompt (sings + claps/hops);
+  - chorus lines are paired into 3.5–4 s shots; object shots use the whole motion clip;
+  - reused lip-sync takes are placed by cross-correlating the vocal-stem loudness with the source window
+    (chorus 3 was sung 0.3–0.46 s later than the aligner said).
 
 ---
 
