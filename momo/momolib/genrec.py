@@ -6,6 +6,7 @@ GenRec = {"status": "pending|generated|approved|rejected", "job_id", "url", "att
   lip-synced V cuts (cut.lipsync) have one clip per language instead: cut.gen.clip_en / cut.gen.clip_ko
 - 라이브러리(library.json): character_sheets[name], clips[name].image(시작 이미지)와 clips[name](클립),
   audio[lang][intro|outro], voice_samples[] — 초기값 "missing" 은 pending 으로 본다.
+- song episodes: manifest.song.music (AI instrumental, generate_audio sonilo_music)
 - Slot = GenRec 하나의 위치(어느 dict 의 어느 경로) + 내려받을 파일 이름 규칙.
 """
 from __future__ import annotations
@@ -80,6 +81,15 @@ def clip_cost(cfg: dict, cut: dict | None, lang: str | None = None) -> float:
     if rate is None:
         return video_cost(cfg)
     return round(float(rate) * clip_seconds(cfg, cut, lang), 4)
+
+
+def music_cost(cfg: dict, rec: dict | None) -> float:
+    """AI instrumental credits: per-second rate of its model × requested duration (rec.model / rec.duration)."""
+    rec = rec or {}
+    rate = (cfg["higgsfield"]["unit_costs"].get("per_second") or {}).get(rec.get("model") or "sonilo_music")
+    if rate is None or not rec.get("duration"):
+        raise MomoError("반주 크레딧을 계산할 수 없음 — --credits 로 get_cost 값을 줄 것")
+    return round(float(rate) * float(rec["duration"]), 4)
 
 
 def episode_cap(cfg: dict, manifest: dict | None) -> float:
@@ -195,8 +205,17 @@ def cut_slots(paths: Paths, cfg: dict, ep: str, cut: dict) -> list[Slot]:
     return out
 
 
+def song_slots(paths: Paths, manifest: dict) -> list[Slot]:
+    """manifest.song.music — the AI instrumental of a song episode → episodes/<ep>/audio/music.<ext>."""
+    song = manifest.get("song")
+    if not isinstance(song, dict):
+        return []
+    return [Slot("song music", "audio", "song", song, ("music",), paths.ep(manifest["ep"]) / "audio", "music")]
+
+
 def episode_slots(paths: Paths, cfg: dict, manifest: dict) -> list[Slot]:
-    return [s for c in manifest.get("cuts") or [] for s in cut_slots(paths, cfg, manifest["ep"], c)]
+    return [s for c in manifest.get("cuts") or [] for s in cut_slots(paths, cfg, manifest["ep"], c)] \
+        + song_slots(paths, manifest)
 
 
 def library_slots(paths: Paths, cfg: dict, lib: dict) -> list[Slot]:

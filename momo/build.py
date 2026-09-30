@@ -97,7 +97,9 @@ def make_segs(plans: list[CutPlan], cfg: dict, tmp: Path, font: Path) -> list[Se
         seg.key = hashlib.sha1(json.dumps({
             "v": SEG_VERSION, "type": p.type, "kind": p.source_kind, "src": file_sig(p.source), "fill": seg.fill,
             "frames": frames, "inset": p.inset, "kb": kb, "kw": p.keyword, "pos": p.text_pos,
-            "color": p.text_color, "text_at": seg.text_at_f, "font": file_sig(font) if p.keyword else None,
+            "color": p.text_color, "text_at": seg.text_at_f,
+            "font": file_sig(font) if (p.keyword or p.lyrics or p.card) else None,
+            "lyrics": [[t, round(s, 4), round(d, 4), round(u, 4)] for t, s, d, u in p.lyrics], "card": p.card,
             "card": card_lines(p) if p.source_kind == "placeholder" else None,
             "render": {k: r[k] for k in render_keys}}, sort_keys=True, default=str).encode()).hexdigest()
         segs.append(seg)
@@ -117,18 +119,31 @@ def resolve_inset(p: CutPlan, cfg: dict, sample) -> float:
     return float(cfg["render"]["inset_default"]) if render.detect_border(sample()) else 0.0
 
 
+def song_overlay(p: CutPlan) -> bool:
+    """Song lyrics / word card: a full-frame overlay sequence from frame 0 instead of the keyword band."""
+    return bool(p.lyrics or p.card)
+
+
 def overlay_graph(base: str, seg: Seg, cfg: dict, kw_input: int | None) -> str:
     """base 체인(라벨 없음) 뒤에 키워드 overlay 를 붙여 [v] 로 끝나는 그래프."""
     if kw_input is None:
         return base + ",format=yuv420p[v]"
-    y, _ = render.band_geometry(cfg, seg.plan.text_pos)
-    at = seg.text_at_f / int(cfg["render"]["fps"])
+    if song_overlay(seg.plan):
+        y, at = 0, 0.0
+    else:
+        y, _ = render.band_geometry(cfg, seg.plan.text_pos)
+        at = seg.text_at_f / int(cfg["render"]["fps"])
     return (f"{base}[base];[{kw_input}:v]scale={TO_709},format=yuva420p,setpts=PTS-STARTPTS+{at:.6f}/TB[kw];"
             f"[base][kw]overlay=0:{y}:eof_action=repeat:format=yuv420,format=yuv420p[v]")
 
 
 def keyword_inputs(seg: Seg, cfg: dict, font: Path, work: Path) -> list[str]:
     p = seg.plan
+    if song_overlay(p):
+        card_at = float((p.card or {}).get("at", 0.3))
+        pattern = render.render_song_overlay(p.lyrics, p.card, card_at, font, cfg, seg.frames, work / f"ov_{p.id}")
+        return [] if pattern is None else ["-framerate", str(cfg["render"]["fps"]), "-start_number", "0",
+                                           "-i", str(pattern)]
     frames = render.render_keyword_frames(p.keyword, font, cfg, p.text_pos, p.text_color, work / f"kw_{p.id}")
     if not frames:
         return []
@@ -441,7 +456,11 @@ def write_timeline(paths, ep: str, lang: str, plans, segs, total: float, fps: in
                      "keyword": p.keyword, "text_at": round(p.text_at, 3), "text_pos": p.text_pos,
                      "source": rel(paths, p.source), "source_kind": p.source_kind,
                      "estimated_audio": p.estimated_audio, "inset": s.info.get("inset"),
-                     "render": s.info.get("mode")})
+                     "render": s.info.get("mode"),
+                     **({"lyrics": [{"text": t, "at": round(a, 3), "sung": round(d, 3),
+                                     "tempo": k} for (t, a, d, _), k in zip(p.lyrics, p.block_tempos)]}
+                        if p.lyrics else {}),
+                     **({"card": p.card} if p.card else {})})
     data = {"ep": ep, "lang": lang, "fps": fps, "total": round(total, 4), "total_frames": int(round(total * fps)),
             "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "cuts": cuts,
             "warnings": warnings, **extra}
@@ -504,7 +523,7 @@ def main() -> int:
 
     plans, total, pwarn = plan_timeline(paths, cfg, manifest, lang, allow_missing=args.allow_missing)
     font = find_font(paths, cfg, "keyword", need_hangul=(lang == "ko"))
-    if audio.find_bgm(paths, cfg, manifest) is None and not args.allow_missing:
+    if not manifest.get("song") and audio.find_bgm(paths, cfg, manifest) is None and not args.allow_missing:
         raise MomoError(f"BGM 없음: assets/bgm/ 에 BGM 을 넣어줘 ({paths.bgm})")
     log(f"▶ {ep} [{lang}] 컷 {len(plans)}개, 총 {mmss(total)} ({int(round(total * fps))}프레임), 폰트 {font.name}")
     for w in pwarn:

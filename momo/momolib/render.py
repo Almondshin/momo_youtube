@@ -3,6 +3,8 @@
 - 크롭-투-필 (비율 유지 확대 후 중앙 크롭, 레터박스 금지) + 테두리 인셋
 - detect_border(): 이미지 가장자리 테두리 프레임 자동 감지 (보수적)
 - render_keyword_frames(): 키워드 팝 애니메이션 RGBA 밴드 PNG 시퀀스
+- render_song_overlay(): karaoke lyric line (words light up as they are sung) + word card, full-frame RGBA PNG
+  sequence (one PNG per distinct state, hard links for repeated frames)
 - kenburns_frames(): S 컷 켄번즈 프레임 (Pillow float 정밀도, rawvideo rgb24 로 ffmpeg 에 파이프)
 - make_thumbnail(), placeholder_card(), contact_sheet()
 - ffmpeg 영상 헬퍼: 프레임 추출, 색공간(bt709) 인자, 출력 검증
@@ -230,6 +232,177 @@ def render_keyword_frames(text: str, font_path: Path, cfg: dict, pos: str, color
         canvas.save(p, compress_level=1)
         paths.append(p)
     return paths
+
+
+# ---------------------------------------------------------------- 노래 가사 (karaoke) + 단어 카드
+
+LYRIC_SUNG = (255, 216, 59)       # yellow — words already sung
+LYRIC_TODO = (255, 255, 255)      # white — words still to come
+LYRIC_LEAD = 0.25                 # the line appears this long before it is sung
+CARD_WORD = (34, 150, 110)        # mint green word on a white card
+CARD_TEXT = (60, 60, 72)
+
+
+def _wrap_words(words: list[str], font: ImageFont.FreeTypeFont, stroke: int, max_w: float) -> list[list[int]]:
+    """Word indices per line — one line if it fits, else two lines split near the middle of the width."""
+    space = _width(font, "a a", stroke) - _width(font, "aa", stroke)
+    widths = [_width(font, w, stroke) for w in words]
+    if sum(widths) + space * (len(words) - 1) <= max_w or len(words) < 2:
+        return [list(range(len(words)))]
+    total = sum(widths)
+    acc, cut = 0, 1
+    for i, w in enumerate(widths):
+        acc += w
+        if acc >= total / 2:
+            cut = max(1, min(len(words) - 1, i + 1))
+            break
+    return [list(range(cut)), list(range(cut, len(words)))]
+
+
+class LyricLine:
+    """One lyric line laid out once; image(n) draws it with the first n words lit."""
+
+    def __init__(self, text: str, font_path: Path, cfg: dict):
+        r = cfg["render"]
+        W, H = int(r["width"]), int(r["height"])
+        self.words = text.split()
+        glyph_h = H * 0.055
+        font, stroke = fit_font(font_path, [text], glyph_h, W * 1.6, float(r["text_stroke_ratio"]) * 0.8)
+        lines = _wrap_words(self.words, font, stroke, W * 0.86)
+        while len(lines) > 1 and font.size > glyph_h * 0.6 and \
+                max(_width(font, " ".join(self.words[i] for i in ln), stroke) for ln in lines) > W * 0.86:
+            font = load_font(font_path, font.size * 0.92)
+            stroke = max(2, int(round(font.size * float(r["text_stroke_ratio"]) * 0.8)))
+        self.font, self.stroke = font, stroke
+        self.lines = lines
+        self.space = _width(font, "a a", stroke) - _width(font, "aa", stroke)
+        asc, desc = font.getmetrics()
+        self.line_h = asc + desc + stroke * 2
+        chars = [len(w) + 1 for w in self.words]
+        total = float(sum(chars)) or 1.0
+        self.word_at = [sum(chars[:i]) / total for i in range(len(self.words))]  # share of the line before word i
+
+    def lit(self, progress: float) -> int:
+        """Words lit at this share of the line's sung time (a word lights when it starts)."""
+        return sum(1 for a in self.word_at if progress >= a - 1e-9)
+
+    def _row(self, idx: list[int], n_lit: int) -> Image.Image:
+        """One row on a shared baseline: the whole row outlined once, each word filled in its own colour."""
+        words = [self.words[i] for i in idx]
+        text = " ".join(words)
+        base = text_image(text, self.font, LYRIC_TODO, self.stroke)
+        l, t, _, _ = self.font.getbbox(text, stroke_width=self.stroke)
+        org = (4 - l, 4 - t)  # same origin text_image used
+        d = ImageDraw.Draw(base)
+        x = 0.0
+        for i, w in zip(idx, words):
+            if i < n_lit:
+                d.text((org[0] + x, org[1]), w, font=self.font, fill=LYRIC_SUNG)
+            x += self.font.getlength(w + " ")
+        return base
+
+    def image(self, n_lit: int) -> Image.Image:
+        rows = [self._row(ln, n_lit) for ln in self.lines]
+        pad_x, pad_y = int(self.font.size * 0.6), int(self.font.size * 0.25)
+        w = max(r.width for r in rows) + 2 * pad_x
+        h = sum(r.height for r in rows) + 2 * pad_y
+        pill = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        ImageDraw.Draw(pill).rounded_rectangle((0, 0, w - 1, h - 1), radius=h // 2 if len(rows) == 1 else pad_x,
+                                               fill=(20, 24, 40, 120))
+        y = pad_y
+        for r in rows:
+            pill.alpha_composite(r, ((w - r.width) // 2, y))
+            y += r.height
+        return pill
+
+
+def card_image(card: dict, font_path: Path, cfg: dict) -> Image.Image:
+    """Word card: the word big (mint), a short explanation under it, on a rounded white card with a soft shadow."""
+    r = cfg["render"]
+    W, H = int(r["width"]), int(r["height"])
+    cw = int(W * 0.30)
+    word = str(card.get("word") or "").strip().upper()
+    text = str(card.get("text") or "").strip()
+    wfont, _ = fit_font(font_path, [word], H * 0.06, cw * 0.84, 0.0)
+    tfont = load_font(font_path, H * 0.034)
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        nxt = (cur + " " + w).strip()
+        if cur and tfont.getlength(nxt) > cw * 0.84:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = nxt
+    if cur:
+        lines.append(cur)
+    asc, desc = tfont.getmetrics()
+    wl, wt, wr, wb = wfont.getbbox(word)
+    pad = int(cw * 0.08)
+    ch = pad + (wb - wt) + (int(pad * 0.7) + len(lines) * int((asc + desc) * 1.1) if lines else 0) + pad
+    shadow = int(pad * 0.5)
+    im = Image.new("RGBA", (cw + 2 * shadow, ch + 2 * shadow), (0, 0, 0, 0))
+    sh = Image.new("L", im.size, 0)
+    ImageDraw.Draw(sh).rounded_rectangle((shadow, shadow + shadow // 2, shadow + cw, shadow + ch + shadow // 2),
+                                         radius=pad, fill=90)
+    im.putalpha(sh.filter(ImageFilter.GaussianBlur(shadow / 2)))
+    d = ImageDraw.Draw(im)
+    d.rounded_rectangle((shadow, shadow, shadow + cw, shadow + ch), radius=pad, fill=(255, 255, 255, 242))
+    d.text((shadow + (cw - (wr - wl)) // 2 - wl, shadow + pad - wt), word, font=wfont, fill=CARD_WORD)
+    y = shadow + pad + (wb - wt) + int(pad * 0.7)
+    for ln in lines:
+        d.text((shadow + (cw - tfont.getlength(ln)) // 2, y), ln, font=tfont, fill=CARD_TEXT)
+        y += int((asc + desc) * 1.1)
+    return im
+
+
+def render_song_overlay(lines: list[tuple[str, float, float, float]], card: dict | None, card_at: float,
+                        font_path: Path, cfg: dict, frames: int, out_dir: Path) -> Path | None:
+    """Full-frame RGBA PNG sequence ov_%05d.png for one segment, or None when there is nothing to draw.
+
+    lines = [(text, start, sung_len, shown_until)] in seconds from the segment start. Words light up in
+    proportion to their characters over sung_len. The card pops in at card_at (left, or card.pos == "right").
+    Identical frames are hard links to one rendered PNG.
+    """
+    r = cfg["render"]
+    W, H, fps = int(r["width"]), int(r["height"]), int(r["fps"])
+    lines = [ln for ln in lines if ln[0].strip()]
+    if not lines and not card:
+        return None
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for old in out_dir.glob("ov_*.png"):
+        old.unlink()
+    lays = [LyricLine(t, font_path, cfg) for t, *_ in lines]
+    card_im = card_image(card, font_path, cfg) if card else None
+    n_pop = max(2, int(round(float(r["text_pop_seconds"]) * fps)) + 1)
+    rendered: dict[tuple, Path] = {}
+    lyric_y = int(H * 0.965)
+    for fi in range(frames):
+        t = fi / fps
+        li, lit = -1, 0
+        for i, (_, s, sung, until) in enumerate(lines):
+            if s - LYRIC_LEAD <= t < until:
+                li, lit = i, lays[i].lit((t - s) / sung if sung > 0 and t >= s else -1.0)
+        pop = -1 if card_im is None or t < card_at else min(n_pop - 1, int((t - card_at) * fps))
+        key = (li, lit, pop)
+        if key not in rendered:
+            canvas = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+            if pop >= 0:
+                scale, alpha = pop_curve(pop / (n_pop - 1))
+                im = card_im if scale == 1.0 else card_im.resize(
+                    (max(1, round(card_im.width * scale)), max(1, round(card_im.height * scale))), Image.LANCZOS)
+                if alpha < 1.0:
+                    im = im.copy()
+                    im.putalpha(im.getchannel("A").point(lambda v, a=alpha: int(v * a + 0.5)))
+                cx = int(W * 0.80) if (card or {}).get("pos") == "right" else int(W * 0.20)
+                canvas.alpha_composite(im, (cx - im.width // 2, int(H * 0.40) - im.height // 2))
+            if li >= 0:
+                im = lays[li].image(lit)
+                canvas.alpha_composite(im, ((W - im.width) // 2, lyric_y - im.height))
+            p = out_dir / f"state_{len(rendered):03d}.png"
+            canvas.save(p, compress_level=1)
+            rendered[key] = p
+        (out_dir / f"ov_{fi:05d}.png").hardlink_to(rendered[key])
+    return out_dir / "ov_%05d.png"
 
 
 # ---------------------------------------------------------------- 켄번즈

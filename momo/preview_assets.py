@@ -23,7 +23,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from momolib.common import EP_RE, LANGS, add_root_arg, get_paths, load_config, load_json, main_wrapper  # noqa: E402
-from momolib.episode import narration_items  # noqa: E402
+from momolib.episode import narration_items, place_song_lines, song_grid  # noqa: E402
 
 def iter_records(paths, only_ep: str | None):
     """(이름, kind, GenRec) — kind: image | video | audio."""
@@ -56,6 +56,8 @@ def iter_records(paths, only_ep: str | None):
             # 재생성 비교용: 직전 시도도 같이 (history 마지막 2개)
             for j, h in enumerate((gen.get("image") or {}).get("history", [])[-3:-1]):
                 yield f"{ep}/{c['id']}_image_prev{j}", "image", h
+        if isinstance(m.get("song"), dict) and isinstance(m["song"].get("music"), dict):
+            yield f"{ep}/song_music", "audio", m["song"]["music"]
 
 
 def fetch(url: str, dest: Path) -> None:
@@ -98,14 +100,28 @@ def preview_video(src: Path, out: Path) -> str:
     return f"{st.get('width')}x{st.get('height')} {st.get('r_frame_rate')} {dur:.2f}s"
 
 
+def song_vocal(c: dict, items, files: list[Path], song: dict, dst: Path) -> None:
+    """Song cut → its lyric lines placed on their beats (trimmed, sped up) from the first line, as build does."""
+    from momolib import audio
+    lens = [audio.speech_length(f) for f in files]
+    _, bar = song_grid(song)
+    starts, tempos, _ = place_song_lines(c, items, lens, song, int(c.get("bars") or 1) * bar)
+    audio.write_wav(dst, audio.cut_vocal(files, starts, tempos, 44100), 44100, codec="pcm_s16le")
+
+
 def narration_refs(paths, cfg, raws: dict[str, Path], out: Path, only_ep: str | None):
-    """Lip-sync cuts with several speech blocks: yield (name, wav, block jobs) — the blocks joined with their
-    [pause] silences exactly as build lays them out, so one file can be the clip's audio_references."""
+    """Lip-sync cuts: yield (name, wav, block jobs) for the clip's audio_references.
+
+    Several speech blocks → the blocks joined with their [pause] silences exactly as build lays them out.
+    Song episodes → every lip-sync cut: its lines on their beats from the first line (song_vocal).
+    """
     for mpath in sorted(paths.episodes.glob("*/manifest.json")):
         ep = mpath.parent.name
         if not EP_RE.match(ep) or (only_ep and ep != only_ep):
             continue
-        for c in load_json(mpath).get("cuts", []):
+        m = load_json(mpath)
+        song = m.get("song") if isinstance(m.get("song"), dict) and m["song"].get("bpm") else None
+        for c in m.get("cuts", []):
             if not c.get("lipsync"):
                 continue
             for lang in LANGS:
@@ -113,7 +129,14 @@ def narration_refs(paths, cfg, raws: dict[str, Path], out: Path, only_ep: str | 
                 speech = [it for it in items if it.kind == "speech"]
                 recs = (c.get("audio_src") or {}).get(lang) or {}
                 files = [raws.get(f"{ep}/{c['id']}_audio_{lang}_{it.index}") for it in speech]
-                if len(speech) < 2 or not all(files):
+                if not speech or not all(files):
+                    continue
+                if song:
+                    name = f"{ep}/{c['id']}_nar_{lang}"
+                    song_vocal(c, items, files, song, out / f"{name}.wav")
+                    yield name, out / f"{name}.wav", [(recs.get(str(it.index)) or {}).get("job_id") for it in speech]
+                    continue
+                if len(speech) < 2:
                     continue
                 cmd, parts, k = ["ffmpeg", "-v", "error", "-y"], [], 0
                 for it in items:
@@ -169,6 +192,16 @@ def main() -> int:
         except Exception as e:  # 하나 실패해도 나머지는 계속
             index.append({"name": name, "kind": kind, "error": str(e)[:300]})
             print(f"✖ {name}: {e}", file=sys.stderr)
+    for name, raw in raws.items():  # song episodes: tempo / beat grid of the AI instrumental
+        if name.endswith("/song_music"):
+            try:
+                from momolib import audio
+                m = load_json(paths.manifest(name.split("/")[0]))
+                ana = audio.detect_beats(raw, float(m["song"]["bpm"]))
+                index.append({"name": f"{name}_analysis", "kind": "analysis", "analysis": ana})
+                print(f"✔ {name} analysis {ana}")
+            except Exception as e:  # noqa: BLE001
+                print(f"✖ {name} analysis: {e}", file=sys.stderr)
     nars: dict[str, Path] = {}
     try:
         for name, wav, jobs in narration_refs(paths, cfg, raws, out, args.ep):

@@ -20,6 +20,7 @@ Claude 는 plan 이 주는 {"tool", "params"} 를 MCP 도구에 그대로 넘기
   python hf_jobs.py record --library intro --kind audio --lang en ...
   python hf_jobs.py record --sheet momo ...
   python hf_jobs.py record --voice-sample v1 --lang en --status approved    # config.voices.en 에 고정
+  python hf_jobs.py record --ep ep02 --song-music --job-id J --url U --status generated   # AI 반주
   python hf_jobs.py narref --ep ep02 --cut c13 --lang en --media-id M     # 여러 블록 립싱크 컷
   python hf_jobs.py status --ep ep02 [--library] [--json]
 
@@ -44,7 +45,7 @@ from momolib.common import (LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoError, P
 from momolib.episode import compose_image_prompt, compose_motion_prompt, tts_blocks  # noqa: E402
 from momolib.genrec import (KIND_EXTS, NA, SYMBOL, Slot, add_credits, apply_record, char_tags,  # noqa: E402
                             characters_used, clip_cost, clip_seconds, cut_slots, element_prefix, episode_cap,
-                            episode_slots,
+                            episode_slots, music_cost, song_slots,
                             estimate, library_slots, needs_generation, now_iso, status_of, stop_message,
                             unit_cost)
 
@@ -144,7 +145,7 @@ def plan_episode(paths: Paths, cfg: dict, args) -> dict:
         raise MomoError(f"manifest 에 없는 컷: {unknown}")
     lang = check_lang(args.lang) if args.lang else None
     items, review, blocked = [], [], []
-    slots = [s for s in episode_slots(paths, cfg, m) if s.kind == args.kind
+    slots = [s for s in episode_slots(paths, cfg, m) if s.kind == args.kind and s.group == "cut"
              and (not want or s.cut["id"] in want) and (lang is None or s.lang in (None, lang))]
     for cid in want:
         if not any(s.cut["id"] == cid for s in slots):
@@ -200,6 +201,7 @@ def clip_links(cfg: dict, m: dict, s: Slot) -> tuple[str | None, str | None, str
     cut.end_frame = "c11" → that cut's approved image is the end frame (continuous hand-off).
     Lip-sync clips use the language's approved narration as audio_references: the block's own job for one
     block, else cut.nar_ref.<lang> (all blocks + [pause] silences in one file, imported — see cmd_narref).
+    Song episodes always use nar_ref: the lines trimmed and placed on their beats (preview_assets.song_vocal).
     """
     end_job = None
     ef = s.cut.get("end_frame")
@@ -214,11 +216,13 @@ def clip_links(cfg: dict, m: dict, s: Slot) -> tuple[str | None, str | None, str
     jobs = nar_jobs(cfg, s.cut, s.lang)
     if not jobs:
         return None, None, f"{s.lang} 나레이션 승인 전 — 립싱크는 승인된 음성으로만"
-    if len(jobs) == 1:
+    song = isinstance(m.get("song"), dict)
+    if len(jobs) == 1 and not song:
         return end_job, jobs[0], None
     ref = (s.cut.get("nar_ref") or {}).get(s.lang) or {}
     if not ref.get("media_id") or ref.get("blocks") != jobs:
-        return None, None, (f"{s.lang} 음성 블록 {len(jobs)}개 — 합친 나레이션 필요: momo-previews 의 "
+        what = "노래 컷 — 박자에 맞춘 가사" if song else f"음성 블록 {len(jobs)}개 — 합친 나레이션"
+        return None, None, (f"{s.lang} {what} 필요: momo-previews 의 "
                             f"{s.cut['id']}_nar_{s.lang}.wav → media_import_url → hf_jobs.py narref")
     return end_job, ref["media_id"], None
 
@@ -446,7 +450,11 @@ def cmd_record(paths: Paths, cfg: dict, args) -> int:
         raise MomoError("대상은 --cut / --library / --sheet / --voice-sample 중 하나")
     m = load_manifest(paths, check_ep(args.ep)) if args.ep else None
     lib = None
-    if args.cut:
+    if args.song_music:
+        if m is None or not isinstance(m.get("song"), dict):
+            raise MomoError("--song-music 에는 manifest.song 이 있는 --ep 필요")
+        slot = song_slots(paths, m)[0]
+    elif args.cut:
         if m is None:
             raise MomoError("--cut 에는 --ep 필요")
         slot = cut_slot(paths, cfg, m, args)
@@ -457,6 +465,8 @@ def cmd_record(paths: Paths, cfg: dict, args) -> int:
         cost = float(args.credits)
     elif slot.kind == "clip" and slot.cut is not None:
         cost = clip_cost(cfg, slot.cut, slot.lang)
+    elif slot.group == "song":
+        cost = music_cost(cfg, slot.rec)
     else:
         cost = unit_cost(cfg, slot.kind)
     extra = None
@@ -645,7 +655,7 @@ def cmd_narref(paths: Paths, cfg: dict, args) -> int:
     if not cut.get("lipsync"):
         raise MomoError(f"{args.cut}: lipsync 컷이 아님")
     jobs = nar_jobs(cfg, cut, lang)
-    if len(jobs) < 2:
+    if len(jobs) < (1 if isinstance(m.get("song"), dict) else 2):
         raise MomoError(f"{args.cut} {lang}: 승인된 음성 블록 {len(jobs)}개 — 합친 나레이션은 블록 2개 이상 + 전부 승인일 때만")
     cut.setdefault("nar_ref", {})[lang] = {"media_id": args.media_id, "blocks": jobs, "at": now_iso()}
     save_json(paths.manifest(ep), m)
@@ -707,6 +717,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--library", metavar="NAME", help="intro_wave … (image|clip) 또는 intro|outro (audio)")
     p.add_argument("--sheet", metavar="NAME")
     p.add_argument("--voice-sample", metavar="VOICE_ID")
+    p.add_argument("--song-music", action="store_true", help="manifest.song.music (AI 반주)")
     p.add_argument("--kind", choices=["image", "clip", "audio"])
     p.add_argument("--lang")
     p.add_argument("--block", type=int)

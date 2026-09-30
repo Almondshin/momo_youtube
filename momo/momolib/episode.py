@@ -293,6 +293,32 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
             v = c.get(k)
             if v is not None and (not isinstance(v, (int, float)) or isinstance(v, bool) or not 0 <= v <= 5):
                 E.append(f"{cid}: {k} 는 0~5 초")
+        card = c.get("card")
+        if card is not None and not (isinstance(card, dict) and str(card.get("word") or "").strip()):
+            E.append(f"{cid}: card 는 {{\"word\": \"TOOTHBRUSH\", \"text\": \"It cleans our teeth!\"}}")
+        if isinstance(manifest.get("song"), dict):
+            bars = c.get("bars")
+            if not isinstance(bars, int) or isinstance(bars, bool) or not 1 <= bars <= 16:
+                E.append(f"{cid}: song 에피소드는 컷마다 bars (1~16 정수) 필요")
+            beats = c.get("beats")
+            if beats is not None and not (isinstance(beats, list) and all(
+                    isinstance(b, (int, float)) and not isinstance(b, bool) and b >= 0 for b in beats)):
+                E.append(f"{cid}: beats 는 가사 줄마다 시작 박 번호 목록 (예: [0, 8])")
+
+    song = manifest.get("song")
+    if song is not None:
+        if not isinstance(song, dict):
+            E.append("song 은 {bpm, beats_per_bar, music} 객체")
+        else:
+            bpm = song.get("bpm")
+            if not isinstance(bpm, (int, float)) or not 60 <= bpm <= 180:
+                E.append("song.bpm 은 60~180")
+            if song.get("beats_per_bar") not in (None, 2, 3, 4, 6):
+                E.append("song.beats_per_bar 는 2|3|4|6")
+            ana = (song.get("music") or {}).get("analysis")
+            if ana is not None and not (isinstance(ana, dict) and all(
+                    isinstance(ana.get(k), (int, float)) for k in ("bpm", "downbeat0"))):
+                E.append("song.music.analysis 는 {bpm, downbeat0} (preview_assets 가 계산)")
 
     first, last = cuts[0], cuts[-1]
     if not (first.get("type") == "L" and first.get("library_clip") == "intro_wave"):
@@ -368,6 +394,64 @@ class CutPlan:
     sfx: list[dict] = field(default_factory=list)
     estimated_audio: bool = False
     warnings: list[str] = field(default_factory=list)
+    # song episodes: where each speech block (lyric line) sits, relative to the cut start
+    block_starts: list[float] = field(default_factory=list)
+    block_tempos: list[float] = field(default_factory=list)
+    block_lens: list[float] = field(default_factory=list)
+    card: dict | None = None      # word card {"word", "text"} shown beside the picture
+    lyrics: list[tuple[str, float, float, float]] = field(default_factory=list)  # song: (line, start, sung, until)
+
+
+SONG_TEMPO_MAX = 1.3   # a lyric line may be sped up this much to fit before the next line (atempo, same pitch)
+SONG_GAP = 0.08        # silence kept before the next line / the cut end
+
+
+def song_grid(song: dict) -> tuple[float, float]:
+    """(beat, bar) seconds of a song episode."""
+    beat = 60.0 / float(song["bpm"])
+    return beat, beat * int(song.get("beats_per_bar") or 4)
+
+
+def place_song_lines(cut: dict, items: list[NarItem], lens: list[float], song: dict,
+                     dur: float) -> tuple[list[float], list[float], list[str]]:
+    """Lyric lines of one cut → (start of each line relative to the cut, speed-up per line, warnings).
+
+    cut.beats = [0, 8] puts line 1 on beat 0 and line 2 on beat 8 of the cut; missing entries start on the
+    first beat after the previous line (+ any [pause] seconds). A line longer than the room before the next
+    line (or the cut end) is sped up, at most SONG_TEMPO_MAX.
+    """
+    beat, _ = song_grid(song)
+    want = [float(b) for b in (cut.get("beats") or [])]
+    starts: list[float] = []
+    end, pause, k = 0.0, 0.0, 0
+    for it in items:
+        if it.kind == "pause":
+            pause += it.seconds
+            continue
+        if k < len(want):
+            s = want[k] * beat
+        elif k == 0:
+            s = 0.0
+        else:
+            s = math.ceil((end + pause + SONG_GAP) / beat - 1e-6) * beat
+        starts.append(round(s, 6))
+        end, pause = s + lens[k], 0.0
+        k += 1
+    tempos, warns = [], []
+    for i, (s, ln) in enumerate(zip(starts, lens)):
+        stop = starts[i + 1] if i + 1 < len(starts) else dur
+        room = stop - SONG_GAP - s
+        tempo = 1.0
+        if room <= 0:
+            warns.append(f"{cut.get('id')}: 가사 {i + 1}줄 시작({s:.2f}s)이 컷 길이/다음 줄보다 늦음 — beats 확인")
+        elif ln > room + 1e-6:
+            tempo = ln / room
+            if tempo > SONG_TEMPO_MAX:
+                warns.append(f"{cut.get('id')}: 가사 {i + 1}줄 {ln:.2f}s 가 자리 {room:.2f}s 에 안 들어감 — "
+                             f"줄을 줄이거나 bars 를 늘릴 것 (x{SONG_TEMPO_MAX} 까지만 빠르게)")
+                tempo = SONG_TEMPO_MAX
+        tempos.append(round(tempo, 4))
+    return starts, tempos, warns
 
 
 def estimate_speech(text: str, lang: str) -> float:
@@ -410,6 +494,11 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
     tail = float(r["tail_pad"])
     min_cut = float(r["min_cut"])
     xfade = float(r["xfade"])
+    song = manifest.get("song") if isinstance(manifest.get("song"), dict) and manifest["song"].get("bpm") else None
+    if song:
+        from .audio import speech_length  # numpy — only song episodes need it here
+        _, bar = song_grid(song)
+    song_bars = 0          # bars before this cut — song cut starts/ends are rounded from the bar grid, no drift
     plans: list[CutPlan] = []
     warnings: list[str] = []
     missing: list[str] = []
@@ -471,14 +560,14 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
                 files.append(f)
         for it, f in zip(speech, files):
             if f is not None:
-                durs.append(probe_duration(f))
+                durs.append(speech_length(f) if song else probe_duration(f))
             else:
                 durs.append(estimate_speech(it.text, lang))
                 estimated = True
         nar_len = sum(durs) + sum(it.seconds for it in items if it.kind == "pause")
 
         # ---- 전환
-        if i == 0:
+        if i == 0 or song:  # songs cut on the bar line (a crossfade would shift the beat grid)
             xf = 0.0
         else:
             tr = c.get("transition") or ("fade" if scene != prev_scene else "cut")
@@ -499,11 +588,31 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         if want and want < base - 1e-6:
             warnings.append(f"{cid}: duration {want}s 가 나레이션보다 짧아 {base:.2f}s 로 늘림")
         dur = max(base, min_cut, want)
-        dur_f = int(math.ceil(dur * fps - 1e-6))
-        if i > 0:
-            start_f = start_f + prev_dur_f - xf_f
+        starts: list[float] = []
+        tempos: list[float] = []
+        if song:
+            bars = c.get("bars")
+            if not isinstance(bars, int) or bars < 1:
+                bars = max(1, math.ceil((nar_len + tail_c) / bar - 1e-6))
+                warnings.append(f"{cid}: song 컷에 bars 없음 → {bars}마디로 계산")
+            dur = bars * bar
+            starts, tempos, sw = place_song_lines(c, items, durs, song, dur)
+            warnings += sw
+            nar_len = max((s + d / k for s, d, k in zip(starts, durs, tempos)), default=0.0)
+            start_f = int(round(song_bars * bar * fps))
+            song_bars += bars
+            dur_f = int(round(song_bars * bar * fps)) - start_f
+        else:
+            dur_f = int(math.ceil(dur * fps - 1e-6))
+            if i > 0:
+                start_f = start_f + prev_dur_f - xf_f
 
-        kw = (((c.get("keyword") or {}).get(lang)) or "").strip()
+        kw = "" if song else (((c.get("keyword") or {}).get(lang)) or "").strip()  # songs show the lyrics instead
+        lyrics = []
+        if song:
+            texts = [it.text for it in speech]
+            ends = starts[1:] + [dur_f / fps]
+            lyrics = [(tx, s, d / k, e) for tx, s, d, k, e in zip(texts, starts, durs, tempos, ends)]
         text_at = c.get("text_at")
         text_at = float(r["text_delay"]) if text_at is None else float(text_at)
         text_at = max(0.0, min(text_at, dur_f / fps - 0.5))
@@ -513,10 +622,13 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
 
         plans.append(CutPlan(
             index=i, id=cid, type=t, scene=scene, cut=c, items=items, speech_files=files,
-            speech_durs=durs, nar_len=nar_len, nar_offset=xf + lead, xf_in=xf, dur=dur_f / fps,
+            speech_durs=durs, nar_len=nar_len, nar_offset=(starts[0] if starts else xf + lead), xf_in=xf,
+            dur=dur_f / fps,
             start=start_f / fps, source=source, source_kind=kind, source_len=src_len, keyword=kw,
             text_at=text_at, text_pos=c.get("text_pos") or "top", text_color=c.get("text_color") or "white",
-            inset=None if inset is None else float(inset), sfx=sfx, estimated_audio=estimated))
+            inset=None if inset is None else float(inset), sfx=sfx, estimated_audio=estimated,
+            block_starts=starts, block_tempos=tempos, block_lens=[d / k for d, k in zip(durs, tempos)], lyrics=lyrics,
+            card=c.get("card") if isinstance(c.get("card"), dict) else None))
         prev_dur_f = dur_f
         prev_scene = scene
 

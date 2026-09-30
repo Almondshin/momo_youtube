@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo apt-get update -q
           sudo apt-get install -y -q ffmpeg
-          python -m pip install -q Pillow
+          python -m pip install -q Pillow numpy
 
       - name: 미리보기 생성
         run: python momo/preview_assets.py --out "$RUNNER_TEMP/previews"
