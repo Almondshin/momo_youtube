@@ -393,6 +393,31 @@ def test_onmodel_gate(tmp: Path) -> None:
     assert "✔ c02 image" in out and "모델과 다른 것 0개" in out, out
 
 
+def test_hf_api_helpers(tmp: Path) -> None:
+    import os
+    import hf_api
+    env = tmp / ".env.local"
+    env.write_text("# comment\nHF_KEY='kid123:secret456'\n", encoding="utf-8")
+    saved = {k: os.environ.pop(k, None) for k in ("HF_KEY", "HF_API_KEY", "HF_API_SECRET")}
+    try:
+        hf_api.load_key(env)
+        assert os.environ["HF_KEY"] == "kid123:secret456"      # quotes stripped, never printed
+        del os.environ["HF_KEY"]
+        env.write_text("HF_KEY=\n", encoding="utf-8")
+        try:
+            hf_api.load_key(env)
+            raise AssertionError("empty key must fail")
+        except MomoError as e:
+            assert "HF_KEY" in str(e) and "secret" not in str(e)
+    finally:
+        for k, v in saved.items():
+            if v is not None:
+                os.environ[k] = v
+    assert hf_api.media_url({"status": "completed", "video": {"url": "https://x/v.mp4"}}) == "https://x/v.mp4"
+    assert hf_api.media_url({"images": [{"url": "https://x/i.png"}]}) == "https://x/i.png"
+    assert hf_api.media_url({"status": "completed"}) is None
+
+
 def test_plan_clip_and_audio(tmp: Path) -> None:
     root = make_root(tmp)
     cfg = load_config(Paths(root))

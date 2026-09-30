@@ -45,7 +45,8 @@ momo/
 - `--ep` 는 `check_ep()`, `--lang` 은 `check_lang()` 으로 검증 (Actions 입력 주입 방지 겸용).
 - 사용자에게 보이는 출력은 한국어. 코드 식별자·주석은 짧게.
 - Python 3.10+ 호환. 외부 의존성은 requirements.txt 에 있는 것만:
-  `yt-dlp, Pillow, numpy, google-api-python-client, google-auth, google-auth-oauthlib, google-auth-httplib2`.
+  `yt-dlp, Pillow, numpy, google-api-python-client, google-auth, google-auth-oauthlib, google-auth-httplib2,
+  higgsfield-client` (Higgsfield API — 키는 저장소 루트 `.env.local` 의 `HF_KEY`, git 제외, 절대 출력·커밋 금지).
 - 외부 도구: ffmpeg/ffprobe 6.x (ubuntu 24.04 apt 버전 기준). ffmpeg 필터 표현식 트릭 대신
   Python(Pillow/numpy)으로 계산할 수 있으면 그쪽을 택한다 (버전 차이·지터 방지).
 
