@@ -28,6 +28,7 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `upload` | `{"en": {...}, "ko": {...}}` | 7단계 업로드 메타 — 아래 표 |
 | `credits` | `{"estimate","spent","generations","regenerations"}` | `estimate` 는 `estimate_credits.py --save` 가 적는 예상치. 나머지는 `hf_jobs.py record` 가 자동 누적 |
 | `notes` | `{"v_over_reason","approvals":[],"next_time":[]}` | V 컷 15개 초과 사유(없으면 validate error), 승인 기록(날짜 + 무엇을), 다음 편에 반영할 점(README 에 들어감) |
+| `song` | `{"bpm": 96, "beats_per_bar": 4, "music": GenRec+{"model","duration","analysis"}, "music_gain_db": -6, "duck_db": -5, "music_start": 0}` | **Song episode** (7-B): lyrics chanted on the beat over an AI instrumental (`music`, generate_audio sonilo_music → `audio/music.*`). `analysis` = `{bpm, downbeat0}` from preview_assets (build detects it when missing). Set `bpm` to the instrumental's own tempo to avoid time-stretching it |
 | `cuts` | `[컷, ...]` | 순서 = 재생 순서 |
 
 `upload.<lang>`:
@@ -65,6 +66,8 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `clip_model` / `clip_seconds` | | ○ |   | Per-cut video model (`config.higgsfield.clip_models` extras) and generated length — a number or `{"en": 7, "ko": 9}` (lip-sync: ≥ that language's narration) |
 | `end_frame` | | ○ |   | Cut id whose approved image becomes this clip's last frame (continuous hand-off) |
 | `nar_ref` | | ○ |   | Lip-sync cut with 2+ speech blocks: `{"en": {"media_id", "blocks": [block jobs]}}` — the blocks + `[pause]` silences in one file. `preview_assets.py` writes `<ep>/<cut>_nar_<lang>.wav` to momo-previews → `media_import_url` (raw.githubusercontent URL) → `hf_jobs.py narref`. A regenerated block voids it |
+| `bars` / `beats` | ○ | ○ | ○ | Song episodes: cut length in bars (required, 1–16) and the start beat of each lyric line (`[0, 8]`; missing entries start on the next free beat). Lines are trimmed to the voice and sped up ≤1.3x to fit |
+| `card` | ○ | ○ | ○ | Word card beside the picture: `{"word": "toothbrush", "text": "We brush our teeth with it", "pos": "left"|"right", "at": 0.3}` |
 | `inset` | ○ | ○ | ○ | 테두리 제거 인셋 크롭 비율. `null`(기본) = 자동 감지 후 감지되면 3.5%, `0` = 끔, `0.03`~`0.04` = 강제 |
 | `sfx` | ○ | ○ | ○ | `[{"file":"pop.wav","at":0.5,"gain_db":-6}]` — `assets/sfx/` 파일, 컷 시작 + `at` 초. 파일이 없으면 경고 후 생략. Stock set from `make_music.py`: pop, sparkle, boing, whoosh, brush, swish, splash, chime |
 | `gen` | | ● | ● | `{"image": GenRec, "clip": GenRec}` (clip 은 V 만; lipsync 컷은 `clip_en` / `clip_ko`) — hf_jobs.py 가 기록 |
@@ -185,6 +188,24 @@ total   = start[마지막] + dur[마지막]
 - 키워드는 `컷 시작 + text_at` 에 팝 애니메이션(0.3초)으로 나타나 컷 끝까지 남는다.
 - 프레임 단위로 올려서 계산하므로 영상·음성 길이가 누적 오차 없이 맞는다 (build 가 1프레임 이내로 검증).
 - EN 과 KO 는 음성 길이가 달라서 타임라인·총 길이가 각각 다르다.
+
+### 7-B. Song episodes (`manifest.song`)
+
+```
+bar      = 60 / bpm × beats_per_bar                     (96 BPM → 2.5 s = 75 frames at 30 fps)
+start[i] = round(bars before cut i × bar × fps) / fps   (no crossfades — every cut changes on a bar line)
+dur[i]   = cut.bars × bar
+line k   = cut start + cut.beats[k] × beat              (default: first free beat after the previous line)
+```
+
+- Each lyric line (speech block) is trimmed to the voice and sped up (atempo, ≤1.3x) when it would run into the
+  next line or the cut end — build warns when even 1.3x is not enough (shorten the line or add bars).
+- The instrumental is fitted to `bpm` (atempo by `bpm / analysis.bpm`) and starts on its first downbeat at
+  `music_start`; it replaces the BGM and ducks only lightly under the voice (`duck_db`).
+- Captions: the current lyric line at the bottom, words turning yellow as they are sung (karaoke); `cut.card`
+  shows a word card. Keywords are not drawn in songs.
+- Lip-sync cuts always use `nar_ref`: preview_assets writes `<cut>_nar_en.wav` (the cut's lines on their beats,
+  from the first line) → media_import_url → `hf_jobs.py narref`.
 
 V 클립(5초)과 컷 길이의 관계:
 

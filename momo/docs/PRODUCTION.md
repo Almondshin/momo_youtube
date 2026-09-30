@@ -378,6 +378,23 @@ python momo/fetch_assets.py --ep ep02
 - `generate_audio_batch` 는 호출당 최대 12개. 씬 1 분량을 먼저 만들어 사용자에게 들려주고 **[승인]** 받은 뒤 나머지를 만든다.
 - **음성 블록도 생성 1회로 센다** — 1편에 약 50블록이라 일일 생성 횟수 한도에 가장 먼저 걸릴 수 있다.
 
+### (8) Song episodes (`manifest.song`, since ep02) — English only
+
+1. Lyrics: one short line per speech block (`[pause 0.1]` separates lines), `bars` per cut (2 or 4), `beats`
+   for the line starts, `card` on vocabulary close-ups. `validate_manifest.py` must pass.
+2. Instrumental: `generate_audio` model `sonilo_music`, prompt with the tempo/instruments and "no vocals",
+   `duration` ≥ total + 5 s → record immediately with `hf_jobs.py record --ep <ep> --song-music --job-id J
+   --status generated` (add `--url` when done; credits = per-second rate × duration).
+3. Lines: `hf_jobs.py plan --ep <ep> --kind audio --all` → generate_audio_batch (≤12; on `429 rate_limit_reached`
+   stop and resume later in small batches) → record each job.
+4. Push → momo-previews: `song_music_analysis` gives the real tempo/downbeat — copy it into
+   `song.music.analysis` and set `song.bpm` to that tempo (no time-stretch). `<cut>_nar_en.wav` files are the
+   lip-sync references.
+5. **[승인]** Preview build (`momo-publish`, `upload: false`) → send the 720p copy → the user approves the song
+   (lyrics, voice, music, captions) before any lip-sync clip is regenerated.
+6. Lip-sync cuts: media_import_url each `<cut>_nar_en.wav` (raw.githubusercontent.com on momo-previews) →
+   `hf_jobs.py narref` → `plan --kind clip` → generate → review mouth vs voice → approve → final build.
+
 ---
 
 ## 6. 조립 (6단계)
