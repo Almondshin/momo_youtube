@@ -137,10 +137,14 @@ def test_refine_downbeats(tmp: Path) -> None:
         e = np.asarray(t) - true
         return float(np.abs(e - np.median(e)).max())
     assert st["refined"] and spread(downs) < 0.03 < 0.06 < spread(straight), (st, spread(downs), spread(straight))
+    rep = audio.drift_report(f, ana, 30)
+    assert rep["trend_ms"] > 30, rep  # the straight grid walks off this song → the report shows it
     steady = audio.write_wav(tmp / "m.wav", music(40, 96), 22050)
     a2 = audio.detect_beats(steady, 100)
     _, st2 = audio.refine_downbeats(steady, a2, 14)
     assert not st2["refined"], st2
+    rep2 = audio.drift_report(steady, a2, 14)
+    assert abs(rep2["trend_ms"] or 0) < 20, rep2
 
 
 def test_overlay_frames(tmp: Path) -> None:
@@ -307,6 +311,7 @@ def test_align_lyrics(tmp: Path) -> None:
     filled = al.fill_line([(1.0, 1.2), None, (1.6, 1.8)])
     assert filled[1][0] >= 1.2 and filled[1][1] <= 1.6, filled
     assert al.fill_line([None, None]) is None
+    assert al.drop_outliers([(104.6, 106.3), (106.3, 106.8), (134.7, 134.8)])[2] is None  # "you!" matched in the outro
     (tmp / "l.md").write_text("x\n```\n[Verse 1]\nCan you say carrot?\n(Carrot!)\n```\n")
     lines = al.read_lyrics(tmp / "l.md")
     assert [(ln["section"], ln["text"]) for ln in lines] == [("Verse 1", "Can you say carrot?"),

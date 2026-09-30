@@ -150,18 +150,26 @@ def cmd_analyze(paths, cfg, args) -> int:
     bpb = int(song.get("beats_per_bar") or 4)
     bar = 60.0 / ana["bpm"] * bpb
     n = int((float(tr.get("duration") or probe_duration(src)) - ana["downbeat0"]) // bar) + 1
-    ana["downbeats"], grid = audio.refine_downbeats(src, ana, n, bpb)
-    ana["grid"] = grid
+    rep = audio.drift_report(src, ana, n, bpb)
+    if args.follow_tempo:
+        ana["downbeats"], grid = audio.refine_downbeats(src, ana, n, bpb)
+    else:
+        ana["downbeats"] = [round(ana["downbeat0"] + k * bar, 4) for k in range(n)]
+        grid = {"refined": False}
+    ana["grid"] = {**grid, **rep}
     ana["source"] = "mix" if src.name == "song.flac" else "instrumental stem"
     tr["analysis"] = ana
     song["bpm"] = ana["bpm"]
     save_json(paths.manifest(ep), m)
     print(f"✔ 템포 {ana['bpm']:.3f} BPM, 첫 강박 {ana['downbeat0']:.3f}s, 마디 {bar:.3f}s × {n}, "
           f"신뢰도 {ana['confidence']} ({ana['source']})")
+    secs = " ".join(f"{v:+.0f}" for v in rep["section_offsets_ms"])
     if grid.get("refined"):
-        print(f"  △ 템포가 조금 흔들림 (최대 {grid['max_drift_ms']} ms) — 마디선을 실제 박에 맞춤")
-    elif "max_drift_ms" in grid:
-        print(f"  ✔ 박자 일정 (최대 흔들림 {grid['max_drift_ms']} ms) — 곧은 격자")
+        print(f"  △ --follow-tempo: 마디선을 실제 박에 맞춤 (최대 {grid['max_drift_ms']} ms)")
+    elif rep["trend_ms"] is not None and abs(rep["trend_ms"]) > 50:
+        print(f"  △ 박이 곡 끝으로 갈수록 {rep['trend_ms']:+.0f} ms 밀림 (구간별 {secs}) — --follow-tempo 로 다시 분석")
+    else:
+        print(f"  ✔ 곧은 격자 — 구간별 박 어긋남(ms) {secs}")
     if abs(ana["bpm"] - hint) > 2:
         print(f"  △ 요청 템포 {hint} 와 {ana['bpm'] - hint:+.2f} BPM 차이 — 실제 값으로 격자를 만든다")
     return 0
@@ -371,6 +379,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--ep", required=True)
     p.add_argument("--inst", help="반주 스템 (박자 검출이 더 정확)")
     p.add_argument("--bpm", type=float, help="템포 힌트")
+    p.add_argument("--follow-tempo", action="store_true", help="템포가 흔들리는 곡: 박 추적으로 마디선을 맞춤")
     p = sub.add_parser("lyrics")
     p.add_argument("--ep", required=True)
     p.add_argument("--align", required=True, help="tools/align_lyrics.py 결과 JSON")

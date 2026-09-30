@@ -370,41 +370,72 @@ def detect_beats(path: Path, bpm_hint: float | None = None) -> dict:
             "confidence": round(sc / (off_beat + 1e-9), 3)}
 
 
-GRID_SEARCH = 0.06     # refine_downbeats: look for each beat this far (s) around where the last one predicts it
-GRID_KEEP = 0.025      # … and keep the straight grid when the song never strays further than this
+GRID_SEARCH = 0.06     # look for each beat this far (s) around where the grid / the tracker puts it
+GRID_KEEP = 0.025      # refine_downbeats keeps the straight grid when the tracked beats stay within this
+GRID_SECTION = 32      # drift_report: beats per section
+
+
+def _beat_strength(path: Path):
+    sr, win = 22050, 2048
+    env, low, _, fps = _onsets(decode(path, sr, 1)[:, 0], sr, win=win)
+    return env / (env.max() + 1e-9) + low / (low.max() + 1e-9), fps, win / 2 / sr
+
+
+def _snap(strength, fps: float, lag: float, pred: float) -> float | None:
+    """Strongest onset near pred (seconds), weighted toward pred, or None when nothing hits there."""
+    rad = int(round(GRID_SEARCH * fps))
+    c = int(round((pred - lag) * fps))
+    a, b = max(0, c - rad), min(len(strength), c + rad + 1)
+    if b - a < 3:
+        return None
+    seg = strength[a:b] * (1.0 - 0.5 * np.abs(np.arange(a, b) - c) / (rad + 1))
+    return (a + int(np.argmax(seg))) / fps + lag if seg.max() >= 0.08 else None
+
+
+def drift_report(path: Path, ana: dict, n_bars: int, beats_per_bar: int = 4) -> dict:
+    """How far the straight grid (detect_beats) sits from the song's onsets, section by section: the median
+    offset (ms) of the onsets nearest each beat per GRID_SECTION beats. A spread of a frame or two is onset
+    noise (strums, claps); a steady walk in one direction means the tempo really drifts (→ --follow-tempo)."""
+    strength, fps, lag = _beat_strength(path)
+    beat = 60.0 / float(ana["bpm"])
+    d0 = float(ana["downbeat0"])
+    offs = []
+    for j in range(n_bars * beats_per_bar):
+        t = d0 + j * beat
+        hit = _snap(strength, fps, lag, t)
+        offs.append(np.nan if hit is None else hit - t)
+    offs = np.array(offs)
+    sections = []
+    for s in range(0, len(offs), GRID_SECTION):
+        part = offs[s:s + GRID_SECTION]
+        part = part[~np.isnan(part)]
+        if len(part) >= 4:
+            sections.append(round(float(np.median(part)) * 1000, 1))
+    trend = None
+    if len(sections) >= 3:  # a steady walk one way = real drift; back-and-forth = onset noise
+        k = np.arange(len(sections))
+        trend = round(float(np.polyfit(k, sections, 1)[0]) * (len(sections) - 1), 1)
+    return {"section_offsets_ms": sections, "trend_ms": trend}
 
 
 def refine_downbeats(path: Path, ana: dict, n_bars: int, beats_per_bar: int = 4) -> tuple[list[float], dict]:
-    """Bar lines that follow a song whose tempo wanders a little (e.g. Suno).
+    """Bar lines that follow a song whose tempo really wanders (opt-in: song_track.py analyze --follow-tempo).
 
     Beat tracking from downbeat0: each beat is looked for within ±GRID_SEARCH of where the previous beat and the
-    running period put it (strongest onset, kick-weighted); a found beat nudges the period, a missing one is
-    predicted. The tracked beats' offsets from the straight grid are median-smoothed over 9 beats and each bar
-    line takes its beat's offset. Returns (downbeats, stats); a song within GRID_KEEP keeps the straight grid.
+    running period put it; a found beat nudges the period, a missing one is predicted. The offsets from the
+    straight grid are median-smoothed over 9 beats and each bar line takes its beat's offset. Clean, steady
+    grooves only: busy arrangements can pull the tracker onto off-beat hits — check drift_report first.
     """
-    sr, win = 22050, 2048
-    env, low, _, fps = _onsets(decode(path, sr, 1)[:, 0], sr, win=win)
-    lag = win / 2 / sr
+    strength, fps, lag = _beat_strength(path)
     beat = 60.0 / float(ana["bpm"])
     d0 = float(ana["downbeat0"])
     n_beats = n_bars * beats_per_bar
-    strength = env / (env.max() + 1e-9) + low / (low.max() + 1e-9)
-    rad = int(round(GRID_SEARCH * fps))
-
-    def snap(pred: float) -> float | None:
-        c = int(round((pred - lag) * fps))
-        a, b = max(0, c - rad), min(len(strength), c + rad + 1)
-        if b - a < 3:
-            return None
-        seg = strength[a:b] * (1.0 - 0.5 * np.abs(np.arange(a, b) - c) / (rad + 1))  # prefer near the prediction
-        return (a + int(np.argmax(seg))) / fps + lag if seg.max() >= 0.08 else None
-
-    first = snap(d0)
+    first = _snap(strength, fps, lag, d0)
     times, found = [first if first is not None else d0], 0
     period = beat
     for _ in range(1, n_beats):
         pred = times[-1] + period
-        t = snap(pred)
+        t = _snap(strength, fps, lag, pred)
         if t is None:
             t = pred
         else:

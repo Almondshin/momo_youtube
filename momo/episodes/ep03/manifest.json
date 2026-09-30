@@ -20,7 +20,7 @@
     "ko": ""
   },
   "thumbnail": {
-    "cut": "c05",
+    "cut": "c04",
     "text": {
       "en": "CRUNCHY VEGGIES!",
       "ko": ""
@@ -54,7 +54,7 @@
     "regenerations": 0
   },
   "notes": {
-    "v_over_reason": "승인된 새 형식(2026-09-30): 120 BPM · 컷 1~2마디 → 36컷. V 34개 중 10개는 이미 만든 클립의 일부 재사용(clip_from, 새 이미지·클립 0), 새로 만드는 클립은 24개.",
+    "v_over_reason": "승인된 새 형식(2026-09-30): Suno 곡 124 BPM · 컷 1~3마디 → 31컷. V 30개 중 7개는 이미 만든 클립의 일부 재사용(clip_from, 새 이미지·클립 0), 새로 만드는 클립은 23개.",
     "approvals": [
       "2026-09-30 주제 승인: ① 채소 먹기 (Crunchy Veggies — carrot · broccoli · corn, 조연 Ducky)",
       "2026-09-30 형식 승인: 120 BPM · 약 2:02 (61마디) · 컷 38개 평균 3.2초 · 노래 비중 85~90% · 후렴 4회 · 반복 후렴 구간 영상 재사용",
@@ -62,23 +62,13 @@
       "2026-09-30 노래 승인: 후보 1 (ACE-Step b_s202, 120.005 BPM, 2:06) — 사용자 선택",
       "2026-09-30 노래 소스 변경: Suno Pro (사용자 결정) — ACE-Step 후보 1 은 보류, 컷 구성은 Suno 곡에 맞춰 다시 짠다"
     ],
-    "next_time": []
+    "next_time": [
+      "Suno 곡이 1.6초에 바로 시작해 라이브러리 인트로 인사(Hi friends! It's Momo!)를 넣을 자리가 없음 — 다음 곡은 스타일/가사에 '[Intro - 2 bars]' 로 짧은 전주를 요청할 것"
+    ]
   },
   "cuts": [
     {
       "id": "c01",
-      "scene": 1,
-      "type": "L",
-      "bars": 1,
-      "library_clip": "intro_wave",
-      "library_audio": "intro",
-      "lead": 0.5,
-      "narration": {
-        "en": "Hi friends! It's Momo!"
-      }
-    },
-    {
-      "id": "c02",
       "scene": 1,
       "type": "V",
       "bars": 2,
@@ -87,11 +77,11 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 4
+        "en": 6
       }
     },
     {
-      "id": "c03",
+      "id": "c02",
       "scene": 1,
       "type": "V",
       "bars": 2,
@@ -101,10 +91,10 @@
       "clip_seconds": 4
     },
     {
-      "id": "c04",
+      "id": "c03",
       "scene": 2,
       "type": "V",
-      "bars": 2,
+      "bars": 1,
       "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen softly blurred behind, clear empty space on the left side of the frame",
       "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
       "clip_model": "seedance_2_0_mini",
@@ -117,7 +107,7 @@
       }
     },
     {
-      "id": "c05",
+      "id": "c04",
       "scene": 2,
       "type": "V",
       "bars": 2,
@@ -130,7 +120,7 @@
       }
     },
     {
-      "id": "c06",
+      "id": "c05",
       "scene": 2,
       "type": "V",
       "bars": 1,
@@ -143,17 +133,7 @@
       }
     },
     {
-      "id": "c07",
-      "scene": 2,
-      "type": "V",
-      "bars": 1,
-      "image_prompt": "[Momo] close-up in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, cupping one paw behind a floppy ear as if listening, soft closed-mouth smile, eyes looking at the viewer, clear empty pastel wall space in the upper third of the frame",
-      "motion": "keeps the mouth closed in a soft smile and listens, nods twice to the beat, the cupped paw stays by the ear, both long floppy ears stay hanging down beside the cheeks the whole time",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
-    },
-    {
-      "id": "c08",
+      "id": "c06",
       "scene": 2,
       "type": "V",
       "bars": 2,
@@ -166,7 +146,7 @@
       }
     },
     {
-      "id": "c09",
+      "id": "c07",
       "scene": 2,
       "type": "V",
       "bars": 2,
@@ -179,19 +159,19 @@
       }
     },
     {
-      "id": "c10",
+      "id": "c08",
       "scene": 2,
       "type": "V",
       "bars": 2,
       "clip_from": {
-        "cut": "c03",
+        "cut": "c02",
         "at": 0.0
       },
-      "image_prompt": "(reuses c03)",
-      "motion": "(reuses c03 from 0s)"
+      "image_prompt": "(reuses c02)",
+      "motion": "(reuses c02 from 0s)"
     },
     {
-      "id": "c11",
+      "id": "c09",
       "scene": 2,
       "type": "V",
       "bars": 2,
@@ -202,7 +182,7 @@
       "momo": false
     },
     {
-      "id": "c12",
+      "id": "c10",
       "scene": 2,
       "type": "V",
       "bars": 2,
@@ -215,17 +195,7 @@
       }
     },
     {
-      "id": "c13",
-      "scene": 3,
-      "type": "V",
-      "bars": 1,
-      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
-      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
-    },
-    {
-      "id": "c14",
+      "id": "c11",
       "scene": 3,
       "type": "V",
       "bars": 2,
@@ -241,7 +211,7 @@
       }
     },
     {
-      "id": "c15",
+      "id": "c12",
       "scene": 3,
       "type": "V",
       "bars": 2,
@@ -254,37 +224,12 @@
       }
     },
     {
-      "id": "c16",
-      "scene": 3,
-      "type": "V",
-      "bars": 1,
-      "image_prompt": "[Momo] close-up of the face in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, playful curious face with the head tilted, pointing one paw at the viewer, clear empty pastel wall space in the upper third of the frame",
-      "motion": "points at the viewer, then leans in to listen, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
-      "lipsync": true,
-      "clip_model": "wan2_7",
-      "clip_seconds": {
-        "en": 2
-      }
-    },
-    {
-      "id": "c17",
-      "scene": 3,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c07",
-        "at": 2.0
-      },
-      "image_prompt": "(reuses c07)",
-      "motion": "(reuses c07 from 2s)"
-    },
-    {
-      "id": "c18",
+      "id": "c13",
       "scene": 3,
       "type": "V",
       "bars": 2,
-      "image_prompt": "[Momo] standing in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, holding one green broccoli floret up high like a little tree, joyful face, medium shot, clear empty pastel wall space in the upper third of the frame",
-      "motion": "lifts the broccoli up and sways side to side to the beat, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "image_prompt": "[Momo] close-up of the face in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, playful curious face with the head tilted, pointing one paw at the viewer, clear empty pastel wall space in the upper third of the frame",
+      "motion": "points at the viewer, then leans in to listen, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -292,7 +237,20 @@
       }
     },
     {
-      "id": "c19",
+      "id": "c14",
+      "scene": 3,
+      "type": "V",
+      "bars": 3,
+      "image_prompt": "[Momo] standing in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, holding one green broccoli floret up high like a little tree, joyful face, medium shot, clear empty pastel wall space in the upper third of the frame",
+      "motion": "lifts the broccoli up and sways side to side to the beat, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 6
+      }
+    },
+    {
+      "id": "c15",
       "scene": 3,
       "type": "V",
       "bars": 2,
@@ -305,31 +263,29 @@
       }
     },
     {
-      "id": "c20",
+      "id": "c16",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4
+    },
+    {
+      "id": "c17",
       "scene": 3,
       "type": "V",
       "bars": 2,
       "clip_from": {
-        "cut": "c03",
+        "cut": "c09",
         "at": 0.0
       },
-      "image_prompt": "(reuses c03)",
-      "motion": "(reuses c03 from 0s)"
+      "image_prompt": "(reuses c09)",
+      "motion": "(reuses c09 from 0s)"
     },
     {
-      "id": "c21",
-      "scene": 3,
-      "type": "V",
-      "bars": 2,
-      "clip_from": {
-        "cut": "c11",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c11)",
-      "motion": "(reuses c11 from 0s)"
-    },
-    {
-      "id": "c22",
+      "id": "c18",
       "scene": 3,
       "type": "V",
       "bars": 2,
@@ -342,19 +298,19 @@
       }
     },
     {
-      "id": "c23",
+      "id": "c19",
       "scene": 4,
       "type": "V",
       "bars": 1,
       "clip_from": {
-        "cut": "c13",
+        "cut": "c16",
         "at": 2.0
       },
-      "image_prompt": "(reuses c13)",
-      "motion": "(reuses c13 from 2s)"
+      "image_prompt": "(reuses c16)",
+      "motion": "(reuses c16 from 2s)"
     },
     {
-      "id": "c24",
+      "id": "c20",
       "scene": 4,
       "type": "V",
       "bars": 2,
@@ -370,7 +326,7 @@
       }
     },
     {
-      "id": "c25",
+      "id": "c21",
       "scene": 4,
       "type": "V",
       "bars": 2,
@@ -380,7 +336,7 @@
       "clip_seconds": 4
     },
     {
-      "id": "c26",
+      "id": "c22",
       "scene": 4,
       "type": "V",
       "bars": 1,
@@ -393,19 +349,7 @@
       }
     },
     {
-      "id": "c27",
-      "scene": 4,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c07",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c07)",
-      "motion": "(reuses c07 from 0s)"
-    },
-    {
-      "id": "c28",
+      "id": "c23",
       "scene": 4,
       "type": "V",
       "bars": 2,
@@ -418,31 +362,41 @@
       }
     },
     {
-      "id": "c29",
+      "id": "c24",
       "scene": 5,
       "type": "V",
       "bars": 1,
       "clip_from": {
-        "cut": "c13",
+        "cut": "c03",
         "at": 0.0
       },
-      "image_prompt": "(reuses c13)",
-      "motion": "(reuses c13 from 0s)"
+      "image_prompt": "(reuses c03)",
+      "motion": "(reuses c03 from 0s)",
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      }
     },
     {
-      "id": "c30",
+      "id": "c25",
       "scene": 5,
       "type": "V",
-      "bars": 2,
+      "bars": 1,
       "clip_from": {
         "cut": "c11",
         "at": 0.0
       },
       "image_prompt": "(reuses c11)",
-      "motion": "(reuses c11 from 0s)"
+      "motion": "(reuses c11 from 0s)",
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      }
     },
     {
-      "id": "c31",
+      "id": "c26",
       "scene": 5,
       "type": "V",
       "bars": 2,
@@ -452,7 +406,7 @@
       "clip_seconds": 4
     },
     {
-      "id": "c32",
+      "id": "c27",
       "scene": 5,
       "type": "V",
       "bars": 2,
@@ -465,50 +419,50 @@
       }
     },
     {
-      "id": "c33",
+      "id": "c28",
       "scene": 5,
       "type": "V",
       "bars": 2,
       "clip_from": {
-        "cut": "c03",
+        "cut": "c26",
         "at": 0.0
       },
-      "image_prompt": "(reuses c03)",
-      "motion": "(reuses c03 from 0s)"
+      "image_prompt": "(reuses c26)",
+      "motion": "(reuses c26 from 0s)"
     },
     {
-      "id": "c34",
+      "id": "c29",
       "scene": 5,
       "type": "V",
       "bars": 2,
       "clip_from": {
-        "cut": "c25",
+        "cut": "c21",
         "at": 0.0
       },
-      "image_prompt": "(reuses c25)",
-      "motion": "(reuses c25 from 0s)"
+      "image_prompt": "(reuses c21)",
+      "motion": "(reuses c21 from 0s)"
     },
     {
-      "id": "c35",
+      "id": "c30",
       "scene": 5,
       "type": "V",
-      "bars": 2,
+      "bars": 3,
       "image_prompt": "[Momo] medium shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, holding a small woven basket with one carrot, one broccoli floret and one corn cob, proud happy face, clear empty pastel wall space in the upper third of the frame",
       "motion": "lifts the basket a little on the last word, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 4
+        "en": 6
       }
     },
     {
-      "id": "c36",
+      "id": "c31",
       "scene": 5,
       "type": "L",
       "bars": 2,
       "library_clip": "outro_bye",
       "library_audio": "outro",
-      "lead": 0.5,
+      "lead": 0.2,
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
       }
@@ -516,130 +470,273 @@
   ],
   "song": {
     "track": {
-      "status": "rejected",
-      "job_id": "local:99a518e30427",
+      "status": "generated",
+      "job_id": "local:8b075ba23718",
       "url": null,
       "attempts": 1,
       "credits": 0,
-      "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
-      "sha1": "99a518e30427848a48f4982d6f335d05741700cc",
-      "tool": "ace-step-1.5",
-      "source_file": "b_s202.wav",
-      "dit": "acestep-v15-turbo",
-      "lm": "acestep-5Hz-lm-0.6B",
-      "bpm": 120,
-      "key": "C Major",
-      "seed": 202,
-      "caption": "children's nursery rhyme, cheerful and bouncy, bright clear young female vocal with a children's choir on the chorus, very clear English diction, ukulele strum, glockenspiel, light hand claps, soft kick drum, simple major-key sing-along melody",
-      "duration": 126.0,
+      "reason": null,
+      "sha1": "8b075ba23718719fcb943d22c130fda3d7c9d5f9",
+      "tool": "suno",
+      "source_file": "song.wav",
+      "note": "Suno Pro v1 'Crunchy Veggies' (stems: demucs htdemucs_ft)",
+      "duration": 134.76,
       "start": 0.0,
       "history": [
         {
-          "job_id": "local:99a518e30427",
+          "job_id": "local:8b075ba23718",
           "url": null,
-          "status": "rejected",
-          "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
-          "at": "2026-09-30T07:21Z",
+          "status": "generated",
+          "reason": null,
+          "at": "2026-09-30T07:50Z",
           "credits": 0
         }
       ],
       "analysis": {
-        "bpm": 120.0053,
-        "beat0": 0.4905,
-        "downbeat0": 1.9905,
-        "confidence": 60.053,
+        "bpm": 124.1017,
+        "beat0": 0.3773,
+        "downbeat0": 1.3443,
+        "confidence": 1.843,
         "downbeats": [
-          1.9905,
-          3.9904,
-          5.9903,
-          7.9902,
-          9.9901,
-          11.9901,
-          13.99,
-          15.9899,
-          17.9898,
-          19.9897,
-          21.9896,
-          23.9895,
-          25.9894,
-          27.9894,
-          29.9893,
-          31.9892,
-          33.9891,
-          35.989,
-          37.9889,
-          39.9888,
-          41.9887,
-          43.9886,
-          45.9886,
-          47.9885,
-          49.9884,
-          51.9883,
-          53.9882,
-          55.9881,
-          57.988,
-          59.9879,
-          61.9879,
-          63.9878,
-          65.9877,
-          67.9876,
-          69.9875,
-          71.9874,
-          73.9873,
-          75.9872,
-          77.9871,
-          79.9871,
-          81.987,
-          83.9869,
-          85.9868,
-          87.9867,
-          89.9866,
-          91.9865,
-          93.9864,
-          95.9863,
-          97.9863,
-          99.9862,
-          101.9861,
-          103.986,
-          105.9859,
-          107.9858,
-          109.9857,
-          111.9856,
-          113.9856,
-          115.9855,
-          117.9854,
-          119.9853,
-          121.9852,
-          123.9851,
-          125.985
+          1.3443,
+          3.2782,
+          5.2121,
+          7.146,
+          9.0799,
+          11.0138,
+          12.9477,
+          14.8816,
+          16.8155,
+          18.7494,
+          20.6833,
+          22.6172,
+          24.5511,
+          26.485,
+          28.4189,
+          30.3528,
+          32.2867,
+          34.2206,
+          36.1545,
+          38.0884,
+          40.0223,
+          41.9562,
+          43.8901,
+          45.8239,
+          47.7578,
+          49.6917,
+          51.6256,
+          53.5595,
+          55.4934,
+          57.4273,
+          59.3612,
+          61.2951,
+          63.229,
+          65.1629,
+          67.0968,
+          69.0307,
+          70.9646,
+          72.8985,
+          74.8324,
+          76.7663,
+          78.7002,
+          80.6341,
+          82.568,
+          84.5019,
+          86.4358,
+          88.3697,
+          90.3036,
+          92.2375,
+          94.1714,
+          96.1053,
+          98.0392,
+          99.9731,
+          101.907,
+          103.8409,
+          105.7748,
+          107.7087,
+          109.6426,
+          111.5765,
+          113.5104,
+          115.4443,
+          117.3782,
+          119.3121,
+          121.246,
+          123.1799,
+          125.1138,
+          127.0477,
+          128.9816,
+          130.9155,
+          132.8493
         ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            33.9,
+            -40.3,
+            0.7,
+            6.8,
+            8.8,
+            -18.6,
+            27.8,
+            -5.4,
+            -56.1
+          ],
+          "trend_ms": -30.2
+        },
         "source": "instrumental stem"
       },
-      "lyrics_sha1": "99a518e30427848a48f4982d6f335d05741700cc",
-      "end": 126.0
+      "lyrics_sha1": "8b075ba23718719fcb943d22c130fda3d7c9d5f9"
     },
     "vocals": {
-      "status": "rejected",
-      "job_id": "local:746fcadd3867",
+      "status": "generated",
+      "job_id": "local:35154f159fbb",
       "url": null,
       "attempts": 1,
       "credits": 0,
-      "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
-      "sha1": "746fcadd3867c0b4ab3214556d5777396c40e5d0",
-      "of": "99a518e30427848a48f4982d6f335d05741700cc",
+      "reason": null,
+      "sha1": "35154f159fbb0fcc1a5931e62a493497bc44d3a6",
+      "of": "8b075ba23718719fcb943d22c130fda3d7c9d5f9",
       "history": [
         {
-          "job_id": "local:746fcadd3867",
+          "job_id": "local:35154f159fbb",
           "url": null,
-          "status": "rejected",
-          "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
-          "at": "2026-09-30T07:21Z",
+          "status": "generated",
+          "reason": null,
+          "at": "2026-09-30T07:50Z",
           "credits": 0
         }
       ]
     },
     "beats_per_bar": 4,
-    "bpm": 120.0053,
+    "bpm": 124.1017,
+    "history": [
+      {
+        "track": {
+          "status": "rejected",
+          "job_id": "local:99a518e30427",
+          "url": null,
+          "attempts": 1,
+          "credits": 0,
+          "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
+          "sha1": "99a518e30427848a48f4982d6f335d05741700cc",
+          "tool": "ace-step-1.5",
+          "source_file": "b_s202.wav",
+          "dit": "acestep-v15-turbo",
+          "lm": "acestep-5Hz-lm-0.6B",
+          "bpm": 120,
+          "key": "C Major",
+          "seed": 202,
+          "caption": "children's nursery rhyme, cheerful and bouncy, bright clear young female vocal with a children's choir on the chorus, very clear English diction, ukulele strum, glockenspiel, light hand claps, soft kick drum, simple major-key sing-along melody",
+          "duration": 126.0,
+          "start": 0.0,
+          "history": [
+            {
+              "job_id": "local:99a518e30427",
+              "url": null,
+              "status": "rejected",
+              "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
+              "at": "2026-09-30T07:21Z",
+              "credits": 0
+            }
+          ],
+          "analysis": {
+            "bpm": 120.0053,
+            "beat0": 0.4905,
+            "downbeat0": 1.9905,
+            "confidence": 60.053,
+            "downbeats": [
+              1.9905,
+              3.9904,
+              5.9903,
+              7.9902,
+              9.9901,
+              11.9901,
+              13.99,
+              15.9899,
+              17.9898,
+              19.9897,
+              21.9896,
+              23.9895,
+              25.9894,
+              27.9894,
+              29.9893,
+              31.9892,
+              33.9891,
+              35.989,
+              37.9889,
+              39.9888,
+              41.9887,
+              43.9886,
+              45.9886,
+              47.9885,
+              49.9884,
+              51.9883,
+              53.9882,
+              55.9881,
+              57.988,
+              59.9879,
+              61.9879,
+              63.9878,
+              65.9877,
+              67.9876,
+              69.9875,
+              71.9874,
+              73.9873,
+              75.9872,
+              77.9871,
+              79.9871,
+              81.987,
+              83.9869,
+              85.9868,
+              87.9867,
+              89.9866,
+              91.9865,
+              93.9864,
+              95.9863,
+              97.9863,
+              99.9862,
+              101.9861,
+              103.986,
+              105.9859,
+              107.9858,
+              109.9857,
+              111.9856,
+              113.9856,
+              115.9855,
+              117.9854,
+              119.9853,
+              121.9852,
+              123.9851,
+              125.985
+            ],
+            "source": "instrumental stem"
+          },
+          "lyrics_sha1": "99a518e30427848a48f4982d6f335d05741700cc",
+          "end": 126.0
+        },
+        "vocals": {
+          "status": "rejected",
+          "job_id": "local:746fcadd3867",
+          "url": null,
+          "attempts": 1,
+          "credits": 0,
+          "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
+          "sha1": "746fcadd3867c0b4ab3214556d5777396c40e5d0",
+          "of": "99a518e30427848a48f4982d6f335d05741700cc",
+          "history": [
+            {
+              "job_id": "local:746fcadd3867",
+              "url": null,
+              "status": "rejected",
+              "reason": "사용자 결정: 노래는 Suno Pro 로 (2026-09-30)",
+              "at": "2026-09-30T07:21Z",
+              "credits": 0
+            }
+          ]
+        },
+        "replaced_at": "2026-09-30T07:50Z"
+      }
+    ],
     "lyrics": [
       {
         "text": "Crunch crunch, munch munch, veggies for my lunch!",
@@ -647,43 +744,43 @@
         "words": [
           [
             "Crunch",
-            3.4,
-            4.28
+            1.64,
+            2.32
           ],
           [
             "crunch,",
-            4.28,
-            4.76
+            2.32,
+            2.8
           ],
           [
             "munch",
-            5.34,
-            5.8
+            3.04,
+            3.38
           ],
           [
             "munch,",
-            5.96,
-            6.28
+            3.38,
+            3.86
           ],
           [
             "veggies",
-            6.28,
-            6.33
+            3.96,
+            4.36
           ],
           [
             "for",
-            6.3,
-            6.64
+            4.36,
+            4.7
           ],
           [
             "my",
-            6.64,
-            6.88
+            4.7,
+            4.92
           ],
           [
             "lunch!",
-            6.88,
-            7.38
+            4.92,
+            5.36
           ]
         ]
       },
@@ -693,38 +790,38 @@
         "words": [
           [
             "Crunch",
-            7.66,
-            8.32
+            5.6,
+            6.26
           ],
           [
             "crunch,",
-            8.32,
-            8.7
+            6.26,
+            6.64
           ],
           [
             "munch",
-            9.02,
-            9.34
+            7.0,
+            7.3
           ],
           [
             "munch,",
-            9.34,
-            9.78
+            7.3,
+            7.76
           ],
           [
             "happy",
-            9.9,
-            10.32
+            7.84,
+            8.28
           ],
           [
             "tummy,",
-            10.32,
-            10.8
+            8.28,
+            8.7
           ],
           [
             "yay!",
-            11.04,
-            11.26
+            9.0,
+            9.16
           ]
         ]
       },
@@ -734,28 +831,28 @@
         "words": [
           [
             "Orange",
-            11.96,
-            12.84
+            9.6,
+            10.28
           ],
           [
             "carrot,",
-            12.84,
-            13.58
+            10.28,
+            10.68
           ],
           [
             "long",
-            13.84,
-            14.28
+            10.9,
+            11.08
           ],
           [
             "and",
-            14.28,
-            14.82
+            11.08,
+            11.3
           ],
           [
             "bright,",
-            14.82,
-            15.38
+            11.3,
+            11.62
           ]
         ]
       },
@@ -765,43 +862,43 @@
         "words": [
           [
             "Hold",
-            15.74,
-            16.36
+            11.78,
+            12.06
           ],
           [
             "it",
-            16.36,
-            16.98
+            12.06,
+            12.32
           ],
           [
             "up",
-            16.98,
-            17.3
+            12.32,
+            12.56
           ],
           [
             "and",
-            17.3,
-            17.78
+            12.56,
+            12.74
           ],
           [
             "take",
-            17.78,
-            18.32
+            12.74,
+            13.06
           ],
           [
             "a",
-            18.32,
-            18.76
+            13.06,
+            13.26
           ],
           [
             "bite!",
-            18.76,
-            19.26
+            13.26,
+            13.54
           ],
           [
             "CRUNCH!",
-            19.64,
-            20.42
+            13.66,
+            14.22
           ]
         ]
       },
@@ -811,23 +908,23 @@
         "words": [
           [
             "Can",
-            20.82,
-            21.38
+            14.44,
+            14.68
           ],
           [
             "you",
-            21.38,
-            21.52
+            14.68,
+            15.0
           ],
           [
             "say",
-            21.52,
-            21.8
+            15.0,
+            15.5
           ],
           [
             "carrot?",
-            21.8,
-            22.3
+            15.5,
+            16.06
           ]
         ]
       },
@@ -837,8 +934,8 @@
         "words": [
           [
             "Carrot!",
-            22.76,
-            23.58
+            16.58,
+            17.26
           ]
         ]
       },
@@ -848,23 +945,23 @@
         "words": [
           [
             "Carrot,",
-            23.9,
-            24.34
+            17.62,
+            18.08
           ],
           [
             "carrot,",
-            24.88,
-            25.32
+            18.22,
+            18.46
           ],
           [
             "that's",
-            25.7,
-            26.02
+            18.94,
+            19.48
           ],
           [
             "right!",
-            26.02,
-            26.52
+            19.48,
+            19.84
           ]
         ]
       },
@@ -874,43 +971,43 @@
         "words": [
           [
             "Crunch",
-            27.42,
-            28.3
+            21.16,
+            21.84
           ],
           [
             "crunch,",
-            28.46,
-            28.7
+            22.06,
+            22.3
           ],
           [
             "munch",
-            28.96,
-            29.34
+            22.56,
+            22.88
           ],
           [
             "munch,",
-            29.5,
-            29.8
+            23.04,
+            23.36
           ],
           [
             "veggies",
-            30.02,
-            30.34
+            23.56,
+            23.86
           ],
           [
             "for",
-            30.34,
-            30.64
+            23.86,
+            24.16
           ],
           [
             "my",
-            30.64,
-            30.88
+            24.16,
+            24.4
           ],
           [
             "lunch!",
-            30.88,
-            31.38
+            24.4,
+            24.86
           ]
         ]
       },
@@ -920,38 +1017,38 @@
         "words": [
           [
             "Crunch",
-            31.64,
-            32.28
+            24.86,
+            25.64
           ],
           [
             "crunch,",
-            32.48,
-            32.64
+            25.94,
+            26.1
           ],
           [
             "munch",
-            32.98,
-            33.32
+            26.44,
+            26.76
           ],
           [
             "munch,",
-            33.46,
-            33.8
+            26.88,
+            27.22
           ],
           [
             "happy",
-            33.92,
-            34.34
+            27.3,
+            27.74
           ],
           [
             "tummy,",
-            34.34,
-            34.8
+            27.74,
+            28.2
           ],
           [
             "yay!",
-            35.04,
-            35.3
+            28.42,
+            28.7
           ]
         ]
       },
@@ -961,28 +1058,28 @@
         "words": [
           [
             "Orange,",
-            35.9,
-            36.78
+            28.7,
+            29.82
           ],
           [
             "green",
-            37.02,
-            37.26
+            30.12,
+            30.42
           ],
           [
             "and",
-            37.42,
-            37.88
+            30.8,
+            31.12
           ],
           [
             "yellow",
-            37.88,
-            38.6
+            31.12,
+            31.7
           ],
           [
             "too,",
-            38.6,
-            39.3
+            31.76,
+            32.32
           ]
         ]
       },
@@ -992,28 +1089,28 @@
         "words": [
           [
             "Crunchy",
-            39.94,
-            40.82
+            33.18,
+            33.86
           ],
           [
             "veggies,",
-            40.82,
-            41.58
+            33.86,
+            34.54
           ],
           [
             "good",
-            41.58,
-            42.18
+            35.16,
+            35.38
           ],
           [
             "for",
-            42.18,
-            42.76
+            35.38,
+            35.92
           ],
           [
             "you!",
-            42.76,
-            43.34
+            35.92,
+            36.44
           ]
         ]
       },
@@ -1023,28 +1120,28 @@
         "words": [
           [
             "Green",
-            45.46,
-            46.34
+            37.18,
+            37.86
           ],
           [
             "broccoli,",
-            46.34,
-            46.98
+            37.86,
+            38.4
           ],
           [
             "a",
-            47.42,
-            47.76
+            38.62,
+            38.98
           ],
           [
             "tiny",
-            47.76,
-            48.56
+            38.98,
+            39.36
           ],
           [
             "tree,",
-            48.56,
-            49.22
+            39.36,
+            40.0
           ]
         ]
       },
@@ -1054,38 +1151,38 @@
         "words": [
           [
             "One",
-            49.78,
-            50.22
+            41.38,
+            42.06
           ],
           [
             "for",
-            50.22,
-            50.82
+            42.06,
+            42.32
           ],
           [
             "you",
-            50.82,
-            51.26
+            42.32,
+            42.6
           ],
           [
             "and",
-            51.26,
-            51.8
+            42.6,
+            42.84
           ],
           [
             "one",
-            51.8,
-            52.22
+            42.84,
+            43.12
           ],
           [
             "for",
-            52.22,
-            52.78
+            43.12,
+            43.52
           ],
           [
             "me!",
-            52.78,
-            53.26
+            43.52,
+            44.02
           ]
         ]
       },
@@ -1095,23 +1192,23 @@
         "words": [
           [
             "Can",
-            53.96,
-            54.64
+            45.0,
+            45.68
           ],
           [
             "you",
-            54.64,
-            54.86
+            45.68,
+            46.02
           ],
           [
             "say",
-            54.86,
-            55.22
+            46.02,
+            46.56
           ],
           [
             "broccoli?",
-            55.22,
-            55.78
+            46.56,
+            47.54
           ]
         ]
       },
@@ -1121,8 +1218,8 @@
         "words": [
           [
             "Broccoli!",
-            56.52,
-            57.26
+            48.08,
+            48.74
           ]
         ]
       },
@@ -1132,28 +1229,28 @@
         "words": [
           [
             "Broccoli,",
-            57.56,
-            58.4
+            49.58,
+            50.28
           ],
           [
             "broccoli,",
-            58.9,
-            59.28
+            50.46,
+            50.8
           ],
           [
             "hooray",
-            59.68,
-            60.26
+            51.38,
+            51.86
           ],
           [
             "for",
-            60.26,
-            60.7
+            51.86,
+            52.32
           ],
           [
             "me!",
-            60.7,
-            61.36
+            52.32,
+            52.84
           ]
         ]
       },
@@ -1163,43 +1260,43 @@
         "words": [
           [
             "Crunch",
-            61.68,
-            62.32
+            52.84,
+            53.84
           ],
           [
             "crunch,",
-            62.46,
-            62.7
+            54.0,
+            54.18
           ],
           [
             "munch",
-            62.98,
-            63.3
+            54.5,
+            54.84
           ],
           [
             "munch,",
-            63.48,
-            63.8
+            54.96,
+            55.3
           ],
           [
             "veggies",
-            63.9,
-            64.32
+            55.52,
+            55.78
           ],
           [
             "for",
-            64.32,
-            64.64
+            55.78,
+            56.12
           ],
           [
             "my",
-            64.64,
-            64.88
+            56.12,
+            56.36
           ],
           [
             "lunch!",
-            64.88,
-            65.36
+            56.36,
+            56.8
           ]
         ]
       },
@@ -1209,38 +1306,38 @@
         "words": [
           [
             "Crunch",
-            65.7,
-            66.26
+            56.8,
+            57.6
           ],
           [
             "crunch,",
-            66.54,
-            66.66
+            57.9,
+            58.06
           ],
           [
             "munch",
-            67.0,
-            67.3
+            58.38,
+            58.72
           ],
           [
             "munch,",
-            67.46,
-            67.78
+            58.82,
+            59.16
           ],
           [
             "happy",
-            67.92,
-            68.34
+            59.24,
+            59.68
           ],
           [
             "tummy,",
-            68.34,
-            68.78
+            59.68,
+            60.12
           ],
           [
             "yay!",
-            69.02,
-            69.26
+            60.38,
+            60.6
           ]
         ]
       },
@@ -1250,28 +1347,28 @@
         "words": [
           [
             "Orange,",
-            69.9,
-            70.74
+            60.6,
+            61.74
           ],
           [
             "green",
-            71.02,
-            71.26
+            62.06,
+            62.28
           ],
           [
             "and",
-            71.26,
-            71.84
+            62.68,
+            63.04
           ],
           [
             "yellow",
-            71.84,
-            72.66
+            63.04,
+            63.64
           ],
           [
             "too,",
-            72.66,
-            73.28
+            63.64,
+            64.24
           ]
         ]
       },
@@ -1281,28 +1378,28 @@
         "words": [
           [
             "Crunchy",
-            73.94,
-            74.78
+            65.08,
+            65.78
           ],
           [
             "veggies,",
-            74.78,
-            75.58
+            65.78,
+            66.46
           ],
           [
             "good",
-            75.58,
-            76.14
+            67.08,
+            67.28
           ],
           [
             "for",
-            76.14,
-            76.74
+            67.28,
+            67.82
           ],
           [
             "you!",
-            76.74,
-            77.34
+            67.82,
+            68.36
           ]
         ]
       },
@@ -1312,33 +1409,33 @@
         "words": [
           [
             "Yellow",
-            79.76,
-            80.6
+            70.74,
+            71.44
           ],
           [
             "corn,",
-            80.6,
-            81.28
+            71.44,
+            72.14
           ],
           [
             "so",
-            81.28,
-            81.66
+            72.3,
+            72.6
           ],
           [
             "sweet",
-            81.66,
-            82.22
+            72.6,
+            73.1
           ],
           [
             "and",
-            82.22,
-            82.76
+            73.1,
+            73.36
           ],
           [
             "small,",
-            82.76,
-            83.4
+            73.36,
+            73.92
           ]
         ]
       },
@@ -1348,43 +1445,43 @@
         "words": [
           [
             "Ducky,",
-            83.4,
-            84.64
+            73.92,
+            75.18
           ],
           [
             "come",
-            85.04,
-            85.26
+            75.56,
+            75.9
           ],
           [
             "and",
-            85.26,
-            85.76
+            75.9,
+            76.5
           ],
           [
             "share",
-            85.76,
-            86.34
+            76.5,
+            76.98
           ],
           [
             "it",
-            86.34,
-            86.8
+            76.98,
+            77.5
           ],
           [
             "all!",
-            86.8,
-            87.32
+            77.5,
+            77.76
           ],
           [
             "Quack",
-            87.32,
-            87.78
+            77.78,
+            78.357
           ],
           [
             "quack!",
-            88.0,
-            88.4
+            78.357,
+            78.933
           ]
         ]
       },
@@ -1394,23 +1491,23 @@
         "words": [
           [
             "Can",
-            88.4,
-            89.36
+            77.76,
+            78.56
           ],
           [
             "you",
-            89.36,
-            89.6
+            78.56,
+            78.9
           ],
           [
             "say",
-            89.6,
-            89.86
+            78.9,
+            79.4
           ],
           [
             "corn?",
-            89.86,
-            90.4
+            79.4,
+            80.08
           ]
         ]
       },
@@ -1420,8 +1517,8 @@
         "words": [
           [
             "Corn!",
-            90.98,
-            91.4
+            80.62,
+            81.34
           ]
         ]
       },
@@ -1431,23 +1528,23 @@
         "words": [
           [
             "Corn,",
-            91.86,
-            92.32
+            82.38,
+            83.1
           ],
           [
             "corn,",
-            92.5,
-            93.24
+            83.1,
+            83.82
           ],
           [
             "yellow",
-            93.24,
-            94.5
+            84.18,
+            84.82
           ],
           [
             "corn!",
-            94.5,
-            95.54
+            84.82,
+            85.64
           ]
         ]
       },
@@ -1457,23 +1554,23 @@
         "words": [
           [
             "CARROT!",
-            97.66,
-            98.38
+            85.64,
+            86.9
           ],
           [
             "BROCCOLI!",
-            98.38,
-            98.686
+            87.18,
+            87.82
           ],
           [
             "CORN!",
-            99.06,
-            100.3
+            88.24,
+            88.6
           ],
           [
             "Hooray!",
-            100.66,
-            101.36
+            88.74,
+            89.5
           ]
         ]
       },
@@ -1483,33 +1580,33 @@
         "words": [
           [
             "Veggies",
-            101.36,
-            102.4
+            90.04,
+            90.76
           ],
           [
             "help",
-            102.4,
-            102.7
+            90.76,
+            91.24
           ],
           [
             "us",
-            102.7,
-            102.9
+            91.24,
+            91.8
           ],
           [
             "grow",
-            102.9,
-            103.24
+            91.8,
+            92.28
           ],
           [
             "and",
-            103.24,
-            103.483
+            92.28,
+            92.9
           ],
           [
             "play!",
-            103.78,
-            104.3
+            92.9,
+            93.42
           ]
         ]
       },
@@ -1519,43 +1616,43 @@
         "words": [
           [
             "Crunch",
-            105.56,
-            106.28
+            93.42,
+            94.36
           ],
           [
             "crunch,",
-            106.48,
-            106.7
+            94.52,
+            94.72
           ],
           [
             "munch",
-            106.98,
-            107.3
+            95.02,
+            95.36
           ],
           [
             "munch,",
-            107.46,
-            107.8
+            95.46,
+            95.82
           ],
           [
             "veggies",
-            107.8,
-            108.42
+            96.0,
+            96.3
           ],
           [
             "for",
-            108.42,
-            108.66
+            96.3,
+            96.62
           ],
           [
             "my",
-            108.66,
-            108.94
+            96.62,
+            96.86
           ],
           [
             "lunch!",
-            108.94,
-            109.36
+            96.86,
+            97.3
           ]
         ]
       },
@@ -1565,38 +1662,38 @@
         "words": [
           [
             "Crunch",
-            109.36,
-            110.12
+            97.3,
+            98.14
           ],
           [
             "crunch,",
-            110.46,
-            110.64
+            98.38,
+            98.54
           ],
           [
             "munch",
-            110.96,
-            111.32
+            98.9,
+            99.18
           ],
           [
             "munch,",
-            111.46,
-            111.78
+            99.3,
+            99.64
           ],
           [
             "happy",
-            111.78,
-            112.34
+            99.72,
+            100.16
           ],
           [
             "tummy,",
-            112.34,
-            112.78
+            100.16,
+            100.62
           ],
           [
             "yay!",
-            113.0,
-            113.22
+            100.84,
+            101.08
           ]
         ]
       },
@@ -1606,28 +1703,28 @@
         "words": [
           [
             "Orange,",
-            113.22,
-            114.82
+            101.08,
+            102.22
           ],
           [
             "green",
-            115.04,
-            115.28
+            102.5,
+            102.82
           ],
           [
             "and",
-            115.74,
-            115.86
+            103.18,
+            103.5
           ],
           [
             "yellow",
-            115.86,
-            116.66
+            103.5,
+            104.08
           ],
           [
             "too,",
-            116.68,
-            117.28
+            104.08,
+            104.62
           ]
         ]
       },
@@ -1637,28 +1734,28 @@
         "words": [
           [
             "Crunchy",
-            117.86,
-            118.8
+            104.62,
+            106.32
           ],
           [
             "veggies,",
-            118.8,
-            119.58
+            106.32,
+            106.84
           ],
           [
             "good",
-            120.02,
-            120.2
+            107.48,
+            107.66
           ],
           [
             "for",
-            120.2,
-            120.76
+            107.66,
+            108.22
           ],
           [
             "you!",
-            120.76,
-            121.26
+            108.24,
+            108.84
           ]
         ]
       }

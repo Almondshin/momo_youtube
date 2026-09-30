@@ -25,6 +25,7 @@ import sys
 from pathlib import Path
 
 MODEL = "mlx-community/whisper-large-v3-turbo"
+MAX_WORD = 2.0  # s — a sung word (even a held note) is shorter than this
 
 
 def read_lyrics(path: Path) -> list[dict]:
@@ -87,6 +88,24 @@ def align(exp: list[str], got: list[str]) -> list[int | None]:
     return out
 
 
+MAX_GAP = 2.5  # s — a word heard this long after the previous word of the same line is a mismatch
+
+
+def drop_outliers(times: list[tuple[float, float] | None]) -> list[tuple[float, float] | None]:
+    """Forget heard times that jump far from their line neighbours (whisper matched a word elsewhere)."""
+    out = list(times)
+    known = [k for k, t in enumerate(out) if t is not None]
+    for a, b in zip(known, known[1:]):
+        if out[a] is not None and out[b] is not None and out[b][0] - out[a][1] > MAX_GAP * (b - a):
+            # keep the side that agrees with the rest of the line
+            after = [out[k][0] for k in known if k > b and out[k] is not None]
+            if after and after[0] - out[b][1] <= MAX_GAP:
+                out[a] = None
+            else:
+                out[b] = None
+    return out
+
+
 def fill_line(times: list[tuple[float, float] | None]) -> list[tuple[float, float]] | None:
     """Interpolate the words of one line that were not heard, from the heard ones around them."""
     known = [k for k, t in enumerate(times) if t is not None]
@@ -144,6 +163,7 @@ def main() -> int:
             per_line[li][ti] = (round(heard[j][1], 3), round(heard[j][2], 3))
     out_lines, missing = [], []
     for ln, times in zip(lines, per_line):
+        times = drop_outliers(times)
         filled = fill_line(times)
         if filled is None:
             missing.append(ln["text"])
@@ -152,7 +172,7 @@ def main() -> int:
         fixed, last = [], 0.0
         for s, e in filled:
             s = max(s, last)
-            e = max(e, s + 0.05)
+            e = min(max(e, s + 0.05), s + MAX_WORD)  # whisper can stretch a last word over a long outro
             fixed.append((round(s, 3), round(e, 3)))
             last = s
         out_lines.append({"text": ln["text"], "section": ln["section"],
