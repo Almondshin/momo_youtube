@@ -48,6 +48,7 @@ REF_SR = 44100
 GATE_DB = -35.0      # vocal-stem slice: 20 ms frames this far below the stem's loudest frame are muted
 GATE_HOLD = 0.08     # … unless voice is within this many seconds (keeps consonants and breaths)
 RAMP = 0.01
+REF_MIN = 3.0        # s — shorter slices are padded with silence (wan2_7 fails on ~2 s audio references)
 
 
 def sha1_file(p: Path) -> str:
@@ -266,6 +267,9 @@ def cmd_refs(paths, cfg, args) -> int:
         s, e = track_window(m, c["id"])
         seg = x[int(round(s * REF_SR)):int(round(e * REF_SR))]
         seg = gate(seg, REF_SR)
+        if len(seg) < REF_MIN * REF_SR:  # the lip-sync model rejects audio under ~2 s: pad silence at the end
+            import numpy as np
+            seg = np.concatenate([seg, np.zeros(int(REF_MIN * REF_SR) - len(seg), seg.dtype)])
         dst = out / f"{c['id']}_en.wav"
         audio.write_wav(dst, seg, REF_SR, codec="pcm_s16le")
         print(f"✔ {dst.name}: 노래 {s:.3f}~{e:.3f}s ({e - s:.2f}s)")
