@@ -56,6 +56,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
                    "unit_costs": {"image": 2, "video_720p_5s": 7.5, "video_1080p_5s": 10, "audio_block": 0.2}},
     "voices": {"en": None, "ko": None},
     "credits": {"episode_cap": 250},
+    "onmodel": {"canon_eye_ratio": 0.486, "eye_ratio_min": 0.65},
     "plan_rules": {"cuts_min": 22, "cuts_max": 28, "v_range": [12, 15], "s_range": [6, 8], "l_range": [3, 4],
                    "scenes": 5, "narration_max_words_en": 25, "narration_max_chars_ko": 40,
                    "keyword_min_repeats": 3},

@@ -218,5 +218,10 @@
       "ko": null
     },
     "channel_note": "EN/KO 를 서로 다른 채널에 올리면 언어별 refresh token(YOUTUBE_REFRESH_TOKEN_EN / _KO)을 쓴다."
+  },
+  "onmodel": {
+    "_note": "모모 모습 검사 (momolib/onmodel.py): 눈 크기 ÷ 눈 사이 거리, 승인된 캐릭터 시트 정면 = canon. ep04 c33(구슬 눈) 0.42, 승인된 컷 ≥ 0.76",
+    "canon_eye_ratio": 0.486,
+    "eye_ratio_min": 0.65
   }
 }

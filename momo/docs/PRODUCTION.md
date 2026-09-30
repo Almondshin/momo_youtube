@@ -225,6 +225,7 @@ git commit -m "ep02 5단계 중단: <이유>" && git push      # 성공분 기�
    ```bash
    ffmpeg -v error -y -i momo/episodes/ep02/clips/c05.mp4 -vf "fps=2,scale=384:-2,tile=5x2" -frames:v 1 /tmp/c05_clip.jpg
    ```
+   모모가 나오는 이미지는 **얼굴을 원본 크기로 잘라서도** 본다 (축소 시트에서는 구슬 눈을 놓친다 — ep04 c33).
    음성은 Claude 가 들을 수 없다 — 길이(`ffprobe`)로 이상치만 보고, 판단은 사용자에게 맡긴다.
    사용자에게는 `mcp__higgsfield__job_display`(1건) / `mcp__higgsfield__show_generation_by_ids`(배치)로 위젯을 띄워 보여준다.
 8. **승인 결과 기록**:
@@ -232,6 +233,10 @@ git commit -m "ep02 5단계 중단: <이유>" && git push      # 성공분 기�
    python momo/hf_jobs.py record --ep ep02 --cut c05 --kind image --status approved
    python momo/hf_jobs.py record --ep ep02 --cut c06 --kind image --status rejected --reason "노란 단추가 안 보임"
    ```
+   **모모 모습 검사(가드레일)**: 모모가 나오는 컷의 이미지·클립은 승인할 때 눈 비율(`momolib/onmodel.py`, 캐릭터
+   시트 = 1.00)을 자동으로 잰다. `config.onmodel.eye_ratio_min`(0.65) 아래면 승인이 거부된다 — 구슬 눈·눌린 얼굴.
+   직접 크게 보고 정말 괜찮을 때만 `--off-model-ok`. 클립 `plan` 도 시작 이미지가 걸리면 그 클립을 `blocked` 로 막는다
+   (클립은 시작 이미지를 그대로 따라간다). 한꺼번에 보려면 `python momo/hf_jobs.py onmodel --ep ep02`.
    거절분은 2번부터 다시 (재생성 횟수는 자동 집계). 승인된 항목을 다시 만들려면 `record … --force` 가 필요하다 — 쓰지 말 것.
 9. **커밋**: 승인 배치마다
    ```bash
@@ -450,6 +455,12 @@ Lessons from ep04 (apply from ep05):
   - chorus lines are paired into 3.5–4 s shots; object shots use the whole motion clip;
   - reused lip-sync takes are placed by cross-correlating the vocal-stem loudness with the source window
     (chorus 3 was sung 0.3–0.46 s later than the aligner said).
+- ep04 c33 ("Six little hops!") deformed: beady eyes, a wide flat head. The cause was the **start image** (a 3/4 walking
+  stride with small eyes, from "both ready to hop"), and wan2_7 kept it from frame 0. Fixes now in the pipeline: the
+  on-model gate above (c33 was 0.42; every other ep04 Momo shot is 0.75 or higher). Momo lip-sync start images are
+  frontal with both feet on the ground. The motion opens with an identity sentence in positive wording ("Momo keeps
+  exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights…").
+  Big moves like hops go to Ducky, and Momo "bounces gently on bent knees with both feet on the grass".
 
 ---
 

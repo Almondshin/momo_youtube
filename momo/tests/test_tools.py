@@ -347,6 +347,52 @@ def test_record_flow_and_credits(tmp: Path) -> None:
     assert manifest(root)["credits"]["spent"] == 12.2  # 거부된 기록은 아무것도 바꾸지 않는다
 
 
+def momo_still(path: Path, eye_d: int) -> Path:
+    """Synthetic Momo: cream head with two dark eyes (diameter eye_d, 120 px apart) above mint overalls."""
+    import numpy as np
+    a = np.zeros((716, 1284, 3), np.uint8)
+    a[:] = (120, 190, 245)
+    yy, xx = np.mgrid[:716, :1284]
+    a[(yy - 250) ** 2 + (xx - 640) ** 2 < 170 ** 2] = (240, 228, 205)
+    for cx in (580, 700):
+        a[(yy - 240) ** 2 + (xx - cx) ** 2 < (eye_d / 2) ** 2] = (30, 25, 30)
+    a[430:640, 530:750] = (150, 220, 190)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    Image.fromarray(a).save(path)
+    return path
+
+
+def test_onmodel_gate(tmp: Path) -> None:
+    from momolib import onmodel
+    root = make_root(tmp)
+    cfg = load_config(Paths(root))
+    img = root / "episodes" / EP / "images" / "c02.png"
+    good = onmodel.check_image(cfg, momo_still(tmp / "good.png", 60))
+    bad = onmodel.check_image(cfg, momo_still(tmp / "bad.png", 20))
+    assert good["verdict"] == "ok" and 0.9 < good["ratio"] < 1.15, good          # huge round eyes ≈ the sheet
+    assert bad["verdict"] == "off" and bad["ratio"] < 0.5, bad                    # beady eyes (ep04 c33 was 0.42)
+    blank = onmodel.check_image(cfg, write_png(tmp / "blank.png", (250, 250, 250)))
+    assert blank["verdict"] == "unmeasured"                                       # no Momo → never blocks
+    base = ["--ep", EP, "--cut", "c02", "--kind", "image"]
+    record(root, *base, "--job-id", "j1", "--url", "file:///x1.png", "--status", "generated")
+    momo_still(img, 20)
+    fails(hf_jobs, "record", "--root", str(root), *base, "--status", "approved", needle="--off-model-ok")
+    assert cut(root, "c02")["gen"]["image"]["status"] == "generated"
+    out = record(root, *base, "--status", "approved", "--off-model-ok")           # looked at it: approve anyway
+    assert "--off-model-ok 로 승인" in out and cut(root, "c02")["gen"]["image"]["off_model_ok"] is True
+    set_voices(root)
+    m = manifest(root)
+    del next(c for c in m["cuts"] if c["id"] == "c02")["gen"]["image"]["off_model_ok"]
+    wj(root / "episodes" / EP / "manifest.json", m)
+    p = plan(root, "--ep", EP, "--kind", "clip", "--cuts", "c02", "--lang", "en")
+    assert not p["items"] and any("시작 이미지의 모모" in b for b in p["blocked"]), p   # bad start frame = bad clip
+    momo_still(img, 60)
+    p = plan(root, "--ep", EP, "--kind", "clip", "--cuts", "c02", "--lang", "en")
+    assert not any("시작 이미지의 모모" in b for b in p["blocked"]), p
+    out = ok(hf_jobs, "onmodel", "--root", str(root), "--ep", EP)
+    assert "✔ c02 image" in out and "모델과 다른 것 0개" in out, out
+
+
 def test_plan_clip_and_audio(tmp: Path) -> None:
     root = make_root(tmp)
     cfg = load_config(Paths(root))

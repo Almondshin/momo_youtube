@@ -23,6 +23,7 @@ Claude 는 plan 이 주는 {"tool", "params"} 를 MCP 도구에 그대로 넘기
   python hf_jobs.py record --ep ep02 --song-music --job-id J --url U --status generated   # AI 반주
   python hf_jobs.py narref --ep ep02 --cut c13 --lang en --media-id M     # 여러 블록 립싱크 컷
   python hf_jobs.py status --ep ep02 [--library] [--json]
+  python hf_jobs.py onmodel --ep ep04 [--cuts c33]      # 모모 모습 검사 (승인 때 자동, 클립 plan 때 시작 이미지)
 
 - 크레딧 기본값은 config.higgsfield.unit_costs (이미지 2, 영상 해상도별, 음성 블록 0.2), --credits 로 덮어쓴다.
 - 라이브러리 항목을 --ep 와 함께 기록하면 그 에피소드 크레딧에 합산한다 (첫 편 예산에 라이브러리 포함).
@@ -39,14 +40,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoError, Paths,  # noqa: E402
+from momolib.common import (IMAGE_EXTS, LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoError, Paths,  # noqa: E402
                             active_langs, add_root_arg, check_ep, check_lang, find_media, get_paths, load_config, load_json,
                             load_library, load_manifest, main_wrapper, save_json)
 from momolib.episode import (compose_image_prompt, compose_motion_prompt, song_track, track_spans,  # noqa: E402
                              tts_blocks)
 from momolib.genrec import (KIND_EXTS, NA, SYMBOL, Slot, add_credits, apply_record, char_tags,  # noqa: E402
                             characters_used, clip_cost, clip_seconds, cut_slots, element_prefix, episode_cap,
-                            episode_slots, music_cost, song_slots,
+                            episode_slots, has_momo, music_cost, song_slots,
                             estimate, library_slots, needs_generation, now_iso, status_of, stop_message,
                             unit_cost)
 
@@ -170,6 +171,12 @@ def plan_episode(paths: Paths, cfg: dict, args) -> dict:
             end_job, audio_job, why = clip_links(cfg, m, s)
             if why:
                 blocked.append(f"{s.key}: {why}")
+                continue
+            chk = start_image_check(paths, cfg, ep, s.cut, img)
+            if chk and chk["verdict"] == "off":
+                from momolib.onmodel import describe
+                blocked.append(f"{s.key}: 시작 이미지의 모모 {describe(chk)} — 클립은 시작 이미지를 그대로 따라가니 "
+                               f"이미지부터 다시 (직접 보고 괜찮으면 이미지를 record --off-model-ok 로 승인)")
                 continue
             tool, params = "generate_video", clip_params(cfg, compose_motion_prompt(cfg, s.cut), img["job_id"],
                                                          s.cut, s.lang, end_job, audio_job)
@@ -495,10 +502,17 @@ def cmd_record(paths: Paths, cfg: dict, args) -> int:
         img = (slot.cut.get("gen") or {}).get("image") if slot.cut else slot.holder.get("image")
         extra = {"start_image": (img or {}).get("job_id")}
     prev = slot.status
+    chk_line = None
+    if args.status == "approved":
+        chk_line = approval_check(cfg, slot, args.off_model_ok)
     rec = slot.ensure()
     delta, msg = apply_record(rec, args.status, job_id=args.job_id, url=args.url, reason=args.reason, cost=cost,
                               force=args.force, extra=extra)
+    if args.status == "approved" and args.off_model_ok:
+        rec["off_model_ok"] = True
     lines = [f"✔ {slot.key}: {prev} → {rec['status']}" + (f" ({msg})" if msg else "")]
+    if chk_line:
+        lines.append(f"  {chk_line}")
     if slot.group == "voice" and args.status == "approved":
         lines.append("  " + fix_voice(paths, slot.lang, slot.name, args.force))
     if slot.kind == "image" and slot.cut and slot.cut.get("type") == "V" and delta["generations"]:
@@ -521,6 +535,58 @@ def cmd_record(paths: Paths, cfg: dict, args) -> int:
         lines.append(f"  (라이브러리 {cost:g} 크레딧 — --ep 를 주면 그 에피소드 크레딧에 합산)")
     print("\n".join(lines))
     return 0
+
+
+# ---------------------------------------------------------------- on-model check (momolib/onmodel.py)
+
+def approval_check(cfg: dict, slot: Slot, override: bool) -> str | None:
+    """Before approving a cut's image/clip that shows Momo: refuse it when she is off-model (beady eyes, squashed
+    face — ep04 c33) unless --off-model-ok. → a line for the output, or None when the check does not apply."""
+    if slot.group != "cut" or slot.kind not in ("image", "clip") or not has_momo(slot.cut or {}):
+        return None
+    f = local_file(slot)
+    if f is None:
+        return "△ 모모 모습 검사 못 함 — 파일이 없음 (fetch_assets 후 다시 승인하면 검사됨)"
+    from momolib import onmodel
+    chk = (onmodel.check_image if slot.kind == "image" else onmodel.check_clip)(cfg, f)
+    if chk["verdict"] == "off" and not override:
+        raise MomoError(f"{slot.key}: 모모 {onmodel.describe(chk)} — 승인 거부. 크게 열어 보고 정말 괜찮으면 "
+                        f"--off-model-ok, 아니면 --status rejected 후 다시 생성")
+    return f"모모 모습 검사: {onmodel.describe(chk)}" + (" — --off-model-ok 로 승인" if chk["verdict"] == "off" else "")
+
+
+def start_image_check(paths: Paths, cfg: dict, ep: str, cut: dict, img: dict) -> dict | None:
+    """On-model check of a Momo clip's approved start image (None: no Momo, approved with --off-model-ok, or the
+    file is not here)."""
+    if not has_momo(cut) or img.get("off_model_ok"):
+        return None
+    f = find_media(paths.images(ep), cut["id"], IMAGE_EXTS)
+    if f is None:
+        return None
+    from momolib import onmodel
+    return onmodel.check_image(cfg, f)
+
+
+def cmd_onmodel(paths: Paths, cfg: dict, args) -> int:
+    """Momo on-model numbers for every Momo cut's image and clip(s) that are on disk. exit 1 if any is off-model."""
+    from momolib import onmodel
+    ep = check_ep(args.ep)
+    m = load_manifest(paths, ep)
+    want = {c.strip() for c in (args.cuts or "").split(",") if c.strip()}
+    bad = 0
+    for s in episode_slots(paths, cfg, m):
+        if s.group != "cut" or s.kind not in ("image", "clip") or (want and s.cut["id"] not in want) \
+                or not has_momo(s.cut):
+            continue
+        f = local_file(s)
+        if f is None:
+            continue
+        chk = (onmodel.check_image if s.kind == "image" else onmodel.check_clip)(cfg, f)
+        bad += chk["verdict"] == "off"
+        mark = {"ok": "✔", "off": "✖", "unmeasured": "·"}[chk["verdict"]]
+        print(f"{mark} {s.key}: {onmodel.describe(chk)}")
+    print(f"모모 모습 검사: 모델과 다른 것 {bad}개 (기준 {cfg['onmodel']['eye_ratio_min']}, 캐릭터 시트 = 1.00)")
+    return 1 if bad else 0
 
 
 # ---------------------------------------------------------------- status
@@ -759,12 +825,18 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--credits", type=float, help="이번 생성 크레딧 (기본: unit_costs)")
     p.add_argument("--text", help="voice-sample 문장 (처음 기록할 때)")
     p.add_argument("--force", action="store_true", help="승인된 항목을 새 결과로 덮기 / voices 변경")
+    p.add_argument("--off-model-ok", action="store_true",
+                   help="모모 모습 검사(눈 비율)에 걸려도 승인 — 직접 크게 보고 괜찮을 때만")
 
     p = subparser("narref", "여러 블록 립싱크 컷의 합친 나레이션 media_id 고정")
     p.add_argument("--ep", required=True)
     p.add_argument("--cut", required=True)
     p.add_argument("--lang", required=True)
     p.add_argument("--media-id", required=True, help="media_import_url 결과")
+
+    p = subparser("onmodel", "모모 모습 검사 — 컷 이미지·클립의 눈 비율 (구슬 눈·눌린 얼굴 잡기)")
+    p.add_argument("--ep", required=True)
+    p.add_argument("--cuts", help="쉼표 구분 컷 id")
 
     p = subparser("status", "컷별 진행표 + 크레딧 + 다음 작업")
     p.add_argument("--ep")
@@ -775,7 +847,7 @@ def main(argv: list[str] | None = None) -> int:
     paths = get_paths(args)
     cfg = load_config(paths)
     return {"plan": cmd_plan, "voice-samples": cmd_voice_samples, "record": cmd_record,
-            "narref": cmd_narref, "status": cmd_status}[args.cmd](paths, cfg, args)
+            "narref": cmd_narref, "onmodel": cmd_onmodel, "status": cmd_status}[args.cmd](paths, cfg, args)
 
 
 if __name__ == "__main__":
