@@ -165,7 +165,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 7
+        "en": 10
       },
       "bars": 4,
       "beats": [
@@ -210,6 +210,16 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "36263540-9472-4e62-83c8-91a3d7e648d3",
+          "blocks": [
+            "6119517a-32de-4c19-97ca-07da920e1e57",
+            "6202be6c-9cd3-4ae2-93e6-199098eac1b7"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -280,7 +290,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 6
+        "en": 5
       },
       "bars": 2,
       "audio_src": {
@@ -303,6 +313,15 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "9fe0db90-db05-485e-8c63-de3949e1457d",
+          "blocks": [
+            "f116ba5e-7ff8-43b9-9e3a-597b1175fd4b"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -580,7 +599,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 4
+        "en": 5
       },
       "bars": 2,
       "audio_src": {
@@ -603,6 +622,15 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "a6af5592-cd23-4521-9fa9-272c1373a27c",
+          "blocks": [
+            "a98cdc21-72ef-4438-acc1-06046c4ff210"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -729,7 +757,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 9
+        "en": 10
       },
       "motion": "holds up the toothpaste tube and sings to the viewer, the mouth moving in sync with the song, waits with a curious smile between the lines, then smiles happily and nods, both long floppy ears stay hanging down beside the cheeks the whole time",
       "gen": {
@@ -814,6 +842,16 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "b11c3f39-74de-464a-93cf-9aeef58c1f40",
+          "blocks": [
+            "e55e2301-bc56-4e60-a287-5183276d918e",
+            "b9762b52-545b-42aa-8279-d86c75f58362"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -1160,7 +1198,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 7
+        "en": 10
       },
       "motion": "sings to the viewer with a foamy smile, the mouth moving in sync with the song, moves the toothbrush up and down beside the mouth, nods to the beat, both long floppy ears stay hanging down beside the cheeks the whole time",
       "bars": 4,
@@ -1206,6 +1244,16 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "836a390d-6f16-4064-a9b0-2da5db1c5a12",
+          "blocks": [
+            "61c9521d-44dd-4e23-b154-5f4cd083eeb9",
+            "863545f9-2a2f-4532-ba34-3754ccb9f259"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -1290,6 +1338,15 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "0b669ef2-ecd8-4a3a-9540-454f4222f6f0",
+          "blocks": [
+            "56ec654c-1e45-47a7-96f9-731f91d519aa"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -1704,7 +1761,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 7
+        "en": 10
       },
       "bars": 4,
       "beats": [
@@ -1749,6 +1806,16 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "5f3e54b4-338f-418d-b8df-3c478a919169",
+          "blocks": [
+            "a819146c-8fa2-424f-9966-10e380b6887b",
+            "78b07474-9af3-450e-9a3d-9d1797d2f5cf"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -1906,7 +1973,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 8
+        "en": 10
       },
       "bars": 4,
       "beats": [
@@ -1951,6 +2018,16 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "cd610be4-486b-407f-be4f-915473892009",
+          "blocks": [
+            "cc8002ca-3a0e-40f3-a64a-3fa9fa905efc",
+            "e371a438-3550-4162-8e5e-a3af297c6830"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -2033,7 +2110,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 9
+        "en": 5
       },
       "sfx": [
         {
@@ -2063,6 +2140,15 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "23fc9808-f424-4197-a683-d40a562ad6dd",
+          "blocks": [
+            "e620de1b-c586-4871-bac4-4a1995d1af83"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
@@ -2116,7 +2202,7 @@
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 6
+        "en": 5
       },
       "motion": "sings cheerfully to the viewer with a big bright smile, the mouth moving in sync with the song, holds the toothbrush next to the cheek, Ducky peeks in and waves a wing, both long floppy ears stay hanging down beside the cheeks the whole time",
       "bars": 2,
@@ -2140,6 +2226,15 @@
             ],
             "reason": null
           }
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "9f65a9df-94f4-4e00-8b55-d23396a7cee1",
+          "blocks": [
+            "db93912f-286d-45a2-a5d5-8704c6f09ec1"
+          ],
+          "at": "2026-09-30T05:08Z"
         }
       }
     },
