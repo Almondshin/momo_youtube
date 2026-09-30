@@ -565,9 +565,9 @@
           "reason": null
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "532f9c3a-2444-44a9-80ae-e0829b46f98e",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_123253_532f9c3a-2444-44a9-80ae-e0829b46f98e.mp4",
           "attempts": 3,
           "credits": 12.0,
           "history": [
@@ -591,8 +591,8 @@
             },
             {
               "job_id": "532f9c3a-2444-44a9-80ae-e0829b46f98e",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_123253_532f9c3a-2444-44a9-80ae-e0829b46f98e.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T12:33Z",
               "credits": 4.0,
@@ -1939,7 +1939,7 @@
     "track": {
       "status": "approved",
       "job_id": "local:a7f761cf94fe",
-      "url": null,
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_song_a7f761cf.flac",
       "attempts": 1,
       "credits": 0,
       "reason": "사용자가 Suno 에서 만들어 넣어 준 곡 (v1)",
@@ -1952,7 +1952,7 @@
       "history": [
         {
           "job_id": "local:a7f761cf94fe",
-          "url": null,
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_song_a7f761cf.flac",
           "status": "approved",
           "reason": "사용자가 Suno 에서 만들어 넣어 준 곡 (v1)",
           "at": "2026-09-30T12:04Z",
@@ -2063,7 +2063,7 @@
     "vocals": {
       "status": "approved",
       "job_id": "local:0f8b4b1705f6",
-      "url": null,
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_song_vocals_0f8b4b17.flac",
       "attempts": 1,
       "credits": 0,
       "reason": "사용자가 Suno 에서 만들어 넣어 준 곡 (v1)",
@@ -2072,7 +2072,7 @@
       "history": [
         {
           "job_id": "local:0f8b4b1705f6",
-          "url": null,
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_song_vocals_0f8b4b17.flac",
           "status": "approved",
           "reason": "사용자가 Suno 에서 만들어 넣어 준 곡 (v1)",
           "at": "2026-09-30T12:04Z",
@@ -3579,6 +3579,21 @@
           ]
         ]
       }
-    ]
+    ],
+    "refs_urls": {
+      "c02_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c02_en_e1cc5470.wav",
+      "c04_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c04_en_1fa18bd4.wav",
+      "c07_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c07_en_e2b83f59.wav",
+      "c08_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c08_en_c7e11399.wav",
+      "c11_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c11_en_27658b92.wav",
+      "c13_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c13_en_fca00f2a.wav",
+      "c20_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c20_en_5f21b79b.wav",
+      "c24_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c24_en_d8bd7562.wav",
+      "c31_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c31_en_740c8aa9.wav",
+      "c32_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c32_en_1bd8e4eb.wav",
+      "c38_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c38_en_e68631bc.wav",
+      "c44_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c44_en_76fae3a7.wav",
+      "c50_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c50_en_8e62acc9.wav"
+    }
   }
 }
