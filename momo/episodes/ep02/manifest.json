@@ -52,9 +52,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 641.93,
-    "generations": 193,
-    "regenerations": 29,
+    "spent": 671.93,
+    "generations": 195,
+    "regenerations": 31,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)",
     "cap": 690
   },
@@ -103,7 +103,7 @@
         "en": "Good morning, sunshine! Time to wake up! [pause 0.1] Stretch up high, and a big yawn!"
       },
       "image_prompt": "[Momo] sitting up in a small cozy bed, stretching both arms up after waking, bright morning sunlight from a round window, soft pastel bedroom, clear empty pastel wall space in the upper third of the frame",
-      "motion": "sits up in bed and sings cheerfully to the viewer with the mouth moving in sync with the song, a small sleepy stretch with both arms, sways gently to the music, both long floppy ears stay hanging down beside the cheeks the whole time, warm morning sunlight",
+      "motion": "sits up in bed with eyes open, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, one small stretch with both arms at the start, sways gently to the music, after the last word the mouth closes into a soft smile, both long floppy ears stay hanging down beside the cheeks the whole time, warm morning sunlight",
       "gen": {
         "image": {
           "status": "approved",
@@ -135,10 +135,10 @@
         },
         "clip_en": {
           "status": "generated",
-          "job_id": "13089533-4ffc-4cd8-bddb-92e97d6c412c",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_051041_13089533-4ffc-4cd8-bddb-92e97d6c412c.mp4",
-          "attempts": 3,
-          "credits": 36.0,
+          "job_id": "a700a1c7-3b05-48c7-a2d9-128b7ac15b66",
+          "url": null,
+          "attempts": 4,
+          "credits": 51.0,
           "history": [
             {
               "job_id": "10f43295-0b7d-4110-8925-eb0997eab243",
@@ -161,9 +161,18 @@
             {
               "job_id": "13089533-4ffc-4cd8-bddb-92e97d6c412c",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_051041_13089533-4ffc-4cd8-bddb-92e97d6c412c.mp4",
+              "status": "rejected",
+              "reason": "eyes closed laughing for ~9 s, mouth stays wide open and does not follow the sung words (incl. 3 s silent tail)",
+              "at": "2026-09-30T05:10Z",
+              "credits": 15.0,
+              "start_image": "7de22d4d-6a76-45c5-94f7-3068c856d850"
+            },
+            {
+              "job_id": "a700a1c7-3b05-48c7-a2d9-128b7ac15b66",
+              "url": null,
               "status": "generated",
               "reason": null,
-              "at": "2026-09-30T05:10Z",
+              "at": "2026-09-30T05:21Z",
               "credits": 15.0,
               "start_image": "7de22d4d-6a76-45c5-94f7-3068c856d850"
             }
@@ -1751,7 +1760,7 @@
         "en": "Can you say rinse? [pause 0.1] Rinse! Hooray! Well done!"
       },
       "image_prompt": "[Momo] and [Ducky] side by side next to the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, both smiling at the viewer, clear empty pastel wall space in the upper third of the frame",
-      "motion": "Momo turns to the viewer and sings, the mouth moving in sync with the song, Ducky flaps its wings happily, both nod to the beat, Momo's long floppy ears stay hanging down",
+      "motion": "Momo turns to the viewer and sings the first short line, the mouth opening and closing on every word, then closes the mouth and waits quietly with a soft closed-mouth smile while listening, Ducky flaps its wings happily, then Momo sings the second line with clear mouth movements and closes the mouth after the last word, Momo's long floppy ears stay hanging down",
       "gen": {
         "image": {
           "status": "approved",
@@ -1794,10 +1803,10 @@
         },
         "clip_en": {
           "status": "generated",
-          "job_id": "315222d9-0f92-4cde-a9e8-00e5b39787c1",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_051059_315222d9-0f92-4cde-a9e8-00e5b39787c1.mp4",
-          "attempts": 2,
-          "credits": 25.5,
+          "job_id": "2ce3c4f4-a343-4333-9e45-0f3154922392",
+          "url": null,
+          "attempts": 3,
+          "credits": 40.5,
           "history": [
             {
               "job_id": "341022ff-bc99-4c5b-967f-40a6ccc9d0a3",
@@ -1811,9 +1820,18 @@
             {
               "job_id": "315222d9-0f92-4cde-a9e8-00e5b39787c1",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_051059_315222d9-0f92-4cde-a9e8-00e5b39787c1.mp4",
+              "status": "rejected",
+              "reason": "mouth keeps singing through the 4 s call-and-response gap (1-5 s) where there is no voice",
+              "at": "2026-09-30T05:11Z",
+              "credits": 15.0,
+              "start_image": "75ad1d14-8438-40ae-bb8f-d465c22c35c4"
+            },
+            {
+              "job_id": "2ce3c4f4-a343-4333-9e45-0f3154922392",
+              "url": null,
               "status": "generated",
               "reason": null,
-              "at": "2026-09-30T05:11Z",
+              "at": "2026-09-30T05:21Z",
               "credits": 15.0,
               "start_image": "75ad1d14-8438-40ae-bb8f-d465c22c35c4"
             }
