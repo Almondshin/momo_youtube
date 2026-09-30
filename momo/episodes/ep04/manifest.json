@@ -49,8 +49,8 @@
   },
   "credits": {
     "estimate": 207.6,
-    "spent": 58.0,
-    "generations": 29,
+    "spent": 165.0,
+    "generations": 52,
     "regenerations": 3
   },
   "notes": {
@@ -104,6 +104,25 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "639fad99-7f84-4896-83fa-6246e4ff5811",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "639fad99-7f84-4896-83fa-6246e4ff5811",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 4.5,
+              "start_image": "ab85bb4b-d559-4109-ad09-a98ddd550e94"
+            }
+          ],
+          "reason": null
         }
       },
       "nar_ref": {
@@ -145,6 +164,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "4b16a7ba-d1ee-42fa-97fb-45d5726e09d0",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "4b16a7ba-d1ee-42fa-97fb-45d5726e09d0",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 4.0,
+              "start_image": "73fb7698-f7cc-473c-bbdf-ef1e6c08d36b"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -175,6 +213,25 @@
               "reason": null,
               "at": "2026-09-30T12:09Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "d0adb42c-e1ef-4a5d-9235-cb34b557a6da",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "d0adb42c-e1ef-4a5d-9235-cb34b557a6da",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 4.5,
+              "start_image": "8f5be1b8-767c-4f1c-b428-fbf9feb06587"
             }
           ],
           "reason": null
@@ -219,6 +276,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "28b6d7f7-f343-4cbb-bb84-7f8960327b86",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "28b6d7f7-f343-4cbb-bb84-7f8960327b86",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 4.0,
+              "start_image": "ac50e704-ae79-4f93-97ac-eb77b99a5bf7"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -246,6 +322,25 @@
               "reason": null,
               "at": "2026-09-30T12:10Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "215fa6bb-98c3-41ff-9ddb-46b347ee4588",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "215fa6bb-98c3-41ff-9ddb-46b347ee4588",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 4.0,
+              "start_image": "9fe3f00a-61ed-4680-b7b5-b217501d5a14"
             }
           ],
           "reason": null
@@ -279,6 +374,25 @@
               "reason": null,
               "at": "2026-09-30T12:10Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "3a0e996e-ea27-4123-928e-be97c1290d98",
+          "url": null,
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "3a0e996e-ea27-4123-928e-be97c1290d98",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 6.0,
+              "start_image": "4389dc23-5478-448f-aac5-879b8f70ad4f"
             }
           ],
           "reason": null
@@ -323,6 +437,25 @@
               "reason": null,
               "at": "2026-09-30T12:10Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "79134442-8b98-42f9-8cf4-0aac63ecbed1",
+          "url": null,
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "79134442-8b98-42f9-8cf4-0aac63ecbed1",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 6.0,
+              "start_image": "ac5d3eb3-08c4-4802-a16b-f7e11c6e32a3"
             }
           ],
           "reason": null
@@ -374,6 +507,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "eeaaec89-f8b4-4991-af3e-053bd17930ca",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "eeaaec89-f8b4-4991-af3e-053bd17930ca",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 4.0,
+              "start_image": "31a78f06-12aa-46ba-a5bd-0a2c9c68c8a5"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -411,6 +563,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "26724fa5-bfdd-4623-963b-ae7fa416d4a9",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "26724fa5-bfdd-4623-963b-ae7fa416d4a9",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 4.0,
+              "start_image": "ba62ed8d-b566-45a5-9d71-b8e0c18f943a"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -441,6 +612,25 @@
               "reason": null,
               "at": "2026-09-30T12:11Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "451e68d0-8554-46b0-a0fe-ffe1ae9d4ccc",
+          "url": null,
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "451e68d0-8554-46b0-a0fe-ffe1ae9d4ccc",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 6.0,
+              "start_image": "56eb53e6-9068-42c4-8374-8b3af157cedc"
             }
           ],
           "reason": null
@@ -492,6 +682,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "bea79fad-dbaf-4f8f-888e-edcb24d1cfca",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "bea79fad-dbaf-4f8f-888e-edcb24d1cfca",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:21Z",
+              "credits": 4.0,
+              "start_image": "23f90a6d-f8d3-4b8b-912b-416cb9d7e017"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -522,6 +731,25 @@
               "reason": null,
               "at": "2026-09-30T12:11Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "511aa498-da6e-4380-a499-ac4f8a965544",
+          "url": null,
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "511aa498-da6e-4380-a499-ac4f8a965544",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 6.0,
+              "start_image": "1b562f8f-de27-43c8-91d2-0682a476ae80"
             }
           ],
           "reason": null
@@ -700,6 +928,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "f28bdeeb-3e7f-4777-824a-f4a80572b560",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "f28bdeeb-3e7f-4777-824a-f4a80572b560",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.0,
+              "start_image": "c8b5238b-332c-40ad-a765-9edb00bf2eef"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -788,6 +1035,25 @@
               "reason": null,
               "at": "2026-09-30T12:12Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "4a567ce2-cd94-4bc9-9ab3-dcc2f1bfcedc",
+          "url": null,
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "4a567ce2-cd94-4bc9-9ab3-dcc2f1bfcedc",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 6.0,
+              "start_image": "1f8a56d4-fd40-46b2-ad69-42134176fa7a"
             }
           ],
           "reason": null
@@ -910,6 +1176,25 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "210084d0-2dca-416f-b7ef-1697c321f597",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "210084d0-2dca-416f-b7ef-1697c321f597",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.5,
+              "start_image": "fdeeb32a-c738-47ff-bdf6-4ca4855377f8"
+            }
+          ],
+          "reason": null
         }
       },
       "nar_ref": {
@@ -951,6 +1236,25 @@
               "reason": null,
               "at": "2026-09-30T12:13Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "4cbb6c15-a885-4e76-8662-9d154ac14b6d",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "4cbb6c15-a885-4e76-8662-9d154ac14b6d",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.5,
+              "start_image": "97daedf6-4aab-488e-ab4f-9567a5c9f1fe"
             }
           ],
           "reason": null
@@ -1001,6 +1305,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "8a2f920f-671a-49ee-91ba-84a2a18abc00",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "8a2f920f-671a-49ee-91ba-84a2a18abc00",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.0,
+              "start_image": "6a375934-4e2f-44c0-a124-62da93c6478a"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -1034,6 +1357,25 @@
               "reason": null,
               "at": "2026-09-30T12:13Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "314f89ea-0ec7-4b72-81e0-33b523de76a4",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "314f89ea-0ec7-4b72-81e0-33b523de76a4",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.0,
+              "start_image": "0e114e94-cfa0-404b-87c3-f1af4a796aed"
             }
           ],
           "reason": null
@@ -1073,6 +1415,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "3af33e96-c1a6-427b-8196-cc31440efa8f",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "3af33e96-c1a6-427b-8196-cc31440efa8f",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.0,
+              "start_image": "9d62bca4-37fe-41a2-8596-2b3652841a66"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -1106,6 +1467,25 @@
               "reason": null,
               "at": "2026-09-30T12:14Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "ac61ba21-4a8a-41d4-bfb6-307d2c66aa8e",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "ac61ba21-4a8a-41d4-bfb6-307d2c66aa8e",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.0,
+              "start_image": "f9300bc9-0d5f-4106-9875-0abb2d784254"
             }
           ],
           "reason": null
@@ -1183,6 +1563,25 @@
               "reason": null,
               "at": "2026-09-30T12:14Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "f0031835-abad-4d6f-a532-69649dd6b183",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "f0031835-abad-4d6f-a532-69649dd6b183",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.5,
+              "start_image": "302cf10c-8358-4b27-94ac-21ab5b8285e6"
             }
           ],
           "reason": null
@@ -1290,6 +1689,25 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "7e4f3bd1-dcf2-4f38-ac64-6a050651e41a",
+          "url": null,
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "7e4f3bd1-dcf2-4f38-ac64-6a050651e41a",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 6.0,
+              "start_image": "70a00219-0620-46d6-bbaa-f97f3bdc3e1d"
+            }
+          ],
+          "reason": null
         }
       },
       "nar_ref": {
@@ -1393,6 +1811,25 @@
               "reason": null,
               "at": "2026-09-30T12:14Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "64bd076e-8cd7-48cb-9d35-9588e38fd4b6",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "64bd076e-8cd7-48cb-9d35-9588e38fd4b6",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:22Z",
+              "credits": 4.5,
+              "start_image": "1126ba99-daa3-4c04-8b27-368c779ba568"
             }
           ],
           "reason": null
