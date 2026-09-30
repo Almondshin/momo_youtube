@@ -418,6 +418,11 @@ def test_youtube_check(tmp: Path) -> None:
         code, out = check("--lang", "ko")
     assert code == 1 and "채널이 없음" in out, out
 
+    install(FakeService(errors={"channels.list": [http_error(403, "insufficientPermissions", "Insufficient Permission")]}))
+    with env(**SECRET):
+        code, out = check("--lang", "en")
+    assert code == 0 and "youtube.upload 권한만" in out and "SENTINEL" not in out, out
+
     install(FakeService(errors={"channels.list": [http_error(403, "forbidden", "API not enabled")]}))
     with env(**SECRET):
         code, out = check("--lang", "en")
