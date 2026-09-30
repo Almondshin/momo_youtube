@@ -49,9 +49,9 @@
   },
   "credits": {
     "estimate": 207.6,
-    "spent": 238.0,
-    "generations": 66,
-    "regenerations": 7
+    "spent": 240.0,
+    "generations": 67,
+    "regenerations": 8
   },
   "notes": {
     "v_over_reason": "노래 형식 v2 (사용자 피드백 '더 자연스럽게' 2026-09-30): 127.6 BPM 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 40컷. V 38개 중 13개는 재사용(clip_from, 0 크레딧), 모모가 나오는 컷은 전부 립싱크(노래하며 동작).",
@@ -1359,8 +1359,8 @@
       "scene": 4,
       "type": "V",
       "bars": 2,
-      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both ready to hop",
-      "motion": "Momo and Ducky hop in place together, Momo sings the words, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both facing the viewer, Momo standing with both feet flat on the grass and knees slightly bent, huge round sparkly eyes with big white highlights and a big happy smile, Ducky beside her with its tiny wings raised",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little hops beside Momo, flapping its tiny wings; Momo bounces gently on bent knees with both feet on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 3
@@ -1373,25 +1373,33 @@
       },
       "gen": {
         "image": {
-          "status": "approved",
-          "job_id": "6a375934-4e2f-44c0-a124-62da93c6478a",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121317_6a375934-4e2f-44c0-a124-62da93c6478a.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "status": "generated",
+          "job_id": "3acf795c-f014-44af-bf0f-3a9f72b7ba37",
+          "url": null,
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "6a375934-4e2f-44c0-a124-62da93c6478a",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121317_6a375934-4e2f-44c0-a124-62da93c6478a.png",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "off-model start frame: small beady eyes, wide flat head, 3/4 walking stride (user: Momo deforms on 'Six little hops')",
               "at": "2026-09-30T12:13Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "3acf795c-f014-44af-bf0f-3a9f72b7ba37",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T22:57Z",
               "credits": 2.0
             }
           ],
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "34373ab5-0129-4ecf-99b6-e93f74ffe1bc",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_34373ab5-0129-4ecf-99b6-e93f74ffe1bc.mp4",
           "attempts": 1,
@@ -1400,14 +1408,14 @@
             {
               "job_id": "34373ab5-0129-4ecf-99b6-e93f74ffe1bc",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_34373ab5-0129-4ecf-99b6-e93f74ffe1bc.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "inherits the off-model start frame; head squashes on the hops",
               "at": "2026-09-30T13:02Z",
               "credits": 4.5,
               "start_image": "6a375934-4e2f-44c0-a124-62da93c6478a"
             }
           ],
-          "reason": null
+          "reason": "inherits the off-model start frame; head squashes on the hops"
         }
       },
       "cut_at": 92.63,
