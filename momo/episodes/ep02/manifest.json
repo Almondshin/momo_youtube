@@ -161,7 +161,7 @@
         "clip_en": {
           "status": "generated",
           "job_id": "6b1cf7c8-7e4f-4a4e-94d2-06a790927923",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_6b1cf7c8-7e4f-4a4e-94d2-06a790927923.mp4",
           "attempts": 2,
           "credits": 21.0,
           "history": [
@@ -176,7 +176,7 @@
             },
             {
               "job_id": "6b1cf7c8-7e4f-4a4e-94d2-06a790927923",
-              "url": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_6b1cf7c8-7e4f-4a4e-94d2-06a790927923.mp4",
               "status": "generated",
               "reason": null,
               "at": "2026-09-30T00:11Z",
@@ -189,7 +189,7 @@
         "clip_ko": {
           "status": "generated",
           "job_id": "509e25b7-af0b-4d82-ba51-6e44d5b87429",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_509e25b7-af0b-4d82-ba51-6e44d5b87429.mp4",
           "attempts": 2,
           "credits": 27.0,
           "history": [
@@ -204,7 +204,7 @@
             },
             {
               "job_id": "509e25b7-af0b-4d82-ba51-6e44d5b87429",
-              "url": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_509e25b7-af0b-4d82-ba51-6e44d5b87429.mp4",
               "status": "generated",
               "reason": null,
               "at": "2026-09-30T00:11Z",
@@ -1556,13 +1556,13 @@
         "clip_en": {
           "status": "generated",
           "job_id": "7d11caf6-4dd6-4aa6-9085-24ebd743fc13",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_7d11caf6-4dd6-4aa6-9085-24ebd743fc13.mp4",
           "attempts": 1,
           "credits": 7.5,
           "history": [
             {
               "job_id": "7d11caf6-4dd6-4aa6-9085-24ebd743fc13",
-              "url": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_7d11caf6-4dd6-4aa6-9085-24ebd743fc13.mp4",
               "status": "generated",
               "reason": null,
               "at": "2026-09-30T00:11Z",
@@ -1575,13 +1575,13 @@
         "clip_ko": {
           "status": "generated",
           "job_id": "1e75ecca-08ed-4a58-b056-2d75cc56ed0c",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_1e75ecca-08ed-4a58-b056-2d75cc56ed0c.mp4",
           "attempts": 1,
           "credits": 9.0,
           "history": [
             {
               "job_id": "1e75ecca-08ed-4a58-b056-2d75cc56ed0c",
-              "url": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_1e75ecca-08ed-4a58-b056-2d75cc56ed0c.mp4",
               "status": "generated",
               "reason": null,
               "at": "2026-09-30T00:11Z",
