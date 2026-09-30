@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep03",
-  "status": "planning",
+  "status": "producing",
   "topic": {
     "en": "Crunchy Veggies",
     "ko": ""
@@ -48,9 +48,9 @@
     }
   },
   "credits": {
-    "estimate": null,
-    "spent": 0,
-    "generations": 0,
+    "estimate": 205.2,
+    "spent": 2.0,
+    "generations": 1,
     "regenerations": 0
   },
   "notes": {
@@ -79,6 +79,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 6
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "6220fcf3-2ef4-4f1d-8f4a-72a5758c0109",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075507_6220fcf3-2ef4-4f1d-8f4a-72a5758c0109.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "6220fcf3-2ef4-4f1d-8f4a-72a5758c0109",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075507_6220fcf3-2ef4-4f1d-8f4a-72a5758c0109.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T07:55Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
