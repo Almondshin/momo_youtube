@@ -3,7 +3,7 @@
   "ep": "ep04",
   "status": "planning",
   "topic": {
-    "en": "Count to Five",
+    "en": "Count to Ten",
     "ko": ""
   },
   "benchmark": {
@@ -52,7 +52,8 @@
     "v_over_reason": null,
     "approvals": [
       "2026-09-30 주제 승인: 숫자 세기 1~5 (Count to Five) — 사용자 선택",
-      "2026-09-30 형식: ep03 과 같은 노래 형식 (Suno Pro 곡, 컷 1~3마디, 립싱크 + 움직임 + 재사용)"
+      "2026-09-30 형식: ep03 과 같은 노래 형식 (Suno Pro 곡, 컷 1~3마디, 립싱크 + 움직임 + 재사용)",
+      "2026-09-30 방향 변경 (사용자): 영어 가사 + 한국 동요 리듬, 1~10 세기 — 1~5 사물, 6~10 동작"
     ],
     "next_time": []
   },
