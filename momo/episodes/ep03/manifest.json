@@ -49,9 +49,9 @@
   },
   "credits": {
     "estimate": 205.2,
-    "spent": 6.0,
-    "generations": 3,
-    "regenerations": 0
+    "spent": 52.0,
+    "generations": 26,
+    "regenerations": 3
   },
   "notes": {
     "v_over_reason": "승인된 새 형식(2026-09-30): Suno 곡 124 BPM · 컷 1~3마디 → 31컷. V 30개 중 7개는 이미 만든 클립의 일부 재사용(clip_from, 새 이미지·클립 0), 새로 만드는 클립은 23개.",
@@ -179,6 +179,34 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "e4e05d7d-4aa4-4bfa-bee1-9bb4b18273f2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092938_e4e05d7d-4aa4-4bfa-bee1-9bb4b18273f2.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "9143c0b6-f50b-48c0-9e2c-2dec9c4b2197",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092345_9143c0b6-f50b-48c0-9e2c-2dec9c4b2197.png",
+              "status": "rejected",
+              "reason": "화면 위쪽에 다른 장면 조각이 겹쳐 붙은 이음새(합성 깨짐)",
+              "at": "2026-09-30T09:23Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "e4e05d7d-4aa4-4bfa-bee1-9bb4b18273f2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092938_e4e05d7d-4aa4-4bfa-bee1-9bb4b18273f2.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:29Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -192,6 +220,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 2
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "34afa598-a3b6-4b14-8837-7e11fb6e5734",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092345_34afa598-a3b6-4b14-8837-7e11fb6e5734.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "34afa598-a3b6-4b14-8837-7e11fb6e5734",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092345_34afa598-a3b6-4b14-8837-7e11fb6e5734.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:23Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -205,6 +253,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "38c4295a-7358-4514-bd0b-8e9c4f8e33df",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092345_38c4295a-7358-4514-bd0b-8e9c4f8e33df.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "38c4295a-7358-4514-bd0b-8e9c4f8e33df",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092345_38c4295a-7358-4514-bd0b-8e9c4f8e33df.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:23Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -218,6 +286,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "0b27882a-2840-44e9-9f2e-39b80d2479d7",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092345_0b27882a-2840-44e9-9f2e-39b80d2479d7.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "0b27882a-2840-44e9-9f2e-39b80d2479d7",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092345_0b27882a-2840-44e9-9f2e-39b80d2479d7.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:23Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -241,7 +329,27 @@
       "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
-      "momo": false
+      "momo": false,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "33f0d243-4886-4999-9dde-0bfa35dd2e14",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092643_33f0d243-4886-4999-9dde-0bfa35dd2e14.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "33f0d243-4886-4999-9dde-0bfa35dd2e14",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092643_33f0d243-4886-4999-9dde-0bfa35dd2e14.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:26Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c10",
@@ -254,6 +362,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "8c489799-f1fa-444e-a3e3-b4ec12592117",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092642_8c489799-f1fa-444e-a3e3-b4ec12592117.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8c489799-f1fa-444e-a3e3-b4ec12592117",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092642_8c489799-f1fa-444e-a3e3-b4ec12592117.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:26Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -270,6 +398,26 @@
         "word": "broccoli",
         "text": "It looks like a tiny tree!",
         "pos": "right"
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "5e65b2af-3023-481f-ac19-d6b5e460bc7a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092642_5e65b2af-3023-481f-ac19-d6b5e460bc7a.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "5e65b2af-3023-481f-ac19-d6b5e460bc7a",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092642_5e65b2af-3023-481f-ac19-d6b5e460bc7a.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:26Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -283,6 +431,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "4361f244-4465-407f-a57e-e59ee9e5d702",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092641_4361f244-4465-407f-a57e-e59ee9e5d702.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "4361f244-4465-407f-a57e-e59ee9e5d702",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092641_4361f244-4465-407f-a57e-e59ee9e5d702.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:26Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -296,6 +464,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "0f8ee467-06f3-4ccd-875d-de9100ca26f4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092938_0f8ee467-06f3-4ccd-875d-de9100ca26f4.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "0f8ee467-06f3-4ccd-875d-de9100ca26f4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092938_0f8ee467-06f3-4ccd-875d-de9100ca26f4.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:29Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -303,12 +491,40 @@
       "scene": 3,
       "type": "V",
       "bars": 3,
-      "image_prompt": "[Momo] standing in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, holding one green broccoli floret up high like a little tree, joyful face, medium shot, clear empty pastel wall space in the upper third of the frame",
-      "motion": "lifts the broccoli up and sways side to side to the beat, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "image_prompt": "[Momo] standing in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, holding one green broccoli floret beside the cheek like a little tree, joyful face, medium shot, the whole head and ears inside the frame, clear empty pastel wall space in the upper third of the frame",
+      "motion": "sways side to side to the beat, lifting the broccoli a little on the last word, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 6
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "c5ebd5d3-d31b-42d2-83bb-6ad0b926bdb5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093516_c5ebd5d3-d31b-42d2-83bb-6ad0b926bdb5.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "8a3e481a-9b8f-4f2d-ab59-bfc0aa9ade59",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092938_8a3e481a-9b8f-4f2d-ab59-bfc0aa9ade59.png",
+              "status": "rejected",
+              "reason": "화면 위쪽에 다른 장면 조각이 겹쳐 붙은 이음새 (높이 든 구도에서 반복)",
+              "at": "2026-09-30T09:29Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "c5ebd5d3-d31b-42d2-83bb-6ad0b926bdb5",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093516_c5ebd5d3-d31b-42d2-83bb-6ad0b926bdb5.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -322,6 +538,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "afd91c18-d6fc-4e19-8f5a-f0acf31206f7",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092938_afd91c18-d6fc-4e19-8f5a-f0acf31206f7.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "afd91c18-d6fc-4e19-8f5a-f0acf31206f7",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092938_afd91c18-d6fc-4e19-8f5a-f0acf31206f7.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:29Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -332,7 +568,27 @@
       "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
       "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "8e7614ae-747a-49e9-a163-44a06f419435",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093206_8e7614ae-747a-49e9-a163-44a06f419435.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8e7614ae-747a-49e9-a163-44a06f419435",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093206_8e7614ae-747a-49e9-a163-44a06f419435.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:32Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c17",
@@ -357,6 +613,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "8fa6732c-0315-451f-8d28-62fe673c358c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093206_8fa6732c-0315-451f-8d28-62fe673c358c.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8fa6732c-0315-451f-8d28-62fe673c358c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093206_8fa6732c-0315-451f-8d28-62fe673c358c.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:32Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -384,7 +660,27 @@
       "card": {
         "word": "corn",
         "text": "Yellow and sweet!",
-        "pos": "left"
+        "pos": "right"
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "a7d0b922-f2f7-4d62-a319-295f2e67a906",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093205_a7d0b922-f2f7-4d62-a319-295f2e67a906.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "a7d0b922-f2f7-4d62-a319-295f2e67a906",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093205_a7d0b922-f2f7-4d62-a319-295f2e67a906.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:32Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -395,7 +691,27 @@
       "image_prompt": "[Momo] and [Ducky] at the small round wooden table in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, Momo holding one yellow corn cob and sharing it with Ducky, wide shot, both happy, clear empty pastel wall space in the upper third of the frame",
       "motion": "Ducky waddles closer and flaps its little wings happily, Momo offers the corn to Ducky, both nod to the beat, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "f8a60250-9c6d-4bac-a09f-0412667aedae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093205_f8a60250-9c6d-4bac-a09f-0412667aedae.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "f8a60250-9c6d-4bac-a09f-0412667aedae",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093205_f8a60250-9c6d-4bac-a09f-0412667aedae.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:32Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c22",
@@ -408,6 +724,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 2
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "d49a306f-aac2-4ccc-98cc-b486f0fd7489",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_d49a306f-aac2-4ccc-98cc-b486f0fd7489.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "d49a306f-aac2-4ccc-98cc-b486f0fd7489",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_d49a306f-aac2-4ccc-98cc-b486f0fd7489.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:33Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -415,12 +751,40 @@
       "scene": 4,
       "type": "V",
       "bars": 2,
-      "image_prompt": "[Momo] and [Ducky] side by side at the small round wooden table in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, Momo holding one yellow corn cob and facing the viewer, medium shot, clear empty pastel wall space in the upper third of the frame",
+      "image_prompt": "[Momo] and [Ducky] side by side at the small round wooden table in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, Momo holding one yellow corn cob and facing the viewer, medium shot",
       "motion": "Momo sways to the beat while Ducky bounces happily beside, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "14ed5b4d-64bd-4235-9f3c-a72007915c3d",
+          "url": null,
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "8531f198-b950-4887-95a8-7727cc8c231b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_8531f198-b950-4887-95a8-7727cc8c231b.png",
+              "status": "rejected",
+              "reason": "위쪽 1/4 이 단색 띠로 끊겨 보임 (빈 벽 공간 지시 때문)",
+              "at": "2026-09-30T09:33Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "14ed5b4d-64bd-4235-9f3c-a72007915c3d",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -465,7 +829,27 @@
       "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
       "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "662a0e37-b504-44f8-9a2b-1e788b3ace8c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_662a0e37-b504-44f8-9a2b-1e788b3ace8c.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "662a0e37-b504-44f8-9a2b-1e788b3ace8c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_662a0e37-b504-44f8-9a2b-1e788b3ace8c.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:33Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c27",
@@ -478,6 +862,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "195727d9-8ac6-43cf-bb13-28fa18d58533",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_195727d9-8ac6-43cf-bb13-28fa18d58533.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "195727d9-8ac6-43cf-bb13-28fa18d58533",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_195727d9-8ac6-43cf-bb13-28fa18d58533.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:33Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -515,6 +919,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 6
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "c48792e4-4a7c-454f-abed-bc5f6f005ce3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093517_c48792e4-4a7c-454f-abed-bc5f6f005ce3.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "c48792e4-4a7c-454f-abed-bc5f6f005ce3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093517_c48792e4-4a7c-454f-abed-bc5f6f005ce3.png",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T09:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
