@@ -42,7 +42,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from momolib.common import (LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoError, Paths,  # noqa: E402
                             active_langs, add_root_arg, check_ep, check_lang, find_media, get_paths, load_config, load_json,
                             load_library, load_manifest, main_wrapper, save_json)
-from momolib.episode import compose_image_prompt, compose_motion_prompt, tts_blocks  # noqa: E402
+from momolib.episode import (compose_image_prompt, compose_motion_prompt, song_track, track_spans,  # noqa: E402
+                             tts_blocks)
 from momolib.genrec import (KIND_EXTS, NA, SYMBOL, Slot, add_credits, apply_record, char_tags,  # noqa: E402
                             characters_used, clip_cost, clip_seconds, cut_slots, element_prefix, episode_cap,
                             episode_slots, music_cost, song_slots,
@@ -213,6 +214,14 @@ def clip_links(cfg: dict, m: dict, s: Slot) -> tuple[str | None, str | None, str
         end_job = img["job_id"]
     if not s.lang:
         return end_job, None, None
+    tr = song_track(m.get("song"))
+    if tr is not None:  # finished song: the vocal stem sliced to exactly this cut's window
+        ref = (s.cut.get("nar_ref") or {}).get(s.lang) or {}
+        win = track_window(m, s.cut["id"])
+        if not ref.get("media_id") or ref.get("track_sha1") != tr.get("sha1") or ref.get("window") != win:
+            return None, None, (f"{s.lang} 노래 보컬 구간 {win} 필요: song_track.py refs → publish → "
+                                f"media_import_url → hf_jobs.py narref --window 자동")
+        return end_job, ref["media_id"], None
     jobs = nar_jobs(cfg, s.cut, s.lang)
     if not jobs:
         return None, None, f"{s.lang} 나레이션 승인 전 — 립싱크는 승인된 음성으로만"
@@ -225,6 +234,16 @@ def clip_links(cfg: dict, m: dict, s: Slot) -> tuple[str | None, str | None, str
         return None, None, (f"{s.lang} {what} 필요: momo-previews 의 "
                             f"{s.cut['id']}_nar_{s.lang}.wav → media_import_url → hf_jobs.py narref")
     return end_job, ref["media_id"], None
+
+
+def track_window(m: dict, cid: str) -> list[float]:
+    """[start, end] of a cut in SONG-FILE time (s, 3 decimals) — the slice of the vocal stem its clip lip-syncs to."""
+    song = m["song"]
+    t0 = float((song_track(song) or {}).get("start") or 0.0)
+    cuts = m.get("cuts") or []
+    i = next(k for k, c in enumerate(cuts) if c.get("id") == cid)
+    s, e = track_spans(song, cuts)[i]
+    return [round(s + t0, 3), round(e + t0, 3)]
 
 
 def nar_jobs(cfg: dict, cut: dict, lang: str) -> list[str]:
@@ -453,6 +472,8 @@ def cmd_record(paths: Paths, cfg: dict, args) -> int:
     if args.song_music:
         if m is None or not isinstance(m.get("song"), dict):
             raise MomoError("--song-music 에는 manifest.song 이 있는 --ep 필요")
+        if song_track(m["song"]) is not None:
+            raise MomoError("노래 파일(song.track) 에피소드 — 기록은 song_track.py import / publish 로")
         slot = song_slots(paths, m)[0]
     elif args.cut:
         if m is None:
@@ -654,6 +675,16 @@ def cmd_narref(paths: Paths, cfg: dict, args) -> int:
         raise MomoError(f"manifest 에 없는 컷: {args.cut}")
     if not cut.get("lipsync"):
         raise MomoError(f"{args.cut}: lipsync 컷이 아님")
+    tr = song_track(m.get("song"))
+    if tr is not None:
+        if not tr.get("sha1"):
+            raise MomoError("song.track.sha1 없음 — song_track.py import 로 기록할 것")
+        win = track_window(m, args.cut)
+        cut.setdefault("nar_ref", {})[lang] = {"media_id": args.media_id, "track_sha1": tr["sha1"], "window": win,
+                                               "at": now_iso()}
+        save_json(paths.manifest(ep), m)
+        print(f"✔ {args.cut} nar_ref {lang} = {args.media_id} (노래 {win[0]:.3f}~{win[1]:.3f}s)")
+        return 0
     jobs = nar_jobs(cfg, cut, lang)
     if len(jobs) < (1 if isinstance(m.get("song"), dict) else 2):
         raise MomoError(f"{args.cut} {lang}: 승인된 음성 블록 {len(jobs)}개 — 합친 나레이션은 블록 2개 이상 + 전부 승인일 때만")

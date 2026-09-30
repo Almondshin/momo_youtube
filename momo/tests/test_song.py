@@ -24,7 +24,8 @@ import numpy as np  # noqa: E402
 
 from momolib import audio, render  # noqa: E402
 from momolib.common import Paths, deep_merge, font_supports_hangul, load_config  # noqa: E402
-from momolib.episode import NarItem, parse_narration, place_song_lines, plan_timeline  # noqa: E402
+from momolib.episode import (NarItem, parse_narration, place_song_lines, plan_timeline, track_cut_lyrics,  # noqa: E402
+                             track_lines, track_spans, validate_manifest)
 
 SR = 48000
 SONG = {"bpm": 100, "beats_per_bar": 4}
@@ -194,6 +195,153 @@ def test_song_build(tmp: Path) -> None:
     assert abs(float(pr.stdout) - 14.4) < 0.1, pr.stdout
     a = audio.decode(mp4, SR, 1)[:, 0]
     assert np.abs(a).max() < 0.95 and np.sqrt((a ** 2).mean()) > 0.01  # music + voice, no clipping
+
+
+# ---------------------------------------------------------------- 노래 파일(song.track) 에피소드
+
+TRACK_SONG = {"bpm": 120.0, "beats_per_bar": 4,
+              "track": {"status": "approved", "sha1": "abc123", "duration": 14.0, "start": 0.0, "end": 13.0,
+                        "analysis": {"bpm": 120.0, "downbeat0": 0.5, "confidence": 9.0}},
+              "vocals": {"status": "approved", "sha1": "def456"},
+              "lyrics": [{"text": "Crunch crunch munch", "words": [["Crunch", 0.9, 1.2], ["crunch", 1.3, 1.6],
+                                                                  ["munch", 1.8, 2.4]]},
+                         {"text": "Carrot!", "words": [["Carrot!", 4.6, 5.3]]},
+                         {"text": "Yellow corn", "words": [["Yellow", 9.0, 9.5], ["corn", 9.6, 10.4]]}]}
+
+
+def track_cuts() -> list[dict]:
+    base = {"image_prompt": "[Momo] in a kitchen", "motion": "sings to the viewer"}
+    return [{"id": "c01", "scene": 1, "type": "V", "bars": 2, **base},
+            {"id": "c02", "scene": 2, "type": "V", "bars": 1, "lipsync": True, "clip_model": "wan2_7",
+             "clip_seconds": 4, **base},
+            {"id": "c03", "scene": 2, "type": "V", "bars": 1, "clip_from": {"cut": "c02", "at": 2.0},
+             "lipsync_ok": True, **base},
+            {"id": "c04", "scene": 3, "type": "V", "bars": 2, "card": {"word": "corn", "text": "Yellow and sweet"},
+             **base}]
+
+
+def test_track_spans_and_lyrics(tmp: Path) -> None:
+    spans = track_spans(TRACK_SONG, track_cuts())
+    # bar = 2 s from downbeat 0.5: c01 holds the pickup (0 → bar 2), the last cut runs to track.end
+    assert spans == [(0.0, 4.5), (4.5, 6.5), (6.5, 8.5), (8.5, 13.0)], spans
+    lines = track_lines(TRACK_SONG)
+    assert [ln["text"] for ln in lines] == ["Crunch crunch munch", "Carrot!", "Yellow corn"]
+    assert math.isclose(lines[0]["until"], 2.4 + 1.2) and math.isclose(lines[1]["until"], 5.3 + 1.2)
+    ly = track_cut_lyrics(lines, 0.0, 4.5, 2.0)  # c02
+    assert len(ly) == 1 and ly[0][0] == "Carrot!" and math.isclose(ly[0][1], 0.1), ly
+    first = track_cut_lyrics(lines, 0.0, 0.0, 4.5)[0]
+    assert first[4] == [0.0, round(0.4 / 1.5, 4), round(0.9 / 1.5, 4)], first  # measured word starts
+    font = next(p for p in FONTS if p.exists())
+    cfg = json.loads((MOMO / "config.json").read_text())
+    lay = render.LyricLine(first[0], font, cfg, first[4])
+    assert [lay.lit(p) for p in (0.0, 0.3, 0.7)] == [1, 2, 3]
+
+
+def test_track_validate_and_slots(tmp: Path) -> None:
+    from momolib.genrec import cut_slots, song_slots
+    cfg = json.loads((MOMO / "config.json").read_text())
+    cfg["languages"] = ["en"]
+    m = {"ep": "ep91", "song": json.loads(json.dumps(TRACK_SONG)), "cuts": track_cuts()}
+    errors, warns = validate_manifest(cfg, m)
+    assert not errors, errors
+    m["cuts"][2]["clip_from"] = {"cut": "c03", "at": 0}  # itself a clip_from cut → error
+    errors, _ = validate_manifest(cfg, m)
+    assert any("clip_from" in e for e in errors), errors
+    m["cuts"][2]["clip_from"] = {"cut": "c02", "at": 3.5}  # 2 s from 3.5 s of a 4 s clip → warning
+    _, warns = validate_manifest(cfg, m)
+    assert any("안 남음" in w for w in warns), warns
+    paths = Paths(tmp)
+    assert cut_slots(paths, cfg, "ep91", m["cuts"][2]) == []  # reused clip → no image, no clip of its own
+    assert [s.stem for s in song_slots(paths, m)] == ["song", "song_vocals"]
+    sys.path.insert(0, str(MOMO))
+    import hf_jobs
+    assert hf_jobs.track_window(m, "c02") == [4.5, 6.5]
+    slot = next(s for s in cut_slots(paths, cfg, "ep91", m["cuts"][1]) if s.kind == "clip")
+    _, ref, why = hf_jobs.clip_links(cfg, m, slot)
+    assert ref is None and "노래 보컬" in why, why
+    m["cuts"][1]["nar_ref"] = {"en": {"media_id": "M1", "track_sha1": "abc123", "window": [4.5, 6.5]}}
+    assert hf_jobs.clip_links(cfg, m, slot)[1:] == ("M1", None)
+    m["cuts"][0]["bars"] = 3  # the grid moved → the pinned slice is stale
+    assert hf_jobs.clip_links(cfg, m, slot)[1] is None
+
+
+def test_align_lyrics(tmp: Path) -> None:
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("align_lyrics", MOMO / "tools/align_lyrics.py")
+    al = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(al)
+    exp = ["crunch", "crunch", "munch", "munch", "can", "you", "say", "carrot"]
+    got = ["crunch", "munch", "munch", "la", "la", "can", "you", "sai", "carrot"]  # one missing, extras, a typo
+    m = al.align(exp, got)
+    assert sorted(m[:2], key=str) == [0, None] and m[2:] == [1, 2, 5, 6, 7, 8], m  # either "crunch" was the lost one
+    assert not al.similar("crunch", "munch") and al.similar("carrots", "carrot")
+    filled = al.fill_line([(1.0, 1.2), None, (1.6, 1.8)])
+    assert filled[1][0] >= 1.2 and filled[1][1] <= 1.6, filled
+    assert al.fill_line([None, None]) is None
+    (tmp / "l.md").write_text("x\n```\n[Verse 1]\nCan you say carrot?\n(Carrot!)\n```\n")
+    lines = al.read_lyrics(tmp / "l.md")
+    assert [(ln["section"], ln["text"]) for ln in lines] == [("Verse 1", "Can you say carrot?"),
+                                                             ("Verse 1", "Carrot!")]
+
+
+def make_track_root(tmp: Path) -> Path:
+    root = tmp / "root"
+    ep = root / "episodes" / "ep91"
+    for d in ("clips", "images", "audio/en", "out"):
+        (ep / d).mkdir(parents=True)
+    cfg = json.loads((MOMO / "config.json").read_text(encoding="utf-8"))
+    cfg = deep_merge(cfg, {"languages": ["en"], "render": {"width": 320, "height": 180, "fps": 10}})
+    (root / "config.json").write_text(json.dumps(cfg), encoding="utf-8")
+    shutil.copytree(MOMO / "templates", root / "templates")
+    (root / "library").mkdir()
+    (root / "library/library.json").write_text(json.dumps({"character_sheets": {}, "clips": {}, "audio": {}}))
+    font = next(p for p in FONTS if p.exists() and font_supports_hangul(p))
+    (root / "assets/fonts").mkdir(parents=True)
+    shutil.copy2(font, root / "assets/fonts" / font.name)
+    bed = music(14, 120, SR)
+    voc = np.zeros_like(bed)
+    for ln in TRACK_SONG["lyrics"]:
+        for _, a, b in ln["words"]:
+            voc[int(a * SR):int(a * SR) + len(tone(b - a, 330))] += tone(b - a, 330)
+    audio.write_wav(ep / "audio/song.wav", np.stack([bed + voc, bed + voc], axis=1) * 0.7, SR)
+    audio.write_wav(ep / "audio/song_vocals.wav", voc, SR)
+    for cid, d in (("c01", 5), ("c02", 4), ("c04", 5)):
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"testsrc2=s=320x180:r=10:d={d}",
+                        "-pix_fmt", "yuv420p", str(ep / "clips" / (f"{cid}_en.mp4" if cid == "c02" else f"{cid}.mp4"))],
+                       check=True)
+    m = {"ep": "ep91", "status": "producing", "topic": {"en": "Veggies"}, "title": {"en": "Track test"},
+         "song": json.loads(json.dumps(TRACK_SONG)), "cuts": track_cuts(),
+         "thumbnail": {"cut": "c04", "text": {"en": "VEGGIES"}}, "upload": {"en": {"title": "Track test"}}}
+    (ep / "manifest.json").write_text(json.dumps(m), encoding="utf-8")
+    return root
+
+
+def test_track_build(tmp: Path) -> None:
+    root = make_track_root(tmp)
+    paths = Paths(root)
+    cfg = load_config(paths)
+    m = json.loads((root / "episodes/ep91/manifest.json").read_text())
+    plans, total, warns = plan_timeline(paths, cfg, m, "en")
+    assert math.isclose(total, 13.0) and [p.start for p in plans] == [0.0, 4.5, 6.5, 8.5], (total, warns)
+    assert plans[2].src_offset == 2.0 and plans[2].source.name == "c02_en.mp4"
+    assert not any(p.block_starts for p in plans) and plans[3].card
+    r = subprocess.run([sys.executable, str(MOMO / "build.py"), "--root", str(root), "--ep", "ep91", "--lang", "en",
+                        "--jobs", "2"], capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+    tl = json.loads((root / "episodes/ep91/out/ep91_en_timeline.json").read_text())
+    assert tl["total_frames"] == 130 and tl["audio"]["track"]["file"] == "song.wav", tl["audio"]
+    assert tl["audio"].get("music") is None and tl["audio"]["bgm"] is None
+    assert tl["cuts"][2]["clip_offset"] == 2.0 and tl["cuts"][1]["lyrics"][0]["text"] == "Carrot!", tl["cuts"][1:3]
+    mp4 = root / "episodes/ep91/out/ep91_en.mp4"
+    a = audio.decode(mp4, SR, 1)[:, 0]
+    assert abs(len(a) / SR - 13.0) < 0.1 and np.sqrt((a ** 2).mean()) > 0.02
+
+    r = subprocess.run([sys.executable, str(MOMO / "song_track.py"), "--root", str(root), "refs", "--ep", "ep91"],
+                       capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+    ref = audio.decode(root / "episodes/ep91/audio/refs/c02_en.wav", SR, 1)[:, 0]
+    assert abs(len(ref) / SR - 2.0) < 0.01  # exactly the cut window of the vocal stem
+    assert np.abs(ref[:int(0.05 * SR)]).max() < 1e-3 < np.abs(ref[int(0.2 * SR):int(0.7 * SR)]).max()  # gated
 
 
 def main() -> int:

@@ -40,7 +40,7 @@ from momolib.common import (IMAGE_EXTS, VIDEO_EXTS, MomoError, add_root_arg, che
                             main_wrapper, run, save_json)
 from momolib.episode import CutPlan, plan_timeline, validate_manifest  # noqa: E402
 
-SEG_VERSION = 2                      # 세그먼트 렌더 방식이 바뀌면 올린다 (캐시 무효화)
+SEG_VERSION = 3                      # 세그먼트 렌더 방식이 바뀌면 올린다 (캐시 무효화)
 SLOW_MAX = 1.25                      # fill=hold|loop: clips may be slowed down at most this much
 PUSH_PER_SEC, PUSH_MAX = 0.007, 0.06  # push-in zoom while a clip is stretched (per second of cut, cap)
 LOOP_XF = 0.5                        # fill=loop: crossfade between the two passes (s)
@@ -99,7 +99,9 @@ def make_segs(plans: list[CutPlan], cfg: dict, tmp: Path, font: Path) -> list[Se
             "frames": frames, "inset": p.inset, "kb": kb, "kw": p.keyword, "pos": p.text_pos,
             "color": p.text_color, "text_at": seg.text_at_f,
             "font": file_sig(font) if (p.keyword or p.lyrics or p.card) else None,
-            "lyrics": [[t, round(s, 4), round(d, 4), round(u, 4)] for t, s, d, u in p.lyrics], "card": p.card,
+            "lyrics": [[ln[0], round(ln[1], 4), round(ln[2], 4), round(ln[3], 4), ln[4] if len(ln) > 4 else None]
+                       for ln in p.lyrics],
+            "word_card": p.card, "src_offset": round(p.src_offset, 4),
             "card": card_lines(p) if p.source_kind == "placeholder" else None,
             "render": {k: r[k] for k in render_keys}}, sort_keys=True, default=str).encode()).hexdigest()
         segs.append(seg)
@@ -223,9 +225,10 @@ def render_seg(seg: Seg, cfg: dict, font: Path, work: Path) -> None:
         st = render.video_stream(p.source)
         sw, sh = int(st["width"]), int(st["height"])
         L = float(p.source_len or 0.0)
-        inset = resolve_inset(p, cfg, lambda: render.grab_frame(p.source, min(1.0, L / 2)))
+        inset = resolve_inset(p, cfg, lambda: render.grab_frame(p.source, p.src_offset + min(1.0, L / 2)))
         cw, ch, cx, cy = render.fill_box_int(sw, sh, W, H, inset)
-        crop = f"setpts=PTS-STARTPTS,crop={cw}:{ch}:{cx}:{cy}"
+        crop = (f"trim=start={p.src_offset:.4f}," if p.src_offset else "") + \
+            f"setpts=PTS-STARTPTS,crop={cw}:{ch}:{cx}:{cy}"
         fill = seg.fill
         pad = f"setsar=1,tpad=stop_mode=clone:stop_duration={need + 1:.3f}"
         if p.cut.get("lipsync"):
@@ -457,9 +460,11 @@ def write_timeline(paths, ep: str, lang: str, plans, segs, total: float, fps: in
                      "source": rel(paths, p.source), "source_kind": p.source_kind,
                      "estimated_audio": p.estimated_audio, "inset": s.info.get("inset"),
                      "render": s.info.get("mode"),
-                     **({"lyrics": [{"text": t, "at": round(a, 3), "sung": round(d, 3),
-                                     "tempo": k} for (t, a, d, _), k in zip(p.lyrics, p.block_tempos)]}
+                     **({"lyrics": [{"text": ln[0], "at": round(ln[1], 3), "sung": round(ln[2], 3),
+                                     "tempo": p.block_tempos[i] if i < len(p.block_tempos) else 1.0}
+                                    for i, ln in enumerate(p.lyrics)]}
                         if p.lyrics else {}),
+                     **({"clip_offset": round(p.src_offset, 3)} if p.src_offset else {}),
                      **({"card": p.card} if p.card else {})})
     data = {"ep": ep, "lang": lang, "fps": fps, "total": round(total, 4), "total_frames": int(round(total * fps)),
             "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "cuts": cuts,

@@ -268,7 +268,8 @@ def test_plan_image_payloads(tmp: Path) -> None:
     assert it["tool"] == "generate_image" and it["params"] == want, it
     assert "<<<" not in p["items"][1]["params"]["prompt"]  # momo:false 사물 컷
     rec = it["record"]
-    assert "record" in rec and f"--root {root}" in rec and "--ep ep42 --cut c02 --kind image" in rec, rec
+    assert "record" in rec and (f"--root {root}" in rec or f"--root {root.resolve()}" in rec) \
+        and "--ep ep42 --cut c02 --kind image" in rec, rec  # macOS: /var → /private/var
     assert rec.endswith("--job-id <JOB_ID> --url '<URL>' --status generated"), rec
     everything = plan(root, "--ep", EP, "--kind", "image", "--all")
     c04 = everything["items"][2]["params"]["prompt"]

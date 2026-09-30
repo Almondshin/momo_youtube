@@ -320,7 +320,7 @@ def make_base(root: Path) -> None:
     shutil.copytree(MOMO_DIR / "templates", root / "templates", dirs_exist_ok=True)
     font = find_hangul_font()
     (root / "assets/fonts").mkdir(parents=True, exist_ok=True)
-    shutil.copy2(font, root / "assets/fonts" / font.name)
+    shutil.copy(font, root / "assets/fonts" / font.name)  # not copy2: macOS system fonts carry flags we may not set
     print(f"  폰트: {font}")
     make_audio_assets(root)
 

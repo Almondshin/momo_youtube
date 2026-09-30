@@ -390,6 +390,31 @@ def song_music(path: Path, song: dict, n: int, sr: int) -> tuple[np.ndarray, dic
     return out, info
 
 
+def track_file(paths: Paths, ep: str) -> Path | None:
+    """The finished song of a track episode (song.track) → episodes/<ep>/audio/song.<ext>."""
+    return find_media(paths.ep(ep) / "audio", "song", AUDIO_EXTS)
+
+
+def vocals_file(paths: Paths, ep: str) -> Path | None:
+    """Its vocal stem (lip-sync references) → episodes/<ep>/audio/song_vocals.<ext>."""
+    return find_media(paths.ep(ep) / "audio", "song_vocals", AUDIO_EXTS)
+
+
+def song_track_audio(path: Path, song: dict, n: int, sr: int) -> tuple[np.ndarray, dict]:
+    """The finished song as the episode bed: song-file time track.start → video 0, n samples, no time-stretch."""
+    tr = song.get("track") or {}
+    x = decode(path, sr, 2)
+    head = int(round(float(tr.get("start") or 0.0) * sr))
+    x = x[head:head + n]
+    out = np.zeros((n, 2), dtype=np.float32)
+    out[:len(x)] = x
+    fo = min(len(x), int(0.02 * sr))  # no click if the video ends before the song does
+    if len(x) == n and fo:
+        out[n - fo:] *= np.linspace(1.0, 0.0, fo, dtype=np.float32)[:, None]
+    return out, {"file": path.name, "start": float(tr.get("start") or 0.0),
+                 "short_by": round(max(0.0, (n - len(x)) / sr), 2)}
+
+
 # ---------------------------------------------------------------- loudnorm
 
 def _last_json(stderr: bytes) -> dict:
@@ -438,6 +463,37 @@ def build_mix(paths: Paths, cfg: dict, manifest: dict, plans, total: float, out_
     info: dict = {"speech_blocks": len(spans), "bgm": None, "sfx": 0, "warnings": []}
 
     song = manifest.get("song") if isinstance(manifest.get("song"), dict) else None
+    if song and isinstance(song.get("track"), dict):  # finished song: vocals + music already mixed
+        tfile = track_file(paths, manifest["ep"])
+        if tfile is None:
+            if not allow_missing:
+                raise MomoError(f"노래 파일 없음: episodes/{manifest['ep']}/audio/song.* "
+                                f"(fetch_assets.py --ep {manifest['ep']})")
+            info["warnings"].append("노래 파일 없음 → 인트로·아웃트로 음성만 (--allow-missing)")
+        else:
+            bed, tinfo = song_track_audio(tfile, song, n, sr)
+            mix += bed * duck_gain(spans, n, sr, cfg, float(song.get("track_gain_db", 0.0)),
+                                   float(song.get("duck_db", -6.0)))[:, None]
+            info["track"] = tinfo
+            if tinfo["short_by"] > 0.05:
+                info["warnings"].append(f"노래가 영상보다 {tinfo['short_by']}초 짧음 — bars / track.end 확인")
+    else:
+        _add_bed(paths, cfg, manifest, song, spans, n, sr, mix, info, allow_missing)
+
+    for p in plans:
+        for s in p.sfx:
+            x = decode(s["file"], sr, 2) * db_gain(s["gain_db"])
+            add_at(mix, x, int(round((p.start + s["at"]) * sr)))
+            info["sfx"] += 1
+
+    premix = write_wav(out_wav.with_name(out_wav.stem + "_premix.wav"), mix, sr)
+    info["loudnorm"] = loudnorm(premix, out_wav, cfg, n)
+    return info
+
+
+def _add_bed(paths: Paths, cfg: dict, manifest: dict, song: dict | None, spans, n: int, sr: int,
+             mix: np.ndarray, info: dict, allow_missing: bool) -> None:
+    """Chant songs: the AI instrumental (ducked); other episodes: the looped BGM (ducked)."""
     mfile = music_file(paths, manifest["ep"]) if song else None
     if song and mfile is None and not allow_missing:
         raise MomoError(f"노래 반주 파일 없음: episodes/{manifest['ep']}/audio/music.* (fetch_assets.py --ep {manifest['ep']})")
@@ -459,13 +515,3 @@ def build_mix(paths: Paths, cfg: dict, manifest: dict, plans, total: float, out_
         bgm = loop_to(decode(bgm_path, sr, 2), n, sr)
         mix += bgm * duck_gain(spans, n, sr, cfg)[:, None]
         info["bgm"] = bgm_path.name
-
-    for p in plans:
-        for s in p.sfx:
-            x = decode(s["file"], sr, 2) * db_gain(s["gain_db"])
-            add_at(mix, x, int(round((p.start + s["at"]) * sr)))
-            info["sfx"] += 1
-
-    premix = write_wav(out_wav.with_name(out_wav.stem + "_premix.wav"), mix, sr)
-    info["loudnorm"] = loudnorm(premix, out_wav, cfg, n)
-    return info

@@ -7,6 +7,8 @@ GenRec = {"status": "pending|generated|approved|rejected", "job_id", "url", "att
 - 라이브러리(library.json): character_sheets[name], clips[name].image(시작 이미지)와 clips[name](클립),
   audio[lang][intro|outro], voice_samples[] — 초기값 "missing" 은 pending 으로 본다.
 - song episodes: manifest.song.music (AI instrumental, generate_audio sonilo_music)
+  finished-song episodes: manifest.song.track / song.vocals (made locally, 0 credits; url = GitHub release asset)
+  cut.clip_from = {"cut", "at"} reuses another cut's clip → that cut has no image/clip of its own
 - Slot = GenRec 하나의 위치(어느 dict 의 어느 경로) + 내려받을 파일 이름 규칙.
 """
 from __future__ import annotations
@@ -189,6 +191,8 @@ class Slot:
 def cut_slots(paths: Paths, cfg: dict, ep: str, cut: dict) -> list[Slot]:
     cid, t = cut["id"], cut.get("type")
     out = []
+    if t == "V" and isinstance(cut.get("clip_from"), dict):  # plays a part of another cut's clip
+        return out
     if t in ("V", "S"):
         out.append(Slot(f"{cid} image", "image", "cut", cut, ("gen", "image"), paths.images(ep), cid, cut=cut))
     if t == "V" and cut.get("lipsync"):  # mouth follows the narration → one clip per language
@@ -206,11 +210,16 @@ def cut_slots(paths: Paths, cfg: dict, ep: str, cut: dict) -> list[Slot]:
 
 
 def song_slots(paths: Paths, manifest: dict) -> list[Slot]:
-    """manifest.song.music — the AI instrumental of a song episode → episodes/<ep>/audio/music.<ext>."""
+    """manifest.song.music — the AI instrumental of a chant song → episodes/<ep>/audio/music.<ext>;
+    manifest.song.track / song.vocals — a finished song and its vocal stem → audio/song.<ext>, song_vocals.<ext>."""
     song = manifest.get("song")
     if not isinstance(song, dict):
         return []
-    return [Slot("song music", "audio", "song", song, ("music",), paths.ep(manifest["ep"]) / "audio", "music")]
+    d = paths.ep(manifest["ep"]) / "audio"
+    if isinstance(song.get("track"), dict):
+        return [Slot("song track", "audio", "song", song, ("track",), d, "song"),
+                Slot("song vocals", "audio", "song", song, ("vocals",), d, "song_vocals")]
+    return [Slot("song music", "audio", "song", song, ("music",), d, "music")]
 
 
 def episode_slots(paths: Paths, cfg: dict, manifest: dict) -> list[Slot]:

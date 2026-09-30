@@ -175,6 +175,51 @@ def count_types(manifest: dict) -> dict[str, int]:
     return counts
 
 
+def _validate_track(cfg: dict, song: dict, tr: dict, cuts: list[dict]) -> tuple[list[str], list[str]]:
+    """Rules only a finished-song (song.track) episode has."""
+    from .genrec import clip_seconds  # genrec imports this module
+    E: list[str] = []
+    W: list[str] = []
+    ana = tr.get("analysis")
+    if not (isinstance(ana, dict) and all(isinstance(ana.get(k), (int, float)) for k in ("bpm", "downbeat0"))):
+        E.append("song.track.analysis {bpm, downbeat0} 없음 — song_track.py analyze")
+        return E, W
+    if not any((ln.get("words") for ln in song.get("lyrics") or [] if isinstance(ln, dict))):
+        W.append("song.lyrics 에 단어 시각이 없음 — 가사 자막이 안 나온다 (song_track.py lyrics)")
+    spans = track_spans(song, cuts)
+    by_id = {c.get("id"): c for c in cuts}
+    length = tr.get("duration")
+    if isinstance(length, (int, float)) and spans and spans[-1][1] > length - float(tr.get("start") or 0) + 0.05:
+        E.append(f"컷 마디 합이 노래보다 김: 마지막 컷 끝 {spans[-1][1]:.2f}s > 노래 {length:.2f}s — bars 확인")
+    for c, (s, e) in zip(cuts, spans):
+        cid, t = c.get("id"), c.get("type")
+        if t == "V" and spoken_text(c, "en"):
+            W.append(f"{cid}: 노래 파일 에피소드의 V 컷 narration 은 쓰이지 않는다 (가사는 song.lyrics)")
+        if t == "V" and c.get("lipsync"):
+            if c.get("clip_model") != "wan2_7":
+                W.append(f"{cid}: 립싱크 컷은 clip_model wan2_7 (오디오 레퍼런스로 입을 맞춤)")
+            need = math.ceil(e - s - 1e-6)
+            if clip_seconds(cfg, c, "en") < need:
+                W.append(f"{cid}: clip_seconds {clip_seconds(cfg, c, 'en')} < 컷 {e - s:.2f}s — {need} 이상")
+        cf = c.get("clip_from")
+        if cf is not None:
+            src = by_id.get((cf or {}).get("cut")) if isinstance(cf, dict) else None
+            at = (cf or {}).get("at", 0) if isinstance(cf, dict) else None
+            if src is None or src.get("type") != "V" or src.get("clip_from") or t != "V":
+                E.append(f"{cid}: clip_from 은 {{\"cut\": <다른 V 컷(clip_from 없는)>, \"at\": 초}} — V 컷에서만")
+            elif not isinstance(at, (int, float)) or isinstance(at, bool) or at < 0:
+                E.append(f"{cid}: clip_from.at 은 0 이상의 초")
+            else:
+                have = clip_seconds(cfg, src, "en")
+                if at + (e - s) > have + 0.05:
+                    W.append(f"{cid}: clip_from {src['id']} {at}s~ 에 {e - s:.2f}s 가 안 남음 (원본 {have}s) "
+                             f"— 끝부분이 느려지거나 멈춘다")
+                if src.get("lipsync") and not c.get("lipsync_ok"):
+                    W.append(f"{cid}: 립싱크 컷 {src['id']} 재사용 — 같은 노래 구간(후렴 복사)일 때만 입이 맞는다 "
+                             f"(확인했으면 lipsync_ok: true)")
+    return E, W
+
+
 def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
     """(errors, warnings). errors 가 있으면 제작/조립을 진행하지 않는다."""
     E: list[str] = []
@@ -287,8 +332,9 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
             E.append(f"{cid}: fill 은 {'|'.join(FILL_MODES)}")
         for lang, ref in (c.get("nar_ref") or {}).items():
             if lang not in LANGS or not isinstance(ref, dict) or not ref.get("media_id") \
-                    or not isinstance(ref.get("blocks"), list):
-                E.append(f"{cid}: nar_ref.{lang} 는 {{media_id, blocks}} (hf_jobs.py narref 로 기록)")
+                    or not (isinstance(ref.get("blocks"), list) or isinstance(ref.get("window"), list)):
+                E.append(f"{cid}: nar_ref.{lang} 는 {{media_id, blocks}} 또는 노래 파일이면 {{media_id, window, "
+                         f"track_sha1}} (hf_jobs.py narref 로 기록)")
         for k in ("lead", "tail"):
             v = c.get(k)
             if v is not None and (not isinstance(v, (int, float)) or isinstance(v, bool) or not 0 <= v <= 5):
@@ -319,6 +365,13 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
             if ana is not None and not (isinstance(ana, dict) and all(
                     isinstance(ana.get(k), (int, float)) for k in ("bpm", "downbeat0"))):
                 E.append("song.music.analysis 는 {bpm, downbeat0} (preview_assets 가 계산)")
+            tr = song_track(song)
+            if song.get("track") is not None and tr is None:
+                E.append("song.track 은 객체 (song_track.py import 로 기록)")
+            if tr is not None:
+                te, tw = _validate_track(cfg, song, tr, cuts)
+                E += te
+                W += tw
 
     first, last = cuts[0], cuts[-1]
     if not (first.get("type") == "L" and first.get("library_clip") == "intro_wave"):
@@ -399,7 +452,9 @@ class CutPlan:
     block_tempos: list[float] = field(default_factory=list)
     block_lens: list[float] = field(default_factory=list)
     card: dict | None = None      # word card {"word", "text"} shown beside the picture
-    lyrics: list[tuple[str, float, float, float]] = field(default_factory=list)  # song: (line, start, sung, until)
+    # song: (line, start, sung, until, word_at) — word_at None = words light by their share of characters
+    lyrics: list[tuple] = field(default_factory=list)
+    src_offset: float = 0.0       # clip_from: start this far into the source clip
 
 
 SONG_TEMPO_MAX = 1.3   # a lyric line may be sped up this much to fit before the next line (atempo, same pitch)
@@ -410,6 +465,85 @@ def song_grid(song: dict) -> tuple[float, float]:
     """(beat, bar) seconds of a song episode."""
     beat = 60.0 / float(song["bpm"])
     return beat, beat * int(song.get("beats_per_bar") or 4)
+
+
+LYRIC_HOLD = 1.2       # track songs: a lyric line stays up this long after its last word (unless the next starts)
+
+
+def song_track(song: dict | None) -> dict | None:
+    """manifest.song.track — a finished song (vocals + music in one file) the video is cut to, or None.
+
+    Track songs have no per-line TTS: cuts sit on the song's bar grid (song.track.analysis), the karaoke
+    captions come from song.lyrics (word times from alignment) and lip-sync refs are slices of the vocal stem.
+    """
+    t = (song or {}).get("track") if isinstance(song, dict) else None
+    return t if isinstance(t, dict) else None
+
+
+def bar_time(song: dict, k: int) -> float:
+    """Song-file time (s) of bar line k (k = 0 is the first downbeat): analysis.downbeats[k] when measured,
+    else downbeat0 + k·bar."""
+    ana = (song_track(song) or {}).get("analysis") or {}
+    _, bar = song_grid(song)
+    downs = ana.get("downbeats") or []
+    if k < len(downs):
+        return float(downs[k])
+    if downs:
+        return float(downs[-1]) + (k - len(downs) + 1) * bar
+    return float(ana.get("downbeat0") or 0.0) + k * bar
+
+
+def track_spans(song: dict, cuts: list[dict]) -> list[tuple[float, float]]:
+    """(start, end) of every cut in VIDEO time for a track song. Video t = song-file t − track.start.
+
+    Cut i covers bars [k, k + bars): the first cut starts at 0 (it also holds any pickup before the first
+    downbeat), the rest start on their bar line, the last one runs to track.end when that is later.
+    """
+    tr = song_track(song) or {}
+    t0 = float(tr.get("start") or 0.0)
+    out, k = [], 0
+    for i, c in enumerate(cuts):
+        bars = c.get("bars") if isinstance(c.get("bars"), int) and c.get("bars") > 0 else 1
+        s = 0.0 if i == 0 else bar_time(song, k) - t0
+        k += bars
+        e = bar_time(song, k) - t0
+        if i == len(cuts) - 1 and isinstance(tr.get("end"), (int, float)):
+            e = max(e, float(tr["end"]) - t0)
+        out.append((round(s, 6), round(e, 6)))
+    return out
+
+
+def track_lines(song: dict) -> list[dict]:
+    """song.lyrics with word times → [{"text", "words": [(word, t0, t1)], "t0", "t1", "until"}] in song time."""
+    lines = []
+    for ln in song.get("lyrics") or []:
+        words = [(str(w[0]), float(w[1]), float(w[2])) for w in (ln.get("words") or []) if len(w) >= 3]
+        if not words:
+            continue
+        lines.append({"text": " ".join(w for w, _, _ in words), "words": words,
+                      "t0": words[0][1], "t1": max(t1 for _, _, t1 in words)})
+    lines.sort(key=lambda d: d["t0"])
+    for a, b in zip(lines, lines[1:] + [None]):
+        a["until"] = min(b["t0"], a["t1"] + LYRIC_HOLD) if b else a["t1"] + LYRIC_HOLD
+    return lines
+
+
+def track_cut_lyrics(lines: list[dict], t0: float, start: float, dur: float) -> list[tuple]:
+    """Karaoke lines of one cut: (text, start, sung, until, word_at) relative to the cut, word_at = share of the
+    sung time before each word (from the aligned word starts)."""
+    out = []
+    for ln in lines:
+        s = ln["t0"] - t0 - start
+        until = ln["until"] - t0 - start
+        if until <= 0 or s - LYRIC_LEAD_S >= dur:
+            continue
+        sung = max(1e-3, ln["t1"] - ln["t0"])
+        word_at = [round((w0 - ln["t0"]) / sung, 4) for _, w0, _ in ln["words"]]
+        out.append((ln["text"], round(s, 4), round(sung, 4), round(min(until, dur), 4), word_at))
+    return out
+
+
+LYRIC_LEAD_S = 0.25    # = render.LYRIC_LEAD (a line shows this long before it is sung)
 
 
 def place_song_lines(cut: dict, items: list[NarItem], lens: list[float], song: dict,
@@ -495,12 +629,21 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
     min_cut = float(r["min_cut"])
     xfade = float(r["xfade"])
     song = manifest.get("song") if isinstance(manifest.get("song"), dict) and manifest["song"].get("bpm") else None
+    track = song_track(song) if song else None
     if song:
         from .audio import speech_length  # numpy — only song episodes need it here
         _, bar = song_grid(song)
+    if track:
+        spans = track_spans(song, manifest["cuts"])
+        tlines = track_lines(song)
+        t_start = float(track.get("start") or 0.0)
+        if not tlines:
+            warnings_head = ["song.lyrics 에 단어 시각이 없음 — song_track.py lyrics 로 정렬 결과를 넣을 것 (가사 자막 없이 조립)"]
+        else:
+            warnings_head = []
     song_bars = 0          # bars before this cut — song cut starts/ends are rounded from the bar grid, no drift
     plans: list[CutPlan] = []
-    warnings: list[str] = []
+    warnings: list[str] = list(warnings_head) if track else []
     missing: list[str] = []
     start_f = 0
     prev_dur_f = 0
@@ -512,8 +655,18 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         items = narration_items(c, lang, cfg)
 
         # ---- 영상 소스
-        source, kind, src_len = None, "placeholder", None
-        if t == "L":
+        source, kind, src_len, src_off = None, "placeholder", None, 0.0
+        cf = c.get("clip_from") if isinstance(c.get("clip_from"), dict) else None
+        if t == "V" and cf:  # reuse another cut's clip (a part of it) — no new image or clip
+            other = str(cf.get("cut") or "")
+            source = find_media(paths.clips(ep), f"{other}_{lang}", VIDEO_EXTS) or find_media(paths.clips(ep), other,
+                                                                                              VIDEO_EXTS)
+            src_off = float(cf.get("at") or 0.0)
+            if source:
+                kind = "video"
+            else:
+                missing.append(f"clips/{other}.mp4 ({cid} clip_from)")
+        elif t == "L":
             source = find_media(paths.library_clips, c.get("library_clip", ""), VIDEO_EXTS)
             if source:
                 kind = "video"
@@ -537,6 +690,10 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
                 missing.append(f"images/{cid}.png")
         if kind == "video" and source is not None:
             src_len = probe_duration(source)
+            if src_off:
+                if src_off >= src_len - 0.05:
+                    raise MomoError(f"{cid}: clip_from.at {src_off}s 가 원본 클립 길이 {src_len:.2f}s 이상")
+                src_len -= src_off
 
         # ---- 음성
         speech = [it for it in items if it.kind == "speech"]
@@ -590,7 +747,16 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         dur = max(base, min_cut, want)
         starts: list[float] = []
         tempos: list[float] = []
-        if song:
+        if track:  # cut on the finished song's bar lines; lyrics come from the aligned song, not from TTS
+            s0, s1 = spans[i]
+            start_f, end_f = int(round(s0 * fps)), int(round(s1 * fps))
+            dur_f = end_f - start_f
+            if dur_f <= 0:
+                raise MomoError(f"{cid}: 컷 길이가 0 — bars / song.track.analysis 확인")
+            nar_off = xf + lead
+            if speech:  # L cut with the library line spoken over the song
+                starts, tempos = [nar_off], [1.0]
+        elif song:
             bars = c.get("bars")
             if not isinstance(bars, int) or bars < 1:
                 bars = max(1, math.ceil((nar_len + tail_c) / bar - 1e-6))
@@ -609,10 +775,17 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
 
         kw = "" if song else (((c.get("keyword") or {}).get(lang)) or "").strip()  # songs show the lyrics instead
         lyrics = []
-        if song:
+        if track:
+            lyrics = track_cut_lyrics(tlines, t_start, start_f / fps, dur_f / fps)
+            if speech:  # the library line (intro/outro) is captioned too
+                lyrics = [(speech[0].text, starts[0], durs[0], dur_f / fps, None)] + lyrics
+                nar_len = starts[0] + durs[0]
+            else:
+                nar_len = 0.0
+        elif song:
             texts = [it.text for it in speech]
             ends = starts[1:] + [dur_f / fps]
-            lyrics = [(tx, s, d / k, e) for tx, s, d, k, e in zip(texts, starts, durs, tempos, ends)]
+            lyrics = [(tx, s, d / k, e, None) for tx, s, d, k, e in zip(texts, starts, durs, tempos, ends)]
         text_at = c.get("text_at")
         text_at = float(r["text_delay"]) if text_at is None else float(text_at)
         text_at = max(0.0, min(text_at, dur_f / fps - 0.5))
@@ -627,8 +800,9 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
             start=start_f / fps, source=source, source_kind=kind, source_len=src_len, keyword=kw,
             text_at=text_at, text_pos=c.get("text_pos") or "top", text_color=c.get("text_color") or "white",
             inset=None if inset is None else float(inset), sfx=sfx, estimated_audio=estimated,
-            block_starts=starts, block_tempos=tempos, block_lens=[d / k for d, k in zip(durs, tempos)], lyrics=lyrics,
-            card=c.get("card") if isinstance(c.get("card"), dict) else None))
+            block_starts=[] if track else starts, block_tempos=[] if track else tempos,
+            block_lens=[] if track else [d / k for d, k in zip(durs, tempos)], lyrics=lyrics,
+            card=c.get("card") if isinstance(c.get("card"), dict) else None, src_offset=src_off))
         prev_dur_f = dur_f
         prev_scene = scene
 

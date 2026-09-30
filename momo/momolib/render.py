@@ -262,7 +262,7 @@ def _wrap_words(words: list[str], font: ImageFont.FreeTypeFont, stroke: int, max
 class LyricLine:
     """One lyric line laid out once; image(n) draws it with the first n words lit."""
 
-    def __init__(self, text: str, font_path: Path, cfg: dict):
+    def __init__(self, text: str, font_path: Path, cfg: dict, word_at: list[float] | None = None):
         r = cfg["render"]
         W, H = int(r["width"]), int(r["height"])
         self.words = text.split()
@@ -281,6 +281,8 @@ class LyricLine:
         chars = [len(w) + 1 for w in self.words]
         total = float(sum(chars)) or 1.0
         self.word_at = [sum(chars[:i]) / total for i in range(len(self.words))]  # share of the line before word i
+        if word_at is not None and len(word_at) == len(self.words):  # measured word starts (aligned song)
+            self.word_at = [float(a) for a in word_at]
 
     def lit(self, progress: float) -> int:
         """Words lit at this share of the line's sung time (a word lights when it starts)."""
@@ -355,12 +357,13 @@ def card_image(card: dict, font_path: Path, cfg: dict) -> Image.Image:
     return im
 
 
-def render_song_overlay(lines: list[tuple[str, float, float, float]], card: dict | None, card_at: float,
+def render_song_overlay(lines: list[tuple], card: dict | None, card_at: float,
                         font_path: Path, cfg: dict, frames: int, out_dir: Path) -> Path | None:
     """Full-frame RGBA PNG sequence ov_%05d.png for one segment, or None when there is nothing to draw.
 
-    lines = [(text, start, sung_len, shown_until)] in seconds from the segment start. Words light up in
-    proportion to their characters over sung_len. The card pops in at card_at (left, or card.pos == "right").
+    lines = [(text, start, sung_len, shown_until, word_at)] in seconds from the segment start. Words light up at
+    word_at (share of sung_len before each word; None = in proportion to their characters). The card pops in at
+    card_at (left, or card.pos == "right").
     Identical frames are hard links to one rendered PNG.
     """
     r = cfg["render"]
@@ -371,7 +374,8 @@ def render_song_overlay(lines: list[tuple[str, float, float, float]], card: dict
     out_dir.mkdir(parents=True, exist_ok=True)
     for old in out_dir.glob("ov_*.png"):
         old.unlink()
-    lays = [LyricLine(t, font_path, cfg) for t, *_ in lines]
+    lines = [tuple(ln) + (None,) * (5 - len(ln)) for ln in lines]
+    lays = [LyricLine(ln[0], font_path, cfg, ln[4]) for ln in lines]
     card_im = card_image(card, font_path, cfg) if card else None
     n_pop = max(2, int(round(float(r["text_pop_seconds"]) * fps)) + 1)
     rendered: dict[tuple, Path] = {}
@@ -379,7 +383,7 @@ def render_song_overlay(lines: list[tuple[str, float, float, float]], card: dict
     for fi in range(frames):
         t = fi / fps
         li, lit = -1, 0
-        for i, (_, s, sung, until) in enumerate(lines):
+        for i, (_, s, sung, until, _) in enumerate(lines):
             if s - LYRIC_LEAD <= t < until:
                 li, lit = i, lays[i].lit((t - s) / sung if sung > 0 and t >= s else -1.0)
         pop = -1 if card_im is None or t < card_at else min(n_pop - 1, int((t - card_at) * fps))
