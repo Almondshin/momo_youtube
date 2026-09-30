@@ -2065,7 +2065,7 @@
     "music": {
       "status": "generated",
       "job_id": "6723b40c-5a20-4f52-8b4a-1610fd923a90",
-      "url": null,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_035713_6723b40c-5a20-4f52-8b4a-1610fd923a90.m4a",
       "attempts": 1,
       "credits": 10.63,
       "model": "sonilo_music",
@@ -2073,7 +2073,7 @@
       "history": [
         {
           "job_id": "6723b40c-5a20-4f52-8b4a-1610fd923a90",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_035713_6723b40c-5a20-4f52-8b4a-1610fd923a90.m4a",
           "status": "generated",
           "reason": null,
           "at": "2026-09-30T03:57Z",
