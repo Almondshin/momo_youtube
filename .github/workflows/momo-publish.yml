@@ -32,6 +32,11 @@ on:
         required: true
         default: true
         type: boolean
+      force:
+        description: 'Upload again even if youtube.json already has a video (creates a new video; the old one stays)'
+        required: false
+        default: false
+        type: boolean
       no_bgm:
         description: 'Check build without BGM (build.py --allow-missing). Never uploaded.'
         required: false
@@ -175,6 +180,7 @@ jobs:
         run: |
           args=(--privacy "$PRIVACY")
           if [ -n "$PUBLISH_AT" ]; then args+=(--publish-at "$PUBLISH_AT"); fi
+          if [ "${{ inputs.force }}" = "true" ]; then args+=(--force); fi
           fail=0
           # 한 언어가 실패해도 다른 언어는 올리고, 성공분은 아래 단계에서 커밋한다
           for lang in $LANG_LIST; do
