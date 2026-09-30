@@ -49,7 +49,7 @@
   },
   "credits": {
     "estimate": 205.2,
-    "spent": 193.5,
+    "spent": 186.0,
     "generations": 52,
     "regenerations": 6
   },
@@ -67,7 +67,8 @@
       "2026-09-30 클립 23개 검수 후 승인 (사용자: 묻지 말고 진행) — c05 서버 실패 2회(1.93초 레퍼런스→3초 패딩), c12 귀 솟음 재생성"
     ],
     "next_time": [
-      "Suno 곡이 1.6초에 바로 시작해 라이브러리 인트로 인사(Hi friends! It's Momo!)를 넣을 자리가 없음 — 다음 곡은 스타일/가사에 '[Intro - 2 bars]' 로 짧은 전주를 요청할 것"
+      "Suno 곡이 1.6초에 바로 시작해 라이브러리 인트로 인사(Hi friends! It's Momo!)를 넣을 자리가 없음 — 다음 곡은 스타일/가사에 '[Intro - 2 bars]' 로 짧은 전주를 요청할 것",
+      "2026-09-30 크레딧 대조: Higgsfield 잔액 586.87 → 400.87 (실사용 186) = manifest 186.0 — 서버 실패 작업 7.5 는 차감 안 됨"
     ]
   },
   "cuts": [
@@ -345,24 +346,24 @@
           "job_id": "f30240a3-4342-43b9-b4be-013309814b8c",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102641_f30240a3-4342-43b9-b4be-013309814b8c.mp4",
           "attempts": 3,
-          "credits": 12.0,
+          "credits": 4.5,
           "history": [
             {
               "job_id": "575cb182-ce96-42e8-968d-f93d82e5e818",
               "url": null,
               "status": "rejected",
-              "reason": "generation failed (server)",
+              "reason": "generation failed (server) — 실패 작업은 차감되지 않음 (잔액으로 확인)",
               "at": "2026-09-30T10:23Z",
-              "credits": 3.0,
+              "credits": 0,
               "start_image": "34afa598-a3b6-4b14-8837-7e11fb6e5734"
             },
             {
               "job_id": "0cfc764f-904b-4eed-b530-55702800ffd1",
               "url": null,
               "status": "rejected",
-              "reason": "generation failed (server) — 1.93 s audio reference",
+              "reason": "generation failed (server) — 1.93 s audio reference — 실패 작업은 차감되지 않음 (잔액으로 확인)",
               "at": "2026-09-30T10:24Z",
-              "credits": 4.5,
+              "credits": 0,
               "start_image": "34afa598-a3b6-4b14-8837-7e11fb6e5734"
             },
             {
