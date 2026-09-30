@@ -52,9 +52,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 529.43,
-    "generations": 183,
-    "regenerations": 19,
+    "spent": 641.93,
+    "generations": 193,
+    "regenerations": 29,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)",
     "cap": 690
   },
@@ -134,11 +134,11 @@
           ]
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "6b1cf7c8-7e4f-4a4e-94d2-06a790927923",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_6b1cf7c8-7e4f-4a4e-94d2-06a790927923.mp4",
-          "attempts": 2,
-          "credits": 21.0,
+          "status": "generated",
+          "job_id": "13089533-4ffc-4cd8-bddb-92e97d6c412c",
+          "url": null,
+          "attempts": 3,
+          "credits": 36.0,
           "history": [
             {
               "job_id": "10f43295-0b7d-4110-8925-eb0997eab243",
@@ -157,9 +157,18 @@
               "at": "2026-09-30T00:11Z",
               "credits": 10.5,
               "start_image": "7de22d4d-6a76-45c5-94f7-3068c856d850"
+            },
+            {
+              "job_id": "13089533-4ffc-4cd8-bddb-92e97d6c412c",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:10Z",
+              "credits": 15.0,
+              "start_image": "7de22d4d-6a76-45c5-94f7-3068c856d850"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "lipsync": true,
@@ -268,11 +277,11 @@
           ]
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "b2e6044b-93d5-4eed-a6d9-a407aa5848bc",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_235916_b2e6044b-93d5-4eed-a6d9-a407aa5848bc.mp4",
-          "attempts": 1,
-          "credits": 9.0,
+          "status": "generated",
+          "job_id": "61f30825-3c77-42a1-861f-95a1c01fa816",
+          "url": null,
+          "attempts": 2,
+          "credits": 16.5,
           "history": [
             {
               "job_id": "b2e6044b-93d5-4eed-a6d9-a407aa5848bc",
@@ -282,9 +291,18 @@
               "at": "2026-09-29T23:59Z",
               "credits": 9.0,
               "start_image": "9667c1db-b65e-41f6-a8d7-21ca49d9a073"
+            },
+            {
+              "job_id": "61f30825-3c77-42a1-861f-95a1c01fa816",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:10Z",
+              "credits": 7.5,
+              "start_image": "9667c1db-b65e-41f6-a8d7-21ca49d9a073"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "lipsync": true,
@@ -577,11 +595,11 @@
           ]
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "324b375d-1c8d-4a64-8dd4-ed573f2000c6",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000249_324b375d-1c8d-4a64-8dd4-ed573f2000c6.mp4",
-          "attempts": 1,
-          "credits": 6.0,
+          "status": "generated",
+          "job_id": "511f079e-0e90-46e5-ab85-784f3a1ff016",
+          "url": null,
+          "attempts": 2,
+          "credits": 13.5,
           "history": [
             {
               "job_id": "324b375d-1c8d-4a64-8dd4-ed573f2000c6",
@@ -591,9 +609,18 @@
               "at": "2026-09-30T00:02Z",
               "credits": 6.0,
               "start_image": "c408f6e8-66d8-4fb0-872b-cad6023b267c"
+            },
+            {
+              "job_id": "511f079e-0e90-46e5-ab85-784f3a1ff016",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:10Z",
+              "credits": 7.5,
+              "start_image": "c408f6e8-66d8-4fb0-872b-cad6023b267c"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "lipsync": true,
@@ -780,11 +807,11 @@
           "reason": null
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "aca4f249-6f5b-4dd5-8261-2bf9dd779486",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_aca4f249-6f5b-4dd5-8261-2bf9dd779486.mp4",
-          "attempts": 1,
-          "credits": 13.5,
+          "status": "generated",
+          "job_id": "0d51940f-f47a-4ac3-8e44-90edb36ccb86",
+          "url": null,
+          "attempts": 2,
+          "credits": 28.5,
           "history": [
             {
               "job_id": "aca4f249-6f5b-4dd5-8261-2bf9dd779486",
@@ -794,9 +821,18 @@
               "at": "2026-09-30T00:29Z",
               "credits": 13.5,
               "start_image": "785f034b-f4dc-4cf6-bede-b60a917d745d"
+            },
+            {
+              "job_id": "0d51940f-f47a-4ac3-8e44-90edb36ccb86",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:10Z",
+              "credits": 15.0,
+              "start_image": "785f034b-f4dc-4cf6-bede-b60a917d745d"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "bars": 4,
@@ -1176,11 +1212,11 @@
           ]
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99.mp4",
-          "attempts": 1,
-          "credits": 10.5,
+          "status": "generated",
+          "job_id": "1f8c0048-50fe-4632-9e65-170f0cbebdd1",
+          "url": null,
+          "attempts": 2,
+          "credits": 25.5,
           "history": [
             {
               "job_id": "274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99",
@@ -1190,9 +1226,18 @@
               "at": "2026-09-30T00:29Z",
               "credits": 10.5,
               "start_image": "c46e24d2-e8e4-4609-b777-64a6aa326cd1"
+            },
+            {
+              "job_id": "1f8c0048-50fe-4632-9e65-170f0cbebdd1",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:11Z",
+              "credits": 15.0,
+              "start_image": "c46e24d2-e8e4-4609-b777-64a6aa326cd1"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "lipsync": true,
@@ -1298,11 +1343,11 @@
           "reason": null
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "7d11caf6-4dd6-4aa6-9085-24ebd743fc13",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_7d11caf6-4dd6-4aa6-9085-24ebd743fc13.mp4",
-          "attempts": 1,
-          "credits": 7.5,
+          "status": "generated",
+          "job_id": "c58947d7-f323-4f3d-adaa-963e2def5e89",
+          "url": null,
+          "attempts": 2,
+          "credits": 15.0,
           "history": [
             {
               "job_id": "7d11caf6-4dd6-4aa6-9085-24ebd743fc13",
@@ -1312,9 +1357,18 @@
               "at": "2026-09-30T00:11Z",
               "credits": 7.5,
               "start_image": "1e626d89-9b74-4c01-9ba0-49ecc3e7d48e"
+            },
+            {
+              "job_id": "c58947d7-f323-4f3d-adaa-963e2def5e89",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:11Z",
+              "credits": 7.5,
+              "start_image": "1e626d89-9b74-4c01-9ba0-49ecc3e7d48e"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "bars": 2,
@@ -1739,11 +1793,11 @@
           "reason": null
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "341022ff-bc99-4c5b-967f-40a6ccc9d0a3",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003039_341022ff-bc99-4c5b-967f-40a6ccc9d0a3.mp4",
-          "attempts": 1,
-          "credits": 10.5,
+          "status": "generated",
+          "job_id": "315222d9-0f92-4cde-a9e8-00e5b39787c1",
+          "url": null,
+          "attempts": 2,
+          "credits": 25.5,
           "history": [
             {
               "job_id": "341022ff-bc99-4c5b-967f-40a6ccc9d0a3",
@@ -1753,9 +1807,18 @@
               "at": "2026-09-30T00:30Z",
               "credits": 10.5,
               "start_image": "75ad1d14-8438-40ae-bb8f-d465c22c35c4"
+            },
+            {
+              "job_id": "315222d9-0f92-4cde-a9e8-00e5b39787c1",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:11Z",
+              "credits": 15.0,
+              "start_image": "75ad1d14-8438-40ae-bb8f-d465c22c35c4"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "lipsync": true,
@@ -1951,11 +2014,11 @@
           "reason": null
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "2bf78c80-de5f-4f3e-b459-528d2e58307d",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000500_2bf78c80-de5f-4f3e-b459-528d2e58307d.mp4",
-          "attempts": 1,
-          "credits": 12.0,
+          "status": "generated",
+          "job_id": "43363b70-95ad-4d12-bb56-da491ddfc9f0",
+          "url": null,
+          "attempts": 2,
+          "credits": 27.0,
           "history": [
             {
               "job_id": "2bf78c80-de5f-4f3e-b459-528d2e58307d",
@@ -1965,9 +2028,18 @@
               "at": "2026-09-30T00:05Z",
               "credits": 12.0,
               "start_image": "29c9025b-0482-4fa8-a297-f69f348c5bab"
+            },
+            {
+              "job_id": "43363b70-95ad-4d12-bb56-da491ddfc9f0",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:11Z",
+              "credits": 15.0,
+              "start_image": "29c9025b-0482-4fa8-a297-f69f348c5bab"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "lipsync": true,
@@ -2079,11 +2151,11 @@
           "reason": null
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "73f276f4-1aad-4c35-91ea-96079f29a8ed",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_234230_73f276f4-1aad-4c35-91ea-96079f29a8ed.mp4",
-          "attempts": 2,
-          "credits": 22.5,
+          "status": "generated",
+          "job_id": "2c7be14b-5afe-4b85-ab30-26661607e05a",
+          "url": null,
+          "attempts": 3,
+          "credits": 30.0,
           "history": [
             {
               "job_id": "767445fe-adf8-449a-9d45-fc3e3b900a3a",
@@ -2102,9 +2174,18 @@
               "at": "2026-09-29T23:42Z",
               "credits": 13.5,
               "start_image": "220e611b-1880-4313-b135-f2e0b863faf0"
+            },
+            {
+              "job_id": "2c7be14b-5afe-4b85-ab30-26661607e05a",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:11Z",
+              "credits": 7.5,
+              "start_image": "220e611b-1880-4313-b135-f2e0b863faf0"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "lipsync": true,
@@ -2180,11 +2261,11 @@
           "reason": null
         },
         "clip_en": {
-          "status": "rejected",
-          "job_id": "f8d4099e-aa86-4ef0-83a8-489bb509af17",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000611_f8d4099e-aa86-4ef0-83a8-489bb509af17.mp4",
-          "attempts": 1,
-          "credits": 9.0,
+          "status": "generated",
+          "job_id": "d05be28f-8500-4505-a34e-7ada6f4e7797",
+          "url": null,
+          "attempts": 2,
+          "credits": 16.5,
           "history": [
             {
               "job_id": "f8d4099e-aa86-4ef0-83a8-489bb509af17",
@@ -2194,9 +2275,18 @@
               "at": "2026-09-30T00:06Z",
               "credits": 9.0,
               "start_image": "aad6c1fa-7fcd-4277-bc5e-d64bd689aa4d"
+            },
+            {
+              "job_id": "d05be28f-8500-4505-a34e-7ada6f4e7797",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T05:11Z",
+              "credits": 7.5,
+              "start_image": "aad6c1fa-7fcd-4277-bc5e-d64bd689aa4d"
             }
           ],
-          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
+          "reason": null
         }
       },
       "lipsync": true,
