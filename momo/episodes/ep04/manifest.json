@@ -49,8 +49,8 @@
   },
   "credits": {
     "estimate": 207.6,
-    "spent": 165.0,
-    "generations": 52,
+    "spent": 179.0,
+    "generations": 55,
     "regenerations": 3
   },
   "notes": {
@@ -856,9 +856,9 @@
       },
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "b5a75d52-3e2a-4a62-8ec3-a12305ada26d",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122100_b5a75d52-3e2a-4a62-8ec3-a12305ada26d.png",
           "attempts": 2,
           "credits": 4.0,
           "history": [
@@ -872,11 +872,30 @@
             },
             {
               "job_id": "b5a75d52-3e2a-4a62-8ec3-a12305ada26d",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122100_b5a75d52-3e2a-4a62-8ec3-a12305ada26d.png",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T12:21Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "1c3760cb-1553-4b37-94d7-c2664e56a41b",
+          "url": null,
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "1c3760cb-1553-4b37-94d7-c2664e56a41b",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:23Z",
+              "credits": 6.0,
+              "start_image": "b5a75d52-3e2a-4a62-8ec3-a12305ada26d"
             }
           ],
           "reason": null
@@ -981,9 +1000,9 @@
       },
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "7bd3e873-0371-4d8c-93a2-ccf5b4e62a14",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122025_7bd3e873-0371-4d8c-93a2-ccf5b4e62a14.png",
           "attempts": 2,
           "credits": 4.0,
           "history": [
@@ -997,11 +1016,30 @@
             },
             {
               "job_id": "7bd3e873-0371-4d8c-93a2-ccf5b4e62a14",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122025_7bd3e873-0371-4d8c-93a2-ccf5b4e62a14.png",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T12:20Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "789cfde5-49eb-4abb-85ab-d6486d5e62b5",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "789cfde5-49eb-4abb-85ab-d6486d5e62b5",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:23Z",
+              "credits": 4.0,
+              "start_image": "7bd3e873-0371-4d8c-93a2-ccf5b4e62a14"
             }
           ],
           "reason": null
@@ -1509,9 +1547,9 @@
       },
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "5e1f6518-cc50-4485-a1e7-5a7a661b622a",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122025_5e1f6518-cc50-4485-a1e7-5a7a661b622a.png",
           "attempts": 2,
           "credits": 4.0,
           "history": [
@@ -1525,11 +1563,30 @@
             },
             {
               "job_id": "5e1f6518-cc50-4485-a1e7-5a7a661b622a",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122025_5e1f6518-cc50-4485-a1e7-5a7a661b622a.png",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T12:20Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "dfc2dbce-8401-4117-b270-2ca54d39f5c5",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "dfc2dbce-8401-4117-b270-2ca54d39f5c5",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:23Z",
+              "credits": 4.0,
+              "start_image": "5e1f6518-cc50-4485-a1e7-5a7a661b622a"
             }
           ],
           "reason": null
