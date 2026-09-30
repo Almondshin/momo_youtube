@@ -54,13 +54,14 @@
     "regenerations": 7
   },
   "notes": {
-    "v_over_reason": "노래 형식(ep03 과 같음): 127.6 BPM, 한 줄 = 1마디 → 51컷. V 49개 중 21개는 이미 만든 클립 재사용(clip_from, 0 크레딧), 새로 만드는 클립 28개.",
+    "v_over_reason": "노래 형식 v2 (사용자 피드백 '더 자연스럽게' 2026-09-30): 127.6 BPM 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 40컷. V 38개 중 13개는 재사용(clip_from, 0 크레딧), 모모가 나오는 컷은 전부 립싱크(노래하며 동작).",
     "approvals": [
       "2026-09-30 주제 승인: 숫자 세기 1~5 (Count to Five) — 사용자 선택",
       "2026-09-30 형식: ep03 과 같은 노래 형식 (Suno Pro 곡, 컷 1~3마디, 립싱크 + 움직임 + 재사용)",
       "2026-09-30 방향 변경 (사용자): 영어 가사 + 한국 동요 리듬, 1~10 세기 — 1~5 사물, 6~10 동작",
       "2026-09-30 노래 승인: Suno v1 'Count to Ten' (127.6 BPM, 2:20, 가사 99.2%) — 사용자가 넣어 준 곡",
-      "2026-09-30 기획 진행: 컷 51개(새 클립 26 · 재사용 21 · L 2), 2:16, 예상 171.5 (여유 포함 207.6) — 사용자 지시 '묻지 말고 끝까지'"
+      "2026-09-30 기획 진행: 컷 51개(새 클립 26 · 재사용 21 · L 2), 2:16, 예상 171.5 (여유 포함 207.6) — 사용자 지시 '묻지 말고 끝까지'",
+      "2026-09-30 v1 비공개 업로드 SJQlbE6_hDk → 사용자 '더 자연스럽게': 가사-화면 어긋남·입 안 움직임·전환 빠름/반복·움직임 어색 모두 선택 → v2 재편집 (+51 크레딧, 예상 248.2/250)"
     ],
     "next_time": [
       "Suno 가 전주(2마디) 대신 카운트인을 불러 인트로 인사가 또 빠짐 — 다음 곡은 가사 첫 줄 전에 '[Instrumental intro 4 bars]' 로 더 분명히",
@@ -224,16 +225,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "a23954a8-4572-4a54-b079-02b147cd162a",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130150_a23954a8-4572-4a54-b079-02b147cd162a.mp4",
           "attempts": 1,
           "credits": 6.0,
           "history": [
             {
               "job_id": "a23954a8-4572-4a54-b079-02b147cd162a",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130150_a23954a8-4572-4a54-b079-02b147cd162a.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 6.0,
@@ -289,9 +290,9 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "8ee4ce08-89d2-4da5-a8f1-4e8cca2ba643",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130152_8ee4ce08-89d2-4da5-a8f1-4e8cca2ba643.mp4",
           "attempts": 2,
           "credits": 10.5,
           "history": [
@@ -306,8 +307,8 @@
             },
             {
               "job_id": "8ee4ce08-89d2-4da5-a8f1-4e8cca2ba643",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130152_8ee4ce08-89d2-4da5-a8f1-4e8cca2ba643.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 6.0,
@@ -361,16 +362,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "22712b92-8180-4667-8704-be98e80098ae",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130150_22712b92-8180-4667-8704-be98e80098ae.mp4",
           "attempts": 1,
           "credits": 7.5,
           "history": [
             {
               "job_id": "22712b92-8180-4667-8704-be98e80098ae",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130150_22712b92-8180-4667-8704-be98e80098ae.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 7.5,
@@ -1388,16 +1389,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "34373ab5-0129-4ecf-99b6-e93f74ffe1bc",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_34373ab5-0129-4ecf-99b6-e93f74ffe1bc.mp4",
           "attempts": 1,
           "credits": 4.5,
           "history": [
             {
               "job_id": "34373ab5-0129-4ecf-99b6-e93f74ffe1bc",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_34373ab5-0129-4ecf-99b6-e93f74ffe1bc.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 4.5,
@@ -1458,16 +1459,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "9a1444b5-b8c0-4760-827b-ab4833aa4897",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_9a1444b5-b8c0-4760-827b-ab4833aa4897.mp4",
           "attempts": 1,
           "credits": 4.5,
           "history": [
             {
               "job_id": "9a1444b5-b8c0-4760-827b-ab4833aa4897",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_9a1444b5-b8c0-4760-827b-ab4833aa4897.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 4.5,
@@ -1528,16 +1529,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "efffb9ae-eab5-4687-9c9e-3aafea54513d",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130150_efffb9ae-eab5-4687-9c9e-3aafea54513d.mp4",
           "attempts": 1,
           "credits": 4.5,
           "history": [
             {
               "job_id": "efffb9ae-eab5-4687-9c9e-3aafea54513d",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130150_efffb9ae-eab5-4687-9c9e-3aafea54513d.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 4.5,
@@ -1598,16 +1599,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "7c765f4a-f2db-4da4-afd5-b25d95252877",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_7c765f4a-f2db-4da4-afd5-b25d95252877.mp4",
           "attempts": 1,
           "credits": 4.5,
           "history": [
             {
               "job_id": "7c765f4a-f2db-4da4-afd5-b25d95252877",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_7c765f4a-f2db-4da4-afd5-b25d95252877.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 4.5,
@@ -1676,16 +1677,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "bec80936-f97c-4a56-a706-1830a8a54df7",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_bec80936-f97c-4a56-a706-1830a8a54df7.mp4",
           "attempts": 1,
           "credits": 6.0,
           "history": [
             {
               "job_id": "bec80936-f97c-4a56-a706-1830a8a54df7",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_bec80936-f97c-4a56-a706-1830a8a54df7.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 6.0,
@@ -1754,9 +1755,9 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "cd1f8903-0d52-4ef8-aabc-c038ad249b0d",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_cd1f8903-0d52-4ef8-aabc-c038ad249b0d.mp4",
           "attempts": 2,
           "credits": 12.0,
           "history": [
@@ -1771,8 +1772,8 @@
             },
             {
               "job_id": "cd1f8903-0d52-4ef8-aabc-c038ad249b0d",
-              "url": null,
-              "status": "generated",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_130151_cd1f8903-0d52-4ef8-aabc-c038ad249b0d.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T13:02Z",
               "credits": 7.5,
@@ -1969,7 +1970,7 @@
       "id": "c51",
       "scene": 5,
       "type": "L",
-      "bars": 3,
+      "bars": 2,
       "library_clip": "outro_bye",
       "library_audio": "outro",
       "lead": 0.6,
@@ -3626,7 +3627,9 @@
     ],
     "refs_urls": {
       "c02_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c02_en_e1cc5470.wav",
-      "c04_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c04_en_1fa18bd4.wav",
+      "c03_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c03_en_2aaa7c79.wav",
+      "c04_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c04_en_c1d77a34.wav",
+      "c06_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c06_en_c3fcd02c.wav",
       "c07_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c07_en_e2b83f59.wav",
       "c08_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c08_en_c7e11399.wav",
       "c11_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c11_en_27658b92.wav",
@@ -3635,7 +3638,12 @@
       "c24_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c24_en_d8bd7562.wav",
       "c31_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c31_en_740c8aa9.wav",
       "c32_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c32_en_1bd8e4eb.wav",
-      "c38_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c38_en_e68631bc.wav",
+      "c33_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c33_en_4fd519f2.wav",
+      "c34_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c34_en_58258954.wav",
+      "c35_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c35_en_25c4b210.wav",
+      "c36_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c36_en_fc630c83.wav",
+      "c37_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c37_en_7f580287.wav",
+      "c38_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c38_en_c2b57dfb.wav",
       "c44_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c44_en_76fae3a7.wav",
       "c50_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep04/ep04_ref_c50_en_8e62acc9.wav"
     }
