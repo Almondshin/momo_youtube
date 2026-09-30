@@ -321,6 +321,44 @@ def test_align_lyrics(tmp: Path) -> None:
     assert al.norm("10") == "ten" and al.norm("Three!") == "three"
 
 
+def test_track_cut_at(tmp: Path) -> None:
+    cuts = track_cuts()
+    cuts[1]["cut_at"] = 4.3   # c02 starts on the sung pickup (0.2 s before its bar line) — c01 ends there
+    cuts[3]["cut_at"] = 8.8   # c04 starts 0.3 s after its bar line — c03 runs on
+    assert track_spans(TRACK_SONG, cuts) == [(0.0, 4.3), (4.3, 6.5), (6.5, 8.8), (8.8, 13.0)]
+    cfg = json.loads((MOMO / "config.json").read_text())
+    cfg["languages"] = ["en"]
+    m = {"ep": "ep91", "song": json.loads(json.dumps(TRACK_SONG)), "cuts": cuts}
+    errors, _ = validate_manifest(cfg, m)
+    assert not errors, errors
+    cuts[2]["cut_at"] = 4.5   # before c02's start → c02 would be 0.2 s → error
+    errors, _ = validate_manifest(cfg, m)
+    assert any("cut_at" in e for e in errors), errors
+    cuts[2]["cut_at"] = "6.5"
+    errors, _ = validate_manifest(cfg, m)
+    assert any("cut_at 은" in e for e in errors), errors
+
+
+def test_track_lipsync_window_offset(tmp: Path) -> None:
+    root = make_track_root(tmp)
+    paths = Paths(root)
+    cfg = load_config(paths)
+    m = json.loads((root / "episodes/ep91/manifest.json").read_text())
+    m["cuts"][1]["nar_ref"] = {"en": {"media_id": "M1", "track_sha1": "abc123", "window": [4.5, 6.5]}}
+    m["cuts"][1]["cut_at"] = 4.8     # starts 0.3 s into its pinned vocal window → the clip starts 0.3 s in
+    plans, _, warns = plan_timeline(paths, cfg, m, "en")
+    assert math.isclose(plans[1].src_offset, 0.3) and plans[1].nar_offset == 0.0, (plans[1].src_offset, warns)
+    m["cuts"][1]["cut_at"] = 4.2     # starts before the window → hold the first frame 0.3 s
+    m["cuts"][2]["cut_at"] = 7.0     # ends 0.5 s after the window → the reference is silent there
+    plans, _, warns = plan_timeline(paths, cfg, m, "en")
+    assert plans[1].src_offset == 0.0 and math.isclose(plans[1].nar_offset, 0.3), plans[1]
+    assert any("첫 프레임 정지" in w for w in warns) and any("입이 닫힘" in w for w in warns), warns
+    m["cuts"][1]["clip_at"] = 0.5    # explicit start into its own clip wins (e.g. a count-in reusing the chorus take)
+    m["cuts"][0]["clip_at"] = 1.0
+    plans, _, _ = plan_timeline(paths, cfg, m, "en")
+    assert plans[1].src_offset == 0.5 and plans[0].src_offset == 1.0
+
+
 def make_track_root(tmp: Path) -> Path:
     root = tmp / "root"
     ep = root / "episodes" / "ep91"

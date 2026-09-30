@@ -102,6 +102,7 @@ def make_segs(plans: list[CutPlan], cfg: dict, tmp: Path, font: Path) -> list[Se
             "lyrics": [[ln[0], round(ln[1], 4), round(ln[2], 4), round(ln[3], 4), ln[4] if len(ln) > 4 else None]
                        for ln in p.lyrics],
             "word_card": p.card, "src_offset": round(p.src_offset, 4),
+            "hold0": round(p.nar_offset, 4) if p.cut.get("lipsync") else None,
             "card": card_lines(p) if p.source_kind == "placeholder" else None,
             "render": {k: r[k] for k in render_keys}}, sort_keys=True, default=str).encode()).hexdigest()
         segs.append(seg)

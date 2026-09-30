@@ -186,7 +186,19 @@ def _validate_track(cfg: dict, song: dict, tr: dict, cuts: list[dict]) -> tuple[
         return E, W
     if not any((ln.get("words") for ln in song.get("lyrics") or [] if isinstance(ln, dict))):
         W.append("song.lyrics 에 단어 시각이 없음 — 가사 자막이 안 나온다 (song_track.py lyrics)")
+    for i, c in enumerate(cuts):
+        at = c.get("cut_at")
+        if at is not None and (not _is_num(at) or at < 0):
+            E.append(f"{c.get('id')}: cut_at 은 노래 파일 기준 초 (0 이상)")
+        elif at is not None and i == 0:
+            W.append(f"{c.get('id')}: 첫 컷의 cut_at 은 쓰이지 않는다 (0 에서 시작)")
+        ca = c.get("clip_at")
+        if ca is not None and (not _is_num(ca) or ca < 0):
+            E.append(f"{c.get('id')}: clip_at 은 0 이상의 초 (자기 클립의 시작 위치)")
     spans = track_spans(song, cuts)
+    for c, (s, e) in zip(cuts, spans):
+        if e - s < 0.4:
+            E.append(f"{c.get('id')}: 컷 길이 {e - s:.2f}s — cut_at 이 앞 컷보다 늦어야 하고 0.4초 이상 (순서 확인)")
     by_id = {c.get("id"): c for c in cuts}
     length = tr.get("duration")
     if isinstance(length, (int, float)) and spans and spans[-1][1] > length - float(tr.get("start") or 0) + 0.05:
@@ -454,7 +466,7 @@ class CutPlan:
     card: dict | None = None      # word card {"word", "text"} shown beside the picture
     # song: (line, start, sung, until, word_at) — word_at None = words light by their share of characters
     lyrics: list[tuple] = field(default_factory=list)
-    src_offset: float = 0.0       # clip_from: start this far into the source clip
+    src_offset: float = 0.0       # start this far into the clip (clip_from.at, clip_at, or a lip-sync window offset)
 
 
 SONG_TEMPO_MAX = 1.3   # a lyric line may be sped up this much to fit before the next line (atempo, same pitch)
@@ -498,19 +510,25 @@ def track_spans(song: dict, cuts: list[dict]) -> list[tuple[float, float]]:
 
     Cut i covers bars [k, k + bars): the first cut starts at 0 (it also holds any pickup before the first
     downbeat), the rest start on their bar line, the last one runs to track.end when that is later.
+    A cut with `cut_at` (song-file seconds) starts there instead — on the sung line's pickup rather than the bar
+    line — and the cut before it ends there.
     """
     tr = song_track(song) or {}
     t0 = float(tr.get("start") or 0.0)
-    out, k = [], 0
+    starts, k = [], 0
     for i, c in enumerate(cuts):
         bars = c.get("bars") if isinstance(c.get("bars"), int) and c.get("bars") > 0 else 1
-        s = 0.0 if i == 0 else bar_time(song, k) - t0
+        at = c.get("cut_at")
+        starts.append(0.0 if i == 0 else (float(at) if _is_num(at) else bar_time(song, k)) - t0)
         k += bars
-        e = bar_time(song, k) - t0
-        if i == len(cuts) - 1 and isinstance(tr.get("end"), (int, float)):
-            e = max(e, float(tr["end"]) - t0)
-        out.append((round(s, 6), round(e, 6)))
-    return out
+    end = bar_time(song, k) - t0
+    if isinstance(tr.get("end"), (int, float)):
+        end = max(end, float(tr["end"]) - t0)
+    return [(round(s, 6), round(e, 6)) for s, e in zip(starts, starts[1:] + [end])]
+
+
+def _is_num(v) -> bool:
+    return isinstance(v, (int, float)) and not isinstance(v, bool)
 
 
 def track_lines(song: dict) -> list[dict]:
@@ -655,7 +673,7 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         items = narration_items(c, lang, cfg)
 
         # ---- 영상 소스
-        source, kind, src_len, src_off = None, "placeholder", None, 0.0
+        source, kind, src_len, src_off, hold0 = None, "placeholder", None, 0.0, 0.0
         cf = c.get("clip_from") if isinstance(c.get("clip_from"), dict) else None
         if t == "V" and cf:  # reuse another cut's clip (a part of it) — no new image or clip
             other = str(cf.get("cut") or "")
@@ -675,6 +693,20 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         elif t == "V":
             source = find_media(paths.clips(ep), f"{cid}_{lang}", VIDEO_EXTS) or find_media(paths.clips(ep), cid,
                                                                                             VIDEO_EXTS)
+            if _is_num(c.get("clip_at")):
+                src_off = float(c["clip_at"])
+            elif track and c.get("lipsync"):  # the clip lip-syncs to its pinned vocal window, not to the cut
+                win = ((c.get("nar_ref") or {}).get(lang) or {}).get("window")
+                if isinstance(win, list) and len(win) == 2:
+                    s_song, e_song = spans[i][0] + t_start, spans[i][1] + t_start
+                    off = s_song - float(win[0])
+                    if off < -0.02:
+                        hold0 = -off
+                        warnings.append(f"{cid}: 립싱크 창 {win[0]:.2f}s 보다 {hold0:.2f}s 먼저 시작 — 그동안 첫 프레임 정지")
+                    src_off = max(0.0, off)
+                    if e_song > float(win[1]) + 0.15:
+                        warnings.append(f"{cid}: 립싱크 창 끝 {win[1]:.2f}s 뒤 {e_song - float(win[1]):.2f}s 는 "
+                                        f"레퍼런스가 무음 — 입이 닫힘")
             if source:
                 kind = "video"
             else:
@@ -692,7 +724,8 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
             src_len = probe_duration(source)
             if src_off:
                 if src_off >= src_len - 0.05:
-                    raise MomoError(f"{cid}: clip_from.at {src_off}s 가 원본 클립 길이 {src_len:.2f}s 이상")
+                    raise MomoError(f"{cid}: 클립 시작 위치 {src_off:.2f}s (clip_from.at / clip_at / 립싱크 창) 가 "
+                                    f"클립 길이 {src_len:.2f}s 이상")
                 src_len -= src_off
 
         # ---- 음성
@@ -795,7 +828,7 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
 
         plans.append(CutPlan(
             index=i, id=cid, type=t, scene=scene, cut=c, items=items, speech_files=files,
-            speech_durs=durs, nar_len=nar_len, nar_offset=(starts[0] if starts else xf + lead), xf_in=xf,
+            speech_durs=durs, nar_len=nar_len, nar_offset=(starts[0] if starts else xf + lead + hold0), xf_in=xf,
             dur=dur_f / fps,
             start=start_f / fps, source=source, source_kind=kind, source_len=src_len, keyword=kw,
             text_at=text_at, text_pos=c.get("text_pos") or "top", text_color=c.get("text_color") or "white",

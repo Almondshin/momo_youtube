@@ -49,9 +49,9 @@
   },
   "credits": {
     "estimate": 207.6,
-    "spent": 187.0,
-    "generations": 57,
-    "regenerations": 5
+    "spent": 238.0,
+    "generations": 66,
+    "regenerations": 7
   },
   "notes": {
     "v_over_reason": "노래 형식(ep03 과 같음): 127.6 BPM, 한 줄 = 1마디 → 51컷. V 49개 중 21개는 이미 만든 클립 재사용(clip_from, 0 크레딧), 새로 만드는 클립 28개.",
@@ -66,6 +66,57 @@
       "Suno 가 전주(2마디) 대신 카운트인을 불러 인트로 인사가 또 빠짐 — 다음 곡은 가사 첫 줄 전에 '[Instrumental intro 4 bars]' 로 더 분명히",
       "구름 2개 컷: seedance 가 두 물체를 서로 끌어당김(3번 중 2번 붙음) — 물체는 고정, 움직임은 반짝이·잎사귀에 줄 것",
       "크레딧 정산 2026-09-30: 잔액 400.87 → 213.87 = 187.0 (manifest 기록 187 과 일치)"
+    ],
+    "retired_clips": [
+      {
+        "cut": "c03",
+        "kind": "motion clip (v1)",
+        "job_id": "4b16a7ba-d1ee-42fa-97fb-45d5726e09d0",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122148_4b16a7ba-d1ee-42fa-97fb-45d5726e09d0.mp4"
+      },
+      {
+        "cut": "c06",
+        "kind": "motion clip (v1)",
+        "job_id": "215fa6bb-98c3-41ff-9ddb-46b347ee4588",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122145_215fa6bb-98c3-41ff-9ddb-46b347ee4588.mp4"
+      },
+      {
+        "cut": "c33",
+        "kind": "motion clip (v1)",
+        "job_id": "8a2f920f-671a-49ee-91ba-84a2a18abc00",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122231_8a2f920f-671a-49ee-91ba-84a2a18abc00.mp4"
+      },
+      {
+        "cut": "c34",
+        "kind": "motion clip (v1)",
+        "job_id": "314f89ea-0ec7-4b72-81e0-33b523de76a4",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122231_314f89ea-0ec7-4b72-81e0-33b523de76a4.mp4"
+      },
+      {
+        "cut": "c35",
+        "kind": "motion clip (v1)",
+        "job_id": "3af33e96-c1a6-427b-8196-cc31440efa8f",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122232_3af33e96-c1a6-427b-8196-cc31440efa8f.mp4"
+      },
+      {
+        "cut": "c36",
+        "kind": "motion clip (v1)",
+        "job_id": "ac61ba21-4a8a-41d4-bfb6-307d2c66aa8e",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122232_ac61ba21-4a8a-41d4-bfb6-307d2c66aa8e.mp4"
+      },
+      {
+        "cut": "c37",
+        "kind": "motion clip (v1)",
+        "job_id": "dfc2dbce-8401-4117-b270-2ca54d39f5c5",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122329_dfc2dbce-8401-4117-b270-2ca54d39f5c5.mp4"
+      }
+    ],
+    "retired_cuts": [
+      {
+        "id": "c05",
+        "image": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_120916_ac50e704-ae79-4f93-97ac-eb77b99a5bf7.png",
+        "clip": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122146_28b6d7f7-f343-4cbb-bb84-7f8960327b86.mp4"
+      }
     ]
   },
   "cuts": [
@@ -73,7 +124,7 @@
       "id": "c01",
       "scene": 1,
       "type": "L",
-      "bars": 2,
+      "bars": 1,
       "library_clip": "intro_wave"
     },
     {
@@ -137,17 +188,22 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 2.342,
+      "clip_at": 0.0,
+      "lipsync_ok": true
     },
     {
       "id": "c03",
       "scene": 1,
       "type": "V",
-      "bars": 1,
+      "bars": 2,
       "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, clapping both paws together, big happy smile",
-      "motion": "claps both paws together five times to the beat, small happy bounce, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4,
+      "motion": "sings the counting words happily, then claps both paws together on every 'clap', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
       "gen": {
         "image": {
           "status": "approved",
@@ -167,24 +223,37 @@
           ],
           "reason": null
         },
-        "clip": {
-          "status": "approved",
-          "job_id": "4b16a7ba-d1ee-42fa-97fb-45d5726e09d0",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122148_4b16a7ba-d1ee-42fa-97fb-45d5726e09d0.mp4",
+        "clip_en": {
+          "status": "generated",
+          "job_id": "a23954a8-4572-4a54-b079-02b147cd162a",
+          "url": null,
           "attempts": 1,
-          "credits": 4.0,
+          "credits": 6.0,
           "history": [
             {
-              "job_id": "4b16a7ba-d1ee-42fa-97fb-45d5726e09d0",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122148_4b16a7ba-d1ee-42fa-97fb-45d5726e09d0.mp4",
-              "status": "approved",
+              "job_id": "a23954a8-4572-4a54-b079-02b147cd162a",
+              "url": null,
+              "status": "generated",
               "reason": null,
-              "at": "2026-09-30T12:21Z",
-              "credits": 4.0,
+              "at": "2026-09-30T13:02Z",
+              "credits": 6.0,
               "start_image": "73fb7698-f7cc-473c-bbdf-ef1e6c08d36b"
             }
           ],
           "reason": null
+        }
+      },
+      "cut_at": 4.02,
+      "lipsync": true,
+      "nar_ref": {
+        "en": {
+          "media_id": "c15c98b5-532b-45ff-ab85-ad9b89d77619",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            4.02,
+            7.5
+          ],
+          "at": "2026-09-30T13:01Z"
         }
       }
     },
@@ -192,13 +261,13 @@
       "id": "c04",
       "scene": 1,
       "type": "V",
-      "bars": 1,
+      "bars": 2,
       "image_prompt": "[Momo] three-quarter view close-up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, bright excited face",
-      "motion": "bobs the head to the beat, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "motion": "sings the counting words, then bounces up and down happily on every 'hop', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 3
+        "en": 4
       },
       "gen": {
         "image": {
@@ -220,83 +289,44 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
-          "job_id": "d0adb42c-e1ef-4a5d-9235-cb34b557a6da",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122147_d0adb42c-e1ef-4a5d-9235-cb34b557a6da.mp4",
-          "attempts": 1,
-          "credits": 4.5,
+          "status": "generated",
+          "job_id": "8ee4ce08-89d2-4da5-a8f1-4e8cca2ba643",
+          "url": null,
+          "attempts": 2,
+          "credits": 10.5,
           "history": [
             {
               "job_id": "d0adb42c-e1ef-4a5d-9235-cb34b557a6da",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122147_d0adb42c-e1ef-4a5d-9235-cb34b557a6da.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "v2 re-cut: new vocal window (cut on the sung line, singing + action)",
               "at": "2026-09-30T12:21Z",
               "credits": 4.5,
+              "start_image": "8f5be1b8-767c-4f1c-b428-fbf9feb06587"
+            },
+            {
+              "job_id": "8ee4ce08-89d2-4da5-a8f1-4e8cca2ba643",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T13:02Z",
+              "credits": 6.0,
               "start_image": "8f5be1b8-767c-4f1c-b428-fbf9feb06587"
             }
           ],
           "reason": null
         }
       },
+      "cut_at": 7.5,
       "nar_ref": {
         "en": {
-          "media_id": "010e7495-12d7-42b3-b3ad-8d153e094f6a",
+          "media_id": "d70001d1-215a-4b8e-8b6e-11a27620f178",
           "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
           "window": [
-            7.994,
-            9.874
+            7.5,
+            11.3
           ],
-          "at": "2026-09-30T12:15Z"
-        }
-      }
-    },
-    {
-      "id": "c05",
-      "scene": 1,
-      "type": "V",
-      "bars": 1,
-      "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, standing on the grass ready to hop, arms up",
-      "motion": "does five small happy hops in place to the beat, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4,
-      "gen": {
-        "image": {
-          "status": "approved",
-          "job_id": "ac50e704-ae79-4f93-97ac-eb77b99a5bf7",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_120916_ac50e704-ae79-4f93-97ac-eb77b99a5bf7.png",
-          "attempts": 1,
-          "credits": 2.0,
-          "history": [
-            {
-              "job_id": "ac50e704-ae79-4f93-97ac-eb77b99a5bf7",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_120916_ac50e704-ae79-4f93-97ac-eb77b99a5bf7.png",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T12:09Z",
-              "credits": 2.0
-            }
-          ],
-          "reason": null
-        },
-        "clip": {
-          "status": "approved",
-          "job_id": "28b6d7f7-f343-4cbb-bb84-7f8960327b86",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122146_28b6d7f7-f343-4cbb-bb84-7f8960327b86.mp4",
-          "attempts": 1,
-          "credits": 4.0,
-          "history": [
-            {
-              "job_id": "28b6d7f7-f343-4cbb-bb84-7f8960327b86",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122146_28b6d7f7-f343-4cbb-bb84-7f8960327b86.mp4",
-              "status": "approved",
-              "reason": null,
-              "at": "2026-09-30T12:21Z",
-              "credits": 4.0,
-              "start_image": "ac50e704-ae79-4f93-97ac-eb77b99a5bf7"
-            }
-          ],
-          "reason": null
+          "at": "2026-09-30T13:01Z"
         }
       }
     },
@@ -306,9 +336,11 @@
       "type": "V",
       "bars": 2,
       "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo holding one small shiny golden hand bell, Ducky beside her, both cheerful, medium wide shot",
-      "motion": "Momo rings the little golden bell twice to the beat, Ducky flaps its wings happily, both sway, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4,
+      "motion": "Momo rings the little golden bell on every 'ding-dong-dang' and sings, Ducky sways and flaps its wings, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 5
+      },
       "gen": {
         "image": {
           "status": "approved",
@@ -328,24 +360,37 @@
           ],
           "reason": null
         },
-        "clip": {
-          "status": "approved",
-          "job_id": "215fa6bb-98c3-41ff-9ddb-46b347ee4588",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122145_215fa6bb-98c3-41ff-9ddb-46b347ee4588.mp4",
+        "clip_en": {
+          "status": "generated",
+          "job_id": "22712b92-8180-4667-8704-be98e80098ae",
+          "url": null,
           "attempts": 1,
-          "credits": 4.0,
+          "credits": 7.5,
           "history": [
             {
-              "job_id": "215fa6bb-98c3-41ff-9ddb-46b347ee4588",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122145_215fa6bb-98c3-41ff-9ddb-46b347ee4588.mp4",
-              "status": "approved",
+              "job_id": "22712b92-8180-4667-8704-be98e80098ae",
+              "url": null,
+              "status": "generated",
               "reason": null,
-              "at": "2026-09-30T12:21Z",
-              "credits": 4.0,
+              "at": "2026-09-30T13:02Z",
+              "credits": 7.5,
               "start_image": "9fe3f00a-61ed-4680-b7b5-b217501d5a14"
             }
           ],
           "reason": null
+        }
+      },
+      "cut_at": 11.3,
+      "lipsync": true,
+      "nar_ref": {
+        "en": {
+          "media_id": "e7b6885d-b420-4923-bbb2-712062f51213",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            11.3,
+            15.517
+          ],
+          "at": "2026-09-30T13:01Z"
         }
       }
     },
@@ -410,7 +455,8 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 15.517
     },
     {
       "id": "c08",
@@ -473,7 +519,8 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 19.278
     },
     {
       "id": "c09",
@@ -529,7 +576,8 @@
           ],
           "reason": null
         }
-      }
+      },
+      "cut_at": 22.74
     },
     {
       "id": "c10",
@@ -603,7 +651,8 @@
           ],
           "reason": null
         }
-      }
+      },
+      "cut_at": 26.32
     },
     {
       "id": "c11",
@@ -666,7 +715,8 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 30.563
     },
     {
       "id": "c12",
@@ -722,7 +772,8 @@
           ],
           "reason": null
         }
-      }
+      },
+      "cut_at": 33.86
     },
     {
       "id": "c13",
@@ -785,60 +836,39 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 38.087
     },
     {
       "id": "c14",
       "scene": 3,
       "type": "V",
-      "bars": 1,
+      "bars": 2,
       "clip_from": {
-        "cut": "c02",
+        "cut": "c03",
         "at": 0.0
       },
-      "image_prompt": "(reuses c02)",
-      "motion": "(reuses c02 from 0s)",
-      "lipsync_ok": true
+      "lipsync_ok": true,
+      "cut_at": 41.68,
+      "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, clapping both paws together, big happy smile",
+      "motion": "sings the counting words happily, then claps both paws together on every 'clap', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
       "id": "c15",
       "scene": 3,
       "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c03",
-        "at": 2.0
-      },
-      "image_prompt": "(reuses c03)",
-      "motion": "(reuses c03 from 2s)"
-    },
-    {
-      "id": "c16",
-      "scene": 3,
-      "type": "V",
-      "bars": 1,
+      "bars": 2,
       "clip_from": {
         "cut": "c04",
         "at": 0.0
       },
-      "image_prompt": "(reuses c04)",
-      "motion": "(reuses c04 from 0s)",
-      "lipsync_ok": true
+      "cut_at": 45.15,
+      "lipsync_ok": true,
+      "image_prompt": "[Momo] three-quarter view close-up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, bright excited face",
+      "motion": "sings the counting words, then bounces up and down happily on every 'hop', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
-      "id": "c17",
-      "scene": 3,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c05",
-        "at": 2.0
-      },
-      "image_prompt": "(reuses c05)",
-      "motion": "(reuses c05 from 2s)"
-    },
-    {
-      "id": "c18",
+      "id": "c16",
       "scene": 3,
       "type": "V",
       "bars": 2,
@@ -846,11 +876,13 @@
         "cut": "c06",
         "at": 0.0
       },
-      "image_prompt": "(reuses c06)",
-      "motion": "(reuses c06 from 0s)"
+      "lipsync_ok": true,
+      "cut_at": 48.95,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo holding one small shiny golden hand bell, Ducky beside her, both cheerful, medium wide shot",
+      "motion": "Momo rings the little golden bell on every 'ding-dong-dang' and sings, Ducky sways and flaps its wings, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
-      "id": "c19",
+      "id": "c17",
       "scene": 3,
       "type": "V",
       "bars": 2,
@@ -858,9 +890,10 @@
         "cut": "c07",
         "at": 0.0
       },
-      "image_prompt": "(reuses c07)",
-      "motion": "(reuses c07 from 0s)",
-      "lipsync_ok": true
+      "cut_at": 53.15,
+      "lipsync_ok": true,
+      "image_prompt": "[Momo] front view medium shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, proud happy face",
+      "motion": "sways to the beat and lifts both arms up on the last word, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
       "id": "c20",
@@ -931,7 +964,8 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 56.895
     },
     {
       "id": "c21",
@@ -987,7 +1021,8 @@
           ],
           "reason": null
         }
-      }
+      },
+      "cut_at": 59.86
     },
     {
       "id": "c22",
@@ -998,9 +1033,10 @@
         "cut": "c11",
         "at": 0.0
       },
-      "image_prompt": "(reuses c11)",
-      "motion": "(reuses c11 from 0s)",
-      "lipsync_ok": true
+      "lipsync_ok": true,
+      "cut_at": 64.42,
+      "image_prompt": "[Momo] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, pointing one paw down at the grass, cheerful face, medium shot",
+      "motion": "points down at the grass and looks down, then back at the viewer, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
       "id": "c23",
@@ -1064,7 +1100,8 @@
           ],
           "reason": null
         }
-      }
+      },
+      "cut_at": 67.5
     },
     {
       "id": "c24",
@@ -1127,60 +1164,39 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 71.941
     },
     {
       "id": "c25",
       "scene": 4,
       "type": "V",
-      "bars": 1,
+      "bars": 2,
       "clip_from": {
-        "cut": "c02",
+        "cut": "c03",
         "at": 0.0
       },
-      "image_prompt": "(reuses c02)",
-      "motion": "(reuses c02 from 0s)",
-      "lipsync_ok": true
+      "lipsync_ok": true,
+      "cut_at": 75.53,
+      "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, clapping both paws together, big happy smile",
+      "motion": "sings the counting words happily, then claps both paws together on every 'clap', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
       "id": "c26",
       "scene": 4,
       "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c03",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c03)",
-      "motion": "(reuses c03 from 0s)"
-    },
-    {
-      "id": "c27",
-      "scene": 4,
-      "type": "V",
-      "bars": 1,
+      "bars": 2,
       "clip_from": {
         "cut": "c04",
         "at": 0.0
       },
-      "image_prompt": "(reuses c04)",
-      "motion": "(reuses c04 from 0s)",
-      "lipsync_ok": true
+      "cut_at": 78.99,
+      "lipsync_ok": true,
+      "image_prompt": "[Momo] three-quarter view close-up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, bright excited face",
+      "motion": "sings the counting words, then bounces up and down happily on every 'hop', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
-      "id": "c28",
-      "scene": 4,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c05",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c05)",
-      "motion": "(reuses c05 from 0s)"
-    },
-    {
-      "id": "c29",
+      "id": "c27",
       "scene": 4,
       "type": "V",
       "bars": 2,
@@ -1188,11 +1204,13 @@
         "cut": "c06",
         "at": 0.0
       },
-      "image_prompt": "(reuses c06)",
-      "motion": "(reuses c06 from 0s)"
+      "lipsync_ok": true,
+      "cut_at": 82.78,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo holding one small shiny golden hand bell, Ducky beside her, both cheerful, medium wide shot",
+      "motion": "Momo rings the little golden bell on every 'ding-dong-dang' and sings, Ducky sways and flaps its wings, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
-      "id": "c30",
+      "id": "c28",
       "scene": 4,
       "type": "V",
       "bars": 1,
@@ -1200,9 +1218,10 @@
         "cut": "c07",
         "at": 0.0
       },
-      "image_prompt": "(reuses c07)",
-      "motion": "(reuses c07 from 0s)",
-      "lipsync_ok": true
+      "cut_at": 87.0,
+      "lipsync_ok": true,
+      "image_prompt": "[Momo] front view medium shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, proud happy face",
+      "motion": "sways to the beat and lifts both arms up on the last word, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
       "id": "c31",
@@ -1265,7 +1284,8 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 89.36
     },
     {
       "id": "c32",
@@ -1328,22 +1348,25 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 90.749
     },
     {
       "id": "c33",
       "scene": 4,
       "type": "V",
-      "bars": 1,
+      "bars": 2,
       "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both ready to hop",
-      "motion": "Momo and Ducky do small happy hops together in place to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4,
+      "motion": "Momo and Ducky hop in place together, Momo sings the words, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
       "card": {
         "word": "6 SIX",
         "text": "six little hops",
         "pos": "right",
-        "at": 1.1
+        "at": 1.0
       },
       "gen": {
         "image": {
@@ -1364,24 +1387,37 @@
           ],
           "reason": null
         },
-        "clip": {
-          "status": "approved",
-          "job_id": "8a2f920f-671a-49ee-91ba-84a2a18abc00",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122231_8a2f920f-671a-49ee-91ba-84a2a18abc00.mp4",
+        "clip_en": {
+          "status": "generated",
+          "job_id": "34373ab5-0129-4ecf-99b6-e93f74ffe1bc",
+          "url": null,
           "attempts": 1,
-          "credits": 4.0,
+          "credits": 4.5,
           "history": [
             {
-              "job_id": "8a2f920f-671a-49ee-91ba-84a2a18abc00",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122231_8a2f920f-671a-49ee-91ba-84a2a18abc00.mp4",
-              "status": "approved",
+              "job_id": "34373ab5-0129-4ecf-99b6-e93f74ffe1bc",
+              "url": null,
+              "status": "generated",
               "reason": null,
-              "at": "2026-09-30T12:22Z",
-              "credits": 4.0,
+              "at": "2026-09-30T13:02Z",
+              "credits": 4.5,
               "start_image": "6a375934-4e2f-44c0-a124-62da93c6478a"
             }
           ],
           "reason": null
+        }
+      },
+      "cut_at": 92.63,
+      "lipsync": true,
+      "nar_ref": {
+        "en": {
+          "media_id": "4a4e10e5-8d9c-4cf5-afec-438112b36f83",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            92.63,
+            95.58
+          ],
+          "at": "2026-09-30T13:01Z"
         }
       }
     },
@@ -1391,14 +1427,16 @@
       "type": "V",
       "bars": 1,
       "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo clapping her paws, Ducky flapping its wings",
-      "motion": "Momo claps her paws and Ducky flaps its wings together to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4,
+      "motion": "Momo claps her paws while singing, Ducky flaps its wings, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
       "card": {
         "word": "7 SEVEN",
         "text": "seven little claps",
         "pos": "right",
-        "at": 1.1
+        "at": 0.15
       },
       "gen": {
         "image": {
@@ -1419,24 +1457,37 @@
           ],
           "reason": null
         },
-        "clip": {
-          "status": "approved",
-          "job_id": "314f89ea-0ec7-4b72-81e0-33b523de76a4",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122231_314f89ea-0ec7-4b72-81e0-33b523de76a4.mp4",
+        "clip_en": {
+          "status": "generated",
+          "job_id": "9a1444b5-b8c0-4760-827b-ab4833aa4897",
+          "url": null,
           "attempts": 1,
-          "credits": 4.0,
+          "credits": 4.5,
           "history": [
             {
-              "job_id": "314f89ea-0ec7-4b72-81e0-33b523de76a4",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122231_314f89ea-0ec7-4b72-81e0-33b523de76a4.mp4",
-              "status": "approved",
+              "job_id": "9a1444b5-b8c0-4760-827b-ab4833aa4897",
+              "url": null,
+              "status": "generated",
               "reason": null,
-              "at": "2026-09-30T12:22Z",
-              "credits": 4.0,
+              "at": "2026-09-30T13:02Z",
+              "credits": 4.5,
               "start_image": "0e114e94-cfa0-404b-87c3-f1af4a796aed"
             }
           ],
           "reason": null
+        }
+      },
+      "cut_at": 95.58,
+      "lipsync": true,
+      "nar_ref": {
+        "en": {
+          "media_id": "796f2440-32e3-4ae8-acdc-92eb5f576338",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            95.58,
+            97.44
+          ],
+          "at": "2026-09-30T13:01Z"
         }
       }
     },
@@ -1446,14 +1497,16 @@
       "type": "V",
       "bars": 1,
       "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both stomping their feet happily",
-      "motion": "Momo and Ducky stomp their feet gently in place to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4,
+      "motion": "Momo stomps her feet gently in place while singing, Ducky stomps too, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
       "card": {
         "word": "8 EIGHT",
         "text": "eight little stomps",
         "pos": "right",
-        "at": 1.1
+        "at": 0.15
       },
       "gen": {
         "image": {
@@ -1474,24 +1527,37 @@
           ],
           "reason": null
         },
-        "clip": {
-          "status": "approved",
-          "job_id": "3af33e96-c1a6-427b-8196-cc31440efa8f",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122232_3af33e96-c1a6-427b-8196-cc31440efa8f.mp4",
+        "clip_en": {
+          "status": "generated",
+          "job_id": "efffb9ae-eab5-4687-9c9e-3aafea54513d",
+          "url": null,
           "attempts": 1,
-          "credits": 4.0,
+          "credits": 4.5,
           "history": [
             {
-              "job_id": "3af33e96-c1a6-427b-8196-cc31440efa8f",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122232_3af33e96-c1a6-427b-8196-cc31440efa8f.mp4",
-              "status": "approved",
+              "job_id": "efffb9ae-eab5-4687-9c9e-3aafea54513d",
+              "url": null,
+              "status": "generated",
               "reason": null,
-              "at": "2026-09-30T12:22Z",
-              "credits": 4.0,
+              "at": "2026-09-30T13:02Z",
+              "credits": 4.5,
               "start_image": "9d62bca4-37fe-41a2-8596-2b3652841a66"
             }
           ],
           "reason": null
+        }
+      },
+      "cut_at": 97.44,
+      "lipsync": true,
+      "nar_ref": {
+        "en": {
+          "media_id": "53a523ae-bbc3-40ef-9e3d-8e6c23502c65",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            97.44,
+            99.38
+          ],
+          "at": "2026-09-30T13:01Z"
         }
       }
     },
@@ -1501,14 +1567,16 @@
       "type": "V",
       "bars": 1,
       "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both nodding happily, medium wide shot",
-      "motion": "Momo and Ducky nod their heads together to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4,
+      "motion": "Momo nods her head to the beat while singing, Ducky nods too, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
       "card": {
         "word": "9 NINE",
         "text": "nine little nods",
         "pos": "right",
-        "at": 1.1
+        "at": 0.15
       },
       "gen": {
         "image": {
@@ -1529,24 +1597,37 @@
           ],
           "reason": null
         },
-        "clip": {
-          "status": "approved",
-          "job_id": "ac61ba21-4a8a-41d4-bfb6-307d2c66aa8e",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122232_ac61ba21-4a8a-41d4-bfb6-307d2c66aa8e.mp4",
+        "clip_en": {
+          "status": "generated",
+          "job_id": "7c765f4a-f2db-4da4-afd5-b25d95252877",
+          "url": null,
           "attempts": 1,
-          "credits": 4.0,
+          "credits": 4.5,
           "history": [
             {
-              "job_id": "ac61ba21-4a8a-41d4-bfb6-307d2c66aa8e",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122232_ac61ba21-4a8a-41d4-bfb6-307d2c66aa8e.mp4",
-              "status": "approved",
+              "job_id": "7c765f4a-f2db-4da4-afd5-b25d95252877",
+              "url": null,
+              "status": "generated",
               "reason": null,
-              "at": "2026-09-30T12:22Z",
-              "credits": 4.0,
+              "at": "2026-09-30T13:02Z",
+              "credits": 4.5,
               "start_image": "f9300bc9-0d5f-4106-9875-0abb2d784254"
             }
           ],
           "reason": null
+        }
+      },
+      "cut_at": 99.38,
+      "lipsync": true,
+      "nar_ref": {
+        "en": {
+          "media_id": "b2dfbdbd-8003-42a2-87be-0b1a9680a508",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            99.38,
+            101.3
+          ],
+          "at": "2026-09-30T13:01Z"
         }
       }
     },
@@ -1554,16 +1635,18 @@
       "id": "c37",
       "scene": 4,
       "type": "V",
-      "bars": 1,
+      "bars": 2,
       "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both standing on the grass with knees bent and arms and wings raised, ready to jump with joy, big happy smiles",
-      "motion": "Momo and Ducky jump up and land softly again and again to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4,
+      "motion": "Momo and Ducky do one big happy jump and land, then Momo looks at the viewer and asks the question, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
       "card": {
         "word": "10 TEN",
         "text": "ten big jumps",
         "pos": "right",
-        "at": 1.1
+        "at": 0.15
       },
       "gen": {
         "image": {
@@ -1592,38 +1675,64 @@
           ],
           "reason": null
         },
-        "clip": {
-          "status": "approved",
-          "job_id": "dfc2dbce-8401-4117-b270-2ca54d39f5c5",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122329_dfc2dbce-8401-4117-b270-2ca54d39f5c5.mp4",
+        "clip_en": {
+          "status": "generated",
+          "job_id": "bec80936-f97c-4a56-a706-1830a8a54df7",
+          "url": null,
           "attempts": 1,
-          "credits": 4.0,
+          "credits": 6.0,
           "history": [
             {
-              "job_id": "dfc2dbce-8401-4117-b270-2ca54d39f5c5",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122329_dfc2dbce-8401-4117-b270-2ca54d39f5c5.mp4",
-              "status": "approved",
+              "job_id": "bec80936-f97c-4a56-a706-1830a8a54df7",
+              "url": null,
+              "status": "generated",
               "reason": null,
-              "at": "2026-09-30T12:23Z",
-              "credits": 4.0,
+              "at": "2026-09-30T13:02Z",
+              "credits": 6.0,
               "start_image": "5e1f6518-cc50-4485-a1e7-5a7a661b622a"
             }
           ],
           "reason": null
         }
+      },
+      "cut_at": 101.3,
+      "lipsync": true,
+      "nar_ref": {
+        "en": {
+          "media_id": "7c2d8279-b226-4686-a200-503c1af74f1b",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            101.3,
+            105.44
+          ],
+          "at": "2026-09-30T13:01Z"
+        }
       }
     },
     {
-      "id": "c38",
-      "scene": 4,
+      "id": "c39",
+      "scene": 5,
       "type": "V",
-      "bars": 1,
+      "bars": 2,
+      "clip_from": {
+        "cut": "c23",
+        "at": 0.3
+      },
+      "cut_at": 105.44,
+      "image_prompt": "exactly five small pink daisy flowers with round yellow centers and short green stems, growing in one neat evenly spaced row in the soft green grass lawn with visible grass blades, no other flowers anywhere, the sunny green garden with a small white picket fence softly blurred behind",
+      "motion": "the five pink flowers sway gently one after another, staying exactly five"
+    },
+    {
+      "id": "c38",
+      "scene": 5,
+      "type": "V",
+      "bars": 3,
       "image_prompt": "[Momo] close-up of the face in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, playful curious face, one paw raised beside the cheek",
-      "motion": "leans a little toward the viewer, then tilts the head to listen, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "motion": "claps both paws near the face to the beat and sings the numbers loudly and happily, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "en": 3
+        "en": 5
       },
       "gen": {
         "image": {
@@ -1645,96 +1754,46 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
-          "job_id": "f0031835-abad-4d6f-a532-69649dd6b183",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122232_f0031835-abad-4d6f-a532-69649dd6b183.mp4",
-          "attempts": 1,
-          "credits": 4.5,
+          "status": "generated",
+          "job_id": "cd1f8903-0d52-4ef8-aabc-c038ad249b0d",
+          "url": null,
+          "attempts": 2,
+          "credits": 12.0,
           "history": [
             {
               "job_id": "f0031835-abad-4d6f-a532-69649dd6b183",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122232_f0031835-abad-4d6f-a532-69649dd6b183.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "v2 re-cut: new vocal window (cut on the sung line, singing + action)",
               "at": "2026-09-30T12:22Z",
               "credits": 4.5,
+              "start_image": "302cf10c-8358-4b27-94ac-21ab5b8285e6"
+            },
+            {
+              "job_id": "cd1f8903-0d52-4ef8-aabc-c038ad249b0d",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T13:02Z",
+              "credits": 7.5,
               "start_image": "302cf10c-8358-4b27-94ac-21ab5b8285e6"
             }
           ],
           "reason": null
         }
       },
+      "cut_at": 108.6,
       "nar_ref": {
         "en": {
-          "media_id": "82955732-6dfa-40e9-a5bb-0f3f618ed6eb",
+          "media_id": "815cd9ca-d901-4398-962d-d0c98c69b401",
           "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
           "window": [
-            102.034,
-            103.915
+            108.6,
+            113.32
           ],
-          "at": "2026-09-30T12:15Z"
+          "at": "2026-09-30T13:01Z"
         }
       }
-    },
-    {
-      "id": "c39",
-      "scene": 5,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c21",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c21)",
-      "motion": "(reuses c21 from 0s)"
-    },
-    {
-      "id": "c40",
-      "scene": 5,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c23",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c23)",
-      "motion": "(reuses c23 from 0s)"
-    },
-    {
-      "id": "c41",
-      "scene": 5,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c34",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c34)",
-      "motion": "(reuses c34 from 0s)"
-    },
-    {
-      "id": "c42",
-      "scene": 5,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c05",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c05)",
-      "motion": "(reuses c05 from 0s)"
-    },
-    {
-      "id": "c43",
-      "scene": 5,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c37",
-        "at": 0.0
-      },
-      "image_prompt": "(reuses c37)",
-      "motion": "(reuses c37 from 0s)"
     },
     {
       "id": "c44",
@@ -1797,60 +1856,39 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 113.32
     },
     {
       "id": "c45",
       "scene": 5,
       "type": "V",
-      "bars": 1,
+      "bars": 2,
       "clip_from": {
-        "cut": "c02",
+        "cut": "c03",
         "at": 0.0
       },
-      "image_prompt": "(reuses c02)",
-      "motion": "(reuses c02 from 0s)",
-      "lipsync_ok": true
+      "lipsync_ok": true,
+      "cut_at": 116.8,
+      "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, clapping both paws together, big happy smile",
+      "motion": "sings the counting words happily, then claps both paws together on every 'clap', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
       "id": "c46",
       "scene": 5,
       "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c03",
-        "at": 2.0
-      },
-      "image_prompt": "(reuses c03)",
-      "motion": "(reuses c03 from 2s)"
-    },
-    {
-      "id": "c47",
-      "scene": 5,
-      "type": "V",
-      "bars": 1,
+      "bars": 2,
       "clip_from": {
         "cut": "c04",
         "at": 0.0
       },
-      "image_prompt": "(reuses c04)",
-      "motion": "(reuses c04 from 0s)",
-      "lipsync_ok": true
+      "cut_at": 120.27,
+      "lipsync_ok": true,
+      "image_prompt": "[Momo] three-quarter view close-up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, bright excited face",
+      "motion": "sings the counting words, then bounces up and down happily on every 'hop', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
-      "id": "c48",
-      "scene": 5,
-      "type": "V",
-      "bars": 1,
-      "clip_from": {
-        "cut": "c05",
-        "at": 2.0
-      },
-      "image_prompt": "(reuses c05)",
-      "motion": "(reuses c05 from 2s)"
-    },
-    {
-      "id": "c49",
+      "id": "c47",
       "scene": 5,
       "type": "V",
       "bars": 2,
@@ -1858,8 +1896,10 @@
         "cut": "c06",
         "at": 0.0
       },
-      "image_prompt": "(reuses c06)",
-      "motion": "(reuses c06 from 0s)"
+      "lipsync_ok": true,
+      "cut_at": 124.05,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo holding one small shiny golden hand bell, Ducky beside her, both cheerful, medium wide shot",
+      "motion": "Momo rings the little golden bell on every 'ding-dong-dang' and sings, Ducky sways and flaps its wings, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up"
     },
     {
       "id": "c50",
@@ -1922,7 +1962,8 @@
           ],
           "at": "2026-09-30T12:15Z"
         }
-      }
+      },
+      "cut_at": 128.366
     },
     {
       "id": "c51",
@@ -1934,7 +1975,8 @@
       "lead": 0.6,
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
-      }
+      },
+      "cut_at": 130.246
     }
   ],
   "song": {
