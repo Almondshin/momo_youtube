@@ -1,6 +1,6 @@
 # ep02 — (주제 미정) (Brush Your Teeth)
 
-> episode_readme.py 가 생성 (2026-09-30 05:38 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-09-30 06:00 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
@@ -11,20 +11,20 @@
 | 컷 수 | 24개 (V 22 · S 0 · L 2), 씬 5개 |
 | 사용 크레딧 | 671.93 / 캡 690 (예상 238.8) |
 | 생성 / 재생성 횟수 | 195 / 31 |
-| 길이 EN | 2:48 (167.5초, 컷 24개, 빌드 2026-09-30T05:35:58+00:00) |
+| 길이 EN | 2:48 (167.5초, 컷 24개, 빌드 2026-09-30T05:58:15+00:00) |
 | 썸네일 | c23 — BRUSH BRUSH! |
 
 ## 아동용(made for kids) 설정
 
 > 이 영상은 YouTube 에서 반드시 **"아동용(made for kids)"** 으로 설정해야 한다 (2~5세 대상 키즈 채널 — 지시서 7단계). upload.py 는 config 와 상관없이 `status.selfDeclaredMadeForKids = true` 로 올린다. Studio 에서 직접 올릴 때는 '예, 아동용입니다'를 선택할 것.
 
-- EN: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (m11xXTqn8T8)
+- EN: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (OeoxU-FP3Xg)
 
 ## 업로드 결과 (youtube.json)
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
-| EN | [m11xXTqn8T8](https://www.youtube.com/watch?v=m11xXTqn8T8) | private | — | 2026-09-30T02:19:14Z | ✔ | — |
+| EN | [OeoxU-FP3Xg](https://www.youtube.com/watch?v=OeoxU-FP3Xg) | private | — | 2026-09-30T06:00:45Z | ✔ | — |
 
 ## 제목·설명·태그
 
@@ -52,7 +52,7 @@ Say it with Momo and brush together every morning and every night!
 | 종류 | 승인 | 시도 | 크레딧 |
 |---|---:|---:|---:|
 | 컷 이미지 | 22/22 | 31 | 62 |
-| V 클립 | 12/22 | 36 | 347.5 |
+| V 클립 | 22/22 | 36 | 347.5 |
 | 음성 블록 | 32/32 | 35 | 17.43 |
 
 라이브러리 L 컷은 0 크레딧 (라이브러리 클립·고정 음성 재사용). 자세한 진행표: `python hf_jobs.py status --ep ep02`
@@ -70,6 +70,7 @@ Say it with Momo and brush together every morning and every night!
 - 2026-09-29 c02·c03 클립 승인 → 씬2 이미지 진행
 - 2026-09-29 씬2 이미지 4장(c05·c06·c07·c09) 승인 → c06·c09 영상 + 씬3 이미지
 - 2026-09-29 c06·c09 클립, 씬3 이미지 4장 승인 → c10~c12 클립 + 씬4 이미지
+- 2026-09-30 song lip-sync clips (c02 c03 c06 c08 c13 c14 c19 c21 c22 c23) + final EN build approved by user; upload requested
 
 ## 다음 편에 반영할 점
 
