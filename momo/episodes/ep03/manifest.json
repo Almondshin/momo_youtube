@@ -60,7 +60,8 @@
       "2026-09-30 형식 승인: 120 BPM · 약 2:02 (61마디) · 컷 38개 평균 3.2초 · 노래 비중 85~90% · 후렴 4회 · 반복 후렴 구간 영상 재사용",
       "2026-09-30 노래 방식 승인: ACE-Step 1.5 로컬 생성(보컬 포함, 크레딧 0) — 가수 목소리는 밝은 여성 보컬, 인트로·아웃트로는 라이브러리 Gracie",
       "2026-09-30 노래 승인: 후보 1 (ACE-Step b_s202, 120.005 BPM, 2:06) — 사용자 선택",
-      "2026-09-30 노래 소스 변경: Suno Pro (사용자 결정) — ACE-Step 후보 1 은 보류, 컷 구성은 Suno 곡에 맞춰 다시 짠다"
+      "2026-09-30 노래 소스 변경: Suno Pro (사용자 결정) — ACE-Step 후보 1 은 보류, 컷 구성은 Suno 곡에 맞춰 다시 짠다",
+      "2026-09-30 기획표 승인: Suno v1 곡, 컷 31개(립싱크 16·움직임 8·재사용 6·L 1), 1:54, 예상 171 (여유 포함 205)"
     ],
     "next_time": [
       "Suno 곡이 1.6초에 바로 시작해 라이브러리 인트로 인사(Hi friends! It's Momo!)를 넣을 자리가 없음 — 다음 곡은 스타일/가사에 '[Intro - 2 bars]' 로 짧은 전주를 요청할 것"
@@ -470,12 +471,12 @@
   ],
   "song": {
     "track": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "local:8b075ba23718",
       "url": null,
       "attempts": 1,
       "credits": 0,
-      "reason": null,
+      "reason": "사용자 선택: Suno v1 (기획 승인과 함께)",
       "sha1": "8b075ba23718719fcb943d22c130fda3d7c9d5f9",
       "tool": "suno",
       "source_file": "song.wav",
@@ -486,8 +487,8 @@
         {
           "job_id": "local:8b075ba23718",
           "url": null,
-          "status": "generated",
-          "reason": null,
+          "status": "approved",
+          "reason": "사용자 선택: Suno v1 (기획 승인과 함께)",
           "at": "2026-09-30T07:50Z",
           "credits": 0
         }
@@ -588,20 +589,20 @@
       "lyrics_sha1": "8b075ba23718719fcb943d22c130fda3d7c9d5f9"
     },
     "vocals": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "local:35154f159fbb",
       "url": null,
       "attempts": 1,
       "credits": 0,
-      "reason": null,
+      "reason": "사용자 선택: Suno v1 (기획 승인과 함께)",
       "sha1": "35154f159fbb0fcc1a5931e62a493497bc44d3a6",
       "of": "8b075ba23718719fcb943d22c130fda3d7c9d5f9",
       "history": [
         {
           "job_id": "local:35154f159fbb",
           "url": null,
-          "status": "generated",
-          "reason": null,
+          "status": "approved",
+          "reason": "사용자 선택: Suno v1 (기획 승인과 함께)",
           "at": "2026-09-30T07:50Z",
           "credits": 0
         }
