@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep04",
-  "status": "planning",
+  "status": "producing",
   "topic": {
     "en": "Count to Ten",
     "ko": ""
@@ -49,8 +49,8 @@
   },
   "credits": {
     "estimate": 207.6,
-    "spent": 0,
-    "generations": 0,
+    "spent": 8.0,
+    "generations": 4,
     "regenerations": 0
   },
   "notes": {
@@ -85,6 +85,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 3
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "ab85bb4b-d559-4109-ad09-a98ddd550e94",
+          "url": null,
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ab85bb4b-d559-4109-ad09-a98ddd550e94",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:09Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -95,7 +115,27 @@
       "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, clapping both paws together, big happy smile",
       "motion": "claps both paws together five times to the beat, small happy bounce, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "73fb7698-f7cc-473c-bbdf-ef1e6c08d36b",
+          "url": null,
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "73fb7698-f7cc-473c-bbdf-ef1e6c08d36b",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:09Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c04",
@@ -108,6 +148,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 3
+      },
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "8f5be1b8-767c-4f1c-b428-fbf9feb06587",
+          "url": null,
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8f5be1b8-767c-4f1c-b428-fbf9feb06587",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:09Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -118,7 +178,27 @@
       "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, standing on the grass ready to hop, arms up",
       "motion": "does five small happy hops in place to the beat, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "ac50e704-ae79-4f93-97ac-eb77b99a5bf7",
+          "url": null,
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ac50e704-ae79-4f93-97ac-eb77b99a5bf7",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-09-30T12:09Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c06",
