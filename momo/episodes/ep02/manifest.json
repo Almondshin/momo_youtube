@@ -103,7 +103,7 @@
         "en": "Good morning, sunshine! Time to wake up! [pause 0.1] Stretch up high, and a big yawn!"
       },
       "image_prompt": "[Momo] sitting up in a small cozy bed, stretching both arms up after waking, bright morning sunlight from a round window, soft pastel bedroom, clear empty pastel wall space in the upper third of the frame",
-      "motion": "sits up in bed and talks cheerfully to the viewer with the mouth moving in sync with the voice, a small sleepy stretch with both arms and a little yawn, both long floppy ears stay hanging down beside the cheeks the whole time, warm morning sunlight",
+      "motion": "sits up in bed and sings cheerfully to the viewer with the mouth moving in sync with the song, a small sleepy stretch with both arms, sways gently to the music, both long floppy ears stay hanging down beside the cheeks the whole time, warm morning sunlight",
       "gen": {
         "image": {
           "status": "approved",
@@ -134,7 +134,7 @@
           ]
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "6b1cf7c8-7e4f-4a4e-94d2-06a790927923",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_6b1cf7c8-7e4f-4a4e-94d2-06a790927923.mp4",
           "attempts": 2,
@@ -152,14 +152,14 @@
             {
               "job_id": "6b1cf7c8-7e4f-4a4e-94d2-06a790927923",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_6b1cf7c8-7e4f-4a4e-94d2-06a790927923.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-30T00:11Z",
               "credits": 10.5,
               "start_image": "7de22d4d-6a76-45c5-94f7-3068c856d850"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "lipsync": true,
@@ -175,7 +175,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "6119517a-32de-4c19-97ca-07da920e1e57",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_6119517a-32de-4c19-97ca-07da920e1e57.wav",
             "attempts": 1,
@@ -184,7 +184,7 @@
               {
                 "job_id": "6119517a-32de-4c19-97ca-07da920e1e57",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_6119517a-32de-4c19-97ca-07da920e1e57.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -193,7 +193,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "6202be6c-9cd3-4ae2-93e6-199098eac1b7",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_6202be6c-9cd3-4ae2-93e6-199098eac1b7.wav",
             "attempts": 1,
@@ -202,7 +202,7 @@
               {
                 "job_id": "6202be6c-9cd3-4ae2-93e6-199098eac1b7",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_6202be6c-9cd3-4ae2-93e6-199098eac1b7.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -221,7 +221,7 @@
         "en": "Hmm, my teeth feel fuzzy. What should we do?"
       },
       "image_prompt": "[Momo] standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, one paw touching the cheek, worried puzzled expression, not smiling, eyebrows raised in the middle, small frown, mouth slightly open, clear empty pastel wall space in the upper third of the frame",
-      "motion": "talks to the viewer with a puzzled little face, the mouth moving in sync with the voice, touches the cheek with one paw and tilts the head, ears droop a little",
+      "motion": "sings to the viewer with a puzzled little face, the mouth moving in sync with the song, touches the cheek with one paw and tilts the head, both long floppy ears stay hanging down beside the cheeks the whole time",
       "gen": {
         "image": {
           "status": "approved",
@@ -258,7 +258,7 @@
           ]
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "b2e6044b-93d5-4eed-a6d9-a407aa5848bc",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_235916_b2e6044b-93d5-4eed-a6d9-a407aa5848bc.mp4",
           "attempts": 1,
@@ -267,14 +267,14 @@
             {
               "job_id": "b2e6044b-93d5-4eed-a6d9-a407aa5848bc",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_235916_b2e6044b-93d5-4eed-a6d9-a407aa5848bc.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-29T23:59Z",
               "credits": 9.0,
               "start_image": "9667c1db-b65e-41f6-a8d7-21ca49d9a073"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "lipsync": true,
@@ -286,7 +286,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "f116ba5e-7ff8-43b9-9e3a-597b1175fd4b",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_f116ba5e-7ff8-43b9-9e3a-597b1175fd4b.wav",
             "attempts": 1,
@@ -295,7 +295,7 @@
               {
                 "job_id": "f116ba5e-7ff8-43b9-9e3a-597b1175fd4b",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_f116ba5e-7ff8-43b9-9e3a-597b1175fd4b.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -371,7 +371,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "623e9627-ee80-4a05-98ce-e09c69659de7",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041705_623e9627-ee80-4a05-98ce-e09c69659de7.wav",
             "attempts": 3,
@@ -396,7 +396,7 @@
               {
                 "job_id": "623e9627-ee80-4a05-98ce-e09c69659de7",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041705_623e9627-ee80-4a05-98ce-e09c69659de7.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:17Z",
                 "credits": 0.2
@@ -475,7 +475,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "cbcbb60d-1247-496b-8c41-c8c23688b0b9",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_cbcbb60d-1247-496b-8c41-c8c23688b0b9.wav",
             "attempts": 1,
@@ -484,7 +484,7 @@
               {
                 "job_id": "cbcbb60d-1247-496b-8c41-c8c23688b0b9",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_cbcbb60d-1247-496b-8c41-c8c23688b0b9.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -493,7 +493,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "f7a15bf1-51b4-4801-ac3a-291172efc7c7",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_f7a15bf1-51b4-4801-ac3a-291172efc7c7.wav",
             "attempts": 1,
@@ -502,7 +502,7 @@
               {
                 "job_id": "f7a15bf1-51b4-4801-ac3a-291172efc7c7",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_f7a15bf1-51b4-4801-ac3a-291172efc7c7.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -521,7 +521,7 @@
         "en": "My very own toothbrush! Hello, toothbrush!"
       },
       "image_prompt": "[Momo] standing at the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding up a small toothbrush with a yellow handle in one paw, proud happy face, clear empty pastel wall space in the upper third of the frame",
-      "motion": "holds the toothbrush up proudly and talks happily to the viewer, the mouth moving in sync with the voice, small happy wiggle, ears bounce",
+      "motion": "holds the toothbrush up proudly and sings happily to the viewer, the mouth moving in sync with the song, small happy wiggle to the beat, both long floppy ears stay hanging down beside the cheeks the whole time",
       "gen": {
         "image": {
           "status": "approved",
@@ -558,7 +558,7 @@
           ]
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "324b375d-1c8d-4a64-8dd4-ed573f2000c6",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000249_324b375d-1c8d-4a64-8dd4-ed573f2000c6.mp4",
           "attempts": 1,
@@ -567,14 +567,14 @@
             {
               "job_id": "324b375d-1c8d-4a64-8dd4-ed573f2000c6",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000249_324b375d-1c8d-4a64-8dd4-ed573f2000c6.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-30T00:02Z",
               "credits": 6.0,
               "start_image": "c408f6e8-66d8-4fb0-872b-cad6023b267c"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "lipsync": true,
@@ -586,7 +586,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "a98cdc21-72ef-4438-acc1-06046c4ff210",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_a98cdc21-72ef-4438-acc1-06046c4ff210.wav",
             "attempts": 1,
@@ -595,7 +595,7 @@
               {
                 "job_id": "a98cdc21-72ef-4438-acc1-06046c4ff210",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_a98cdc21-72ef-4438-acc1-06046c4ff210.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -680,7 +680,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "de233f1a-08ac-4c53-9e38-94165c5fa54b",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_de233f1a-08ac-4c53-9e38-94165c5fa54b.wav",
             "attempts": 1,
@@ -689,7 +689,7 @@
               {
                 "job_id": "de233f1a-08ac-4c53-9e38-94165c5fa54b",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_de233f1a-08ac-4c53-9e38-94165c5fa54b.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -698,7 +698,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "72c33e4a-6baa-4855-b6e6-8d5c7491f3df",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_72c33e4a-6baa-4855-b6e6-8d5c7491f3df.wav",
             "attempts": 1,
@@ -707,7 +707,7 @@
               {
                 "job_id": "72c33e4a-6baa-4855-b6e6-8d5c7491f3df",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_72c33e4a-6baa-4855-b6e6-8d5c7491f3df.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -731,7 +731,7 @@
       "clip_seconds": {
         "en": 9
       },
-      "motion": "holds up the toothpaste tube and talks to the viewer, the mouth moving in sync with the voice, waits with a curious smile during the pause, then smiles happily and nods, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "motion": "holds up the toothpaste tube and sings to the viewer, the mouth moving in sync with the song, waits with a curious smile between the lines, then smiles happily and nods, both long floppy ears stay hanging down beside the cheeks the whole time",
       "gen": {
         "image": {
           "status": "approved",
@@ -752,7 +752,7 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "aca4f249-6f5b-4dd5-8261-2bf9dd779486",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_aca4f249-6f5b-4dd5-8261-2bf9dd779486.mp4",
           "attempts": 1,
@@ -761,14 +761,14 @@
             {
               "job_id": "aca4f249-6f5b-4dd5-8261-2bf9dd779486",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_aca4f249-6f5b-4dd5-8261-2bf9dd779486.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-30T00:29Z",
               "credits": 13.5,
               "start_image": "785f034b-f4dc-4cf6-bede-b60a917d745d"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "bars": 4,
@@ -779,7 +779,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "e55e2301-bc56-4e60-a287-5183276d918e",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_e55e2301-bc56-4e60-a287-5183276d918e.wav",
             "attempts": 1,
@@ -788,7 +788,7 @@
               {
                 "job_id": "e55e2301-bc56-4e60-a287-5183276d918e",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_e55e2301-bc56-4e60-a287-5183276d918e.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -797,7 +797,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "b9762b52-545b-42aa-8279-d86c75f58362",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_b9762b52-545b-42aa-8279-d86c75f58362.wav",
             "attempts": 1,
@@ -806,7 +806,7 @@
               {
                 "job_id": "b9762b52-545b-42aa-8279-d86c75f58362",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041328_b9762b52-545b-42aa-8279-d86c75f58362.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -867,7 +867,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "8a9a5b07-3166-4b75-80a6-73450f7c9e39",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_8a9a5b07-3166-4b75-80a6-73450f7c9e39.wav",
             "attempts": 1,
@@ -876,7 +876,7 @@
               {
                 "job_id": "8a9a5b07-3166-4b75-80a6-73450f7c9e39",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041329_8a9a5b07-3166-4b75-80a6-73450f7c9e39.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:13Z",
                 "credits": 0.2
@@ -942,7 +942,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "8d3c1dc5-b21e-4d45-9a1c-7b7649ba8b11",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_8d3c1dc5-b21e-4d45-9a1c-7b7649ba8b11.wav",
             "attempts": 1,
@@ -951,7 +951,7 @@
               {
                 "job_id": "8d3c1dc5-b21e-4d45-9a1c-7b7649ba8b11",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_8d3c1dc5-b21e-4d45-9a1c-7b7649ba8b11.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -960,7 +960,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "29ad5b2a-d0db-412e-bb50-5f1f322d15f1",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_29ad5b2a-d0db-412e-bb50-5f1f322d15f1.wav",
             "attempts": 1,
@@ -969,7 +969,7 @@
               {
                 "job_id": "29ad5b2a-d0db-412e-bb50-5f1f322d15f1",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_29ad5b2a-d0db-412e-bb50-5f1f322d15f1.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1024,7 +1024,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "41c18adc-1676-42ad-8359-73150eed1e02",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_41c18adc-1676-42ad-8359-73150eed1e02.wav",
             "attempts": 1,
@@ -1033,7 +1033,7 @@
               {
                 "job_id": "41c18adc-1676-42ad-8359-73150eed1e02",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_41c18adc-1676-42ad-8359-73150eed1e02.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1088,7 +1088,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "9b2245e7-d936-4c1c-a9cb-c72d19f2006e",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041404_9b2245e7-d936-4c1c-a9cb-c72d19f2006e.wav",
             "attempts": 1,
@@ -1097,7 +1097,7 @@
               {
                 "job_id": "9b2245e7-d936-4c1c-a9cb-c72d19f2006e",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041404_9b2245e7-d936-4c1c-a9cb-c72d19f2006e.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1138,7 +1138,7 @@
           ]
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99.mp4",
           "attempts": 1,
@@ -1147,14 +1147,14 @@
             {
               "job_id": "274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-30T00:29Z",
               "credits": 10.5,
               "start_image": "c46e24d2-e8e4-4609-b777-64a6aa326cd1"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "lipsync": true,
@@ -1162,7 +1162,7 @@
       "clip_seconds": {
         "en": 7
       },
-      "motion": "talks to the viewer with a foamy smile, the mouth moving in sync with the voice, moves the toothbrush up and down beside the mouth, nods encouragingly, both long floppy ears stay hanging down beside the cheeks",
+      "motion": "sings to the viewer with a foamy smile, the mouth moving in sync with the song, moves the toothbrush up and down beside the mouth, nods to the beat, both long floppy ears stay hanging down beside the cheeks the whole time",
       "bars": 4,
       "beats": [
         0,
@@ -1171,7 +1171,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "61c9521d-44dd-4e23-b154-5f4cd083eeb9",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_61c9521d-44dd-4e23-b154-5f4cd083eeb9.wav",
             "attempts": 1,
@@ -1180,7 +1180,7 @@
               {
                 "job_id": "61c9521d-44dd-4e23-b154-5f4cd083eeb9",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_61c9521d-44dd-4e23-b154-5f4cd083eeb9.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1189,7 +1189,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "863545f9-2a2f-4532-ba34-3754ccb9f259",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_863545f9-2a2f-4532-ba34-3754ccb9f259.wav",
             "attempts": 1,
@@ -1198,7 +1198,7 @@
               {
                 "job_id": "863545f9-2a2f-4532-ba34-3754ccb9f259",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_863545f9-2a2f-4532-ba34-3754ccb9f259.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1222,7 +1222,7 @@
       "clip_seconds": {
         "en": 5
       },
-      "motion": "cheers and talks happily to the viewer, the mouth moving in sync with the voice, raises both paws, both long floppy ears stay hanging down beside the cheeks",
+      "motion": "cheers and sings happily to the viewer, the mouth moving in sync with the song, raises both paws, both long floppy ears stay hanging down beside the cheeks the whole time",
       "sfx": [
         {
           "file": "chime.wav",
@@ -1250,7 +1250,7 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "7d11caf6-4dd6-4aa6-9085-24ebd743fc13",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_7d11caf6-4dd6-4aa6-9085-24ebd743fc13.mp4",
           "attempts": 1,
@@ -1259,21 +1259,21 @@
             {
               "job_id": "7d11caf6-4dd6-4aa6-9085-24ebd743fc13",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_001119_7d11caf6-4dd6-4aa6-9085-24ebd743fc13.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-30T00:11Z",
               "credits": 7.5,
               "start_image": "1e626d89-9b74-4c01-9ba0-49ecc3e7d48e"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "56ec654c-1e45-47a7-96f9-731f91d519aa",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_56ec654c-1e45-47a7-96f9-731f91d519aa.wav",
             "attempts": 1,
@@ -1282,7 +1282,7 @@
               {
                 "job_id": "56ec654c-1e45-47a7-96f9-731f91d519aa",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_56ec654c-1e45-47a7-96f9-731f91d519aa.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1341,7 +1341,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "91bb8abb-6a53-447b-8ff3-2c66461a9754",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041404_91bb8abb-6a53-447b-8ff3-2c66461a9754.wav",
             "attempts": 1,
@@ -1350,7 +1350,7 @@
               {
                 "job_id": "91bb8abb-6a53-447b-8ff3-2c66461a9754",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041404_91bb8abb-6a53-447b-8ff3-2c66461a9754.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1429,7 +1429,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "139e2df9-fac4-4565-96ba-ef745f3b72bc",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_139e2df9-fac4-4565-96ba-ef745f3b72bc.wav",
             "attempts": 1,
@@ -1438,7 +1438,7 @@
               {
                 "job_id": "139e2df9-fac4-4565-96ba-ef745f3b72bc",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_139e2df9-fac4-4565-96ba-ef745f3b72bc.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1447,7 +1447,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "6b12f16f-99f1-4993-9c23-ba57cc2318b4",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041527_6b12f16f-99f1-4993-9c23-ba57cc2318b4.wav",
             "attempts": 1,
@@ -1456,7 +1456,7 @@
               {
                 "job_id": "6b12f16f-99f1-4993-9c23-ba57cc2318b4",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041527_6b12f16f-99f1-4993-9c23-ba57cc2318b4.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:15Z",
                 "credits": 0.2
@@ -1529,7 +1529,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "f9c4cea0-9c9e-405b-b8ce-6e84caa84426",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_f9c4cea0-9c9e-405b-b8ce-6e84caa84426.wav",
             "attempts": 1,
@@ -1538,7 +1538,7 @@
               {
                 "job_id": "f9c4cea0-9c9e-405b-b8ce-6e84caa84426",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041403_f9c4cea0-9c9e-405b-b8ce-6e84caa84426.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:14Z",
                 "credits": 0.2
@@ -1604,7 +1604,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "71996363-2613-4af5-ad7a-14557a668e35",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_043502_71996363-2613-4af5-ad7a-14557a668e35.wav",
             "attempts": 2,
@@ -1621,7 +1621,7 @@
               {
                 "job_id": "71996363-2613-4af5-ad7a-14557a668e35",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_043502_71996363-2613-4af5-ad7a-14557a668e35.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:35Z",
                 "credits": 0.2
@@ -1640,7 +1640,7 @@
         "en": "Can you say rinse? [pause 0.1] Rinse! Hooray! Well done!"
       },
       "image_prompt": "[Momo] and [Ducky] side by side next to the white rounded pedestal sink in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, both smiling at the viewer, clear empty pastel wall space in the upper third of the frame",
-      "motion": "Momo turns to the viewer and talks, the mouth moving in sync with the voice, Ducky flaps its wings happily, both nod, Momo's long floppy ears stay hanging down",
+      "motion": "Momo turns to the viewer and sings, the mouth moving in sync with the song, Ducky flaps its wings happily, both nod to the beat, Momo's long floppy ears stay hanging down",
       "gen": {
         "image": {
           "status": "approved",
@@ -1682,7 +1682,7 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "341022ff-bc99-4c5b-967f-40a6ccc9d0a3",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003039_341022ff-bc99-4c5b-967f-40a6ccc9d0a3.mp4",
           "attempts": 1,
@@ -1691,14 +1691,14 @@
             {
               "job_id": "341022ff-bc99-4c5b-967f-40a6ccc9d0a3",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003039_341022ff-bc99-4c5b-967f-40a6ccc9d0a3.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-30T00:30Z",
               "credits": 10.5,
               "start_image": "75ad1d14-8438-40ae-bb8f-d465c22c35c4"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "lipsync": true,
@@ -1714,7 +1714,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "a819146c-8fa2-424f-9966-10e380b6887b",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041526_a819146c-8fa2-424f-9966-10e380b6887b.wav",
             "attempts": 1,
@@ -1723,7 +1723,7 @@
               {
                 "job_id": "a819146c-8fa2-424f-9966-10e380b6887b",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041526_a819146c-8fa2-424f-9966-10e380b6887b.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:15Z",
                 "credits": 0.2
@@ -1732,7 +1732,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "78b07474-9af3-450e-9a3d-9d1797d2f5cf",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041526_78b07474-9af3-450e-9a3d-9d1797d2f5cf.wav",
             "attempts": 1,
@@ -1741,7 +1741,7 @@
               {
                 "job_id": "78b07474-9af3-450e-9a3d-9d1797d2f5cf",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041526_78b07474-9af3-450e-9a3d-9d1797d2f5cf.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:15Z",
                 "credits": 0.2
@@ -1816,7 +1816,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "35268728-b356-4aa4-a754-b1250dacd907",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041527_35268728-b356-4aa4-a754-b1250dacd907.wav",
             "attempts": 1,
@@ -1825,7 +1825,7 @@
               {
                 "job_id": "35268728-b356-4aa4-a754-b1250dacd907",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041527_35268728-b356-4aa4-a754-b1250dacd907.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:15Z",
                 "credits": 0.2
@@ -1844,7 +1844,7 @@
         "en": "Brush up, brush down, swish and spit! [pause 0.1] Morning and night, we never quit!"
       },
       "image_prompt": "[Momo] happily dancing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink, a fluffy white bath mat, holding a small toothbrush with a yellow handle and mint-green bristles up high in one paw, clear empty pastel wall space in the upper third of the frame",
-      "motion": "sings and dances happily holding the toothbrush up, the mouth moving in sync with the song, small hops and sways side to side, ears bounce",
+      "motion": "sings and dances happily holding the toothbrush up, the mouth moving in sync with the song, small hops and sways side to side to the beat, both long floppy ears stay hanging down beside the cheeks the whole time",
       "gen": {
         "image": {
           "status": "approved",
@@ -1884,7 +1884,7 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "2bf78c80-de5f-4f3e-b459-528d2e58307d",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000500_2bf78c80-de5f-4f3e-b459-528d2e58307d.mp4",
           "attempts": 1,
@@ -1893,14 +1893,14 @@
             {
               "job_id": "2bf78c80-de5f-4f3e-b459-528d2e58307d",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000500_2bf78c80-de5f-4f3e-b459-528d2e58307d.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-30T00:05Z",
               "credits": 12.0,
               "start_image": "29c9025b-0482-4fa8-a297-f69f348c5bab"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "lipsync": true,
@@ -1916,7 +1916,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "cc8002ca-3a0e-40f3-a64a-3fa9fa905efc",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041542_cc8002ca-3a0e-40f3-a64a-3fa9fa905efc.wav",
             "attempts": 1,
@@ -1925,7 +1925,7 @@
               {
                 "job_id": "cc8002ca-3a0e-40f3-a64a-3fa9fa905efc",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041542_cc8002ca-3a0e-40f3-a64a-3fa9fa905efc.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:15Z",
                 "credits": 0.2
@@ -1934,7 +1934,7 @@
             "reason": null
           },
           "2": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "e371a438-3550-4162-8e5e-a3af297c6830",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041542_e371a438-3550-4162-8e5e-a3af297c6830.wav",
             "attempts": 1,
@@ -1943,7 +1943,7 @@
               {
                 "job_id": "e371a438-3550-4162-8e5e-a3af297c6830",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041542_e371a438-3550-4162-8e5e-a3af297c6830.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:15Z",
                 "credits": 0.2
@@ -1962,7 +1962,7 @@
         "en": "Show me your smile, big and bright!"
       },
       "image_prompt": "[Momo] facing the viewer with the biggest smile showing clean shiny white teeth, one tiny sparkle near the teeth, soft pastel background with empty space above the head",
-      "motion": "talks cheerfully to the viewer with the mouth moving in sync with the voice, big sparkly smile between words, small happy head bobs, ears sway gently",
+      "motion": "sings cheerfully to the viewer with the mouth moving in sync with the song, big sparkly smile between words, small happy head bobs, both long floppy ears stay hanging down beside the cheeks the whole time",
       "gen": {
         "image": {
           "status": "approved",
@@ -2002,7 +2002,7 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "73f276f4-1aad-4c35-91ea-96079f29a8ed",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_234230_73f276f4-1aad-4c35-91ea-96079f29a8ed.mp4",
           "attempts": 2,
@@ -2020,14 +2020,14 @@
             {
               "job_id": "73f276f4-1aad-4c35-91ea-96079f29a8ed",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260929_234230_73f276f4-1aad-4c35-91ea-96079f29a8ed.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-29T23:42Z",
               "credits": 13.5,
               "start_image": "220e611b-1880-4313-b135-f2e0b863faf0"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "lipsync": true,
@@ -2046,7 +2046,7 @@
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "e620de1b-c586-4871-bac4-4a1995d1af83",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041644_e620de1b-c586-4871-bac4-4a1995d1af83.wav",
             "attempts": 1,
@@ -2055,7 +2055,7 @@
               {
                 "job_id": "e620de1b-c586-4871-bac4-4a1995d1af83",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041644_e620de1b-c586-4871-bac4-4a1995d1af83.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:16Z",
                 "credits": 0.2
@@ -2094,7 +2094,7 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
+          "status": "rejected",
           "job_id": "f8d4099e-aa86-4ef0-83a8-489bb509af17",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000611_f8d4099e-aa86-4ef0-83a8-489bb509af17.mp4",
           "attempts": 1,
@@ -2103,14 +2103,14 @@
             {
               "job_id": "f8d4099e-aa86-4ef0-83a8-489bb509af17",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_000611_f8d4099e-aa86-4ef0-83a8-489bb509af17.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "song remake: lyrics changed — re-lip-sync to the new chant",
               "at": "2026-09-30T00:06Z",
               "credits": 9.0,
               "start_image": "aad6c1fa-7fcd-4277-bc5e-d64bd689aa4d"
             }
           ],
-          "reason": null
+          "reason": "song remake: lyrics changed — re-lip-sync to the new chant"
         }
       },
       "lipsync": true,
@@ -2118,12 +2118,12 @@
       "clip_seconds": {
         "en": 6
       },
-      "motion": "talks cheerfully to the viewer with a big bright smile, the mouth moving in sync with the voice, holds the toothbrush next to the cheek, Ducky peeks in and waves a wing",
+      "motion": "sings cheerfully to the viewer with a big bright smile, the mouth moving in sync with the song, holds the toothbrush next to the cheek, Ducky peeks in and waves a wing, both long floppy ears stay hanging down beside the cheeks the whole time",
       "bars": 2,
       "audio_src": {
         "en": {
           "1": {
-            "status": "generated",
+            "status": "approved",
             "job_id": "db93912f-286d-45a2-a5d5-8704c6f09ec1",
             "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041655_db93912f-286d-45a2-a5d5-8704c6f09ec1.wav",
             "attempts": 1,
@@ -2132,7 +2132,7 @@
               {
                 "job_id": "db93912f-286d-45a2-a5d5-8704c6f09ec1",
                 "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_041655_db93912f-286d-45a2-a5d5-8704c6f09ec1.wav",
-                "status": "generated",
+                "status": "approved",
                 "reason": null,
                 "at": "2026-09-30T04:16Z",
                 "credits": 0.2
@@ -2166,7 +2166,7 @@
     "bpm": 96,
     "beats_per_bar": 4,
     "music": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "6723b40c-5a20-4f52-8b4a-1610fd923a90",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_035713_6723b40c-5a20-4f52-8b4a-1610fd923a90.m4a",
       "attempts": 1,
@@ -2177,7 +2177,7 @@
         {
           "job_id": "6723b40c-5a20-4f52-8b4a-1610fd923a90",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_035713_6723b40c-5a20-4f52-8b4a-1610fd923a90.m4a",
-          "status": "generated",
+          "status": "approved",
           "reason": null,
           "at": "2026-09-30T03:57Z",
           "credits": 10.63

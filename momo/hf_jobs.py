@@ -445,9 +445,9 @@ def fix_voice(paths: Paths, lang: str, voice: str, force: bool) -> str:
 
 
 def cmd_record(paths: Paths, cfg: dict, args) -> int:
-    targets = [x for x in (args.cut, args.library, args.sheet, args.voice_sample) if x]
+    targets = [x for x in (args.cut, args.library, args.sheet, args.voice_sample, args.song_music) if x]
     if len(targets) != 1:
-        raise MomoError("대상은 --cut / --library / --sheet / --voice-sample 중 하나")
+        raise MomoError("대상은 --cut / --library / --sheet / --voice-sample / --song-music 중 하나")
     m = load_manifest(paths, check_ep(args.ep)) if args.ep else None
     lib = None
     if args.song_music:
