@@ -375,6 +375,56 @@ def test_plan_clip_and_audio(tmp: Path) -> None:
     assert len(plan(root, "--ep", EP, "--kind", "audio")["items"]) == 12  # en + ko
 
 
+def test_plan_lipsync_clips(tmp: Path) -> None:
+    root = make_root(tmp)
+    m = manifest(root)
+    for c in m["cuts"]:
+        if c["id"] in ("c02", "c04"):  # c02: two speech blocks per language, c04: one
+            c.update({"lipsync": True, "clip_model": "wan2_7", "clip_seconds": {"en": 5, "ko": 4}})
+    wj(root / "episodes" / EP / "manifest.json", m)
+    for cid in ("c02", "c04"):
+        record(root, "--ep", EP, "--cut", cid, "--kind", "image", "--job-id", f"img-{cid}", "--url", "u",
+               "--status", "approved")
+    p = plan(root, "--ep", EP, "--kind", "clip", "--lang", "en", "--all")
+    assert not p["items"] and all("나레이션 승인 전" in b for b in p["blocked"]), p
+
+    def approve_audio(cid: str, block: int, job: str) -> None:
+        record(root, "--ep", EP, "--cut", cid, "--kind", "audio", "--lang", "en", "--block", str(block),
+               "--job-id", job, "--url", "u", "--status", "approved", "--force")
+
+    approve_audio("c04", 1, "a-c04-1")
+    approve_audio("c02", 1, "a-c02-1")
+    p = plan(root, "--ep", EP, "--kind", "clip", "--lang", "en", "--all")
+    assert [i["key"] for i in p["items"]] == ["c04 clip en"], p  # c02 block 2 not approved yet
+    it = p["items"][0]
+    assert it["params"]["model"] == "wan2_7" and it["params"]["duration"] == 5, it
+    assert {"role": "audio_references", "value": "a-c04-1"} in it["params"]["medias"], it
+    assert "--lang en" in it["record"]
+
+    approve_audio("c02", 2, "a-c02-2")
+    p = plan(root, "--ep", EP, "--kind", "clip", "--lang", "en", "--all")
+    assert any(b.startswith("c02 clip en") and "c02_nar_en.wav" in b for b in p["blocked"]), p
+    fails(hf_jobs, "narref", "--root", str(root), "--ep", EP, "--cut", "c04", "--lang", "en", "--media-id", "x",
+          needle="블록 2개 이상")
+    fails(hf_jobs, "narref", "--root", str(root), "--ep", EP, "--cut", "c03", "--lang", "en", "--media-id", "x",
+          needle="lipsync 컷이 아님")
+    ok(hf_jobs, "narref", "--root", str(root), "--ep", EP, "--cut", "c02", "--lang", "en", "--media-id", "nar-c02")
+    assert cut(root, "c02")["nar_ref"]["en"]["blocks"] == ["a-c02-1", "a-c02-2"]
+    ok(validate_manifest, "--root", str(root), "--ep", EP)
+    p = plan(root, "--ep", EP, "--kind", "clip", "--lang", "en", "--all")
+    c02 = next(i for i in p["items"] if i["cut"] == "c02")
+    assert {"role": "audio_references", "value": "nar-c02"} in c02["params"]["medias"], c02
+
+    approve_audio("c02", 2, "a-c02-2b")  # a regenerated block voids the combined narration
+    p = plan(root, "--ep", EP, "--kind", "clip", "--lang", "en", "--all")
+    assert [i["cut"] for i in p["items"]] == ["c04"], p
+
+    m = manifest(root)
+    next(c for c in m["cuts"] if c["id"] == "c02")["nar_ref"]["ko"] = {"media_id": "x"}
+    wj(root / "episodes" / EP / "manifest.json", m)
+    fails(validate_manifest, "--root", str(root), "--ep", EP, needle="nar_ref.ko")
+
+
 def test_status_text_json_and_cli(tmp: Path) -> None:
     root = make_root(tmp)
     record(root, "--ep", EP, "--cut", "c02", "--kind", "image", "--job-id", "i2", "--url", "u", "--status", "approved")

@@ -23,6 +23,8 @@ manifest 의 컷(cut) 필드 요약 (자세한 건 docs/MANIFEST.md)
                 0.8–1.25x, longer or shorter — keeps an end_frame hand-off intact), "loop" (crossfade into
                 another pass), "pingpong" (forward then reversed, the old behaviour)
   lipsync       true → one clip per language (clips/<cut>_<lang>.mp4), mouth driven by that narration
+  nar_ref       {"en": {"media_id", "blocks": [block jobs]}} — lip-sync cut with several speech blocks: the
+                blocks + [pause] silences in one imported file (hf_jobs.py narref)
   clip_model / clip_seconds / end_frame   continuous-animation clips: model override, generated length
                 (number or {"en":…, "ko":…}), and a cut id whose approved image is the clip's last frame
   inset         테두리 제거용 인셋 크롭 비율(0.03~0.04). null=자동 감지, 0=끔
@@ -283,6 +285,10 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
             E.append(f"{cid}: transition 은 fade|cut")
         if c.get("fill") not in (None,) + FILL_MODES:
             E.append(f"{cid}: fill 은 {'|'.join(FILL_MODES)}")
+        for lang, ref in (c.get("nar_ref") or {}).items():
+            if lang not in LANGS or not isinstance(ref, dict) or not ref.get("media_id") \
+                    or not isinstance(ref.get("blocks"), list):
+                E.append(f"{cid}: nar_ref.{lang} 는 {{media_id, blocks}} (hf_jobs.py narref 로 기록)")
         for k in ("lead", "tail"):
             v = c.get(k)
             if v is not None and (not isinstance(v, (int, float)) or isinstance(v, bool) or not 0 <= v <= 5):

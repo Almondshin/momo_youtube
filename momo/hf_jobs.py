@@ -20,6 +20,7 @@ Claude 는 plan 이 주는 {"tool", "params"} 를 MCP 도구에 그대로 넘기
   python hf_jobs.py record --library intro --kind audio --lang en ...
   python hf_jobs.py record --sheet momo ...
   python hf_jobs.py record --voice-sample v1 --lang en --status approved    # config.voices.en 에 고정
+  python hf_jobs.py narref --ep ep02 --cut c13 --lang en --media-id M     # 여러 블록 립싱크 컷
   python hf_jobs.py status --ep ep02 [--library] [--json]
 
 - 크레딧 기본값은 config.higgsfield.unit_costs (이미지 2, 영상 해상도별, 음성 블록 0.2), --credits 로 덮어쓴다.
@@ -44,7 +45,8 @@ from momolib.episode import compose_image_prompt, compose_motion_prompt, tts_blo
 from momolib.genrec import (KIND_EXTS, NA, SYMBOL, Slot, add_credits, apply_record, char_tags,  # noqa: E402
                             characters_used, clip_cost, clip_seconds, cut_slots, element_prefix, episode_cap,
                             episode_slots,
-                            estimate, library_slots, needs_generation, status_of, stop_message, unit_cost)
+                            estimate, library_slots, needs_generation, now_iso, status_of, stop_message,
+                            unit_cost)
 
 AUDIO_BATCH = 12  # generate_audio_batch 최대 / "12개 이상 동시 요청 금지"
 SAMPLE_TEXT = {"en": "Hi friends! It's Momo! Can you say hello? Hello! Great job!",
@@ -163,7 +165,7 @@ def plan_episode(paths: Paths, cfg: dict, args) -> dict:
             if status_of(img) != "approved" or not img.get("job_id"):
                 blocked.append(f"{s.key}: 이미지 승인 전 ({status_of(img)}) — text-to-video 금지, 승인된 이미지로만")
                 continue
-            end_job, audio_job, why = clip_links(m, s)
+            end_job, audio_job, why = clip_links(cfg, m, s)
             if why:
                 blocked.append(f"{s.key}: {why}")
                 continue
@@ -192,11 +194,12 @@ def plan_episode(paths: Paths, cfg: dict, args) -> dict:
             "credits": credit_check(paths, cfg, m, load_library(paths))}
 
 
-def clip_links(m: dict, s: Slot) -> tuple[str | None, str | None, str | None]:
+def clip_links(cfg: dict, m: dict, s: Slot) -> tuple[str | None, str | None, str | None]:
     """(end_image job, audio_references job, reason it is blocked) for an episode clip slot.
 
     cut.end_frame = "c11" → that cut's approved image is the end frame (continuous hand-off).
-    Lip-sync clips use the language's narration audio; the cut must have exactly one approved speech block.
+    Lip-sync clips use the language's approved narration as audio_references: the block's own job for one
+    block, else cut.nar_ref.<lang> (all blocks + [pause] silences in one file, imported — see cmd_narref).
     """
     end_job = None
     ef = s.cut.get("end_frame")
@@ -208,13 +211,25 @@ def clip_links(m: dict, s: Slot) -> tuple[str | None, str | None, str | None]:
         end_job = img["job_id"]
     if not s.lang:
         return end_job, None, None
-    blocks = (s.cut.get("audio_src") or {}).get(s.lang) or {}
-    if len(blocks) != 1:
-        return None, None, f"lipsync 는 음성 블록 1개인 컷만 ({s.lang} {len(blocks)}개)"
-    rec = next(iter(blocks.values()))
-    if status_of(rec) != "approved" or not rec.get("job_id"):
+    jobs = nar_jobs(cfg, s.cut, s.lang)
+    if not jobs:
         return None, None, f"{s.lang} 나레이션 승인 전 — 립싱크는 승인된 음성으로만"
-    return end_job, rec["job_id"], None
+    if len(jobs) == 1:
+        return end_job, jobs[0], None
+    ref = (s.cut.get("nar_ref") or {}).get(s.lang) or {}
+    if not ref.get("media_id") or ref.get("blocks") != jobs:
+        return None, None, (f"{s.lang} 음성 블록 {len(jobs)}개 — 합친 나레이션 필요: momo-previews 의 "
+                            f"{s.cut['id']}_nar_{s.lang}.wav → media_import_url → hf_jobs.py narref")
+    return end_job, ref["media_id"], None
+
+
+def nar_jobs(cfg: dict, cut: dict, lang: str) -> list[str]:
+    """Approved narration block jobs in block order ([] unless every speech block is approved)."""
+    blocks = (cut.get("audio_src") or {}).get(lang) or {}
+    recs = [blocks.get(str(it.index)) or {} for it in tts_blocks(cut, lang, cfg)]
+    if not recs or any(status_of(r) != "approved" or not r.get("job_id") for r in recs):
+        return []
+    return [r["job_id"] for r in recs]
 
 
 def sheet_prompt(cfg: dict, name: str, entry: dict) -> str:
@@ -616,6 +631,28 @@ def print_library_status(lst: dict) -> None:
     print("  config.voices: " + ", ".join(f"{k} {v or '미설정'}" for k, v in lst["voices"].items()))
 
 
+def cmd_narref(paths: Paths, cfg: dict, args) -> int:
+    """Pin the imported combined narration (all blocks + pauses) of a multi-block lip-sync cut.
+
+    The file comes from momo-previews (<ep>/<cut>_nar_<lang>.wav, built by preview_assets.py) and is
+    imported with media_import_url. The block jobs are stored with it, so a regenerated block voids it.
+    """
+    ep, lang = check_ep(args.ep), check_lang(args.lang)
+    m = load_manifest(paths, ep)
+    cut = next((c for c in m.get("cuts") or [] if c.get("id") == args.cut), None)
+    if cut is None:
+        raise MomoError(f"manifest 에 없는 컷: {args.cut}")
+    if not cut.get("lipsync"):
+        raise MomoError(f"{args.cut}: lipsync 컷이 아님")
+    jobs = nar_jobs(cfg, cut, lang)
+    if len(jobs) < 2:
+        raise MomoError(f"{args.cut} {lang}: 승인된 음성 블록 {len(jobs)}개 — 합친 나레이션은 블록 2개 이상 + 전부 승인일 때만")
+    cut.setdefault("nar_ref", {})[lang] = {"media_id": args.media_id, "blocks": jobs, "at": now_iso()}
+    save_json(paths.manifest(ep), m)
+    print(f"✔ {args.cut} nar_ref {lang} = {args.media_id} (블록 {len(jobs)}개)")
+    return 0
+
+
 def cmd_status(paths: Paths, cfg: dict, args) -> int:
     if not args.ep and not args.library:
         raise MomoError("status 에는 --ep 또는 --library 가 필요함")
@@ -681,6 +718,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--text", help="voice-sample 문장 (처음 기록할 때)")
     p.add_argument("--force", action="store_true", help="승인된 항목을 새 결과로 덮기 / voices 변경")
 
+    p = subparser("narref", "여러 블록 립싱크 컷의 합친 나레이션 media_id 고정")
+    p.add_argument("--ep", required=True)
+    p.add_argument("--cut", required=True)
+    p.add_argument("--lang", required=True)
+    p.add_argument("--media-id", required=True, help="media_import_url 결과")
+
     p = subparser("status", "컷별 진행표 + 크레딧 + 다음 작업")
     p.add_argument("--ep")
     p.add_argument("--library", action="store_true")
@@ -690,7 +733,7 @@ def main(argv: list[str] | None = None) -> int:
     paths = get_paths(args)
     cfg = load_config(paths)
     return {"plan": cmd_plan, "voice-samples": cmd_voice_samples, "record": cmd_record,
-            "status": cmd_status}[args.cmd](paths, cfg, args)
+            "narref": cmd_narref, "status": cmd_status}[args.cmd](paths, cfg, args)
 
 
 if __name__ == "__main__":

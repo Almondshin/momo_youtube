@@ -60,10 +60,14 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `text_color` | ○ | ○ | ○ | `white`(기본) / `yellow` |
 | `duration` | ○ | ○ | ○ | 최소 길이(초). 나레이션보다 짧게는 못 줄인다(경고 후 무시) |
 | `lead` / `tail` | ○ | ○ | ○ | Picture-only seconds before / after the narration (0~5; default 0 / `render.tail_pad`). E.g. a musical lead-in on the first cut, a tail on the last cut for the BGM fade-out |
-| `fill` | ○ | ○ |   | How a clip shorter than its cut is extended: `hold` (default — slow-mo ≤1.25x with motion interpolation, then hold the last frame, gentle push-in), `loop` (crossfade into a second pass), `pingpong` (old) |
+| `fill` | ○ | ○ |   | How a clip is fitted to its cut: `hold` (default — slow-mo ≤1.25x with motion interpolation, then hold the last frame, gentle push-in), `fit` (time-stretch the whole clip onto the cut, 0.8–1.25x, longer or shorter), `loop` (crossfade into a second pass), `pingpong` (old) |
+| `lipsync` | | ○ |   | `true` → one clip per language (`gen.clip_en` / `gen.clip_ko` → `clips/<cut>_<lang>.mp4`), `audio_references` = that language's approved narration, so the mouth follows the voice. Build never time-stretches it and holds frame 0 until the narration starts. Use a model that really lip-syncs (`wan2_7`; Seedance Mini does not) |
+| `clip_model` / `clip_seconds` | | ○ |   | Per-cut video model (`config.higgsfield.clip_models` extras) and generated length — a number or `{"en": 7, "ko": 9}` (lip-sync: ≥ that language's narration) |
+| `end_frame` | | ○ |   | Cut id whose approved image becomes this clip's last frame (continuous hand-off) |
+| `nar_ref` | | ○ |   | Lip-sync cut with 2+ speech blocks: `{"en": {"media_id", "blocks": [block jobs]}}` — the blocks + `[pause]` silences in one file. `preview_assets.py` writes `<ep>/<cut>_nar_<lang>.wav` to momo-previews → `media_import_url` (raw.githubusercontent URL) → `hf_jobs.py narref`. A regenerated block voids it |
 | `inset` | ○ | ○ | ○ | 테두리 제거 인셋 크롭 비율. `null`(기본) = 자동 감지 후 감지되면 3.5%, `0` = 끔, `0.03`~`0.04` = 강제 |
 | `sfx` | ○ | ○ | ○ | `[{"file":"pop.wav","at":0.5,"gain_db":-6}]` — `assets/sfx/` 파일, 컷 시작 + `at` 초. 파일이 없으면 경고 후 생략. Stock set from `make_music.py`: pop, sparkle, boing, whoosh, brush, swish, splash, chime |
-| `gen` | | ● | ● | `{"image": GenRec, "clip": GenRec}` (clip 은 V 만) — hf_jobs.py 가 기록 |
+| `gen` | | ● | ● | `{"image": GenRec, "clip": GenRec}` (clip 은 V 만; lipsync 컷은 `clip_en` / `clip_ko`) — hf_jobs.py 가 기록 |
 | `audio_src` | ○ | ○ | ○ | `{"en": {"1": GenRec, "2": GenRec}, "ko": {...}}` — 키 = speech 블록 번호(문자열) |
 
 ● 필수 · ○ 선택. validate 가 error 로 막는 것: id 형식·중복, type, scene 역행, L 의 library_clip, V/S 의
