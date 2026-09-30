@@ -61,7 +61,8 @@
       "2026-09-30 노래 방식 승인: ACE-Step 1.5 로컬 생성(보컬 포함, 크레딧 0) — 가수 목소리는 밝은 여성 보컬, 인트로·아웃트로는 라이브러리 Gracie",
       "2026-09-30 노래 승인: 후보 1 (ACE-Step b_s202, 120.005 BPM, 2:06) — 사용자 선택",
       "2026-09-30 노래 소스 변경: Suno Pro (사용자 결정) — ACE-Step 후보 1 은 보류, 컷 구성은 Suno 곡에 맞춰 다시 짠다",
-      "2026-09-30 기획표 승인: Suno v1 곡, 컷 31개(립싱크 16·움직임 8·재사용 6·L 1), 1:54, 예상 171 (여유 포함 205)"
+      "2026-09-30 기획표 승인: Suno v1 곡, 컷 31개(립싱크 16·움직임 8·재사용 6·L 1), 1:54, 예상 171 (여유 포함 205)",
+      "2026-09-30 첫 3장 승인 (c01·c02·c03 이미지)"
     ],
     "next_time": [
       "Suno 곡이 1.6초에 바로 시작해 라이브러리 인트로 인사(Hi friends! It's Momo!)를 넣을 자리가 없음 — 다음 곡은 스타일/가사에 '[Intro - 2 bars]' 로 짧은 전주를 요청할 것"
@@ -82,7 +83,7 @@
       },
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "6220fcf3-2ef4-4f1d-8f4a-72a5758c0109",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075507_6220fcf3-2ef4-4f1d-8f4a-72a5758c0109.png",
           "attempts": 1,
@@ -91,7 +92,7 @@
             {
               "job_id": "6220fcf3-2ef4-4f1d-8f4a-72a5758c0109",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075507_6220fcf3-2ef4-4f1d-8f4a-72a5758c0109.png",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T07:55Z",
               "credits": 2.0
@@ -112,7 +113,7 @@
       "clip_seconds": 4,
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "116af221-53d0-4c7e-9072-760e5f67a872",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_116af221-53d0-4c7e-9072-760e5f67a872.png",
           "attempts": 1,
@@ -121,7 +122,7 @@
             {
               "job_id": "116af221-53d0-4c7e-9072-760e5f67a872",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_116af221-53d0-4c7e-9072-760e5f67a872.png",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T07:57Z",
               "credits": 2.0
@@ -136,7 +137,7 @@
       "scene": 2,
       "type": "V",
       "bars": 1,
-      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen softly blurred behind, clear empty space on the left side of the frame",
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
       "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
@@ -148,7 +149,7 @@
       },
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "fbc8deb7-dc47-4551-a2c5-055fc6659a76",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_fbc8deb7-dc47-4551-a2c5-055fc6659a76.png",
           "attempts": 1,
@@ -157,7 +158,7 @@
             {
               "job_id": "fbc8deb7-dc47-4551-a2c5-055fc6659a76",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_fbc8deb7-dc47-4551-a2c5-055fc6659a76.png",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T07:57Z",
               "credits": 2.0
@@ -236,7 +237,7 @@
       "scene": 2,
       "type": "V",
       "bars": 2,
-      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen softly blurred behind",
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
       "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
@@ -260,7 +261,7 @@
       "scene": 3,
       "type": "V",
       "bars": 2,
-      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen softly blurred behind, clear empty space on the right side of the frame",
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
       "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
@@ -375,7 +376,7 @@
       "scene": 4,
       "type": "V",
       "bars": 2,
-      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen softly blurred behind, clear empty space on the left side of the frame",
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
       "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
