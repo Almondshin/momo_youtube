@@ -30,8 +30,8 @@ MAX_WORD = 2.0  # s — a sung word (even a held note) is shorter than this
 
 def read_lyrics(path: Path) -> list[dict]:
     text = path.read_text()
-    m = re.search(r"```\n(.*?)```", text, re.S)
-    body = m.group(1) if m else text
+    blocks = [b for tag, b in re.findall(r"```(\w*)\n(.*?)```", text, re.S) if not tag and "[" in b]
+    body = blocks[-1] if blocks else text  # the untagged block with [Section] tags (a ```style block is skipped)
     lines, section = [], ""
     for raw in body.splitlines():
         s = raw.strip()
@@ -45,8 +45,13 @@ def read_lyrics(path: Path) -> list[dict]:
     return lines
 
 
+NUMBER_WORDS = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four", "5": "five", "6": "six",
+                "7": "seven", "8": "eight", "9": "nine", "10": "ten"}
+
+
 def norm(w: str) -> str:
-    return re.sub(r"[^a-z0-9']", "", w.lower().replace("’", "'"))
+    w = re.sub(r"[^a-z0-9']", "", w.lower().replace("’", "'"))
+    return NUMBER_WORDS.get(w, w)  # whisper often writes sung numbers as digits
 
 
 def similar(a: str, b: str) -> bool:
@@ -147,8 +152,9 @@ def main() -> int:
     exp, owner = [], []
     for li, ln in enumerate(lines):
         for ti, tok in enumerate(ln["tokens"]):
-            exp.append(norm(tok))
-            owner.append((li, ti))
+            for part in [p for p in re.split(r"-", tok) if norm(p)] or [tok]:  # "Ding-dong-dang!" is heard as 3 words
+                exp.append(norm(part))
+                owner.append((li, ti))
     prompt = " ".join(ln["text"] for ln in lines)[:600]
     r = mlx_whisper.transcribe(a.vocals, path_or_hf_repo=a.model, language="en", word_timestamps=True,
                                initial_prompt=prompt, condition_on_previous_text=False)
@@ -160,7 +166,9 @@ def main() -> int:
     for k, j in enumerate(match):
         if j is not None:
             li, ti = owner[k]
-            per_line[li][ti] = (round(heard[j][1], 3), round(heard[j][2], 3))
+            s0, e0 = round(heard[j][1], 3), round(heard[j][2], 3)
+            prev = per_line[li][ti]  # parts of one hyphenated token: first start, last end
+            per_line[li][ti] = (min(prev[0], s0), max(prev[1], e0)) if prev else (s0, e0)
     out_lines, missing = [], []
     for ln, times in zip(lines, per_line):
         times = drop_outliers(times)

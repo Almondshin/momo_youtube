@@ -316,6 +316,9 @@ def test_align_lyrics(tmp: Path) -> None:
     lines = al.read_lyrics(tmp / "l.md")
     assert [(ln["section"], ln["text"]) for ln in lines] == [("Verse 1", "Can you say carrot?"),
                                                              ("Verse 1", "Carrot!")]
+    (tmp / "l2.md").write_text("```style\nkids song\n```\n\n```\n[Chorus]\nOne, two!\n```\n")
+    assert [ln["text"] for ln in al.read_lyrics(tmp / "l2.md")] == ["One, two!"]  # the style block is skipped
+    assert al.norm("10") == "ten" and al.norm("Three!") == "three"
 
 
 def make_track_root(tmp: Path) -> Path:
@@ -374,7 +377,7 @@ def test_track_build(tmp: Path) -> None:
                        capture_output=True, text=True)
     assert r.returncode == 0, r.stdout + r.stderr
     ref = audio.decode(root / "episodes/ep91/audio/refs/c02_en.wav", SR, 1)[:, 0]
-    assert abs(len(ref) / SR - 2.0) < 0.01  # exactly the cut window of the vocal stem
+    assert abs(len(ref) / SR - 3.0) < 0.01  # the 2 s cut window of the vocal stem, padded to REF_MIN (3 s)
     assert np.abs(ref[:int(0.05 * SR)]).max() < 1e-3 < np.abs(ref[int(0.2 * SR):int(0.7 * SR)]).max()  # gated
 
 

@@ -16,13 +16,13 @@
     "ducky"
   ],
   "title": {
-    "en": "",
+    "en": "Count to Ten Song with Momo the Bunny | Numbers 1 to 10 for Toddlers",
     "ko": ""
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c07",
     "text": {
-      "en": "",
+      "en": "COUNT TO 10!",
       "ko": ""
     },
     "text_pos": "top"
@@ -30,61 +30,2356 @@
   "bgm": null,
   "upload": {
     "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
-    },
-    "ko": {
-      "title": "",
-      "description": "",
-      "tags": [],
+      "title": "Count to Ten Song with Momo the Bunny | Numbers 1 to 10 for Toddlers",
+      "description": "Count from 1 to 10 with Momo the Bunny and Ducky! One, two, three, four, five — six, seven, eight, nine, ten! Count one sun, two clouds, three apples, four blocks and five flowers, then hop, clap, stomp, nod and jump to ten. Ding-dong-dang — we can count to ten!\n\nNumbers in this song: 1 2 3 4 5 6 7 8 9 10\n\nMade for toddlers and preschoolers (ages 2-5). Music and animation made with AI tools.",
+      "tags": [
+        "counting song",
+        "numbers song",
+        "count to 10",
+        "1 to 10",
+        "kids songs",
+        "nursery rhymes",
+        "toddler songs",
+        "learn english for kids",
+        "english for toddlers",
+        "Momo the Bunny"
+      ],
       "playlist_id": null
     }
   },
   "credits": {
-    "estimate": null,
+    "estimate": 207.6,
     "spent": 0,
     "generations": 0,
     "regenerations": 0
   },
   "notes": {
-    "v_over_reason": null,
+    "v_over_reason": "노래 형식(ep03 과 같음): 127.6 BPM, 한 줄 = 1마디 → 51컷. V 49개 중 21개는 이미 만든 클립 재사용(clip_from, 0 크레딧), 새로 만드는 클립 28개.",
     "approvals": [
       "2026-09-30 주제 승인: 숫자 세기 1~5 (Count to Five) — 사용자 선택",
       "2026-09-30 형식: ep03 과 같은 노래 형식 (Suno Pro 곡, 컷 1~3마디, 립싱크 + 움직임 + 재사용)",
-      "2026-09-30 방향 변경 (사용자): 영어 가사 + 한국 동요 리듬, 1~10 세기 — 1~5 사물, 6~10 동작"
+      "2026-09-30 방향 변경 (사용자): 영어 가사 + 한국 동요 리듬, 1~10 세기 — 1~5 사물, 6~10 동작",
+      "2026-09-30 노래 승인: Suno v1 'Count to Ten' (127.6 BPM, 2:20, 가사 99.2%) — 사용자가 넣어 준 곡",
+      "2026-09-30 기획 진행: 컷 51개(새 클립 26 · 재사용 21 · L 2), 2:16, 예상 171.5 (여유 포함 207.6) — 사용자 지시 '묻지 말고 끝까지'"
     ],
-    "next_time": []
+    "next_time": [
+      "Suno 가 전주(2마디) 대신 카운트인을 불러 인트로 인사가 또 빠짐 — 다음 곡은 가사 첫 줄 전에 '[Instrumental intro 4 bars]' 로 더 분명히"
+    ]
   },
   "cuts": [
     {
       "id": "c01",
       "scene": 1,
       "type": "L",
-      "library_clip": "intro_wave",
-      "library_audio": "intro",
-      "narration": {
-        "en": "Hi friends! It's Momo!"
-      },
-      "keyword": {
-        "en": "",
-        "ko": ""
-      }
+      "bars": 2,
+      "library_clip": "intro_wave"
     },
     {
       "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] standing in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, holding up one paw and counting happily, medium close-up",
+      "motion": "counts along to the beat with small nods, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, clapping both paws together, big happy smile",
+      "motion": "claps both paws together five times to the beat, small happy bounce, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] three-quarter view close-up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, bright excited face",
+      "motion": "bobs the head to the beat, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, standing on the grass ready to hop, arms up",
+      "motion": "does five small happy hops in place to the beat, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4
+    },
+    {
+      "id": "c06",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo holding one small shiny golden hand bell, Ducky beside her, both cheerful, medium wide shot",
+      "motion": "Momo rings the little golden bell twice to the beat, Ducky flaps its wings happily, both sway, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4
+    },
+    {
+      "id": "c07",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] front view medium shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, proud happy face",
+      "motion": "sways to the beat and lifts both arms up on the last word, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, pointing one paw up at the sky, curious happy face, medium shot",
+      "motion": "points up at the sky and looks up, then back at the viewer, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly one big round smiling yellow sun in a clear bright blue sky above the sunny green garden with a small white picket fence softly blurred behind, nothing else in the sky",
+      "motion": "the sun glows and twinkles gently with soft warm sparkles",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "1 ONE",
+        "text": "one yellow sun",
+        "pos": "left",
+        "at": 0.5
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly two fluffy white clouds side by side in a clear bright blue sky above the sunny green garden with a small white picket fence softly blurred behind, no other clouds, no sun",
+      "motion": "the two clouds drift very slowly and puff gently, staying exactly two",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "2 TWO",
+        "text": "two white clouds",
+        "pos": "right",
+        "at": 0.5
+      }
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, pointing one paw down at the grass, cheerful face, medium shot",
+      "motion": "points down at the grass and looks down, then back at the viewer, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly three shiny red apples in one neat row on the soft green grass, evenly spaced, no other apples, the sunny green garden with a small white picket fence softly blurred behind",
+      "motion": "the three apples give tiny happy wiggles one after another, soft sparkles, staying exactly three",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "3 THREE",
+        "text": "three red apples",
+        "pos": "left",
+        "at": 0.5
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] sitting on the grass in a sunny green garden with soft grass, a small white picket fence and a bright blue sky beside three red apples, happy proud face, medium shot",
+      "motion": "looks at the apples, then at the viewer, and nods, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c02)",
+      "motion": "(reuses c02 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c15",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c03",
+        "at": 2.0
+      },
+      "image_prompt": "(reuses c03)",
+      "motion": "(reuses c03 from 2s)"
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c04)",
+      "motion": "(reuses c04 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c05",
+        "at": 2.0
+      },
+      "image_prompt": "(reuses c05)",
+      "motion": "(reuses c05 from 2s)"
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c06)",
+      "motion": "(reuses c06 from 0s)"
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c07)",
+      "motion": "(reuses c07 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, looking to the side with one paw above the eyes like searching, curious face, medium shot",
+      "motion": "looks left and right to the beat, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c21",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly four big plain blue toy blocks side by side in one row on the soft green grass, smooth plain faces with no letters and no numbers, the sunny green garden with a small white picket fence softly blurred behind",
+      "motion": "the four blocks give tiny bounces one after another, staying exactly four",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "4 FOUR",
+        "text": "four blue blocks",
+        "pos": "left",
+        "at": 0.5
+      }
+    },
+    {
+      "id": "c22",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c11",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c11)",
+      "motion": "(reuses c11 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c23",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly five pink flowers in one neat row on plain soft green grass, evenly spaced, no other flowers anywhere, the sunny green garden with a small white picket fence softly blurred behind",
+      "motion": "the five pink flowers sway gently one after another, staying exactly five",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "5 FIVE",
+        "text": "five pink flowers",
+        "pos": "right",
+        "at": 0.4
+      }
+    },
+    {
+      "id": "c24",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] kneeling on the grass in a sunny green garden with soft grass, a small white picket fence and a bright blue sky next to a row of pink flowers, delighted face, medium shot",
+      "motion": "smiles at the flowers, then sings to the viewer, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c02)",
+      "motion": "(reuses c02 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c03)",
+      "motion": "(reuses c03 from 0s)"
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c04)",
+      "motion": "(reuses c04 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c05)",
+      "motion": "(reuses c05 from 0s)"
+    },
+    {
+      "id": "c29",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c06)",
+      "motion": "(reuses c06 from 0s)"
+    },
+    {
+      "id": "c30",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c07)",
+      "motion": "(reuses c07 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c31",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo waving one paw at Ducky, Ducky waving a wing, both happy, medium shot",
+      "motion": "Momo waves hello to Ducky, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      }
+    },
+    {
+      "id": "c32",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, ready to move, both facing the viewer, excited, medium shot",
+      "motion": "Momo bounces a little, ready to go, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      }
+    },
+    {
+      "id": "c33",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both ready to hop",
+      "motion": "Momo and Ducky do small happy hops together in place to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "6 SIX",
+        "text": "six little hops",
+        "pos": "right",
+        "at": 1.1
+      }
+    },
+    {
+      "id": "c34",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo clapping her paws, Ducky flapping its wings",
+      "motion": "Momo claps her paws and Ducky flaps its wings together to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "7 SEVEN",
+        "text": "seven little claps",
+        "pos": "right",
+        "at": 1.1
+      }
+    },
+    {
+      "id": "c35",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both stomping their feet happily",
+      "motion": "Momo and Ducky stomp their feet gently in place to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "8 EIGHT",
+        "text": "eight little stomps",
+        "pos": "right",
+        "at": 1.1
+      }
+    },
+    {
+      "id": "c36",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both nodding happily, medium wide shot",
+      "motion": "Momo and Ducky nod their heads together to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "9 NINE",
+        "text": "nine little nods",
+        "pos": "right",
+        "at": 1.1
+      }
+    },
+    {
+      "id": "c37",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both jumping up in the air with joy",
+      "motion": "Momo and Ducky jump up and land softly again and again to the beat, mouths in closed smiles, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "10 TEN",
+        "text": "ten big jumps",
+        "pos": "right",
+        "at": 1.1
+      }
+    },
+    {
+      "id": "c38",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] close-up of the face in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, playful curious face, one paw raised beside the cheek",
+      "motion": "leans a little toward the viewer, then tilts the head to listen, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      }
+    },
+    {
+      "id": "c39",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c21",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c21)",
+      "motion": "(reuses c21 from 0s)"
+    },
+    {
+      "id": "c40",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c23",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c23)",
+      "motion": "(reuses c23 from 0s)"
+    },
+    {
+      "id": "c41",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c34",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c34)",
+      "motion": "(reuses c34 from 0s)"
+    },
+    {
+      "id": "c42",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c05)",
+      "motion": "(reuses c05 from 0s)"
+    },
+    {
+      "id": "c43",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c37",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c37)",
+      "motion": "(reuses c37 from 0s)"
+    },
+    {
+      "id": "c44",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both cheering with arms and wings up, front view medium shot",
+      "motion": "Momo cheers to the viewer while Ducky flaps its wings, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c45",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c02)",
+      "motion": "(reuses c02 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c46",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c03",
+        "at": 2.0
+      },
+      "image_prompt": "(reuses c03)",
+      "motion": "(reuses c03 from 2s)"
+    },
+    {
+      "id": "c47",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c04)",
+      "motion": "(reuses c04 from 0s)",
+      "lipsync_ok": true
+    },
+    {
+      "id": "c48",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "clip_from": {
+        "cut": "c05",
+        "at": 2.0
+      },
+      "image_prompt": "(reuses c05)",
+      "motion": "(reuses c05 from 2s)"
+    },
+    {
+      "id": "c49",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.0
+      },
+      "image_prompt": "(reuses c06)",
+      "motion": "(reuses c06 from 0s)"
+    },
+    {
+      "id": "c50",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, Momo holding Ducky close in a happy hug, both facing the viewer, medium shot",
+      "motion": "Momo sings to the viewer with a big happy nod on the last word, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      }
+    },
+    {
+      "id": "c51",
       "scene": 5,
       "type": "L",
+      "bars": 3,
       "library_clip": "outro_bye",
       "library_audio": "outro",
+      "lead": 0.6,
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
-      },
-      "keyword": {
-        "en": "",
-        "ko": ""
       }
     }
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:a7f761cf94fe",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": "사용자가 Suno 에서 만들어 넣어 준 곡 (v1)",
+      "sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+      "tool": "suno",
+      "source_file": "song.wav",
+      "note": "Suno Pro v1 'Count to Ten' (stems: demucs htdemucs_ft)",
+      "duration": 139.96,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:a7f761cf94fe",
+          "url": null,
+          "status": "approved",
+          "reason": "사용자가 Suno 에서 만들어 넣어 준 곡 (v1)",
+          "at": "2026-09-30T12:04Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 127.6042,
+        "beat0": 0.4702,
+        "downbeat0": 0.4702,
+        "confidence": 1.198,
+        "downbeats": [
+          0.4702,
+          2.351,
+          4.2318,
+          6.1126,
+          7.9935,
+          9.8743,
+          11.7551,
+          13.6359,
+          15.5167,
+          17.3975,
+          19.2784,
+          21.1592,
+          23.04,
+          24.9208,
+          26.8016,
+          28.6824,
+          30.5633,
+          32.4441,
+          34.3249,
+          36.2057,
+          38.0865,
+          39.9673,
+          41.8481,
+          43.729,
+          45.6098,
+          47.4906,
+          49.3714,
+          51.2522,
+          53.133,
+          55.0139,
+          56.8947,
+          58.7755,
+          60.6563,
+          62.5371,
+          64.4179,
+          66.2988,
+          68.1796,
+          70.0604,
+          71.9412,
+          73.822,
+          75.7028,
+          77.5836,
+          79.4645,
+          81.3453,
+          83.2261,
+          85.1069,
+          86.9877,
+          88.8685,
+          90.7494,
+          92.6302,
+          94.511,
+          96.3918,
+          98.2726,
+          100.1534,
+          102.0343,
+          103.9151,
+          105.7959,
+          107.6767,
+          109.5575,
+          111.4383,
+          113.3192,
+          115.2,
+          117.0808,
+          118.9616,
+          120.8424,
+          122.7232,
+          124.604,
+          126.4849,
+          128.3657,
+          130.2465,
+          132.1273,
+          134.0081,
+          135.8889,
+          137.7698,
+          139.6506
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            -29.0,
+            -5.8,
+            5.8,
+            5.8,
+            5.8,
+            -5.8,
+            -29.0,
+            -58.0
+          ],
+          "trend_ms": -29.5
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+      "end": 136.0
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:0f8b4b1705f6",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": "사용자가 Suno 에서 만들어 넣어 준 곡 (v1)",
+      "sha1": "0f8b4b1705f6199c08cd2b673e03f29175241e72",
+      "of": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+      "history": [
+        {
+          "job_id": "local:0f8b4b1705f6",
+          "url": null,
+          "status": "approved",
+          "reason": "사용자가 Suno 에서 만들어 넣어 준 곡 (v1)",
+          "at": "2026-09-30T12:04Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 127.6042,
+    "lyrics": [
+      {
+        "text": "One, two, three, four, five!",
+        "section": "Intro",
+        "words": [
+          [
+            "One,",
+            1.96,
+            2.48
+          ],
+          [
+            "two,",
+            2.78,
+            2.94
+          ],
+          [
+            "three,",
+            3.24,
+            3.34
+          ],
+          [
+            "four,",
+            3.48,
+            3.56
+          ],
+          [
+            "five!",
+            3.72,
+            3.96
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three, four, five!",
+        "section": "Chorus",
+        "words": [
+          [
+            "One,",
+            4.14,
+            4.36
+          ],
+          [
+            "two,",
+            4.7,
+            4.82
+          ],
+          [
+            "three,",
+            5.14,
+            5.22
+          ],
+          [
+            "four,",
+            5.38,
+            5.46
+          ],
+          [
+            "five!",
+            5.6,
+            5.84
+          ]
+        ]
+      },
+      {
+        "text": "Clap, clap, clap, clap, clap!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Clap,",
+            6.0,
+            6.24
+          ],
+          [
+            "clap,",
+            6.32,
+            6.4
+          ],
+          [
+            "clap,",
+            6.5,
+            6.64
+          ],
+          [
+            "clap,",
+            6.72,
+            6.84
+          ],
+          [
+            "clap!",
+            6.94,
+            7.1
+          ]
+        ]
+      },
+      {
+        "text": "Six, seven, eight, nine, ten!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Six,",
+            7.62,
+            8.14
+          ],
+          [
+            "seven,",
+            8.46,
+            8.7
+          ],
+          [
+            "eight,",
+            8.96,
+            9.02
+          ],
+          [
+            "nine,",
+            9.14,
+            9.24
+          ],
+          [
+            "ten!",
+            9.4,
+            9.54
+          ]
+        ]
+      },
+      {
+        "text": "Hop, hop, hop, hop, hop!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Hop,",
+            9.8,
+            9.98
+          ],
+          [
+            "hop,",
+            10.08,
+            10.16
+          ],
+          [
+            "hop,",
+            10.32,
+            10.38
+          ],
+          [
+            "hop,",
+            10.56,
+            10.62
+          ],
+          [
+            "hop!",
+            10.74,
+            10.92
+          ]
+        ]
+      },
+      {
+        "text": "Ding-dong-dang! Ding-dong-dang!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Ding-dong-dang!",
+            11.42,
+            13.24
+          ],
+          [
+            "Ding-dong-dang!",
+            13.44,
+            15.06
+          ]
+        ]
+      },
+      {
+        "text": "We can count to ten!",
+        "section": "Chorus",
+        "words": [
+          [
+            "We",
+            15.28,
+            15.64
+          ],
+          [
+            "can",
+            15.64,
+            16.24
+          ],
+          [
+            "count",
+            16.24,
+            16.9
+          ],
+          [
+            "to",
+            16.9,
+            17.26
+          ],
+          [
+            "ten!",
+            17.26,
+            17.66
+          ]
+        ]
+      },
+      {
+        "text": "Look up high, in the sky!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Look",
+            18.92,
+            19.44
+          ],
+          [
+            "up",
+            19.44,
+            19.8
+          ],
+          [
+            "high,",
+            19.8,
+            20.64
+          ],
+          [
+            "in",
+            20.78,
+            21.28
+          ],
+          [
+            "the",
+            21.28,
+            21.58
+          ],
+          [
+            "sky!",
+            21.58,
+            22.1
+          ]
+        ]
+      },
+      {
+        "text": "One yellow sun! One!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "One",
+            22.86,
+            23.36
+          ],
+          [
+            "yellow",
+            23.36,
+            24.26
+          ],
+          [
+            "sun!",
+            24.26,
+            25.0
+          ],
+          [
+            "One!",
+            25.26,
+            25.66
+          ]
+        ]
+      },
+      {
+        "text": "Two white clouds! One, two!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Two",
+            26.44,
+            26.96
+          ],
+          [
+            "white",
+            26.96,
+            27.5
+          ],
+          [
+            "clouds!",
+            27.5,
+            28.2
+          ],
+          [
+            "One,",
+            28.66,
+            28.94
+          ],
+          [
+            "two!",
+            29.2,
+            29.6
+          ]
+        ]
+      },
+      {
+        "text": "Look down low, on the grass!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Look",
+            30.16,
+            30.68
+          ],
+          [
+            "down",
+            30.68,
+            31.08
+          ],
+          [
+            "low,",
+            31.08,
+            31.68
+          ],
+          [
+            "on",
+            31.68,
+            32.68
+          ],
+          [
+            "the",
+            32.68,
+            33.02
+          ],
+          [
+            "grass!",
+            33.02,
+            33.66
+          ]
+        ]
+      },
+      {
+        "text": "Three red apples! One, two, three!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Three",
+            33.98,
+            34.5
+          ],
+          [
+            "red",
+            34.5,
+            35.06
+          ],
+          [
+            "apples!",
+            35.06,
+            35.76
+          ],
+          [
+            "One,",
+            36.16,
+            36.4
+          ],
+          [
+            "two,",
+            36.72,
+            36.86
+          ],
+          [
+            "three!",
+            37.14,
+            37.34
+          ]
+        ]
+      },
+      {
+        "text": "How many apples? Three!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "How",
+            37.86,
+            38.26
+          ],
+          [
+            "many",
+            38.26,
+            38.86
+          ],
+          [
+            "apples?",
+            38.86,
+            39.5
+          ],
+          [
+            "Three!",
+            39.86,
+            40.14
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three, four, five!",
+        "section": "Chorus",
+        "words": [
+          [
+            "One,",
+            41.5,
+            42.02
+          ],
+          [
+            "two,",
+            42.4,
+            42.48
+          ],
+          [
+            "three,",
+            42.78,
+            42.88
+          ],
+          [
+            "four,",
+            43.02,
+            43.12
+          ],
+          [
+            "five!",
+            43.28,
+            43.5
+          ]
+        ]
+      },
+      {
+        "text": "Clap, clap, clap, clap, clap!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Clap,",
+            43.68,
+            43.86
+          ],
+          [
+            "clap,",
+            44.0,
+            44.08
+          ],
+          [
+            "clap,",
+            44.2,
+            44.3
+          ],
+          [
+            "clap,",
+            44.46,
+            44.52
+          ],
+          [
+            "clap!",
+            44.64,
+            44.76
+          ]
+        ]
+      },
+      {
+        "text": "Six, seven, eight, nine, ten!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Six,",
+            45.28,
+            45.8
+          ],
+          [
+            "seven,",
+            46.1,
+            46.36
+          ],
+          [
+            "eight,",
+            46.6,
+            46.68
+          ],
+          [
+            "nine,",
+            46.8,
+            46.88
+          ],
+          [
+            "ten!",
+            47.04,
+            47.18
+          ]
+        ]
+      },
+      {
+        "text": "Hop, hop, hop, hop, hop!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Hop,",
+            47.46,
+            47.64
+          ],
+          [
+            "hop,",
+            47.76,
+            47.82
+          ],
+          [
+            "hop,",
+            47.98,
+            48.06
+          ],
+          [
+            "hop,",
+            48.26,
+            48.31
+          ],
+          [
+            "hop!",
+            48.4,
+            48.56
+          ]
+        ]
+      },
+      {
+        "text": "Ding-dong-dang! Ding-dong-dang!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Ding-dong-dang!",
+            49.22,
+            50.56
+          ],
+          [
+            "Ding-dong-dang!",
+            51.08,
+            52.42
+          ]
+        ]
+      },
+      {
+        "text": "We can count to ten!",
+        "section": "Chorus",
+        "words": [
+          [
+            "We",
+            52.96,
+            53.3
+          ],
+          [
+            "can",
+            53.3,
+            53.84
+          ],
+          [
+            "count",
+            53.84,
+            54.56
+          ],
+          [
+            "to",
+            54.56,
+            54.88
+          ],
+          [
+            "ten!",
+            54.88,
+            55.18
+          ]
+        ]
+      },
+      {
+        "text": "Look around, look around!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Look",
+            57.08,
+            57.56
+          ],
+          [
+            "around,",
+            57.56,
+            58.04
+          ],
+          [
+            "look",
+            58.6,
+            58.98
+          ],
+          [
+            "around!",
+            58.98,
+            59.98
+          ]
+        ]
+      },
+      {
+        "text": "Four blue blocks! One, two, three, four!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Four",
+            59.98,
+            60.9
+          ],
+          [
+            "blue",
+            60.9,
+            61.8
+          ],
+          [
+            "blocks!",
+            61.8,
+            62.18
+          ],
+          [
+            "One,",
+            62.72,
+            63.12
+          ],
+          [
+            "two,",
+            63.32,
+            63.37
+          ],
+          [
+            "three,",
+            63.5,
+            63.64
+          ],
+          [
+            "four!",
+            63.88,
+            64.1
+          ]
+        ]
+      },
+      {
+        "text": "Look down low, on the grass!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Look",
+            64.1,
+            64.54
+          ],
+          [
+            "down",
+            64.54,
+            64.94
+          ],
+          [
+            "low,",
+            64.94,
+            65.72
+          ],
+          [
+            "on",
+            65.72,
+            66.56
+          ],
+          [
+            "the",
+            66.56,
+            66.88
+          ],
+          [
+            "grass!",
+            66.88,
+            67.62
+          ]
+        ]
+      },
+      {
+        "text": "Five pink flowers!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Five",
+            67.62,
+            68.4
+          ],
+          [
+            "pink",
+            68.4,
+            68.84
+          ],
+          [
+            "flowers!",
+            68.84,
+            69.54
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three, four, five!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "One,",
+            69.54,
+            70.18
+          ],
+          [
+            "two,",
+            70.36,
+            70.41
+          ],
+          [
+            "three,",
+            70.52,
+            70.64
+          ],
+          [
+            "four,",
+            70.78,
+            70.88
+          ],
+          [
+            "five!",
+            70.98,
+            71.32
+          ]
+        ]
+      },
+      {
+        "text": "How many flowers? Five!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "How",
+            71.32,
+            72.1
+          ],
+          [
+            "many",
+            72.1,
+            72.68
+          ],
+          [
+            "flowers?",
+            72.68,
+            73.36
+          ],
+          [
+            "Five!",
+            73.8,
+            74.28
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three, four, five!",
+        "section": "Chorus",
+        "words": [
+          [
+            "One,",
+            75.38,
+            75.86
+          ],
+          [
+            "two,",
+            76.22,
+            76.32
+          ],
+          [
+            "three,",
+            76.62,
+            76.72
+          ],
+          [
+            "four,",
+            76.86,
+            76.96
+          ],
+          [
+            "five!",
+            77.12,
+            77.34
+          ]
+        ]
+      },
+      {
+        "text": "Clap, clap, clap, clap, clap!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Clap,",
+            77.34,
+            77.68
+          ],
+          [
+            "clap,",
+            77.82,
+            77.94
+          ],
+          [
+            "clap,",
+            78.02,
+            78.2
+          ],
+          [
+            "clap,",
+            78.2,
+            78.44
+          ],
+          [
+            "clap!",
+            78.44,
+            78.72
+          ]
+        ]
+      },
+      {
+        "text": "Six, seven, eight, nine, ten!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Six,",
+            78.72,
+            79.6
+          ],
+          [
+            "seven,",
+            79.94,
+            80.2
+          ],
+          [
+            "eight,",
+            80.46,
+            80.52
+          ],
+          [
+            "nine,",
+            80.64,
+            80.74
+          ],
+          [
+            "ten!",
+            80.86,
+            81.04
+          ]
+        ]
+      },
+      {
+        "text": "Hop, hop, hop, hop, hop!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Hop,",
+            81.04,
+            81.42
+          ],
+          [
+            "hop,",
+            81.56,
+            81.66
+          ],
+          [
+            "hop,",
+            81.78,
+            81.9
+          ],
+          [
+            "hop,",
+            82.02,
+            82.14
+          ],
+          [
+            "hop!",
+            82.22,
+            82.44
+          ]
+        ]
+      },
+      {
+        "text": "Ding-dong-dang! Ding-dong-dang!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Ding-dong-dang!",
+            82.44,
+            84.42
+          ],
+          [
+            "Ding-dong-dang!",
+            84.86,
+            86.32
+          ]
+        ]
+      },
+      {
+        "text": "We can count to ten!",
+        "section": "Chorus",
+        "words": [
+          [
+            "We",
+            86.32,
+            87.1
+          ],
+          [
+            "can",
+            87.1,
+            87.68
+          ],
+          [
+            "count",
+            87.68,
+            88.36
+          ],
+          [
+            "to",
+            88.36,
+            88.72
+          ],
+          [
+            "ten!",
+            88.72,
+            89.14
+          ]
+        ]
+      },
+      {
+        "text": "Hello, Ducky! Quack, quack!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Hello,",
+            89.84,
+            90.5
+          ],
+          [
+            "Ducky!",
+            90.5,
+            91.1
+          ],
+          [
+            "Quack,",
+            91.12,
+            91.72
+          ],
+          [
+            "quack!",
+            91.72,
+            92.32
+          ]
+        ]
+      },
+      {
+        "text": "Move with me! Ready, go!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Move",
+            91.82,
+            92.28
+          ],
+          [
+            "with",
+            92.28,
+            92.52
+          ],
+          [
+            "me!",
+            92.52,
+            92.88
+          ],
+          [
+            "Ready,",
+            93.0,
+            93.26
+          ],
+          [
+            "go!",
+            93.26,
+            93.68
+          ]
+        ]
+      },
+      {
+        "text": "Six little hops! Six!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Six",
+            93.68,
+            94.58
+          ],
+          [
+            "little",
+            94.58,
+            94.86
+          ],
+          [
+            "hops!",
+            94.86,
+            95.18
+          ],
+          [
+            "Six!",
+            95.3,
+            95.7
+          ]
+        ]
+      },
+      {
+        "text": "Seven little claps! Seven!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Seven",
+            95.7,
+            96.5
+          ],
+          [
+            "little",
+            96.5,
+            96.74
+          ],
+          [
+            "claps!",
+            96.74,
+            97.04
+          ],
+          [
+            "Seven!",
+            97.22,
+            97.56
+          ]
+        ]
+      },
+      {
+        "text": "Eight little stomps! Eight!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Eight",
+            97.56,
+            98.32
+          ],
+          [
+            "little",
+            98.32,
+            98.6
+          ],
+          [
+            "stomps!",
+            98.6,
+            99.06
+          ],
+          [
+            "Eight!",
+            99.16,
+            99.5
+          ]
+        ]
+      },
+      {
+        "text": "Nine little nods! Nine!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Nine",
+            99.5,
+            100.2
+          ],
+          [
+            "little",
+            100.2,
+            100.5
+          ],
+          [
+            "nods!",
+            100.5,
+            100.94
+          ],
+          [
+            "Nine!",
+            101.02,
+            101.38
+          ]
+        ]
+      },
+      {
+        "text": "Ten BIG jumps! TEN!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Ten",
+            101.38,
+            102.06
+          ],
+          [
+            "BIG",
+            102.06,
+            102.34
+          ],
+          [
+            "jumps!",
+            102.34,
+            102.7
+          ],
+          [
+            "TEN!",
+            102.9,
+            103.16
+          ]
+        ]
+      },
+      {
+        "text": "Can you count to ten?",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Can",
+            103.16,
+            103.5
+          ],
+          [
+            "you",
+            103.5,
+            103.74
+          ],
+          [
+            "count",
+            103.74,
+            104.16
+          ],
+          [
+            "to",
+            104.16,
+            104.46
+          ],
+          [
+            "ten?",
+            104.46,
+            104.86
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three, four, five!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "One,",
+            105.56,
+            105.92
+          ],
+          [
+            "two,",
+            106.24,
+            106.34
+          ],
+          [
+            "three,",
+            106.64,
+            106.76
+          ],
+          [
+            "four,",
+            106.92,
+            106.98
+          ],
+          [
+            "five!",
+            107.12,
+            107.32
+          ]
+        ]
+      },
+      {
+        "text": "Six, seven, eight, nine, ten!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Six,",
+            107.32,
+            107.7
+          ],
+          [
+            "seven,",
+            107.88,
+            107.98
+          ],
+          [
+            "eight,",
+            108.16,
+            108.21
+          ],
+          [
+            "nine,",
+            108.34,
+            108.42
+          ],
+          [
+            "ten!",
+            108.56,
+            108.72
+          ]
+        ]
+      },
+      {
+        "text": "Clap and count! Faster, go!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Clap",
+            108.72,
+            109.64
+          ],
+          [
+            "and",
+            109.64,
+            109.84
+          ],
+          [
+            "count!",
+            109.84,
+            110.2
+          ],
+          [
+            "Faster,",
+            110.42,
+            110.72
+          ],
+          [
+            "go!",
+            110.72,
+            111.1
+          ]
+        ]
+      },
+      {
+        "text": "ONE! TWO! THREE! FOUR! FIVE!",
+        "section": "Bridge",
+        "words": [
+          [
+            "ONE!",
+            111.1,
+            111.46
+          ],
+          [
+            "TWO!",
+            111.64,
+            111.69
+          ],
+          [
+            "THREE!",
+            111.86,
+            111.94
+          ],
+          [
+            "FOUR!",
+            112.06,
+            112.18
+          ],
+          [
+            "FIVE!",
+            112.28,
+            112.58
+          ]
+        ]
+      },
+      {
+        "text": "SIX! SEVEN! EIGHT! NINE! TEN!",
+        "section": "Bridge",
+        "words": [
+          [
+            "SIX!",
+            112.9,
+            113.4
+          ],
+          [
+            "SEVEN!",
+            113.7,
+            113.92
+          ],
+          [
+            "EIGHT!",
+            114.2,
+            114.28
+          ],
+          [
+            "NINE!",
+            114.4,
+            114.5
+          ],
+          [
+            "TEN!",
+            114.64,
+            114.82
+          ]
+        ]
+      },
+      {
+        "text": "Yay! We can count to ten!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Yay!",
+            115.12,
+            115.24
+          ],
+          [
+            "We",
+            115.56,
+            115.68
+          ],
+          [
+            "can",
+            115.68,
+            115.92
+          ],
+          [
+            "count",
+            115.92,
+            116.22
+          ],
+          [
+            "to",
+            116.22,
+            116.4
+          ],
+          [
+            "ten!",
+            116.4,
+            116.7
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three, four, five!",
+        "section": "Chorus",
+        "words": [
+          [
+            "One,",
+            116.96,
+            117.16
+          ],
+          [
+            "two,",
+            117.52,
+            117.58
+          ],
+          [
+            "three,",
+            117.92,
+            118.0
+          ],
+          [
+            "four,",
+            118.16,
+            118.26
+          ],
+          [
+            "five!",
+            118.4,
+            118.6
+          ]
+        ]
+      },
+      {
+        "text": "Clap, clap, clap, clap, clap!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Clap,",
+            118.8,
+            118.98
+          ],
+          [
+            "clap,",
+            119.12,
+            119.22
+          ],
+          [
+            "clap,",
+            119.22,
+            119.42
+          ],
+          [
+            "clap,",
+            119.58,
+            119.64
+          ],
+          [
+            "clap!",
+            119.76,
+            119.9
+          ]
+        ]
+      },
+      {
+        "text": "Six, seven, eight, nine, ten!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Six,",
+            120.52,
+            120.92
+          ],
+          [
+            "seven,",
+            121.24,
+            121.48
+          ],
+          [
+            "eight,",
+            121.72,
+            121.8
+          ],
+          [
+            "nine,",
+            121.9,
+            122.0
+          ],
+          [
+            "ten!",
+            122.16,
+            122.32
+          ]
+        ]
+      },
+      {
+        "text": "Hop, hop, hop, hop, hop!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Hop,",
+            122.56,
+            122.76
+          ],
+          [
+            "hop,",
+            122.9,
+            122.98
+          ],
+          [
+            "hop,",
+            123.22,
+            123.27
+          ],
+          [
+            "hop,",
+            123.44,
+            123.49
+          ],
+          [
+            "hop!",
+            123.54,
+            123.7
+          ]
+        ]
+      },
+      {
+        "text": "Ding-dong-dang! Ding-dong-dang!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Ding-dong-dang!",
+            124.4,
+            125.66
+          ],
+          [
+            "Ding-dong-dang!",
+            126.18,
+            127.54
+          ]
+        ]
+      },
+      {
+        "text": "We can count to ten!",
+        "section": "Chorus",
+        "words": [
+          [
+            "We",
+            128.12,
+            128.38
+          ],
+          [
+            "can",
+            128.38,
+            128.94
+          ],
+          [
+            "count",
+            128.94,
+            129.64
+          ],
+          [
+            "to",
+            129.64,
+            129.98
+          ],
+          [
+            "ten!",
+            129.98,
+            130.3
+          ]
+        ]
+      }
+    ]
+  }
 }

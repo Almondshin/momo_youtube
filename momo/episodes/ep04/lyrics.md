@@ -86,3 +86,80 @@ We can count to ten!
 
 [Outro - instrumental, final chord]
 ```
+
+## Sung lyrics — Suno v1 take (what the captions show; alignment reads this last block)
+
+Suno added a sung count-in during the intro (1.96–3.96 s).
+
+```
+[Intro - count-in (sung by Suno v1)]
+One, two, three, four, five!
+
+[Chorus - bouncy, everyone sings]
+One, two, three, four, five!
+Clap, clap, clap, clap, clap!
+Six, seven, eight, nine, ten!
+Hop, hop, hop, hop, hop!
+Ding-dong-dang! (Ding-dong-dang!)
+We can count to ten!
+
+[Verse 1]
+Look up high, in the sky!
+One yellow sun! (One!)
+Two white clouds! (One, two!)
+Look down low, on the grass!
+Three red apples! (One, two, three!)
+How many apples? (Three!)
+
+[Chorus - bouncy, everyone sings]
+One, two, three, four, five!
+Clap, clap, clap, clap, clap!
+Six, seven, eight, nine, ten!
+Hop, hop, hop, hop, hop!
+Ding-dong-dang! (Ding-dong-dang!)
+We can count to ten!
+
+[Verse 2]
+Look around, look around!
+Four blue blocks! (One, two, three, four!)
+Look down low, on the grass!
+Five pink flowers!
+(One, two, three, four, five!)
+How many flowers? (Five!)
+
+[Chorus - bouncy, everyone sings]
+One, two, three, four, five!
+Clap, clap, clap, clap, clap!
+Six, seven, eight, nine, ten!
+Hop, hop, hop, hop, hop!
+Ding-dong-dang! (Ding-dong-dang!)
+We can count to ten!
+
+[Verse 3]
+Hello, Ducky! (Quack, quack!)
+Move with me! Ready, go!
+Six little hops! (Six!)
+Seven little claps! (Seven!)
+Eight little stomps! (Eight!)
+Nine little nods! (Nine!)
+Ten BIG jumps! (TEN!)
+Can you count to ten?
+(One, two, three, four, five!)
+(Six, seven, eight, nine, ten!)
+
+[Bridge - count along]
+Clap and count! Faster, go!
+ONE! TWO! THREE! FOUR! FIVE!
+SIX! SEVEN! EIGHT! NINE! TEN!
+Yay! We can count to ten!
+
+[Chorus - final, bigger]
+One, two, three, four, five!
+Clap, clap, clap, clap, clap!
+Six, seven, eight, nine, ten!
+Hop, hop, hop, hop, hop!
+Ding-dong-dang! (Ding-dong-dang!)
+We can count to ten!
+
+[Outro - instrumental, final chord]
+```
