@@ -95,8 +95,13 @@ def test_clean_speech_removes_tail_click(tmp: Path) -> None:
     w = speech_like(1.0, tail=0.4)  # a click right after the last word, inside the kept tail
     w[int(1.315 * SR):int(1.319 * SR)] = 0.6
     assert np.abs(audio.clean_speech(w, SR)[int(1.31 * SR):int(1.33 * SR)]).max() < 0.05
+    w = speech_like(1.0, tail=0.4)  # a longer (15 ms) click just after the voice
+    w[int(1.32 * SR):int(1.335 * SR)] = 0.6
+    assert np.abs(audio.clean_speech(w, SR)[int(1.31 * SR):int(1.345 * SR)]).max() < 0.05
     t = tone(1.0, 220)
     assert np.array_equal(audio.declick(t, SR), t), "steady voice must be untouched"
+    syll = np.concatenate([np.concatenate([tone(0.12, 300), np.zeros(int(0.06 * SR), np.float32)]) for _ in range(6)])
+    assert np.abs(audio.declick(syll, SR) - syll).max() < 1e-6, "short syllables are not clicks"
 
 
 def test_detect_beats(tmp: Path) -> None:

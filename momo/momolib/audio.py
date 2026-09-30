@@ -81,34 +81,48 @@ def voiced_bounds(x: np.ndarray, sr: int) -> tuple[int, int] | None:
     return int(starts[0] * hop), int(min(len(x), (starts[-1] + GATE_SUSTAIN) * hop))
 
 
-def declick(x: np.ndarray, sr: int) -> np.ndarray:
-    """Mute isolated clicks: a 5 ms window ≥ CLICK_RATIO × louder than everything 10–30 ms around it.
+CLICK_RATIO = 4.0      # a click is this much louder than everything 15–40 ms around it
+CLICK_MAX = 0.025      # … and lasts at most this long (s) — words are longer
 
-    Running speech always has energy next to a loud window, so only stray TTS clicks (typically right after the
-    last word) are hit. The muted window gets 2 ms ramps.
+
+def declick(x: np.ndarray, sr: int) -> np.ndarray:
+    """Mute isolated clicks: a burst ≤ CLICK_MAX long, ≥ CLICK_RATIO × louder than its 15–40 ms surroundings.
+
+    Running speech always has energy around a loud stretch, so only stray TTS clicks (typically right after the
+    last word) are hit. The muted stretch gets 2 ms ramps.
     """
     w = max(1, int(sr * 0.005))
     n = len(x) // w
-    if n < 12:
+    if n < 20:
         return x
     e = np.sqrt((x[:n * w].reshape(n, w).astype(np.float64) ** 2).mean(axis=1)) + 1e-9
     floor = e.max() * 0.03
-    y = x.copy()
-    ramp = max(1, int(sr * 0.002))
+    loud = np.zeros(n, dtype=bool)
     for i in range(n):
         if e[i] < floor:
             continue
-        nb = np.concatenate([e[max(0, i - 6):max(0, i - 1)], e[i + 2:i + 7]])
-        if len(nb) >= 6 and e[i] > CLICK_RATIO * nb.max():
-            a, b = max(0, i * w - w // 2), min(len(y), (i + 1) * w + w // 2)
+        ctx = np.concatenate([e[max(0, i - 8):max(0, i - 3)], e[i + 4:i + 9]])
+        loud[i] = len(ctx) >= 5 and e[i] > CLICK_RATIO * ctx.max()
+    y = x.copy()
+    ramp = max(1, int(sr * 0.002))
+    i = 0
+    while i < n:
+        if not loud[i]:
+            i += 1
+            continue
+        j = i
+        while j + 1 < n and loud[j + 1]:
+            j += 1
+        if (j - i + 1) * w <= CLICK_MAX * sr:
+            a, b = max(0, i * w - w // 2), min(len(y), (j + 1) * w + w // 2)
             g = np.zeros(b - a, dtype=np.float32)
-            g[:ramp] = np.linspace(1.0, 0.0, ramp, dtype=np.float32)[:b - a]
-            g[-ramp:] = np.linspace(0.0, 1.0, ramp, dtype=np.float32)[-(b - a):]
+            r = min(ramp, (b - a) // 2)
+            if r:
+                g[:r] = np.linspace(1.0, 0.0, r, dtype=np.float32)
+                g[-r:] = np.linspace(0.0, 1.0, r, dtype=np.float32)
             y[a:b] *= g
+        i = j + 1
     return y
-
-
-CLICK_RATIO = 4.0
 
 
 def clean_speech(x: np.ndarray, sr: int, trim: bool = False) -> np.ndarray:
