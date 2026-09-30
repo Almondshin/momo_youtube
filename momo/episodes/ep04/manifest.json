@@ -105,6 +105,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "c8153a5a-4669-434b-b63c-2b4647d3ddf4",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            4.232,
+            6.113
+          ],
+          "at": "2026-09-30T12:15Z"
+        }
       }
     },
     {
@@ -167,6 +178,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "010e7495-12d7-42b3-b3ad-8d153e094f6a",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            7.994,
+            9.874
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
@@ -261,6 +283,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "f3750bd2-b776-449f-85e4-8f135e3273db",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            15.517,
+            19.278
+          ],
+          "at": "2026-09-30T12:15Z"
+        }
       }
     },
     {
@@ -293,6 +326,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "70e93956-3ee7-4921-8666-345076f622a8",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            19.278,
+            23.04
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
@@ -386,13 +430,13 @@
         "image": {
           "status": "generated",
           "job_id": "56eb53e6-9068-42c4-8374-8b3af157cedc",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121110_56eb53e6-9068-42c4-8374-8b3af157cedc.png",
           "attempts": 1,
           "credits": 2.0,
           "history": [
             {
               "job_id": "56eb53e6-9068-42c4-8374-8b3af157cedc",
-              "url": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121110_56eb53e6-9068-42c4-8374-8b3af157cedc.png",
               "status": "generated",
               "reason": null,
               "at": "2026-09-30T12:11Z",
@@ -400,6 +444,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "91524146-9ded-4e7a-841c-ad6771f9be0f",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            30.563,
+            34.325
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
@@ -470,6 +525,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "05446597-7f2a-4542-a913-165193a14408",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            38.087,
+            41.848
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
@@ -579,6 +645,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "c7a053c6-69b3-45a0-9c7d-537f48214c55",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            56.895,
+            60.656
+          ],
+          "at": "2026-09-30T12:15Z"
+        }
       }
     },
     {
@@ -651,13 +728,13 @@
         "image": {
           "status": "generated",
           "job_id": "7ffa89af-a41b-46d3-946f-7f1b5cf3bffb",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121223_7ffa89af-a41b-46d3-946f-7f1b5cf3bffb.png",
           "attempts": 1,
           "credits": 2.0,
           "history": [
             {
               "job_id": "7ffa89af-a41b-46d3-946f-7f1b5cf3bffb",
-              "url": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121223_7ffa89af-a41b-46d3-946f-7f1b5cf3bffb.png",
               "status": "generated",
               "reason": null,
               "at": "2026-09-30T12:12Z",
@@ -698,6 +775,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "c9555fd9-e8ac-4c3e-8456-622c0d8a439b",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            71.941,
+            75.703
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
@@ -807,6 +895,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "355dbf8c-bc3e-42b9-a5c0-0c9417a97d7b",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            88.868,
+            90.749
+          ],
+          "at": "2026-09-30T12:15Z"
+        }
       }
     },
     {
@@ -839,6 +938,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "9042f79b-085b-4376-879a-5e3b072e5831",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            90.749,
+            92.63
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
@@ -897,13 +1007,13 @@
         "image": {
           "status": "generated",
           "job_id": "0e114e94-cfa0-404b-87c3-f1af4a796aed",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121317_0e114e94-cfa0-404b-87c3-f1af4a796aed.png",
           "attempts": 1,
           "credits": 2.0,
           "history": [
             {
               "job_id": "0e114e94-cfa0-404b-87c3-f1af4a796aed",
-              "url": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121317_0e114e94-cfa0-404b-87c3-f1af4a796aed.png",
               "status": "generated",
               "reason": null,
               "at": "2026-09-30T12:13Z",
@@ -1038,13 +1148,13 @@
         "image": {
           "status": "generated",
           "job_id": "302cf10c-8358-4b27-94ac-21ab5b8285e6",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121416_302cf10c-8358-4b27-94ac-21ab5b8285e6.png",
           "attempts": 1,
           "credits": 2.0,
           "history": [
             {
               "job_id": "302cf10c-8358-4b27-94ac-21ab5b8285e6",
-              "url": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_121416_302cf10c-8358-4b27-94ac-21ab5b8285e6.png",
               "status": "generated",
               "reason": null,
               "at": "2026-09-30T12:14Z",
@@ -1052,6 +1162,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "82955732-6dfa-40e9-a5bb-0f3f618ed6eb",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            102.034,
+            103.915
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
@@ -1145,6 +1266,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "cd0d49f4-0767-41ed-9948-5e350956c1b1",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            113.319,
+            117.081
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
@@ -1240,6 +1372,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "18ea8ffb-a8f0-4256-9e94-2c1a44b2c7a7",
+          "track_sha1": "a7f761cf94fea6b3228456c67d3fcf91c8aba075",
+          "window": [
+            128.366,
+            130.246
+          ],
+          "at": "2026-09-30T12:15Z"
         }
       }
     },
