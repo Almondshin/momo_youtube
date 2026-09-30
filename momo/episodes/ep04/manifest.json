@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep04",
-  "status": "producing",
+  "status": "assembled",
   "topic": {
     "en": "Count to Ten",
     "ko": ""
@@ -49,9 +49,9 @@
   },
   "credits": {
     "estimate": 207.6,
-    "spent": 183.0,
-    "generations": 56,
-    "regenerations": 4
+    "spent": 187.0,
+    "generations": 57,
+    "regenerations": 5
   },
   "notes": {
     "v_over_reason": "노래 형식(ep03 과 같음): 127.6 BPM, 한 줄 = 1마디 → 51컷. V 49개 중 21개는 이미 만든 클립 재사용(clip_from, 0 크레딧), 새로 만드는 클립 28개.",
@@ -535,7 +535,7 @@
       "type": "V",
       "bars": 2,
       "image_prompt": "exactly two fluffy white clouds side by side in a clear bright blue sky above the sunny green garden with a small white picket fence softly blurred behind, no other clouds, no sun",
-      "motion": "the two clouds stay far apart in place, one on the left and one on the right, each bobs gently up and down, they never move toward each other and never touch, staying exactly two separate clouds",
+      "motion": "tiny golden sparkles twinkle in the blue sky and the leaves on the bushes rustle softly, the two clouds stay completely still in their places with the same wide gap of blue sky between them the whole time, exactly two separate clouds",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
       "momo": false,
@@ -566,10 +566,10 @@
         },
         "clip": {
           "status": "generated",
-          "job_id": "47ee659d-cfb9-4d0b-8b31-5c9ce51eea8f",
+          "job_id": "532f9c3a-2444-44a9-80ae-e0829b46f98e",
           "url": null,
-          "attempts": 2,
-          "credits": 8.0,
+          "attempts": 3,
+          "credits": 12.0,
           "history": [
             {
               "job_id": "26724fa5-bfdd-4623-963b-ae7fa416d4a9",
@@ -582,10 +582,19 @@
             },
             {
               "job_id": "47ee659d-cfb9-4d0b-8b31-5c9ce51eea8f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_122934_47ee659d-cfb9-4d0b-8b31-5c9ce51eea8f.mp4",
+              "status": "rejected",
+              "reason": "clouds still drift toward the center and touch after 2.6 s (the count happens there)",
+              "at": "2026-09-30T12:29Z",
+              "credits": 4.0,
+              "start_image": "ba62ed8d-b566-45a5-9d71-b8e0c18f943a"
+            },
+            {
+              "job_id": "532f9c3a-2444-44a9-80ae-e0829b46f98e",
               "url": null,
               "status": "generated",
               "reason": null,
-              "at": "2026-09-30T12:29Z",
+              "at": "2026-09-30T12:33Z",
               "credits": 4.0,
               "start_image": "ba62ed8d-b566-45a5-9d71-b8e0c18f943a"
             }
