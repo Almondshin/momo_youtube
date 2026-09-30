@@ -432,6 +432,18 @@ Lessons from ep03 (apply from ep04):
   publish; refs shorter than 3 s are padded (wan2_7 failed twice on a 1.93 s reference).
 - Failed generations are not charged: reconcile `credits.spent` with `balance` at the end.
 
+Lessons from ep04 (apply from ep05):
+- Suno sang a count-in instead of the 2-bar intro again — put `[Instrumental intro - 4 bars, no vocals]` before the
+  first sung line and check the take's first vocal onset before cutting.
+- Counting shots (seedance): "the N objects drift / sway" pulls separate objects together (two clouds merged, 2 of 3
+  tries). Keep the objects still and give the motion to something else ("sparkles twinkle, the leaves rustle, the
+  clouds stay completely still with the same gap"). Check counts on frames across the whole cut, not only the start.
+- Object close-ups: say what the object looks like ("pink daisies with yellow centers and green stems in the grass
+  lawn with visible grass blades") — bare "pink flowers on plain grass" gave balloon shapes on a flat green floor.
+- Lip-sync close-ups: a paw raised near the head can hide an ear (c20) — keep the paw "beside the cheek below the
+  ear" and add "both long ears fully visible". Mid-air jump stills lift an ear — use "knees bent, ready to jump".
+- A declined Higgsfield preset suggestion submits nothing; resend the same item with `declined_preset_id`.
+
 ---
 
 ## 6. 조립 (6단계)
