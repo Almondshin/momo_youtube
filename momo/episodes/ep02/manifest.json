@@ -73,9 +73,9 @@
   },
   "credits": {
     "estimate": 238.8,
-    "spent": 501.5,
-    "generations": 147,
-    "regenerations": 15,
+    "spent": 512.0,
+    "generations": 148,
+    "regenerations": 16,
     "ledger": "ep02 예산: 모모 시트 3회 6 + 더키 시트 2 + c02·c03·c04 이미지 6 = 14. 별도(다음 편용 조연 시트): 토토 2 + 써니 2 + 잉코 2 = 6. 잔액 확인 1272 → 1252 (2026-09-29T07:50Z)",
     "cap": 525
   },
@@ -956,7 +956,7 @@
         "en": 9,
         "ko": 7
       },
-      "motion": "holds up the toothpaste tube and talks to the viewer, the mouth moving in sync with the voice, waits with a curious smile during the pause, then cheers with a small happy wiggle, both long floppy ears stay hanging down beside the cheeks",
+      "motion": "holds up the toothpaste tube and talks to the viewer, the mouth moving in sync with the voice, waits with a curious smile during the pause, then smiles happily and nods, both long floppy ears stay hanging down beside the cheeks the whole time",
       "gen": {
         "image": {
           "status": "approved",
@@ -977,7 +977,7 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "aca4f249-6f5b-4dd5-8261-2bf9dd779486",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_aca4f249-6f5b-4dd5-8261-2bf9dd779486.mp4",
           "attempts": 1,
@@ -986,7 +986,7 @@
             {
               "job_id": "aca4f249-6f5b-4dd5-8261-2bf9dd779486",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_aca4f249-6f5b-4dd5-8261-2bf9dd779486.mp4",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T00:29Z",
               "credits": 13.5,
@@ -997,17 +997,26 @@
         },
         "clip_ko": {
           "status": "generated",
-          "job_id": "0883dcbd-73c2-4589-950d-3474f3ee4a37",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_0883dcbd-73c2-4589-950d-3474f3ee4a37.mp4",
-          "attempts": 1,
-          "credits": 10.5,
+          "job_id": "53c42621-ac9e-48bc-b74c-f8cefbc2d7a0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003510_53c42621-ac9e-48bc-b74c-f8cefbc2d7a0.mp4",
+          "attempts": 2,
+          "credits": 21.0,
           "history": [
             {
               "job_id": "0883dcbd-73c2-4589-950d-3474f3ee4a37",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_0883dcbd-73c2-4589-950d-3474f3ee4a37.mp4",
+              "status": "rejected",
+              "reason": "ears flare out sideways during the final cheer (~1.5s)",
+              "at": "2026-09-30T00:29Z",
+              "credits": 10.5,
+              "start_image": "785f034b-f4dc-4cf6-bede-b60a917d745d"
+            },
+            {
+              "job_id": "53c42621-ac9e-48bc-b74c-f8cefbc2d7a0",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003510_53c42621-ac9e-48bc-b74c-f8cefbc2d7a0.mp4",
               "status": "generated",
               "reason": null,
-              "at": "2026-09-30T00:29Z",
+              "at": "2026-09-30T00:35Z",
               "credits": 10.5,
               "start_image": "785f034b-f4dc-4cf6-bede-b60a917d745d"
             }
@@ -1434,7 +1443,7 @@
           ]
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99.mp4",
           "attempts": 1,
@@ -1443,7 +1452,7 @@
             {
               "job_id": "274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_274ef7a0-4ce0-4f79-a6f7-3ba0fdc0cc99.mp4",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T00:29Z",
               "credits": 10.5,
@@ -1453,7 +1462,7 @@
           "reason": null
         },
         "clip_ko": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "c674e343-29d2-4445-967c-725500f0b0f9",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_c674e343-29d2-4445-967c-725500f0b0f9.mp4",
           "attempts": 1,
@@ -1462,7 +1471,7 @@
             {
               "job_id": "c674e343-29d2-4445-967c-725500f0b0f9",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_002914_c674e343-29d2-4445-967c-725500f0b0f9.mp4",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T00:29Z",
               "credits": 12.0,
@@ -2167,7 +2176,7 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "341022ff-bc99-4c5b-967f-40a6ccc9d0a3",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003039_341022ff-bc99-4c5b-967f-40a6ccc9d0a3.mp4",
           "attempts": 1,
@@ -2176,7 +2185,7 @@
             {
               "job_id": "341022ff-bc99-4c5b-967f-40a6ccc9d0a3",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003039_341022ff-bc99-4c5b-967f-40a6ccc9d0a3.mp4",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T00:30Z",
               "credits": 10.5,
@@ -2186,7 +2195,7 @@
           "reason": null
         },
         "clip_ko": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "ec3f52ac-c999-4915-9904-ddeeca6f8cea",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003040_ec3f52ac-c999-4915-9904-ddeeca6f8cea.mp4",
           "attempts": 1,
@@ -2195,7 +2204,7 @@
             {
               "job_id": "ec3f52ac-c999-4915-9904-ddeeca6f8cea",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_003040_ec3f52ac-c999-4915-9904-ddeeca6f8cea.mp4",
-              "status": "generated",
+              "status": "approved",
               "reason": null,
               "at": "2026-09-30T00:30Z",
               "credits": 12.0,
