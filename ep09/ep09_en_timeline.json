@@ -1,0 +1,1271 @@
+{
+  "ep": "ep09",
+  "lang": "en",
+  "fps": 30,
+  "total": 92.5333,
+  "total_frames": 2776,
+  "built_at": "2026-10-01T06:52:38+00:00",
+  "cuts": [
+    {
+      "id": "c01",
+      "type": "L",
+      "scene": 1,
+      "start": 0.0,
+      "dur": 2.8333,
+      "xf_in": 0.0,
+      "nar_offset": 0.3,
+      "nar_len": 2.29,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "library/clips/intro_wave.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Hi friends! It's Momo!",
+          "at": 0.3,
+          "sung": 1.99,
+          "tempo": 1.0
+        },
+        {
+          "text": "Beep, beep! Honk, honk!",
+          "at": 2.945,
+          "sung": 1.821,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c02",
+      "type": "V",
+      "scene": 1,
+      "start": 2.8333,
+      "dur": 4.0,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c02_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "clip",
+      "lyrics": [
+        {
+          "text": "Beep, beep! Honk, honk!",
+          "at": 0.112,
+          "sung": 1.821,
+          "tempo": 1.0
+        },
+        {
+          "text": "Choo, choo! Wee-woo!",
+          "at": 2.112,
+          "sung": 1.477,
+          "tempo": 1.0
+        },
+        {
+          "text": "Toot, toot! Zoom, zoom!",
+          "at": 4.088,
+          "sung": 1.881,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c03",
+      "type": "V",
+      "scene": 1,
+      "start": 6.8333,
+      "dur": 4.2333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c03_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Choo, choo! Wee-woo!",
+          "at": -1.888,
+          "sung": 1.477,
+          "tempo": 1.0
+        },
+        {
+          "text": "Toot, toot! Zoom, zoom!",
+          "at": 0.088,
+          "sung": 1.881,
+          "tempo": 1.0
+        },
+        {
+          "text": "Here they come! Here they come!",
+          "at": 1.969,
+          "sung": 2.25,
+          "tempo": 1.0
+        },
+        {
+          "text": "Wave hello! Hello!",
+          "at": 4.288,
+          "sung": 2.265,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c04",
+      "type": "V",
+      "scene": 1,
+      "start": 11.0667,
+      "dur": 5.8,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c04_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Here they come! Here they come!",
+          "at": -2.265,
+          "sung": 2.25,
+          "tempo": 1.0
+        },
+        {
+          "text": "Wave hello! Hello!",
+          "at": 0.054,
+          "sung": 2.265,
+          "tempo": 1.0
+        },
+        {
+          "text": "Let's go for a ride!",
+          "at": 2.673,
+          "sung": 1.612,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the car say?",
+          "at": 5.9,
+          "sung": 1.726,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c05",
+      "type": "V",
+      "scene": 2,
+      "start": 16.8667,
+      "dur": 2.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c05_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the car say?",
+          "at": 0.1,
+          "sung": 1.726,
+          "tempo": 1.0
+        },
+        {
+          "text": "Beep, beep! Beep, beep! Hello, car!",
+          "at": 2.16,
+          "sung": 1.965,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0001
+    },
+    {
+      "id": "c06",
+      "type": "V",
+      "scene": 2,
+      "start": 18.9333,
+      "dur": 2.0333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c06.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the car say?",
+          "at": -1.966,
+          "sung": 1.726,
+          "tempo": 1.0
+        },
+        {
+          "text": "Beep, beep! Beep, beep! Hello, car!",
+          "at": 0.094,
+          "sung": 1.965,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the bus say?",
+          "at": 2.059,
+          "sung": 1.647,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0,
+      "card": {
+        "word": "CAR",
+        "text": "beep, beep",
+        "pos": "right",
+        "at": 0.3
+      }
+    },
+    {
+      "id": "c07",
+      "type": "V",
+      "scene": 2,
+      "start": 20.9667,
+      "dur": 1.8333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c07_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Beep, beep! Beep, beep! Hello, car!",
+          "at": -1.94,
+          "sung": 1.965,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the bus say?",
+          "at": 0.025,
+          "sung": 1.647,
+          "tempo": 1.0
+        },
+        {
+          "text": "Honk, honk! Honk, honk! Hello, bus!",
+          "at": 1.946,
+          "sung": 1.966,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0001
+    },
+    {
+      "id": "c08",
+      "type": "V",
+      "scene": 2,
+      "start": 22.8,
+      "dur": 3.6333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c08.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the bus say?",
+          "at": -1.808,
+          "sung": 1.647,
+          "tempo": 1.0
+        },
+        {
+          "text": "Honk, honk! Honk, honk! Hello, bus!",
+          "at": 0.113,
+          "sung": 1.966,
+          "tempo": 1.0
+        },
+        {
+          "text": "Beep, beep! Honk, honk!",
+          "at": 3.778,
+          "sung": 1.781,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0,
+      "card": {
+        "word": "BUS",
+        "text": "honk, honk",
+        "pos": "left",
+        "at": 0.3
+      }
+    },
+    {
+      "id": "c09",
+      "type": "V",
+      "scene": 2,
+      "start": 26.4333,
+      "dur": 4.0,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c02_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "clip",
+      "lyrics": [
+        {
+          "text": "Beep, beep! Honk, honk!",
+          "at": 0.145,
+          "sung": 1.781,
+          "tempo": 1.0
+        },
+        {
+          "text": "Choo, choo! Wee-woo!",
+          "at": 2.106,
+          "sung": 1.551,
+          "tempo": 1.0
+        },
+        {
+          "text": "Toot, toot! Zoom, zoom!",
+          "at": 4.051,
+          "sung": 1.921,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c10",
+      "type": "V",
+      "scene": 2,
+      "start": 30.4333,
+      "dur": 4.2333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c03_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Choo, choo! Wee-woo!",
+          "at": -1.894,
+          "sung": 1.551,
+          "tempo": 1.0
+        },
+        {
+          "text": "Toot, toot! Zoom, zoom!",
+          "at": 0.051,
+          "sung": 1.921,
+          "tempo": 1.0
+        },
+        {
+          "text": "Here they come! Here they come!",
+          "at": 1.972,
+          "sung": 2.26,
+          "tempo": 1.0
+        },
+        {
+          "text": "Wave hello! Hello!",
+          "at": 4.297,
+          "sung": 1.776,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c11",
+      "type": "V",
+      "scene": 2,
+      "start": 34.6667,
+      "dur": 5.7667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c04_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Here they come! Here they come!",
+          "at": -2.262,
+          "sung": 2.26,
+          "tempo": 1.0
+        },
+        {
+          "text": "Wave hello! Hello!",
+          "at": 0.063,
+          "sung": 1.776,
+          "tempo": 1.0
+        },
+        {
+          "text": "Let's go for a ride!",
+          "at": 2.679,
+          "sung": 1.599,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the train say?",
+          "at": 5.873,
+          "sung": 1.756,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c12",
+      "type": "V",
+      "scene": 3,
+      "start": 40.4333,
+      "dur": 2.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c12_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the train say?",
+          "at": 0.106,
+          "sung": 1.756,
+          "tempo": 1.0
+        },
+        {
+          "text": "Choo, choo! Choo, choo! Hello, train!",
+          "at": 2.156,
+          "sung": 2.229,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0002
+    },
+    {
+      "id": "c13",
+      "type": "V",
+      "scene": 3,
+      "start": 42.5,
+      "dur": 4.6667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c13.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the train say?",
+          "at": -1.96,
+          "sung": 1.756,
+          "tempo": 1.0
+        },
+        {
+          "text": "Choo, choo! Choo, choo! Hello, train!",
+          "at": 0.09,
+          "sung": 2.229,
+          "tempo": 1.0
+        },
+        {
+          "text": "Who is on the train? Ducky! Quack, quack!",
+          "at": 2.349,
+          "sung": 2.186,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the fire truck say?",
+          "at": 4.775,
+          "sung": 1.871,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0,
+      "card": {
+        "word": "TRAIN",
+        "text": "choo, choo",
+        "pos": "right",
+        "at": 0.3
+      }
+    },
+    {
+      "id": "c14",
+      "type": "V",
+      "scene": 3,
+      "start": 47.1667,
+      "dur": 2.0,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c14_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Who is on the train? Ducky! Quack, quack!",
+          "at": -2.318,
+          "sung": 2.186,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the fire truck say?",
+          "at": 0.108,
+          "sung": 1.871,
+          "tempo": 1.0
+        },
+        {
+          "text": "Wee-woo! Wee-woo! Hello, fire truck!",
+          "at": 2.078,
+          "sung": 3.208,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0002
+    },
+    {
+      "id": "c15",
+      "type": "V",
+      "scene": 3,
+      "start": 49.1667,
+      "dur": 5.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c15.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the fire truck say?",
+          "at": -1.892,
+          "sung": 1.871,
+          "tempo": 1.0
+        },
+        {
+          "text": "Wee-woo! Wee-woo! Hello, fire truck!",
+          "at": 0.078,
+          "sung": 3.208,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the boat say?",
+          "at": 5.165,
+          "sung": 1.731,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0,
+      "card": {
+        "word": "FIRE TRUCK",
+        "text": "wee-woo, wee-woo",
+        "pos": "left",
+        "at": 0.3
+      }
+    },
+    {
+      "id": "c16",
+      "type": "V",
+      "scene": 4,
+      "start": 54.2333,
+      "dur": 1.8333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c16_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the boat say?",
+          "at": 0.099,
+          "sung": 1.731,
+          "tempo": 1.0
+        },
+        {
+          "text": "Toot, toot! Toot, toot! Hello, boat!",
+          "at": 1.915,
+          "sung": 1.691,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0002
+    },
+    {
+      "id": "c17",
+      "type": "V",
+      "scene": 4,
+      "start": 56.0667,
+      "dur": 1.9,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c17.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the boat say?",
+          "at": -1.735,
+          "sung": 1.731,
+          "tempo": 1.0
+        },
+        {
+          "text": "Toot, toot! Toot, toot! Hello, boat!",
+          "at": 0.081,
+          "sung": 1.691,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the airplane say?",
+          "at": 2.007,
+          "sung": 1.905,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0,
+      "card": {
+        "word": "BOAT",
+        "text": "toot, toot",
+        "pos": "right",
+        "at": 0.3
+      }
+    },
+    {
+      "id": "c18",
+      "type": "V",
+      "scene": 4,
+      "start": 57.9667,
+      "dur": 2.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c18_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Toot, toot! Toot, toot! Hello, boat!",
+          "at": -1.819,
+          "sung": 1.691,
+          "tempo": 1.0
+        },
+        {
+          "text": "What does the airplane say?",
+          "at": 0.107,
+          "sung": 1.905,
+          "tempo": 1.0
+        },
+        {
+          "text": "Zoom, zoom! Zoom, zoom! Hello, airplane!",
+          "at": 2.135,
+          "sung": 2.452,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0002
+    },
+    {
+      "id": "c19",
+      "type": "V",
+      "scene": 4,
+      "start": 60.0333,
+      "dur": 2.8667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c19.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "What does the airplane say?",
+          "at": -1.96,
+          "sung": 1.905,
+          "tempo": 1.0
+        },
+        {
+          "text": "Zoom, zoom! Zoom, zoom! Hello, airplane!",
+          "at": 0.069,
+          "sung": 2.452,
+          "tempo": 1.0
+        },
+        {
+          "text": "Car says beep! Bus says honk!",
+          "at": 2.965,
+          "sung": 1.746,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0,
+      "card": {
+        "word": "AIRPLANE",
+        "text": "zoom, zoom",
+        "pos": "left",
+        "at": 0.3
+      }
+    },
+    {
+      "id": "c20",
+      "type": "V",
+      "scene": 4,
+      "start": 62.9,
+      "dur": 1.0333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c06.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Zoom, zoom! Zoom, zoom! Hello, airplane!",
+          "at": -2.798,
+          "sung": 2.452,
+          "tempo": 1.0
+        },
+        {
+          "text": "Car says beep! Bus says honk!",
+          "at": 0.098,
+          "sung": 1.746,
+          "tempo": 1.0
+        }
+      ],
+      "clip_offset": 1.0,
+      "hold0": 0.0,
+      "card": {
+        "word": "CAR",
+        "text": "car says beep",
+        "pos": "right",
+        "at": 0.1
+      }
+    },
+    {
+      "id": "c21",
+      "type": "V",
+      "scene": 4,
+      "start": 63.9333,
+      "dur": 0.9,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.4,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c08.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Car says beep! Bus says honk!",
+          "at": -0.935,
+          "sung": 1.746,
+          "tempo": 1.0
+        },
+        {
+          "text": "Train says choo! Fire truck says wee-woo!",
+          "at": 0.995,
+          "sung": 1.891,
+          "tempo": 1.0
+        }
+      ],
+      "clip_offset": 1.0,
+      "hold0": 0.0,
+      "card": {
+        "word": "BUS",
+        "text": "bus says honk",
+        "pos": "left",
+        "at": 0.1
+      }
+    },
+    {
+      "id": "c22",
+      "type": "V",
+      "scene": 4,
+      "start": 64.8333,
+      "dur": 0.8667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.367,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c13.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Car says beep! Bus says honk!",
+          "at": -1.835,
+          "sung": 1.746,
+          "tempo": 1.0
+        },
+        {
+          "text": "Train says choo! Fire truck says wee-woo!",
+          "at": 0.095,
+          "sung": 1.891,
+          "tempo": 1.0
+        }
+      ],
+      "clip_offset": 0.3,
+      "hold0": 0.0,
+      "card": {
+        "word": "TRAIN",
+        "text": "train says choo",
+        "pos": "right",
+        "at": 0.1
+      }
+    },
+    {
+      "id": "c23",
+      "type": "V",
+      "scene": 4,
+      "start": 65.7,
+      "dur": 1.1667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c15.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Train says choo! Fire truck says wee-woo!",
+          "at": -0.772,
+          "sung": 1.891,
+          "tempo": 1.0
+        },
+        {
+          "text": "Boat says toot! Airplane says zoom!",
+          "at": 1.274,
+          "sung": 2.0,
+          "tempo": 1.0
+        }
+      ],
+      "clip_offset": 1.0,
+      "hold0": 0.0,
+      "card": {
+        "word": "FIRE TRUCK",
+        "text": "fire truck says wee-woo",
+        "pos": "left",
+        "at": 0.1
+      }
+    },
+    {
+      "id": "c24",
+      "type": "V",
+      "scene": 4,
+      "start": 66.8667,
+      "dur": 0.9667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.467,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c17.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Train says choo! Fire truck says wee-woo!",
+          "at": -1.939,
+          "sung": 1.891,
+          "tempo": 1.0
+        },
+        {
+          "text": "Boat says toot! Airplane says zoom!",
+          "at": 0.107,
+          "sung": 2.0,
+          "tempo": 1.0
+        }
+      ],
+      "clip_offset": 1.0,
+      "hold0": 0.0,
+      "card": {
+        "word": "BOAT",
+        "text": "boat says toot",
+        "pos": "right",
+        "at": 0.1
+      }
+    },
+    {
+      "id": "c25",
+      "type": "V",
+      "scene": 4,
+      "start": 67.8333,
+      "dur": 1.2333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c19.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Boat says toot! Airplane says zoom!",
+          "at": -0.86,
+          "sung": 2.0,
+          "tempo": 1.0
+        },
+        {
+          "text": "And Ducky says quack, quack!",
+          "at": 1.345,
+          "sung": 1.421,
+          "tempo": 1.0
+        }
+      ],
+      "clip_offset": 1.0,
+      "hold0": 0.0,
+      "card": {
+        "word": "AIRPLANE",
+        "text": "airplane says zoom",
+        "pos": "left",
+        "at": 0.1
+      }
+    },
+    {
+      "id": "c26",
+      "type": "V",
+      "scene": 4,
+      "start": 69.0667,
+      "dur": 4.6,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c13.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Boat says toot! Airplane says zoom!",
+          "at": -2.093,
+          "sung": 2.0,
+          "tempo": 1.0
+        },
+        {
+          "text": "And Ducky says quack, quack!",
+          "at": 0.112,
+          "sung": 1.421,
+          "tempo": 1.0
+        },
+        {
+          "text": "Beep, beep! Honk, honk!",
+          "at": 4.741,
+          "sung": 1.766,
+          "tempo": 1.0
+        }
+      ],
+      "clip_offset": 3.38,
+      "hold0": 0.0
+    },
+    {
+      "id": "c27",
+      "type": "V",
+      "scene": 5,
+      "start": 73.6667,
+      "dur": 3.9667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c02_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Beep, beep! Honk, honk!",
+          "at": 0.141,
+          "sung": 1.766,
+          "tempo": 1.0
+        },
+        {
+          "text": "Choo, choo! Wee-woo!",
+          "at": 2.077,
+          "sung": 1.471,
+          "tempo": 1.0
+        },
+        {
+          "text": "Toot, toot! Zoom, zoom!",
+          "at": 4.047,
+          "sung": 1.901,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c28",
+      "type": "V",
+      "scene": 5,
+      "start": 77.6333,
+      "dur": 4.2333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c03_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Choo, choo! Wee-woo!",
+          "at": -1.889,
+          "sung": 1.471,
+          "tempo": 1.0
+        },
+        {
+          "text": "Toot, toot! Zoom, zoom!",
+          "at": 0.081,
+          "sung": 1.901,
+          "tempo": 1.0
+        },
+        {
+          "text": "Here they come! Here they come!",
+          "at": 2.026,
+          "sung": 2.155,
+          "tempo": 1.0
+        },
+        {
+          "text": "Wave hello! Hello!",
+          "at": 4.316,
+          "sung": 2.239,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c29",
+      "type": "V",
+      "scene": 5,
+      "start": 81.8667,
+      "dur": 4.5667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep09/clips/c04_en.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "Here they come! Here they come!",
+          "at": -2.207,
+          "sung": 2.155,
+          "tempo": 1.0
+        },
+        {
+          "text": "Wave hello! Hello!",
+          "at": 0.083,
+          "sung": 2.239,
+          "tempo": 1.0
+        },
+        {
+          "text": "Let's go for a ride!",
+          "at": 2.697,
+          "sung": 1.531,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c30",
+      "type": "L",
+      "scene": 5,
+      "start": 86.4333,
+      "dur": 6.1,
+      "xf_in": 0.0,
+      "nar_offset": 0.3,
+      "nar_len": 3.14,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "library/clips/outro_bye.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "hold x1.21 push 4.3%",
+      "lyrics": [
+        {
+          "text": "Bye-bye, friends! See you next time!",
+          "at": 0.3,
+          "sung": 2.84,
+          "tempo": 1.0
+        },
+        {
+          "text": "Let's go for a ride!",
+          "at": -1.869,
+          "sung": 1.531,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    }
+  ],
+  "warnings": [
+    "validate: 총 컷 30개 — 목표 22~28",
+    "validate: V 컷 28개 — 목표 12~15 (V 가 15개를 넘으면 manifest.notes.v_over_reason 에 이유를 적고 승인받을 것)",
+    "validate: S 컷 0개 — 목표 6~8",
+    "validate: L 컷 2개 — 목표 3~4",
+    "validate: c06: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c08: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c13: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c15: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c17: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c19: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c20: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c21: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c22: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c23: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c24: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c25: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인",
+    "validate: c26: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인"
+  ],
+  "allow_missing": false,
+  "audio": {
+    "speech_blocks": 2,
+    "bgm": null,
+    "sfx": 0,
+    "track": {
+      "file": "song.flac",
+      "start": 0.0,
+      "short_by": 0.0
+    },
+    "loudnorm": {
+      "input_i": -15.65,
+      "input_tp": 1.81,
+      "output_i": -14.01,
+      "output_tp": -1.5,
+      "normalization_type": "dynamic"
+    }
+  },
+  "output": {
+    "video_duration": 92.533333,
+    "audio_duration": 92.533,
+    "frames": 2776
+  }
+}
