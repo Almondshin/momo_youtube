@@ -209,9 +209,24 @@ def build_narration(plans, total: float, cfg: dict) -> tuple[np.ndarray, list[tu
             if f is not None:
                 x = clean_speech(decode(f, sr, 1)[:, 0], sr) * gain
                 add_at(buf, x, int(round(t * sr)))
-                spans.append((t, t + len(x) / sr))
+                v = voiced_bounds(x, sr)  # duck for the voice, not the file's silent tail (ep08: −7 dB first line)
+                if v:
+                    spans.append((t + v[0] / sr, t + v[1] / sr))
             t += d
     return buf, spans
+
+
+def clear_sung(spans: list[tuple[float, float]], sung: list[float], release: float) -> list[tuple[float, float]]:
+    """Duck spans over a finished song, ended early enough that the song is back to full level on the next sung
+    word after each spoken line (a greeting right before the first line, ep08/ep09). Speech over singing keeps its
+    span."""
+    out = []
+    for s, e in spans:
+        nxt = min((w for w in sung if w >= e), default=None)
+        if nxt is not None and e + release > nxt and not any(s <= w < e for w in sung):
+            e = max(s, nxt - release)
+        out.append((s, e))
+    return out
 
 
 # ---------------------------------------------------------------- BGM
@@ -562,6 +577,10 @@ def build_mix(paths: Paths, cfg: dict, manifest: dict, plans, total: float, out_
             info["warnings"].append("노래 파일 없음 → 인트로·아웃트로 음성만 (--allow-missing)")
         else:
             bed, tinfo = song_track_audio(tfile, song, n, sr)
+            t0 = float(song["track"].get("start") or 0.0)
+            sung = sorted(float(w[1]) - t0 for ln in song.get("lyrics") or [] for w in ln.get("words") or []
+                          if len(w) >= 3 and isinstance(w[1], (int, float)))
+            spans = clear_sung(spans, sung, float(cfg["audio"]["duck_release"]))
             mix += bed * duck_gain(spans, n, sr, cfg, float(song.get("track_gain_db", 0.0)),
                                    float(song.get("duck_db", -6.0)))[:, None]
             info["track"] = tinfo

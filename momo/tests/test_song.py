@@ -658,6 +658,76 @@ def test_song_track_end_fade(tmp: Path) -> None:
     assert out[-int(0.05 * SR), 0] == 0.5 and out[-1, 0] == 0
 
 
+def test_duck_voiced_span(tmp: Path) -> None:
+    """A spoken line ducks the bed for its voice only (not the file's silent tail), and over a finished song the duck
+    has released by the next sung word (ep08: the greeting ducked the first sung line by 7 dB)."""
+    from types import SimpleNamespace
+    cfg = json.loads((MOMO / "config.json").read_text())
+    f = tmp / "hi.wav"
+    audio.write_wav(f, speech_like(1.5, lead=0.1, tail=2.0), SR)   # voice 0.1–1.6 s, file 3.6 s
+    item = SimpleNamespace(kind="speech", seconds=0.0)
+    p = SimpleNamespace(block_starts=None, start=0.3, nar_offset=0.0, items=[item], speech_files=[f], speech_durs=[3.6])
+    _, spans = audio.build_narration([p], 6.0, cfg)
+    (s, e), = spans
+    assert abs(s - 0.4) < 0.05 and abs(e - 1.9) < 0.06, spans
+    rel = float(cfg["audio"]["duck_release"])
+    (s, e), = audio.clear_sung([(0.4, 1.9)], [2.0, 2.5], rel)                # back to full level on "2.0"
+    assert s == 0.4 and abs(e - (2.0 - rel)) < 1e-9, (s, e)
+    assert audio.clear_sung([(0.4, 1.9)], [3.0], rel) == [(0.4, 1.9)]           # released before the song sings
+    assert audio.clear_sung([(0.4, 1.9)], [1.0, 2.0], rel) == [(0.4, 1.9)]      # speech over singing keeps its duck
+
+
+def test_tighten(tmp: Path) -> None:
+    """song_track.py tighten: a whole instrumental bar inside a mid-song vocal gap is cut out of every song file and
+    each song-time field moves with it; a bar with voice in the stem stays; --align input is mapped too."""
+    root = make_track_root(tmp)
+    ep = root / "episodes/ep91"
+    m = json.loads((ep / "manifest.json").read_text())
+    base = {"image_prompt": "[Momo] in a kitchen", "motion": "sings to the viewer"}
+    # gap "Carrot!" 5.3 → "Yellow" 9.0 = 3.7 s, bar 2 s on 0.5 + 2k → bar 6.5–8.5 fits with 0.3 s kept each side
+    m["cuts"] = [{"id": "c01", "scene": 1, "type": "V", "bars": 2, **base},
+                 {"id": "c02", "scene": 2, "type": "V", "bars": 2, "cut_at": 4.5, "lipsync": True, **base,
+                  "nar_ref": {"en": {"media_id": "M1", "track_sha1": "abc123", "window": [4.5, 8.9]}}},
+                 {"id": "c03", "scene": 3, "type": "V", "bars": 2, "cut_at": 8.9, **base}]
+    (ep / "manifest.json").write_text(json.dumps(m))
+    st = [sys.executable, str(MOMO / "song_track.py"), "--root", str(root), "tighten", "--ep", "ep91"]
+    r = subprocess.run(st + ["--dry-run"], capture_output=True, text=True)
+    assert r.returncode == 0 and "6.50–8.50" in r.stdout and "dry-run" in r.stdout, r.stdout + r.stderr
+    assert json.loads((ep / "manifest.json").read_text()) == m
+    voc = audio.decode(ep / "audio/song_vocals.wav", SR, 1)[:, 0]
+    voc[int(7.0 * SR):int(7.3 * SR)] += tone(0.3, 330)          # an ad-lib the lyrics miss → keep the bar
+    audio.write_wav(ep / "audio/song_vocals.wav", voc, SR)
+    r = subprocess.run(st + ["--dry-run"], capture_output=True, text=True)
+    assert r.returncode == 0 and "보컬 스템" in r.stdout and "자를 마디 없음" in r.stdout, r.stdout + r.stderr
+    voc[int(7.0 * SR):int(7.3 * SR)] = 0
+    audio.write_wav(ep / "audio/song_vocals.wav", voc, SR)
+    r = subprocess.run(st, capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+    m2 = json.loads((ep / "manifest.json").read_text())
+    tr, c = m2["song"]["track"], m2["cuts"]
+    assert abs(len(audio.decode(ep / "audio/song.wav", SR, 2)) / SR - 12.0) < 0.01   # the mix lost the same 2 s
+    assert abs(tr["duration"] - 12.0) < 0.01 and abs(tr["end"] - 11.0) < 1e-6, tr
+    assert c[1]["bars"] == 1 and c[2]["cut_at"] == 6.9 and c[0]["bars"] == 2, c
+    ref = c[1]["nar_ref"]["en"]
+    assert ref["window"] == [4.5, 6.9] and ref["track_sha1"] == tr["sha1"] != "abc123", ref
+    words = [w[1] for ln in m2["song"]["lyrics"] for w in ln["words"]]
+    assert words == [0.9, 1.3, 1.8, 4.6, 7.0, 7.6], words
+    assert tr["edits"] == [{"from_sha1": "abc123", "removed": [[6.5, 8.5]]}] and tr["url"] is None
+    assert m2["song"]["history"][-1]["track"]["sha1"] == "abc123" and m2["song"]["vocals"]["of"] == tr["sha1"]
+    assert track_spans(m2["song"], c)[-1] == (6.9, 11.0)
+    x = audio.decode(ep / "audio/song_vocals.wav", SR, 1)[:, 0]   # "Yellow" now sings at 7.0 s
+    assert np.abs(x[int(7.1 * SR):int(7.4 * SR)]).max() > 0.1 and np.abs(x[int(6.0 * SR):int(6.8 * SR)]).max() < 0.01
+    al = tmp / "align.json"                                      # aligner output on the uncut song → mapped
+    al.write_text(json.dumps({"lines": [{"text": ln["text"], "words": ln["words"]} for ln in TRACK_SONG["lyrics"]]}))
+    lyr = [sys.executable, str(MOMO / "song_track.py"), "--root", str(root), "lyrics", "--ep", "ep91"]
+    r = subprocess.run(lyr + ["--align", str(al), "--no-refine"], capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+    words = [w[1] for ln in json.loads((ep / "manifest.json").read_text())["song"]["lyrics"] for w in ln["words"]]
+    assert words == [0.9, 1.3, 1.8, 4.6, 7.0, 7.6], words
+    r = subprocess.run(st + ["--dry-run"], capture_output=True, text=True)
+    assert r.returncode == 0 and "자를 마디 없음" in r.stdout, r.stdout
+
+
 def make_track_root(tmp: Path) -> Path:
     root = tmp / "root"
     ep = root / "episodes" / "ep91"

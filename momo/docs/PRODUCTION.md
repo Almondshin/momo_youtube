@@ -453,12 +453,20 @@ forbid bots). Steps (all local, 0 Higgsfield credits until 6):
 2. **[승인]** The user picks a take and puts its WAV + stems (Vocals, Instrumental) in
    `~/ml/<ep>/suno/<take>/`. Check it: `tools/align_lyrics.py` (sidecar venv) must hear ≥95 % of the lyric words
    and report no "sung but not in lyrics" runs — otherwise fix `lyrics.md` to what is sung and re-align.
+   No video with nobody singing (user, 2026-10-01: "중간에 영상만 있는 텀이 존재한다"): a take with a mid-song
+   instrumental break longer than ~2 bars is not usable — ask for another take. Shorter Suno turnarounds
+   between sections are cut out in step 3 (`tighten`).
 3. `song_track.py import --ep <ep> --mix … --vocals … --inst … --note "Suno …"` → `analyze` (tempo, bar grid,
    drift) → `lyrics --align …` → `sections` (lyric lines by bar) → cuts, in this order. `lyrics` refines the word
    starts to the vocal stem by default (whisper stamps a word after a rest up to 0.7 s early; `--no-refine` keeps
    them). Read its output: "△ 자막이 목소리보다 늦을 수 있는 곳" / "늦게 시작하는 줄" — look at the vocal-stem
    spectrogram there before cutting (a caption must never trail the voice). `lyrics` without `--align` refines
    the current `song.lyrics` again (always from the aligner's times).
+   Then `song_track.py tighten --ep <ep> --dry-run` → without `--dry-run`: whole bars inside mid-song vocal gaps
+   (the vocal stem quiet, 0.3 s kept each side) are cut out of song / vocals / inst, and lyrics, cut_at, bars,
+   downbeats, track.end and nar_ref windows move with them (0 credits; `track.edits` keeps the cut ranges). Do it
+   before the cuts are written; on a produced episode it also works (a lip-sync shot must not sing after the
+   cut bar) — then `publish`, build, `lipsync`. ep09: four 1-bar turnarounds out, 1:40 → 1:32.
 4. Cuts: `bars` per cut from `sections` (first cut = intro to the first sung downbeat, L `intro_wave` with the
    library line; last cut = L `outro_bye` to `track.end`); `cut_at` = the refined first word − 0.1 s. Frontal Momo during singing = lip-sync (`wan2_7`,
    `clip_seconds` = ceil(window)); wide / object / listening shots = `seedance_2_0_mini` 4 s; repeats =

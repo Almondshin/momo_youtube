@@ -12,6 +12,8 @@ momo-publish runner) can restore them.
   lyrics    aligned words (tools/align_lyrics.py output) → song.lyrics, word starts snapped to the vocal stem
             (momolib.lyrics_refine, default; --no-refine keeps whisper's times). Without --align: refine again
   sections  table of lyric lines by bar — use it to write the cuts' bars
+  tighten   cut whole instrumental bars out of mid-song vocal gaps (Suno turnarounds = video with nobody
+            singing) and move every song-time field with them (momolib.tighten; --dry-run lists them first)
   refs      vocal-stem slice per lip-sync cut → episodes/<ep>/audio/refs/<cut>_en.wav (audio_references)
   publish   upload song / vocals / refs to the release "media-<ep>" (gh) → song.track.url, song.vocals.url
   sync      preview a lip-sync clip with its vocal slice → out/sync/<cut>_sync.mp4
@@ -25,6 +27,7 @@ Examples
   python momo/song_track.py lyrics --ep ep03 --align ~/ml/momo_ep03/full1/align_a_s202.json
   python momo/song_track.py lyrics --ep ep04                 # re-refine the current song.lyrics
   python momo/song_track.py sections --ep ep03
+  python momo/song_track.py tighten --ep ep09 --dry-run       # then without --dry-run, publish, build
   python momo/song_track.py refs --ep ep03 && python momo/song_track.py publish --ep ep03
   python momo/song_track.py status --ep ep03 --approve
   python momo/song_track.py lipsync --ep ep04 [--cuts c03,c14]   # after build.py
@@ -232,7 +235,8 @@ def cmd_lyrics(paths, cfg, args) -> int:
     m = load_manifest(paths, ep)
     song, tr = m["song"], need_track(m)
     if args.align:
-        lines = read_align(Path(args.align))
+        from momolib.tighten import map_lines
+        lines = map_lines(read_align(Path(args.align)), tr.get("edits"))   # aligned on the uncut song
     elif not args.refine:
         raise MomoError("--no-refine 은 --align 과 함께 (정렬 결과를 보정 없이 넣을 때)")
     else:
@@ -288,6 +292,68 @@ def cmd_sections(paths, cfg, args) -> int:
     if cuts and all(isinstance(c.get("bars"), int) for c in cuts):
         spans = track_spans(song, cuts)
         print(f"\n컷 {len(cuts)}개 → 영상 {spans[-1][1]:.2f}s (평균 {spans[-1][1] / len(cuts):.2f}s)")
+    return 0
+
+
+# ---------------------------------------------------------------- tighten
+
+def cmd_tighten(paths, cfg, args) -> int:
+    import copy
+    from momolib import audio, tighten
+    ep = check_ep(args.ep)
+    m = load_manifest(paths, ep)
+    song, tr = m["song"], need_track(m)
+    if not tr.get("analysis"):
+        raise MomoError("analyze 먼저 (마디선이 있어야 자를 수 있음)")
+    if not any(ln.get("words") for ln in song.get("lyrics") or []):
+        raise MomoError("song.lyrics 에 단어 시각이 없음 — lyrics --align 먼저")
+    mix, voc = audio.track_file(paths, ep), audio.vocals_file(paths, ep)
+    if mix is None or voc is None:
+        raise MomoError("song / song_vocals 파일 없음 — import 또는 fetch_assets")
+    sr = 48000
+    removed, report = tighten.plan(m, audio.decode(voc, sr, 1)[:, 0], sr, keep=args.keep)
+    _, bar = song_grid(song)
+    print(f"{ep}: 마디 {bar:.3f}s — 노래 중간의 보컬 없는 틈 (앞뒤 {args.keep:.2f}s 남김)")
+    for r in report:
+        g0, g1 = r["gap"]
+        cut = ", ".join(f"{a:.2f}–{b:.2f}" for a, b in r["removed"]) or "없음"
+        print(f"  {g0:7.2f}–{g1:7.2f}s ({g1 - g0:.2f}s) → 자름 {cut}, 남는 틈 {r['left']:.2f}s")
+        for a, b, why in r["refused"]:
+            print(f"      △ {a:.2f}–{b:.2f} 안 자름: {why}")
+    if not removed:
+        print("✔ 자를 마디 없음")
+        return 0
+    total = sum(b - a for a, b in removed)
+    print(f"  합계 {len(removed)}마디 {total:.2f}s → 노래 {float(tr.get('duration') or 0) - total:.2f}s")
+    if args.dry_run:
+        print("  (--dry-run: 파일·manifest 그대로)")
+        return 0
+    old = tr["sha1"]
+    song.setdefault("history", []).append({"track": copy.deepcopy(tr), "vocals": copy.deepcopy(song.get("vocals")),
+                                           "replaced_at": now_iso(), "why": "tighten"})
+    dur = tighten.edit_file(mix, removed, sr)
+    tighten.edit_file(voc, removed, sr)
+    inst = audio_dir(paths, ep) / "song_inst.flac"
+    if inst.exists():
+        tighten.edit_file(inst, removed, sr)
+    new = sha1_file(mix)
+    less = tighten.apply(m, removed, old, new)
+    note = "tighten: " + ", ".join(f"{a:.2f}-{b:.2f}" for a, b in removed)
+    for rec, sha in ((tr, new), (song["vocals"], sha1_file(voc))):
+        job = f"local:{sha[:12]}"
+        rec.update({"sha1": sha, "job_id": job, "url": None})
+        rec.setdefault("history", []).append({"job_id": job, "url": None, "status": rec.get("status"),
+                                              "reason": note, "at": now_iso(), "credits": 0})
+    song["vocals"]["of"] = new
+    tr["duration"] = round(dur, 3)
+    if tr.get("lyrics_sha1") == old:
+        tr["lyrics_sha1"] = new
+    if tr.get("lyrics_refine"):
+        tr["lyrics_refine"]["vocals_sha1"] = song["vocals"]["sha1"]
+    save_json(paths.manifest(ep), m)
+    print(f"✔ {len(removed)}마디 잘라냄 → song {dur:.2f}s (sha1 {new[:12]}), 가사·cut_at·마디선·립싱크 창 이동"
+          + (" · 마디 수 줄인 컷 " + ", ".join(f"{c} −{n}" for c, n in less.items()) if less else ""))
+    print("  다음: song_track.py publish (새 노래 파일 URL) → validate_manifest --table → build.py → lipsync")
     return 0
 
 
@@ -519,6 +585,10 @@ def main(argv: list[str] | None = None) -> int:
                    help="단어 시작을 보컬 스템의 실제 발성에 맞춤 (기본 켬)")
     p = sub.add_parser("sections")
     p.add_argument("--ep", required=True)
+    p = sub.add_parser("tighten")
+    p.add_argument("--ep", required=True)
+    p.add_argument("--keep", type=float, default=0.3, help="틈 앞뒤로 남길 초 (기본 0.3)")
+    p.add_argument("--dry-run", action="store_true", help="자를 마디만 보여 줌")
     for name in ("refs", "sync"):
         p = sub.add_parser(name)
         p.add_argument("--ep", required=True)
@@ -540,7 +610,7 @@ def main(argv: list[str] | None = None) -> int:
     paths = get_paths(args)
     cfg = load_config(paths)
     return {"import": cmd_import, "analyze": cmd_analyze, "lyrics": cmd_lyrics, "sections": cmd_sections,
-            "refs": cmd_refs, "sync": cmd_sync, "lipsync": cmd_lipsync, "publish": cmd_publish,
+            "tighten": cmd_tighten, "refs": cmd_refs, "sync": cmd_sync, "lipsync": cmd_lipsync, "publish": cmd_publish,
             "status": cmd_status}[args.cmd](paths, cfg, args)
 
 
