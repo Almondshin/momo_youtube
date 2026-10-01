@@ -51,8 +51,8 @@
   },
   "credits": {
     "estimate": 139.2,
-    "spent": 38.0,
-    "generations": 27,
+    "spent": 75.5,
+    "generations": 35,
     "regenerations": 3,
     "api_generations": 8,
     "api_usd": 2.7,
@@ -62,7 +62,8 @@
     "v_over_reason": "노래 형식 v2 (ep04 v2 방식, 사용자 피드백 '더 자연스럽게' 2026-09-30): 125.6 BPM 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 33컷. V 31개 중 15개는 재사용(clip_from, 0 크레딧 — 후렴 2~4 와 브리지 동물 복습), 새로 만드는 것 16개(이미지 16장). 모모가 노래하는 컷은 전부 립싱크(노래하며 동작).",
     "approvals": [
       "2026-10-01 사용자: ep05~07 병렬 제작·업로드 지시, 묻지 말고 진행",
-      "2026-10-01 노래 승인: Suno v1 'Animal Sounds on the Farm' (125.6 BPM, 파일 2:14, 가사 95.8%) — 사용자가 넣어 준 곡"
+      "2026-10-01 노래 승인: Suno v1 'Animal Sounds on the Farm' (125.6 BPM, 파일 2:14, 가사 95.8%) — 사용자가 넣어 준 곡",
+      "2026-10-01 API 잔액 소진 → 사용자 지시 '모자르면 구독으로': ep06 남은 클립 8개를 구독(MCP)으로, c08·c15·c22 는 4초 + pingpong 으로 크레딧 맞춤"
     ],
     "next_time": [
       "Suno v1 은 노래를 100.8초에 끝내고 16마디(31초) 기악 아웃트로를 붙임 → 영상은 마디 55(105.3초)에서 끝냄 (노래 비율 92%, 길이 1:45). 다음 곡은 가사 끝 [Outro - 2 bars, final chord] 를 더 분명히, 또는 Suno 에서 곡 자르기",
@@ -422,6 +423,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "c388d367-92d1-4fb7-9343-705768822743",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "c388d367-92d1-4fb7-9343-705768822743",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:11Z",
+              "credits": 4.0,
+              "start_image": "33e6eb35-57ff-4c20-9ddc-481db9e17adf"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -510,7 +530,7 @@
       "momo": false,
       "motion": "the lamb stays in place and keeps the same look; tiny sparkles twinkle on its fluffy wool, the daisies sway gently in the breeze, its small ears give a little flick",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 6,
+      "clip_seconds": 4,
       "card": {
         "word": "SHEEP",
         "text": "baa, baa, baa",
@@ -536,8 +556,28 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "9102ba8c-9a3e-4eb3-8ef8-92e026552e33",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "9102ba8c-9a3e-4eb3-8ef8-92e026552e33",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:11Z",
+              "credits": 4.0,
+              "start_image": "b5eeff1c-4a8a-4091-b3c7-ce0d0c427d26"
+            }
+          ],
+          "reason": null
         }
-      }
+      },
+      "fill": "pingpong"
     },
     {
       "id": "c09",
@@ -692,6 +732,25 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "4efc69ac-913b-44a3-b032-3b78193f70bb",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "4efc69ac-913b-44a3-b032-3b78193f70bb",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:11Z",
+              "credits": 4.0,
+              "start_image": "c4dfa021-5155-4911-9058-4654df10c250"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -780,7 +839,7 @@
       "momo": false,
       "motion": "the horse stays in place and keeps the same look; its golden mane and tail sway softly in the breeze, it gives one small nod, soft sparkles twinkle",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 6,
+      "clip_seconds": 4,
       "card": {
         "word": "HORSE",
         "text": "neigh, neigh, neigh",
@@ -806,8 +865,28 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "c6843b9b-693d-4a53-b19c-d77caf4ff298",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "c6843b9b-693d-4a53-b19c-d77caf4ff298",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:11Z",
+              "credits": 4.0,
+              "start_image": "94acb7bb-fec2-4be9-96b5-70ec765dcc99"
+            }
+          ],
+          "reason": null
         }
-      }
+      },
+      "fill": "pingpong"
     },
     {
       "id": "c16",
@@ -890,6 +969,36 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "eaf0f71b-5c49-47f3-911b-5588fa1201ff",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "eaf0f71b-5c49-47f3-911b-5588fa1201ff",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:11Z",
+              "credits": 4.5,
+              "start_image": "05308b28-0305-4b53-9339-701a9ada2c9a"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "db8486a5-d1c3-47c0-9953-99f210b72a3d",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            61.172,
+            63.118
+          ],
+          "at": "2026-10-01T02:10Z"
         }
       }
     },
@@ -925,6 +1034,25 @@
               "reason": null,
               "at": "2026-10-01T01:41Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "1b036fde-3f21-4ea4-9553-b1db20779254",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "1b036fde-3f21-4ea4-9553-b1db20779254",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:11Z",
+              "credits": 4.0,
+              "start_image": "110c299f-0b36-449b-a124-3040d1973bea"
             }
           ],
           "reason": null
@@ -1016,7 +1144,7 @@
       "momo": false,
       "motion": "the hen stays in place and keeps the same look; its feathers ruffle softly, it gives one small head bob, soft sparkles twinkle",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 6,
+      "clip_seconds": 4,
       "card": {
         "word": "HEN",
         "text": "cluck, cluck, cluck",
@@ -1050,8 +1178,28 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "e1f58b0e-07b6-42f8-ad70-dbbf17b5b026",
+          "url": null,
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "e1f58b0e-07b6-42f8-ad70-dbbf17b5b026",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:11Z",
+              "credits": 4.0,
+              "start_image": "67be13ee-4788-472a-acfe-f9dda60ae54e"
+            }
+          ],
+          "reason": null
         }
-      }
+      },
+      "fill": "pingpong"
     },
     {
       "id": "c23",
@@ -1212,6 +1360,36 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "bb3479b6-1daf-4be7-86ec-4adced567cc6",
+          "url": null,
+          "attempts": 1,
+          "credits": 9.0,
+          "history": [
+            {
+              "job_id": "bb3479b6-1daf-4be7-86ec-4adced567cc6",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:11Z",
+              "credits": 9.0,
+              "start_image": "998e5ffe-574a-44be-bd1f-5b7029cfe5bb"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "63782fe3-4a22-42da-b29b-b66f27991999",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            83.926,
+            89.718
+          ],
+          "at": "2026-10-01T02:10Z"
         }
       }
     },
