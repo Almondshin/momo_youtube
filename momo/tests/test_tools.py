@@ -162,6 +162,7 @@ def make_root(tmp: Path, cfg_patch: dict | None = None, assets: bool = True) -> 
     cfg = json.loads((MOMO / "config.json").read_text(encoding="utf-8"))
     cfg["voices"].update({"en": None, "ko": None})
     cfg["languages"] = ["en", "ko"]  # bilingual coverage; test_english_only checks ["en"]
+    cfg["credits"]["episode_cap"] = 250  # the fixtures' numbers assume 250, independent of the live config
     wj(root / "config.json", deep_merge(cfg, cfg_patch or {}))
     shutil.copytree(MOMO / "templates", root / "templates")
     lib = fresh_library(rj(MOMO / "library/library.json"))

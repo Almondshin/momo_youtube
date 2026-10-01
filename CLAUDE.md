@@ -40,7 +40,7 @@ python momo/fetch_assets.py --ep <ep> --library     # 생성물 복원 (git 제�
 - **Higgsfield 생성 1건마다 즉시** `python momo/hf_jobs.py record …` 로 job_id·url·credits 를 기록한다.
   컨테이너는 언제든 사라진다.
 - **승인된 배치마다** `momo/episodes/<ep>/manifest.json`(과 바뀌었으면 library.json, config.json)을 커밋·푸시한다.
-- 생성 전에는 `python momo/estimate_credits.py --ep <ep>` — exit 2(에피소드 250 크레딧 초과 예상)면 멈춘다.
+- 생성 전에는 `python momo/estimate_credits.py --ep <ep>` — exit 2(에피소드 150 크레딧 초과 예상 — 2026-10-01 사용자 결정, ep08 부터)면 멈춘다.
   한도·플랜 권한 에러(`grace_daily_limit_reached` 등)는 재시도하지 말고 에러 원문 그대로 보고한다.
 - 생성 결과는 Read 도구로 직접 본 뒤에 승인을 요청한다.
 - 스크립트를 고치면 `bash momo/tests/run_all.sh` 를 통과시킨다. 코드 규칙은 ARCHITECTURE.md "공통 규칙".

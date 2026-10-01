@@ -56,7 +56,8 @@
     "regenerations": 3,
     "api_generations": 8,
     "api_usd": 2.7,
-    "api_credits": 43.2
+    "api_credits": 43.2,
+    "cap": 250
   },
   "notes": {
     "v_over_reason": "노래 형식 v2 (ep04 v2 방식, 사용자 피드백 '더 자연스럽게' 2026-09-30): 125.6 BPM 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 33컷. V 31개 중 15개는 재사용(clip_from, 0 크레딧 — 후렴 2~4 와 브리지 동물 복습), 새로 만드는 것 16개(이미지 16장). 모모가 노래하는 컷은 전부 립싱크(노래하며 동작).",

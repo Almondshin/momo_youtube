@@ -54,7 +54,8 @@
     "regenerations": 11,
     "api_generations": 2,
     "api_usd": 0.9,
-    "api_credits": 14.4
+    "api_credits": 14.4,
+    "cap": 250
   },
   "notes": {
     "v_over_reason": "노래 형식 v2 (사용자 피드백 '더 자연스럽게' 2026-09-30): 127.6 BPM 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 40컷. V 38개 중 13개는 재사용(clip_from, 0 크레딧), 모모가 나오는 컷은 전부 립싱크(노래하며 동작).",

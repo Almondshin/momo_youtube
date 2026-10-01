@@ -54,7 +54,8 @@
     "regenerations": 3,
     "api_generations": 6,
     "api_usd": 2.7,
-    "api_credits": 43.2
+    "api_credits": 43.2,
+    "cap": 250
   },
   "notes": {
     "v_over_reason": "노래 형식 v2 (ep04 v2 와 같은 방식 — 2026-09-30 사용자 '더 자연스럽게'): 125 BPM Suno 곡, 컷은 가사 줄 시작점(cut_at) → 33컷. V 31개 중 13개는 재사용(clip_from, 0 크레딧 — 후렴 2~4 와 전주 비눗방울), 모모가 보이는 노래 컷은 전부 립싱크(노래하며 동작).",

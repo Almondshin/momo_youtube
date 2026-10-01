@@ -174,7 +174,7 @@ python momo/build.py --ep ep02 --lang en --allow-missing   # (선택) 크레딧 
 지시서 원문 (그대로 지킨다):
 
 > ⚠️ 중단 조건 — 하나라도 걸리면 즉시 멈추고 에러 원문 그대로 보고
-> · 이번 에피소드 총 크레딧이 250을 넘을 것 같을 때
+> · 이번 에피소드 총 크레딧이 캡(config.credits.episode_cap, ep08 부터 150)을 넘을 것 같을 때
 > · 일일 생성 한도 / 플랜 권한 에러 (grace_daily_limit_reached 등)
 > · 크레딧이 남아 있어도 생성 횟수 한도는 별개다. 둘 다 감시할 것
 > · 힉스필드는 이미지·음성·영상을 하나의 생성 카운터로 센다
@@ -264,7 +264,7 @@ API 는 구독과 **별개인 선불 잔액(USD)** 이다 (키: 저장소 루트
 기록은 MCP 와 같은 manifest GenRec 에 남는다 (`job_id` = `api:<request_id>`, 구독 `credits.spent` 에는 0, USD 는 `credits.api_usd`).
 
 - **API 로 하는 것: V 클립만** — wan2_7(립싱크 포함) · seedance_2_0_mini/2_0(→ API seedance-2.0, mini 없음) · seedance_2_5.
-  구독 크레딧이 캡(250)에 가깝거나 일일 생성 한도에 걸렸을 때, 또는 사용자가 API 로 하라고 할 때.
+  구독 크레딧이 캡에 가깝거나 일일 생성 한도에 걸렸을 때, 또는 사용자가 API 로 하라고 할 때.
 - **MCP 로만 하는 것**: 이미지 (Nano Banana Pro + Elements `<<<element_id>>>` 가 API 에 없음 — 모모 일관성), 음성(API 에 TTS 없음),
   kling 등 매핑 없는 모델, 여러 블록 나레이션 립싱크(nar_ref). run 이 이런 항목을 "MCP 로" 목록으로 따로 보여준다.
 - seedance 는 API 최소 4초 (3초 컷은 4초로 만들고 조립이 필요한 만큼만 쓴다). API 결과는 MCP 폴더·`job_display` 에 안 나온다 —
@@ -308,7 +308,7 @@ API 는 구독과 **별개인 선불 잔액(USD)** 이다 (키: 저장소 루트
 5. `manifest.status` 는 첫 생성을 기록할 때 hf_jobs.py 가 `producing` 으로 바꾼다.
 
 첫 편에서 라이브러리 항목(시트·라이브러리 클립·고정 음성·음성 샘플)을 기록할 때는 `--ep ep02` 를 붙인다 —
-그 에피소드 크레딧(캡 250)에 합산된다.
+그 에피소드 크레딧(캡: config.credits.episode_cap)에 합산된다.
 
 ### (1) 캐릭터 시트 — `library.json` 의 `character_sheets.momo` 가 approved 가 아닐 때만 (첫 편 1회)
 
@@ -461,7 +461,7 @@ forbid bots). Steps (all local, 0 Higgsfield credits until 6):
    library line; last cut = L `outro_bye` to `track.end`); `cut_at` = the refined first word − 0.1 s. Frontal Momo during singing = lip-sync (`wan2_7`,
    `clip_seconds` = ceil(window)); wide / object / listening shots = `seedance_2_0_mini` 4 s; repeats =
    `clip_from`. Word cards on the vocabulary close-ups. `validate_manifest.py --table` → plan.md,
-   `estimate_credits.py` (cap 250).
+   `estimate_credits.py` (cap 150 from ep08; budget ≈ 15 images + ~45 s lip-sync + regen margin).
 5. **[승인]** plan.md (cut table with the lyrics under each cut, credits).
 6. Images → clips as in 5단계 (one image, then scene 1, then the rest). Lip-sync clips: `song_track.py refs` →
    `publish` (release `media-<ep>`: song, vocals, refs) → media_import_url each ref URL → `hf_jobs.py narref`
