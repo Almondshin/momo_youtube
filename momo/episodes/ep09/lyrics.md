@@ -246,3 +246,66 @@ sad, dark, rock, metal, rap, heavy bass, autotune, screaming, slow ballad, spoke
 - **다운로드:** 마음에 드는 곡의 **WAV** 를 `~/ml/momo_ep09/suno/v1/` 에 넣어 주세요. 스템(Vocals, Instrumental)이
   있으면 함께 넣고, 없으면 이 맥에서 demucs 로 분리합니다. 부른 가사가 위와 다르면 ep04·ep07 처럼 이 파일 끝에
   "Sung lyrics" 블록을 추가해서 자막이 실제 노래를 따르게 합니다 (정렬기는 태그 없는 가사 블록 중 마지막 것을 읽습니다).
+
+## Sung lyrics — Suno v1 take (what the captions show; alignment reads this last block)
+
+Suno v1 "Vehicle Sounds" (approved by the user, 122.0 BPM, 1:49.7). It sings every line as written, but it
+**skips chorus 3**: verse 2 ends at ≈ 58.3 s and verse 3 starts at ≈ 62 s after a 1.5-bar gap. The order is
+Chorus, Verse 1, Chorus, Verse 2, Verse 3, Bridge, final Chorus. Other differences from the plan: the instrumental
+intro is ≈ 1.5 bars (the first vocal is at ≈ 3.0 s, not 7.7 s), each section is followed by a ≈ 1.5-bar
+instrumental gap (≈ 3 s), and the singing ends at ≈ 94.2 s with a ≈ 15 s instrumental tail.
+
+```
+[Instrumental intro]
+
+[Chorus]
+Beep, beep! Honk, honk!
+Choo, choo! Wee-woo!
+Toot, toot! Zoom, zoom!
+Here they come! (Here they come!)
+Wave hello! (Hello!)
+Let's go for a ride!
+
+[Verse 1]
+What does the car say?
+Beep, beep! Beep, beep! (Hello, car!)
+What does the bus say?
+Honk, honk! Honk, honk! (Hello, bus!)
+
+[Chorus]
+Beep, beep! Honk, honk!
+Choo, choo! Wee-woo!
+Toot, toot! Zoom, zoom!
+Here they come! (Here they come!)
+Wave hello! (Hello!)
+Let's go for a ride!
+
+[Verse 2]
+What does the train say?
+Choo, choo! Choo, choo! (Hello, train!)
+Who is on the train? (Ducky! Quack, quack!)
+What does the fire truck say?
+Wee-woo! Wee-woo! (Hello, fire truck!)
+
+[Verse 3]
+What does the boat say?
+Toot, toot! Toot, toot! (Hello, boat!)
+What does the airplane say?
+Zoom, zoom! Zoom, zoom! (Hello, airplane!)
+
+[Bridge]
+Car says beep! Bus says honk!
+Train says choo! Fire truck says wee-woo!
+Boat says toot! Airplane says zoom!
+And Ducky says quack, quack!
+
+[Chorus - final]
+Beep, beep! Honk, honk!
+Choo, choo! Wee-woo!
+Toot, toot! Zoom, zoom!
+Here they come! (Here they come!)
+Wave hello! (Hello!)
+Let's go for a ride!
+
+[Outro - instrumental]
+```

@@ -251,3 +251,69 @@ sad, dark, scary, rock, metal, rap, EDM, heavy bass, heavy drums, autotune, scre
 - **목소리:** 자장가라도 속삭이지 않고 가사가 또렷하게 들려야 한다. 자막 맞추기와 립싱크에 필요하다.
 - **끝:** 마지막 "Good night." 뒤에 연주만 나오는 부분이 3초 이상, 6초 이하여야 한다. 그 자리에 "Bye-bye, friends!" 인사가 들어간다.
 - **다운로드:** 마음에 드는 곡의 WAV 를 받아 `~/ml/momo_ep10/suno/v1/` 에 넣는다. 스템(Vocals, Instrumental)은 있으면 함께 넣고, 없으면 이 맥에서 demucs 로 분리한다. 부른 가사가 위와 다르면 ep04·ep07 처럼 이 파일 끝에 "Sung lyrics" 블록을 덧붙여 자막이 실제 노래를 따르게 한다.
+
+## Sung lyrics — Suno v1 take (what the captions show; alignment reads this last block)
+
+Suno v1 (approved by the user, 104.0 BPM, 1:50): the 4-bar intro is instrumental (first vocal at 9.3 s, on the
+downbeat). In every chorus line 4 is sung "Good night, good night!" with the last "night" held for about a beat and
+no "(Good night!)" echo; "Night-night, friends!" follows right after it (whisper on each chorus alone hears only the
+two "good night"s, e.g. chorus 1: Good 15.95, night 16.24, good 17.17, night 17.30–18.38, Night 18.64). Everything
+else is sung as written. The verses are sung one line per bar (4 bars, not 6), there is one bar of rest before
+chorus 3 (55.3–57.6 s), and the last word ends at 94.7 s, followed by about 9 s of instrumental outro and a 6 s fade
+(ends at 110.0 s).
+
+```
+[Instrumental intro - 4 bars, no vocals]
+
+[Chorus - soft and gentle, everyone sings]
+Sleepy, sleepy, time for bed!
+Sleepy, sleepy, rest your head!
+The moon is up, the stars are bright!
+Good night, good night!
+Night-night, friends! (Night-night!)
+Sweet dreams, good night!
+
+[Verse 1 - lead sings, choir echoes softly]
+Put on pajamas! (Pajamas!)
+Soft and cozy, cozy, cozy!
+Here is a book! (Story time!)
+Read, read, read a story!
+
+[Chorus - soft and gentle, everyone sings]
+Sleepy, sleepy, time for bed!
+Sleepy, sleepy, rest your head!
+The moon is up, the stars are bright!
+Good night, good night!
+Night-night, friends! (Night-night!)
+Sweet dreams, good night!
+
+[Verse 2 - lead sings, choir echoes softly]
+Here is Teddy! (Hello, Teddy!)
+Hug, hug, a big warm hug!
+Hello, Ducky! (Quack, quack!)
+Snuggle, snuggle, snuggle up!
+
+[Chorus - soft and gentle, everyone sings]
+Sleepy, sleepy, time for bed!
+Sleepy, sleepy, rest your head!
+The moon is up, the stars are bright!
+Good night, good night!
+Night-night, friends! (Night-night!)
+Sweet dreams, good night!
+
+[Verse 3 - lead sings, choir echoes softly]
+Look, the moon! (Hello, moon!)
+Look, the stars! (Hello, stars!)
+Wave to the moon!
+Wave to the stars!
+
+[Chorus - final, softer, same tempo]
+Sleepy, sleepy, time for bed!
+Sleepy, sleepy, rest your head!
+The moon is up, the stars are bright!
+Good night, good night!
+Close your eyes, (close your eyes,)
+Good night, Momo. (Good night.)
+
+[Outro - instrumental]
+```

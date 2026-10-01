@@ -448,6 +448,8 @@ forbid bots). Steps (all local, 0 Higgsfield credits until 6):
 
 1. Lyrics: `episodes/<ep>/lyrics.md` (fenced block with [Intro]/[Chorus]/[Verse]/[Bridge]/[Outro] tags,
    (parentheses) = backing voices / echoes) + a style line. Give both to the user to paste into Suno (Custom).
+   No "Ding-dong-dang" (or ding/dong bell refrains) in new lyrics — the user is tired of it after ep04/ep05
+   (2026-10-01). Use a topic sound hook instead ("Squeaky clean!", "Beep, beep!").
 2. **[승인]** The user picks a take and puts its WAV + stems (Vocals, Instrumental) in
    `~/ml/<ep>/suno/<take>/`. Check it: `tools/align_lyrics.py` (sidecar venv) must hear ≥95 % of the lyric words
    and report no "sung but not in lyrics" runs — otherwise fix `lyrics.md` to what is sung and re-align.

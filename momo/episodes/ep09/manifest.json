@@ -1,27 +1,28 @@
 {
   "schema": 1,
   "ep": "ep09",
-  "status": "planning",
+  "status": "assembled",
   "topic": {
-    "en": "Vehicles",
+    "en": "Vehicle Sounds",
     "ko": "탈것 소리"
   },
   "benchmark": {
     "channel_url": "https://www.youtube.com/@CoComelon",
     "research_dir": null,
-    "chosen_axis": null
+    "chosen_axis": "topic: vehicle sounds (call-and-response vocabulary song, ep06 Animal Sounds format)"
   },
   "characters": [
-    "momo"
+    "momo",
+    "ducky"
   ],
   "title": {
-    "en": "Vehicles Song with Momo the Bunny | Car, Bus, Train Sounds for Toddlers",
+    "en": "Vehicle Sounds Song with Momo the Bunny | Car, Bus, Train, Fire Truck for Toddlers",
     "ko": ""
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c04",
     "text": {
-      "en": "",
+      "en": "BEEP BEEP!",
       "ko": ""
     },
     "text_pos": "top"
@@ -29,28 +30,53 @@
   "bgm": null,
   "upload": {
     "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
-    },
-    "ko": {
-      "title": "",
-      "description": "",
-      "tags": [],
+      "title": "Vehicle Sounds Song with Momo the Bunny | Car, Bus, Train, Fire Truck for Toddlers",
+      "description": "What does the car say? Beep, beep! Sing along with Momo the Bunny and Ducky by the road and say hello to the car, the bus, the train, the fire truck, the boat and the airplane.\n\nVehicles and sounds in this song:\nCar - beep, beep · Bus - honk, honk · Train - choo, choo\nFire truck - wee-woo · Boat - toot, toot · Airplane - zoom, zoom\nCar says beep! Bus says honk! And Ducky says quack, quack!\n\nMade for toddlers and preschoolers (ages 2-5). Music and animation made with AI tools.\n\n#vehiclesounds #vehiclesforkids #kidssongs #nurseryrhymes #toddlersongs #learnenglish #englishforkids #preschool #singalong #MomotheBunny",
+      "tags": [
+        "vehicle sounds",
+        "vehicle sounds song",
+        "vehicles for kids",
+        "car bus train",
+        "fire truck song",
+        "what does the car say",
+        "kids songs",
+        "nursery rhymes",
+        "toddler songs",
+        "learn english for kids",
+        "english for toddlers",
+        "Momo the Bunny"
+      ],
       "playlist_id": null
     }
   },
   "credits": {
-    "estimate": null,
-    "spent": 0,
-    "generations": 0,
-    "regenerations": 0
+    "estimate": 139.8,
+    "spent": 127.0,
+    "generations": 34,
+    "regenerations": 4
   },
   "notes": {
-    "v_over_reason": null,
-    "approvals": [],
-    "next_time": []
+    "v_over_reason": "노래 형식 v2 (ep04 v2 방식, 사용자 피드백 '더 자연스럽게' 2026-09-30): 122.0 BPM Suno 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 30컷. V 28개 중 13개는 재사용(clip_from, 0 크레딧 — 후렴 2·마지막 후렴과 브리지 탈것 복습), 새로 만드는 것 15개(이미지 15장: 모모 9 + 탈것 6). 모모가 노래하는 컷은 전부 립싱크(wan2_7, 노래하며 동작).",
+    "approvals": [
+      "2026-10-01 노래: Suno v1 'Vehicle Sounds' (122.0 BPM, 파일 1:49.7) — 워크플로 지시에 '사용자 승인 곡'으로 전달됨, song_track.py status --approve 로 기록"
+    ],
+    "next_time": [
+      "Suno v1 이 후렴 4개 중 3번째를 통째로 건너뜀 (태그·스타일에 반복 지시가 있어도) — 곡 고를 때 후렴 횟수를 세고, 다음 가사는 후렴 태그에 '[Chorus 3 - same as before]' 처럼 번호를 붙여 볼 것",
+      "'[Instrumental intro - 4 bars, no vocals]' 를 넣었는데도 전주가 1.5마디(첫 목소리 2.94s) — 인사(1.98s)가 겨우 들어감",
+      "섹션 사이마다 ≈ 3.5s(1.8마디) 기악 틈 — 앞 컷이 덮게 계획 (CC 8s 립싱크, 탈것 6–8s)"
+    ],
+    "song_take": [
+      "Suno v1 은 후렴 3(verse 2 뒤)을 건너뜀: 후렴 · V1 · 후렴 · V2 · V3 · 브리지 · 마지막 후렴. lyrics.md 끝 'Sung lyrics' 블록이 실제 부른 가사 (정렬기는 이 블록을 읽음)",
+      "정렬 93.9% (179 중 168), 35/35 줄, '부른 데 가사에 없음' 0 — 못 들은 11개는 소리말 오인식(quack→crack, toot→choot, choo→chew, hello→tell a, wee-woo 의 woo)과 합창 메아리 끝 단어(car·bus·train). 기준 95% 미달은 정렬기 한계로 판단",
+      "전주가 1.5마디뿐: 반주 0–2.4s, 2.4–4.0s 반주 멈춤, 첫 목소리 2.94s (a cappella 'Beep, beep!'). 인사 음성은 1.98s 라 lead 0.3 → 0.36–2.34s 에 들어감",
+      "각 후렴·절 뒤 ≈ 3.5s 기악 틈 5곳 (15.4–18.8, 26.9–30.4, 42.9–46.3, 58.4–62.1, 78.5–81.5): 그 앞 컷이 덮음 — CC 립싱크 8s (원본 창 7.77s, 후렴 2 재사용 7.74s), 버스 6s, 소방차 8s, 브리지 끝 c26 4.57s",
+      "노래 끝 94.25s, 그 뒤 15s 기악 꼬리 (104.3s 마지막 화음) → track.end 100.404 (51마디), 마지막 2초 페이드",
+      "브리지는 한 마디에 탈것 둘 → 탈것 컷 0.86–1.24s (lyrics.md 계획의 '1+1')",
+      "가사 단어 시각 수동 보정 2개 (보컬 스템 5ms 엔벌로프): 후렴 2 \"Let's\" 40.44→41.28 (잡힌 'Hello!' 안이었음), V3 'Zoom,' 67.85→67.97. song_track.py lyrics 를 다시 돌리면 되돌아가므로 다시 넣을 것",
+      "cut_at 을 −0.10s 대신 실제 틈으로 옮긴 곳: c04 11.06, c07 22.93 ('car!'→'What' 맞붙음), c15 55.06, c17 63.95, c23 73.56; 후렴 재사용 6개는 보컬 교차상관 (r 0.91–0.99, Δ ≤ 0.06s)",
+      "검토(2026-10-01): c19 cut_at 67.87→67.90 — 67.87 은 c18 'say?' 의 끝소리 안(보컬 −18 dB, 바닥 −21 dB 는 67.90–67.96, 'Zoom' 시작 67.975). c18 창 2.03→2.06s (클립 3초 그대로), refs c18 다시 만듦",
+      "가사 단어 시각 수동 보정 (최종 검토 2026-10-01): V2 'Hello, train!' 50.10–50.72, 'Who is on' 50.75–51.08 (보컬 스템 RMS 기준; Who 가 50.26 으로 겹쳐 자막이 0.45 s 일찍 넘어갔음). song_track.py lyrics 를 다시 돌리면 원래 값으로 돌아감"
+    ]
   },
   "cuts": [
     {
@@ -59,27 +85,2670 @@
       "type": "L",
       "library_clip": "intro_wave",
       "library_audio": "intro",
+      "lead": 0.3,
       "narration": {
         "en": "Hi friends! It's Momo!"
       },
-      "keyword": {
-        "en": "",
-        "ko": ""
-      }
+      "bars": 1
     },
     {
       "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "image_prompt": "[Momo] full body shot standing on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, facing the viewer, both feet flat on the grass, both paws held up apart beside her chest below the cheeks, ready to clap, both yellow strap buttons clearly visible and not covered by the paws, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together on every vehicle sound and sways a little to the beat, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "bars": 2,
+      "cut_at": 2.84,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "e3554608-2ffc-49f3-9d50-27fcfa7a5838",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052556_e3554608-2ffc-49f3-9d50-27fcfa7a5838.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "4735b5ff-bd54-42b5-9fd4-e73df3374205",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052331_4735b5ff-bd54-42b5-9fd4-e73df3374205.png",
+              "status": "rejected",
+              "reason": "both paws pressed together in front of the chest hide the two yellow strap buttons (rule: both buttons always visible)",
+              "at": "2026-10-01T05:23Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "e3554608-2ffc-49f3-9d50-27fcfa7a5838",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052556_e3554608-2ffc-49f3-9d50-27fcfa7a5838.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:26Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "bb1043c4-e7ad-4d11-be12-fa94eb0cb3c3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_bb1043c4-e7ad-4d11-be12-fa94eb0cb3c3.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "bb1043c4-e7ad-4d11-be12-fa94eb0cb3c3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_bb1043c4-e7ad-4d11-be12-fa94eb0cb3c3.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:43Z",
+              "credits": 6.0,
+              "start_image": "e3554608-2ffc-49f3-9d50-27fcfa7a5838"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "2eec763b-39b3-40d4-b643-5cdd6d115a4f",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            2.84,
+            6.82
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, facing the viewer, both feet on the grass, both paws at chest height below the cheeks, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo sways gently side to side to the beat, then on 'Here they come' points to her side with one paw at chest height while her face and body stay toward the viewer, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 5
+      },
+      "bars": 2,
+      "cut_at": 6.82,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "2841441c-9f95-4558-8b6c-b6671f01c7a1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052332_2841441c-9f95-4558-8b6c-b6671f01c7a1.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "2841441c-9f95-4558-8b6c-b6671f01c7a1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052332_2841441c-9f95-4558-8b6c-b6671f01c7a1.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:23Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "7b00e3fb-313f-488e-8ae9-b3cb2ecd1f36",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_7b00e3fb-313f-488e-8ae9-b3cb2ecd1f36.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "7b00e3fb-313f-488e-8ae9-b3cb2ecd1f36",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_7b00e3fb-313f-488e-8ae9-b3cb2ecd1f36.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:43Z",
+              "credits": 7.5,
+              "start_image": "2841441c-9f95-4558-8b6c-b6671f01c7a1"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "e8089888-1a90-4ae2-b76e-f127664d5b96",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            6.82,
+            11.06
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, both facing the viewer, full body, Momo standing with both feet flat on the grass, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green overalls with two small yellow buttons, Ducky standing beside her with its tiny wings raised happily, big round eyes, beak closed in a smile",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo sways to the beat with both feet on the grass, waves one paw at shoulder height below the ear on 'Wave hello', then claps once and keeps swaying with a smile, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 8
+      },
+      "bars": 3,
+      "cut_at": 11.06,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "f62b1e38-a2f6-4bad-8b13-c4843ccce25b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052331_f62b1e38-a2f6-4bad-8b13-c4843ccce25b.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "f62b1e38-a2f6-4bad-8b13-c4843ccce25b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052331_f62b1e38-a2f6-4bad-8b13-c4843ccce25b.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:23Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "c5ba471c-0aeb-4e89-a363-2f52c45586ea",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_c5ba471c-0aeb-4e89-a363-2f52c45586ea.mp4",
+          "attempts": 1,
+          "credits": 12.0,
+          "history": [
+            {
+              "job_id": "c5ba471c-0aeb-4e89-a363-2f52c45586ea",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_c5ba471c-0aeb-4e89-a363-2f52c45586ea.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:43Z",
+              "credits": 12.0,
+              "start_image": "f62b1e38-a2f6-4bad-8b13-c4843ccce25b"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "8c0a4dce-c0df-45f6-9f75-d9afcc1d6be0",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            11.06,
+            18.83
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 2,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, facing the viewer, both feet on the grass, one arm stretched out sideways away from her body, pointing to her side at chest height, the other paw down at her side, both yellow strap buttons clearly visible and not covered by the paws, curious happy face with a small head tilt, huge round sparkly eyes with big white highlights, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo points to her side with one paw at chest height and tilts her head with a curious smile, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "bars": 1,
+      "cut_at": 18.83,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "5977201d-1341-4644-a858-1f4bb58bd6fa",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052746_5977201d-1341-4644-a858-1f4bb58bd6fa.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "24fbfb78-64bc-4f2c-a8c6-01bb1d86c7ac",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052557_24fbfb78-64bc-4f2c-a8c6-01bb1d86c7ac.png",
+              "status": "rejected",
+              "reason": "the pointing paw is on her own chest and covers the left yellow strap button (only one button visible); not pointing to her side",
+              "at": "2026-10-01T05:26Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "5977201d-1341-4644-a858-1f4bb58bd6fa",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052746_5977201d-1341-4644-a858-1f4bb58bd6fa.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:27Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "bbbc293a-cace-486d-9629-e980bd84bf1c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_bbbc293a-cace-486d-9629-e980bd84bf1c.mp4",
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "bbbc293a-cace-486d-9629-e980bd84bf1c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_bbbc293a-cace-486d-9629-e980bd84bf1c.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:43Z",
+              "credits": 4.5,
+              "start_image": "5977201d-1341-4644-a858-1f4bb58bd6fa"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "c177a051-9a39-4eb8-9ef7-f59c726b0128",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            18.83,
+            20.89
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "scene": 2,
+      "type": "V",
+      "image_prompt": "exactly one small round shiny red toy car with big round black wheels, round headlights and plain windows, plain smooth sides with no markings, no face, nobody inside, parked on the left half of the frame on the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, no other vehicles",
+      "momo": false,
+      "motion": "the car stays completely still in place and keeps the same look, the wheels do not turn; its round headlights blink twice, soft sparkles twinkle around it, the leaves of the small round trees behind rustle gently",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "CAR",
+        "text": "beep, beep",
+        "pos": "right",
+        "at": 0.3
+      },
+      "bars": 1,
+      "cut_at": 20.89,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "5b6d8985-606d-4de7-9f13-2b1d13ab85d2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052557_5b6d8985-606d-4de7-9f13-2b1d13ab85d2.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "5b6d8985-606d-4de7-9f13-2b1d13ab85d2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052557_5b6d8985-606d-4de7-9f13-2b1d13ab85d2.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:26Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "cb43e839-0678-4a7e-8361-58bfee9e2c8d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_cb43e839-0678-4a7e-8361-58bfee9e2c8d.mp4",
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "cb43e839-0678-4a7e-8361-58bfee9e2c8d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_cb43e839-0678-4a7e-8361-58bfee9e2c8d.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:43Z",
+              "credits": 4.0,
+              "start_image": "5b6d8985-606d-4de7-9f13-2b1d13ab85d2"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c07",
+      "scene": 2,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing beside a small plain wooden bench on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, facing the viewer, both feet on the grass, one paw raised at shoulder height below the ear in a friendly wave, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo waves one paw at shoulder height below the ear and sways gently, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "bars": 1,
+      "cut_at": 22.93,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "cf35e95e-715a-49c6-a682-cca84a3854e3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052746_cf35e95e-715a-49c6-a682-cca84a3854e3.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "cf35e95e-715a-49c6-a682-cca84a3854e3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052746_cf35e95e-715a-49c6-a682-cca84a3854e3.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:27Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "d9015b83-0e37-42a0-b296-b5be3c78ec37",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_d9015b83-0e37-42a0-b296-b5be3c78ec37.mp4",
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "d9015b83-0e37-42a0-b296-b5be3c78ec37",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_d9015b83-0e37-42a0-b296-b5be3c78ec37.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:43Z",
+              "credits": 4.5,
+              "start_image": "cf35e95e-715a-49c6-a682-cca84a3854e3"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "3a28617c-0541-4189-9dfa-3af2d5f67baf",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            22.93,
+            24.78
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "image_prompt": "exactly one chubby round yellow toy bus with big plain windows, round headlights and big round black wheels, plain smooth sides with no markings, no face, nobody inside, stopped on the right half of the frame on the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, no other vehicles",
+      "momo": false,
+      "motion": "the bus stays completely still in place and keeps the same look, the wheels do not turn; its round lights blink, a small green leaf drifts slowly past, soft sparkles twinkle, the leaves of the small round trees behind rustle gently",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 6,
+      "card": {
+        "word": "BUS",
+        "text": "honk, honk",
+        "pos": "left",
+        "at": 0.3
+      },
+      "bars": 3,
+      "cut_at": 24.78,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8b880d0a-06fa-4c89-a258-70cbed756b10",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052746_8b880d0a-06fa-4c89-a258-70cbed756b10.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8b880d0a-06fa-4c89-a258-70cbed756b10",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_052746_8b880d0a-06fa-4c89-a258-70cbed756b10.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:27Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "9c497a9c-7ea5-4c40-bc23-6d20dad150fe",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_9c497a9c-7ea5-4c40-bc23-6d20dad150fe.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "9c497a9c-7ea5-4c40-bc23-6d20dad150fe",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_9c497a9c-7ea5-4c40-bc23-6d20dad150fe.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:43Z",
+              "credits": 6.0,
+              "start_image": "8b880d0a-06fa-4c89-a258-70cbed756b10"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "image_prompt": "[Momo] full body shot standing on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, facing the viewer, both feet flat on the grass, both paws held up apart beside her chest below the cheeks, ready to clap, both yellow strap buttons clearly visible and not covered by the paws, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together on every vehicle sound and sways a little to the beat, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "bars": 2,
+      "cut_at": 30.37
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, facing the viewer, both feet on the grass, both paws at chest height below the cheeks, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo sways gently side to side to the beat, then on 'Here they come' points to her side with one paw at chest height while her face and body stay toward the viewer, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "bars": 2,
+      "cut_at": 34.36
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, both facing the viewer, full body, Momo standing with both feet flat on the grass, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green overalls with two small yellow buttons, Ducky standing beside her with its tiny wings raised happily, big round eyes, beak closed in a smile",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo sways to the beat with both feet on the grass, waves one paw at shoulder height below the ear on 'Wave hello', then claps once and keeps swaying with a smile, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "bars": 4,
+      "cut_at": 38.6
+    },
+    {
+      "id": "c12",
+      "scene": 3,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing on a green grassy hill with a short toy railway track on wooden sleepers, bright blue sky with soft white clouds, the track beside her, facing the viewer, both feet on the grass, one arm stretched out sideways away from her body, pointing to her side at chest height, the other paw down at her side, both yellow strap buttons clearly visible and not covered by the paws, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo points to her side with one paw at chest height and nods gently to the beat, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "bars": 1,
+      "cut_at": 46.34,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "27f52ff1-605c-4750-b767-61cf970e4667",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053021_27f52ff1-605c-4750-b767-61cf970e4667.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "27f52ff1-605c-4750-b767-61cf970e4667",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053021_27f52ff1-605c-4750-b767-61cf970e4667.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:30Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "12ee2797-2e49-4e74-8f3d-460ddde3a374",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_12ee2797-2e49-4e74-8f3d-460ddde3a374.mp4",
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "12ee2797-2e49-4e74-8f3d-460ddde3a374",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054307_12ee2797-2e49-4e74-8f3d-460ddde3a374.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:43Z",
+              "credits": 4.5,
+              "start_image": "27f52ff1-605c-4750-b767-61cf970e4667"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "d3dd154f-9e5e-4452-b6c2-ecb04cef8d58",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            46.34,
+            48.39
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 3,
+      "type": "V",
+      "image_prompt": "[Ducky] sitting in the open blue wagon of a little red toy steam engine with a round black chimney and big round black wheels, the engine has no face and nobody at the front, the little train is small in the frame and stands entirely inside the left half of the frame (the engine at the far left, Ducky's wagon just left of the center), the right half of the frame is only open grassy hill and sky, on a green grassy hill with a short toy railway track on wooden sleepers, bright blue sky with soft white clouds, Ducky faces the viewer with its head and tiny wings above the side of the wagon, beak closed in a smile, no other characters",
+      "momo": false,
+      "motion": "the train stays completely still in place on the track and keeps the same look, the wheels do not turn; white puffs of steam rise gently from the round chimney the whole time; for the first two seconds Ducky sways gently in the wagon, then Ducky bobs happily and flaps its tiny wings with its beak closed until the end",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 8,
+      "card": {
+        "word": "TRAIN",
+        "text": "choo, choo",
+        "pos": "right",
+        "at": 0.3
+      },
+      "bars": 2,
+      "cut_at": 48.39,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "598009d2-808f-42e7-a949-67971b1c66dc",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053229_598009d2-808f-42e7-a949-67971b1c66dc.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "eff7d62d-9735-43f6-a149-b2186e293626",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053021_eff7d62d-9735-43f6-a149-b2186e293626.png",
+              "status": "rejected",
+              "reason": "the train fills the middle of the frame (x 0.19-0.87, not the left half); the TRAIN card (pos right, x 0.64-0.96 W) would cover Ducky completely in c13 and c22; Ducky's beak open",
+              "at": "2026-10-01T05:30Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "598009d2-808f-42e7-a949-67971b1c66dc",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053229_598009d2-808f-42e7-a949-67971b1c66dc.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:32Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "e9b9ce74-26e6-4496-8b09-322c4a3130a7",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054452_e9b9ce74-26e6-4496-8b09-322c4a3130a7.mp4",
+          "attempts": 1,
+          "credits": 8.0,
+          "history": [
+            {
+              "job_id": "e9b9ce74-26e6-4496-8b09-322c4a3130a7",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054452_e9b9ce74-26e6-4496-8b09-322c4a3130a7.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:44Z",
+              "credits": 8.0,
+              "start_image": "598009d2-808f-42e7-a949-67971b1c66dc"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 3,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, a few small yellow flowers in the grass, facing the viewer, both feet flat on the grass, both paws held up apart beside her chest below the cheeks, both yellow strap buttons clearly visible and not covered by the paws, huge round sparkly eyes with big white highlights, cheerful face, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps once and then points to her side with one paw at chest height, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "bars": 1,
+      "cut_at": 53.08,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "a4f168e5-6f7d-4c71-80fc-9a9f1fd0a951",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053021_a4f168e5-6f7d-4c71-80fc-9a9f1fd0a951.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "a4f168e5-6f7d-4c71-80fc-9a9f1fd0a951",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053021_a4f168e5-6f7d-4c71-80fc-9a9f1fd0a951.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:30Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "15c8000a-a5c3-4af3-80fc-fdf82111d08b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054441_15c8000a-a5c3-4af3-80fc-fdf82111d08b.mp4",
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "15c8000a-a5c3-4af3-80fc-fdf82111d08b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054441_15c8000a-a5c3-4af3-80fc-fdf82111d08b.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:44Z",
+              "credits": 4.5,
+              "start_image": "a4f168e5-6f7d-4c71-80fc-9a9f1fd0a951"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "99afa69f-e954-44ac-b0d0-382b922cf91e",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            53.08,
+            55.06
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c15",
+      "scene": 3,
+      "type": "V",
+      "image_prompt": "exactly one chubby round red toy firetruck with a short white ladder on top, one round light on the roof, big round black wheels and plain windows, plain smooth sides with no markings, no face, nobody inside, parked on the right half of the frame on the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, no other vehicles",
+      "momo": false,
+      "motion": "the firetruck stays completely still in place and keeps the same look, the wheels do not turn; the round roof light glows softly on and off, soft sparkles twinkle around it, a few small leaves drift slowly past, the small round trees behind rustle gently",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 8,
+      "card": {
+        "word": "FIRE TRUCK",
+        "text": "wee-woo, wee-woo",
+        "pos": "left",
+        "at": 0.3
+      },
+      "bars": 4,
+      "cut_at": 55.06,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d623caa7-a0de-409f-8ec3-d1152f986121",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053229_d623caa7-a0de-409f-8ec3-d1152f986121.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "d623caa7-a0de-409f-8ec3-d1152f986121",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053229_d623caa7-a0de-409f-8ec3-d1152f986121.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:32Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "705ecd5e-efe6-4968-8a60-48d2aca3cc7f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054441_705ecd5e-efe6-4968-8a60-48d2aca3cc7f.mp4",
+          "attempts": 1,
+          "credits": 8.0,
+          "history": [
+            {
+              "job_id": "705ecd5e-efe6-4968-8a60-48d2aca3cc7f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054441_705ecd5e-efe6-4968-8a60-48d2aca3cc7f.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:44Z",
+              "credits": 8.0,
+              "start_image": "d623caa7-a0de-409f-8ec3-d1152f986121"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing on the soft green grass at the edge of a calm blue lake with a small wooden dock, green hills softly blurred behind, bright blue sky, the small wooden dock beside her, facing the viewer, both feet on the grass, one paw raised at shoulder height below the ear in a friendly wave, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo waves one paw gently at shoulder height below the ear while her head and body stay still and upright, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "bars": 1,
+      "cut_at": 62.1,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "e255524c-8619-466d-966e-087016157c89",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053229_e255524c-8619-466d-966e-087016157c89.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "e255524c-8619-466d-966e-087016157c89",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053229_e255524c-8619-466d-966e-087016157c89.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:32Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "5dd1b9c4-8d71-457c-a503-dc7ce73dde22",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_055038_5dd1b9c4-8d71-457c-a503-dc7ce73dde22.mp4",
+          "attempts": 2,
+          "credits": 9.0,
+          "history": [
+            {
+              "job_id": "16e2a4d7-5249-48f4-a76e-458d0dd7f848",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054441_16e2a4d7-5249-48f4-a76e-458d0dd7f848.mp4",
+              "status": "rejected",
+              "reason": "left ear swings out and up to ~45° for ~0.5 s mid-line (1.0-1.5 s) — ears must stay hanging down",
+              "at": "2026-10-01T05:44Z",
+              "credits": 4.5,
+              "start_image": "e255524c-8619-466d-966e-087016157c89"
+            },
+            {
+              "job_id": "5dd1b9c4-8d71-457c-a503-dc7ce73dde22",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_055038_5dd1b9c4-8d71-457c-a503-dc7ce73dde22.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:50Z",
+              "credits": 4.5,
+              "start_image": "e255524c-8619-466d-966e-087016157c89"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "3ec92fc8-5b29-444f-b485-28d9a158ecbf",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            62.1,
+            63.95
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c17",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "exactly one small round red-and-white toy boat with a little yellow chimney and round windows, plain smooth sides with no markings, no face, nobody inside, floating on the left half of the frame on a calm blue lake with a small wooden dock, green hills softly blurred behind, bright blue sky, small gentle ripples on the water, no other boats",
+      "momo": false,
+      "motion": "the boat stays in place and keeps the same look, it bobs gently up and down on the small ripples, a small white puff rises from the yellow chimney, sparkles glitter on the water",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "BOAT",
+        "text": "toot, toot",
+        "pos": "right",
+        "at": 0.3
+      },
+      "bars": 1,
+      "cut_at": 63.95,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "be177fa4-9d28-463c-9c31-c499a2fc2119",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053549_be177fa4-9d28-463c-9c31-c499a2fc2119.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "be177fa4-9d28-463c-9c31-c499a2fc2119",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053549_be177fa4-9d28-463c-9c31-c499a2fc2119.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "2e241dc2-9f3c-4abe-9270-b5ee10fa2207",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054441_2e241dc2-9f3c-4abe-9270-b5ee10fa2207.mp4",
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "2e241dc2-9f3c-4abe-9270-b5ee10fa2207",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054441_2e241dc2-9f3c-4abe-9270-b5ee10fa2207.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:44Z",
+              "credits": 4.0,
+              "start_image": "be177fa4-9d28-463c-9c31-c499a2fc2119"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c18",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing on a green grassy hill under a bright blue sky with soft white clouds, facing the viewer, both feet on the grass, one paw held out a little to the side of her chest at chest height, the other paw down at her side, both yellow strap buttons clearly visible and not covered by the paws, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. With her eyes on the viewer Momo traces a small swooping curve in front of her chest with one paw, like a little airplane flying, the paw stays at chest height away from the ears, she does not look up, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "bars": 1,
+      "cut_at": 65.84,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "faadf800-cc3e-4658-ac46-b642f2d23169",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053550_faadf800-cc3e-4658-ac46-b642f2d23169.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "faadf800-cc3e-4658-ac46-b642f2d23169",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053550_faadf800-cc3e-4658-ac46-b642f2d23169.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "e8ec501c-2df7-42a0-8618-0074c420d35c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054748_e8ec501c-2df7-42a0-8618-0074c420d35c.mp4",
+          "attempts": 1,
+          "credits": 4.5,
+          "history": [
+            {
+              "job_id": "e8ec501c-2df7-42a0-8618-0074c420d35c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054748_e8ec501c-2df7-42a0-8618-0074c420d35c.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:47Z",
+              "credits": 4.5,
+              "start_image": "faadf800-cc3e-4658-ac46-b642f2d23169"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "0dd19102-49e3-4fc8-b61f-9e454e1a9e1e",
+          "track_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+          "window": [
+            65.84,
+            67.9
+          ],
+          "at": "2026-10-01T05:42Z"
+        }
+      }
+    },
+    {
+      "id": "c19",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "exactly one chubby round white toy airplane with blue wings, a blue tail and a red propeller on its nose, round windows, plain smooth sides with no markings, no face, nobody inside, in the bright blue sky on the right half of the frame, soft white clouds around it, no other aircraft",
+      "momo": false,
+      "motion": "the airplane stays in the same place in the frame and keeps the same look; its red propeller turns, soft white clouds drift slowly past behind it from right to left, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "AIRPLANE",
+        "text": "zoom, zoom",
+        "pos": "left",
+        "at": 0.3
+      },
+      "bars": 1,
+      "cut_at": 67.9,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "0037d52b-085f-4a63-aad8-c68409de6403",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053747_0037d52b-085f-4a63-aad8-c68409de6403.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "0037d52b-085f-4a63-aad8-c68409de6403",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_053747_0037d52b-085f-4a63-aad8-c68409de6403.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:37Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "005ddce6-e42a-4250-99a0-a43fdf16fe7f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054755_005ddce6-e42a-4250-99a0-a43fdf16fe7f.mp4",
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "005ddce6-e42a-4250-99a0-a43fdf16fe7f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_054755_005ddce6-e42a-4250-99a0-a43fdf16fe7f.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T05:48Z",
+              "credits": 4.0,
+              "start_image": "0037d52b-085f-4a63-aad8-c68409de6403"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c20",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "exactly one small round shiny red toy car with big round black wheels, round headlights and plain windows, plain smooth sides with no markings, no face, nobody inside, parked on the left half of the frame on the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, no other vehicles",
+      "momo": false,
+      "motion": "the car stays completely still in place and keeps the same look, the wheels do not turn; its round headlights blink twice, soft sparkles twinkle around it, the leaves of the small round trees behind rustle gently",
+      "clip_from": {
+        "cut": "c06",
+        "at": 1.0
+      },
+      "card": {
+        "word": "CAR",
+        "text": "car says beep",
+        "pos": "right",
+        "at": 0.1
+      },
+      "bars": 1,
+      "cut_at": 70.77
+    },
+    {
+      "id": "c21",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "exactly one chubby round yellow toy bus with big plain windows, round headlights and big round black wheels, plain smooth sides with no markings, no face, nobody inside, stopped on the right half of the frame on the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, no other vehicles",
+      "momo": false,
+      "motion": "the bus stays completely still in place and keeps the same look, the wheels do not turn; its round lights blink, a small green leaf drifts slowly past, soft sparkles twinkle, the leaves of the small round trees behind rustle gently",
+      "clip_from": {
+        "cut": "c08",
+        "at": 1.0
+      },
+      "card": {
+        "word": "BUS",
+        "text": "bus says honk",
+        "pos": "left",
+        "at": 0.1
+      },
+      "bars": 1,
+      "cut_at": 71.79
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "[Ducky] sitting in the open blue wagon of a little red toy steam engine with a round black chimney and big round black wheels, the engine has no face and nobody at the front, the little train is small in the frame and stands entirely inside the left half of the frame (the engine at the far left, Ducky's wagon just left of the center), the right half of the frame is only open grassy hill and sky, on a green grassy hill with a short toy railway track on wooden sleepers, bright blue sky with soft white clouds, Ducky faces the viewer with its head and tiny wings above the side of the wagon, beak closed in a smile, no other characters",
+      "momo": false,
+      "motion": "the train stays completely still in place on the track and keeps the same look, the wheels do not turn; white puffs of steam rise gently from the round chimney the whole time; for the first two seconds Ducky sways gently in the wagon, then Ducky bobs happily and flaps its tiny wings with its beak closed until the end",
+      "clip_from": {
+        "cut": "c13",
+        "at": 0.3
+      },
+      "card": {
+        "word": "TRAIN",
+        "text": "train says choo",
+        "pos": "right",
+        "at": 0.1
+      },
+      "bars": 1,
+      "cut_at": 72.7
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "exactly one chubby round red toy firetruck with a short white ladder on top, one round light on the roof, big round black wheels and plain windows, plain smooth sides with no markings, no face, nobody inside, parked on the right half of the frame on the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, no other vehicles",
+      "momo": false,
+      "motion": "the firetruck stays completely still in place and keeps the same look, the wheels do not turn; the round roof light glows softly on and off, soft sparkles twinkle around it, a few small leaves drift slowly past, the small round trees behind rustle gently",
+      "clip_from": {
+        "cut": "c15",
+        "at": 1.0
+      },
+      "card": {
+        "word": "FIRE TRUCK",
+        "text": "fire truck says wee-woo",
+        "pos": "left",
+        "at": 0.1
+      },
+      "bars": 1,
+      "cut_at": 73.56
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "exactly one small round red-and-white toy boat with a little yellow chimney and round windows, plain smooth sides with no markings, no face, nobody inside, floating on the left half of the frame on a calm blue lake with a small wooden dock, green hills softly blurred behind, bright blue sky, small gentle ripples on the water, no other boats",
+      "momo": false,
+      "motion": "the boat stays in place and keeps the same look, it bobs gently up and down on the small ripples, a small white puff rises from the yellow chimney, sparkles glitter on the water",
+      "clip_from": {
+        "cut": "c17",
+        "at": 1.0
+      },
+      "card": {
+        "word": "BOAT",
+        "text": "boat says toot",
+        "pos": "right",
+        "at": 0.1
+      },
+      "bars": 1,
+      "cut_at": 74.74
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "exactly one chubby round white toy airplane with blue wings, a blue tail and a red propeller on its nose, round windows, plain smooth sides with no markings, no face, nobody inside, in the bright blue sky on the right half of the frame, soft white clouds around it, no other aircraft",
+      "momo": false,
+      "motion": "the airplane stays in the same place in the frame and keeps the same look; its red propeller turns, soft white clouds drift slowly past behind it from right to left, tiny sparkles twinkle",
+      "clip_from": {
+        "cut": "c19",
+        "at": 1.0
+      },
+      "card": {
+        "word": "AIRPLANE",
+        "text": "airplane says zoom",
+        "pos": "left",
+        "at": 0.1
+      },
+      "bars": 1,
+      "cut_at": 75.71
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "image_prompt": "[Ducky] sitting in the open blue wagon of a little red toy steam engine with a round black chimney and big round black wheels, the engine has no face and nobody at the front, the little train is small in the frame and stands entirely inside the left half of the frame (the engine at the far left, Ducky's wagon just left of the center), the right half of the frame is only open grassy hill and sky, on a green grassy hill with a short toy railway track on wooden sleepers, bright blue sky with soft white clouds, Ducky faces the viewer with its head and tiny wings above the side of the wagon, beak closed in a smile, no other characters",
+      "momo": false,
+      "motion": "the train stays completely still in place on the track and keeps the same look, the wheels do not turn; white puffs of steam rise gently from the round chimney the whole time; for the first two seconds Ducky sways gently in the wagon, then Ducky bobs happily and flaps its tiny wings with its beak closed until the end",
+      "clip_from": {
+        "cut": "c13",
+        "at": 3.38
+      },
+      "bars": 2,
+      "cut_at": 76.95
+    },
+    {
+      "id": "c27",
+      "scene": 5,
+      "type": "V",
+      "image_prompt": "[Momo] full body shot standing on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, facing the viewer, both feet flat on the grass, both paws held up apart beside her chest below the cheeks, ready to clap, both yellow strap buttons clearly visible and not covered by the paws, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together on every vehicle sound and sways a little to the beat, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "bars": 2,
+      "cut_at": 81.52
+    },
+    {
+      "id": "c28",
+      "scene": 5,
+      "type": "V",
+      "image_prompt": "[Momo] medium shot standing on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, facing the viewer, both feet on the grass, both paws at chest height below the cheeks, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo sways gently side to side to the beat, then on 'Here they come' points to her side with one paw at chest height while her face and body stay toward the viewer, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "bars": 2,
+      "cut_at": 85.51
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "type": "V",
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass verge beside the smooth light-gray road of the sunny toy town, soft green grass verges, small round trees and pastel houses softly blurred behind, bright blue sky, both facing the viewer, full body, Momo standing with both feet flat on the grass, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green overalls with two small yellow buttons, Ducky standing beside her with its tiny wings raised happily, big round eyes, beak closed in a smile",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo sways to the beat with both feet on the grass, waves one paw at shoulder height below the ear on 'Wave hello', then claps once and keeps swaying with a smile, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "bars": 2,
+      "cut_at": 89.74
+    },
+    {
+      "id": "c30",
       "scene": 5,
       "type": "L",
       "library_clip": "outro_bye",
       "library_audio": "outro",
+      "lead": 0.3,
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
       },
-      "keyword": {
-        "en": "",
-        "ko": ""
-      }
+      "bars": 3,
+      "cut_at": 94.3
     }
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:e522719790f6",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_song_e5227197.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+      "tool": "suno",
+      "source_file": "song.wav",
+      "note": "Suno v1 Vehicle Sounds",
+      "duration": 109.68,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:e522719790f6",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_song_e5227197.flac",
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T05:04Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 122.0098,
+        "beat0": 0.0842,
+        "downbeat0": 0.0842,
+        "confidence": 1.758,
+        "downbeats": [
+          0.0842,
+          2.0513,
+          4.0183,
+          5.9854,
+          7.9524,
+          9.9195,
+          11.8865,
+          13.8536,
+          15.8206,
+          17.7877,
+          19.7548,
+          21.7218,
+          23.6889,
+          25.6559,
+          27.623,
+          29.59,
+          31.5571,
+          33.5241,
+          35.4912,
+          37.4582,
+          39.4253,
+          41.3924,
+          43.3594,
+          45.3265,
+          47.2935,
+          49.2606,
+          51.2276,
+          53.1947,
+          55.1617,
+          57.1288,
+          59.0959,
+          61.0629,
+          63.03,
+          64.997,
+          66.9641,
+          68.9311,
+          70.8982,
+          72.8652,
+          74.8323,
+          76.7993,
+          78.7664,
+          80.7335,
+          82.7005,
+          84.6676,
+          86.6346,
+          88.6017,
+          90.5687,
+          92.5358,
+          94.5028,
+          96.4699,
+          98.437,
+          100.404,
+          102.3711,
+          104.3381,
+          106.3052,
+          108.2722
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            4.5,
+            3.8,
+            3.0,
+            2.2,
+            1.5,
+            3.2,
+            5.3
+          ],
+          "trend_ms": -0.1
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "ec6570875b4e6e36be3fa85339fc1fb79c868c19",
+        "moved": 85,
+        "loose": 73,
+        "flags": [
+          {
+            "kind": "phase",
+            "line": 4,
+            "t": 11.121,
+            "section": "Chorus",
+            "beat": 2.44,
+            "median": 1.88,
+            "beats": 0.56,
+            "text": "Wave hello! Hello!"
+          },
+          {
+            "kind": "phase",
+            "line": 5,
+            "t": 13.74,
+            "section": "Chorus",
+            "beat": 3.77,
+            "median": 1.88,
+            "beats": 1.89,
+            "text": "Let's go for a ride!"
+          },
+          {
+            "kind": "phase",
+            "line": 14,
+            "t": 38.664,
+            "section": "Chorus",
+            "beat": 2.45,
+            "median": 1.88,
+            "beats": 0.57,
+            "text": "Wave hello! Hello!"
+          },
+          {
+            "kind": "phase",
+            "line": 19,
+            "t": 53.176,
+            "section": "Verse 2",
+            "beat": 3.96,
+            "median": 2.44,
+            "beats": 1.53,
+            "text": "What does the fire truck say?"
+          },
+          {
+            "kind": "phase",
+            "line": 20,
+            "t": 55.146,
+            "section": "Verse 2",
+            "beat": 3.97,
+            "median": 2.44,
+            "beats": 1.53,
+            "text": "Wee-woo! Wee-woo! Hello, fire truck!"
+          },
+          {
+            "kind": "phase",
+            "line": 28,
+            "t": 77.047,
+            "section": "Bridge",
+            "beat": 0.5,
+            "median": 3.98,
+            "beats": 0.53,
+            "text": "And Ducky says quack, quack!"
+          },
+          {
+            "kind": "phase",
+            "line": 33,
+            "t": 89.818,
+            "section": "Chorus",
+            "beat": 2.47,
+            "median": 1.88,
+            "beats": 0.59,
+            "text": "Wave hello! Hello!"
+          },
+          {
+            "kind": "phase",
+            "line": 34,
+            "t": 92.432,
+            "section": "Chorus",
+            "beat": 3.79,
+            "median": 1.88,
+            "beats": 1.91,
+            "text": "Let's go for a ride!"
+          }
+        ]
+      },
+      "lyrics_sha1": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+      "end": 100.404
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:ec6570875b4e",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_song_vocals_ec657087.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "ec6570875b4e6e36be3fa85339fc1fb79c868c19",
+      "of": "e522719790f62d3cc68402e4c0b42bf7730e7fa7",
+      "history": [
+        {
+          "job_id": "local:ec6570875b4e",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_song_vocals_ec657087.flac",
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T05:04Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 122.0098,
+    "lyrics": [
+      {
+        "text": "Beep, beep! Honk, honk!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Beep,",
+            2.945,
+            3.559,
+            2.8
+          ],
+          [
+            "beep!",
+            3.559,
+            3.938,
+            3.5
+          ],
+          [
+            "Honk,",
+            3.938,
+            4.438,
+            4.04
+          ],
+          [
+            "honk!",
+            4.461,
+            4.766,
+            4.54
+          ]
+        ]
+      },
+      {
+        "text": "Choo, choo! Wee-woo!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Choo,",
+            4.945,
+            5.394,
+            5.02
+          ],
+          [
+            "choo!",
+            5.394,
+            5.894,
+            5.48
+          ],
+          [
+            "Wee-woo!",
+            5.963,
+            6.422,
+            5.98
+          ]
+        ]
+      },
+      {
+        "text": "Toot, toot! Zoom, zoom!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Toot,",
+            6.921,
+            7.361,
+            7.04
+          ],
+          [
+            "toot!",
+            7.405,
+            7.729,
+            7.48
+          ],
+          [
+            "Zoom,",
+            7.729,
+            8.269,
+            7.9
+          ],
+          [
+            "zoom!",
+            8.462,
+            8.802,
+            8.44
+          ]
+        ]
+      },
+      {
+        "text": "Here they come! Here they come!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Here",
+            8.802,
+            9.182,
+            8.84
+          ],
+          [
+            "they",
+            9.425,
+            9.785,
+            9.22
+          ],
+          [
+            "come!",
+            9.879,
+            10.252,
+            9.58
+          ],
+          [
+            "Here",
+            10.252,
+            10.428,
+            10.14
+          ],
+          [
+            "they",
+            10.428,
+            10.648,
+            10.32
+          ],
+          [
+            "come!",
+            10.652,
+            11.052,
+            10.54
+          ]
+        ]
+      },
+      {
+        "text": "Wave hello! Hello!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wave",
+            11.121,
+            11.401,
+            11.12
+          ],
+          [
+            "hello!",
+            11.59,
+            12.518,
+            11.4
+          ],
+          [
+            "Hello!",
+            12.518,
+            13.386,
+            12.42
+          ]
+        ]
+      },
+      {
+        "text": "Let's go for a ride!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Let's",
+            13.74,
+            13.995,
+            13.62
+          ],
+          [
+            "go",
+            13.995,
+            14.135,
+            14.08
+          ],
+          [
+            "for",
+            14.334,
+            14.694,
+            14.22
+          ],
+          [
+            "a",
+            14.694,
+            14.914,
+            14.58
+          ],
+          [
+            "ride!",
+            14.914,
+            15.352,
+            14.8
+          ]
+        ]
+      },
+      {
+        "text": "What does the car say?",
+        "section": "Verse 1",
+        "words": [
+          [
+            "What",
+            18.934,
+            19.278,
+            18.6
+          ],
+          [
+            "does",
+            19.278,
+            19.532,
+            19.16
+          ],
+          [
+            "the",
+            19.532,
+            19.712,
+            19.46
+          ],
+          [
+            "car",
+            19.742,
+            20.051,
+            19.64
+          ],
+          [
+            "say?",
+            20.051,
+            20.66,
+            20.02
+          ]
+        ]
+      },
+      {
+        "text": "Beep, beep! Beep, beep! Hello, car!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Beep,",
+            20.994,
+            21.253,
+            20.8
+          ],
+          [
+            "beep!",
+            21.253,
+            21.733,
+            21.28
+          ],
+          [
+            "Beep,",
+            21.742,
+            22.121,
+            21.76
+          ],
+          [
+            "beep!",
+            22.121,
+            22.421,
+            22.2
+          ],
+          [
+            "Hello,",
+            22.515,
+            22.735,
+            22.5
+          ],
+          [
+            "car!",
+            22.735,
+            22.959,
+            22.8
+          ]
+        ]
+      },
+      {
+        "text": "What does the bus say?",
+        "section": "Verse 1",
+        "words": [
+          [
+            "What",
+            22.959,
+            23.039,
+            23.02
+          ],
+          [
+            "does",
+            23.204,
+            23.468,
+            23.1
+          ],
+          [
+            "the",
+            23.468,
+            23.668,
+            23.38
+          ],
+          [
+            "bus",
+            23.708,
+            24.008,
+            23.58
+          ],
+          [
+            "say?",
+            24.202,
+            24.606,
+            23.88
+          ]
+        ]
+      },
+      {
+        "text": "Honk, honk! Honk, honk! Hello, bus!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Honk,",
+            24.88,
+            25.12,
+            24.78
+          ],
+          [
+            "honk!",
+            25.12,
+            25.469,
+            25.24
+          ],
+          [
+            "Honk,",
+            25.469,
+            25.969,
+            25.64
+          ],
+          [
+            "honk!",
+            25.988,
+            26.328,
+            26.14
+          ],
+          [
+            "Hello,",
+            26.442,
+            26.666,
+            26.48
+          ],
+          [
+            "bus!",
+            26.666,
+            26.846,
+            26.74
+          ]
+        ]
+      },
+      {
+        "text": "Beep, beep! Honk, honk!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Beep,",
+            30.512,
+            31.051,
+            30.08
+          ],
+          [
+            "beep!",
+            31.051,
+            31.391,
+            30.9
+          ],
+          [
+            "Honk,",
+            31.52,
+            32.004,
+            31.24
+          ],
+          [
+            "honk!",
+            32.004,
+            32.293,
+            32.06
+          ]
+        ]
+      },
+      {
+        "text": "Choo, choo! Wee-woo!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Choo,",
+            32.473,
+            32.942,
+            32.4
+          ],
+          [
+            "choo!",
+            32.942,
+            33.462,
+            32.88
+          ],
+          [
+            "Wee-woo!",
+            33.5,
+            34.024,
+            33.4
+          ]
+        ]
+      },
+      {
+        "text": "Toot, toot! Zoom, zoom!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Toot,",
+            34.418,
+            34.987,
+            33.74
+          ],
+          [
+            "toot!",
+            34.987,
+            35.327,
+            34.96
+          ],
+          [
+            "Zoom,",
+            35.331,
+            35.791,
+            35.3
+          ],
+          [
+            "zoom!",
+            35.985,
+            36.339,
+            35.76
+          ]
+        ]
+      },
+      {
+        "text": "Here they come! Here they come!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Here",
+            36.339,
+            36.899,
+            36.2
+          ],
+          [
+            "they",
+            36.993,
+            37.393,
+            36.76
+          ],
+          [
+            "come!",
+            37.422,
+            37.731,
+            37.16
+          ],
+          [
+            "Here",
+            37.731,
+            37.951,
+            37.64
+          ],
+          [
+            "they",
+            37.965,
+            38.185,
+            37.86
+          ],
+          [
+            "come!",
+            38.195,
+            38.599,
+            38.08
+          ]
+        ]
+      },
+      {
+        "text": "Wave hello! Hello!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wave",
+            38.664,
+            39.104,
+            38.5
+          ],
+          [
+            "hello!",
+            39.118,
+            39.818,
+            38.94
+          ],
+          [
+            "Hello!",
+            40.115,
+            40.44,
+            39.64
+          ]
+        ]
+      },
+      {
+        "text": "Let's go for a ride!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Let's",
+            41.28,
+            41.522,
+            40.44
+          ],
+          [
+            "go",
+            41.522,
+            41.682,
+            41.62
+          ],
+          [
+            "for",
+            41.911,
+            42.1,
+            41.78
+          ],
+          [
+            "a",
+            42.1,
+            42.36,
+            42.1
+          ],
+          [
+            "ride!",
+            42.36,
+            42.879,
+            42.36
+          ]
+        ]
+      },
+      {
+        "text": "What does the train say?",
+        "section": "Verse 2",
+        "words": [
+          [
+            "What",
+            46.441,
+            46.82,
+            45.88
+          ],
+          [
+            "does",
+            46.82,
+            47.07,
+            46.7
+          ],
+          [
+            "the",
+            47.07,
+            47.204,
+            46.98
+          ],
+          [
+            "train",
+            47.204,
+            47.604,
+            47.16
+          ],
+          [
+            "say?",
+            47.658,
+            48.197,
+            47.56
+          ]
+        ]
+      },
+      {
+        "text": "Choo, choo! Choo, choo! Hello, train!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Choo,",
+            48.491,
+            48.716,
+            48.1
+          ],
+          [
+            "choo!",
+            48.716,
+            49.175,
+            48.78
+          ],
+          [
+            "Choo,",
+            49.175,
+            49.655,
+            49.26
+          ],
+          [
+            "choo!",
+            49.669,
+            50.049,
+            49.74
+          ],
+          [
+            "Hello,",
+            50.1,
+            50.42,
+            50.12
+          ],
+          [
+            "train!",
+            50.48,
+            50.72,
+            50.38
+          ]
+        ]
+      },
+      {
+        "text": "Who is on the train? Ducky! Quack, quack!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Who",
+            50.75,
+            50.88,
+            50.36
+          ],
+          [
+            "is",
+            50.89,
+            50.96,
+            50.6
+          ],
+          [
+            "on",
+            50.96,
+            51.08,
+            50.76
+          ],
+          [
+            "the",
+            51.15,
+            51.243,
+            50.94
+          ],
+          [
+            "train?",
+            51.243,
+            51.683,
+            51.1
+          ],
+          [
+            "Ducky!",
+            51.729,
+            52.178,
+            51.54
+          ],
+          [
+            "Quack,",
+            52.178,
+            52.461,
+            52.08
+          ],
+          [
+            "quack!",
+            52.682,
+            52.936,
+            52.363
+          ]
+        ]
+      },
+      {
+        "text": "What does the fire truck say?",
+        "section": "Verse 2",
+        "words": [
+          [
+            "What",
+            53.176,
+            53.455,
+            52.82
+          ],
+          [
+            "does",
+            53.455,
+            53.705,
+            53.34
+          ],
+          [
+            "the",
+            53.705,
+            53.925,
+            53.62
+          ],
+          [
+            "fire",
+            53.959,
+            54.379,
+            53.84
+          ],
+          [
+            "truck",
+            54.383,
+            54.573,
+            54.26
+          ],
+          [
+            "say?",
+            54.573,
+            55.047,
+            54.52
+          ]
+        ]
+      },
+      {
+        "text": "Wee-woo! Wee-woo! Hello, fire truck!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Wee-woo!",
+            55.146,
+            56.046,
+            54.96
+          ],
+          [
+            "Wee-woo!",
+            56.359,
+            57.092,
+            55.86
+          ],
+          [
+            "Hello,",
+            57.092,
+            57.651,
+            56.82
+          ],
+          [
+            "fire",
+            57.651,
+            58.065,
+            57.46
+          ],
+          [
+            "truck!",
+            58.065,
+            58.354,
+            57.92
+          ]
+        ]
+      },
+      {
+        "text": "What does the boat say?",
+        "section": "Verse 3",
+        "words": [
+          [
+            "What",
+            62.2,
+            62.549,
+            61.9
+          ],
+          [
+            "does",
+            62.549,
+            62.814,
+            62.42
+          ],
+          [
+            "the",
+            62.814,
+            62.994,
+            62.72
+          ],
+          [
+            "boat",
+            63.053,
+            63.397,
+            62.9
+          ],
+          [
+            "say?",
+            63.397,
+            63.931,
+            63.28
+          ]
+        ]
+      },
+      {
+        "text": "Toot, toot! Toot, toot! Hello, boat!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Toot,",
+            64.016,
+            64.256,
+            63.98
+          ],
+          [
+            "toot!",
+            64.256,
+            64.495,
+            64.24
+          ],
+          [
+            "Toot,",
+            64.495,
+            64.715,
+            64.52
+          ],
+          [
+            "toot!",
+            64.759,
+            65.039,
+            64.74
+          ],
+          [
+            "Hello,",
+            65.198,
+            65.523,
+            65.02
+          ],
+          [
+            "boat!",
+            65.523,
+            65.707,
+            65.52
+          ]
+        ]
+      },
+      {
+        "text": "What does the airplane say?",
+        "section": "Verse 3",
+        "words": [
+          [
+            "What",
+            65.942,
+            66.222,
+            65.86
+          ],
+          [
+            "does",
+            66.226,
+            66.486,
+            66.14
+          ],
+          [
+            "the",
+            66.496,
+            66.716,
+            66.4
+          ],
+          [
+            "airplane",
+            66.725,
+            67.225,
+            66.62
+          ],
+          [
+            "say?",
+            67.309,
+            67.847,
+            67.12
+          ]
+        ]
+      },
+      {
+        "text": "Zoom, zoom! Zoom, zoom! Hello, airplane!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Zoom,",
+            67.97,
+            68.107,
+            68.1
+          ],
+          [
+            "zoom!",
+            68.456,
+            68.71,
+            68.36
+          ],
+          [
+            "Zoom,",
+            68.71,
+            68.95,
+            68.62
+          ],
+          [
+            "zoom!",
+            68.95,
+            69.384,
+            68.86
+          ],
+          [
+            "Hello,",
+            69.384,
+            69.744,
+            69.32
+          ],
+          [
+            "airplane!",
+            69.918,
+            70.422,
+            69.68
+          ]
+        ]
+      },
+      {
+        "text": "Car says beep! Bus says honk!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Car",
+            70.866,
+            71.07,
+            70.76
+          ],
+          [
+            "says",
+            71.07,
+            71.33,
+            71.04
+          ],
+          [
+            "beep!",
+            71.414,
+            71.893,
+            71.3
+          ],
+          [
+            "Bus",
+            71.893,
+            72.053,
+            71.9
+          ],
+          [
+            "says",
+            72.153,
+            72.347,
+            72.06
+          ],
+          [
+            "honk!",
+            72.347,
+            72.612,
+            72.32
+          ]
+        ]
+      },
+      {
+        "text": "Train says choo! Fire truck says wee-woo!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Train",
+            72.796,
+            72.956,
+            72.84
+          ],
+          [
+            "says",
+            73.13,
+            73.23,
+            73.0
+          ],
+          [
+            "choo!",
+            73.23,
+            73.54,
+            73.26
+          ],
+          [
+            "Fire",
+            73.54,
+            73.68,
+            73.62
+          ],
+          [
+            "truck",
+            73.839,
+            74.003,
+            73.76
+          ],
+          [
+            "says",
+            74.003,
+            74.263,
+            74.0
+          ],
+          [
+            "wee-woo!",
+            74.288,
+            74.687,
+            74.26
+          ]
+        ]
+      },
+      {
+        "text": "Boat says toot! Airplane says zoom!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Boat",
+            74.842,
+            75.006,
+            74.8
+          ],
+          [
+            "says",
+            75.006,
+            75.266,
+            74.98
+          ],
+          [
+            "toot!",
+            75.32,
+            75.814,
+            75.24
+          ],
+          [
+            "Airplane",
+            75.814,
+            76.174,
+            75.78
+          ],
+          [
+            "says",
+            76.333,
+            76.578,
+            76.14
+          ],
+          [
+            "zoom!",
+            76.578,
+            76.842,
+            76.46
+          ]
+        ]
+      },
+      {
+        "text": "And Ducky says quack, quack!",
+        "section": "Bridge",
+        "words": [
+          [
+            "And",
+            77.047,
+            77.147,
+            77.1
+          ],
+          [
+            "Ducky",
+            77.306,
+            77.555,
+            77.2
+          ],
+          [
+            "says",
+            77.555,
+            77.665,
+            77.46
+          ],
+          [
+            "quack,",
+            77.665,
+            78.225,
+            77.7
+          ],
+          [
+            "quack!",
+            78.249,
+            78.468,
+            78.26
+          ]
+        ]
+      },
+      {
+        "text": "Beep, beep! Honk, honk!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Beep,",
+            81.676,
+            82.196,
+            81.5
+          ],
+          [
+            "beep!",
+            82.205,
+            82.649,
+            82.02
+          ],
+          [
+            "Honk,",
+            82.649,
+            82.949,
+            82.7
+          ],
+          [
+            "honk!",
+            83.168,
+            83.442,
+            83.0
+          ]
+        ]
+      },
+      {
+        "text": "Choo, choo! Wee-woo!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Choo,",
+            83.612,
+            83.912,
+            83.68
+          ],
+          [
+            "choo!",
+            84.091,
+            84.591,
+            83.98
+          ],
+          [
+            "Wee-woo!",
+            84.664,
+            85.083,
+            84.48
+          ]
+        ]
+      },
+      {
+        "text": "Toot, toot! Zoom, zoom!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Toot,",
+            85.582,
+            86.082,
+            85.64
+          ],
+          [
+            "toot!",
+            86.116,
+            86.44,
+            86.14
+          ],
+          [
+            "Zoom,",
+            86.44,
+            86.82,
+            86.54
+          ],
+          [
+            "zoom!",
+            87.139,
+            87.483,
+            86.92
+          ]
+        ]
+      },
+      {
+        "text": "Here they come! Here they come!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Here",
+            87.528,
+            87.848,
+            87.56
+          ],
+          [
+            "they",
+            88.131,
+            88.511,
+            87.88
+          ],
+          [
+            "come!",
+            88.58,
+            88.875,
+            88.26
+          ],
+          [
+            "Here",
+            88.875,
+            89.055,
+            88.86
+          ],
+          [
+            "they",
+            89.109,
+            89.329,
+            89.04
+          ],
+          [
+            "come!",
+            89.334,
+            89.683,
+            89.26
+          ]
+        ]
+      },
+      {
+        "text": "Wave hello! Hello!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wave",
+            89.818,
+            90.222,
+            89.6
+          ],
+          [
+            "hello!",
+            90.222,
+            91.12,
+            90.08
+          ],
+          [
+            "Hello!",
+            91.12,
+            92.057,
+            91.12
+          ]
+        ]
+      },
+      {
+        "text": "Let's go for a ride!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Let's",
+            92.432,
+            92.656,
+            92.38
+          ],
+          [
+            "go",
+            92.656,
+            92.836,
+            92.74
+          ],
+          [
+            "for",
+            92.945,
+            93.265,
+            92.92
+          ],
+          [
+            "a",
+            93.544,
+            93.594,
+            93.24
+          ],
+          [
+            "ride!",
+            93.594,
+            93.963,
+            93.48
+          ]
+        ]
+      }
+    ],
+    "refs_urls": {
+      "c02_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c02_en_3604110e.wav",
+      "c03_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c03_en_967d39a5.wav",
+      "c04_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c04_en_68bcce41.wav",
+      "c05_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c05_en_4f44d2a6.wav",
+      "c07_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c07_en_ea4fa2f3.wav",
+      "c12_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c12_en_44089f75.wav",
+      "c14_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c14_en_5bb8c103.wav",
+      "c16_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c16_en_7e8dcfe6.wav",
+      "c18_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep09/ep09_ref_c18_en_01128d83.wav"
+    }
+  }
 }
