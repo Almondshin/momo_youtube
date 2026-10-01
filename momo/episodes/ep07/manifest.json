@@ -12,16 +12,17 @@
     "chosen_axis": null
   },
   "characters": [
-    "momo"
+    "momo",
+    "ducky"
   ],
   "title": {
-    "en": "",
+    "en": "Wash Your Hands Song with Momo the Bunny | Handwashing Routine for Toddlers",
     "ko": ""
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c03",
     "text": {
-      "en": "",
+      "en": "WASH YOUR HANDS!",
       "ko": ""
     },
     "text_pos": "top"
@@ -29,15 +30,20 @@
   "bgm": null,
   "upload": {
     "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
-    },
-    "ko": {
-      "title": "",
-      "description": "",
-      "tags": [],
+      "title": "Wash Your Hands Song with Momo the Bunny | Handwashing Routine for Toddlers",
+      "description": "Splish, splash, water on! Rub, rub, rub your hands! Wash your hands with Momo the Bunny and Ducky: turn the water on, add soap, rub round and round and count to ten, rinse the bubbles away and pat them dry. Squeaky clean! When do we wash our hands? After we play and before we eat!\n\nHandwashing steps in this song: water, soap, rub, count to 10, rinse, dry\n\nMade for toddlers and preschoolers (ages 2-5). Music and animation made with AI tools.",
+      "tags": [
+        "wash your hands song",
+        "handwashing song",
+        "hand washing for kids",
+        "healthy habits for kids",
+        "kids songs",
+        "nursery rhymes",
+        "toddler songs",
+        "learn english for kids",
+        "english for toddlers",
+        "Momo the Bunny"
+      ],
       "playlist_id": null
     }
   },
@@ -48,17 +54,26 @@
     "regenerations": 0
   },
   "notes": {
-    "v_over_reason": null,
-    "approvals": [],
-    "next_time": []
+    "v_over_reason": "노래 형식 v2 (ep04 v2 와 같은 방식 — 2026-09-30 사용자 '더 자연스럽게'): 125 BPM Suno 곡, 컷은 가사 줄 시작점(cut_at) → 33컷. V 31개 중 13개는 재사용(clip_from, 0 크레딧 — 후렴 2~4 와 전주 비눗방울), 모모가 보이는 노래 컷은 전부 립싱크(노래하며 동작).",
+    "approvals": [
+      "2026-10-01 사용자: ep05~07 병렬 제작·업로드 지시, 묻지 말고 진행",
+      "2026-10-01 노래 승인: Suno v1 'Wash Your Hands' (125.0 BPM, 2:15) — 사용자가 만들어 넣어 준 곡"
+    ],
+    "next_time": [
+      "가사 정렬: align_lyrics.py 가 135초 스템 전체를 한 번에 들으면 whisper 가 후렴 1 에서 반복 환각('shine shine…') 또는 무음 전주 환각을 내고 실행마다 결과가 달랐다 (94.8% → 83.4%). 섹션별로 잘라 들은 정렬(97.6%)을 썼다 — ~/ml/momo_ep07/suno/v1/tools/align_sliced.py",
+      "Suno 가 후렴 끝 'Wash your hands, hooray!' 를 두 번 불렀다 — 가사에 반복 줄을 미리 써 두면 컷 계획이 맞는다",
+      "후렴 4개가 같은 녹음(후렴 1 기준 16/32/52마디 뒤, 보컬 상관 r≥0.9) — 후렴 단어 시각은 4개 중앙값으로 맞춤 (~/ml/momo_ep07/suno/v1/tools/chorus_seed.py → align.json), 컷 계획은 tools/plan07.py"
+    ]
   },
   "cuts": [
     {
       "id": "c01",
       "scene": 1,
       "type": "L",
+      "bars": 3,
       "library_clip": "intro_wave",
       "library_audio": "intro",
+      "lead": 0.6,
       "narration": {
         "en": "Hi friends! It's Momo!"
       },
@@ -69,17 +84,2178 @@
     },
     {
       "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 3,
+      "image_prompt": "many round shiny soap bubbles of different sizes floating in the air in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink and a fluffy white bath mat softly blurred behind, the bubbles with a soft rainbow shimmer",
+      "motion": "the soap bubbles float slowly upward and drift gently, each bubble stays round and separate and shimmers with soft rainbow colors, the bathroom stays completely still",
+      "momo": false,
+      "clip_from": {
+        "cut": "c16",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 11.321,
+      "image_prompt": "[Momo] medium shot, standing behind a small white rounded sink with a shiny silver faucet in the foreground, facing the viewer, a gentle clear stream of water running from the faucet, both simple round cartoon bunny paws held over the sink at chest height with fluffy white soap foam on them, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "pats her foamy paws together over the sink on 'splish, splash', then rubs her paws together at chest height to the beat, small white bubbles rise from the foam, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 5
+      }
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 15.446,
+      "image_prompt": "[Momo] medium shot from the waist up, standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall with a white rounded pedestal sink behind her, facing the viewer, many round shiny soap bubbles floating in the air around her, one paw at chest height pointing at a bubble, huge round sparkly eyes with big white highlights, delighted smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "sways gently and points one paw at a bubble on each 'pop', the bubbles she points at pop into tiny sparkles, then pats her paws together softly at chest height, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 19.094,
+      "image_prompt": "[Momo] and [Ducky] medium shot at a small white rounded sink with a shiny silver faucet in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, Ducky sitting on the edge of the sink beside her, Momo facing the viewer and showing both clean simple round cartoon bunny paws at chest height with the palms toward the viewer, tiny sparkles twinkling on her clean paws, huge round sparkly eyes with big white highlights, proud happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo shows her clean paws and wiggles them gently while sparkles twinkle on them, Ducky flaps its tiny wings happily on the echo and keeps its little beak closed, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c06",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 23.094,
+      "image_prompt": "[Momo] full body shot standing with both feet flat on a fluffy white bath mat in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink behind her, facing the viewer, knees slightly bent, both simple round cartoon bunny paws together at chest height ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, tiny sparkles in the air",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo sways to the beat, gives one big happy clap at chest height on 'hooray' and bounces gently on bent knees with both feet on the mat, sparkles twinkle around her, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c07",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 26.935,
+      "image_prompt": "close-up of a shiny silver faucet with one plain round handle on a white rounded sink, a gentle clear stream of water flowing from the faucet into the white basin, the faucet on the right side of the frame, the bright pastel bathroom with soft light-blue and pink square tiles softly blurred behind",
+      "motion": "the clear water stream flows gently and smoothly from the faucet into the sink with small soft splashes, tiny sparkles twinkle in the water, the faucet and the sink stay completely still",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "WATER",
+        "text": "water from the faucet",
+        "pos": "left",
+        "at": 0.83
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 30.722,
+      "image_prompt": "[Momo] medium close-up, standing behind a small white rounded sink with a shiny silver faucet in the foreground, facing the viewer, a gentle clear stream of water running from the faucet, both simple round cartoon bunny paws held out over the sink at chest height, shiny water drops sparkling on the wet paws, huge round sparkly eyes with big white highlights, cheerful smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "holds her paws under the gentle water stream and nods to the beat on every 'wet', shiny water drops sparkle on her paws, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "cut_at": 34.563,
+      "image_prompt": "close-up of exactly one round pink bar of soap, plain and smooth with no markings, resting on a small white soap dish on the edge of a white rounded sink, the soap dish on the right side of the frame, the bright pastel bathroom with soft light-blue and pink square tiles softly blurred behind",
+      "motion": "a few tiny round soap bubbles rise slowly from the soap and tiny sparkles twinkle around it, the soap and the dish stay completely still, exactly one bar of soap",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "SOAP",
+        "text": "a pink bar of soap",
+        "pos": "left",
+        "at": 0.97
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 3,
+      "cut_at": 36.478,
+      "image_prompt": "[Momo] medium shot, standing behind a small white rounded sink with a shiny silver faucet in the foreground, facing the viewer, holding one small round pink bar of soap between both simple round cartoon bunny paws at chest height, a little white soap foam on her paws, huge round sparkly eyes with big white highlights, happy smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "rubs the pink soap between her paws, then rubs her paws together on each 'rub', fluffy white foam grows on her paws, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 6
+      }
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 42.031,
+      "image_prompt": "[Momo] medium shot, standing behind a small white rounded sink with a shiny silver faucet in the foreground, facing the viewer, a gentle clear stream of water running from the faucet, both simple round cartoon bunny paws held over the sink at chest height with fluffy white soap foam on them, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "pats her foamy paws together over the sink on 'splish, splash', then rubs her paws together at chest height to the beat, small white bubbles rise from the foam, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 46.166,
+      "image_prompt": "[Momo] medium shot from the waist up, standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall with a white rounded pedestal sink behind her, facing the viewer, many round shiny soap bubbles floating in the air around her, one paw at chest height pointing at a bubble, huge round sparkly eyes with big white highlights, delighted smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "sways gently and points one paw at a bubble on each 'pop', the bubbles she points at pop into tiny sparkles, then pats her paws together softly at chest height, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 49.813,
+      "image_prompt": "[Momo] and [Ducky] medium shot at a small white rounded sink with a shiny silver faucet in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, Ducky sitting on the edge of the sink beside her, Momo facing the viewer and showing both clean simple round cartoon bunny paws at chest height with the palms toward the viewer, tiny sparkles twinkling on her clean paws, huge round sparkly eyes with big white highlights, proud happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo shows her clean paws and wiggles them gently while sparkles twinkle on them, Ducky flaps its tiny wings happily on the echo and keeps its little beak closed, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 53.814,
+      "image_prompt": "[Momo] full body shot standing with both feet flat on a fluffy white bath mat in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink behind her, facing the viewer, knees slightly bent, both simple round cartoon bunny paws together at chest height ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, tiny sparkles in the air",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo sways to the beat, gives one big happy clap at chest height on 'hooray' and bounces gently on bent knees with both feet on the mat, sparkles twinkle around her, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c15",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 57.615,
+      "image_prompt": "[Momo] medium close-up behind a small white rounded sink in the foreground, facing the viewer, both simple round cartoon bunny paws together at chest height covered in fluffy white soap foam, a few small round soap bubbles in the air, huge round sparkly eyes with big white highlights, happy smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "rubs her foamy paws together in small circles at chest height and sways gently to the beat, small bubbles float up from the foam, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 61.402,
+      "image_prompt": "many round shiny soap bubbles of different sizes floating in the air in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink and a fluffy white bath mat softly blurred behind, the bubbles with a soft rainbow shimmer",
+      "motion": "the soap bubbles float slowly upward and drift gently, each bubble stays round and separate and shimmers with soft rainbow colors, the bathroom stays completely still",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 6,
+      "card": {
+        "word": "BUBBLES",
+        "text": "round soap bubbles",
+        "pos": "right",
+        "at": 1.14
+      }
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 65.128,
+      "image_prompt": "[Momo] medium shot, standing beside a white rounded pedestal sink, facing the viewer, both simple round cartoon bunny paws together at chest height covered in white soap foam, a few small round soap bubbles in the air, huge round sparkly eyes with big white highlights, excited smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "rubs her foamy paws together, then on 'ready, go' opens both paws at chest height with the palms toward the viewer and nods once, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 69.109,
+      "image_prompt": "[Momo] medium close-up from the chest up behind a small white rounded sink, facing the viewer, both foamy simple round cartoon bunny paws together at chest height below the cheeks, white soap foam and small bubbles, huge round sparkly eyes with big white highlights, big bright smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "rubs her foamy paws together and nods on every number, a big happy smile on the last number, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 72.751,
+      "image_prompt": "[Momo] medium shot, standing behind a small white rounded sink with a shiny silver faucet in the foreground, facing the viewer, a gentle clear stream of water running from the faucet, both simple round cartoon bunny paws held over the sink at chest height with fluffy white soap foam on them, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "pats her foamy paws together over the sink on 'splish, splash', then rubs her paws together at chest height to the beat, small white bubbles rise from the foam, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 76.876,
+      "image_prompt": "[Momo] medium shot from the waist up, standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall with a white rounded pedestal sink behind her, facing the viewer, many round shiny soap bubbles floating in the air around her, one paw at chest height pointing at a bubble, huge round sparkly eyes with big white highlights, delighted smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "sways gently and points one paw at a bubble on each 'pop', the bubbles she points at pop into tiny sparkles, then pats her paws together softly at chest height, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c21",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 80.523,
+      "image_prompt": "[Momo] and [Ducky] medium shot at a small white rounded sink with a shiny silver faucet in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, Ducky sitting on the edge of the sink beside her, Momo facing the viewer and showing both clean simple round cartoon bunny paws at chest height with the palms toward the viewer, tiny sparkles twinkling on her clean paws, huge round sparkly eyes with big white highlights, proud happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo shows her clean paws and wiggles them gently while sparkles twinkle on them, Ducky flaps its tiny wings happily on the echo and keeps its little beak closed, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c22",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 84.524,
+      "image_prompt": "[Momo] full body shot standing with both feet flat on a fluffy white bath mat in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink behind her, facing the viewer, knees slightly bent, both simple round cartoon bunny paws together at chest height ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, tiny sparkles in the air",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo sways to the beat, gives one big happy clap at chest height on 'hooray' and bounces gently on bent knees with both feet on the mat, sparkles twinkle around her, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 88.246,
+      "image_prompt": "close-up of a white rounded sink basin, a gentle clear stream of water from a shiny silver faucet washing fluffy white soap foam toward a small round silver drain, soft sparkles on the water, the bright pastel bathroom with soft light-blue and pink square tiles softly blurred behind",
+      "motion": "the clear water flows gently and the white soap foam swirls slowly toward the drain and disappears, small sparkles twinkle on the water, the sink and the faucet stay completely still",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 92.087,
+      "image_prompt": "[Momo] and [Ducky] full body shot in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink behind them, Momo standing with both feet flat on a fluffy white bath mat facing the viewer, one paw raised beside her shoulder below the ear in a wave, Ducky standing on the bath mat beside her raising one tiny wing, huge round sparkly eyes with big white highlights, both happy, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo keeps facing the viewer and waves one paw beside her shoulder below the ear, Ducky waves a tiny wing and bobs its head on 'quack, quack' and keeps its little beak closed, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "cut_at": 95.814,
+      "image_prompt": "[Momo] and [Ducky] medium wide shot in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, Momo standing with both feet flat on a fluffy white bath mat facing the viewer, both wet simple round cartoon bunny paws held out at chest height with shiny water drops, Ducky beside her on the mat with shiny water drops on its feathers, huge round sparkly eyes with big white highlights, both with big happy smiles, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo wiggles her wet paws gently at chest height, Ducky shakes its whole little body happily and keeps its little beak closed, shiny water drops fly off Ducky and sparkle, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      }
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 3,
+      "cut_at": 98.321,
+      "image_prompt": "[Momo] medium shot in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink behind her, facing the viewer, holding one soft fluffy yellow towel with both simple round cartoon bunny paws at chest height, huge round sparkly eyes with big white highlights, cozy happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "lifts the soft yellow towel a little on 'towel', then pats her paws on the towel on every 'pat', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 6
+      },
+      "card": {
+        "word": "TOWEL",
+        "text": "a soft yellow towel",
+        "pos": "right",
+        "at": 0.64
+      }
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 103.646,
+      "image_prompt": "[Momo] full body shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, standing with both feet flat on the grass facing the viewer, a small red ball on the grass beside her feet, huge round sparkly eyes with big white highlights, cheerful smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo keeps facing the viewer, points one paw at the red ball beside her feet, then nods, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 107.502,
+      "image_prompt": "[Momo] medium shot, standing behind the small round wooden table in a bright cheerful pastel kitchen with soft mint-green cabinets, warm morning light, a small white plate with apple slices on the table in front of her, both simple round cartoon bunny paws resting on the edge of the table, facing the viewer, huge round sparkly eyes with big white highlights, happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "keeps facing the viewer, points one paw at the plate of apple slices, then nods, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      }
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 111.151,
+      "image_prompt": "[Momo] medium shot, standing behind a small white rounded sink with a shiny silver faucet in the foreground, facing the viewer, a gentle clear stream of water running from the faucet, both simple round cartoon bunny paws held over the sink at chest height with fluffy white soap foam on them, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
+      "motion": "pats her foamy paws together over the sink on 'splish, splash', then rubs her paws together at chest height to the beat, small white bubbles rise from the foam, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c30",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 115.276,
+      "image_prompt": "[Momo] medium shot from the waist up, standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall with a white rounded pedestal sink behind her, facing the viewer, many round shiny soap bubbles floating in the air around her, one paw at chest height pointing at a bubble, huge round sparkly eyes with big white highlights, delighted smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "sways gently and points one paw at a bubble on each 'pop', the bubbles she points at pop into tiny sparkles, then pats her paws together softly at chest height, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "cut_at": 118.923,
+      "image_prompt": "[Momo] and [Ducky] medium shot at a small white rounded sink with a shiny silver faucet in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, Ducky sitting on the edge of the sink beside her, Momo facing the viewer and showing both clean simple round cartoon bunny paws at chest height with the palms toward the viewer, tiny sparkles twinkling on her clean paws, huge round sparkly eyes with big white highlights, proud happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo shows her clean paws and wiggles them gently while sparkles twinkle on them, Ducky flaps its tiny wings happily on the echo and keeps its little beak closed, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "cut_at": 122.934,
+      "image_prompt": "[Momo] full body shot standing with both feet flat on a fluffy white bath mat in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink behind her, facing the viewer, knees slightly bent, both simple round cartoon bunny paws together at chest height ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, tiny sparkles in the air",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo sways to the beat, gives one big happy clap at chest height on 'hooray' and bounces gently on bent knees with both feet on the mat, sparkles twinkle around her, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.0
+      },
+      "lipsync_ok": true
+    },
+    {
+      "id": "c33",
       "scene": 5,
       "type": "L",
+      "bars": 5,
+      "cut_at": 125.79,
       "library_clip": "outro_bye",
       "library_audio": "outro",
+      "lead": 0.6,
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
       },
       "keyword": {
         "en": "",
         "ko": ""
-      }
+      },
+      "fill": "loop"
     }
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:e598d00226ad",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "e598d00226ad1cec249f40da8b745022d5439208",
+      "tool": "suno",
+      "source_file": "song.wav",
+      "note": "Suno v1 Wash Your Hands",
+      "duration": 135.0,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:e598d00226ad",
+          "url": null,
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T01:05Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 124.9856,
+        "beat0": 0.4412,
+        "downbeat0": 0.4412,
+        "confidence": 1.137,
+        "downbeats": [
+          0.4412,
+          2.3614,
+          4.2816,
+          6.2019,
+          8.1221,
+          10.0423,
+          11.9625,
+          13.8827,
+          15.803,
+          17.7232,
+          19.6434,
+          21.5636,
+          23.4839,
+          25.4041,
+          27.3243,
+          29.2445,
+          31.1647,
+          33.085,
+          35.0052,
+          36.9254,
+          38.8456,
+          40.7658,
+          42.6861,
+          44.6063,
+          46.5265,
+          48.4467,
+          50.367,
+          52.2872,
+          54.2074,
+          56.1276,
+          58.0478,
+          59.9681,
+          61.8883,
+          63.8085,
+          65.7287,
+          67.6489,
+          69.5692,
+          71.4894,
+          73.4096,
+          75.3298,
+          77.25,
+          79.1703,
+          81.0905,
+          83.0107,
+          84.9309,
+          86.8512,
+          88.7714,
+          90.6916,
+          92.6118,
+          94.532,
+          96.4523,
+          98.3725,
+          100.2927,
+          102.2129,
+          104.1331,
+          106.0534,
+          107.9736,
+          109.8938,
+          111.814,
+          113.7343,
+          115.6545,
+          117.5747,
+          119.4949,
+          121.4151,
+          123.3354,
+          125.2556,
+          127.1758,
+          129.096,
+          131.0162,
+          132.9365,
+          134.8567
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            7.9,
+            4.2,
+            1.9,
+            1.0,
+            -1.1,
+            -5.2,
+            -3.1,
+            -9.1,
+            -4.2
+          ],
+          "trend_ms": -13.9
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "68d120426aaac02a1ebbadbeabcdbf183bb05966",
+        "moved": 56,
+        "loose": 38,
+        "flags": [
+          {
+            "kind": "phase",
+            "line": 0,
+            "t": 11.421,
+            "section": "Chorus",
+            "beat": 2.87,
+            "median": 3.38,
+            "beats": -0.51,
+            "text": "Splish, splash, water on!"
+          },
+          {
+            "kind": "lag",
+            "line": 31,
+            "t": 92.287,
+            "word": "Ducky!",
+            "t0": 93.27,
+            "ms": 983,
+            "text": "Hello, Ducky! Quack, quack!"
+          },
+          {
+            "kind": "phase",
+            "line": 33,
+            "t": 98.333,
+            "section": "Verse 3",
+            "beat": 3.92,
+            "median": 3.12,
+            "beats": 0.8,
+            "text": "Here's the towel!"
+          }
+        ]
+      },
+      "lyrics_sha1": "e598d00226ad1cec249f40da8b745022d5439208",
+      "end": 135.0
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:68d120426aaa",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "68d120426aaac02a1ebbadbeabcdbf183bb05966",
+      "of": "e598d00226ad1cec249f40da8b745022d5439208",
+      "history": [
+        {
+          "job_id": "local:68d120426aaa",
+          "url": null,
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T01:05Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 124.9856,
+    "lyrics": [
+      {
+        "text": "Splish, splash, water on!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Splish,",
+            11.421,
+            12.083,
+            11.52
+          ],
+          [
+            "splash,",
+            12.189,
+            12.659,
+            12.182
+          ],
+          [
+            "water",
+            12.698,
+            13.167,
+            12.652
+          ],
+          [
+            "on!",
+            13.167,
+            13.621,
+            13.164
+          ]
+        ]
+      },
+      {
+        "text": "Rub, rub, rub your hands!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rub,",
+            13.621,
+            13.869,
+            13.63
+          ],
+          [
+            "rub,",
+            13.875,
+            14.098,
+            13.878
+          ],
+          [
+            "rub",
+            14.115,
+            14.344,
+            14.101
+          ],
+          [
+            "your",
+            14.344,
+            14.539,
+            14.344
+          ],
+          [
+            "hands!",
+            14.539,
+            15.077,
+            14.541
+          ]
+        ]
+      },
+      {
+        "text": "Bubbles, bubbles, pop, pop, pop!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Bubbles,",
+            15.546,
+            15.925,
+            15.509
+          ],
+          [
+            "bubbles,",
+            15.925,
+            16.454,
+            15.992
+          ],
+          [
+            "pop,",
+            16.514,
+            16.754,
+            16.521
+          ],
+          [
+            "pop,",
+            16.754,
+            16.968,
+            16.761
+          ],
+          [
+            "pop!",
+            16.968,
+            17.203,
+            16.985
+          ]
+        ]
+      },
+      {
+        "text": "Rinse and pat them dry!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rinse",
+            17.442,
+            17.711,
+            17.452
+          ],
+          [
+            "and",
+            17.726,
+            17.946,
+            17.721
+          ],
+          [
+            "pat",
+            17.946,
+            18.2,
+            17.95
+          ],
+          [
+            "them",
+            18.2,
+            18.415,
+            18.204
+          ],
+          [
+            "dry!",
+            18.415,
+            18.919,
+            18.429
+          ]
+        ]
+      },
+      {
+        "text": "Squeaky clean! Squeaky clean!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Squeaky",
+            19.193,
+            19.856,
+            19.197
+          ],
+          [
+            "clean!",
+            19.857,
+            20.348,
+            19.86
+          ],
+          [
+            "Squeaky",
+            20.35,
+            20.913,
+            20.351
+          ],
+          [
+            "clean!",
+            21.064,
+            21.243,
+            20.914
+          ]
+        ]
+      },
+      {
+        "text": "Wash your hands, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wash",
+            21.268,
+            21.578,
+            21.265
+          ],
+          [
+            "your",
+            21.578,
+            21.79,
+            21.595
+          ],
+          [
+            "hands,",
+            21.807,
+            21.967,
+            21.807
+          ],
+          [
+            "hooray!",
+            21.967,
+            22.85,
+            22.078
+          ]
+        ]
+      },
+      {
+        "text": "Wash your hands, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wash",
+            23.194,
+            23.69,
+            23.202
+          ],
+          [
+            "your",
+            23.693,
+            24.097,
+            23.698
+          ],
+          [
+            "hands,",
+            24.097,
+            24.909,
+            24.127
+          ],
+          [
+            "hooray!",
+            24.935,
+            25.853,
+            24.939
+          ]
+        ]
+      },
+      {
+        "text": "Turn the water on! Splish, splash!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Turn",
+            27.035,
+            27.344,
+            26.8
+          ],
+          [
+            "the",
+            27.344,
+            27.584,
+            27.24
+          ],
+          [
+            "water",
+            27.818,
+            28.043,
+            27.48
+          ],
+          [
+            "on!",
+            28.043,
+            28.721,
+            27.88
+          ],
+          [
+            "Splish,",
+            28.721,
+            29.401,
+            28.98
+          ],
+          [
+            "splash!",
+            29.669,
+            30.238,
+            29.66
+          ]
+        ]
+      },
+      {
+        "text": "Wet your hands, wet, wet, wet!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Wet",
+            30.822,
+            31.042,
+            30.9
+          ],
+          [
+            "your",
+            31.296,
+            31.725,
+            31.12
+          ],
+          [
+            "hands,",
+            31.725,
+            32.772,
+            31.62
+          ],
+          [
+            "wet,",
+            32.772,
+            33.251,
+            32.7
+          ],
+          [
+            "wet,",
+            33.251,
+            33.671,
+            33.32
+          ],
+          [
+            "wet!",
+            33.71,
+            34.024,
+            33.74
+          ]
+        ]
+      },
+      {
+        "text": "Here is the soap! Soap!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Here",
+            34.663,
+            35.187,
+            34.46
+          ],
+          [
+            "is",
+            35.187,
+            35.466,
+            35.06
+          ],
+          [
+            "the",
+            35.466,
+            35.586,
+            35.42
+          ],
+          [
+            "soap!",
+            35.586,
+            36.019,
+            35.6
+          ],
+          [
+            "Soap!",
+            36.019,
+            36.444,
+            36.14
+          ]
+        ]
+      },
+      {
+        "text": "Soap on your hands! Rub, rub!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Soap",
+            36.513,
+            36.953,
+            36.62
+          ],
+          [
+            "on",
+            37.008,
+            37.268,
+            37.06
+          ],
+          [
+            "your",
+            37.387,
+            37.607,
+            37.32
+          ],
+          [
+            "hands!",
+            37.651,
+            38.539,
+            37.54
+          ],
+          [
+            "Rub,",
+            38.539,
+            40.475,
+            38.54
+          ],
+          [
+            "rub!",
+            40.475,
+            40.779,
+            40.48
+          ]
+        ]
+      },
+      {
+        "text": "Splish, splash, water on!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Splish,",
+            42.151,
+            42.813,
+            42.23
+          ],
+          [
+            "splash,",
+            42.884,
+            43.354,
+            42.892
+          ],
+          [
+            "water",
+            43.358,
+            43.87,
+            43.362
+          ],
+          [
+            "on!",
+            43.872,
+            44.356,
+            43.874
+          ]
+        ]
+      },
+      {
+        "text": "Rub, rub, rub your hands!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rub,",
+            44.356,
+            44.59,
+            44.34
+          ],
+          [
+            "rub,",
+            44.59,
+            44.813,
+            44.588
+          ],
+          [
+            "rub",
+            44.82,
+            45.019,
+            44.811
+          ],
+          [
+            "your",
+            45.019,
+            45.216,
+            45.054
+          ],
+          [
+            "hands!",
+            45.259,
+            45.733,
+            45.251
+          ]
+        ]
+      },
+      {
+        "text": "Bubbles, bubbles, pop, pop, pop!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Bubbles,",
+            46.242,
+            46.646,
+            46.219
+          ],
+          [
+            "bubbles,",
+            46.646,
+            47.175,
+            46.702
+          ],
+          [
+            "pop,",
+            47.239,
+            47.469,
+            47.231
+          ],
+          [
+            "pop,",
+            47.469,
+            47.693,
+            47.471
+          ],
+          [
+            "pop!",
+            47.713,
+            47.983,
+            47.695
+          ]
+        ]
+      },
+      {
+        "text": "Rinse and pat them dry!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rinse",
+            48.167,
+            48.436,
+            48.162
+          ],
+          [
+            "and",
+            48.437,
+            48.666,
+            48.431
+          ],
+          [
+            "pat",
+            48.666,
+            48.915,
+            48.66
+          ],
+          [
+            "them",
+            48.915,
+            49.14,
+            48.914
+          ],
+          [
+            "dry!",
+            49.165,
+            49.644,
+            49.139
+          ]
+        ]
+      },
+      {
+        "text": "Squeaky clean! Squeaky clean!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Squeaky",
+            49.913,
+            50.502,
+            49.907
+          ],
+          [
+            "clean!",
+            50.502,
+            50.993,
+            50.57
+          ],
+          [
+            "Squeaky",
+            51.071,
+            51.634,
+            51.061
+          ],
+          [
+            "clean!",
+            51.724,
+            51.949,
+            51.624
+          ]
+        ]
+      },
+      {
+        "text": "Wash your hands, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wash",
+            51.988,
+            52.308,
+            51.975
+          ],
+          [
+            "your",
+            52.308,
+            52.517,
+            52.305
+          ],
+          [
+            "hands,",
+            52.517,
+            52.788,
+            52.517
+          ],
+          [
+            "hooray!",
+            52.792,
+            53.55,
+            52.788
+          ]
+        ]
+      },
+      {
+        "text": "Wash your hands, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wash",
+            53.914,
+            54.41,
+            53.912
+          ],
+          [
+            "your",
+            54.418,
+            54.847,
+            54.408
+          ],
+          [
+            "hands,",
+            54.857,
+            55.655,
+            54.837
+          ],
+          [
+            "hooray!",
+            55.655,
+            56.588,
+            55.649
+          ]
+        ]
+      },
+      {
+        "text": "Rub your hands, round and round!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Rub",
+            57.715,
+            58.174,
+            57.44
+          ],
+          [
+            "your",
+            58.174,
+            58.683,
+            58.0
+          ],
+          [
+            "hands,",
+            58.683,
+            59.583,
+            58.56
+          ],
+          [
+            "round",
+            59.621,
+            60.195,
+            59.46
+          ],
+          [
+            "and",
+            60.195,
+            60.615,
+            60.08
+          ],
+          [
+            "round!",
+            60.669,
+            61.183,
+            60.5
+          ]
+        ]
+      },
+      {
+        "text": "Look at the bubbles! Bubbles!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Look",
+            61.502,
+            61.881,
+            61.36
+          ],
+          [
+            "at",
+            61.881,
+            62.181,
+            61.86
+          ],
+          [
+            "the",
+            62.36,
+            62.589,
+            62.16
+          ],
+          [
+            "bubbles!",
+            62.589,
+            63.507,
+            62.5
+          ],
+          [
+            "Bubbles!",
+            63.507,
+            64.53,
+            63.62
+          ]
+        ]
+      },
+      {
+        "text": "Rub and count to ten! Ready, go!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Rub",
+            65.228,
+            65.788,
+            65.12
+          ],
+          [
+            "and",
+            65.927,
+            66.391,
+            65.68
+          ],
+          [
+            "count",
+            66.391,
+            66.831,
+            66.24
+          ],
+          [
+            "to",
+            66.855,
+            67.295,
+            66.68
+          ],
+          [
+            "ten!",
+            67.324,
+            67.798,
+            67.12
+          ],
+          [
+            "Ready,",
+            67.798,
+            68.298,
+            67.78
+          ],
+          [
+            "go!",
+            68.306,
+            68.815,
+            68.28
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three, four, five!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "One,",
+            69.209,
+            69.743,
+            69.1
+          ],
+          [
+            "two,",
+            69.743,
+            70.183,
+            69.8
+          ],
+          [
+            "three,",
+            70.232,
+            70.496,
+            70.24
+          ],
+          [
+            "four,",
+            70.496,
+            70.716,
+            70.52
+          ],
+          [
+            "five!",
+            70.731,
+            71.04,
+            70.74
+          ]
+        ]
+      },
+      {
+        "text": "Six, seven, eight, nine, ten!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Six,",
+            71.215,
+            71.349,
+            71.18
+          ],
+          [
+            "seven,",
+            71.349,
+            71.589,
+            71.5
+          ],
+          [
+            "eight,",
+            71.594,
+            71.814,
+            71.74
+          ],
+          [
+            "nine,",
+            71.883,
+            72.103,
+            71.96
+          ],
+          [
+            "ten!",
+            72.163,
+            72.587,
+            72.18
+          ]
+        ]
+      },
+      {
+        "text": "Splish, splash, water on!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Splish,",
+            72.951,
+            73.474,
+            72.95
+          ],
+          [
+            "splash,",
+            73.474,
+            73.944,
+            73.612
+          ],
+          [
+            "water",
+            74.073,
+            74.577,
+            74.082
+          ],
+          [
+            "on!",
+            74.577,
+            75.061,
+            74.594
+          ]
+        ]
+      },
+      {
+        "text": "Rub, rub, rub your hands!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rub,",
+            75.066,
+            75.314,
+            75.06
+          ],
+          [
+            "rub,",
+            75.315,
+            75.49,
+            75.308
+          ],
+          [
+            "rub",
+            75.49,
+            75.733,
+            75.531
+          ],
+          [
+            "your",
+            75.774,
+            75.964,
+            75.774
+          ],
+          [
+            "hands!",
+            75.964,
+            76.403,
+            75.971
+          ]
+        ]
+      },
+      {
+        "text": "Bubbles, bubbles, pop, pop, pop!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Bubbles,",
+            76.917,
+            77.4,
+            76.939
+          ],
+          [
+            "bubbles,",
+            77.486,
+            77.949,
+            77.422
+          ],
+          [
+            "pop,",
+            77.949,
+            78.189,
+            77.951
+          ],
+          [
+            "pop,",
+            78.194,
+            78.418,
+            78.191
+          ],
+          [
+            "pop!",
+            78.418,
+            78.638,
+            78.415
+          ]
+        ]
+      },
+      {
+        "text": "Rinse and pat them dry!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rinse",
+            78.877,
+            79.146,
+            78.882
+          ],
+          [
+            "and",
+            79.147,
+            79.376,
+            79.151
+          ],
+          [
+            "pat",
+            79.381,
+            79.635,
+            79.38
+          ],
+          [
+            "them",
+            79.641,
+            79.84,
+            79.634
+          ],
+          [
+            "dry!",
+            79.84,
+            80.354,
+            79.859
+          ]
+        ]
+      },
+      {
+        "text": "Squeaky clean! Squeaky clean!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Squeaky",
+            80.608,
+            81.271,
+            80.627
+          ],
+          [
+            "clean!",
+            81.292,
+            81.781,
+            81.29
+          ],
+          [
+            "Squeaky",
+            81.781,
+            82.344,
+            81.781
+          ],
+          [
+            "clean!",
+            82.459,
+            82.684,
+            82.344
+          ]
+        ]
+      },
+      {
+        "text": "Wash your hands, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wash",
+            82.684,
+            83.014,
+            82.695
+          ],
+          [
+            "your",
+            83.222,
+            83.402,
+            83.025
+          ],
+          [
+            "hands,",
+            83.402,
+            83.673,
+            83.237
+          ],
+          [
+            "hooray!",
+            83.701,
+            84.225,
+            83.508
+          ]
+        ]
+      },
+      {
+        "text": "Wash your hands, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wash",
+            84.629,
+            85.125,
+            84.632
+          ],
+          [
+            "your",
+            85.133,
+            85.537,
+            85.128
+          ],
+          [
+            "hands,",
+            85.537,
+            86.349,
+            85.557
+          ],
+          [
+            "hooray!",
+            86.37,
+            87.333,
+            86.369
+          ]
+        ]
+      },
+      {
+        "text": "Rinse, rinse, bubbles go! Bye-bye, bubbles!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Rinse,",
+            88.346,
+            88.88,
+            88.22
+          ],
+          [
+            "rinse,",
+            88.88,
+            89.38,
+            88.98
+          ],
+          [
+            "bubbles",
+            89.428,
+            89.748,
+            89.48
+          ],
+          [
+            "go!",
+            89.932,
+            90.416,
+            89.8
+          ],
+          [
+            "Bye-bye,",
+            90.416,
+            91.613,
+            90.38
+          ],
+          [
+            "bubbles!",
+            91.613,
+            91.998,
+            91.64
+          ]
+        ]
+      },
+      {
+        "text": "Hello, Ducky! Quack, quack!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Hello,",
+            92.187,
+            93.227,
+            92.2
+          ],
+          [
+            "Ducky!",
+            93.27,
+            94.173,
+            93.24
+          ],
+          [
+            "Quack,",
+            94.173,
+            94.671,
+            94.16
+          ],
+          [
+            "quack!",
+            94.671,
+            94.931,
+            94.7
+          ]
+        ]
+      },
+      {
+        "text": "Shake, shake, shake! Drip, drop!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Shake,",
+            95.914,
+            96.452,
+            95.94
+          ],
+          [
+            "shake,",
+            96.452,
+            96.966,
+            96.58
+          ],
+          [
+            "shake!",
+            96.966,
+            97.426,
+            97.12
+          ],
+          [
+            "Drip,",
+            97.575,
+            98.035,
+            97.58
+          ],
+          [
+            "drop!",
+            98.039,
+            98.308,
+            98.04
+          ]
+        ]
+      },
+      {
+        "text": "Here's the towel!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Here's",
+            98.333,
+            98.813,
+            98.3
+          ],
+          [
+            "the",
+            98.832,
+            98.992,
+            98.78
+          ],
+          [
+            "towel!",
+            99.012,
+            99.67,
+            98.94
+          ]
+        ]
+      },
+      {
+        "text": "Pat, pat, pat them dry!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Pat,",
+            99.944,
+            100.404,
+            100.0
+          ],
+          [
+            "pat,",
+            100.473,
+            100.953,
+            100.46
+          ],
+          [
+            "pat",
+            100.957,
+            101.137,
+            100.94
+          ],
+          [
+            "them",
+            101.446,
+            101.905,
+            101.12
+          ],
+          [
+            "dry!",
+            101.905,
+            102.838,
+            101.74
+          ]
+        ]
+      },
+      {
+        "text": "After we play? Wash your hands!",
+        "section": "Bridge",
+        "words": [
+          [
+            "After",
+            103.746,
+            104.225,
+            103.732
+          ],
+          [
+            "we",
+            104.225,
+            104.665,
+            104.3
+          ],
+          [
+            "play?",
+            104.863,
+            105.603,
+            104.74
+          ],
+          [
+            "Wash",
+            105.726,
+            106.245,
+            105.48
+          ],
+          [
+            "your",
+            106.245,
+            106.644,
+            106.12
+          ],
+          [
+            "hands!",
+            106.644,
+            107.253,
+            106.54
+          ]
+        ]
+      },
+      {
+        "text": "Before we eat? Wash your hands!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Before",
+            107.602,
+            108.162,
+            107.46
+          ],
+          [
+            "we",
+            108.211,
+            108.67,
+            108.02
+          ],
+          [
+            "eat?",
+            108.67,
+            109.553,
+            108.48
+          ],
+          [
+            "Wash",
+            109.553,
+            110.086,
+            109.38
+          ],
+          [
+            "your",
+            110.086,
+            110.486,
+            109.98
+          ],
+          [
+            "hands!",
+            110.575,
+            111.104,
+            110.38
+          ]
+        ]
+      },
+      {
+        "text": "Splish, splash, water on!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Splish,",
+            111.349,
+            112.011,
+            111.35
+          ],
+          [
+            "splash,",
+            112.032,
+            112.486,
+            112.012
+          ],
+          [
+            "water",
+            112.486,
+            112.995,
+            112.482
+          ],
+          [
+            "on!",
+            112.995,
+            113.439,
+            112.994
+          ]
+        ]
+      },
+      {
+        "text": "Rub, rub, rub your hands!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rub,",
+            113.454,
+            113.688,
+            113.46
+          ],
+          [
+            "rub,",
+            113.688,
+            113.911,
+            113.708
+          ],
+          [
+            "rub",
+            113.923,
+            114.166,
+            113.931
+          ],
+          [
+            "your",
+            114.182,
+            114.372,
+            114.174
+          ],
+          [
+            "hands!",
+            114.372,
+            114.866,
+            114.37
+          ]
+        ]
+      },
+      {
+        "text": "Bubbles, bubbles, pop, pop, pop!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Bubbles,",
+            115.305,
+            115.788,
+            115.339
+          ],
+          [
+            "bubbles,",
+            115.878,
+            116.352,
+            115.822
+          ],
+          [
+            "pop,",
+            116.352,
+            116.591,
+            116.351
+          ],
+          [
+            "pop,",
+            116.592,
+            116.811,
+            116.59
+          ],
+          [
+            "pop!",
+            116.811,
+            117.026,
+            116.815
+          ]
+        ]
+      },
+      {
+        "text": "Rinse and pat them dry!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rinse",
+            117.29,
+            117.544,
+            117.282
+          ],
+          [
+            "and",
+            117.544,
+            117.772,
+            117.552
+          ],
+          [
+            "pat",
+            117.779,
+            118.033,
+            117.78
+          ],
+          [
+            "them",
+            118.033,
+            118.258,
+            118.034
+          ],
+          [
+            "dry!",
+            118.273,
+            118.752,
+            118.259
+          ]
+        ]
+      },
+      {
+        "text": "Squeaky clean! Squeaky clean!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Squeaky",
+            119.031,
+            119.694,
+            119.027
+          ],
+          [
+            "clean!",
+            119.695,
+            120.069,
+            119.69
+          ],
+          [
+            "Squeaky",
+            120.069,
+            120.633,
+            120.18
+          ],
+          [
+            "clean!",
+            120.867,
+            121.091,
+            120.744
+          ]
+        ]
+      },
+      {
+        "text": "Wash your hands, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wash",
+            121.091,
+            121.42,
+            121.095
+          ],
+          [
+            "your",
+            121.421,
+            121.605,
+            121.424
+          ],
+          [
+            "hands,",
+            121.605,
+            121.877,
+            121.637
+          ],
+          [
+            "hooray!",
+            121.905,
+            122.623,
+            121.909
+          ]
+        ]
+      },
+      {
+        "text": "Wash your hands, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wash",
+            123.042,
+            123.521,
+            123.031
+          ],
+          [
+            "your",
+            123.521,
+            123.95,
+            123.528
+          ],
+          [
+            "hands,",
+            124.075,
+            124.768,
+            123.957
+          ],
+          [
+            "hooray!",
+            124.768,
+            125.736,
+            124.769
+          ]
+        ]
+      }
+    ]
+  }
 }

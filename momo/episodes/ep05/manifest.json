@@ -12,16 +12,17 @@
     "chosen_axis": null
   },
   "characters": [
-    "momo"
+    "momo",
+    "ducky"
   ],
   "title": {
-    "en": "",
+    "en": "Rainbow Colors Song with Momo the Bunny | Learn Colors for Toddlers",
     "ko": ""
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c08",
     "text": {
-      "en": "",
+      "en": "RAINBOW COLORS!",
       "ko": ""
     },
     "text_pos": "top"
@@ -29,57 +30,1272 @@
   "bgm": null,
   "upload": {
     "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
-    },
-    "ko": {
-      "title": "",
-      "description": "",
-      "tags": [],
+      "title": "Rainbow Colors Song with Momo the Bunny | Learn Colors for Toddlers",
+      "description": "Rainbow, rainbow! Up in the sky! Sing the rainbow colors with Momo the Bunny and Ducky: red, orange, yellow, green, blue, purple. Find a red strawberry and an orange carrot, clap, clap, clap for red and sway for orange, then spot a yellow banana, a green leaf, a blue ball and purple grapes. Ding-dong-dang - rainbow colors, yay!\n\nColors in this song: red, orange, yellow, green, blue, purple\n\nMade for toddlers and preschoolers (ages 2-5). Music and animation made with AI tools.",
+      "tags": [
+        "colors song",
+        "rainbow song",
+        "learn colors",
+        "colors for toddlers",
+        "rainbow colors",
+        "kids songs",
+        "nursery rhymes",
+        "toddler songs",
+        "learn english for kids",
+        "Momo the Bunny"
+      ],
       "playlist_id": null
     }
   },
   "credits": {
-    "estimate": null,
+    "estimate": 214.2,
     "spent": 0,
     "generations": 0,
     "regenerations": 0
   },
   "notes": {
-    "v_over_reason": null,
-    "approvals": [],
-    "next_time": []
+    "v_over_reason": "노래 형식 v2 (ep04 v2 와 같은 방식, 사용자 피드백 '더 자연스럽게'): 127.0 BPM Suno 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 34컷. V 32개 중 8개는 재사용(clip_from, 0 크레딧), 모모가 노래하는 컷은 전부 립싱크. 곡에 22마디(41초) 간주가 있어 그 자리에 부르지 않은 4색(노랑·초록·파랑·보라) 사물 컷 + 모모 동작 컷(노래 안 함, 입 다묾)을 넣음.",
+    "approvals": [
+      "2026-10-01 사용자: ep05~07 병렬 제작·업로드 지시, 묻지 말고 진행",
+      "2026-10-01 노래: Suno v1 'Rainbow Colors' (127.0 BPM, 2:14.7) — 사용자가 만들어 넣어 준 곡. 가사 45줄 중 22줄만 부름 (verse 2·3·bridge 대신 41초 간주), 정렬 97.5% (부른 가사 기준)"
+    ],
+    "next_time": [
+      "Suno v1 이 verse 2·3·bridge 를 부르지 않고 41초 간주로 채움 (가사 45줄 중 22줄) — 테이크를 고를 때 정렬기를 '쓴 가사' 기준으로 먼저 돌려 커버리지를 볼 것",
+      "align_lyrics.py: 17초 무음 인트로에서 whisper 가 첫 30초 창을 환각('A -B!' 반복)으로 채워 후렴 1 이 빠짐 — 보컬 구간만 잘라 정렬함 (scratchpad ep05/align_ep05.py)"
+    ],
+    "shared_start_images": {
+      "c20": "c09",
+      "c22": "c11",
+      "c24": "c14",
+      "c29": "c08",
+      "c30": "c05",
+      "c32": "c07",
+      "c33": "c26"
+    },
+    "shared_start_images_note": "이 컷들은 같은 image_prompt 의 시작 이미지를 한 번만 만들어 함께 쓴다 (값 = 원본 컷). 원본 이미지가 승인되면 같은 job 으로 기록할 것.",
+    "lyrics_manual_fix": "2026-10-01 리뷰: song.lyrics 'Sway,' 시작 51.584→51.34 (보컬 스템에서 's' 마찰음이 51.27s 부터 — 보정이 모음에 붙여 자막 하이라이트가 0.3초 늦었음). song_track.py lyrics 를 다시 돌리면 되돌아가니 다시 고칠 것. c14 cut_at 51.26 은 'Orange!' 꼬리와 's' 사이 -35 dB 골."
   },
   "cuts": [
     {
       "id": "c01",
       "scene": 1,
       "type": "L",
+      "bars": 3,
       "library_clip": "intro_wave",
       "library_audio": "intro",
+      "lead": 0.6,
       "narration": {
         "en": "Hi friends! It's Momo!"
-      },
-      "keyword": {
-        "en": "",
-        "ko": ""
       }
     },
     {
       "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "a big bright rainbow with exactly six wide stripes arching across a clear bright blue sky above the sunny green garden with soft grass and a small white picket fence, the stripes in order from the outside: red, orange, yellow, green, blue, purple, one soft white fluffy cloud at each end of the rainbow, wide shot, no characters",
+      "motion": "tiny sparkles twinkle along the rainbow stripes and the grass sways gently in a soft breeze, the rainbow stays completely still with the same six stripes the whole time, the two clouds stay in their places",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 8,
+      "card": {
+        "word": "RAINBOW",
+        "text": "a rainbow in the sky",
+        "pos": "right",
+        "at": 0.5
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind them, both standing on the grass facing the viewer, Momo with both feet flat on the grass, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing beside her with its tiny wings slightly raised",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. the rainbow stays still in the sky; Ducky flaps its tiny wings and does small happy hops beside Momo; Momo points one paw up at the rainbow with the paw held out to the side away from the ears, then sways gently from side to side and claps softly, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 8
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly six things in one neat evenly spaced row lying on a plain cream-white picnic blanket with no pattern on the soft green grass, the sunny garden with the white picket fence softly blurred behind, from left to right: one shiny red strawberry, one bright orange carrot, one curved yellow banana, one big bright green leaf, one shiny plain blue ball, one bunch of round purple grapes, nothing else on the blanket",
+      "motion": "tiny golden sparkles twinkle above the six things and the grass around the blanket sways gently in a soft breeze, all six things stay completely still in their places in one row the whole time, exactly six things",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4
+    },
+    {
+      "id": "c05",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind her, standing on the grass facing the viewer, both feet flat on the grass, both paws relaxed in front of the tummy, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. points one paw up at the rainbow in the sky with the paw held out to the side away from the ears, then sways gently, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 17.352
+    },
+    {
+      "id": "c06",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c02",
+        "at": 4.0
+      },
+      "image_prompt": "a big bright rainbow with exactly six wide stripes arching across a clear bright blue sky above the sunny green garden with soft grass and a small white picket fence, the stripes in order from the outside: red, orange, yellow, green, blue, purple, one soft white fluffy cloud at each end of the rainbow, wide shot, no characters",
+      "motion": "tiny sparkles twinkle along the rainbow stripes and the grass sways gently in a soft breeze, the rainbow stays completely still with the same six stripes the whole time, the two clouds stay in their places",
+      "momo": false,
+      "card": {
+        "word": "RAINBOW",
+        "text": "red, orange, yellow, green, blue, purple",
+        "pos": "right",
+        "at": 0.3
+      },
+      "cut_at": 21.183
+    },
+    {
+      "id": "c07",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind them, both facing the viewer, Momo standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised, medium wide shot",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does small happy hops beside Momo and flaps its tiny wings; Momo claps her paws together on every 'ding-dong-dang' and sways from side to side, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 24.995
+    },
+    {
+      "id": "c08",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium close-up from the chest up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind her, facing the viewer, both paws together in front of the chest, huge round sparkly eyes with big white highlights and a big open happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "claps both paws together in front of the chest and cheers happily on 'yay', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 28.716
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot from the waist up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, facing the viewer, both paws together in front of the tummy, curious happy face, huge round sparkly eyes with big white highlights, both long ears fully visible hanging down beside the cheeks",
+      "motion": "tilts her head curiously to one side with the face still turned to the viewer, then points one paw out to the side at chest height, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 32.527
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly one big shiny red strawberry with tiny yellow seeds and a green leafy top, lying on a plain cream-white picnic blanket with no pattern on the soft green grass, the sunny garden with the white picket fence softly blurred behind, close-up, nothing else on the blanket",
+      "motion": "tiny golden sparkles twinkle around the strawberry and the grass at the edge of the blanket sways gently in a soft breeze, the strawberry stays completely still, exactly one strawberry",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "RED",
+        "text": "a red strawberry",
+        "pos": "left",
+        "at": 0.35
+      },
+      "cut_at": 36.144
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot standing on the soft grass at the edge of a plain cream-white picnic blanket with no pattern in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, facing the viewer, both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "claps both paws together in front of the chest three times on 'clap, clap, clap', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 40.095
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, three-quarter front view facing the viewer, standing with both feet flat on the grass, one paw held out to the side at chest height, huge round sparkly eyes with big white highlights and a cheerful smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. tilts her head curiously with the face still turned to the viewer and points one paw out to the side at chest height, looking for orange, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 43.917
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly one bright orange carrot with a fresh leafy green top, lying on a plain cream-white picnic blanket with no pattern on the soft green grass, the sunny garden with the white picket fence softly blurred behind, close-up, nothing else on the blanket",
+      "motion": "tiny golden sparkles twinkle around the carrot and the grass at the edge of the blanket sways gently in a soft breeze, the carrot stays completely still, exactly one carrot",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "ORANGE",
+        "text": "an orange carrot",
+        "pos": "right",
+        "at": 0.3
+      },
+      "cut_at": 47.553
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, standing in the middle of the grass facing the viewer, both feet flat on the grass, both arms relaxed at the sides, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. sways from side to side to the beat with both feet planted on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 51.26
+    },
+    {
+      "id": "c15",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "image_prompt": "[Momo] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind her, standing on the grass facing the viewer, both feet flat on the grass, both paws relaxed in front of the tummy, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. points one paw up at the rainbow in the sky with the paw held out to the side away from the ears, then sways gently, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "cut_at": 55.221
+    },
+    {
+      "id": "c16",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c02",
+        "at": 2.0
+      },
+      "image_prompt": "a big bright rainbow with exactly six wide stripes arching across a clear bright blue sky above the sunny green garden with soft grass and a small white picket fence, the stripes in order from the outside: red, orange, yellow, green, blue, purple, one soft white fluffy cloud at each end of the rainbow, wide shot, no characters",
+      "motion": "tiny sparkles twinkle along the rainbow stripes and the grass sways gently in a soft breeze, the rainbow stays completely still with the same six stripes the whole time, the two clouds stay in their places",
+      "momo": false,
+      "card": {
+        "word": "RAINBOW",
+        "text": "red, orange, yellow, green, blue, purple",
+        "pos": "right",
+        "at": 0.3
+      },
+      "cut_at": 59.047
+    },
+    {
+      "id": "c17",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "image_prompt": "[Momo] and [Ducky] side by side in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind them, both facing the viewer, Momo standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised, medium wide shot",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does small happy hops beside Momo and flaps its tiny wings; Momo claps her paws together on every 'ding-dong-dang' and sways from side to side, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "cut_at": 62.849
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind them, both standing on the grass facing the viewer, Momo with both feet flat on the grass, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing beside her with its tiny wings slightly raised",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. the rainbow stays still in the sky; Ducky flaps its tiny wings and does small happy hops beside Momo; Momo points one paw up at the rainbow with the paw held out to the side away from the ears, then sways gently from side to side and claps softly, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "cut_at": 66.768
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly one curved bright yellow banana, lying on a plain cream-white picnic blanket with no pattern on the soft green grass, the sunny garden with the white picket fence softly blurred behind, close-up, nothing else on the blanket",
+      "motion": "tiny golden sparkles twinkle around the banana and the grass at the edge of the blanket sways gently in a soft breeze, the banana stays completely still, exactly one banana",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "YELLOW",
+        "text": "a yellow banana",
+        "pos": "left",
+        "at": 0.5
+      },
+      "cut_at": 70.547
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot from the waist up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, facing the viewer, both paws together in front of the tummy, curious happy face, huge round sparkly eyes with big white highlights, both long ears fully visible hanging down beside the cheeks",
+      "motion": "nods her head gently to the music three times and smiles at the viewer, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 74.327
+    },
+    {
+      "id": "c21",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly one big bright green leaf with visible veins, lying on a plain cream-white picnic blanket with no pattern on the soft green grass, the sunny garden with the white picket fence softly blurred behind, close-up, nothing else on the blanket",
+      "motion": "tiny dewdrop sparkles twinkle on the leaf and the grass at the edge of the blanket sways gently in a soft breeze, the leaf stays completely still, exactly one leaf",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "GREEN",
+        "text": "a green leaf",
+        "pos": "right",
+        "at": 0.5
+      },
+      "cut_at": 78.106
+    },
+    {
+      "id": "c22",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot standing on the soft grass at the edge of a plain cream-white picnic blanket with no pattern in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, facing the viewer, both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "waves one paw at shoulder height beside the cheek and below the ear, smiling at the viewer, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 81.886
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly one big shiny plain blue ball with no pattern, resting on a plain cream-white picnic blanket with no pattern on the soft green grass, the sunny garden with the white picket fence softly blurred behind, close-up, nothing else on the blanket",
+      "motion": "tiny golden sparkles twinkle around the ball and the grass at the edge of the blanket sways gently in a soft breeze, the ball stays completely still and does not bounce or roll, exactly one ball",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "BLUE",
+        "text": "a blue ball",
+        "pos": "left",
+        "at": 0.5
+      },
+      "cut_at": 85.665
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, standing in the middle of the grass facing the viewer, both feet flat on the grass, both arms relaxed at the sides, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. bounces gently on bent knees to the music with both feet on the grass, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 89.445
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "exactly one bunch of round shiny purple grapes with a small green stem, lying on a plain cream-white picnic blanket with no pattern on the soft green grass, the sunny garden with the white picket fence softly blurred behind, close-up, nothing else on the blanket",
+      "motion": "tiny golden sparkles twinkle around the grapes and the grass at the edge of the blanket sways gently in a soft breeze, the grapes stay completely still, exactly one bunch",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "PURPLE",
+        "text": "purple grapes",
+        "pos": "right",
+        "at": 0.5
+      },
+      "cut_at": 93.224
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both facing the viewer, Momo standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing on the grass beside her with its tiny wings raised, ready to hop",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does three small happy hops in place beside Momo and flaps its tiny wings; Momo claps her paws and bounces gently on bent knees with both feet on the grass, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 97.004
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "image_prompt": "exactly six things in one neat evenly spaced row lying on a plain cream-white picnic blanket with no pattern on the soft green grass, the sunny garden with the white picket fence softly blurred behind, from left to right: one shiny red strawberry, one bright orange carrot, one curved yellow banana, one big bright green leaf, one shiny plain blue ball, one bunch of round purple grapes, nothing else on the blanket",
+      "motion": "tiny golden sparkles twinkle above the six things and the grass around the blanket sways gently in a soft breeze, all six things stay completely still in their places in one row the whole time, exactly six things",
+      "momo": false,
+      "cut_at": 100.783
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c03",
+        "at": 4.0
+      },
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind them, both standing on the grass facing the viewer, Momo with both feet flat on the grass, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing beside her with its tiny wings slightly raised",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. the rainbow stays still in the sky; Ducky flaps its tiny wings and does small happy hops beside Momo; Momo points one paw up at the rainbow with the paw held out to the side away from the ears, then sways gently from side to side and claps softly, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "cut_at": 104.563
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium close-up from the chest up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind her, facing the viewer, both paws together in front of the chest, huge round sparkly eyes with big white highlights and a big open happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "points one paw up toward the rainbow beside her at shoulder height, away from the ears, then smiles, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 108.061
+    },
+    {
+      "id": "c30",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind her, standing on the grass facing the viewer, both feet flat on the grass, both paws relaxed in front of the tummy, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. points one paw up at the rainbow in the sky with the paw held out to the side away from the ears, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 111.907
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "clip_from": {
+        "cut": "c02",
+        "at": 3.0
+      },
+      "image_prompt": "a big bright rainbow with exactly six wide stripes arching across a clear bright blue sky above the sunny green garden with soft grass and a small white picket fence, the stripes in order from the outside: red, orange, yellow, green, blue, purple, one soft white fluffy cloud at each end of the rainbow, wide shot, no characters",
+      "motion": "tiny sparkles twinkle along the rainbow stripes and the grass sways gently in a soft breeze, the rainbow stays completely still with the same six stripes the whole time, the two clouds stay in their places",
+      "momo": false,
+      "card": {
+        "word": "RAINBOW",
+        "text": "red, orange, yellow, green, blue, purple",
+        "pos": "right",
+        "at": 0.3
+      },
+      "cut_at": 115.683
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 4,
+      "image_prompt": "[Momo] and [Ducky] side by side in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind them, both facing the viewer, Momo standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised, medium wide shot",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky sways beside Momo and flaps its tiny wings; Momo sways slowly from side to side and claps softly on each colour word, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 8
+      },
+      "cut_at": 119.475
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both facing the viewer, Momo standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing on the grass beside her with its tiny wings raised, ready to hop",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does one small happy hop beside Momo; Momo claps her paws on 'ding', 'dong' and 'dang', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "cut_at": 127.068
+    },
+    {
+      "id": "c34",
       "scene": 5,
       "type": "L",
+      "bars": 2,
       "library_clip": "outro_bye",
       "library_audio": "outro",
+      "lead": 0.15,
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
       },
-      "keyword": {
-        "en": "",
-        "ko": ""
-      }
+      "cut_at": 129.71
     }
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:d21227939ef6",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "d21227939ef65e58e9c14fd449b1de5721a0c920",
+      "tool": "suno",
+      "source_file": "song.wav",
+      "note": "Suno v1 Rainbow Colors",
+      "duration": 134.72,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:d21227939ef6",
+          "url": null,
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T01:06Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 127.0005,
+        "beat0": 0.1538,
+        "downbeat0": 0.6263,
+        "confidence": 20.429,
+        "downbeats": [
+          0.6263,
+          2.5161,
+          4.4058,
+          6.2956,
+          8.1853,
+          10.0751,
+          11.9648,
+          13.8546,
+          15.7444,
+          17.6341,
+          19.5239,
+          21.4136,
+          23.3034,
+          25.1931,
+          27.0829,
+          28.9726,
+          30.8624,
+          32.7522,
+          34.6419,
+          36.5317,
+          38.4214,
+          40.3112,
+          42.2009,
+          44.0907,
+          45.9805,
+          47.8702,
+          49.76,
+          51.6497,
+          53.5395,
+          55.4292,
+          57.319,
+          59.2087,
+          61.0985,
+          62.9883,
+          64.878,
+          66.7678,
+          68.6575,
+          70.5473,
+          72.437,
+          74.3268,
+          76.2166,
+          78.1063,
+          79.9961,
+          81.8858,
+          83.7756,
+          85.6653,
+          87.5551,
+          89.4448,
+          91.3346,
+          93.2244,
+          95.1141,
+          97.0039,
+          98.8936,
+          100.7834,
+          102.6731,
+          104.5629,
+          106.4527,
+          108.3424,
+          110.2322,
+          112.1219,
+          114.0117,
+          115.9014,
+          117.7912,
+          119.6809,
+          121.5707,
+          123.4605,
+          125.3502,
+          127.24,
+          129.1297,
+          131.0195,
+          132.9092
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            4.6,
+            -52.6,
+            -12.5,
+            1.3,
+            3.4,
+            -3.3,
+            -2.5,
+            -8.4,
+            -9.8
+          ],
+          "trend_ms": 12.1
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "a5cb9b3f820d7bcf68a7e4713e76451acdac7f00",
+        "moved": 39,
+        "loose": 34,
+        "flags": []
+      },
+      "lyrics_sha1": "d21227939ef65e58e9c14fd449b1de5721a0c920",
+      "end": 134.72
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:a5cb9b3f820d",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "a5cb9b3f820d7bcf68a7e4713e76451acdac7f00",
+      "of": "d21227939ef65e58e9c14fd449b1de5721a0c920",
+      "history": [
+        {
+          "job_id": "local:a5cb9b3f820d",
+          "url": null,
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T01:06Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 127.0005,
+    "lyrics": [
+      {
+        "text": "Rainbow, rainbow!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rainbow,",
+            17.452,
+            18.48,
+            17.0
+          ],
+          [
+            "rainbow!",
+            18.48,
+            18.879,
+            18.48
+          ]
+        ]
+      },
+      {
+        "text": "Up in the sky!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Up",
+            19.413,
+            19.742,
+            19.34
+          ],
+          [
+            "in",
+            19.742,
+            20.062,
+            19.7
+          ],
+          [
+            "the",
+            20.156,
+            20.395,
+            20.02
+          ],
+          [
+            "sky!",
+            20.395,
+            20.984,
+            20.26
+          ]
+        ]
+      },
+      {
+        "text": "Red, orange, yellow!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Red,",
+            21.283,
+            21.722,
+            21.02
+          ],
+          [
+            "orange,",
+            21.722,
+            22.202,
+            21.88
+          ],
+          [
+            "yellow!",
+            22.281,
+            23.184,
+            22.36
+          ]
+        ]
+      },
+      {
+        "text": "Green, blue, purple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Green,",
+            23.214,
+            23.654,
+            23.24
+          ],
+          [
+            "blue,",
+            23.738,
+            24.142,
+            23.68
+          ],
+          [
+            "purple!",
+            24.142,
+            24.78,
+            24.16
+          ]
+        ]
+      },
+      {
+        "text": "Ding-dong-dang! Ding-dong-dang!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Ding-dong-dang!",
+            25.095,
+            26.815,
+            25.1
+          ],
+          [
+            "Ding-dong-dang!",
+            26.98,
+            28.487,
+            26.82
+          ]
+        ]
+      },
+      {
+        "text": "Rainbow colors, yay!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rainbow",
+            28.816,
+            29.4,
+            28.72
+          ],
+          [
+            "colors,",
+            29.4,
+            30.727,
+            29.4
+          ],
+          [
+            "yay!",
+            30.727,
+            31.635,
+            30.84
+          ]
+        ]
+      },
+      {
+        "text": "Red, red, where is red?",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Red,",
+            32.627,
+            33.121,
+            31.95
+          ],
+          [
+            "red,",
+            33.121,
+            33.58,
+            33.17
+          ],
+          [
+            "where",
+            33.58,
+            33.74,
+            33.67
+          ],
+          [
+            "is",
+            33.984,
+            34.374,
+            33.83
+          ],
+          [
+            "red?",
+            34.374,
+            34.733,
+            34.29
+          ]
+        ]
+      },
+      {
+        "text": "A red strawberry! Red!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "A",
+            36.244,
+            36.504,
+            35.53
+          ],
+          [
+            "red",
+            36.504,
+            37.024,
+            36.45
+          ],
+          [
+            "strawberry!",
+            37.167,
+            38.987,
+            36.97
+          ],
+          [
+            "Red!",
+            39.213,
+            39.711,
+            38.79
+          ]
+        ]
+      },
+      {
+        "text": "Clap, clap, clap for red!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Clap,",
+            40.195,
+            40.724,
+            40.09
+          ],
+          [
+            "clap,",
+            40.724,
+            41.104,
+            40.73
+          ],
+          [
+            "clap",
+            41.213,
+            41.533,
+            41.11
+          ],
+          [
+            "for",
+            41.722,
+            42.181,
+            41.43
+          ],
+          [
+            "red!",
+            42.181,
+            42.645,
+            41.99
+          ]
+        ]
+      },
+      {
+        "text": "Orange, where is orange?",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Orange,",
+            44.017,
+            44.92,
+            43.71
+          ],
+          [
+            "where",
+            44.92,
+            45.08,
+            45.05
+          ],
+          [
+            "is",
+            45.483,
+            45.972,
+            45.21
+          ],
+          [
+            "orange?",
+            45.972,
+            46.75,
+            45.83
+          ]
+        ]
+      },
+      {
+        "text": "An orange carrot! Orange!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "An",
+            47.653,
+            47.868,
+            47.43
+          ],
+          [
+            "orange",
+            47.868,
+            49.028,
+            47.83
+          ],
+          [
+            "carrot!",
+            49.664,
+            50.597,
+            48.99
+          ],
+          [
+            "Orange!",
+            50.597,
+            51.2,
+            50.53
+          ]
+        ]
+      },
+      {
+        "text": "Sway, sway, sway for orange!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Sway,",
+            51.34,
+            51.944,
+            51.57
+          ],
+          [
+            "sway,",
+            51.944,
+            52.413,
+            52.05
+          ],
+          [
+            "sway",
+            52.413,
+            52.593,
+            52.53
+          ],
+          [
+            "for",
+            53.056,
+            53.5,
+            52.71
+          ],
+          [
+            "orange!",
+            53.5,
+            54.358,
+            53.31
+          ]
+        ]
+      },
+      {
+        "text": "Rainbow, rainbow!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rainbow,",
+            55.331,
+            56.311,
+            55.39
+          ],
+          [
+            "rainbow!",
+            56.354,
+            56.718,
+            56.37
+          ]
+        ]
+      },
+      {
+        "text": "Up in the sky!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Up",
+            57.247,
+            57.587,
+            57.23
+          ],
+          [
+            "in",
+            57.611,
+            57.931,
+            57.57
+          ],
+          [
+            "the",
+            58.015,
+            58.235,
+            57.89
+          ],
+          [
+            "sky!",
+            58.264,
+            58.758,
+            58.11
+          ]
+        ]
+      },
+      {
+        "text": "Red, orange, yellow!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Red,",
+            59.147,
+            59.666,
+            58.91
+          ],
+          [
+            "orange,",
+            59.666,
+            60.155,
+            59.67
+          ],
+          [
+            "yellow!",
+            60.155,
+            60.983,
+            60.23
+          ]
+        ]
+      },
+      {
+        "text": "Green, blue, purple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Green,",
+            61.063,
+            61.523,
+            61.09
+          ],
+          [
+            "blue,",
+            61.527,
+            61.967,
+            61.55
+          ],
+          [
+            "purple!",
+            62.001,
+            62.634,
+            61.99
+          ]
+        ]
+      },
+      {
+        "text": "Ding-dong-dang! Ding-dong-dang!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Ding-dong-dang!",
+            62.969,
+            64.559,
+            63.01
+          ],
+          [
+            "Ding-dong-dang!",
+            64.725,
+            65.802,
+            64.6
+          ]
+        ]
+      },
+      {
+        "text": "Rainbow, rainbow!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Rainbow,",
+            108.161,
+            109.278,
+            107.9
+          ],
+          [
+            "rainbow!",
+            109.278,
+            109.717,
+            109.26
+          ]
+        ]
+      },
+      {
+        "text": "Up in the sky!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Up",
+            112.007,
+            112.406,
+            111.7
+          ],
+          [
+            "in",
+            112.406,
+            112.746,
+            112.38
+          ],
+          [
+            "the",
+            112.8,
+            113.0,
+            112.72
+          ],
+          [
+            "sky!",
+            113.06,
+            113.598,
+            112.92
+          ]
+        ]
+      },
+      {
+        "text": "Red, orange, yellow!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Red,",
+            115.783,
+            116.337,
+            115.5
+          ],
+          [
+            "orange,",
+            116.337,
+            116.826,
+            116.4
+          ],
+          [
+            "yellow!",
+            116.826,
+            117.684,
+            116.9
+          ]
+        ]
+      },
+      {
+        "text": "Green, blue, purple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Green,",
+            119.575,
+            120.955,
+            119.3
+          ],
+          [
+            "blue,",
+            121.55,
+            123.351,
+            120.68
+          ],
+          [
+            "purple!",
+            123.351,
+            123.631,
+            123.26
+          ]
+        ]
+      },
+      {
+        "text": "Ding, dong, dang!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Ding,",
+            127.168,
+            128.081,
+            126.6
+          ],
+          [
+            "dong,",
+            128.081,
+            129.001,
+            127.56
+          ],
+          [
+            "dang!",
+            129.068,
+            129.517,
+            128.48
+          ]
+        ]
+      }
+    ]
+  }
 }

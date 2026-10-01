@@ -166,3 +166,77 @@ sad, dark, rock, metal, rap, heavy bass, autotune, screaming, slow ballad, spoke
 - **후렴 메아리:** "Squeaky clean! (Squeaky clean!)" 이 부르고 따라 부르기 두 번으로 들리는지 본다.
 - **끝:** 마지막 "hooray!" 뒤에 연주만 나오는 부분이 3초 이상 있어야 한다. 그 자리에 "Bye-bye, friends!" 인사가 들어간다.
 - **다운로드:** 마음에 드는 곡의 WAV를 받아 `~/ml/momo_ep07/suno/v1/` 에 넣는다. 스템(Vocals, Instrumental)은 있으면 함께 넣고, 없으면 이 맥에서 demucs로 분리한다.
+
+## Sung lyrics — Suno v1 take (what the captions show; alignment reads this last block)
+
+Suno v1 (approved by the user, 125.0 BPM, 2:15): the intro is instrumental (first vocal at 11.0 s), and every chorus
+ends with the tag line sung twice — "Wash your hands, hooray!" is repeated (whisper hears the repeat's first
+word as "Rub / Walk / Lock", but "your hands, hooray!" is clear and no other line fits, so it is the lyric line again). Everything else is
+sung as written, except Verse 3 "Here is the towel! (Towel!)", sung as "Here's the towel!" on the downbeat
+right after "Drip, drop!" with no echo (vocal stem: Here's 98.36, the 98.84, towel 99.02–99.64, rest, Pat 99.98).
+
+```
+[Instrumental intro - 5 bars, no vocals]
+
+[Chorus - bouncy, everyone sings]
+Splish, splash, water on!
+Rub, rub, rub your hands!
+Bubbles, bubbles, pop, pop, pop!
+Rinse and pat them dry!
+Squeaky clean! (Squeaky clean!)
+Wash your hands, hooray!
+(Wash your hands, hooray!)
+
+[Verse 1]
+Turn the water on! (Splish, splash!)
+Wet your hands, wet, wet, wet!
+Here is the soap! (Soap!)
+Soap on your hands! (Rub, rub!)
+
+[Chorus - bouncy, everyone sings]
+Splish, splash, water on!
+Rub, rub, rub your hands!
+Bubbles, bubbles, pop, pop, pop!
+Rinse and pat them dry!
+Squeaky clean! (Squeaky clean!)
+Wash your hands, hooray!
+(Wash your hands, hooray!)
+
+[Verse 2]
+Rub your hands, round and round!
+Look at the bubbles! (Bubbles!)
+Rub and count to ten! (Ready, go!)
+One, two, three, four, five!
+Six, seven, eight, nine, ten!
+
+[Chorus - bouncy, everyone sings]
+Splish, splash, water on!
+Rub, rub, rub your hands!
+Bubbles, bubbles, pop, pop, pop!
+Rinse and pat them dry!
+Squeaky clean! (Squeaky clean!)
+Wash your hands, hooray!
+(Wash your hands, hooray!)
+
+[Verse 3]
+Rinse, rinse, bubbles go! (Bye-bye, bubbles!)
+Hello, Ducky! (Quack, quack!)
+Shake, shake, shake! (Drip, drop!)
+Here's the towel!
+Pat, pat, pat them dry!
+
+[Bridge - call and response]
+After we play? (Wash your hands!)
+Before we eat? (Wash your hands!)
+
+[Chorus - final, bigger]
+Splish, splash, water on!
+Rub, rub, rub your hands!
+Bubbles, bubbles, pop, pop, pop!
+Rinse and pat them dry!
+Squeaky clean! (Squeaky clean!)
+Wash your hands, hooray!
+(Wash your hands, hooray!)
+
+[Outro - instrumental, final chord]
+```

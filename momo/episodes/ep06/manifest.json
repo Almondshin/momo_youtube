@@ -9,19 +9,20 @@
   "benchmark": {
     "channel_url": "https://www.youtube.com/@CoComelon",
     "research_dir": null,
-    "chosen_axis": null
+    "chosen_axis": "topic: farm animal sounds (call-and-response vocabulary song)"
   },
   "characters": [
-    "momo"
+    "momo",
+    "ducky"
   ],
   "title": {
-    "en": "",
+    "en": "Animal Sounds Song with Momo the Bunny | Farm Animals Moo, Baa, Oink for Toddlers",
     "ko": ""
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c03",
     "text": {
-      "en": "",
+      "en": "ANIMAL SOUNDS!",
       "ko": ""
     },
     "text_pos": "top"
@@ -29,57 +30,2137 @@
   "bgm": null,
   "upload": {
     "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
-    },
-    "ko": {
-      "title": "",
-      "description": "",
-      "tags": [],
+      "title": "Animal Sounds Song with Momo the Bunny | Farm Animals Moo, Baa, Oink for Toddlers",
+      "description": "What does the cow say? Moo, moo, moo! Sing along with Momo the Bunny and Ducky on the farm and say hello to the cow, the sheep, the pig, the horse, Ducky the duck and the hen.\n\nAnimals and sounds in this song:\nCow - moo · Sheep - baa · Pig - oink\nHorse - neigh · Duck - quack · Hen - cluck\nCow says moo! Sheep says baa! Yay, we can sing them all!\n\nMade for toddlers and preschoolers (ages 2-5). Music and animation made with AI tools.\n\n#animalsounds #farmanimals #kidssongs #nurseryrhymes #toddlersongs #learnenglish #englishforkids #preschool #singalong #MomotheBunny",
+      "tags": [
+        "animal sounds",
+        "animal sounds song",
+        "farm animals",
+        "farm animals for kids",
+        "what does the cow say",
+        "kids songs",
+        "nursery rhymes",
+        "toddler songs",
+        "learn english for kids",
+        "english for toddlers",
+        "preschool songs",
+        "Momo the Bunny"
+      ],
       "playlist_id": null
     }
   },
   "credits": {
-    "estimate": null,
+    "estimate": 139.2,
     "spent": 0,
     "generations": 0,
     "regenerations": 0
   },
   "notes": {
-    "v_over_reason": null,
-    "approvals": [],
-    "next_time": []
+    "v_over_reason": "노래 형식 v2 (ep04 v2 방식, 사용자 피드백 '더 자연스럽게' 2026-09-30): 125.6 BPM 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 33컷. V 31개 중 15개는 재사용(clip_from, 0 크레딧 — 후렴 2~4 와 브리지 동물 복습), 새로 만드는 것 16개(이미지 16장). 모모가 노래하는 컷은 전부 립싱크(노래하며 동작).",
+    "approvals": [
+      "2026-10-01 사용자: ep05~07 병렬 제작·업로드 지시, 묻지 말고 진행",
+      "2026-10-01 노래 승인: Suno v1 'Animal Sounds on the Farm' (125.6 BPM, 파일 2:14, 가사 95.8%) — 사용자가 넣어 준 곡"
+    ],
+    "next_time": [
+      "Suno v1 은 노래를 100.8초에 끝내고 16마디(31초) 기악 아웃트로를 붙임 → 영상은 마디 55(105.3초)에서 끝냄 (노래 비율 92%, 길이 1:45). 다음 곡은 가사 끝 [Outro - 2 bars, final chord] 를 더 분명히, 또는 Suno 에서 곡 자르기",
+      "정렬기(whisper) 오류 3종: 후렴 3 'Sing with me' 를 앞 줄에 붙임, 'Hello, sheep/horse/hen' 의 Hello 를 1초 늦게, 후렴 3 'with' 를 보정이 다음 음에 붙임 — 후렴은 서로 같은 꼴이므로 다른 후렴과 비교해 고칠 것",
+      "검토(2026-10-01): 정렬기·note_end 가 놓친 경계 2곳 — 2음절 'Ducky' 의 '-y'(64.90–65.12) 와 레가토 'say'→'Neigh'(44.06) — c21·c15 cut_at 을 보컬 스템 엔벌로프로 옮김. 립싱크 모션은 마지막 주어가 모모여야 함 (동물·Ducky 뒤에 'sings' 가 오면 그쪽이 노래할 수 있음)"
+    ]
   },
   "cuts": [
     {
       "id": "c01",
       "scene": 1,
       "type": "L",
+      "bars": 2,
       "library_clip": "intro_wave",
       "library_audio": "intro",
+      "lead": 0.6,
       "narration": {
         "en": "Hi friends! It's Momo!"
-      },
-      "keyword": {
-        "en": "",
-        "ko": ""
       }
     },
     {
       "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, both feet flat on the grass, both paws together in front of the chest ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together on every animal sound and sways a little to the beat, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 3.927
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, waving one paw at shoulder height below the ear, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, behind the fence exactly three baby animals peek over the top rail and smile: a chubby baby cow with big black spots, a fluffy white lamb and a pink piglet",
+      "motion": "the cow, the lamb and the piglet behind the fence stay in place with their mouths closed in a gentle smile; Momo sways gently side to side and waves one paw at shoulder height below the ear on 'Hello', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 7.689
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, both facing the viewer, full body, Momo standing with both feet flat on the grass, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised happily",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo sways gently to the beat with both feet on the grass and opens one paw toward the viewer on 'Sing with me', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 11.61
+    },
+    {
+      "id": "c05",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] medium shot standing on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, pointing to her side with one paw at chest height, curious happy face with a small head tilt, huge round sparkly eyes with big white highlights, both long ears fully visible hanging down beside the cheeks",
+      "motion": "points to her side with one paw at chest height and tilts her head with a curious smile, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "cut_at": 15.337
+    },
+    {
+      "id": "c06",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "exactly one chubby round baby cow with a soft white coat and big black spots, a pink nose, tiny rounded horns, friendly big eyes and a gentle smile, standing on the left half of the frame on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, no other animals",
+      "momo": false,
+      "motion": "the cow stays in place and keeps the same look; its tail swishes gently and its ears give a small flick, two little butterflies flutter past, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "COW",
+        "text": "moo, moo, moo",
+        "pos": "right",
+        "at": 0.3
+      },
+      "cut_at": 17.262
+    },
+    {
+      "id": "c07",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] close-up on the soft green grass of the sunny farmyard, the white wooden fence and the red barn softly blurred behind, bright blue sky, a few small white daisies in the grass, facing the viewer, one paw raised beside the cheek below the ear, bright curious face, huge round sparkly eyes with big white highlights, both long ears fully visible hanging down beside the cheeks",
+      "motion": "nods gently to the beat, then points to the other side with one paw at chest height, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "cut_at": 19.28
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "bars": 3,
+      "image_prompt": "exactly one fluffy round white baby lamb with soft curly wool, a cream-colored face, small floppy ears and friendly big eyes, standing on the right half of the frame on the soft green grass lawn with visible grass blades and a few small white daisies with yellow centers, the white wooden fence and the red barn of the sunny farmyard softly blurred behind, bright blue sky, no other animals",
+      "momo": false,
+      "motion": "the lamb stays in place and keeps the same look; tiny sparkles twinkle on its fluffy wool, the daisies sway gently in the breeze, its small ears give a little flick",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 6,
+      "card": {
+        "word": "SHEEP",
+        "text": "baa, baa, baa",
+        "pos": "left",
+        "at": 0.3
+      },
+      "cut_at": 21.13
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, both feet flat on the grass, both paws together in front of the chest ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together on every animal sound and sways a little to the beat, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 26.86
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, waving one paw at shoulder height below the ear, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, behind the fence exactly three baby animals peek over the top rail and smile: a chubby baby cow with big black spots, a fluffy white lamb and a pink piglet",
+      "motion": "the cow, the lamb and the piglet behind the fence stay in place with their mouths closed in a gentle smile; Momo sways gently side to side and waves one paw at shoulder height below the ear on 'Hello', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 30.617
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, both facing the viewer, full body, Momo standing with both feet flat on the grass, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised happily",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo sways gently to the beat with both feet on the grass and opens one paw toward the viewer on 'Sing with me', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 34.543
+    },
+    {
+      "id": "c12",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] medium shot standing in front of the big open red barn door of the sunny farmyard, golden straw on the ground, bright blue sky, facing the viewer, pointing to her side with one paw at chest height, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "points to her side with one paw at chest height and nods to the beat, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "cut_at": 38.269
+    },
+    {
+      "id": "c13",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "exactly one chubby round pink baby piglet with a little curly tail, a round snout, small pointy ears and friendly big eyes, standing on the left half of the frame on clean golden straw in front of the big open red barn door of the sunny farmyard, no other animals",
+      "momo": false,
+      "motion": "the piglet stays in place and keeps the same look; its curly tail wiggles, soft sparkles twinkle around it and a few bits of golden straw drift gently",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "PIG",
+        "text": "oink, oink, oink",
+        "pos": "right",
+        "at": 0.3
+      },
+      "cut_at": 40.235
+    },
+    {
+      "id": "c14",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] three-quarter front view medium shot on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, one paw raised beside the cheek below the ear, small curious head tilt, huge round sparkly eyes with big white highlights, happy face, both long ears fully visible hanging down beside the cheeks",
+      "motion": "tilts her head with a curious smile, then points to the other side with one paw at chest height, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "cut_at": 42.106
+    },
+    {
+      "id": "c15",
+      "scene": 3,
+      "type": "V",
+      "bars": 3,
+      "image_prompt": "exactly one chubby round brown baby horse with a soft golden mane and tail, a white blaze on its nose and friendly big eyes, standing on the right half of the frame on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, no other animals",
+      "momo": false,
+      "motion": "the horse stays in place and keeps the same look; its golden mane and tail sway softly in the breeze, it gives one small nod, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 6,
+      "card": {
+        "word": "HORSE",
+        "text": "neigh, neigh, neigh",
+        "pos": "left",
+        "at": 0.3
+      },
+      "cut_at": 44.06
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, both feet flat on the grass, both paws together in front of the chest ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together on every animal sound and sways a little to the beat, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 49.758
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, waving one paw at shoulder height below the ear, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, behind the fence exactly three baby animals peek over the top rail and smile: a chubby baby cow with big black spots, a fluffy white lamb and a pink piglet",
+      "motion": "the cow, the lamb and the piglet behind the fence stay in place with their mouths closed in a gentle smile; Momo sways gently side to side and waves one paw at shoulder height below the ear on 'Hello', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 53.52
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, both facing the viewer, full body, Momo standing with both feet flat on the grass, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised happily",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo sways gently to the beat with both feet on the grass and opens one paw toward the viewer on 'Sing with me', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 57.426
+    },
+    {
+      "id": "c19",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass of the sunny farmyard, the white wooden fence and the red barn softly blurred behind, bright blue sky, both facing the viewer, medium shot, Momo pointing one paw at Ducky beside her at chest height, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky looking up happily",
+      "motion": "Ducky flaps its tiny wings with its beak closed; Momo points to Ducky beside her and sways a little, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "cut_at": 61.172
+    },
+    {
+      "id": "c20",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Ducky] alone, full body, standing on the left half of the frame on the soft green grass of the sunny farmyard beside a small round blue pond, the white wooden fence and the red barn softly blurred behind, bright blue sky, happy face, tiny wings slightly raised, no other animals",
+      "momo": false,
+      "motion": "Ducky does big happy hops in place and flaps its tiny wings, the pond ripples gently, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "card": {
+        "word": "DUCK",
+        "text": "quack, quack, quack",
+        "pos": "right",
+        "at": 0.3
+      },
+      "cut_at": 63.118
+    },
+    {
+      "id": "c21",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body shot standing on the soft green grass next to a little wooden chicken coop in the sunny farmyard, the white wooden fence softly blurred behind, bright blue sky, facing the viewer, both feet flat on the grass, both paws together in front of the chest, huge round sparkly eyes with big white highlights, cheerful face, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps once and then points to her side with one paw at chest height, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 3
+      },
+      "cut_at": 65.11
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "type": "V",
+      "bars": 3,
+      "image_prompt": "exactly one round plump red-brown hen with a small red comb, a short yellow beak and friendly big eyes, standing on the right half of the frame on golden straw beside a little wooden chicken coop in the sunny farmyard, the white wooden fence softly blurred behind, bright blue sky, no other animals",
+      "momo": false,
+      "motion": "the hen stays in place and keeps the same look; its feathers ruffle softly, it gives one small head bob, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 6,
+      "card": {
+        "word": "HEN",
+        "text": "cluck, cluck, cluck",
+        "pos": "left",
+        "at": 0.3
+      },
+      "cut_at": 66.899
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "exactly one chubby round baby cow with a soft white coat and big black spots, a pink nose, tiny rounded horns, friendly big eyes and a gentle smile, standing on the left half of the frame on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, no other animals",
+      "momo": false,
+      "motion": "the cow stays in place and keeps the same look; its tail swishes gently and its ears give a small flick, two little butterflies flutter past, soft sparkles twinkle",
+      "clip_from": {
+        "cut": "c06",
+        "at": 1.0
+      },
+      "card": {
+        "word": "COW",
+        "text": "cow says moo",
+        "pos": "right",
+        "at": 0.2
+      },
+      "cut_at": 72.561
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "exactly one fluffy round white baby lamb with soft curly wool, a cream-colored face, small floppy ears and friendly big eyes, standing on the right half of the frame on the soft green grass lawn with visible grass blades and a few small white daisies with yellow centers, the white wooden fence and the red barn of the sunny farmyard softly blurred behind, bright blue sky, no other animals",
+      "momo": false,
+      "motion": "the lamb stays in place and keeps the same look; tiny sparkles twinkle on its fluffy wool, the daisies sway gently in the breeze, its small ears give a little flick",
+      "clip_from": {
+        "cut": "c08",
+        "at": 2.0
+      },
+      "card": {
+        "word": "SHEEP",
+        "text": "sheep says baa",
+        "pos": "left",
+        "at": 0.2
+      },
+      "cut_at": 74.38
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "exactly one chubby round pink baby piglet with a little curly tail, a round snout, small pointy ears and friendly big eyes, standing on the left half of the frame on clean golden straw in front of the big open red barn door of the sunny farmyard, no other animals",
+      "momo": false,
+      "motion": "the piglet stays in place and keeps the same look; its curly tail wiggles, soft sparkles twinkle around it and a few bits of golden straw drift gently",
+      "clip_from": {
+        "cut": "c13",
+        "at": 1.0
+      },
+      "card": {
+        "word": "PIG",
+        "text": "pig says oink",
+        "pos": "right",
+        "at": 0.2
+      },
+      "cut_at": 76.403
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Ducky] alone, full body, standing on the left half of the frame on the soft green grass of the sunny farmyard beside a small round blue pond, the white wooden fence and the red barn softly blurred behind, bright blue sky, happy face, tiny wings slightly raised, no other animals",
+      "momo": false,
+      "motion": "Ducky does big happy hops in place and flaps its tiny wings, the pond ripples gently, soft sparkles twinkle",
+      "clip_from": {
+        "cut": "c20",
+        "at": 1.0
+      },
+      "card": {
+        "word": "DUCK",
+        "text": "duck says quack",
+        "pos": "right",
+        "at": 0.2
+      },
+      "cut_at": 78.333
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "exactly one chubby round brown baby horse with a soft golden mane and tail, a white blaze on its nose and friendly big eyes, standing on the right half of the frame on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, no other animals",
+      "momo": false,
+      "motion": "the horse stays in place and keeps the same look; its golden mane and tail sway softly in the breeze, it gives one small nod, soft sparkles twinkle",
+      "clip_from": {
+        "cut": "c15",
+        "at": 2.0
+      },
+      "card": {
+        "word": "HORSE",
+        "text": "horse says neigh",
+        "pos": "left",
+        "at": 0.2
+      },
+      "cut_at": 80.169
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "exactly one round plump red-brown hen with a small red comb, a short yellow beak and friendly big eyes, standing on the right half of the frame on golden straw beside a little wooden chicken coop in the sunny farmyard, the white wooden fence softly blurred behind, bright blue sky, no other animals",
+      "momo": false,
+      "motion": "the hen stays in place and keeps the same look; its feathers ruffle softly, it gives one small head bob, soft sparkles twinkle",
+      "clip_from": {
+        "cut": "c22",
+        "at": 2.0
+      },
+      "card": {
+        "word": "HEN",
+        "text": "hen says cluck",
+        "pos": "left",
+        "at": 0.2
+      },
+      "cut_at": 82.06
+    },
+    {
+      "id": "c29",
+      "scene": 4,
+      "type": "V",
+      "bars": 3,
+      "image_prompt": "[Momo] and [Ducky] full body on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, both facing the viewer, Momo standing with both feet flat on the grass and knees slightly bent, both paws together in front of the chest ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo claps her paws and bounces gently on bent knees with both feet on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 6
+      },
+      "cut_at": 83.926
+    },
+    {
+      "id": "c30",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, both feet flat on the grass, both paws together in front of the chest ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together on every animal sound and sways a little to the beat, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 89.718
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, facing the viewer, waving one paw at shoulder height below the ear, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, behind the fence exactly three baby animals peek over the top rail and smile: a chubby baby cow with big black spots, a fluffy white lamb and a pink piglet",
+      "motion": "the cow, the lamb and the piglet behind the fence stay in place with their mouths closed in a gentle smile; Momo sways gently side to side and waves one paw at shoulder height below the ear on 'Hello', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 93.449
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, both facing the viewer, full body, Momo standing with both feet flat on the grass, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised happily",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo sways gently to the beat with both feet on the grass and opens one paw toward the viewer on 'Sing with me', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 97.345
+    },
+    {
+      "id": "c33",
       "scene": 5,
       "type": "L",
+      "bars": 1,
       "library_clip": "outro_bye",
       "library_audio": "outro",
+      "lead": 0.4,
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
       },
-      "keyword": {
-        "en": "",
-        "ko": ""
-      }
+      "cut_at": 100.78
     }
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:fcaf7cf53762",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+      "tool": "suno",
+      "source_file": "song.wav",
+      "note": "Suno v1 Animal Sounds on the Farm",
+      "duration": 134.4,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:fcaf7cf53762",
+          "url": null,
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T01:05Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 125.6084,
+        "beat0": 0.238,
+        "downbeat0": 0.238,
+        "confidence": 1.181,
+        "downbeats": [
+          0.238,
+          2.1487,
+          4.0594,
+          5.9701,
+          7.8808,
+          9.7915,
+          11.7022,
+          13.6129,
+          15.5236,
+          17.4343,
+          19.345,
+          21.2557,
+          23.1664,
+          25.0771,
+          26.9878,
+          28.8985,
+          30.8092,
+          32.7199,
+          34.6306,
+          36.5413,
+          38.452,
+          40.3627,
+          42.2734,
+          44.1841,
+          46.0948,
+          48.0055,
+          49.9162,
+          51.8269,
+          53.7376,
+          55.6483,
+          57.559,
+          59.4697,
+          61.3804,
+          63.2911,
+          65.2018,
+          67.1125,
+          69.0232,
+          70.9339,
+          72.8446,
+          74.7553,
+          76.666,
+          78.5767,
+          80.4874,
+          82.3981,
+          84.3088,
+          86.2195,
+          88.1302,
+          90.0409,
+          91.9516,
+          93.8623,
+          95.773,
+          97.6837,
+          99.5944,
+          101.5051,
+          103.4158,
+          105.3265,
+          107.2372,
+          109.1479,
+          111.0586,
+          112.9693,
+          114.88,
+          116.7907,
+          118.7014,
+          120.6121,
+          122.5228,
+          124.4335,
+          126.3442,
+          128.2549,
+          130.1656,
+          132.0763,
+          133.987
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            -2.7,
+            0.5,
+            0.3,
+            -18.2,
+            -54.9,
+            44.3,
+            5.1,
+            -9.3,
+            13.8
+          ],
+          "trend_ms": 14.5
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "a8bbb460d11bcfc3dd3a1f4ff25f794dee77856f",
+        "moved": 74,
+        "loose": 58,
+        "flags": [
+          {
+            "kind": "lag",
+            "line": 0,
+            "t": 3.414,
+            "word": "Moo,",
+            "t0": 4.027,
+            "ms": 613,
+            "text": "Moo, moo! Baa, baa!"
+          },
+          {
+            "kind": "lag",
+            "line": 13,
+            "t": 32.657,
+            "word": "farm",
+            "t0": 33.181,
+            "ms": 524,
+            "text": "Hello, farm friends! Hello!"
+          },
+          {
+            "kind": "phase",
+            "line": 36,
+            "t": 93.499,
+            "section": "Chorus",
+            "beat": 3.24,
+            "median": 3.81,
+            "beats": -0.57,
+            "text": "Neigh, neigh! Cluck, cluck!"
+          }
+        ]
+      },
+      "lyrics_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+      "end": 105.26
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:a8bbb460d11b",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "a8bbb460d11bcfc3dd3a1f4ff25f794dee77856f",
+      "of": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+      "history": [
+        {
+          "job_id": "local:a8bbb460d11b",
+          "url": null,
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T01:05Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 125.6084,
+    "lyrics": [
+      {
+        "text": "Moo, moo! Baa, baa!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Moo,",
+            4.027,
+            4.327,
+            4.26
+          ],
+          [
+            "moo!",
+            4.536,
+            4.97,
+            4.56
+          ],
+          [
+            "Baa,",
+            4.97,
+            5.21,
+            5.06
+          ],
+          [
+            "baa!",
+            5.255,
+            5.674,
+            5.3
+          ]
+        ]
+      },
+      {
+        "text": "Oink, oink! Quack, quack!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Oink,",
+            5.928,
+            6.417,
+            5.74
+          ],
+          [
+            "oink!",
+            6.417,
+            6.817,
+            6.48
+          ],
+          [
+            "Quack,",
+            6.866,
+            7.145,
+            6.88
+          ],
+          [
+            "quack!",
+            7.145,
+            7.385,
+            7.18
+          ]
+        ]
+      },
+      {
+        "text": "Neigh, neigh! Cluck, cluck!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Neigh,",
+            7.789,
+            8.318,
+            7.78
+          ],
+          [
+            "neigh!",
+            8.318,
+            8.758,
+            8.36
+          ],
+          [
+            "Cluck,",
+            8.782,
+            9.016,
+            8.8
+          ],
+          [
+            "cluck!",
+            9.016,
+            9.251,
+            9.08
+          ]
+        ]
+      },
+      {
+        "text": "Hello, farm friends! Hello!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Hello,",
+            9.73,
+            10.268,
+            9.58
+          ],
+          [
+            "farm",
+            10.268,
+            10.528,
+            10.3
+          ],
+          [
+            "friends!",
+            10.642,
+            11.122,
+            10.56
+          ],
+          [
+            "Hello!",
+            11.141,
+            11.61,
+            11.04
+          ]
+        ]
+      },
+      {
+        "text": "Sing with me! Sing with me!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Sing",
+            11.71,
+            12.15,
+            11.62
+          ],
+          [
+            "with",
+            12.309,
+            12.613,
+            12.06
+          ],
+          [
+            "me!",
+            12.613,
+            12.922,
+            12.56
+          ],
+          [
+            "Sing",
+            12.922,
+            13.082,
+            12.9
+          ],
+          [
+            "with",
+            13.127,
+            13.291,
+            13.06
+          ],
+          [
+            "me!",
+            13.291,
+            13.606,
+            13.26
+          ]
+        ]
+      },
+      {
+        "text": "Animal sounds on the farm!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Animal",
+            13.606,
+            13.866,
+            13.6
+          ],
+          [
+            "sounds",
+            13.87,
+            14.09,
+            13.86
+          ],
+          [
+            "on",
+            14.09,
+            14.27,
+            14.26
+          ],
+          [
+            "the",
+            14.334,
+            14.414,
+            14.44
+          ],
+          [
+            "farm!",
+            14.564,
+            15.047,
+            14.52
+          ]
+        ]
+      },
+      {
+        "text": "What does the cow say?",
+        "section": "Verse 1",
+        "words": [
+          [
+            "What",
+            15.437,
+            15.877,
+            15.34
+          ],
+          [
+            "does",
+            15.99,
+            16.175,
+            15.78
+          ],
+          [
+            "the",
+            16.175,
+            16.395,
+            16.16
+          ],
+          [
+            "cow",
+            16.439,
+            16.739,
+            16.38
+          ],
+          [
+            "say?",
+            16.764,
+            17.257,
+            16.68
+          ]
+        ]
+      },
+      {
+        "text": "Moo, moo, moo! Hello, cow!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Moo,",
+            17.362,
+            17.942,
+            17.4
+          ],
+          [
+            "moo,",
+            17.956,
+            18.396,
+            17.98
+          ],
+          [
+            "moo!",
+            18.435,
+            18.544,
+            18.42
+          ],
+          [
+            "Hello,",
+            18.544,
+            18.874,
+            18.54
+          ],
+          [
+            "cow!",
+            18.874,
+            19.278,
+            18.9
+          ]
+        ]
+      },
+      {
+        "text": "What does the sheep say?",
+        "section": "Verse 1",
+        "words": [
+          [
+            "What",
+            19.328,
+            19.588,
+            19.32
+          ],
+          [
+            "does",
+            19.702,
+            20.061,
+            19.58
+          ],
+          [
+            "the",
+            20.061,
+            20.191,
+            19.96
+          ],
+          [
+            "sheep",
+            20.191,
+            20.491,
+            20.2
+          ],
+          [
+            "say?",
+            20.599,
+            21.129,
+            20.5
+          ]
+        ]
+      },
+      {
+        "text": "Baa, baa, baa! Hello, sheep!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Baa,",
+            21.223,
+            21.697,
+            21.26
+          ],
+          [
+            "baa,",
+            21.697,
+            22.137,
+            21.76
+          ],
+          [
+            "baa!",
+            22.196,
+            23.079,
+            22.2
+          ],
+          [
+            "Hello,",
+            23.079,
+            24.809,
+            23.15
+          ],
+          [
+            "sheep!",
+            24.87,
+            25.324,
+            24.88
+          ]
+        ]
+      },
+      {
+        "text": "Moo, moo! Baa, baa!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Moo,",
+            26.92,
+            27.514,
+            26.66
+          ],
+          [
+            "moo!",
+            27.514,
+            27.933,
+            27.5
+          ],
+          [
+            "Baa,",
+            27.933,
+            28.188,
+            27.96
+          ],
+          [
+            "baa!",
+            28.188,
+            28.492,
+            28.22
+          ]
+        ]
+      },
+      {
+        "text": "Oink, oink! Quack, quack!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Oink,",
+            28.806,
+            29.35,
+            28.64
+          ],
+          [
+            "oink!",
+            29.35,
+            29.804,
+            29.36
+          ],
+          [
+            "Quack,",
+            29.804,
+            29.854,
+            29.98
+          ],
+          [
+            "quack!",
+            30.078,
+            30.283,
+            29.98
+          ]
+        ]
+      },
+      {
+        "text": "Neigh, neigh! Cluck, cluck!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Neigh,",
+            30.737,
+            30.937,
+            30.8
+          ],
+          [
+            "neigh!",
+            31.001,
+            31.521,
+            31.0
+          ],
+          [
+            "Cluck,",
+            31.749,
+            31.979,
+            31.52
+          ],
+          [
+            "cluck!",
+            31.979,
+            32.218,
+            31.92
+          ]
+        ]
+      },
+      {
+        "text": "Hello, farm friends! Hello!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Hello,",
+            32.568,
+            33.181,
+            32.38
+          ],
+          [
+            "farm",
+            33.181,
+            33.641,
+            33.04
+          ],
+          [
+            "friends!",
+            33.67,
+            34.069,
+            33.5
+          ],
+          [
+            "Hello!",
+            34.069,
+            34.518,
+            33.94
+          ]
+        ]
+      },
+      {
+        "text": "Sing with me! Sing with me!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Sing",
+            34.633,
+            35.167,
+            34.63
+          ],
+          [
+            "with",
+            35.167,
+            35.467,
+            35.23
+          ],
+          [
+            "me!",
+            35.546,
+            35.83,
+            35.53
+          ],
+          [
+            "Sing",
+            35.83,
+            36.0,
+            35.84
+          ],
+          [
+            "with",
+            36.0,
+            36.16,
+            36.05
+          ],
+          [
+            "me!",
+            36.214,
+            36.539,
+            36.21
+          ]
+        ]
+      },
+      {
+        "text": "Animal sounds on the farm!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Animal",
+            36.539,
+            36.759,
+            36.56
+          ],
+          [
+            "sounds",
+            36.968,
+            37.267,
+            36.78
+          ],
+          [
+            "on",
+            37.267,
+            37.427,
+            37.2
+          ],
+          [
+            "the",
+            37.427,
+            37.506,
+            37.36
+          ],
+          [
+            "farm!",
+            37.506,
+            37.995,
+            37.44
+          ]
+        ]
+      },
+      {
+        "text": "What does the pig say?",
+        "section": "Verse 2",
+        "words": [
+          [
+            "What",
+            38.369,
+            38.869,
+            38.16
+          ],
+          [
+            "does",
+            38.923,
+            39.138,
+            38.66
+          ],
+          [
+            "the",
+            39.138,
+            39.358,
+            39.08
+          ],
+          [
+            "pig",
+            39.387,
+            39.681,
+            39.3
+          ],
+          [
+            "say?",
+            39.681,
+            40.21,
+            39.66
+          ]
+        ]
+      },
+      {
+        "text": "Oink, oink, oink! Hello, pig!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Oink,",
+            40.335,
+            40.575,
+            40.32
+          ],
+          [
+            "oink,",
+            40.814,
+            41.283,
+            40.56
+          ],
+          [
+            "oink!",
+            41.283,
+            41.507,
+            41.1
+          ],
+          [
+            "Hello,",
+            41.507,
+            41.647,
+            41.54
+          ],
+          [
+            "pig!",
+            41.777,
+            42.061,
+            41.68
+          ]
+        ]
+      },
+      {
+        "text": "What does the horse say?",
+        "section": "Verse 2",
+        "words": [
+          [
+            "What",
+            42.206,
+            42.426,
+            42.22
+          ],
+          [
+            "does",
+            42.74,
+            42.939,
+            42.44
+          ],
+          [
+            "the",
+            42.939,
+            43.199,
+            42.86
+          ],
+          [
+            "horse",
+            43.223,
+            43.537,
+            43.12
+          ],
+          [
+            "say?",
+            43.537,
+            44.171,
+            43.48
+          ]
+        ]
+      },
+      {
+        "text": "Neigh, neigh, neigh! Hello, horse!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Neigh,",
+            44.08,
+            44.291,
+            44.2
+          ],
+          [
+            "neigh,",
+            44.66,
+            45.099,
+            44.32
+          ],
+          [
+            "neigh!",
+            45.099,
+            46.032,
+            44.86
+          ],
+          [
+            "Hello,",
+            46.032,
+            47.912,
+            46.06
+          ],
+          [
+            "horse!",
+            47.963,
+            48.297,
+            47.94
+          ]
+        ]
+      },
+      {
+        "text": "Moo, moo! Baa, baa!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Moo,",
+            49.788,
+            50.297,
+            49.3
+          ],
+          [
+            "moo!",
+            50.297,
+            50.817,
+            50.1
+          ],
+          [
+            "Baa,",
+            50.836,
+            51.105,
+            50.62
+          ],
+          [
+            "baa!",
+            51.105,
+            51.39,
+            51.04
+          ]
+        ]
+      },
+      {
+        "text": "Oink, oink! Quack, quack!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Oink,",
+            51.699,
+            51.999,
+            51.8
+          ],
+          [
+            "oink!",
+            52.263,
+            52.712,
+            52.1
+          ],
+          [
+            "Quack,",
+            52.712,
+            52.981,
+            52.58
+          ],
+          [
+            "quack!",
+            52.981,
+            53.171,
+            52.9
+          ]
+        ]
+      },
+      {
+        "text": "Neigh, neigh! Cluck, cluck!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Neigh,",
+            53.6,
+            53.99,
+            53.6
+          ],
+          [
+            "neigh!",
+            54.119,
+            54.509,
+            53.99
+          ],
+          [
+            "Cluck,",
+            54.618,
+            54.877,
+            54.38
+          ],
+          [
+            "cluck!",
+            54.877,
+            55.091,
+            54.82
+          ]
+        ]
+      },
+      {
+        "text": "Hello, farm friends! Hello!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Hello,",
+            55.565,
+            56.114,
+            55.29
+          ],
+          [
+            "farm",
+            56.114,
+            56.453,
+            55.95
+          ],
+          [
+            "friends!",
+            56.453,
+            56.857,
+            56.41
+          ],
+          [
+            "Hello!",
+            56.857,
+            57.386,
+            56.85
+          ]
+        ]
+      },
+      {
+        "text": "Sing with me! Sing with me!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Sing",
+            57.386,
+            58.17,
+            57.54
+          ],
+          [
+            "with",
+            58.17,
+            58.46,
+            58.14
+          ],
+          [
+            "me!",
+            58.46,
+            58.738,
+            58.44
+          ],
+          [
+            "Sing",
+            58.738,
+            58.888,
+            58.75
+          ],
+          [
+            "with",
+            58.888,
+            59.048,
+            58.96
+          ],
+          [
+            "me!",
+            59.177,
+            59.432,
+            59.12
+          ]
+        ]
+      },
+      {
+        "text": "Animal sounds on the farm!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Animal",
+            59.432,
+            59.612,
+            59.46
+          ],
+          [
+            "sounds",
+            59.666,
+            59.905,
+            59.64
+          ],
+          [
+            "on",
+            59.905,
+            60.085,
+            60.08
+          ],
+          [
+            "the",
+            60.15,
+            60.23,
+            60.26
+          ],
+          [
+            "farm!",
+            60.394,
+            60.878,
+            60.34
+          ]
+        ]
+      },
+      {
+        "text": "What does the duck say?",
+        "section": "Verse 3",
+        "words": [
+          [
+            "What",
+            61.272,
+            61.492,
+            61.32
+          ],
+          [
+            "does",
+            61.806,
+            62.026,
+            61.54
+          ],
+          [
+            "the",
+            62.026,
+            62.226,
+            61.98
+          ],
+          [
+            "duck",
+            62.29,
+            62.624,
+            62.18
+          ],
+          [
+            "say?",
+            62.624,
+            63.033,
+            62.54
+          ]
+        ]
+      },
+      {
+        "text": "Quack, quack, quack! Hello, Ducky!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Quack,",
+            63.218,
+            63.398,
+            63.28
+          ],
+          [
+            "quack,",
+            63.692,
+            64.166,
+            63.46
+          ],
+          [
+            "quack!",
+            64.166,
+            64.41,
+            63.96
+          ],
+          [
+            "Hello,",
+            64.41,
+            64.57,
+            64.44
+          ],
+          [
+            "Ducky!",
+            64.675,
+            64.779,
+            64.6
+          ]
+        ]
+      },
+      {
+        "text": "What does the hen say?",
+        "section": "Verse 3",
+        "words": [
+          [
+            "What",
+            65.149,
+            65.349,
+            65.2
+          ],
+          [
+            "does",
+            65.618,
+            65.872,
+            65.4
+          ],
+          [
+            "the",
+            65.872,
+            66.091,
+            65.8
+          ],
+          [
+            "hen",
+            66.091,
+            66.371,
+            66.02
+          ],
+          [
+            "say?",
+            66.411,
+            66.895,
+            66.3
+          ]
+        ]
+      },
+      {
+        "text": "Cluck, cluck, cluck! Hello, hen!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Cluck,",
+            66.999,
+            67.279,
+            67.04
+          ],
+          [
+            "cluck,",
+            67.483,
+            67.952,
+            67.32
+          ],
+          [
+            "cluck!",
+            67.952,
+            68.87,
+            67.82
+          ],
+          [
+            "Hello,",
+            68.87,
+            70.751,
+            68.91
+          ],
+          [
+            "hen!",
+            70.751,
+            71.379,
+            70.81
+          ]
+        ]
+      },
+      {
+        "text": "Cow says moo! Sheep says baa!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Cow",
+            72.661,
+            73.066,
+            72.54
+          ],
+          [
+            "says",
+            73.066,
+            73.564,
+            73.02
+          ],
+          [
+            "moo!",
+            73.564,
+            74.447,
+            73.52
+          ],
+          [
+            "Sheep",
+            74.447,
+            74.947,
+            74.44
+          ],
+          [
+            "says",
+            74.976,
+            75.436,
+            74.94
+          ],
+          [
+            "baa!",
+            75.59,
+            76.193,
+            75.4
+          ]
+        ]
+      },
+      {
+        "text": "Pig says oink! Duck says quack!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Pig",
+            76.503,
+            76.763,
+            76.52
+          ],
+          [
+            "says",
+            77.027,
+            77.486,
+            76.78
+          ],
+          [
+            "oink!",
+            77.486,
+            78.433,
+            77.32
+          ],
+          [
+            "Duck",
+            78.433,
+            78.693,
+            78.42
+          ],
+          [
+            "says",
+            78.917,
+            79.346,
+            78.68
+          ],
+          [
+            "quack!",
+            79.346,
+            79.581,
+            79.2
+          ]
+        ]
+      },
+      {
+        "text": "Horse says neigh! Hen says cluck!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Horse",
+            80.269,
+            80.509,
+            80.34
+          ],
+          [
+            "says",
+            80.658,
+            81.167,
+            80.58
+          ],
+          [
+            "neigh!",
+            81.167,
+            82.16,
+            81.14
+          ],
+          [
+            "Hen",
+            82.16,
+            82.44,
+            82.22
+          ],
+          [
+            "says",
+            82.539,
+            83.039,
+            82.5
+          ],
+          [
+            "cluck!",
+            83.133,
+            83.387,
+            83.0
+          ]
+        ]
+      },
+      {
+        "text": "Yay! We can sing them all!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Yay!",
+            84.026,
+            84.366,
+            84.02
+          ],
+          [
+            "We",
+            84.579,
+            84.824,
+            84.36
+          ],
+          [
+            "can",
+            84.824,
+            85.033,
+            84.74
+          ],
+          [
+            "sing",
+            85.033,
+            85.473,
+            84.98
+          ],
+          [
+            "them",
+            85.582,
+            86.002,
+            85.42
+          ],
+          [
+            "all!",
+            86.071,
+            87.318,
+            85.84
+          ]
+        ]
+      },
+      {
+        "text": "Moo, moo! Baa, baa!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Moo,",
+            89.728,
+            90.376,
+            89.36
+          ],
+          [
+            "moo!",
+            90.376,
+            90.795,
+            90.06
+          ],
+          [
+            "Baa,",
+            90.795,
+            91.055,
+            90.56
+          ],
+          [
+            "baa!",
+            91.055,
+            91.409,
+            90.94
+          ]
+        ]
+      },
+      {
+        "text": "Oink, oink! Quack, quack!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Oink,",
+            91.718,
+            92.222,
+            91.52
+          ],
+          [
+            "oink!",
+            92.222,
+            92.642,
+            92.06
+          ],
+          [
+            "Quack,",
+            92.666,
+            92.93,
+            92.48
+          ],
+          [
+            "quack!",
+            92.93,
+            93.12,
+            92.84
+          ]
+        ]
+      },
+      {
+        "text": "Neigh, neigh! Cluck, cluck!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Neigh,",
+            93.499,
+            93.799,
+            93.56
+          ],
+          [
+            "neigh!",
+            94.083,
+            94.563,
+            93.86
+          ],
+          [
+            "Cluck,",
+            94.597,
+            94.851,
+            94.34
+          ],
+          [
+            "cluck!",
+            94.851,
+            95.021,
+            94.78
+          ]
+        ]
+      },
+      {
+        "text": "Hello, farm friends! Hello!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Hello,",
+            95.47,
+            95.79,
+            95.56
+          ],
+          [
+            "farm",
+            96.018,
+            96.438,
+            95.88
+          ],
+          [
+            "friends!",
+            96.492,
+            96.802,
+            96.3
+          ],
+          [
+            "Hello!",
+            96.802,
+            97.365,
+            96.84
+          ]
+        ]
+      },
+      {
+        "text": "Sing with me! Sing with me!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Sing",
+            97.465,
+            97.999,
+            97.18
+          ],
+          [
+            "with",
+            97.999,
+            98.393,
+            97.78
+          ],
+          [
+            "me!",
+            98.393,
+            98.707,
+            98.32
+          ],
+          [
+            "Sing",
+            98.707,
+            98.847,
+            98.64
+          ],
+          [
+            "with",
+            98.853,
+            99.091,
+            98.78
+          ],
+          [
+            "me!",
+            99.091,
+            99.346,
+            99.02
+          ]
+        ]
+      },
+      {
+        "text": "Animal sounds on the farm!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Animal",
+            99.346,
+            99.626,
+            99.36
+          ],
+          [
+            "sounds",
+            99.8,
+            100.049,
+            99.64
+          ],
+          [
+            "on",
+            100.049,
+            100.174,
+            100.0
+          ],
+          [
+            "the",
+            100.174,
+            100.274,
+            100.16
+          ],
+          [
+            "farm!",
+            100.304,
+            100.783,
+            100.26
+          ]
+        ]
+      }
+    ]
+  }
 }

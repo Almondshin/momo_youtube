@@ -184,3 +184,49 @@ sad, dark, rock, metal, rap, heavy bass, autotune, screaming, slow ballad, spoke
 3. 괄호 속 대답("Red!", "Quack, quack!" 등)이 리드 뒤에 **따로** 들리면 좋습니다. 리드와 겹치면 자막 타이밍이 흔들립니다.
 4. 전체 2:00~2:25 이고, 마지막이 **연주로** 끝나야 합니다. 그 자리에 아웃트로 인사("Bye-bye, friends!")가 들어갑니다.
 5. 고른 곡의 **WAV** 를 `~/ml/momo_ep05/suno/v1/song.wav` 에 넣어 주세요. 스템(Vocals·Instrumental)은 있으면 같이 넣고, 없으면 제가 demucs 로 나눕니다.
+
+## Sung lyrics — Suno v1 take (what the captions show; alignment reads this last block)
+
+Suno v1 (127.0 BPM, 2:14.7) sang less than the written lyrics: an 8-bar instrumental intro (vocals from 17.3 s),
+chorus 1, verse 1 (red, orange), chorus 2 without its last line, then a 22-bar instrumental break (66.3–108.2 s)
+where verse 2, verse 3 and the bridge were written, and a slow final chorus (one line every 2 bars) that ends on
+"Ding, dong, dang!" (three slow notes, 127.2–129.6 s). Yellow, green, blue and purple are only sung in the choruses; the cut list shows their
+objects with word cards during the instrumental break.
+
+```
+[Instrumental intro - 8 bars]
+
+[Chorus - bouncy, everyone sings]
+Rainbow, rainbow!
+Up in the sky!
+Red, orange, yellow!
+Green, blue, purple!
+Ding-dong-dang! (Ding-dong-dang!)
+Rainbow colors, yay!
+
+[Verse 1]
+Red, red, where is red?
+A red strawberry! (Red!)
+Clap, clap, clap for red!
+Orange, where is orange?
+An orange carrot! (Orange!)
+Sway, sway, sway for orange!
+
+[Chorus - bouncy, everyone sings]
+Rainbow, rainbow!
+Up in the sky!
+Red, orange, yellow!
+Green, blue, purple!
+Ding-dong-dang! (Ding-dong-dang!)
+
+[Instrumental break - 22 bars]
+
+[Chorus - final, slow]
+Rainbow, rainbow!
+Up in the sky!
+Red, orange, yellow!
+Green, blue, purple!
+Ding, dong, dang!
+
+[Outro - instrumental]
+```
