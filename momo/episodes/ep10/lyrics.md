@@ -37,7 +37,7 @@ overalls, and the two yellow buttons always show. Pajamas are an exception the u
   on the bed (V1a), and in V1b Momo hugs the folded pajamas against her tummy ("Soft and cozy" is then about the
   pajamas). "Put on pajamas!" is sung to the child watching. Less risk to her look; the only mismatch is that she
   sleeps in her overalls in the END shot.
-- Without a clear answer from the user, B is used (config rules[0] is a standing user decision).
+- **User decision 2026-10-01: A (mint star-print pajamas).** Switch to B only if the first pajama image fails twice.
 
 ## Plan
 
@@ -108,7 +108,7 @@ Kinds:
 | V3c | Wave to the moon! / Wave to the stars! | 2 | LS | Momo by the round window, waist-up, frontal, the window beside her with the moon and stars in it; she keeps facing the viewer and waves one paw toward the window at shoulder height below the ear on "moon", then the other paw on "stars" (the toddler waves along) | — | 1 | 5 |
 | — | Chorus 4, lines 1–4 | 4 | RE | CA · CB | — | 0 | 0 |
 | END | Close your eyes, (close your eyes,) / Good night, Momo. (Good night.) | 2–3 | MO, **not lip-sync** | Momo and Ducky fast asleep in the small white bed under the pink blanket, seen from the front at a slight high angle, Momo on her back with her head on the round white pillow and her face toward the viewer. Momo's eyes are gently closed, with a peaceful little smile; she hugs Teddy, and both long ears rest on the pillow. Ducky sleeps beside her. Through the round window: the crescent moon and golden stars. Motion: chests rise and fall slowly, the stars twinkle, the night-light glows softly. **Eyes stay closed, mouths stay closed — nobody on screen sings** (the choir sings to Momo). The only closed-eye shot. The eye gate cannot measure closed eyes, so check this shot by eye | — | 1 | 0 |
-| L2 | (2-bar outro) | 2 | L `outro_bye` | library goodbye | — | 0 | 0 |
+| L2 | (2-bar outro) | 2 | — | **User decision 2026-10-01: no library goodbye** — the END sleeping shot holds to the end of the song | — | 0 | 0 |
 
 **Estimate:** 15 new images (8 LS + 7 MO) and ≈ 32 s of new lip-sync. At 104 BPM a 1-bar line is ≈ 2.3 s →
 3 s clip (refs shorter than 3 s are padded) and a 2-bar shot ≈ 4.6 s → 5 s: 4 × 5 (CA, CB, CC, V3c) + 4 × 3 (V1b,
