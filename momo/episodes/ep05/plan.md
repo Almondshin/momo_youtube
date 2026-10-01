@@ -1,6 +1,6 @@
 # ep05 기획표 — 무지개 색깔 (Rainbow Colors)
 
-> validate_manifest.py --table 이 생성 (2026-10-01 02:45 UTC). 직접 고치지 말고 manifest.json 을 고친 뒤 다시 실행.
+> validate_manifest.py --table 이 생성 (2026-10-01 03:05 UTC). 직접 고치지 말고 manifest.json 을 고친 뒤 다시 실행.
 
 - 제목 EN: Rainbow Colors Song with Momo the Bunny | Learn Colors for Toddlers
 - 제목 KO: (미정)
