@@ -21,6 +21,8 @@ momo/
   momolib/vocal_onsets.py     보컬 스템 발성 시작 검출 (유성 150–3500 Hz / 자음 4–10 kHz flux, 피치) — numpy
   momolib/lyrics_refine.py    정렬(whisper) 단어 시작을 보컬 스템 발성에 맞춤 (song_track.py lyrics, 기본 켬)
   momolib/lipsync.py          조립된 영상의 립싱크 지연 측정 (song_track.py lipsync → cut.lip_shift 제안)
+  momolib/genrec.py           GenRec(생성 기록)·Slot·크레딧 계산 — hf_jobs/hf_api/fetch_assets/estimate 공용
+  momolib/release.py          GitHub release(media-<ep>) 업로드 (gh) — song_track publish, hf_api archive 공용
   library/library.json        라이브러리 레지스트리 (캐릭터 시트, 고정 클립 5종, 고정 음성)
   library/{clips,audio/<lang>,sheets}/   (git 제외, URL 로 복원)
   assets/{bgm,sfx,fonts}/     사용자가 넣는 파일 (git 포함)
@@ -64,7 +66,8 @@ momo/
   "thumbnail": {"cut": "c07", "text": {"en": "RED YELLOW BLUE", "ko": "빨강 노랑 파랑"}, "text_pos": "top|bottom"},
   "bgm": null | "파일명(assets/bgm/)",
   "upload": {"en": {"title","description","tags":[],"playlist_id"}, "ko": {...}},
-  "credits": {"estimate", "spent", "generations", "regenerations"},
+  "credits": {"estimate", "spent", "generations", "regenerations",
+              "api_usd", "api_credits", "api_generations"},   // api_* = hf_api.py (API 선불 잔액, 구독 캡과 별개)
   "notes": {"v_over_reason", "approvals": [], "next_time": []},
   "cuts": [ { "id","scene","type", ... ,
               "gen": {"image": GenRec, "clip": GenRec},
@@ -206,6 +209,32 @@ GenRec = {"status": "pending|generated|approved|rejected", "job_id", "url", "att
 - `fetch_assets.py --ep ep02 [--library] [--force]` : GenRec.url 이 있고 status 가 generated/approved 인 항목을
   규칙 경로로 다운로드 (urllib, 재시도 3회, Content-Type/확장자로 확장자 결정, 다운로드 후 PIL/ffprobe 로 검증).
   이미 있으면 건너뜀. 실패 목록을 끝에 표로.
+- `hf_api.py` — Higgsfield **API**(공식 SDK `higgsfield-client`, 별도 선불 잔액·USD)로 클립 생성. MCP(구독)와 같은 기록을 쓴다.
+  - `check` : 없는 request id 의 status 조회 (과금 없음) → 404 키 정상 / 401 키 틀림(exit 1) / 403 잔액 부족(exit 3, 키는 정상).
+  - `run --ep ep05 --kind clip [--cuts] [--lang] [--dry-run] [--max-parallel 4] [--max-usd N] [--deadline 1800]` :
+    항목 = `hf_jobs.plan_episode(..., api=True)` (clip 만 — 노래 파일 컷은 nar_ref 대신 `audio/refs/<cut>_<lang>.wav` 를 직접
+    올리므로 MCP media id 가 필요 없다). 모델 매핑 `api_payload()`: wan2_7 → `wan/v2.7/image-to-video`
+    (image_url·audio_url·end_image_url·duration 2–15·720p|1080p), seedance_2_0_mini|2_0 → `bytedance/seedance-2.0/image-to-video`
+    (4–15초, generate_audio false), seedance_2_5 → `bytedance/seedance-2.5/image-to-video`, 립싱크면 `…/reference-to-video`
+    (image_urls·audio_urls). 매핑 없는 모델·여러 블록 나레이션 → MCP 목록. 입력 파일은 SDK `upload_file`(presigned PUT,
+    WAV 만 — 그 밖의 음성은 ffmpeg 로 WAV 변환) → 안 되면 manifest URL. 로컬 파일은 `.sources.json` 의 job_id 가 승인 job 과
+    같을 때만 쓴다. refs 는 길이 = max(컷 구간, 3초) 를 확인.
+  - 요청 흐름 (`HfApi`, 스레드 풀): 업로드 → `POST /estimate/<model>`(과금 없음, --max-usd 확인) → GenRec.`api_pending`
+    {key, model, body, attempt} 저장 → `POST /<model>` + `Idempotency-Key`(uuid5: ep|cut|kind|lang|attempt|model|시작 이미지 job;
+    408/429/5xx/네트워크는 같은 키·body 로 최대 4회, 400 동시 요청 한도는 대기 후 재전송) → 접수 즉시 `apply_record(generated,
+    job_id "api:<request_id>", cost 0)` + history.api {model, request_id, idempotency_key, usd_est, credits_est, correlation_id},
+    credits.api_generations → 폴링 2초→10초(지터)·deadline → completed: url 기록, history.api.{usd,credits,charged},
+    credits.api_usd 누적, `fetch_assets.download` 로 clips/ 에 받기 / failed·nsfw·canceled: rejected (과금 없음) /
+    시간 초과·모르는 상태·연결 오류: generated(URL 없음) 유지 → 다음 run 이 폴링만 이어서. 접수 여부 불명이면 api_pending 이
+    남고 다음 run 이 같은 키·body 를 재전송 (원래 request_id, 중복 과금 없음; 409 = 같은 키 처리 중 → 접수 불명).
+    api_pending 이 남은 클립은 `hf_jobs.plan_episode`(MCP) 가 blocked 로 막고, 403 폴백 plan 에도 넣지 않는다 (재전송 못 한
+    replay 는 UNSURE). 콘솔에서 접수 안 됨을 확인한 뒤에만 `forget --ep --cut [--lang] --yes` 로 지운다.
+  - HTTP 403(402) = 잔액 부족: 재시도 없이 새 제출 중단, 남은 항목을 `hf_jobs.plan_episode` JSON(MCP plan)으로 출력, exit 3.
+    exit 2 = --max-usd 초과(제출 없음), 1 = 실패·미확인 있음. 구독 `credits.spent`·캡 계산은 API 작업에 영향받지 않는다.
+  - `archive --ep ep05 [--tag] [--dry-run]` : job_id 가 `api:` 이고 generated/approved 인 항목의 파일(없거나 `.sources.json` 상
+    그 job·URL 의 파일이 아니면 그 URL 에서 먼저 받음)을
+    release `media-<ep>` 에 `<ep>_<stem>_<sha1 8자>.<ext>` 로 올리고 GenRec.url·history.url 을 그 주소로 (원래 주소는
+    history.api.output_url), `.sources.json` 도 갱신 → fetch_assets 가 그대로 복원.
 - `doctor.py [--ep ep02] [--update-ytdlp] [--ci]` : yt-dlp(버전), ffmpeg/ffprobe(libx264, xfade, loudnorm),
   Python 모듈, assets/fonts 한글 지원 폰트, assets/bgm 파일, assets/sfx(선택), library 상태, config.voices,
   (ep 가 있으면) manifest 검증 + 에셋 존재 여부, YouTube 자격증명 env 존재 여부(값은 출력 금지).
@@ -259,3 +288,6 @@ InstalledAppFlow(run_local_server) → scopes `youtube.upload` + `youtube` → r
   클립, 음성 블록(사인 비프 길이 다양 — en/ko 길이 다르게).
 - `tests/run_all.sh`: 위 픽스처로 전체 실행 + 결과 검증(ffprobe: 1920x1080, 30fps, yuv420p, h264, aac 48k, 길이=timeline total±1프레임,
   loudness ≈ -14 LUFS ±1), validate/estimate/hf_jobs/fetch_assets(로컬 file:// 또는 http.server)/upload --dry-run.
+- `tests/test_tools.py` 의 hf_api 테스트는 네트워크·키·과금 없이 돈다: `FakeApi`(httpx.MockTransport)가 업로드·estimate·제출·
+  status 를 흉내 내고, SDK `SyncClient` 의 httpx 클라이언트를 같은 MockTransport 로 바꿔 실제 SDK upload 경로도 탄다.
+  `hf_api.make_api` 와 `momolib.release` 함수는 테스트에서 바꿔 끼운다.

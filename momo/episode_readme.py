@@ -87,6 +87,9 @@ def render(paths: Paths, cfg: dict, m: dict) -> str:
          f"| 사용 크레딧 | {float(cr.get('spent') or 0):g} / 캡 {cap:g}"
          + (f" (예상 {cr['estimate']:g})" if isinstance(cr.get("estimate"), (int, float)) else "") + " |",
          f"| 생성 / 재생성 횟수 | {int(cr.get('generations') or 0)} / {int(cr.get('regenerations') or 0)} |"]
+    if cr.get("api_generations") or cr.get("api_usd"):  # hf_api.py — the API's prepaid balance, not the cap
+        L.append(f"| Higgsfield API | ${float(cr.get('api_usd') or 0):.2f} (생성 {int(cr.get('api_generations') or 0)}회,"
+                 f" 구독 크레딧과 별개) |")
     for lang in active_langs(cfg):
         L.append(f"| 길이 {lang.upper()} | {md(length_line(paths, ep, lang))} |")
     L.append(f"| 썸네일 | {md((m.get('thumbnail') or {}).get('cut'))} — "

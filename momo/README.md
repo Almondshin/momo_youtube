@@ -43,6 +43,10 @@ python momo/hf_jobs.py plan --ep ep03 --kind image --cuts c02
 python momo/hf_jobs.py record --ep ep03 --cut c02 --kind image --job-id <JOB_ID> --url '<URL>' --status generated
 python momo/fetch_assets.py --ep ep03 --library
 python momo/hf_jobs.py status --ep ep03
+#   클립은 Higgsfield API(별도 선불 잔액)로도 — 잔액 부족(exit 3)이면 출력된 MCP plan 으로 구독 플랜에서 이어서
+python momo/hf_api.py run --ep ep03 --kind clip --dry-run
+python momo/hf_api.py run --ep ep03 --kind clip --max-usd 5
+python momo/hf_api.py archive --ep ep03          # 승인 후 7일 안에 (API 결과 보관 기간)
 
 # 6 조립
 python momo/build.py --ep ep03 --lang en --check
