@@ -1309,6 +1309,10 @@ def test_episode_readme(tmp: Path) -> None:
                    "- 태그: red, toddler", "#kids", "- 키워드를 더 크게", "| 컷 이미지 | 1/3 | 1 | 2 |"):
         assert needle in md, (needle, md)
     assert ok(episode_readme, "--root", str(root), "--ep", EP, "--stdout").startswith("# ep42")
+    yt = json.loads((root / "episodes" / EP / "youtube.json").read_text(encoding="utf-8"))
+    yt["en"].update(deleted_at="2026-10-01", deleted_note="user deleted it")
+    wj(root / "episodes" / EP / "youtube.json", yt)
+    assert "| 삭제됨 (2026-10-01) |" in ok(episode_readme, "--root", str(root), "--ep", EP, "--stdout")
 
 
 def main() -> int:

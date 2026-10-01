@@ -113,7 +113,8 @@ def render(paths: Paths, cfg: dict, m: dict) -> str:
             if not r.get("video_id"):
                 L.append(f"| {lang.upper()} | (업로드 전) | | | | | |")
                 continue
-            L.append(f"| {lang.upper()} | [{r['video_id']}]({r.get('url') or ''}) | {md(r.get('privacy'))} "
+            privacy = f"삭제됨 ({r['deleted_at']})" if r.get("deleted_at") else r.get("privacy")
+            L.append(f"| {lang.upper()} | [{r['video_id']}]({r.get('url') or ''}) | {md(privacy)} "
                      f"| {md(r.get('publish_at') or '—')} | {md(r.get('uploaded_at'))} "
                      f"| {'✔' if r.get('thumbnail_set') else '✖ (채널 인증 필요할 수 있음)'} "
                      f"| {md(r.get('playlist_id') or '—')} |")

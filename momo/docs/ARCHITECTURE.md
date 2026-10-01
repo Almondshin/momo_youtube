@@ -259,6 +259,8 @@ GenRec = {"status": "pending|generated|approved|rejected", "job_id", "url", "att
 - 썸네일 `thumbnails.set` (실패하면 경고: 채널 인증 필요할 수 있음), `playlist_id` 있으면 playlistItems.insert.
 - 결과를 `youtube.json[lang]` = {video_id, url, privacy, publish_at, uploaded_at, thumbnail_set, playlist_id, file_sha256}.
   이미 video_id 가 있으면 `--force` 없이는 건너뜀 (중복 업로드 방지). manifest.status 는 "uploaded".
+  사용자가 YouTube 에서 지운 영상은 기록을 지우지 않고 `deleted_at`(날짜)·`deleted_note` 를 붙인다 — video_id 가 남아
+  자동 재업로드되지 않고, README 의 공개 상태 칸이 "삭제됨 (날짜)" 이 된다.
 - `--dry-run`: 자격증명·네트워크 없이 요청 body 를 출력만.
 - 안내: API 프로젝트가 감사(audit) 전이면 YouTube 가 업로드 영상을 비공개로 잠근다 → docs/YOUTUBE_SETUP.md.
 
