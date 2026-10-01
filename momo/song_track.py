@@ -12,6 +12,8 @@ momo-publish runner) can restore them.
   lyrics    aligned words (tools/align_lyrics.py output) → song.lyrics, word starts snapped to the vocal stem
             (momolib.lyrics_refine, default; --no-refine keeps whisper's times). Without --align: refine again
   sections  table of lyric lines by bar — use it to write the cuts' bars
+  stylecheck lyrics.md before it goes to Suno: its ```style must not sound like the last episodes' (musical words
+            compared, house phrases left out) and no "Ding-dong-dang" refrain (momolib.song_style)
   tighten   cut whole instrumental bars out of mid-song vocal gaps (Suno turnarounds = video with nobody
             singing) and move every song-time field with them (momolib.tighten; --dry-run lists them first)
   refs      vocal-stem slice per lip-sync cut → episodes/<ep>/audio/refs/<cut>_en.wav (audio_references)
@@ -27,6 +29,7 @@ Examples
   python momo/song_track.py lyrics --ep ep03 --align ~/ml/momo_ep03/full1/align_a_s202.json
   python momo/song_track.py lyrics --ep ep04                 # re-refine the current song.lyrics
   python momo/song_track.py sections --ep ep03
+  python momo/song_track.py stylecheck --ep ep11              # before giving the user the Suno settings
   python momo/song_track.py tighten --ep ep09 --dry-run       # then without --dry-run, publish, build
   python momo/song_track.py refs --ep ep03 && python momo/song_track.py publish --ep ep03
   python momo/song_track.py status --ep ep03 --approve
@@ -292,6 +295,33 @@ def cmd_sections(paths, cfg, args) -> int:
     if cuts and all(isinstance(c.get("bars"), int) for c in cuts):
         spans = track_spans(song, cuts)
         print(f"\n컷 {len(cuts)}개 → 영상 {spans[-1][1]:.2f}s (평균 {spans[-1][1] / len(cuts):.2f}s)")
+    return 0
+
+
+# ---------------------------------------------------------------- stylecheck
+
+def cmd_stylecheck(paths, cfg, args) -> int:
+    from momolib import song_style
+    ep = check_ep(args.ep)
+    f = paths.ep(ep) / "lyrics.md"
+    if not f.exists():
+        raise MomoError(f"{f} 없음")
+    md = f.read_text(encoding="utf-8")
+    st = song_style.style_text(md)
+    if not st:
+        raise MomoError("lyrics.md 에 ```style 블록이 없음")
+    rows = [(e, song_style.similarity(st, s)) for e, s in song_style.recent_styles(paths.ep(ep).parent, ep, args.last)]
+    print(f"{ep} 스타일 단어: {', '.join(sorted(song_style.words(st)))}")
+    for e, sim in rows:
+        print(f"  {e}: 유사도 {sim:.2f}" + ("  ✖ 너무 비슷함" if sim > args.max else ""))
+    bad = song_style.banned(md)
+    for why in bad:
+        print(f"  ✖ 가사에 {why}")
+    close = [e for e, sim in rows if sim > args.max]
+    if close or bad:
+        raise MomoError(f"스타일 검사 실패 (기준 {args.max:.2f}) — 다른 장르·악기·템포·보컬로 (PRODUCTION.md (9) 1 스타일 팔레트)"
+                        if close else "가사에서 금지된 후렴을 뺄 것")
+    print(f"✔ 최근 {len(rows)}편과 다름 (최대 {max((s for _, s in rows), default=0):.2f} ≤ {args.max:.2f})")
     return 0
 
 
@@ -585,6 +615,10 @@ def main(argv: list[str] | None = None) -> int:
                    help="단어 시작을 보컬 스템의 실제 발성에 맞춤 (기본 켬)")
     p = sub.add_parser("sections")
     p.add_argument("--ep", required=True)
+    p = sub.add_parser("stylecheck")
+    p.add_argument("--ep", required=True)
+    p.add_argument("--last", type=int, default=6, help="비교할 최근 편 수")
+    p.add_argument("--max", type=float, default=0.30, help="허용 유사도 (음악 단어 Jaccard)")
     p = sub.add_parser("tighten")
     p.add_argument("--ep", required=True)
     p.add_argument("--keep", type=float, default=0.3, help="틈 앞뒤로 남길 초 (기본 0.3)")
@@ -610,7 +644,7 @@ def main(argv: list[str] | None = None) -> int:
     paths = get_paths(args)
     cfg = load_config(paths)
     return {"import": cmd_import, "analyze": cmd_analyze, "lyrics": cmd_lyrics, "sections": cmd_sections,
-            "tighten": cmd_tighten, "refs": cmd_refs, "sync": cmd_sync, "lipsync": cmd_lipsync, "publish": cmd_publish,
+            "stylecheck": cmd_stylecheck, "tighten": cmd_tighten, "refs": cmd_refs, "sync": cmd_sync, "lipsync": cmd_lipsync, "publish": cmd_publish,
             "status": cmd_status}[args.cmd](paths, cfg, args)
 
 

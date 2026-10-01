@@ -677,6 +677,34 @@ def test_duck_voiced_span(tmp: Path) -> None:
     assert audio.clear_sung([(0.4, 1.9)], [1.0, 2.0], rel) == [(0.4, 1.9)]      # speech over singing keeps its duck
 
 
+def test_stylecheck(tmp: Path) -> None:
+    """song_track.py stylecheck: a style line that repeats a recent episode's genre / instruments fails, the house
+    phrases do not count, and a Ding-dong-dang refrain in the sung lyrics fails."""
+    root = make_track_root(tmp)
+    march = ("Korean children's song style in English, Korean kindergarten sing-along, bright bouncy 2/4 march feel, "
+             "124 bpm, children's choir, piano, bells, glockenspiel, xylophone, hand claps, light snare, very clear English")
+    reggae = ("Korean children's song style in English, playful kids reggae, 92 bpm, offbeat ukulele skank, steel drum, "
+              "round bass, shaker, warm boy solo, very clear English")
+
+    def lyr(ep: str, style: str, words: str = "Hop, hop, hop!") -> None:
+        d = root / "episodes" / ep
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "lyrics.md").write_text(f"# {ep}\n\nNote: no Ding-dong-dang here.\n\n```style\n{style}\n```\n\n"
+                                     f"```\n[Verse]\n{words}\n```\n", encoding="utf-8")
+    lyr("ep89", march)
+    lyr("ep90", march.replace("xylophone", "marimba"))
+    st = [sys.executable, str(MOMO / "song_track.py"), "--root", str(root), "stylecheck", "--ep", "ep91"]
+    lyr("ep91", march.replace("124 bpm", "126 bpm"))
+    r = subprocess.run(st, capture_output=True, text=True)
+    assert r.returncode != 0 and "너무 비슷함" in r.stdout, r.stdout + r.stderr
+    lyr("ep91", reggae)
+    r = subprocess.run(st, capture_output=True, text=True)
+    assert r.returncode == 0 and "ep89: 유사도 0.0" in r.stdout and "✔" in r.stdout, r.stdout + r.stderr
+    lyr("ep91", reggae, "Ding-dong-dang! Hop, hop!")
+    r = subprocess.run(st, capture_output=True, text=True)
+    assert r.returncode != 0 and "Ding-dong-dang" in r.stdout, r.stdout + r.stderr
+
+
 def test_tighten(tmp: Path) -> None:
     """song_track.py tighten: a whole instrumental bar inside a mid-song vocal gap is cut out of every song file and
     each song-time field moves with it; a bar with voice in the stem stays; --align input is mapped too."""

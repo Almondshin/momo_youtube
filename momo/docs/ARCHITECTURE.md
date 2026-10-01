@@ -22,6 +22,7 @@ momo/
   momolib/lyrics_refine.py    정렬(whisper) 단어 시작을 보컬 스템 발성에 맞춤 (song_track.py lyrics, 기본 켬)
   momolib/lipsync.py          조립된 영상의 립싱크 지연 측정 (song_track.py lipsync → cut.lip_shift 제안)
   momolib/tighten.py          노래 중간 보컬 없는 마디 잘라내기 + manifest 노래 시각 이동 (song_track.py tighten)
+  momolib/song_style.py       Suno 스타일이 최근 편과 비슷한지·금지 후렴 검사 (song_track.py stylecheck)
   momolib/genrec.py           GenRec(생성 기록)·Slot·크레딧 계산 — hf_jobs/hf_api/fetch_assets/estimate 공용
   momolib/release.py          GitHub release(media-<ep>) 업로드 (gh) — song_track publish, hf_api archive 공용
   library/library.json        라이브러리 레지스트리 (캐릭터 시트, 고정 클립 5종, 고정 음성)

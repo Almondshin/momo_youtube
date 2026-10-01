@@ -450,6 +450,29 @@ forbid bots). Steps (all local, 0 Higgsfield credits until 6):
    (parentheses) = backing voices / echoes) + a style line. Give both to the user to paste into Suno (Custom).
    No "Ding-dong-dang" (or ding/dong bell refrains) in new lyrics — the user is tired of it after ep04/ep05
    (2026-10-01). Use a topic sound hook instead ("Squeaky clean!", "Beep, beep!").
+   **Every song a different genre** (user, 2026-10-01: "비슷한 동요로만 생성된다" — ep04–ep09 shared one style
+   line: Korean kindergarten sing-along, bouncy 2/4 march, 124 bpm, choir, piano / bells / glockenspiel /
+   xylophone / claps). Pick a palette row not used in the last 5 episodes, write `Palette: <row>` in the
+   lyrics.md header, change the voice too (girl solo, boy solo, duet, choir) and the song form (not always
+   call-and-response: story verses, cumulative add-one, action / dance, question-answer, count-down). Keep the
+   house phrases (simple singable melody, very clear English, 4-bar intro, no instrumental break). Then
+   `song_track.py stylecheck --ep <ep>` must pass (musical words vs the last 6 episodes ≤ 0.30, no banned refrain).
+
+   | Palette | Style words (Suno) |
+   |---|---|
+   | reggae | playful kids reggae, 92 bpm, offbeat ukulele skank, steel drum, round bass, shaker, sunny |
+   | bossa | gentle kids bossa nova, 126 bpm, nylon guitar, soft brushed drums, flute, warm and smooth |
+   | hoedown | kids country hoedown, 118 bpm, banjo, fiddle, acoustic guitar, foot stomps, washboard |
+   | disco | kids funk disco, 112 bpm, four-on-the-floor, slap bass, clean funk guitar, brass stabs |
+   | chiptune | kids chiptune pop, 132 bpm, 8-bit square lead, bouncy synth bass, arcade blips |
+   | cumbia | kids cumbia, 100 bpm, guiro, accordion, congas, marimba, festive |
+   | swing | kids swing, 150 bpm swing feel, upright bass, brushed drums, muted trumpet, stride piano |
+   | waltz | gentle folk waltz in 3/4, 96 bpm, acoustic guitar, accordion, music box |
+   | kpop | kids K-pop dance, 120 bpm, punchy synth bass, bright synth plucks, group chant hook |
+   | rocknroll | kids 1950s rock and roll, 168 bpm shuffle, boogie piano, saxophone, handclaps |
+   | calypso | kids calypso, 108 bpm, steel pans, nylon guitar, bongos, light horns |
+   | lullaby | soft bedtime lullaby, 72–104 bpm, music box, celesta, soft strings, warm (ep10) |
+   | march | Korean kindergarten sing-along march, 124 bpm, piano, bells, glockenspiel, claps (ep04–ep09 — rest it) |
 2. **[승인]** The user picks a take and puts its WAV + stems (Vocals, Instrumental) in
    `~/ml/<ep>/suno/<take>/`. Check it: `tools/align_lyrics.py` (sidecar venv) must hear ≥95 % of the lyric words
    and report no "sung but not in lyrics" runs — otherwise fix `lyrics.md` to what is sung and re-align.
