@@ -10,6 +10,7 @@ MCP 는 구독 크레딧, API 는 별도 선불 잔액(USD)이다. API 로는 �
   python momo/hf_api.py run --ep ep05 --kind clip --dry-run    # 보낼 payload·estimate 호출만 (네트워크·키 없이)
   python momo/hf_api.py run --ep ep05 --kind clip --cuts c02,c03 --max-usd 5 [--lang en] [--max-parallel 4]
   python momo/hf_api.py archive --ep ep05 [--dry-run]          # API 결과(약 7일 보관) → GitHub release media-ep05
+  python momo/hf_api.py forget --ep ep05 --cut c02 [--lang en] --yes   # 접수 불명 제출 지움 (콘솔에서 확인 후)
   python momo/hf_api.py smoke                                  # 예제 Seedance 2.5 text-to-video 5초 — 과금됨
 
 run
@@ -129,7 +130,7 @@ class ApiError(Exception):
     @property
     def ambiguous(self) -> bool:
         """A submit that may have been accepted — resend with the same Idempotency-Key and body."""
-        return self.code is None or self.code >= 500 or self.code in (408, 429)
+        return self.code is None or self.code >= 500 or self.code in (408, 409, 429)
 
     @property
     def busy(self) -> bool:
@@ -659,13 +660,32 @@ class Run:
         with self._out:
             print(msg, flush=True)
 
-    def out_of_credits(self, job: Job, e: ApiError) -> None:
+    def out_of_credits(self, job: Job, e: ApiError, answered: bool = False) -> None:
+        """answered: the API refused this job's own Idempotency-Key (not accepted) → MCP. A replay that was not
+        resent (estimate refused) may still have been accepted earlier → held as UNSURE, never handed to MCP."""
         with self._out:
             if self.stop_error is None:
                 self.stop_error = e
         self.stop.set()
-        job.outcome, job.detail = NO_MONEY, f"{e} → MCP 로"
+        if job.replay and not answered:
+            self.hold_replay(job, str(e))
+        else:
+            job.outcome, job.detail = NO_MONEY, f"{e} → MCP 로"
         self.say(f"  ✖ {job.key}: {no_credits_text(e)} — 새 제출을 멈춤")
+
+    def hold(self, job: Job) -> None:
+        if job.replay:
+            self.hold_replay(job, "API 잔액 부족으로 다시 보내지 않음")
+        else:
+            job.outcome, job.detail = HELD, "API 잔액 부족으로 멈춤 → MCP 로"
+
+    def hold_replay(self, job: Job, why: str) -> None:
+        """A submit from an earlier run whose answer was lost may have been accepted (billed): MCP would make it a
+        second time. Keep GenRec.api_pending; the next run resends the same key, or forget it after checking."""
+        job.outcome = UNSURE
+        job.detail = (f"이전 제출(Idempotency-Key {job.idem}) 접수 여부 불명 — {why}. MCP 로 넘기지 않음: 다음 run 이 같은 "
+                      f"키로 다시 확인하거나, 콘솔(console.higgsfield.ai)에서 없음을 확인한 뒤 "
+                      f"hf_api.py forget --ep {self.ep} --cut {job.cut}" + (f" --lang {job.lang}" if job.lang else ""))
 
     # -- phase A: uploads + estimate (both free)
     def prepare(self, job: Job) -> None:
@@ -673,7 +693,7 @@ class Run:
             return
         try:
             if self.stop.is_set():
-                job.outcome, job.detail = HELD, "API 잔액 부족으로 멈춤 → MCP 로"
+                self.hold(job)
                 return
             if job.replay:
                 job.final = job.body
@@ -724,15 +744,15 @@ class Run:
 
     def submit(self, job: Job) -> bool:
         if self.stop.is_set():
-            job.outcome, job.detail = HELD, "API 잔액 부족으로 멈춤 → MCP 로"
+            self.hold(job)
             return False
         self.ledger.update(job, set_pending(job))
         try:
             job.rid, cid = self.api.submit(job.api_model, job.final, job.idem)
         except ApiError as e:
-            if e.no_credits:
+            if e.no_credits:  # the API refused this very key: not accepted
                 self.ledger.update(job, clear_pending)
-                self.out_of_credits(job, e)
+                self.out_of_credits(job, e, answered=True)
             elif e.ambiguous:  # maybe accepted: keep the intent — the next run resends the same key + body
                 job.outcome, job.detail = UNSURE, f"{e} — 다음 run 이 같은 키로 다시 보내 확인 (중복 과금 없음)"
                 self.say(f"  △ {job.key}: 접수 여부 불명 — {e}")
@@ -987,16 +1007,20 @@ def cmd_archive(paths: Paths, cfg: dict, args) -> int:
             continue
         src = sources.setdefault(s.dest, load_json(s.dest / fetch_assets.SOURCES, default={}))
         f = find_media(s.dest, s.stem, KIND_EXTS[s.kind])
-        if f is None or (src.get(f.name) or {}).get("url") not in (None, url):
+        prov = (src.get(f.name) or {}) if f else {}
+        if f is None or not (prov.get("url") == url or prov.get("job_id") == jid):
+            # not here, an older attempt's file, or a file of unknown origin: the release URL replaces the API URL
+            # for good, so only a file known to be this job's result is uploaded — get it while the API URL works
             if args.dry_run:
                 todo.append((s, None, url))
                 continue
-            try:  # not here (or an older file) — get it while the API URL still works
+            try:
                 f, _ = fetch_assets.download(url, s)
             except fetch_assets.FetchError as e:
                 fails.append(f"{s.key}: {url} — {e}")
                 continue
             src[f.name] = {"url": url, "job_id": jid}
+            save_json(s.dest / fetch_assets.SOURCES, src)  # true even if the release upload below fails
         todo.append((s, f, url))
     print(f"API 결과 보관 — {ep} → release {tag} ({len(todo)}개)")
     for n in notes:
@@ -1031,6 +1055,30 @@ def cmd_archive(paths: Paths, cfg: dict, args) -> int:
         save_json(dest / fetch_assets.SOURCES, data)
     print(f"✔ {len(names)}개 보관, manifest url 갱신 — manifest.json 을 커밋·푸시할 것")
     return 1 if fails else 0
+
+
+# ---------------------------------------------------------------- forget
+
+def cmd_forget(paths: Paths, cfg: dict, args) -> int:
+    """Drop a clip's GenRec.api_pending (a submit whose answer was lost) after the user checked on the console that
+    the API never accepted it — otherwise hf_jobs plan keeps that clip away from MCP (double billing)."""
+    ep = check_ep(args.ep)
+    lang = check_lang(args.lang) if args.lang else None
+    m = load_manifest(paths, ep)
+    s = clip_slot(paths, cfg, m, args.cut, lang)
+    pend = s.rec.get("api_pending")
+    if not isinstance(pend, dict):
+        print(f"{s.key}: 접수 불명인 API 제출 없음")
+        return 0
+    print(f"{s.key}: Idempotency-Key {pend.get('key')} ({pend.get('model')}, {pend.get('at')}, 시도 {pend.get('attempt')})")
+    if not args.yes:
+        print("콘솔(console.higgsfield.ai)에서 이 제출이 접수되지 않았음을 확인했으면 --yes 로 다시 실행 "
+              "(접수됐으면 그 request_id 로 hf_jobs.py record --job-id api:<request_id> --credits 0)")
+        return 1
+    s.rec.pop("api_pending", None)
+    save_json(paths.manifest(ep), m)
+    print(f"✔ {s.key}: api_pending 지움 — 이제 hf_jobs.py plan(MCP) 또는 hf_api.py run 으로 새로 만들 수 있음")
+    return 0
 
 
 # ---------------------------------------------------------------- check / smoke
@@ -1103,10 +1151,16 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--ep", required=True)
     p.add_argument("--tag")
     p.add_argument("--dry-run", action="store_true")
+    p = subparser("forget", "접수 불명인 API 제출(api_pending)을 지움 — 콘솔에서 접수 안 됨을 확인한 뒤에만")
+    p.add_argument("--ep", required=True)
+    p.add_argument("--cut", required=True)
+    p.add_argument("--lang")
+    p.add_argument("--yes", action="store_true", help="콘솔에서 접수 안 됨을 확인했음")
     args = ap.parse_args(argv)
     paths = get_paths(args)
     cfg = load_config(paths)
-    return {"check": cmd_check, "smoke": cmd_smoke, "run": cmd_run, "archive": cmd_archive}[args.cmd](paths, cfg, args)
+    return {"check": cmd_check, "smoke": cmd_smoke, "run": cmd_run, "archive": cmd_archive,
+            "forget": cmd_forget}[args.cmd](paths, cfg, args)
 
 
 if __name__ == "__main__":

@@ -290,6 +290,10 @@ API 는 구독과 **별개인 선불 잔액(USD)** 이다 (키: 저장소 루트
   이미 접수된 API 요청은 run 이 끝까지 확인해 기록한다. 에러 원문은 사용자에게 그대로 보고.
 - exit 1: 결과 표의 사유. failed/nsfw 는 `rejected` 로 기록됨(과금 없음) → 모션 문구를 고쳐 다시 run.
   "접수 불명 / 진행 중 / 확인 실패 / 알 수 없는 상태" 는 **같은 run 명령을 다시** — 새로 제출하지 않고 이어서 확인·재전송만 한다.
+- 접수 불명(`api_pending` 남음)인 클립은 MCP 로 만들지 않는다 — 이미 과금됐을 수 있어 이중 과금. `hf_jobs.py plan` 도 `blocked` 로
+  막는다. API 잔액 부족으로 재전송조차 못 하면: 사용자에게 알리고 콘솔(console.higgsfield.ai)에서 그 Idempotency-Key 요청을 확인 —
+  있으면 `hf_jobs.py record --job-id api:<request_id> --credits 0`, 없으면 `hf_api.py forget --ep <ep> --cut <컷> [--lang en] --yes`
+  뒤 MCP 로.
 
 ### (0) 프리플라이트
 

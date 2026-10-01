@@ -223,10 +223,13 @@ GenRec = {"status": "pending|generated|approved|rejected", "job_id", "url", "att
     credits.api_generations → 폴링 2초→10초(지터)·deadline → completed: url 기록, history.api.{usd,credits,charged},
     credits.api_usd 누적, `fetch_assets.download` 로 clips/ 에 받기 / failed·nsfw·canceled: rejected (과금 없음) /
     시간 초과·모르는 상태·연결 오류: generated(URL 없음) 유지 → 다음 run 이 폴링만 이어서. 접수 여부 불명이면 api_pending 이
-    남고 다음 run 이 같은 키·body 를 재전송 (원래 request_id, 중복 과금 없음).
+    남고 다음 run 이 같은 키·body 를 재전송 (원래 request_id, 중복 과금 없음; 409 = 같은 키 처리 중 → 접수 불명).
+    api_pending 이 남은 클립은 `hf_jobs.plan_episode`(MCP) 가 blocked 로 막고, 403 폴백 plan 에도 넣지 않는다 (재전송 못 한
+    replay 는 UNSURE). 콘솔에서 접수 안 됨을 확인한 뒤에만 `forget --ep --cut [--lang] --yes` 로 지운다.
   - HTTP 403(402) = 잔액 부족: 재시도 없이 새 제출 중단, 남은 항목을 `hf_jobs.plan_episode` JSON(MCP plan)으로 출력, exit 3.
     exit 2 = --max-usd 초과(제출 없음), 1 = 실패·미확인 있음. 구독 `credits.spent`·캡 계산은 API 작업에 영향받지 않는다.
-  - `archive --ep ep05 [--tag] [--dry-run]` : job_id 가 `api:` 이고 generated/approved 인 항목의 파일(없으면 그 URL 에서 먼저 받음)을
+  - `archive --ep ep05 [--tag] [--dry-run]` : job_id 가 `api:` 이고 generated/approved 인 항목의 파일(없거나 `.sources.json` 상
+    그 job·URL 의 파일이 아니면 그 URL 에서 먼저 받음)을
     release `media-<ep>` 에 `<ep>_<stem>_<sha1 8자>.<ext>` 로 올리고 GenRec.url·history.url 을 그 주소로 (원래 주소는
     history.api.output_url), `.sources.json` 도 갱신 → fetch_assets 가 그대로 복원.
 - `doctor.py [--ep ep02] [--update-ytdlp] [--ci]` : yt-dlp(버전), ffmpeg/ffprobe(libx264, xfade, loudnorm),

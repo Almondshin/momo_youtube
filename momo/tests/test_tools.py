@@ -1086,6 +1086,33 @@ def test_hf_api_resend_after_lost_answer(tmp: Path) -> None:
     assert "api_pending" not in rec and rec["attempts"] == 1 and rec["url"], rec
 
 
+def test_hf_api_unsure_submit_never_goes_to_mcp(tmp: Path) -> None:
+    """A submit whose answer was lost may have been billed: MCP must not make that clip again until it is resolved."""
+    import hf_api
+    root = api_root(tmp)
+    with fake_api(FakeApi(submit=(503,))):
+        code, out = call(hf_api, "run", "--root", str(root), "--ep", EP, "--cuts", "c04")
+    assert code == 1 and clip_rec(root, "c04", "clip_en").get("api_pending"), out
+    p = plan(root, "--ep", EP, "--kind", "clip", "--all")
+    assert [i["cut"] for i in p["items"]] == ["c02"], p     # c04 kept away from MCP (double billing)
+    assert any(b.startswith("c04 clip en: Higgsfield API 제출의 접수 여부 불명") for b in p["blocked"]), p
+    fake = FakeApi(submit=(403,))   # c02 (fresh) is refused → stop; c04's resend is held, not handed to MCP
+    with fake_api(fake):
+        code, out = call(hf_api, "run", "--root", str(root), "--ep", EP, "--max-parallel", "1")
+    assert code == 3 and [x["model"] for x in fake.posts] == ["bytedance/seedance-2.0/image-to-video"], fake.posts
+    plan_json, _ = json.JSONDecoder().raw_decode(out[out.index("\n{", out.index("구독 플랜(MCP)")) + 1:])
+    assert [i["cut"] for i in plan_json["items"]] == ["c02"], plan_json
+    assert "접수 여부 불명" in out and "forget" in out, out
+    assert clip_rec(root, "c04", "clip_en").get("api_pending"), "보류된 재전송의 api_pending 이 지워짐"
+    out = fails(hf_api, "forget", "--root", str(root), "--ep", EP, "--cut", "c04", "--lang", "en", needle="--yes")
+    assert clip_rec(root, "c04", "clip_en").get("api_pending"), out
+    ok(hf_api, "forget", "--root", str(root), "--ep", EP, "--cut", "c04", "--lang", "en", "--yes")
+    assert "api_pending" not in clip_rec(root, "c04", "clip_en")
+    p = plan(root, "--ep", EP, "--kind", "clip", "--all")
+    assert sorted(i["cut"] for i in p["items"]) == ["c02", "c04"], p
+    assert hf_api.ApiError(409, "Idempotency key in use").ambiguous
+
+
 def test_hf_api_dry_run_and_kinds(tmp: Path) -> None:
     import hf_api
     root = api_root(tmp)
@@ -1198,10 +1225,15 @@ def test_hf_api_archive(tmp: Path) -> None:
             with fake_api(FakeApi(terminal={"status": "completed", "video": {"url": f"{base}/out/v.mp4"}})):
                 ok(hf_api, "run", "--root", str(root), "--ep", EP)
             (ep / "clips/c04_en.mp4").unlink()   # not here any more → archive gets it while the API URL works
+            src = rj(ep / "clips/.sources.json")
+            src.pop("c02.mp4")                   # a file of unknown origin is never uploaded in place of the result
+            wj(ep / "clips/.sources.json", src)
+            (ep / "clips/c02.mp4").write_bytes(b"not the API result")
             out = ok(hf_api, "archive", "--root", str(root), "--ep", EP, "--dry-run")
             assert "(먼저 받음)" in out and not up, out
             out = ok(hf_api, "archive", "--root", str(root), "--ep", EP)
         assert sorted(n.split("_")[1] for n in up) == ["c02", "c04"], up
+        assert all(v == (tmp / "remote/v.mp4").read_bytes() for v in up.values()), "API 결과가 아닌 파일을 올림"
         rec = clip_rec(root, "c02")
         assert release.is_release_url(rec["url"]) and f"/media-{EP}/{EP}_c02_" in rec["url"], rec
         assert rec["history"][-1]["url"] == rec["url"] and rec["history"][-1]["api"]["output_url"].endswith("/v.mp4")

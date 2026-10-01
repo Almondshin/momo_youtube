@@ -153,7 +153,8 @@ thumbnail.cut 이 없는 컷, 제목·설명·태그 한도.
 - Higgsfield **API** 로 만든 클립 (`hf_api.py run`): `job_id` = `"api:<request_id>"`, credits 0 (구독 캡과 별개).
   history 항목에 `"api": {"model", "request_id", "idempotency_key", "usd_est", "credits_est", "correlation_id",
   "usd", "credits", "charged", "output_url"}`. 접수 전 잠깐 `"api_pending": {"key", "model", "body", "attempt", "at"}` 가
-  붙는다 — 응답을 못 받은 제출이면 다음 run 이 같은 키·body 로 재전송한다 (손으로 지우지 말 것). failed/nsfw 는 `rejected`
+  붙는다 — 응답을 못 받은 제출이면 다음 run 이 같은 키·body 로 재전송한다 (손으로 지우지 말 것 — 콘솔 확인 후
+  `hf_api.py forget`; 남아 있는 동안 MCP plan 은 그 클립을 blocked 로 막는다). failed/nsfw 는 `rejected`
   (`reason` = `"API failed: …"`), URL 이 없는 `generated` 는 아직 결과 확인 전 (다음 run 이 폴링만 이어서).
   API 결과 URL 은 7일쯤 뒤 사라질 수 있어 `hf_api.py archive` 가 release `media-<ep>` 주소로 바꾼다 (원래 주소는 `api.output_url`).
 - 위치: 컷 이미지 `cut.gen.image`, V 클립 `cut.gen.clip`, 음성 `cut.audio_src[lang][블록번호]`.

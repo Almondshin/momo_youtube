@@ -170,6 +170,15 @@ def plan_episode(paths: Paths, cfg: dict, args, api: bool = False) -> dict:
             if status_of(img) != "approved" or not img.get("job_id"):
                 blocked.append(f"{s.key}: 이미지 승인 전 ({status_of(img)}) — text-to-video 금지, 승인된 이미지로만")
                 continue
+            pend = s.rec.get("api_pending")
+            if not api and isinstance(pend, dict) and pend.get("attempt") == int(s.rec.get("attempts") or 0) + 1:
+                lang_arg = f" --lang {s.lang}" if s.lang else ""
+                blocked.append(f"{s.key}: Higgsfield API 제출의 접수 여부 불명 (Idempotency-Key {pend.get('key')}, "
+                               f"{pend.get('at')}) — MCP 로 또 만들면 이중 과금. 먼저 python momo/hf_api.py run --ep {ep} "
+                               f"--kind clip --cuts {cid} (같은 키로 확인, 중복 과금 없음). API 를 못 쓰면 콘솔"
+                               f"(console.higgsfield.ai)에서 그 요청이 없음을 확인한 뒤 python momo/hf_api.py forget "
+                               f"--ep {ep} --cut {cid}{lang_arg}")
+                continue
             end_job, audio_job, why = clip_links(cfg, m, s, api=api)
             if why:
                 blocked.append(f"{s.key}: {why}")
