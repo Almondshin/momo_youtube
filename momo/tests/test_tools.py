@@ -1205,6 +1205,14 @@ def test_hf_api_track_song_refs(tmp: Path) -> None:
     d = okj(hf_api, "run", "--root", str(root), "--ep", EP, "--dry-run")
     assert d["items"][0]["inputs"]["<audio>"]["fallback_url"] == s["refs_urls"]["c02_en"], d  # same slice → fallback
 
+    # an accepted API lip-sync clip pins the vocal window it was driven by (the build plays the clip from it)
+    m = manifest(root)
+    hf_api.pin_track_window(m, hf_api.Job(key="c02 clip en", cut="c02", lang="en", media={"<audio>": None}))
+    hf_api.pin_track_window(m, hf_api.Job(key="c03 clip", cut="c03", lang=None, media={}))
+    ref = next(c for c in m["cuts"] if c["id"] == "c02")["nar_ref"]["en"]
+    assert ref["window"] == [4.5, 6.5] and ref["track_sha1"] == "abc123" and ref["media_id"].startswith("api-upload:")
+    assert "nar_ref" not in next(c for c in m["cuts"] if c["id"] == "c03")
+
 
 def test_hf_api_archive(tmp: Path) -> None:
     import hf_api

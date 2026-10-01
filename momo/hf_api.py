@@ -599,10 +599,25 @@ def record_accepted(job: Job, cid: str | None):
         delta, msg = apply_record(rec, "generated", job_id=API_JOB + job.rid, url=None, reason=None, cost=0.0,
                                   extra={"start_image": job.start_job, "api": api})
         rec.pop("api_pending", None)
+        pin_track_window(m, job)
         cr = add_credits(m, delta)
         cr["api_generations"] = int(cr.get("api_generations") or 0) + delta["generations"]
         return msg
     return fn
+
+
+def pin_track_window(m: dict, job: Job) -> None:
+    """A finished-song lip-sync clip made from audio/refs/<cut>_<lang>.wav: pin the vocal window it was driven by in
+    cut.nar_ref (as hf_jobs.py narref does for MCP uploads) — the build plays the clip from that window's offset."""
+    tr = track_of(m.get("song"))
+    if tr is None or not job.lang or "<audio>" not in job.media:
+        return
+    cut = next((c for c in m.get("cuts") or [] if c.get("id") == job.cut), None)
+    if cut is None or not cut.get("lipsync"):
+        return
+    cut.setdefault("nar_ref", {})[job.lang] = {
+        "media_id": f"api-upload:audio/refs/{job.cut}_{job.lang}.wav", "track_sha1": tr.get("sha1"),
+        "window": hf_jobs.track_window(m, job.cut), "at": now_iso()}
 
 
 def record_completed(job: Job, url: str):
