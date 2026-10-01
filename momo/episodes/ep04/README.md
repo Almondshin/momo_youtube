@@ -1,6 +1,6 @@
 # ep04 — (주제 미정) (Count to Ten)
 
-> episode_readme.py 가 생성 (2026-09-30 23:19 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-10-01 01:26 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
@@ -10,21 +10,22 @@
 | 주제 |  / Count to Ten |
 | 컷 수 | 40개 (V 38 · S 0 · L 2), 씬 5개 |
 | 사용 크레딧 | 244.5 / 캡 250 (예상 207.6) |
-| 생성 / 재생성 횟수 | 68 / 9 |
-| 길이 EN | 2:16 (136.0초, 컷 40개, 빌드 2026-09-30T23:16:53+00:00) |
+| 생성 / 재생성 횟수 | 70 / 11 |
+| Higgsfield API | $0.90 (생성 2회, 구독 크레딧과 별개) |
+| 길이 EN | 2:16 (136.0초, 컷 40개, 빌드 2026-10-01T01:24:51+00:00) |
 | 썸네일 | c07 — COUNT TO 10! |
 
 ## 아동용(made for kids) 설정
 
 > 이 영상은 YouTube 에서 반드시 **"아동용(made for kids)"** 으로 설정해야 한다 (2~5세 대상 키즈 채널 — 지시서 7단계). upload.py 는 config 와 상관없이 `status.selfDeclaredMadeForKids = true` 로 올린다. Studio 에서 직접 올릴 때는 '예, 아동용입니다'를 선택할 것.
 
-- EN: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (IvuL26c91DY)
+- EN: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (RruqWAJs2uI)
 
 ## 업로드 결과 (youtube.json)
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
-| EN | [IvuL26c91DY](https://www.youtube.com/watch?v=IvuL26c91DY) | private | — | 2026-09-30T23:19:08Z | ✔ | — |
+| EN | [RruqWAJs2uI](https://www.youtube.com/watch?v=RruqWAJs2uI) | private | — | 2026-10-01T01:26:56Z | ✔ | — |
 
 ## 제목·설명·태그
 
@@ -47,7 +48,7 @@ Made for toddlers and preschoolers (ages 2-5). Music and animation made with AI 
 | 종류 | 승인 | 시도 | 크레딧 |
 |---|---:|---:|---:|
 | 컷 이미지 | 25/25 | 29 | 58 |
-| V 클립 | 25/25 | 30 | 152.5 |
+| V 클립 | 25/25 | 32 | 152.5 |
 | 음성 블록 | 2/2 | 2 | 0 |
 
 라이브러리 L 컷은 0 크레딧 (라이브러리 클립·고정 음성 재사용). 자세한 진행표: `python hf_jobs.py status --ep ep04`
@@ -60,6 +61,7 @@ Made for toddlers and preschoolers (ages 2-5). Music and animation made with AI 
 - 2026-09-30 노래 승인: Suno v1 'Count to Ten' (127.6 BPM, 2:20, 가사 99.2%) — 사용자가 넣어 준 곡
 - 2026-09-30 기획 진행: 컷 51개(새 클립 26 · 재사용 21 · L 2), 2:16, 예상 171.5 (여유 포함 207.6) — 사용자 지시 '묻지 말고 끝까지'
 - 2026-09-30 v1 비공개 업로드 SJQlbE6_hDk → 사용자 '더 자연스럽게': 가사-화면 어긋남·입 안 움직임·전환 빠름/반복·움직임 어색 모두 선택 → v2 재편집 (+51 크레딧, 예상 248.2/250)
+- 2026-10-01 사용자 '자막 앞당겨짐 + 립싱크' → 가사 보컬 기준 보정(song_track lyrics refine), c03·c50 lip_shift +0.1 (측정기)
 
 ## 다음 편에 반영할 점
 
