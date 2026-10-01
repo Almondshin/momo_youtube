@@ -413,9 +413,13 @@ forbid bots). Steps (all local, 0 Higgsfield credits until 6):
    `~/ml/<ep>/suno/<take>/`. Check it: `tools/align_lyrics.py` (sidecar venv) must hear ≥95 % of the lyric words
    and report no "sung but not in lyrics" runs — otherwise fix `lyrics.md` to what is sung and re-align.
 3. `song_track.py import --ep <ep> --mix … --vocals … --inst … --note "Suno …"` → `analyze` (tempo, bar grid,
-   drift) → `lyrics --align …` → `sections` (lyric lines by bar).
+   drift) → `lyrics --align …` → `sections` (lyric lines by bar) → cuts, in this order. `lyrics` refines the word
+   starts to the vocal stem by default (whisper stamps a word after a rest up to 0.7 s early; `--no-refine` keeps
+   them). Read its output: "△ 자막이 목소리보다 늦을 수 있는 곳" / "늦게 시작하는 줄" — look at the vocal-stem
+   spectrogram there before cutting (a caption must never trail the voice). `lyrics` without `--align` refines
+   the current `song.lyrics` again (always from the aligner's times).
 4. Cuts: `bars` per cut from `sections` (first cut = intro to the first sung downbeat, L `intro_wave` with the
-   library line; last cut = L `outro_bye` to `track.end`). Frontal Momo during singing = lip-sync (`wan2_7`,
+   library line; last cut = L `outro_bye` to `track.end`); `cut_at` = the refined first word − 0.1 s. Frontal Momo during singing = lip-sync (`wan2_7`,
    `clip_seconds` = ceil(window)); wide / object / listening shots = `seedance_2_0_mini` 4 s; repeats =
    `clip_from`. Word cards on the vocabulary close-ups. `validate_manifest.py --table` → plan.md,
    `estimate_credits.py` (cap 250).
@@ -423,6 +427,9 @@ forbid bots). Steps (all local, 0 Higgsfield credits until 6):
 6. Images → clips as in 5단계 (one image, then scene 1, then the rest). Lip-sync clips: `song_track.py refs` →
    `publish` (release `media-<ep>`: song, vocals, refs) → media_import_url each ref URL → `hf_jobs.py narref`
    (window + track sha1 are pinned) → `plan --kind clip`. Review with `song_track.py sync` (clip + its slice).
+   After `build.py`: `song_track.py lipsync --ep <ep>` measures every singing shot (lag ms, + = mouth late; ok
+   −120…+40). For a confident `fix` put the suggested `lip_shift` on the source cut (reuses inherit it), build again
+   and measure again; `unreliable` shots are checked by eye on the frames, never shifted blindly.
 7. `song_track.py status --approve` once the song is final, then build / publish as usual (the runner restores
    the song and stems from the release assets).
 
@@ -450,7 +457,7 @@ Lessons from ep04 (apply from ep05):
 - A declined Higgsfield preset suggestion submits nothing; resend the same item with `declined_preset_id`.
 - ep04 v1 felt unnatural (user): 51 one-bar cuts, the picture changed on the bar line while lines start ~0.4–0.8 s
   earlier (pickups), and 29 cuts had singing with Momo's mouth closed. v2 (the format from ep05 on):
-  - cuts start on each sung line (`cut_at` ≈ first word − 0.1 s — check the vocal stem, the aligner can be 0.3 s off);
+  - cuts start on each sung line (`cut_at` ≈ refined first word − 0.1 s; the raw aligner was up to 0.7 s off);
   - every shot where Momo is visible is a wan2_7 lip-sync clip with the action in the prompt (sings + claps/hops);
   - chorus lines are paired into 3.5–4 s shots; object shots use the whole motion clip;
   - reused lip-sync takes are placed by cross-correlating the vocal-stem loudness with the source window

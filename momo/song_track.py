@@ -9,11 +9,13 @@ momo-publish runner) can restore them.
 
   import    copy the chosen take (+ vocal stem) into episodes/<ep>/audio/, record song.track / song.vocals
   analyze   tempo + bar grid (momolib.audio.detect_beats) → song.track.analysis, song.bpm
-  lyrics    aligned words (tools/align_lyrics.py output) → song.lyrics
+  lyrics    aligned words (tools/align_lyrics.py output) → song.lyrics, word starts snapped to the vocal stem
+            (momolib.lyrics_refine, default; --no-refine keeps whisper's times). Without --align: refine again
   sections  table of lyric lines by bar — use it to write the cuts' bars
   refs      vocal-stem slice per lip-sync cut → episodes/<ep>/audio/refs/<cut>_en.wav (audio_references)
   publish   upload song / vocals / refs to the release "media-<ep>" (gh) → song.track.url, song.vocals.url
   sync      preview a lip-sync clip with its vocal slice → out/sync/<cut>_sync.mp4
+  lipsync   measure how late Momo's mouth is vs the voice in the built video, per singing shot (lip_shift hint)
   status    approve / reject the song (song.track + song.vocals)
 
 Examples
@@ -21,9 +23,11 @@ Examples
       --vocals ~/ml/momo_ep03/suno/v1/Vocals.wav --inst ~/ml/momo_ep03/suno/v1/Instrumental.wav --note "Suno v1"
   python momo/song_track.py analyze --ep ep03
   python momo/song_track.py lyrics --ep ep03 --align ~/ml/momo_ep03/full1/align_a_s202.json
+  python momo/song_track.py lyrics --ep ep04                 # re-refine the current song.lyrics
   python momo/song_track.py sections --ep ep03
   python momo/song_track.py refs --ep ep03 && python momo/song_track.py publish --ep ep03
   python momo/song_track.py status --ep ep03 --approve
+  python momo/song_track.py lipsync --ep ep04 [--cuts c03,c14]   # after build.py
 """
 from __future__ import annotations
 
@@ -39,8 +43,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (MomoError, add_root_arg, check_ep, get_paths, load_config, load_manifest,  # noqa: E402
-                            main_wrapper, probe_duration, run, save_json, which)
+from momolib.common import (MomoError, add_root_arg, check_ep, check_lang, get_paths, load_config,  # noqa: E402
+                            load_manifest, main_wrapper, probe_duration, run, save_json, which)
 from momolib.episode import song_grid, song_track, track_lines, track_spans  # noqa: E402
 from momolib.genrec import now_iso  # noqa: E402
 
@@ -49,6 +53,7 @@ GATE_DB = -35.0      # vocal-stem slice: 20 ms frames this far below the stem's 
 GATE_HOLD = 0.08     # … unless voice is within this many seconds (keeps consonants and breaths)
 RAMP = 0.01
 REF_MIN = 3.0        # s — shorter slices are padded with silence (wan2_7 fails on ~2 s audio references)
+CUT_LEAD = 0.1       # s — a sung line's cut starts this long before its (refined) first word
 
 
 def sha1_file(p: Path) -> str:
@@ -178,11 +183,9 @@ def cmd_analyze(paths, cfg, args) -> int:
 
 # ---------------------------------------------------------------- lyrics / sections
 
-def cmd_lyrics(paths, cfg, args) -> int:
-    ep = check_ep(args.ep)
-    m = load_manifest(paths, ep)
-    need_track(m)
-    data = json.loads(Path(args.align).expanduser().read_text())
+def read_align(path: Path) -> list[dict]:
+    """tools/align_lyrics.py output → song.lyrics lines with whisper word times [word, t0, t1]."""
+    data = json.loads(path.expanduser().read_text())
     lines = []
     for ln in data.get("lines") or []:
         words = [[str(w[0]), round(float(w[1]), 3), round(float(w[2]), 3)] for w in ln.get("words") or []]
@@ -191,10 +194,72 @@ def cmd_lyrics(paths, cfg, args) -> int:
                           **({"section": ln["section"]} if ln.get("section") else {}), "words": words})
     if not lines:
         raise MomoError("정렬 결과에 단어 시각이 있는 줄이 없음")
-    m["song"]["lyrics"] = lines
-    m["song"]["track"]["lyrics_sha1"] = m["song"]["track"]["sha1"]
+    return lines
+
+
+def print_refine(rep: dict) -> None:
+    """Counts + the guards of a lyrics_refine report (Korean)."""
+    sh = rep["shift_ms"]
+    print(f"  보정 (보컬 스템 기준): 0.1초 넘게 옮긴 단어 {rep['moved']}개, 쉼표·긴 음 안에 찍혀 있던 단어 "
+          f"{rep['loose']}개, 실제 발성에 붙은 단어 {rep['matched']}/{rep['words']}개 · 이동 중앙값 {sh['median']:+d} ms, "
+          f"|이동| p90 {sh['p90_abs']} ms")
+    if rep["early"]:
+        print(f"  · 정렬보다 0.1초 넘게 앞당긴 단어 {len(rep['early'])}개: "
+              + ", ".join("{} {:.2f}→{:.2f}".format(i["word"].strip(",.!?;:"), i["stamp"], i["t0"])
+                          for i in rep["early"][:12]) + (" …" if len(rep["early"]) > 12 else ""))
+    lag = [f for f in rep["flags"] if f["kind"] == "lag"]
+    late = [f for f in rep["flags"] if f["kind"] == "phase" and f["beats"] > 0]
+    early = [f for f in rep["flags"] if f["kind"] == "phase" and f["beats"] <= 0]
+    if lag:
+        print(f"  △ 자막이 목소리보다 늦을 수 있는 곳 {len(lag)}개 (쉼 뒤 발성이 다음 단어보다 0.1초 넘게 먼저) "
+              f"— 보컬 스템 스펙트로그램으로 확인:")
+        for f in lag:
+            print(f"      {f['t']:7.2f}s 발성 → '{f['word']}' {f['t0']:.2f}s (+{f['ms']} ms)  "
+                  f"[{f['line'] + 1}줄] {f['text']}")
+    if late:
+        print(f"  △ 같은 섹션의 다른 줄보다 늦게 시작하는 줄 {len(late)}개 (마디 위상이 0.5박 넘게 다름) — 확인:")
+        for f in late:
+            print(f"      {f['t']:7.2f}s 박 {f['beat'] + 1:.2f} (섹션 {f['section']} 중앙 {f['median'] + 1:.2f}, "
+                  f"{f['beats']:+.2f}박)  [{f['line'] + 1}줄] {f['text']}")
+    if early:
+        print(f"  · 같은 섹션의 다른 줄보다 일찍 시작하는 줄 {len(early)}개 (다르게 부른 프레이즈면 무해): "
+              + ", ".join(f"{f['line'] + 1}줄 {f['beats']:+.2f}박" for f in early))
+    if not lag and not late:
+        print("  ✔ 늦는 자막 경고 없음")
+
+
+def cmd_lyrics(paths, cfg, args) -> int:
+    from momolib import audio, lyrics_refine
+    ep = check_ep(args.ep)
+    m = load_manifest(paths, ep)
+    song, tr = m["song"], need_track(m)
+    if args.align:
+        lines = read_align(Path(args.align))
+    elif not args.refine:
+        raise MomoError("--no-refine 은 --align 과 함께 (정렬 결과를 보정 없이 넣을 때)")
+    else:
+        lines = list(song.get("lyrics") or [])   # lines without word times are kept as they are
+        if not any(ln.get("words") for ln in lines):
+            raise MomoError("song.lyrics 에 단어 시각이 없음 — --align <tools/align_lyrics.py 결과> 로 넣을 것")
+    if args.refine:
+        stem = audio.vocals_file(paths, ep)
+        if stem is None:
+            raise MomoError("song_vocals 파일 없음 — import 또는 fetch_assets (보정 없이 넣으려면 --no-refine)")
+        lines, rep = lyrics_refine.refine_file(lines, stem, song)
+        tr["lyrics_refine"] = {"v": rep["v"], "vocals_sha1": sha1_file(stem), "moved": rep["moved"],
+                               "loose": rep["loose"], "flags": rep["flags"]}
+    else:
+        rep = None
+        tr.pop("lyrics_refine", None)
+    song["lyrics"] = lines
+    tr["lyrics_sha1"] = tr["sha1"]
     save_json(paths.manifest(ep), m)
-    print(f"✔ 가사 {len(lines)}줄 (단어 {sum(len(l['words']) for l in lines)}개) → song.lyrics")
+    src = "정렬 결과에서" if args.align else "지금 song.lyrics 를 정렬 시각부터 다시 보정"
+    print(f"✔ 가사 {len(lines)}줄, 단어 {sum(len(l.get('words') or []) for l in lines)}개 ({src}) → song.lyrics")
+    if rep:
+        print_refine(rep)
+    else:
+        print("  △ --no-refine: whisper 시각 그대로 — 줄 첫 단어가 최대 0.7초 일찍 켜질 수 있음")
     return 0
 
 
@@ -214,11 +279,13 @@ def cmd_sections(paths, cfg, args) -> int:
     _, bar = song_grid(song)
     print(f"{ep}: {song['bpm']:.2f} BPM · 마디 {bar:.3f}s · 첫 강박 {tr['analysis']['downbeat0']:.3f}s · "
           f"노래 {tr.get('duration')}s (마디 {bar_of(song, float(tr.get('duration') or 0)):.1f}개)")
-    print(f"{'마디':>6} {'박':>4} {'시각':>7}  가사")
+    if song.get("lyrics") and not tr.get("lyrics_refine"):
+        print("△ 가사 시각이 보정되지 않음 (whisper 그대로) — song_track.py lyrics 로 보정한 뒤 cut_at 을 정할 것")
+    print(f"{'마디':>6} {'박':>4} {'시각':>7} {'cut_at':>7}  가사   (cut_at = 첫 단어 − {CUT_LEAD} s)")
     for ln in track_lines(song):
         b = bar_of(song, ln["t0"])
         print(f"{math.floor(b + 1e-6) + 1:>6} {((b % 1) * int(song.get('beats_per_bar') or 4)) + 1:>4.1f} "
-              f"{ln['t0']:>7.2f}  {ln['text']}  ({ln['t1'] - ln['t0']:.1f}s)")
+              f"{ln['t0']:>7.2f} {ln['t0'] - CUT_LEAD:>7.2f}  {ln['text']}  ({ln['t1'] - ln['t0']:.1f}s)")
     cuts = m.get("cuts") or []
     if cuts and all(isinstance(c.get("bars"), int) for c in cuts):
         spans = track_spans(song, cuts)
@@ -295,6 +362,81 @@ def cmd_sync(paths, cfg, args) -> int:
         run(["ffmpeg", "-y", "-v", "error", "-i", str(clip), "-i", str(ref), "-map", "0:v", "-map", "1:a",
              "-c:v", "copy", "-c:a", "aac", "-shortest", str(dst)])
         print(f"✔ {dst}")
+    return 0
+
+
+def cmd_lipsync(paths, cfg, args) -> int:
+    """How late Momo's mouth is vs the voice in the built video, per singing shot (momolib.lipsync)."""
+    import numpy as np
+    from momolib import audio, lipsync
+    from momolib.episode import lip_shift_of
+    ep, lang = check_ep(args.ep), check_lang(args.lang)
+    m = load_manifest(paths, ep)
+    need_track(m)
+    tl_path = paths.out(ep) / f"{ep}_{lang}_timeline.json"
+    if not tl_path.exists():
+        raise MomoError(f"타임라인 없음: {tl_path} — build.py --ep {ep} --lang {lang} 먼저")
+    tl = json.loads(tl_path.read_text(encoding="utf-8"))
+    stem = audio.vocals_file(paths, ep)
+    if stem is None:
+        raise MomoError("song_vocals 파일 없음 — import 또는 fetch_assets")
+    want = {c.strip() for c in (args.cuts or "").split(",") if c.strip()}
+    shots = [s for s in lipsync.shots(tl, m, paths.root) if not want or s["id"] in want]
+    if not shots:
+        raise MomoError("잴 샷이 없음 (립싱크 컷과 그 clip_from 재사용 컷만 잰다)")
+    by_id = {c["id"]: c for c in m.get("cuts") or []}
+    stale = [s["id"] for s in shots if abs(lip_shift_of(by_id.get(s["id"]) or {}, by_id) - s["lip_shift"]) > 1e-6]
+    if stale:
+        print(f"△ manifest 의 lip_shift 가 타임라인과 다름 ({', '.join(stale)}) — build 를 다시 돌린 뒤 잴 것")
+    fps = int(tl.get("fps") or cfg["render"]["fps"])
+    env = lipsync.audio_env(stem)
+    cache = paths.out(ep) / "lipsync_cache"
+    print(f"{ep} 립싱크 지연 (+ = 입이 늦음, 허용 {lipsync.OK_MS[0]}~{lipsync.OK_MS[1]} ms, "
+          f"제안 목표 {lipsync.TARGET_MS} ms, 클립 {len(shots)}샷)")
+    print(f"{'컷':4} {'재사용':5} {'시작':>7} {'길이':>5} | {'지연':>5} {'r':>5} {'margin':>6} {'신뢰':6} | "
+          f"{'앞/뒤':>10} | {'self':>5} {'audio':>5} | {'눈':>4} | 판정")
+    g = lambda d, k: "-" if not d or d.get(k) is None else d[k]  # noqa: E731
+    rows = []
+    for s in shots:
+        if not s["clip"].exists():
+            print(f"{s['id']:4} — 클립 없음 ({s['clip'].name}), 건너뜀 (fetch_assets)")
+            continue
+        r = lipsync.measure(s, env, cache)
+        sh, lag = r["shown"], r["shown"].get("lag_ms")
+        note = r["verdict"]
+        if r["verdict"] == "fix" and sh["conf"] == "high":
+            r["suggest"] = lipsync.suggest(lag, s["lip_shift"], fps)
+            note += f" → lip_shift {r['suggest']:+.3f}" + (f" ({s['owner']})" if s["owner"] != s["id"] else "")
+        elif r["verdict"] == "fix":
+            note += " (신뢰도 보통 — 눈으로 확인)"
+        h = "/".join(str(g(x, "lag_ms")) for x in r["halves"])
+        print(f"{s['id']:4} {(s['reuse_of'] or ''):5} {s['start']:7.2f} {s['dur']:5.2f} | {g(sh, 'lag_ms'):>5} "
+              f"{g(sh, 'r'):>5} {g(sh, 'margin'):>6} {g(sh, 'conf'):6} | {h:>10} | {g(r['self'], 'lag_ms'):>5} "
+              f"{g(r['audio'], 'lag_ms'):>5} | {r['found']:4.2f} | {note}"
+              + (f"  [지금 lip_shift {s['lip_shift']:+.3f}]" if s["lip_shift"] else ""))
+        rows.append(r)
+    # one lip_shift per clip: the cut that owns it (the source of reused takes, unless a reuse sets its own)
+    owners: dict[str, list] = {}
+    for r in rows:
+        if r["verdict"] in ("ok", "fix") and r["shown"]["conf"] == "high":
+            owners.setdefault(r["owner"], []).append(r)
+    tips = []
+    for owner, rs in owners.items():
+        if any(r["verdict"] == "fix" for r in rs):
+            med = float(np.median([r["shown"]["lag_ms"] for r in rs]))
+            each = ", ".join("{} {:+d}".format(r["id"], r["shown"]["lag_ms"]) for r in rs)
+            tips.append(f"{owner} lip_shift {lipsync.suggest(med, rs[0]['lip_shift'], fps):+.3f} "
+                        f"({each} ms → 중앙 {med:+.0f})")
+    n = {v: sum(r["verdict"] == v for r in rows) for v in ("ok", "fix", "unreliable")}
+    print(f"\nok {n['ok']} · fix {n['fix']} · unreliable {n['unreliable']} (unreliable = 상관이 약하거나 앞/뒤가 "
+          f"{lipsync.HALVES_MS} ms 넘게 다름 — 프레임을 눈으로 볼 것)")
+    if tips:
+        print("제안 (신뢰도 높은 샷만, manifest 에 넣고 build 후 다시 잴 것):")
+        for t in tips:
+            print(f"  {t}")
+    if args.json:
+        save_json(Path(args.json), rows)
+        print(f"  → {args.json}")
     return 0
 
 
@@ -386,13 +528,20 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--follow-tempo", action="store_true", help="템포가 흔들리는 곡: 박 추적으로 마디선을 맞춤")
     p = sub.add_parser("lyrics")
     p.add_argument("--ep", required=True)
-    p.add_argument("--align", required=True, help="tools/align_lyrics.py 결과 JSON")
+    p.add_argument("--align", help="tools/align_lyrics.py 결과 JSON (없으면 지금 song.lyrics 를 다시 보정)")
+    p.add_argument("--refine", action=argparse.BooleanOptionalAction, default=True,
+                   help="단어 시작을 보컬 스템의 실제 발성에 맞춤 (기본 켬)")
     p = sub.add_parser("sections")
     p.add_argument("--ep", required=True)
     for name in ("refs", "sync"):
         p = sub.add_parser(name)
         p.add_argument("--ep", required=True)
         p.add_argument("--cuts", help="쉼표 구분 (기본: 립싱크 컷 전부)")
+    p = sub.add_parser("lipsync")
+    p.add_argument("--ep", required=True)
+    p.add_argument("--lang", default="en")
+    p.add_argument("--cuts", help="쉼표 구분 (기본: 립싱크 컷과 그 재사용 컷 전부)")
+    p.add_argument("--json", help="샷별 결과를 이 JSON 파일로")
     p = sub.add_parser("publish")
     p.add_argument("--ep", required=True)
     p.add_argument("--tag")
@@ -405,7 +554,8 @@ def main(argv: list[str] | None = None) -> int:
     paths = get_paths(args)
     cfg = load_config(paths)
     return {"import": cmd_import, "analyze": cmd_analyze, "lyrics": cmd_lyrics, "sections": cmd_sections,
-            "refs": cmd_refs, "sync": cmd_sync, "publish": cmd_publish, "status": cmd_status}[args.cmd](paths, cfg, args)
+            "refs": cmd_refs, "sync": cmd_sync, "lipsync": cmd_lipsync, "publish": cmd_publish,
+            "status": cmd_status}[args.cmd](paths, cfg, args)
 
 
 if __name__ == "__main__":

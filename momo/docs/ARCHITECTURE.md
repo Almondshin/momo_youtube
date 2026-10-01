@@ -18,6 +18,9 @@ momo/
   momolib/episode.py          나레이션 마커 파싱, 프롬프트 조립, manifest 검증, 컷 타임라인(plan_timeline)
   momolib/render.py           텍스트(키워드) 렌더, 켄번즈, 테두리 감지, 썸네일 — build/compile 공용
   momolib/audio.py            나레이션 타임라인, BGM 루프·덕킹, SFX, loudnorm — build/compile 공용
+  momolib/vocal_onsets.py     보컬 스템 발성 시작 검출 (유성 150–3500 Hz / 자음 4–10 kHz flux, 피치) — numpy
+  momolib/lyrics_refine.py    정렬(whisper) 단어 시작을 보컬 스템 발성에 맞춤 (song_track.py lyrics, 기본 켬)
+  momolib/lipsync.py          조립된 영상의 립싱크 지연 측정 (song_track.py lipsync → cut.lip_shift 제안)
   library/library.json        라이브러리 레지스트리 (캐릭터 시트, 고정 클립 5종, 고정 음성)
   library/{clips,audio/<lang>,sheets}/   (git 제외, URL 로 복원)
   assets/{bgm,sfx,fonts}/     사용자가 넣는 파일 (git 포함)

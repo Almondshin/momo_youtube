@@ -26,7 +26,8 @@ CLIP_FPS = 10       # clip frames sampled per second
 WINDOW = 5          # rolling median over this many sampled frames (a blink or a squint is not a deformation)
 
 
-def _hsv(a: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+def hsv(a: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """uint8 RGB → (hue 0–360, saturation 0–1, value 0–1)."""
     a = a.astype(np.float32) / 255
     mx, mn = a.max(-1), a.min(-1)
     d = np.maximum(mx - mn, 1e-6)
@@ -52,13 +53,14 @@ def _blobs(mask: np.ndarray, min_px: int = 1) -> list[tuple[np.ndarray, np.ndarr
     return out
 
 
-def eye_ratio(rgb: np.ndarray) -> float:
-    """Eye size ÷ eye distance of Momo in one RGB frame (absolute), NaN when she or her eye pair is not found."""
+def eye_pair(rgb: np.ndarray) -> tuple[tuple, tuple] | None:
+    """Momo's two eyes in one RGB frame → ((x, y, size, pixels), (x, y, size, pixels)), None when she or her eye
+    pair is not found. x, y = eye centre, size = max(bbox w, h) in pixels (steps 1–2 of the module docstring)."""
     wf = rgb.shape[1]
-    h, s, v = _hsv(rgb)
+    h, s, v = hsv(rgb)
     mint = _blobs(((h > 115) & (h < 170) & (s > 0.15) & (v > 0.35))[::4, ::4], 20)
     if not mint:
-        return math.nan
+        return None
     ys, xs = max(mint, key=lambda b: len(b[0]))
     ox0, ox1, otop = xs.min() * 4, xs.max() * 4, ys.min() * 4
     pad = max(ox1 - ox0, 0.15 * wf)
@@ -84,8 +86,17 @@ def eye_ratio(rgb: np.ndarray) -> float:
             if max(e[3], f[3]) > 3 * min(e[3], f[3]) or max(e[2], f[2]) > 0.9 * dx:
                 continue
             if best is None or min(e[3], f[3]) > best[0]:
-                best = (min(e[3], f[3]), (e[2] + f[2]) / 2 / dx)
-    return best[1] if best else math.nan
+                best = (min(e[3], f[3]), (e, f))
+    return best[1] if best else None
+
+
+def eye_ratio(rgb: np.ndarray) -> float:
+    """Eye size ÷ eye distance of Momo in one RGB frame (absolute), NaN when she or her eye pair is not found."""
+    pair = eye_pair(rgb)
+    if pair is None:
+        return math.nan
+    e, f = pair
+    return (e[2] + f[2]) / 2 / abs(e[0] - f[0])
 
 
 def _still(path: Path) -> np.ndarray:

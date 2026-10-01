@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Song episodes — lyric placement, click removal, beat detection, karaoke overlay and a tiny song build.
+"""Song episodes — lyric placement, click removal, beat detection, karaoke overlay and a tiny song build;
+finished-song episodes — lyric refining on a synthetic vocal stem, lip_shift / hold0 timing, the lip-sync meter
+on a synthetic face clip.
 
 사용: python3 momo/tests/test_song.py        (실패가 있으면 exit 1)
 
@@ -161,6 +163,10 @@ def test_overlay_frames(tmp: Path) -> None:
     lay = render.LyricLine("Brush up brush down", font, cfg)
     assert [lay.lit(p) for p in (-1, 0.0, 0.3, 0.99)] == [0, 1, 2, 4]
     assert render.render_song_overlay([], None, 0.0, font, cfg, 10, tmp / "none") is None
+    # words light WORD_LEAD (0.05 s) early: "two" sung at 0.93 s is lit on the 0.9 s frame (10 fps), not at 1.0 s
+    render.render_song_overlay([("One two", 0.0, 2.0, 2.4, [0.0, 0.465])], None, 0.0, font, cfg, 24, tmp / "lead")
+    f = lambda i: tmp / "lead" / f"ov_{i:05d}.png"  # noqa: E731 — equal states are hard links to one PNG
+    assert render.WORD_LEAD == 0.05 and f(9).samefile(f(10)) and not f(8).samefile(f(9))
 
 
 # ---------------------------------------------------------------- 작은 노래 빌드
@@ -270,6 +276,210 @@ def test_track_spans_and_lyrics(tmp: Path) -> None:
     assert [lay.lit(p) for p in (0.0, 0.3, 0.7)] == [1, 2, 3]
 
 
+def test_track_lines_refined_words(tmp: Path) -> None:
+    """Refined lyrics store [word, t0, t1, t_whisper]: the 4th element changes nothing downstream."""
+    song = json.loads(json.dumps(TRACK_SONG))
+    for ln in song["lyrics"]:
+        ln["words"] = [w + [round(w[1] - 0.2, 3)] for w in ln["words"]]
+    assert track_lines(song) == track_lines(TRACK_SONG)
+    a, b = track_lines(song), track_lines(TRACK_SONG)
+    assert track_cut_lyrics(a, 0.0, 0.0, 4.5) == track_cut_lyrics(b, 0.0, 0.0, 4.5)
+    cfg = json.loads((MOMO / "config.json").read_text())
+    cfg["languages"] = ["en"]
+    assert not validate_manifest(cfg, {"ep": "ep91", "song": song, "cuts": track_cuts()})[0]
+
+
+# ---------------------------------------------------------------- lyrics refine (vocal-stem onsets)
+
+VSR = 22050
+
+
+def sung(seconds: float, f0: float = 300.0, amp: float = 0.25) -> np.ndarray:
+    """A sung vowel: harmonics of f0 up to ~3 kHz, 10 ms attack, 20 ms release."""
+    t = np.arange(int(seconds * VSR)) / VSR
+    env = np.minimum(1.0, np.minimum(t / 0.01, (seconds - t) / 0.02))
+    x = sum(np.sin(2 * np.pi * f0 * k * t) / k for k in range(1, 11))
+    return (amp * x * env / 2).astype(np.float32)
+
+
+def hiss(seconds: float, amp: float = 0.08) -> np.ndarray:
+    """An "s": noise in 4.5–9.5 kHz only."""
+    n = int(seconds * VSR)
+    spec = np.fft.rfft(np.random.default_rng(1).standard_normal(n))
+    f = np.fft.rfftfreq(n, 1 / VSR)
+    spec[(f < 4500) | (f > 9500)] = 0
+    x = np.fft.irfft(spec, n)
+    env = np.minimum(1.0, np.arange(n) / (0.005 * VSR))
+    return (amp * x / np.abs(x).max() * env).astype(np.float32)
+
+
+def vocal(parts: list[tuple[float, np.ndarray]], total: float) -> np.ndarray:
+    x = np.zeros(int(total * VSR), np.float32)
+    for t, s in parts:
+        i = int(round(t * VSR))
+        x[i:i + len(s)] += s[:len(x) - i]
+    return x
+
+
+# stem: One 0.5 | rest | all 1.6 | rest | s~sun 2.6 (hiss) 2.78 (vowel) | rest |
+#       Look 4.0 (160 ms), closure 120 ms, up 4.28 (long)
+REF_STEM = [(0.5, sung(0.4)), (1.6, sung(0.4, 350)), (2.6, hiss(0.19)), (2.78, sung(0.42, 330)),
+            (4.0, sung(0.16, 330)), (4.28, sung(0.62, 300))]
+# whisper-like stamps: "all" glued to the end of "One" (in the rest), "sun" on its vowel, the last line LATE
+REF_LYRICS = [{"text": "One", "section": "Verse", "words": [["One", 0.5, 0.9]]},
+              {"text": "all sun", "section": "Verse", "words": [["all", 0.95, 1.9], ["sun", 2.78, 3.2]]},
+              {"text": "Look up", "section": "Verse", "words": [["Look", 4.3, 4.6], ["up", 4.62, 4.9]]}]
+
+
+def test_refine_lyrics(tmp: Path) -> None:
+    from momolib import lyrics_refine as lr, vocal_onsets as vo
+    fe = vo.features(vocal(REF_STEM, 5.5))
+    ons = vo.detect(fe)
+    out, rep = lr.refine(REF_LYRICS, fe, ons)
+    t0 = {w[0]: w[1] for ln in out for w in ln["words"]}
+    want = {"One": 0.5, "all": 1.6, "sun": 2.6, "Look": 4.0, "up": 4.28}
+    assert all(abs(t0[w] - t) < 0.035 for w, t in want.items()), t0
+    assert [w[3] for ln in out for w in ln["words"]] == [0.5, 0.95, 2.78, 4.3, 4.62]  # t_whisper kept
+    assert all(len(w) == 4 and w[1] < w[2] for ln in out for w in ln["words"])
+    assert out[1]["section"] == "Verse" and out[1]["text"] == "all sun"
+    assert rep["loose"] == 2 and rep["moved"] == 4 and not [f for f in rep["flags"] if f["kind"] == "lag"], rep
+    again, _ = lr.refine(out, fe, ons)   # always from t_whisper → the same result
+    assert again == out
+    # without the rest rule (the prototype), the late line stays late and the lag guard reports it
+    keep = lr.KEEP_REST, lr.SHIFT_ROUNDS
+    lr.KEEP_REST, lr.SHIFT_ROUNDS = 0.0, 1
+    try:
+        old, rep0 = lr.refine(REF_LYRICS, fe, ons)
+    finally:
+        lr.KEEP_REST, lr.SHIFT_ROUNDS = keep
+    assert old[2]["words"][0][1] > 4.2, old[2]
+    lag = [f for f in rep0["flags"] if f["kind"] == "lag"]
+    assert len(lag) == 1 and abs(lag[0]["t"] - 4.0) < 0.035 and lag[0]["word"] == "Look" and lag[0]["ms"] > 100, lag
+    assert lr.syllables("Ding-dong-dang!") == 3 and lr.syllables("seven,") == 2 and lr.syllables("little") == 2
+    assert [lr.onset_class(w) for w in ("Six", "How", "two", "One", "the")] == ["fric", "h", "stop", "", ""]
+
+
+def test_refine_phase_guard(tmp: Path) -> None:
+    from momolib import lyrics_refine as lr
+    song = {"bpm": 120.0, "beats_per_bar": 4, "track": {"analysis": {"bpm": 120.0, "downbeat0": 0.0,
+                                                                     "downbeats": [2.0 * k for k in range(12)]}}}
+    starts = [1.75, 3.75, 5.75, 8.1, 9.75]   # pickups on beat 3.5 of the bar before; the 4th comes 0.7 beat late
+    lines = [{"text": f"line {i}", "section": "Verse 1", "words": [[f"w{i}", t, t + 0.4]]}
+             for i, t in enumerate(starts)]
+    flags = lr.phase_guard(lines, song)
+    assert [(f["line"], f["beats"]) for f in flags] == [(3, 0.7)], flags
+    assert lr.phase_guard(lines, {"bpm": 120}) == []   # no bar grid → no guard
+
+
+def test_song_track_lyrics_cli(tmp: Path) -> None:
+    root = make_track_root(tmp)
+    ep = root / "episodes/ep91"
+    st = [sys.executable, str(MOMO / "song_track.py"), "--root", str(root), "lyrics", "--ep", "ep91"]
+    m = json.loads((ep / "manifest.json").read_text())
+    m["song"]["lyrics"].append({"text": "(hum)"})            # a line without word times survives a re-refine
+    (ep / "manifest.json").write_text(json.dumps(m))
+    r = subprocess.run(st, capture_output=True, text=True)   # no --align: refine the current song.lyrics
+    assert r.returncode == 0, r.stdout + r.stderr
+    m = json.loads((ep / "manifest.json").read_text())
+    hum = m["song"]["lyrics"][-1]
+    assert hum["text"] == "(hum)" and not hum.get("words"), hum
+    words = [w for ln in m["song"]["lyrics"] for w in ln.get("words") or []]
+    assert all(len(w) == 4 for w in words) and [w[3] for w in words] == [
+        w[1] for ln in TRACK_SONG["lyrics"] for w in ln["words"]], words
+    assert all(abs(w[1] - w[3]) < 0.04 for w in words), words   # stamps sit on the synthetic notes already
+    rec = m["song"]["track"]["lyrics_refine"]
+    assert set(rec) == {"v", "vocals_sha1", "moved", "loose", "flags"} and len(rec["vocals_sha1"]) == 40, rec
+    assert "보정" in r.stdout, r.stdout
+    al = tmp / "align.json"   # --align: whisper times shifted early (in the rest) → back on the notes
+    al.write_text(json.dumps({"lines": [{"text": ln["text"], "words": [[w[0], w[1] - 0.25, w[2]] for w in ln["words"]]}
+                                        for ln in TRACK_SONG["lyrics"]]}))
+    r = subprocess.run(st + ["--align", str(al)], capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+    m = json.loads((ep / "manifest.json").read_text())
+    got = [w[1] for ln in m["song"]["lyrics"] for w in ln["words"]]
+    true = [w[1] for ln in TRACK_SONG["lyrics"] for w in ln["words"]]
+    assert all(abs(a - b) < 0.04 for a, b in zip(got, true)), (got, true)
+    r = subprocess.run(st + ["--align", str(al), "--no-refine"], capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+    m = json.loads((ep / "manifest.json").read_text())
+    assert all(len(w) == 3 for ln in m["song"]["lyrics"] for w in ln["words"])
+    assert "lyrics_refine" not in m["song"]["track"]
+    sec = [sys.executable, str(MOMO / "song_track.py"), "--root", str(root), "sections", "--ep", "ep91"]
+    r = subprocess.run(sec, capture_output=True, text=True)
+    assert r.returncode == 0 and "보정되지 않음" in r.stdout and "cut_at" in r.stdout, r.stdout + r.stderr
+    r = subprocess.run(st + ["--no-refine"], capture_output=True, text=True)
+    assert r.returncode != 0 and "--align" in r.stdout + r.stderr
+
+
+# ---------------------------------------------------------------- lip-sync meter
+
+def face(open_: float, w: int = 320, h: int = 240) -> np.ndarray:
+    """A Momo-like frame for onmodel.eye_pair: cream fur, mint overalls, two dark eyes, a dark mouth whose height
+    follows open_ (0 … 1)."""
+    yy, xx = np.mgrid[0:h, 0:w]
+    im = np.empty((h, w, 3), np.uint8)
+    im[:] = (240, 226, 200)
+    im[170:, 90:230] = (120, 220, 180)
+    for cx in (130, 190):
+        im[(xx - cx) ** 2 + (yy - 80) ** 2 <= 12 ** 2] = (30, 25, 35)
+    im[((xx - 160) / 18.0) ** 2 + ((yy - 125) / (2 + 14 * open_)) ** 2 <= 1] = (90, 20, 30)
+    return im
+
+
+def syllable_env(t: np.ndarray) -> np.ndarray:
+    """Sung syllables every 0.37 s with uneven loudness (0 … 1)."""
+    out = np.zeros_like(t)
+    for k, s in enumerate(np.arange(0.3, 3.6, 0.37)):
+        out += (0.5 + 0.125 * ((k * 7) % 5)) * np.clip((t - s) / 0.03, 0, 1) * np.clip((s + 0.22 - t) / 0.05, 0, 1)
+    return out
+
+
+def test_lipsync_meter(tmp: Path) -> None:
+    from momolib import lipsync
+    # 1. the correlation alone: a mouth curve 120 ms behind the voice reads +120 ms, confidently
+    t = np.arange(0, 4, 1 / 30)
+    ts = np.arange(0, 6, 1 / lipsync.SR)
+    env = lipsync.envelope(np.sin(2 * np.pi * 220 * ts) * syllable_env(ts))
+    r = lipsync.lag_of(t, syllable_env(t - 0.12), env, 0.0, 3.6)
+    assert abs(r["lag_ms"] - 120) <= 10 and r["conf"] == "high", r
+    # 2. a synthetic clip whose mouth moves 100 ms after the voice, placed at song time 5.0
+    fps, lag = 30, 0.1
+    clip = tmp / "c02_en.mp4"
+    p = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "320x240",
+                          "-r", str(fps), "-i", "-", "-c:v", "libx264", "-crf", "12", "-pix_fmt", "yuv420p", str(clip)],
+                         stdin=subprocess.PIPE)
+    for o in np.clip(syllable_env(np.arange(int(4 * fps)) / fps - lag), 0, 1):
+        p.stdin.write(face(float(o)).tobytes())
+    p.stdin.close()
+    assert p.wait() == 0
+    ts = np.arange(int(10 * lipsync.SR)) / lipsync.SR
+    stem = lipsync.envelope((np.sin(2 * np.pi * 220 * ts) * syllable_env(ts - 5.0)).astype(np.float32))
+    shot = {"id": "c02", "clip": clip, "start": 5.0, "dur": 3.5, "off": 0.0, "hold0": 0.0, "lip_shift": 0.0,
+            "reuse_of": None, "owner": "c02"}
+    res = lipsync.measure(shot, stem, tmp / "cache", diagnostics=False)
+    assert res["found"] == 1.0 and abs(res["shown"]["lag_ms"] - 100) <= 20, res
+    assert res["verdict"] == "fix" and res["shown"]["conf"] == "high", res   # +100 ms is outside −120 … +40
+    assert lipsync.suggest(res["shown"]["lag_ms"], 0.0, fps) == round(round(-0.17 * fps) / fps, 3)  # → −70 ms
+    held = lipsync.measure(dict(shot, hold0=0.1), stem, tmp / "cache", diagnostics=False)   # cached series
+    assert abs(held["shown"]["lag_ms"] - res["shown"]["lag_ms"] - 100) <= 15, held   # hold0 delays the picture
+    early = lipsync.measure(dict(shot, off=0.2), stem, tmp / "cache", diagnostics=False)   # start 0.2 s in
+    assert abs(early["shown"]["lag_ms"] - res["shown"]["lag_ms"] + 200) <= 15, early
+    assert lipsync.verdict({"lag_ms": -60, "conf": "high"}, [{"lag_ms": -50}, {"lag_ms": -70}]) == "ok"
+    assert lipsync.verdict({"lag_ms": -60, "conf": "high"}, [{"lag_ms": 50}, {"lag_ms": -70}]) == "unreliable"
+    assert lipsync.verdict({"lag_ms": -160, "conf": "low"}, [{"lag_ms": -150}, {"lag_ms": -170}]) == "unreliable"
+    # 3. shots(): own lip-sync cuts and reuses of them, the reuse's lip_shift owned by its source
+    man = {"song": {"track": {"start": 0.0}}, "cuts": [
+        {"id": "c01", "type": "L"}, {"id": "c02", "type": "V", "lipsync": True, "lip_shift": 0.1},
+        {"id": "c03", "type": "V", "clip_from": {"cut": "c02", "at": 0.0}}, {"id": "c04", "type": "V"}]}
+    tl = {"cuts": [{"id": c, "start": i * 2.0, "dur": 2.0, "source": f"episodes/ep91/clips/{c}.mp4",
+                    "source_kind": "video", "hold0": 0.1 if c in ("c02", "c03") else 0.0,
+                    **({"lip_shift": 0.1} if c in ("c02", "c03") else {})}
+                   for i, c in enumerate(("c01", "c02", "c03", "c04"))]}
+    got = lipsync.shots(tl, man, tmp)
+    assert [(s["id"], s["owner"], s["reuse_of"], s["hold0"], s["lip_shift"]) for s in got] == [
+        ("c02", "c02", None, 0.1, 0.1), ("c03", "c02", "c02", 0.1, 0.1)], got
+
+
 def test_track_validate_and_slots(tmp: Path) -> None:
     from momolib.genrec import cut_slots, song_slots
     cfg = json.loads((MOMO / "config.json").read_text())
@@ -347,16 +557,86 @@ def test_track_lipsync_window_offset(tmp: Path) -> None:
     m["cuts"][1]["nar_ref"] = {"en": {"media_id": "M1", "track_sha1": "abc123", "window": [4.5, 6.5]}}
     m["cuts"][1]["cut_at"] = 4.8     # starts 0.3 s into its pinned vocal window → the clip starts 0.3 s in
     plans, _, warns = plan_timeline(paths, cfg, m, "en")
-    assert math.isclose(plans[1].src_offset, 0.3) and plans[1].nar_offset == 0.0, (plans[1].src_offset, warns)
+    assert math.isclose(plans[1].src_offset, 0.3) and plans[1].hold0 == 0.0, (plans[1].src_offset, warns)
     m["cuts"][1]["cut_at"] = 4.2     # starts before the window → hold the first frame 0.3 s
     m["cuts"][2]["cut_at"] = 7.0     # ends 0.5 s after the window → the reference is silent there
     plans, _, warns = plan_timeline(paths, cfg, m, "en")
-    assert plans[1].src_offset == 0.0 and math.isclose(plans[1].nar_offset, 0.3), plans[1]
+    assert plans[1].src_offset == 0.0 and math.isclose(plans[1].hold0, 0.3), plans[1]
+    assert plans[1].nar_offset == 0.0, plans[1].nar_offset  # the hold is no longer folded into nar_offset
     assert any("첫 프레임 정지" in w for w in warns) and any("입이 닫힘" in w for w in warns), warns
     m["cuts"][1]["clip_at"] = 0.5    # explicit start into its own clip wins (e.g. a count-in reusing the chorus take)
     m["cuts"][0]["clip_at"] = 1.0
     plans, _, _ = plan_timeline(paths, cfg, m, "en")
     assert plans[1].src_offset == 0.5 and plans[0].src_offset == 1.0
+
+
+def test_track_lip_shift(tmp: Path) -> None:
+    """cut.lip_shift: + = picture later. Window case off = cut start − window start − ls, clip_at − ls,
+    clip_from at − ls (inherited from a lip-sync source); src_offset = max(0, off), hold0 = max(0, −off)."""
+    root = make_track_root(tmp)
+    paths = Paths(root)
+    cfg = load_config(paths)
+    m = json.loads((root / "episodes/ep91/manifest.json").read_text())
+    c02, c03 = m["cuts"][1], m["cuts"][2]
+    c02["nar_ref"] = {"en": {"media_id": "M1", "track_sha1": "abc123", "window": [4.5, 6.5]}}
+    spans = track_spans(m["song"], m["cuts"])
+    c02["lip_shift"] = 0.1           # c02 starts on its window → hold frame 0 for 0.1 s, nothing to warn about
+    plans, _, warns = plan_timeline(paths, cfg, m, "en")
+    p2, p3 = plans[1], plans[2]
+    assert p2.src_offset == 0.0 and math.isclose(p2.hold0, 0.1) and p2.lip_shift == 0.1, (p2.src_offset, p2.hold0)
+    assert not any("첫 프레임 정지" in w for w in warns), warns
+    assert p2.lip_locked and p3.lip_locked and not plans[0].lip_locked and not plans[3].lip_locked
+    assert math.isclose(p3.src_offset, 1.9) and p3.hold0 == 0.0 and p3.lip_shift == 0.1  # clip_from at 2.0, inherited
+    assert track_spans(m["song"], m["cuts"]) == spans  # cut boundaries never move
+    c03["clip_from"]["at"] = 0.0
+    p3 = plan_timeline(paths, cfg, m, "en")[0][2]
+    assert p3.src_offset == 0.0 and math.isclose(p3.hold0, 0.1), (p3.src_offset, p3.hold0)
+    c03["clip_from"]["at"] = 0.3
+    p3 = plan_timeline(paths, cfg, m, "en")[0][2]
+    assert math.isclose(p3.src_offset, 0.2) and p3.hold0 == 0.0, p3.src_offset
+    c03["lip_shift"] = 0.0           # its own value wins over the source's
+    p3 = plan_timeline(paths, cfg, m, "en")[0][2]
+    assert math.isclose(p3.src_offset, 0.3) and p3.lip_shift == 0.0
+    c02["lip_shift"] = -0.1          # picture earlier: start 0.1 s into the clip
+    p2 = plan_timeline(paths, cfg, m, "en")[0][1]
+    assert math.isclose(p2.src_offset, 0.1) and p2.hold0 == 0.0
+    c02["lip_shift"], c02["clip_at"] = 0.1, 0.5   # clip_at − ls
+    p2 = plan_timeline(paths, cfg, m, "en")[0][1]
+    assert math.isclose(p2.src_offset, 0.4) and p2.hold0 == 0.0
+    del c02["clip_at"]
+    c02["cut_at"] = 4.2              # 0.3 s before the window + ls 0.1 → hold 0.4, of which 0.3 s is unasked → warn
+    _, _, warns = plan_timeline(paths, cfg, m, "en")
+    assert any("첫 프레임 정지" in w and "0.30s" in w for w in warns), warns
+    c03["cut_at"] = 6.8              # c02 ends 0.3 s after its window: silent beyond win1 + ls + 0.15 = 6.75
+    _, _, warns = plan_timeline(paths, cfg, m, "en")
+    assert any("입이 닫힘" in w for w in warns), warns
+    c02["lip_shift"] = 0.2           # … unless the picture runs that much later (6.85)
+    _, _, warns = plan_timeline(paths, cfg, m, "en")
+    assert not any("입이 닫힘" in w for w in warns), warns
+    # validation: a number within ±0.5 s, only on lip-sync cuts and on clip_from reuses of one
+    cfg2 = json.loads((MOMO / "config.json").read_text())
+    cfg2["languages"] = ["en"]
+    assert not validate_manifest(cfg2, m)[0]
+    for cid, v in (("c02", 0.6), ("c02", "0.1"), ("c02", True), ("c01", 0.1), ("c04", 0.1)):
+        mm = json.loads(json.dumps(m))
+        next(c for c in mm["cuts"] if c["id"] == cid)["lip_shift"] = v
+        errors, _ = validate_manifest(cfg2, mm)
+        assert any("lip_shift" in e for e in errors), (cid, v, errors)
+    mm = json.loads(json.dumps(m))
+    mm["cuts"][1]["lipsync"] = False  # c03's source is no lip-sync cut any more
+    errors, _ = validate_manifest(cfg2, mm)
+    assert any(e.startswith("c03: lip_shift") for e in errors), errors
+    # every cut's segment key has hold0 (a reuse re-renders when its source's lip_shift changes) and the lock
+    import build
+    font = next(p for p in FONTS if p.exists())
+    c03.pop("lip_shift")
+    c03["clip_from"]["at"] = 0.0
+    keys = []
+    for ls in (0.0, 0.1):
+        c02["lip_shift"] = ls
+        plans, _, _ = plan_timeline(paths, cfg, m, "en")
+        keys.append({s.plan.id: s.key for s in build.make_segs(plans, cfg, tmp, font)})
+    assert keys[0]["c03"] != keys[1]["c03"] and keys[0]["c01"] == keys[1]["c01"], keys
 
 
 def make_track_root(tmp: Path) -> Path:
@@ -395,10 +675,15 @@ def test_track_build(tmp: Path) -> None:
     root = make_track_root(tmp)
     paths = Paths(root)
     cfg = load_config(paths)
-    m = json.loads((root / "episodes/ep91/manifest.json").read_text())
+    mf = root / "episodes/ep91/manifest.json"
+    m = json.loads(mf.read_text())
+    m["cuts"][1]["lip_shift"] = 0.1           # c02's picture 0.1 s later; c03 reuses c02 from 2.5 − 0.1 s
+    m["cuts"][2]["clip_from"]["at"] = 2.5     # 1.6 s of clip left for a 2 s cut: held, never slowed (lip-sync)
+    mf.write_text(json.dumps(m))
     plans, total, warns = plan_timeline(paths, cfg, m, "en")
     assert math.isclose(total, 13.0) and [p.start for p in plans] == [0.0, 4.5, 6.5, 8.5], (total, warns)
-    assert plans[2].src_offset == 2.0 and plans[2].source.name == "c02_en.mp4"
+    assert math.isclose(plans[2].src_offset, 2.4) and plans[2].source.name == "c02_en.mp4"
+    assert math.isclose(plans[1].hold0, 0.1) and plans[1].src_offset == 0.0
     assert not any(p.block_starts for p in plans) and plans[3].card
     r = subprocess.run([sys.executable, str(MOMO / "build.py"), "--root", str(root), "--ep", "ep91", "--lang", "en",
                         "--jobs", "2"], capture_output=True, text=True)
@@ -406,7 +691,12 @@ def test_track_build(tmp: Path) -> None:
     tl = json.loads((root / "episodes/ep91/out/ep91_en_timeline.json").read_text())
     assert tl["total_frames"] == 130 and tl["audio"]["track"]["file"] == "song.wav", tl["audio"]
     assert tl["audio"].get("music") is None and tl["audio"]["bgm"] is None
-    assert tl["cuts"][2]["clip_offset"] == 2.0 and tl["cuts"][1]["lyrics"][0]["text"] == "Carrot!", tl["cuts"][1:3]
+    assert tl["cuts"][2]["clip_offset"] == 2.4 and tl["cuts"][1]["lyrics"][0]["text"] == "Carrot!", tl["cuts"][1:3]
+    assert tl["cuts"][1]["hold0"] == 0.1 and tl["cuts"][2]["lip_shift"] == 0.1 and tl["cuts"][0]["hold0"] == 0.0
+    assert "x1.00" in tl["cuts"][2]["render"], tl["cuts"][2]["render"]   # a reused lip-sync take is not slowed
+    r = subprocess.run([sys.executable, str(MOMO / "song_track.py"), "--root", str(root), "lipsync", "--ep", "ep91"],
+                       capture_output=True, text=True)   # testsrc clips: no Momo to measure → unreliable, no crash
+    assert r.returncode == 0 and "unreliable 2" in r.stdout, r.stdout + r.stderr
     mp4 = root / "episodes/ep91/out/ep91_en.mp4"
     a = audio.decode(mp4, SR, 1)[:, 0]
     assert abs(len(a) / SR - 13.0) < 0.1 and np.sqrt((a ** 2).mean()) > 0.02

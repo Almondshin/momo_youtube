@@ -239,6 +239,7 @@ def render_keyword_frames(text: str, font_path: Path, cfg: dict, pos: str, color
 LYRIC_SUNG = (255, 216, 59)       # yellow — words already sung
 LYRIC_TODO = (255, 255, 255)      # white — words still to come
 LYRIC_LEAD = 0.25                 # the line appears this long before it is sung
+WORD_LEAD = 0.05                  # each word lights this long before its sung start (frame rounding is late)
 CARD_WORD = (34, 150, 110)        # mint green word on a white card
 CARD_TEXT = (60, 60, 72)
 
@@ -362,7 +363,8 @@ def render_song_overlay(lines: list[tuple], card: dict | None, card_at: float,
     """Full-frame RGBA PNG sequence ov_%05d.png for one segment, or None when there is nothing to draw.
 
     lines = [(text, start, sung_len, shown_until, word_at)] in seconds from the segment start. Words light up at
-    word_at (share of sung_len before each word; None = in proportion to their characters). The card pops in at
+    word_at (share of sung_len before each word; None = in proportion to their characters), WORD_LEAD early so
+    a highlight never trails the voice (frames round up by up to one frame). The card pops in at
     card_at (left, or card.pos == "right").
     Identical frames are hard links to one rendered PNG.
     """
@@ -385,7 +387,8 @@ def render_song_overlay(lines: list[tuple], card: dict | None, card_at: float,
         li, lit = -1, 0
         for i, (_, s, sung, until, _) in enumerate(lines):
             if s - LYRIC_LEAD <= t < until:
-                li, lit = i, lays[i].lit((t - s) / sung if sung > 0 and t >= s else -1.0)
+                tw = t + WORD_LEAD
+                li, lit = i, lays[i].lit((tw - s) / sung if sung > 0 and tw >= s else -1.0)
         pop = -1 if card_im is None or t < card_at else min(n_pop - 1, int((t - card_at) * fps))
         key = (li, lit, pop)
         if key not in rendered:
