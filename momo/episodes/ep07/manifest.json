@@ -49,9 +49,9 @@
   },
   "credits": {
     "estimate": null,
-    "spent": 107.5,
-    "generations": 38,
-    "regenerations": 2,
+    "spent": 113.5,
+    "generations": 39,
+    "regenerations": 3,
     "api_generations": 6,
     "api_usd": 2.7,
     "api_credits": 43.2
@@ -859,7 +859,7 @@
       "bars": 2,
       "cut_at": 65.128,
       "image_prompt": "[Momo] medium shot, standing beside a white rounded pedestal sink, facing the viewer, both simple round cartoon bunny paws together at chest height covered in white soap foam, a few small round soap bubbles in the air, huge round sparkly eyes with big white highlights, excited smile, both long floppy ears fully visible hanging down beside the cheeks, the bright pastel bathroom with large soft light-blue square tiles on the left fading to soft pink square tiles on the right behind her",
-      "motion": "rubs her foamy paws together, then on 'ready, go' opens both paws at chest height with the palms toward the viewer and nods once, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "motion": "rubs her foamy paws together, then on 'ready, go' opens both paws at chest height with the palms toward the viewer and nods once, looks at the viewer and keeps singing every word of the whole line \"Rub and count to ten! Ready, go!\" without a pause, the mouth clearly forming each word, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -885,17 +885,17 @@
           "reason": null
         },
         "clip_en": {
-          "status": "approved",
-          "job_id": "api:5924219a-60de-4c99-a569-dddaf4416772",
-          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c17_en_2af92b1b.mp4",
-          "attempts": 1,
-          "credits": 0.0,
+          "status": "generated",
+          "job_id": "2a0457af-27f6-4e41-a08b-1e0f6d8f3fcd",
+          "url": null,
+          "attempts": 2,
+          "credits": 6.0,
           "history": [
             {
               "job_id": "api:5924219a-60de-4c99-a569-dddaf4416772",
               "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c17_en_2af92b1b.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "mouth stays closed in a smile through 'and count to ten!' (65.6-67.5 s) — review",
               "at": "2026-10-01T02:02Z",
               "credits": 0.0,
               "start_image": "b32dc823-6a93-4c92-a84c-5611f70d5df2",
@@ -911,6 +911,15 @@
                 "credits": 6.4,
                 "charged": true
               }
+            },
+            {
+              "job_id": "2a0457af-27f6-4e41-a08b-1e0f6d8f3fcd",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T03:00Z",
+              "credits": 6.0,
+              "start_image": "b32dc823-6a93-4c92-a84c-5611f70d5df2"
             }
           ],
           "reason": null
@@ -918,13 +927,13 @@
       },
       "nar_ref": {
         "en": {
-          "media_id": "api-upload:audio/refs/c17_en.wav",
+          "media_id": "ad8c522b-a17d-4326-bf21-09f84d87e83f",
           "track_sha1": "e598d00226ad1cec249f40da8b745022d5439208",
           "window": [
             65.128,
             69.109
           ],
-          "at": "2026-10-01T02:02Z"
+          "at": "2026-10-01T02:59Z"
         }
       }
     },

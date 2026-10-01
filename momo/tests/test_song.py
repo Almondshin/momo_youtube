@@ -639,6 +639,16 @@ def test_track_lip_shift(tmp: Path) -> None:
     assert keys[0]["c03"] != keys[1]["c03"] and keys[0]["c01"] == keys[1]["c01"], keys
 
 
+def test_outro_line_not_covered(tmp: Path) -> None:
+    from momolib.episode import LYRIC_LEAD_S, speech_over_song
+    spoken = ("Bye-bye, friends!", 0.6, 2.0, 5.0, None)
+    sung = [("Ding, dong, dang!", -1.0, 0.8, 1.4, [0.0, 0.3, 0.6]),   # still held on screen into the greeting
+            ("La la!", 3.0, 0.5, 4.0, None)]                          # starts after the greeting began: unchanged
+    out = speech_over_song(spoken, sung)
+    assert out[0] == spoken and math.isclose(out[1][3], 0.6 - LYRIC_LEAD_S) and out[1][4] == [0.0, 0.3, 0.6]
+    assert out[2] == sung[1]
+
+
 def test_song_track_end_fade(tmp: Path) -> None:
     f = tmp / "song.wav"
     audio.write_wav(f, np.full((SR * 10, 2), 0.5, np.float32), SR)

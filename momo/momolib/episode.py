@@ -603,6 +603,19 @@ def track_cut_lyrics(lines: list[dict], t0: float, start: float, dur: float) -> 
 LYRIC_LEAD_S = 0.25    # = render.LYRIC_LEAD (a line shows this long before it is sung)
 
 
+def speech_over_song(spoken: tuple, sung: list[tuple]) -> list[tuple]:
+    """Caption lines of a cut with a spoken library line (intro/outro) over the song. The renderer shows the LAST line
+    that is on screen, so a sung line that started earlier (its LYRIC_HOLD tail) would cover the greeting: end it when
+    the spoken line is due. Sung lines starting after the spoken line still take over when they begin."""
+    s0 = spoken[1] - LYRIC_LEAD_S
+    out = []
+    for ln in sung:
+        if ln[1] < spoken[1] and ln[3] > s0:
+            ln = (ln[0], ln[1], ln[2], round(max(ln[1], s0), 4)) + tuple(ln[4:])
+        out.append(ln)
+    return [spoken] + out
+
+
 def place_song_lines(cut: dict, items: list[NarItem], lens: list[float], song: dict,
                      dur: float) -> tuple[list[float], list[float], list[str]]:
     """Lyric lines of one cut → (start of each line relative to the cut, speed-up per line, warnings).
@@ -860,7 +873,7 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         if track:
             lyrics = track_cut_lyrics(tlines, t_start, start_f / fps, dur_f / fps)
             if speech:  # the library line (intro/outro) is captioned too
-                lyrics = [(speech[0].text, starts[0], durs[0], dur_f / fps, None)] + lyrics
+                lyrics = speech_over_song((speech[0].text, starts[0], durs[0], dur_f / fps, None), lyrics)
                 nar_len = starts[0] + durs[0]
             else:
                 nar_len = 0.0
