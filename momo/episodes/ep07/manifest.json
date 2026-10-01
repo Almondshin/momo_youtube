@@ -131,16 +131,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "api:8e553c39-573e-47f0-b3fc-97cfbba42290",
-          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e5a3e22f-8efc-4b4a-8745-fe7ec0b37cb0.mp4",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c03_en_30f479f3.mp4",
           "attempts": 1,
           "credits": 0.0,
           "history": [
             {
               "job_id": "api:8e553c39-573e-47f0-b3fc-97cfbba42290",
-              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e5a3e22f-8efc-4b4a-8745-fe7ec0b37cb0.mp4",
-              "status": "generated",
+              "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c03_en_30f479f3.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-10-01T01:55Z",
               "credits": 0.0,
@@ -249,16 +249,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "api:b8bdaffc-ae7d-4c88-b46f-f02597c3ee1a",
-          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/a9aead59-43c2-4b3e-9ffc-988cb776a0c1.mp4",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c05_en_44dce857.mp4",
           "attempts": 1,
           "credits": 0.0,
           "history": [
             {
               "job_id": "api:b8bdaffc-ae7d-4c88-b46f-f02597c3ee1a",
-              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/a9aead59-43c2-4b3e-9ffc-988cb776a0c1.mp4",
-              "status": "generated",
+              "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c05_en_44dce857.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-10-01T01:55Z",
               "credits": 0.0,
@@ -405,16 +405,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "api:5203dba4-b698-4abd-b97a-adf12ee02ef6",
-          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/2442a643-33b4-4c3e-8ed7-f46662561509.mp4",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c08_en_05fb25a3.mp4",
           "attempts": 1,
           "credits": 0.0,
           "history": [
             {
               "job_id": "api:5203dba4-b698-4abd-b97a-adf12ee02ef6",
-              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/2442a643-33b4-4c3e-8ed7-f46662561509.mp4",
-              "status": "generated",
+              "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c08_en_05fb25a3.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-10-01T01:55Z",
               "credits": 0.0,
@@ -519,16 +519,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "api:09c482c8-1968-401e-94cf-b6c35f16fb55",
-          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/45deffe7-17f0-4894-ae63-d20a1995c77b.mp4",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c10_en_9d4acd55.mp4",
           "attempts": 1,
           "credits": 0.0,
           "history": [
             {
               "job_id": "api:09c482c8-1968-401e-94cf-b6c35f16fb55",
-              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/45deffe7-17f0-4894-ae63-d20a1995c77b.mp4",
-              "status": "generated",
+              "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c10_en_9d4acd55.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-10-01T01:55Z",
               "credits": 0.0,
@@ -651,16 +651,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "api:272a463d-148d-4279-9c98-981df7b0ec6f",
-          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/4b65ee2c-b350-44e9-8359-99a1be331170.mp4",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c15_en_df50c54e.mp4",
           "attempts": 1,
           "credits": 0.0,
           "history": [
             {
               "job_id": "api:272a463d-148d-4279-9c98-981df7b0ec6f",
-              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/4b65ee2c-b350-44e9-8359-99a1be331170.mp4",
-              "status": "generated",
+              "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c15_en_df50c54e.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-10-01T02:02Z",
               "credits": 0.0,
@@ -765,16 +765,16 @@
           "reason": null
         },
         "clip_en": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "api:5924219a-60de-4c99-a569-dddaf4416772",
-          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/0537e42b-f349-495e-9e52-091cc13e69a9.mp4",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c17_en_2af92b1b.mp4",
           "attempts": 1,
           "credits": 0.0,
           "history": [
             {
               "job_id": "api:5924219a-60de-4c99-a569-dddaf4416772",
-              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/0537e42b-f349-495e-9e52-091cc13e69a9.mp4",
-              "status": "generated",
+              "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep07/ep07_c17_en_2af92b1b.mp4",
+              "status": "approved",
               "reason": null,
               "at": "2026-10-01T02:02Z",
               "credits": 0.0,
