@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep08",
-  "status": "planning",
+  "status": "assembled",
   "topic": {
     "en": "Shapes",
     "ko": "도형"
@@ -9,19 +9,20 @@
   "benchmark": {
     "channel_url": "https://www.youtube.com/@CoComelon",
     "research_dir": null,
-    "chosen_axis": null
+    "chosen_axis": "topic: shapes around us (call-and-response vocabulary song)"
   },
   "characters": [
-    "momo"
+    "momo",
+    "ducky"
   ],
   "title": {
     "en": "Shapes Song with Momo the Bunny | Circle, Square, Triangle for Toddlers",
     "ko": ""
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c02",
     "text": {
-      "en": "",
+      "en": "SHAPES!",
       "ko": ""
     },
     "text_pos": "top"
@@ -29,36 +30,84 @@
   "bgm": null,
   "upload": {
     "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
-    },
-    "ko": {
-      "title": "",
-      "description": "",
-      "tags": [],
+      "title": "Shapes Song with Momo the Bunny | Circle, Square, Triangle for Toddlers",
+      "description": "Circle, square, triangle, star and heart! Find shapes everywhere with Momo the Bunny and Ducky: the round sun, a square window, a triangle slice of watermelon, a star in the night sky and a heart-shaped cookie.\n\nShapes in this song:\nCircle - the sun · Square - the window · Triangle - a slice of watermelon\nStar - a star in the night sky · Heart - a heart cookie\nDraw a shape in the air and sing along: shapes are everywhere!\n\nMade for toddlers and preschoolers (ages 2-5). Music and animation made with AI tools.\n\n#shapes #shapessong #learnshapes #kidssongs #nurseryrhymes #toddlersongs #learnenglish #englishforkids #preschool #MomotheBunny",
+      "tags": [
+        "shapes song",
+        "shapes for kids",
+        "learn shapes",
+        "circle square triangle",
+        "shapes for toddlers",
+        "kids songs",
+        "nursery rhymes",
+        "toddler songs",
+        "learn english for kids",
+        "english for toddlers",
+        "preschool songs",
+        "Momo the Bunny"
+      ],
       "playlist_id": null
     }
   },
   "credits": {
     "estimate": null,
-    "spent": 0,
-    "generations": 0,
-    "regenerations": 0
+    "spent": 121.0,
+    "generations": 34,
+    "regenerations": 4
   },
   "notes": {
-    "v_over_reason": null,
-    "approvals": [],
-    "next_time": []
+    "v_over_reason": "노래 형식 v2 (ep05~07 과 같은 방식, 2026-09-30 사용자 '더 자연스럽게'): 125.2 BPM Suno 곡, 컷은 가사 줄 시작점(cut_at) → 26컷. V 24개 중 9개는 재사용(clip_from, 0 크레딧 — 후렴 2~4), 새로 만드는 것 15개(이미지 15장). 모모가 노래하는 컷은 전부 립싱크(노래하며 작은 동작), 사물 5개·Ducky 는 동작 클립.",
+    "approvals": [
+      "2026-10-01 노래: Suno v2 'Shapes Everywhere with Momo' (125.2 BPM, 1:49.9, 2.0초부터 노래·95.7초까지) — 사용자 승인 곡으로 전달받음 (v1 59.6초 테이크는 거절)",
+      "2026-10-01 시작 이미지 15장 승인 (생산 에이전트의 on-model 게이트 — 원본 크기·얼굴 크롭으로 확인, 사용자 확인 전): c02~c08, c12~c15, c19~c22 · 거절·재생성 4회 (c02 1, c08 3) · 38 크레딧",
+      "2026-10-01 클립 15개 승인 (생산 에이전트의 검토 — fps=2 프레임 시트·얼굴 원본 크기 크롭·song_track sync·on-model 게이트, 사용자 확인 전): 립싱크 c02 c03 c04 c06 c08 c13 c15 c20 c21 · 동작 c05 c07 c12 c14 c19 c22 · 재생성 0회 · 클립 83 크레딧 (에피소드 합계 121 / 캡 150)"
+    ],
+    "next_time": [
+      "Suno v2 는 전주 없이 2.0초부터 불렀다 ([Instrumental intro - 4 bars] 무시) → 인사 c01 은 lead 0 으로 2.12초 컷 안에 (목소리 0.06–2.04초). 라이브러리 intro.wav 가 3.58초라 노래가 3.9초까지 −6 dB 덕킹됨 — 첫 줄이 조금 작게 들리면 song.duck_db 조정",
+      "가사 정렬: 전체 스템 whisper 는 메아리 절반을 못 들음(84.7%). 섹션별 whisper(scratchpad ep08/align_sliced.py) 는 절 메아리를 모두 들었지만 후렴 2 를 놓침 → 후렴 4개가 같은 녹음(상관 r 0.89–0.96)이라 후렴 1 기준 한 틀로 맞춤(merge_align.py, chorus_seed.py)",
+      "보정(refine)이 같은 녹음의 후렴 4개에서 빠른 메아리·레가토 단어를 서로 다른 onset 에 붙임 (‘and’ 0.2초, ‘love’ 0.24초 늦게) → 음높이(pyin)·엔벌로프로 확인한 틀로 15단어 고정 (chorus_fix.py). song_track.py lyrics 를 다시 돌리면 이 고정이 풀린다",
+      "Suno 가 노래 뒤 13초 기악 아웃트로를 붙임 → 영상은 마디 54(105.0초)에서 페이드로 끝냄 (노래 비율 89%)",
+      "이미지: 'plain smooth shapes' 만으로는 nano_banana 가 도형·사물에 눈·입을 그림 (c02 1차) → 'with no faces, no eyes and no mouths'. 해·수박·별·쿠키 프롬프트에도 미리 'no face' 를 넣어 모두 1회에 통과",
+      "이미지: 모모 뒤 '정사각형 창문' 은 3번 실패 (세로로 긴 창+위 잘림 ×2, 가로 창살·뒤에 창 하나 더 ×1). 4번째 'small square window about as big as her head … one single undivided glass pane with no cross bars, no muntins … the only window in the picture' + 'full body … in the centre of the frame' 로 통과 — 그래도 가로:세로 ≈ 0.85·약간 비스듬함 (재생성 한도 4회 소진으로 승인)",
+      "이미지: 'both paws together … ready to clap' 은 두 번 다 앞발이 노란 단추 2개를 가림 (ep06 c02 와 같음) — 'in front of her tummy … buttons clearly visible' 문구도 무시됨. c02 는 그대로 승인 (박수 동작 컷). 단추가 꼭 보여야 하면 'both arms relaxed down at her sides' 로 시작",
+      "이미지: c15 침실 창의 별이 끈에 매달린 장식처럼 그려짐 (하늘에 흐린 점 몇 개) — 별 모양·세트는 맞아 승인. c20 눈 비율 0.67 (넓은 얼굴 클로즈업, 크롭으로 보면 정상)",
+      "클립: wan2_7 이 'traces a circle / a heart in the air' 를 빛나는 원 고리(c06)·분홍 하트 선(c20)으로 공중에 그려 줌 — 도형 학습에 잘 맞아 승인. 단어 카드(왼쪽)와 일부 겹침",
+      "클립: c04 (재사용 c11·c18·c25) 는 프롬프트에 'beak closed' 가 있어도 Ducky 가 메아리 '(Draw a shape!)' 와 'We love shapes, hooray!' 에서 부리를 벌려 같이 노래함 — 모모도 끝까지 노래해서(입 닫힘 0.27초) 승인. 둘이 같이 부르는 후렴은 괜찮지만, 모모만 부르게 하려면 Ducky 를 화면 밖으로",
+      "클립: c15 'points up toward the round window … without turning her head' → 1.2~1.8초에 고개를 창 쪽으로 30° 돌림 (얼굴은 3/4 로 보이고 눈·귀 정상, 입 계속 움직임) — 승인",
+      "MCP: wan2_7 배치 항목에 'IN THE DARK' 프리셋 추천(submission_failed, 과금 없음)이 4번 — declined_preset_id 24bae836-2c4a-48e0-89b6-49fcc0b21612 로 다시 보내면 통과",
+      "조립: 인트로 덕킹 구간이 intro.wav 전체 길이(3.58초, 목소리는 0.06~2.04초)라 첫 노래 줄 'Circle, square, triangle!'(2.22~3.97초)이 같은 녹음의 후렴 2~4보다 약 7 dB 작음 (빌드 측정 −5.0 dB vs +2.2 dB, 원곡 대비). 고치려면 momolib/audio.build_narration 의 speech span 을 voiced_bounds 로 자르거나 song.duck_db 를 줄일 것 (사용자 결정)"
+    ],
+    "cut_notes": [
+      "c06 cut_at 17.415: ‘A circle!’ 발성 시작 17.50 (스탬프 17.47) − 0.085 → 창 4.00초 (4초 클립)",
+      "c08 cut_at 25.09: ‘A square!’ 발성 시작 25.17 − 0.08 → 창 4.00초 (끝 29.09 고정)",
+      "c09 cut_at 29.09: 1절 ‘four!’ 가 29.08 까지 이어짐 (29.015 는 음 안) — 끝난 뒤 ‘Circle’ s 소리(29.10) 직전",
+      "c21 cut_at 75.19: 메아리 ‘you!’ 가 쉼 없이 ‘Hello’ 로 이어짐 (75.076 은 ‘you’ 안) — 음높이가 바뀌는 75.20 직전",
+      "c09 clip_from c02 at 0.098 (보컬 스템 상관 r=0.773, 원본 창 시작이 이 후렴 28.99s)",
+      "c10 clip_from c03 at 0.019 (보컬 스템 상관 r=0.894, 원본 창 시작이 이 후렴 33.02s)",
+      "c11 clip_from c04 at 0.0 (보컬 스템 상관 r=0.933, 원본 창 시작이 이 후렴 36.79s)",
+      "c16 clip_from c02 at 0.0 (보컬 스템 상관 r=0.923, 원본 창 시작이 이 후렴 55.81s)",
+      "c17 clip_from c03 at 0.0 (보컬 스템 상관 r=0.912, 원본 창 시작이 이 후렴 59.83s)",
+      "c18 clip_from c04 at 0.003 (보컬 스템 상관 r=0.915, 원본 창 시작이 이 후렴 63.59s)",
+      "c23 clip_from c02 at 0.0 (보컬 스템 상관 r=0.825, 원본 창 시작이 이 후렴 84.44s)",
+      "c24 clip_from c03 at 0.018 (보컬 스템 상관 r=0.888, 원본 창 시작이 이 후렴 88.43s)",
+      "c25 clip_from c04 at 0.018 (보컬 스템 상관 r=0.918, 원본 창 시작이 이 후렴 92.17s)",
+      "c03·c10·c17·c24 cut_at (‘Shapes’ − 0.1): 후렴 메아리 ‘(heart!)’ 가 6.02–6.26 에 끝나는데 다음 줄 ‘Shapes’ 의 sh 가 6.18 에 겹쳐 시작 (보컬 스템 4–10 kHz·pyin) — 쉼이 없어 리드의 첫 소리(sh) 직전에 자른다. 립싱크 창은 메아리 꼬리를 포함",
+      "c21 cut_at 75.19 < ‘Hello’ 스탬프 75.176: 실제 ‘Hel-’ 은 75.21 (pyin G→B) — 스탬프가 0.03초 이름",
+      "c26 cut_at 95.9: 마지막 ‘hooray!’ 가 95.70 에 −18 dB 아래로 (잔향 96.0) — 그 뒤 박",
+      "영상 끝 = 마디 54 (105.00s): 노래 끝(95.7) 뒤 반주 9.1초, 1.2초 페이드 (Suno 아웃트로 13초, 마지막 화음 106.9)",
+      "검토(2026-10-01): 절의 s/sh 단어 7개(sun, shape, circle ×3, square, star)가 모음에 찍혀 자음(4–10 kHz 소음)보다 0.12–0.17초 늦게 켜짐 → 자음 시작으로 당김 (scratchpad ep08/review/fric_fix.py). c06·c08 카드 at 도 새 단어 시작에 맞춤",
+      "검토: 경계·재사용 배치(상관 재계산 0.00~−0.01초), 재사용 길이 ≤ 원본 창, 창 ≥ 2초, 9 립싱크 모션 문구·Ducky beak closed·Momo 마지막, 카드 위치(사물 반대쪽) 확인. c05·c12·c19 컷은 앞 후렴 'hooray!' 잔향(−25 dB 안팎) 꼬리 안 — 다음 줄까지 쉼이 없어 −0.1 규칙대로 둠"
+    ]
   },
   "cuts": [
     {
       "id": "c01",
       "scene": 1,
       "type": "L",
+      "bars": 1,
       "library_clip": "intro_wave",
       "library_audio": "intro",
+      "lead": 0.0,
       "narration": {
         "en": "Hi friends! It's Momo!"
       },
@@ -69,17 +118,2748 @@
     },
     {
       "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, a little left of centre, facing the viewer, both feet flat on the grass, both paws together in front of her tummy ready to clap, below the two small yellow buttons on the shoulder straps, which stay clearly visible, on the right side of the frame five chunky flat foam shape cut-outs stand upright in one row on the grass, each about knee high: a red circle, a blue square, a green triangle, a yellow five-pointed star and a pink heart, plain smooth solid-colour shapes with no faces, no eyes and no mouths, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together once on each of 'circle, square, triangle' and then sways gently from side to side on 'star and heart', both feet stay on the grass, the five foam shapes stay completely still in their row, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 5
+      },
+      "cut_at": 2.122,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "338641d7-7608-4518-bf79-e2903d4fe8a7",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060110_338641d7-7608-4518-bf79-e2903d4fe8a7.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "e5c21b8c-3f67-4522-9e88-e9d96c345fd6",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_055840_e5c21b8c-3f67-4522-9e88-e9d96c345fd6.png",
+              "status": "rejected",
+              "reason": "모양 5개에 눈·입(얼굴)이 그려짐 (plain 무시 — 립싱크 때 같이 노래할 위험), 박수 준비 앞발이 노란 단추 2개를 가림",
+              "at": "2026-10-01T05:58Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "338641d7-7608-4518-bf79-e2903d4fe8a7",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060110_338641d7-7608-4518-bf79-e2903d4fe8a7.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:01Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "0fd89835-5e7d-4c0d-b01c-7b41d527c2d5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062035_0fd89835-5e7d-4c0d-b01c-7b41d527c2d5.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "0fd89835-5e7d-4c0d-b01c-7b41d527c2d5",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062035_0fd89835-5e7d-4c0d-b01c-7b41d527c2d5.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:20Z",
+              "credits": 7.5,
+              "start_image": "338641d7-7608-4518-bf79-e2903d4fe8a7"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "adc287b9-9c50-4fc4-9758-a96833302c74",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            2.122,
+            6.172
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium-full shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, facing the viewer, both feet flat on the grass, both paws at chest height slightly open, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, a few small flowers in the grass behind her",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. On 'look around' Momo's eyes glance to one side and then to the other with a tiny head tilt while her face stays toward the viewer, on 'everywhere' she opens both paws out to the sides at chest height and sways gently, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 6.172,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "68ec82b4-130b-4c80-bda0-87f215057f43",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060109_68ec82b4-130b-4c80-bda0-87f215057f43.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "68ec82b4-130b-4c80-bda0-87f215057f43",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060109_68ec82b4-130b-4c80-bda0-87f215057f43.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:01Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "87585410-d476-4eff-a882-1478f671c7b0",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062034_87585410-d476-4eff-a882-1478f671c7b0.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "87585410-d476-4eff-a882-1478f671c7b0",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062034_87585410-d476-4eff-a882-1478f671c7b0.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:20Z",
+              "credits": 6.0,
+              "start_image": "68ec82b4-130b-4c80-bda0-87f215057f43"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "62c35f87-ef43-4675-a535-5da8edded5ca",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            6.172,
+            9.939
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, full body, both facing the viewer, Momo standing with both feet flat on the grass and one paw raised in front of her chest, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin, Ducky standing on the grass beside her with its tiny wings slightly raised, Ducky with big round eyes, beak closed in a smile",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky hops happily in place beside her and flaps its tiny wings with its beak closed; Momo traces a big circle in the air in front of her chest with one paw, then gives one big clap at chest height on 'hooray' with her eyes open, both feet stay on the grass, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 9.939,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "0c88c339-5c2b-4db2-ac48-e568b6338203",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060109_0c88c339-5c2b-4db2-ac48-e568b6338203.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "0c88c339-5c2b-4db2-ac48-e568b6338203",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060109_0c88c339-5c2b-4db2-ac48-e568b6338203.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:01Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "235fe936-c07d-4f47-858a-69688f830cfc",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062056_235fe936-c07d-4f47-858a-69688f830cfc.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "235fe936-c07d-4f47-858a-69688f830cfc",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062056_235fe936-c07d-4f47-858a-69688f830cfc.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:21Z",
+              "credits": 6.0,
+              "start_image": "0c88c339-5c2b-4db2-ac48-e568b6338203"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "3ecdfec8-a42c-49e4-a071-335c550e8d1e",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            9.939,
+            13.77
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "one big round bright-yellow sun, a smooth perfect disc with a soft warm glow, no rays and no face, high in the middle of a clear bright blue sky, two small white fluffy clouds far to the left and right sides, the soft grass and the small white picket fence of a sunny green garden along the bottom of the frame",
+      "motion": "the sun and the two clouds stay completely still in place, the warm glow around the sun pulses softly and tiny sparkles twinkle around it, the grass sways gently",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 13.77,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "bdd3e7f2-dddc-4d5a-922d-516c1af2a8c3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060343_bdd3e7f2-dddc-4d5a-922d-516c1af2a8c3.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "bdd3e7f2-dddc-4d5a-922d-516c1af2a8c3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060343_bdd3e7f2-dddc-4d5a-922d-516c1af2a8c3.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:03Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "71710e86-1c9b-4cfe-b2a6-15ea0c90727b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062034_71710e86-1c9b-4cfe-b2a6-15ea0c90727b.mp4",
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "71710e86-1c9b-4cfe-b2a6-15ea0c90727b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062034_71710e86-1c9b-4cfe-b2a6-15ea0c90727b.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:20Z",
+              "credits": 4.0,
+              "start_image": "bdd3e7f2-dddc-4d5a-922d-516c1af2a8c3"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium-full shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, a little right of centre, facing the viewer, both feet flat on the grass, the same round bright-yellow sun small in the upper right corner of the sky, a plain glowing disc with no face, one paw raised in front of her chest, huge round sparkly eyes with big white highlights, cheerful smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo traces a big circle in the air in front of her chest with one paw, round again on each 'round', and nods a little on every 'round', both feet stay on the grass, the sun stays still and glows softly, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "card": {
+        "word": "CIRCLE",
+        "text": "the sun",
+        "pos": "left",
+        "at": 0.19
+      },
+      "cut_at": 17.415,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "5be6d20b-3f5b-4195-aba5-c8cdd1d74580",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060344_5be6d20b-3f5b-4195-aba5-c8cdd1d74580.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "5be6d20b-3f5b-4195-aba5-c8cdd1d74580",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060344_5be6d20b-3f5b-4195-aba5-c8cdd1d74580.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:03Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "e55ef853-59c2-4721-b157-d5200a254443",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062056_e55ef853-59c2-4721-b157-d5200a254443.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "e55ef853-59c2-4721-b157-d5200a254443",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062056_e55ef853-59c2-4721-b157-d5200a254443.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:21Z",
+              "credits": 6.0,
+              "start_image": "5be6d20b-3f5b-4195-aba5-c8cdd1d74580"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "31b9909b-ac07-4ed4-9797-7eb18d2d13ad",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            17.415,
+            21.413
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      },
+      "lip_shift": 0.067
+    },
+    {
+      "id": "c07",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "close-up of one square window set in a soft mint-green kitchen wall, exactly as wide as it is tall, with a thick white wooden frame and one single clear glass pane with no cross bars, the bright blue sky and one small white cloud outside, warm morning light, the bright pastel kitchen softly blurred around it",
+      "motion": "the window frame stays completely still, the small white cloud outside drifts slowly, a soft sunbeam sparkles on the glass",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 21.413,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "ca0959bd-2fb8-43cd-b4a7-c78aab68c482",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060344_ca0959bd-2fb8-43cd-b4a7-c78aab68c482.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ca0959bd-2fb8-43cd-b4a7-c78aab68c482",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060344_ca0959bd-2fb8-43cd-b4a7-c78aab68c482.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:03Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "8c5b88e1-f976-40c0-99a5-78903dfeae10",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062034_8c5b88e1-f976-40c0-99a5-78903dfeae10.mp4",
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "8c5b88e1-f976-40c0-99a5-78903dfeae10",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062034_8c5b88e1-f976-40c0-99a5-78903dfeae10.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:20Z",
+              "credits": 4.0,
+              "start_image": "ca0959bd-2fb8-43cd-b4a7-c78aab68c482"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing in the centre of the frame in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, facing the viewer, both feet flat on the wooden floor, on the right side of the frame a small square window about as big as her head hangs on the mint-green wall behind her at the height of her head, exactly as wide as it is tall, the whole window fully visible with plenty of plain mint-green wall above it and below it, a thick white wooden frame around one single undivided glass pane with no cross bars, no muntins and no dividers, showing the blue sky, it is the only window in the picture, one paw raised in front of her chest, huge round sparkly eyes with big white highlights, happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo traces a square in the air in front of her chest with one paw, one side on each number, and nods on every number, both feet stay on the floor, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "card": {
+        "word": "SQUARE",
+        "text": "the window",
+        "pos": "left",
+        "at": 0.15
+      },
+      "cut_at": 25.09,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "388dd7fe-79bc-4097-b330-202f484b7b69",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_061425_388dd7fe-79bc-4097-b330-202f484b7b69.png",
+          "attempts": 4,
+          "credits": 8.0,
+          "history": [
+            {
+              "job_id": "0611214c-4bca-4d1c-9c48-9c08bf90fecd",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060526_0611214c-4bca-4d1c-9c48-9c08bf90fecd.png",
+              "status": "rejected",
+              "reason": "뒤 창문이 정사각형이 아님 (세로로 긴 직사각형, 위가 화면 밖으로 잘림) — SQUARE 카드 컷",
+              "at": "2026-10-01T06:05Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "53387d24-294d-4f53-8c10-7ff6cb6141bb",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060747_53387d24-294d-4f53-8c10-7ff6cb6141bb.png",
+              "status": "rejected",
+              "reason": "창문이 또 세로로 긴 직사각형 + 가로 창살, 위가 화면 밖으로 잘림 (정사각형 아님)",
+              "at": "2026-10-01T06:07Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "5d86a9cb-c5d2-4e2f-a1e1-0d417dfd4315",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060957_5d86a9cb-c5d2-4e2f-a1e1-0d417dfd4315.png",
+              "status": "rejected",
+              "reason": "창문은 정사각형이 됐지만 가로 창살(2칸), 뒤에 세로로 긴 창문이 하나 더 보임, 모모가 무릎 위로 잘림·왼쪽에 서서 왼쪽 SQUARE 카드와 겹침",
+              "at": "2026-10-01T06:10Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "388dd7fe-79bc-4097-b330-202f484b7b69",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_061425_388dd7fe-79bc-4097-b330-202f484b7b69.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:14Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "27ba5f34-a6a3-4561-ad07-f38dfeb301ed",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062056_27ba5f34-a6a3-4561-ad07-f38dfeb301ed.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "27ba5f34-a6a3-4561-ad07-f38dfeb301ed",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062056_27ba5f34-a6a3-4561-ad07-f38dfeb301ed.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:21Z",
+              "credits": 6.0,
+              "start_image": "388dd7fe-79bc-4097-b330-202f484b7b69"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "d702e62b-ae2f-4d44-82be-a20a6a52ff0f",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            25.09,
+            29.09
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, a little left of centre, facing the viewer, both feet flat on the grass, both paws together in front of her tummy ready to clap, below the two small yellow buttons on the shoulder straps, which stay clearly visible, on the right side of the frame five chunky flat foam shape cut-outs stand upright in one row on the grass, each about knee high: a red circle, a blue square, a green triangle, a yellow five-pointed star and a pink heart, plain smooth solid-colour shapes with no faces, no eyes and no mouths, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together once on each of 'circle, square, triangle' and then sways gently from side to side on 'star and heart', both feet stay on the grass, the five foam shapes stay completely still in their row, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.098
+      },
+      "lipsync_ok": true,
+      "cut_at": 29.09
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium-full shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, facing the viewer, both feet flat on the grass, both paws at chest height slightly open, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, a few small flowers in the grass behind her",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. On 'look around' Momo's eyes glance to one side and then to the other with a tiny head tilt while her face stays toward the viewer, on 'everywhere' she opens both paws out to the sides at chest height and sways gently, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.019
+      },
+      "lipsync_ok": true,
+      "cut_at": 33.041
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, full body, both facing the viewer, Momo standing with both feet flat on the grass and one paw raised in front of her chest, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin, Ducky standing on the grass beside her with its tiny wings slightly raised, Ducky with big round eyes, beak closed in a smile",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky hops happily in place beside her and flaps its tiny wings with its beak closed; Momo traces a big circle in the air in front of her chest with one paw, then gives one big clap at chest height on 'hooray' with her eyes open, both feet stay on the grass, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 36.789
+    },
+    {
+      "id": "c12",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "close-up of one plain triangle slice of watermelon with no face, standing point-up on a small plain white plate on a small round wooden table, bright red flesh with a few black seeds and a green rind along the bottom edge, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, warm morning light",
+      "motion": "the watermelon slice and the plate stay completely still, a juicy shine glints on the red flesh and tiny sparkles twinkle around it",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 40.594,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "ae5e92ef-1a1a-4d03-ac70-09c3ee467c22",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060526_ae5e92ef-1a1a-4d03-ac70-09c3ee467c22.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ae5e92ef-1a1a-4d03-ac70-09c3ee467c22",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060526_ae5e92ef-1a1a-4d03-ac70-09c3ee467c22.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:05Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "27543a0d-bba6-4ab3-a468-82b2eaaf48b3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062034_27543a0d-bba6-4ab3-a468-82b2eaaf48b3.mp4",
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "27543a0d-bba6-4ab3-a468-82b2eaaf48b3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062034_27543a0d-bba6-4ab3-a468-82b2eaaf48b3.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:20Z",
+              "credits": 4.0,
+              "start_image": "ae5e92ef-1a1a-4d03-ac70-09c3ee467c22"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot from the waist up standing behind the small round wooden table in a bright cheerful pastel kitchen with soft mint-green cabinets, warm morning light, facing the viewer, one plain triangle slice of watermelon with no face, standing point-up on a small plain white plate on the table in front of her on the left side, one paw raised in front of her chest, huge round sparkly eyes with big white highlights, happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo traces a triangle in the air in front of her chest with one paw, one side on each number, and nods on every number, the watermelon slice stays still on its plate, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "card": {
+        "word": "TRIANGLE",
+        "text": "the watermelon",
+        "pos": "right",
+        "at": 0.25
+      },
+      "cut_at": 44.261,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "c0664999-d5d8-4221-8d48-18c02d7eaefd",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060526_c0664999-d5d8-4221-8d48-18c02d7eaefd.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "c0664999-d5d8-4221-8d48-18c02d7eaefd",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060526_c0664999-d5d8-4221-8d48-18c02d7eaefd.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:05Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "3099c2ac-00bd-4de9-8ddc-a08929068c99",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062145_3099c2ac-00bd-4de9-8ddc-a08929068c99.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "3099c2ac-00bd-4de9-8ddc-a08929068c99",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062145_3099c2ac-00bd-4de9-8ddc-a08929068c99.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:21Z",
+              "credits": 6.0,
+              "start_image": "c0664999-d5d8-4221-8d48-18c02d7eaefd"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "2d2799f0-6bf6-418c-aa21-88d0cb02816e",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            44.261,
+            48.227
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "one big plain bright-yellow five-pointed star with softly rounded points and no face, alone in the middle of a calm deep-blue night sky with a soft warm glow around it, no other stars, no moon",
+      "motion": "the star stays completely still in place, its soft glow pulses gently and tiny sparkles twinkle around it, the sky stays calm",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 48.227,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "62d728bd-f6fa-4a12-afb3-8b5273b4889b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060748_62d728bd-f6fa-4a12-afb3-8b5273b4889b.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "62d728bd-f6fa-4a12-afb3-8b5273b4889b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060748_62d728bd-f6fa-4a12-afb3-8b5273b4889b.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:07Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "34adb893-60dd-4a29-b3c0-a39dfbda745b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062325_34adb893-60dd-4a29-b3c0-a39dfbda745b.mp4",
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "34adb893-60dd-4a29-b3c0-a39dfbda745b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062325_34adb893-60dd-4a29-b3c0-a39dfbda745b.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:23Z",
+              "credits": 4.0,
+              "start_image": "62d728bd-f6fa-4a12-afb3-8b5273b4889b"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c15",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium-full shot standing on the fluffy cream rug in Momo's cozy bedroom at night: soft lavender-blue walls, a small round window on the left side of the frame beside her and not behind her head, the window showing a deep-blue night sky with one big plain bright-yellow five-pointed star with no face and no moon and no other stars, a small white wooden bed with a soft pale-pink blanket and a round white pillow, a fluffy cream rug, a little bedside table with a warm glowing night-light; warm soft lamplight keeps the room bright and cozy, Momo brightly lit by the warm lamplight, facing the viewer, both feet flat on the rug, both paws at chest height, huge round sparkly eyes with big white highlights, happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. On 'a star' Momo points up toward the round window with one paw at shoulder height below the ear without turning her head, then on 'shine, shine, shine' she holds both round paws up at chest height and gently wiggles them like little twinkling lights and sways, both feet stay on the rug, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "card": {
+        "word": "STAR",
+        "text": "in the sky",
+        "pos": "right",
+        "at": 0.17
+      },
+      "cut_at": 51.893,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "057cab71-57d8-4b7f-bdf1-e3a6c9260399",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060747_057cab71-57d8-4b7f-bdf1-e3a6c9260399.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "057cab71-57d8-4b7f-bdf1-e3a6c9260399",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060747_057cab71-57d8-4b7f-bdf1-e3a6c9260399.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:07Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "d248259b-4be7-4187-b4e1-3f1ee3f260ed",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062135_d248259b-4be7-4187-b4e1-3f1ee3f260ed.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "d248259b-4be7-4187-b4e1-3f1ee3f260ed",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062135_d248259b-4be7-4187-b4e1-3f1ee3f260ed.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:21Z",
+              "credits": 6.0,
+              "start_image": "057cab71-57d8-4b7f-bdf1-e3a6c9260399"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "9b0e1271-d05b-48b0-b6d1-e37d22b7f52d",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            51.893,
+            55.812
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, a little left of centre, facing the viewer, both feet flat on the grass, both paws together in front of her tummy ready to clap, below the two small yellow buttons on the shoulder straps, which stay clearly visible, on the right side of the frame five chunky flat foam shape cut-outs stand upright in one row on the grass, each about knee high: a red circle, a blue square, a green triangle, a yellow five-pointed star and a pink heart, plain smooth solid-colour shapes with no faces, no eyes and no mouths, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together once on each of 'circle, square, triangle' and then sways gently from side to side on 'star and heart', both feet stay on the grass, the five foam shapes stay completely still in their row, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 55.812
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium-full shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, facing the viewer, both feet flat on the grass, both paws at chest height slightly open, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, a few small flowers in the grass behind her",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. On 'look around' Momo's eyes glance to one side and then to the other with a tiny head tilt while her face stays toward the viewer, on 'everywhere' she opens both paws out to the sides at chest height and sways gently, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 59.832
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, full body, both facing the viewer, Momo standing with both feet flat on the grass and one paw raised in front of her chest, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin, Ducky standing on the grass beside her with its tiny wings slightly raised, Ducky with big round eyes, beak closed in a smile",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky hops happily in place beside her and flaps its tiny wings with its beak closed; Momo traces a big circle in the air in front of her chest with one paw, then gives one big clap at chest height on 'hooray' with her eyes open, both feet stay on the grass, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.003
+      },
+      "lipsync_ok": true,
+      "cut_at": 63.592
+    },
+    {
+      "id": "c19",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "close-up of one big heart-shaped cookie, golden-brown with smooth plain pink icing, no face and no decorations, on a small plain white plate on a small round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, warm morning light",
+      "motion": "the cookie and the plate stay completely still, tiny sparkles twinkle around the cookie and a soft warm light glows",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "cut_at": 67.398,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "fc8b55bd-0fc6-4330-8ba0-02826fc275ae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060957_fc8b55bd-0fc6-4330-8ba0-02826fc275ae.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "fc8b55bd-0fc6-4330-8ba0-02826fc275ae",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060957_fc8b55bd-0fc6-4330-8ba0-02826fc275ae.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:10Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "297431d7-e533-4374-b7ee-96e11bbdf2f4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062326_297431d7-e533-4374-b7ee-96e11bbdf2f4.mp4",
+          "attempts": 1,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "297431d7-e533-4374-b7ee-96e11bbdf2f4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062326_297431d7-e533-4374-b7ee-96e11bbdf2f4.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:23Z",
+              "credits": 4.0,
+              "start_image": "fc8b55bd-0fc6-4330-8ba0-02826fc275ae"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c20",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium shot from the waist up standing behind the small round wooden table in a bright cheerful pastel kitchen with soft mint-green cabinets, warm morning light, facing the viewer, one big heart-shaped cookie with smooth plain pink icing and no face on a small plain white plate on the table in front of her on the right side, both paws together in front of her tummy just above the table, below the two small yellow buttons on the shoulder straps, which stay clearly visible, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. On 'a heart' Momo traces a heart in the air in front of her chest with one paw, then on 'I love you' she presses both paws softly on her chest over her heart without crossing her arms and sways with a big smile, her eyes stay open, the cookie stays still on its plate, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 5
+      },
+      "card": {
+        "word": "HEART",
+        "text": "the cookie",
+        "pos": "left",
+        "at": 0.42
+      },
+      "cut_at": 70.985,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "bb7995f3-052f-4c15-9364-ee1fd26de44c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060957_bb7995f3-052f-4c15-9364-ee1fd26de44c.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "bb7995f3-052f-4c15-9364-ee1fd26de44c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_060957_bb7995f3-052f-4c15-9364-ee1fd26de44c.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:10Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "e9fd0b50-a76a-4144-bd64-350fb551beed",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062325_e9fd0b50-a76a-4144-bd64-350fb551beed.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "e9fd0b50-a76a-4144-bd64-350fb551beed",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062325_e9fd0b50-a76a-4144-bd64-350fb551beed.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:23Z",
+              "credits": 7.5,
+              "start_image": "bb7995f3-052f-4c15-9364-ee1fd26de44c"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "52620e4d-b42a-4292-bc8f-a563ba3cbc74",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            70.985,
+            75.19
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      }
+    },
+    {
+      "id": "c21",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, full body, both facing the viewer, a round ring of small white daisies lying flat on the grass in front of Ducky, Momo standing with both feet flat on the grass and one paw raised beside her shoulder below the ear in a little wave, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin, Ducky standing on the grass beside her with one tiny wing raised, Ducky with big round eyes, beak closed in a smile",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky waves one tiny wing and keeps its little beak closed; Momo waves one paw beside her shoulder below the ear while her face stays toward the viewer, then points one paw down at the ring of daisies, both feet stay on the grass, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "lipsync": true,
+      "clip_model": "wan2_7",
+      "clip_seconds": {
+        "en": 4
+      },
+      "cut_at": 75.19,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "7742550f-0cca-41d8-aaef-a459582a7595",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_061152_7742550f-0cca-41d8-aaef-a459582a7595.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "7742550f-0cca-41d8-aaef-a459582a7595",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_061152_7742550f-0cca-41d8-aaef-a459582a7595.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:11Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_en": {
+          "status": "approved",
+          "job_id": "63f6590b-70c0-4200-bab6-3b2d7bc843eb",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062326_63f6590b-70c0-4200-bab6-3b2d7bc843eb.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "63f6590b-70c0-4200-bab6-3b2d7bc843eb",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062326_63f6590b-70c0-4200-bab6-3b2d7bc843eb.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:23Z",
+              "credits": 6.0,
+              "start_image": "7742550f-0cca-41d8-aaef-a459582a7595"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "1ae6d6be-20f0-4123-a5dc-1d84000e7a00",
+          "track_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+          "window": [
+            75.19,
+            78.837
+          ],
+          "at": "2026-10-01T06:20Z"
+        }
+      }
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "type": "V",
+      "bars": 3,
+      "image_prompt": "[Ducky] alone, full body, standing on the soft grass inside a round ring of small white daisies lying flat on the grass, in a sunny green garden with a small white picket fence and a bright blue sky, happy face, tiny wings slightly raised, beak closed, no other animals",
+      "motion": "Ducky hops around along the ring of daisies in a circle, flapping its tiny wings happily, the daisies stay still in their ring, sparkles twinkle and the grass sways gently",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 6,
+      "cut_at": 78.837,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "27ffc003-6d26-404e-8b46-481adce8f386",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_061151_27ffc003-6d26-404e-8b46-481adce8f386.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "27ffc003-6d26-404e-8b46-481adce8f386",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_061151_27ffc003-6d26-404e-8b46-481adce8f386.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:11Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "ec861fc6-d674-4957-998a-70e840efaad4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062326_ec861fc6-d674-4957-998a-70e840efaad4.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "ec861fc6-d674-4957-998a-70e840efaad4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_062326_ec861fc6-d674-4957-998a-70e840efaad4.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T06:23Z",
+              "credits": 6.0,
+              "start_image": "27ffc003-6d26-404e-8b46-481adce8f386"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c23",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] full body shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, a little left of centre, facing the viewer, both feet flat on the grass, both paws together in front of her tummy ready to clap, below the two small yellow buttons on the shoulder straps, which stay clearly visible, on the right side of the frame five chunky flat foam shape cut-outs stand upright in one row on the grass, each about knee high: a red circle, a blue square, a green triangle, a yellow five-pointed star and a pink heart, plain smooth solid-colour shapes with no faces, no eyes and no mouths, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo claps her paws together once on each of 'circle, square, triangle' and then sways gently from side to side on 'star and heart', both feet stay on the grass, the five foam shapes stay completely still in their row, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      },
+      "lipsync_ok": true,
+      "cut_at": 84.442
+    },
+    {
+      "id": "c24",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] medium-full shot standing on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, facing the viewer, both feet flat on the grass, both paws at chest height slightly open, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, a few small flowers in the grass behind her",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. On 'look around' Momo's eyes glance to one side and then to the other with a tiny head tilt while her face stays toward the viewer, on 'everywhere' she opens both paws out to the sides at chest height and sways gently, both feet stay on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.018
+      },
+      "lipsync_ok": true,
+      "cut_at": 88.45
+    },
+    {
+      "id": "c25",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft grass of a sunny green garden with a small white picket fence and a bright blue sky, full body, both facing the viewer, Momo standing with both feet flat on the grass and one paw raised in front of her chest, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin, Ducky standing on the grass beside her with its tiny wings slightly raised, Ducky with big round eyes, beak closed in a smile",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky hops happily in place beside her and flaps its tiny wings with its beak closed; Momo traces a big circle in the air in front of her chest with one paw, then gives one big clap at chest height on 'hooray' with her eyes open, both feet stay on the grass, Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.018
+      },
+      "lipsync_ok": true,
+      "cut_at": 92.187
+    },
+    {
+      "id": "c26",
       "scene": 5,
       "type": "L",
+      "bars": 4,
       "library_clip": "outro_bye",
       "library_audio": "outro",
+      "lead": 0.3,
       "narration": {
         "en": "Bye-bye, friends! See you next time!"
       },
       "keyword": {
         "en": "",
         "ko": ""
-      }
+      },
+      "fill": "loop",
+      "cut_at": 95.9
     }
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:96fbf12d886f",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_song_96fbf12d.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+      "tool": "suno",
+      "source_file": "song.wav",
+      "note": "Suno v2 Shapes Everywhere with Momo",
+      "duration": 109.92,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:96fbf12d886f",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_song_96fbf12d.flac",
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T05:26Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 125.1718,
+        "beat0": 0.5079,
+        "downbeat0": 1.4666,
+        "confidence": 1.663,
+        "downbeats": [
+          1.4666,
+          3.384,
+          5.3013,
+          7.2187,
+          9.1361,
+          11.0534,
+          12.9708,
+          14.8882,
+          16.8055,
+          18.7229,
+          20.6402,
+          22.5576,
+          24.475,
+          26.3923,
+          28.3097,
+          30.2271,
+          32.1444,
+          34.0618,
+          35.9792,
+          37.8965,
+          39.8139,
+          41.7313,
+          43.6486,
+          45.566,
+          47.4834,
+          49.4007,
+          51.3181,
+          53.2354,
+          55.1528,
+          57.0702,
+          58.9875,
+          60.9049,
+          62.8223,
+          64.7396,
+          66.657,
+          68.5744,
+          70.4917,
+          72.4091,
+          74.3265,
+          76.2438,
+          78.1612,
+          80.0786,
+          81.9959,
+          83.9133,
+          85.8307,
+          87.748,
+          89.6654,
+          91.5827,
+          93.5001,
+          95.4175,
+          97.3348,
+          99.2522,
+          101.1696,
+          103.0869,
+          105.0043,
+          106.9217,
+          108.839
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            -2.3,
+            5.6,
+            11.8,
+            -4.5,
+            -42.3,
+            43.2,
+            -9.3
+          ],
+          "trend_ms": 0.0
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "63f3f68f5bb2011a831e930e007042b2025e2724",
+        "moved": 61,
+        "loose": 47,
+        "flags": [],
+        "chorus_fix": "15 chorus word starts set to one checked chorus template (the 4 choruses are one recording); re-run scratchpad ep08/chorus_fix.py after song_track.py lyrics",
+        "fric_fix": "7 verse s/sh-word starts moved from the vowel to the sung consonant (sun, shape, circle x3, square, star); re-run scratchpad ep08/review/fric_fix.py --write after chorus_fix.py"
+      },
+      "lyrics_sha1": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37"
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:63f3f68f5bb2",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_song_vocals_63f3f68f.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "63f3f68f5bb2011a831e930e007042b2025e2724",
+      "of": "96fbf12d886f37ac4e7fa26c1ad72fb0dcf82f37",
+      "history": [
+        {
+          "job_id": "local:63f3f68f5bb2",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_song_vocals_63f3f68f.flac",
+          "status": "approved",
+          "reason": null,
+          "at": "2026-10-01T05:26Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 125.1718,
+    "lyrics": [
+      {
+        "text": "Circle, square, triangle!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Circle,",
+            2.222,
+            2.75,
+            2.22
+          ],
+          [
+            "square,",
+            2.75,
+            3.09,
+            2.75
+          ],
+          [
+            "triangle!",
+            3.09,
+            3.973,
+            3.09
+          ]
+        ]
+      },
+      {
+        "text": "Star and heart! Star and heart!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Star",
+            4.112,
+            4.806,
+            4.09
+          ],
+          [
+            "and",
+            4.806,
+            5.165,
+            4.81
+          ],
+          [
+            "heart!",
+            5.28,
+            5.435,
+            5.28
+          ],
+          [
+            "Star",
+            5.554,
+            5.84,
+            5.55
+          ],
+          [
+            "and",
+            5.84,
+            6.083,
+            5.84
+          ],
+          [
+            "heart!",
+            6.083,
+            6.272,
+            6.02
+          ]
+        ]
+      },
+      {
+        "text": "Shapes, shapes, look around!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Shapes,",
+            6.272,
+            6.572,
+            6.27
+          ],
+          [
+            "shapes,",
+            6.581,
+            7.141,
+            6.57
+          ],
+          [
+            "look",
+            7.145,
+            7.425,
+            7.13
+          ],
+          [
+            "around!",
+            7.425,
+            7.983,
+            7.41
+          ]
+        ]
+      },
+      {
+        "text": "Shapes are everywhere!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Shapes",
+            7.983,
+            8.422,
+            7.97
+          ],
+          [
+            "are",
+            8.422,
+            8.886,
+            8.41
+          ],
+          [
+            "everywhere!",
+            8.886,
+            9.55,
+            8.89
+          ]
+        ]
+      },
+      {
+        "text": "Draw a shape! Draw a shape!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Draw",
+            10.039,
+            10.558,
+            10.02
+          ],
+          [
+            "a",
+            10.558,
+            10.858,
+            10.56
+          ],
+          [
+            "shape!",
+            10.862,
+            11.246,
+            10.86
+          ],
+          [
+            "Draw",
+            11.34,
+            11.426,
+            11.34
+          ],
+          [
+            "a",
+            11.52,
+            11.62,
+            11.52
+          ],
+          [
+            "shape!",
+            11.62,
+            12.004,
+            11.62
+          ]
+        ]
+      },
+      {
+        "text": "We love shapes, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "We",
+            12.004,
+            12.22,
+            11.99
+          ],
+          [
+            "love",
+            12.22,
+            12.38,
+            12.22
+          ],
+          [
+            "shapes,",
+            12.38,
+            12.633,
+            12.38
+          ],
+          [
+            "hooray!",
+            12.633,
+            13.536,
+            12.62
+          ]
+        ]
+      },
+      {
+        "text": "Look at the sun!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Look",
+            13.87,
+            14.174,
+            13.72
+          ],
+          [
+            "at",
+            14.174,
+            14.554,
+            14.08
+          ],
+          [
+            "the",
+            14.603,
+            14.72,
+            14.46
+          ],
+          [
+            "sun!",
+            14.72,
+            15.227,
+            14.74
+          ]
+        ]
+      },
+      {
+        "text": "What shape is it?",
+        "section": "Verse 1",
+        "words": [
+          [
+            "What",
+            15.521,
+            15.7,
+            15.36
+          ],
+          [
+            "shape",
+            15.7,
+            16.231,
+            15.68
+          ],
+          [
+            "is",
+            16.305,
+            16.783,
+            16.08
+          ],
+          [
+            "it?",
+            16.783,
+            17.003,
+            16.76
+          ]
+        ]
+      },
+      {
+        "text": "A circle! A circle!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "A",
+            17.467,
+            17.6,
+            17.32
+          ],
+          [
+            "circle!",
+            17.6,
+            18.47,
+            17.6
+          ],
+          [
+            "A",
+            18.47,
+            18.58,
+            18.48
+          ],
+          [
+            "circle!",
+            18.58,
+            18.899,
+            18.6
+          ]
+        ]
+      },
+      {
+        "text": "Round, round, round!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Round,",
+            19.587,
+            20.136,
+            19.46
+          ],
+          [
+            "round,",
+            20.136,
+            20.516,
+            20.14
+          ],
+          [
+            "round!",
+            20.61,
+            21.149,
+            20.52
+          ]
+        ]
+      },
+      {
+        "text": "Look at the window!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Look",
+            21.513,
+            21.847,
+            21.32
+          ],
+          [
+            "at",
+            21.847,
+            22.187,
+            21.78
+          ],
+          [
+            "the",
+            22.321,
+            22.56,
+            22.12
+          ],
+          [
+            "window!",
+            22.56,
+            23.249,
+            22.46
+          ]
+        ]
+      },
+      {
+        "text": "What shape is it?",
+        "section": "Verse 1",
+        "words": [
+          [
+            "What",
+            23.249,
+            23.369,
+            23.26
+          ],
+          [
+            "shape",
+            23.383,
+            23.803,
+            23.38
+          ],
+          [
+            "is",
+            23.982,
+            24.471,
+            23.8
+          ],
+          [
+            "it?",
+            24.471,
+            24.74,
+            24.44
+          ]
+        ]
+      },
+      {
+        "text": "A square! A square!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "A",
+            25.159,
+            25.24,
+            25.0
+          ],
+          [
+            "square!",
+            25.24,
+            26.013,
+            25.28
+          ],
+          [
+            "A",
+            26.013,
+            26.113,
+            26.12
+          ],
+          [
+            "square!",
+            26.227,
+            26.866,
+            26.22
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three, four!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "One,",
+            27.24,
+            27.774,
+            27.18
+          ],
+          [
+            "two,",
+            27.774,
+            28.234,
+            27.84
+          ],
+          [
+            "three,",
+            28.257,
+            28.577,
+            28.3
+          ],
+          [
+            "four!",
+            28.781,
+            29.115,
+            28.62
+          ]
+        ]
+      },
+      {
+        "text": "Circle, square, triangle!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Circle,",
+            29.115,
+            29.609,
+            29.07
+          ],
+          [
+            "square,",
+            29.609,
+            29.939,
+            29.6
+          ],
+          [
+            "triangle!",
+            29.939,
+            30.817,
+            29.94
+          ]
+        ]
+      },
+      {
+        "text": "Star and heart! Star and heart!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Star",
+            30.926,
+            31.646,
+            30.95
+          ],
+          [
+            "and",
+            31.66,
+            32.13,
+            31.67
+          ],
+          [
+            "heart!",
+            32.139,
+            32.409,
+            32.14
+          ],
+          [
+            "Star",
+            32.418,
+            32.652,
+            32.41
+          ],
+          [
+            "and",
+            32.652,
+            32.817,
+            32.7
+          ],
+          [
+            "heart!",
+            32.817,
+            33.141,
+            32.88
+          ]
+        ]
+      },
+      {
+        "text": "Shapes, shapes, look around!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Shapes,",
+            33.141,
+            33.415,
+            33.12
+          ],
+          [
+            "shapes,",
+            33.415,
+            33.974,
+            33.42
+          ],
+          [
+            "look",
+            33.974,
+            34.254,
+            33.98
+          ],
+          [
+            "around!",
+            34.254,
+            34.822,
+            34.26
+          ]
+        ]
+      },
+      {
+        "text": "Shapes are everywhere!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Shapes",
+            34.822,
+            35.261,
+            34.82
+          ],
+          [
+            "are",
+            35.261,
+            35.741,
+            35.26
+          ],
+          [
+            "everywhere!",
+            35.76,
+            36.389,
+            35.74
+          ]
+        ]
+      },
+      {
+        "text": "Draw a shape! Draw a shape!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Draw",
+            36.848,
+            37.388,
+            36.86
+          ],
+          [
+            "a",
+            37.422,
+            37.721,
+            37.4
+          ],
+          [
+            "shape!",
+            37.721,
+            38.18,
+            37.7
+          ],
+          [
+            "Draw",
+            38.18,
+            38.36,
+            38.18
+          ],
+          [
+            "a",
+            38.36,
+            38.499,
+            38.36
+          ],
+          [
+            "shape!",
+            38.499,
+            38.848,
+            38.46
+          ]
+        ]
+      },
+      {
+        "text": "We love shapes, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "We",
+            38.848,
+            39.07,
+            38.84
+          ],
+          [
+            "love",
+            39.07,
+            39.23,
+            39.07
+          ],
+          [
+            "shapes,",
+            39.23,
+            39.467,
+            39.23
+          ],
+          [
+            "hooray!",
+            39.467,
+            40.33,
+            39.47
+          ]
+        ]
+      },
+      {
+        "text": "Look at the watermelon!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Look",
+            40.694,
+            41.013,
+            40.533
+          ],
+          [
+            "at",
+            41.013,
+            41.313,
+            40.98
+          ],
+          [
+            "the",
+            41.482,
+            41.822,
+            41.28
+          ],
+          [
+            "watermelon!",
+            41.971,
+            42.425,
+            41.62
+          ]
+        ]
+      },
+      {
+        "text": "What shape is it?",
+        "section": "Verse 2",
+        "words": [
+          [
+            "What",
+            42.425,
+            42.525,
+            42.48
+          ],
+          [
+            "shape",
+            42.57,
+            42.93,
+            42.58
+          ],
+          [
+            "is",
+            43.159,
+            43.632,
+            42.94
+          ],
+          [
+            "it?",
+            43.632,
+            43.837,
+            43.56
+          ]
+        ]
+      },
+      {
+        "text": "A triangle! A triangle!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "A",
+            44.361,
+            44.51,
+            44.2
+          ],
+          [
+            "triangle!",
+            44.51,
+            45.35,
+            44.48
+          ],
+          [
+            "A",
+            45.364,
+            45.414,
+            45.32
+          ],
+          [
+            "triangle!",
+            45.593,
+            46.401,
+            45.36
+          ]
+        ]
+      },
+      {
+        "text": "One, two, three!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "One,",
+            46.426,
+            46.94,
+            46.46
+          ],
+          [
+            "two,",
+            46.94,
+            47.38,
+            47.04
+          ],
+          [
+            "three!",
+            47.444,
+            47.908,
+            47.48
+          ]
+        ]
+      },
+      {
+        "text": "Look up high at night!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Look",
+            48.327,
+            48.601,
+            48.1
+          ],
+          [
+            "up",
+            48.601,
+            48.851,
+            48.6
+          ],
+          [
+            "high",
+            48.851,
+            49.151,
+            48.86
+          ],
+          [
+            "at",
+            49.364,
+            49.462,
+            49.16
+          ],
+          [
+            "night!",
+            49.462,
+            49.793,
+            49.36
+          ]
+        ]
+      },
+      {
+        "text": "What shape is it?",
+        "section": "Verse 2",
+        "words": [
+          [
+            "What",
+            49.973,
+            50.193,
+            49.98
+          ],
+          [
+            "shape",
+            50.218,
+            50.658,
+            50.2
+          ],
+          [
+            "is",
+            50.806,
+            51.3,
+            50.64
+          ],
+          [
+            "it?",
+            51.3,
+            51.569,
+            51.28
+          ]
+        ]
+      },
+      {
+        "text": "A star! A star!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "A",
+            51.993,
+            52.068,
+            51.84
+          ],
+          [
+            "star!",
+            52.068,
+            52.876,
+            52.1
+          ],
+          [
+            "A",
+            52.876,
+            52.996,
+            52.96
+          ],
+          [
+            "star!",
+            53.04,
+            53.73,
+            53.08
+          ]
+        ]
+      },
+      {
+        "text": "Shine, shine, shine!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Shine,",
+            53.939,
+            54.513,
+            53.96
+          ],
+          [
+            "shine,",
+            54.513,
+            54.973,
+            54.6
+          ],
+          [
+            "shine!",
+            54.987,
+            55.65,
+            55.06
+          ]
+        ]
+      },
+      {
+        "text": "Circle, square, triangle!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Circle,",
+            55.91,
+            56.44,
+            55.91
+          ],
+          [
+            "square,",
+            56.448,
+            56.778,
+            56.44
+          ],
+          [
+            "triangle!",
+            56.778,
+            57.626,
+            56.78
+          ]
+        ]
+      },
+      {
+        "text": "Star and heart! Star and heart!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Star",
+            57.74,
+            58.46,
+            57.78
+          ],
+          [
+            "and",
+            58.489,
+            58.948,
+            58.5
+          ],
+          [
+            "heart!",
+            58.948,
+            59.218,
+            58.97
+          ],
+          [
+            "Star",
+            59.232,
+            59.522,
+            59.24
+          ],
+          [
+            "and",
+            59.53,
+            59.736,
+            59.53
+          ],
+          [
+            "heart!",
+            59.736,
+            59.93,
+            59.71
+          ]
+        ]
+      },
+      {
+        "text": "Shapes, shapes, look around!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Shapes,",
+            59.93,
+            60.219,
+            59.92
+          ],
+          [
+            "shapes,",
+            60.219,
+            60.779,
+            60.22
+          ],
+          [
+            "look",
+            60.788,
+            61.068,
+            60.78
+          ],
+          [
+            "around!",
+            61.078,
+            61.627,
+            61.06
+          ]
+        ]
+      },
+      {
+        "text": "Shapes are everywhere!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Shapes",
+            61.627,
+            62.067,
+            61.63
+          ],
+          [
+            "are",
+            62.076,
+            62.556,
+            62.07
+          ],
+          [
+            "everywhere!",
+            62.564,
+            63.193,
+            62.55
+          ]
+        ]
+      },
+      {
+        "text": "Draw a shape! Draw a shape!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Draw",
+            63.692,
+            64.226,
+            63.67
+          ],
+          [
+            "a",
+            64.226,
+            64.526,
+            64.21
+          ],
+          [
+            "shape!",
+            64.535,
+            64.99,
+            64.51
+          ],
+          [
+            "Draw",
+            64.99,
+            65.198,
+            64.99
+          ],
+          [
+            "a",
+            65.198,
+            65.268,
+            65.17
+          ],
+          [
+            "shape!",
+            65.268,
+            65.642,
+            65.27
+          ]
+        ]
+      },
+      {
+        "text": "We love shapes, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "We",
+            65.642,
+            65.872,
+            65.63
+          ],
+          [
+            "love",
+            65.892,
+            66.037,
+            65.86
+          ],
+          [
+            "shapes,",
+            66.037,
+            66.271,
+            66.02
+          ],
+          [
+            "hooray!",
+            66.271,
+            67.094,
+            66.26
+          ]
+        ]
+      },
+      {
+        "text": "Look at the cookie!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Look",
+            67.498,
+            67.808,
+            67.327
+          ],
+          [
+            "at",
+            67.808,
+            68.168,
+            67.72
+          ],
+          [
+            "the",
+            68.276,
+            68.616,
+            68.08
+          ],
+          [
+            "cookie!",
+            68.765,
+            69.045,
+            68.42
+          ]
+        ]
+      },
+      {
+        "text": "What shape is it?",
+        "section": "Verse 3",
+        "words": [
+          [
+            "What",
+            69.184,
+            69.334,
+            69.16
+          ],
+          [
+            "shape",
+            69.334,
+            69.714,
+            69.34
+          ],
+          [
+            "is",
+            69.948,
+            70.412,
+            69.72
+          ],
+          [
+            "it?",
+            70.412,
+            70.636,
+            70.26
+          ]
+        ]
+      },
+      {
+        "text": "A heart! A heart!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "A",
+            71.085,
+            71.409,
+            70.96
+          ],
+          [
+            "heart!",
+            71.409,
+            72.073,
+            71.3
+          ],
+          [
+            "A",
+            72.073,
+            72.293,
+            72.02
+          ],
+          [
+            "heart!",
+            72.342,
+            72.721,
+            72.24
+          ]
+        ]
+      },
+      {
+        "text": "I love you! I love you!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "I",
+            73.285,
+            73.667,
+            73.0
+          ],
+          [
+            "love",
+            73.667,
+            74.127,
+            73.56
+          ],
+          [
+            "you!",
+            74.213,
+            74.487,
+            74.02
+          ],
+          [
+            "I",
+            74.487,
+            74.607,
+            74.5
+          ],
+          [
+            "love",
+            74.727,
+            74.971,
+            74.62
+          ],
+          [
+            "you!",
+            74.971,
+            75.176,
+            74.94
+          ]
+        ]
+      },
+      {
+        "text": "Hello, Ducky! Quack, quack!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Hello,",
+            75.176,
+            75.996,
+            75.18
+          ],
+          [
+            "Ducky!",
+            76.124,
+            76.622,
+            76.0
+          ],
+          [
+            "Quack,",
+            76.622,
+            76.847,
+            76.62
+          ],
+          [
+            "quack!",
+            76.847,
+            77.022,
+            76.92
+          ]
+        ]
+      },
+      {
+        "text": "Can you hop in a circle?",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Can",
+            77.096,
+            77.256,
+            77.08
+          ],
+          [
+            "you",
+            77.62,
+            77.67,
+            77.24
+          ],
+          [
+            "hop",
+            77.67,
+            77.81,
+            77.5
+          ],
+          [
+            "in",
+            77.81,
+            77.97,
+            77.76
+          ],
+          [
+            "a",
+            78.074,
+            78.194,
+            77.92
+          ],
+          [
+            "circle?",
+            78.314,
+            78.643,
+            78.04
+          ]
+        ]
+      },
+      {
+        "text": "Hop, hop, hop around!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Hop,",
+            78.937,
+            79.416,
+            78.8
+          ],
+          [
+            "hop,",
+            79.416,
+            79.89,
+            79.44
+          ],
+          [
+            "hop",
+            79.89,
+            80.03,
+            79.92
+          ],
+          [
+            "around!",
+            80.184,
+            80.853,
+            80.06
+          ]
+        ]
+      },
+      {
+        "text": "Yay, a circle! Quack, quack!",
+        "section": "Verse 3",
+        "words": [
+          [
+            "Yay,",
+            80.853,
+            81.533,
+            80.84
+          ],
+          [
+            "a",
+            81.606,
+            81.73,
+            81.52
+          ],
+          [
+            "circle!",
+            81.73,
+            82.749,
+            81.78
+          ],
+          [
+            "Quack,",
+            82.749,
+            83.227,
+            82.74
+          ],
+          [
+            "quack!",
+            83.227,
+            83.532,
+            83.24
+          ]
+        ]
+      },
+      {
+        "text": "Circle, square, triangle!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Circle,",
+            84.485,
+            85.015,
+            84.54
+          ],
+          [
+            "square,",
+            85.07,
+            85.398,
+            85.07
+          ],
+          [
+            "triangle!",
+            85.398,
+            85.881,
+            85.41
+          ]
+        ]
+      },
+      {
+        "text": "Star and heart! Star and heart!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Star",
+            86.365,
+            87.085,
+            86.39
+          ],
+          [
+            "and",
+            87.094,
+            87.458,
+            87.11
+          ],
+          [
+            "heart!",
+            87.58,
+            87.728,
+            87.58
+          ],
+          [
+            "Star",
+            87.842,
+            88.071,
+            87.85
+          ],
+          [
+            "and",
+            88.071,
+            88.251,
+            88.14
+          ],
+          [
+            "heart!",
+            88.251,
+            88.55,
+            88.32
+          ]
+        ]
+      },
+      {
+        "text": "Shapes, shapes, look around!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Shapes,",
+            88.55,
+            88.85,
+            88.53
+          ],
+          [
+            "shapes,",
+            88.859,
+            89.408,
+            88.83
+          ],
+          [
+            "look",
+            89.408,
+            89.673,
+            89.39
+          ],
+          [
+            "around!",
+            89.673,
+            90.237,
+            89.67
+          ]
+        ]
+      },
+      {
+        "text": "Shapes are everywhere!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Shapes",
+            90.242,
+            90.676,
+            90.23
+          ],
+          [
+            "are",
+            90.676,
+            91.156,
+            90.67
+          ],
+          [
+            "everywhere!",
+            91.164,
+            91.808,
+            91.15
+          ]
+        ]
+      },
+      {
+        "text": "Draw a shape! Draw a shape!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Draw",
+            92.287,
+            92.791,
+            92.26
+          ],
+          [
+            "a",
+            92.791,
+            93.091,
+            92.8
+          ],
+          [
+            "shape!",
+            93.105,
+            93.579,
+            93.1
+          ],
+          [
+            "Draw",
+            93.579,
+            93.759,
+            93.58
+          ],
+          [
+            "a",
+            93.813,
+            93.878,
+            93.76
+          ],
+          [
+            "shape!",
+            93.878,
+            94.218,
+            93.86
+          ]
+        ]
+      },
+      {
+        "text": "We love shapes, hooray!",
+        "section": "Chorus",
+        "words": [
+          [
+            "We",
+            94.218,
+            94.432,
+            94.21
+          ],
+          [
+            "love",
+            94.432,
+            94.592,
+            94.44
+          ],
+          [
+            "shapes,",
+            94.617,
+            94.846,
+            94.6
+          ],
+          [
+            "hooray!",
+            94.846,
+            95.709,
+            94.84
+          ]
+        ]
+      }
+    ],
+    "refs_urls": {
+      "c02_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c02_en_c507fcef.wav",
+      "c03_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c03_en_743c4a4a.wav",
+      "c04_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c04_en_7c743c45.wav",
+      "c06_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c06_en_afbf9410.wav",
+      "c08_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c08_en_6f06db8c.wav",
+      "c13_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c13_en_4bd03fad.wav",
+      "c15_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c15_en_0171ddd9.wav",
+      "c20_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c20_en_01f535dc.wav",
+      "c21_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep08/ep08_ref_c21_en_13cc8536.wav"
+    }
+  }
 }
