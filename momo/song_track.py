@@ -238,8 +238,8 @@ def cmd_lyrics(paths, cfg, args) -> int:
     elif not args.refine:
         raise MomoError("--no-refine 은 --align 과 함께 (정렬 결과를 보정 없이 넣을 때)")
     else:
-        lines = [ln for ln in song.get("lyrics") or [] if ln.get("words")]
-        if not lines:
+        lines = list(song.get("lyrics") or [])   # lines without word times are kept as they are
+        if not any(ln.get("words") for ln in lines):
             raise MomoError("song.lyrics 에 단어 시각이 없음 — --align <tools/align_lyrics.py 결과> 로 넣을 것")
     if args.refine:
         stem = audio.vocals_file(paths, ep)
@@ -255,7 +255,7 @@ def cmd_lyrics(paths, cfg, args) -> int:
     tr["lyrics_sha1"] = tr["sha1"]
     save_json(paths.manifest(ep), m)
     src = "정렬 결과에서" if args.align else "지금 song.lyrics 를 정렬 시각부터 다시 보정"
-    print(f"✔ 가사 {len(lines)}줄, 단어 {sum(len(l['words']) for l in lines)}개 ({src}) → song.lyrics")
+    print(f"✔ 가사 {len(lines)}줄, 단어 {sum(len(l.get('words') or []) for l in lines)}개 ({src}) → song.lyrics")
     if rep:
         print_refine(rep)
     else:

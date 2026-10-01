@@ -375,10 +375,15 @@ def test_song_track_lyrics_cli(tmp: Path) -> None:
     root = make_track_root(tmp)
     ep = root / "episodes/ep91"
     st = [sys.executable, str(MOMO / "song_track.py"), "--root", str(root), "lyrics", "--ep", "ep91"]
+    m = json.loads((ep / "manifest.json").read_text())
+    m["song"]["lyrics"].append({"text": "(hum)"})            # a line without word times survives a re-refine
+    (ep / "manifest.json").write_text(json.dumps(m))
     r = subprocess.run(st, capture_output=True, text=True)   # no --align: refine the current song.lyrics
     assert r.returncode == 0, r.stdout + r.stderr
     m = json.loads((ep / "manifest.json").read_text())
-    words = [w for ln in m["song"]["lyrics"] for w in ln["words"]]
+    hum = m["song"]["lyrics"][-1]
+    assert hum["text"] == "(hum)" and not hum.get("words"), hum
+    words = [w for ln in m["song"]["lyrics"] for w in ln.get("words") or []]
     assert all(len(w) == 4 for w in words) and [w[3] for w in words] == [
         w[1] for ln in TRACK_SONG["lyrics"] for w in ln["words"]], words
     assert all(abs(w[1] - w[3]) < 0.04 for w in words), words   # stamps sit on the synthetic notes already
