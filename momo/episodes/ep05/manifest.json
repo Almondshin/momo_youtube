@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep05",
-  "status": "planning",
+  "status": "producing",
   "topic": {
     "en": "Rainbow Colors",
     "ko": "무지개 색깔"
@@ -49,9 +49,9 @@
   },
   "credits": {
     "estimate": 214.2,
-    "spent": 0,
-    "generations": 0,
-    "regenerations": 0
+    "spent": 40.0,
+    "generations": 27,
+    "regenerations": 3
   },
   "notes": {
     "v_over_reason": "노래 형식 v2 (ep04 v2 와 같은 방식, 사용자 피드백 '더 자연스럽게'): 127.0 BPM Suno 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 34컷. V 32개 중 8개는 재사용(clip_from, 0 크레딧), 모모가 노래하는 컷은 전부 립싱크. 곡에 22마디(41초) 간주가 있어 그 자리에 부르지 않은 4색(노랑·초록·파랑·보라) 사물 컷 + 모모 동작 컷(노래 안 함, 입 다묾)을 넣음.",
@@ -103,6 +103,26 @@
         "text": "a rainbow in the sky",
         "pos": "right",
         "at": 0.5
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "f97af0dd-b846-4a3b-9456-71fcb4563962",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_f97af0dd-b846-4a3b-9456-71fcb4563962.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "f97af0dd-b846-4a3b-9456-71fcb4563962",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_f97af0dd-b846-4a3b-9456-71fcb4563962.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:33Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -113,7 +133,27 @@
       "image_prompt": "[Momo] and [Ducky] full body wide shot in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind them, both standing on the grass facing the viewer, Momo with both feet flat on the grass, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing beside her with its tiny wings slightly raised",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. the rainbow stays still in the sky; Ducky flaps its tiny wings and does small happy hops beside Momo; Momo points one paw up at the rainbow with the paw held out to the side away from the ears, then sways gently from side to side and claps softly, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 8
+      "clip_seconds": 8,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "f92f9eed-806d-40e2-ba10-6048f709ff63",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_f92f9eed-806d-40e2-ba10-6048f709ff63.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "f92f9eed-806d-40e2-ba10-6048f709ff63",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_f92f9eed-806d-40e2-ba10-6048f709ff63.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:33Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c04",
@@ -124,7 +164,27 @@
       "motion": "tiny golden sparkles twinkle above the six things and the grass around the blanket sways gently in a soft breeze, all six things stay completely still in their places in one row the whole time, exactly six things",
       "momo": false,
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "7e58afdd-38d8-456a-95c6-796013356395",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_7e58afdd-38d8-456a-95c6-796013356395.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "7e58afdd-38d8-456a-95c6-796013356395",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_7e58afdd-38d8-456a-95c6-796013356395.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:33Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c05",
@@ -138,7 +198,27 @@
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 17.352
+      "cut_at": 17.352,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "56b43f4b-ee11-4b06-a415-b17aaab9d86e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_56b43f4b-ee11-4b06-a415-b17aaab9d86e.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "56b43f4b-ee11-4b06-a415-b17aaab9d86e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_56b43f4b-ee11-4b06-a415-b17aaab9d86e.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:33Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c06",
@@ -165,28 +245,84 @@
       "scene": 1,
       "type": "V",
       "bars": 2,
-      "image_prompt": "[Momo] and [Ducky] side by side in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind them, both facing the viewer, Momo standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised, medium wide shot",
+      "image_prompt": "[Momo] and [Ducky] side by side in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with exactly six stripes arcs across the bright blue sky behind them, the stripes in order from the outside: red, orange, yellow, green, blue, purple, both facing the viewer, Momo standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised, medium wide shot",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does small happy hops beside Momo and flaps its tiny wings; Momo claps her paws together on every 'ding-dong-dang' and sways from side to side, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 24.995
+      "cut_at": 24.995,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "3bee749e-ebeb-4dbe-9253-30e8593e796e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_3bee749e-ebeb-4dbe-9253-30e8593e796e.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "7502a9cd-73df-47d2-94c1-5105939c38e1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013705_7502a9cd-73df-47d2-94c1-5105939c38e1.png",
+              "status": "rejected",
+              "reason": "rainbow behind Momo and Ducky has seven bands (an extra pale cyan stripe between green and blue) - c07/c32 sing the six colour words",
+              "at": "2026-10-01T01:37Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "3bee749e-ebeb-4dbe-9253-30e8593e796e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_3bee749e-ebeb-4dbe-9253-30e8593e796e.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:41Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c08",
       "scene": 1,
       "type": "V",
       "bars": 2,
-      "image_prompt": "[Momo] medium close-up from the chest up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with six stripes arcs across the bright blue sky behind her, facing the viewer, both paws together in front of the chest, huge round sparkly eyes with big white highlights and a big open happy smile, both long ears fully visible hanging down beside the cheeks",
+      "image_prompt": "[Momo] medium close-up from the chest up in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, a big soft rainbow with exactly six stripes arcs across the bright blue sky behind her, the stripes in order from the outside: red, orange, yellow, green, blue, purple, facing the viewer, both paws together in front of the chest, huge round sparkly eyes with big white highlights and a big open happy smile, both long ears fully visible hanging down beside the cheeks",
       "motion": "claps both paws together in front of the chest and cheers happily on 'yay', looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 28.716
+      "cut_at": 28.716,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "4779e09b-0c17-43a5-ac27-5020669574fa",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_4779e09b-0c17-43a5-ac27-5020669574fa.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "76bd9357-d123-4e8b-8302-16eea3bf27de",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013705_76bd9357-d123-4e8b-8302-16eea3bf27de.png",
+              "status": "rejected",
+              "reason": "rainbow behind Momo has seven stripes (an extra cyan stripe between green and blue) - the song teaches six colours",
+              "at": "2026-10-01T01:37Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "4779e09b-0c17-43a5-ac27-5020669574fa",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_4779e09b-0c17-43a5-ac27-5020669574fa.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c09",
@@ -200,7 +336,27 @@
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 32.527
+      "cut_at": 32.527,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "12296a9d-87ea-4bf5-a367-bd66e6d16ef4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013705_12296a9d-87ea-4bf5-a367-bd66e6d16ef4.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "12296a9d-87ea-4bf5-a367-bd66e6d16ef4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013705_12296a9d-87ea-4bf5-a367-bd66e6d16ef4.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:37Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c10",
@@ -218,7 +374,27 @@
         "pos": "left",
         "at": 0.35
       },
-      "cut_at": 36.144
+      "cut_at": 36.144,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "14e4edb5-294f-4586-891d-2af196276da8",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013821_14e4edb5-294f-4586-891d-2af196276da8.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "14e4edb5-294f-4586-891d-2af196276da8",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013821_14e4edb5-294f-4586-891d-2af196276da8.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:38Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c11",
@@ -232,7 +408,27 @@
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 40.095
+      "cut_at": 40.095,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b75250ff-6efc-406f-bea6-03ec80f55a43",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_b75250ff-6efc-406f-bea6-03ec80f55a43.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b75250ff-6efc-406f-bea6-03ec80f55a43",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_b75250ff-6efc-406f-bea6-03ec80f55a43.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c12",
@@ -246,7 +442,27 @@
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 43.917
+      "cut_at": 43.917,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "82e21468-28c0-40c4-ae43-9bbf7a721541",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_82e21468-28c0-40c4-ae43-9bbf7a721541.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "82e21468-28c0-40c4-ae43-9bbf7a721541",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_82e21468-28c0-40c4-ae43-9bbf7a721541.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c13",
@@ -264,7 +480,27 @@
         "pos": "right",
         "at": 0.3
       },
-      "cut_at": 47.553
+      "cut_at": 47.553,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d6951b5d-7975-434e-a369-3358bfee64c3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_d6951b5d-7975-434e-a369-3358bfee64c3.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "d6951b5d-7975-434e-a369-3358bfee64c3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_d6951b5d-7975-434e-a369-3358bfee64c3.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:41Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c14",
@@ -278,7 +514,27 @@
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 51.26
+      "cut_at": 51.26,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "fbc3735b-74a0-4af9-9431-364dc4dc784d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_fbc3735b-74a0-4af9-9431-364dc4dc784d.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "fbc3735b-74a0-4af9-9431-364dc4dc784d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_fbc3735b-74a0-4af9-9431-364dc4dc784d.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:41Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c15",
@@ -357,7 +613,27 @@
         "pos": "left",
         "at": 0.5
       },
-      "cut_at": 70.547
+      "cut_at": 70.547,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "e6668e25-a914-4779-876d-894a248e4001",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014249_e6668e25-a914-4779-876d-894a248e4001.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "e6668e25-a914-4779-876d-894a248e4001",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014249_e6668e25-a914-4779-876d-894a248e4001.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:42Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c20",
@@ -368,7 +644,27 @@
       "motion": "nods her head gently to the music three times and smiles at the viewer, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
-      "cut_at": 74.327
+      "cut_at": 74.327,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "12296a9d-87ea-4bf5-a367-bd66e6d16ef4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013705_12296a9d-87ea-4bf5-a367-bd66e6d16ef4.png",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "12296a9d-87ea-4bf5-a367-bd66e6d16ef4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013705_12296a9d-87ea-4bf5-a367-bd66e6d16ef4.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:40Z",
+              "credits": 0.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c21",
@@ -386,7 +682,27 @@
         "pos": "right",
         "at": 0.5
       },
-      "cut_at": 78.106
+      "cut_at": 78.106,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b2fc8565-b287-4ab5-8860-11e4c5b685cf",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014249_b2fc8565-b287-4ab5-8860-11e4c5b685cf.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b2fc8565-b287-4ab5-8860-11e4c5b685cf",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014249_b2fc8565-b287-4ab5-8860-11e4c5b685cf.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:42Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c22",
@@ -397,7 +713,27 @@
       "motion": "waves one paw at shoulder height beside the cheek and below the ear, smiling at the viewer, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
-      "cut_at": 81.886
+      "cut_at": 81.886,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b75250ff-6efc-406f-bea6-03ec80f55a43",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_b75250ff-6efc-406f-bea6-03ec80f55a43.png",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "b75250ff-6efc-406f-bea6-03ec80f55a43",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_b75250ff-6efc-406f-bea6-03ec80f55a43.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:42Z",
+              "credits": 0.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c23",
@@ -415,7 +751,27 @@
         "pos": "left",
         "at": 0.5
       },
-      "cut_at": 85.665
+      "cut_at": 85.665,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "ea15abda-9a78-4c25-b3a5-c2f524a1df4f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014249_ea15abda-9a78-4c25-b3a5-c2f524a1df4f.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ea15abda-9a78-4c25-b3a5-c2f524a1df4f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014249_ea15abda-9a78-4c25-b3a5-c2f524a1df4f.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:42Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c24",
@@ -426,7 +782,27 @@
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. bounces gently on bent knees to the music with both feet on the grass, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
-      "cut_at": 89.445
+      "cut_at": 89.445,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "fbc3735b-74a0-4af9-9431-364dc4dc784d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_fbc3735b-74a0-4af9-9431-364dc4dc784d.png",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "fbc3735b-74a0-4af9-9431-364dc4dc784d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_fbc3735b-74a0-4af9-9431-364dc4dc784d.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:43Z",
+              "credits": 0.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c25",
@@ -444,18 +820,66 @@
         "pos": "right",
         "at": 0.5
       },
-      "cut_at": 93.224
+      "cut_at": 93.224,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8530908e-34c2-498d-8e3e-8b3c5628d664",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014359_8530908e-34c2-498d-8e3e-8b3c5628d664.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8530908e-34c2-498d-8e3e-8b3c5628d664",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014359_8530908e-34c2-498d-8e3e-8b3c5628d664.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:44Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c26",
       "scene": 4,
       "type": "V",
       "bars": 2,
-      "image_prompt": "[Momo] and [Ducky] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both facing the viewer, Momo standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing on the grass beside her with its tiny wings raised, ready to hop",
+      "image_prompt": "[Momo] and [Ducky] full body in a sunny green garden with soft grass, a small white picket fence and a bright blue sky, both facing the viewer, Momo with soft fluffy furry cream-white fur and dark purple eyes, standing with both feet flat on the grass and both paws apart at chest height ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing on the grass beside her with its tiny wings raised, ready to hop",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does three small happy hops in place beside Momo and flaps its tiny wings; Momo claps her paws and bounces gently on bent knees with both feet on the grass, the mouth stays closed in a soft happy smile the whole time because Momo is only listening to the music, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
-      "cut_at": 97.004
+      "cut_at": 97.004,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "c76b82d8-1f2b-42d6-a07f-e2a5e72e9113",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014636_c76b82d8-1f2b-42d6-a07f-e2a5e72e9113.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "632d4958-e086-4f97-a32c-1d4e8e743ddf",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014359_632d4958-e086-4f97-a32c-1d4e8e743ddf.png",
+              "status": "rejected",
+              "reason": "Momo rendered as a smooth vinyl/clay toy with no fur texture and brown irises (sheet: fluffy fur, purple irises) - jumps in style against every other cut",
+              "at": "2026-10-01T01:44Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "c76b82d8-1f2b-42d6-a07f-e2a5e72e9113",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014636_c76b82d8-1f2b-42d6-a07f-e2a5e72e9113.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:46Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c27",
@@ -496,7 +920,27 @@
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 108.061
+      "cut_at": 108.061,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "4779e09b-0c17-43a5-ac27-5020669574fa",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_4779e09b-0c17-43a5-ac27-5020669574fa.png",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "4779e09b-0c17-43a5-ac27-5020669574fa",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013930_4779e09b-0c17-43a5-ac27-5020669574fa.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:42Z",
+              "credits": 0.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c30",
@@ -510,7 +954,27 @@
       "clip_seconds": {
         "en": 4
       },
-      "cut_at": 111.907
+      "cut_at": 111.907,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "56b43f4b-ee11-4b06-a415-b17aaab9d86e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_56b43f4b-ee11-4b06-a415-b17aaab9d86e.png",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "56b43f4b-ee11-4b06-a415-b17aaab9d86e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013336_56b43f4b-ee11-4b06-a415-b17aaab9d86e.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:37Z",
+              "credits": 0.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c31",
@@ -544,7 +1008,27 @@
       "clip_seconds": {
         "en": 8
       },
-      "cut_at": 119.475
+      "cut_at": 119.475,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "3bee749e-ebeb-4dbe-9253-30e8593e796e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_3bee749e-ebeb-4dbe-9253-30e8593e796e.png",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "3bee749e-ebeb-4dbe-9253-30e8593e796e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014101_3bee749e-ebeb-4dbe-9253-30e8593e796e.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:43Z",
+              "credits": 0.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c33",
@@ -558,7 +1042,27 @@
       "clip_seconds": {
         "en": 3
       },
-      "cut_at": 127.068
+      "cut_at": 127.068,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "c76b82d8-1f2b-42d6-a07f-e2a5e72e9113",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014636_c76b82d8-1f2b-42d6-a07f-e2a5e72e9113.png",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "c76b82d8-1f2b-42d6-a07f-e2a5e72e9113",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014636_c76b82d8-1f2b-42d6-a07f-e2a5e72e9113.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:48Z",
+              "credits": 0.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c34",

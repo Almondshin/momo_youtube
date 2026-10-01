@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep07",
-  "status": "planning",
+  "status": "producing",
   "topic": {
     "en": "Wash Your Hands",
     "ko": "손 씻기"
@@ -49,8 +49,8 @@
   },
   "credits": {
     "estimate": null,
-    "spent": 0,
-    "generations": 0,
+    "spent": 36.0,
+    "generations": 18,
     "regenerations": 0
   },
   "notes": {
@@ -107,6 +107,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 5
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "049daba3-f006-42db-b492-7981fb9d093b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013500_049daba3-f006-42db-b492-7981fb9d093b.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "049daba3-f006-42db-b492-7981fb9d093b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013500_049daba3-f006-42db-b492-7981fb9d093b.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -121,6 +141,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "924dc425-e4cc-404a-8fa6-4a4f59fbfb83",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013500_924dc425-e4cc-404a-8fa6-4a4f59fbfb83.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "924dc425-e4cc-404a-8fa6-4a4f59fbfb83",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013500_924dc425-e4cc-404a-8fa6-4a4f59fbfb83.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -135,6 +175,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "434716c9-3638-416a-8e4c-63b8d6791915",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013500_434716c9-3638-416a-8e4c-63b8d6791915.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "434716c9-3638-416a-8e4c-63b8d6791915",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013500_434716c9-3638-416a-8e4c-63b8d6791915.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -149,6 +209,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "95c4b2d2-f24a-4778-8fa6-8dc1e66f106b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013459_95c4b2d2-f24a-4778-8fa6-8dc1e66f106b.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "95c4b2d2-f24a-4778-8fa6-8dc1e66f106b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013459_95c4b2d2-f24a-4778-8fa6-8dc1e66f106b.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -167,6 +247,26 @@
         "text": "water from the faucet",
         "pos": "left",
         "at": 0.83
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "723f13a3-2bd1-4fcb-8700-b3e7a5a2d2b1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013701_723f13a3-2bd1-4fcb-8700-b3e7a5a2d2b1.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "723f13a3-2bd1-4fcb-8700-b3e7a5a2d2b1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013701_723f13a3-2bd1-4fcb-8700-b3e7a5a2d2b1.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:37Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -181,6 +281,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "ed969942-c760-477b-8933-d8552af13166",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013701_ed969942-c760-477b-8933-d8552af13166.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ed969942-c760-477b-8933-d8552af13166",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013701_ed969942-c760-477b-8933-d8552af13166.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:37Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -199,6 +319,26 @@
         "text": "a pink bar of soap",
         "pos": "left",
         "at": 0.97
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "bb85b502-7304-426f-97f7-40b91eed4282",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013832_bb85b502-7304-426f-97f7-40b91eed4282.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "bb85b502-7304-426f-97f7-40b91eed4282",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013832_bb85b502-7304-426f-97f7-40b91eed4282.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:38Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -213,6 +353,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 6
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b6854d80-aa10-4ec6-8387-8fda7fcfcbb9",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013833_b6854d80-aa10-4ec6-8387-8fda7fcfcbb9.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b6854d80-aa10-4ec6-8387-8fda7fcfcbb9",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013833_b6854d80-aa10-4ec6-8387-8fda7fcfcbb9.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:38Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -283,6 +443,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d490d8e1-8355-4837-aba0-8564ab03a6cd",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013834_d490d8e1-8355-4837-aba0-8564ab03a6cd.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "d490d8e1-8355-4837-aba0-8564ab03a6cd",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013834_d490d8e1-8355-4837-aba0-8564ab03a6cd.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:38Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -301,6 +481,26 @@
         "text": "round soap bubbles",
         "pos": "right",
         "at": 1.14
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "793e83b8-87c9-454a-b1c3-b3b0f5d72f03",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013940_793e83b8-87c9-454a-b1c3-b3b0f5d72f03.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "793e83b8-87c9-454a-b1c3-b3b0f5d72f03",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013940_793e83b8-87c9-454a-b1c3-b3b0f5d72f03.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -315,6 +515,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b32dc823-6a93-4c92-a84c-5611f70d5df2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013940_b32dc823-6a93-4c92-a84c-5611f70d5df2.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b32dc823-6a93-4c92-a84c-5611f70d5df2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013940_b32dc823-6a93-4c92-a84c-5611f70d5df2.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -329,6 +549,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b9398d67-2561-45d3-b77c-c92f822c9205",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013940_b9398d67-2561-45d3-b77c-c92f822c9205.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b9398d67-2561-45d3-b77c-c92f822c9205",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013940_b9398d67-2561-45d3-b77c-c92f822c9205.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -397,7 +637,27 @@
       "motion": "the clear water flows gently and the white soap foam swirls slowly toward the drain and disappears, small sparkles twinkle on the water, the sink and the faucet stay completely still",
       "momo": false,
       "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 4
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "ed16687a-010d-4569-8da2-1c299cfecfba",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014051_ed16687a-010d-4569-8da2-1c299cfecfba.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ed16687a-010d-4569-8da2-1c299cfecfba",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014051_ed16687a-010d-4569-8da2-1c299cfecfba.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:40Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
+      }
     },
     {
       "id": "c24",
@@ -411,6 +671,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "4b35ef2a-f451-4016-82df-2485d78738a1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014051_4b35ef2a-f451-4016-82df-2485d78738a1.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "4b35ef2a-f451-4016-82df-2485d78738a1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014051_4b35ef2a-f451-4016-82df-2485d78738a1.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:40Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -425,6 +705,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 3
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "510ee2f4-3418-49b6-ad16-60811019ed0b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014146_510ee2f4-3418-49b6-ad16-60811019ed0b.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "510ee2f4-3418-49b6-ad16-60811019ed0b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014146_510ee2f4-3418-49b6-ad16-60811019ed0b.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:41Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -445,6 +745,26 @@
         "text": "a soft yellow towel",
         "pos": "right",
         "at": 0.64
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "7461a1f0-493d-449e-8398-ad52cd4ec3e1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014146_7461a1f0-493d-449e-8398-ad52cd4ec3e1.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "7461a1f0-493d-449e-8398-ad52cd4ec3e1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014146_7461a1f0-493d-449e-8398-ad52cd4ec3e1.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:41Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -459,6 +779,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8c2e7eba-a3dd-42a0-8fb9-27b83a8add03",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014239_8c2e7eba-a3dd-42a0-8fb9-27b83a8add03.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8c2e7eba-a3dd-42a0-8fb9-27b83a8add03",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014239_8c2e7eba-a3dd-42a0-8fb9-27b83a8add03.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:42Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -473,6 +813,26 @@
       "clip_model": "wan2_7",
       "clip_seconds": {
         "en": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "89b85077-3e4a-4ceb-abaa-177fb3815b5b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014329_89b85077-3e4a-4ceb-abaa-177fb3815b5b.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "89b85077-3e4a-4ceb-abaa-177fb3815b5b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014329_89b85077-3e4a-4ceb-abaa-177fb3815b5b.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-01T01:43Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
