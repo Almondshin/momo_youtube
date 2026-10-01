@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "ep": "ep08",
+  "status": "planning",
+  "topic": {
+    "en": "Shapes",
+    "ko": "도형"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "Shapes Song with Momo the Bunny | Circle, Square, Triangle for Toddlers",
+    "ko": ""
+  },
+  "thumbnail": {
+    "cut": null,
+    "text": {
+      "en": "",
+      "ko": ""
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [],
+    "next_time": []
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "library_clip": "intro_wave",
+      "library_audio": "intro",
+      "narration": {
+        "en": "Hi friends! It's Momo!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 5,
+      "type": "L",
+      "library_clip": "outro_bye",
+      "library_audio": "outro",
+      "narration": {
+        "en": "Bye-bye, friends! See you next time!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    }
+  ]
+}
