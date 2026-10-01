@@ -134,8 +134,10 @@ Lessons applied:
 
 ## Suno style
 
+v2 (2026-10-01): the v1 take came out 59.6 s — removed "2/4 march feel", "short clear phrases", the duration text and "2-bar outro"; set Suno 길이 ≥ 2:00 and add "short song, radio edit" to 스타일 제외.
+
 ```style
-Korean children's song style in English, Korean kindergarten sing-along, bright bouncy 2/4 march feel, 124 bpm, major key, 4-bar instrumental intro with piano and bells and no vocals, children's choir with a bright young female lead, call-and-response: the lead asks and the choir echoes the answer, piano, bells, glockenspiel, xylophone, hand claps, light snare, simple singable melody, short clear phrases, shape words on the beat, counting on the beat, no instrumental break, singing all the way through, every line sung in order, very clear English, full-length song about 1 minute 50 seconds, short 2-bar instrumental outro
+Korean children's song style in English, Korean kindergarten sing-along, bright bouncy beat, steady 4/4, 124 bpm, major key, 4-bar instrumental intro with piano and bells, children's choir with a bright young female lead, call-and-response: the lead asks and the choir echoes the answer, piano, bells, glockenspiel, xylophone, hand claps, light snare, simple singable melody, shape words on the beat, counting on the beat, full song with every verse and every chorus sung in order, no instrumental break, very clear English
 ```
 
 ## Lyrics (Suno format)
