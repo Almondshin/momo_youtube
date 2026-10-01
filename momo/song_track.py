@@ -31,16 +31,14 @@ import argparse
 import hashlib
 import json
 import math
-import shutil
-import subprocess
 import sys
-import tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from momolib import release  # noqa: E402
 from momolib.common import (MomoError, add_root_arg, check_ep, get_paths, load_config, load_manifest,  # noqa: E402
-                            main_wrapper, probe_duration, run, save_json, which)
+                            main_wrapper, probe_duration, run, save_json)
 from momolib.episode import song_grid, song_track, track_lines, track_spans  # noqa: E402
 from momolib.genrec import now_iso  # noqa: E402
 
@@ -300,38 +298,26 @@ def cmd_sync(paths, cfg, args) -> int:
 
 # ---------------------------------------------------------------- publish / status
 
-def repo_slug() -> str:
-    r = run(["gh", "repo", "view", "--json", "nameWithOwner", "-q", ".nameWithOwner"])
-    return r.stdout.decode().strip()
-
-
 def cmd_publish(paths, cfg, args) -> int:
     """Upload the song, its vocal stem and the refs as release assets (tag media-<ep>) and record their URLs."""
-    if not which("gh"):
-        raise MomoError("gh CLI 가 필요함 (GitHub 로그인된 로컬 맥에서 실행)")
+    release.need_gh()
     ep = check_ep(args.ep)
     m = load_manifest(paths, ep)
     song, tr = m["song"], need_track(m)
     tag = args.tag or f"media-{ep}"
-    slug = repo_slug()
-    if subprocess.run(["gh", "release", "view", tag], capture_output=True).returncode != 0:
-        run(["gh", "release", "create", tag, "--prerelease", "--title", f"{ep} media (song, stems, lip-sync refs)",
-             "--notes", "Locally made audio for the pipeline (fetch_assets.py). Not a code release."])
+    release.ensure_release(tag, f"{ep} media (song, stems, lip-sync refs)",
+                           "Locally made audio for the pipeline (fetch_assets.py). Not a code release.")
     d = audio_dir(paths, ep)
     files = {"song": d / "song.flac", "song_vocals": d / "song_vocals.flac"}
     files.update({f"ref_{p.stem}": p for p in sorted((d / "refs").glob("*.wav"))})
-    with tempfile.TemporaryDirectory() as tmp:
-        up = []
-        for key, f in files.items():
-            if not f.exists():
-                raise MomoError(f"파일 없음: {f}")
-            sha = sha1_file(f)[:8]
-            name = f"{ep}_{key}_{sha}{f.suffix}"  # content-addressed: a new take never overwrites an old URL
-            shutil.copy(f, Path(tmp) / name)
-            up.append((key, name))
-        run(["gh", "release", "upload", tag, "--clobber", *[str(Path(tmp) / n) for _, n in up]])
-    base = f"https://github.com/{slug}/releases/download/{tag}"
-    urls = {k: f"{base}/{n}" for k, n in up}
+    names = {}
+    for key, f in files.items():
+        if not f.exists():
+            raise MomoError(f"파일 없음: {f}")
+        names[key] = f"{ep}_{key}_{sha1_file(f)[:8]}{f.suffix}"  # content-addressed: a new take never overwrites
+    by_name = release.upload_assets(tag, {names[k]: f for k, f in files.items()})
+    up = list(names.items())
+    urls = {k: by_name[n] for k, n in up}
     for rec, key in ((tr, "song"), (song["vocals"], "song_vocals")):
         rec["url"] = urls[key]
         for h in rec.get("history") or []:

@@ -135,7 +135,9 @@ def credit_check(paths: Paths, cfg: dict, manifest: dict | None, lib: dict) -> d
 
 # ---------------------------------------------------------------- plan
 
-def plan_episode(paths: Paths, cfg: dict, args) -> dict:
+def plan_episode(paths: Paths, cfg: dict, args, api: bool = False) -> dict:
+    """api=True: the item list hf_api.py run sends to the Higgsfield API (song lip-sync refs are uploaded there from
+    episodes/<ep>/audio/refs, so they need no MCP media id)."""
     ep = check_ep(args.ep)
     if not args.kind or args.kind == "sheet":
         raise MomoError("에피소드 plan 은 --kind image|clip|audio 가 필요함 (시트는 --library)")
@@ -168,7 +170,7 @@ def plan_episode(paths: Paths, cfg: dict, args) -> dict:
             if status_of(img) != "approved" or not img.get("job_id"):
                 blocked.append(f"{s.key}: 이미지 승인 전 ({status_of(img)}) — text-to-video 금지, 승인된 이미지로만")
                 continue
-            end_job, audio_job, why = clip_links(cfg, m, s)
+            end_job, audio_job, why = clip_links(cfg, m, s, api=api)
             if why:
                 blocked.append(f"{s.key}: {why}")
                 continue
@@ -203,13 +205,15 @@ def plan_episode(paths: Paths, cfg: dict, args) -> dict:
             "credits": credit_check(paths, cfg, m, load_library(paths))}
 
 
-def clip_links(cfg: dict, m: dict, s: Slot) -> tuple[str | None, str | None, str | None]:
+def clip_links(cfg: dict, m: dict, s: Slot, api: bool = False) -> tuple[str | None, str | None, str | None]:
     """(end_image job, audio_references job, reason it is blocked) for an episode clip slot.
 
     cut.end_frame = "c11" → that cut's approved image is the end frame (continuous hand-off).
     Lip-sync clips use the language's approved narration as audio_references: the block's own job for one
     block, else cut.nar_ref.<lang> (all blocks + [pause] silences in one file, imported — see cmd_narref).
     Song episodes always use nar_ref: the lines trimmed and placed on their beats (preview_assets.song_vocal).
+    api=True: a finished-song cut needs no nar_ref — hf_api.py uploads audio/refs/<cut>_<lang>.wav itself
+    (audio job None).
     """
     end_job = None
     ef = s.cut.get("end_frame")
@@ -222,6 +226,8 @@ def clip_links(cfg: dict, m: dict, s: Slot) -> tuple[str | None, str | None, str
     if not s.lang:
         return end_job, None, None
     tr = song_track(m.get("song"))
+    if tr is not None and api:
+        return end_job, None, None
     if tr is not None:  # finished song: the vocal stem sliced to exactly this cut's window
         ref = (s.cut.get("nar_ref") or {}).get(s.lang) or {}
         win = track_window(m, s.cut["id"])
@@ -666,6 +672,8 @@ def episode_status(paths: Paths, cfg: dict, m: dict, lib: dict) -> dict:
     cr = m.get("credits") or {}
     credits = {"spent": float(cr.get("spent") or 0), "cap": est["cap"], "generations": int(cr.get("generations") or 0),
                "regenerations": int(cr.get("regenerations") or 0), "projected": est["total"]}
+    if cr.get("api_generations") or cr.get("api_usd"):  # hf_api.py — the API's own prepaid balance, not the cap
+        credits.update(api_usd=float(cr.get("api_usd") or 0), api_generations=int(cr.get("api_generations") or 0))
     if est["over_cap"]:
         credits["stop"] = stop_message(est["total"], est["cap"])
     return {"ep": ep, "status": m.get("status"), "cuts": rows, "credits": credits, "next": nxt}
@@ -709,6 +717,8 @@ def print_episode_status(st: dict) -> None:
     cr = st["credits"]
     print(f"\n크레딧: 사용 {cr['spent']:g} / 캡 {cr['cap']:g} (생성 {cr['generations']}회, 재생성 {cr['regenerations']}회)"
           f" · 예상 총액 {cr['projected']:g} (estimate_credits.py)")
+    if "api_usd" in cr:
+        print(f"API: ${cr['api_usd']:.2f} (생성 {cr['api_generations']}회, hf_api.py — 선불 잔액, 구독 크레딧·캡과 별개)")
     if cr.get("stop"):
         print(f"✖ {cr['stop']}")
     print("\n다음 작업:")

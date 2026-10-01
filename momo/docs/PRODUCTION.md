@@ -189,6 +189,8 @@ python momo/build.py --ep ep02 --lang en --allow-missing   # (선택) 크레딧 
   코드 블록에 원문 그대로 붙인다. 우회하려고 모델·해상도를 바꾸지 않는다.
 - 크레딧이 남아 있어도 생성 횟수 한도는 따로다. 이미지·음성·영상이 같은 카운터를 쓴다 —
   음성 블록(1편 약 50개)도 1회씩 센다.
+- Higgsfield **API**(`hf_api.py`, 별도 선불 잔액)의 잔액 부족(HTTP 403)은 예외 — 멈추고 원문을 보고하되, 남은 클립은
+  사용자 지시대로 구독 플랜(MCP)으로 이어 간다 ([Higgsfield API](#higgsfield-api--클립을-mcp-대신-api-로-hf_apipy) 절).
 
 실패 보고 절차:
 
@@ -255,6 +257,39 @@ git commit -m "ep02 5단계 중단: <이유>" && git push      # 성공분 기�
 
 모델이 `medias` role 을 거부하면 `mcp__higgsfield__models_explore` 로 그 모델의 `medias[].roles` 를 확인한다.
 `medias[].value` 에는 URL 이 아니라 job_id/media_id 를 넣는다.
+
+### Higgsfield API — 클립을 MCP 대신 API 로 (`hf_api.py`)
+
+API 는 구독과 **별개인 선불 잔액(USD)** 이다 (키: 저장소 루트 `.env.local` 의 `HF_KEY`, 출력·커밋 금지).
+기록은 MCP 와 같은 manifest GenRec 에 남는다 (`job_id` = `api:<request_id>`, 구독 `credits.spent` 에는 0, USD 는 `credits.api_usd`).
+
+- **API 로 하는 것: V 클립만** — wan2_7(립싱크 포함) · seedance_2_0_mini/2_0(→ API seedance-2.0, mini 없음) · seedance_2_5.
+  구독 크레딧이 캡(250)에 가깝거나 일일 생성 한도에 걸렸을 때, 또는 사용자가 API 로 하라고 할 때.
+- **MCP 로만 하는 것**: 이미지 (Nano Banana Pro + Elements `<<<element_id>>>` 가 API 에 없음 — 모모 일관성), 음성(API 에 TTS 없음),
+  kling 등 매핑 없는 모델, 여러 블록 나레이션 립싱크(nar_ref). run 이 이런 항목을 "MCP 로" 목록으로 따로 보여준다.
+- seedance 는 API 최소 4초 (3초 컷은 4초로 만들고 조립이 필요한 만큼만 쓴다). API 결과는 MCP 폴더·`job_display` 에 안 나온다 —
+  사용자에게는 프레임 시트로 보여준다.
+
+절차:
+1. `python momo/hf_api.py check` (과금 없음) — exit 3(HTTP 403 잔액 부족)이면 API 는 건너뛰고 MCP 공통 루프로.
+2. 노래 파일 에피소드 립싱크: `python momo/song_track.py refs --ep ep05` 만 하면 된다 (API 가 `audio/refs/<cut>_en.wav` 를 직접
+   올림 — publish·media_import_url·narref 는 MCP 용).
+3. `python momo/hf_api.py run --ep ep05 --kind clip [--cuts c02,c03] --dry-run` → 모델·payload·입력 파일·`blocked`·"MCP 로" 확인.
+4. 실제 실행 — 업로드와 `POST /estimate` 는 무료, 제출부터 과금. 예상 USD 를 사용자에게 보고하고 **[승인]** 받은 금액으로
+   `python momo/hf_api.py run --ep ep05 --kind clip --max-usd <승인액>` (합계가 넘으면 아무것도 안 보내고 exit 2).
+   접수되면 즉시 manifest 에 기록되고, 끝나면 url 기록 + `clips/` 에 받는다. 같은 키(Idempotency-Key)로만 재전송하므로
+   중복 과금이 없다 — 손으로 다시 제출하지 말 것.
+5. 공통 루프 7~9 그대로: 프레임 시트로 직접 보기 → `hf_jobs.py record … --kind clip --status approved|rejected` → 커밋·푸시.
+6. **승인 후 7일 안에** `python momo/hf_api.py archive --ep ep05` → API 결과를 release `media-ep05` 로 옮기고 manifest url 갱신
+   (API 는 결과를 7일쯤만 보관) → manifest 커밋·푸시.
+
+실패·폴백:
+- **API 잔액 부족 (exit 3, HTTP 403 `not_enough_credits`)** — 사용자 지시 (2026-10-01): "api사용도중에 크레딧이 모자라면 그냥 기존
+  구독 플랜으로 돌려". 재시도·충전 요청 없이 run 이 출력한 MCP plan(JSON)으로 남은 클립을 구독 플랜에서 이어 만든다
+  (공통 루프 1번 예산 확인부터 — 노래 립싱크는 MCP 용 publish → media_import_url → narref 가 필요하다는 `blocked` 도 확인).
+  이미 접수된 API 요청은 run 이 끝까지 확인해 기록한다. 에러 원문은 사용자에게 그대로 보고.
+- exit 1: 결과 표의 사유. failed/nsfw 는 `rejected` 로 기록됨(과금 없음) → 모션 문구를 고쳐 다시 run.
+  "접수 불명 / 진행 중 / 확인 실패 / 알 수 없는 상태" 는 **같은 run 명령을 다시** — 새로 제출하지 않고 이어서 확인·재전송만 한다.
 
 ### (0) 프리플라이트
 

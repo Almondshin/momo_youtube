@@ -5,7 +5,9 @@
 
 대상: new_episode, validate_manifest(--table/--json), hf_jobs(plan image/clip/audio/library, voice-samples,
 record, status), estimate_credits(합계·캡 초과 exit 2), fetch_assets(file://, http, 재시도, 확장자 결정, 검증 실패,
-URL 변경 시 재다운로드, --library), doctor(폰트·BGM ✖, 비밀 값 비출력), episode_readme.
+URL 변경 시 재다운로드, --library), doctor(폰트·BGM ✖, 비밀 값 비출력), episode_readme,
+hf_api(Higgsfield API — httpx.MockTransport 위에서: payload 매핑, Idempotency-Key, 즉시 기록, 실패·nsfw, 403 → MCP plan,
+재전송, dry-run, estimate 정산, archive).
 """
 from __future__ import annotations
 
@@ -21,6 +23,7 @@ import sys
 import tempfile
 import threading
 import traceback
+import uuid
 import wave
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -747,6 +750,468 @@ def test_fetch_http_retry_and_ext(tmp: Path) -> None:
     assert Handler.hits["/bad.png"] == 3, Handler.hits      # 검증 실패는 3회까지
     assert "| c03 image |" in out and "이미지가 아님" in out and "| c04 image |" in out and "HTTP 404" in out, out
     assert not list((ep / "images").glob("c03.*")) and not list((ep / "images").glob(".dl_*")), "실패 흔적 남음"
+
+
+# ---------------------------------------------------------------- hf_api (Higgsfield API) — offline, nothing billed
+
+API_BASE = "https://api.higgsfield.ai"
+
+
+class FakeApi:
+    """api.higgsfield.ai + its upload storage on an httpx.MockTransport.
+
+    terminal: status JSON after `running` in_progress polls (a callable(rid, path) may pick it per request);
+    submit: HTTP codes of successive generation POSTs (the last repeats); request_id = uuid5(Idempotency-Key), so a
+    resend with the same key gets the same id like the real API. on_poll(rid, n) runs before each status answer."""
+
+    def __init__(self, terminal=None, submit=(200,), running: int = 1, usd: str = "0.250", credits: str = "4.000",
+                 on_poll=None, status_code: int = 200):
+        self.terminal, self.submit, self.running, self.on_poll = terminal, submit, running, on_poll
+        self.usd, self.credits, self.status_code = usd, credits, status_code
+        self.posts: list[dict] = []
+        self.estimates: list[tuple[str, dict]] = []
+        self.uploads: list[str] = []
+        self.polls: dict[str, int] = {}
+        self.models: dict[str, str] = {}
+        self.lock = threading.Lock()
+
+    def __call__(self, req):
+        with self.lock:
+            return self.handle(req)
+
+    def handle(self, req):
+        import httpx
+        path = req.url.path
+        if req.url.host == "upload.example":
+            assert "authorization" not in req.headers, "API 키가 저장소 PUT 에 실림"
+            return httpx.Response(200)
+        body = json.loads(req.content) if req.content else None
+        if path == "/files/generate-upload-url":
+            n = len(self.uploads)
+            self.uploads.append(body["content_type"])
+            return httpx.Response(200, json={"public_url": f"https://cdn.example/in/{n}",
+                                             "upload_url": f"https://upload.example/{n}",
+                                             "content_type": body["content_type"],
+                                             "upload_headers": {"Content-Type": body["content_type"],
+                                                                "x-amz-tagging": "retention=temporary"}})
+        if path.startswith("/estimate/"):
+            self.estimates.append((path[len("/estimate/"):], body))
+            return httpx.Response(200, json={"credits": self.credits, "usd": self.usd})
+        if req.method == "GET" and path.startswith("/requests/"):
+            rid = path.split("/")[2]
+            if self.status_code != 200:
+                return httpx.Response(self.status_code, json={"detail": f"mock {self.status_code}"})
+            n = self.polls[rid] = self.polls.get(rid, 0) + 1
+            if self.on_poll:
+                self.on_poll(rid, n)
+            if n <= self.running:
+                return httpx.Response(200, json={"status": "in_progress", "request_id": rid})
+            t = self.terminal(rid, self.models.get(rid)) if callable(self.terminal) else self.terminal
+            return httpx.Response(200, json={"request_id": rid, **t})
+        if req.method == "POST":
+            code = self.submit[min(len(self.posts), len(self.submit) - 1)]
+            key = req.headers.get("idempotency-key")
+            self.posts.append({"model": path[1:], "key": key, "body": body})
+            if code != 200:
+                detail = "not_enough_credits" if code == 403 else f"mock {code}"
+                return httpx.Response(code, json={"detail": detail}, headers={"x-correlation-id": "corr-err"})
+            rid = str(uuid.uuid5(uuid.NAMESPACE_OID, key))
+            self.models[rid] = path[1:]
+            return httpx.Response(200, json={"status": "queued", "request_id": rid,
+                                             "status_url": f"{API_BASE}/requests/{rid}/status",
+                                             "cancel_url": f"{API_BASE}/requests/{rid}/cancel"},
+                                  headers={"x-correlation-id": "corr-1"})
+        return httpx.Response(404, json={"detail": f"unexpected {req.method} {req.url}"})
+
+
+@contextlib.contextmanager
+def fake_api(fake: FakeApi):
+    """hf_api.make_api → our HTTP client + the real SDK upload_file, both on the MockTransport (no key, no network)."""
+    import httpx
+    import higgsfield_client
+    import hf_api
+    sdk = higgsfield_client.SyncClient(api_key="test-key")
+    sdk.__dict__["_client"] = httpx.Client(transport=httpx.MockTransport(fake), base_url=API_BASE,
+                                           headers={"Authorization": "Key test-key"})
+    sdk.__dict__["_upload_client"] = httpx.Client(transport=httpx.MockTransport(fake))
+    http = httpx.Client(transport=httpx.MockTransport(fake), base_url=API_BASE)
+    saved = hf_api.make_api
+    hf_api.make_api = lambda timeout=90.0: hf_api.HfApi(http, sdk.upload_file, sleep=lambda s: None)
+    try:
+        yield
+    finally:
+        hf_api.make_api = saved
+
+
+@contextlib.contextmanager
+def served(files: dict[str, Path]):
+    """Result videos over local http (API outputs are https URLs; fetch_assets downloads them)."""
+    Handler.hits, Handler.files = {}, {k: (p.read_bytes(), "video/mp4") for k, p in files.items()}
+    srv = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    try:
+        yield f"http://127.0.0.1:{srv.server_address[1]}"
+    finally:
+        srv.shutdown()
+        srv.server_close()
+
+
+def api_root(tmp: Path) -> Path:
+    """English ep42: c02 seedance_2_0_mini 3 s (API minimum 4 s), c04 wan2_7 lip-sync on its one narration block.
+    Images approved (and on disk), c04's voice approved (an mp3 URL, a WAV on disk)."""
+    root = make_root(tmp, {"languages": ["en"]})
+    m = manifest(root)
+    for c in m["cuts"]:
+        if c["id"] == "c02":
+            c.update(clip_model="seedance_2_0_mini", clip_seconds=3)
+        if c["id"] == "c04":
+            c.update(lipsync=True, clip_model="wan2_7", clip_seconds={"en": 4})
+    wj(root / "episodes" / EP / "manifest.json", m)
+    for cid in ("c02", "c04"):
+        record(root, "--ep", EP, "--cut", cid, "--kind", "image", "--job-id", f"img-{cid}", "--url",
+               f"https://cdn.example/{cid}.png", "--status", "approved")
+        write_png(root / "episodes" / EP / "images" / f"{cid}.png")
+    record(root, "--ep", EP, "--cut", "c04", "--kind", "audio", "--lang", "en", "--block", "1", "--job-id", "a-c04",
+           "--url", "https://cdn.example/c04_1.mp3", "--status", "approved")
+    write_wav(root / "episodes" / EP / "audio" / "en" / "c04_1.wav", 1.5)
+    return root
+
+
+def clip_rec(root: Path, cid: str, key: str = "clip") -> dict:
+    return cut(root, cid)["gen"].get(key) or {}
+
+
+def test_hf_api_payloads(tmp: Path) -> None:
+    import hf_api
+    model, body, notes = hf_api.api_payload("wan2_7", prompt="p", duration=3, resolution="720p", image="I",
+                                            end_image="E", audio="A")
+    assert model == "wan/v2.7/image-to-video" and not notes, notes
+    assert body == {"prompt": "p", "duration": 3, "resolution": "720p", "image_url": "I", "end_image_url": "E",
+                    "audio_url": "A"}, body
+    model, body, notes = hf_api.api_payload("seedance_2_0_mini", prompt="p", duration=3, resolution="720p", image="I")
+    assert model == "bytedance/seedance-2.0/image-to-video", model
+    assert body == {"prompt": "p", "duration": 4, "resolution": "720p", "image_url": "I", "generate_audio": False}
+    assert any("4초" in n for n in notes) and any("mini" in n for n in notes), notes
+    model, body, _ = hf_api.api_payload("seedance_2_5", prompt="p", duration=5, resolution=None, image="I")
+    assert model == "bytedance/seedance-2.5/image-to-video" and "aspect_ratio" not in body, body
+    model, body, _ = hf_api.api_payload("seedance_2_5", prompt="p", duration=5, resolution="720p", image="I", audio="A")
+    assert model == "bytedance/seedance-2.5/reference-to-video", model
+    assert body["image_urls"] == ["I"] and body["audio_urls"] == ["A"] and body["aspect_ratio"] == "16:9", body
+    for kw in ({"mcp_model": "kling3_0_turbo"}, {"mcp_model": "seedance_2_0", "audio": "A"},
+               {"mcp_model": "seedance_2_5", "audio": "A", "end_image": "E"}, {"mcp_model": "wan2_7", "duration": 20},
+               {"mcp_model": "wan2_7", "resolution": "480p"}):
+        args = {"prompt": "p", "duration": 5, "resolution": "720p", "image": "I", **kw}
+        try:
+            hf_api.api_payload(args.pop("mcp_model"), **args)
+            raise AssertionError(f"Unsupported 이어야 함: {kw}")
+        except hf_api.Unsupported:
+            pass
+    k = hf_api.idem_key("ep05", "c02", "clip", "en", 1, "wan/v2.7/image-to-video", "img")
+    assert k == hf_api.idem_key("ep05", "c02", "clip", "en", 1, "wan/v2.7/image-to-video", "img")  # stable
+    others = {hf_api.idem_key("ep05", "c02", "clip", "en", 2, "wan/v2.7/image-to-video", "img"),
+              hf_api.idem_key("ep05", "c03", "clip", "en", 1, "wan/v2.7/image-to-video", "img"),
+              hf_api.idem_key("ep05", "c02", "clip", None, 1, "wan/v2.7/image-to-video", "img"),
+              hf_api.idem_key("ep05", "c02", "clip", "en", 1, "wan/v2.7/image-to-video", "img2")}
+    assert k not in others and len(others) == 4 and str(uuid.UUID(k)) == k
+    assert hf_api.fill({"a": "<image>", "b": ["<audio>", "x"], "d": 4}, {"<image>": "U1", "<audio>": "U2"}) == \
+        {"a": "U1", "b": ["U2", "x"], "d": 4}
+    e = hf_api.ApiError
+    assert e(403, "not_enough_credits").no_credits and not e(403, "x").ambiguous
+    assert e(None, "net").ambiguous and e(503, "x").ambiguous and e(429, "x").ambiguous and not e(422, "x").ambiguous
+    assert e(400, "Maximum number of concurrent requests (4) has been reached").busy and not e(400, "bad").busy
+    assert hf_api.output_url({"status": "completed", "video": {"url": "https://x/v.mp4"}}) == "https://x/v.mp4"
+
+
+def test_hf_api_wait_backoff_and_errors(tmp: Path) -> None:
+    import httpx
+    import hf_api
+    t = [0.0]
+    sleeps: list[float] = []
+
+    def sleep(s: float) -> None:
+        sleeps.append(s)
+        t[0] += s
+    fake = FakeApi(terminal={"status": "completed"}, running=10 ** 6)
+    api = hf_api.HfApi(httpx.Client(transport=httpx.MockTransport(fake), base_url=API_BASE), str,
+                       sleep=sleep, clock=lambda: t[0])
+    try:
+        api.wait("r1", deadline=60)
+        raise AssertionError("시간 초과여야 함")
+    except hf_api.PollTimeout as e:
+        assert "60초" in str(e)
+    assert 2.0 <= sleeps[0] <= 2.5 and max(sleeps) <= 10.5 and sleeps[3] > sleeps[0], sleeps  # 2 s → 10 s
+    assert t[0] <= 60 + 10.5, t
+
+    calls = {"n": 0}
+
+    def flaky(req):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise httpx.ConnectError("network down", request=req)
+        if calls["n"] == 2:
+            return httpx.Response(502, json={"detail": "bad gateway"})
+        return httpx.Response(200, json={"status": "Cancelled", "request_id": "r2"})
+    api = hf_api.HfApi(httpx.Client(transport=httpx.MockTransport(flaky), base_url=API_BASE), str,
+                       sleep=lambda s: None)
+    assert api.wait("r2")["status"] == "canceled" and calls["n"] == 3  # network error and 5xx: keep polling
+    api = hf_api.HfApi(httpx.Client(transport=httpx.MockTransport(FakeApi(status_code=404)), base_url=API_BASE),
+                       str, sleep=lambda s: None)
+    try:
+        api.wait("r3")
+        raise AssertionError("404 는 바로 실패해야 함")
+    except hf_api.ApiError as e:
+        assert e.code == 404
+
+
+def test_hf_api_run_completed(tmp: Path) -> None:
+    import hf_api
+    root = api_root(tmp)
+    spent0 = manifest(root)["credits"]["spent"]
+    seen = []
+
+    def on_poll(rid: str, n: int) -> None:  # the request id is on disk before the first status poll
+        if n == 1:
+            m = rj(root / "episodes" / EP / "manifest.json")
+            recs = [g for c in m["cuts"] for g in (c.get("gen") or {}).values() if g.get("job_id") == f"api:{rid}"]
+            assert len(recs) == 1 and recs[0]["status"] == "generated" and not recs[0]["url"], recs
+            assert "api_pending" not in recs[0] and m["credits"]["spent"] == spent0, recs
+            seen.append(rid)
+    with served({"/out/v.mp4": write_mp4(tmp / "remote/v.mp4")}) as base:
+        fake = FakeApi(terminal={"status": "completed", "video": {"url": f"{base}/out/v.mp4"}}, on_poll=on_poll)
+        with fake_api(fake):
+            code, out = call(hf_api, "run", "--root", str(root), "--ep", EP, "--kind", "clip", "--max-parallel", "2")
+    assert code == 0, out
+    assert len(seen) == 2 and len(fake.posts) == 2, (seen, fake.posts)
+    assert sorted(fake.uploads) == ["audio/x-wav", "image/png", "image/png"] or \
+        sorted(fake.uploads) == ["audio/wav", "image/png", "image/png"], fake.uploads
+    by = {p["model"]: p for p in fake.posts}
+    sd = by["bytedance/seedance-2.0/image-to-video"]
+    assert sd["body"]["duration"] == 4 and sd["body"]["generate_audio"] is False, sd
+    assert sd["body"]["image_url"].startswith("https://cdn.example/in/"), sd   # uploaded, not the manifest URL
+    assert sd["key"] == hf_api.idem_key(EP, "c02", "clip", None, 1, sd["model"], "img-c02"), sd
+    wan = by["wan/v2.7/image-to-video"]
+    assert wan["body"]["audio_url"].startswith("https://cdn.example/in/") and wan["body"]["duration"] == 4, wan
+    assert wan["key"] == hf_api.idem_key(EP, "c04", "clip", "en", 1, wan["model"], "img-c04"), wan
+    assert sorted((m, json.dumps(b, sort_keys=True)) for m, b in fake.estimates) == \
+        sorted((p["model"], json.dumps(p["body"], sort_keys=True)) for p in fake.posts)  # estimate = same body
+    m = manifest(root)
+    rec = clip_rec(root, "c02")
+    assert rec["status"] == "generated" and rec["job_id"].startswith("api:") and rec["url"] == f"{base}/out/v.mp4"
+    api = rec["history"][-1]["api"]
+    assert api["usd"] == 0.25 and api["credits"] == 4.0 and api["charged"] and api["correlation_id"] == "corr-1", api
+    assert rec["history"][-1]["start_image"] == "img-c02" and rec["credits"] == 0, rec
+    assert m["credits"]["spent"] == spent0 and m["credits"]["api_usd"] == 0.5 and m["credits"]["api_generations"] == 2
+    ep = root / "episodes" / EP
+    assert (ep / "clips/c02.mp4").exists() and (ep / "clips/c04_en.mp4").exists(), list((ep / "clips").iterdir())
+    assert rj(ep / "clips/.sources.json")["c02.mp4"]["job_id"] == rec["job_id"]
+    assert "API 사용: 이번 실행 $0.50" in out and f"구독 크레딧: 사용 {spent0:g} / 캡 250" in out, out
+    assert "API: $0.50 (생성 2회" in ok(hf_jobs, "status", "--root", str(root), "--ep", EP)
+    assert "| Higgsfield API | $0.50 (생성 2회" in ok(episode_readme, "--root", str(root), "--ep", EP, "--stdout")
+    with fake_api(FakeApi()):
+        out = ok(hf_api, "run", "--root", str(root), "--ep", EP)
+    assert "API 로 보낼 항목 없음" in out, out   # generated with a URL = awaiting review, nothing resent
+
+
+def test_hf_api_failed_nsfw_unknown(tmp: Path) -> None:
+    import hf_api
+    root = api_root(tmp)
+    fake = FakeApi(terminal=lambda rid, model: {"status": "failed", "error": "Generation failed"} if "seedance" in model
+                   else {"status": "nsfw"})
+    with fake_api(fake):
+        code, out = call(hf_api, "run", "--root", str(root), "--ep", EP)
+    assert code == 1 and "성공 아님" in out and "생성 실패" in out and "검열" in out, out
+    c02, c04 = clip_rec(root, "c02"), clip_rec(root, "c04", "clip_en")
+    assert c02["status"] == "rejected" and c02["reason"] == "API failed: Generation failed", c02
+    assert c04["status"] == "rejected" and c04["reason"].startswith("API nsfw"), c04
+    assert c02["history"][-1]["api"]["charged"] is False and not manifest(root)["credits"].get("api_usd"), c02
+    assert not list((root / "episodes" / EP / "clips").glob("c0*")), "실패인데 파일이 생김"
+    dry = okj(hf_api, "run", "--root", str(root), "--ep", EP, "--cuts", "c02", "--dry-run")
+    it = dry["items"][0]
+    assert it["attempt"] == 2 and it["idempotency_key"] not in {p["key"] for p in fake.posts}, dry  # new attempt, new key
+
+    root2 = api_root(tmp / "b")
+    fake = FakeApi(terminal={"status": "exploded", "video": {"url": "https://cdn.example/o.mp4"}})
+    with fake_api(fake):
+        code, out = call(hf_api, "run", "--root", str(root2), "--ep", EP, "--cuts", "c02")
+    assert code == 1 and "알 수 없는 상태" in out and "성공으로 치지 않음" in out, out
+    rec = clip_rec(root2, "c02")
+    assert rec["status"] == "generated" and rec["job_id"].startswith("api:") and not rec["url"], rec
+    with served({"/out/v.mp4": write_mp4(tmp / "remote/v.mp4")}) as base:
+        fake2 = FakeApi(terminal={"status": "completed", "video": {"url": f"{base}/out/v.mp4"}})
+        with fake_api(fake2):
+            code, out = call(hf_api, "run", "--root", str(root2), "--ep", EP, "--cuts", "c02")
+    assert code == 0 and not fake2.posts and not fake2.estimates, (out, fake2.posts)  # resumed: poll only
+    assert clip_rec(root2, "c02")["url"] == f"{base}/out/v.mp4" and "이어서 확인" in out, out
+    assert manifest(root2)["credits"]["api_usd"] == 0.25  # charge taken from the estimate stored at submit
+
+
+def test_hf_api_403_falls_back_to_mcp(tmp: Path) -> None:
+    import hf_api
+    root = api_root(tmp)
+    fake = FakeApi(submit=(403,))
+    with fake_api(fake):
+        code, out = call(hf_api, "run", "--root", str(root), "--ep", EP, "--max-parallel", "1")
+    assert code == 3, out
+    assert len(fake.posts) == 1, fake.posts   # no retry, nothing else submitted
+    assert "not_enough_credits" in out and "API 잔액 부족" in out and "구독 플랜(MCP)" in out, out
+    plan_json, _ = json.JSONDecoder().raw_decode(out[out.index("\n{", out.index("구독 플랜(MCP)")) + 1:])
+    assert sorted(i["cut"] for i in plan_json["items"]) == ["c02", "c04"], plan_json
+    assert all(i["tool"] == "generate_video" and "--job-id <JOB_ID>" in i["record"] for i in plan_json["items"])
+    for cid, key in (("c02", "clip"), ("c04", "clip_en")):
+        rec = clip_rec(root, cid, key)
+        assert rec.get("status", "pending") == "pending" and "api_pending" not in rec, rec
+    assert not manifest(root)["credits"].get("api_generations")
+
+
+def test_hf_api_resend_after_lost_answer(tmp: Path) -> None:
+    import hf_api
+    root = api_root(tmp)
+    fake = FakeApi(submit=(503,))
+    with fake_api(fake):
+        code, out = call(hf_api, "run", "--root", str(root), "--ep", EP, "--cuts", "c02")
+    assert code == 1 and "접수 여부 불명" in out, out
+    assert len(fake.posts) == hf_api.SUBMIT_TRIES and len({json.dumps(p["body"]) for p in fake.posts}) == 1
+    assert len({p["key"] for p in fake.posts}) == 1, fake.posts  # SDK-style retries reuse the key + body
+    pend = clip_rec(root, "c02")["api_pending"]
+    assert pend["key"] == fake.posts[0]["key"] and pend["body"] == fake.posts[0]["body"] and pend["attempt"] == 1
+    ok(validate_manifest, "--root", str(root), "--ep", EP)   # the pending intent is a valid GenRec extra
+    with served({"/out/v.mp4": write_mp4(tmp / "remote/v.mp4")}) as base:
+        fake2 = FakeApi(terminal={"status": "completed", "video": {"url": f"{base}/out/v.mp4"}})
+        with fake_api(fake2):
+            code, out = call(hf_api, "run", "--root", str(root), "--ep", EP, "--cuts", "c02")
+    assert code == 0, out
+    assert fake2.posts == [{"model": pend["model"], "key": pend["key"], "body": pend["body"]}], fake2.posts
+    assert not fake2.uploads and "같은 키·body" in out, out   # the stored body is resent as is (no new upload)
+    rec = clip_rec(root, "c02")
+    assert "api_pending" not in rec and rec["attempts"] == 1 and rec["url"], rec
+
+
+def test_hf_api_dry_run_and_kinds(tmp: Path) -> None:
+    import hf_api
+    root = api_root(tmp)
+    m = manifest(root)
+    m["cuts"][1]["clip_model"] = "kling3_0_turbo"   # c02 → no API mapping
+    wj(root / "episodes" / EP / "manifest.json", m)
+
+    def boom(*a, **k):
+        raise AssertionError("dry-run 이 API 클라이언트를 만듦")
+    saved, hf_api.make_api = hf_api.make_api, boom
+    try:
+        d = okj(hf_api, "run", "--root", str(root), "--ep", EP, "--dry-run")
+    finally:
+        hf_api.make_api = saved
+    assert [i["key"] for i in d["items"]] == ["c04 clip en"], d
+    it = d["items"][0]
+    assert it["api_model"] == "wan/v2.7/image-to-video" and it["payload"]["image_url"] == "<image>", it
+    assert it["payload"]["audio_url"] == "<audio>" and it["inputs"]["<audio>"]["as_wav"] is False, it
+    assert it["inputs"]["<image>"]["upload"] == f"episodes/{EP}/images/c04.png", it
+    assert it["inputs"]["<image>"]["fallback_url"] == "https://cdn.example/c04.png", it
+    assert it["estimate"] == f"POST {API_BASE}/estimate/wan/v2.7/image-to-video", it
+    assert it["idempotency_key"] == hf_api.idem_key(EP, "c04", "clip", "en", 1, it["api_model"], "img-c04")
+    assert d["mcp"] and d["mcp"][0]["key"] == "c02 clip" and "API 매핑 없음" in d["mcp"][0]["reason"], d
+    assert "api_pending" not in clip_rec(root, "c04", "clip_en"), "dry-run 이 manifest 를 바꿈"
+    (root / "episodes" / EP / "audio/en/c04_1.wav").unlink()
+    write_wav(root / "episodes" / EP / "audio/en/c04_1.mp3")  # not a WAV → converted before the upload
+    d = okj(hf_api, "run", "--root", str(root), "--ep", EP, "--dry-run")
+    assert d["items"][0]["inputs"]["<audio>"]["as_wav"] is True, d
+    fails(hf_api, "run", "--root", str(root), "--ep", EP, "--kind", "image", needle="클립만")
+    fails(hf_api, "run", "--root", str(root), "--ep", EP, "--max-parallel", "21", needle="1~20")
+
+
+def test_hf_api_check_codes(tmp: Path) -> None:
+    import hf_api
+    root = make_root(tmp, assets=False)
+    for code, want, needle in ((404, 0, "키 정상"), (401, 1, "거부됨"), (403, 3, "잔액 부족")):
+        with fake_api(FakeApi(status_code=code)):
+            got, out = call(hf_api, "check", "--root", str(root))
+        assert got == want and needle in out, (code, got, out)
+    assert "HTTP 403" in out and "거부됨" not in out and "키는 정상" in out, out  # 403 = no credits, not a bad key
+
+
+def test_hf_api_track_song_refs(tmp: Path) -> None:
+    import hf_api
+    import song_track
+    from momolib import release
+    root = make_root(tmp, {"languages": ["en"]})
+    m = manifest(root)
+    m["song"] = {"bpm": 120.0, "beats_per_bar": 4,
+                 "track": {"status": "approved", "sha1": "abc123", "duration": 14.0, "start": 0.0, "end": 13.0,
+                           "analysis": {"bpm": 120.0, "downbeat0": 0.5, "confidence": 9.0}, "job_id": "local:abc"},
+                 "vocals": {"status": "approved", "sha1": "def456", "job_id": "local:def"}}
+    base = {"image_prompt": "[Momo] in a kitchen", "motion": "sings to the viewer"}
+    m["cuts"] = [{"id": "c01", "scene": 1, "type": "V", "bars": 2, "clip_model": "seedance_2_0_mini", **base},
+                 {"id": "c02", "scene": 2, "type": "V", "bars": 1, "lipsync": True, "clip_model": "wan2_7",
+                  "clip_seconds": {"en": 3}, **base},
+                 {"id": "c03", "scene": 2, "type": "V", "bars": 2, "clip_model": "seedance_2_0_mini", **base}]
+    wj(root / "episodes" / EP / "manifest.json", m)  # c02 = bar 2 → [4.5, 6.5] s of the song
+    record(root, "--ep", EP, "--cut", "c02", "--kind", "image", "--job-id", "img-c02", "--url",
+           "https://cdn.example/c02.png", "--status", "approved")
+    write_png(root / "episodes" / EP / "images/c02.png")
+    mcp = plan(root, "--ep", EP, "--kind", "clip", "--all")
+    assert not mcp["items"] and any("노래 보컬" in b for b in mcp["blocked"]), mcp  # MCP needs a media id
+    refs = root / "episodes" / EP / "audio/refs"
+    write_wav(refs / "c02_en.wav", 2.0)   # 2 s: the window, but refs pad to 3 s → stale
+    d = okj(hf_api, "run", "--root", str(root), "--ep", EP, "--dry-run")
+    assert not d["items"] and any("c02_en.wav 길이 2.00s" in b for b in d["blocked"]), d
+    write_wav(refs / "c02_en.wav", 3.0)
+    d = okj(hf_api, "run", "--root", str(root), "--ep", EP, "--dry-run")
+    it = d["items"][0]
+    assert it["key"] == "c02 clip en" and it["inputs"]["<audio>"]["upload"] == f"episodes/{EP}/audio/refs/c02_en.wav"
+    assert it["inputs"]["<audio>"]["fallback_url"] is None and it["payload"]["duration"] == 3, it
+
+    # song_track publish goes through momolib.release (shared with hf_api archive)
+    d_audio = root / "episodes" / EP / "audio"
+    for n in ("song.flac", "song_vocals.flac"):
+        (d_audio / n).write_bytes(b"fLaC" + n.encode())
+    got = {}
+    saved = release.need_gh, release.ensure_release, release.upload_assets
+    release.need_gh = lambda: None
+    release.ensure_release = lambda tag, title, notes: got.setdefault("tag", tag)
+    release.upload_assets = lambda tag, files: {n: f"https://github.com/o/r/releases/download/{tag}/{n}" for n in files}
+    try:
+        ok(song_track, "--root", str(root), "publish", "--ep", EP)
+    finally:
+        release.need_gh, release.ensure_release, release.upload_assets = saved
+    s = manifest(root)["song"]
+    sha = song_track.sha1_file(refs / "c02_en.wav")[:8]
+    assert got["tag"] == f"media-{EP}" and s["refs_urls"]["c02_en"].endswith(f"/{EP}_ref_c02_en_{sha}.wav"), s
+    d = okj(hf_api, "run", "--root", str(root), "--ep", EP, "--dry-run")
+    assert d["items"][0]["inputs"]["<audio>"]["fallback_url"] == s["refs_urls"]["c02_en"], d  # same slice → fallback
+
+
+def test_hf_api_archive(tmp: Path) -> None:
+    import hf_api
+    from momolib import release
+    root = api_root(tmp)
+    ep = root / "episodes" / EP
+    up: dict[str, bytes] = {}
+    saved = release.need_gh, release.ensure_release, release.upload_assets
+    release.need_gh = lambda: None
+    release.ensure_release = lambda tag, title, notes: None
+
+    def upload(tag, files):
+        up.update({n: Path(f).read_bytes() for n, f in files.items()})
+        return {n: f"https://github.com/o/r/releases/download/{tag}/{n}" for n in files}
+    release.upload_assets = upload
+    try:
+        with served({"/out/v.mp4": write_mp4(tmp / "remote/v.mp4")}) as base:
+            with fake_api(FakeApi(terminal={"status": "completed", "video": {"url": f"{base}/out/v.mp4"}})):
+                ok(hf_api, "run", "--root", str(root), "--ep", EP)
+            (ep / "clips/c04_en.mp4").unlink()   # not here any more → archive gets it while the API URL works
+            out = ok(hf_api, "archive", "--root", str(root), "--ep", EP, "--dry-run")
+            assert "(먼저 받음)" in out and not up, out
+            out = ok(hf_api, "archive", "--root", str(root), "--ep", EP)
+        assert sorted(n.split("_")[1] for n in up) == ["c02", "c04"], up
+        rec = clip_rec(root, "c02")
+        assert release.is_release_url(rec["url"]) and f"/media-{EP}/{EP}_c02_" in rec["url"], rec
+        assert rec["history"][-1]["url"] == rec["url"] and rec["history"][-1]["api"]["output_url"].endswith("/v.mp4")
+        assert rj(ep / "clips/.sources.json")["c02.mp4"]["url"] == rec["url"]
+        out = ok(fetch_assets, "--root", str(root), "--ep", EP)   # files match the new URLs → nothing to fetch
+        assert "받음 0" in out, out
+        out = ok(hf_api, "archive", "--root", str(root), "--ep", EP)
+        assert "이미 보관됨" in out and "보관할 API 결과 없음" in out, out
+    finally:
+        release.need_gh, release.ensure_release, release.upload_assets = saved
 
 
 def test_doctor(tmp: Path) -> None:

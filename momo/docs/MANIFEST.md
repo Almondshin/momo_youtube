@@ -26,7 +26,7 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `thumbnail` | `{"cut","text":{"en","ko"},"text_pos"}` | 썸네일 원본 컷(모모 클로즈업 + 핵심 사물), 문구는 3단어 이하, `text_pos` top/bottom |
 | `bgm` | `null` 또는 파일명 | `assets/bgm/` 기준 파일명. null 이면 `config.audio.bgm_file` → `assets/bgm/` 의 첫 파일 |
 | `upload` | `{"en": {...}, "ko": {...}}` | 7단계 업로드 메타 — 아래 표 |
-| `credits` | `{"estimate","spent","generations","regenerations"}` | `estimate` 는 `estimate_credits.py --save` 가 적는 예상치. 나머지는 `hf_jobs.py record` 가 자동 누적 |
+| `credits` | `{"estimate","spent","generations","regenerations"}` (+ `"api_usd","api_credits","api_generations"`) | `estimate` 는 `estimate_credits.py --save` 가 적는 예상치. 나머지는 `hf_jobs.py record` 가 자동 누적. `api_*` 는 `hf_api.py run` 이 적는 Higgsfield **API** 사용분 (별도 선불 잔액, USD) — API 작업은 `spent` 에 0 으로 들어가 구독 캡 계산과 섞이지 않는다 |
 | `notes` | `{"v_over_reason","approvals":[],"next_time":[]}` | V 컷 15개 초과 사유(없으면 validate error), 승인 기록(날짜 + 무엇을), 다음 편에 반영할 점(README 에 들어감) |
 | `song.track` / `song.vocals` / `song.lyrics` | `track`: GenRec+`{"tool", "sha1", "duration", "start", "end", "analysis": {bpm, downbeat0, downbeats[], grid}}`, `vocals`: GenRec+`{"sha1"}`, `lyrics`: `[{"text", "section", "words": [[word, t0, t1]]}]`, `history`: replaced songs | **Finished-song episode** (7-C, since ep03): one song file with vocals (Suno Pro WAV + stems, or ACE-Step) is the timeline. Written by `song_track.py` (import / analyze / lyrics / publish); files are GitHub release assets (`media-<ep>`) so fetch_assets can restore them. 0 Higgsfield credits |
 | `song` | `{"bpm": 96, "beats_per_bar": 4, "music": GenRec+{"model","duration","analysis"}, "music_gain_db": -6, "duck_db": -5, "music_start": 0}` | **Song episode** (7-B): lyrics chanted on the beat over an AI instrumental (`music`, generate_audio sonilo_music → `audio/music.*`). `analysis` = `{bpm, downbeat0}` from preview_assets (build detects it when missing). Set `bpm` to the instrumental's own tempo to avoid time-stretching it |
@@ -150,6 +150,12 @@ thumbnail.cut 이 없는 컷, 제목·설명·태그 한도.
     그 시도로 되돌린다.
   - 이미 approved 인 항목에 새 job 을 기록하려면 `--force` (라이브러리는 재생성 금지가 원칙).
 - fetch_assets 는 status 가 generated/approved 이고 url 이 있는 항목만 받는다. URL 이 바뀌면 다시 받는다.
+- Higgsfield **API** 로 만든 클립 (`hf_api.py run`): `job_id` = `"api:<request_id>"`, credits 0 (구독 캡과 별개).
+  history 항목에 `"api": {"model", "request_id", "idempotency_key", "usd_est", "credits_est", "correlation_id",
+  "usd", "credits", "charged", "output_url"}`. 접수 전 잠깐 `"api_pending": {"key", "model", "body", "attempt", "at"}` 가
+  붙는다 — 응답을 못 받은 제출이면 다음 run 이 같은 키·body 로 재전송한다 (손으로 지우지 말 것). failed/nsfw 는 `rejected`
+  (`reason` = `"API failed: …"`), URL 이 없는 `generated` 는 아직 결과 확인 전 (다음 run 이 폴링만 이어서).
+  API 결과 URL 은 7일쯤 뒤 사라질 수 있어 `hf_api.py archive` 가 release `media-<ep>` 주소로 바꾼다 (원래 주소는 `api.output_url`).
 - 위치: 컷 이미지 `cut.gen.image`, V 클립 `cut.gen.clip`, 음성 `cut.audio_src[lang][블록번호]`.
 - 라이브러리(`library/library.json`)도 같은 모양이다 (초기 status `missing` = pending):
   `character_sheets.<momo|ducky|…>`(+ `element_id`), `clips.<이름>.image`(클립 시작 이미지)와
