@@ -51,9 +51,12 @@
   },
   "credits": {
     "estimate": 139.2,
-    "spent": 34.0,
-    "generations": 17,
-    "regenerations": 1
+    "spent": 38.0,
+    "generations": 27,
+    "regenerations": 3,
+    "api_generations": 8,
+    "api_usd": 2.7,
+    "api_credits": 43.2
   },
   "notes": {
     "v_over_reason": "노래 형식 v2 (ep04 v2 방식, 사용자 피드백 '더 자연스럽게' 2026-09-30): 125.6 BPM 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 33컷. V 31개 중 15개는 재사용(clip_from, 0 크레딧 — 후렴 2~4 와 브리지 동물 복습), 새로 만드는 것 16개(이미지 16장). 모모가 노래하는 컷은 전부 립싱크(노래하며 동작).",
@@ -111,6 +114,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:64ebf6c5-34fd-473b-8ccf-414757a30fa4",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/299427be-779a-4a9c-9491-a80ce740589c.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:64ebf6c5-34fd-473b-8ccf-414757a30fa4",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/299427be-779a-4a9c-9491-a80ce740589c.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "46568b54-636c-40b9-9153-6112a2684362",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "64ebf6c5-34fd-473b-8ccf-414757a30fa4",
+                "idempotency_key": "8eaf5d53-8ba5-5eaa-8bb6-cc8f3a08de9a",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "770dd826a6f34d939e61ad32253e5e64",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/299427be-779a-4a9c-9491-a80ce740589c.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c02_en.wav",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            3.927,
+            7.689
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -145,6 +190,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:06967baf-6654-4d78-bcb7-463fbcdafe20",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/79f600e1-d93d-475a-b95a-142bc8119485.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:06967baf-6654-4d78-bcb7-463fbcdafe20",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/79f600e1-d93d-475a-b95a-142bc8119485.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "ecacc00b-94e4-44a5-900b-f389a7f3a77a",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "06967baf-6654-4d78-bcb7-463fbcdafe20",
+                "idempotency_key": "9f764bb7-5aa9-58ce-9ae4-634218e576c3",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "4028bb4de7b843d1a5b39ff20d88b8e5",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/79f600e1-d93d-475a-b95a-142bc8119485.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c03_en.wav",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            7.689,
+            11.61
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -179,6 +266,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:4bbd3a2b-68bf-485f-a38c-d5d3c81b6e49",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/d78cb10c-2516-49ab-98e4-bb328a20e183.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:4bbd3a2b-68bf-485f-a38c-d5d3c81b6e49",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/d78cb10c-2516-49ab-98e4-bb328a20e183.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "379c84e8-3cf9-4448-bdd1-5f774d1250cf",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "4bbd3a2b-68bf-485f-a38c-d5d3c81b6e49",
+                "idempotency_key": "e743b022-87fa-5093-a868-9b213fa423db",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "4a20dfb68c5d4c05b47d17d8e8038546",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/d78cb10c-2516-49ab-98e4-bb328a20e183.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c04_en.wav",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            11.61,
+            15.337
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -213,6 +342,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:fda7e642-b0cc-42c1-937a-a0a018a320aa",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/b8bb2bd2-1143-4c2f-9087-e87b7ee50bef.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:fda7e642-b0cc-42c1-937a-a0a018a320aa",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/b8bb2bd2-1143-4c2f-9087-e87b7ee50bef.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "36ddee20-0f8b-45b1-a1d9-9a08af577f5d",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "fda7e642-b0cc-42c1-937a-a0a018a320aa",
+                "idempotency_key": "82213974-52d1-59fa-905e-f2c4a8d10491",
+                "usd_est": 0.3,
+                "credits_est": 4.8,
+                "correlation_id": "90657cb3202448cebe4a899573dd6ab0",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/b8bb2bd2-1143-4c2f-9087-e87b7ee50bef.mp4",
+                "usd": 0.3,
+                "credits": 4.8,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c05_en.wav",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            15.337,
+            17.262
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -285,6 +456,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:0966cab4-30b6-4283-9ac0-1b59ec327160",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e2c79f00-f781-4f32-8f8b-63e736b41cb6.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:0966cab4-30b6-4283-9ac0-1b59ec327160",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e2c79f00-f781-4f32-8f8b-63e736b41cb6.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:56Z",
+              "credits": 0.0,
+              "start_image": "c47187e4-19ab-4ec8-924b-c4d255a52f44",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "0966cab4-30b6-4283-9ac0-1b59ec327160",
+                "idempotency_key": "f8062ea6-f94e-58f6-a5aa-82c996b2fd68",
+                "usd_est": 0.3,
+                "credits_est": 4.8,
+                "correlation_id": "a2e407b4137946cf837adc71ef56253f",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e2c79f00-f781-4f32-8f8b-63e736b41cb6.mp4",
+                "usd": 0.3,
+                "credits": 4.8,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c07_en.wav",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            19.28,
+            21.13
+          ],
+          "at": "2026-10-01T01:56Z"
         }
       }
     },
@@ -399,6 +612,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:0780211f-a8f7-41ce-a2b9-05683d3f6bd9",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/a5bb2184-54af-4acb-a5e0-a1dc11c7b6b0.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:0780211f-a8f7-41ce-a2b9-05683d3f6bd9",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/a5bb2184-54af-4acb-a5e0-a1dc11c7b6b0.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:57Z",
+              "credits": 0.0,
+              "start_image": "ac3603a3-2565-4305-ac50-071f6015d51f",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "0780211f-a8f7-41ce-a2b9-05683d3f6bd9",
+                "idempotency_key": "419f5e3f-ef7f-5958-a6e9-487568da6a0f",
+                "usd_est": 0.3,
+                "credits_est": 4.8,
+                "correlation_id": "d36f5385ccde4a868cf5dc8bef4e809c",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/a5bb2184-54af-4acb-a5e0-a1dc11c7b6b0.mp4",
+                "usd": 0.3,
+                "credits": 4.8,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c12_en.wav",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            38.269,
+            40.235
+          ],
+          "at": "2026-10-01T01:57Z"
         }
       }
     },
@@ -471,6 +726,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:3290351f-421d-4698-a2fd-2e12dc7b4d83",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/0396da86-a385-48e6-893c-d2fca695ce49.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:3290351f-421d-4698-a2fd-2e12dc7b4d83",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/0396da86-a385-48e6-893c-d2fca695ce49.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:58Z",
+              "credits": 0.0,
+              "start_image": "36a5c7fc-7478-4c44-ba92-eb914d3fedc7",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "3290351f-421d-4698-a2fd-2e12dc7b4d83",
+                "idempotency_key": "97f1c518-593e-52f4-8986-4623c5e90f80",
+                "usd_est": 0.3,
+                "credits_est": 4.8,
+                "correlation_id": "16cd1ced4b024150820a019d2b328cf7",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/0396da86-a385-48e6-893c-d2fca695ce49.mp4",
+                "usd": 0.3,
+                "credits": 4.8,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c14_en.wav",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            42.106,
+            44.06
+          ],
+          "at": "2026-10-01T01:58Z"
         }
       }
     },
@@ -559,7 +856,7 @@
       "scene": 4,
       "type": "V",
       "bars": 1,
-      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass of the sunny farmyard, the white wooden fence and the red barn softly blurred behind, bright blue sky, both facing the viewer, medium shot, Momo pointing one paw at Ducky beside her at chest height, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky looking up happily",
+      "image_prompt": "[Momo] and [Ducky] side by side on the soft green grass of the sunny farmyard, the white wooden fence and the red barn softly blurred behind, bright blue sky, both facing the viewer, medium shot, Momo pointing one paw at Ducky beside her at chest height, huge round sparkly eyes with big white highlights, big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky standing beside her, both turned toward the viewer with their faces to the camera, Momo's violet eyes looking at the viewer, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin, Ducky facing the viewer with big round white eyes with brown irises, beak closed in a smile",
       "motion": "Ducky flaps its tiny wings with its beak closed; Momo points to Ducky beside her and sways a little, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -570,17 +867,25 @@
       "gen": {
         "image": {
           "status": "approved",
-          "job_id": "a6d59b17-45a9-4ad0-b4cf-8e2cbc74cc9d",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014018_a6d59b17-45a9-4ad0-b4cf-8e2cbc74cc9d.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "05308b28-0305-4b53-9339-701a9ada2c9a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_015417_05308b28-0305-4b53-9339-701a9ada2c9a.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "a6d59b17-45a9-4ad0-b4cf-8e2cbc74cc9d",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014018_a6d59b17-45a9-4ad0-b4cf-8e2cbc74cc9d.png",
+              "status": "rejected",
+              "reason": "neither character faces the viewer (Momo 3/4 toward Ducky, Ducky in profile), Momo's irises brown",
+              "at": "2026-10-01T01:40Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "05308b28-0305-4b53-9339-701a9ada2c9a",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_015417_05308b28-0305-4b53-9339-701a9ada2c9a.png",
               "status": "approved",
               "reason": null,
-              "at": "2026-10-01T01:40Z",
+              "at": "2026-10-01T01:54Z",
               "credits": 2.0
             }
           ],
@@ -657,6 +962,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:664dcc8f-1b8b-4387-bb35-8dcfe04e3a3c",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/2cde1a27-d87a-4002-aa4a-5c2ec7904aab.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:664dcc8f-1b8b-4387-bb35-8dcfe04e3a3c",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/2cde1a27-d87a-4002-aa4a-5c2ec7904aab.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:59Z",
+              "credits": 0.0,
+              "start_image": "6ce8763d-7f7d-45d9-a8e8-67981850bce9",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "664dcc8f-1b8b-4387-bb35-8dcfe04e3a3c",
+                "idempotency_key": "3ac2a4e0-f310-5a5c-9738-b01774a0cdc0",
+                "usd_est": 0.3,
+                "credits_est": 4.8,
+                "correlation_id": "8c9ab11cd1024a6d855f55d941603347",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/2cde1a27-d87a-4002-aa4a-5c2ec7904aab.mp4",
+                "usd": 0.3,
+                "credits": 4.8,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c21_en.wav",
+          "track_sha1": "fcaf7cf5376291bd7a41d8ab23696ff1f5803e19",
+          "window": [
+            65.11,
+            66.899
+          ],
+          "at": "2026-10-01T01:59Z"
         }
       }
     },
@@ -831,7 +1178,7 @@
       "scene": 4,
       "type": "V",
       "bars": 3,
-      "image_prompt": "[Momo] and [Ducky] full body on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, both facing the viewer, Momo standing with both feet flat on the grass and knees slightly bent, both paws together in front of the chest ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised",
+      "image_prompt": "[Momo] and [Ducky] full body on the soft green grass in front of the white wooden fence of the sunny farmyard, the red barn softly blurred behind, bright blue sky, both facing the viewer, Momo standing with both feet flat on the grass and knees slightly bent, both paws together in front of the chest ready to clap, huge round sparkly eyes with big white highlights and a big happy smile, both long ears fully visible hanging down beside the cheeks, Ducky beside her with its tiny wings raised, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin, Ducky with big round white eyes with brown irises and little brown eyebrows, beak closed in a smile",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Ducky does little happy hops beside Momo and flaps its tiny wings with its beak closed; Momo claps her paws and bounces gently on bent knees with both feet on the grass, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -842,17 +1189,25 @@
       "gen": {
         "image": {
           "status": "approved",
-          "job_id": "0976bfdb-005e-45f2-b658-901b5d79d526",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014249_0976bfdb-005e-45f2-b658-901b5d79d526.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "998e5ffe-574a-44be-bd1f-5b7029cfe5bb",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_015417_998e5ffe-574a-44be-bd1f-5b7029cfe5bb.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "0976bfdb-005e-45f2-b658-901b5d79d526",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_014249_0976bfdb-005e-45f2-b658-901b5d79d526.png",
+              "status": "rejected",
+              "reason": "Ducky off-model (small black bead eyes), Momo's overalls without a bib",
+              "at": "2026-10-01T01:42Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "998e5ffe-574a-44be-bd1f-5b7029cfe5bb",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_015417_998e5ffe-574a-44be-bd1f-5b7029cfe5bb.png",
               "status": "approved",
               "reason": null,
-              "at": "2026-10-01T01:42Z",
+              "at": "2026-10-01T01:54Z",
               "credits": 2.0
             }
           ],

@@ -50,8 +50,11 @@
   "credits": {
     "estimate": 214.2,
     "spent": 40.0,
-    "generations": 27,
-    "regenerations": 3
+    "generations": 32,
+    "regenerations": 3,
+    "api_generations": 5,
+    "api_usd": 2.0,
+    "api_credits": 32.0
   },
   "notes": {
     "v_over_reason": "노래 형식 v2 (ep04 v2 와 같은 방식, 사용자 피드백 '더 자연스럽게'): 127.0 BPM Suno 곡, 컷은 가사 줄 시작점(cut_at)에서 바뀜 → 34컷. V 32개 중 8개는 재사용(clip_from, 0 크레딧), 모모가 노래하는 컷은 전부 립싱크. 곡에 22마디(41초) 간주가 있어 그 자리에 부르지 않은 4색(노랑·초록·파랑·보라) 사물 컷 + 모모 동작 컷(노래 안 함, 입 다묾)을 넣음.",
@@ -217,6 +220,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:9dcb4509-dac9-4cf8-ad08-940f1eb5984e",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/72cad91a-d616-4619-98d1-13a97e0f1e9f.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:9dcb4509-dac9-4cf8-ad08-940f1eb5984e",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/72cad91a-d616-4619-98d1-13a97e0f1e9f.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "56b43f4b-ee11-4b06-a415-b17aaab9d86e",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "9dcb4509-dac9-4cf8-ad08-940f1eb5984e",
+                "idempotency_key": "3b423463-21f9-51bb-bf7e-357cb4d5e14a",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "d830385a88cc4d56b51adabf6a02411c",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/72cad91a-d616-4619-98d1-13a97e0f1e9f.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c05_en.wav",
+          "track_sha1": "d21227939ef65e58e9c14fd449b1de5721a0c920",
+          "window": [
+            17.352,
+            21.183
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -279,6 +324,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:012aeb6a-be99-4187-a7fb-c905482ad58d",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/d21a576e-aaae-45df-84a7-c795c3ab27e6.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:012aeb6a-be99-4187-a7fb-c905482ad58d",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/d21a576e-aaae-45df-84a7-c795c3ab27e6.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "3bee749e-ebeb-4dbe-9253-30e8593e796e",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "012aeb6a-be99-4187-a7fb-c905482ad58d",
+                "idempotency_key": "26b8128d-96f0-57d7-a721-4a2a2a552c14",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "7064a8306d9449cfb0dcb473a4cd3924",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/d21a576e-aaae-45df-84a7-c795c3ab27e6.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c07_en.wav",
+          "track_sha1": "d21227939ef65e58e9c14fd449b1de5721a0c920",
+          "window": [
+            24.995,
+            28.716
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -321,6 +408,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:a81886d7-4046-4d8d-a58c-d448a8ae3445",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e355c6fe-0d3d-41ce-adf1-245dd846482e.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:a81886d7-4046-4d8d-a58c-d448a8ae3445",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e355c6fe-0d3d-41ce-adf1-245dd846482e.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "4779e09b-0c17-43a5-ac27-5020669574fa",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "a81886d7-4046-4d8d-a58c-d448a8ae3445",
+                "idempotency_key": "e17cb964-3015-5f45-9dfb-0cdd0c9fe9e6",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "c742b0a85fac49cf88a66db42974964d",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e355c6fe-0d3d-41ce-adf1-245dd846482e.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c08_en.wav",
+          "track_sha1": "d21227939ef65e58e9c14fd449b1de5721a0c920",
+          "window": [
+            28.716,
+            32.527
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -355,6 +484,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:be81190f-77b5-4770-bfac-93e0339c86f9",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/62a32963-8e42-4aa4-a30e-6af4a7e9b484.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:be81190f-77b5-4770-bfac-93e0339c86f9",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/62a32963-8e42-4aa4-a30e-6af4a7e9b484.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "12296a9d-87ea-4bf5-a367-bd66e6d16ef4",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "be81190f-77b5-4770-bfac-93e0339c86f9",
+                "idempotency_key": "5584d702-0d22-586c-8b64-29d3992692be",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "a2160258a61d4af982a408a0f2a18395",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/62a32963-8e42-4aa4-a30e-6af4a7e9b484.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c09_en.wav",
+          "track_sha1": "d21227939ef65e58e9c14fd449b1de5721a0c920",
+          "window": [
+            32.527,
+            36.144
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -427,6 +598,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:2aff659b-0710-455d-96e9-aef83985ed17",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/c12f78a7-9f55-42f1-ab37-e1cfca96d780.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:2aff659b-0710-455d-96e9-aef83985ed17",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/c12f78a7-9f55-42f1-ab37-e1cfca96d780.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:03Z",
+              "credits": 0.0,
+              "start_image": "b75250ff-6efc-406f-bea6-03ec80f55a43",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "2aff659b-0710-455d-96e9-aef83985ed17",
+                "idempotency_key": "3b2987e0-de1c-5f0a-9bde-d616b009df76",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "b38bac290fa0409c8dcc00d1b842cf43",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/c12f78a7-9f55-42f1-ab37-e1cfca96d780.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c11_en.wav",
+          "track_sha1": "d21227939ef65e58e9c14fd449b1de5721a0c920",
+          "window": [
+            40.095,
+            43.917
+          ],
+          "at": "2026-10-01T02:03Z"
         }
       }
     },
@@ -461,6 +674,14 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "pending",
+          "job_id": null,
+          "url": null,
+          "attempts": 0,
+          "credits": 0,
+          "history": []
         }
       }
     },

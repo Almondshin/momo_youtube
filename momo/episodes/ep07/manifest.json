@@ -49,9 +49,12 @@
   },
   "credits": {
     "estimate": null,
-    "spent": 36.0,
-    "generations": 18,
-    "regenerations": 0
+    "spent": 40.0,
+    "generations": 26,
+    "regenerations": 2,
+    "api_generations": 6,
+    "api_usd": 2.7,
+    "api_credits": 43.2
   },
   "notes": {
     "v_over_reason": "노래 형식 v2 (ep04 v2 와 같은 방식 — 2026-09-30 사용자 '더 자연스럽게'): 125 BPM Suno 곡, 컷은 가사 줄 시작점(cut_at) → 33컷. V 31개 중 13개는 재사용(clip_from, 0 크레딧 — 후렴 2~4 와 전주 비눗방울), 모모가 보이는 노래 컷은 전부 립싱크(노래하며 동작).",
@@ -126,6 +129,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:8e553c39-573e-47f0-b3fc-97cfbba42290",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e5a3e22f-8efc-4b4a-8745-fe7ec0b37cb0.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:8e553c39-573e-47f0-b3fc-97cfbba42290",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e5a3e22f-8efc-4b4a-8745-fe7ec0b37cb0.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "049daba3-f006-42db-b492-7981fb9d093b",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "8e553c39-573e-47f0-b3fc-97cfbba42290",
+                "idempotency_key": "44eebd61-94d2-5a7b-a350-fc7017b22ed9",
+                "usd_est": 0.5,
+                "credits_est": 8.0,
+                "correlation_id": "88587e09b2dd4d92883c107ac253c53c",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/e5a3e22f-8efc-4b4a-8745-fe7ec0b37cb0.mp4",
+                "usd": 0.5,
+                "credits": 8.0,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c03_en.wav",
+          "track_sha1": "e598d00226ad1cec249f40da8b745022d5439208",
+          "window": [
+            11.321,
+            15.446
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -135,7 +180,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 15.446,
-      "image_prompt": "[Momo] medium shot from the waist up, standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall with a white rounded pedestal sink behind her, facing the viewer, many round shiny soap bubbles floating in the air around her, one paw at chest height pointing at a bubble, huge round sparkly eyes with big white highlights, delighted smile, both long floppy ears fully visible hanging down beside the cheeks",
+      "image_prompt": "[Momo] medium shot from the waist up, standing in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall with a white rounded pedestal sink behind her, facing the viewer, many round shiny soap bubbles floating in the air around her, one paw at chest height pointing at a bubble, huge round sparkly eyes with big white highlights, delighted smile, both long floppy ears fully visible hanging down beside the cheeks, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin",
       "motion": "sways gently and points one paw at a bubble on each 'pop', the bubbles she points at pop into tiny sparkles, then pats her paws together softly at chest height, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -145,17 +190,25 @@
       "gen": {
         "image": {
           "status": "approved",
-          "job_id": "924dc425-e4cc-404a-8fa6-4a4f59fbfb83",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013500_924dc425-e4cc-404a-8fa6-4a4f59fbfb83.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "4a6e903c-d873-471c-b42d-f1c133bc8e96",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_015417_4a6e903c-d873-471c-b42d-f1c133bc8e96.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "924dc425-e4cc-404a-8fa6-4a4f59fbfb83",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013500_924dc425-e4cc-404a-8fa6-4a4f59fbfb83.png",
+              "status": "rejected",
+              "reason": "vinyl-looking smooth skin without fur, ears far too long (to the waist)",
+              "at": "2026-10-01T01:35Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "4a6e903c-d873-471c-b42d-f1c133bc8e96",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_015417_4a6e903c-d873-471c-b42d-f1c133bc8e96.png",
               "status": "approved",
               "reason": null,
-              "at": "2026-10-01T01:35Z",
+              "at": "2026-10-01T01:54Z",
               "credits": 2.0
             }
           ],
@@ -194,6 +247,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:b8bdaffc-ae7d-4c88-b46f-f02597c3ee1a",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/a9aead59-43c2-4b3e-9ffc-988cb776a0c1.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:b8bdaffc-ae7d-4c88-b46f-f02597c3ee1a",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/a9aead59-43c2-4b3e-9ffc-988cb776a0c1.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "434716c9-3638-416a-8e4c-63b8d6791915",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "b8bdaffc-ae7d-4c88-b46f-f02597c3ee1a",
+                "idempotency_key": "b44cf792-a8a7-54cd-90f2-134e7d0862ed",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "3898becbe06a44aab6822bb17a3bb6b6",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/a9aead59-43c2-4b3e-9ffc-988cb776a0c1.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c05_en.wav",
+          "track_sha1": "e598d00226ad1cec249f40da8b745022d5439208",
+          "window": [
+            19.094,
+            23.094
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -203,7 +298,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 23.094,
-      "image_prompt": "[Momo] full body shot standing with both feet flat on a fluffy white bath mat in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink behind her, facing the viewer, knees slightly bent, both simple round cartoon bunny paws together at chest height ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, tiny sparkles in the air",
+      "image_prompt": "[Momo] full body shot standing with both feet flat on a fluffy white bath mat in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink behind her, facing the viewer, knees slightly bent, both simple round cartoon bunny paws together at chest height ready to clap, huge round sparkly eyes with big white highlights, big happy smile, both long floppy ears fully visible hanging down beside the cheeks, tiny sparkles in the air, soft fluffy cream-white fur (not smooth), mint-green bib overalls with a front pocket covering her chest and two small yellow buttons, her long floppy ears hang down to her chin",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions. Momo sways to the beat, gives one big happy clap at chest height on 'hooray' and bounces gently on bent knees with both feet on the mat, sparkles twinkle around her, looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time, the ears never lift or flap up",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -213,17 +308,25 @@
       "gen": {
         "image": {
           "status": "approved",
-          "job_id": "95c4b2d2-f24a-4778-8fa6-8dc1e66f106b",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013459_95c4b2d2-f24a-4778-8fa6-8dc1e66f106b.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "job_id": "c27df86c-faf9-4b40-ac1f-cf0189eed39e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_015417_c27df86c-faf9-4b40-ac1f-cf0189eed39e.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "95c4b2d2-f24a-4778-8fa6-8dc1e66f106b",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_013459_95c4b2d2-f24a-4778-8fa6-8dc1e66f106b.png",
+              "status": "rejected",
+              "reason": "overalls without a bib or pocket (shorts with straps), vinyl-looking skin, ears down to the hips",
+              "at": "2026-10-01T01:35Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "c27df86c-faf9-4b40-ac1f-cf0189eed39e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261001_015417_c27df86c-faf9-4b40-ac1f-cf0189eed39e.png",
               "status": "approved",
               "reason": null,
-              "at": "2026-10-01T01:35Z",
+              "at": "2026-10-01T01:54Z",
               "credits": 2.0
             }
           ],
@@ -300,6 +403,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:5203dba4-b698-4abd-b97a-adf12ee02ef6",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/2442a643-33b4-4c3e-8ed7-f46662561509.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:5203dba4-b698-4abd-b97a-adf12ee02ef6",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/2442a643-33b4-4c3e-8ed7-f46662561509.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "ed969942-c760-477b-8933-d8552af13166",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "5203dba4-b698-4abd-b97a-adf12ee02ef6",
+                "idempotency_key": "55bb6fd1-df1b-5158-9341-1385e4a51a95",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "ff35b6c544284d46a62770d4c65f5886",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/2442a643-33b4-4c3e-8ed7-f46662561509.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c08_en.wav",
+          "track_sha1": "e598d00226ad1cec249f40da8b745022d5439208",
+          "window": [
+            30.722,
+            34.563
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -372,6 +517,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:09c482c8-1968-401e-94cf-b6c35f16fb55",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/45deffe7-17f0-4894-ae63-d20a1995c77b.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:09c482c8-1968-401e-94cf-b6c35f16fb55",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/45deffe7-17f0-4894-ae63-d20a1995c77b.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T01:55Z",
+              "credits": 0.0,
+              "start_image": "b6854d80-aa10-4ec6-8387-8fda7fcfcbb9",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "09c482c8-1968-401e-94cf-b6c35f16fb55",
+                "idempotency_key": "f3b61c65-3646-52f6-83bb-bb153d49eea8",
+                "usd_est": 0.6,
+                "credits_est": 9.6,
+                "correlation_id": "fb3d59aa40a84c70b677bcbefa87d92e",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/45deffe7-17f0-4894-ae63-d20a1995c77b.mp4",
+                "usd": 0.6,
+                "credits": 9.6,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c10_en.wav",
+          "track_sha1": "e598d00226ad1cec249f40da8b745022d5439208",
+          "window": [
+            36.478,
+            42.031
+          ],
+          "at": "2026-10-01T01:55Z"
         }
       }
     },
@@ -462,6 +649,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:272a463d-148d-4279-9c98-981df7b0ec6f",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/4b65ee2c-b350-44e9-8359-99a1be331170.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:272a463d-148d-4279-9c98-981df7b0ec6f",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/4b65ee2c-b350-44e9-8359-99a1be331170.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:02Z",
+              "credits": 0.0,
+              "start_image": "d490d8e1-8355-4837-aba0-8564ab03a6cd",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "272a463d-148d-4279-9c98-981df7b0ec6f",
+                "idempotency_key": "54845341-e174-5d5d-9fec-b032d6ccff0e",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "f790efb37a8044348405ee251b2e80e8",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/4b65ee2c-b350-44e9-8359-99a1be331170.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c15_en.wav",
+          "track_sha1": "e598d00226ad1cec249f40da8b745022d5439208",
+          "window": [
+            57.615,
+            61.402
+          ],
+          "at": "2026-10-01T02:02Z"
         }
       }
     },
@@ -534,6 +763,48 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "generated",
+          "job_id": "api:5924219a-60de-4c99-a569-dddaf4416772",
+          "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/0537e42b-f349-495e-9e52-091cc13e69a9.mp4",
+          "attempts": 1,
+          "credits": 0.0,
+          "history": [
+            {
+              "job_id": "api:5924219a-60de-4c99-a569-dddaf4416772",
+              "url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/0537e42b-f349-495e-9e52-091cc13e69a9.mp4",
+              "status": "generated",
+              "reason": null,
+              "at": "2026-10-01T02:02Z",
+              "credits": 0.0,
+              "start_image": "b32dc823-6a93-4c92-a84c-5611f70d5df2",
+              "api": {
+                "model": "wan/v2.7/image-to-video",
+                "request_id": "5924219a-60de-4c99-a569-dddaf4416772",
+                "idempotency_key": "632b891b-5345-5bd1-8d43-13cbb069b122",
+                "usd_est": 0.4,
+                "credits_est": 6.4,
+                "correlation_id": "1f7b8803ce984a6c85f399c66aa9c276",
+                "output_url": "https://d3u0tzju9qaucj.cloudfront.net/e7697d22-0356-4e82-94e2-e9957628cd40/0537e42b-f349-495e-9e52-091cc13e69a9.mp4",
+                "usd": 0.4,
+                "credits": 6.4,
+                "charged": true
+              }
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "en": {
+          "media_id": "api-upload:audio/refs/c17_en.wav",
+          "track_sha1": "e598d00226ad1cec249f40da8b745022d5439208",
+          "window": [
+            65.128,
+            69.109
+          ],
+          "at": "2026-10-01T02:02Z"
         }
       }
     },
@@ -568,6 +839,14 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "pending",
+          "job_id": null,
+          "url": null,
+          "attempts": 0,
+          "credits": 0,
+          "history": []
         }
       }
     },
