@@ -639,6 +639,15 @@ def test_track_lip_shift(tmp: Path) -> None:
     assert keys[0]["c03"] != keys[1]["c03"] and keys[0]["c01"] == keys[1]["c01"], keys
 
 
+def test_song_track_end_fade(tmp: Path) -> None:
+    f = tmp / "song.wav"
+    audio.write_wav(f, np.full((SR * 10, 2), 0.5, np.float32), SR)
+    out, _ = audio.song_track_audio(f, {"track": {"start": 0.0}}, SR * 8, SR)   # the song goes on 2 s → fade out
+    assert out[-1, 0] == 0 and 0.2 < out[-int(0.6 * SR), 0] < 0.3 and out[-int(1.3 * SR), 0] == 0.5
+    out, _ = audio.song_track_audio(f, {"track": {"start": 0.0}}, int(SR * 9.8), SR)  # only a 0.2 s tail → 20 ms
+    assert out[-int(0.05 * SR), 0] == 0.5 and out[-1, 0] == 0
+
+
 def make_track_root(tmp: Path) -> Path:
     root = tmp / "root"
     ep = root / "episodes" / "ep91"

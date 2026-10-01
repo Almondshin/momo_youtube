@@ -485,15 +485,20 @@ def vocals_file(paths: Paths, ep: str) -> Path | None:
     return find_media(paths.ep(ep) / "audio", "song_vocals", AUDIO_EXTS)
 
 
+SONG_END_FADE = 1.2   # s — fade-out of the song bed when the video ends while the song still plays
+
+
 def song_track_audio(path: Path, song: dict, n: int, sr: int) -> tuple[np.ndarray, dict]:
     """The finished song as the episode bed: song-file time track.start → video 0, n samples, no time-stretch."""
     tr = song.get("track") or {}
     x = decode(path, sr, 2)
     head = int(round(float(tr.get("start") or 0.0) * sr))
+    rest = len(x) - (head + n)  # samples of the song after the video ends
     x = x[head:head + n]
     out = np.zeros((n, 2), dtype=np.float32)
     out[:len(x)] = x
-    fo = min(len(x), int(0.02 * sr))  # no click if the video ends before the song does
+    # the video stops before the song does: a short fade if it is just the tail, a real fade-out when the song goes on
+    fo = min(len(x), int((SONG_END_FADE if rest > 0.5 * sr else 0.02) * sr))
     if len(x) == n and fo:
         out[n - fo:] *= np.linspace(1.0, 0.0, fo, dtype=np.float32)[:, None]
     return out, {"file": path.name, "start": float(tr.get("start") or 0.0),
