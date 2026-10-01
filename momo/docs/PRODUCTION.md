@@ -483,6 +483,18 @@ Lessons from ep03 (apply from ep04):
   publish; refs shorter than 3 s are padded (wan2_7 failed twice on a 1.93 s reference).
 - Failed generations are not charged: reconcile `credits.spent` with `balance` at the end.
 
+Lessons from ep05-ep07 (made in parallel, 2026-10-01):
+- Cost: subscription credits ($26/500, $49/1000 ≈ $0.05/credit) are cheaper than the API per second (wan2_7 1.5 cr/s ≈
+  $0.075 vs API $0.10; Seedance Mini 1 cr/s vs API Seedance 2.0 ≈ $0.30). Default to the subscription (MCP); the API
+  (`hf_api.py run`) is the automated backup. Real cost of the v2 song format: 115-175 credits per episode → cap 150 from ep08.
+- Parallel episodes: one image/clip producer agent per episode works (each records into its own manifest; ≤ 3 images or
+  ≤ 8 clips in flight each). Never write a manifest from two processes at once (e.g. hf_jobs record while hf_api run is
+  running on the same episode) — the last save wins.
+- media_import_url rejects GitHub release WAVs (application/octet-stream): upload lip-sync refs with media_upload (mp3).
+- generate_*_batch may answer "submission_failed" with a preset recommendation (not charged): resend that item with
+  declined_preset_id.
+- A spoken library line (outro) was covered by the previous sung line's caption hold — fixed in episode.speech_over_song.
+
 Lessons from ep04 (apply from ep05):
 - Suno sang a count-in instead of the 2-bar intro again — put `[Instrumental intro - 4 bars, no vocals]` before the
   first sung line and check the take's first vocal onset before cutting.
