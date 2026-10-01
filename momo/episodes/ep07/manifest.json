@@ -61,7 +61,8 @@
     "approvals": [
       "2026-10-01 사용자: ep05~07 병렬 제작·업로드 지시, 묻지 말고 진행",
       "2026-10-01 노래 승인: Suno v1 'Wash Your Hands' (125.0 BPM, 2:15) — 사용자가 만들어 넣어 준 곡",
-      "2026-10-01 동작 클립을 API Wan 2.7(초당 $0.10)으로 — API Seedance 2.0 은 3배 가격, 길이는 필요한 만큼(재사용 포함)"
+      "2026-10-01 동작 클립을 API Wan 2.7(초당 $0.10)으로 — API Seedance 2.0 은 3배 가격, 길이는 필요한 만큼(재사용 포함)",
+      "2026-10-01 정정: 구독 크레딧($26/500)이 API 보다 쌈 — 동작 클립은 구독 Seedance Mini(1 크레딧/초)로 되돌림"
     ],
     "next_time": [
       "가사 정렬: align_lyrics.py 가 135초 스템 전체를 한 번에 들으면 whisper 가 후렴 1 에서 반복 환각('shine shine…') 또는 무음 전주 환각을 내고 실행마다 결과가 달랐다 (94.8% → 83.4%). 섹션별로 잘라 들은 정렬(97.6%)을 썼다 — ~/ml/momo_ep07/suno/v1/tools/align_sliced.py",
@@ -214,6 +215,14 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "pending",
+          "job_id": null,
+          "url": null,
+          "attempts": 0,
+          "credits": 0,
+          "history": []
         }
       }
     },
@@ -332,6 +341,14 @@
             }
           ],
           "reason": null
+        },
+        "clip_en": {
+          "status": "pending",
+          "job_id": null,
+          "url": null,
+          "attempts": 0,
+          "credits": 0,
+          "history": []
         }
       }
     },
@@ -344,7 +361,7 @@
       "image_prompt": "close-up of a shiny silver faucet with one plain round handle on a white rounded sink, a gentle clear stream of water flowing from the faucet into the white basin, the faucet on the right side of the frame, the bright pastel bathroom with soft light-blue and pink square tiles softly blurred behind",
       "motion": "the clear water stream flows gently and smoothly from the faucet into the sink with small soft splashes, tiny sparkles twinkle in the water, the faucet and the sink stay completely still",
       "momo": false,
-      "clip_model": "wan2_7",
+      "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
       "card": {
         "word": "WATER",
@@ -370,6 +387,14 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "pending",
+          "job_id": null,
+          "url": null,
+          "attempts": 0,
+          "credits": 0,
+          "history": []
         }
       }
     },
@@ -458,8 +483,8 @@
       "image_prompt": "close-up of exactly one round pink bar of soap, plain and smooth with no markings, resting on a small white soap dish on the edge of a white rounded sink, the soap dish on the right side of the frame, the bright pastel bathroom with soft light-blue and pink square tiles softly blurred behind",
       "motion": "a few tiny round soap bubbles rise slowly from the soap and tiny sparkles twinkle around it, the soap and the dish stay completely still, exactly one bar of soap",
       "momo": false,
-      "clip_model": "wan2_7",
-      "clip_seconds": 2,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
       "card": {
         "word": "SOAP",
         "text": "a pink bar of soap",
@@ -484,6 +509,14 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "pending",
+          "job_id": null,
+          "url": null,
+          "attempts": 0,
+          "credits": 0,
+          "history": []
         }
       }
     },
@@ -704,7 +737,7 @@
       "image_prompt": "many round shiny soap bubbles of different sizes floating in the air in a bright pastel bathroom with large soft light-blue square tiles on the left wall fading to soft pink square tiles on the right wall, a white rounded pedestal sink and a fluffy white bath mat softly blurred behind, the bubbles with a soft rainbow shimmer",
       "motion": "the soap bubbles float slowly upward and drift gently, each bubble stays round and separate and shimmers with soft rainbow colors, the bathroom stays completely still",
       "momo": false,
-      "clip_model": "wan2_7",
+      "clip_model": "seedance_2_0_mini",
       "clip_seconds": 6,
       "card": {
         "word": "BUBBLES",
@@ -730,6 +763,14 @@
             }
           ],
           "reason": null
+        },
+        "clip": {
+          "status": "pending",
+          "job_id": null,
+          "url": null,
+          "attempts": 0,
+          "credits": 0,
+          "history": []
         }
       }
     },
@@ -916,7 +957,7 @@
       "image_prompt": "close-up of a white rounded sink basin, a gentle clear stream of water from a shiny silver faucet washing fluffy white soap foam toward a small round silver drain, soft sparkles on the water, the bright pastel bathroom with soft light-blue and pink square tiles softly blurred behind",
       "motion": "the clear water flows gently and the white soap foam swirls slowly toward the drain and disappears, small sparkles twinkle on the water, the sink and the faucet stay completely still",
       "momo": false,
-      "clip_model": "wan2_7",
+      "clip_model": "seedance_2_0_mini",
       "clip_seconds": 4,
       "gen": {
         "image": {
