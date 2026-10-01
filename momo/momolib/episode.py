@@ -23,6 +23,8 @@ manifest 의 컷(cut) 필드 요약 (자세한 건 docs/MANIFEST.md)
                 0.8–1.25x, longer or shorter — keeps an end_frame hand-off intact), "loop" (crossfade into
                 another pass), "pingpong" (forward then reversed, the old behaviour)
   lipsync       true → one clip per language (clips/<cut>_<lang>.mp4), mouth driven by that narration
+  lip_shift     song.track lip-sync: seconds the picture runs later than its audio window (+ = later, |x| ≤ 0.5)
+                — fixes a clip whose mouth moves early/late (song_track.py lipsync); clip_from reuses inherit it
   nar_ref       {"en": {"media_id", "blocks": [block jobs]}} — lip-sync cut with several speech blocks: the
                 blocks + [pause] silences in one imported file (hf_jobs.py narref)
   clip_model / clip_seconds / end_frame   continuous-animation clips: model override, generated length
@@ -363,6 +365,20 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
                     isinstance(b, (int, float)) and not isinstance(b, bool) and b >= 0 for b in beats)):
                 E.append(f"{cid}: beats 는 가사 줄마다 시작 박 번호 목록 (예: [0, 8])")
 
+    by_id = {c.get("id"): c for c in cuts}
+    for c in cuts:
+        v, cid = c.get("lip_shift"), c.get("id")
+        if v is None:
+            continue
+        cf = c.get("clip_from") if isinstance(c.get("clip_from"), dict) else None
+        lip_src = bool(cf and (by_id.get(cf.get("cut")) or {}).get("lipsync"))
+        if not _is_num(v) or abs(v) > LIP_SHIFT_MAX:
+            E.append(f"{cid}: lip_shift 는 -{LIP_SHIFT_MAX}~{LIP_SHIFT_MAX} 초 (+ = 화면을 늦게, 입이 일찍 움직이는 클립)")
+        elif not (c.get("type") == "V" and (c.get("lipsync") or lip_src)):
+            E.append(f"{cid}: lip_shift 는 립싱크 컷, 또는 립싱크 컷을 재사용하는 clip_from 컷에만")
+        elif song_track(manifest.get("song")) is None:
+            W.append(f"{cid}: lip_shift 는 노래 파일(song.track) 에피소드에서만 적용 — 무시됨")
+
     song = manifest.get("song")
     if song is not None:
         if not isinstance(song, dict):
@@ -467,6 +483,9 @@ class CutPlan:
     # song: (line, start, sung, until, word_at) — word_at None = words light by their share of characters
     lyrics: list[tuple] = field(default_factory=list)
     src_offset: float = 0.0       # start this far into the clip (clip_from.at, clip_at, or a lip-sync window offset)
+    hold0: float = 0.0            # hold the clip's first frame this long before it plays (lip-sync timing)
+    lip_shift: float = 0.0        # effective cut.lip_shift (own, or inherited from the clip_from source)
+    lip_locked: bool = False      # mouth follows the audio: never time-stretched (lipsync, or clip_from of one)
 
 
 SONG_TEMPO_MAX = 1.3   # a lyric line may be sped up this much to fit before the next line (atempo, same pitch)
@@ -529,6 +548,26 @@ def track_spans(song: dict, cuts: list[dict]) -> list[tuple[float, float]]:
 
 def _is_num(v) -> bool:
     return isinstance(v, (int, float)) and not isinstance(v, bool)
+
+
+LIP_SHIFT_MAX = 0.5
+
+
+def lip_shift_of(cut: dict, by_id: dict) -> float:
+    """cut.lip_shift, else the one of its clip_from source when that is a lip-sync cut (a reused take carries the
+    same mouth timing). + = the picture runs later than the audio it was made for."""
+    v = cut.get("lip_shift")
+    if _is_num(v):
+        return float(v)
+    cf = cut.get("clip_from") if isinstance(cut.get("clip_from"), dict) else None
+    src = by_id.get((cf or {}).get("cut")) or {}
+    return float(src["lip_shift"]) if cf and src.get("lipsync") and _is_num(src.get("lip_shift")) else 0.0
+
+
+def _clip_start(off: float) -> tuple[float, float]:
+    """Clip time to show at the cut start → (src_offset, hold0): a negative one holds frame 0 that long."""
+    off = round(off, 6)
+    return max(0.0, off), max(0.0, -off)
 
 
 def track_lines(song: dict) -> list[dict]:
@@ -659,6 +698,7 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
             warnings_head = ["song.lyrics 에 단어 시각이 없음 — song_track.py lyrics 로 정렬 결과를 넣을 것 (가사 자막 없이 조립)"]
         else:
             warnings_head = []
+    by_id = {c.get("id"): c for c in manifest["cuts"]}
     song_bars = 0          # bars before this cut — song cut starts/ends are rounded from the bar grid, no drift
     plans: list[CutPlan] = []
     warnings: list[str] = list(warnings_head) if track else []
@@ -675,11 +715,14 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         # ---- 영상 소스
         source, kind, src_len, src_off, hold0 = None, "placeholder", None, 0.0, 0.0
         cf = c.get("clip_from") if isinstance(c.get("clip_from"), dict) else None
+        # a lip-sync take (own, or reused) is never time-stretched; song.track ones may run lip_shift later
+        locked = t == "V" and bool(c.get("lipsync") or (cf and (by_id.get(cf.get("cut")) or {}).get("lipsync")))
+        ls = lip_shift_of(c, by_id) if locked and track else 0.0
         if t == "V" and cf:  # reuse another cut's clip (a part of it) — no new image or clip
             other = str(cf.get("cut") or "")
             source = find_media(paths.clips(ep), f"{other}_{lang}", VIDEO_EXTS) or find_media(paths.clips(ep), other,
                                                                                               VIDEO_EXTS)
-            src_off = float(cf.get("at") or 0.0)
+            src_off, hold0 = _clip_start(float(cf.get("at") or 0.0) - ls)
             if source:
                 kind = "video"
             else:
@@ -693,20 +736,23 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         elif t == "V":
             source = find_media(paths.clips(ep), f"{cid}_{lang}", VIDEO_EXTS) or find_media(paths.clips(ep), cid,
                                                                                             VIDEO_EXTS)
+            win = ((c.get("nar_ref") or {}).get(lang) or {}).get("window") if track and c.get("lipsync") else None
+            win = win if isinstance(win, list) and len(win) == 2 and all(_is_num(w) for w in win) else None
             if _is_num(c.get("clip_at")):
-                src_off = float(c["clip_at"])
-            elif track and c.get("lipsync"):  # the clip lip-syncs to its pinned vocal window, not to the cut
-                win = ((c.get("nar_ref") or {}).get(lang) or {}).get("window")
-                if isinstance(win, list) and len(win) == 2:
-                    s_song, e_song = spans[i][0] + t_start, spans[i][1] + t_start
-                    off = s_song - float(win[0])
-                    if off < -0.02:
-                        hold0 = -off
-                        warnings.append(f"{cid}: 립싱크 창 {win[0]:.2f}s 보다 {hold0:.2f}s 먼저 시작 — 그동안 첫 프레임 정지")
-                    src_off = max(0.0, off)
-                    if e_song > float(win[1]) + 0.15:
-                        warnings.append(f"{cid}: 립싱크 창 끝 {win[1]:.2f}s 뒤 {e_song - float(win[1]):.2f}s 는 "
-                                        f"레퍼런스가 무음 — 입이 닫힘")
+                off = float(c["clip_at"])
+            elif win:  # the clip lip-syncs to its pinned vocal window, not to the cut
+                off = spans[i][0] + t_start - float(win[0])
+            else:
+                off = 0.0
+            src_off, hold0 = _clip_start(off - ls)   # lip_shift: show the clip ls later (+) / earlier (−)
+            if win and not _is_num(c.get("clip_at")):
+                e_song = spans[i][1] + t_start
+                if hold0 > max(0.0, ls) + 0.02:  # a hold that lip_shift did not ask for
+                    warnings.append(f"{cid}: 립싱크 창 {win[0]:.2f}s 보다 {hold0 - max(0.0, ls):.2f}s 먼저 시작 — "
+                                    f"그동안 첫 프레임 정지")
+                if e_song > float(win[1]) + ls + 0.15:
+                    warnings.append(f"{cid}: 립싱크 창 끝 {win[1]:.2f}s 뒤 {e_song - float(win[1]) - ls:.2f}s 는 "
+                                    f"레퍼런스가 무음 — 입이 닫힘")
             if source:
                 kind = "video"
             else:
@@ -806,6 +852,9 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
             if i > 0:
                 start_f = start_f + prev_dur_f - xf_f
 
+        nar_offset = starts[0] if starts else xf + lead
+        if c.get("lipsync") and not track:  # narration lip-sync: frame 0 holds until the narration starts
+            hold0 = nar_offset
         kw = "" if song else (((c.get("keyword") or {}).get(lang)) or "").strip()  # songs show the lyrics instead
         lyrics = []
         if track:
@@ -828,14 +877,15 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
 
         plans.append(CutPlan(
             index=i, id=cid, type=t, scene=scene, cut=c, items=items, speech_files=files,
-            speech_durs=durs, nar_len=nar_len, nar_offset=(starts[0] if starts else xf + lead + hold0), xf_in=xf,
+            speech_durs=durs, nar_len=nar_len, nar_offset=nar_offset, xf_in=xf,
             dur=dur_f / fps,
             start=start_f / fps, source=source, source_kind=kind, source_len=src_len, keyword=kw,
             text_at=text_at, text_pos=c.get("text_pos") or "top", text_color=c.get("text_color") or "white",
             inset=None if inset is None else float(inset), sfx=sfx, estimated_audio=estimated,
             block_starts=[] if track else starts, block_tempos=[] if track else tempos,
             block_lens=[] if track else [d / k for d, k in zip(durs, tempos)], lyrics=lyrics,
-            card=c.get("card") if isinstance(c.get("card"), dict) else None, src_offset=src_off))
+            card=c.get("card") if isinstance(c.get("card"), dict) else None, src_offset=src_off, hold0=hold0,
+            lip_shift=ls, lip_locked=locked))
         prev_dur_f = dur_f
         prev_scene = scene
 

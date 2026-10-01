@@ -28,7 +28,7 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `upload` | `{"en": {...}, "ko": {...}}` | 7단계 업로드 메타 — 아래 표 |
 | `credits` | `{"estimate","spent","generations","regenerations"}` | `estimate` 는 `estimate_credits.py --save` 가 적는 예상치. 나머지는 `hf_jobs.py record` 가 자동 누적 |
 | `notes` | `{"v_over_reason","approvals":[],"next_time":[]}` | V 컷 15개 초과 사유(없으면 validate error), 승인 기록(날짜 + 무엇을), 다음 편에 반영할 점(README 에 들어감) |
-| `song.track` / `song.vocals` / `song.lyrics` | `track`: GenRec+`{"tool", "sha1", "duration", "start", "end", "analysis": {bpm, downbeat0, downbeats[], grid}}`, `vocals`: GenRec+`{"sha1"}`, `lyrics`: `[{"text", "section", "words": [[word, t0, t1]]}]`, `history`: replaced songs | **Finished-song episode** (7-C, since ep03): one song file with vocals (Suno Pro WAV + stems, or ACE-Step) is the timeline. Written by `song_track.py` (import / analyze / lyrics / publish); files are GitHub release assets (`media-<ep>`) so fetch_assets can restore them. 0 Higgsfield credits |
+| `song.track` / `song.vocals` / `song.lyrics` | `track`: GenRec+`{"tool", "sha1", "duration", "start", "end", "analysis": {bpm, downbeat0, downbeats[], grid}}`, `vocals`: GenRec+`{"sha1"}`, `lyrics`: `[{"text", "section", "words": [[word, t0, t1, t_whisper]]}]` (t0/t1 = refined to the vocal stem, t_whisper = the aligner's start — refining always restarts from it; `--no-refine` stores `[word, t0, t1]` as aligned), `track.lyrics_refine`: `{"v", "vocals_sha1", "moved", "loose", "flags": [lag / phase guards]}`, `history`: replaced songs | **Finished-song episode** (7-C, since ep03): one song file with vocals (Suno Pro WAV + stems, or ACE-Step) is the timeline. Written by `song_track.py` (import / analyze / lyrics / publish); files are GitHub release assets (`media-<ep>`) so fetch_assets can restore them. 0 Higgsfield credits |
 | `song` | `{"bpm": 96, "beats_per_bar": 4, "music": GenRec+{"model","duration","analysis"}, "music_gain_db": -6, "duck_db": -5, "music_start": 0}` | **Song episode** (7-B): lyrics chanted on the beat over an AI instrumental (`music`, generate_audio sonilo_music → `audio/music.*`). `analysis` = `{bpm, downbeat0}` from preview_assets (build detects it when missing). Set `bpm` to the instrumental's own tempo to avoid time-stretching it |
 | `cuts` | `[컷, ...]` | 순서 = 재생 순서 |
 
@@ -68,9 +68,10 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 | `end_frame` | | ○ |   | Cut id whose approved image becomes this clip's last frame (continuous hand-off) |
 | `nar_ref` | | ○ |   | Lip-sync cut with 2+ speech blocks: `{"en": {"media_id", "blocks": [block jobs]}}` — the blocks + `[pause]` silences in one file. `preview_assets.py` writes `<ep>/<cut>_nar_<lang>.wav` to momo-previews → `media_import_url` (raw.githubusercontent URL) → `hf_jobs.py narref`. A regenerated block voids it |
 | `bars` / `beats` | ○ | ○ | ○ | Song episodes: cut length in bars (required, 1–16) and the start beat of each lyric line (`[0, 8]`; missing entries start on the next free beat). Lines are trimmed to the voice and sped up ≤1.3x to fit |
-| `clip_from` / `lipsync_ok` | | ○ |   | Finished-song episodes: `{"cut": "c03", "at": 2.0}` plays another V cut's clip from `at` s (no image, no clip of its own — 0 credits). The source must be a V cut without `clip_from`; a lip-sync source only matches when the song audio is the same there (`lipsync_ok: true` silences the warning) |
-| `cut_at` | | ○ |   | Finished-song episodes: song-file seconds where the cut starts, instead of its bar line — cut on the sung line's pickup (~0.1 s before the first word) so the picture changes with the line; the cut before ends there. A lip-sync cut whose start moves inside its pinned `nar_ref.window` plays its clip from the matching offset (starting before the window holds the first frame; running past it shows a closed mouth — both warned) |
+| `clip_from` / `lipsync_ok` | | ○ |   | Finished-song episodes: `{"cut": "c03", "at": 2.0}` plays another V cut's clip from `at` s (no image, no clip of its own — 0 credits). The source must be a V cut without `clip_from`; a lip-sync source only matches when the song audio is the same there (`lipsync_ok: true` silences the warning). A reuse of a lip-sync take is never time-stretched (a short remainder holds its last frame) and inherits the source's `lip_shift` |
+| `cut_at` | | ○ |   | Finished-song episodes: song-file seconds where the cut starts, instead of its bar line — cut on the sung line's pickup (refined first word − 0.1 s, `song_track.py sections`) so the picture changes with the line; the cut before ends there. A lip-sync cut whose start moves inside its pinned `nar_ref.window` plays its clip from the matching offset (starting before the window holds the first frame; running past it shows a closed mouth — both warned) |
 | `clip_at` | | ○ |   | Seconds into the cut's own clip to start from (overrides the lip-sync window offset) — e.g. a count-in that reuses its own chorus take |
+| `lip_shift` | | ○ |   | Finished-song episodes, lip-sync cuts and `clip_from` reuses of one: seconds the picture runs later (+) or earlier (−) than the audio it was made for, −0.5…0.5 — for a take whose mouth moves early (wan2_7 often leads by 0.1–0.17 s). The clip time shown at the cut start becomes (window offset \| `clip_at` \| `clip_from.at`) − lip_shift; a negative result holds frame 0 that long (`hold0` in the timeline). Set it on the source cut: `clip_from` reuses inherit it (their own value wins). Cut boundaries (`cut_at`, bars) never move. Measure with `song_track.py lipsync` (suggests a value for confident shots, target −70 ms) |
 | `card` | ○ | ○ | ○ | Word card beside the picture: `{"word": "toothbrush", "text": "We brush our teeth with it", "pos": "left"|"right", "at": 0.3}` |
 | `inset` | ○ | ○ | ○ | 테두리 제거 인셋 크롭 비율. `null`(기본) = 자동 감지 후 감지되면 3.5%, `0` = 끔, `0.03`~`0.04` = 강제 |
 | `sfx` | ○ | ○ | ○ | `[{"file":"pop.wav","at":0.5,"gain_db":-6}]` — `assets/sfx/` 파일, 컷 시작 + `at` 초. 파일이 없으면 경고 후 생략. Stock set from `make_music.py`: pop, sparkle, boing, whoosh, brush, swish, splash, chime |
@@ -217,7 +218,8 @@ line k   = cut start + cut.beats[k] × beat              (default: first free be
 video t      = song-file t − track.start
 cut i        = bars [k, k + bars) of the song: starts on analysis.downbeats[k] (the first cut starts at 0 and
                holds the pickup before the first downbeat), the last cut runs to track.end when that is later
-karaoke line = song.lyrics words (aligned) — each word lights at its sung start; a line stays 1.2 s after its
+karaoke line = song.lyrics words (aligned, then refined to the vocal-stem onsets) — each word lights 0.05 s
+               (render.WORD_LEAD) before its sung start, the line shows 0.25 s before; a line stays 1.2 s after its
                last word unless the next line starts
 lip-sync ref = the vocal stem sliced to exactly the cut window (song_track.py refs), pinned per cut as
                nar_ref.en = {media_id, track_sha1, window} — moving a bar line or changing the song voids it
@@ -257,7 +259,7 @@ c03 의 나레이션은 6.000초(5.700 + 0.3)에 시작해 블록1 6.00–8.10, 
 여유 후 11.367초에 끝난다. 키워드 BOOTS 는 5.700 + 1.0 = 6.700초에 화면 하단(`text_pos: bottom`)에 등장.
 c02 의 5초 클립은 3.0초에서 잘린다.
 
-실제 값은 `episodes/<ep>/out/<ep>_<lang>_timeline.json`(컷별 start, dur, xf_in, nar_len, text_at, estimated_audio)과
+실제 값은 `episodes/<ep>/out/<ep>_<lang>_timeline.json`(컷별 start, dur, xf_in, nar_len, text_at, estimated_audio, clip_offset, hold0, lip_shift)과
 `validate_manifest.py --table` 의 예상 길이로 확인한다.
 
 ## 8. 전체 예시 (타입별 1컷 이상, 5컷)

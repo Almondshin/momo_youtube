@@ -40,7 +40,7 @@ from momolib.common import (IMAGE_EXTS, VIDEO_EXTS, MomoError, add_root_arg, che
                             main_wrapper, run, save_json)
 from momolib.episode import CutPlan, plan_timeline, validate_manifest  # noqa: E402
 
-SEG_VERSION = 3                      # 세그먼트 렌더 방식이 바뀌면 올린다 (캐시 무효화)
+SEG_VERSION = 4                      # 세그먼트 렌더 방식이 바뀌면 올린다 (캐시 무효화) — 4: WORD_LEAD, hold0
 SLOW_MAX = 1.25                      # fill=hold|loop: clips may be slowed down at most this much
 PUSH_PER_SEC, PUSH_MAX = 0.007, 0.06  # push-in zoom while a clip is stretched (per second of cut, cap)
 LOOP_XF = 0.5                        # fill=loop: crossfade between the two passes (s)
@@ -102,7 +102,7 @@ def make_segs(plans: list[CutPlan], cfg: dict, tmp: Path, font: Path) -> list[Se
             "lyrics": [[ln[0], round(ln[1], 4), round(ln[2], 4), round(ln[3], 4), ln[4] if len(ln) > 4 else None]
                        for ln in p.lyrics],
             "word_card": p.card, "src_offset": round(p.src_offset, 4),
-            "hold0": round(p.nar_offset, 4) if p.cut.get("lipsync") else None,
+            "hold0": round(p.hold0, 4), "lock": p.lip_locked,
             "card": card_lines(p) if p.source_kind == "placeholder" else None,
             "render": {k: r[k] for k in render_keys}}, sort_keys=True, default=str).encode()).hexdigest()
         segs.append(seg)
@@ -232,12 +232,11 @@ def render_seg(seg: Seg, cfg: dict, font: Path, work: Path) -> None:
             f"setpts=PTS-STARTPTS,crop={cw}:{ch}:{cx}:{cy}"
         fill = seg.fill
         pad = f"setsar=1,tpad=stop_mode=clone:stop_duration={need + 1:.3f}"
-        if p.cut.get("lipsync"):
-            # mouth is locked to the narration: never time-stretch; hold frame 0 until the narration starts
+        if p.lip_locked:  # mouth is locked to the audio (own lip-sync clip or a reuse of one): never time-stretch
             fill = "hold" if fill == "fit" else fill
-            if p.nar_offset > 0:
-                crop += f",tpad=start_mode=clone:start_duration={p.nar_offset:.4f}"
-                L += p.nar_offset
+        if p.hold0 > 0:  # hold frame 0 until the clip's audio starts (narration, lip-sync window, lip_shift)
+            crop += f",tpad=start_mode=clone:start_duration={p.hold0:.4f}"
+            L += p.hold0
         fit = fill == "fit" and abs(need - L) > 0.5 / fps and 0.8 * L - 1e-6 <= need <= SLOW_MAX * L + 1e-6
         if fit:  # time-stretch the whole clip onto the cut: no freeze, no trim, the last frame lands on the cut end
             k = need / L
@@ -247,7 +246,7 @@ def render_seg(seg: Seg, cfg: dict, font: Path, work: Path) -> None:
             mode = f"fit x{k:.2f}"
         elif need > L + 0.5 / fps and fill != "pingpong":
             # stretched clip: decode (slow-mo / loop, hold) → Python push-in → encode with the keyword overlay
-            slow, join, passes, k = stretch_chain(fill, L, need, fps, 1.0 if p.cut.get("lipsync") else SLOW_MAX)
+            slow, join, passes, k = stretch_chain(fill, L, need, fps, 1.0 if p.lip_locked else SLOW_MAX)
             to_rgb = f"scale={W}:{H}:flags=lanczos" + (f":{render.in_matrix(st).rstrip(':')}" if render.in_matrix(st) else "")
             if passes == 2:
                 graph = (f"[0:v]{crop}{slow}[a];[1:v]{crop}{slow}[b];[a][b]{join},"
@@ -466,6 +465,7 @@ def write_timeline(paths, ep: str, lang: str, plans, segs, total: float, fps: in
                                     for i, ln in enumerate(p.lyrics)]}
                         if p.lyrics else {}),
                      **({"clip_offset": round(p.src_offset, 3)} if p.src_offset else {}),
+                     "hold0": round(p.hold0, 4), **({"lip_shift": round(p.lip_shift, 3)} if p.lip_shift else {}),
                      **({"card": p.card} if p.card else {})})
     data = {"ep": ep, "lang": lang, "fps": fps, "total": round(total, 4), "total_frames": int(round(total * fps)),
             "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "cuts": cuts,
