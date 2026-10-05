@@ -36,6 +36,7 @@ from PIL import Image  # noqa: E402
 import doctor  # noqa: E402
 import episode_readme  # noqa: E402
 import estimate_credits  # noqa: E402
+import youtube_delete  # noqa: E402
 import fetch_assets  # noqa: E402
 import hf_jobs  # noqa: E402
 import new_episode  # noqa: E402
@@ -228,6 +229,23 @@ def test_new_episode(tmp: Path) -> None:
     assert (ep / "manifest.json.bak").exists()
     assert len(rj(ep / "manifest.json.bak")["cuts"]) == 6  # 백업은 덮어쓰기 전 내용
     fails(new_episode, "--root", str(root), "--ep", "ep2; rm", needle="형식")
+
+
+def test_youtube_delete_guard(tmp: Path) -> None:
+    """youtube_delete.py deletes only videos youtube.json records as ours: an old take freely, the current one with --current."""
+    rec = {"video_id": "NEWNEWNEW01", "previous_video_ids": ["OLDOLDOLD01"]}
+    assert youtube_delete.deletable(rec, "OLDOLDOLD01", False) is None
+    assert "--current" in youtube_delete.deletable(rec, "NEWNEWNEW01", False)
+    assert youtube_delete.deletable(rec, "NEWNEWNEW01", True) is None
+    assert "기록돼 있지 않음" in youtube_delete.deletable(rec, "SOMEONEELSE", False)
+    assert "형식" in youtube_delete.deletable(rec, "x; rm -rf", False)
+    out = youtube_delete.record_deleted(dict(rec), "OLDOLDOLD01")
+    assert out["previous_video_ids"] == [] and out["deleted"][0]["video_id"] == "OLDOLDOLD01" and "deleted_at" not in out
+    root = make_root(tmp)
+    wj(root / "episodes" / EP / "youtube.json", {"en": rec})
+    assert "삭제 가능" in ok(youtube_delete, "--root", str(root), "--ep", EP, "--lang", "en", "--video-id", "OLDOLDOLD01",
+                         "--dry-run")
+    fails(youtube_delete, "--root", str(root), "--ep", EP, "--lang", "en", "--video-id", "SOMEONEELSE", needle="기록돼")
 
 
 def test_episode_languages(tmp: Path) -> None:
