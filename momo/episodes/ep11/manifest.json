@@ -63,9 +63,9 @@
   },
   "credits": {
     "estimate": 360.9,
-    "spent": 380.5,
-    "generations": 63,
-    "regenerations": 19,
+    "spent": 439.0,
+    "generations": 68,
+    "regenerations": 24,
     "cap": 450
   },
   "notes": {
@@ -162,13 +162,13 @@
       "type": "V",
       "bars": 4,
       "image_prompt": "[Momo] and [Croc] standing side by side on a round rainbow-striped rug in a cozy pastel playroom, Toto on the left and Momo on the right with a clear gap between them, both facing the viewer straight on, wide-medium shot at eye level showing both characters full body from the top of the head down to the feet, the two characters fill about two-thirds of the frame height with some rug visible in front of their feet, both standing upright with both feet flat on the rug, arms relaxed down at the sides, happy closed-mouth smiles, Toto standing upright on his short legs about as tall as Momo, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, right behind them stands a soft lavender freestanding play wall: one plain smooth low partition with rounded top corners and no pictures on it, a little taller than the characters and wide enough to hide both of them, its two ends a little beyond them on each side, around it: soft peach walls, a big round window with sheer white curtains and warm sunlight on the right, a low white shelf with a few plush toys on the left, a light wooden floor, bright soft daylight, cheerful and cozy",
-      "motion": "Momo and Toto keep exactly the same look as the first frame (Momo: big round head, huge round sparkly eyes with big white highlights, mint-green overalls with two small yellow buttons; Toto: lime-green body, pale yellow belly, short rounded snout, big round friendly eyes, small orange bandana). Both stay on their spots in front of the lavender play wall, Toto on the left, Momo on the right. Both look at the viewer and sing the words together clearly from the very first sung syllable, both mouths opening and closing on every sung syllable and closing into a soft smile whenever the singing pauses. While singing the first line, both put one paw flat on the forehead just above the eyes like a little sun visor, the whole face below it uncovered, and turn the head a little to the left and to the right as if looking around for someone, the other arm resting down at the side; Momo's visor paw rests on her forehead between her hanging ears. Then both lower that paw, look at the viewer with delighted faces and wave one paw at the viewer at shoulder height, Momo's waving paw beside her shoulder below the ear. Momo's long floppy ears stay hanging down beside her cheeks, fully visible. Inside Toto's open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby. At the end both lower their paws and finish standing exactly as in the first frame, both feet on the rug, arms relaxed at the sides, soft closed-mouth smiles",
+      "motion": "Momo and Toto keep exactly the same look as the first frame (Momo: big round head, huge round sparkly eyes with big white highlights, mint-green overalls with two small yellow buttons; Toto: lime-green body, pale yellow belly, short rounded snout, big round friendly eyes, small orange bandana). Both stand on their spots in front of the lavender play wall, Toto on the left, Momo on the right. Both look at the viewer and sing the words together clearly from the very first sung syllable, both mouths opening and closing on every sung syllable and closing into a soft smile whenever the singing pauses. Inside Toto's open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby. While singing the first line, both put one paw flat on the forehead just above the eyes like a little sun visor, the whole face below it uncovered, and turn the head a little to the left and to the right as if looking around for someone, the other arm resting down at the side; Momo's visor paw rests on her forehead between her hanging ears. Then both lower that paw, look at the viewer with delighted faces and wave one paw at the viewer at shoulder height while they sing the answer, Momo's waving paw beside her shoulder below the ear. Momo's long floppy ears stay hanging down beside her cheeks, fully visible. Only after the singing has completely ended, in the short music at the very end of the clip and never while they are still singing, both quickly hide behind the lavender play wall for peek-a-boo: Toto scurries around the left end of the wall and Momo around the right end, never through the wall, and both disappear behind it; the wall itself stays completely still. Momo's ears stay hanging down while she hides. The clip ends exactly on the last frame: both completely hidden behind the wall, only the soft tip of Momo's ear peeking out past the right end of the wall and only the rounded tip of Toto's tail past the left end, resting on the rug, the rug in front of the wall empty",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
-        "ko": 9
+        "ko": 8
       },
-      "end_frame": "c01",
+      "end_frame": "c02",
       "gen": {
         "image": {
           "status": "approved",
@@ -190,10 +190,10 @@
         },
         "clip_ko": {
           "status": "approved",
-          "job_id": "c2b584dd-d2ce-4665-8f86-7c14ee1a58c6",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_130012_c2b584dd-d2ce-4665-8f86-7c14ee1a58c6.mp4",
-          "attempts": 2,
-          "credits": 27.0,
+          "job_id": "d1a4862f-499a-46dc-9ad6-362caf759eb5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140532_d1a4862f-499a-46dc-9ad6-362caf759eb5.mp4",
+          "attempts": 3,
+          "credits": 39.0,
           "history": [
             {
               "job_id": "1aee8af1-eddf-4342-bd0d-e070f688198b",
@@ -207,10 +207,19 @@
             {
               "job_id": "c2b584dd-d2ce-4665-8f86-7c14ee1a58c6",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_130012_c2b584dd-d2ce-4665-8f86-7c14ee1a58c6.mp4",
-              "status": "approved",
-              "reason": null,
+              "status": "rejected",
+              "reason": "v3 fix: 마지막 노래 뒤 벽 뒤로 숨지 않아 c02 첫 프레임(숨은 그림)으로 한 프레임에 사라짐 — end_frame c02 로 다시",
               "at": "2026-10-05T13:00Z",
               "credits": 13.5,
+              "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
+            },
+            {
+              "job_id": "d1a4862f-499a-46dc-9ad6-362caf759eb5",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140532_d1a4862f-499a-46dc-9ad6-362caf759eb5.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T14:05Z",
+              "credits": 12.0,
               "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
             }
           ],
@@ -517,7 +526,7 @@
       "bars": 4,
       "cut_at": 36.49,
       "image_prompt": "[Momo] and [Croc] standing side by side on a round rainbow-striped rug in a cozy pastel playroom, Toto on the left and Momo on the right with a clear gap between them, both facing the viewer straight on, wide-medium shot at eye level showing both characters full body from the top of the head down to the feet, the two characters fill about two-thirds of the frame height with some rug visible in front of their feet, both standing upright with both feet flat on the rug, arms relaxed down at the sides, happy closed-mouth smiles, Toto standing upright on his short legs about as tall as Momo, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, right behind them stands a soft lavender freestanding play wall: one plain smooth low partition with rounded top corners and no pictures on it, a little taller than the characters and wide enough to hide both of them, its two ends a little beyond them on each side, around it: soft peach walls, a big round window with sheer white curtains and warm sunlight on the right, a low white shelf with a few plush toys on the left, a light wooden floor, bright soft daylight, cheerful and cozy",
-      "motion": "Momo and Toto keep exactly the same look as the first frame (Momo: big round head, huge round sparkly eyes with big white highlights, mint-green overalls with two small yellow buttons; Toto: lime-green body, pale yellow belly, short rounded snout, big round friendly eyes, small orange bandana). Both stay on their spots in front of the lavender play wall, Toto on the left, Momo on the right. Both stomp gently in place to the beat: they lift one foot a little and put it down with a soft stomp, then the other foot, again and again, small and gentle, the knees a little bent, the paws in little fists at the sides, both stay on their spots, no jumping. Both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable and closing into a soft smile whenever the singing pauses. Momo's long floppy ears stay hanging down beside her cheeks, fully visible. Inside Toto's open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby. At the end both lower their paws and finish standing exactly as in the first frame, both feet on the rug, arms relaxed at the sides, soft closed-mouth smiles",
+      "motion": "Momo and Toto keep exactly the same look as the first frame (Momo: big round head, huge round sparkly eyes with big white highlights, mint-green overalls with two small yellow buttons; Toto: lime-green body, pale yellow belly, short rounded snout, big round friendly eyes, small orange bandana). Both stand on their spots in front of the lavender play wall, Toto on the left, Momo on the right. Both do small soft toe taps to the beat: one foot taps the rug lightly with its toes while its heel stays almost on the floor, then the other foot, alternating feet, the knees bending just a little, gentle and cute; the bodies stay upright and calm, the paws in little soft fists at the sides. No big leg lifts, no marching, no hard stomping, no jumping; both stay on their spots with the feet close to the rug. Both look at the viewer and sing the words together clearly from the very first sung syllable: both mouths open on every sung syllable and close between the words, opening and closing again and again in time with the singing, never staying open, and closing into a soft smile whenever the singing pauses. Inside Toto's open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby. Momo's long floppy ears stay hanging down beside her cheeks, fully visible. At the end both stop tapping and finish standing exactly as in the first frame, both feet flat on the rug, arms relaxed at the sides, soft closed-mouth smiles",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -545,17 +554,26 @@
         },
         "clip_ko": {
           "status": "approved",
-          "job_id": "70c546fc-b934-4f34-9025-727f01115bd0",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_125130_70c546fc-b934-4f34-9025-727f01115bd0.mp4",
-          "attempts": 1,
-          "credits": 12.0,
+          "job_id": "75c56c3a-d2a0-441e-a58f-7aa2fcacac37",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140532_75c56c3a-d2a0-441e-a58f-7aa2fcacac37.mp4",
+          "attempts": 2,
+          "credits": 24.0,
           "history": [
             {
               "job_id": "70c546fc-b934-4f34-9025-727f01115bd0",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_125130_70c546fc-b934-4f34-9025-727f01115bd0.mp4",
+              "status": "rejected",
+              "reason": "v3 fix: 두 입이 ~5초 벌린 채 멈춤 + 사용자 요청(2026-10-05) 쿵쿵 발 구르기를 더 작고 부드럽게",
+              "at": "2026-10-05T12:51Z",
+              "credits": 12.0,
+              "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
+            },
+            {
+              "job_id": "75c56c3a-d2a0-441e-a58f-7aa2fcacac37",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140532_75c56c3a-d2a0-441e-a58f-7aa2fcacac37.mp4",
               "status": "approved",
               "reason": null,
-              "at": "2026-10-05T12:51Z",
+              "at": "2026-10-05T14:05Z",
               "credits": 12.0,
               "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
             }
@@ -582,7 +600,7 @@
       "bars": 4,
       "cut_at": 43.58,
       "image_prompt": "[Momo] and [Croc] standing side by side on a round rainbow-striped rug in a cozy pastel playroom, Toto on the left and Momo on the right with a clear gap between them, both facing the viewer straight on, wide-medium shot at eye level showing both characters full body from the top of the head down to the feet, the two characters fill about two-thirds of the frame height with some rug visible in front of their feet, both standing upright with both feet flat on the rug, arms relaxed down at the sides, happy closed-mouth smiles, Toto standing upright on his short legs about as tall as Momo, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, right behind them stands a soft lavender freestanding play wall: one plain smooth low partition with rounded top corners and no pictures on it, a little taller than the characters and wide enough to hide both of them, its two ends a little beyond them on each side, around it: soft peach walls, a big round window with sheer white curtains and warm sunlight on the right, a low white shelf with a few plush toys on the left, a light wooden floor, bright soft daylight, cheerful and cozy",
-      "motion": "Momo and Toto keep exactly the same look as the first frame (Momo: big round head, huge round sparkly eyes with big white highlights, mint-green overalls with two small yellow buttons; Toto: lime-green body, pale yellow belly, short rounded snout, big round friendly eyes, small orange bandana). Both stay on their spots in front of the lavender play wall, Toto on the left, Momo on the right. Both look at the viewer and sing the words together clearly from the very first sung syllable, both mouths opening and closing on every sung syllable and closing into a soft smile whenever the singing pauses. While they sing, right away both point to their own eyes: each lifts one paw and points with the paw tip at the outer corner of one eye, then at the other eye, the eyes wide open and fully visible, the mouth below uncovered and singing the whole time; Momo's paw stays in front of her face inside her hanging ears. Momo's long floppy ears stay hanging down beside her cheeks, fully visible. Inside Toto's open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby. At the end both lower their paws and finish standing exactly as in the first frame, both feet on the rug, arms relaxed at the sides, soft closed-mouth smiles",
+      "motion": "Momo and Toto keep exactly the same look as the first frame (Momo: big round head, huge round sparkly eyes with big white highlights, mint-green overalls with two small yellow buttons; Toto: lime-green body, pale yellow belly, short rounded snout, big round friendly eyes, small orange bandana). Both stand on their spots in front of the lavender play wall, Toto on the left, Momo on the right. Both look at the viewer and sing the words together clearly from the very first sung syllable, both mouths opening and closing on every sung syllable and closing into a soft smile whenever the singing pauses. Inside Toto's open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby. From the very first sung word, both lift one paw and point to their own eyes, and they keep pointing at their eyes through the whole question line and the whole answer line. Toto's eyes are the two big round eyes on the very top of his head: Toto's paw tip touches the top of his head just under one of those big round eyes, not his snout and not his cheek. Momo's eyes are her huge round eyes just below her forehead: Momo's paw tip touches just beside the outer corner of one eye, in front of her face inside her hanging ears. The eyes stay wide open and fully visible, and the mouth below stays uncovered and sings the whole time. Momo's long floppy ears stay hanging down beside her cheeks, fully visible. At the end both lower their paws and finish standing exactly as in the first frame, both feet on the rug, arms relaxed at the sides, soft closed-mouth smiles",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -610,10 +628,10 @@
         },
         "clip_ko": {
           "status": "approved",
-          "job_id": "7cc4e268-a55d-4770-8db9-aa9786bce47e",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_130012_7cc4e268-a55d-4770-8db9-aa9786bce47e.mp4",
-          "attempts": 2,
-          "credits": 24.0,
+          "job_id": "876c36c6-2ef0-4187-ada7-3fa82b4546c4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140532_876c36c6-2ef0-4187-ada7-3fa82b4546c4.mp4",
+          "attempts": 3,
+          "credits": 36.0,
           "history": [
             {
               "job_id": "11eb7fe6-75e0-49cd-9af4-99503c7d31df",
@@ -627,9 +645,18 @@
             {
               "job_id": "7cc4e268-a55d-4770-8db9-aa9786bce47e",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_130012_7cc4e268-a55d-4770-8db9-aa9786bce47e.mp4",
+              "status": "rejected",
+              "reason": "v3 fix: 토토가 눈이 아니라 볼을 가리킴, '아인이 눈? 서인이 눈?' 동안 아무도 눈을 안 가리킴",
+              "at": "2026-10-05T13:00Z",
+              "credits": 12.0,
+              "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
+            },
+            {
+              "job_id": "876c36c6-2ef0-4187-ada7-3fa82b4546c4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140532_876c36c6-2ef0-4187-ada7-3fa82b4546c4.mp4",
               "status": "approved",
               "reason": null,
-              "at": "2026-10-05T13:00Z",
+              "at": "2026-10-05T14:05Z",
               "credits": 12.0,
               "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
             }
@@ -722,7 +749,7 @@
       "bars": 4,
       "cut_at": 57.73,
       "image_prompt": "[Momo] and [Croc] standing side by side on a round rainbow-striped rug in a cozy pastel playroom, Toto on the left and Momo on the right with a clear gap between them, both facing the viewer straight on, wide-medium shot at eye level showing both characters full body from the top of the head down to the feet, the two characters fill about two-thirds of the frame height with some rug visible in front of their feet, both standing upright with both feet flat on the rug, arms relaxed down at the sides, happy closed-mouth smiles, Toto standing upright on his short legs about as tall as Momo, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, right behind them stands a soft lavender freestanding play wall: one plain smooth low partition with rounded top corners and no pictures on it, a little taller than the characters and wide enough to hide both of them, its two ends a little beyond them on each side, around it: soft peach walls, a big round window with sheer white curtains and warm sunlight on the right, a low white shelf with a few plush toys on the left, a light wooden floor, bright soft daylight, cheerful and cozy",
-      "motion": "Momo and Toto keep exactly the same look as the first frame (Momo: big round head, huge round sparkly eyes with big white highlights, mint-green overalls with two small yellow buttons; Toto: lime-green body, pale yellow belly, short rounded snout, big round friendly eyes, small orange bandana). Both stay on their spots in front of the lavender play wall, Toto on the left, Momo on the right. Both look at the viewer and sing the words together clearly from the very first sung syllable, both mouths opening and closing on every sung syllable and closing into a soft smile whenever the singing pauses. While they sing, right away both point to their own nose: each raises one paw to the middle of the face and gently taps the tip of the nose with the paw tip, Momo her small pink nose between her eyes, Toto the two little nostrils at the top of his snout just below his eyes; the paw stays up at the nose, above the mouth, so the singing mouth below stays uncovered; they tap the nose, take the paw a little away and tap it again. Momo's long floppy ears stay hanging down beside her cheeks, fully visible. Inside Toto's open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby. At the end both lower their paws and finish standing exactly as in the first frame, both feet on the rug, arms relaxed at the sides, soft closed-mouth smiles",
+      "motion": "Momo and Toto keep exactly the same look as the first frame (Momo: big round head, huge round sparkly eyes with big white highlights, mint-green overalls with two small yellow buttons; Toto: lime-green body, pale yellow belly, short rounded snout, big round friendly eyes, small orange bandana). Both stand on their spots in front of the lavender play wall, Toto on the left, Momo on the right. Both look at the viewer and sing the words together clearly from the very first sung syllable, both mouths opening and closing on every sung syllable and closing into a soft smile whenever the singing pauses. Inside Toto's open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby. From the very first sung word, both point to their own nose and tap it, through the question line and the answer line: Toto raises one paw to the very tip of his long rounded snout, at the front center of the snout and not its side, and taps the two little nostrils there with the paw tip; Momo raises one paw and taps her small pink nose in the middle of her face with the paw tip, touching only the nose, without covering her mouth. They tap the nose, take the paw a little away and tap it again; the singing mouths below stay uncovered. Momo's long floppy ears stay hanging down beside her cheeks, fully visible. At the end both lower their paws and finish standing exactly as in the first frame, both feet on the rug, arms relaxed at the sides, soft closed-mouth smiles",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -750,10 +777,10 @@
         },
         "clip_ko": {
           "status": "approved",
-          "job_id": "669b6a3c-51d1-45a7-815a-ea22fbca73cf",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_130013_669b6a3c-51d1-45a7-815a-ea22fbca73cf.mp4",
-          "attempts": 2,
-          "credits": 24.0,
+          "job_id": "63c006b1-588b-4bee-8ffc-a7105f7e74ae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140533_63c006b1-588b-4bee-8ffc-a7105f7e74ae.mp4",
+          "attempts": 3,
+          "credits": 36.0,
           "history": [
             {
               "job_id": "192a4284-0bca-474e-ac1c-035c6bc2a52e",
@@ -767,9 +794,18 @@
             {
               "job_id": "669b6a3c-51d1-45a7-815a-ea22fbca73cf",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_130013_669b6a3c-51d1-45a7-815a-ea22fbca73cf.mp4",
+              "status": "rejected",
+              "reason": "v3 fix: 토토가 콧구멍(주둥이 끝)이 아니라 주둥이 옆을 만짐",
+              "at": "2026-10-05T13:00Z",
+              "credits": 12.0,
+              "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
+            },
+            {
+              "job_id": "63c006b1-588b-4bee-8ffc-a7105f7e74ae",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140533_63c006b1-588b-4bee-8ffc-a7105f7e74ae.mp4",
               "status": "approved",
               "reason": null,
-              "at": "2026-10-05T13:00Z",
+              "at": "2026-10-05T14:05Z",
               "credits": 12.0,
               "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
             }
@@ -956,8 +992,8 @@
           "status": "approved",
           "job_id": "b7d9e10b-b86b-4385-8271-551f6222c260",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_130013_b7d9e10b-b86b-4385-8271-551f6222c260.mp4",
-          "attempts": 2,
-          "credits": 24.0,
+          "attempts": 3,
+          "credits": 34.5,
           "history": [
             {
               "job_id": "fcef8b5d-620e-48b0-ada2-ea9bf082c665",
@@ -972,13 +1008,22 @@
               "job_id": "b7d9e10b-b86b-4385-8271-551f6222c260",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_130013_b7d9e10b-b86b-4385-8271-551f6222c260.mp4",
               "status": "approved",
-              "reason": null,
+              "reason": "v3 에서 다시 승인 (새 take 48fdf656 보다 입·먹는 동작이 나음). 끝에 c13 숨은 그림으로 한 프레임에 사라지는 점은 남아 있음",
               "at": "2026-10-05T13:00Z",
               "credits": 12.0,
               "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
+            },
+            {
+              "job_id": "48fdf656-b5bb-44c8-844a-b152a72f4c0c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_140533_48fdf656-b5bb-44c8-844a-b152a72f4c0c.mp4",
+              "status": "rejected",
+              "reason": "v3 c12: 벽 뒤로 숨기는 됐지만 마지막 '냠냠냠!' 중에 숨기 시작하고, 노래 4.5초 동안 두 입이 벌린 채 멈춤(립싱크 안 됨), 입에 손 가져가는 먹는 흉내 없음 — 백업(b7d9e10b) 유지",
+              "at": "2026-10-05T14:05Z",
+              "credits": 10.5,
+              "start_image": "e0501597-818a-44e7-95ef-dd69bf2ba167"
             }
           ],
-          "reason": null
+          "reason": "v3 에서 다시 승인 (새 take 48fdf656 보다 입·먹는 동작이 나음). 끝에 c13 숨은 그림으로 한 프레임에 사라지는 점은 남아 있음"
         }
       },
       "nar_ref": {
