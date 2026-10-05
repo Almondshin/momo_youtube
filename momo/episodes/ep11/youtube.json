@@ -10,13 +10,15 @@
     "thumbnail_set": true,
     "playlist_id": null,
     "file_sha256": "fde30f9efd88505ea78730d1a84e638dccf29c1fbe9d9f3b3e92efb5ef7ba7b6",
-    "previous_video_ids": [
-      "UWzbN1SIwKE"
-    ],
+    "previous_video_ids": [],
     "deleted": [
       {
         "video_id": "DYUVrjMgRkM",
         "at": "2026-10-05T13:28:01Z"
+      },
+      {
+        "video_id": "UWzbN1SIwKE",
+        "at": "2026-10-05T22:46:25Z"
       }
     ]
   }
