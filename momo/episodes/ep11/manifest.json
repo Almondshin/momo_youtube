@@ -4,7 +4,7 @@
   "languages": [
     "ko"
   ],
-  "status": "producing",
+  "status": "assembled",
   "topic": {
     "en": "Peekaboo body parts with Ain and Seoin",
     "ko": "아인이 서인이 까꿍 (까꿍·손·발·눈·코·입)"
@@ -63,9 +63,9 @@
   },
   "credits": {
     "estimate": 145.8,
-    "spent": 54.0,
-    "generations": 26,
-    "regenerations": 10,
+    "spent": 157.5,
+    "generations": 43,
+    "regenerations": 13,
     "cap": 160
   },
   "notes": {
@@ -78,7 +78,10 @@
       "2026-10-05 인트로/아웃트로 L 컷 없음 — 1.05 s 전에 인사할 자리가 없고, 영상은 마지막 노래 샷을 파일 끝까지 유지해 끝난다",
       "2026-10-05 사용자: ep11 만 크레딧 캡 초과 허용 ('이번 편만 초과 허용') — 예상 150.6 (재생성 여유 23.1 포함). manifest.credits.cap 160 으로 상한"
     ],
-    "next_time": [],
+    "next_time": [
+      "ep11: 한글 낱말 카드(손/발/눈/코/입) 를 뺐음 — 두 캐릭터가 화면 가운데를 채우는 투샷에서 render 의 left/right 카드 자리가 부르지 않는 캐릭터 얼굴을 가림 (c07 c11 c15 c19 c23). 가사 자막이 같은 낱말을 보여 줌. 투샷 편은 카드 자리(위쪽 모서리·작은 카드)를 먼저 마련할 것",
+      "ep11 c04 (c26 재사용, 마지막 화면): 토토가 입을 벌릴 때 윗입술 아래 연한 띠가 보임 — 날카로운 이빨은 아니라 승인 상태로 둠 (재생성 6 크레딧이 사용자 승인 캡 160 을 넘음). c02 입가 연두색 돌기도 피부색이라 둠"
+    ],
     "singers": {
       "momo": [
         "c01",
@@ -159,6 +162,25 @@
             }
           ],
           "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "0da8cce9-dd4c-4bb5-8e90-1c4fb4aa4295",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110521_0da8cce9-dd4c-4bb5-8e90-1c4fb4aa4295.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "0da8cce9-dd4c-4bb5-8e90-1c4fb4aa4295",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110521_0da8cce9-dd4c-4bb5-8e90-1c4fb4aa4295.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:05Z",
+              "credits": 7.5,
+              "start_image": "4eaa84d9-b2de-4416-a307-ad0fe84c3acf"
+            }
+          ],
+          "reason": null
         }
       },
       "nar_ref": {
@@ -171,7 +193,8 @@
           ],
           "at": "2026-10-05T10:53Z"
         }
-      }
+      },
+      "lip_shift": 0.067
     },
     {
       "id": "c02",
@@ -244,7 +267,7 @@
       "bars": 2,
       "cut_at": 8.05,
       "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the knees up, both have just played peek-a-boo: both paws open to the sides in front of the shoulders with the palms toward the viewer, delighted surprised smiles with closed mouths, Momo's paws below and in front of her ears, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
-      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both play peek-a-boo: they cover only their eyes with both paws for a moment, then open the paws to the sides again with a happy surprised face, twice, the mouths always stay visible below the paws, Momo's paws stay in front of her eyes inside her hanging ears, both of Momo's ears stay fully visible. Momo keeps the mouth closed, smiling, the whole time, both long floppy ears stay hanging down beside the cheeks the whole time. Toto looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, the rounded snout opens softly with no teeth, the orange bandana stays on",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both play peek-a-boo: they cover only their eyes with both paws for a moment, then open the paws to the sides again with happy bright eyes, twice, the mouths always stay visible below the paws, Momo's paws stay in front of her eyes inside her hanging ears, both of Momo's ears stay fully visible. Momo keeps the mouth closed, smiling, the whole time, both long floppy ears stay hanging down beside the cheeks the whole time. Toto looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, the rounded snout opens softly and inside his open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -265,6 +288,34 @@
               "reason": null,
               "at": "2026-10-05T08:11Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "49a6c55c-5fc0-4b2b-ac49-05210b090eb4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_111757_49a6c55c-5fc0-4b2b-ac49-05210b090eb4.mp4",
+          "attempts": 2,
+          "credits": 12.0,
+          "history": [
+            {
+              "job_id": "492a96c8-7789-4e91-aa95-5e21b1fb36c3",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110521_492a96c8-7789-4e91-aa95-5e21b1fb36c3.mp4",
+              "status": "rejected",
+              "reason": "Toto off-model: a row of small white teeth (lower and upper) in his open mouth on most sung syllables (no teeth ever); Momo also opens her mouth on Toto's line",
+              "at": "2026-10-05T11:05Z",
+              "credits": 6.0,
+              "start_image": "091c8043-8b1d-4b2b-83b5-a8b23691a055"
+            },
+            {
+              "job_id": "49a6c55c-5fc0-4b2b-ac49-05210b090eb4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_111757_49a6c55c-5fc0-4b2b-ac49-05210b090eb4.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:18Z",
+              "credits": 6.0,
+              "start_image": "091c8043-8b1d-4b2b-83b5-a8b23691a055"
             }
           ],
           "reason": null
@@ -321,6 +372,25 @@
             }
           ],
           "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "9385ed88-83df-46de-a242-893e6966cac9",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110518_9385ed88-83df-46de-a242-893e6966cac9.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "9385ed88-83df-46de-a242-893e6966cac9",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110518_9385ed88-83df-46de-a242-893e6966cac9.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:05Z",
+              "credits": 6.0,
+              "start_image": "a8c1b0ae-7780-45e1-b1e3-cf6b7d360e9e"
+            }
+          ],
+          "reason": null
         }
       },
       "nar_ref": {
@@ -374,6 +444,25 @@
             }
           ],
           "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "96d47bdf-fbfa-4e4c-8673-a16020c39a29",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110520_96d47bdf-fbfa-4e4c-8673-a16020c39a29.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "96d47bdf-fbfa-4e4c-8673-a16020c39a29",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110520_96d47bdf-fbfa-4e4c-8673-a16020c39a29.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:05Z",
+              "credits": 6.0,
+              "start_image": "9478a0bc-c9d2-4717-a5bd-4dc9944454ee"
+            }
+          ],
+          "reason": null
         }
       },
       "nar_ref": {
@@ -415,12 +504,6 @@
       "clip_seconds": {
         "ko": 4
       },
-      "card": {
-        "word": "손",
-        "text": "짝짝",
-        "pos": "left",
-        "at": 0.97
-      },
       "gen": {
         "image": {
           "status": "approved",
@@ -455,6 +538,25 @@
             }
           ],
           "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "ef880b89-83d0-4caa-95a6-79eeeed2fd9e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110517_ef880b89-83d0-4caa-95a6-79eeeed2fd9e.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "ef880b89-83d0-4caa-95a6-79eeeed2fd9e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110517_ef880b89-83d0-4caa-95a6-79eeeed2fd9e.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:05Z",
+              "credits": 6.0,
+              "start_image": "8780d12e-6cc4-4859-9fcf-4432f1913cb9"
+            }
+          ],
+          "reason": null
         }
       },
       "nar_ref": {
@@ -476,7 +578,7 @@
       "bars": 2,
       "cut_at": 25.82,
       "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, closer medium shot from the waist up, both clap their paws together in front of the chest, excited happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
-      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both clap their paws together in front of the chest three times, pause, and clap three times again, small and gentle. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly with no teeth, the orange bandana stays on",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both clap their paws together in front of the chest three times, pause, and clap three times again, small and gentle. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly and inside his open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -497,6 +599,34 @@
               "reason": null,
               "at": "2026-10-05T10:35Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "3cd535a3-3ea6-4dde-8be3-dde3a6f7c7d6",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_111757_3cd535a3-3ea6-4dde-8be3-dde3a6f7c7d6.mp4",
+          "attempts": 2,
+          "credits": 12.0,
+          "history": [
+            {
+              "job_id": "18bfe841-3cef-422b-a801-4860ddae2a11",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110522_18bfe841-3cef-422b-a801-4860ddae2a11.mp4",
+              "status": "rejected",
+              "reason": "Toto off-model: one small white upper front tooth shows in his open mouth on every sung syllable (no teeth ever)",
+              "at": "2026-10-05T11:05Z",
+              "credits": 6.0,
+              "start_image": "27b00d04-37fa-4b5f-9502-605c5176e69b"
+            },
+            {
+              "job_id": "3cd535a3-3ea6-4dde-8be3-dde3a6f7c7d6",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_111757_3cd535a3-3ea6-4dde-8be3-dde3a6f7c7d6.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:18Z",
+              "credits": 6.0,
+              "start_image": "27b00d04-37fa-4b5f-9502-605c5176e69b"
             }
           ],
           "reason": null
@@ -555,12 +685,6 @@
       "clip_seconds": {
         "ko": 4
       },
-      "card": {
-        "word": "발",
-        "text": "쿵쿵",
-        "pos": "right",
-        "at": 0.98
-      },
       "gen": {
         "image": {
           "status": "approved",
@@ -576,6 +700,25 @@
               "reason": null,
               "at": "2026-10-05T10:35Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "0c01fe25-34ed-4dcb-95e1-5ca5b113c60d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110520_0c01fe25-34ed-4dcb-95e1-5ca5b113c60d.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "0c01fe25-34ed-4dcb-95e1-5ca5b113c60d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110520_0c01fe25-34ed-4dcb-95e1-5ca5b113c60d.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:05Z",
+              "credits": 6.0,
+              "start_image": "7556327c-c5e0-411a-b806-8f3eaaba1de7"
             }
           ],
           "reason": null
@@ -600,7 +743,7 @@
       "bars": 2,
       "cut_at": 40.03,
       "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, full body shot, both standing with both feet flat on the rug and the knees a little bent, both paws in little fists at chest height in a happy cheer pose, closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
-      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both tap their feet gently on the rug three times, pause, and three times again, both feet stay on the rug, no jumping, paws in little fists at chest height. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly with no teeth, the orange bandana stays on",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both tap their feet gently on the rug three times, pause, and three times again, both feet stay on the rug, no jumping, paws in little fists at chest height. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly and inside his open mouth there is only a smooth dark mouth and a soft pink tongue, completely toothless like a baby, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -621,6 +764,34 @@
               "reason": null,
               "at": "2026-10-05T10:38Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "8b7addfc-466d-4522-81b5-fe2499acfe3d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_112451_8b7addfc-466d-4522-81b5-fe2499acfe3d.mp4",
+          "attempts": 2,
+          "credits": 12.0,
+          "history": [
+            {
+              "job_id": "930afd30-9660-426c-bcb1-588f6176630c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110521_930afd30-9660-426c-bcb1-588f6176630c.mp4",
+              "status": "rejected",
+              "reason": "Toto off-model: two small pale fang slivers at both corners of his open mouth on the shout syllables (no teeth ever)",
+              "at": "2026-10-05T11:05Z",
+              "credits": 6.0,
+              "start_image": "ade18e4c-8085-42c1-9a23-34cdfc9f5d8d"
+            },
+            {
+              "job_id": "8b7addfc-466d-4522-81b5-fe2499acfe3d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_112451_8b7addfc-466d-4522-81b5-fe2499acfe3d.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:24Z",
+              "credits": 6.0,
+              "start_image": "ade18e4c-8085-42c1-9a23-34cdfc9f5d8d"
             }
           ],
           "reason": null
@@ -679,12 +850,6 @@
       "clip_seconds": {
         "ko": 4
       },
-      "card": {
-        "word": "눈",
-        "text": "깜빡",
-        "pos": "left",
-        "at": 1.01
-      },
       "gen": {
         "image": {
           "status": "approved",
@@ -700,6 +865,25 @@
               "reason": null,
               "at": "2026-10-05T10:38Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "0c581656-c7f5-49d9-86d1-17458bc4444c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110620_0c581656-c7f5-49d9-86d1-17458bc4444c.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "0c581656-c7f5-49d9-86d1-17458bc4444c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110620_0c581656-c7f5-49d9-86d1-17458bc4444c.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:06Z",
+              "credits": 6.0,
+              "start_image": "396d8b9c-e195-4d2e-a062-3b4a23765527"
             }
           ],
           "reason": null
@@ -745,6 +929,25 @@
               "reason": null,
               "at": "2026-10-05T10:39Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "9a2eb015-c565-435c-a945-c63a56beb8e2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110621_9a2eb015-c565-435c-a945-c63a56beb8e2.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "9a2eb015-c565-435c-a945-c63a56beb8e2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110621_9a2eb015-c565-435c-a945-c63a56beb8e2.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:06Z",
+              "credits": 6.0,
+              "start_image": "63c7d8a7-d428-4d92-91f4-8d0742804120"
             }
           ],
           "reason": null
@@ -803,12 +1006,6 @@
       "clip_seconds": {
         "ko": 4
       },
-      "card": {
-        "word": "코",
-        "text": "킁킁",
-        "pos": "right",
-        "at": 0.96
-      },
       "gen": {
         "image": {
           "status": "approved",
@@ -843,6 +1040,26 @@
             }
           ],
           "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "46228aa2-eb66-48a8-929c-60a28fe780af",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110620_46228aa2-eb66-48a8-929c-60a28fe780af.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "46228aa2-eb66-48a8-929c-60a28fe780af",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110620_46228aa2-eb66-48a8-929c-60a28fe780af.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:06Z",
+              "credits": 6.0,
+              "start_image": "5940dfba-4469-49a4-b901-d0933441325e"
+            }
+          ],
+          "reason": null,
+          "off_model_ok": true
         }
       },
       "nar_ref": {
@@ -885,6 +1102,25 @@
               "reason": null,
               "at": "2026-10-05T10:39Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "be91a1ea-6517-4f85-ba11-e8ba0c268cbe",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110620_be91a1ea-6517-4f85-ba11-e8ba0c268cbe.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "be91a1ea-6517-4f85-ba11-e8ba0c268cbe",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110620_be91a1ea-6517-4f85-ba11-e8ba0c268cbe.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:06Z",
+              "credits": 6.0,
+              "start_image": "80e26c08-4779-4cbd-bd79-92667b583637"
             }
           ],
           "reason": null
@@ -943,12 +1179,6 @@
       "clip_seconds": {
         "ko": 4
       },
-      "card": {
-        "word": "입",
-        "text": "냠냠",
-        "pos": "left",
-        "at": 1.02
-      },
       "gen": {
         "image": {
           "status": "approved",
@@ -999,6 +1229,25 @@
             }
           ],
           "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "4c7d575e-fb88-481c-a225-b42c1904aafb",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110635_4c7d575e-fb88-481c-a225-b42c1904aafb.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "4c7d575e-fb88-481c-a225-b42c1904aafb",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110635_4c7d575e-fb88-481c-a225-b42c1904aafb.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:06Z",
+              "credits": 6.0,
+              "start_image": "86805676-154c-4030-98e8-f3a67d7f35a1"
+            }
+          ],
+          "reason": null
         }
       },
       "nar_ref": {
@@ -1041,6 +1290,25 @@
               "reason": null,
               "at": "2026-10-05T10:41Z",
               "credits": 2.0
+            }
+          ],
+          "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "f192e284-b0c4-47fe-9f9a-55b83bd20c01",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110621_f192e284-b0c4-47fe-9f9a-55b83bd20c01.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "f192e284-b0c4-47fe-9f9a-55b83bd20c01",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_110621_f192e284-b0c4-47fe-9f9a-55b83bd20c01.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T11:06Z",
+              "credits": 6.0,
+              "start_image": "86805676-154c-4030-98e8-f3a67d7f35a1"
             }
           ],
           "reason": null
