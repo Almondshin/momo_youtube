@@ -38,3 +38,4 @@ momo/research/*/raw/
 # new_episode.py --force 백업
 momo/episodes/*/manifest.json.bak
 .claude/worktrees/
+momo/episodes/*/_v1_media/

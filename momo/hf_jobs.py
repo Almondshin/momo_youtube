@@ -68,10 +68,28 @@ def _folder(cfg: dict, p: dict) -> dict:
     return p
 
 
-def image_params(cfg: dict, prompt: str, prefix: str = "") -> dict:
+def image_params(cfg: dict, prompt: str, prefix: str = "", refs: list[str] | None = None) -> dict:
+    """refs: approved image jobs the new image is edited from (cut.image_ref) — same set, camera and positions."""
     hf = cfg["higgsfield"]
-    return _folder(cfg, {"model": hf["image_model"], "prompt": prefix + prompt,
-                         "aspect_ratio": hf.get("aspect_ratio") or "16:9", "resolution": hf["image_resolution"]})
+    p = {"model": hf["image_model"], "prompt": prefix + prompt,
+         "aspect_ratio": hf.get("aspect_ratio") or "16:9", "resolution": hf["image_resolution"]}
+    if refs:
+        p["medias"] = [{"role": hf.get("image_ref_role") or "image_references", "value": j} for j in refs]
+    return _folder(cfg, p)
+
+
+def image_refs(m: dict, cut: dict) -> tuple[list[str], str | None]:
+    """cut.image_ref ("c02" or a list): the approved image job(s) of those cuts, or why it cannot be planned yet."""
+    want = cut.get("image_ref")
+    want = [want] if isinstance(want, str) else list(want or [])
+    by_id = {c.get("id"): c for c in m.get("cuts") or []}
+    jobs = []
+    for cid in want:
+        img = ((by_id.get(cid) or {}).get("gen") or {}).get("image") or {}
+        if status_of(img) != "approved" or not img.get("job_id"):
+            return [], f"image_ref {cid} 이미지가 승인 전"
+        jobs.append(img["job_id"])
+    return jobs, None
 
 
 def clip_params(cfg: dict, prompt: str, start_job: str, cut: dict | None = None, lang: str | None = None,
@@ -164,8 +182,12 @@ def plan_episode(paths: Paths, cfg: dict, args, api: bool = False) -> dict:
         cid = s.cut["id"]
         target = ["--ep", ep, "--cut", cid, "--kind", s.kind]
         if s.kind == "image":
+            refs, why = image_refs(m, s.cut)
+            if why:
+                blocked.append(f"{s.key}: {why}")
+                continue
             tool, params = "generate_image", image_params(cfg, compose_image_prompt(cfg, s.cut),
-                                                          element_prefix(cfg, s.cut))
+                                                          element_prefix(cfg, s.cut), refs)
         elif s.kind == "clip":
             img = (s.cut.get("gen") or {}).get("image") or {}
             if status_of(img) != "approved" or not img.get("job_id"):

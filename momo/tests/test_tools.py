@@ -431,6 +431,26 @@ def test_hf_api_helpers(tmp: Path) -> None:
     assert hf_api.media_url({"status": "completed"}) is None
 
 
+def test_plan_image_ref(tmp: Path) -> None:
+    """cut.image_ref: the new image is an edit of another cut's approved image (same set, camera, positions)."""
+    root = make_root(tmp)
+    m = manifest(root)
+    next(c for c in m["cuts"] if c["id"] == "c04")["image_ref"] = "c02"
+    wj(root / "episodes" / EP / "manifest.json", m)
+    p = plan(root, "--ep", EP, "--kind", "image", "--cuts", "c04")
+    assert not p["items"] and any("image_ref c02" in b for b in p["blocked"]), p   # c02 not approved yet
+    record(root, "--ep", EP, "--cut", "c02", "--kind", "image", "--job-id", "J02", "--url", "u", "--status", "approved")
+    it = plan(root, "--ep", EP, "--kind", "image", "--cuts", "c04")["items"][0]
+    assert it["params"]["medias"] == [{"role": "image_references", "value": "J02"}], it
+    assert "medias" not in plan(root, "--ep", EP, "--kind", "image", "--cuts", "c03")["items"][0]["params"]
+    m = manifest(root)
+    next(c for c in m["cuts"] if c["id"] == "c04")["image_ref"] = "c99"
+    wj(root / "episodes" / EP / "manifest.json", m)
+    from momolib.episode import validate_manifest as vm
+    errors, _ = vm(load_config(Paths(root)), m)
+    assert any("image_ref" in e for e in errors), errors
+
+
 def test_plan_clip_and_audio(tmp: Path) -> None:
     root = make_root(tmp)
     cfg = load_config(Paths(root))

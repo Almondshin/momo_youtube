@@ -182,6 +182,7 @@ def _validate_track(cfg: dict, song: dict, tr: dict, cuts: list[dict]) -> tuple[
     from .genrec import clip_seconds  # genrec imports this module
     E: list[str] = []
     W: list[str] = []
+    lang0 = active_langs(cfg)[0]
     ana = tr.get("analysis")
     if not (isinstance(ana, dict) and all(isinstance(ana.get(k), (int, float)) for k in ("bpm", "downbeat0"))):
         E.append("song.track.analysis {bpm, downbeat0} 없음 — song_track.py analyze")
@@ -213,8 +214,8 @@ def _validate_track(cfg: dict, song: dict, tr: dict, cuts: list[dict]) -> tuple[
             if c.get("clip_model") != "wan2_7":
                 W.append(f"{cid}: 립싱크 컷은 clip_model wan2_7 (오디오 레퍼런스로 입을 맞춤)")
             need = math.ceil(e - s - 1e-6)
-            if clip_seconds(cfg, c, "en") < need:
-                W.append(f"{cid}: clip_seconds {clip_seconds(cfg, c, 'en')} < 컷 {e - s:.2f}s — {need} 이상")
+            if clip_seconds(cfg, c, lang0) < need:
+                W.append(f"{cid}: clip_seconds {clip_seconds(cfg, c, lang0)} < 컷 {e - s:.2f}s — {need} 이상")
         cf = c.get("clip_from")
         if cf is not None:
             src = by_id.get((cf or {}).get("cut")) if isinstance(cf, dict) else None
@@ -224,7 +225,7 @@ def _validate_track(cfg: dict, song: dict, tr: dict, cuts: list[dict]) -> tuple[
             elif not isinstance(at, (int, float)) or isinstance(at, bool) or at < 0:
                 E.append(f"{cid}: clip_from.at 은 0 이상의 초")
             else:
-                have = clip_seconds(cfg, src, "en")
+                have = clip_seconds(cfg, src, lang0)
                 if at + (e - s) > have + 0.05:
                     W.append(f"{cid}: clip_from {src['id']} {at}s~ 에 {e - s:.2f}s 가 안 남음 (원본 {have}s) "
                              f"— 끝부분이 느려지거나 멈춘다")
@@ -369,6 +370,11 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
     by_id = {c.get("id"): c for c in cuts}
     for c in cuts:
         v, cid = c.get("lip_shift"), c.get("id")
+        ir = c.get("image_ref")
+        if ir is not None:
+            refs = [ir] if isinstance(ir, str) else ir
+            if not isinstance(refs, list) or not refs or any(r not in by_id or r == cid for r in refs):
+                E.append(f"{cid}: image_ref 는 다른 컷 id (또는 그 목록) — 그 컷의 승인된 이미지를 고쳐 그린다")
         if v is None:
             continue
         cf = c.get("clip_from") if isinstance(c.get("clip_from"), dict) else None
