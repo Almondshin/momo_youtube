@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (Paths, active_langs, add_root_arg, check_ep, get_paths, load_config, load_json,  # noqa: E402
+from momolib.common import (Paths, active_langs, add_root_arg, check_ep, episode_cfg, get_paths, load_config, load_json,  # noqa: E402
                             load_manifest, main_wrapper)
 from momolib.episode import count_types  # noqa: E402
 from momolib.genrec import episode_cap, episode_slots, status_of  # noqa: E402
@@ -67,6 +67,7 @@ def generation_summary(paths: Paths, cfg: dict, m: dict) -> list[str]:
 
 
 def render(paths: Paths, cfg: dict, m: dict) -> str:
+    cfg = episode_cfg(cfg, m)
     ep = m["ep"]
     topic, title = m.get("topic") or {}, m.get("title") or {}
     cr, notes = m.get("credits") or {}, m.get("notes") or {}

@@ -40,7 +40,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (IMAGE_EXTS, LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoError, Paths,  # noqa: E402
+from momolib.common import (episode_cfg, IMAGE_EXTS, LIBRARY_AUDIO, LIBRARY_CLIPS, MOMO_DIR, MomoError, Paths,  # noqa: E402
                             active_langs, add_root_arg, check_ep, check_lang, find_media, get_paths, load_config, load_json,
                             load_library, load_manifest, main_wrapper, save_json)
 from momolib.episode import (compose_image_prompt, compose_motion_prompt, song_track, track_spans,  # noqa: E402
@@ -142,6 +142,7 @@ def plan_episode(paths: Paths, cfg: dict, args, api: bool = False) -> dict:
     if not args.kind or args.kind == "sheet":
         raise MomoError("에피소드 plan 은 --kind image|clip|audio 가 필요함 (시트는 --library)")
     m = load_manifest(paths, ep)
+    cfg = episode_cfg(cfg, m)
     ids = {c.get("id") for c in m.get("cuts") or []}
     want = [c.strip() for c in (args.cuts or "").split(",") if c.strip()]
     unknown = [c for c in want if c not in ids]
@@ -290,6 +291,7 @@ def sheet_prompt(cfg: dict, name: str, entry: dict) -> str:
 def plan_library(paths: Paths, cfg: dict, args) -> dict:
     lib = load_library(paths)
     m = load_manifest(paths, check_ep(args.ep)) if args.ep else None
+    cfg = episode_cfg(cfg, m)
     used = characters_used(cfg, m) if m else None
     for k in used or []:  # 이 편에 처음 나오는 조연은 시트부터 (기록은 record --sheet 가 만든다)
         if cfg["character"].get(k) and k not in lib.setdefault("character_sheets", {}):
@@ -490,6 +492,7 @@ def cmd_record(paths: Paths, cfg: dict, args) -> int:
     if len(targets) != 1:
         raise MomoError("대상은 --cut / --library / --sheet / --voice-sample / --song-music 중 하나")
     m = load_manifest(paths, check_ep(args.ep)) if args.ep else None
+    cfg = episode_cfg(cfg, m)
     lib = None
     if args.song_music:
         if m is None or not isinstance(m.get("song"), dict):
@@ -587,6 +590,7 @@ def cmd_onmodel(paths: Paths, cfg: dict, args) -> int:
     from momolib import onmodel
     ep = check_ep(args.ep)
     m = load_manifest(paths, ep)
+    cfg = episode_cfg(cfg, m)
     want = {c.strip() for c in (args.cuts or "").split(",") if c.strip()}
     bad = 0
     for s in episode_slots(paths, cfg, m):
@@ -755,6 +759,7 @@ def cmd_narref(paths: Paths, cfg: dict, args) -> int:
     """
     ep, lang = check_ep(args.ep), check_lang(args.lang)
     m = load_manifest(paths, ep)
+    cfg = episode_cfg(cfg, m)
     cut = next((c for c in m.get("cuts") or [] if c.get("id") == args.cut), None)
     if cut is None:
         raise MomoError(f"manifest 에 없는 컷: {args.cut}")
@@ -785,7 +790,8 @@ def cmd_status(paths: Paths, cfg: dict, args) -> int:
     lib = load_library(paths)
     out = {}
     if args.ep:
-        out["episode"] = episode_status(paths, cfg, load_manifest(paths, check_ep(args.ep)), lib)
+        m = load_manifest(paths, check_ep(args.ep))
+        out["episode"] = episode_status(paths, episode_cfg(cfg, m), m, lib)
     if args.library:
         out["library"] = library_status(cfg, lib)
     if args.json:

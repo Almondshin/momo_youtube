@@ -22,6 +22,7 @@ import difflib
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 MODEL = "mlx-community/whisper-large-v3-turbo"
@@ -52,6 +53,96 @@ NUMBER_WORDS = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four", 
 def norm(w: str) -> str:
     w = re.sub(r"[^a-z0-9']", "", w.lower().replace("’", "'"))
     return NUMBER_WORDS.get(w, w)  # whisper often writes sung numbers as digits
+
+
+# Korean (--language ko): sung Korean liaises ("아인이도" is heard and written "아이니도"), so words are compared as
+# jamo with the silent initial ㅇ dropped and each final consonant written as the initial it becomes.
+FINAL_TO_INITIAL = dict(zip("\u11a8\u11a9\u11ab\u11ae\u11af\u11b7\u11b8\u11ba\u11bb\u11bd\u11be\u11bf\u11c0\u11c1\u11c2",
+                            "\u1100\u1101\u1102\u1103\u1105\u1106\u1107\u1109\u110a\u110c\u110e\u110f\u1110\u1111\u1112"))
+
+
+def ko_norm(w: str) -> str:
+    out = []
+    for ch in unicodedata.normalize("NFD", w):
+        o = ord(ch)
+        if 0x1100 <= o <= 0x1112:
+            if o != 0x110B:                       # ㅇ as an initial is silent
+                out.append(ch)
+        elif 0x1161 <= o <= 0x1175:
+            out.append(ch)
+        elif 0x11A8 <= o <= 0x11C2:
+            out.append(FINAL_TO_INITIAL.get(ch, ch))
+    return "".join(out)
+
+
+def align_chars(exp: list[str], got: list[str]) -> list[int | None]:
+    """Expected token k → heard word j by matching their jamo in order (whisper merges and splits Korean words, so
+    word-to-word matching fails). A token takes the heard word holding most of its matched jamo, at least half."""
+    a, a_own, b, b_own = [], [], [], []
+    for k, t in enumerate(exp):
+        a += list(t)
+        a_own += [k] * len(t)
+    for j, t in enumerate(got):
+        b += list(t)
+        b_own += [j] * len(t)
+    votes: list[dict[int, int]] = [{} for _ in exp]
+    for blk in difflib.SequenceMatcher(a=a, b=b, autojunk=False).get_matching_blocks():
+        if blk.size < 2:
+            continue
+        for i in range(blk.size):
+            k, j = a_own[blk.a + i], b_own[blk.b + i]
+            votes[k][j] = votes[k].get(j, 0) + 1
+    out: list[int | None] = []
+    for k, v in enumerate(votes):
+        best = max(v, key=v.get) if v else None
+        out.append(best if best is not None and sum(v.values()) * 2 >= len(exp[k]) else None)
+    return out
+
+
+def phrase_chunks(x, sr: int = 16000, gap: float = 0.25, max_len: float = 10.0) -> list[tuple[int, int]]:
+    """Sample ranges of the vocal stem cut in its quiet gaps, each at most max_len s. Whisper run over a whole
+    repetitive children's song in Korean loops on a hallucinated line; short phrases it hears well."""
+    import numpy as np
+    hop = int(0.02 * sr)
+    n = len(x) // hop
+    if n == 0:
+        return []
+    rms = np.sqrt((x[:n * hop].reshape(n, hop).astype(np.float64) ** 2).mean(axis=1) + 1e-12)
+    db = 20 * np.log10(rms + 1e-9)
+    voiced = db > db.max() - 35
+    cuts, run = [0], 0
+    for i, v in enumerate(voiced):
+        if not v:
+            run += 1
+            continue
+        if run * 0.02 >= gap and i - run > 0:
+            cuts.append((i - run // 2) * hop)
+        run = 0
+    cuts.append(len(x))
+    out, start, prev = [], cuts[0], cuts[0]
+    for c in cuts[1:]:
+        if (c - start) / sr > max_len and prev > start:
+            out.append((start, prev))
+            start = prev
+        prev = c
+    out.append((start, len(x)))
+    return [(a, b) for a, b in out if voiced[a // hop:max(a // hop + 1, b // hop)].any()]
+
+
+def transcribe_chunked(path: str, model: str, language: str) -> list[dict]:
+    """Whisper words [{word, start, end}] over phrase_chunks of the stem, in song time."""
+    import mlx_whisper
+    from mlx_whisper.audio import SAMPLE_RATE, load_audio
+    import numpy as np
+    x = np.array(load_audio(path), dtype=np.float32)
+    words = []
+    for a, b in phrase_chunks(x, SAMPLE_RATE):
+        r = mlx_whisper.transcribe(x[a:b], path_or_hf_repo=model, language=language, word_timestamps=True,
+                                   condition_on_previous_text=False, temperature=0.0)
+        off = a / SAMPLE_RATE
+        words += [{"word": w["word"], "start": w["start"] + off, "end": w["end"] + off}
+                  for s in r["segments"] for w in s.get("words", [])]
+    return words
 
 
 def similar(a: str, b: str) -> bool:
@@ -145,22 +236,39 @@ def main() -> int:
     ap.add_argument("--lyrics", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--model", default=MODEL)
+    ap.add_argument("--language", default="en", choices=("en", "ko"), help="ko: Korean lyrics (jamo matching)")
+    ap.add_argument("--fill-missing", action="store_true",
+                    help="a line whisper did not hear at all, between two timed lines, is spread evenly over the gap "
+                         "(only when you checked on the stem that it IS sung — otherwise it hides a skipped line)")
     a = ap.parse_args()
     import mlx_whisper
 
     lines = read_lyrics(Path(a.lyrics))
+    ko = a.language == "ko"
     exp, owner = [], []
     for li, ln in enumerate(lines):
         for ti, tok in enumerate(ln["tokens"]):
+            if ko:
+                exp.append(ko_norm(tok))
+                owner.append((li, ti))
+                continue
             for part in [p for p in re.split(r"-", tok) if norm(p)] or [tok]:  # "Ding-dong-dang!" is heard as 3 words
                 exp.append(norm(part))
                 owner.append((li, ti))
     prompt = " ".join(ln["text"] for ln in lines)[:600]
-    r = mlx_whisper.transcribe(a.vocals, path_or_hf_repo=a.model, language="en", word_timestamps=True,
-                               initial_prompt=prompt, condition_on_previous_text=False)
-    heard = [(norm(w["word"]), float(w["start"]), float(w["end"])) for s in r["segments"] for w in s.get("words", [])]
-    heard = [h for h in heard if h[0]]
-    match = align(exp, [h[0] for h in heard])
+    if ko:  # Korean: phrase by phrase, no prompt (one long pass loops on a hallucinated line)
+        words = transcribe_chunked(a.vocals, a.model, a.language)
+    else:
+        r = mlx_whisper.transcribe(a.vocals, path_or_hf_repo=a.model, language=a.language, word_timestamps=True,
+                                   initial_prompt=prompt, condition_on_previous_text=False)
+        words = [w for s in r["segments"] for w in s.get("words", [])]
+    if ko:
+        heard = [(w["word"].strip(), float(w["start"]), float(w["end"])) for w in words if ko_norm(w["word"])]
+        match = align_chars(exp, [ko_norm(h[0]) for h in heard])
+    else:
+        heard = [(norm(w["word"]), float(w["start"]), float(w["end"])) for w in words]
+        heard = [h for h in heard if h[0]]
+        match = align(exp, [h[0] for h in heard])
 
     per_line: list[list[tuple[float, float] | None]] = [[None] * len(ln["tokens"]) for ln in lines]
     for k, j in enumerate(match):
@@ -169,10 +277,18 @@ def main() -> int:
             s0, e0 = round(heard[j][1], 3), round(heard[j][2], 3)
             prev = per_line[li][ti]  # parts of one hyphenated token: first start, last end
             per_line[li][ti] = (min(prev[0], s0), max(prev[1], e0)) if prev else (s0, e0)
-    out_lines, missing = [], []
-    for ln, times in zip(lines, per_line):
-        times = drop_outliers(times)
-        filled = fill_line(times)
+    out_lines, missing, interpolated = [], [], []
+    fills = [fill_line(drop_outliers(times)) for times in per_line]
+    if a.fill_missing:
+        for i, f in enumerate(fills):
+            if f is None and 0 < i < len(fills) - 1 and fills[i - 1] and fills[i + 1]:
+                t0, t1 = fills[i - 1][-1][1], fills[i + 1][0][0]
+                n = len(lines[i]["tokens"])
+                if t1 - t0 >= 0.2 * n:
+                    step = (t1 - t0) / n
+                    fills[i] = [(t0 + k * step, t0 + (k + 1) * step) for k in range(n)]
+                    interpolated.append(lines[i]["text"])
+    for ln, times, filled in zip(lines, per_line, fills):
         if filled is None:
             missing.append(ln["text"])
             continue
@@ -199,11 +315,13 @@ def main() -> int:
         extra.append({"t0": run_[0][1], "t1": run_[-1][2], "words": " ".join(x[0] for x in run_)})
     acc = sum(1 for j in match if j is not None) / max(1, len(exp))
     report = {"lyric_words": len(exp), "heard_words": len(heard), "matched": round(acc, 3),
-              "lines_missing": missing, "unmatched_heard_runs": extra}
+              "lines_missing": missing, "lines_interpolated": interpolated, "unmatched_heard_runs": extra}
     Path(a.out).write_text(json.dumps({"lines": out_lines, "report": report}, indent=1, ensure_ascii=False))
     print(f"matched {acc:.1%} of {len(exp)} lyric words, {len(out_lines)}/{len(lines)} lines timed")
     for t in missing:
         print(f"  ✖ not heard: {t}")
+    for t in interpolated:
+        print(f"  △ not heard, spread over the gap (--fill-missing): {t}")
     for x in extra:
         print(f"  △ sung but not in lyrics {x['t0']:.2f}-{x['t1']:.2f}s: {x['words']}")
     for ln in out_lines:

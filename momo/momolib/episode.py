@@ -40,7 +40,7 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from .common import (AUDIO_EXTS, CUT_ID_RE, CUT_TYPES, IMAGE_EXTS, LANGS, LIBRARY_AUDIO, LIBRARY_CLIPS,
+from .common import (episode_cfg, AUDIO_EXTS, CUT_ID_RE, CUT_TYPES, IMAGE_EXTS, LANGS, LIBRARY_AUDIO, LIBRARY_CLIPS,
                      VIDEO_EXTS, MomoError, Paths, active_langs, check_ep, find_media, probe_duration)
 
 # ---------------------------------------------------------------- 나레이션 마커
@@ -236,6 +236,7 @@ def _validate_track(cfg: dict, song: dict, tr: dict, cuts: list[dict]) -> tuple[
 
 def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
     """(errors, warnings). errors 가 있으면 제작/조립을 진행하지 않는다."""
+    cfg = episode_cfg(cfg, manifest)
     E: list[str] = []
     W: list[str] = []
     rules = cfg["plan_rules"]

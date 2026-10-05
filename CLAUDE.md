@@ -1,7 +1,8 @@
 # CLAUDE.md
 
 이 저장소는 키즈 채널 "Momo the Bunny" 제작 파이프라인이다. 2026-09-30 부터 **영어 전용**
-(`config.languages = ["en"]`, 사용자 결정 — 지시서의 EN/KO 두 벌보다 우선). 작업은 전부 `momo/` 안에서 하고,
+(`config.languages = ["en"]`, 사용자 결정 — 지시서의 EN/KO 두 벌보다 우선). 예외: ep11 「아인이 서인이 까꿍」 은
+한국어 동요로 채널에 공개 (사용자 결정 2026-10-05, `manifest.languages: ["ko"]`). 작업은 전부 `momo/` 안에서 하고,
 사용자에게는 한국어로 보고한다.
 
 노래는 ep03 부터 **Suno Pro** 로 만든다 (사용자가 suno.com 에서 생성 → WAV·스템을 받아 줌. 공식 API 가 없고

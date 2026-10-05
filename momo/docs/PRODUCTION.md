@@ -485,6 +485,10 @@ forbid bots). Steps (all local, 0 Higgsfield credits until 6):
    them). Read its output: "△ 자막이 목소리보다 늦을 수 있는 곳" / "늦게 시작하는 줄" — look at the vocal-stem
    spectrogram there before cutting (a caption must never trail the voice). `lyrics` without `--align` refines
    the current `song.lyrics` again (always from the aligner's times).
+   Korean song (an episode with `manifest.languages: ["ko"]`): `align_lyrics.py --language ko` — whisper hears
+   the stem phrase by phrase (one long pass loops on a hallucinated line) and Korean is matched as jamo, so
+   liaison ("아인이도" heard "아이니도") still matches. A sung line it cannot hear at all (checked on the stem)
+   is spread over its gap with `--fill-missing`; `lyrics` refine then snaps the words to the voice.
    Then `song_track.py tighten --ep <ep> --dry-run` → without `--dry-run`: whole bars inside mid-song vocal gaps
    (the vocal stem quiet, 0.3 s kept each side) are cut out of song / vocals / inst, and lyrics, cut_at, bars,
    downbeats, track.end and nar_ref windows move with them (0 credits; `track.edits` keeps the cut ranges). Do it

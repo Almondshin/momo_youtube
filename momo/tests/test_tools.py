@@ -230,6 +230,15 @@ def test_new_episode(tmp: Path) -> None:
     fails(new_episode, "--root", str(root), "--ep", "ep2; rm", needle="형식")
 
 
+def test_episode_languages(tmp: Path) -> None:
+    """manifest.languages overrides config.languages for one episode (the Korean ep11 on the English channel)."""
+    from momolib.common import active_langs, episode_cfg
+    cfg = {"languages": ["en"]}
+    assert active_langs(episode_cfg(cfg, {"languages": ["ko"]})) == ("ko",)
+    assert active_langs(episode_cfg(cfg, {})) == ("en",) and episode_cfg(cfg, None) is cfg
+    assert active_langs(episode_cfg(cfg, {"languages": ["xx"]})) == ("en",)   # unsupported → channel default
+
+
 def test_validate_table_and_json(tmp: Path) -> None:
     root = make_root(tmp)
     out = ok(validate_manifest, "--root", str(root), "--ep", EP, "--table")

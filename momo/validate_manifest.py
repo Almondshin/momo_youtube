@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (LANGS, MomoError, Paths, active_langs, add_root_arg, check_ep, get_paths, load_config,  # noqa: E402
+from momolib.common import (LANGS, MomoError, Paths, active_langs, add_root_arg, check_ep, episode_cfg, get_paths, load_config,  # noqa: E402
                             load_manifest, main_wrapper)
 from momolib.episode import (compose_image_prompt, compose_motion_prompt, count_types, plan_timeline,  # noqa: E402
                              song_track, track_lines, track_spans, tts_blocks, validate_manifest)
@@ -194,6 +194,7 @@ def main(argv: list[str] | None = None) -> int:
     cfg = load_config(paths)
     ep = check_ep(args.ep)
     m = load_manifest(paths, ep)
+    cfg = episode_cfg(cfg, m)
     errors, warns = validate_manifest(cfg, m)
     if m.get("ep") != ep:
         errors.insert(0, f"manifest.ep {m.get('ep')!r} 가 폴더 이름 {ep!r} 와 다름")

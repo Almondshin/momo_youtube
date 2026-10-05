@@ -529,6 +529,17 @@ def test_align_lyrics(tmp: Path) -> None:
     (tmp / "l2.md").write_text("```style\nkids song\n```\n\n```\n[Chorus]\nOne, two!\n```\n")
     assert [ln["text"] for ln in al.read_lyrics(tmp / "l2.md")] == ["One, two!"]  # the style block is skipped
     assert al.norm("10") == "ten" and al.norm("Three!") == "three"
+    # Korean: liaison-insensitive jamo matching, merged / split words, phrase chunks on the stem's quiet gaps
+    assert al.ko_norm("아인이도") == al.ko_norm("아이니도") and al.ko_norm("손?") and not al.ko_norm("?!")
+    exp = [al.ko_norm(t) for t in "아인이 손? 서인이 손? 여기요!".split()]
+    got = [al.ko_norm(t) for t in ["아이니손", "서이니", "손", "I", "여기요"]]
+    assert al.align_chars(exp, got) == [0, 0, 1, 2, 4], al.align_chars(exp, got)
+    sr = 16000
+    x = np.concatenate([tone(1.0, 300, sr), np.zeros(int(0.5 * sr), np.float32), tone(1.0, 300, sr),
+                        np.zeros(int(0.5 * sr), np.float32), tone(1.0, 300, sr)])
+    ch = al.phrase_chunks(x, sr, max_len=2.0)
+    assert len(ch) == 3 and ch[0][0] == 0 and ch[-1][1] == len(x), ch
+    assert al.phrase_chunks(x, sr, max_len=10.0) == [(0, len(x))]
 
 
 def test_track_cut_at(tmp: Path) -> None:

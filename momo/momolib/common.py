@@ -155,6 +155,15 @@ def active_langs(cfg: dict) -> tuple[str, ...]:
     return langs or LANGS
 
 
+def episode_cfg(cfg: dict, manifest: dict | None) -> dict:
+    """cfg for one episode: manifest.languages (an episode made in another language than the channel's, e.g. the
+    Korean ep11 on the English channel, user 2026-10-05) replaces config.languages."""
+    langs = (manifest or {}).get("languages")
+    if isinstance(langs, list) and langs and all(lg in LANGS for lg in langs):
+        return {**cfg, "languages": list(langs)}
+    return cfg
+
+
 def check_lang(lang: str) -> str:
     if lang not in LANGS:
         raise MomoError(f"언어는 {LANGS} 중 하나여야 함: {lang!r}")

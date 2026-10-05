@@ -18,6 +18,7 @@ build·validate·estimate·hf_jobs·fetch_assets·upload 가 전부 이 파일�
 |---|---|---|
 | `schema` | `1` | 형식 버전 |
 | `ep` | `"ep03"` | `ep` + 숫자 2~3자리. 폴더 이름과 같아야 한다 |
+| `languages` | `["ko"]` (선택) | 이 편만 채널 기본(config.languages)과 다른 언어로 만들 때. validate·hf_jobs·README·upload `--lang all` 이 이 값을 쓴다 (`common.episode_cfg`). ep11 한국어 동요 (사용자 결정 2026-10-05) |
 | `status` | `planning` → `producing` → `assembled` → `uploaded` | planning = new_episode 직후, producing = 첫 생성 기록 때 hf_jobs.py 가 자동으로, assembled = build.py 가 조립에 성공하면 자동으로 (`--allow-missing` 애니매틱은 제외), uploaded = upload.py 가 자동으로 |
 | `topic` | `{"en","ko"}` | 주제 (README·표에 사용) |
 | `benchmark` | `{"channel_url","research_dir","chosen_axis"}` | 어떤 분석·어떤 축을 근거로 주제를 골랐는지 |
