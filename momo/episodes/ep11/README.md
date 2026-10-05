@@ -1,6 +1,6 @@
 # ep11 — 아인이 서인이 까꿍 (까꿍·손·발·눈·코·입) (Peekaboo body parts with Ain and Seoin)
 
-> episode_readme.py 가 생성 (2026-10-05 11:43 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-10-05 13:27 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
@@ -8,23 +8,23 @@
 |---|---|
 | 상태 | uploaded |
 | 주제 | 아인이 서인이 까꿍 (까꿍·손·발·눈·코·입) / Peekaboo body parts with Ain and Seoin |
-| 컷 수 | 26개 (V 26 · S 0 · L 0), 씬 5개 |
-| 사용 크레딧 | 157.5 / 캡 160 (예상 145.8) |
-| 생성 / 재생성 횟수 | 43 / 13 |
-| 길이 KO | 1:34 (93.6초, 컷 26개, 빌드 2026-10-05T11:43:08+00:00) |
-| 썸네일 | c03 — 까꿍! |
+| 컷 수 | 13개 (V 13 · S 0 · L 0), 씬 5개 |
+| 사용 크레딧 | 380.5 / 캡 450 (예상 360.9) |
+| 생성 / 재생성 횟수 | 63 / 19 |
+| 길이 KO | 1:34 (93.6초, 컷 13개, 빌드 2026-10-05T13:26:52+00:00) |
+| 썸네일 | c01 — 까꿍! |
 
 ## 아동용(made for kids) 설정
 
 > 이 영상은 YouTube 에서 반드시 **"아동용(made for kids)"** 으로 설정해야 한다 (2~5세 대상 키즈 채널 — 지시서 7단계). upload.py 는 config 와 상관없이 `status.selfDeclaredMadeForKids = true` 로 올린다. Studio 에서 직접 올릴 때는 '예, 아동용입니다'를 선택할 것.
 
-- KO: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (DYUVrjMgRkM)
+- KO: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (Nm0YwcOkCSE)
 
 ## 업로드 결과 (youtube.json)
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
-| KO | [DYUVrjMgRkM](https://www.youtube.com/watch?v=DYUVrjMgRkM) | private | — | 2026-10-05T11:43:30Z | ✔ | — |
+| KO | [Nm0YwcOkCSE](https://www.youtube.com/watch?v=Nm0YwcOkCSE) | private | — | 2026-10-05T13:27:18Z | ✔ | — |
 
 ## 제목·설명·태그
 
@@ -86,8 +86,8 @@
 
 | 종류 | 승인 | 시도 | 크레딧 |
 |---|---:|---:|---:|
-| 컷 이미지 | 15/15 | 25 | 48 |
-| V 클립 | 15/15 | 18 | 109.5 |
+| 컷 이미지 | 12/12 | 12 | 4 |
+| V 클립 | 12/12 | 18 | 219 |
 | 음성 블록 | 2/2 | 2 | 0 |
 
 라이브러리 L 컷은 0 크레딧 (라이브러리 클립·고정 음성 재사용). 자세한 진행표: `python hf_jobs.py status --ep ep11`
@@ -100,6 +100,7 @@
 - 2026-10-05 노래: Suno v1 「아인이 서인이 까꿍」 (사용자가 만든 승인 곡, 93.6 s, 132 bpm, 1.05–92.3 s 쉼 없이 노래) — 워크플로 지시에 "사용자 승인 곡"으로 전달됨, song_track.py status --approve 로 기록
 - 2026-10-05 인트로/아웃트로 L 컷 없음 — 1.05 s 전에 인사할 자리가 없고, 영상은 마지막 노래 샷을 파일 끝까지 유지해 끝난다
 - 2026-10-05 사용자: ep11 만 크레딧 캡 초과 허용 ('이번 편만 초과 허용') — 예상 150.6 (재생성 여유 23.1 포함). manifest.credits.cap 160 으로 상한
+- 2026-10-05 사용자: ep11 다시 만들기 — '크레딧 상관없이 다시 진행' (cap 160 → 450). v1 (DYUVrjMgRkM, 157.5 크레딧) 은 컷마다 구도가 바뀌어 끊겨 보였음
 
 ## 다음 편에 반영할 점
 
