@@ -16,7 +16,7 @@ momo-publish runner) can restore them.
             compared, house phrases left out) and no "Ding-dong-dang" refrain (momolib.song_style)
   tighten   cut whole instrumental bars out of mid-song vocal gaps (Suno turnarounds = video with nobody
             singing) and move every song-time field with them (momolib.tighten; --dry-run lists them first)
-  refs      vocal-stem slice per lip-sync cut → episodes/<ep>/audio/refs/<cut>_en.wav (audio_references)
+  refs      vocal-stem slice per lip-sync cut → episodes/<ep>/audio/refs/<cut>_<lang>.wav (audio_references)
   publish   upload song / vocals / refs to the release "media-<ep>" (gh) → song.track.url, song.vocals.url
   sync      preview a lip-sync clip with its vocal slice → out/sync/<cut>_sync.mp4
   lipsync   measure how late Momo's mouth is vs the voice in the built video, per singing shot (lip_shift hint)
@@ -47,8 +47,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from momolib import release  # noqa: E402
-from momolib.common import (MomoError, add_root_arg, check_ep, check_lang, get_paths, load_config,  # noqa: E402
-                            load_manifest, main_wrapper, probe_duration, run, save_json)
+from momolib.common import (MomoError, active_langs, add_root_arg, check_ep, check_lang, episode_cfg,  # noqa: E402
+                            get_paths, load_config, load_manifest, main_wrapper, probe_duration, run, save_json)
 from momolib.episode import song_grid, song_track, track_lines, track_spans  # noqa: E402
 from momolib.genrec import now_iso  # noqa: E402
 
@@ -84,6 +84,11 @@ def local_rec(sha1: str, extra: dict) -> dict:
             "sha1": sha1, **extra,
             "history": [{"job_id": job, "url": None, "status": "generated", "reason": None, "at": now_iso(),
                          "credits": 0}]}
+
+
+def ep_lang(cfg: dict, m: dict) -> str:
+    """The episode's (first) language — manifest.languages, else config.languages (refs / clips are named by it)."""
+    return active_langs(episode_cfg(cfg, m))[0]
 
 
 def need_track(m: dict) -> dict:
@@ -431,7 +436,7 @@ def cmd_refs(paths, cfg, args) -> int:
         if len(seg) < REF_MIN * REF_SR:  # the lip-sync model rejects audio under ~2 s: pad silence at the end
             import numpy as np
             seg = np.concatenate([seg, np.zeros(int(REF_MIN * REF_SR) - len(seg), seg.dtype)])
-        dst = out / f"{c['id']}_en.wav"
+        dst = out / f"{c['id']}_{ep_lang(cfg, m)}.wav"
         audio.write_wav(dst, seg, REF_SR, codec="pcm_s16le")
         print(f"✔ {dst.name}: 노래 {s:.3f}~{e:.3f}s ({e - s:.2f}s)")
     return 0
@@ -446,9 +451,11 @@ def cmd_sync(paths, cfg, args) -> int:
     out = paths.out(ep) / "sync"
     out.mkdir(parents=True, exist_ok=True)
     for c in lipsync_cuts(m, args.cuts):
-        clip = find_media(paths.clips(ep), f"{c['id']}_en", VIDEO_EXTS) or find_media(paths.clips(ep), c["id"],
-                                                                                     VIDEO_EXTS)
-        ref = audio_dir(paths, ep) / "refs" / f"{c['id']}_en.wav"
+        lang = ep_lang(cfg, m)
+        clip = find_media(paths.clips(ep), f"{c['id']}_{lang}", VIDEO_EXTS) or find_media(paths.clips(ep), c["id"],
+                                                                                          VIDEO_EXTS)
+        ref = next((r for r in (audio_dir(paths, ep) / "refs" / f"{c['id']}_{lg}.wav" for lg in (lang, "en"))
+                    if r.exists()), audio_dir(paths, ep) / "refs" / f"{c['id']}_{lang}.wav")
         if clip is None or not ref.exists():
             print(f"  · {c['id']}: 클립 또는 refs 없음 — 건너뜀")
             continue
@@ -464,7 +471,8 @@ def cmd_lipsync(paths, cfg, args) -> int:
     import numpy as np
     from momolib import audio, lipsync
     from momolib.episode import lip_shift_of
-    ep, lang = check_ep(args.ep), check_lang(args.lang)
+    ep = check_ep(args.ep)
+    lang = check_lang(args.lang or ep_lang(cfg, load_manifest(paths, ep)))
     m = load_manifest(paths, ep)
     need_track(m)
     tl_path = paths.out(ep) / f"{ep}_{lang}_timeline.json"
@@ -629,7 +637,7 @@ def main(argv: list[str] | None = None) -> int:
         p.add_argument("--cuts", help="쉼표 구분 (기본: 립싱크 컷 전부)")
     p = sub.add_parser("lipsync")
     p.add_argument("--ep", required=True)
-    p.add_argument("--lang", default="en")
+    p.add_argument("--lang", help="기본: 에피소드 언어 (manifest.languages, 없으면 config)")
     p.add_argument("--cuts", help="쉼표 구분 (기본: 립싱크 컷과 그 재사용 컷 전부)")
     p.add_argument("--json", help="샷별 결과를 이 JSON 파일로")
     p = sub.add_parser("publish")

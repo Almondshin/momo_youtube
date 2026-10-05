@@ -63,8 +63,8 @@
   },
   "credits": {
     "estimate": 145.8,
-    "spent": 48.0,
-    "generations": 25,
+    "spent": 54.0,
+    "generations": 26,
     "regenerations": 10,
     "cap": 160
   },
@@ -160,6 +160,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "fa40f18c-7e6f-4e00-b7ef-62370b35d90b",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            0.0,
+            4.35
+          ],
+          "at": "2026-10-05T10:53Z"
+        }
       }
     },
     {
@@ -193,6 +204,36 @@
             }
           ],
           "reason": null
+        },
+        "clip_ko": {
+          "status": "approved",
+          "job_id": "65c84736-6e74-49af-95dd-5e3bbd54861f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_105410_65c84736-6e74-49af-95dd-5e3bbd54861f.mp4",
+          "attempts": 1,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "65c84736-6e74-49af-95dd-5e3bbd54861f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_105410_65c84736-6e74-49af-95dd-5e3bbd54861f.mp4",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:54Z",
+              "credits": 6.0,
+              "start_image": "7d8a7e03-3db8-4650-8209-d567979f0da9"
+            }
+          ],
+          "reason": null
+        }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "ff9a777a-1e3e-4d42-8bd7-203cc70161e4",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            4.35,
+            8.05
+          ],
+          "at": "2026-10-05T10:53Z"
         }
       }
     },
@@ -227,6 +268,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "d6efad2a-f47d-409e-b0e2-8e81f189c9d8",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            8.05,
+            11.62
+          ],
+          "at": "2026-10-05T10:53Z"
         }
       }
     },
@@ -270,6 +322,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "ee7ee36c-6fcb-4074-96ff-9c119c41a557",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            11.62,
+            15.14
+          ],
+          "at": "2026-10-05T10:53Z"
+        }
       }
     },
     {
@@ -311,6 +374,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "89e80472-62b6-4a6b-a520-ab1de896fce3",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            15.14,
+            18.63
+          ],
+          "at": "2026-10-05T10:53Z"
         }
       }
     },
@@ -382,6 +456,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "e26de472-e3dd-4463-9e1f-a9893f96dac5",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            22.3,
+            25.82
+          ],
+          "at": "2026-10-05T10:53Z"
+        }
       }
     },
     {
@@ -415,6 +500,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "bbe9d042-41d0-4f41-aa44-c31393e6f7d9",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            25.82,
+            29.4
+          ],
+          "at": "2026-10-05T10:53Z"
         }
       }
     },
@@ -484,6 +580,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "64cc7b17-3c58-4eb8-845f-f7cd2f3db040",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            36.49,
+            40.03
+          ],
+          "at": "2026-10-05T10:53Z"
+        }
       }
     },
     {
@@ -517,6 +624,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "e69a5b2d-7e4a-4971-bc02-428ba7f767ae",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            40.03,
+            43.58
+          ],
+          "at": "2026-10-05T10:53Z"
         }
       }
     },
@@ -586,6 +704,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "c2d3a067-8bac-4e85-b1dc-7f4828d87362",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            50.67,
+            54.18
+          ],
+          "at": "2026-10-05T10:53Z"
+        }
       }
     },
     {
@@ -619,6 +748,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "1f03c07e-95a6-4497-9d7c-6486e85b3d90",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            54.18,
+            57.73
+          ],
+          "at": "2026-10-05T10:53Z"
         }
       }
     },
@@ -704,6 +844,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "bfb46e60-a233-49cb-ab5a-86f79a64541f",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            64.8,
+            68.35
+          ],
+          "at": "2026-10-05T10:53Z"
+        }
       }
     },
     {
@@ -737,6 +888,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "e7f367d9-f16a-48c1-a7f8-9c82bddb704b",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            68.35,
+            71.83
+          ],
+          "at": "2026-10-05T10:53Z"
         }
       }
     },
@@ -775,7 +937,7 @@
       "bars": 2,
       "cut_at": 78.87,
       "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the right two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the low mint-green toy shelf on the left side of the frame, medium shot from the waist up, each holds one big red strawberry with a green leafy top in one paw at chest height, the other paw on the round tummy, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
-      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both rub their round tummies happily with one paw, yummy, the strawberries stay at chest height below the mouths. Toto keeps the mouth closed, smiling, the whole time. Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both hold their strawberries still at chest height below the mouths and sway gently in place, the free paw gives the round tummy two small happy pats and then rests back down at the side, small calm movements only, and both end in the same pose as the first frame. Toto keeps the mouth closed, smiling, the whole time. Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
@@ -838,6 +1000,17 @@
           ],
           "reason": null
         }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "2f806adb-a729-4f53-a055-8857b9c95f93",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            78.87,
+            82.4
+          ],
+          "at": "2026-10-05T10:53Z"
+        }
       }
     },
     {
@@ -871,6 +1044,17 @@
             }
           ],
           "reason": null
+        }
+      },
+      "nar_ref": {
+        "ko": {
+          "media_id": "7ad1af9e-435e-4e35-a001-ad9551a01d16",
+          "track_sha1": "b5dcf2f5bd149c980580689521573888deba43fd",
+          "window": [
+            82.4,
+            85.89
+          ],
+          "at": "2026-10-05T10:53Z"
         }
       }
     },
@@ -907,7 +1091,7 @@
     "track": {
       "status": "approved",
       "job_id": "local:b5dcf2f5bd14",
-      "url": null,
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_song_b5dcf2f5.flac",
       "attempts": 1,
       "credits": 0,
       "reason": null,
@@ -920,7 +1104,7 @@
       "history": [
         {
           "job_id": "local:b5dcf2f5bd14",
-          "url": null,
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_song_b5dcf2f5.flac",
           "status": "approved",
           "reason": null,
           "at": "2026-10-05T07:44Z",
@@ -1205,7 +1389,7 @@
     "vocals": {
       "status": "approved",
       "job_id": "local:f7eb2b6bfe07",
-      "url": null,
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_song_vocals_f7eb2b6b.flac",
       "attempts": 1,
       "credits": 0,
       "reason": null,
@@ -1214,7 +1398,7 @@
       "history": [
         {
           "job_id": "local:f7eb2b6bfe07",
-          "url": null,
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_song_vocals_f7eb2b6b.flac",
           "status": "approved",
           "reason": null,
           "at": "2026-10-05T07:44Z",
@@ -1837,6 +2021,23 @@
           ]
         ]
       }
-    ]
+    ],
+    "refs_urls": {
+      "c01_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c01_en_0e7920ae.wav",
+      "c02_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c02_en_00743f1a.wav",
+      "c03_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c03_en_306447a5.wav",
+      "c04_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c04_en_863560d7.wav",
+      "c05_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c05_en_d7f79542.wav",
+      "c07_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c07_en_54c48183.wav",
+      "c08_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c08_en_c44271d1.wav",
+      "c11_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c11_en_4ef1bc04.wav",
+      "c12_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c12_en_25c6f060.wav",
+      "c15_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c15_en_7aea2d93.wav",
+      "c16_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c16_en_05db6021.wav",
+      "c19_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c19_en_3c8a36fa.wav",
+      "c20_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c20_en_d729bc86.wav",
+      "c23_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c23_en_6a89bdbf.wav",
+      "c24_en": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep11/ep11_ref_c24_en_73863bab.wav"
+    }
   }
 }

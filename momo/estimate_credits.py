@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (add_root_arg, check_ep, get_paths, load_config, load_library,  # noqa: E402
+from momolib.common import (add_root_arg, check_ep, episode_cfg, get_paths, load_config, load_library,  # noqa: E402
                             load_manifest, main_wrapper, save_json)
 from momolib.genrec import estimate, stop_message  # noqa: E402
 
@@ -76,6 +76,7 @@ def main(argv: list[str] | None = None) -> int:
     cfg = load_config(paths)
     ep = check_ep(args.ep)
     m = load_manifest(paths, ep)
+    cfg = episode_cfg(cfg, m)
     est = estimate(paths, cfg, m, load_library(paths), max(0.0, args.regen_rate))
     if args.json:
         out = {k: v for k, v in est.items() if k != "rows"}

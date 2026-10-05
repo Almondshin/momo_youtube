@@ -33,8 +33,8 @@ from urllib.parse import unquote, urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from momolib.common import (MomoError, add_root_arg, check_ep, find_media, get_paths, load_config,  # noqa: E402
-                            load_json, load_library, load_manifest, main_wrapper, probe, save_json, which)
+from momolib.common import (MomoError, add_root_arg, check_ep, episode_cfg, find_media, get_paths,  # noqa: E402
+                            load_config, load_json, load_library, load_manifest, main_wrapper, probe, save_json, which)
 from momolib.genrec import FETCHABLE, KIND_EXTS, Slot, episode_slots, library_slots  # noqa: E402
 
 REF_GROUPS = ("sheet", "lib_image", "voice")  # 조립에 안 쓰는 참고용 (시트, 클립 시작 이미지, 음성 샘플)
@@ -189,7 +189,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.library:
         slots += library_slots(paths, cfg, load_library(paths))
     if args.ep:
-        slots += episode_slots(paths, cfg, load_manifest(paths, check_ep(args.ep)))
+        m = load_manifest(paths, check_ep(args.ep))
+        slots += episode_slots(paths, episode_cfg(cfg, m), m)
     todo = [s for s in slots if s.status in FETCHABLE]
     if any(s.kind != "image" for s in todo) and not which("ffprobe"):
         raise MomoError("ffprobe 가 없어 영상·음성을 검증할 수 없음 — ffmpeg 설치 필요")

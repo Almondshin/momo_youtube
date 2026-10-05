@@ -634,6 +634,11 @@ def test_estimate_credits(tmp: Path) -> None:
     text = ok(estimate_credits, "--root", str(root), "--ep", EP, "--save")
     assert "| **합계** | **예상 총액** | | | **86.6** |" in text and "캡 250 이내" in text, text
     assert manifest(root)["credits"]["estimate"] == 86.6
+    m = manifest(root)                                   # manifest.languages: only that episode's language counts
+    wj(root / "episodes" / EP / "manifest.json", {**m, "languages": ["en"]})
+    labels = {r["label"] for r in okj(estimate_credits, "--root", str(root), "--ep", EP, "--json")["rows"]}
+    assert "나레이션 블록 EN" in labels and "나레이션 블록 KO" not in labels, labels
+    wj(root / "episodes" / EP / "manifest.json", m)
 
     record(root, "--ep", EP, "--cut", "c02", "--kind", "image", "--job-id", "a", "--url", "u", "--status",
            "generated")  # 검토 대기 = 이미 지불 → 남은 분에서 빠지고 spent 로
