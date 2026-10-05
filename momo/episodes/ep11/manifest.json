@@ -63,9 +63,9 @@
   },
   "credits": {
     "estimate": 145.8,
-    "spent": 12.0,
-    "generations": 6,
-    "regenerations": 0,
+    "spent": 48.0,
+    "generations": 25,
+    "regenerations": 10,
     "cap": 160
   },
   "notes": {
@@ -236,7 +236,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 11.62,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the knees up, both point one paw toward the viewer at chest height with big happy closed-mouth smiles as if saying found you, the other paw resting on the tummy, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the knees up, both point one paw toward the viewer at chest height with big happy closed-mouth smiles as if saying found you, the other paw resting on the tummy, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both point at the viewer with one paw and bounce happily on bent knees with both feet on the rug. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -245,11 +245,11 @@
       },
       "gen": {
         "image": {
-          "status": "rejected",
-          "job_id": "b8a6ec48-1187-4226-98d3-5ebf1d826a47",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_081419_b8a6ec48-1187-4226-98d3-5ebf1d826a47.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "status": "approved",
+          "job_id": "a8c1b0ae-7780-45e1-b1e3-cf6b7d360e9e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_102013_a8c1b0ae-7780-45e1-b1e3-cf6b7d360e9e.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "b8a6ec48-1187-4226-98d3-5ebf1d826a47",
@@ -258,9 +258,17 @@
               "reason": "Toto off-model: a small white fang tooth shows under his snout (no teeth ever); Toto turned 3/4",
               "at": "2026-10-05T08:14Z",
               "credits": 2.0
+            },
+            {
+              "job_id": "a8c1b0ae-7780-45e1-b1e3-cf6b7d360e9e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_102013_a8c1b0ae-7780-45e1-b1e3-cf6b7d360e9e.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:20Z",
+              "credits": 2.0
             }
           ],
-          "reason": "Toto off-model: a small white fang tooth shows under his snout (no teeth ever); Toto turned 3/4"
+          "reason": null
         }
       }
     },
@@ -270,7 +278,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 15.14,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the waist up, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, a curious smile and one paw raised at chest height with the palm up as if asking a question, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, Momo holds both paws together at chest height with a curious happy face, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the waist up, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, a curious smile and one paw raised at chest height with the palm up as if asking a question, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, Momo holds both paws together at chest height with a curious happy face, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Toto tilts his head gently to one side as if asking a question, his paw open with the palm up. Momo sways gently with her paws together at chest height. Momo keeps the mouth closed, smiling, the whole time, both long floppy ears stay hanging down beside the cheeks the whole time. Toto looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -279,11 +287,11 @@
       },
       "gen": {
         "image": {
-          "status": "rejected",
-          "job_id": "1d549cc3-386a-43d4-920c-5948f0f64131",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_081420_1d549cc3-386a-43d4-920c-5948f0f64131.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "status": "approved",
+          "job_id": "9478a0bc-c9d2-4717-a5bd-4dc9944454ee",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_102013_9478a0bc-c9d2-4717-a5bd-4dc9944454ee.png",
+          "attempts": 2,
+          "credits": 4.0,
           "history": [
             {
               "job_id": "1d549cc3-386a-43d4-920c-5948f0f64131",
@@ -292,9 +300,17 @@
               "reason": "Toto off-model: tiny black dot eyes instead of big round friendly eyes, head in near profile (Toto solo question shot needs frontal)",
               "at": "2026-10-05T08:14Z",
               "credits": 2.0
+            },
+            {
+              "job_id": "9478a0bc-c9d2-4717-a5bd-4dc9944454ee",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_102013_9478a0bc-c9d2-4717-a5bd-4dc9944454ee.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:20Z",
+              "credits": 2.0
             }
           ],
-          "reason": "Toto off-model: tiny black dot eyes instead of big round friendly eyes, head in near profile (Toto solo question shot needs frontal)"
+          "reason": null
         }
       }
     },
@@ -318,7 +334,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 22.3,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the right two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the low mint-green toy shelf on the left side of the frame, medium shot from the knees up, both clap their paws together in front of the chest, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the right two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the low mint-green toy shelf on the left side of the frame, medium shot from the knees up, both clap their paws together in front of the chest, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both clap their paws together in front of the chest on every clap, small and gentle, both feet on the rug. Toto keeps the mouth closed, smiling, the whole time. Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -333,11 +349,11 @@
       },
       "gen": {
         "image": {
-          "status": "rejected",
-          "job_id": "c9b75e71-dba9-44ad-b2c2-1f2aa8b626e4",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_081420_c9b75e71-dba9-44ad-b2c2-1f2aa8b626e4.png",
-          "attempts": 1,
-          "credits": 2.0,
+          "status": "approved",
+          "job_id": "8780d12e-6cc4-4859-9fcf-4432f1913cb9",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103514_8780d12e-6cc4-4859-9fcf-4432f1913cb9.png",
+          "attempts": 3,
+          "credits": 6.0,
           "history": [
             {
               "job_id": "c9b75e71-dba9-44ad-b2c2-1f2aa8b626e4",
@@ -346,9 +362,25 @@
               "reason": "Toto off-model: four small white teeth along the closed mouth line (no teeth ever)",
               "at": "2026-10-05T08:14Z",
               "credits": 2.0
+            },
+            {
+              "job_id": "45d4f909-eadb-4b22-9534-23c130d96c1c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_102013_45d4f909-eadb-4b22-9534-23c130d96c1c.png",
+              "status": "rejected",
+              "reason": "Toto off-model again: three small white teeth along the mouth line, Toto in 3/4 view with a long snout, and the pair swapped (Toto on the right)",
+              "at": "2026-10-05T10:20Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "8780d12e-6cc4-4859-9fcf-4432f1913cb9",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103514_8780d12e-6cc4-4859-9fcf-4432f1913cb9.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:35Z",
+              "credits": 2.0
             }
           ],
-          "reason": "Toto off-model: four small white teeth along the closed mouth line (no teeth ever)"
+          "reason": null
         }
       }
     },
@@ -358,12 +390,32 @@
       "type": "V",
       "bars": 2,
       "cut_at": 25.82,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, closer medium shot from the waist up, both clap their paws together in front of the chest, excited happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, closer medium shot from the waist up, both clap their paws together in front of the chest, excited happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both clap their paws together in front of the chest three times, pause, and clap three times again, small and gentle. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "ko": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "27b00d04-37fa-4b5f-9502-605c5176e69b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103513_27b00d04-37fa-4b5f-9502-605c5176e69b.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "27b00d04-37fa-4b5f-9502-605c5176e69b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103513_27b00d04-37fa-4b5f-9502-605c5176e69b.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -400,7 +452,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 36.49,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the left two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the big round window on the right side of the frame, full body shot, both standing with both feet flat on the rug and the knees a little bent, paws resting on the tummy, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the left two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the big round window on the right side of the frame, full body shot, both standing with both feet flat on the rug and the knees a little bent, paws resting on the tummy, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both do a gentle little stomp in place on bent knees: they tap one foot softly on the rug, then the other foot, the feet stay on the rug the whole time, no jumping, paws on the tummy. Momo keeps the mouth closed, smiling, the whole time, both long floppy ears stay hanging down beside the cheeks the whole time. Toto looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -412,6 +464,26 @@
         "text": "쿵쿵",
         "pos": "right",
         "at": 0.98
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "7556327c-c5e0-411a-b806-8f3eaaba1de7",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103514_7556327c-c5e0-411a-b806-8f3eaaba1de7.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "7556327c-c5e0-411a-b806-8f3eaaba1de7",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103514_7556327c-c5e0-411a-b806-8f3eaaba1de7.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:35Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -420,12 +492,32 @@
       "type": "V",
       "bars": 2,
       "cut_at": 40.03,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, full body shot, both standing with both feet flat on the rug and the knees a little bent, both paws in little fists at chest height in a happy cheer pose, closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, full body shot, both standing with both feet flat on the rug and the knees a little bent, both paws in little fists at chest height in a happy cheer pose, closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both tap their feet gently on the rug three times, pause, and three times again, both feet stay on the rug, no jumping, paws in little fists at chest height. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "ko": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "ade18e4c-8085-42c1-9a23-34cdfc9f5d8d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103813_ade18e4c-8085-42c1-9a23-34cdfc9f5d8d.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ade18e4c-8085-42c1-9a23-34cdfc9f5d8d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103813_ade18e4c-8085-42c1-9a23-34cdfc9f5d8d.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:38Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -462,7 +554,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 50.67,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the right two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the low mint-green toy shelf on the left side of the frame, medium close shot from the chest up, both look at the viewer with big bright eyes and happy closed-mouth smiles, both paws together at chest height, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the right two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the low mint-green toy shelf on the left side of the frame, medium close shot from the chest up, both look at the viewer with big bright eyes and happy closed-mouth smiles, both paws together at chest height, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both blink their big eyes slowly twice on each blink word and open them wide again right away, the heads stay still and upright. Toto keeps the mouth closed, smiling, the whole time. Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -474,6 +566,26 @@
         "text": "깜빡",
         "pos": "left",
         "at": 1.01
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "396d8b9c-e195-4d2e-a062-3b4a23765527",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103813_396d8b9c-e195-4d2e-a062-3b4a23765527.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "396d8b9c-e195-4d2e-a062-3b4a23765527",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103813_396d8b9c-e195-4d2e-a062-3b4a23765527.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:38Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -482,12 +594,32 @@
       "type": "V",
       "bars": 2,
       "cut_at": 54.18,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the waist up, both with paws resting on the round tummy, big bright eyes and happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the waist up, both with paws resting on the round tummy, big bright eyes and happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both blink their big eyes in rhythm, four quick blinks, a short pause, four quick blinks, the eyes open wide between the blinks, paws on the tummy. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "ko": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "63c7d8a7-d428-4d92-91f4-8d0742804120",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103948_63c7d8a7-d428-4d92-91f4-8d0742804120.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "63c7d8a7-d428-4d92-91f4-8d0742804120",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103948_63c7d8a7-d428-4d92-91f4-8d0742804120.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -524,7 +656,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 64.8,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the left two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the big round window on the right side of the frame, medium shot from the waist up, each holds a small pink daisy with a yellow center and a short green stem in one paw, Momo holds her daisy just below her small pink nose and sniffs it with a happy face, Toto holds his daisy at chest height, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the left two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the big round window on the right side of the frame, medium shot from the waist up, each holds a small pink daisy with a yellow center and a short green stem in one paw, Momo holds her daisy just below her small pink nose and sniffs it with a happy face, Toto holds his daisy at chest height, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on and looks straight into the camera, not at Momo, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Momo sniffs her daisy below her nose with a happy little nose wiggle; Toto wiggles his nose and sniffs the air happily with his daisy at chest height, the daisy never covers his mouth. Momo keeps the mouth closed, smiling, the whole time, both long floppy ears stay hanging down beside the cheeks the whole time. Toto looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -536,6 +668,42 @@
         "text": "킁킁",
         "pos": "right",
         "at": 0.96
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "5940dfba-4469-49a4-b901-d0933441325e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104420_5940dfba-4469-49a4-b901-d0933441325e.png",
+          "attempts": 3,
+          "credits": 6.0,
+          "history": [
+            {
+              "job_id": "6841d782-b42a-41be-9095-b62f87d0cf4b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103950_6841d782-b42a-41be-9095-b62f87d0cf4b.png",
+              "status": "rejected",
+              "reason": "Toto off-model: head in 3/4 side view looking at Momo, long side-on snout with a dark line mouth instead of the front-view face (Toto sings this cut, needs frontal)",
+              "at": "2026-10-05T10:39Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "66a60c94-c18a-449a-b636-391790b22265",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104219_66a60c94-c18a-449a-b636-391790b22265.png",
+              "status": "rejected",
+              "reason": "Momo off-model: ears standing upright, smaller brown eyes with eyelashes, pink buttons, smooth plastic look (generic bunny); Toto frontal now but eyes smaller than the sheet",
+              "at": "2026-10-05T10:42Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "5940dfba-4469-49a4-b901-d0933441325e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104420_5940dfba-4469-49a4-b901-d0933441325e.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:44Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -544,12 +712,32 @@
       "type": "V",
       "bars": 2,
       "cut_at": 68.35,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the waist up, each holds a small pink daisy with a yellow center and a short green stem in one paw at chest height below the chin, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, medium shot from the waist up, each holds a small pink daisy with a yellow center and a short green stem in one paw at chest height below the chin, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both wiggle their noses and sniff happily in rhythm, the daisies stay at chest height below the mouths. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "ko": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "80e26c08-4779-4cbd-bd79-92667b583637",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103948_80e26c08-4779-4cbd-bd79-92667b583637.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "80e26c08-4779-4cbd-bd79-92667b583637",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_103948_80e26c08-4779-4cbd-bd79-92667b583637.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -586,7 +774,7 @@
       "type": "V",
       "bars": 2,
       "cut_at": 78.87,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the right two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the low mint-green toy shelf on the left side of the frame, medium shot from the waist up, each holds one big red strawberry with a green leafy top in one paw at chest height, the other paw on the round tummy, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug in the right two-thirds of the frame, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, the low mint-green toy shelf on the left side of the frame, medium shot from the waist up, each holds one big red strawberry with a green leafy top in one paw at chest height, the other paw on the round tummy, happy closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both rub their round tummies happily with one paw, yummy, the strawberries stay at chest height below the mouths. Toto keeps the mouth closed, smiling, the whole time. Momo looks at the viewer and sings the words clearly, the mouth opening and closing on every sung syllable, closes the mouth into a soft smile whenever the singing pauses, both long floppy ears stay hanging down beside the cheeks the whole time",
       "lipsync": true,
       "clip_model": "wan2_7",
@@ -598,6 +786,58 @@
         "text": "냠냠",
         "pos": "left",
         "at": 1.02
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "86805676-154c-4030-98e8-f3a67d7f35a1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104107_86805676-154c-4030-98e8-f3a67d7f35a1.png",
+          "attempts": 5,
+          "credits": 8.0,
+          "history": [
+            {
+              "job_id": "b8142b9d-e5c5-4c58-ac6a-6c014fe7a4a6",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104107_b8142b9d-e5c5-4c58-ac6a-6c014fe7a4a6.png",
+              "status": "rejected",
+              "reason": "Toto off-model: two small white fang teeth at the corners of the mouth line (no teeth ever)",
+              "at": "2026-10-05T10:41Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "12cc9bd8-fa57-4f1b-9388-ba056a1f8490",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104336_12cc9bd8-fa57-4f1b-9388-ba056a1f8490.png",
+              "status": "rejected",
+              "reason": "Momo (the singer here) off-model: smooth plastic look without fur, eyelash flicks, smaller eyes (ratio 0.74 vs ~0.9 in the other shots); Toto in 3/4 with a long snout and darker green",
+              "at": "2026-10-05T10:43Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "7f33f585-6ef4-4214-923a-24c0149e8adf",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104616_7f33f585-6ef4-4214-923a-24c0149e8adf.png",
+              "status": "rejected",
+              "reason": "Momo (the singer) off-model: eyes closed in a squint smile instead of huge open eyes; pair swapped (Momo left, Toto right)",
+              "at": "2026-10-05T10:46Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "8403bccd-9540-4193-b1e3-2fa7315d0e18",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104736_8403bccd-9540-4193-b1e3-2fa7315d0e18.png",
+              "status": "rejected",
+              "reason": "v4: Momo in a different art style (smooth vinyl skin, purple eyes with lashes) on a singing shot; c23 shares c24's approved image instead (same 냠냠 verse, 0 credits)",
+              "at": "2026-10-05T10:47Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "86805676-154c-4030-98e8-f3a67d7f35a1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104107_86805676-154c-4030-98e8-f3a67d7f35a1.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:51Z",
+              "credits": 0.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
@@ -606,12 +846,32 @@
       "type": "V",
       "bars": 2,
       "cut_at": 82.4,
-      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, closer medium shot from the waist up, each holds one big red strawberry with a green leafy top in one paw at chest height, delighted closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto's short rounded snout closed in a gentle smile with no teeth, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
+      "image_prompt": "[Momo] and [Croc] standing side by side on the round rainbow-striped rug, both facing the viewer, a little apart with a clear gap between them, Toto on the left and Momo on the right, Toto standing upright on his short legs about as tall as Momo, closer medium shot from the waist up, each holds one big red strawberry with a green leafy top in one paw at chest height, delighted closed-mouth smiles, Momo has huge round sparkly eyes with big white highlights, eyes wide open, both of Momo's long floppy ears fully visible hanging down beside her cheeks, Toto faces the viewer straight on, his head and snout turned fully to the front like the front view of his character sheet, with big round friendly eyes with white eyeballs and large brown irises with white highlights, Toto's short rounded snout closed in a soft smooth smile, his closed mouth one clean smooth curved line between the green upper snout and the pale yellow chin with nothing poking out of it, exactly like his character sheet, the small orange bandana clearly visible around Toto's neck, a cozy pastel playroom: soft peach walls, a low mint-green toy shelf with a few plush toys and plain colorful building blocks, a round rainbow-striped rug on a light wooden floor, a big round window with sheer white curtains letting in warm sunlight, bright soft daylight, cheerful and cozy",
       "motion": "Momo keeps exactly the same look as the first frame: big round head, huge round sparkly eyes with big white highlights, same chubby proportions, the same mint-green overalls with two small yellow buttons. Toto keeps exactly the same look as the first frame: lime-green body, pale yellow belly, short rounded snout with no teeth, big round friendly eyes, the small orange bandana around the neck. Both rub their tummies in little circles with the free paw and sway happily, the strawberries stay at chest height below the mouths. Momo and Toto both look at the viewer and sing the words together clearly, both mouths opening and closing on every sung syllable, both close the mouth into a soft smile whenever the singing pauses; for Momo, both long floppy ears stay hanging down beside the cheeks the whole time; for Toto, the rounded snout opens softly with no teeth, the orange bandana stays on",
       "lipsync": true,
       "clip_model": "wan2_7",
       "clip_seconds": {
         "ko": 4
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "86805676-154c-4030-98e8-f3a67d7f35a1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104107_86805676-154c-4030-98e8-f3a67d7f35a1.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "86805676-154c-4030-98e8-f3a67d7f35a1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261005_104107_86805676-154c-4030-98e8-f3a67d7f35a1.png",
+              "status": "approved",
+              "reason": null,
+              "at": "2026-10-05T10:41Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": null
+        }
       }
     },
     {
