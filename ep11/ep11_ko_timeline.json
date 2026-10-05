@@ -1,0 +1,618 @@
+{
+  "ep": "ep11",
+  "lang": "ko",
+  "fps": 30,
+  "total": 93.6,
+  "total_frames": 2808,
+  "built_at": "2026-10-05T14:36:54+00:00",
+  "cuts": [
+    {
+      "id": "c01",
+      "type": "V",
+      "scene": 1,
+      "start": 0.0,
+      "dur": 8.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c01_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "clip",
+      "lyrics": [
+        {
+          "text": "아인이는? 서인이는?",
+          "at": 1.0,
+          "sung": 2.92,
+          "tempo": 1.0
+        },
+        {
+          "text": "여기요! 여기요!",
+          "at": 4.48,
+          "sung": 2.77,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 까꿍 서인이도 까꿍",
+          "at": 8.15,
+          "sung": 3.46,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.067,
+      "lip_shift": 0.067
+    },
+    {
+      "id": "c02",
+      "type": "V",
+      "scene": 1,
+      "start": 8.0667,
+      "dur": 7.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c02_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "여기요! 여기요!",
+          "at": -3.587,
+          "sung": 2.77,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 까꿍 서인이도 까꿍",
+          "at": 0.083,
+          "sung": 3.46,
+          "tempo": 1.0
+        },
+        {
+          "text": "찾았다! 찾았다!",
+          "at": 3.613,
+          "sung": 2.81,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 손? 서인이 손?",
+          "at": 7.173,
+          "sung": 2.85,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c03",
+      "type": "V",
+      "scene": 2,
+      "start": 15.1333,
+      "dur": 7.1667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c03_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "찾았다! 찾았다!",
+          "at": -3.453,
+          "sung": 2.81,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 손? 서인이 손?",
+          "at": 0.107,
+          "sung": 2.85,
+          "tempo": 1.0
+        },
+        {
+          "text": "여기요! 여기요!",
+          "at": 3.597,
+          "sung": 2.75,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 짝짝 서인이도 짝짝",
+          "at": 7.267,
+          "sung": 3.25,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.1,
+      "lip_shift": 0.1
+    },
+    {
+      "id": "c04",
+      "type": "V",
+      "scene": 2,
+      "start": 22.3,
+      "dur": 7.1,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c04_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "여기요! 여기요!",
+          "at": -3.57,
+          "sung": 2.75,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 짝짝 서인이도 짝짝",
+          "at": 0.1,
+          "sung": 3.25,
+          "tempo": 1.0
+        },
+        {
+          "text": "짝짝짝! 짝짝짝!",
+          "at": 3.62,
+          "sung": 2.66,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 발? 서인이 발?",
+          "at": 7.2,
+          "sung": 2.9,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c05",
+      "type": "V",
+      "scene": 2,
+      "start": 29.4,
+      "dur": 7.1,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c05_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "짝짝짝! 짝짝짝!",
+          "at": -3.48,
+          "sung": 2.66,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 발? 서인이 발?",
+          "at": 0.1,
+          "sung": 2.9,
+          "tempo": 1.0
+        },
+        {
+          "text": "여기요! 여기요!",
+          "at": 3.52,
+          "sung": 2.77,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 쿵쿵 서인이도 쿵쿵",
+          "at": 7.19,
+          "sung": 3.45,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c06",
+      "type": "V",
+      "scene": 2,
+      "start": 36.5,
+      "dur": 7.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c06_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "여기요! 여기요!",
+          "at": -3.58,
+          "sung": 2.77,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 쿵쿵 서인이도 쿵쿵",
+          "at": 0.09,
+          "sung": 3.45,
+          "tempo": 1.0
+        },
+        {
+          "text": "쿵쿵쿵! 쿵쿵쿵!",
+          "at": 3.6,
+          "sung": 2.82,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 눈? 서인이 눈?",
+          "at": 7.18,
+          "sung": 2.82,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c07",
+      "type": "V",
+      "scene": 3,
+      "start": 43.5667,
+      "dur": 7.1,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c07_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "쿵쿵쿵! 쿵쿵쿵!",
+          "at": -3.467,
+          "sung": 2.82,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 눈? 서인이 눈?",
+          "at": 0.113,
+          "sung": 2.82,
+          "tempo": 1.0
+        },
+        {
+          "text": "여기요! 여기요!",
+          "at": 3.503,
+          "sung": 2.81,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 깜빡 서인이도 깜빡",
+          "at": 7.203,
+          "sung": 3.28,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c08",
+      "type": "V",
+      "scene": 3,
+      "start": 50.6667,
+      "dur": 7.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c08_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "여기요! 여기요!",
+          "at": -3.597,
+          "sung": 2.81,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 깜빡 서인이도 깜빡",
+          "at": 0.103,
+          "sung": 3.28,
+          "tempo": 1.0
+        },
+        {
+          "text": "깜빡깜빡! 깜빡깜빡!",
+          "at": 3.613,
+          "sung": 2.89,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 코? 서인이 코?",
+          "at": 7.163,
+          "sung": 2.8,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.067,
+      "lip_shift": 0.067
+    },
+    {
+      "id": "c09",
+      "type": "V",
+      "scene": 4,
+      "start": 57.7333,
+      "dur": 7.0667,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c09_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "깜빡깜빡! 깜빡깜빡!",
+          "at": -3.453,
+          "sung": 2.89,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 코? 서인이 코?",
+          "at": 0.097,
+          "sung": 2.8,
+          "tempo": 1.0
+        },
+        {
+          "text": "여기요! 여기요!",
+          "at": 3.507,
+          "sung": 2.76,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 킁킁 서인이도 킁킁",
+          "at": 7.167,
+          "sung": 3.45,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c10",
+      "type": "V",
+      "scene": 4,
+      "start": 64.8,
+      "dur": 7.0333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c10_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "여기요! 여기요!",
+          "at": -3.56,
+          "sung": 2.76,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 킁킁 서인이도 킁킁",
+          "at": 0.1,
+          "sung": 3.45,
+          "tempo": 1.0
+        },
+        {
+          "text": "킁킁킁! 킁킁킁!",
+          "at": 3.6,
+          "sung": 2.93,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 입? 서인이 입?",
+          "at": 7.13,
+          "sung": 2.67,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c11",
+      "type": "V",
+      "scene": 4,
+      "start": 71.8333,
+      "dur": 7.0333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c11_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "킁킁킁! 킁킁킁!",
+          "at": -3.433,
+          "sung": 2.93,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이 입? 서인이 입?",
+          "at": 0.097,
+          "sung": 2.67,
+          "tempo": 1.0
+        },
+        {
+          "text": "여기요! 여기요!",
+          "at": 3.507,
+          "sung": 2.74,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 냠냠 서인이도 냠냠",
+          "at": 7.137,
+          "sung": 3.47,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c12",
+      "type": "V",
+      "scene": 4,
+      "start": 78.8667,
+      "dur": 7.0333,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c12_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "여기요! 여기요!",
+          "at": -3.527,
+          "sung": 2.74,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 냠냠 서인이도 냠냠",
+          "at": 0.103,
+          "sung": 3.47,
+          "tempo": 1.0
+        },
+        {
+          "text": "냠냠냠! 냠냠냠!",
+          "at": 3.623,
+          "sung": 2.83,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 까꿍 서인이도 까꿍",
+          "at": 7.123,
+          "sung": 3.34,
+          "tempo": 1.0
+        }
+      ],
+      "hold0": 0.0
+    },
+    {
+      "id": "c13",
+      "type": "V",
+      "scene": 5,
+      "start": 85.9,
+      "dur": 7.7,
+      "xf_in": 0.0,
+      "nar_offset": 0.0,
+      "nar_len": 0.0,
+      "keyword": "",
+      "text_at": 0.5,
+      "text_pos": "top",
+      "source": "episodes/ep11/clips/c02_ko.mp4",
+      "source_kind": "video",
+      "estimated_audio": false,
+      "inset": 0.0,
+      "render": "trim",
+      "lyrics": [
+        {
+          "text": "냠냠냠! 냠냠냠!",
+          "at": -3.41,
+          "sung": 2.83,
+          "tempo": 1.0
+        },
+        {
+          "text": "아인이도 까꿍 서인이도 까꿍",
+          "at": 0.09,
+          "sung": 3.34,
+          "tempo": 1.0
+        },
+        {
+          "text": "찾았다! 찾았다!",
+          "at": 3.54,
+          "sung": 2.76,
+          "tempo": 1.0
+        }
+      ],
+      "clip_offset": 0.08,
+      "hold0": 0.0
+    }
+  ],
+  "warnings": [
+    "validate: 총 컷 13개 — 목표 22~28",
+    "validate: S 컷 0개 — 목표 6~8",
+    "validate: L 컷 0개 — 목표 3~4",
+    "validate: c01: clip_seconds 8 < 컷 8.05s — 9 이상",
+    "validate: 첫 컷은 L intro_wave(고정 인사) 권장",
+    "validate: 마지막 컷은 L outro_bye(고정 작별) 권장"
+  ],
+  "allow_missing": false,
+  "audio": {
+    "speech_blocks": 0,
+    "bgm": null,
+    "sfx": 0,
+    "track": {
+      "file": "song.flac",
+      "start": 0.0,
+      "short_by": 0.0
+    },
+    "loudnorm": {
+      "input_i": -16.75,
+      "input_tp": -4.61,
+      "output_i": -13.94,
+      "output_tp": -1.86,
+      "normalization_type": "linear"
+    }
+  },
+  "output": {
+    "video_duration": 93.6,
+    "audio_duration": 93.6,
+    "frames": 2808
+  }
+}
