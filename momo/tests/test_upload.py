@@ -306,7 +306,8 @@ def test_real_http_request_resumes_after_503(tmp: Path) -> None:
 
 def test_skip_when_already_uploaded(tmp: Path) -> None:
     root = make_root(tmp)
-    (root / "episodes" / EP / "youtube.json").write_text(json.dumps({"en": {"video_id": "old1", "url": "u"}}))
+    (root / "episodes" / EP / "youtube.json").write_text(json.dumps({"en": {
+        "video_id": "old1", "url": "u", "deleted": [{"video_id": "older0", "at": "2026-10-05T00:00:00Z"}]}}))
     svc = FakeService()
     install(svc)
     with env(**SECRET):
@@ -316,6 +317,7 @@ def test_skip_when_already_uploaded(tmp: Path) -> None:
     assert svc.names() == ["videos.insert", "playlistItems.insert"], svc.names()
     rec = record(root)["en"]
     assert rec["video_id"] == "vid1" and rec["previous_video_ids"] == ["old1"] and rec["thumbnail_set"] is False
+    assert rec["deleted"] == [{"video_id": "older0", "at": "2026-10-05T00:00:00Z"}]  # deletion history survives
 
 
 def test_thumbnail_failure_is_warning(tmp: Path) -> None:

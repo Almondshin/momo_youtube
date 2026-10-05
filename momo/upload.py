@@ -271,6 +271,8 @@ def upload_one(paths: Paths, cfg: dict, job: Job, body: dict, thumb: Path | None
            "made_for_kids": True, "thumbnail_set": False, "playlist_id": None, "file_sha256": digest}
     if prev.get("video_id"):
         rec["previous_video_ids"] = prev.get("previous_video_ids", []) + [prev["video_id"]]
+    if prev.get("deleted"):  # youtube_delete.py history of older takes stays with the record
+        rec["deleted"] = prev["deleted"]
     records[job.lang] = rec
     save_json(job.record, records)  # 썸네일·재생목록이 실패해도 중복 업로드 안 되게 먼저 기록
     print(f"  영상 ID {vid} 기록 → {job.record}")

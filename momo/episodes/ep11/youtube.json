@@ -12,6 +12,12 @@
     "file_sha256": "ff4229961e4a5d142e97a9612b6da9774d816db2543e1f7b48e2fbaa52ac5eeb",
     "previous_video_ids": [
       "Nm0YwcOkCSE"
+    ],
+    "deleted": [
+      {
+        "video_id": "DYUVrjMgRkM",
+        "at": "2026-10-05T13:28:01Z"
+      }
     ]
   }
 }
