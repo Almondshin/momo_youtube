@@ -1,6 +1,6 @@
 # ep11 — 아인이 서인이 까꿍 (까꿍·손·발·눈·코·입) (Peekaboo body parts with Ain and Seoin)
 
-> episode_readme.py 가 생성 (2026-10-05 14:37 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-10-05 22:45 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
@@ -11,20 +11,20 @@
 | 컷 수 | 13개 (V 13 · S 0 · L 0), 씬 5개 |
 | 사용 크레딧 | 439 / 캡 450 (예상 360.9) |
 | 생성 / 재생성 횟수 | 68 / 24 |
-| 길이 KO | 1:34 (93.6초, 컷 13개, 빌드 2026-10-05T14:36:54+00:00) |
+| 길이 KO | 1:34 (93.6초, 컷 13개, 빌드 2026-10-05T14:17:03+00:00) |
 | 썸네일 | c01 — 까꿍! |
 
 ## 아동용(made for kids) 설정
 
 > 이 영상은 YouTube 에서 반드시 **"아동용(made for kids)"** 으로 설정해야 한다 (2~5세 대상 키즈 채널 — 지시서 7단계). upload.py 는 config 와 상관없이 `status.selfDeclaredMadeForKids = true` 로 올린다. Studio 에서 직접 올릴 때는 '예, 아동용입니다'를 선택할 것.
 
-- KO: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (UWzbN1SIwKE)
+- KO: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (Nm0YwcOkCSE)
 
 ## 업로드 결과 (youtube.json)
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
-| KO | [UWzbN1SIwKE](https://www.youtube.com/watch?v=UWzbN1SIwKE) | private | — | 2026-10-05T14:37:14Z | ✔ | — |
+| KO | [Nm0YwcOkCSE](https://www.youtube.com/watch?v=Nm0YwcOkCSE) | private | — | 2026-10-05T13:27:18Z | ✔ | — |
 
 ## 제목·설명·태그
 
@@ -87,7 +87,7 @@
 | 종류 | 승인 | 시도 | 크레딧 |
 |---|---:|---:|---:|
 | 컷 이미지 | 12/12 | 12 | 4 |
-| V 클립 | 12/12 | 23 | 277.5 |
+| V 클립 | 12/12 | 18 | 219 |
 | 음성 블록 | 2/2 | 2 | 0 |
 
 라이브러리 L 컷은 0 크레딧 (라이브러리 클립·고정 음성 재사용). 자세한 진행표: `python hf_jobs.py status --ep ep11`
@@ -101,6 +101,7 @@
 - 2026-10-05 인트로/아웃트로 L 컷 없음 — 1.05 s 전에 인사할 자리가 없고, 영상은 마지막 노래 샷을 파일 끝까지 유지해 끝난다
 - 2026-10-05 사용자: ep11 만 크레딧 캡 초과 허용 ('이번 편만 초과 허용') — 예상 150.6 (재생성 여유 23.1 포함). manifest.credits.cap 160 으로 상한
 - 2026-10-05 사용자: ep11 다시 만들기 — '크레딧 상관없이 다시 진행' (cap 160 → 450). v1 (DYUVrjMgRkM, 157.5 크레딧) 은 컷마다 구도가 바뀌어 끊겨 보였음
+- 2026-10-06 사용자: v3 (UWzbN1SIwKE) 는 '더 부자연스러운 것 같네' → 'v2로 되돌리기' 선택. v2 영상 Nm0YwcOkCSE 를 그대로 쓰고 v3 영상 삭제. v3 에서 만든 클립 (c01 d1a4862f, c06 75c56c3a, c07 876c36c6, c09 63c006b1, c12 48fdf656 — 58.5 크레딧) 은 쓰지 않음 (기록: git 2511c49)
 
 ## 다음 편에 반영할 점
 
