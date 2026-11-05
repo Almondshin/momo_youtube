@@ -1,0 +1,144 @@
+{
+  "request": [
+    {
+      "index": 1,
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "bda098c2-89a1-4f1d-859b-35c40705c9b8"
+          }
+        ],
+        "count": 1
+      }
+    },
+    {
+      "index": 2,
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e"
+          }
+        ],
+        "count": 1
+      }
+    },
+    {
+      "index": 4,
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2"
+          }
+        ],
+        "count": 1
+      }
+    }
+  ],
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Submitted 3/3 video generations.\n- index 1: 64543389-f6e0-4c7e-a3c4-aeed415f7d4a (pending)\n- index 2: a51654b8-39e4-487c-95a8-39e69c6c97f2 (pending)\n- index 4: bfc4acc4-6f68-4863-97e2-a4ec568b9ec4 (pending)\nWait for the complete requested set with jobs_wait, then show it together with show_generation_by_ids using the collected indexed jobs. This includes jobs submitted across separate calls. job_display accepts only one id and cannot display a group; do not pass ids or call it once per job."
+      }
+    ],
+    "structuredContent": {
+      "jobs": [
+        {
+          "index": 1,
+          "job_id": "64543389-f6e0-4c7e-a3c4-aeed415f7d4a",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "job_id": "a51654b8-39e4-487c-95a8-39e69c6c97f2",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "job_id": "bfc4acc4-6f68-4863-97e2-a4ec568b9ec4",
+          "status": "pending"
+        }
+      ],
+      "submitted_count": 3,
+      "failed_count": 0
+    },
+    "isError": false
+  },
+  "quotes": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Cost preflight for seedance_2_0_mini: 5 credits (5 exact). No job submitted."
+          }
+        ],
+        "structuredContent": {
+          "cost": {
+            "credits": 5,
+            "credits_exact": 5
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Cost preflight for seedance_2_0_mini: 5 credits (5 exact). No job submitted."
+          }
+        ],
+        "structuredContent": {
+          "cost": {
+            "credits": 5,
+            "credits_exact": 5
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Cost preflight for seedance_2_0_mini: 5 credits (5 exact). No job submitted."
+          }
+        ],
+        "structuredContent": {
+          "cost": {
+            "credits": 5,
+            "credits_exact": 5
+          }
+        },
+        "isError": false
+      }
+    }
+  ]
+}

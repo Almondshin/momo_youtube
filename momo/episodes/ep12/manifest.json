@@ -50,9 +50,9 @@
     }
   },
   "credits": {
-    "estimate": 49.2,
-    "spent": 6.0,
-    "generations": 3,
+    "estimate": 46.2,
+    "spent": 21.0,
+    "generations": 6,
     "regenerations": 0
   },
   "notes": {
@@ -81,7 +81,17 @@
     ],
     "visual_plan_status": "approved_by_user",
     "caption_requirement": "song.caption_mode=keywords: APPLE/BANANA 중 하나만 표시; 가사·카드 자막 없음. 오디오/가사 정렬은 유지.",
-    "first_image_group_status": "approved_by_user"
+    "first_image_group_status": "approved_by_user",
+    "upload_connection_check": {
+      "checked_at": "2026-11-05",
+      "workflow_run_id": 41968603856,
+      "workflow_url": "https://github.com/Almondshin/momo_youtube/actions/runs/41968603856",
+      "status": "failed_requires_reauthentication",
+      "error": "invalid_grant: Bad Request",
+      "channel_verified": false,
+      "uploaded": false
+    },
+    "first_clip_group_status": "generated_inspected_awaiting_user_approval"
   },
   "cuts": [
     {
@@ -127,6 +137,26 @@
           ],
           "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "64543389-f6e0-4c7e-a3c4-aeed415f7d4a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043303_64543389-f6e0-4c7e-a3c4-aeed415f7d4a.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "64543389-f6e0-4c7e-a3c4-aeed415f7d4a",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043303_64543389-f6e0-4c7e-a3c4-aeed415f7d4a.mp4",
+              "status": "generated",
+              "reason": "Completed; visual inspection pending",
+              "at": "2026-11-05T04:33Z",
+              "credits": 5.0,
+              "start_image": "bda098c2-89a1-4f1d-859b-35c40705c9b8"
+            }
+          ],
+          "reason": "Completed; visual inspection pending",
+          "review_note": "Assistant inspected frames at 0/0.5/1.5/3/4.8s: character and fruit shape consistent, closed-mouth gentle pointing for Momo, stationary fruit close-up. 1280x720, 24fps, 5.041667s, no audio. User review pending; direct playback URLs provided after gallery was not visible."
         }
       }
     },
@@ -174,6 +204,26 @@
           ],
           "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "a51654b8-39e4-487c-95a8-39e69c6c97f2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_a51654b8-39e4-487c-95a8-39e69c6c97f2.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "a51654b8-39e4-487c-95a8-39e69c6c97f2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_a51654b8-39e4-487c-95a8-39e69c6c97f2.mp4",
+              "status": "generated",
+              "reason": "Completed; visual inspection pending",
+              "at": "2026-11-05T04:33Z",
+              "credits": 5.0,
+              "start_image": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e"
+            }
+          ],
+          "reason": "Completed; visual inspection pending",
+          "review_note": "Assistant inspected frames at 0/0.5/1.5/3/4.8s: character and fruit shape consistent, closed-mouth gentle pointing for Momo, stationary fruit close-up. 1280x720, 24fps, 5.041667s, no audio. User review pending; direct playback URLs provided after gallery was not visible."
         }
       }
     },
@@ -251,6 +301,26 @@
           ],
           "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "bfc4acc4-6f68-4863-97e2-a4ec568b9ec4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_bfc4acc4-6f68-4863-97e2-a4ec568b9ec4.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "bfc4acc4-6f68-4863-97e2-a4ec568b9ec4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_bfc4acc4-6f68-4863-97e2-a4ec568b9ec4.mp4",
+              "status": "generated",
+              "reason": "Completed; visual inspection pending",
+              "at": "2026-11-05T04:33Z",
+              "credits": 5.0,
+              "start_image": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2"
+            }
+          ],
+          "reason": "Completed; visual inspection pending",
+          "review_note": "Assistant inspected frames at 0/0.5/1.5/3/4.8s: character and fruit shape consistent, closed-mouth gentle pointing for Momo, stationary fruit close-up. 1280x720, 24fps, 5.041667s, no audio. User review pending; direct playback URLs provided after gallery was not visible."
         }
       }
     },

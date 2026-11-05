@@ -1,0 +1,26 @@
+{
+  "c01": {
+    "duration": 5.041667,
+    "width": 1280,
+    "height": 720,
+    "codec": "h264",
+    "fps": "24/1",
+    "audio_streams": 0
+  },
+  "c02": {
+    "duration": 5.041667,
+    "width": 1280,
+    "height": 720,
+    "codec": "h264",
+    "fps": "24/1",
+    "audio_streams": 0
+  },
+  "c04": {
+    "duration": 5.041667,
+    "width": 1280,
+    "height": 720,
+    "codec": "h264",
+    "fps": "24/1",
+    "audio_streams": 0
+  }
+}
