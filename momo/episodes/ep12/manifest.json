@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep12",
-  "status": "producing",
+  "status": "assembled",
   "topic": {
     "en": "Apple & Banana",
     "ko": "사과와 바나나"
@@ -69,11 +69,12 @@
       "2026-11-05 사용자: 이 구성과 예산으로 제작 진행 — C2 90초 영상, 6종 소재 반복, 키워드 1개씩, 립싱크 없음, 예상 50.4 Higgsfield 크레딧 / 캡 150 승인.",
       "2026-11-05 사용자: 진행해 — 표시한 첫 이미지 c01/c02/c04 세 장 승인 및 해당 클립 제작 요청.",
       "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행; 기존 모모 사과·바나나 클립 유지.",
-      "2026-11-05 사용자: 두 장 사용해 영상 제작 — c08 춤 이미지와 c10 박수 이미지 수정본 승인; 두 5초 클립 합계 10크레딧 사용 승인."
+      "2026-11-05 사용자: 두 장 사용해 영상 제작 — c08 춤 이미지와 c10 박수 이미지 수정본 승인; 두 5초 클립 합계 10크레딧 사용 승인.",
+      "2026-11-05 사용자: 그래그래 간단해도되 재인증 어떻게 시도할래 — 90초 전체 영상·음원 및 춤/박수 최종 클립 승인, YouTube 재인증 진행."
     ],
     "next_time": [
       "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
-      "영어판 다음에 같은 주제 한국어판 제작. 최종 공통 영상 소재는 아직 생성 전."
+      "영어판 다음에 같은 주제 한국어판 제작. 사과·바나나·춤·박수 공통 영상 소재는 승인 완료."
     ],
     "production_decisions": [
       "대상 2~4세; 영어 학습 목표 apple, banana 두 단어; 목표 90~110초",
@@ -91,13 +92,18 @@
     "caption_requirement": "song.caption_mode=keywords: APPLE/BANANA 중 하나만 표시; 가사·카드 자막 없음. 오디오/가사 정렬은 유지.",
     "first_image_group_status": "approved_by_user",
     "upload_connection_check": {
-      "checked_at": "2026-11-05",
-      "workflow_run_id": 41968603856,
-      "workflow_url": "https://github.com/Almondshin/momo_youtube/actions/runs/41968603856",
-      "status": "failed_requires_reauthentication",
-      "error": "invalid_grant: Bad Request",
-      "channel_verified": false,
-      "uploaded": false
+      "checked_at": "2026-11-05T06:49:04.324827+00:00",
+      "workflow_run_id": 41982889643,
+      "workflow_url": "https://github.com/Almondshin/momo_youtube/actions/runs/41982889643",
+      "status": "verified_local_and_github_actions",
+      "error": null,
+      "channel_verified": true,
+      "uploaded": false,
+      "channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA",
+      "channel_title": "Momo Time",
+      "channel_handle": "@MomoTimeSong",
+      "oauth_publishing_status": "testing",
+      "testing_token_expiry_days": 7
     },
     "first_clip_group_status": "approved_by_user",
     "banana_closeup_status": "image_and_zoom_clip_approved_by_user",
@@ -105,11 +111,11 @@
     "user_decisions": [
       "2026-11-05 사용자: 줌인 기능 없어? 사과나 바나나 영상에 — 두 과일에 줌인 적용 요청. 기존 이미지로 100→118%/5초 편집 미리보기 제작, 추가 크레딧 0. 최종 사용 승인은 대기."
     ],
-    "upload_metadata_status": "draft_prepared; final video review and YouTube reauthentication still required",
+    "upload_metadata_status": "ready; final video approved, normal build completed, channel verified",
     "dance_clap_image_status": "approved_by_user",
-    "dance_clap_clip_status": "both_inspected_awaiting_user_approval",
+    "dance_clap_clip_status": "approved_by_user",
     "full_review": {
-      "status": "ready_awaiting_user_approval",
+      "status": "approved_by_user",
       "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/4ca90284-d58d-456c-b103-b85aa0c930fc.mp4",
       "media_id": "4ca90284-d58d-456c-b103-b85aa0c930fc",
       "duration": 90,
@@ -118,7 +124,9 @@
       "sha256": "e687f4b1d73bea47249fce31cd59d8e574c589c273d1408de9dfe9b42ffd3afe",
       "all_35_cuts_video": true,
       "youtube_uploaded": false,
-      "requires_normal_build_after_clip_approval": true
+      "requires_normal_build_after_clip_approval": false,
+      "user_final_approval": true,
+      "normal_build_completed": true
     }
   },
   "cuts": [
@@ -581,7 +589,7 @@
           "review_note": "Full image and native-resolution face crop inspected: two floppy ears, large consistent eyes, two visible yellow buttons, full feet, closed-mouth smile, one character. Empty cream table remains softly blurred in background; no foreground obstruction or fruit."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
           "attempts": 1,
@@ -590,14 +598,14 @@
             {
               "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
-              "status": "generated",
-              "reason": "춤 클립 완료, 동작 검수 대기.",
+              "status": "approved",
+              "reason": "2026-11-05 사용자: 그래그래 간단해도되 — 90초 전체 영상 및 춤·박수 클립 확정, YouTube 재인증 진행 요청",
               "at": "2026-11-05T06:06Z",
               "credits": 5.0,
               "start_image": "8084be21-9f38-4efe-805a-9eba1a47d7fe"
             }
           ],
-          "reason": "춤 클립 완료, 동작 검수 대기.",
+          "reason": "2026-11-05 사용자: 그래그래 간단해도되 — 90초 전체 영상 및 춤·박수 클립 확정, YouTube 재인증 진행 요청",
           "review_note": "Inspected 20 samples across 5 seconds: gentle side-to-side body/ear movement, planted feet, closed-mouth smile, two ears and two yellow buttons retained; no camera movement or extra objects. 1280x720/24fps/121 frames/5.041667s, silent. User approval pending.",
           "sha256": "3e09ceb3fa06318ea00eec8301b24ef16680367b2db8e42bea9973072be7bd08"
         }
@@ -688,7 +696,7 @@
           "review_note": "Revision 2 inspected full-frame and native-resolution face crop: both floppy ears, two yellow buttons, both feet, separated hands at belly, closed mouth. Consistent face and outfit; no text, fruit or extra characters. User image approval pending."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
           "attempts": 2,
@@ -706,14 +714,14 @@
             {
               "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
-              "status": "generated",
-              "reason": "박수 클립 수정본 완료, 직접 검수 및 사용자 승인 대기.",
+              "status": "approved",
+              "reason": "2026-11-05 사용자: 그래그래 간단해도되 — 90초 전체 영상 및 춤·박수 클립 확정, YouTube 재인증 진행 요청",
               "at": "2026-11-05T06:13Z",
               "credits": 5.0,
               "start_image": "381658a6-82f7-4480-a941-17c4834e74ae"
             }
           ],
-          "reason": "박수 클립 수정본 완료, 직접 검수 및 사용자 승인 대기.",
+          "reason": "2026-11-05 사용자: 그래그래 간단해도되 — 90초 전체 영상 및 춤·박수 클립 확정, YouTube 재인증 진행 요청",
           "sha256": "ebf0f5237295f558aa5f1dd2a5b673fee61e876f1745229e03ef8fc1e7fe4572",
           "review_note": "Revision 2 inspected 20 samples and full frame: clearly repeated open-contact-open clap motion, planted feet, closed mouth, two ears, consistent face/outfit. Paws briefly occlude buttons at contact; buttons reappear when paws separate. Model produced more than three claps; clap count is not a learning target. Silent 5.041667s 1280x720/24fps. User clip approval pending."
         }
@@ -1848,12 +1856,12 @@
   },
   "song": {
     "track": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "local:11d3f051002e",
       "url": null,
       "attempts": 1,
       "credits": 0,
-      "reason": null,
+      "reason": "2026-11-05 사용자: 그래그래 — 전체 검토본의 C2 90초 노래와 영상 사용 확정",
       "sha1": "11d3f051002e73d3c2a80809bcbf7cc86144e7cc",
       "tool": "suno",
       "source_file": "c2_full_original.wav",
@@ -1864,8 +1872,8 @@
         {
           "job_id": "local:11d3f051002e",
           "url": null,
-          "status": "generated",
-          "reason": null,
+          "status": "approved",
+          "reason": "2026-11-05 사용자: 그래그래 — 전체 검토본의 C2 90초 노래와 영상 사용 확정",
           "at": "2026-11-05T01:59Z",
           "credits": 0
         }
@@ -2077,20 +2085,20 @@
       "end": 90.0
     },
     "vocals": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "local:b85468d7fbd4",
       "url": null,
       "attempts": 1,
       "credits": 0,
-      "reason": null,
+      "reason": "2026-11-05 사용자: 그래그래 — 전체 검토본의 C2 90초 노래와 영상 사용 확정",
       "sha1": "b85468d7fbd45561b10a8fcb2dbccf1bd176dfe2",
       "of": "11d3f051002e73d3c2a80809bcbf7cc86144e7cc",
       "history": [
         {
           "job_id": "local:b85468d7fbd4",
           "url": null,
-          "status": "generated",
-          "reason": null,
+          "status": "approved",
+          "reason": "2026-11-05 사용자: 그래그래 — 전체 검토본의 C2 90초 노래와 영상 사용 확정",
           "at": "2026-11-05T01:59Z",
           "credits": 0
         }

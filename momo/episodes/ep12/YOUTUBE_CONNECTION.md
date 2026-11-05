@@ -1,11 +1,24 @@
 # YouTube 연결 점검 — 2026-11-05
 
-영상 제작과 별개로 기존 GitHub Actions 인증을 확인했다. 빌드·업로드는 하지 않았다.
+## 재인증 완료
 
-- 실행: https://github.com/Almondshin/momo_youtube/actions/runs/41968603856
-- 영어 연결 결과: 실패, 인증 갱신 단계의 invalid_grant. 채널 이름·ID 확인까지 도달하지 못함.
-- 도구 원문: `('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})`
-- 토큰 만료·취소 또는 OAuth 클라이언트 불일치 가능성이 있으며 원인은 아직 구분하지 못했다.
-- 재로그인으로 올바른 @MomoTimeSong 채널의 인증을 갱신한 뒤 채널 연결 검사를 다시 해야 한다.
-- 비밀값은 출력하지 않았으며 로그 원본은 git 제외 audio/ 안에만 둔다.
-- 업로드나 새 영상 공개는 실행하지 않았다. 미디어 제작·검수는 계속 가능하다.
+- 채널: **Momo Time / @MomoTimeSong** (`UCAI7Voo0OwG-7sr1eZeN7dA`). 실제 channels.list 결과로 확인.
+- 로컬 `youtube_check.py --lang en` 성공.
+- GitHub Secrets의 클라이언트 ID·클라이언트 보안 비밀번호·refresh token 갱신 완료.
+- GitHub Actions 연결 점검 성공: https://github.com/Almondshin/momo_youtube/actions/runs/41982889643
+- 새 인증 정보는 git 제외 `.secrets/`와 GitHub Secrets에 보관.
+- 기존 클라이언트에 새 보안 비밀번호를 추가했다. 이전 보안 비밀번호는 다른 사용처를 확인하지 못했으므로 중지·삭제하지 않았다.
+
+## 남은 장기 운영 설정
+
+- OAuth 앱 게시 상태: **테스트 중**. 외부 앱의 이 상태에서 발급된 refresh token은 7일 뒤 만료된다.
+- 공식 문서: https://developers.google.com/identity/protocols/oauth2/#expiration
+- Google Cloud는 브랜딩 구성을 완료해야 앱을 게시할 수 있다고 표시한다. 홈페이지·개인정보처리방침·약관 URL은 비어 있다. 임의의 URL이나 정책을 등록하지 않았다.
+- 운영 상태 전환과 YouTube API 감사(audit)는 별개다. 현재 인증 성공을 자동 공개 가능으로 해석하면 안 된다.
+
+## 이전 오류 기록
+
+- 이전 서버 점검: https://github.com/Almondshin/momo_youtube/actions/runs/41968603856
+- 원문: `invalid_grant: Bad Request`.
+- 로컬 다운로드 파일로 재인증했을 때 `invalid_client`. 다운로드 파일의 보안 비밀번호와 Cloud에 등록된 비밀번호가 달랐음을 확인했다.
+- 새 비밀번호로 인증 코드를 교환한 뒤 채널 확인과 서버 검사를 통과했다.
