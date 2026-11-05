@@ -145,7 +145,7 @@
       "requested_at": "2026-11-05",
       "user_request": "한국노래도 만들어야겠지",
       "language": "ko",
-      "status": "download_approved_production_continuing",
+      "status": "ep13_review_ready",
       "source_audio_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
       "brief": "korean/BRIEF.md",
       "lyrics": "korean/lyrics.md",
@@ -282,10 +282,13 @@
         "download_status": "requires_credit",
         "download_credit_approval": true,
         "download_credits_required": 1,
-        "download_credits_remaining": 19,
+        "download_credits_remaining": 18,
         "editing_notes": "korean/chant_full/editing-notes.json",
-        "download_credit_approval_user_message": "2026-11-06 계속진행하고 토큰 노출 가능성을 깃허브 알람이 시사했는데, 확인하고 수정하도록"
-      }
+        "download_credit_approval_user_message": "2026-11-06 계속진행하고 토큰 노출 가능성을 깃허브 알람이 시사했는데, 확인하고 수정하도록",
+        "download_completed": true
+      },
+      "production_episode": "ep13",
+      "review_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/63068055-a457-471a-8151-50e003ab7094.mp4"
     }
   },
   "cuts": [

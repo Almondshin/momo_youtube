@@ -1,0 +1,2508 @@
+{
+  "schema": 1,
+  "ep": "ep13",
+  "status": "assembled",
+  "topic": {
+    "en": "Apple Tap Banana Bounce — Korean",
+    "ko": "사과 톡! 바나나 통!"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "ko": "사과 톡! 바나나 통! | 박수 치며 배우는 과일 동요 | 모모타임 MomoTime"
+  },
+  "thumbnail": {
+    "cut": "c01",
+    "text": {
+      "ko": "사과 바나나"
+    },
+    "text_pos": "bottom"
+  },
+  "bgm": null,
+  "upload": {
+    "ko": {
+      "title": "사과 톡! 바나나 통! | 박수 치며 배우는 과일 동요 | 모모타임 MomoTime",
+      "description": "사과, 바나나! 모모와 함께 따라 부르고 짝짝짝 박수쳐요. 2~4세 아이들을 위한 신나는 과일 동요입니다.\n\n함께 배워요:\n• 사과를 보고 사과라고 말해요.\n• 바나나를 보고 바나나라고 말해요.\n• 짧은 후렴을 따라 부르며 몸을 흔들고 박수쳐요.\n\n모모타임과 즐겁게 노래해요!\n\n#모모타임 #동요 #유아동요 #과일동요 #사과 #바나나 #아기동요 #어린이노래 #한국어동요 #MomoTime",
+      "tags": [
+        "모모타임",
+        "MomoTime",
+        "사과 바나나 동요",
+        "과일 동요",
+        "유아 동요",
+        "아기 동요",
+        "한국어 동요",
+        "따라 부르는 동요",
+        "박수 동요",
+        "어린이 노래",
+        "사과 노래",
+        "바나나 노래"
+      ],
+      "playlist_id": null,
+      "made_for_kids": true
+    }
+  },
+  "credits": {
+    "estimate": 0.0,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": "36 V edit cuts reuse six approved ep12 source clips. User authorized common visuals for Korean production; 0 new generations.",
+    "approvals": [
+      "2026-11-06 한국어 전체곡으로 제작 계속, WAV 다운로드 1크레딧 사용 및 기존 승인 영상 재사용 승인."
+    ],
+    "next_time": [
+      "사용자 검토본 확인 후 노래·보컬 승인 상태 기록 및 아동용 YouTube 업로드. 특히 27.9초 연결부 첫 사과 발음을 확인.",
+      "한국어 승인 영상 재사용 방식 유지; 영어판 ep12는 변경하지 않음."
+    ],
+    "source_episode": "ep12",
+    "production_request": "2026-11-06 계속진행",
+    "language_exception": "User explicitly requested Korean companion song; global default remains English.",
+    "caption_requirement": "Only 사과 or 바나나, one keyword on a single-fruit shot. No full lyric captions.",
+    "visual_plan_status": "approved_reuse_from_ep12",
+    "full_review": {
+      "status": "awaiting_user_audio_review",
+      "user_final_approval": false,
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/63068055-a457-471a-8151-50e003ab7094.mp4",
+      "media_id": "63068055-a457-471a-8151-50e003ab7094",
+      "duration": 81.6,
+      "resolution": "1280x720",
+      "file": "out/MomoTime_Apple_Banana_Korean_review.mp4",
+      "sha256": "1c55221595c0ced0f7f01681e1e3216713b1a740b4e99f62419a4dedd7d92cc1",
+      "all_37_cuts_video": true,
+      "normal_build_completed": true,
+      "youtube_uploaded": false
+    },
+    "alignment_review": "Local ASR matches 111/111 lead-lyric tokens. The three unmatched ASR fragments at 26–28 s correspond to the final clap syllables and first apple call; focused re-transcription confirmed the claps and retained a 바과/사과 ambiguity at the join. No extra learning word is displayed; user audio review remains pending.",
+    "render_decisions": [
+      "81.6-second video; original audio preserved; existing 1.2-second endpoint fade.",
+      "37 cuts; all clips shorter than source; no freeze-fill or lip-sync.",
+      "Three short one-bar breathing gaps kept; tighten found no removable silent bar."
+    ],
+    "budget": {
+      "higgsfield_new_credits": 0,
+      "suno_download_credits_used": 1,
+      "suno_download_credits_remaining": 18,
+      "generation_credits_charged_to_ep12_korean": 40
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "사과"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c01. Korean keyword only; no lip sync.",
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "bda098c2-89a1-4f1d-859b-35c40705c9b8",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_020831_bda098c2-89a1-4f1d-859b-35c40705c9b8.png",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c01",
+            "kind": "image"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "36c4a954067723d1d246b76fd7fe9e695ab064afa5b4c4297367bc2ab03e82bf"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "64543389-f6e0-4c7e-a3c4-aeed415f7d4a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043303_64543389-f6e0-4c7e-a3c4-aeed415f7d4a.mp4",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c01",
+            "kind": "clip"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "ab4c12a912b8e4f15f1ebf7eaad19c325e2ac0b8ea9ad23184b9da96347e864f"
+        }
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "바나나"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c04. Korean keyword only; no lip sync.",
+      "cut_at": 2.494,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021051_771df8ef-0b7f-4c5f-9b2f-1756f90543e2.png",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c04",
+            "kind": "image"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "eaf782e975a5472fd08af7d9becf95465dbcd24611e5f6e4ba256b68ceeaacfe"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "bfc4acc4-6f68-4863-97e2-a4ec568b9ec4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_bfc4acc4-6f68-4863-97e2-a4ec568b9ec4.mp4",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c04",
+            "kind": "clip"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "b185cac00e1defd2e121a480b7ca91d7092f2facf948af22da3057ef7cc3a016"
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 3.461,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c08",
+            "kind": "image"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "cf5fbc823e7e17fe4255ce6faaf58d4b6d02b44d5d9f26024cc6bf21a96fe856"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c08",
+            "kind": "clip"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "3e09ceb3fa06318ea00eec8301b24ef16680367b2db8e42bea9973072be7bd08"
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 7.576,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060250_381658a6-82f7-4480-a941-17c4834e74ae.png",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c10",
+            "kind": "image"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "866cd3b4a3bc31d453b7f569ef7b72257ac5cd97114020b01557c77880b17724"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c10",
+            "kind": "clip"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "ebf0f5237295f558aa5f1dd2a5b673fee61e876f1745229e03ef8fc1e7fe4572"
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 9.523,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c06",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 12.568,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c07",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "사과"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c02. Korean keyword only; no lip sync.",
+      "cut_at": 15.583,
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021050_9ed5146d-8635-4a2b-ae18-a191e9ceae2e.png",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c02",
+            "kind": "image"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "94cdc08b52d6f7e8a95aef94a6697249a8cdd6df960b744f7d5422f9fffa0ed3"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": null,
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/50a5c16f-d43c-4d6f-be12-f98e526d2e09.mp4",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c02",
+            "kind": "clip"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "5242655febe86f611fad75fdd7f6dd39a61d226a91c03c1fddca78ce3f343b16"
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "바나나"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c06. Korean keyword only; no lip sync.",
+      "cut_at": 16.672,
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_044548_0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5.png",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c06",
+            "kind": "image"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "bca186f37022750b2af10ad490cccff75c7bcd2d98c1aa728ed9d01a7e7bf257"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": null,
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/3b6dbf18-b207-4942-be13-8cfb4dc425a1.mp4",
+          "credits": 0,
+          "attempts": 0,
+          "history": [],
+          "reused_from": {
+            "ep": "ep12",
+            "cut": "c06",
+            "kind": "clip"
+          },
+          "reason": "User approved these visuals on 2026-11-05 and reuse for Korean production; no new generation charge.",
+          "sha256": "95fa1d19c962dec9f9ff18b7bf6c6c9372ad4aec0931e8ac955700ee31dd10f7"
+        }
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 17.689,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 21.694,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 23.744,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 25.769,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "사과"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c01. Korean keyword only; no lip sync.",
+      "cut_at": 27.879,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "바나나"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c04. Korean keyword only; no lip sync.",
+      "cut_at": 28.921,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c15",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 29.875,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 33.834,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 35.95,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 39.057,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "사과"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c02. Korean keyword only; no lip sync.",
+      "cut_at": 41.995,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "바나나"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c06. Korean keyword only; no lip sync.",
+      "cut_at": 43.162,
+      "clip_from": {
+        "cut": "c08",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c21",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 44.104,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c22",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 48.073,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "사과"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c02. Korean keyword only; no lip sync.",
+      "cut_at": 50.156,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "바나나"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c06. Korean keyword only; no lip sync.",
+      "cut_at": 52.282,
+      "clip_from": {
+        "cut": "c08",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "사과"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c01. Korean keyword only; no lip sync.",
+      "cut_at": 54.239,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "바나나"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c04. Korean keyword only; no lip sync.",
+      "cut_at": 55.329,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 56.333,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 60.324,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c29",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 62.393,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c30",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 65.434,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "사과"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c02. Korean keyword only; no lip sync.",
+      "cut_at": 68.465,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "바나나"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c06. Korean keyword only; no lip sync.",
+      "cut_at": 69.562,
+      "clip_from": {
+        "cut": "c08",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
+      "momo": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 70.568,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c34",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 74.303,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c35",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c08. Korean keyword only; no lip sync.",
+      "cut_at": 76.631,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c36",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: c10. Korean keyword only; no lip sync.",
+      "cut_at": 78.66,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "lipsync": false,
+      "fill": "hold",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5
+    },
+    {
+      "id": "c37",
+      "scene": 5,
+      "type": "L",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "notes": "Approved ep12 visual reused: outro_bye. Korean keyword only; no lip sync.",
+      "cut_at": 80.18,
+      "library_clip": "outro_bye"
+    }
+  ],
+  "languages": [
+    "ko"
+  ],
+  "song": {
+    "track": {
+      "status": "generated",
+      "job_id": "local:a21246e9d2c7",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep13/ep13_song_a21246e9.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "a21246e9d2c749ccdab64229debb03c302108d1a",
+      "tool": "suno",
+      "source_file": "korean_full_original.wav",
+      "note": "Suno official B1 clap-chant, continuation T2; Korean production authorized 2026-11-06",
+      "duration": 88.88,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:a21246e9d2c7",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep13/ep13_song_a21246e9.flac",
+          "status": "generated",
+          "reason": null,
+          "at": "2026-11-05T22:55Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 117.9848,
+        "beat0": 0.4702,
+        "downbeat0": 1.4873,
+        "confidence": 1.529,
+        "downbeats": [
+          1.5139,
+          3.5479,
+          5.582,
+          7.6161,
+          9.6455,
+          11.6727,
+          13.7021,
+          15.7362,
+          17.7795,
+          19.8135,
+          21.85,
+          23.8864,
+          25.9159,
+          27.9475,
+          29.9747,
+          32.0134,
+          34.0567,
+          36.0814,
+          38.1087,
+          40.1427,
+          42.179,
+          44.2178,
+          46.2519,
+          48.2813,
+          50.3036,
+          52.3424,
+          54.3811,
+          56.4175,
+          58.4515,
+          60.4857,
+          62.5173,
+          64.5469,
+          66.5786,
+          68.6127,
+          70.6537,
+          72.6901,
+          74.7242,
+          76.7605,
+          78.7877,
+          80.8239,
+          82.8534,
+          84.8666,
+          86.9041
+        ],
+        "grid": {
+          "refined": true,
+          "beats_found": "166/171",
+          "max_drift_ms": 26.6,
+          "section_offsets_ms": [
+            21.6,
+            16.5,
+            6.4,
+            5.3,
+            2.5,
+            -0.3
+          ],
+          "trend_ms": -21.8
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_sha1": "a21246e9d2c749ccdab64229debb03c302108d1a",
+      "end": 81.6,
+      "suno_song_url": "https://suno.com/song/5169e753-bb3c-4491-815f-f4f29b870b7f",
+      "edit_note": "Video ends at 81.600 s with existing renderer 1.2-second fade after final clap; excludes 84.5 s vocal restart and long instrumental gap. Original 88.880 s retained."
+    },
+    "vocals": {
+      "status": "generated",
+      "job_id": "local:94ae9400f92d",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep13/ep13_song_vocals_94ae9400.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "94ae9400f92d83dea56324830170e454c10bfbb5",
+      "of": "a21246e9d2c749ccdab64229debb03c302108d1a",
+      "history": [
+        {
+          "job_id": "local:94ae9400f92d",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep13/ep13_song_vocals_94ae9400.flac",
+          "status": "generated",
+          "reason": null,
+          "at": "2026-11-05T22:55Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 117.9848,
+    "lyrics": [
+      {
+        "text": "사과 사과",
+        "section": "Section 1",
+        "words": [
+          [
+            "사과",
+            1.439,
+            1.954
+          ],
+          [
+            "사과",
+            2.009,
+            2.384
+          ]
+        ]
+      },
+      {
+        "text": "바나나 바나나",
+        "section": "Section 1",
+        "words": [
+          [
+            "바나나",
+            2.594,
+            2.922
+          ],
+          [
+            "바나나",
+            2.922,
+            3.561
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 사과",
+        "section": "Section 1",
+        "words": [
+          [
+            "톡톡",
+            3.561,
+            3.998
+          ],
+          [
+            "사과",
+            3.998,
+            4.32
+          ]
+        ]
+      },
+      {
+        "text": "통통 바나나",
+        "section": "Section 1",
+        "words": [
+          [
+            "통통",
+            4.357,
+            4.64
+          ],
+          [
+            "바나나",
+            4.691,
+            5.198
+          ]
+        ]
+      },
+      {
+        "text": "사과 톡",
+        "section": "Section 1",
+        "words": [
+          [
+            "사과",
+            5.522,
+            6.08
+          ],
+          [
+            "톡",
+            6.096,
+            6.317
+          ]
+        ]
+      },
+      {
+        "text": "바나나 통",
+        "section": "Section 1",
+        "words": [
+          [
+            "바나나",
+            6.461,
+            7.332
+          ],
+          [
+            "통",
+            7.52,
+            7.576
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 통통",
+        "section": "Section 1",
+        "words": [
+          [
+            "톡톡",
+            7.576,
+            8.08
+          ],
+          [
+            "통통",
+            8.137,
+            8.56
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 1",
+        "words": [
+          [
+            "짝짝짝",
+            8.64,
+            9.04
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 톡톡",
+        "section": "Section 1",
+        "words": [
+          [
+            "톡톡",
+            9.623,
+            10.076
+          ],
+          [
+            "톡톡",
+            10.187,
+            10.56
+          ]
+        ]
+      },
+      {
+        "text": "통통 통통",
+        "section": "Section 1",
+        "words": [
+          [
+            "통통",
+            10.638,
+            11.12
+          ],
+          [
+            "통통",
+            11.175,
+            11.68
+          ]
+        ]
+      },
+      {
+        "text": "모모랑 같이",
+        "section": "Section 1",
+        "words": [
+          [
+            "모모랑",
+            11.719,
+            12.16
+          ],
+          [
+            "같이",
+            12.173,
+            12.668
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 1",
+        "words": [
+          [
+            "짝짝짝",
+            12.668,
+            13.496
+          ]
+        ]
+      },
+      {
+        "text": "사과 사과",
+        "section": "Section 2",
+        "words": [
+          [
+            "사과",
+            15.683,
+            16.155
+          ],
+          [
+            "사과",
+            16.257,
+            16.614
+          ]
+        ]
+      },
+      {
+        "text": "바나나 바나나",
+        "section": "Section 2",
+        "words": [
+          [
+            "바나나",
+            16.772,
+            17.28
+          ],
+          [
+            "바나나",
+            17.346,
+            17.789
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 사과",
+        "section": "Section 2",
+        "words": [
+          [
+            "톡톡",
+            17.789,
+            18.24
+          ],
+          [
+            "사과",
+            18.267,
+            18.48
+          ]
+        ]
+      },
+      {
+        "text": "통통 바나나",
+        "section": "Section 2",
+        "words": [
+          [
+            "통통",
+            18.52,
+            18.831
+          ],
+          [
+            "바나나",
+            18.92,
+            19.378
+          ]
+        ]
+      },
+      {
+        "text": "사과 톡",
+        "section": "Section 2",
+        "words": [
+          [
+            "사과",
+            19.764,
+            20.316
+          ],
+          [
+            "톡",
+            20.316,
+            20.536
+          ]
+        ]
+      },
+      {
+        "text": "바나나 통",
+        "section": "Section 2",
+        "words": [
+          [
+            "바나나",
+            20.694,
+            21.554
+          ],
+          [
+            "통",
+            21.76,
+            21.794
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 통통",
+        "section": "Section 2",
+        "words": [
+          [
+            "톡톡",
+            21.794,
+            22.32
+          ],
+          [
+            "통통",
+            22.366,
+            22.8
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 2",
+        "words": [
+          [
+            "짝짝짝",
+            22.839,
+            23.662
+          ]
+        ]
+      },
+      {
+        "text": "사과 바나나",
+        "section": "Section 2",
+        "words": [
+          [
+            "사과",
+            23.844,
+            24.59
+          ],
+          [
+            "바나나",
+            24.85,
+            25.869
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 2",
+        "words": [
+          [
+            "짝짝짝",
+            25.869,
+            27.188
+          ]
+        ]
+      },
+      {
+        "text": "사과 사과",
+        "section": "Section 3",
+        "words": [
+          [
+            "사과",
+            27.979,
+            28.343
+          ],
+          [
+            "사과",
+            28.489,
+            28.814
+          ]
+        ]
+      },
+      {
+        "text": "바나나 바나나",
+        "section": "Section 3",
+        "words": [
+          [
+            "바나나",
+            29.021,
+            29.465
+          ],
+          [
+            "바나나",
+            29.595,
+            29.975
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 사과",
+        "section": "Section 3",
+        "words": [
+          [
+            "톡톡",
+            29.975,
+            30.413
+          ],
+          [
+            "사과",
+            30.432,
+            30.733
+          ]
+        ]
+      },
+      {
+        "text": "통통 바나나",
+        "section": "Section 3",
+        "words": [
+          [
+            "통통",
+            30.762,
+            31.133
+          ],
+          [
+            "바나나",
+            31.177,
+            31.606
+          ]
+        ]
+      },
+      {
+        "text": "사과 톡",
+        "section": "Section 3",
+        "words": [
+          [
+            "사과",
+            31.942,
+            32.494
+          ],
+          [
+            "톡",
+            32.502,
+            32.741
+          ]
+        ]
+      },
+      {
+        "text": "바나나 통",
+        "section": "Section 3",
+        "words": [
+          [
+            "바나나",
+            32.94,
+            33.534
+          ],
+          [
+            "통",
+            33.558,
+            33.768
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 통통",
+        "section": "Section 3",
+        "words": [
+          [
+            "톡톡",
+            33.934,
+            34.5
+          ],
+          [
+            "통통",
+            34.5,
+            34.973
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 3",
+        "words": [
+          [
+            "짝짝짝",
+            35.052,
+            36.05
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 톡톡",
+        "section": "Section 3",
+        "words": [
+          [
+            "톡톡",
+            36.05,
+            36.574
+          ],
+          [
+            "톡톡",
+            36.601,
+            37.053
+          ]
+        ]
+      },
+      {
+        "text": "통통 통통",
+        "section": "Section 3",
+        "words": [
+          [
+            "통통",
+            37.111,
+            37.614
+          ],
+          [
+            "통통",
+            37.654,
+            38.093
+          ]
+        ]
+      },
+      {
+        "text": "모모랑 같이",
+        "section": "Section 3",
+        "words": [
+          [
+            "모모랑",
+            38.151,
+            38.573
+          ],
+          [
+            "같이",
+            38.593,
+            39.157
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 3",
+        "words": [
+          [
+            "짝짝짝",
+            39.157,
+            39.945
+          ]
+        ]
+      },
+      {
+        "text": "사과 사과",
+        "section": "Section 4",
+        "words": [
+          [
+            "사과",
+            42.095,
+            42.612
+          ],
+          [
+            "사과",
+            42.746,
+            43.076
+          ]
+        ]
+      },
+      {
+        "text": "바나나 바나나",
+        "section": "Section 4",
+        "words": [
+          [
+            "바나나",
+            43.262,
+            43.585
+          ],
+          [
+            "바나나",
+            43.585,
+            44.204
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 사과",
+        "section": "Section 4",
+        "words": [
+          [
+            "톡톡",
+            44.204,
+            44.654
+          ],
+          [
+            "사과",
+            44.667,
+            44.973
+          ]
+        ]
+      },
+      {
+        "text": "통통 바나나",
+        "section": "Section 4",
+        "words": [
+          [
+            "통통",
+            45.004,
+            45.373
+          ],
+          [
+            "바나나",
+            45.402,
+            45.863
+          ]
+        ]
+      },
+      {
+        "text": "사과 톡",
+        "section": "Section 4",
+        "words": [
+          [
+            "사과",
+            46.177,
+            46.733
+          ],
+          [
+            "톡",
+            46.734,
+            47.053
+          ]
+        ]
+      },
+      {
+        "text": "바나나 통",
+        "section": "Section 4",
+        "words": [
+          [
+            "바나나",
+            47.186,
+            47.773
+          ],
+          [
+            "통",
+            47.798,
+            48.037
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 통통",
+        "section": "Section 4",
+        "words": [
+          [
+            "톡톡",
+            48.173,
+            48.493
+          ],
+          [
+            "통통",
+            48.514,
+            49.294
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 4",
+        "words": [
+          [
+            "짝짝짝",
+            49.322,
+            50.084
+          ]
+        ]
+      },
+      {
+        "text": "사과 사과",
+        "section": "Section 4",
+        "words": [
+          [
+            "사과",
+            50.256,
+            50.804
+          ],
+          [
+            "사과",
+            50.804,
+            51.241
+          ]
+        ]
+      },
+      {
+        "text": "톡톡톡",
+        "section": "Section 4",
+        "words": [
+          [
+            "톡톡톡",
+            51.316,
+            52.131
+          ]
+        ]
+      },
+      {
+        "text": "바나나 바나나",
+        "section": "Section 4",
+        "words": [
+          [
+            "바나나",
+            52.382,
+            52.813
+          ],
+          [
+            "바나나",
+            52.879,
+            53.414
+          ]
+        ]
+      },
+      {
+        "text": "통통통",
+        "section": "Section 4",
+        "words": [
+          [
+            "통통통",
+            53.414,
+            54.189
+          ]
+        ]
+      },
+      {
+        "text": "사과 사과",
+        "section": "Section 5",
+        "words": [
+          [
+            "사과",
+            54.339,
+            54.818
+          ],
+          [
+            "사과",
+            54.912,
+            55.245
+          ]
+        ]
+      },
+      {
+        "text": "바나나 바나나",
+        "section": "Section 5",
+        "words": [
+          [
+            "바나나",
+            55.429,
+            55.821
+          ],
+          [
+            "바나나",
+            55.821,
+            56.433
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 사과",
+        "section": "Section 5",
+        "words": [
+          [
+            "톡톡",
+            56.433,
+            56.894
+          ],
+          [
+            "사과",
+            56.902,
+            57.133
+          ]
+        ]
+      },
+      {
+        "text": "통통 바나나",
+        "section": "Section 5",
+        "words": [
+          [
+            "통통",
+            57.17,
+            57.533
+          ],
+          [
+            "바나나",
+            57.58,
+            58.036
+          ]
+        ]
+      },
+      {
+        "text": "사과 톡",
+        "section": "Section 5",
+        "words": [
+          [
+            "사과",
+            58.414,
+            59.055
+          ],
+          [
+            "톡",
+            59.055,
+            59.235
+          ]
+        ]
+      },
+      {
+        "text": "바나나 통",
+        "section": "Section 5",
+        "words": [
+          [
+            "바나나",
+            59.414,
+            59.853
+          ],
+          [
+            "통",
+            59.931,
+            59.964
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 통통",
+        "section": "Section 5",
+        "words": [
+          [
+            "톡톡",
+            60.424,
+            60.893
+          ],
+          [
+            "통통",
+            60.971,
+            61.488
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 5",
+        "words": [
+          [
+            "짝짝짝",
+            61.488,
+            62.259
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 톡톡",
+        "section": "Section 5",
+        "words": [
+          [
+            "톡톡",
+            62.493,
+            62.733
+          ],
+          [
+            "톡톡",
+            62.758,
+            63.218
+          ]
+        ]
+      },
+      {
+        "text": "통통 통통",
+        "section": "Section 5",
+        "words": [
+          [
+            "통통",
+            63.529,
+            64.013
+          ],
+          [
+            "통통",
+            64.053,
+            64.573
+          ]
+        ]
+      },
+      {
+        "text": "모모랑 같이",
+        "section": "Section 5",
+        "words": [
+          [
+            "모모랑",
+            64.625,
+            65.053
+          ],
+          [
+            "같이",
+            65.055,
+            65.453
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 5",
+        "words": [
+          [
+            "짝짝짝",
+            65.534,
+            66.093
+          ]
+        ]
+      },
+      {
+        "text": "사과",
+        "section": "Section 6",
+        "words": [
+          [
+            "사과",
+            68.565,
+            69.035
+          ]
+        ]
+      },
+      {
+        "text": "바나나 바나나",
+        "section": "Section 6",
+        "words": [
+          [
+            "바나나",
+            69.662,
+            70.063
+          ],
+          [
+            "바나나",
+            70.063,
+            70.668
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 사과",
+        "section": "Section 6",
+        "words": [
+          [
+            "톡톡",
+            70.668,
+            71.132
+          ],
+          [
+            "사과",
+            71.132,
+            71.319
+          ]
+        ]
+      },
+      {
+        "text": "통통 바나나",
+        "section": "Section 6",
+        "words": [
+          [
+            "통통",
+            71.354,
+            71.727
+          ],
+          [
+            "바나나",
+            71.805,
+            72.278
+          ]
+        ]
+      },
+      {
+        "text": "사과 톡",
+        "section": "Section 6",
+        "words": [
+          [
+            "사과",
+            72.644,
+            73.213
+          ],
+          [
+            "톡",
+            73.213,
+            73.439
+          ]
+        ]
+      },
+      {
+        "text": "바나나 통",
+        "section": "Section 6",
+        "words": [
+          [
+            "바나나",
+            73.585,
+            74.093
+          ],
+          [
+            "통",
+            74.174,
+            74.203
+          ]
+        ]
+      },
+      {
+        "text": "톡톡 통통",
+        "section": "Section 6",
+        "words": [
+          [
+            "톡톡",
+            74.4,
+            75.133
+          ],
+          [
+            "통통",
+            75.212,
+            75.73
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 6",
+        "words": [
+          [
+            "짝짝짝",
+            75.73,
+            76.525
+          ]
+        ]
+      },
+      {
+        "text": "사과 바나나",
+        "section": "Section 6",
+        "words": [
+          [
+            "사과",
+            76.731,
+            77.486
+          ],
+          [
+            "바나나",
+            77.747,
+            78.76
+          ]
+        ]
+      },
+      {
+        "text": "짝짝짝",
+        "section": "Section 6",
+        "words": [
+          [
+            "짝짝짝",
+            78.76,
+            80.094
+          ]
+        ]
+      }
+    ],
+    "caption_mode": "keywords",
+    "refs_urls": {}
+  }
+}

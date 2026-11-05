@@ -1,0 +1,86 @@
+[
+  {
+    "cut": "c01",
+    "kind": "image",
+    "source_cut": "c01",
+    "local_file": "images/c01.png",
+    "sha256": "36c4a954067723d1d246b76fd7fe9e695ab064afa5b4c4297367bc2ab03e82bf"
+  },
+  {
+    "cut": "c01",
+    "kind": "clip",
+    "source_cut": "c01",
+    "local_file": "clips/c01.mp4",
+    "sha256": "ab4c12a912b8e4f15f1ebf7eaad19c325e2ac0b8ea9ad23184b9da96347e864f"
+  },
+  {
+    "cut": "c02",
+    "kind": "image",
+    "source_cut": "c04",
+    "local_file": "images/c02.png",
+    "sha256": "eaf782e975a5472fd08af7d9becf95465dbcd24611e5f6e4ba256b68ceeaacfe"
+  },
+  {
+    "cut": "c02",
+    "kind": "clip",
+    "source_cut": "c04",
+    "local_file": "clips/c02.mp4",
+    "sha256": "b185cac00e1defd2e121a480b7ca91d7092f2facf948af22da3057ef7cc3a016"
+  },
+  {
+    "cut": "c03",
+    "kind": "image",
+    "source_cut": "c08",
+    "local_file": "images/c03.png",
+    "sha256": "cf5fbc823e7e17fe4255ce6faaf58d4b6d02b44d5d9f26024cc6bf21a96fe856"
+  },
+  {
+    "cut": "c03",
+    "kind": "clip",
+    "source_cut": "c08",
+    "local_file": "clips/c03.mp4",
+    "sha256": "3e09ceb3fa06318ea00eec8301b24ef16680367b2db8e42bea9973072be7bd08"
+  },
+  {
+    "cut": "c04",
+    "kind": "image",
+    "source_cut": "c10",
+    "local_file": "images/c04.png",
+    "sha256": "866cd3b4a3bc31d453b7f569ef7b72257ac5cd97114020b01557c77880b17724"
+  },
+  {
+    "cut": "c04",
+    "kind": "clip",
+    "source_cut": "c10",
+    "local_file": "clips/c04.mp4",
+    "sha256": "ebf0f5237295f558aa5f1dd2a5b673fee61e876f1745229e03ef8fc1e7fe4572"
+  },
+  {
+    "cut": "c07",
+    "kind": "image",
+    "source_cut": "c02",
+    "local_file": "images/c07.png",
+    "sha256": "94cdc08b52d6f7e8a95aef94a6697249a8cdd6df960b744f7d5422f9fffa0ed3"
+  },
+  {
+    "cut": "c07",
+    "kind": "clip",
+    "source_cut": "c02",
+    "local_file": "clips/c07.mp4",
+    "sha256": "5242655febe86f611fad75fdd7f6dd39a61d226a91c03c1fddca78ce3f343b16"
+  },
+  {
+    "cut": "c08",
+    "kind": "image",
+    "source_cut": "c06",
+    "local_file": "images/c08.png",
+    "sha256": "bca186f37022750b2af10ad490cccff75c7bcd2d98c1aa728ed9d01a7e7bf257"
+  },
+  {
+    "cut": "c08",
+    "kind": "clip",
+    "source_cut": "c06",
+    "local_file": "clips/c08.mp4",
+    "sha256": "95fa1d19c962dec9f9ff18b7bf6c6c9372ad4aec0931e8ac955700ee31dd10f7"
+  }
+]
