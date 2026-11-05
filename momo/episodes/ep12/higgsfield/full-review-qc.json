@@ -1,0 +1,38 @@
+{
+  "duration": 90.0,
+  "cuts": 35,
+  "source_kinds": {
+    "video": 35,
+    "image": 0,
+    "placeholder": 0
+  },
+  "keywords": [
+    "APPLE",
+    "BANANA"
+  ],
+  "audio": {
+    "speech_blocks": 0,
+    "bgm": null,
+    "sfx": 0,
+    "track": {
+      "file": "song.flac",
+      "start": 0.0,
+      "short_by": 0.0
+    },
+    "loudnorm": {
+      "input_i": -16.29,
+      "input_tp": -3.57,
+      "output_i": -14.0,
+      "output_tp": -1.5,
+      "normalization_type": "dynamic"
+    }
+  },
+  "output": {
+    "video_duration": 90.0,
+    "audio_duration": 90.0,
+    "frames": 2700
+  },
+  "review_only": true,
+  "allow_missing_flag": true,
+  "user_final_approval": false
+}

@@ -1,0 +1,103 @@
+{
+  "request": [
+    {
+      "index": 8,
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "8084be21-9f38-4efe-805a-9eba1a47d7fe"
+          }
+        ],
+        "count": 1
+      }
+    },
+    {
+      "index": 10,
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "Momo gives two gentle claps in front of the lower belly below the overall pocket. Both yellow shoulder buttons remain visible above the hands, feet remain planted, slight ear sway. Keep lips closed in a soft smile throughout, no singing or talking. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "381658a6-82f7-4480-a941-17c4834e74ae"
+          }
+        ],
+        "count": 1
+      }
+    }
+  ],
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Submitted 2/2 video generations.\n- index 8: 8e186a6e-523d-49b5-98fb-e066da3e8e1b (pending)\n- index 10: b25c86f6-dfe6-4b54-9b12-6dba820b05da (pending)\nWait for the complete requested set with jobs_wait, then show it together with show_generation_by_ids using the collected indexed jobs. This includes jobs submitted across separate calls. job_display accepts only one id and cannot display a group; do not pass ids or call it once per job."
+      }
+    ],
+    "structuredContent": {
+      "jobs": [
+        {
+          "index": 8,
+          "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
+          "status": "pending"
+        },
+        {
+          "index": 10,
+          "job_id": "b25c86f6-dfe6-4b54-9b12-6dba820b05da",
+          "status": "pending"
+        }
+      ],
+      "submitted_count": 2,
+      "failed_count": 0
+    },
+    "isError": false
+  },
+  "cost_quotes": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Cost preflight for seedance_2_0_mini: 5 credits (5 exact). No job submitted."
+          }
+        ],
+        "structuredContent": {
+          "cost": {
+            "credits": 5,
+            "credits_exact": 5
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Cost preflight for seedance_2_0_mini: 5 credits (5 exact). No job submitted."
+          }
+        ],
+        "structuredContent": {
+          "cost": {
+            "credits": 5,
+            "credits_exact": 5
+          }
+        },
+        "isError": false
+      }
+    }
+  ]
+}

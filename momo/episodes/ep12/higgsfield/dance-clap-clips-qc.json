@@ -1,0 +1,46 @@
+[
+  {
+    "cut": "c08",
+    "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
+    "sha256": "3e09ceb3fa06318ea00eec8301b24ef16680367b2db8e42bea9973072be7bd08",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "nb_frames": "121"
+        }
+      ],
+      "format": {
+        "duration": "5.041667"
+      }
+    }
+  },
+  {
+    "cut": "c10",
+    "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
+    "sha256": "ebf0f5237295f558aa5f1dd2a5b673fee61e876f1745229e03ef8fc1e7fe4572",
+    "media": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "nb_frames": "121"
+        }
+      ],
+      "format": {
+        "duration": "5.041667"
+      }
+    }
+  }
+]
