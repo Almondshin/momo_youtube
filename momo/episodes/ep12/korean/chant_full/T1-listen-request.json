@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "3d7d7ae2-e0a5-4668-b491-a6a69df79d05",
+    "question": "Listen to this Korean toddler nursery-chant continuation. It will follow an existing 27.97-second first part. Assess the actual lead voice, clarity of 사과/바나나/톡톡/통통, steady simple clap rhythm and sung repetition. Does singing start immediately, and are there any mid-song instrumental gaps longer than about 4 seconds? Does the final 짝짝짝 finish naturally with a short resolved chord, or get cut off? Mention any overly long outro or rushed syllables. Reply briefly in Korean plus JSON with voice_character, target_words_clear, first_singing_seconds_approx, longest_mid_song_gap_seconds_approx, natural_ending, abrupt_cutoff, outro_seconds_approx, concerns. If you cannot listen to the whole clip, state that. Do not infer from the prompt."
+  },
+  "save": "momo/episodes/ep12/korean/chant_full/T1-listen-request-response.json"
+}

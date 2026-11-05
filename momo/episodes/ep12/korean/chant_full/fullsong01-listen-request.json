@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "5169e753-bb3c-4491-815f-f4f29b870b7f",
+    "question": "Listen to this entire Korean toddler clap-chant song, about 89 seconds. The original audition joins a new continuation at 27.97035 seconds. Check the audible join around 25-32 seconds for sudden voice/timbre/key/tempo changes, chopped syllables, overlap, clicks or silence. Judge actual Korean clarity for 사과 and 바나나 and steady child-friendly repeatable rhythm. Check whether the final 10 seconds truly resolve and quantify any mid-song vocal gap longer than 4 seconds approximately. Do not assume the desired style succeeded. Reply briefly in Korean plus JSON with join_smooth, join_concerns, voice_consistent, korean_clear, rhythm_consistent, longest_mid_song_gap_seconds_approx, natural_ending, abrupt_cutoff, concerns. If you cannot hear the full file say so."
+  },
+  "save": "momo/episodes/ep12/korean/chant_full/fullsong01-listen-request-response.json"
+}

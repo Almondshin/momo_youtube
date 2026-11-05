@@ -72,7 +72,8 @@
       "2026-11-05 사용자: 두 장 사용해 영상 제작 — c08 춤 이미지와 c10 박수 이미지 수정본 승인; 두 5초 클립 합계 10크레딧 사용 승인.",
       "2026-11-05 사용자: 그래그래 간단해도되 재인증 어떻게 시도할래 — 90초 전체 영상·음원 및 춤/박수 최종 클립 승인, YouTube 재인증 진행.",
       "2026-11-05 사용자: 한국노래도 만들어야겠지 — 한국어 후속곡 제작 재확인. 한국어 후보 최종 선택·음원 다운로드 승인은 별도.",
-      "2026-11-05 사용자: 한국어 다른방향으로 바나나 차차, 아기상어 노래처럼 만들어볼래 — C2 한국어 커버 방향에서 벗어나 짧은 반복 훅·율동 중심의 새 한국어 시안 제작 요청. 최종 후보 선택은 별도."
+      "2026-11-05 사용자: 한국어 다른방향으로 바나나 차차, 아기상어 노래처럼 만들어볼래 — C2 한국어 커버 방향에서 벗어나 짧은 반복 훅·율동 중심의 새 한국어 시안 제작 요청. 최종 후보 선택은 별도.",
+      "2026-11-05 사용자: “톡톡 통통” 박수 챈트형 이느낌쪽이 괜찮을 것 같아 — 한국어 B 방향 선택. 개별 B1 지명이나 아직 만들지 않은 완성곡의 승인은 아니며, B1 기준 제작은 작업자 판단."
     ],
     "next_time": [
       "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
@@ -143,7 +144,7 @@
       "requested_at": "2026-11-05",
       "user_request": "한국노래도 만들어야겠지",
       "language": "ko",
-      "status": "awaiting_user_new_direction_selection",
+      "status": "full_song_ready_awaiting_review_and_download_credit_approval",
       "source_audio_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
       "brief": "korean/BRIEF.md",
       "lyrics": "korean/lyrics.md",
@@ -177,9 +178,9 @@
           "status": "generated_reviewed_awaiting_user_selection"
         }
       ],
-      "review": "korean/direction02/REVIEW.md",
-      "generation_credits_spent": 30,
-      "generation_credits_remaining": 2380,
+      "review": "korean/chant_full/REVIEW.md",
+      "generation_credits_spent": 40,
+      "generation_credits_remaining": 2370,
       "download_credits_spent": 0,
       "download_credits_remaining": 19,
       "review_method": "Suno official audio-listen; automated listening analysis, not human approval",
@@ -188,7 +189,7 @@
       "direction02": {
         "user_request": "한국어 다른방향으로 바나나 차차, 아기상어 노래처럼 만들어볼래",
         "uses_c2_reference": false,
-        "status": "awaiting_user_audio_selection",
+        "status": "B_direction_selected_by_user",
         "target_seconds": 45,
         "directions": [
           "A: 냠냠냠 율동형",
@@ -244,8 +245,45 @@
         ],
         "automated_review_is_not_user_approval": true
       },
-      "current_direction": "direction02",
-      "current_uses_source_audio": false
+      "current_direction": "chant_full",
+      "current_uses_source_audio": false,
+      "selection": {
+        "user_message": "“톡톡 통통” 박수 챈트형 이느낌쪽이 괜찮을 것 같아",
+        "direction": "B",
+        "reference_take": "B1",
+        "reference_audio_id": "db1999ca-a499-4bfa-afa5-d903b742bfd9",
+        "reference_take_chosen_by": "assistant",
+        "reason": "User selected the B direction, not an individual take. B1 was chosen as the production reference because automated listening reported clearer, less rushed syllables than B2.",
+        "final_song_approved": false
+      },
+      "full_song": {
+        "status": "complete_awaiting_user_review",
+        "source_audio_id": "db1999ca-a499-4bfa-afa5-d903b742bfd9",
+        "continue_at": 27.97035,
+        "extension_ids": [
+          "3d7d7ae2-e0a5-4668-b491-a6a69df79d05",
+          "38185dce-3cb8-4747-baaa-d31b7db98cf8"
+        ],
+        "request": "korean/chant_full/extension01-request.json",
+        "selected_extension_id": "38185dce-3cb8-4747-baaa-d31b7db98cf8",
+        "selected_extension_label": "T2",
+        "selection_by": "assistant",
+        "selection_reason": "Automatic listening reports clear Korean, bright female/childlike tone and a resolved ending. Approximate 4-second instrumental gap remains to be checked locally.",
+        "generation_credits_spent": 10,
+        "join_credits_spent": 0,
+        "audio_id": "5169e753-bb3c-4491-815f-f4f29b870b7f",
+        "url": "https://suno.com/song/5169e753-bb3c-4491-815f-f4f29b870b7f",
+        "duration_seconds": 88.88,
+        "provider_alignment_status": "complete",
+        "provider_listening_status": "complete",
+        "local_wav_verified": false,
+        "user_final_approval": false,
+        "download_status": "requires_credit",
+        "download_credit_approval": false,
+        "download_credits_required": 1,
+        "download_credits_remaining": 19,
+        "editing_notes": "korean/chant_full/editing-notes.json"
+      }
     }
   },
   "cuts": [

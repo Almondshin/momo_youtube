@@ -1,0 +1,22 @@
+{
+  "tool": "audio-extensions-create",
+  "arguments": {
+    "id": "db1999ca-a499-4bfa-afa5-d903b742bfd9",
+    "continue_at": 27.97035,
+    "lyrics": "[Hook - continue immediately, identical sung melody and pulse]\n사과! (사과!)\n바나나! (바나나!)\n톡톡 사과\n통통 바나나\n사과 톡!\n바나나 통!\n톡톡 통통\n짝짝짝!\n\n[Action - same sung rhythm, no instrumental gap]\n톡톡 톡톡\n통통 통통\n모모랑 같이\n짝짝짝!\n\n[Hook - same melody, keep singing]\n사과! (사과!)\n바나나! (바나나!)\n톡톡 사과\n통통 바나나\n사과 톡!\n바나나 통!\n톡톡 통통\n짝짝짝!\n\n[Word Play - sung, keep the beat]\n사과 사과\n톡톡톡!\n바나나 바나나\n통통통!\n\n[Hook - identical melody and phrasing]\n사과! (사과!)\n바나나! (바나나!)\n톡톡 사과\n통통 바나나\n사과 톡!\n바나나 통!\n톡톡 통통\n짝짝짝!\n\n[Action - short sung phrases]\n톡톡 톡톡\n통통 통통\n모모랑 같이\n짝짝짝!\n\n[Final Hook - same melody, no instrumental break]\n사과! (사과!)\n바나나! (바나나!)\n톡톡 사과\n통통 바나나\n사과 톡!\n바나나 통!\n톡톡 통통\n짝짝짝!\n\n[Outro - sung, complete natural resolution]\n사과 바나나\n짝짝짝!\n[End - one short resolved chord, stop]",
+    "style": "Continue the exact actual lead voice, melodic hook, key and crisp playful nursery-chant rhythm of the source. Preserve its clear bright light female tone rather than introducing a different singer. Approximately 118 BPM in C major, simple steady four-beat pulse, handclaps and sparse toy-like tuned percussion. Go straight into sung Korean at the join, with the same short fruit-name phrases and natural syllabic diction. Reuse the original hook melody and the source response style. Keep vocal phrases going across section transitions with small breathing gaps only; no instrumental breaks or new intro. Give each syllable enough space for toddlers to copy. About 50-60 seconds of continuation. Finish the sung 짝짝짝 with one resolved chord and a very short tail.",
+    "model": "v6",
+    "duration": 60,
+    "instrumental": false,
+    "controls": {
+      "audio_influence": 0.9,
+      "style_influence": 0.35,
+      "weirdness": 0.05,
+      "variety": 0
+    },
+    "negative_style": "different singer, changed vocal character, key change, tempo change, instrumental break, new intro, long outro, long fade out, abrupt cutoff, adult soulful belting, pitch-shifted baby voice, English lyrics, narration, instrumental solo",
+    "title": "사과 톡! 바나나 통! | 모모타임 - B1 continuation",
+    "idempotency_key": "momotime-ep12-ko-b1-extension01-20261105"
+  },
+  "save": "momo/episodes/ep12/korean/chant_full/extension01-create-response.json"
+}

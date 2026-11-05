@@ -1,0 +1,12 @@
+{
+  "source_audio_id": "db1999ca-a499-4bfa-afa5-d903b742bfd9",
+  "source_duration_seconds": 43.88,
+  "measured_bpm": 118,
+  "key": "C major",
+  "last_aligned_lyric_end": 27.243,
+  "continue_at": 27.97035,
+  "cut_point_type": "next measured downbeat after aligned final 짝짝짝",
+  "source_analysis": "../direction02/B1-analysis.json",
+  "source_alignment": "../direction02/B1-alignment.json",
+  "precision_note": "Provider alignment is best-effort. Join and source words require later listening/local WAV verification."
+}

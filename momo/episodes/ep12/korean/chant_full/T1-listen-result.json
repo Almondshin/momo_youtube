@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"56b32035-8042-49c1-839b-5126ee1f47ff\",\"audio_id\":\"3d7d7ae2-e0a5-4668-b491-a6a69df79d05\",\"status\":\"complete\",\"created_at\":\"2026-11-05T07:53:19Z\",\"answer\":\"전체 1:01 클립을 들었습니다. 밝고 또렷한 여성 리드 보컬이며 사과·바나나·톡톡·통통이 잘 들리고, 단순한 박수풍 리듬에 반복해서 노래합니다. 노래는 시작과 함께 바로 나오며, 후반에 약 4초간 반주만 이어지는 구간이 있습니다. 마지막 ‘짝짝짝’은 짧은 해결 코드로 자연스럽게 끝나고 잘리거나 긴 아웃트로는 없습니다. 음절이 급하게 몰리는 부분도 두드러지지 않습니다.\\n```json\\n{\\n  \\\"voice_character\\\": \\\"밝고 또렷한 여성 리드 보컬\\\",\\n  \\\"target_words_clear\\\": true,\\n  \\\"first_singing_seconds_approx\\\": 0,\\n  \\\"longest_mid_song_gap_seconds_approx\\\": 4,\\n  \\\"natural_ending\\\": true,\\n  \\\"abrupt_cutoff\\\": false,\\n  \\\"outro_seconds_approx\\\": 2,\\n  \\\"concerns\\\": \\\"후반에 약 4초 반주 구간이 있으나 그 외 두드러진 문제 없음\\\"\\n}\\n```\"}"
+    }
+  ]
+}

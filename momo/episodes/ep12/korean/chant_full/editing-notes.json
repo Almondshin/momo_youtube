@@ -1,0 +1,30 @@
+{
+  "source_duration_seconds": 88.88,
+  "join_seconds": 27.97035,
+  "last_provider_aligned_word_end": 80.094,
+  "post_lyric_tail_seconds": 8.786,
+  "provider_word_gaps_over_one_second": [
+    {
+      "start": 13.496,
+      "end": 15.683,
+      "seconds": 2.187
+    },
+    {
+      "start": 39.945,
+      "end": 42.095,
+      "seconds": 2.15
+    },
+    {
+      "start": 66.382,
+      "end": 68.565,
+      "seconds": 2.183
+    }
+  ],
+  "local_checks_pending": [
+    "Check actual waveform/listen before trimming the ~8.8-second post-lyric tail; retain the resolved chord and a natural short release.",
+    "Separate vocals/instrumental and verify Korean lyrics with local alignment, including any added or omitted syllables.",
+    "Check the approximately one-bar phrase gaps and maintain a steady beat while tightening.",
+    "Fit approved apple/banana/dance/clap clips to actual Korean word timing; no additional Higgsfield generation."
+  ],
+  "download_status": "awaiting_required_credit_approval"
+}

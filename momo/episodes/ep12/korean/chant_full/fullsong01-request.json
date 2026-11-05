@@ -1,0 +1,8 @@
+{
+  "tool": "audio-full-song",
+  "arguments": {
+    "id": "38185dce-3cb8-4747-baaa-d31b7db98cf8",
+    "idempotency_key": "momotime-ep12-ko-b1-fullsong01-20261105"
+  },
+  "save": "momo/episodes/ep12/korean/chant_full/fullsong01-create-response.json"
+}
