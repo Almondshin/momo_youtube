@@ -73,7 +73,8 @@
       "2026-11-05 사용자: 그래그래 간단해도되 재인증 어떻게 시도할래 — 90초 전체 영상·음원 및 춤/박수 최종 클립 승인, YouTube 재인증 진행.",
       "2026-11-05 사용자: 한국노래도 만들어야겠지 — 한국어 후속곡 제작 재확인. 한국어 후보 최종 선택·음원 다운로드 승인은 별도.",
       "2026-11-05 사용자: 한국어 다른방향으로 바나나 차차, 아기상어 노래처럼 만들어볼래 — C2 한국어 커버 방향에서 벗어나 짧은 반복 훅·율동 중심의 새 한국어 시안 제작 요청. 최종 후보 선택은 별도.",
-      "2026-11-05 사용자: “톡톡 통통” 박수 챈트형 이느낌쪽이 괜찮을 것 같아 — 한국어 B 방향 선택. 개별 B1 지명이나 아직 만들지 않은 완성곡의 승인은 아니며, B1 기준 제작은 작업자 판단."
+      "2026-11-05 사용자: “톡톡 통통” 박수 챈트형 이느낌쪽이 괜찮을 것 같아 — 한국어 B 방향 선택. 개별 B1 지명이나 아직 만들지 않은 완성곡의 승인은 아니며, B1 기준 제작은 작업자 판단.",
+      "2026-11-06 사용자: 계속진행하고 … 확인하고 수정하도록 — 제시한 한국어 전체곡으로 제작 계속 및 안내한 WAV 다운로드 1크레딧 승인. 보안 경고 확인·수정도 요청."
     ],
     "next_time": [
       "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
@@ -144,7 +145,7 @@
       "requested_at": "2026-11-05",
       "user_request": "한국노래도 만들어야겠지",
       "language": "ko",
-      "status": "full_song_ready_awaiting_review_and_download_credit_approval",
+      "status": "download_approved_production_continuing",
       "source_audio_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
       "brief": "korean/BRIEF.md",
       "lyrics": "korean/lyrics.md",
@@ -277,12 +278,13 @@
         "provider_alignment_status": "complete",
         "provider_listening_status": "complete",
         "local_wav_verified": false,
-        "user_final_approval": false,
+        "user_final_approval": true,
         "download_status": "requires_credit",
-        "download_credit_approval": false,
+        "download_credit_approval": true,
         "download_credits_required": 1,
         "download_credits_remaining": 19,
-        "editing_notes": "korean/chant_full/editing-notes.json"
+        "editing_notes": "korean/chant_full/editing-notes.json",
+        "download_credit_approval_user_message": "2026-11-06 계속진행하고 토큰 노출 가능성을 깃허브 알람이 시사했는데, 확인하고 수정하도록"
       }
     }
   },
