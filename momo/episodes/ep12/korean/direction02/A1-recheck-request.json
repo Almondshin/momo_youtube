@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "6476f679-df9e-4a37-98df-cbb0922c0967",
+    "question": "Please listen to this 41.56-second Korean nursery-song audition. Briefly describe the actual voice, repeated hook and beat in Korean. Are 사과 and 바나나 clear? Does the final 8 seconds resolve or cut off? If you cannot hear the full clip, say so. Do not infer from the prompt."
+  },
+  "save": "momo/episodes/ep12/korean/direction02/A1-recheck-request-response.json"
+}

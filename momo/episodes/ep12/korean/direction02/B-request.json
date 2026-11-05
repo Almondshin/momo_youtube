@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "사과 톡 바나나 통 | 모모타임 주고받기 시안",
+    "style": "Original Korean toddler call-and-response chant-song for ages 2-4, 116 BPM, steady 4/4 boom-clap pulse with playful small tom and woodblock accents, simple bouncing synth notes, sparse clean accompaniment. Very bright light youthful girl-like female lead; a small childlike unison group echoes only the parenthesized fruit names. All phrases are pitched and sung, including the responses. A memorable four-note hook with separated short syllables and tiny echo gaps; apple and banana calls land strongly on the beat. Precise native Korean pronunciation, comfortable narrow pitch range, lively rhythmic repetition, clear main voice above the beat. Sing from the first second; keep the pulse through the whole song, no long buildup. Repeat the same hook without melodic embellishment and land a short complete final chord. Compact 40-50 second hook audition.",
+    "lyrics": "[Hook - immediate sung call and sung response]\n사과! (사과!)\n바나나! (바나나!)\n톡톡 사과\n통통 바나나\n사과 톡!\n바나나 통!\n톡톡 통통\n짝짝짝!\n\n[Action - sung, same steady pulse]\n톡톡 톡톡\n통통 통통\n모모랑 같이\n짝짝짝!\n\n[Hook - identical melody and rhythm]\n사과! (사과!)\n바나나! (바나나!)\n톡톡 사과\n통통 바나나\n사과 톡!\n바나나 통!\n톡톡 통통\n짝짝짝!\n\n[Ending - short sung resolution]\n사과 바나나\n짝짝짝!\n[End]",
+    "duration": 45,
+    "duration_strict": false,
+    "model": "v6",
+    "vocal_gender": "female",
+    "controls": {
+      "style_influence": 0.9,
+      "weirdness": 0.08,
+      "variety": 0
+    },
+    "negative_style": "adult pop ballad, soulful belting, husky mature voice, exaggerated chipmunk pitch, jazz phrasing, funk guitar groove, busy slap bass, long lyrical sentences, melisma, spoken narration, rap verse, instrumental intro, instrumental break, dramatic buildup, dense adult choir, English lyrics, abrupt cutoff, long outro",
+    "idempotency_key": "momotime-ep12-ko02-b-20261105"
+  },
+  "save": "momo/episodes/ep12/korean/direction02/B-create-response.json"
+}

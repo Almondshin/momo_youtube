@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "c5bdda06-438b-40af-9ee7-259245185076",
+    "question": "Listen to the actual audio of this original Korean preschool hook audition for ages 2-4. Judge whether the result is a rhythm-first nursery song with an immediately memorable repeated short motif, or still an adult pop song. Assess actual perceived vocal age/timbre without assuming that the requested girl-like tone succeeded; clarity of 사과 and 바나나, how easy the hook is to copy, beat accents, actual sung call-and-response if any, and the time until first singing. Point out rushed syllables, long instrumental gaps, excessive intro/outro, or an abrupt ending. Distinguish heard evidence from prompt intentions. Reply in Korean plus JSON with nursery_vs_adult_pop, vocal_character, target_words_clear, hook_description, call_response_audible, first_vocal_seconds_approx, natural_ending, abrupt_cutoff, main_concerns, preferred_use. Do not compare to another recording you have not heard."
+  },
+  "save": "momo/episodes/ep12/korean/direction02/B2-listen-request-response.json"
+}

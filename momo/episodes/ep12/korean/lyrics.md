@@ -1,3 +1,5 @@
+> 현재 방향은 사용자 요청으로 변경되었습니다. 최신 한국어 시안: [direction02/REVIEW.md](direction02/REVIEW.md). 아래는 최초 C2 커버 시도 기록입니다.
+
 # 사과랑 바나나 — 한국어 후보 v1
 
 Palette: C2 companion — bouncy dance-pop, Korean adaptation.

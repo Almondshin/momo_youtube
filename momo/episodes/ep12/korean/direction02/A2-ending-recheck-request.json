@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "ac1d3854-d4f3-41ed-ab6a-df0a04365d33",
+    "question": "The completed clip duration is 44.88 seconds. Your earlier answer said it ends near 29 seconds, which conflicts with that duration. Please check what is audible from 29 seconds through the actual final 44.88 seconds and say whether the true ending resolves or cuts off. If only part of the clip is available to your listening system, say that explicitly; do not invent missing audio. Reply briefly in Korean."
+  },
+  "save": "momo/episodes/ep12/korean/direction02/A2-ending-recheck-request-response.json"
+}

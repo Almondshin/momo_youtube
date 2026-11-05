@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "사과 바나나 냠냠냠 | 모모타임 율동형 시안",
+    "style": "Original Korean preschool action-dance nursery rhyme for ages 2-4. Immediate catchy sung hook; 126 BPM, very clear straight 2/4 bounce, punchy gentle kick and crisp handclaps, bright toy-keyboard stabs and small playful synth-brass answers. A light, clear, high, smiling girl-like female solo, naturally cute without pitch-shift effects; tiny unison responses on 냠냠냠. A simple three-note melody, short syllabic phrases, exact repeated hook, strong beat accents and tiny breath spaces for a toddler to copy. Fruit names always clearly articulated in native Korean. Playful stop-and-go vocal accents while the beat continues. Start singing in the first second. Each short lyric line about one bar. Finish the final 냠 phrase with a resolved chord. Compact 40-50 second hook audition.",
+    "lyrics": "[Hook - immediate singing, each short line about one bar]\n사과 사과\n냠냠냠\n바나나 바나나\n냠냠냠\n사과 냠\n바나나 냠\n냠냠 냠냠\n냠냠냠\n\n[Action - same small melody, beat keeps going]\n사과 보고\n짝짝짝\n바나나 보고\n짝짝짝\n\n[Hook - identical melody and rhythm]\n사과 사과\n냠냠냠\n바나나 바나나\n냠냠냠\n사과 냠\n바나나 냠\n냠냠 냠냠\n냠냠냠\n\n[Ending - sung, resolved]\n사과 바나나\n냠냠냠!\n[End]",
+    "duration": 45,
+    "duration_strict": false,
+    "model": "v6",
+    "vocal_gender": "female",
+    "controls": {
+      "style_influence": 0.9,
+      "weirdness": 0.08,
+      "variety": 0
+    },
+    "negative_style": "adult pop ballad, soulful belting, husky mature voice, exaggerated chipmunk pitch, jazz phrasing, funk guitar groove, busy slap bass, long lyrical sentences, melisma, spoken narration, rap verse, instrumental intro, instrumental break, dramatic buildup, dense adult choir, English lyrics, abrupt cutoff, long outro",
+    "idempotency_key": "momotime-ep12-ko02-a-20261105"
+  },
+  "save": "momo/episodes/ep12/korean/direction02/A-create-response.json"
+}

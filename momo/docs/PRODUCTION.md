@@ -475,6 +475,13 @@ earlier little-girl timbre request. The user approved its 90-second full-song WA
 visual plan (six reusable assets, no lip-sync, APPLE/BANANA one keyword at a time, 50.4 credits estimate).
 Keep the full lyric alignment for timing, but implement/verify keyword-only rendering before assembling ep12.
 
+**2026-11-05 Korean follow-up direction:** The user then requested a different Korean direction, naming
+Banana Chacha and Baby Shark as nursery-song references. For the Korean follow-up, make a new original
+short-hook action song rather than covering C2 again. Keep two learning words (사과, 바나나), a clear beat,
+short repeated phrases and a bright light female/girl-like vocal direction. Audition short takes before
+expanding. This does not replace the approved English C2 recording or change `config.voices`.
+See `episodes/ep12/korean/direction02/REVIEW.md` for generated candidates and actual review limitations.
+
 1. Lyrics: `episodes/<ep>/lyrics.md` (fenced block with [Intro]/[Chorus]/[Verse]/[Bridge]/[Outro] tags,
    (parentheses) = backing voices / echoes) + a style line. Give both to the user to paste into Suno (Custom).
    No "Ding-dong-dang" (or ding/dong bell refrains) in new lyrics — the user is tired of it after ep04/ep05

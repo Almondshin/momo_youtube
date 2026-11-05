@@ -71,7 +71,8 @@
       "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행; 기존 모모 사과·바나나 클립 유지.",
       "2026-11-05 사용자: 두 장 사용해 영상 제작 — c08 춤 이미지와 c10 박수 이미지 수정본 승인; 두 5초 클립 합계 10크레딧 사용 승인.",
       "2026-11-05 사용자: 그래그래 간단해도되 재인증 어떻게 시도할래 — 90초 전체 영상·음원 및 춤/박수 최종 클립 승인, YouTube 재인증 진행.",
-      "2026-11-05 사용자: 한국노래도 만들어야겠지 — 한국어 후속곡 제작 재확인. 한국어 후보 최종 선택·음원 다운로드 승인은 별도."
+      "2026-11-05 사용자: 한국노래도 만들어야겠지 — 한국어 후속곡 제작 재확인. 한국어 후보 최종 선택·음원 다운로드 승인은 별도.",
+      "2026-11-05 사용자: 한국어 다른방향으로 바나나 차차, 아기상어 노래처럼 만들어볼래 — C2 한국어 커버 방향에서 벗어나 짧은 반복 훅·율동 중심의 새 한국어 시안 제작 요청. 최종 후보 선택은 별도."
     ],
     "next_time": [
       "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
@@ -142,7 +143,7 @@
       "requested_at": "2026-11-05",
       "user_request": "한국노래도 만들어야겠지",
       "language": "ko",
-      "status": "awaiting_user_audio_selection",
+      "status": "awaiting_user_new_direction_selection",
       "source_audio_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
       "brief": "korean/BRIEF.md",
       "lyrics": "korean/lyrics.md",
@@ -176,13 +177,75 @@
           "status": "generated_reviewed_awaiting_user_selection"
         }
       ],
-      "review": "korean/REVIEW.md",
-      "generation_credits_spent": 10,
-      "generation_credits_remaining": 2400,
+      "review": "korean/direction02/REVIEW.md",
+      "generation_credits_spent": 30,
+      "generation_credits_remaining": 2380,
       "download_credits_spent": 0,
       "download_credits_remaining": 19,
       "review_method": "Suno official audio-listen; automated listening analysis, not human approval",
-      "transport_note": "Initial long PTY input did not reach the RPC call; unchanged 2410-credit balance verified. Only the later request-file submission reached audio-covers-create."
+      "transport_note": "Initial long PTY input did not reach the RPC call; unchanged 2410-credit balance verified. Only the later request-file submission reached audio-covers-create.",
+      "previous_candidates_status": "not_selected_direction_changed_by_user",
+      "direction02": {
+        "user_request": "한국어 다른방향으로 바나나 차차, 아기상어 노래처럼 만들어볼래",
+        "uses_c2_reference": false,
+        "status": "awaiting_user_audio_selection",
+        "target_seconds": 45,
+        "directions": [
+          "A: 냠냠냠 율동형",
+          "B: 톡톡 통통 주고받기"
+        ],
+        "planned_generation_credits": 20,
+        "new_higgsfield_generations": 0,
+        "A_audio_ids": [
+          "6476f679-df9e-4a37-98df-cbb0922c0967",
+          "ac1d3854-d4f3-41ed-ab6a-df0a04365d33"
+        ],
+        "B_audio_ids": [
+          "db1999ca-a499-4bfa-afa5-d903b742bfd9",
+          "c5bdda06-438b-40af-9ee7-259245185076"
+        ],
+        "candidates": [
+          {
+            "label": "A1",
+            "audio_id": "6476f679-df9e-4a37-98df-cbb0922c0967",
+            "url": "https://suno.com/song/6476f679-df9e-4a37-98df-cbb0922c0967",
+            "duration_seconds": 41.56,
+            "status": "generated_reviewed_awaiting_user_selection"
+          },
+          {
+            "label": "A2",
+            "audio_id": "ac1d3854-d4f3-41ed-ab6a-df0a04365d33",
+            "url": "https://suno.com/song/ac1d3854-d4f3-41ed-ab6a-df0a04365d33",
+            "duration_seconds": 44.88,
+            "status": "generated_reviewed_awaiting_user_selection"
+          },
+          {
+            "label": "B1",
+            "audio_id": "db1999ca-a499-4bfa-afa5-d903b742bfd9",
+            "url": "https://suno.com/song/db1999ca-a499-4bfa-afa5-d903b742bfd9",
+            "duration_seconds": 43.88,
+            "status": "generated_reviewed_awaiting_user_selection"
+          },
+          {
+            "label": "B2",
+            "audio_id": "c5bdda06-438b-40af-9ee7-259245185076",
+            "url": "https://suno.com/song/c5bdda06-438b-40af-9ee7-259245185076",
+            "duration_seconds": 44,
+            "status": "generated_reviewed_awaiting_user_selection"
+          }
+        ],
+        "actual_generation_credits_spent": 20,
+        "generation_credits_remaining": 2380,
+        "download_credits_spent": 0,
+        "download_credits_remaining": 19,
+        "first_comparison": [
+          "A1",
+          "B1"
+        ],
+        "automated_review_is_not_user_approval": true
+      },
+      "current_direction": "direction02",
+      "current_uses_source_audio": false
     }
   },
   "cuts": [
