@@ -50,7 +50,7 @@
     }
   },
   "credits": {
-    "estimate": 50.0,
+    "estimate": 49.2,
     "spent": 6.0,
     "generations": 3,
     "regenerations": 0
@@ -61,7 +61,8 @@
       "2026-11-05 사용자: 자 그럼 이제 작업을 시작해볼래 — 준비된 ep12 Apple & Banana 제작 시작 요청. 최종 음원·이미지 승인과는 구분.",
       "2026-11-05 사용자: C2가 가장 괜찮아 — C2를 완성 작업의 기준 후보로 선택. 아직 생성되지 않은 연장 음원·완성 영상의 승인을 뜻하지 않는다.",
       "2026-11-05 사용자: 1크레딧 사용해 다운로드·제작 계속 — C2 90초 전체곡 WAV 다운로드 1크레딧과 후속 검수·제작 진행 승인.",
-      "2026-11-05 사용자: 이 구성과 예산으로 제작 진행 — C2 90초 영상, 6종 소재 반복, 키워드 1개씩, 립싱크 없음, 예상 50.4 Higgsfield 크레딧 / 캡 150 승인."
+      "2026-11-05 사용자: 이 구성과 예산으로 제작 진행 — C2 90초 영상, 6종 소재 반복, 키워드 1개씩, 립싱크 없음, 예상 50.4 Higgsfield 크레딧 / 캡 150 승인.",
+      "2026-11-05 사용자: 진행해 — 표시한 첫 이미지 c01/c02/c04 세 장 승인 및 해당 클립 제작 요청."
     ],
     "next_time": [
       "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
@@ -80,7 +81,7 @@
     ],
     "visual_plan_status": "approved_by_user",
     "caption_requirement": "song.caption_mode=keywords: APPLE/BANANA 중 하나만 표시; 가사·카드 자막 없음. 오디오/가사 정렬은 유지.",
-    "first_image_group_status": "generated_reviewed_by_assistant_awaiting_user_approval"
+    "first_image_group_status": "approved_by_user"
   },
   "cuts": [
     {
@@ -109,7 +110,7 @@
       "notes": "A1: 모모와 사과; sung lines 1-2",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "bda098c2-89a1-4f1d-859b-35c40705c9b8",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_020831_bda098c2-89a1-4f1d-859b-35c40705c9b8.png",
           "attempts": 1,
@@ -118,13 +119,13 @@
             {
               "job_id": "bda098c2-89a1-4f1d-859b-35c40705c9b8",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_020831_bda098c2-89a1-4f1d-859b-35c40705c9b8.png",
-              "status": "generated",
-              "reason": "Completed; image review pending",
+              "status": "approved",
+              "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
               "at": "2026-11-05T02:08Z",
               "credits": 2.0
             }
           ],
-          "reason": "Completed; image review pending",
+          "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
         }
       }
@@ -156,7 +157,7 @@
       "notes": "A2: 사과 가까이; sung lines 3-4",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021050_9ed5146d-8635-4a2b-ae18-a191e9ceae2e.png",
           "attempts": 1,
@@ -165,13 +166,13 @@
             {
               "job_id": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021050_9ed5146d-8635-4a2b-ae18-a191e9ceae2e.png",
-              "status": "generated",
-              "reason": "Completed; first three images awaiting user review",
+              "status": "approved",
+              "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
               "at": "2026-11-05T02:10Z",
               "credits": 2.0
             }
           ],
-          "reason": "Completed; first three images awaiting user review",
+          "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
         }
       }
@@ -233,7 +234,7 @@
       "notes": "B1: 모모와 바나나; sung lines 6-6",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021051_771df8ef-0b7f-4c5f-9b2f-1756f90543e2.png",
           "attempts": 1,
@@ -242,13 +243,13 @@
             {
               "job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021051_771df8ef-0b7f-4c5f-9b2f-1756f90543e2.png",
-              "status": "generated",
-              "reason": "Completed; first three images awaiting user review",
+              "status": "approved",
+              "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
               "at": "2026-11-05T02:10Z",
               "credits": 2.0
             }
           ],
-          "reason": "Completed; first three images awaiting user review",
+          "reason": "2026-11-05 user: 진행해 — first three images approved for clip production",
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
         }
       }
