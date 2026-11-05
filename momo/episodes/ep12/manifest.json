@@ -62,7 +62,8 @@
       "2026-11-05 사용자: C2가 가장 괜찮아 — C2를 완성 작업의 기준 후보로 선택. 아직 생성되지 않은 연장 음원·완성 영상의 승인을 뜻하지 않는다.",
       "2026-11-05 사용자: 1크레딧 사용해 다운로드·제작 계속 — C2 90초 전체곡 WAV 다운로드 1크레딧과 후속 검수·제작 진행 승인.",
       "2026-11-05 사용자: 이 구성과 예산으로 제작 진행 — C2 90초 영상, 6종 소재 반복, 키워드 1개씩, 립싱크 없음, 예상 50.4 Higgsfield 크레딧 / 캡 150 승인.",
-      "2026-11-05 사용자: 진행해 — 표시한 첫 이미지 c01/c02/c04 세 장 승인 및 해당 클립 제작 요청."
+      "2026-11-05 사용자: 진행해 — 표시한 첫 이미지 c01/c02/c04 세 장 승인 및 해당 클립 제작 요청.",
+      "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행; 기존 모모 사과·바나나 클립 유지."
     ],
     "next_time": [
       "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
@@ -92,9 +93,9 @@
       "channel_verified": false,
       "uploaded": false
     },
-    "first_clip_group_status": "c02_zoom_v3_ready_others_inspected_awaiting_user_approval",
-    "banana_closeup_status": "image_and_zoom_preview_generated_inspected_awaiting_user_approval",
-    "banana_closeup_video_plan": "User requested zoom-in after static proposal: 5-second local 100%-118% smoothstep zoom rendered, 0 additional video generation credits; preview pending approval.",
+    "first_clip_group_status": "approved_by_user",
+    "banana_closeup_status": "image_and_zoom_clip_approved_by_user",
+    "banana_closeup_video_plan": "Approved 5-second local 100%-118% smoothstep zoom; 0 additional video generation credits.",
     "user_decisions": [
       "2026-11-05 사용자: 줌인 기능 없어? 사과나 바나나 영상에 — 두 과일에 줌인 적용 요청. 기존 이미지로 100→118%/5초 편집 미리보기 제작, 추가 크레딧 0. 최종 사용 승인은 대기."
     ]
@@ -145,7 +146,7 @@
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "64543389-f6e0-4c7e-a3c4-aeed415f7d4a",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043303_64543389-f6e0-4c7e-a3c4-aeed415f7d4a.mp4",
           "attempts": 1,
@@ -154,14 +155,14 @@
             {
               "job_id": "64543389-f6e0-4c7e-a3c4-aeed415f7d4a",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043303_64543389-f6e0-4c7e-a3c4-aeed415f7d4a.mp4",
-              "status": "generated",
-              "reason": "Completed; visual inspection pending",
+              "status": "approved",
+              "reason": "2026-11-05 사용자: 이대로 진행 — 수정된 과일 줌인과 기존 모모 장면을 유지하고 남은 제작 진행",
               "at": "2026-11-05T04:33Z",
               "credits": 5.0,
               "start_image": "bda098c2-89a1-4f1d-859b-35c40705c9b8"
             }
           ],
-          "reason": "Completed; visual inspection pending",
+          "reason": "2026-11-05 사용자: 이대로 진행 — 수정된 과일 줌인과 기존 모모 장면을 유지하고 남은 제작 진행",
           "review_note": "Assistant inspected frames at 0/0.5/1.5/3/4.8s: character and fruit shape consistent, closed-mouth gentle pointing for Momo, stationary fruit close-up. 1280x720, 24fps, 5.041667s, no audio. User review pending; direct playback URLs provided after gallery was not visible."
         }
       }
@@ -212,7 +213,7 @@
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": null,
           "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/50a5c16f-d43c-4d6f-be12-f98e526d2e09.mp4",
           "attempts": 1,
@@ -238,20 +239,20 @@
               "media_id": "02a1e6c9-979c-4233-9f6c-e160f278029f"
             },
             {
-              "status": "generated",
+              "status": "approved",
               "tool": "ffmpeg_zoompan",
               "job_id": null,
               "local_revision": 3,
               "credits": 0,
-              "reason": "User requested zoom-in on apple/banana shots; preview created without new AI generation.",
+              "reason": "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행",
               "at": "2026-11-05T05:17:55.531426+00:00",
               "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/50a5c16f-d43c-4d6f-be12-f98e526d2e09.mp4",
               "media_id": "50a5c16f-d43c-4d6f-be12-f98e526d2e09",
               "sha256": "5242655febe86f611fad75fdd7f6dd39a61d226a91c03c1fddca78ce3f343b16"
             }
           ],
-          "reason": "User requested zoom-in on apple/banana shots; preview created without new AI generation.",
-          "review_note": "Inspected first/middle/last framing: fruit remains intact and within frame. 120 frames at constant 24fps, 5 seconds, 1.00 to 1.18 smoothstep zoom. Final user approval pending.",
+          "reason": "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행",
+          "review_note": "Inspected first/middle/last framing: fruit remains intact and within frame. 120 frames at constant 24fps, 5 seconds, 1.00 to 1.18 smoothstep zoom. User approved 2026-11-05: 이대로 진행.",
           "tool": "ffmpeg_zoompan",
           "local_revision": 3,
           "local_file": "clips/c02.mp4",
@@ -345,7 +346,7 @@
           "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "bfc4acc4-6f68-4863-97e2-a4ec568b9ec4",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_bfc4acc4-6f68-4863-97e2-a4ec568b9ec4.mp4",
           "attempts": 1,
@@ -354,14 +355,14 @@
             {
               "job_id": "bfc4acc4-6f68-4863-97e2-a4ec568b9ec4",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_bfc4acc4-6f68-4863-97e2-a4ec568b9ec4.mp4",
-              "status": "generated",
-              "reason": "Completed; visual inspection pending",
+              "status": "approved",
+              "reason": "2026-11-05 사용자: 이대로 진행 — 수정된 과일 줌인과 기존 모모 장면을 유지하고 남은 제작 진행",
               "at": "2026-11-05T04:33Z",
               "credits": 5.0,
               "start_image": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2"
             }
           ],
-          "reason": "Completed; visual inspection pending",
+          "reason": "2026-11-05 사용자: 이대로 진행 — 수정된 과일 줌인과 기존 모모 장면을 유지하고 남은 제작 진행",
           "review_note": "Assistant inspected frames at 0/0.5/1.5/3/4.8s: character and fruit shape consistent, closed-mouth gentle pointing for Momo, stationary fruit close-up. 1280x720, 24fps, 5.041667s, no audio. User review pending; direct playback URLs provided after gallery was not visible."
         }
       }
@@ -423,7 +424,7 @@
       "notes": "B2: 바나나 가까이; sung lines 8-8",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_044548_0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5.png",
           "attempts": 1,
@@ -432,13 +433,13 @@
             {
               "job_id": "0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_044548_0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5.png",
-              "status": "generated",
-              "reason": "바나나 가사 구간용 클로즈업 이미지 생성 완료. 사용자 이미지 검토 대기.",
+              "status": "approved",
+              "reason": "2026-11-05 사용자: 이대로 진행 — 이 이미지로 만든 바나나 줌인 영상 사용 승인",
               "at": "2026-11-05T04:45Z",
               "credits": 2.0
             }
           ],
-          "reason": "바나나 가사 구간용 클로즈업 이미지 생성 완료. 사용자 이미지 검토 대기.",
+          "reason": "2026-11-05 사용자: 이대로 진행 — 이 이미지로 만든 바나나 줌인 영상 사용 승인",
           "review_note": "Assistant inspected c06 and approved c04 reference: one whole curved yellow banana, matching cream table and peach/mint room, no characters, text or extra fruit. User image approval pending.",
           "reference_job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
           "completed_model": "nano_banana_2"
@@ -448,23 +449,23 @@
           "credits": 0,
           "history": [
             {
-              "status": "generated",
+              "status": "approved",
               "tool": "ffmpeg_zoompan",
               "job_id": null,
               "local_revision": 1,
               "credits": 0,
-              "reason": "User requested zoom-in on apple/banana shots; preview created without new AI generation.",
+              "reason": "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행",
               "at": "2026-11-05T05:17:55.531426+00:00",
               "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/3b6dbf18-b207-4942-be13-8cfb4dc425a1.mp4",
               "media_id": "3b6dbf18-b207-4942-be13-8cfb4dc425a1",
               "sha256": "95fa1d19c962dec9f9ff18b7bf6c6c9372ad4aec0931e8ac955700ee31dd10f7"
             }
           ],
-          "status": "generated",
+          "status": "approved",
           "tool": "ffmpeg_zoompan",
           "job_id": null,
           "local_revision": 1,
-          "reason": "User requested zoom-in on apple/banana shots; preview created without new AI generation.",
+          "reason": "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행",
           "at": "2026-11-05T05:17:55.531426+00:00",
           "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/3b6dbf18-b207-4942-be13-8cfb4dc425a1.mp4",
           "media_id": "3b6dbf18-b207-4942-be13-8cfb4dc425a1",
@@ -472,7 +473,7 @@
           "local_file": "clips/c06.mp4",
           "source_image": "c06",
           "publish_status": "uploaded_to_higgsfield",
-          "review_note": "Inspected first/middle/last framing: fruit remains intact and within frame. 120 frames at constant 24fps, 5 seconds, 1.00 to 1.18 smoothstep zoom. Final user approval pending.",
+          "review_note": "Inspected first/middle/last framing: fruit remains intact and within frame. 120 frames at constant 24fps, 5 seconds, 1.00 to 1.18 smoothstep zoom. User approved 2026-11-05: 이대로 진행.",
           "zoom": {
             "from": 1.0,
             "to": 1.18,
@@ -529,14 +530,15 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 19.143,
-      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters.",
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
       "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "fill": "hold",
-      "notes": "D: 모모 작은 춤; sung lines 10-10"
+      "notes": "D: 모모 작은 춤; sung lines 10-10",
+      "image_ref": "c01"
     },
     {
       "id": "c09",
@@ -585,14 +587,15 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 23.553,
-      "image_prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters.",
+      "image_prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
       "motion": "Momo gives two gentle slow claps near the chest, feet remain planted, slight ear sway. Keep a gentle closed-mouth smile throughout, no singing or talking.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "fill": "hold",
-      "notes": "C: 모모 박수; sung lines 12-12"
+      "notes": "C: 모모 박수; sung lines 12-12",
+      "image_ref": "c01"
     },
     {
       "id": "c11",
