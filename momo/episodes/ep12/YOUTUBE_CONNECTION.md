@@ -22,3 +22,9 @@
 - 원문: `invalid_grant: Bad Request`.
 - 로컬 다운로드 파일로 재인증했을 때 `invalid_client`. 다운로드 파일의 보안 비밀번호와 Cloud에 등록된 비밀번호가 달랐음을 확인했다.
 - 새 비밀번호로 인증 코드를 교환한 뒤 채널 확인과 서버 검사를 통과했다.
+
+## ep12 업로드
+
+- 비공개 업로드 완료: https://www.youtube.com/watch?v=zuj_D5y978A
+- API에서 처리 완료, 아동용 true, 비공개 상태 및 업로드 채널 확인. 썸네일 설정 완료.
+- Studio 화면 확인은 Google 본인 인증 화면에서 대기. 공개 전환은 하지 않았다.

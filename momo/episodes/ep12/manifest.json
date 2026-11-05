@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep12",
-  "status": "assembled",
+  "status": "uploaded",
   "topic": {
     "en": "Apple & Banana",
     "ko": "사과와 바나나"
@@ -98,7 +98,7 @@
       "status": "verified_local_and_github_actions",
       "error": null,
       "channel_verified": true,
-      "uploaded": false,
+      "uploaded": true,
       "channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA",
       "channel_title": "Momo Time",
       "channel_handle": "@MomoTimeSong",
@@ -123,10 +123,19 @@
       "file": "out/MomoTime_Apple_Banana_90s_review.mp4",
       "sha256": "e687f4b1d73bea47249fce31cd59d8e574c589c273d1408de9dfe9b42ffd3afe",
       "all_35_cuts_video": true,
-      "youtube_uploaded": false,
+      "youtube_uploaded": true,
       "requires_normal_build_after_clip_approval": false,
       "user_final_approval": true,
       "normal_build_completed": true
+    },
+    "youtube_upload": {
+      "video_id": "zuj_D5y978A",
+      "url": "https://www.youtube.com/watch?v=zuj_D5y978A",
+      "privacy": "private",
+      "made_for_kids": true,
+      "processing_status": "succeeded",
+      "thumbnail_set": true,
+      "studio_review": "requires_google_identity_verification"
     }
   },
   "cuts": [

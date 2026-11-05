@@ -1,12 +1,12 @@
 # ep12 — 사과와 바나나 (Apple & Banana)
 
-> episode_readme.py 가 생성 (2026-11-05 06:49 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-11-05 06:51 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
 | 항목 | 값 |
 |---|---|
-| 상태 | assembled |
+| 상태 | uploaded |
 | 주제 | 사과와 바나나 / Apple & Banana |
 | 컷 수 | 35개 (V 34 · S 0 · L 1), 씬 5개 |
 | 사용 크레딧 | 44 / 캡 150 (예상 46.2) |
@@ -18,11 +18,13 @@
 
 > 이 영상은 YouTube 에서 반드시 **"아동용(made for kids)"** 으로 설정해야 한다 (2~5세 대상 키즈 채널 — 지시서 7단계). upload.py 는 config 와 상관없이 `status.selfDeclaredMadeForKids = true` 로 올린다. Studio 에서 직접 올릴 때는 '예, 아동용입니다'를 선택할 것.
 
-- EN: 아직 업로드 전 — upload.py 로 올리면 아동용 true 로 자동 설정됨
+- EN: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (zuj_D5y978A)
 
 ## 업로드 결과 (youtube.json)
 
-아직 업로드 전 — `python upload.py --ep ep12 --lang all` 또는 Actions momo-publish
+| 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
+|---|---|---|---|---|---|---|
+| EN | [zuj_D5y978A](https://www.youtube.com/watch?v=zuj_D5y978A) | private | — | 2026-11-05T06:49:58Z | ✔ | — |
 
 ## 제목·설명·태그
 
