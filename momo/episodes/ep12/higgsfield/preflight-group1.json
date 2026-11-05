@@ -1,0 +1,180 @@
+{
+  "image1": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Cost preflight for nano_banana_pro: 2 credits (2 exact). No job submitted."
+        }
+      ],
+      "structuredContent": {
+        "cost": {
+          "credits": 2,
+          "credits_exact": 2
+        },
+        "adjustments": {
+          "medias[0].role": {
+            "requested": "image",
+            "used": "image_references",
+            "reason": "Nano Banana Pro backend expects schema-key media roles"
+          }
+        }
+      },
+      "isError": false
+    }
+  },
+  "balance_before": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Credits: 1210.37 | Plan: plus\nFree generations: Higgsfield Genjutsu (ai_influencer_motion_control, ai_influencer_replace_object, hf_mult_motion_control, hf_mult_replace_object): 1 left — resolution: 480p, 720p; up to 30s\nFree generations: Viral presets (viral_hub_video): 0 left — resolution: 480p, 720p\nFree generations: AI Influencer Builder (ai_influencer_sheet): 5 left"
+        }
+      ],
+      "structuredContent": {
+        "credits": 1210.37,
+        "subscription_plan_type": "plus",
+        "free_trial": {
+          "status": null,
+          "eligible": false,
+          "offered_kind": null,
+          "kind": null,
+          "trial_credits": null,
+          "ends_at": null,
+          "unlim_available": false,
+          "unlim_remaining": null,
+          "unlim_expires_at": null
+        },
+        "free_gens": [
+          {
+            "job_set_types": [
+              "ai_influencer_motion_control",
+              "ai_influencer_replace_object",
+              "hf_mult_motion_control",
+              "hf_mult_replace_object"
+            ],
+            "remaining": 1,
+            "parameters": {
+              "resolution": [
+                "480p",
+                "720p"
+              ]
+            },
+            "max_duration": 30
+          },
+          {
+            "job_set_types": [
+              "viral_hub_video"
+            ],
+            "remaining": 0,
+            "parameters": {
+              "resolution": [
+                "480p",
+                "720p"
+              ]
+            },
+            "max_duration": null
+          },
+          {
+            "job_set_types": [
+              "ai_influencer_sheet"
+            ],
+            "remaining": 5,
+            "parameters": {},
+            "max_duration": null
+          }
+        ]
+      },
+      "isError": false
+    }
+  },
+  "image2": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Cost preflight for nano_banana_pro: 2 credits (2 exact). No job submitted."
+        }
+      ],
+      "structuredContent": {
+        "cost": {
+          "credits": 2,
+          "credits_exact": 2
+        },
+        "adjustments": {
+          "medias[0].role": {
+            "requested": "image",
+            "used": "image_references",
+            "reason": "Nano Banana Pro backend expects schema-key media roles"
+          }
+        }
+      },
+      "isError": false
+    }
+  },
+  "image4": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Cost preflight for nano_banana_pro: 2 credits (2 exact). No job submitted."
+        }
+      ],
+      "structuredContent": {
+        "cost": {
+          "credits": 2,
+          "credits_exact": 2
+        },
+        "adjustments": {
+          "medias[0].role": {
+            "requested": "image",
+            "used": "image_references",
+            "reason": "Nano Banana Pro backend expects schema-key media roles"
+          }
+        }
+      },
+      "isError": false
+    }
+  },
+  "completed_group": {
+    "content": [
+      {
+        "type": "text",
+        "text": "jobs[2]{index,job_id,status,type,model,result_url}:\n  2,9ed5146d-8635-4a2b-ae18-a191e9ceae2e,completed,image,nano_banana_2,\"https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021050_9ed5146d-8635-4a2b-ae18-a191e9ceae2e.png\"\n  4,771df8ef-0b7f-4c5f-9b2f-1756f90543e2,completed,image,nano_banana_2,\"https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021051_771df8ef-0b7f-4c5f-9b2f-1756f90543e2.png\"\nsummary:\n  total: 2\n  completed: 2\n  failed: 0\n  active: 0\n  errors: 0\nall_terminal: true"
+      }
+    ],
+    "structuredContent": {
+      "jobs": [
+        {
+          "index": 2,
+          "job_id": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e",
+          "status": "completed",
+          "type": "image",
+          "model": "nano_banana_2",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021050_9ed5146d-8635-4a2b-ae18-a191e9ceae2e.png"
+        },
+        {
+          "index": 4,
+          "job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
+          "status": "completed",
+          "type": "image",
+          "model": "nano_banana_2",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021051_771df8ef-0b7f-4c5f-9b2f-1756f90543e2.png"
+        }
+      ],
+      "summary": {
+        "total": 2,
+        "completed": 2,
+        "failed": 0,
+        "active": 0,
+        "errors": 0
+      },
+      "all_terminal": true
+    },
+    "isError": false
+  }
+}

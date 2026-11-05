@@ -1,0 +1,14 @@
+{
+  "duration": 90.0,
+  "cuts": 35,
+  "caption_mode": "keywords",
+  "caption_keywords": [
+    "",
+    "APPLE",
+    "BANANA"
+  ],
+  "full_lyric_overlays": 0,
+  "card_overlays": 0,
+  "speech_overlays": 0,
+  "aligned_lyric_lines_retained": 42
+}

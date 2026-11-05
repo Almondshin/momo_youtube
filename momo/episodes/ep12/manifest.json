@@ -50,9 +50,9 @@
     }
   },
   "credits": {
-    "estimate": 50.4,
-    "spent": 0,
-    "generations": 0,
+    "estimate": 50.0,
+    "spent": 6.0,
+    "generations": 3,
     "regenerations": 0
   },
   "notes": {
@@ -79,7 +79,8 @@
       "2026-11-05 진행 순서 확인: C2 영어 곡 완성 후 같은 사과·바나나 주제의 한국어 곡. 한국어는 자연스러운 가사·리듬으로 별도 제작하고 모모 영상 소재를 공통 사용. 한국어 음원은 현재 미생성."
     ],
     "visual_plan_status": "approved_by_user",
-    "caption_requirement": "핵심 단어 APPLE/BANANA만 컷당 하나. 현재 조립기는 song.track의 전체 가사 자막이 기본이므로 키워드 전용 모드 구현·검증 후 조립해야 함."
+    "caption_requirement": "song.caption_mode=keywords: APPLE/BANANA 중 하나만 표시; 가사·카드 자막 없음. 오디오/가사 정렬은 유지.",
+    "first_image_group_status": "generated_reviewed_by_assistant_awaiting_user_approval"
   },
   "cuts": [
     {
@@ -105,7 +106,28 @@
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "fill": "hold",
-      "notes": "A1: 모모와 사과; sung lines 1-2"
+      "notes": "A1: 모모와 사과; sung lines 1-2",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "bda098c2-89a1-4f1d-859b-35c40705c9b8",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_020831_bda098c2-89a1-4f1d-859b-35c40705c9b8.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "bda098c2-89a1-4f1d-859b-35c40705c9b8",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_020831_bda098c2-89a1-4f1d-859b-35c40705c9b8.png",
+              "status": "generated",
+              "reason": "Completed; image review pending",
+              "at": "2026-11-05T02:08Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Completed; image review pending",
+          "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
+        }
+      }
     },
     {
       "id": "c02",
@@ -124,14 +146,35 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 5.564,
-      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
       "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "fill": "hold",
-      "notes": "A2: 사과 가까이; sung lines 3-4"
+      "notes": "A2: 사과 가까이; sung lines 3-4",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021050_9ed5146d-8635-4a2b-ae18-a191e9ceae2e.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021050_9ed5146d-8635-4a2b-ae18-a191e9ceae2e.png",
+              "status": "generated",
+              "reason": "Completed; first three images awaiting user review",
+              "at": "2026-11-05T02:10Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Completed; first three images awaiting user review",
+          "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
+        }
+      }
     },
     {
       "id": "c03",
@@ -187,7 +230,28 @@
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "fill": "hold",
-      "notes": "B1: 모모와 바나나; sung lines 6-6"
+      "notes": "B1: 모모와 바나나; sung lines 6-6",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021051_771df8ef-0b7f-4c5f-9b2f-1756f90543e2.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_021051_771df8ef-0b7f-4c5f-9b2f-1756f90543e2.png",
+              "status": "generated",
+              "reason": "Completed; first three images awaiting user review",
+              "at": "2026-11-05T02:10Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Completed; first three images awaiting user review",
+          "review_note": "Assistant viewed full completed image: consistent bunny/table/peach-mint room; one correct fruit; no generated text. Awaiting explicit first-three-image approval."
+        }
+      }
     },
     {
       "id": "c05",
@@ -206,7 +270,7 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 13.486,
-      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
       "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
       "momo": false,
       "lipsync": false,
@@ -494,7 +558,7 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 38.823,
-      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
       "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
       "momo": false,
       "lipsync": false,
@@ -794,7 +858,7 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 64.131,
-      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
       "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
       "momo": false,
       "lipsync": false,
@@ -974,7 +1038,7 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 76.757,
-      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
       "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
       "momo": false,
       "lipsync": false,
@@ -1474,7 +1538,13 @@
         "tempo_bpm": 113.763,
         "mid_song_bars_to_remove": 0,
         "caption_lag_flags_after_refine": 0,
-        "waveform_review": "audio/timing-review.png"
+        "waveform_review": "audio/timing-review.png",
+        "waveform_reviews": [
+          "audio/timing-review.png",
+          "audio/banana-start-review.png",
+          "audio/phase-review.png"
+        ],
+        "waveform_findings": "First-line Whisper timestamp was late; several repeated-word timestamps were early. Official alignment refined against the vocal stem matches reviewed attacks. All 14 Banana line starts and all 8 late-phase flags were visually reviewed; phase flags reflect phrasing rather than delayed captions."
       }
     }
   },
@@ -2649,6 +2719,7 @@
           ]
         ]
       }
-    ]
+    ],
+    "caption_mode": "keywords"
   }
 }

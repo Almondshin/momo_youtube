@@ -37,7 +37,7 @@
 - [x] Add the minimal validation/overlay selection and field documentation.
 - [x] Run the two tests, then the whole repository test script. Expected: all checks pass.
 - [x] Enable keywords in ep12, inspect its real timeline: 90 seconds, no full lyric/card overlays, only APPLE/BANANA or blank; source lyrics unchanged.
-- [ ] Commit code/docs/tests, request one independent final code review under executing-plans, and resolve material findings before production render.
+- [x] Commit code/docs/tests, request one independent final code review under executing-plans, and resolve material findings before production render.
 
 ## Execution ledger
 
@@ -52,3 +52,7 @@
 - Full verification: `PYTHON=.venv/bin/python bash momo/tests/run_all.sh` → 18 PASS / 0 FAIL / 0 WARN (audio/test-keyword-captions.log).
 - ep12 timeline: 90 seconds / 35 cuts; only blank, APPLE, BANANA; 0 full lyric/card/speech overlays; all 42 aligned lyric lines retained.
 - Ruling: ran the required full suite directly and retained its evidence rather than re-running it through task-done; developer instructions prohibit repeating passing checks without a new concern.
+
+- Task 1: complete (commit 70f2906; full suite 18 PASS / 0 FAIL / 0 WARN).
+- Final independent review: keyword_caption_review (gpt-6-astra), 593ed46..70f2906, approved; no Critical/Important/Minor findings. Cache keys and downstream audio independence verified.
+- Final ruling on excluded media review: finished-video appearance/listening is a separate production gate; three images were directly inspected, user approval is pending, and no final video is claimed.

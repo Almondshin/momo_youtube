@@ -1,0 +1,75 @@
+{
+  "request": [
+    {
+      "index": 2,
+      "params": {
+        "model": "nano_banana_pro",
+        "prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks. Use the reference scene's exact apple, table and room, camera closer to the apple. Apple has a brown stem and no leaf. Remove the bunny completely from this close-up.",
+        "aspect_ratio": "16:9",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "bda098c2-89a1-4f1d-859b-35c40705c9b8"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "params": {
+        "model": "nano_banana_pro",
+        "prompt": "<<<751ad258-9d01-47d8-8bf8-94de57a74b0c>>> Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile, both long floppy ears always hang down beside the cheeks, the ears never stand upright, beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks. Match the exact room, table, composition and bunny design of the scene reference. Replace the red apple with exactly one curved yellow banana; no apple in the image. Keep a gentle closed-mouth smile.",
+        "aspect_ratio": "16:9",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "bda098c2-89a1-4f1d-859b-35c40705c9b8"
+          }
+        ]
+      }
+    }
+  ],
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Submitted 2/2 image generations.\n- index 2: 9ed5146d-8635-4a2b-ae18-a191e9ceae2e (pending)\n- index 4: 771df8ef-0b7f-4c5f-9b2f-1756f90543e2 (pending)\nWait for the complete requested set with jobs_wait, then show it together with show_generation_by_ids using the collected indexed jobs. This includes jobs submitted across separate calls. job_display accepts only one id and cannot display a group; do not pass ids or call it once per job."
+      }
+    ],
+    "structuredContent": {
+      "jobs": [
+        {
+          "index": 2,
+          "job_id": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e",
+          "status": "pending",
+          "adjustments": {
+            "medias[0].role": {
+              "requested": "image",
+              "used": "image_references",
+              "reason": "Nano Banana Pro backend expects schema-key media roles"
+            }
+          }
+        },
+        {
+          "index": 4,
+          "job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
+          "status": "pending",
+          "adjustments": {
+            "medias[0].role": {
+              "requested": "image",
+              "used": "image_references",
+              "reason": "Nano Banana Pro backend expects schema-key media roles"
+            }
+          }
+        }
+      ],
+      "submitted_count": 2,
+      "failed_count": 0
+    },
+    "isError": false
+  }
+}
