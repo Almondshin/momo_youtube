@@ -443,8 +443,37 @@ python momo/fetch_assets.py --ep ep02
 
 Real sung nursery song, tight cuts: ~120 BPM, a new shot every 1–2 bars on the downbeat, singing ≥85 % of the
 runtime (user decision 2026-09-30 after ep02 felt slow). The song comes from **Suno Pro** (user's plan since
-2026-09-30; no official API — the user makes it on suno.com, never an unofficial MCP/automation, Suno's terms
-forbid bots). Steps (all local, 0 Higgsfield credits until 6):
+2026-09-30). Never use an unofficial MCP or automate the Suno website.
+
+**2026-11-04 official integration update:** Suno published its own MCP beta on 2026-10-28 at
+`https://api.suno.com/mcp`. The user requested connecting it. This official route uses the existing Suno
+account's credits and is distinct from the prohibited unofficial/browser routes. The local Codex server
+entry is registered. Suno initially denied access on 2026-11-04; on 2026-11-05 the user's beta approval,
+OAuth login, discovery of 35 tools and account usage were verified. An official generation request produced
+two completed ep12 candidates for 10 generation credits. Download preflight returned `requires_credit`;
+the user approved one full-song WAV download on 2026-11-05 and it completed. See [SUNO_SETUP.md](SUNO_SETUP.md) for evidence and remaining checks.
+The historical manual workflow below remains a separate option, not an
+automatic substitute for the user's requested automation. No Higgsfield credits are spent before step 6.
+
+**2026-11-05 music direction correction:** The user asked for a female voice and named Baby Shark and
+Banana Chacha as examples of songs for ages 2–4. Prioritize a clear, friendly female lead, a short repetitive
+melody, a recognizable repeated refrain, and simple actions children can follow. The ep12 male funk-disco
+candidates were not accepted. Genre variation below must stay within this preschool nursery-song direction;
+variation alone is not a reason to use an adult-sounding arrangement. This changes the Suno song brief,
+not the approved narration voice IDs in `config.voices`. Keep explicit user preferences separate from
+production choices such as exact BPM, instruments and lyric form. Write an original song; the named examples
+do not mean their recordings, melody or vocal identity were supplied for reuse.
+
+**Same-day voice clarification:** The user rejected both female-requested v2 takes because of the voice and
+explicitly chose “어린 여자아이처럼 맑고 높고 귀여운 목소리” (a clear, high, cute little-girl-like voice).
+The desired sound is a light childlike solo timbre, not merely any female lead. Keep this first in the Suno
+voice brief. A `vocal_gender: female` request is not evidence of an audible match; verify the returned audio.
+
+**Latest same-day selection overrides the earlier voice experiments:** The user chose reference variant
+C2. Preserve that recording's actual female voice, melody and rhythm; do not regenerate it to force the
+earlier little-girl timbre request. The user approved its 90-second full-song WAV download and the ep12
+visual plan (six reusable assets, no lip-sync, APPLE/BANANA one keyword at a time, 50.4 credits estimate).
+Keep the full lyric alignment for timing, but implement/verify keyword-only rendering before assembling ep12.
 
 1. Lyrics: `episodes/<ep>/lyrics.md` (fenced block with [Intro]/[Chorus]/[Verse]/[Bridge]/[Outro] tags,
    (parentheses) = backing voices / echoes) + a style line. Give both to the user to paste into Suno (Custom).

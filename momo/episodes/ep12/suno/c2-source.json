@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"cover_image_large_url\":\"https://cdn2.suno.ai/image_large_eeab06e7-fbcb-41de-b3bb-f1a73e2df327.jpeg\",\"cover_image_url\":\"https://cdn2.suno.ai/image_eeab06e7-fbcb-41de-b3bb-f1a73e2df327.jpeg\",\"created_at\":\"2026-11-05T01:30:38Z\",\"error\":null,\"id\":\"eeab06e7-fbcb-41de-b3bb-f1a73e2df327\",\"metadata\":{\"cover_audio_id\":\"1d8d324e-fcde-4cf6-a961-4442e1e50303\",\"description\":null,\"duration\":52,\"lyrics\":\"[Intro - 4 bars, instrumental, no vocals, no count-in]\\n\\n[Verse 1 - 4 bars, sung]\\nApple, apple!\\nHere is an apple.\\nApple, apple!\\nI see an apple.\\n\\n[Chorus - 8 bars, sung]\\nApple, apple!\\nBanana, banana!\\nApple, apple!\\nBanana, banana!\\nApple, apple!\\nSing along with me.\\nBanana, banana!\\nSing and clap with me!\\n\\n[Verse 2 - 4 bars, sung, no instrumental gap]\\nBanana, banana!\\nHere is a banana.\\nBanana, banana!\\nI see a banana.\\n\\n[Chorus - 8 bars, sung]\\nApple, apple!\\nBanana, banana!\\nApple, apple!\\nBanana, banana!\\nApple, apple!\\nSing along with me.\\nBanana, banana!\\nSing and clap with me!\\n\\n[Bridge - 4 bars, sung]\\nApple, apple!\\nCan you say apple?\\nBanana, banana!\\nCan you say banana?\\n\\n[Final Chorus - 8 bars, sung]\\nApple, apple!\\nBanana, banana!\\nApple, apple!\\nBanana, banana!\\nApple, apple!\\nSing along with me.\\nBanana, banana!\\nSing and clap with me!\\n\\n[Outro - 2 bars, sung]\\nApple, banana!\\nBye-bye, bye-bye!\\n\\n[End - one final chord, stop]\",\"style\":\"Keep the source melody, tempo, groove and original sung phrasing recognizable. Change only the lead toward a bright clear cute youthful GIRL solo: light natural childlike timbre, lively articulated English, small clean tone, no heavy vocal effects. Keep the source bass, rhythm guitar and claps balanced. Avoid an exaggerated ultra-high voice. Sing apple and ba-NA-na naturally. Tight continuous singing, short breath gaps and concise natural ending.\",\"type\":\"generate\"},\"song_url\":\"https://suno.com/song/eeab06e7-fbcb-41de-b3bb-f1a73e2df327\",\"status\":\"complete\",\"title\":\"Apple \\u0026 Banana | MomoTime\"}"
+      }
+    ]
+  }
+}

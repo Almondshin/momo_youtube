@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "Apple Banana Yum - 20s Hook Sketch | MomoTime",
+    "lyrics": "[Short Chorus - little girl solo]\nApple! Yum, yum!\nApple! Yum, yum!\nBanana! Yum, yum!\nBanana! Yum, yum!\n\n[Ending - same small tune]\nApple! Banana!\nYum, yum, yum!",
+    "style": "English nursery rhyme for toddlers, a cheerful little-girl solo with a natural clear light childlike voice, simple catchy playground singalong, one tiny four-note tune repeated exactly, sunny major key, steady bouncy 4/4 at 120 bpm, easy unhurried syllables with clear apple and ba-NA-na, toy piano and soft xylophone, light handclaps, very sparse accompaniment, vocal starts immediately, short sung hook only, clean final note",
+    "model": "v6",
+    "duration": 20,
+    "duration_strict": false,
+    "instrumental": false,
+    "vocal_gender": "female",
+    "controls": {
+      "style_influence": 0.85,
+      "weirdness": 0.1,
+      "variety": 0
+    },
+    "negative_style": "adult dance pop, disco, funk, belting, melisma, deep masculine vocal, chipmunk pitch shift, long intro, instrumental break",
+    "idempotency_key": "momotime-ep12-hook-audition-v4-20261105"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "tool": "audio-download",
+  "arguments": {
+    "id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+    "format": "wav",
+    "confirm": true
+  }
+}

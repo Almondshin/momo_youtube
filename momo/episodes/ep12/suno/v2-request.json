@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "Apple & Banana - Clap and Tap | MomoTime",
+    "lyrics": "[Chorus - immediate female singing, same simple hook each time]\nApple, apple, clap, clap, clap!\nApple, apple, tap, tap, tap!\nBanana, banana, clap, clap, clap!\nBanana, banana, tap, tap, tap!\n\n[Verse 1 - simple sung phrases, no instrumental gap]\nApple, apple!\nHello, apple!\nApple, apple!\nClap with me!\n\n[Chorus - exact same melody and rhythm]\nApple, apple, clap, clap, clap!\nApple, apple, tap, tap, tap!\nBanana, banana, clap, clap, clap!\nBanana, banana, tap, tap, tap!\n\n[Verse 2 - same tune as Verse 1, no instrumental gap]\nBanana, banana!\nHello, banana!\nBanana, banana!\nClap with me!\n\n[Final Chorus - exact same hook, no key change]\nApple, apple, clap, clap, clap!\nApple, apple, tap, tap, tap!\nBanana, banana, clap, clap, clap!\nBanana, banana, tap, tap, tap!\n\n[Outro - short, sung]\nApple, apple!\nBanana, banana!\nClap, clap, clap!\nBye-bye!\n\n[End - final chord, stop]",
+    "style": "preschool action nursery rhyme for ages 2 to 4, bright playful bubblegum kids pop, 116 bpm, steady simple 4/4 bounce, major key, warm smiling FEMALE solo lead with a clear youthful but natural voice, friendly kindergarten singalong delivery, vocal upfront and easy to understand, original tiny four-note melody within a fifth, mostly repeated notes and short stepwise phrases, identical catchy hook repeated three times, each lyric line across two bars with space to copy, crisp apple and ba-NA-na pronunciation, simple piano and marimba plucks, soft rounded bass, light kick and handclaps, sparse cheerful toy percussion, sing the hook immediately within the first second, all sections sung, continuous singing except short breaths, brief final chord and clean natural ending, about 95 to 105 seconds",
+    "model": "v6",
+    "duration": 100,
+    "duration_strict": false,
+    "instrumental": false,
+    "vocal_gender": "female",
+    "controls": {
+      "style_influence": 0.9,
+      "weirdness": 0.1,
+      "variety": 0
+    },
+    "negative_style": "male lead vocal, funk disco, complex syncopation, soulful vocal runs, melisma, belting, operatic vibrato, rap, spoken count-in, long instrumental intro, instrumental solo, bridge breakdown, dramatic key change, long fade-out",
+    "idempotency_key": "momotime-ep12-en-female-nursery-v2-20261105"
+  }
+}

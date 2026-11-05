@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"fb5947e9-7b56-441f-b9f2-a50da93b39ef\",\"audio_id\":\"1d8d324e-fcde-4cf6-a961-4442e1e50303\",\"status\":\"complete\",\"created_at\":\"2026-11-05T00:47:24Z\",\"answer\":\"“Apple” and “banana” are consistently clear and naturally stressed. The cheerful vocal is approachable and easy to follow. No spoken count-in, unwanted words, or harsh sounds are apparent. There is a noticeable mid-song instrumental gap of about 8.7 seconds; singing starts around 1.2 seconds and ends around 89.8 seconds, with an instrumental tail rather than an abrupt cut. Estimated singing fraction: about 85%.\\n\\n```json\\n{\\\"pronunciation_clear\\\":true,\\\"target_word_issues\\\":[],\\\"first_vocal_seconds\\\":1.2,\\\"last_vocal_seconds\\\":89.8,\\\"longest_mid_song_instrumental_seconds\\\":8.7,\\\"singing_fraction_estimate\\\":0.85,\\\"abrupt_ending\\\":false,\\\"suitability_score_10\\\":9,\\\"concerns\\\":[\\\"Mid-song instrumental gap of about 8.7 seconds\\\",\\\"Instrumental tail after the final vocal\\\"]}\\n```\"}"
+      }
+    ]
+  }
+}

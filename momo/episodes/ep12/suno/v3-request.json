@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "Apple & Banana - Little Girl Vocal | MomoTime",
+    "lyrics": "[Chorus - immediate female singing, same simple hook each time]\nApple, apple, clap, clap, clap!\nApple, apple, tap, tap, tap!\nBanana, banana, clap, clap, clap!\nBanana, banana, tap, tap, tap!\n\n[Verse 1 - simple sung phrases, no instrumental gap]\nApple, apple!\nHello, apple!\nApple, apple!\nClap with me!\n\n[Chorus - exact same melody and rhythm]\nApple, apple, clap, clap, clap!\nApple, apple, tap, tap, tap!\nBanana, banana, clap, clap, clap!\nBanana, banana, tap, tap, tap!\n\n[Verse 2 - same tune as Verse 1, no instrumental gap]\nBanana, banana!\nHello, banana!\nBanana, banana!\nClap with me!\n\n[Final Chorus - exact same hook, no key change]\nApple, apple, clap, clap, clap!\nApple, apple, tap, tap, tap!\nBanana, banana, clap, clap, clap!\nBanana, banana, tap, tap, tap!\n\n[Outro - short, sung]\nApple, apple!\nBanana, banana!\nClap, clap, clap!\nBye-bye!\n\n[End - final chord, stop]",
+    "style": "bright high little-girl solo singing voice, unmistakably small childlike FEMALE timbre, pure clear light head voice, sweet innocent youthful tone, cute playful crisp diction, straight tone with almost no vibrato, happy small energetic phrases, preschool action nursery rhyme for ages 2 to 4, playful bubblegum kids pop, 116 bpm, simple steady 4/4 bounce, major key, upfront dry vocal, original tiny four-note melody within a fifth, repeated notes and short stepwise phrases, identical catchy hook three times, each lyric line across two bars with space to copy, clear apple and ba-NA-na pronunciation, simple piano and marimba plucks, soft rounded bass, light kick and handclaps, sparse toy percussion, sing immediately within the first second, continuous sung sections with short breaths, brief final chord and clean natural ending, about 95 to 105 seconds",
+    "model": "v6",
+    "duration": 100,
+    "duration_strict": false,
+    "instrumental": false,
+    "vocal_gender": "female",
+    "controls": {
+      "style_influence": 0.9,
+      "weirdness": 0.1,
+      "variety": 0
+    },
+    "negative_style": "mature adult female voice, adult chest voice, husky voice, breathy sensual pop vocal, deep voice, male voice, boy voice, choir, soulful runs, melisma, belting, vibrato, operatic voice, chipmunk pitch-shift effect, funk disco, rap, spoken count-in, long instrumental break, long fade-out",
+    "idempotency_key": "momotime-ep12-en-little-girl-v3-20261105"
+  }
+}

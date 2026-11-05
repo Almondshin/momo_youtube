@@ -1,0 +1,11 @@
+{
+  "id": 6,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"e16d4fe8-f7cd-4e6c-9c3d-c837023924d6\",\"audio_id\":\"f7193ad9-d88c-40a5-9f72-3522f47efc54\",\"status\":\"processing\",\"created_at\":\"2026-11-05T01:33:07Z\"}"
+      }
+    ]
+  }
+}

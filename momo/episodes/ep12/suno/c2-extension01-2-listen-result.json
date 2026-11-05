@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"0165bc40-5528-4b31-8903-a13dc0365043\",\"audio_id\":\"234d5a66-0da8-4e88-ba0f-2f15819a1ae4\",\"status\":\"complete\",\"created_at\":\"2026-11-05T01:46:31Z\",\"answer\":\"{\\\"voice_description\\\":\\\"Bright, high, slightly processed female/juvenile-sounding solo; consistent throughout, with bouncy clear nursery dance-pop phrasing.\\\",\\\"first_vocal_seconds_approx\\\":0.15,\\\"target_words_clear\\\":true,\\\"goodbye_sung\\\":true,\\\"natural_ending\\\":true,\\\"abrupt_cutoff\\\":false,\\\"longest_mid_song_gap_seconds_approx\\\":1.04,\\\"instrumental_tail_seconds_approx\\\":1.5,\\\"main_concerns\\\":\\\"It begins promptly with singing rather than a new intro. The repeated apple/banana words are clear; extra lines about singing along and clapping are present but fit the theme. The final goodbye is sung, though the transcription suggests its last repetition may be truncated to 'bye'; the brief ending resolves naturally.\\\",\\\"continuation_quality_10\\\":8}\"}"
+      }
+    ]
+  }
+}

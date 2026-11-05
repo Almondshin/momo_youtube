@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"allowed_models\":[\"v6-mini\",\"v6\",\"v6-wild\"],\"features\":[\"generate.simple\",\"generate.custom\",\"generate.cover\",\"generate.mashup\",\"generate.extend\",\"audio.upload\",\"audio.download\",\"voices\",\"controls.advanced\",\"speech\"],\"metered_features\":{},\"suno_account\":{\"cancel_on\":null,\"credits_remaining\":2490,\"download_credits_remaining\":20,\"monthly_limit\":2500,\"monthly_usage\":10,\"plan\":{\"name\":\"Pro Plan\",\"period\":\"month\"},\"renews_on\":\"2026-11-30T07:22:58Z\"}}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"c4d10ed6-72d1-43b1-a822-e51ae8f79577\",\"audio_id\":\"364d25d8-bf8f-4636-8942-692b1e5483ea\",\"status\":\"complete\",\"created_at\":\"2026-11-05T00:47:24Z\",\"answer\":\"The words “apple” and “banana” sound clear and consistently pronounced, with natural stress, and the friendly, clearly articulated vocal is easy for young children to follow. There’s no spoken count-in, apparent unwanted language, or harsh sound. The song is mostly continuously sung, though the later section has noticeable pauses between short vocal phrases. Singing starts at about 0:01 and the final vocal ends around 1:34; the longest mid-song vocal-free stretch is roughly 3 seconds. The ending is not abruptly cut off, but the track continues instrumentally for several seconds after the last vocal, so it feels somewhat extended. Estimated sung proportion: about 65%. Suitability: 8/10; the late instrumental tail is the main concern.\\n\\n```json\\n{\\\"pronunciation_clear\\\":true,\\\"target_word_issues\\\":[],\\\"first_vocal_seconds\\\":0.9,\\\"last_vocal_seconds\\\":93.45,\\\"longest_mid_song_instrumental_seconds\\\":3.5,\\\"singing_fraction_estimate\\\":0.65,\\\"abrupt_ending\\\":false,\\\"suitability_score_10\\\":8,\\\"concerns\\\":[\\\"Several-second instrumental tail after the final vocal\\\",\\\"Noticeable pauses between short vocal phrases near the end\\\"]}\\n```\"}"
+      }
+    ]
+  }
+}

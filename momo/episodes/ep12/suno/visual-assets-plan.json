@@ -1,0 +1,44 @@
+{
+  "sources": {
+    "A1": "c01",
+    "A2": "c02",
+    "B1": "c04",
+    "B2": "c06",
+    "D": "c08",
+    "C": "c10"
+  },
+  "assets": {
+    "A1": {
+      "label": "모모와 사과",
+      "prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking."
+    },
+    "A2": {
+      "label": "사과 가까이",
+      "prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects."
+    },
+    "B1": {
+      "label": "모모와 바나나",
+      "prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking."
+    },
+    "B2": {
+      "label": "바나나 가까이",
+      "prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects."
+    },
+    "D": {
+      "label": "모모 작은 춤",
+      "prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking."
+    },
+    "C": {
+      "label": "모모 박수",
+      "prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters.",
+      "motion": "Momo gives two gentle slow claps near the chest, feet remain planted, slight ear sway. Keep a gentle closed-mouth smile throughout, no singing or talking."
+    }
+  },
+  "cuts": 35,
+  "status": "approved_by_user"
+}

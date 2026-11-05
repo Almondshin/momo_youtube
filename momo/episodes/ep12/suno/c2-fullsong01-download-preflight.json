@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"status\":\"requires_credit\",\"format\":\"wav\",\"credits_remaining\":20,\"message\":\"Downloading this song uses one of the user's suno.com download credits. Ask them first, then call again with confirm: true.\"}"
+      }
+    ]
+  }
+}

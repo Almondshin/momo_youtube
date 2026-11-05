@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "Apple & Banana | MomoTime",
+    "lyrics": "[Intro - 4 bars, instrumental, no vocals, no count-in]\n\n[Verse 1 - 4 bars, sung]\nApple, apple!\nHere is an apple.\nApple, apple!\nI see an apple.\n\n[Chorus - 8 bars, sung]\nApple, apple!\nBanana, banana!\nApple, apple!\nBanana, banana!\nApple, apple!\nSing along with me.\nBanana, banana!\nSing and clap with me!\n\n[Verse 2 - 4 bars, sung, no instrumental gap]\nBanana, banana!\nHere is a banana.\nBanana, banana!\nI see a banana.\n\n[Chorus - 8 bars, sung]\nApple, apple!\nBanana, banana!\nApple, apple!\nBanana, banana!\nApple, apple!\nSing along with me.\nBanana, banana!\nSing and clap with me!\n\n[Bridge - 4 bars, sung]\nApple, apple!\nCan you say apple?\nBanana, banana!\nCan you say banana?\n\n[Final Chorus - 8 bars, sung]\nApple, apple!\nBanana, banana!\nApple, apple!\nBanana, banana!\nApple, apple!\nSing along with me.\nBanana, banana!\nSing and clap with me!\n\n[Outro - 2 bars, sung]\nApple, banana!\nBye-bye, bye-bye!\n\n[End - one final chord, stop]",
+    "style": "playful kids funk disco, 112 bpm, four-on-the-floor groove, light slap bass, clean rhythmic funk guitar, short muted brass accents, warm cheerful boy solo voice, relaxed delivery, simple singable melody with a narrow range, very clear English pronunciation, apple in two syllables, banana in three syllables with the stress on NA, one short lyric line per bar, leave space between repeated words, 4-bar instrumental intro with no spoken count-in, sing every verse and chorus in the written order, no instrumental break between sections, sung 2-bar outro, one final chord then stop, approximately 90 to 110 seconds",
+    "model": "v6",
+    "duration": 100,
+    "duration_strict": false,
+    "instrumental": false,
+    "vocal_gender": "male",
+    "controls": {
+      "style_influence": 0.8,
+      "weirdness": 0.2,
+      "variety": 0
+    },
+    "negative_style": "spoken count-in, instrumental interlude, rap, screaming, distorted vocals, long fade-out",
+    "idempotency_key": "momotime-ep12-en-suno-v1-20261105"
+  }
+}

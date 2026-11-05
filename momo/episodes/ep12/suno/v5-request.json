@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "Apple Pop Banana Bop - Dance Hook | MomoTime",
+    "lyrics": "[Dance Hook - punchy rhythmic singing]\nApple, pop! Apple, pop!\nApple, apple, pop-pop-pop!\nBanana, bop! Banana, bop!\nBanana, banana, bop-bop-bop!\n\n[Repeat Dance Hook - identical catchy rhythm and melody]\nApple, pop! Apple, pop!\nApple, apple, pop-pop-pop!\nBanana, bop! Banana, bop!\nBanana, banana, bop-bop-bop!\n\n[End - final hit]",
+    "style": "English preschool KIDS DANCE POP, 124 bpm, tight bouncy 4/4 dance groove, punchy kick, crisp clap-snare backbeat, springy syncopated synth bass, playful offbeat plucks, bright cute childlike girl lead, clear energetic rhythmic singing, punchy short syllables locked to the beat, a catchy original two-bar melodic-rhythmic motif repeated exactly, fruit names as the call and pop-pop/bop-bop as the rhythmic answer, tiny anticipations and stop-start accents, instantly memorable playground dance hook, simple tune with a strong rhythmic identity, voice and groove equally forward, lively but not aggressive, immediate sung hook, 30-second chorus audition, clean final hit",
+    "model": "v6",
+    "duration": 32,
+    "duration_strict": false,
+    "instrumental": false,
+    "vocal_gender": "female",
+    "controls": {
+      "style_influence": 0.85,
+      "weirdness": 0.15,
+      "variety": 0
+    },
+    "negative_style": "lullaby, waltz, polka, marching band, folk nursery ballad, soft acoustic strumming, slow long notes, ornate soulful runs, adult belting, chipmunk pitch shift, instrumental intro, instrumental break",
+    "idempotency_key": "momotime-ep12-dance-hook-v5-20261105"
+  }
+}

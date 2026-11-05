@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"26d55e7e-09de-4c9f-a561-f89f99d70bd9\",\"audio_id\":\"8b8e2658-dcf6-4957-86b8-2a4f4c3b77cc\",\"status\":\"complete\",\"created_at\":\"2026-11-05T01:10:50Z\",\"answer\":\"The lead is clearly presented as a bright, high, processed female voice, unlike the rejected male lead. Still, the track leans toward polished dance-pop/disco rather than a very simple preschool nursery singalong: the steady electronic beat and synth backing are busy relative to the tiny, easy-to-copy melody requested. “Apple” and “banana” sound intelligible, and banana appears to have natural middle-syllable stress. The repeated fruit-and-action hook is a useful cue, with no prominent melisma or harshness, but the brisk chorus and pop arrangement may make copying less effortless for toddlers. A roughly five-second instrumental passage around 0:54–0:59 interrupts the singing; it seems to end with a friendly bye-bye/fade, not an abrupt cutoff. Vocal timestamps and gap length are rough listening estimates, not verified boundary measurements; total duration is measured at about 98.7 seconds.\"}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"b1700dd6-14da-44aa-8166-f85b3fec72fc\",\"audio_id\":\"649405fc-e11c-4f30-ac2c-1ffecf54c4a7\",\"status\":\"complete\",\"created_at\":\"2026-11-05T01:15:36Z\",\"answer\":\"The vocal is bright, soft, and sweet, but reads more as a light adult female pop voice than a distinctly little-girl-like timbre—only a partial match. Apple and banana are clear; the action hook is simple and repetitive, and the light backing stays out of the way. The longest mid-song instrumental break is about 15 seconds; the ending feels natural rather than cut off.\\n\\n```json\\n{\\n  \\\"little_girl_timbre_match\\\": false,\\n  \\\"perceived_vocal_description\\\": \\\"Bright, soft, slightly breathy and sweet light adult-female-sounding lead; not distinctly little-girl-like, without heavy chipmunk effect or choir.\\\",\\n  \\\"voice_match_score_10\\\": 5,\\n  \\\"clearly_high_light_cute\\\": false,\\n  \\\"target_words_clear\\\": true,\\n  \\\"preschool_singalong_match\\\": true,\\n  \\\"concerns\\\": [\\\"Lead vocal sounds adult rather than clearly little-girl-like\\\", \\\"Long mid-song instrumental break\\\"],\\n  \\\"longest_mid_song_vocal_free_seconds_approx\\\": 15,\\n  \\\"natural_ending\\\": true\\n}\\n```\"}"
+      }
+    ]
+  }
+}

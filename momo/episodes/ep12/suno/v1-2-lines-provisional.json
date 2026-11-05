@@ -1,0 +1,196 @@
+{
+  "source": "Official Suno audio-lyrics-alignment; unedited candidate B; provisional, needs local vocal/ASR cross-check",
+  "audio_id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+  "lines": [
+    {
+      "text": "Apple, apple!",
+      "start": 1.22,
+      "end": 2.218
+    },
+    {
+      "text": "Here is an apple.",
+      "start": 2.728,
+      "end": 4.567
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 5.467,
+      "end": 6.695
+    },
+    {
+      "text": "I see an apple.",
+      "start": 7.089,
+      "end": 8.698
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 9.181,
+      "end": 10.265
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 10.957,
+      "end": 12.884
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 13.429,
+      "end": 14.519
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 15.198,
+      "end": 17.147
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 17.669,
+      "end": 18.775
+    },
+    {
+      "text": "Sing along with me.",
+      "start": 19.14,
+      "end": 20.89
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 21.596,
+      "end": 23.328
+    },
+    {
+      "text": "Sing and clap with me!",
+      "start": 23.45,
+      "end": 25.108
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 25.884,
+      "end": 27.614
+    },
+    {
+      "text": "Here is a banana.",
+      "start": 28.023,
+      "end": 29.757
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 30.073,
+      "end": 31.884
+    },
+    {
+      "text": "I see a banana.",
+      "start": 32.334,
+      "end": 33.99
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 34.691,
+      "end": 35.756
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 36.471,
+      "end": 38.379
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 38.938,
+      "end": 39.997
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 40.708,
+      "end": 42.625
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 43.187,
+      "end": 44.21
+    },
+    {
+      "text": "Sing along with me.",
+      "start": 44.645,
+      "end": 46.366
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 47.103,
+      "end": 48.789
+    },
+    {
+      "text": "Sing and clap with me!",
+      "start": 48.893,
+      "end": 50.62
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 51.66,
+      "end": 53.068
+    },
+    {
+      "text": "Can you say apple?",
+      "start": 53.54,
+      "end": 55.235
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 55.589,
+      "end": 57.354
+    },
+    {
+      "text": "Can you say banana?",
+      "start": 57.833,
+      "end": 59.894
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 68.614,
+      "end": 69.579
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 70.387,
+      "end": 72.318
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 72.847,
+      "end": 73.929
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 74.624,
+      "end": 76.551
+    },
+    {
+      "text": "Apple, apple!",
+      "start": 77.088,
+      "end": 78.153
+    },
+    {
+      "text": "Sing along with me.",
+      "start": 78.558,
+      "end": 80.29
+    },
+    {
+      "text": "Banana, banana!",
+      "start": 81.007,
+      "end": 82.695
+    },
+    {
+      "text": "Sing and clap with me!",
+      "start": 82.804,
+      "end": 84.528
+    },
+    {
+      "text": "Apple, banana!",
+      "start": 85.582,
+      "end": 88.615
+    },
+    {
+      "text": "Bye-bye, bye-bye!",
+      "start": 89.007,
+      "end": 90.246
+    }
+  ]
+}

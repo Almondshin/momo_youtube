@@ -1,0 +1,2654 @@
+{
+  "schema": 1,
+  "ep": "ep12",
+  "status": "producing",
+  "topic": {
+    "en": "Apple & Banana",
+    "ko": "사과와 바나나"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "Apple & Banana Song for Toddlers | Learn Fruit Words | MomoTime",
+    "ko": ""
+  },
+  "thumbnail": {
+    "cut": "c01",
+    "text": {
+      "en": "APPLE & BANANA",
+      "ko": ""
+    },
+    "text_pos": "bottom"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "Apple & Banana Song for Toddlers | Learn Fruit Words | MomoTime",
+      "description": "Sing and move with MomoTime! A playful apple and banana song for toddlers ages 2–4.\n\nTwo simple fruit words, a catchy repeated chorus, and gentle actions to follow along.\n\n#MomoTime #NurseryRhymes #ToddlerSongs",
+      "tags": [
+        "MomoTime",
+        "apple banana song",
+        "nursery rhymes",
+        "toddler songs",
+        "fruit song",
+        "kids songs",
+        "learn English words"
+      ],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": 50.4,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": "90초 노래의 짧은 반복 가사에 맞춘 34개 V 편집 컷. 실제 신규 생성은 시작 이미지 6장과 5초 클립 6개뿐이며, 나머지는 clip_from으로 재사용한다. 2026-11-05 사용자 기획 승인.",
+    "approvals": [
+      "2026-11-05 사용자: 자 그럼 이제 작업을 시작해볼래 — 준비된 ep12 Apple & Banana 제작 시작 요청. 최종 음원·이미지 승인과는 구분.",
+      "2026-11-05 사용자: C2가 가장 괜찮아 — C2를 완성 작업의 기준 후보로 선택. 아직 생성되지 않은 연장 음원·완성 영상의 승인을 뜻하지 않는다.",
+      "2026-11-05 사용자: 1크레딧 사용해 다운로드·제작 계속 — C2 90초 전체곡 WAV 다운로드 1크레딧과 후속 검수·제작 진행 승인.",
+      "2026-11-05 사용자: 이 구성과 예산으로 제작 진행 — C2 90초 영상, 6종 소재 반복, 키워드 1개씩, 립싱크 없음, 예상 50.4 Higgsfield 크레딧 / 캡 150 승인."
+    ],
+    "next_time": [
+      "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
+      "영어판 다음에 같은 주제 한국어판 제작. 최종 공통 영상 소재는 아직 생성 전."
+    ],
+    "production_decisions": [
+      "대상 2~4세; 영어 학습 목표 apple, banana 두 단어; 목표 90~110초",
+      "Suno 공식 MCP 사용; 영상은 립싱크 없이 모모의 작은 춤·표정·사물 장면; 핵심 단어만 표시",
+      "Higgsfield 상한 150크레딧; Suno 구독 크레딧과 별도 기록; 추가 결제 금지",
+      "2026-11-05 사용자 수정: 여성 보컬; 아기상어·바나나차차처럼 2~4세용 짧은 반복 후렴·율동 중심 동요. v1 펑크 디스코 후보는 사용 보류.",
+      "2026-11-05 보컬 구체화: v2 두 곡 모두 목소리 때문에 사용자 거절. 어린 여자아이처럼 맑고 높고 귀여운 단독 보컬을 선택. 동요 성우·합창 유형은 선택하지 않음.",
+      "2026-11-05 사용자 추가 정정: 처음 남자 목소리가 나을 정도이며, 목소리뿐 아니라 가사와 리듬도 모두 별로다. v2/v3 가사·리듬 유지 방향 철회. 전체 음악 방향을 다시 잡아 짧은 후렴부터 검토.",
+      "2026-11-05 v4 피드백: 더 리드미컬해야 하며 바나나차차·아기상어를 기준으로 할 것. 단순하고 느슨한 반복이 아니라 뚜렷한 비트·단어가 박자를 타는 신나는 율동 후렴이 필요하다.",
+      "2026-11-05 최신 결정: 공유 링크 BUx5U88mdSg7XyeI는 v1 후보 B. 사용자가 7.5/10 기준곡으로 평가하고 이를 반영한 여러 후보 요청. 다른 스타일로 전면 이탈하던 방향 대신 기준곡 중심의 변주를 비교한다. 최종 제작 승인과는 구분.",
+      "2026-11-05 진행 순서 확인: C2 영어 곡 완성 후 같은 사과·바나나 주제의 한국어 곡. 한국어는 자연스러운 가사·리듬으로 별도 제작하고 모모 영상 소재를 공통 사용. 한국어 음원은 현재 미생성."
+    ],
+    "visual_plan_status": "approved_by_user",
+    "caption_requirement": "핵심 단어 APPLE/BANANA만 컷당 하나. 현재 조립기는 song.track의 전체 가사 자막이 기본이므로 키워드 전용 모드 구현·검증 후 조립해야 함."
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "notes": "A1: 모모와 사과; sung lines 1-2"
+    },
+    {
+      "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 5.564,
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "notes": "A2: 사과 가까이; sung lines 3-4"
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 9.25,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "notes": "A1: 모모와 사과; sung lines 5-5"
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 11.106,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "notes": "B1: 모모와 바나나; sung lines 6-6"
+    },
+    {
+      "id": "c05",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 13.486,
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      },
+      "notes": "A2: 사과 가까이; sung lines 7-7"
+    },
+    {
+      "id": "c06",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 15.312,
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "notes": "B2: 바나나 가까이; sung lines 8-8"
+    },
+    {
+      "id": "c07",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 17.716,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "notes": "A1: 모모와 사과; sung lines 9-9"
+    },
+    {
+      "id": "c08",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 19.143,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "notes": "D: 모모 작은 춤; sung lines 10-10"
+    },
+    {
+      "id": "c09",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 21.657,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "notes": "B1: 모모와 바나나; sung lines 11-11"
+    },
+    {
+      "id": "c10",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 23.553,
+      "image_prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters.",
+      "motion": "Momo gives two gentle slow claps near the chest, feet remain planted, slight ear sway. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "notes": "C: 모모 박수; sung lines 12-12"
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 25.873,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "notes": "B1: 모모와 바나나; sung lines 13-14"
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 30.063,
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0
+      },
+      "notes": "B2: 바나나 가까이; sung lines 15-16"
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 34.593,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "notes": "A1: 모모와 사과; sung lines 17-17"
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 36.429,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "notes": "B1: 모모와 바나나; sung lines 18-18"
+    },
+    {
+      "id": "c15",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 38.823,
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      },
+      "notes": "A2: 사과 가까이; sung lines 19-19"
+    },
+    {
+      "id": "c16",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 40.644,
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0
+      },
+      "notes": "B2: 바나나 가까이; sung lines 20-20"
+    },
+    {
+      "id": "c17",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 43.019,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "notes": "A1: 모모와 사과; sung lines 21-21"
+    },
+    {
+      "id": "c18",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 44.445,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c08",
+        "at": 0
+      },
+      "notes": "D: 모모 작은 춤; sung lines 22-22"
+    },
+    {
+      "id": "c19",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 46.975,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "notes": "B1: 모모와 바나나; sung lines 23-23"
+    },
+    {
+      "id": "c20",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 48.88,
+      "image_prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters.",
+      "motion": "Momo gives two gentle slow claps near the chest, feet remain planted, slight ear sway. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c10",
+        "at": 0
+      },
+      "notes": "C: 모모 박수; sung lines 24-24"
+    },
+    {
+      "id": "c21",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 51.514,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "notes": "A1: 모모와 사과; sung lines 25-26"
+    },
+    {
+      "id": "c22",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 55.465,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "notes": "B1: 모모와 바나나; sung lines 27-28"
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 59.94,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "notes": "A1: 모모와 사과; sung lines 29-29"
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 61.746,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "notes": "B1: 모모와 바나나; sung lines 30-30"
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 64.131,
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      },
+      "notes": "A2: 사과 가까이; sung lines 31-31"
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 65.942,
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0
+      },
+      "notes": "B2: 바나나 가까이; sung lines 32-32"
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 68.326,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "notes": "A1: 모모와 사과; sung lines 33-33"
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 69.773,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c08",
+        "at": 0
+      },
+      "notes": "D: 모모 작은 춤; sung lines 34-34"
+    },
+    {
+      "id": "c29",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 72.277,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "notes": "B1: 모모와 바나나; sung lines 35-35"
+    },
+    {
+      "id": "c30",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 74.188,
+      "image_prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters.",
+      "motion": "Momo gives two gentle slow claps near the chest, feet remain planted, slight ear sway. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c10",
+        "at": 0
+      },
+      "notes": "C: 모모 박수; sung lines 36-36"
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 76.757,
+      "image_prompt": "Close-up of exactly one red apple with a short brown stem and one small green leaf on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
+      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      },
+      "notes": "A2: 사과 가까이; sung lines 37-37"
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 78.608,
+      "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
+      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0
+      },
+      "notes": "B2: 바나나 가까이; sung lines 38-38"
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "APPLE"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 80.987,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      },
+      "notes": "A1: 모모와 사과; sung lines 39-39"
+    },
+    {
+      "id": "c34",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BANANA"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 82.818,
+      "image_prompt": "[Momo] beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground.",
+      "motion": "Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "fill": "hold",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      },
+      "notes": "B1: 모모와 바나나; sung lines 40-40"
+    },
+    {
+      "id": "c35",
+      "scene": 5,
+      "type": "L",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "cut_at": 85.208,
+      "library_clip": "outro_bye",
+      "notes": "L: 노래 속 작별; 라이브러리 영상만 재사용, 음성 없음; sung lines 41-42"
+    }
+  ],
+  "languages": [
+    "en"
+  ],
+  "suno": {
+    "provider": "official_mcp",
+    "server": "https://api.suno.com/mcp",
+    "generation_credits_spent": 90,
+    "download_credits_spent": 1,
+    "selected_clip_id": "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+    "takes": [
+      {
+        "id": "364d25d8-bf8f-4636-8942-692b1e5483ea",
+        "url": "https://suno.com/song/364d25d8-bf8f-4636-8942-692b1e5483ea",
+        "duration": 98.8,
+        "status": "complete",
+        "model": "v6",
+        "request": "suno/v1-request.json",
+        "selection_status": "superseded_by_user_direction"
+      },
+      {
+        "id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+        "url": "https://suno.com/song/1d8d324e-fcde-4cf6-a961-4442e1e50303",
+        "duration": 98.76,
+        "status": "complete",
+        "model": "v6",
+        "request": "suno/v1-request.json",
+        "selection_status": "reference_chosen_by_user",
+        "user_score": 7.5
+      },
+      {
+        "id": "eeb93a8d-7299-4b29-aacc-b9c625f9640d",
+        "url": "https://suno.com/song/eeb93a8d-7299-4b29-aacc-b9c625f9640d",
+        "status": "complete",
+        "model": "v6",
+        "version": "v2",
+        "vocal_gender_requested": "female",
+        "request": "suno/v2-request.json",
+        "selection_status": "rejected_by_user",
+        "duration": 98.8,
+        "selection_reason": "2026-11-05 둘 다 별로다; 목소리가 원하는 동요 느낌이 아님. 원하는 음색은 어린 여자아이처럼 맑고 높고 귀여운 목소리."
+      },
+      {
+        "id": "8b8e2658-dcf6-4957-86b8-2a4f4c3b77cc",
+        "url": "https://suno.com/song/8b8e2658-dcf6-4957-86b8-2a4f4c3b77cc",
+        "status": "complete",
+        "model": "v6",
+        "version": "v2",
+        "vocal_gender_requested": "female",
+        "request": "suno/v2-request.json",
+        "selection_status": "rejected_by_user",
+        "duration": 98.72,
+        "selection_reason": "2026-11-05 둘 다 별로다; 목소리가 원하는 동요 느낌이 아님. 원하는 음색은 어린 여자아이처럼 맑고 높고 귀여운 목소리."
+      },
+      {
+        "id": "abac7cd7-b188-470d-aecf-4370284693c4",
+        "url": "https://suno.com/song/abac7cd7-b188-470d-aecf-4370284693c4",
+        "status": "complete",
+        "model": "v6",
+        "version": "v3",
+        "vocal_gender_requested": "female",
+        "vocal_timbre_requested": "clear high cute little-girl-like solo",
+        "request": "suno/v3-request.json",
+        "selection_status": "not_selected",
+        "duration": 93.2,
+        "selection_reason": "자동 청취 분석에서 어린 여자아이 음색 불일치. 이어 사용자가 기존 곡들의 목소리·가사·리듬 전체가 별로라고 정정."
+      },
+      {
+        "id": "649405fc-e11c-4f30-ac2c-1ffecf54c4a7",
+        "url": "https://suno.com/song/649405fc-e11c-4f30-ac2c-1ffecf54c4a7",
+        "status": "complete",
+        "model": "v6",
+        "version": "v3",
+        "vocal_gender_requested": "female",
+        "vocal_timbre_requested": "clear high cute little-girl-like solo",
+        "request": "suno/v3-request.json",
+        "selection_status": "not_selected",
+        "duration": 98.8,
+        "selection_reason": "자동 청취 분석에서 어린 여자아이 음색 불일치. 이어 사용자가 기존 곡들의 목소리·가사·리듬 전체가 별로라고 정정."
+      },
+      {
+        "id": "4ee08ee5-18aa-419d-86a7-c3a9310195e5",
+        "url": "https://suno.com/song/4ee08ee5-18aa-419d-86a7-c3a9310195e5",
+        "status": "complete",
+        "model": "v6",
+        "version": "v4",
+        "purpose": "short_hook_audition_not_final_song",
+        "request": "suno/v4-request.json",
+        "selection_status": "needs_rhythm_revision",
+        "duration": 19.2,
+        "selection_reason": "사용자: 좀 더 리드미컬해야 한다. 바나나차차·아기상어를 다시 참조하라고 요청."
+      },
+      {
+        "id": "41a47ae1-9364-4f2d-99ce-a42765c57c63",
+        "url": "https://suno.com/song/41a47ae1-9364-4f2d-99ce-a42765c57c63",
+        "status": "complete",
+        "model": "v6",
+        "version": "v4",
+        "purpose": "short_hook_audition_not_final_song",
+        "request": "suno/v4-request.json",
+        "selection_status": "needs_rhythm_revision",
+        "duration": 19.2,
+        "selection_reason": "사용자: 좀 더 리드미컬해야 한다. 바나나차차·아기상어를 다시 참조하라고 요청."
+      },
+      {
+        "id": "a903f44f-f815-436c-b584-8bcc065f6095",
+        "version": "v5",
+        "request": "suno/v5-request.json",
+        "purpose": "rhythm_probe_started_before_reference_selection",
+        "url": "https://suno.com/song/a903f44f-f815-436c-b584-8bcc065f6095",
+        "duration": 32.4,
+        "status": "complete",
+        "selection_status": "not_selected_reference_changed"
+      },
+      {
+        "id": "ff9f0c7d-01b4-4df2-8ac1-00b6401456a3",
+        "version": "v5",
+        "request": "suno/v5-request.json",
+        "purpose": "rhythm_probe_started_before_reference_selection",
+        "url": "https://suno.com/song/ff9f0c7d-01b4-4df2-8ac1-00b6401456a3",
+        "duration": 31.76,
+        "status": "complete",
+        "selection_status": "not_selected_reference_changed"
+      },
+      {
+        "id": "88efa6c3-04f4-4018-9e51-05270f668cd0",
+        "url": "https://suno.com/song/88efa6c3-04f4-4018-9e51-05270f668cd0",
+        "status": "complete",
+        "version": "ref01a",
+        "label": "A1",
+        "group": "원래 느낌 유지",
+        "source_id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+        "tool": "audio-covers-create",
+        "request": "suno/ref01-a-request.json",
+        "selection_status": "pending_review",
+        "duration": 97,
+        "automated_review": {
+          "provider": "Suno audio-listen",
+          "response": "suno/ref01-A1-listen-result.json",
+          "voice_character": "Light, warm adult male-sounding voice; polished and lightly processed, not strongly artificial",
+          "abrupt_cutoff": true,
+          "suitability_as_audition_10": 7,
+          "final_production_ready": false
+        }
+      },
+      {
+        "id": "5dae3e4b-86e3-4d89-9065-e071254cd458",
+        "url": "https://suno.com/song/5dae3e4b-86e3-4d89-9065-e071254cd458",
+        "status": "complete",
+        "version": "ref01a",
+        "label": "A2",
+        "group": "원래 느낌 유지",
+        "source_id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+        "tool": "audio-covers-create",
+        "request": "suno/ref01-a-request.json",
+        "selection_status": "pending_review",
+        "duration": 52.64,
+        "automated_review": {
+          "provider": "Suno audio-listen",
+          "response": "suno/ref01-A2-listen-result.json",
+          "voice_character": "Adult female-presenting, smooth/natural lead with a high-pitched childlike, somewhat stylized echo voice",
+          "abrupt_cutoff": true,
+          "suitability_as_audition_10": 7,
+          "final_production_ready": false
+        }
+      },
+      {
+        "id": "b2dc38ab-7ac5-4350-80a4-33bae2bac9f0",
+        "url": "https://suno.com/song/b2dc38ab-7ac5-4350-80a4-33bae2bac9f0",
+        "status": "complete",
+        "version": "ref01b",
+        "label": "B1",
+        "group": "후렴·리듬 강화",
+        "source_id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+        "tool": "audio-covers-create",
+        "request": "suno/ref01-b-request.json",
+        "selection_status": "pending_review",
+        "duration": 46.36,
+        "automated_review": {
+          "provider": "Suno audio-listen",
+          "response": "suno/ref01-B1-listen-result.json",
+          "voice_character": "Male/boy-like, bright and youthful, polished with a slightly synthetic edge",
+          "abrupt_cutoff": true,
+          "suitability_as_audition_10": 7,
+          "final_production_ready": false
+        }
+      },
+      {
+        "id": "0ee0d4ec-f881-44fa-9d4a-ead99202d0e9",
+        "url": "https://suno.com/song/0ee0d4ec-f881-44fa-9d4a-ead99202d0e9",
+        "status": "complete",
+        "version": "ref01b",
+        "label": "B2",
+        "group": "후렴·리듬 강화",
+        "source_id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+        "tool": "audio-covers-create",
+        "request": "suno/ref01-b-request.json",
+        "selection_status": "pending_review",
+        "duration": 46.76,
+        "automated_review": {
+          "provider": "Suno audio-listen",
+          "response": "suno/ref01-B2-listen-result.json",
+          "voice_character": "Bright, light feminine- or young-sounding voice; polished with a slightly digital edge",
+          "abrupt_cutoff": true,
+          "suitability_as_audition_10": 7,
+          "final_production_ready": false
+        }
+      },
+      {
+        "id": "f7193ad9-d88c-40a5-9f72-3522f47efc54",
+        "url": "https://suno.com/song/f7193ad9-d88c-40a5-9f72-3522f47efc54",
+        "status": "complete",
+        "version": "ref01c",
+        "label": "C1",
+        "group": "여자 보컬",
+        "source_id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+        "tool": "audio-covers-create",
+        "request": "suno/ref01-c-request.json",
+        "selection_status": "pending_review",
+        "duration": 50.36,
+        "automated_review": {
+          "provider": "Suno audio-listen",
+          "response": "suno/ref01-C1-listen-result.json",
+          "voice_character": "Youthful, girl-like, bright and playful; fairly natural, polished delivery",
+          "abrupt_cutoff": true,
+          "suitability_as_audition_10": 8,
+          "final_production_ready": false
+        }
+      },
+      {
+        "id": "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+        "url": "https://suno.com/song/eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+        "status": "complete",
+        "version": "ref01c",
+        "label": "C2",
+        "group": "여자 보컬",
+        "source_id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+        "tool": "audio-covers-create",
+        "request": "suno/ref01-c-request.json",
+        "selection_status": "selected_by_user_for_completion",
+        "duration": 52,
+        "automated_review": {
+          "provider": "Suno audio-listen",
+          "response": "suno/ref01-C2-listen-result.json",
+          "voice_character": "Adult female-presenting, bright and friendly; polished with a slightly artificial edge",
+          "abrupt_cutoff": true,
+          "suitability_as_audition_10": 7,
+          "final_production_ready": false
+        }
+      },
+      {
+        "id": "fdde2f98-7a66-40fc-a901-c017aafa5d5e",
+        "url": "https://suno.com/song/fdde2f98-7a66-40fc-a901-c017aafa5d5e",
+        "status": "complete",
+        "version": "c2-extension01",
+        "label": "C2-tail-1",
+        "purpose": "continuation_only_not_whole_song",
+        "source_id": "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+        "request": "suno/c2-extension01-request.json",
+        "selection_status": "retained_alternative",
+        "duration": 41.88
+      },
+      {
+        "id": "234d5a66-0da8-4e88-ba0f-2f15819a1ae4",
+        "url": "https://suno.com/song/234d5a66-0da8-4e88-ba0f-2f15819a1ae4",
+        "status": "complete",
+        "version": "c2-extension01",
+        "label": "C2-tail-2",
+        "purpose": "continuation_only_not_whole_song",
+        "source_id": "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+        "request": "suno/c2-extension01-request.json",
+        "selection_status": "selected_for_join_by_assistant",
+        "duration": 38.4
+      }
+    ],
+    "recommended_clip_id": "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+    "review_status": "C2_full_song_generated_pending_review",
+    "review_report": "REFERENCE_COMPARISON.md",
+    "download_confirmation": {
+      "clip_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+      "format": "wav",
+      "credits_required": 1,
+      "status": "approved_and_used",
+      "user_reply": "1크레딧 사용해 다운로드·제작 계속",
+      "response": "suno/c2-fullsong01-download-preflight.json"
+    },
+    "generation_batches": [
+      {
+        "version": "v1",
+        "generation_credits": 10,
+        "request": "suno/v1-request.json"
+      },
+      {
+        "version": "v2",
+        "generation_credits": 10,
+        "request": "suno/v2-request.json"
+      },
+      {
+        "version": "v3",
+        "generation_credits": 10,
+        "request": "suno/v3-request.json"
+      },
+      {
+        "version": "v4",
+        "purpose": "short_hook_audition",
+        "generation_credits": 10,
+        "request": "suno/v4-request.json"
+      },
+      {
+        "version": "v5",
+        "purpose": "rhythm_probe",
+        "generation_credits": 10,
+        "request": "suno/v5-request.json"
+      },
+      {
+        "version": "ref01",
+        "purpose": "source_reference_cover_comparison",
+        "requests": 3,
+        "completed_candidates": 6,
+        "generation_credits": 30,
+        "usage_before": "suno/usage-before-ref01.json",
+        "usage_after": "suno/usage-after-ref01.json"
+      },
+      {
+        "version": "c2-extension01",
+        "generation_credits": 10,
+        "request": "suno/c2-extension01-request.json"
+      }
+    ],
+    "reference_choice": {
+      "share_url": "https://suno.com/s/BUx5U88mdSg7XyeI",
+      "clip_id": "1d8d324e-fcde-4cf6-a961-4442e1e50303",
+      "song_url": "https://suno.com/song/1d8d324e-fcde-4cf6-a961-4442e1e50303",
+      "user_score": 7.5,
+      "score_out_of": 10,
+      "purpose": "baseline_for_variations_not_final_approval",
+      "user_feedback": "처음 곡이 지금 만든 스타일과 노래 중 제일 나음. 나머지는 별로. 이 의견을 반영해 여러 개 만들어달라."
+    },
+    "recommendation_basis": "청취 분석상 C1은 밝고 자연스러운 여자아이 느낌·리듬감이 있어 먼저 비교 추천. 사용자 최종 선택 아님. 끝맺음 미완성.",
+    "selection": {
+      "clip_id": "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+      "label": "C2",
+      "user_feedback": "C2가 가장 괜찮아",
+      "scope": "보컬·리듬·멜로디 기준 후보 선택; 짧은 길이·끝맺음 보완 필요",
+      "status": "selected_for_completion"
+    },
+    "completion": {
+      "source_id": "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+      "continue_at": 51.62854,
+      "request": "suno/c2-extension01-request.json",
+      "status": "wav_downloaded_local_lyrics_verified",
+      "extension_ids": [
+        "fdde2f98-7a66-40fc-a901-c017aafa5d5e",
+        "234d5a66-0da8-4e88-ba0f-2f15819a1ae4"
+      ],
+      "full_song_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+      "selected_extension_id": "234d5a66-0da8-4e88-ba0f-2f15819a1ae4",
+      "selection_basis": "자동 청취 분석에서 후보 2의 자연스러운 끝맺음과 짧은 반주 꼬리가 더 적합. 사용자 최종 승인 아님.",
+      "full_song_url": "https://suno.com/song/be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+      "duration": 90,
+      "concat_clip_ids": [
+        "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+        "234d5a66-0da8-4e88-ba0f-2f15819a1ae4"
+      ],
+      "join_credits_spent": 0,
+      "local_original": "audio/c2_full_original.wav",
+      "local_original_sha256": "f74e70cf8c40c9891c1e63a54c25865538666a0c3562a5afcc3243a04b719fdf",
+      "local_qc": {
+        "word_match": 1.0,
+        "lyric_words": 113,
+        "lines": 42,
+        "missing_lines": 0,
+        "unmatched_heard_runs": [],
+        "timing_source": "official Suno alignment refined against local separated vocals; Whisper recognition independently verified, its early timestamps were inaccurate",
+        "tempo_bpm": 113.763,
+        "mid_song_bars_to_remove": 0,
+        "caption_lag_flags_after_refine": 0,
+        "waveform_review": "audio/timing-review.png"
+      }
+    }
+  },
+  "song": {
+    "track": {
+      "status": "generated",
+      "job_id": "local:11d3f051002e",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "11d3f051002e73d3c2a80809bcbf7cc86144e7cc",
+      "tool": "suno",
+      "source_file": "c2_full_original.wav",
+      "note": "User-selected C2 full song be54e10b-d0df-4b15-ad38-a6d81faa2f47; official MCP download approved 2026-11-05; Demucs htdemucs_ft stems",
+      "duration": 90.0,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:11d3f051002e",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-11-05T01:59Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 113.763,
+        "beat0": 0.4383,
+        "downbeat0": 2.0205,
+        "confidence": 1.615,
+        "downbeats": [
+          1.9936,
+          4.1,
+          6.2113,
+          8.3393,
+          10.449,
+          12.5586,
+          14.6667,
+          16.7747,
+          18.8894,
+          20.9992,
+          23.1122,
+          25.2302,
+          27.3382,
+          29.4511,
+          31.551,
+          33.664,
+          35.7803,
+          37.8916,
+          39.9997,
+          42.1077,
+          44.2224,
+          46.3288,
+          48.3788,
+          50.4254,
+          52.5226,
+          54.6344,
+          56.7441,
+          58.8521,
+          60.964,
+          63.1035,
+          65.2099,
+          67.3146,
+          69.4226,
+          71.5287,
+          73.638,
+          75.7523,
+          77.9676,
+          80.079,
+          82.187,
+          84.2951,
+          86.4047,
+          88.5103
+        ],
+        "grid": {
+          "refined": true,
+          "beats_found": "129/167",
+          "max_drift_ms": 129.5,
+          "section_offsets_ms": [
+            -12.6,
+            -2.3,
+            5.6,
+            4.4,
+            -0.0,
+            -4.2
+          ],
+          "trend_ms": 6.8
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "b85468d7fbd45561b10a8fcb2dbccf1bd176dfe2",
+        "moved": 17,
+        "loose": 13,
+        "flags": [
+          {
+            "kind": "phase",
+            "line": 1,
+            "t": 2.975,
+            "section": "Verse 1",
+            "beat": 1.86,
+            "median": 2.43,
+            "beats": -0.57,
+            "text": "Here is an apple."
+          },
+          {
+            "kind": "phase",
+            "line": 2,
+            "t": 5.664,
+            "section": "Verse 1",
+            "beat": 2.96,
+            "median": 2.43,
+            "beats": 0.53,
+            "text": "Apple, apple!"
+          },
+          {
+            "kind": "phase",
+            "line": 6,
+            "t": 13.586,
+            "section": "Chorus",
+            "beat": 1.95,
+            "median": 1.43,
+            "beats": 0.51,
+            "text": "Apple, apple!"
+          },
+          {
+            "kind": "phase",
+            "line": 8,
+            "t": 17.816,
+            "section": "Chorus",
+            "beat": 1.97,
+            "median": 1.43,
+            "beats": 0.53,
+            "text": "Apple, apple!"
+          },
+          {
+            "kind": "phase",
+            "line": 9,
+            "t": 19.243,
+            "section": "Chorus",
+            "beat": 0.67,
+            "median": 1.43,
+            "beats": -0.76,
+            "text": "Sing along with me."
+          },
+          {
+            "kind": "phase",
+            "line": 16,
+            "t": 34.693,
+            "section": "Chorus",
+            "beat": 1.94,
+            "median": 1.43,
+            "beats": 0.51,
+            "text": "Apple, apple!"
+          },
+          {
+            "kind": "phase",
+            "line": 18,
+            "t": 38.923,
+            "section": "Chorus",
+            "beat": 1.96,
+            "median": 1.43,
+            "beats": 0.52,
+            "text": "Apple, apple!"
+          },
+          {
+            "kind": "phase",
+            "line": 21,
+            "t": 44.545,
+            "section": "Chorus",
+            "beat": 0.61,
+            "median": 1.43,
+            "beats": -0.82,
+            "text": "Sing along with me."
+          },
+          {
+            "kind": "phase",
+            "line": 24,
+            "t": 51.614,
+            "section": "Bridge",
+            "beat": 2.27,
+            "median": 1.73,
+            "beats": 0.54,
+            "text": "Apple, apple!"
+          },
+          {
+            "kind": "phase",
+            "line": 27,
+            "t": 57.371,
+            "section": "Bridge",
+            "beat": 1.19,
+            "median": 1.73,
+            "beats": -0.54,
+            "text": "Can you say banana?"
+          },
+          {
+            "kind": "phase",
+            "line": 28,
+            "t": 60.04,
+            "section": "Final Chorus",
+            "beat": 2.25,
+            "median": 1.63,
+            "beats": 0.62,
+            "text": "Apple, apple!"
+          },
+          {
+            "kind": "phase",
+            "line": 30,
+            "t": 64.231,
+            "section": "Final Chorus",
+            "beat": 2.14,
+            "median": 1.63,
+            "beats": 0.51,
+            "text": "Apple, apple!"
+          },
+          {
+            "kind": "phase",
+            "line": 33,
+            "t": 69.873,
+            "section": "Final Chorus",
+            "beat": 0.86,
+            "median": 1.63,
+            "beats": -0.77,
+            "text": "Sing along with me."
+          }
+        ]
+      },
+      "lyrics_sha1": "11d3f051002e73d3c2a80809bcbf7cc86144e7cc",
+      "end": 90.0
+    },
+    "vocals": {
+      "status": "generated",
+      "job_id": "local:b85468d7fbd4",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "b85468d7fbd45561b10a8fcb2dbccf1bd176dfe2",
+      "of": "11d3f051002e73d3c2a80809bcbf7cc86144e7cc",
+      "history": [
+        {
+          "job_id": "local:b85468d7fbd4",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-11-05T01:59Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 113.763,
+    "lyrics": [
+      {
+        "text": "Apple, apple!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Apple,",
+            1.393,
+            1.933,
+            1.485
+          ],
+          [
+            "apple!",
+            1.997,
+            2.526,
+            2.025
+          ]
+        ]
+      },
+      {
+        "text": "Here is an apple.",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Here",
+            2.975,
+            3.429,
+            3.027
+          ],
+          [
+            "is",
+            3.429,
+            3.806,
+            3.509
+          ],
+          [
+            "an",
+            3.868,
+            4.122,
+            3.886
+          ],
+          [
+            "apple.",
+            4.122,
+            4.402,
+            4.168
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Apple,",
+            5.664,
+            6.198,
+            5.722
+          ],
+          [
+            "apple!",
+            6.232,
+            6.517,
+            6.256
+          ]
+        ]
+      },
+      {
+        "text": "I see an apple.",
+        "section": "Verse 1",
+        "words": [
+          [
+            "I",
+            7.275,
+            7.528,
+            7.336
+          ],
+          [
+            "see",
+            7.53,
+            8.046,
+            7.589
+          ],
+          [
+            "an",
+            8.348,
+            8.586,
+            8.105
+          ],
+          [
+            "apple.",
+            8.712,
+            9.096,
+            8.343
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Apple,",
+            9.35,
+            9.904,
+            9.406
+          ],
+          [
+            "apple!",
+            9.904,
+            10.238,
+            10.001
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Banana,",
+            11.206,
+            12.234,
+            11.245
+          ],
+          [
+            "banana!",
+            12.234,
+            13.202,
+            12.287
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Apple,",
+            13.586,
+            14.128,
+            13.627
+          ],
+          [
+            "apple!",
+            14.13,
+            14.449,
+            14.169
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Banana,",
+            15.412,
+            16.464,
+            15.409
+          ],
+          [
+            "banana!",
+            16.464,
+            17.447,
+            16.519
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Apple,",
+            17.816,
+            18.356,
+            17.861
+          ],
+          [
+            "apple!",
+            18.365,
+            18.659,
+            18.401
+          ]
+        ]
+      },
+      {
+        "text": "Sing along with me.",
+        "section": "Chorus",
+        "words": [
+          [
+            "Sing",
+            19.243,
+            19.532,
+            19.319
+          ],
+          [
+            "along",
+            19.532,
+            20.286,
+            19.755
+          ],
+          [
+            "with",
+            20.49,
+            20.844,
+            20.509
+          ],
+          [
+            "me.",
+            20.844,
+            21.198,
+            20.864
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Banana,",
+            21.757,
+            22.815,
+            21.732
+          ],
+          [
+            "banana!",
+            22.815,
+            23.508,
+            22.838
+          ]
+        ]
+      },
+      {
+        "text": "Sing and clap with me!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Sing",
+            23.653,
+            23.95,
+            23.55
+          ],
+          [
+            "and",
+            24.087,
+            24.244,
+            23.847
+          ],
+          [
+            "clap",
+            24.244,
+            24.641,
+            24.179
+          ],
+          [
+            "with",
+            24.641,
+            24.992,
+            24.676
+          ],
+          [
+            "me!",
+            25.055,
+            25.369,
+            25.027
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Banana,",
+            25.973,
+            27.025,
+            25.972
+          ],
+          [
+            "banana!",
+            27.025,
+            27.699,
+            27.068
+          ]
+        ]
+      },
+      {
+        "text": "Here is a banana.",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Here",
+            28.068,
+            28.632,
+            28.116
+          ],
+          [
+            "is",
+            28.936,
+            29.175,
+            28.68
+          ],
+          [
+            "a",
+            29.175,
+            29.331,
+            28.998
+          ],
+          [
+            "banana.",
+            29.34,
+            29.919,
+            29.154
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Banana,",
+            30.163,
+            31.206,
+            30.208
+          ],
+          [
+            "banana!",
+            31.241,
+            31.924,
+            31.251
+          ]
+        ]
+      },
+      {
+        "text": "I see a banana.",
+        "section": "Verse 2",
+        "words": [
+          [
+            "I",
+            32.318,
+            32.705,
+            32.401
+          ],
+          [
+            "see",
+            32.737,
+            33.178,
+            32.788
+          ],
+          [
+            "a",
+            33.386,
+            33.552,
+            33.229
+          ],
+          [
+            "banana.",
+            33.565,
+            34.364,
+            33.395
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Apple,",
+            34.693,
+            35.257,
+            34.744
+          ],
+          [
+            "apple!",
+            35.257,
+            35.556,
+            35.342
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Banana,",
+            36.529,
+            37.576,
+            36.523
+          ],
+          [
+            "banana!",
+            37.576,
+            38.584,
+            37.632
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Apple,",
+            38.923,
+            39.452,
+            38.981
+          ],
+          [
+            "apple!",
+            39.452,
+            39.781,
+            39.528
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Banana,",
+            40.744,
+            41.787,
+            40.758
+          ],
+          [
+            "banana!",
+            41.787,
+            42.794,
+            41.801
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Apple,",
+            43.119,
+            43.682,
+            43.168
+          ],
+          [
+            "apple!",
+            43.682,
+            43.992,
+            43.764
+          ]
+        ]
+      },
+      {
+        "text": "Sing along with me.",
+        "section": "Chorus",
+        "words": [
+          [
+            "Sing",
+            44.545,
+            44.965,
+            44.618
+          ],
+          [
+            "along",
+            45.178,
+            45.944,
+            45.038
+          ],
+          [
+            "with",
+            46.157,
+            46.355,
+            45.803
+          ],
+          [
+            "me.",
+            46.355,
+            46.536,
+            46.214
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Banana,",
+            47.075,
+            48.115,
+            47.079
+          ],
+          [
+            "banana!",
+            48.167,
+            48.856,
+            48.119
+          ]
+        ]
+      },
+      {
+        "text": "Sing and clap with me!",
+        "section": "Chorus",
+        "words": [
+          [
+            "Sing",
+            48.98,
+            49.253,
+            48.872
+          ],
+          [
+            "and",
+            49.404,
+            49.499,
+            49.145
+          ],
+          [
+            "clap",
+            49.499,
+            49.978,
+            49.516
+          ],
+          [
+            "with",
+            49.978,
+            50.335,
+            50.022
+          ],
+          [
+            "me!",
+            50.397,
+            50.706,
+            50.379
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Apple,",
+            51.614,
+            52.532,
+            51.639
+          ],
+          [
+            "apple!",
+            52.532,
+            52.732,
+            52.58
+          ]
+        ]
+      },
+      {
+        "text": "Can you say apple?",
+        "section": "Bridge",
+        "words": [
+          [
+            "Can",
+            53.415,
+            53.82,
+            53.495
+          ],
+          [
+            "you",
+            53.88,
+            54.073,
+            53.9
+          ],
+          [
+            "say",
+            54.263,
+            54.637,
+            54.093
+          ],
+          [
+            "apple?",
+            54.637,
+            54.862,
+            54.657
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Bridge",
+        "words": [
+          [
+            "Banana,",
+            55.565,
+            56.593,
+            55.552
+          ],
+          [
+            "banana!",
+            56.593,
+            57.331,
+            56.595
+          ]
+        ]
+      },
+      {
+        "text": "Can you say banana?",
+        "section": "Bridge",
+        "words": [
+          [
+            "Can",
+            57.371,
+            57.582,
+            57.436
+          ],
+          [
+            "you",
+            57.691,
+            57.975,
+            57.647
+          ],
+          [
+            "say",
+            57.975,
+            58.674,
+            58.015
+          ],
+          [
+            "banana?",
+            58.733,
+            59.886,
+            58.714
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Final Chorus",
+        "words": [
+          [
+            "Apple,",
+            60.04,
+            60.574,
+            60.094
+          ],
+          [
+            "apple!",
+            60.574,
+            60.878,
+            60.644
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Final Chorus",
+        "words": [
+          [
+            "Banana,",
+            61.846,
+            62.888,
+            61.883
+          ],
+          [
+            "banana!",
+            62.889,
+            63.906,
+            62.925
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Final Chorus",
+        "words": [
+          [
+            "Apple,",
+            64.231,
+            64.778,
+            64.272
+          ],
+          [
+            "apple!",
+            64.784,
+            65.089,
+            64.819
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Final Chorus",
+        "words": [
+          [
+            "Banana,",
+            66.042,
+            67.109,
+            66.043
+          ],
+          [
+            "banana!",
+            67.109,
+            68.122,
+            67.158
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Final Chorus",
+        "words": [
+          [
+            "Apple,",
+            68.426,
+            68.97,
+            68.503
+          ],
+          [
+            "apple!",
+            68.99,
+            69.314,
+            69.047
+          ]
+        ]
+      },
+      {
+        "text": "Sing along with me.",
+        "section": "Final Chorus",
+        "words": [
+          [
+            "Sing",
+            69.873,
+            70.182,
+            69.959
+          ],
+          [
+            "along",
+            70.182,
+            70.888,
+            70.392
+          ],
+          [
+            "with",
+            71.125,
+            71.494,
+            71.098
+          ],
+          [
+            "me.",
+            71.494,
+            71.858,
+            71.506
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Final Chorus",
+        "words": [
+          [
+            "Banana,",
+            72.377,
+            73.445,
+            72.366
+          ],
+          [
+            "banana!",
+            73.445,
+            74.203,
+            73.474
+          ]
+        ]
+      },
+      {
+        "text": "Sing and clap with me!",
+        "section": "Final Chorus",
+        "words": [
+          [
+            "Sing",
+            74.288,
+            74.442,
+            74.221
+          ],
+          [
+            "and",
+            74.442,
+            74.722,
+            74.477
+          ],
+          [
+            "clap",
+            74.722,
+            75.252,
+            74.792
+          ],
+          [
+            "with",
+            75.305,
+            75.669,
+            75.322
+          ],
+          [
+            "me!",
+            75.69,
+            76.039,
+            75.686
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Short Review",
+        "words": [
+          [
+            "Apple,",
+            76.857,
+            77.405,
+            76.917
+          ],
+          [
+            "apple!",
+            77.451,
+            77.74,
+            77.465
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Short Review",
+        "words": [
+          [
+            "Banana,",
+            78.708,
+            79.75,
+            78.761
+          ],
+          [
+            "banana!",
+            79.765,
+            80.633,
+            79.803
+          ]
+        ]
+      },
+      {
+        "text": "Apple, apple!",
+        "section": "Short Review",
+        "words": [
+          [
+            "Apple,",
+            81.087,
+            81.63,
+            81.149
+          ],
+          [
+            "apple!",
+            81.651,
+            81.96,
+            81.692
+          ]
+        ]
+      },
+      {
+        "text": "Banana, banana!",
+        "section": "Short Review",
+        "words": [
+          [
+            "Banana,",
+            82.918,
+            83.971,
+            82.922
+          ],
+          [
+            "banana!",
+            83.971,
+            85.038,
+            84.038
+          ]
+        ]
+      },
+      {
+        "text": "Apple, banana!",
+        "section": "Outro",
+        "words": [
+          [
+            "Apple,",
+            85.308,
+            86.048,
+            85.377
+          ],
+          [
+            "banana!",
+            86.121,
+            86.919,
+            86.117
+          ]
+        ]
+      },
+      {
+        "text": "Bye-bye, bye-bye!",
+        "section": "Outro",
+        "words": [
+          [
+            "Bye-bye,",
+            87.129,
+            88.172,
+            87.186
+          ],
+          [
+            "bye-bye!",
+            88.176,
+            88.5,
+            88.229
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "tool": "audio-extensions-create",
+  "arguments": {
+    "id": "eeab06e7-fbcb-41de-b3bb-f1a73e2df327",
+    "continue_at": 51.62854,
+    "lyrics": "[Bridge - keep the same female voice and groove, sing immediately]\nApple, apple!\nCan you say apple?\nBanana, banana!\nCan you say banana?\n\n[Final Chorus - exactly the same tune as the source chorus]\nApple, apple!\nBanana, banana!\nApple, apple!\nBanana, banana!\nApple, apple!\nSing along with me.\nBanana, banana!\nSing and clap with me!\n\n[Short Review - same catchy melodic rhythm]\nApple, apple!\nBanana, banana!\nApple, apple!\nBanana, banana!\n\n[Outro - sung, resolve naturally]\nApple, banana!\nBye-bye, bye-bye!\n\n[End - one short final chord, let it finish, stop]",
+    "style": "Continue the exact female voice, melodic character, rhythmic phrasing, key and bouncy dance-pop groove of the source. Preserve the vocal tone the user selected. Approximately 114 bpm, one short lyric line per bar, clear apple and ba-NA-na. Keep the same bass, drums and pop backing. Go straight into sung words at the continuation. Reuse the original chorus melody. No new intro and no instrumental break. Finish the short sung goodbye with a resolved final chord and a brief natural tail. About 38 to 42 seconds of continuation.",
+    "model": "v6",
+    "instrumental": false,
+    "controls": {
+      "audio_influence": 0.9,
+      "style_influence": 0.35,
+      "weirdness": 0.05,
+      "variety": 0
+    },
+    "negative_style": "different lead voice, key change, tempo change, long instrumental break, new intro, new genre, chipmunk vocal effect, abrupt ending, long fade out",
+    "title": "Apple & Banana | MomoTime - C2 continuation",
+    "idempotency_key": "momotime-ep12-c2-extension01-20261105"
+  }
+}
