@@ -6,7 +6,7 @@
 | 컷 | 영상 | job_id | 상태 |
 |---|---|---|---|
 | c01 | [재생](https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043303_64543389-f6e0-4c7e-a3c4-aeed415f7d4a.mp4) | 64543389-f6e0-4c7e-a3c4-aeed415f7d4a | 사용자 승인 대기 |
-| c02 v2 | [수정본 재생](https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/02a1e6c9-979c-4233-9f6c-e160f278029f.mp4) | 로컬 렌더, media_id: 02a1e6c9-979c-4233-9f6c-e160f278029f | 사용자 승인 대기 |
+| c02 v3 | [줌인 수정본 재생](https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/50a5c16f-d43c-4d6f-be12-f98e526d2e09.mp4) | 로컬 줌인 편집 | 사용자 승인 대기 |
 | c04 | [재생](https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_bfc4acc4-6f68-4863-97e2-a4ec568b9ec4.mp4) | bfc4acc4-6f68-4863-97e2-a4ec568b9ec4 | 사용자 승인 대기 |
 
 - c01/c04는 약 5.041667초, c02 수정본은 5.000초. 모두 1280×720, H.264, 24fps, 오디오 스트림 없음. 최종 C2 노래를 조립 단계에서 합친다.
@@ -22,7 +22,7 @@
 - 원본 프레임 시간 간격은 약 1/24초로 일정했다. 파일의 프레임 누락은 발견하지 못했으며, 생성된 배경·조명에 미세한 변화가 있었다. 사용자의 재생 환경 원인은 단정하지 않는다.
 - 승인된 c02 이미지를 120프레임 고정 영상으로 렌더했다. 사과·배경·조명·카메라 모두 움직이지 않는다. 재생성 과금 없이 추가 0크레딧.
 - 인코딩 오차를 포함한 평균 프레임 차이 0.000895/255. 수정본을 Higgsfield에 업로드하고 URL로 다시 내려받은 파일의 SHA256 일치를 확인했다.
-- 원본은 `clips/history/c02-seedance-v1.mp4`, 현재 수정본은 `clips/c02.mp4`. manifest 이력에 원본 job_id와 URL을 보존했다.
+- 원본은 `clips/history/c02-seedance-v1.mp4`, 고정 화면 v2는 `clips/history/c02-stable-v2.mp4`로 보존. 현재 `clips/c02.mp4`는 아래 줌인 v3다. manifest 이력에 원본 job_id와 URL을 보존했다.
 - 검수: `c02-stutter-inspection.json`, `c02-stable-v2-qc.json`, `c02-stable-v2-upload.json`.
 - c01/c04는 승인된 것으로 간주하지 않았다. 세 클립 모두 사용자 검토 대기.
 
@@ -32,5 +32,17 @@
 - 첫 배치 위치 15.312–17.716초, 바나나 소개 30.063–34.593초 및 후렴·복습에서 재사용한다. 확정 위치는 manifest의 cut_at을 따른다.
 - [이미지 보기](https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_044548_0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5.png)
 - 승인된 c04 이미지를 참조했다. 직접 확인: 바나나 한 개, 같은 노란색·곡선 형태, 크림색 테이블, 복숭아색 벽과 민트색 가구, 캐릭터·글자·추가 과일 없음.
-- 이미지 비용 2크레딧, 에피소드 누적 23/150크레딧. 이미지 사용자 승인 전이며 영상은 아직 제작하지 않았다.
-- 바나나도 사과 수정본과 같은 고정 화면으로 만들 계획이다. 이미지 승인 후 로컬 렌더하면 영상 생성 추가 비용이 없다.
+- 이미지 비용 2크레딧, 에피소드 누적 23/150크레딧. 이미지 사용자 승인 전이다. 이후 요청으로 아래 줌인 미리보기를 제작했다.
+- 당초 고정 화면을 제안했으나 이후 사용자의 줌인 요청을 반영했다.
+
+## 줌인 수정 요청 — 2026-11-05
+
+사용자: “줌인 기능 없어? 사과나 바나나 영상에”. 두 장면을 기존 이미지에서 편집했다.
+
+- [사과 줌인 v3](https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/50a5c16f-d43c-4d6f-be12-f98e526d2e09.mp4)
+- [바나나 줌인 v1](https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/3b6dbf18-b207-4942-be13-8cfb4dc425a1.mp4)
+- 두 장면 모두 5초, 24fps, 1280×720. 확대율 100→118%, 시작과 끝을 부드럽게 조절하는 smoothstep. 영상 자체에 음성은 없고 최종 조립에서 C2 노래와 결합한다.
+- 7680×4320 작업 화면에서 크롭 이동을 계산해 작은 이동의 계단 현상을 줄였다. 과일·배경·조명은 원본을 유지한다.
+- 120프레임 및 일정한 타임스탬프 확인. 첫 프레임, 1.25초, 2.5초, 3.75초, 마지막 프레임을 직접 보고 과일 잘림·추가 사물·형태 변형이 없음을 확인했다.
+- 새 AI 생성 또는 추가 과금 없음. 누적 23/150크레딧 유지. 이 요청을 최종 이미지·클립 승인으로 기록하지 않았다.
+- 재현 설정: zoom-render-settings.json. 검수: zoom-clips-qc.json. 업로드 결과: zoom-clips-upload.json.

@@ -1,6 +1,6 @@
 # ep12 기획표 — 사과와 바나나 (Apple & Banana)
 
-> validate_manifest.py --table 이 생성 (2026-11-05 04:51 UTC). 직접 고치지 말고 manifest.json 을 고친 뒤 다시 실행.
+> validate_manifest.py --table 이 생성 (2026-11-05 05:18 UTC). 직접 고치지 말고 manifest.json 을 고친 뒤 다시 실행.
 
 - 제목 EN: Apple & Banana Song for Toddlers | Learn Fruit Words | MomoTime
 - 제목 KO: (미정)
@@ -17,20 +17,25 @@
 - △ S 컷 0개 — 목표 6~8
 - △ L 컷 1개 — 목표 3~4
 - △ c02: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
-- △ c02: 모션 지시에 위험 단어 ['camera'] — 작게, 카메라 고정
+- △ c02: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c05: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
-- △ c05: 모션 지시에 위험 단어 ['camera'] — 작게, 카메라 고정
+- △ c05: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c06: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
+- △ c06: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c12: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
+- △ c12: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c15: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
-- △ c15: 모션 지시에 위험 단어 ['camera'] — 작게, 카메라 고정
+- △ c15: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c16: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
+- △ c16: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c25: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
-- △ c25: 모션 지시에 위험 단어 ['camera'] — 작게, 카메라 고정
+- △ c25: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c26: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
+- △ c26: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c31: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
-- △ c31: 모션 지시에 위험 단어 ['camera'] — 작게, 카메라 고정
+- △ c31: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ c32: 캐릭터 블록 생략 컷 (momo:false) — 모모가 안 나오는 컷이 맞는지 확인
+- △ c32: 모션 지시에 위험 단어 ['zoom'] — 작게, 카메라 고정
 - △ 첫 컷은 L intro_wave(고정 인사) 권장
 - △ en 키워드 'APPLE' 나레이션 반복 0회 (최소 3)
 - △ en 키워드 'BANANA' 나레이션 반복 0회 (최소 3)
@@ -40,11 +45,11 @@
 | 컷 | 씬 | 마디 | 시각 | 종류 | 부르는 가사 | 이미지 프롬프트 (조립된 전체) | 모션 지시 | 새로 만들 것 |
 |---|---|---|---|---|---|---|---|---|
 | c01 | 1 | 1–2 | 0:00.0–0:05.6 | 움직임 | Apple, apple! / Here is an apple. | Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile, both long floppy ears always hang down beside the cheeks, the ears never stand upright, beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one red apple resting on the table. Momo gently points toward it. Both yellow shoulder buttons and both floppy ears clearly visible. Fruit unobstructed, uncluttered lower foreground, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks | Momo gently points at the single apple, blinks once and makes a tiny nod. The apple stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only. | 이미지 + seedance_2_0_mini 5초 (5) |
-| c02 | 1 | 3–4 | 0:05.6–0:09.2 | 움직임 | Apple, apple! / I see an apple. | Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks | Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only. | 이미지 + seedance_2_0_mini 5초 (5) |
+| c02 | 1 | 3–4 | 0:05.6–0:09.2 | 움직임 | Apple, apple! / I see an apple. | Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks | Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only. | 이미지 + seedance_2_0_mini 5초 (5) |
 | c03 | 1 | 5–5 | 0:09.2–0:11.1 | 재사용 c01 0s~ | Apple, apple! |  |  | 0 |
 | c04 | 1 | 6–6 | 0:11.1–0:13.5 | 움직임 | Banana, banana! | Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile, both long floppy ears always hang down beside the cheeks, the ears never stand upright, beside the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Exactly one whole curved yellow banana resting on the table, not a bunch. Momo gently points toward it. Both yellow shoulder buttons and floppy ears visible. Fruit unobstructed, uncluttered lower foreground, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks | Momo gently points at the one banana, blinks once and makes a tiny nod. The banana stays still on the table. Keep a gentle closed-mouth smile throughout, no singing or talking. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only. | 이미지 + seedance_2_0_mini 5초 (5) |
 | c05 | 1 | 7–7 | 0:13.5–0:15.3 | 재사용 c02 0s~ | Apple, apple! |  |  | 0 |
-| c06 | 1 | 8–8 | 0:15.3–0:17.7 | 움직임 | Banana, banana! | Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks | Static vocabulary close-up; the banana, background and lighting remain fixed. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only. | 이미지 + seedance_2_0_mini 5초 (5) |
+| c06 | 1 | 8–8 | 0:15.3–0:17.7 | 움직임 | Banana, banana! | Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks | Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only. | 이미지 + seedance_2_0_mini 5초 (5) |
 | c07 | 1 | 9–9 | 0:17.7–0:19.1 | 재사용 c01 0s~ | Apple, apple! |  |  | 0 |
 | c08 | 1 | 10–10 | 0:19.1–0:21.7 | 움직임 | Sing along with me. | Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile, both long floppy ears always hang down beside the cheeks, the ears never stand upright, full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks | Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only. | 이미지 + seedance_2_0_mini 5초 (5) |
 | c09 | 1 | 11–11 | 0:21.7–0:23.6 | 재사용 c04 0s~ | Banana, banana! |  |  | 0 |

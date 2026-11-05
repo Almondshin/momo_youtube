@@ -1,0 +1,26 @@
+{
+  "tool": "ffmpeg",
+  "source_type": "existing_image",
+  "duration": 5,
+  "fps": 24,
+  "frames": 120,
+  "output_size": [
+    1280,
+    720
+  ],
+  "working_size": [
+    7680,
+    4320
+  ],
+  "zoom_from": 1.0,
+  "zoom_to": 1.18,
+  "easing": "smoothstep",
+  "filter": "scale=7680:4320:force_original_aspect_ratio=increase:flags=lanczos,crop=7680:4320,zoompan=z='1+0.18*(on/119)*(on/119)*(3-2*(on/119))':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=120:s=1280x720:fps=24,setsar=1,format=yuv420p",
+  "additional_generation_credits": 0,
+  "cuts": {
+    "c02": "clips/c02_zoom_v3.mp4",
+    "c06": "clips/c06_zoom_v1.mp4"
+  },
+  "user_request": "줌인 기능 없어? 사과나 바나나 영상에",
+  "approval": "preview requested; final clip/image approval not inferred"
+}

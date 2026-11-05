@@ -92,9 +92,12 @@
       "channel_verified": false,
       "uploaded": false
     },
-    "first_clip_group_status": "c02_revised_others_inspected_awaiting_user_approval",
-    "banana_closeup_status": "image_generated_inspected_awaiting_user_approval",
-    "banana_closeup_video_plan": "After image approval: static 5-second local render, no background or lighting animation, 0 additional video generation credits."
+    "first_clip_group_status": "c02_zoom_v3_ready_others_inspected_awaiting_user_approval",
+    "banana_closeup_status": "image_and_zoom_preview_generated_inspected_awaiting_user_approval",
+    "banana_closeup_video_plan": "User requested zoom-in after static proposal: 5-second local 100%-118% smoothstep zoom rendered, 0 additional video generation credits; preview pending approval.",
+    "user_decisions": [
+      "2026-11-05 사용자: 줌인 기능 없어? 사과나 바나나 영상에 — 두 과일에 줌인 적용 요청. 기존 이미지로 100→118%/5초 편집 미리보기 제작, 추가 크레딧 0. 최종 사용 승인은 대기."
+    ]
   },
   "cuts": [
     {
@@ -181,7 +184,7 @@
       "inset": 0,
       "cut_at": 5.564,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -211,7 +214,7 @@
         "clip": {
           "status": "generated",
           "job_id": null,
-          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/02a1e6c9-979c-4233-9f6c-e160f278029f.mp4",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/50a5c16f-d43c-4d6f-be12-f98e526d2e09.mp4",
           "attempts": 1,
           "credits": 5.0,
           "history": [
@@ -225,25 +228,44 @@
               "start_image": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e"
             },
             {
-              "status": "generated",
+              "status": "superseded",
               "tool": "ffmpeg_static",
               "local_revision": 2,
               "credits": 0,
-              "reason": "2026-11-05 user-requested background stutter fix",
+              "reason": "User requested zoom-in; replaced by local zoom v3. The static v2 was not approved.",
               "sha256": "953566874fcd28646732466c5c54b97d7e09475e16f18a3a2fbdf2347b96f351",
               "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/02a1e6c9-979c-4233-9f6c-e160f278029f.mp4",
               "media_id": "02a1e6c9-979c-4233-9f6c-e160f278029f"
+            },
+            {
+              "status": "generated",
+              "tool": "ffmpeg_zoompan",
+              "job_id": null,
+              "local_revision": 3,
+              "credits": 0,
+              "reason": "User requested zoom-in on apple/banana shots; preview created without new AI generation.",
+              "at": "2026-11-05T05:17:55.531426+00:00",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/50a5c16f-d43c-4d6f-be12-f98e526d2e09.mp4",
+              "media_id": "50a5c16f-d43c-4d6f-be12-f98e526d2e09",
+              "sha256": "5242655febe86f611fad75fdd7f6dd39a61d226a91c03c1fddca78ce3f343b16"
             }
           ],
-          "reason": "User rejected the AI clip for background stutter. Replaced from the approved still with a static 24fps 5s local render; no additional Higgsfield credits. Review pending.",
-          "review_note": "All 120 frames keep the same source image; no animated background, lighting change, or camera movement. Encoding differences only (mean RGB frame delta <0.001/255).",
-          "tool": "ffmpeg_static",
-          "local_revision": 2,
+          "reason": "User requested zoom-in on apple/banana shots; preview created without new AI generation.",
+          "review_note": "Inspected first/middle/last framing: fruit remains intact and within frame. 120 frames at constant 24fps, 5 seconds, 1.00 to 1.18 smoothstep zoom. Final user approval pending.",
+          "tool": "ffmpeg_zoompan",
+          "local_revision": 3,
           "local_file": "clips/c02.mp4",
           "source_image": "c02",
-          "sha256": "953566874fcd28646732466c5c54b97d7e09475e16f18a3a2fbdf2347b96f351",
+          "sha256": "5242655febe86f611fad75fdd7f6dd39a61d226a91c03c1fddca78ce3f343b16",
           "publish_status": "uploaded_to_higgsfield",
-          "media_id": "02a1e6c9-979c-4233-9f6c-e160f278029f"
+          "media_id": "50a5c16f-d43c-4d6f-be12-f98e526d2e09",
+          "at": "2026-11-05T05:17:55.531426+00:00",
+          "zoom": {
+            "from": 1.0,
+            "to": 1.18,
+            "duration": 5,
+            "easing": "smoothstep"
+          }
         }
       }
     },
@@ -362,7 +384,7 @@
       "inset": 0,
       "cut_at": 13.486,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -392,7 +414,7 @@
       "inset": 0,
       "cut_at": 15.312,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -420,6 +442,43 @@
           "review_note": "Assistant inspected c06 and approved c04 reference: one whole curved yellow banana, matching cream table and peach/mint room, no characters, text or extra fruit. User image approval pending.",
           "reference_job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
           "completed_model": "nano_banana_2"
+        },
+        "clip": {
+          "attempts": 0,
+          "credits": 0,
+          "history": [
+            {
+              "status": "generated",
+              "tool": "ffmpeg_zoompan",
+              "job_id": null,
+              "local_revision": 1,
+              "credits": 0,
+              "reason": "User requested zoom-in on apple/banana shots; preview created without new AI generation.",
+              "at": "2026-11-05T05:17:55.531426+00:00",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/3b6dbf18-b207-4942-be13-8cfb4dc425a1.mp4",
+              "media_id": "3b6dbf18-b207-4942-be13-8cfb4dc425a1",
+              "sha256": "95fa1d19c962dec9f9ff18b7bf6c6c9372ad4aec0931e8ac955700ee31dd10f7"
+            }
+          ],
+          "status": "generated",
+          "tool": "ffmpeg_zoompan",
+          "job_id": null,
+          "local_revision": 1,
+          "reason": "User requested zoom-in on apple/banana shots; preview created without new AI generation.",
+          "at": "2026-11-05T05:17:55.531426+00:00",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/3b6dbf18-b207-4942-be13-8cfb4dc425a1.mp4",
+          "media_id": "3b6dbf18-b207-4942-be13-8cfb4dc425a1",
+          "sha256": "95fa1d19c962dec9f9ff18b7bf6c6c9372ad4aec0931e8ac955700ee31dd10f7",
+          "local_file": "clips/c06.mp4",
+          "source_image": "c06",
+          "publish_status": "uploaded_to_higgsfield",
+          "review_note": "Inspected first/middle/last framing: fruit remains intact and within frame. 120 frames at constant 24fps, 5 seconds, 1.00 to 1.18 smoothstep zoom. Final user approval pending.",
+          "zoom": {
+            "from": 1.0,
+            "to": 1.18,
+            "duration": 5,
+            "easing": "smoothstep"
+          }
         }
       }
     },
@@ -583,7 +642,7 @@
       "inset": 0,
       "cut_at": 30.063,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -673,7 +732,7 @@
       "inset": 0,
       "cut_at": 38.823,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -703,7 +762,7 @@
       "inset": 0,
       "cut_at": 40.644,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -973,7 +1032,7 @@
       "inset": 0,
       "cut_at": 64.131,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1003,7 +1062,7 @@
       "inset": 0,
       "cut_at": 65.942,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1153,7 +1212,7 @@
       "inset": 0,
       "cut_at": 76.757,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The apple, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1183,7 +1242,7 @@
       "inset": 0,
       "cut_at": 78.608,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
+      "motion": "Smooth digital zoom-in from 100% to 118% over 5 seconds with gentle ease-in/ease-out. The banana, background and lighting stay unchanged; no generated motion.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",

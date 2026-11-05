@@ -1,0 +1,32 @@
+[
+  {
+    "cut": "c02",
+    "file": "clips/c02_zoom_v3.mp4",
+    "duration": 5.0,
+    "frames": 120,
+    "fps": "24/1",
+    "width": 1280,
+    "height": 720,
+    "pts_step_min": 0.041665999999999315,
+    "pts_step_max": 0.04166700000000034,
+    "unique_downscaled_frames": 120,
+    "mean_frame_delta": 0.29783323407173157,
+    "max_frame_delta": 0.45335647463798523,
+    "sha256": "5242655febe86f611fad75fdd7f6dd39a61d226a91c03c1fddca78ce3f343b16"
+  },
+  {
+    "cut": "c06",
+    "file": "clips/c06_zoom_v1.mp4",
+    "duration": 5.0,
+    "frames": 120,
+    "fps": "24/1",
+    "width": 1280,
+    "height": 720,
+    "pts_step_min": 0.041665999999999315,
+    "pts_step_max": 0.04166700000000034,
+    "unique_downscaled_frames": 120,
+    "mean_frame_delta": 0.23952187597751617,
+    "max_frame_delta": 0.39564236998558044,
+    "sha256": "95fa1d19c962dec9f9ff18b7bf6c6c9372ad4aec0931e8ac955700ee31dd10f7"
+  }
+]
