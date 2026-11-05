@@ -1,12 +1,12 @@
 # ep13 — 사과 톡! 바나나 통! (Apple Tap Banana Bounce — Korean)
 
-> episode_readme.py 가 생성 (2026-11-05 23:03 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-11-05 23:25 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
 | 항목 | 값 |
 |---|---|
-| 상태 | assembled |
+| 상태 | uploaded |
 | 주제 | 사과 톡! 바나나 통! / Apple Tap Banana Bounce — Korean |
 | 컷 수 | 37개 (V 36 · S 0 · L 1), 씬 5개 |
 | 사용 크레딧 | 0 / 캡 150 (예상 0) |
@@ -18,11 +18,13 @@
 
 > 이 영상은 YouTube 에서 반드시 **"아동용(made for kids)"** 으로 설정해야 한다 (2~5세 대상 키즈 채널 — 지시서 7단계). upload.py 는 config 와 상관없이 `status.selfDeclaredMadeForKids = true` 로 올린다. Studio 에서 직접 올릴 때는 '예, 아동용입니다'를 선택할 것.
 
-- KO: 아직 업로드 전 — upload.py 로 올리면 아동용 true 로 자동 설정됨
+- KO: ✔ upload.py 가 selfDeclaredMadeForKids = true 로 업로드함 (m_S3IK7BXpo)
 
 ## 업로드 결과 (youtube.json)
 
-아직 업로드 전 — `python upload.py --ep ep13 --lang all` 또는 Actions momo-publish
+| 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
+|---|---|---|---|---|---|---|
+| KO | [m_S3IK7BXpo](https://www.youtube.com/watch?v=m_S3IK7BXpo) | private | — | 2026-11-05T23:24:27Z | ✔ | PLHfQPAU3ZVb8 |
 
 ## 제목·설명·태그
 
@@ -51,15 +53,16 @@
 |---|---:|---:|---:|
 | 컷 이미지 | 6/6 | 0 | 0 |
 | V 클립 | 6/6 | 0 | 0 |
-| 음성 블록 | 0/2 | 2 | 0 |
+| 음성 블록 | 2/2 | 2 | 0 |
 
 라이브러리 L 컷은 0 크레딧 (라이브러리 클립·고정 음성 재사용). 자세한 진행표: `python hf_jobs.py status --ep ep13`
 
 ## 승인 기록
 
 - 2026-11-06 한국어 전체곡으로 제작 계속, WAV 다운로드 1크레딧 사용 및 기존 승인 영상 재사용 승인.
+- 2026-11-06 사용자: 업로드해 — 81.6초 한국어 완성본 승인, 아동용 YouTube 업로드 승인.
 
 ## 다음 편에 반영할 점
 
-- 사용자 검토본 확인 후 노래·보컬 승인 상태 기록 및 아동용 YouTube 업로드. 특히 27.9초 연결부 첫 사과 발음을 확인.
-- 한국어 승인 영상 재사용 방식 유지; 영어판 ep12는 변경하지 않음.
+- 한국어 동요는 승인된 ep12 시각 소재를 계속 재사용.
+- 영어판 ep12는 이번 업로드에서 변경하지 않음.

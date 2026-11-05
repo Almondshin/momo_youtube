@@ -24,3 +24,7 @@ ASR의 유일한 unmatched run은 26.26–28.32초의 `자 자 바과`였다. �
 음원과 보컬 스템 https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/63068055-a457-471a-8151-50e003ab7094.mp4은 manifest.song에, 승인 영상 https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/63068055-a457-471a-8151-50e003ab7094.mp4은 gen/reused-assets.json에 기록했다. 검토본·썸네일은 media-ep13 release에도 보관했다. 생성 미디어는 Git에 넣지 않았다.
 
 YouTube 업로드 dry-run은 통과했고 private / madeForKids=true 요청이 준비됐다. 실제 YouTube 업로드는 아직 하지 않았다. PRODUCTION.md 6단계의 사용자 소리 확인이 남았다. 영어 ep12의 업로드 상태는 바꾸지 않았다.
+
+## 업로드 승인·실행 — 2026-11-06
+
+사용자가 “업로드해”로 최종본을 승인했다. 앞서 남아 있던 사용자 청취 게이트를 완료 상태로 기록했다. [YouTube 업로드](https://www.youtube.com/watch?v=m_S3IK7BXpo) 완료; 현재 비공개, 아동용, 썸네일 및 한국어 동요 재생목록 적용을 API로 확인했다. 최신 처리 상태는 upload-verification.json을 참조한다.

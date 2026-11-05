@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep13",
-  "status": "assembled",
+  "status": "uploaded",
   "topic": {
     "en": "Apple Tap Banana Bounce — Korean",
     "ko": "사과 톡! 바나나 통!"
@@ -43,7 +43,7 @@
         "사과 노래",
         "바나나 노래"
       ],
-      "playlist_id": null,
+      "playlist_id": "PLHfQPAU3ZVb8",
       "made_for_kids": true
     }
   },
@@ -56,11 +56,12 @@
   "notes": {
     "v_over_reason": "36 V edit cuts reuse six approved ep12 source clips. User authorized common visuals for Korean production; 0 new generations.",
     "approvals": [
-      "2026-11-06 한국어 전체곡으로 제작 계속, WAV 다운로드 1크레딧 사용 및 기존 승인 영상 재사용 승인."
+      "2026-11-06 한국어 전체곡으로 제작 계속, WAV 다운로드 1크레딧 사용 및 기존 승인 영상 재사용 승인.",
+      "2026-11-06 사용자: 업로드해 — 81.6초 한국어 완성본 승인, 아동용 YouTube 업로드 승인."
     ],
     "next_time": [
-      "사용자 검토본 확인 후 노래·보컬 승인 상태 기록 및 아동용 YouTube 업로드. 특히 27.9초 연결부 첫 사과 발음을 확인.",
-      "한국어 승인 영상 재사용 방식 유지; 영어판 ep12는 변경하지 않음."
+      "한국어 동요는 승인된 ep12 시각 소재를 계속 재사용.",
+      "영어판 ep12는 이번 업로드에서 변경하지 않음."
     ],
     "source_episode": "ep12",
     "production_request": "2026-11-06 계속진행",
@@ -68,8 +69,8 @@
     "caption_requirement": "Only 사과 or 바나나, one keyword on a single-fruit shot. No full lyric captions.",
     "visual_plan_status": "approved_reuse_from_ep12",
     "full_review": {
-      "status": "awaiting_user_audio_review",
-      "user_final_approval": false,
+      "status": "approved_by_user",
+      "user_final_approval": true,
       "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/63068055-a457-471a-8151-50e003ab7094.mp4",
       "media_id": "63068055-a457-471a-8151-50e003ab7094",
       "duration": 81.6,
@@ -78,7 +79,7 @@
       "sha256": "1c55221595c0ced0f7f01681e1e3216713b1a740b4e99f62419a4dedd7d92cc1",
       "all_37_cuts_video": true,
       "normal_build_completed": true,
-      "youtube_uploaded": false
+      "youtube_uploaded": true
     },
     "alignment_review": "Local ASR matches 111/111 lead-lyric tokens. The three unmatched ASR fragments at 26–28 s correspond to the final clap syllables and first apple call; focused re-transcription confirmed the claps and retained a 바과/사과 ambiguity at the join. No extra learning word is displayed; user audio review remains pending.",
     "render_decisions": [
@@ -91,6 +92,15 @@
       "suno_download_credits_used": 1,
       "suno_download_credits_remaining": 18,
       "generation_credits_charged_to_ep12_korean": 40
+    },
+    "youtube_upload": {
+      "video_id": "m_S3IK7BXpo",
+      "url": "https://www.youtube.com/watch?v=m_S3IK7BXpo",
+      "privacy": "private",
+      "made_for_kids": true,
+      "thumbnail_set": true,
+      "playlist_id": "PLHfQPAU3ZVb8",
+      "processing_status": "succeeded"
     }
   },
   "cuts": [
@@ -1367,12 +1377,12 @@
   ],
   "song": {
     "track": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "local:a21246e9d2c7",
       "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep13/ep13_song_a21246e9.flac",
       "attempts": 1,
       "credits": 0,
-      "reason": null,
+      "reason": "2026-11-06 사용자: 업로드해 — 한국어 81.6초 완성본 최종 승인",
       "sha1": "a21246e9d2c749ccdab64229debb03c302108d1a",
       "tool": "suno",
       "source_file": "korean_full_original.wav",
@@ -1383,8 +1393,8 @@
         {
           "job_id": "local:a21246e9d2c7",
           "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep13/ep13_song_a21246e9.flac",
-          "status": "generated",
-          "reason": null,
+          "status": "approved",
+          "reason": "2026-11-06 사용자: 업로드해 — 한국어 81.6초 완성본 최종 승인",
           "at": "2026-11-05T22:55Z",
           "credits": 0
         }
@@ -1461,20 +1471,20 @@
       "edit_note": "Video ends at 81.600 s with existing renderer 1.2-second fade after final clap; excludes 84.5 s vocal restart and long instrumental gap. Original 88.880 s retained."
     },
     "vocals": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "local:94ae9400f92d",
       "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep13/ep13_song_vocals_94ae9400.flac",
       "attempts": 1,
       "credits": 0,
-      "reason": null,
+      "reason": "2026-11-06 사용자: 업로드해 — 한국어 81.6초 완성본 최종 승인",
       "sha1": "94ae9400f92d83dea56324830170e454c10bfbb5",
       "of": "a21246e9d2c749ccdab64229debb03c302108d1a",
       "history": [
         {
           "job_id": "local:94ae9400f92d",
           "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep13/ep13_song_vocals_94ae9400.flac",
-          "status": "generated",
-          "reason": null,
+          "status": "approved",
+          "reason": "2026-11-06 사용자: 업로드해 — 한국어 81.6초 완성본 최종 승인",
           "at": "2026-11-05T22:55Z",
           "credits": 0
         }

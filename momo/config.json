@@ -215,7 +215,7 @@
     },
     "playlist_id": {
       "en": null,
-      "ko": null
+      "ko": "PLHfQPAU3ZVb8"
     },
     "channel_note": "EN/KO 를 서로 다른 채널에 올리면 언어별 refresh token(YOUTUBE_REFRESH_TOKEN_EN / _KO)을 쓴다."
   },
