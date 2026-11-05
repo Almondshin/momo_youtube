@@ -276,6 +276,42 @@ def test_track_spans_and_lyrics(tmp: Path) -> None:
     assert [lay.lit(p) for p in (0.0, 0.3, 0.7)] == [1, 2, 3]
 
 
+def test_track_keyword_captions(tmp: Path) -> None:
+    """Keyword mode must not silently render karaoke/card copy or disturb the song timeline."""
+    cfg = load_config(Paths(MOMO))
+    m = {"ep": "ep91", "song": json.loads(json.dumps(TRACK_SONG)), "cuts": track_cuts()}
+    m["cuts"][1]["keyword"] = {"en": " APPLE ", "ko": "사과"}
+    m["cuts"][2]["keyword"] = {"en": "BANANA", "ko": "바나나"}
+    before = json.dumps(m["song"], sort_keys=True)
+    legacy, _, _ = plan_timeline(Paths(tmp), cfg, m, "en", allow_missing=True)
+    assert legacy[1].lyrics[0][0] == "Carrot!" and not legacy[1].keyword
+    assert legacy[3].card == {"word": "corn", "text": "Yellow and sweet"}
+    m["song"]["caption_mode"] = "keywords"
+    plans, total, _ = plan_timeline(Paths(tmp), cfg, m, "en", allow_missing=True)
+    assert [p.keyword for p in plans] == ["", "APPLE", "BANANA", ""]
+    assert all(not p.lyrics and p.card is None for p in plans)
+    assert [(p.start, p.dur) for p in plans] == [(0.0, 4.5), (4.5, 2.0), (6.5, 2.0), (8.5, 4.5)]
+    assert total == 13.0
+    assert [(p.nar_len, p.nar_offset, p.speech_durs, p.block_starts, p.src_offset) for p in plans] == [
+        (p.nar_len, p.nar_offset, p.speech_durs, p.block_starts, p.src_offset) for p in legacy]
+    ko, _, _ = plan_timeline(Paths(tmp), cfg, m, "ko", allow_missing=True)
+    assert [p.keyword for p in ko] == ["", "사과", "바나나", ""]
+    m["song"].pop("caption_mode")
+    assert json.dumps(m["song"], sort_keys=True) == before
+
+
+def test_song_caption_mode_validation(tmp: Path) -> None:
+    """A misspelled or malformed opt-in must fail instead of publishing full lyrics."""
+    cfg = load_config(Paths(MOMO))
+    m = {"ep": "ep91", "song": json.loads(json.dumps(TRACK_SONG)), "cuts": track_cuts()}
+    for mode in ("lyrics", "keywords"):
+        m["song"]["caption_mode"] = mode
+        assert not validate_manifest(cfg, m)[0]
+    for mode in ("keyword", "", None, 7, ["keywords"]):
+        m["song"]["caption_mode"] = mode
+        assert any("caption_mode" in e for e in validate_manifest(cfg, m)[0]), mode
+
+
 def test_track_lines_refined_words(tmp: Path) -> None:
     """Refined lyrics store [word, t0, t1, t_whisper]: the 4th element changes nothing downstream."""
     song = json.loads(json.dumps(TRACK_SONG))

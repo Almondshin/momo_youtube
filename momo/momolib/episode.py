@@ -391,6 +391,8 @@ def validate_manifest(cfg: dict, manifest: dict) -> tuple[list[str], list[str]]:
         if not isinstance(song, dict):
             E.append("song 은 {bpm, beats_per_bar, music} 객체")
         else:
+            if song.get("caption_mode", "lyrics") not in ("lyrics", "keywords"):
+                E.append("song.caption_mode 은 lyrics | keywords")
             bpm = song.get("bpm")
             if not isinstance(bpm, (int, float)) or not 60 <= bpm <= 180:
                 E.append("song.bpm 은 60~180")
@@ -706,6 +708,7 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
     min_cut = float(r["min_cut"])
     xfade = float(r["xfade"])
     song = manifest.get("song") if isinstance(manifest.get("song"), dict) and manifest["song"].get("bpm") else None
+    keyword_mode = bool(song and song.get("caption_mode", "lyrics") == "keywords")
     track = song_track(song) if song else None
     if song:
         from .audio import speech_length  # numpy — only song episodes need it here
@@ -875,7 +878,7 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
         nar_offset = starts[0] if starts else xf + lead
         if c.get("lipsync") and not track:  # narration lip-sync: frame 0 holds until the narration starts
             hold0 = nar_offset
-        kw = "" if song else (((c.get("keyword") or {}).get(lang)) or "").strip()  # songs show the lyrics instead
+        kw = "" if song and not keyword_mode else (((c.get("keyword") or {}).get(lang)) or "").strip()
         lyrics = []
         if track:
             lyrics = track_cut_lyrics(tlines, t_start, start_f / fps, dur_f / fps)
@@ -888,6 +891,8 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
             texts = [it.text for it in speech]
             ends = starts[1:] + [dur_f / fps]
             lyrics = [(tx, s, d / k, e, None) for tx, s, d, k, e in zip(texts, starts, durs, tempos, ends)]
+        if keyword_mode:
+            lyrics = []  # Only visual captions change; aligned lyrics and audio timing stay intact.
         text_at = c.get("text_at")
         text_at = float(r["text_delay"]) if text_at is None else float(text_at)
         text_at = max(0.0, min(text_at, dur_f / fps - 0.5))
@@ -904,7 +909,8 @@ def plan_timeline(paths: Paths, cfg: dict, manifest: dict, lang: str,
             inset=None if inset is None else float(inset), sfx=sfx, estimated_audio=estimated,
             block_starts=[] if track else starts, block_tempos=[] if track else tempos,
             block_lens=[] if track else [d / k for d, k in zip(durs, tempos)], lyrics=lyrics,
-            card=c.get("card") if isinstance(c.get("card"), dict) else None, src_offset=src_off, hold0=hold0,
+            card=c.get("card") if not keyword_mode and isinstance(c.get("card"), dict) else None,
+            src_offset=src_off, hold0=hold0,
             lip_shift=ls, lip_locked=locked))
         prev_dur_f = dur_f
         prev_scene = scene
