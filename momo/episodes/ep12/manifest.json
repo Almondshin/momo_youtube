@@ -51,8 +51,8 @@
   },
   "credits": {
     "estimate": 46.2,
-    "spent": 21.0,
-    "generations": 6,
+    "spent": 23.0,
+    "generations": 7,
     "regenerations": 0
   },
   "notes": {
@@ -77,7 +77,8 @@
       "2026-11-05 사용자 추가 정정: 처음 남자 목소리가 나을 정도이며, 목소리뿐 아니라 가사와 리듬도 모두 별로다. v2/v3 가사·리듬 유지 방향 철회. 전체 음악 방향을 다시 잡아 짧은 후렴부터 검토.",
       "2026-11-05 v4 피드백: 더 리드미컬해야 하며 바나나차차·아기상어를 기준으로 할 것. 단순하고 느슨한 반복이 아니라 뚜렷한 비트·단어가 박자를 타는 신나는 율동 후렴이 필요하다.",
       "2026-11-05 최신 결정: 공유 링크 BUx5U88mdSg7XyeI는 v1 후보 B. 사용자가 7.5/10 기준곡으로 평가하고 이를 반영한 여러 후보 요청. 다른 스타일로 전면 이탈하던 방향 대신 기준곡 중심의 변주를 비교한다. 최종 제작 승인과는 구분.",
-      "2026-11-05 진행 순서 확인: C2 영어 곡 완성 후 같은 사과·바나나 주제의 한국어 곡. 한국어는 자연스러운 가사·리듬으로 별도 제작하고 모모 영상 소재를 공통 사용. 한국어 음원은 현재 미생성."
+      "2026-11-05 진행 순서 확인: C2 영어 곡 완성 후 같은 사과·바나나 주제의 한국어 곡. 한국어는 자연스러운 가사·리듬으로 별도 제작하고 모모 영상 소재를 공통 사용. 한국어 음원은 현재 미생성.",
+      "2026-11-05 사용자: 바나나 클로즈업은 가사에 맞는 구간이 있으면 추가. Banana 반복·소개·복습 구간에 사용하기로 결정. 사과 클로즈업의 배경 끊김 수정 요청에 따라 정지 원본 기반 고정 화면으로 교체."
     ],
     "visual_plan_status": "approved_by_user",
     "caption_requirement": "song.caption_mode=keywords: APPLE/BANANA 중 하나만 표시; 가사·카드 자막 없음. 오디오/가사 정렬은 유지.",
@@ -91,7 +92,9 @@
       "channel_verified": false,
       "uploaded": false
     },
-    "first_clip_group_status": "generated_inspected_awaiting_user_approval"
+    "first_clip_group_status": "c02_revised_others_inspected_awaiting_user_approval",
+    "banana_closeup_status": "image_generated_inspected_awaiting_user_approval",
+    "banana_closeup_video_plan": "After image approval: static 5-second local render, no background or lighting animation, 0 additional video generation credits."
   },
   "cuts": [
     {
@@ -178,7 +181,7 @@
       "inset": 0,
       "cut_at": 5.564,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -207,23 +210,40 @@
         },
         "clip": {
           "status": "generated",
-          "job_id": "a51654b8-39e4-487c-95a8-39e69c6c97f2",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_a51654b8-39e4-487c-95a8-39e69c6c97f2.mp4",
+          "job_id": null,
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/02a1e6c9-979c-4233-9f6c-e160f278029f.mp4",
           "attempts": 1,
           "credits": 5.0,
           "history": [
             {
               "job_id": "a51654b8-39e4-487c-95a8-39e69c6c97f2",
               "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_043301_a51654b8-39e4-487c-95a8-39e69c6c97f2.mp4",
-              "status": "generated",
-              "reason": "Completed; visual inspection pending",
+              "status": "rejected",
+              "reason": "User: 2번 수정 필요, 배경이 렉 걸린 것처럼 끊김. Local stable replacement planned.",
               "at": "2026-11-05T04:33Z",
               "credits": 5.0,
               "start_image": "9ed5146d-8635-4a2b-ae18-a191e9ceae2e"
+            },
+            {
+              "status": "generated",
+              "tool": "ffmpeg_static",
+              "local_revision": 2,
+              "credits": 0,
+              "reason": "2026-11-05 user-requested background stutter fix",
+              "sha256": "953566874fcd28646732466c5c54b97d7e09475e16f18a3a2fbdf2347b96f351",
+              "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/02a1e6c9-979c-4233-9f6c-e160f278029f.mp4",
+              "media_id": "02a1e6c9-979c-4233-9f6c-e160f278029f"
             }
           ],
-          "reason": "Completed; visual inspection pending",
-          "review_note": "Assistant inspected frames at 0/0.5/1.5/3/4.8s: character and fruit shape consistent, closed-mouth gentle pointing for Momo, stationary fruit close-up. 1280x720, 24fps, 5.041667s, no audio. User review pending; direct playback URLs provided after gallery was not visible."
+          "reason": "User rejected the AI clip for background stutter. Replaced from the approved still with a static 24fps 5s local render; no additional Higgsfield credits. Review pending.",
+          "review_note": "All 120 frames keep the same source image; no animated background, lighting change, or camera movement. Encoding differences only (mean RGB frame delta <0.001/255).",
+          "tool": "ffmpeg_static",
+          "local_revision": 2,
+          "local_file": "clips/c02.mp4",
+          "source_image": "c02",
+          "sha256": "953566874fcd28646732466c5c54b97d7e09475e16f18a3a2fbdf2347b96f351",
+          "publish_status": "uploaded_to_higgsfield",
+          "media_id": "02a1e6c9-979c-4233-9f6c-e160f278029f"
         }
       }
     },
@@ -342,7 +362,7 @@
       "inset": 0,
       "cut_at": 13.486,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -372,13 +392,36 @@
       "inset": 0,
       "cut_at": 15.312,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "fill": "hold",
-      "notes": "B2: 바나나 가까이; sung lines 8-8"
+      "notes": "B2: 바나나 가까이; sung lines 8-8",
+      "gen": {
+        "image": {
+          "status": "generated",
+          "job_id": "0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_044548_0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_044548_0545f4a1-5507-4cf1-8b58-d97ebcf8b3d5.png",
+              "status": "generated",
+              "reason": "바나나 가사 구간용 클로즈업 이미지 생성 완료. 사용자 이미지 검토 대기.",
+              "at": "2026-11-05T04:45Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "바나나 가사 구간용 클로즈업 이미지 생성 완료. 사용자 이미지 검토 대기.",
+          "review_note": "Assistant inspected c06 and approved c04 reference: one whole curved yellow banana, matching cream table and peach/mint room, no characters, text or extra fruit. User image approval pending.",
+          "reference_job_id": "771df8ef-0b7f-4c5f-9b2f-1756f90543e2",
+          "completed_model": "nano_banana_2"
+        }
+      }
     },
     {
       "id": "c07",
@@ -540,7 +583,7 @@
       "inset": 0,
       "cut_at": 30.063,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -630,7 +673,7 @@
       "inset": 0,
       "cut_at": 38.823,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -660,7 +703,7 @@
       "inset": 0,
       "cut_at": 40.644,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -930,7 +973,7 @@
       "inset": 0,
       "cut_at": 64.131,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -960,7 +1003,7 @@
       "inset": 0,
       "cut_at": 65.942,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1110,7 +1153,7 @@
       "inset": 0,
       "cut_at": 76.757,
       "image_prompt": "Close-up of exactly one red apple with a short brown stem on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same apple shape, lighting and set as the Momo apple shot, recognizable rounded apple silhouette. No characters in frame.",
-      "motion": "The single apple remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up from the approved image; the apple, background, lighting and camera remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1140,7 +1183,7 @@
       "inset": 0,
       "cut_at": 78.608,
       "image_prompt": "Close-up of exactly one whole curved yellow banana on the low round cream table in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. Same banana shape, lighting and set as the Momo banana shot. Smooth intact peel, not a bunch. No characters in frame.",
-      "motion": "The single banana remains stationary. Very subtle soft light shimmer. No object movement or added objects.",
+      "motion": "Static vocabulary close-up; the banana, background and lighting remain fixed.",
       "momo": false,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",

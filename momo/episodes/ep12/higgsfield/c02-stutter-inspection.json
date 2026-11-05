@@ -1,0 +1,20 @@
+{
+  "frames": 121,
+  "pts_step_min": 0.041665999999999315,
+  "pts_step_max": 0.04166700000000034,
+  "wall_delta_mean": 0.23630087077617645,
+  "wall_delta_max": 0.7432647347450256,
+  "wall_delta_by_halfsecond": [
+    0.342,
+    0.239,
+    0.236,
+    0.239,
+    0.228,
+    0.226,
+    0.204,
+    0.221,
+    0.175,
+    0.253
+  ],
+  "exact_duplicate_consecutive_frames": 0
+}
