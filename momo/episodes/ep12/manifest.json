@@ -30,7 +30,7 @@
   "upload": {
     "en": {
       "title": "Apple & Banana Song for Toddlers | Learn Fruit Words | MomoTime",
-      "description": "Sing and move with MomoTime! A playful apple and banana song for toddlers ages 2–4.\n\nTwo simple fruit words, a catchy repeated chorus, and gentle actions to follow along.\n\n#MomoTime #NurseryRhymes #ToddlerSongs",
+      "description": "Sing and move with MomoTime! A playful apple and banana song for toddlers ages 2–4.\n\nLearn and play together:\n• Say APPLE with Momo.\n• Say BANANA with Momo.\n• Repeat, sway and clap along with the song.\n\nEnjoy more simple songs with MomoTime!\n\n#MomoTime #NurseryRhymes #ToddlerSongs #KidsSongs #FruitSong #AppleSong #BananaSong #PreschoolSongs #EnglishForKids #SingAlong",
       "tags": [
         "MomoTime",
         "apple banana song",
@@ -38,7 +38,12 @@
         "toddler songs",
         "fruit song",
         "kids songs",
-        "learn English words"
+        "learn English words",
+        "apple song",
+        "banana song",
+        "preschool songs",
+        "sing along",
+        "songs for toddlers"
       ],
       "playlist_id": null
     },
@@ -51,9 +56,9 @@
   },
   "credits": {
     "estimate": 46.2,
-    "spent": 23.0,
-    "generations": 7,
-    "regenerations": 0
+    "spent": 29.0,
+    "generations": 10,
+    "regenerations": 1
   },
   "notes": {
     "v_over_reason": "90초 노래의 짧은 반복 가사에 맞춘 34개 V 편집 컷. 실제 신규 생성은 시작 이미지 6장과 5초 클립 6개뿐이며, 나머지는 clip_from으로 재사용한다. 2026-11-05 사용자 기획 승인.",
@@ -63,7 +68,8 @@
       "2026-11-05 사용자: 1크레딧 사용해 다운로드·제작 계속 — C2 90초 전체곡 WAV 다운로드 1크레딧과 후속 검수·제작 진행 승인.",
       "2026-11-05 사용자: 이 구성과 예산으로 제작 진행 — C2 90초 영상, 6종 소재 반복, 키워드 1개씩, 립싱크 없음, 예상 50.4 Higgsfield 크레딧 / 캡 150 승인.",
       "2026-11-05 사용자: 진행해 — 표시한 첫 이미지 c01/c02/c04 세 장 승인 및 해당 클립 제작 요청.",
-      "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행; 기존 모모 사과·바나나 클립 유지."
+      "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행; 기존 모모 사과·바나나 클립 유지.",
+      "2026-11-05 사용자: 두 장 사용해 영상 제작 — c08 춤 이미지와 c10 박수 이미지 수정본 승인; 두 5초 클립 합계 10크레딧 사용 승인."
     ],
     "next_time": [
       "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
@@ -98,7 +104,9 @@
     "banana_closeup_video_plan": "Approved 5-second local 100%-118% smoothstep zoom; 0 additional video generation credits.",
     "user_decisions": [
       "2026-11-05 사용자: 줌인 기능 없어? 사과나 바나나 영상에 — 두 과일에 줌인 적용 요청. 기존 이미지로 100→118%/5초 편집 미리보기 제작, 추가 크레딧 0. 최종 사용 승인은 대기."
-    ]
+    ],
+    "upload_metadata_status": "draft_prepared; final video review and YouTube reauthentication still required",
+    "dance_clap_image_status": "approved_by_user"
   },
   "cuts": [
     {
@@ -538,7 +546,28 @@
       "clip_seconds": 5,
       "fill": "hold",
       "notes": "D: 모모 작은 춤; sung lines 10-10",
-      "image_ref": "c01"
+      "image_ref": "c01",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png",
+              "status": "approved",
+              "reason": "2026-11-05 사용자: 두 장 사용해 영상 제작 — 춤·박수 이미지 승인, 합계 10크레딧 영상 제작 승인",
+              "at": "2026-11-05T05:57Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "2026-11-05 사용자: 두 장 사용해 영상 제작 — 춤·박수 이미지 승인, 합계 10크레딧 영상 제작 승인",
+          "review_note": "Full image and native-resolution face crop inspected: two floppy ears, large consistent eyes, two visible yellow buttons, full feet, closed-mouth smile, one character. Empty cream table remains softly blurred in background; no foreground obstruction or fruit."
+        }
+      }
     },
     {
       "id": "c09",
@@ -587,15 +616,44 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 23.553,
-      "image_prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
-      "motion": "Momo gives two gentle slow claps near the chest, feet remain planted, slight ear sway. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo gives two gentle claps in front of the lower belly below the overall pocket. Both yellow shoulder buttons remain visible above the hands, feet remain planted, slight ear sway. Keep lips closed in a soft smile throughout, no singing or talking.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "fill": "hold",
       "notes": "C: 모모 박수; sung lines 12-12",
-      "image_ref": "c01"
+      "image_ref": "c01",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060250_381658a6-82f7-4480-a941-17c4834e74ae.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "c265ea02-1b76-4985-b95a-df1cd92ba0f0",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_c265ea02-1b76-4985-b95a-df1cd92ba0f0.png",
+              "status": "rejected",
+              "reason": "직접 검수: 손이 노란 어깨 단추 두 개를 모두 가리고 발이 프레임 밖으로 잘림. 입이 열린 미소. 손을 배 앞쪽 낮게 두고 전신·닫힌 입이 보이는 이미지로 수정.",
+              "at": "2026-11-05T05:57Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060250_381658a6-82f7-4480-a941-17c4834e74ae.png",
+              "status": "approved",
+              "reason": "2026-11-05 사용자: 두 장 사용해 영상 제작 — 춤·박수 이미지 승인, 합계 10크레딧 영상 제작 승인",
+              "at": "2026-11-05T06:02Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "2026-11-05 사용자: 두 장 사용해 영상 제작 — 춤·박수 이미지 승인, 합계 10크레딧 영상 제작 승인",
+          "review_note": "Revision 2 inspected full-frame and native-resolution face crop: both floppy ears, two yellow buttons, both feet, separated hands at belly, closed mouth. Consistent face and outfit; no text, fruit or extra characters. User image approval pending."
+        }
+      }
     },
     {
       "id": "c11",
@@ -884,8 +942,8 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 48.88,
-      "image_prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters.",
-      "motion": "Momo gives two gentle slow claps near the chest, feet remain planted, slight ear sway. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo gives two gentle claps in front of the lower belly below the overall pocket. Both yellow shoulder buttons remain visible above the hands, feet remain planted, slight ear sway. Keep lips closed in a soft smile throughout, no singing or talking.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1184,8 +1242,8 @@
       "text_color": "white",
       "inset": 0,
       "cut_at": 74.188,
-      "image_prompt": "[Momo] medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters.",
-      "motion": "Momo gives two gentle slow claps near the chest, feet remain planted, slight ear sway. Keep a gentle closed-mouth smile throughout, no singing or talking.",
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo gives two gentle claps in front of the lower belly below the overall pocket. Both yellow shoulder buttons remain visible above the hands, feet remain planted, slight ear sway. Keep lips closed in a soft smile throughout, no singing or talking.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",

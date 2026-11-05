@@ -1,0 +1,64 @@
+{
+  "params": {
+    "model": "nano_banana_pro",
+    "prompt": "<<<751ad258-9d01-47d8-8bf8-94de57a74b0c>>> Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile, both long floppy ears always hang down beside the cheeks, the ears never stand upright, standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "medias": [
+      {
+        "role": "image",
+        "value": "bda098c2-89a1-4f1d-859b-35c40705c9b8"
+      }
+    ],
+    "count": 1
+  },
+  "quote": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Cost preflight for nano_banana_pro: 2 credits (2 exact). No job submitted."
+      }
+    ],
+    "structuredContent": {
+      "cost": {
+        "credits": 2,
+        "credits_exact": 2
+      },
+      "adjustments": {
+        "medias[0].role": {
+          "requested": "image",
+          "used": "image_references",
+          "reason": "Nano Banana Pro backend expects schema-key media roles"
+        }
+      }
+    },
+    "isError": false
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Submitted 1/1 image generations.\n- index 10: 381658a6-82f7-4480-a941-17c4834e74ae (pending)\nWait for the complete requested set with jobs_wait, then show it together with show_generation_by_ids using the collected indexed jobs. This includes jobs submitted across separate calls. job_display accepts only one id and cannot display a group; do not pass ids or call it once per job."
+      }
+    ],
+    "structuredContent": {
+      "jobs": [
+        {
+          "index": 10,
+          "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+          "status": "pending",
+          "adjustments": {
+            "medias[0].role": {
+              "requested": "image",
+              "used": "image_references",
+              "reason": "Nano Banana Pro backend expects schema-key media roles"
+            }
+          }
+        }
+      ],
+      "submitted_count": 1,
+      "failed_count": 0
+    },
+    "isError": false
+  }
+}

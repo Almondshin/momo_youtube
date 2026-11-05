@@ -1,0 +1,127 @@
+{
+  "request": [
+    {
+      "index": 8,
+      "params": {
+        "model": "nano_banana_pro",
+        "prompt": "<<<751ad258-9d01-47d8-8bf8-94de57a74b0c>>> Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile, both long floppy ears always hang down beside the cheeks, the ears never stand upright, full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+        "aspect_ratio": "16:9",
+        "resolution": "2k",
+        "medias": [
+          {
+            "role": "image",
+            "value": "bda098c2-89a1-4f1d-859b-35c40705c9b8"
+          }
+        ],
+        "count": 1
+      }
+    },
+    {
+      "index": 10,
+      "params": {
+        "model": "nano_banana_pro",
+        "prompt": "<<<751ad258-9d01-47d8-8bf8-94de57a74b0c>>> Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile, both long floppy ears always hang down beside the cheeks, the ears never stand upright, medium full-body view in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Both hands poised near chest for a gentle clap, both yellow shoulder buttons visible, happy closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+        "aspect_ratio": "16:9",
+        "resolution": "2k",
+        "medias": [
+          {
+            "role": "image",
+            "value": "bda098c2-89a1-4f1d-859b-35c40705c9b8"
+          }
+        ],
+        "count": 1
+      }
+    }
+  ],
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Submitted 2/2 image generations.\n- index 8: 8084be21-9f38-4efe-805a-9eba1a47d7fe (pending)\n- index 10: c265ea02-1b76-4985-b95a-df1cd92ba0f0 (pending)\nWait for the complete requested set with jobs_wait, then show it together with show_generation_by_ids using the collected indexed jobs. This includes jobs submitted across separate calls. job_display accepts only one id and cannot display a group; do not pass ids or call it once per job."
+      }
+    ],
+    "structuredContent": {
+      "jobs": [
+        {
+          "index": 8,
+          "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+          "status": "pending",
+          "adjustments": {
+            "medias[0].role": {
+              "requested": "image",
+              "used": "image_references",
+              "reason": "Nano Banana Pro backend expects schema-key media roles"
+            }
+          }
+        },
+        {
+          "index": 10,
+          "job_id": "c265ea02-1b76-4985-b95a-df1cd92ba0f0",
+          "status": "pending",
+          "adjustments": {
+            "medias[0].role": {
+              "requested": "image",
+              "used": "image_references",
+              "reason": "Nano Banana Pro backend expects schema-key media roles"
+            }
+          }
+        }
+      ],
+      "submitted_count": 2,
+      "failed_count": 0
+    },
+    "isError": false
+  },
+  "cost_quotes": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Cost preflight for nano_banana_pro: 2 credits (2 exact). No job submitted."
+          }
+        ],
+        "structuredContent": {
+          "cost": {
+            "credits": 2,
+            "credits_exact": 2
+          },
+          "adjustments": {
+            "medias[0].role": {
+              "requested": "image",
+              "used": "image_references",
+              "reason": "Nano Banana Pro backend expects schema-key media roles"
+            }
+          }
+        },
+        "isError": false
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Cost preflight for nano_banana_pro: 2 credits (2 exact). No job submitted."
+          }
+        ],
+        "structuredContent": {
+          "cost": {
+            "credits": 2,
+            "credits_exact": 2
+          },
+          "adjustments": {
+            "medias[0].role": {
+              "requested": "image",
+              "used": "image_references",
+              "reason": "Nano Banana Pro backend expects schema-key media roles"
+            }
+          }
+        },
+        "isError": false
+      }
+    }
+  ]
+}

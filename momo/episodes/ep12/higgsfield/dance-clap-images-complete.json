@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "index": 8,
+      "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png"
+    },
+    {
+      "index": 10,
+      "job_id": "c265ea02-1b76-4985-b95a-df1cd92ba0f0",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_c265ea02-1b76-4985-b95a-df1cd92ba0f0.png"
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "completed": 2,
+    "failed": 0,
+    "active": 0,
+    "errors": 0
+  },
+  "all_terminal": true
+}
