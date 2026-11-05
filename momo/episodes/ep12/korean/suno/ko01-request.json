@@ -1,0 +1,19 @@
+{
+  "tool": "audio-covers-create",
+  "arguments": {
+    "id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+    "lyrics": "[Intro - one-bar rhythmic pickup]\n\n[Verse 1 - short sung phrases]\n사과 사과\n여기 사과\n사과 사과\n냠냠 사과\n\n[Chorus - bouncy repeated hook]\n사과 사과 짝짝짝\n바나나 바나나 짝짝짝\n사과 사과 흔들흔들\n바나나 바나나 흔들흔들\n사과 사과 짝짝짝\n바나나 바나나 짝짝짝\n모모랑 같이\n랄랄라\n\n[Verse 2 - same short melody, no instrumental gap]\n바나나 바나나\n여기 바나나\n바나나 바나나\n냠냠 바나나\n\n[Chorus - same hook]\n사과 사과 짝짝짝\n바나나 바나나 짝짝짝\n사과 사과 흔들흔들\n바나나 바나나 흔들흔들\n사과 사과 짝짝짝\n바나나 바나나 짝짝짝\n모모랑 같이\n랄랄라\n\n[Bridge - sung, keep the beat]\n사과 사과\n바나나 바나나\n같이 같이\n짝짝짝\n\n[Final Chorus - same hook]\n사과 사과 짝짝짝\n바나나 바나나 짝짝짝\n사과 사과 흔들흔들\n바나나 바나나 흔들흔들\n사과 사과 짝짝짝\n바나나 바나나 짝짝짝\n모모랑 같이\n랄랄라\n\n[Outro - sung, short resolved ending]\n사과 바나나\n안녕 안녕\n\n[End - one final chord, stop]",
+    "style": "Korean-language toddler sing-along for ages 2 to 4, adapting the supplied C2 source song. Preserve its bright friendly female lead character and bouncy dance-pop groove, approximately 114 BPM, with a light bass pulse, clean rhythmic guitar, bright plucks and crisp soft handclaps. Let the melody breathe naturally around Korean syllables. Very clear native Korean diction, small comfortable vocal range, playful short repeated motifs, memorable sung refrain, easy downbeat emphasis on 사과 and 바나나. Brief one-bar pickup, singing immediately afterward, continuous singing through all sections, no instrumental break, complete sung ending followed by one short final chord. No spoken narration.",
+    "duration": 90,
+    "model": "v6",
+    "controls": {
+      "audio_influence": 0.6,
+      "style_influence": 0.8,
+      "weirdness": 0.1,
+      "variety": 0
+    },
+    "negative_style": "English lyrics, English words, spoken counting, spoken narration, long intro, instrumental break, drawn-out ending, abrupt cutoff, husky adult belting, operatic vocals, exaggerated baby voice, extreme high pitch, melisma, dense choir, distorted drums",
+    "idempotency_key": "momotime-ep12-ko01-c2-korean-20261105"
+  },
+  "save": "momo/episodes/ep12/korean/suno/ko01-create-response.json"
+}

@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "64f62b5a-2f73-458b-95c4-71a155d00dd8",
+    "question": "Assess this Korean nursery-song candidate for ages 2–4 by listening to the actual audio, not its prompt. Is it sung entirely in Korean, and are 사과 and 바나나 pronounced naturally and distinctly? Describe the perceived lead voice, beat and hook, whether short phrases are easy to repeat, whether any lyric is rushed or unclear, whether there is a mid-song instrumental gap over 4 seconds, and whether the final sung goodbye resolves naturally or is abruptly cut. Do not assume the requested youthful female voice succeeded. Reply in Korean, then JSON with dominant_language, english_sung_words_present, target_words_clear, voice_character, rhythmic_hook, rushed_phrases, longest_mid_song_gap_seconds_approx, natural_ending, abrupt_cutoff, concerns."
+  },
+  "save": "momo/episodes/ep12/korean/suno/K1-listen-request-response.json"
+}

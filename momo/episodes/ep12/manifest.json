@@ -70,7 +70,8 @@
       "2026-11-05 사용자: 진행해 — 표시한 첫 이미지 c01/c02/c04 세 장 승인 및 해당 클립 제작 요청.",
       "2026-11-05 사용자: 이대로 진행 — 사과 줌인 v3·바나나 줌인 v1 승인 및 나머지 제작 진행; 기존 모모 사과·바나나 클립 유지.",
       "2026-11-05 사용자: 두 장 사용해 영상 제작 — c08 춤 이미지와 c10 박수 이미지 수정본 승인; 두 5초 클립 합계 10크레딧 사용 승인.",
-      "2026-11-05 사용자: 그래그래 간단해도되 재인증 어떻게 시도할래 — 90초 전체 영상·음원 및 춤/박수 최종 클립 승인, YouTube 재인증 진행."
+      "2026-11-05 사용자: 그래그래 간단해도되 재인증 어떻게 시도할래 — 90초 전체 영상·음원 및 춤/박수 최종 클립 승인, YouTube 재인증 진행.",
+      "2026-11-05 사용자: 한국노래도 만들어야겠지 — 한국어 후속곡 제작 재확인. 한국어 후보 최종 선택·음원 다운로드 승인은 별도."
     ],
     "next_time": [
       "C2의 보컬·멜로디·리듬을 유지하며 길이와 끝맺음을 보완한다. 다른 보컬 방향으로 다시 바꾸지 않는다.",
@@ -136,6 +137,52 @@
       "processing_status": "succeeded",
       "thumbnail_set": true,
       "studio_review": "requires_google_identity_verification"
+    },
+    "korean_companion": {
+      "requested_at": "2026-11-05",
+      "user_request": "한국노래도 만들어야겠지",
+      "language": "ko",
+      "status": "awaiting_user_audio_selection",
+      "source_audio_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+      "brief": "korean/BRIEF.md",
+      "lyrics": "korean/lyrics.md",
+      "request": "korean/suno/ko01-request.json",
+      "target_keywords": [
+        "사과",
+        "바나나"
+      ],
+      "target_duration_seconds": 90,
+      "new_higgsfield_generations": 0,
+      "english_upload_unchanged": true,
+      "generation_idempotency_key": "momotime-ep12-ko01-c2-korean-20261105",
+      "audio_ids": [
+        "64f62b5a-2f73-458b-95c4-71a155d00dd8",
+        "3c6f8be1-d490-4504-a9b9-e2b9cd9ed553"
+      ],
+      "submission_record": "korean/suno/ko01-create-response.json",
+      "candidates": [
+        {
+          "label": "K1",
+          "audio_id": "64f62b5a-2f73-458b-95c4-71a155d00dd8",
+          "url": "https://suno.com/song/64f62b5a-2f73-458b-95c4-71a155d00dd8",
+          "duration_seconds": 80.8,
+          "status": "generated_reviewed_awaiting_user_selection"
+        },
+        {
+          "label": "K2",
+          "audio_id": "3c6f8be1-d490-4504-a9b9-e2b9cd9ed553",
+          "url": "https://suno.com/song/3c6f8be1-d490-4504-a9b9-e2b9cd9ed553",
+          "duration_seconds": 81.2,
+          "status": "generated_reviewed_awaiting_user_selection"
+        }
+      ],
+      "review": "korean/REVIEW.md",
+      "generation_credits_spent": 10,
+      "generation_credits_remaining": 2400,
+      "download_credits_spent": 0,
+      "download_credits_remaining": 19,
+      "review_method": "Suno official audio-listen; automated listening analysis, not human approval",
+      "transport_note": "Initial long PTY input did not reach the RPC call; unchanged 2410-credit balance verified. Only the later request-file submission reached audio-covers-create."
     }
   },
   "cuts": [
