@@ -1,0 +1,68 @@
+{
+  "ep": "ep14",
+  "kind": "clip",
+  "remaining": 2,
+  "count": 2,
+  "batch_limit": 4,
+  "items": [
+    {
+      "key": "c03 clip",
+      "cut": "c03",
+      "kind": "clip",
+      "status": "pending",
+      "attempts": 0,
+      "tool": "generate_video",
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "ed4e10ae-5afa-4bbf-ae02-3db00cba5f25"
+          }
+        ],
+        "folder_id": "491bf804-5216-4190-9ce4-15a23af5c46f"
+      },
+      "record": "python3 momo/hf_jobs.py record --ep ep14 --cut c03 --kind clip --job-id <JOB_ID> --url '<URL>' --status generated"
+    },
+    {
+      "key": "c04 clip",
+      "cut": "c04",
+      "kind": "clip",
+      "status": "pending",
+      "attempts": 0,
+      "tool": "generate_video",
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "d9e25f86-cf9a-46b1-9ffa-e6303307e97f"
+          }
+        ],
+        "folder_id": "491bf804-5216-4190-9ce4-15a23af5c46f"
+      },
+      "record": "python3 momo/hf_jobs.py record --ep ep14 --cut c04 --kind clip --job-id <JOB_ID> --url '<URL>' --status generated"
+    }
+  ],
+  "awaiting_review": [],
+  "blocked": [],
+  "notes": [
+    "승인된 이미지를 start_image 로만 (text-to-video 금지). 결과 클립은 형태 변형·의상 변화·귀 개수 확인",
+    "결과 확인 후: 같은 record 명령에 --status approved | rejected --reason \"...\" (job 이 같으면 크레딧 재계산 없음)"
+  ],
+  "credits": {
+    "spent": 11.0,
+    "cap": 150.0,
+    "projected": 31.4
+  }
+}

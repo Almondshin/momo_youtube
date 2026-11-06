@@ -1,0 +1,44 @@
+{
+  "ep": "ep14",
+  "kind": "clip",
+  "remaining": 1,
+  "count": 1,
+  "batch_limit": 4,
+  "items": [
+    {
+      "key": "c02 clip",
+      "cut": "c02",
+      "kind": "clip",
+      "status": "pending",
+      "attempts": 0,
+      "tool": "generate_video",
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "dcc0574e-dc74-4799-95e6-d4077160cef5"
+          }
+        ],
+        "folder_id": "491bf804-5216-4190-9ce4-15a23af5c46f"
+      },
+      "record": "python3 momo/hf_jobs.py record --ep ep14 --cut c02 --kind clip --job-id <JOB_ID> --url '<URL>' --status generated"
+    }
+  ],
+  "awaiting_review": [],
+  "blocked": [],
+  "notes": [
+    "승인된 이미지를 start_image 로만 (text-to-video 금지). 결과 클립은 형태 변형·의상 변화·귀 개수 확인",
+    "결과 확인 후: 같은 record 명령에 --status approved | rejected --reason \"...\" (job 이 같으면 크레딧 재계산 없음)"
+  ],
+  "credits": {
+    "spent": 6.0,
+    "cap": 150.0,
+    "projected": 32.4
+  }
+}

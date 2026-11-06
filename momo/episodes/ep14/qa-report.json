@@ -1,0 +1,40 @@
+{
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "2318"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "r_frame_rate": "0/0",
+        "nb_frames": "3623"
+      }
+    ],
+    "format": {
+      "duration": "77.266667",
+      "size": "46083537"
+    }
+  },
+  "timeline_total": 77.2667,
+  "cuts": 37,
+  "all_real_assets": true,
+  "all_segments_trimmed": true,
+  "caption_words": [
+    "CAT",
+    "DOG"
+  ],
+  "dance_clap_no_labels": true,
+  "integrated_lufs": -14.13,
+  "true_peak_dbtp": -1.43,
+  "source_audio_correlation_first_75s": 0.9962259900578534,
+  "asr_95_percent": "not passed; user-authorized exception recorded"
+}

@@ -509,6 +509,15 @@ See `episodes/ep12/korean/direction02/REVIEW.md` for generated candidates and ac
    | calypso | kids calypso, 108 bpm, steel pans, nylon guitar, bongos, light horns |
    | lullaby | soft bedtime lullaby, 72–104 bpm, music box, celesta, soft strings, warm (ep10) |
    | march | Korean kindergarten sing-along march, 124 bpm, piano, bells, glockenspiel, claps (ep04–ep09 — rest it) |
+**2026-11-06 user discretion update:** After selecting ep14 revision 1 and approving its WAV download and
+33.6-credit visual plan, the user answered the 95%-ASR exception question with “항상 지침을 따르지 않아도돼”.
+Use judgment within the approved song, scope and budget instead of repeatedly stopping at mechanical gates.
+For repetitive onomatopoeia, record failed ASR honestly and cross-check keyword timing against the vocal stem
+and official alignment; do not replace a user-selected song solely to satisfy an unreliable recognizer.
+The agent may inspect routine image/clip batches and continue to a full review video within the approved
+budget. Record agent review as agent review, not an explicit user approval. This does not authorize larger
+budgets, changing the selected take, exposing secrets, or regenerating approved library assets.
+
 2. **[승인]** The user picks a take and puts its WAV + stems (Vocals, Instrumental) in
    `~/ml/<ep>/suno/<take>/`. Check it: `tools/align_lyrics.py` (sidecar venv) must hear ≥95 % of the lyric words
    and report no "sung but not in lyrics" runs — otherwise fix `lyrics.md` to what is sung and re-align.

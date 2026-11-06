@@ -1,0 +1,44 @@
+{
+  "ep": "ep14",
+  "kind": "clip",
+  "remaining": 1,
+  "count": 1,
+  "batch_limit": 4,
+  "items": [
+    {
+      "key": "c05 clip",
+      "cut": "c05",
+      "kind": "clip",
+      "status": "pending",
+      "attempts": 0,
+      "tool": "generate_video",
+      "params": {
+        "model": "seedance_2_0_mini",
+        "prompt": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed. Keep the character design exactly the same. Static fixed camera, no camera movement, no zoom, no morphing, gentle small motion only.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "resolution": "720p",
+        "generate_audio": false,
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "d2283ddd-2aea-41a6-8375-ed6c359663a4"
+          }
+        ],
+        "folder_id": "491bf804-5216-4190-9ce4-15a23af5c46f"
+      },
+      "record": "python3 momo/hf_jobs.py record --ep ep14 --cut c05 --kind clip --job-id <JOB_ID> --url '<URL>' --status generated"
+    }
+  ],
+  "awaiting_review": [],
+  "blocked": [],
+  "notes": [
+    "승인된 이미지를 start_image 로만 (text-to-video 금지). 결과 클립은 형태 변형·의상 변화·귀 개수 확인",
+    "결과 확인 후: 같은 record 명령에 --status approved | rejected --reason \"...\" (job 이 같으면 크레딧 재계산 없음)"
+  ],
+  "credits": {
+    "spent": 23.0,
+    "cap": 150.0,
+    "projected": 29.0
+  }
+}

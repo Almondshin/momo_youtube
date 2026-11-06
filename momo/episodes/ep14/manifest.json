@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep14",
-  "status": "planning",
+  "status": "assembled",
   "topic": {
     "en": "Cat and Dog",
     "ko": "고양이와 강아지"
@@ -24,15 +24,30 @@
       "en": "CAT & DOG",
       "ko": "고양이 강아지"
     },
-    "text_pos": "top"
+    "text_pos": "bottom"
   },
   "bgm": null,
   "upload": {
     "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
+      "title": "Cat, Cat! Dog, Dog! 🐱🐶 | Animal Sounds Song for Toddlers | Momo Time",
+      "description": "Sing, clap and meet a kitten and puppy with Momo! A simple English animal song for toddlers ages 2–4.\n\nLearn two easy words: CAT and DOG.\nMatch each animal with meow and woof.\nRepeat the short chorus and clap along.\n\nEnjoy more playful songs with Momo Time!\n\n#MomoTime #CatAndDog #AnimalSounds #NurseryRhymes #ToddlerSongs #KidsSongs #PreschoolSongs #LearnEnglish #SingAlong #BabySongs",
+      "tags": [
+        "Momo Time",
+        "cat and dog song",
+        "animal sounds song",
+        "nursery rhymes",
+        "toddler songs",
+        "songs for toddlers",
+        "kids songs",
+        "preschool songs",
+        "learn English",
+        "cat song",
+        "dog song",
+        "meow woof",
+        "sing along",
+        "baby songs"
+      ],
+      "playlist_id": "PLTOO0Q-QSj5I"
     },
     "ko": {
       "title": "",
@@ -42,9 +57,9 @@
     }
   },
   "credits": {
-    "estimate": 33.6,
-    "spent": 0,
-    "generations": 0,
+    "estimate": 28,
+    "spent": 28.0,
+    "generations": 8,
     "regenerations": 0
   },
   "notes": {
@@ -52,9 +67,15 @@
     "approvals": [
       "2026-11-06 사용자: 1번으로 가자 — revision02 수정 1, 77.28초 곡 선택 승인.",
       "2026-11-06 사용자: 1크레딧 사용해 다운로드·제작 계속 — revision02 수정 1 WAV 다운로드 승인.",
-      "2026-11-06 사용자: 이 구성과 예산으로 진행 — 새 동물 장면 4종 + 기존 춤·박수, CAT/DOG 키워드, 립싱크 없음, Higgsfield 28크레딧/여유 포함 33.6크레딧 구성 승인."
+      "2026-11-06 사용자: 이 구성과 예산으로 진행 — 새 동물 장면 4종 + 기존 춤·박수, CAT/DOG 키워드, 립싱크 없음, Higgsfield 28크레딧/여유 포함 33.6크레딧 구성 승인.",
+      "2026-11-06 사용자: 항상 지침을 따르지 않아도돼 — 95% 자동 가사 인식 게이트 예외 문의에 대한 응답. 선택 음원과 승인한 구성·예산 안에서 담당자가 판단해 제작 진행; 기계적인 단계별 승인 반복을 피한다."
     ],
-    "next_time": [],
+    "next_time": [
+      "Preserve the simple CAT/DOG hook direction selected by user; learn only two main words.",
+      "User permits judgment instead of mechanical approvals: complete routine media review within approved scope and budget.",
+      "Whisper hallucinated repetitive onomatopoeia; record limitations, use provider alignment plus vocal envelope and keyword-level review instead of falsely claiming 95% recognition.",
+      "Reuse these four animal scenes and existing dance/clap for a future Korean companion without regeneration."
+    ],
     "production_request": "2026-11-06 금요일 추가 1곡 요청; 기존 손·발 제안 거절, 다른 주제 제작 요청.",
     "topic_selection": "User rated cat/dog source A 80% and requested a catchier, easier-to-imitate refinement; continue this topic.",
     "production_direction": "English song for ages 2–4; two learning words cat/dog; clear lively rhythmic hook; no lip sync; original composition.",
@@ -147,18 +168,33 @@
       "sha256": "6cf7b8198136c533cebf7376f8d5257e78a7cc172cd2186cb0a6a5cdd39a981a"
     },
     "alignment_review": {
-      "status": "needs_review",
+      "status": "user_authorized_exception",
       "whole_song_asr_match": 0.051,
       "reason": "Whisper turbo loops on highly repetitive sung syllables. Short chunks recover CAT/DOG but inconsistent meow/woof counts remain. Do not claim the 95% lyric gate passed.",
-      "draft_only": true,
+      "draft_only": false,
       "provider_alignment_file": "suno/revision02/alignment-response.json",
-      "production_gate": "Full lyric QA and exact transition refinement remain before final render; visual source plan can be reviewed independently.",
+      "production_gate": "User authorized proceeding despite ASR threshold; keep selected audio, keyword-only captions, manual visual and timing checks. Never claim ASR passed.",
       "vocal_envelope_refinement": {
         "aligned_words": 139,
         "attached_to_detected_vocal_onset": 133,
         "is_word_recognition_accuracy": false,
         "mid_song_whole_bars_to_remove": 0
-      }
+      },
+      "independent_model_comparison": {
+        "asr-chunks": {
+          "matched": 118,
+          "expected": 139,
+          "rate": 0.849,
+          "heard_words": 129
+        },
+        "asr-large-v3": {
+          "matched": 82,
+          "expected": 139,
+          "rate": 0.59,
+          "heard_words": 94
+        }
+      },
+      "final_caption_decision": "Only CAT/DOG are rendered; no full lyric captions. Clip switches follow provider first-word times refined to vocal onset, except forced CAT at 67.184s removed and audible CAT near 69.1s used. Dance/clap shots have no word label so the bunny is not labelled CAT or DOG."
     },
     "visual_plan": {
       "status": "approved",
@@ -177,6 +213,16 @@
         "CAT",
         "DOG"
       ]
+    },
+    "production_discretion": "User permits judgment over mechanical runbook adherence. Inspect new assets directly and proceed within approved 33.6-credit estimate; do not expand budget or change selected song.",
+    "final_review": {
+      "reviewer": "agent under user-authorized discretion",
+      "visual_review": "All four new clips inspected at 20 samples each, all 37 edited cuts and full 2-second sampling sheet reviewed. Captions match animal species; dance and clap have no labels. No end-frame holds or looped source segments.",
+      "render": "1920x1080, 30fps, 77.2667s, all real assets",
+      "audio": "Selected original retained; integrated -14.13 LUFS, -1.43 dBTP after AAC; 0.9962 correlation against source over first 75s.",
+      "asr_limit": "Automated full-lyric recognition did not pass 95%; user explicitly permitted proceeding. No claim of perfect transcription.",
+      "higgsfield_credits": 28,
+      "regen_count": 0
     }
   },
   "cuts": [
@@ -243,13 +289,52 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "notes": "cat_wide; provisional phrase: Cat cat Meow meow",
-      "cut_at": 1.992
+      "cut_at": 1.992,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "dcc0574e-dc74-4799-95e6-d4077160cef5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022121_dcc0574e-dc74-4799-95e6-d4077160cef5.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "dcc0574e-dc74-4799-95e6-d4077160cef5",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022121_dcc0574e-dc74-4799-95e6-d4077160cef5.png",
+              "status": "approved",
+              "reason": "Agent visual review under 2026-11-06 user discretion: consistent Momo eyes, floppy ears and two yellow buttons; one clear orange kitten; clean full bodies and no text. Momo has a small open smile, accepted as a static expression; video must not animate speech.",
+              "at": "2026-11-06T02:21Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent visual review under 2026-11-06 user discretion: consistent Momo eyes, floppy ears and two yellow buttons; one clear orange kitten; clean full bodies and no text. Momo has a small open smile, accepted as a static expression; video must not animate speech."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "c51967fa-1279-4400-b91d-cf0b2bb1633e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022345_c51967fa-1279-4400-b91d-cf0b2bb1633e.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "c51967fa-1279-4400-b91d-cf0b2bb1633e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022345_c51967fa-1279-4400-b91d-cf0b2bb1633e.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed 20 frames across 5s: stable character and kitten anatomy, two ears/buttons, gentle paw/blink/tail motion, no speaking animation. Smile gradually closes once; accepted as expression change. 1280x720, 24fps, 121 frames, silent.",
+              "at": "2026-11-06T02:23Z",
+              "credits": 5.0,
+              "start_image": "dcc0574e-dc74-4799-95e6-d4077160cef5"
+            }
+          ],
+          "reason": "Agent reviewed 20 frames across 5s: stable character and kitten anatomy, two ears/buttons, gentle paw/blink/tail motion, no speaking animation. Smile gradually closes once; accepted as expression change. 1280x720, 24fps, 121 frames, silent."
+        }
+      }
     },
     {
       "id": "c03",
@@ -268,14 +353,53 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
       "notes": "dog_wide; provisional phrase: Dog dog Woof woof",
       "cut_at": 4.097,
-      "image_ref": "c02"
+      "image_ref": "c02",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "ed4e10ae-5afa-4bbf-ae02-3db00cba5f25",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022307_ed4e10ae-5afa-4bbf-ae02-3db00cba5f25.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "ed4e10ae-5afa-4bbf-ae02-3db00cba5f25",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022307_ed4e10ae-5afa-4bbf-ae02-3db00cba5f25.png",
+              "status": "approved",
+              "reason": "Agent review under user discretion: Momo proportions, eyes, ears and two buttons consistent; one golden puppy clearly distinct from kitten, closed smiles. Small cartoon tail-motion strokes accepted; clip must retain one continuous tail.",
+              "at": "2026-11-06T02:23Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent review under user discretion: Momo proportions, eyes, ears and two buttons consistent; one golden puppy clearly distinct from kitten, closed smiles. Small cartoon tail-motion strokes accepted; clip must retain one continuous tail."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "6c0032cd-0adc-4883-9891-d953291f0c06",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022510_6c0032cd-0adc-4883-9891-d953291f0c06.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "6c0032cd-0adc-4883-9891-d953291f0c06",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022510_6c0032cd-0adc-4883-9891-d953291f0c06.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed 20 samples over 5s: stable Momo face, ears and two buttons; puppy remains one animal with one tail, gentle blink/wag, no speech. Initial still-image motion marks do not persist as extra tails.",
+              "at": "2026-11-06T02:25Z",
+              "credits": 5.0,
+              "start_image": "ed4e10ae-5afa-4bbf-ae02-3db00cba5f25"
+            }
+          ],
+          "reason": "Agent reviewed 20 samples over 5s: stable Momo face, ears and two buttons; puppy remains one animal with one tail, gentle blink/wag, no speech. Initial still-image motion marks do not persist as extra tails."
+        }
+      }
     },
     {
       "id": "c04",
@@ -301,7 +425,46 @@
       "clip_seconds": 5,
       "notes": "cat_close; provisional phrase: Cat cat Meow meow",
       "cut_at": 6.088,
-      "image_ref": "c02"
+      "image_ref": "c02",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d9e25f86-cf9a-46b1-9ffa-e6303307e97f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022308_d9e25f86-cf9a-46b1-9ffa-e6303307e97f.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "d9e25f86-cf9a-46b1-9ffa-e6303307e97f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022308_d9e25f86-cf9a-46b1-9ffa-e6303307e97f.png",
+              "status": "approved",
+              "reason": "Agent review under user discretion: same orange kitten, full ears and paws, one tail, clean background and no text.",
+              "at": "2026-11-06T02:23Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent review under user discretion: same orange kitten, full ears and paws, one tail, clean background and no text."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "6ba83cb7-bc27-4b31-a732-a2ab9719ec31",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022513_6ba83cb7-bc27-4b31-a732-a2ab9719ec31.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "6ba83cb7-bc27-4b31-a732-a2ab9719ec31",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022513_6ba83cb7-bc27-4b31-a732-a2ab9719ec31.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed 20 samples over 5s: centered orange kitten, two ears, stable paws and one curling tail, gentle blinking, no text or abrupt jumps. Small tabby forehead markings remain consistent across the clip; accepted.",
+              "at": "2026-11-06T02:25Z",
+              "credits": 5.0,
+              "start_image": "d9e25f86-cf9a-46b1-9ffa-e6303307e97f"
+            }
+          ],
+          "reason": "Agent reviewed 20 samples over 5s: centered orange kitten, two ears, stable paws and one curling tail, gentle blinking, no text or abrupt jumps. Small tabby forehead markings remain consistent across the clip; accepted."
+        }
+      }
     },
     {
       "id": "c05",
@@ -319,7 +482,7 @@
       "text_pos": "bottom",
       "text_color": "white",
       "inset": 0,
-      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a single short tail resting still, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame. Clean single tail silhouette without motion streaks or floating marks.",
       "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
       "momo": false,
       "lipsync": false,
@@ -327,7 +490,46 @@
       "clip_seconds": 5,
       "notes": "dog_close; provisional phrase: Dog dog Woof woof",
       "cut_at": 8.173,
-      "image_ref": "c03"
+      "image_ref": "c03",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d2283ddd-2aea-41a6-8375-ed6c359663a4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022455_d2283ddd-2aea-41a6-8375-ed6c359663a4.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "d2283ddd-2aea-41a6-8375-ed6c359663a4",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022455_d2283ddd-2aea-41a6-8375-ed6c359663a4.png",
+              "status": "approved",
+              "reason": "Agent review under user discretion: matching golden puppy, one continuous tail, both floppy ears and paws visible, clean background and no text.",
+              "at": "2026-11-06T02:24Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent review under user discretion: matching golden puppy, one continuous tail, both floppy ears and paws visible, clean background and no text."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "d52315c5-8184-4084-bbf8-efca201ed36f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022705_d52315c5-8184-4084-bbf8-efca201ed36f.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "d52315c5-8184-4084-bbf8-efca201ed36f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022705_d52315c5-8184-4084-bbf8-efca201ed36f.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed 20 samples across 5s: matching golden puppy, stable ears/paws/single tail, gentle blink and tail movement, no camera shake or abrupt shape change, silent.",
+              "at": "2026-11-06T02:27Z",
+              "credits": 5.0,
+              "start_image": "d2283ddd-2aea-41a6-8375-ed6c359663a4"
+            }
+          ],
+          "reason": "Agent reviewed 20 samples across 5s: matching golden puppy, stable ears/paws/single tail, gentle blink and tail movement, no camera shake or abrupt shape change, silent."
+        }
+      }
     },
     {
       "id": "c06",
@@ -346,7 +548,7 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -462,7 +664,7 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -578,7 +780,7 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -628,7 +830,7 @@
         "en": ""
       },
       "keyword": {
-        "en": "CAT"
+        "en": ""
       },
       "transition": "cut",
       "text_at": 0,
@@ -675,7 +877,7 @@
         "en": ""
       },
       "keyword": {
-        "en": "DOG"
+        "en": ""
       },
       "transition": "cut",
       "text_at": 0,
@@ -712,7 +914,7 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -828,7 +1030,7 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -944,7 +1146,7 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1060,7 +1262,7 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1176,7 +1378,7 @@
       "text_color": "white",
       "inset": 0,
       "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
-      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
       "momo": true,
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
@@ -1281,9 +1483,9 @@
   ],
   "song": {
     "track": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "local:900e3a80af95",
-      "url": null,
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep14/ep14_song_900e3a80.flac",
       "attempts": 1,
       "credits": 0,
       "reason": null,
@@ -1296,8 +1498,8 @@
       "history": [
         {
           "job_id": "local:900e3a80af95",
-          "url": null,
-          "status": "generated",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep14/ep14_song_900e3a80.flac",
+          "status": "approved",
           "reason": null,
           "at": "2026-11-06T02:09Z",
           "credits": 0
@@ -1403,9 +1605,9 @@
       "lyrics_sha1": "900e3a80af95e6eba3e71eb36b27808c9670e11a"
     },
     "vocals": {
-      "status": "generated",
+      "status": "approved",
       "job_id": "local:00fa2166e950",
-      "url": null,
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep14/ep14_song_vocals_00fa2166.flac",
       "attempts": 1,
       "credits": 0,
       "reason": null,
@@ -1414,8 +1616,8 @@
       "history": [
         {
           "job_id": "local:00fa2166e950",
-          "url": null,
-          "status": "generated",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep14/ep14_song_vocals_00fa2166.flac",
+          "status": "approved",
           "reason": null,
           "at": "2026-11-06T02:09Z",
           "credits": 0
@@ -2476,6 +2678,7 @@
           ]
         ]
       }
-    ]
+    ],
+    "refs_urls": {}
   }
 }
