@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-11-06",
+  "image": {
+    "params": {
+      "model": "nano_banana_pro",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "count": 1
+    },
+    "response": {
+      "cost": {
+        "credits": 2,
+        "credits_exact": 2
+      }
+    }
+  },
+  "clip": {
+    "params": {
+      "model": "seedance_2_0_mini",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration": 5,
+      "generate_audio": false,
+      "count": 1
+    },
+    "response": {
+      "cost": {
+        "credits": 5,
+        "credits_exact": 5
+      }
+    }
+  },
+  "expected": {
+    "images": 4,
+    "clips": 4,
+    "base": 28,
+    "contingency_rate": 0.2,
+    "total": 33.6
+  },
+  "balance": {
+    "credits": 1166.37,
+    "subscription_plan_type": "plus",
+    "free_trial": {
+      "status": null,
+      "eligible": false,
+      "offered_kind": null,
+      "kind": null,
+      "trial_credits": null,
+      "ends_at": null,
+      "unlim_available": false,
+      "unlim_remaining": null,
+      "unlim_expires_at": null
+    },
+    "free_gens": [
+      {
+        "job_set_types": [
+          "ai_influencer_motion_control",
+          "ai_influencer_replace_object",
+          "hf_mult_motion_control",
+          "hf_mult_replace_object"
+        ],
+        "remaining": 1,
+        "parameters": {
+          "resolution": [
+            "480p",
+            "720p"
+          ]
+        },
+        "max_duration": 30
+      },
+      {
+        "job_set_types": [
+          "viral_hub_video"
+        ],
+        "remaining": 0,
+        "parameters": {
+          "resolution": [
+            "480p",
+            "720p"
+          ]
+        },
+        "max_duration": null
+      },
+      {
+        "job_set_types": [
+          "ai_influencer_sheet"
+        ],
+        "remaining": 5,
+        "parameters": {},
+        "max_duration": null
+      }
+    ]
+  },
+  "no_jobs_submitted": true
+}

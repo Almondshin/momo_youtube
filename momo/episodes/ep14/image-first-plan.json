@@ -1,0 +1,36 @@
+{
+  "ep": "ep14",
+  "kind": "image",
+  "remaining": 1,
+  "count": 1,
+  "batch_limit": 4,
+  "items": [
+    {
+      "key": "c02 image",
+      "cut": "c02",
+      "kind": "image",
+      "status": "pending",
+      "attempts": 0,
+      "tool": "generate_image",
+      "params": {
+        "model": "nano_banana_pro",
+        "prompt": "<<<751ad258-9d01-47d8-8bf8-94de57a74b0c>>> Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile, both long floppy ears always hang down beside the cheeks, the ears never stand upright, seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles, bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+        "aspect_ratio": "16:9",
+        "resolution": "2k",
+        "folder_id": "491bf804-5216-4190-9ce4-15a23af5c46f"
+      },
+      "record": "python3 momo/hf_jobs.py record --ep ep14 --cut c02 --kind image --job-id <JOB_ID> --url '<URL>' --status generated"
+    }
+  ],
+  "awaiting_review": [],
+  "blocked": [],
+  "notes": [
+    "이미지는 한 번에 3~4장씩만 병렬, 12장 이상 동시 요청 금지. 처음이면 1번 컷 1장 → 씬 1 의 3장 순서로 보여주고 승인받을 것",
+    "결과 확인 후: 같은 record 명령에 --status approved | rejected --reason \"...\" (job 이 같으면 크레딧 재계산 없음)"
+  ],
+  "credits": {
+    "spent": 0.0,
+    "cap": 150.0,
+    "projected": 33.6
+  }
+}

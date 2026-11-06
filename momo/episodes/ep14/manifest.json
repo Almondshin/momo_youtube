@@ -15,14 +15,14 @@
     "momo"
   ],
   "title": {
-    "en": "",
-    "ko": ""
+    "en": "Cat, Cat! Dog, Dog! | Animal Sounds Song | Momo Time",
+    "ko": "고양이·강아지 영어 동요"
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c02",
     "text": {
-      "en": "",
-      "ko": ""
+      "en": "CAT & DOG",
+      "ko": "고양이 강아지"
     },
     "text_pos": "top"
   },
@@ -42,14 +42,18 @@
     }
   },
   "credits": {
-    "estimate": null,
+    "estimate": 33.6,
     "spent": 0,
     "generations": 0,
     "regenerations": 0
   },
   "notes": {
-    "v_over_reason": null,
-    "approvals": [],
+    "v_over_reason": "Short repeated song phrases use 37 playback cuts, but only four new 5-second animal clips; approved dance/clap clips are reused. No 37-clip generation. Source plan approval pending.",
+    "approvals": [
+      "2026-11-06 사용자: 1번으로 가자 — revision02 수정 1, 77.28초 곡 선택 승인.",
+      "2026-11-06 사용자: 1크레딧 사용해 다운로드·제작 계속 — revision02 수정 1 WAV 다운로드 승인.",
+      "2026-11-06 사용자: 이 구성과 예산으로 진행 — 새 동물 장면 4종 + 기존 춤·박수, CAT/DOG 키워드, 립싱크 없음, Higgsfield 28크레딧/여유 포함 33.6크레딧 구성 승인."
+    ],
     "next_time": [],
     "production_request": "2026-11-06 금요일 추가 1곡 요청; 기존 손·발 제안 거절, 다른 주제 제작 요청.",
     "topic_selection": "User rated cat/dog source A 80% and requested a catchier, easier-to-imitate refinement; continue this topic.",
@@ -62,17 +66,17 @@
       "no_extra_purchase": true
     },
     "suno_generation": {
-      "status": "revision02_user_review_pending",
+      "status": "revision02_take1_selected",
       "request_file": "suno/v1-request.json",
       "clip_ids": [
         "ae61fd31-3dc9-4302-8943-5bb403d1966b",
         "e4acd3b1-ee31-47f8-90b8-38edbe906a02"
       ],
       "expected_generation_credits": 10,
-      "download_confirmed": false,
+      "download_confirmed": true,
       "generation_credits_used": 10,
       "generation_credits_remaining": 2360,
-      "download_credits_remaining": 18,
+      "download_credits_remaining": 17,
       "candidates": [
         {
           "label": "A",
@@ -89,8 +93,9 @@
       ],
       "recommended_audio_id": "ae61fd31-3dc9-4302-8943-5bb403d1966b",
       "recommendation_basis": "Official listening: A clear friendly female lead and natural musical ending, but long outro needs edit. B has long mid-song gaps and abrupt ending. Not a user take selection.",
-      "download_approval": false,
-      "ep14_generation_credits_total": 20
+      "download_approval": true,
+      "ep14_generation_credits_total": 20,
+      "selected_audio_id": "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4"
     },
     "user_feedback_20261106": {
       "reference_audio_id": "ae61fd31-3dc9-4302-8943-5bb403d1966b",
@@ -108,7 +113,7 @@
         "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
         "b7d9688d-2998-4a21-8c64-2e91ef477449"
       ],
-      "revision_status": "two_completed_candidates_user_review_pending",
+      "revision_status": "take1_selected_by_user",
       "generation_credits_used": 10,
       "generation_credits_remaining": 2350,
       "download_credits_remaining": 18,
@@ -128,39 +133,2349 @@
           "url": "https://suno.com/song/b7d9688d-2998-4a21-8c64-2e91ef477449"
         }
       ]
+    },
+    "selected_song": {
+      "id": "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
+      "url": "https://suno.com/song/5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
+      "duration": 77.28,
+      "user_selected": true,
+      "download_approved": true,
+      "download_status": "downloaded",
+      "download_credits_used": 1,
+      "download_credits_remaining": 17,
+      "source_file": "audio/cat_dog_revision02_take1_original.wav",
+      "sha256": "6cf7b8198136c533cebf7376f8d5257e78a7cc172cd2186cb0a6a5cdd39a981a"
+    },
+    "alignment_review": {
+      "status": "needs_review",
+      "whole_song_asr_match": 0.051,
+      "reason": "Whisper turbo loops on highly repetitive sung syllables. Short chunks recover CAT/DOG but inconsistent meow/woof counts remain. Do not claim the 95% lyric gate passed.",
+      "draft_only": true,
+      "provider_alignment_file": "suno/revision02/alignment-response.json",
+      "production_gate": "Full lyric QA and exact transition refinement remain before final render; visual source plan can be reviewed independently.",
+      "vocal_envelope_refinement": {
+        "aligned_words": 139,
+        "attached_to_detected_vocal_onset": 133,
+        "is_word_recognition_accuracy": false,
+        "mid_song_whole_bars_to_remove": 0
+      }
+    },
+    "visual_plan": {
+      "status": "approved",
+      "new_images": 4,
+      "new_clips": 4,
+      "clip_seconds": 5,
+      "reused_sources": [
+        "ep12/c08 dance",
+        "ep12/c10 clap"
+      ],
+      "base_credits": 28,
+      "with_20_percent_contingency": 33.6,
+      "lipsync": false,
+      "caption_mode": "keywords",
+      "words": [
+        "CAT",
+        "DOG"
+      ]
     }
   },
   "cuts": [
     {
       "id": "c01",
       "scene": 1,
-      "type": "L",
-      "library_clip": "intro_wave",
-      "library_audio": "intro",
+      "type": "V",
+      "bars": 1,
       "narration": {
-        "en": "Hi friends! It's Momo!"
+        "en": ""
       },
       "keyword": {
-        "en": "",
-        "ko": ""
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dance; provisional phrase: Opening beat",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved ep12/c08; original approval retained in ep12 manifest.",
+          "source_episode": "ep12",
+          "source_cut": "c08"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved ep12/c08; original approval retained in ep12 manifest.",
+          "source_episode": "ep12",
+          "source_cut": "c08"
+        }
       }
     },
     {
       "id": "c02",
-      "scene": 5,
-      "type": "L",
-      "library_clip": "outro_bye",
-      "library_audio": "outro",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
       "narration": {
-        "en": "Bye-bye, friends! See you next time!"
+        "en": ""
       },
       "keyword": {
-        "en": "",
-        "ko": ""
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: Cat cat Meow meow",
+      "cut_at": 1.992
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Dog dog Woof woof",
+      "cut_at": 4.097,
+      "image_ref": "c02"
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_close; provisional phrase: Cat cat Meow meow",
+      "cut_at": 6.088,
+      "image_ref": "c02"
+    },
+    {
+      "id": "c05",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_close; provisional phrase: Dog dog Woof woof",
+      "cut_at": 8.173,
+      "image_ref": "c03"
+    },
+    {
+      "id": "c06",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: Meow meow Meow meow",
+      "cut_at": 10.004,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c07",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Woof woof Woof woof",
+      "cut_at": 12.219,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_close; provisional phrase: Meow meow Meow meow",
+      "cut_at": 14.069,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_close; provisional phrase: Woof woof Woof woof",
+      "cut_at": 16.289,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: Cat cat Meow meow",
+      "cut_at": 18.315,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Dog dog Woof woof",
+      "cut_at": 20.355,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_close; provisional phrase: Cat cat Meow meow",
+      "cut_at": 22.306,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_close; provisional phrase: Dog dog Woof woof",
+      "cut_at": 24.431,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: Cat cat Meow meow",
+      "cut_at": 26.441,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c15",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Dog dog Woof woof",
+      "cut_at": 28.502,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "clap; provisional phrase: Clap clap Meow meow",
+      "cut_at": 30.437,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060250_381658a6-82f7-4480-a941-17c4834e74ae.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved ep12/c10; original approval retained in ep12 manifest.",
+          "source_episode": "ep12",
+          "source_cut": "c10"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved ep12/c10; original approval retained in ep12 manifest.",
+          "source_episode": "ep12",
+          "source_cut": "c10"
+        }
+      }
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "clap; provisional phrase: Clap clap Woof woof",
+      "cut_at": 32.597,
+      "clip_from": {
+        "cut": "c16",
+        "at": 0
+      }
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: Cat cat Meow meow",
+      "cut_at": 34.558,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Dog dog Woof woof",
+      "cut_at": 36.623,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_close; provisional phrase: Cat cat Meow meow",
+      "cut_at": 38.629,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c21",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_close; provisional phrase: Dog dog Woof woof",
+      "cut_at": 40.684,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c22",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: Meow meow Meow meow",
+      "cut_at": 42.485,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c23",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Woof woof Woof woof",
+      "cut_at": 44.705,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c24",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_close; provisional phrase: Meow meow Meow meow",
+      "cut_at": 46.581,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_close; provisional phrase: Woof woof Woof woof",
+      "cut_at": 48.8,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: Cat cat Meow meow",
+      "cut_at": 50.826,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Dog dog Woof woof",
+      "cut_at": 52.866,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_close; provisional phrase: Cat cat Meow meow",
+      "cut_at": 54.882,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c29",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_close; provisional phrase: Dog dog Woof woof",
+      "cut_at": 56.937,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c30",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: Cat Meow meow",
+      "cut_at": 58.982,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c31",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Dog Woof woof",
+      "cut_at": 61.013,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c32",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_close; provisional phrase: Cat cat Meow meow",
+      "cut_at": 62.973,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_close; provisional phrase: Dog dog Woof woof",
+      "cut_at": 65.545,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c34",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_wide; provisional phrase: cat Meow meow",
+      "cut_at": 68.995,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c35",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_wide; provisional phrase: Dog dog Woof woof",
+      "cut_at": 71.14,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c36",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "cat_close; provisional phrase: Cat Meow meow",
+      "cut_at": 73.13,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c37",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "DOG"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "dog_close; provisional phrase: Dog Woof woof",
+      "cut_at": 75.076,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
       }
     }
   ],
   "languages": [
     "en"
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "generated",
+      "job_id": "local:900e3a80af95",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "900e3a80af95e6eba3e71eb36b27808c9670e11a",
+      "tool": "suno",
+      "source_file": "cat_dog_revision02_take1_original.wav",
+      "note": "User-selected revision02 take1 5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4; official MCP WAV download approved 2026-11-06; Demucs htdemucs_ft stems",
+      "duration": 77.28,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:900e3a80af95",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-11-06T02:09Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 118.1034,
+        "beat0": 0.3947,
+        "downbeat0": 1.9188,
+        "confidence": 1.214,
+        "downbeats": [
+          1.9125,
+          3.9474,
+          5.9791,
+          8.0113,
+          10.0482,
+          12.0804,
+          14.1121,
+          16.1499,
+          18.184,
+          20.2074,
+          22.2391,
+          24.2733,
+          26.3054,
+          28.34,
+          30.3721,
+          32.4066,
+          34.4408,
+          36.4666,
+          38.4955,
+          40.5272,
+          42.5618,
+          44.5939,
+          46.6257,
+          48.6606,
+          50.6948,
+          52.7209,
+          54.7523,
+          56.7816,
+          58.8102,
+          60.8359,
+          62.868,
+          64.9001,
+          66.9375,
+          68.9488,
+          70.9774,
+          73.0068,
+          75.0362,
+          77.013
+        ],
+        "grid": {
+          "refined": true,
+          "beats_found": "128/151",
+          "max_drift_ms": 108.4,
+          "section_offsets_ms": [
+            -1.1,
+            1.9,
+            -0.1,
+            -4.8,
+            -33.4
+          ],
+          "trend_ms": -28.5
+        },
+        "source": "instrumental stem"
+      },
+      "end": 77.28,
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "00fa2166e950c7c480d750a7e5c70b412cc29248",
+        "moved": 28,
+        "loose": 25,
+        "flags": [
+          {
+            "kind": "lag",
+            "line": 5,
+            "t": 13.281,
+            "word": "Woof",
+            "t0": 13.566,
+            "ms": 285,
+            "text": "Woof woof Woof woof"
+          },
+          {
+            "kind": "lag",
+            "line": 7,
+            "t": 17.352,
+            "word": "Woof",
+            "t0": 17.637,
+            "ms": 285,
+            "text": "Woof woof Woof woof"
+          },
+          {
+            "kind": "phase",
+            "line": 31,
+            "t": 65.645,
+            "section": "Provider draft",
+            "beat": 1.46,
+            "median": 0.46,
+            "beats": 1.0,
+            "text": "Dog dog Woof woof"
+          }
+        ]
+      },
+      "lyrics_sha1": "900e3a80af95e6eba3e71eb36b27808c9670e11a"
+    },
+    "vocals": {
+      "status": "generated",
+      "job_id": "local:00fa2166e950",
+      "url": null,
+      "attempts": 1,
+      "credits": 0,
+      "reason": null,
+      "sha1": "00fa2166e950c7c480d750a7e5c70b412cc29248",
+      "of": "900e3a80af95e6eba3e71eb36b27808c9670e11a",
+      "history": [
+        {
+          "job_id": "local:00fa2166e950",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-11-06T02:09Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 118.1034,
+    "caption_mode": "keywords",
+    "lyrics": [
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            2.092,
+            2.628,
+            2.172
+          ],
+          [
+            "cat",
+            2.651,
+            3.005,
+            2.708
+          ],
+          [
+            "Meow",
+            3.005,
+            3.489,
+            3.142
+          ],
+          [
+            "meow",
+            3.838,
+            4.107,
+            3.626
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            4.197,
+            4.68,
+            4.263
+          ],
+          [
+            "dog",
+            4.701,
+            5.099,
+            4.746
+          ],
+          [
+            "Woof",
+            5.17,
+            5.424,
+            5.144
+          ],
+          [
+            "woof",
+            5.424,
+            5.569,
+            5.416
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            6.188,
+            6.706,
+            6.245
+          ],
+          [
+            "cat",
+            6.706,
+            7.086,
+            6.774
+          ],
+          [
+            "Meow",
+            7.086,
+            7.573,
+            7.212
+          ],
+          [
+            "meow",
+            7.704,
+            8.273,
+            7.699
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            8.273,
+            8.75,
+            8.35
+          ],
+          [
+            "dog",
+            8.772,
+            9.143,
+            8.827
+          ],
+          [
+            "Woof",
+            9.221,
+            9.759,
+            9.198
+          ],
+          [
+            "woof",
+            9.759,
+            9.914,
+            9.798
+          ]
+        ]
+      },
+      {
+        "text": "Meow meow Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Meow",
+            10.104,
+            10.581,
+            10.259
+          ],
+          [
+            "meow",
+            10.812,
+            11.375,
+            10.736
+          ],
+          [
+            "Meow",
+            11.87,
+            11.92,
+            11.299
+          ],
+          [
+            "meow",
+            11.92,
+            12.319,
+            11.779
+          ]
+        ]
+      },
+      {
+        "text": "Woof woof Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Woof",
+            12.319,
+            12.773,
+            12.309
+          ],
+          [
+            "woof",
+            12.773,
+            13.555,
+            12.783
+          ],
+          [
+            "Woof",
+            13.566,
+            13.817,
+            13.565
+          ],
+          [
+            "woof",
+            13.83,
+            13.98,
+            13.816
+          ]
+        ]
+      },
+      {
+        "text": "Meow meow Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Meow",
+            14.169,
+            14.656,
+            14.329
+          ],
+          [
+            "meow",
+            14.778,
+            15.34,
+            14.816
+          ],
+          [
+            "Meow",
+            15.34,
+            15.822,
+            15.378
+          ],
+          [
+            "meow",
+            15.97,
+            16.389,
+            15.86
+          ]
+        ]
+      },
+      {
+        "text": "Woof woof Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Woof",
+            16.389,
+            16.838,
+            16.38
+          ],
+          [
+            "woof",
+            16.838,
+            17.632,
+            16.857
+          ],
+          [
+            "Woof",
+            17.637,
+            17.886,
+            17.651
+          ],
+          [
+            "woof",
+            17.906,
+            18.061,
+            17.9
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            18.415,
+            18.884,
+            18.491
+          ],
+          [
+            "cat",
+            18.914,
+            19.313,
+            18.96
+          ],
+          [
+            "Meow",
+            19.313,
+            19.883,
+            19.387
+          ],
+          [
+            "meow",
+            19.901,
+            20.315,
+            19.957
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            20.455,
+            20.93,
+            20.524
+          ],
+          [
+            "dog",
+            20.974,
+            21.702,
+            20.999
+          ],
+          [
+            "Woof",
+            21.702,
+            21.957,
+            21.727
+          ],
+          [
+            "woof",
+            21.957,
+            22.111,
+            21.987
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            22.406,
+            22.885,
+            22.56
+          ],
+          [
+            "cat",
+            22.984,
+            23.344,
+            23.039
+          ],
+          [
+            "Meow",
+            23.344,
+            23.832,
+            23.47
+          ],
+          [
+            "meow",
+            24.087,
+            24.501,
+            23.958
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            24.531,
+            25.01,
+            24.602
+          ],
+          [
+            "dog",
+            25.03,
+            25.446,
+            25.081
+          ],
+          [
+            "Woof",
+            25.489,
+            26.027,
+            25.497
+          ],
+          [
+            "woof",
+            26.027,
+            26.182,
+            26.074
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            26.541,
+            27.018,
+            26.583
+          ],
+          [
+            "cat",
+            27.035,
+            27.379,
+            27.06
+          ],
+          [
+            "Meow",
+            27.379,
+            27.94,
+            27.477
+          ],
+          [
+            "meow",
+            28.053,
+            28.567,
+            28.038
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            28.602,
+            29.01,
+            28.679
+          ],
+          [
+            "dog",
+            29.11,
+            29.834,
+            29.087
+          ],
+          [
+            "Woof",
+            29.834,
+            30.103,
+            29.82
+          ],
+          [
+            "woof",
+            30.103,
+            30.248,
+            30.124
+          ]
+        ]
+      },
+      {
+        "text": "Clap clap Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Clap",
+            30.537,
+            31.012,
+            30.643
+          ],
+          [
+            "clap",
+            31.086,
+            31.425,
+            31.118
+          ],
+          [
+            "Meow",
+            31.425,
+            31.978,
+            31.554
+          ],
+          [
+            "meow",
+            32.001,
+            32.697,
+            32.107
+          ]
+        ]
+      },
+      {
+        "text": "Clap clap Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Clap",
+            32.697,
+            33.111,
+            32.661
+          ],
+          [
+            "clap",
+            33.111,
+            33.615,
+            33.137
+          ],
+          [
+            "Woof",
+            33.615,
+            34.107,
+            33.664
+          ],
+          [
+            "woof",
+            34.124,
+            34.314,
+            34.156
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            34.658,
+            35.141,
+            34.725
+          ],
+          [
+            "cat",
+            35.486,
+            35.596,
+            35.208
+          ],
+          [
+            "Meow",
+            35.596,
+            36.163,
+            35.627
+          ],
+          [
+            "meow",
+            36.289,
+            36.598,
+            36.194
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            36.723,
+            37.198,
+            36.767
+          ],
+          [
+            "dog",
+            37.227,
+            37.665,
+            37.242
+          ],
+          [
+            "Woof",
+            37.701,
+            37.965,
+            37.68
+          ],
+          [
+            "woof",
+            37.965,
+            38.09,
+            37.97
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            38.729,
+            39.209,
+            38.795
+          ],
+          [
+            "cat",
+            39.237,
+            39.671,
+            39.275
+          ],
+          [
+            "Meow",
+            39.786,
+            40.271,
+            39.709
+          ],
+          [
+            "meow",
+            40.33,
+            40.784,
+            40.194
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            40.784,
+            41.243,
+            40.843
+          ],
+          [
+            "dog",
+            41.243,
+            41.667,
+            41.323
+          ],
+          [
+            "Woof",
+            41.742,
+            42.286,
+            41.747
+          ],
+          [
+            "woof",
+            42.286,
+            42.44,
+            42.308
+          ]
+        ]
+      },
+      {
+        "text": "Meow meow Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Meow",
+            42.585,
+            43.137,
+            42.753
+          ],
+          [
+            "meow",
+            43.393,
+            43.875,
+            43.305
+          ],
+          [
+            "Meow",
+            44.061,
+            44.421,
+            43.787
+          ],
+          [
+            "meow",
+            44.421,
+            44.805,
+            44.351
+          ]
+        ]
+      },
+      {
+        "text": "Woof woof Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Woof",
+            44.805,
+            45.249,
+            44.802
+          ],
+          [
+            "woof",
+            45.249,
+            45.737,
+            45.342
+          ],
+          [
+            "Woof",
+            45.803,
+            46.287,
+            45.83
+          ],
+          [
+            "woof",
+            46.326,
+            46.511,
+            46.314
+          ]
+        ]
+      },
+      {
+        "text": "Meow meow Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Meow",
+            46.681,
+            47.233,
+            46.831
+          ],
+          [
+            "meow",
+            47.474,
+            47.963,
+            47.383
+          ],
+          [
+            "Meow",
+            47.993,
+            48.469,
+            47.872
+          ],
+          [
+            "meow",
+            48.476,
+            48.9,
+            48.348
+          ]
+        ]
+      },
+      {
+        "text": "Woof woof Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Woof",
+            48.9,
+            49.364,
+            48.876
+          ],
+          [
+            "woof",
+            49.364,
+            49.858,
+            49.358
+          ],
+          [
+            "Woof",
+            49.858,
+            50.348,
+            49.914
+          ],
+          [
+            "woof",
+            50.372,
+            50.567,
+            50.404
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            50.926,
+            51.404,
+            50.975
+          ],
+          [
+            "cat",
+            51.435,
+            51.784,
+            51.453
+          ],
+          [
+            "Meow",
+            51.784,
+            52.34,
+            51.878
+          ],
+          [
+            "meow",
+            52.418,
+            52.832,
+            52.434
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            52.966,
+            53.451,
+            53.0
+          ],
+          [
+            "dog",
+            53.455,
+            53.929,
+            53.485
+          ],
+          [
+            "Woof",
+            53.929,
+            54.418,
+            53.978
+          ],
+          [
+            "woof",
+            54.443,
+            54.622,
+            54.467
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            54.982,
+            55.454,
+            55.046
+          ],
+          [
+            "cat",
+            55.476,
+            55.805,
+            55.518
+          ],
+          [
+            "Meow",
+            55.805,
+            56.368,
+            55.945
+          ],
+          [
+            "meow",
+            56.478,
+            56.947,
+            56.508
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            57.037,
+            57.516,
+            57.083
+          ],
+          [
+            "dog",
+            57.546,
+            57.991,
+            57.562
+          ],
+          [
+            "Woof",
+            58.025,
+            58.499,
+            58.007
+          ],
+          [
+            "woof",
+            58.529,
+            58.703,
+            58.481
+          ]
+        ]
+      },
+      {
+        "text": "Cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            59.082,
+            59.831,
+            59.064
+          ],
+          [
+            "Meow",
+            59.831,
+            60.326,
+            60.023
+          ],
+          [
+            "meow",
+            60.524,
+            61.113,
+            60.518
+          ]
+        ]
+      },
+      {
+        "text": "Dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            61.113,
+            61.996,
+            61.158
+          ],
+          [
+            "Woof",
+            61.996,
+            62.479,
+            62.074
+          ],
+          [
+            "woof",
+            62.535,
+            62.754,
+            62.557
+          ]
+        ]
+      },
+      {
+        "text": "Cat cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            63.073,
+            63.123,
+            62.747
+          ],
+          [
+            "cat",
+            63.123,
+            63.916,
+            63.138
+          ],
+          [
+            "Meow",
+            63.916,
+            64.891,
+            64.023
+          ],
+          [
+            "meow",
+            64.974,
+            65.645,
+            64.998
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            65.645,
+            65.695,
+            65.665
+          ],
+          [
+            "dog",
+            65.717,
+            66.096,
+            65.709
+          ],
+          [
+            "Woof",
+            66.096,
+            66.585,
+            66.146
+          ],
+          [
+            "woof",
+            66.615,
+            66.865,
+            66.635
+          ]
+        ]
+      },
+      {
+        "text": "cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "cat",
+            69.095,
+            69.994,
+            69.213
+          ],
+          [
+            "Meow",
+            70.003,
+            70.564,
+            70.112
+          ],
+          [
+            "meow",
+            70.721,
+            71.24,
+            70.673
+          ]
+        ]
+      },
+      {
+        "text": "Dog dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            71.24,
+            71.29,
+            71.267
+          ],
+          [
+            "dog",
+            71.29,
+            72.138,
+            71.299
+          ],
+          [
+            "Woof",
+            72.138,
+            72.657,
+            72.171
+          ],
+          [
+            "woof",
+            72.657,
+            72.896,
+            72.715
+          ]
+        ]
+      },
+      {
+        "text": "Cat Meow meow",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Cat",
+            73.23,
+            73.609,
+            73.296
+          ],
+          [
+            "Meow",
+            73.609,
+            74.175,
+            73.703
+          ],
+          [
+            "meow",
+            74.188,
+            74.961,
+            74.269
+          ]
+        ]
+      },
+      {
+        "text": "Dog Woof woof",
+        "section": "Provider draft",
+        "words": [
+          [
+            "Dog",
+            75.176,
+            75.618,
+            75.311
+          ],
+          [
+            "Woof",
+            75.71,
+            76.179,
+            75.753
+          ],
+          [
+            "woof",
+            76.179,
+            76.423,
+            76.23
+          ]
+        ]
+      }
+    ]
+  }
 }
