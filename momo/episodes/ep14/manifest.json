@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "ep": "ep14",
+  "status": "planning",
+  "topic": {
+    "en": "Cat and Dog",
+    "ko": "고양이와 강아지"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "",
+    "ko": ""
+  },
+  "thumbnail": {
+    "cut": null,
+    "text": {
+      "en": "",
+      "ko": ""
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [],
+    "next_time": [],
+    "production_request": "2026-11-06 금요일 추가 1곡 요청; 기존 손·발 제안 거절, 다른 주제 제작 요청.",
+    "topic_selection": "Assistant proposed cat and dog after optional topic menu; user has not explicitly chosen this exact topic.",
+    "production_direction": "English song for ages 2–4; two learning words cat/dog; clear lively rhythmic hook; no lip sync; original composition.",
+    "visual_reuse_plan": "New cat/dog educational scenes for the new topic; reuse approved Momo dance/clap and character assets.",
+    "suno_budget": {
+      "initial_generation_requests": 1,
+      "expected_credits": 10,
+      "no_max_mode": true,
+      "no_extra_purchase": true
+    },
+    "suno_generation": {
+      "status": "candidate_A_recommended_download_approval_pending",
+      "request_file": "suno/v1-request.json",
+      "clip_ids": [
+        "ae61fd31-3dc9-4302-8943-5bb403d1966b",
+        "e4acd3b1-ee31-47f8-90b8-38edbe906a02"
+      ],
+      "expected_generation_credits": 10,
+      "download_confirmed": false,
+      "generation_credits_used": 10,
+      "generation_credits_remaining": 2360,
+      "download_credits_remaining": 18,
+      "candidates": [
+        {
+          "label": "A",
+          "id": "ae61fd31-3dc9-4302-8943-5bb403d1966b",
+          "duration_seconds": 88.8,
+          "url": "https://suno.com/song/ae61fd31-3dc9-4302-8943-5bb403d1966b"
+        },
+        {
+          "label": "B",
+          "id": "e4acd3b1-ee31-47f8-90b8-38edbe906a02",
+          "duration_seconds": 89.6,
+          "url": "https://suno.com/song/e4acd3b1-ee31-47f8-90b8-38edbe906a02"
+        }
+      ],
+      "recommended_audio_id": "ae61fd31-3dc9-4302-8943-5bb403d1966b",
+      "recommendation_basis": "Official listening: A clear friendly female lead and natural musical ending, but long outro needs edit. B has long mid-song gaps and abrupt ending. Not a user take selection.",
+      "download_approval": false
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "library_clip": "intro_wave",
+      "library_audio": "intro",
+      "narration": {
+        "en": "Hi friends! It's Momo!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 5,
+      "type": "L",
+      "library_clip": "outro_bye",
+      "library_audio": "outro",
+      "narration": {
+        "en": "Bye-bye, friends! See you next time!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    }
+  ],
+  "languages": [
+    "en"
+  ]
+}

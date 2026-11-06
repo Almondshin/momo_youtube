@@ -1,0 +1,11 @@
+{
+  "tool": "audio-wait",
+  "arguments": {
+    "ids": [
+      "ae61fd31-3dc9-4302-8943-5bb403d1966b",
+      "e4acd3b1-ee31-47f8-90b8-38edbe906a02"
+    ],
+    "until": "complete"
+  },
+  "save": "momo/episodes/ep14/suno/v1-wait-response.json"
+}

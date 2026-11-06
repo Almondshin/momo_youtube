@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "e4acd3b1-ee31-47f8-90b8-38edbe906a02",
+    "question": "Listen to the actual recording of this original cat and dog nursery song for ages 2–4. Check whether CAT, DOG, MEOW and WOOF are clearly pronounced, whether the lead is bright/light/friendly and suitable for a preschool chant, and whether the short repeated hook is rhythmically catchy. Check whether the last sung tag ends naturally, with no chopped word or vocal restart after a long instrumental gap. Describe any lyric omissions/additions. End with JSON: clear_learning_words, preschool_voice, catchy_rhythm, natural_ending, ending_concerns, longest_vocal_gap_seconds_approx, best_feature, concerns. Give uncertainty where needed; do not infer success from the prompt."
+  },
+  "save": "momo/episodes/ep14/suno/v1-2-listen-response.json"
+}

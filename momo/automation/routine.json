@@ -1,0 +1,40 @@
+{
+  "name": "모모타임 월·금 제작",
+  "timezone": "Asia/Seoul",
+  "cron": "0 9 * * 1,5",
+  "tracks_per_run": {
+    "ko": 1,
+    "en": 1
+  },
+  "shared_visual_sets_per_run": 1,
+  "expected_runtime": "current Mac awake and Orca running",
+  "activation_status": "disabled_pending_technical_verification",
+  "authorizations": [
+    "User requested fully automated Monday/Friday production at 09:00 KST, completion-based upload, one channel with language playlists."
+  ],
+  "verified": [
+    "Official Suno generation and authenticated WAV download",
+    "Local assembly and keyword-only rendering",
+    "YouTube private uploads, thumbnails and Korean playlist"
+  ],
+  "blocking_checks": [
+    "Suno requires user approval of each requires_credit download response; cannot silently confirm future downloads.",
+    "Unattended Higgsfield subscription tool access from scheduled provider session has not been verified.",
+    "YouTube OAuth app remains Testing, token long-term renewal and public transition unverified.",
+    "Scheduled provider run and result notification have not been tested."
+  ],
+  "last_checked": "2026-11-06",
+  "today": {
+    "date": "2026-11-06",
+    "uploaded_episodes": [
+      "ep13"
+    ],
+    "extra_episode": "ep14",
+    "english_ep12_uploaded_previous_day": true,
+    "regular_topic_pair_exception": "Launch week continuation: ep13 Korean fruit companion uploaded today; ep14 is a newly requested topic."
+  },
+  "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
+  "enabled": false,
+  "scheduler": "Orca local_host_service",
+  "next_scheduled_slot_if_enabled": "2026-11-09T09:00:00+09:00"
+}

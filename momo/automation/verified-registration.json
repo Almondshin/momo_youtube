@@ -1,0 +1,61 @@
+{
+  "id": "088b663f-7aaf-4053-9a06-88cadab570ce",
+  "ok": true,
+  "result": {
+    "automation": {
+      "id": "0946f1d5-d7b6-4828-849c-556bb3797735",
+      "name": "모모타임 월·금 제작 — 연동 검증 대기",
+      "prompt": "모모타임 정기 제작 작업. 작업 경로 /Users/dream/dev/momo_youtube. 먼저 momo/automation/routine.json, momo/docs/PRODUCTION.md, momo/config.json 및 최근 제작 기록을 읽는다. 모든 작업 파일은 momo/ 안에 둔다. 목표는 Asia/Seoul 매주 월요일·금요일 오전 9시부터 같은 주제의 한국어 1곡과 영어 1곡, 공통 영상 소재 1세트를 만들고 검사 후 언어별 재생목록에 업로드하는 것이다. 최근 확정된 목소리·리듬 선호, 핵심 단어 1~3개, 길이 60~120초, 립싱크 없이 키워드 하나씩 표시를 따른다. 실제 실행 날짜·언어별 작업 상태와 생성 ID를 먼저 기록하고 같은 날짜 작업·이미 업로드된 영상은 중복 생성/업로드하지 않는다. 앞선 작업이 실행 중이면 중복 실행하지 않는다. 자동화 연결 검증이 끝나지 않았다면 먼저 비과금 연결 점검과 남은 조건만 보고하고 생성하지 않는다. 공식 Suno MCP만 사용하고 비공식 MCP·Suno 웹 자동화·별도 유료 API를 사용하지 않는다. audio-download의 requires_credit 응답은 사용자 승인 없이 confirm=true로 넘기지 않는다. 추가 결제와 임의 Max Mode 사용 금지. Higgsfield는 실제 구독 도구 연결·현재 단가 확인 및 estimate_credits.py 통과 후에만 사용하며 공통 영상 묶음 전체 150크레딧 상한을 지킨다. 승인된 라이브러리는 재생성하지 않는다. 자동 품질 판정을 사용자 승인으로 기록하지 않는다. 공개 권한을 확인하지 못하면 공개했다고 보고하지 않고 검증된 비공개 업로드 상태를 정확히 기록한다. 실패/한도/인증 오류는 생성물과 사용 비용을 보존하고 한국어로 보고한다. 완료 시 실제 영상 링크, 공개 상태, 사용량, 남은 작업을 한국어로 보고한다. 자격증명은 출력하거나 커밋하지 않는다. 실행 환경/권한/알림이 검증되지 않은 상태를 완전 자동화 완료라고 부르지 않는다.\n",
+      "precheck": null,
+      "agentId": "codex",
+      "runContext": {
+        "kind": "workspace-run",
+        "projectId": "github:almondshin/momo_youtube",
+        "hostId": "local",
+        "projectHostSetupId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+        "repoId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+        "path": "/Users/dream/dev/momo_youtube"
+      },
+      "sourceContext": {
+        "kind": "task-source",
+        "provider": "github",
+        "projectId": "github:almondshin/momo_youtube",
+        "hostId": "local",
+        "projectHostSetupId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+        "repoId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+        "providerIdentity": {
+          "provider": "github",
+          "owner": "Almondshin",
+          "repo": "momo_youtube"
+        },
+        "accountLabel": null
+      },
+      "projectId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+      "executionTargetType": "local",
+      "executionTargetId": "local",
+      "schedulerOwner": "local_host_service",
+      "workspaceMode": "existing",
+      "workspaceId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e::/Users/dream/dev/momo_youtube",
+      "baseBranch": null,
+      "reuseSession": false,
+      "timezone": "Asia/Seoul",
+      "rrule": "0 9 * * 1,5",
+      "dtstart": 1793928400790,
+      "enabled": false,
+      "nextRunAt": 1794182400000,
+      "missedRunPolicy": "run_once_within_grace",
+      "missedRunGraceMinutes": 1,
+      "createdAt": 1793928400825,
+      "updatedAt": 1793928400825,
+      "launchSetup": {}
+    },
+    "owner": {
+      "selector": {
+        "kind": "self"
+      }
+    }
+  },
+  "_meta": {
+    "runtimeId": "cb62f3d0-9570-447a-b69b-1a9d2e6c23ab"
+  }
+}

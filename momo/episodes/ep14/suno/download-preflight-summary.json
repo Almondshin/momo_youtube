@@ -1,0 +1,8 @@
+{
+  "status": "requires_credit",
+  "format": "wav",
+  "credits_remaining": 18,
+  "approval_required": true,
+  "approved": false,
+  "source": "Official Suno audio-download tool"
+}
