@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "c2b2dadb-7ece-49de-89f9-06a7dada20c9",
+    "question": "Listen to this Korean nursery song for ages 2–4. Evaluate actual audible vocals, Korean pronunciation of 고양이 and 강아지, whether 야옹 and 멍멍 are easily distinguished, whether the short hook repeats with an easy rhythm, any rushed syllables, spoken or English intrusions, longest nonvocal gap (approximate), and whether the ending resolves naturally. Do not infer from the prompt. Return concise Korean notes and a JSON block with voice, korean_diction_clear, hook_easy_to_repeat, rhythm_bouncy, rushed, unwanted_speech, longest_gap_seconds_approx, natural_ending, concerns. Do not quote more than two lyric lines."
+  },
+  "save": "momo/episodes/ep15/suno/v1-2-listen-response.json"
+}

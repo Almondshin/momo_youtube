@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "야옹 멍멍 짝짝 | 모모타임",
+    "lyrics": "[Hook - immediate clear sung phrases; one short line per bar]\n고양이 야옹!\n야옹 야옹!\n강아지 멍멍!\n멍멍 멍멍!\n고양이 야옹!\n야옹 야옹!\n강아지 멍멍!\n멍멍 멍멍!\n\n[Clap - same short tune, clear handclap pulse]\n야옹 야옹!\n짝짝 짝짝!\n멍멍 멍멍!\n짝짝 짝짝!\n\n[Hook - repeat the exact melody and rhythm]\n고양이 야옹!\n야옹 야옹!\n강아지 멍멍!\n멍멍 멍멍!\n고양이 야옹!\n야옹 야옹!\n강아지 멍멍!\n멍멍 멍멍!\n\n[Clap - no new vocabulary]\n야옹 야옹!\n짝짝 짝짝!\n멍멍 멍멍!\n짝짝 짝짝!\n\n[Final hook - same melody, no acceleration]\n고양이 야옹!\n야옹 야옹!\n강아지 멍멍!\n멍멍 멍멍!\n고양이 야옹!\n야옹 야옹!\n강아지 멍멍!\n멍멍 멍멍!\n\n[Short sung ending - resolve and stop]\n고양이 야옹!\n강아지 멍멍!\n짝짝 짝짝!\n[End]\n",
+    "style": "Bright clear light youthful female solo, Korean toddler clap-chant dance song for ages 2-4. 120 BPM, steady bouncy 4/4 beat, dry handclaps on 2 and 4, soft kick, round plucky synth bass, playful woodblock and tiny tom accents. Native Korean pronunciation, clearly separate every syllable of go-yang-i and gang-a-ji. One short three-note hook, repeat the exact melody and rhythm every time. Brief animal-name call then easy meow or woof response, clear small breaths. Friendly pitched singing, not spoken rap. Light sparse accompaniment below the lead; tiny unison doubles only on responses. Begin singing within one second, no instrumental break, no long build. Lively and catchy without rushing. Natural short sung ending and final chord; no restart or long outro. About 75 seconds.",
+    "negative_style": "mature husky voice, adult crooner, breathy pop diva, belting, extreme chipmunk pitch, fast rap, spoken narration, long sentences, melisma, busy choir, dense drums, instrumental solo, English lyrics, abrupt cutoff, long outro",
+    "vocal_gender": "female",
+    "duration": 75,
+    "duration_strict": false,
+    "model": "v6",
+    "controls": {
+      "style_influence": 0.85,
+      "weirdness": 0.1,
+      "variety": 0
+    },
+    "idempotency_key": "momotime-ep15-ko-cat-dog-v1-20261106"
+  },
+  "save": "momo/episodes/ep15/suno/v1-create-response.json"
+}

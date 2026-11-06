@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"b0d0e8ad-aad1-43b0-b365-a5bc801c64e3\",\"audio_id\":\"c2b2dadb-7ece-49de-89f9-06a7dada20c9\",\"status\":\"complete\",\"created_at\":\"2026-11-06T05:02:51Z\",\"answer\":\"밝고 높은 여성 보컬이 경쾌하게 노래합니다. ‘고양이’와 ‘강아지’ 발음이 또렷하고, ‘야옹’과 ‘멍멍’도 쉽게 구분됩니다. 짧은 후렴은 반복적이고 따라 부르기 쉬운 박자이며, 음절이 급하게 몰리거나 말·영어가 끼어드는 부분은 들리지 않습니다. 가장 긴 무보컬 구간은 끝부분 연주 아웃트로의 약 7초입니다. 마지막은 자연스럽게 마무리됩니다.\\n\\n```json\\n{\\\"voice\\\":\\\"밝고 높은 여성 보컬\\\",\\\"korean_diction_clear\\\":true,\\\"hook_easy_to_repeat\\\":true,\\\"rhythm_bouncy\\\":true,\\\"rushed\\\":false,\\\"unwanted_speech\\\":false,\\\"longest_gap_seconds_approx\\\":7,\\\"natural_ending\\\":true,\\\"concerns\\\":[]}\\n```\"}"
+    }
+  ]
+}

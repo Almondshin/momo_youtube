@@ -1,0 +1,12 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"clip_ids\":[\"0c5d2723-217d-40a0-9608-fb7758505d27\",\"c2b2dadb-7ece-49de-89f9-06a7dada20c9\"],\"created_at\":\"2026-11-06T05:02:11Z\",\"id\":\"0c5d2723-217d-40a0-9608-fb7758505d27\",\"status\":\"submitted\"}"
+    },
+    {
+      "type": "text",
+      "text": "This made 2 songs, one per id: 0c5d2723-217d-40a0-9608-fb7758505d27, c2b2dadb-7ece-49de-89f9-06a7dada20c9. Call audio-wait once with all of them in ids, then tell the user about every song, not only the first."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "ep": "ep15",
+  "status": "planning",
+  "topic": {
+    "en": "Cat and Dog — Korean Song",
+    "ko": "야옹 멍멍 짝짝"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "ko": "야옹 멍멍 짝짝 | 고양이 강아지 동요 | 모모타임",
+    "en": "Meow Woof Clap — Korean Animal Song"
+  },
+  "thumbnail": {
+    "cut": null,
+    "text": {
+      "en": "",
+      "ko": ""
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "ko": {
+      "title": "야옹 멍멍 짝짝 🐱🐶 | 고양이 강아지 동요 | 모모타임",
+      "description": "고양이 야옹! 강아지 멍멍! 모모와 함께 따라 부르고 짝짝 박수쳐요. 2~4세 아이들을 위한 짧고 신나는 동물 동요입니다.\n\n함께 배워요:\n• 고양이를 보고 고양이라고 말해요.\n• 강아지를 보고 강아지라고 말해요.\n• 야옹·멍멍 소리를 따라 하고 박수로 리듬을 느껴요.\n\n모모타임과 즐겁게 노래해요!\n\n#모모타임 #동요 #유아동요 #동물동요 #고양이 #강아지 #아기동요 #한국어동요 #박수동요 #MomoTime",
+      "tags": [
+        "모모타임",
+        "Momo Time",
+        "고양이 강아지 동요",
+        "동물 동요",
+        "유아 동요",
+        "아기 동요",
+        "한국어 동요",
+        "야옹 멍멍",
+        "박수 동요",
+        "따라 부르는 동요",
+        "어린이 노래",
+        "고양이 노래",
+        "강아지 노래"
+      ],
+      "playlist_id": "PLHfQPAU3ZVb8"
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [
+      "2026-11-06 사용자: 한국어도 가야지 — 같은 동물 주제의 한국어판 제작 요청."
+    ],
+    "next_time": [],
+    "production_request": "2026-11-06 사용자: 한국어도 가야지 — ep14 고양이·강아지의 한국어 짝곡 제작 요청.",
+    "production_direction": "2~4세, 고양이·강아지 두 단어, 쉬운 단문·야옹/멍멍 반복·짝짝 박수. 밝고 가벼운 여성 보컬, 이전 톡톡 통통 챈트 선호 반영. 영어곡과 다른 한국어 원곡.",
+    "visual_reuse": "Reuse six approved ep14 source scenes; zero new Higgsfield generations. No lip sync; 고양이/강아지 one keyword per animal shot; no label on Momo dance/clap.",
+    "user_discretion": "Latest user instruction permits judgment over mechanical runbook gates; inspect and proceed within existing scope. Suno official download requires_credit still needs its required response-specific confirmation.",
+    "suno_budget": {
+      "generation_requests": 1,
+      "expected_credits": 10,
+      "max_mode": false,
+      "no_extra_purchase": true
+    },
+    "suno_generation": {
+      "status": "two_candidates_complete",
+      "clip_ids": [
+        "0c5d2723-217d-40a0-9608-fb7758505d27",
+        "c2b2dadb-7ece-49de-89f9-06a7dada20c9"
+      ],
+      "request": "suno/v1-request.json",
+      "max_mode": false,
+      "expected_credits": 10,
+      "candidates": [
+        {
+          "label": "1",
+          "id": "0c5d2723-217d-40a0-9608-fb7758505d27",
+          "status": "complete",
+          "duration": 73.96,
+          "url": "https://suno.com/song/0c5d2723-217d-40a0-9608-fb7758505d27"
+        },
+        {
+          "label": "2",
+          "id": "c2b2dadb-7ece-49de-89f9-06a7dada20c9",
+          "status": "complete",
+          "duration": 74.76,
+          "url": "https://suno.com/song/c2b2dadb-7ece-49de-89f9-06a7dada20c9"
+        }
+      ],
+      "generation_credits_used": 10,
+      "generation_credits_remaining": 2340,
+      "download_credits_remaining": 17,
+      "recommended_take": 1,
+      "recommendation_reason": "Official automatic listening finds clear Korean words and easy repeated hook in both; take 1 ends with only 2–3s of claps versus ~7s instrumental outro in take 2. User preference and local audio timing are not yet checked."
+    },
+    "download_preflight": {
+      "take1": "requires_credit",
+      "take2": "requires_credit",
+      "cost_per_selected_song": 1,
+      "credits_remaining": 17,
+      "confirmation_requested": true,
+      "confirmed": false,
+      "rate_limit_note": "Second preflight was rate-limited for 1s; retried once after more than 5s, succeeded without charge."
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "library_clip": "intro_wave",
+      "library_audio": "intro",
+      "narration": {
+        "ko": "안녕, 친구들! 나는 모모야!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 5,
+      "type": "L",
+      "library_clip": "outro_bye",
+      "library_audio": "outro",
+      "narration": {
+        "ko": "친구들, 안녕! 다음에 또 만나!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    }
+  ],
+  "languages": [
+    "ko"
+  ]
+}

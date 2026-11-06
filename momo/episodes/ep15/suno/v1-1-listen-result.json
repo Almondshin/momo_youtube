@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"d4af96f0-46fa-4648-94a1-c9daa3743f98\",\"audio_id\":\"0c5d2723-217d-40a0-9608-fb7758505d27\",\"status\":\"complete\",\"created_at\":\"2026-11-06T05:02:51Z\",\"answer\":\"밝고 높은 단일 합성 여성풍 보컬이 들리며, 고양이·강아지 발음과 야옹·멍멍의 구분이 분명합니다. 짧은 구절이 반복되고 박자도 경쾌해 따라 하기 쉽고, 음절이 급하게 몰리는 곳이나 말소리·영어 삽입은 들리지 않습니다. 가장 긴 무보컬 구간은 끝부분의 박수만 남는 약 2–3초로 들리며, 마지막 박수로 자연스럽게 마무리됩니다.\\n\\n```json\\n{\\\"voice\\\":\\\"밝고 높은 단일 합성 여성풍 보컬\\\",\\\"korean_diction_clear\\\":true,\\\"hook_easy_to_repeat\\\":true,\\\"rhythm_bouncy\\\":true,\\\"rushed\\\":false,\\\"unwanted_speech\\\":false,\\\"longest_gap_seconds_approx\\\":3,\\\"natural_ending\\\":true,\\\"concerns\\\":[]}\\n```\"}"
+    }
+  ]
+}
