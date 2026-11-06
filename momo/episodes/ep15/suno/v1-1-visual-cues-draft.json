@@ -1,0 +1,600 @@
+{
+  "status": "provider_timing_draft_needs_local_vocal_check",
+  "lines": [
+    {
+      "text": "고양이 야옹",
+      "words": [
+        [
+          "고양이",
+          1.303,
+          2.159
+        ],
+        [
+          "야옹",
+          2.159,
+          2.661
+        ]
+      ],
+      "suggested_scene": "cat_wide",
+      "draft_only": true
+    },
+    {
+      "text": "야옹 야옹",
+      "words": [
+        [
+          "야옹",
+          3.393,
+          4.08
+        ],
+        [
+          "야옹",
+          4.116,
+          4.653
+        ]
+      ],
+      "suggested_scene": "cat_close",
+      "draft_only": true
+    },
+    {
+      "text": "강아지 멍멍",
+      "words": [
+        [
+          "강아지",
+          5.276,
+          5.955
+        ],
+        [
+          "멍멍",
+          6.04,
+          6.641
+        ]
+      ],
+      "suggested_scene": "dog_wide",
+      "draft_only": true
+    },
+    {
+      "text": "멍멍 멍멍",
+      "words": [
+        [
+          "멍멍",
+          7.307,
+          8
+        ],
+        [
+          "멍멍",
+          8.021,
+          8.59
+        ]
+      ],
+      "suggested_scene": "dog_close",
+      "draft_only": true
+    },
+    {
+      "text": "고양이 야옹",
+      "words": [
+        [
+          "고양이",
+          9.219,
+          10
+        ],
+        [
+          "야옹",
+          10.028,
+          10.587
+        ]
+      ],
+      "suggested_scene": "cat_wide",
+      "draft_only": true
+    },
+    {
+      "text": "야옹 야옹",
+      "words": [
+        [
+          "야옹",
+          11.307,
+          12
+        ],
+        [
+          "야옹",
+          12.025,
+          12.503
+        ]
+      ],
+      "suggested_scene": "cat_close",
+      "draft_only": true
+    },
+    {
+      "text": "강아지 멍멍",
+      "words": [
+        [
+          "강아지",
+          13.135,
+          13.92
+        ],
+        [
+          "멍멍",
+          13.945,
+          14.522
+        ]
+      ],
+      "suggested_scene": "dog_wide",
+      "draft_only": true
+    },
+    {
+      "text": "멍멍 멍멍",
+      "words": [
+        [
+          "멍멍",
+          15.127,
+          15.813
+        ],
+        [
+          "멍멍",
+          15.847,
+          16.457
+        ]
+      ],
+      "suggested_scene": "dog_close",
+      "draft_only": true
+    },
+    {
+      "text": "야옹 야옹",
+      "words": [
+        [
+          "야옹",
+          17.846,
+          18.613
+        ],
+        [
+          "야옹",
+          18.64,
+          19.245
+        ]
+      ],
+      "suggested_scene": "cat_close",
+      "draft_only": true
+    },
+    {
+      "text": "짝짝 짝짝",
+      "words": [
+        [
+          "짝짝",
+          19.597,
+          20.534
+        ],
+        [
+          "짝짝",
+          20.546,
+          21.115
+        ]
+      ],
+      "suggested_scene": "clap",
+      "draft_only": true
+    },
+    {
+      "text": "멍멍 멍멍",
+      "words": [
+        [
+          "멍멍",
+          21.766,
+          22.331
+        ],
+        [
+          "멍멍",
+          22.563,
+          23.267
+        ]
+      ],
+      "suggested_scene": "dog_close",
+      "draft_only": true
+    },
+    {
+      "text": "짝짝 짝짝",
+      "words": [
+        [
+          "짝짝",
+          23.52,
+          24.454
+        ],
+        [
+          "짝짝",
+          24.472,
+          25.014
+        ]
+      ],
+      "suggested_scene": "clap",
+      "draft_only": true
+    },
+    {
+      "text": "고양이 야옹",
+      "words": [
+        [
+          "고양이",
+          25.029,
+          25.733
+        ],
+        [
+          "야옹",
+          25.756,
+          26.177
+        ]
+      ],
+      "suggested_scene": "cat_wide",
+      "draft_only": true
+    },
+    {
+      "text": "야옹 야옹",
+      "words": [
+        [
+          "야옹",
+          27.041,
+          27.47
+        ],
+        [
+          "야옹",
+          27.75,
+          28.14
+        ]
+      ],
+      "suggested_scene": "cat_close",
+      "draft_only": true
+    },
+    {
+      "text": "강아지 멍멍",
+      "words": [
+        [
+          "강아지",
+          28.957,
+          29.598
+        ],
+        [
+          "멍멍",
+          29.679,
+          30.164
+        ]
+      ],
+      "suggested_scene": "dog_wide",
+      "draft_only": true
+    },
+    {
+      "text": "멍멍 멍멍",
+      "words": [
+        [
+          "멍멍",
+          30.965,
+          31.573
+        ],
+        [
+          "멍멍",
+          31.612,
+          32.217
+        ]
+      ],
+      "suggested_scene": "dog_close",
+      "draft_only": true
+    },
+    {
+      "text": "고양이 야옹",
+      "words": [
+        [
+          "고양이",
+          32.878,
+          33.654
+        ],
+        [
+          "야옹",
+          33.659,
+          34.066
+        ]
+      ],
+      "suggested_scene": "cat_wide",
+      "draft_only": true
+    },
+    {
+      "text": "야옹 야옹",
+      "words": [
+        [
+          "야옹",
+          34.885,
+          35.574
+        ],
+        [
+          "야옹",
+          35.602,
+          35.998
+        ]
+      ],
+      "suggested_scene": "cat_close",
+      "draft_only": true
+    },
+    {
+      "text": "강아지 멍멍",
+      "words": [
+        [
+          "강아지",
+          36.799,
+          37.433
+        ],
+        [
+          "멍멍",
+          37.52,
+          38.106
+        ]
+      ],
+      "suggested_scene": "dog_wide",
+      "draft_only": true
+    },
+    {
+      "text": "멍멍 멍멍",
+      "words": [
+        [
+          "멍멍",
+          38.798,
+          39.493
+        ],
+        [
+          "멍멍",
+          39.515,
+          40.071
+        ]
+      ],
+      "suggested_scene": "dog_close",
+      "draft_only": true
+    },
+    {
+      "text": "야옹 야옹",
+      "words": [
+        [
+          "야옹",
+          41.446,
+          41.788
+        ],
+        [
+          "야옹",
+          42.243,
+          42.877
+        ]
+      ],
+      "suggested_scene": "cat_close",
+      "draft_only": true
+    },
+    {
+      "text": "짝짝 짝짝",
+      "words": [
+        [
+          "짝짝",
+          43.197,
+          44.153
+        ],
+        [
+          "짝짝",
+          44.153,
+          44.712
+        ]
+      ],
+      "suggested_scene": "clap",
+      "draft_only": true
+    },
+    {
+      "text": "멍멍 멍멍",
+      "words": [
+        [
+          "멍멍",
+          45.364,
+          45.923
+        ],
+        [
+          "멍멍",
+          46.158,
+          46.877
+        ]
+      ],
+      "suggested_scene": "dog_close",
+      "draft_only": true
+    },
+    {
+      "text": "짝짝 짝짝",
+      "words": [
+        [
+          "짝짝",
+          47.114,
+          47.897
+        ],
+        [
+          "짝짝",
+          48.008,
+          48.614
+        ]
+      ],
+      "suggested_scene": "clap",
+      "draft_only": true
+    },
+    {
+      "text": "고양이 야옹",
+      "words": [
+        [
+          "고양이",
+          48.619,
+          49.334
+        ],
+        [
+          "야옹",
+          49.35,
+          49.819
+        ]
+      ],
+      "suggested_scene": "cat_wide",
+      "draft_only": true
+    },
+    {
+      "text": "야옹 야옹",
+      "words": [
+        [
+          "야옹",
+          50.637,
+          51.254
+        ],
+        [
+          "야옹",
+          51.296,
+          51.741
+        ]
+      ],
+      "suggested_scene": "cat_close",
+      "draft_only": true
+    },
+    {
+      "text": "강아지 멍멍",
+      "words": [
+        [
+          "강아지",
+          52.486,
+          53.123
+        ],
+        [
+          "멍멍",
+          53.274,
+          53.871
+        ]
+      ],
+      "suggested_scene": "dog_wide",
+      "draft_only": true
+    },
+    {
+      "text": "멍멍 멍멍",
+      "words": [
+        [
+          "멍멍",
+          54.562,
+          55.174
+        ],
+        [
+          "멍멍",
+          55.204,
+          55.792
+        ]
+      ],
+      "suggested_scene": "dog_close",
+      "draft_only": true
+    },
+    {
+      "text": "고양이 야옹",
+      "words": [
+        [
+          "고양이",
+          56.419,
+          57.174
+        ],
+        [
+          "야옹",
+          57.2,
+          57.674
+        ]
+      ],
+      "suggested_scene": "cat_wide",
+      "draft_only": true
+    },
+    {
+      "text": "야옹 야옹",
+      "words": [
+        [
+          "야옹",
+          58.477,
+          59.173
+        ],
+        [
+          "야옹",
+          59.2,
+          59.583
+        ]
+      ],
+      "suggested_scene": "cat_close",
+      "draft_only": true
+    },
+    {
+      "text": "강아지 멍멍",
+      "words": [
+        [
+          "강아지",
+          60.369,
+          61.045
+        ],
+        [
+          "멍멍",
+          61.111,
+          61.691
+        ]
+      ],
+      "suggested_scene": "dog_wide",
+      "draft_only": true
+    },
+    {
+      "text": "멍멍 멍멍",
+      "words": [
+        [
+          "멍멍",
+          62.327,
+          63.014
+        ],
+        [
+          "멍멍",
+          63.049,
+          63.64
+        ]
+      ],
+      "suggested_scene": "dog_close",
+      "draft_only": true
+    },
+    {
+      "text": "고양이 야옹",
+      "words": [
+        [
+          "고양이",
+          64.241,
+          65.093
+        ],
+        [
+          "야옹",
+          65.104,
+          65.569
+        ]
+      ],
+      "suggested_scene": "cat_wide",
+      "draft_only": true
+    },
+    {
+      "text": "강아지 멍멍",
+      "words": [
+        [
+          "강아지",
+          66.219,
+          66.883
+        ],
+        [
+          "멍멍",
+          66.972,
+          67.569
+        ]
+      ],
+      "suggested_scene": "dog_wide",
+      "draft_only": true
+    },
+    {
+      "text": "짝짝 짝짝",
+      "words": [
+        [
+          "짝짝",
+          68.959,
+          69.724
+        ],
+        [
+          "짝짝",
+          70.874,
+          71.861
+        ]
+      ],
+      "suggested_scene": "clap",
+      "draft_only": true
+    }
+  ]
+}
