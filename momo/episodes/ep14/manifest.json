@@ -52,7 +52,7 @@
     "approvals": [],
     "next_time": [],
     "production_request": "2026-11-06 금요일 추가 1곡 요청; 기존 손·발 제안 거절, 다른 주제 제작 요청.",
-    "topic_selection": "Assistant proposed cat and dog after optional topic menu; user has not explicitly chosen this exact topic.",
+    "topic_selection": "User rated cat/dog source A 80% and requested a catchier, easier-to-imitate refinement; continue this topic.",
     "production_direction": "English song for ages 2–4; two learning words cat/dog; clear lively rhythmic hook; no lip sync; original composition.",
     "visual_reuse_plan": "New cat/dog educational scenes for the new topic; reuse approved Momo dance/clap and character assets.",
     "suno_budget": {
@@ -62,7 +62,7 @@
       "no_extra_purchase": true
     },
     "suno_generation": {
-      "status": "candidate_A_recommended_download_approval_pending",
+      "status": "revision02_user_review_pending",
       "request_file": "suno/v1-request.json",
       "clip_ids": [
         "ae61fd31-3dc9-4302-8943-5bb403d1966b",
@@ -89,7 +89,45 @@
       ],
       "recommended_audio_id": "ae61fd31-3dc9-4302-8943-5bb403d1966b",
       "recommendation_basis": "Official listening: A clear friendly female lead and natural musical ending, but long outro needs edit. B has long mid-song gaps and abrupt ending. Not a user take selection.",
-      "download_approval": false
+      "download_approval": false,
+      "ep14_generation_credits_total": 20
+    },
+    "user_feedback_20261106": {
+      "reference_audio_id": "ae61fd31-3dc9-4302-8943-5bb403d1966b",
+      "satisfaction_percent": 80,
+      "requested_changes": [
+        "리듬·후렴을 더 신나고 중독성 있게",
+        "따라하기 쉽게"
+      ],
+      "preserve_direction": "Source A is the basis; changing the voice is not requested.",
+      "download_preflight_disposition": "Earlier A download approval request is superseded by the requested revision; do not download or claim approval.",
+      "revision_request": "suno/revision02/request.json",
+      "generation_budget_this_revision": 10,
+      "max_mode": false,
+      "revision_clip_ids": [
+        "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
+        "b7d9688d-2998-4a21-8c64-2e91ef477449"
+      ],
+      "revision_status": "two_completed_candidates_user_review_pending",
+      "generation_credits_used": 10,
+      "generation_credits_remaining": 2350,
+      "download_credits_remaining": 18,
+      "recommended_take": 1,
+      "recommendation_basis": "Official automatic listening rated take 1 as clearer and less rushed, with a more stable repetitive hook; take 2 has variable woof counts, denser phrases and busy fills. Local waveform and user preference not yet checked.",
+      "candidates": [
+        {
+          "label": "수정 1",
+          "id": "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
+          "duration_seconds": 77.28,
+          "url": "https://suno.com/song/5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4"
+        },
+        {
+          "label": "수정 2",
+          "id": "b7d9688d-2998-4a21-8c64-2e91ef477449",
+          "duration_seconds": 71.28,
+          "url": "https://suno.com/song/b7d9688d-2998-4a21-8c64-2e91ef477449"
+        }
+      ]
     }
   },
   "cuts": [

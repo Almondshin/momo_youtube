@@ -1,0 +1,19 @@
+{
+  "tool": "audio-covers-create",
+  "arguments": {
+    "id": "ae61fd31-3dc9-4302-8943-5bb403d1966b",
+    "lyrics": "[Hook - one short line per bar; four clear beats; immediate singing]\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\n\n[Echo - same two-note melody; short sung response, light backing]\nMeow, meow! (Meow, meow!)\nWoof, woof! (Woof, woof!)\nMeow, meow! (Meow, meow!)\nWoof, woof! (Woof, woof!)\n\n[Hook - repeat the exact catchy melody and rhythm]\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\n\n[Clap hook - same rhythmic pattern, handclaps on beats two and four]\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\nClap, clap! Meow, meow!\nClap, clap! Woof, woof!\n\n[Hook - unchanged simple melody; make the beat springier, not faster]\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\n\n[Echo - easy responses with space between words]\nMeow, meow! (Meow, meow!)\nWoof, woof! (Woof, woof!)\nMeow, meow! (Meow, meow!)\nWoof, woof! (Woof, woof!)\n\n[Final hook - keep the same tune; no extra words]\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\nCat, cat! Meow, meow!\nDog, dog! Woof, woof!\n\n[Short sung ending - resolve and stop; no restart]\nCat! Meow, meow!\nDog! Woof, woof!\n[End]",
+    "style": "Preserve the source recording's bright light feminine lead voice and warm preschool tone. Refine its rhythmic hook rather than changing genre. Around 118 BPM, bouncy simple nursery dance for ages 2-4. One stable two-note singalong motif, exactly repeated. Cat-cat then meow-meow; dog-dog then woof-woof. Four clear syllable pulses in each bar, short breaths between calls and responses, never rushed. Punchy dry handclaps on beats 2 and 4, round springy bass, short bright marimba plucks, light kick and shaker. More infectious rhythmic bounce and a memorable repeat, sparse backing so every word is clear. Lead sings the words; small soft echo doubles only. Vocal within one second. Continuous sung sections, no instrumental break. Finish the last sung tag naturally and stop within about 70-75 seconds, short final chord, no long outro.",
+    "negative_style": "new male lead, adult crooning, breathy pop diva, big choir, belting, elaborate melody, melisma, fast tongue twisters, busy percussion fills, spoken narration, long instrumental gaps, long outro, abrupt cutoff",
+    "duration": 75,
+    "model": "v6",
+    "controls": {
+      "audio_influence": 0.78,
+      "style_influence": 0.75,
+      "weirdness": 0.12,
+      "variety": 0
+    },
+    "idempotency_key": "momotime-ep14-cover-rhythm-easy-v2-20261106"
+  },
+  "save": "momo/episodes/ep14/suno/revision02/create-response.json"
+}

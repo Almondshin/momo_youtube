@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
+    "question": "Listen to the actual revised cat/dog preschool recording. The source was liked 80%; the requested improvement is a more infectious rhythmic hook AND easier imitation for ages 2-4, while retaining its bright light female lead and general tone. Do not infer results from the prompt. Are Cat-cat / Meow-meow and Dog-dog / Woof-woof clearly repeated in one stable, easy pattern? Is there enough time between words and responses, with no rushed syllables? Does the same short tune repeat, is the beat catchy, and are there distracting fills, spoken additions, long non-vocal gaps or an abrupt ending? Describe actual voice and any concerns. End with JSON fields: actual_voice, repeated_hook, easy_to_imitate, rhythm_bounce, syllables_rushed, core_words_clear, longest_nonvocal_gap_seconds_approx, natural_ending, concerns. Timing estimates must be labeled approximate."
+  },
+  "save": "momo/episodes/ep14/suno/revision02/take1-listen-response.json"
+}
