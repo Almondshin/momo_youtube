@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep14",
-  "status": "assembled",
+  "status": "uploaded",
   "topic": {
     "en": "Cat and Dog",
     "ko": "고양이와 강아지"
@@ -223,6 +223,28 @@
       "asr_limit": "Automated full-lyric recognition did not pass 95%; user explicitly permitted proceeding. No claim of perfect transcription.",
       "higgsfield_credits": 28,
       "regen_count": 0
+    },
+    "preview": {
+      "media_id": "a517e093-e98d-47bb-ae7b-f4452d93a374",
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/a517e093-e98d-47bb-ae7b-f4452d93a374.mp4",
+      "file": "out/ep14_en_preview720.mp4",
+      "duration": 77.2667
+    },
+    "upload_verification": {
+      "video_id": "g4PrQwMsKC0",
+      "title": "Cat, Cat! Dog, Dog! 🐱🐶 | Animal Sounds Song for Toddlers | Momo Time",
+      "channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA",
+      "privacy": "private",
+      "made_for_kids": true,
+      "upload_status": "processed",
+      "processing_status": "succeeded",
+      "duration": "PT1M18S"
+    },
+    "english_playlist": {
+      "id": "PLTOO0Q-QSj5I",
+      "title": "English Nursery Rhymes | Momo Time",
+      "contains_ep12": "zuj_D5y978A",
+      "contains_ep14": "g4PrQwMsKC0"
     }
   },
   "cuts": [

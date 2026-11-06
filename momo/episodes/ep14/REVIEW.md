@@ -1,3 +1,5 @@
+완성본: [바로 보기](https://d2ol7oe51mr4n9.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/a517e093-e98d-47bb-ae7b-f4452d93a374.mp4) · [YouTube 비공개](https://www.youtube.com/watch?v=g4PrQwMsKC0). 아동용 설정, 영상 처리 성공, 영어 재생목록 추가 확인.
+
 > 최신: 사용자가 수정 1번(77.28초)을 선택하고 WAV 다운로드 1크레딧 사용과 [영상 구성·예산](plan.md)을 승인했다. 원본 WAV·스템 준비 완료, 이미지 4장·클립 4개 제작 및 77초 전체 영상 조립 완료. 총 28크레딧. 사용자가 자동 가사 인식 기준 예외와 담당자 판단 진행을 허용했다. [검수 기록](qa-report.json). 아래는 이전 후보 이력이다.
 
 # ep14 영어 동물 동요 — 후보 비교
