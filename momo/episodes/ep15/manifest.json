@@ -66,50 +66,134 @@
     "visual_reuse": "Reuse six approved ep14 source scenes; zero new Higgsfield generations. No lip sync; 고양이/강아지 one keyword per animal shot; no label on Momo dance/clap.",
     "user_discretion": "Latest user instruction permits judgment over mechanical runbook gates; inspect and proceed within existing scope. Suno official download requires_credit still needs its required response-specific confirmation.",
     "suno_budget": {
-      "generation_requests": 1,
-      "expected_credits": 10,
+      "generation_requests_planned_total": 3,
+      "expected_credits_total": 30,
+      "revision02_expected_credits": 10,
       "max_mode": false,
-      "no_extra_purchase": true
-    },
-    "suno_generation": {
-      "status": "two_candidates_complete",
-      "clip_ids": [
-        "0c5d2723-217d-40a0-9608-fb7758505d27",
-        "c2b2dadb-7ece-49de-89f9-06a7dada20c9"
-      ],
-      "request": "suno/v1-request.json",
-      "max_mode": false,
-      "expected_credits": 10,
-      "candidates": [
-        {
-          "label": "1",
-          "id": "0c5d2723-217d-40a0-9608-fb7758505d27",
-          "status": "complete",
-          "duration": 73.96,
-          "url": "https://suno.com/song/0c5d2723-217d-40a0-9608-fb7758505d27"
-        },
-        {
-          "label": "2",
-          "id": "c2b2dadb-7ece-49de-89f9-06a7dada20c9",
-          "status": "complete",
-          "duration": 74.76,
-          "url": "https://suno.com/song/c2b2dadb-7ece-49de-89f9-06a7dada20c9"
-        }
-      ],
-      "generation_credits_used": 10,
-      "generation_credits_remaining": 2340,
-      "download_credits_remaining": 17,
-      "recommended_take": 1,
-      "recommendation_reason": "Official automatic listening finds clear Korean words and easy repeated hook in both; take 1 ends with only 2–3s of claps versus ~7s instrumental outro in take 2. User preference and local audio timing are not yet checked."
+      "no_extra_purchase": true,
+      "revision03_expected_credits": 10
     },
     "download_preflight": {
       "take1": "requires_credit",
       "take2": "requires_credit",
       "cost_per_selected_song": 1,
       "credits_remaining": 17,
-      "confirmation_requested": true,
+      "confirmation_requested": false,
       "confirmed": false,
-      "rate_limit_note": "Second preflight was rate-limited for 1s; retried once after more than 5s, succeeded without charge."
+      "rate_limit_note": "Second preflight was rate-limited for 1s; retried once after more than 5s, succeeded without charge.",
+      "superseded_by": "Both v1 candidates rejected; no download approved or charged.",
+      "status": "superseded_v1_requests_no_current_take_selected"
+    },
+    "suno_generation_history": [
+      {
+        "status": "rejected_by_user",
+        "clip_ids": [
+          "0c5d2723-217d-40a0-9608-fb7758505d27",
+          "c2b2dadb-7ece-49de-89f9-06a7dada20c9"
+        ],
+        "request": "suno/v1-request.json",
+        "max_mode": false,
+        "expected_credits": 10,
+        "candidates": [
+          {
+            "label": "1",
+            "id": "0c5d2723-217d-40a0-9608-fb7758505d27",
+            "status": "complete",
+            "duration": 73.96,
+            "url": "https://suno.com/song/0c5d2723-217d-40a0-9608-fb7758505d27"
+          },
+          {
+            "label": "2",
+            "id": "c2b2dadb-7ece-49de-89f9-06a7dada20c9",
+            "status": "complete",
+            "duration": 74.76,
+            "url": "https://suno.com/song/c2b2dadb-7ece-49de-89f9-06a7dada20c9"
+          }
+        ],
+        "generation_credits_used": 10,
+        "generation_credits_remaining": 2340,
+        "download_credits_remaining": 17,
+        "user_feedback": "둘다 별로네; 리듬·후렴 — 더 신나고 귀에 남게"
+      },
+      {
+        "status": "revision02_two_candidates_complete",
+        "request": "suno/revision02/request.json",
+        "expected_credits": 10,
+        "max_mode": false,
+        "clip_ids": [
+          "41a7e492-2517-47b7-9c54-0221dfb5ccfa",
+          "c55f75cc-dd82-4084-9555-022351f32606"
+        ],
+        "candidates": [
+          {
+            "id": "41a7e492-2517-47b7-9c54-0221dfb5ccfa",
+            "status": "complete",
+            "duration": 74,
+            "url": "https://suno.com/song/41a7e492-2517-47b7-9c54-0221dfb5ccfa"
+          },
+          {
+            "id": "c55f75cc-dd82-4084-9555-022351f32606",
+            "status": "complete",
+            "duration": 73.4,
+            "url": "https://suno.com/song/c55f75cc-dd82-4084-9555-022351f32606"
+          }
+        ],
+        "review_status": "take1_insufficient_echo_space_take2_weak_hook_contrast_automatic_listen",
+        "generation_credits_used": 10
+      }
+    ],
+    "user_feedback_2026_11_06": "한국어 v1 두 곡 모두 불만족. 수정 우선순위: 리듬·후렴 — 더 신나고 귀에 남게. 보컬 변경 요구는 없음.",
+    "revision02_direction": "Onomatopoeia first, two-bar call and name response, clear short/held-note contrast, recurring clap refrain, stronger bouncing bass/clap groove at target 124 BPM without fast lyric delivery. Same two learning words; original composition.",
+    "suno_generation": {
+      "status": "awaiting_user_preference",
+      "request": "suno/revision03/request.json",
+      "expected_credits": 10,
+      "max_mode": false,
+      "clip_ids": [
+        "56161dc3-0615-45be-a0d6-7dbbc028bc28",
+        "229329a8-b1a2-483d-84e0-d27d75fc8f3f"
+      ],
+      "candidates": [
+        {
+          "id": "56161dc3-0615-45be-a0d6-7dbbc028bc28",
+          "status": "complete",
+          "duration": 74.8,
+          "url": "https://suno.com/song/56161dc3-0615-45be-a0d6-7dbbc028bc28",
+          "label": "후렴 수정 1",
+          "bpm": 122.8,
+          "key": "C major",
+          "listen_result": "suno/revision03/take1-listen-result.json"
+        },
+        {
+          "id": "229329a8-b1a2-483d-84e0-d27d75fc8f3f",
+          "status": "complete",
+          "duration": 74,
+          "url": "https://suno.com/song/229329a8-b1a2-483d-84e0-d27d75fc8f3f",
+          "label": "후렴 수정 2",
+          "bpm": 122,
+          "key": "C major",
+          "listen_result": "suno/revision03/take2-listen-result.json"
+        }
+      ],
+      "generation_credits_used": 10,
+      "generation_credits_remaining": 2320,
+      "download_credits_remaining": 17,
+      "user_selected_take": null,
+      "review_source": "Official Suno audio-listen and audio-analysis; not a user approval or direct local listening.",
+      "review_summary": {
+        "take1": "More distinct pitch leaps, bouncing bass and call/response; clear names and breathing room per automatic listening. Repetition remains, ending may sound abrupt. Needs local end check if selected.",
+        "take2": "Simple narrow-range repeated hook and contrasting clap section; clear names and smooth end per automatic listening. Less hook variety and limited echo space.",
+        "uncertainty": "Automatic listening is advisory. Take 1 outro timestamps are inconsistent; take 2 JSON outro_s=64.042 conflicts with 74s total and last_vocal_s=69.077, so it is invalid. Do not use these values for edit timing."
+      }
+    },
+    "revision03_direction": "After automatic listening flagged limited hook contrast, use an explicit short-short-long four-note vocal motif, whole-bar lines with a breath, bass dropout under the four-bar clap section and a clear bass return. One further basic generation request; maintain bright light female vocal, Korean cat/dog words and zero new visual generation.",
+    "suno_credits_summary": {
+      "ep15_generation_used_total": 30,
+      "this_revision_turn_generation_used": 20,
+      "generation_remaining": 2320,
+      "ep15_downloads_used": 0,
+      "download_remaining": 17,
+      "higgsfield_new_generation_used": 0
     }
   },
   "cuts": [

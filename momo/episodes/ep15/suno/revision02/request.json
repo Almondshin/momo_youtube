@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "야옹 야옹 고양이 | 리듬 수정 | 모모타임",
+    "lyrics": "[Hook - start immediately; two-bar call and answer; same tune every repeat]\n야옹 야옹!\n고양이!\n멍멍 멍멍!\n강아지!\n야옹 야옹!\n고양이!\n멍멍 멍멍!\n강아지!\n\n[Clap refrain - two short claps then one held sung note; keep the beat]\n야옹! 짝짝!\n멍멍! 짝짝!\n야옹! 멍멍!\n짝짝짝!\n\n[Hook - exact same melody; bouncy bass and claps return together]\n야옹 야옹!\n고양이!\n멍멍 멍멍!\n강아지!\n야옹 야옹!\n고양이!\n멍멍 멍멍!\n강아지!\n\n[Clap refrain - same rhythm; short breath after each line]\n야옹! 짝짝!\n멍멍! 짝짝!\n야옹! 멍멍!\n짝짝짝!\n\n[Final hook - same tune with a light unison double, no faster]\n야옹 야옹!\n고양이!\n멍멍 멍멍!\n강아지!\n야옹 야옹!\n고양이!\n멍멍 멍멍!\n강아지!\n\n[Short ending - sung over the same beat; resolve on final clap]\n야옹! 멍멍!\n짝짝짝!\n[End]\n",
+    "style": "Bright clear light youthful female lead, Korean toddler dance singalong, 2-4 year olds. 124 BPM, buoyant straight 4/4. Hook-led from beat one. Memorable TWO-BAR motif: bar one has two short separated animal-sound pairs, bar two answers with a gently descending three-syllable animal name and a held last note, then a small breath. Repeat this exact tune. Punchy soft kick, crisp handclaps on 2 and 4, rubbery plucked octave bass answering the vocal gaps, playful woodblock. A tiny rhythmic pickup into each hook; stop the bass for ONE beat before the hook returns, never stop the child-friendly pulse. Clap refrain uses a simple short-short-LONG pattern. Clear native Korean syllables, limited pitch range, easy echo space. Sparse bright arrangement with strong bounce, not flat chanting. No vocal gymnastics. Same lead throughout, light unison doubling only in final hook. No intro, instrumental solo or long outro. Natural final clap and chord. About 70-80 seconds.",
+    "negative_style": "mature husky voice, adult crooner, breathy pop diva, belting, extreme chipmunk pitch, fast rap, spoken narration, flat monotone chant, long sentences, melisma, busy choir, dense drums, complex syncopated vocals, long instrumental break, English lyrics, abrupt cutoff, long outro",
+    "vocal_gender": "female",
+    "duration": 75,
+    "duration_strict": false,
+    "model": "v6",
+    "controls": {
+      "style_influence": 0.85,
+      "weirdness": 0.15,
+      "variety": 0
+    },
+    "idempotency_key": "momotime-ep15-ko-cat-dog-revision02-20261106"
+  },
+  "save": "momo/episodes/ep15/suno/revision02/create-response.json"
+}

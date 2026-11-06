@@ -1,0 +1,20 @@
+{
+  "tool": "audio-create",
+  "arguments": {
+    "title": "야 야 야옹! 멍 멍 멍멍! | 모모타임",
+    "lyrics": "[Chorus - sung from the first beat; crisp short-short-long motif]\n야, 야, 야옹!\n고양이!\n멍, 멍, 멍멍!\n강아지!\n야, 야, 야옹!\n고양이!\n멍, 멍, 멍멍!\n강아지!\n\n[Clap refrain - small pauses; keep dancing]\n야옹! 짝!\n멍멍! 짝!\n야옹! 멍멍!\n짝짝짝!\n\n[Chorus - exact same tune and rhythm]\n야, 야, 야옹!\n고양이!\n멍, 멍, 멍멍!\n강아지!\n야, 야, 야옹!\n고양이!\n멍, 멍, 멍멍!\n강아지!\n\n[Clap refrain - bass drops out, claps keep the pulse]\n야옹! 짝!\n멍멍! 짝!\n야옹! 멍멍!\n짝짝짝!\n\n[Final chorus - bass returns; exact same melody, not faster]\n야, 야, 야옹!\n고양이!\n멍, 멍, 멍멍!\n강아지!\n야, 야, 야옹!\n고양이!\n멍, 멍, 멍멍!\n강아지!\n\n[Ending - same tune, final chord]\n고양이! 강아지!\n짝짝짝!\n[End]\n",
+    "style": "Korean preschool dance-pop, bright light youthful female solo, clear natural singing. 120 BPM, four-on-the-floor soft kick, snappy handclaps, bouncy octave synth bass, playful marimba. The VOCAL HOOK is the star: two clipped repeated notes then a longer rising-and-resolving note, a tiny four-note melody. Sing each short lyric line over a whole bar, leave a clear breath before the next; never squeeze two lines into one bar. Animal-sound line calls, animal-name line answers. Identical catchy tune each chorus. The clap refrain drops the bass for four bars while claps continue; bass returns strongly on the chorus. Simple sung rhythm for toddlers, energetic accompaniment, obvious contrast. No intro, no instrumental break. About 75 seconds, finish on the final sung clap with a short chord.",
+    "negative_style": "mature husky voice, adult crooner, breathy pop diva, belting, extreme chipmunk pitch, robotic hard autotune, rapid lyrics, spoken rap, flat monotone chanting, long sentences, melisma, busy choir, dense drums, complicated vocal syncopation, English lyrics, long intro, long outro, abrupt cutoff",
+    "vocal_gender": "female",
+    "duration": 75,
+    "duration_strict": false,
+    "model": "v6",
+    "controls": {
+      "style_influence": 0.9,
+      "weirdness": 0.1,
+      "variety": 0
+    },
+    "idempotency_key": "momotime-ep15-ko-cat-dog-revision03-20261106"
+  },
+  "save": "momo/episodes/ep15/suno/revision03/create-response.json"
+}

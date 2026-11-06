@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "56161dc3-0615-45be-a0d6-7dbbc028bc28",
+    "question": "Listen to actual audio, not the prompt. Describe the vocal hook rhythm and pitch shape heard, how sections contrast, whether the instrumental bounce is clear, and whether ages 2-4 have enough space to echo each phrase. Is the hook memorable or still an undifferentiated repetitive chant? Check clear Korean 고양이 and 강아지 and natural child-friendly female vocal. Be candid and specific about strengths and weaknesses. Do not assume repetition equals catchiness. Return concise Korean and JSON fields hook_description, rhythmic_contrast, followability, weaknesses, first_vocal_s, last_vocal_s, outro_s, abrupt_end. Quote no more than two lyric lines."
+  },
+  "save": "momo/episodes/ep15/suno/revision03/take1-listen-response.json"
+}

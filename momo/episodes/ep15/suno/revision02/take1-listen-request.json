@@ -1,0 +1,8 @@
+{
+  "tool": "audio-listen",
+  "arguments": {
+    "id": "41a7e492-2517-47b7-9c54-0221dfb5ccfa",
+    "question": "Listen to the actual audio, not its prompt. The previous two candidates were rejected for an unmemorable rhythm and chorus. Assess this take candidly: does a clear recurring short hook stand out within 10 seconds; is the bounce audible in bass and claps; are there distinct short notes, held notes and breathing space; can ages 2-4 echo it without fast delivery? Check Korean 고양이 / 강아지 pronunciation and any confusing animal sounds. Report at least one concrete weakness if present, whether the hook repeats consistently, vocal timbre, first vocal time, last vocal time, outro duration, and any abrupt end. Do not assume catchy merely from repetition. Return concise Korean prose and a JSON summary with hook_description, rhythmic_contrast, followability, weaknesses, first_vocal_s, last_vocal_s, outro_s, abrupt_end. Quote at most two lyric lines."
+  },
+  "save": "momo/episodes/ep15/suno/revision02/take1-listen-response.json"
+}
