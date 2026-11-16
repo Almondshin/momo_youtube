@@ -51,6 +51,7 @@
     "v_over_reason": "34 playback cuts reuse six approved sources; no new Higgsfield jobs. New cue timings follow replacement audio. No lip sync or freeze extension.",
     "approvals": [],
     "next_time": [
+      "Same-song correction: replaced by ep21; https://www.youtube.com/watch?v=CI02d4S9fxw. ep20 explicitly kept.",
       "Use accepted audio recordings as actual musical references. This replacement is agent-selected; do not label it user-approved unless the user later says so.",
       "Keep two target words within melodic phrases. Automated scores do not establish musical enjoyment."
     ],
@@ -113,13 +114,21 @@
       "user_satisfaction_not_assumed": true,
       "youtube_url": "https://www.youtube.com/watch?v=GHZBvl9LzV0",
       "thumbnail_directly_viewed": true,
-      "upload_status": "public_processed_verified",
+      "upload_status": "withdrawn_private",
       "youtube_verified_at": "2026-11-16T05:14:23.385879+00:00"
     },
     "media_release": {
       "full_video": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep18/ep18_ko.mp4",
       "preview": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep18/ep18_ko_preview720.mp4",
       "thumbnail": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep18/ep18_ko_thumb.jpg"
+    },
+    "replacement_request": {
+      "video_id": "GHZBvl9LzV0",
+      "privacy": "private",
+      "reason": "User found ep18–20 the same song; ep20 explicitly retained, this version replaced with an independent composition",
+      "replacement_episode": "ep21",
+      "replacement_url": "https://www.youtube.com/watch?v=CI02d4S9fxw",
+      "verified_at": "2026-11-16T07:30:08.090612+00:00"
     }
   },
   "cuts": [

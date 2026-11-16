@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep21",
-  "status": "assembled",
+  "status": "uploaded",
   "topic": {
     "en": "Original Cat and Dog Song",
     "ko": "고양이·강아지 새 멜로디"
@@ -48,7 +48,10 @@
   "notes": {
     "v_over_reason": "Reuse six existing approved clips, recut to independent new composition; no lip sync or freeze extension.",
     "approvals": [],
-    "next_time": [],
+    "next_time": [
+      "Preserve ep20 unchanged. Similar feeling means matching child-friendly energy and singability, not retaining another song melody.",
+      "This is an agent-selected independent composition; do not treat it as user-approved without feedback."
+    ],
     "replaces_episode": "ep18",
     "standing_authorization": "2026-11-16 agent selection and public upload",
     "user_feedback": "Same feeling, not same composition. Keep ep20 unchanged.",
@@ -138,7 +141,15 @@
       "keyword_subject_match": true,
       "freeze_extension": false,
       "independent_composition": true,
-      "user_satisfaction_not_assumed": true
+      "user_satisfaction_not_assumed": true,
+      "youtube_url": "https://www.youtube.com/watch?v=CI02d4S9fxw",
+      "upload_status": "public_processed_verified",
+      "youtube_verified_at": "2026-11-16T07:30:08.090612+00:00"
+    },
+    "media_release": {
+      "full_video": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep21/ep21_ko.mp4",
+      "preview": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep21/ep21_ko_preview720.mp4",
+      "thumbnail": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep21/ep21_ko_thumb.jpg"
     }
   },
   "cuts": [

@@ -50,7 +50,9 @@
   },
   "final_vocal_before_fade": true,
   "user_satisfaction": "Not measured; agent selection is not individual user acceptance.",
-  "upload_status": "public_processed_verified",
+  "upload_status": "withdrawn_private",
   "youtube_url": "https://www.youtube.com/watch?v=7pgsXXmQ5xw",
-  "youtube_verified_at": "2026-11-16T05:14:23.385879+00:00"
+  "youtube_verified_at": "2026-11-16T05:14:23.385879+00:00",
+  "replacement_episode": "ep22",
+  "replacement_url": "https://www.youtube.com/watch?v=x-f9kYeFEJI"
 }

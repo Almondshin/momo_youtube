@@ -1,6 +1,6 @@
 # ep18 — 야옹 야옹 고양이 · 멍멍 강아지 (Cat and Dog — Korean remake)
 
-> episode_readme.py 가 생성 (2026-11-16 05:13 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-11-16 07:30 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
@@ -24,7 +24,7 @@
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
-| KO | [GHZBvl9LzV0](https://www.youtube.com/watch?v=GHZBvl9LzV0) | public | — | 2026-11-16T05:12:59Z | ✔ | PLHfQPAU3ZVb8 |
+| KO | [GHZBvl9LzV0](https://www.youtube.com/watch?v=GHZBvl9LzV0) | private | — | 2026-11-16T05:12:59Z | ✔ | PLHfQPAU3ZVb8 |
 
 ## 제목·설명·태그
 
@@ -55,5 +55,6 @@
 
 ## 다음 편에 반영할 점
 
+- Same-song correction: replaced by ep21; https://www.youtube.com/watch?v=CI02d4S9fxw. ep20 explicitly kept.
 - Use accepted audio recordings as actual musical references. This replacement is agent-selected; do not label it user-approved unless the user later says so.
 - Keep two target words within melodic phrases. Automated scores do not establish musical enjoyment.

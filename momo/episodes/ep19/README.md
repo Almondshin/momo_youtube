@@ -1,6 +1,6 @@
 # ep19 — 공과 자동차 영어 수정곡 (Ball and Car — reference remake)
 
-> episode_readme.py 가 생성 (2026-11-16 05:13 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-11-16 07:30 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
@@ -24,7 +24,7 @@
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
-| EN | [7pgsXXmQ5xw](https://www.youtube.com/watch?v=7pgsXXmQ5xw) | public | — | 2026-11-16T05:13:10Z | ✔ | PLTOO0Q-QSj5I |
+| EN | [7pgsXXmQ5xw](https://www.youtube.com/watch?v=7pgsXXmQ5xw) | private | — | 2026-11-16T05:13:10Z | ✔ | PLTOO0Q-QSj5I |
 
 ## 제목·설명·태그
 
@@ -55,5 +55,6 @@ Come and play with Momo Time!
 
 ## 다음 편에 반영할 점
 
+- Same-song correction: replaced by ep22; https://www.youtube.com/watch?v=x-f9kYeFEJI. ep20 explicitly kept.
 - Use accepted audio recordings as actual musical references. This replacement is agent-selected; do not label it user-approved unless the user later says so.
 - Keep two target words within melodic phrases. Automated scores do not establish musical enjoyment.

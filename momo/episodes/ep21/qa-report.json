@@ -76,7 +76,9 @@
     "method": "Existing whole-bar edit utility with contiguous ranges merged; vocal-quiet guard,30ms crossfade; original WAV retained."
   },
   "user_satisfaction": "Not yet measured; distinct composition and technical QA do not imply user approval",
-  "upload_status": "ready",
+  "upload_status": "public_processed_verified",
   "visual_review": "All24 rendered cut frames and thumbnail directly inspected; keyword-subject matches; no labels on Momo-only shots.",
-  "thumbnail_directly_viewed": true
+  "thumbnail_directly_viewed": true,
+  "youtube_url": "https://www.youtube.com/watch?v=CI02d4S9fxw",
+  "youtube_verified_at": "2026-11-16T07:30:08.090612+00:00"
 }

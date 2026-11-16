@@ -1,12 +1,12 @@
 {
-  "status": "rendering",
+  "status": "complete",
   "keep_unchanged": {
     "episode": "ep20",
     "video_id": "3E47mSRHaj0",
     "quote": "통통 공 빵빵 자동차 이건 좋으니 그대로 두도록",
     "privacy_verified": "public",
     "file_sha256_verified": true,
-    "verified_at": "2026-11-16T07:26:23.088016+00:00"
+    "verified_at": "2026-11-16T07:30:08.090612+00:00"
   },
   "replacements": [
     {
@@ -21,5 +21,28 @@
   "scope": "new independent compositions; same feeling does not mean same song",
   "suno_generation_credits": 20,
   "download_credits": 2,
-  "higgsfield_credits": 0
+  "higgsfield_credits": 0,
+  "results": [
+    {
+      "ep": "ep21",
+      "replaces": "ep18",
+      "language": "ko",
+      "url": "https://www.youtube.com/watch?v=CI02d4S9fxw",
+      "privacy": "public",
+      "processing_status": "succeeded"
+    },
+    {
+      "ep": "ep22",
+      "replaces": "ep19",
+      "language": "en",
+      "url": "https://www.youtube.com/watch?v=x-f9kYeFEJI",
+      "privacy": "public",
+      "processing_status": "succeeded"
+    }
+  ],
+  "verified_at": "2026-11-16T07:30:08.090612+00:00",
+  "suno_balance_after": {
+    "generation": 2230,
+    "download": 9
+  }
 }
