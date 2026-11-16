@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "ep": "ep19",
+  "status": "planning",
+  "topic": {
+    "en": "Ball and Car — reference remake",
+    "ko": "공과 자동차 영어 수정곡"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "",
+    "ko": ""
+  },
+  "thumbnail": {
+    "cut": null,
+    "text": {
+      "en": "",
+      "ko": ""
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [],
+    "next_time": [],
+    "replaces_episode": "ep16",
+    "production_request": "2026-11-16 3곡 전부 수정해서 올리고 지금올라간거 내려",
+    "standing_authorization": "agent review and public upload; normal one-credit download",
+    "musical_reference": {
+      "id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+      "user_selected": true
+    },
+    "visual_plan": {
+      "new_generation": 0,
+      "reuse_source_episode": "ep16",
+      "caption_mode": "keywords",
+      "lipsync": false
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "library_clip": "intro_wave",
+      "library_audio": "intro",
+      "narration": {
+        "en": "Hi friends! It's Momo!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 5,
+      "type": "L",
+      "library_clip": "outro_bye",
+      "library_audio": "outro",
+      "narration": {
+        "en": "Bye-bye, friends! See you next time!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    }
+  ],
+  "languages": [
+    "en"
+  ]
+}

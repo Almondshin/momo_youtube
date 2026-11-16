@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "ep": "ep18",
+  "status": "planning",
+  "topic": {
+    "en": "Cat and Dog — Korean remake",
+    "ko": "야옹 야옹 고양이 · 멍멍 강아지"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "",
+    "ko": ""
+  },
+  "thumbnail": {
+    "cut": null,
+    "text": {
+      "en": "",
+      "ko": ""
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [],
+    "next_time": [],
+    "replaces_episode": "ep15",
+    "production_request": "2026-11-16 3곡 전부 수정해서 올리고 지금올라간거 내려",
+    "standing_authorization": "agent review and public upload; normal one-credit download",
+    "musical_reference": {
+      "id": "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
+      "user_selected": true
+    },
+    "visual_plan": {
+      "new_generation": 0,
+      "reuse_source_episode": "ep15",
+      "caption_mode": "keywords",
+      "lipsync": false
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "library_clip": "intro_wave",
+      "library_audio": "intro",
+      "narration": {
+        "en": "Hi friends! It's Momo!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 5,
+      "type": "L",
+      "library_clip": "outro_bye",
+      "library_audio": "outro",
+      "narration": {
+        "en": "Bye-bye, friends! See you next time!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    }
+  ],
+  "languages": [
+    "ko"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+  "title": "Bounce My Ball, Roll My Car",
+  "lyrics": "[Verse 1]\nBall, ball!\nHere is my ball.\nBall, ball!\nBounce my little ball.\n\n[Chorus]\nBounce, bounce, ball!\nRoll, roll, car!\nBounce, bounce, ball!\nRoll, roll, car!\nBall, ball!\nCome and play with me.\nCar, car!\nRoll along with me.\n\n[Verse 2]\nCar, car!\nHere is my car.\nCar, car!\nRoll my little car.\n\n[Chorus]\nBounce, bounce, ball!\nRoll, roll, car!\nBounce, bounce, ball!\nRoll, roll, car!\nBall, ball!\nCome and play with me.\nCar, car!\nRoll along with me.\n\n[Playful echo]\nBall! Bounce, bounce!\nCar! Roll, roll!\nBall! Bounce, bounce!\nCar! Roll, roll!\n\n[Final chorus]\nBounce, bounce, ball!\nRoll, roll, car!\nBounce, bounce, ball!\nRoll, roll, car!\nBall, ball!\nCome and play with me.\nCar, car!\nBye-bye, little car!\n[Short resolved ending]",
+  "style": "Keep THIS SOURCE RECORDING'S actual bright friendly female voice, confident natural vocal delivery, bass/rhythm-guitar groove and clap backbeat recognizable. Preserve the source's musical personality and buoyant phrasing. Replace fruit lyrics with a ball-and-toy-car song, retaining the melodic phrase lengths and playful verse-to-chorus lift. New words should sit comfortably in the source groove. No new high-pitched baby voice, no generic marimba nursery backing, no rigid two-note word drill. Sing with the source's real melody and rhythmic feel, clear ball and car words, easy relaxed breaths without losing momentum. Short playful sung echoes and natural final cadence, no instrumental solo, no long empty outro. About85-90seconds.",
+  "negative_style": "different lead voice, extreme chipmunk pitch, monotone spoken chant, adult belting, busy percussion fills, fast syllables, long instrumental break, abrupt cutoff",
+  "duration": 90,
+  "model": "v6",
+  "max_mode": false,
+  "controls": {
+    "audio_influence": 0.78,
+    "style_influence": 0.62,
+    "weirdness": 0.1,
+    "variety": 0
+  },
+  "idempotency_key": "momo-ep19-reference-remake-20261116-v1"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+  "title": "통통 공이랑 빵빵 자동차",
+  "lyrics": "[Verse 1]\n공이 통통\n내 공이 통통\n공이 통통\n같이 놀아요\n\n[Chorus]\n통통통, 공!\n빵빵, 자동차!\n통통통, 공!\n빵빵, 자동차!\n통통 튀는 공\n나랑 같이 놀자\n빵빵 자동차\n나랑 같이 놀자\n\n[Verse 2]\n자동차야\n빵빵 자동차\n자동차야\n같이 놀아요\n\n[Chorus]\n통통통, 공!\n빵빵, 자동차!\n통통통, 공!\n빵빵, 자동차!\n통통 튀는 공\n나랑 같이 놀자\n빵빵 자동차\n나랑 같이 놀자\n\n[Playful sung echo]\n공아, 통통!\n자동차, 빵빵!\n공아, 통통!\n자동차, 빵빵!\n\n[Final chorus]\n통통통, 공!\n빵빵, 자동차!\n통통통, 공!\n빵빵, 자동차!\n통통 튀는 공\n나랑 같이 놀자\n빵빵 자동차\n다음에 또 놀자!\n[Short resolved ending]",
+  "style": "Korean adaptation anchored to THIS SOURCE RECORDING. Keep its actual bright friendly female vocal character, rounded dancing bass, rhythmic guitar and clap groove. Preserve the source's flowing melodic feel and verse-to-chorus lift. Fit natural Korean phrasing to that feel, giving five/six-syllable phrases two bars when needed, never cramming syllables. Main words 공 and 자동차, playful 통통 and 빵빵 hooks. A real sung tune with phrases that rise and settle, with a little space for a child to answer while the backing groove continues. Do not replace the source with a high baby voice, generic marimba drill or monotone chanting. Keep the source tempo region, no faster. No long instrumental bridge or empty outro; complete final line and a short musical resolution. About85-90seconds.",
+  "negative_style": "different lead voice, extreme chipmunk pitch, monotone spoken chant, adult belting, busy percussion fills, fast syllables, long instrumental break, abrupt cutoff",
+  "duration": 90,
+  "model": "v6",
+  "max_mode": false,
+  "controls": {
+    "audio_influence": 0.78,
+    "style_influence": 0.62,
+    "weirdness": 0.1,
+    "variety": 0
+  },
+  "idempotency_key": "momo-ep20-reference-remake-20261116-v1"
+}

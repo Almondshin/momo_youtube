@@ -276,6 +276,14 @@
       "music_accepted": false,
       "use_as_positive_music_reference": false,
       "technical_checks_do_not_override_user_feedback": true
+    },
+    "replacement_request": {
+      "date": "2026-11-16",
+      "instruction": "3곡 전부 수정해서 올리고 지금올라간거 내려",
+      "old_video_id": "bqUPUKlE3uE",
+      "old_video_privacy": "private",
+      "new_episode": "ep18",
+      "verified_at": "2026-11-16T04:55:01.938390+00:00"
     }
   },
   "cuts": [

@@ -1,0 +1,17 @@
+{
+  "id": "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
+  "title": "야옹 야옹 고양이",
+  "lyrics": "[Hook]\n야옹, 야옹!\n고양이야!\n멍멍, 멍멍!\n강아지야!\n야옹, 야옹!\n고양이야!\n멍멍, 멍멍!\n강아지야!\n\n[Verse - flowing sung phrases]\n고양이가 야옹\n나랑 같이 야옹\n강아지가 멍멍\n나랑 같이 멍멍\n\n[Hook - return to the source groove]\n야옹, 야옹!\n고양이야!\n멍멍, 멍멍!\n강아지야!\n야옹, 야옹!\n고양이야!\n멍멍, 멍멍!\n강아지야!\n\n[Echo - playful sung answers]\n야옹 야옹, 야옹!\n멍멍 멍멍, 멍멍!\n야옹 야옹, 야옹!\n멍멍 멍멍, 멍멍!\n\n[Final hook]\n야옹, 야옹!\n고양이야!\n멍멍, 멍멍!\n강아지야!\n고양이야, 야옹!\n강아지야, 멍멍!\n[Resolve with the source-style final chord]",
+  "style": "Korean-language adaptation of THIS SOURCE RECORDING. Preserve its actual feminine lead timbre, buoyant bass/drum groove, vocal articulation and playful melodic phrasing. Do not redesign it as a generic kindergarten chant or force an infant voice. Keep the source's musical bounce and hook feel; adapt the melody naturally to Korean syllables instead of squeezing syllables into the English rhythm. 야옹 야옹 and 멍멍 멍멍 are sung motifs, not spoken shouts. 고양이야 and 강아지야 flow as natural four-syllable answers. Longer verse lines get space across two bars. Source rhythm section stays active through breaths, lead remains expressive. Gentle energy and tiny call/response variations, then recognizable hook return. No added instrumental bridge, no long intro, complete sung ending. About75-85seconds.",
+  "negative_style": "different lead voice, extreme chipmunk pitch, monotone spoken chant, adult belting, busy percussion fills, fast syllables, long instrumental break, abrupt cutoff",
+  "duration": 82,
+  "model": "v6",
+  "max_mode": false,
+  "controls": {
+    "audio_influence": 0.78,
+    "style_influence": 0.62,
+    "weirdness": 0.1,
+    "variety": 0
+  },
+  "idempotency_key": "momo-ep18-reference-remake-20261116-v1"
+}
