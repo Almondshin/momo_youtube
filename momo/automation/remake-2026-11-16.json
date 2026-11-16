@@ -1,0 +1,33 @@
+{
+  "status": "rendering",
+  "old_private": [
+    "ep15",
+    "ep16",
+    "ep17"
+  ],
+  "replacement_episodes": [
+    "ep18",
+    "ep19",
+    "ep20"
+  ],
+  "source_audio_references": [
+    "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+    "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4"
+  ],
+  "content_review": "agent; no user approval loop",
+  "new_higgsfield_generation_planned": 0,
+  "selected_audio": {
+    "ep18": "a2c1cfcd-13b7-4ff5-8182-1c9d6fdd7bbb",
+    "ep19": "ae54de84-6f63-4ec9-be9e-798573e514f0",
+    "ep20": "ba4e8175-ccf7-4461-8e35-091b0a36112d"
+  },
+  "costs": {
+    "suno_generation": 40,
+    "suno_download": 3,
+    "higgsfield": 0
+  },
+  "suno_balance_after": {
+    "generation": 2250,
+    "download": 11
+  }
+}

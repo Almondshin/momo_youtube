@@ -1,0 +1,422 @@
+{
+  "lines": [
+    {
+      "text": "고양이야",
+      "section": "Verse 1",
+      "words": [
+        [
+          "고양이야",
+          1.603,
+          3.167
+        ]
+      ]
+    },
+    {
+      "text": "야옹 야옹",
+      "section": "Verse 1",
+      "words": [
+        [
+          "야옹 야옹",
+          3.237,
+          5.237
+        ]
+      ]
+    },
+    {
+      "text": "고양이야",
+      "section": "Verse 1",
+      "words": [
+        [
+          "고양이야",
+          5.839,
+          7.254
+        ]
+      ]
+    },
+    {
+      "text": "같이 놀아요",
+      "section": "Verse 1",
+      "words": [
+        [
+          "같이 놀아요",
+          7.324,
+          9.324
+        ]
+      ]
+    },
+    {
+      "text": "야옹, 고양이!",
+      "section": "Chorus",
+      "words": [
+        [
+          "야옹, 고양이!",
+          9.49,
+          11.33
+        ]
+      ]
+    },
+    {
+      "text": "멍멍, 강아지!",
+      "section": "Chorus",
+      "words": [
+        [
+          "멍멍, 강아지!",
+          11.4,
+          13.4
+        ]
+      ]
+    },
+    {
+      "text": "야옹, 고양이!",
+      "section": "Chorus",
+      "words": [
+        [
+          "야옹, 고양이!",
+          13.696,
+          15.53
+        ]
+      ]
+    },
+    {
+      "text": "멍멍, 강아지!",
+      "section": "Chorus",
+      "words": [
+        [
+          "멍멍, 강아지!",
+          15.6,
+          17.6
+        ]
+      ]
+    },
+    {
+      "text": "고양이야",
+      "section": "Chorus",
+      "words": [
+        [
+          "고양이야",
+          17.938,
+          19.494
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 야옹",
+      "section": "Chorus",
+      "words": [
+        [
+          "나랑 같이 야옹",
+          19.564,
+          21.564
+        ]
+      ]
+    },
+    {
+      "text": "강아지야",
+      "section": "Chorus",
+      "words": [
+        [
+          "강아지야",
+          21.862,
+          23.668
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 멍멍",
+      "section": "Chorus",
+      "words": [
+        [
+          "나랑 같이 멍멍",
+          23.738,
+          25.738
+        ]
+      ]
+    },
+    {
+      "text": "강아지야",
+      "section": "Verse 2",
+      "words": [
+        [
+          "강아지야",
+          26.023,
+          28.023
+        ]
+      ]
+    },
+    {
+      "text": "멍멍 멍멍",
+      "section": "Verse 2",
+      "words": [
+        [
+          "멍멍 멍멍",
+          28.213,
+          30.162
+        ]
+      ]
+    },
+    {
+      "text": "강아지야",
+      "section": "Verse 2",
+      "words": [
+        [
+          "강아지야",
+          30.232,
+          32.232
+        ]
+      ]
+    },
+    {
+      "text": "같이 놀아요",
+      "section": "Verse 2",
+      "words": [
+        [
+          "같이 놀아요",
+          32.42,
+          34.42
+        ]
+      ]
+    },
+    {
+      "text": "야옹, 고양이!",
+      "section": "Chorus",
+      "words": [
+        [
+          "야옹, 고양이!",
+          34.745,
+          36.544
+        ]
+      ]
+    },
+    {
+      "text": "멍멍, 강아지!",
+      "section": "Chorus",
+      "words": [
+        [
+          "멍멍, 강아지!",
+          36.614,
+          38.614
+        ]
+      ]
+    },
+    {
+      "text": "야옹, 고양이!",
+      "section": "Chorus",
+      "words": [
+        [
+          "야옹, 고양이!",
+          38.934,
+          40.703
+        ]
+      ]
+    },
+    {
+      "text": "멍멍, 강아지!",
+      "section": "Chorus",
+      "words": [
+        [
+          "멍멍, 강아지!",
+          40.773,
+          42.773
+        ]
+      ]
+    },
+    {
+      "text": "고양이야",
+      "section": "Chorus",
+      "words": [
+        [
+          "고양이야",
+          43.11,
+          44.678
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 야옹",
+      "section": "Chorus",
+      "words": [
+        [
+          "나랑 같이 야옹",
+          44.748,
+          46.748
+        ]
+      ]
+    },
+    {
+      "text": "강아지야",
+      "section": "Chorus",
+      "words": [
+        [
+          "강아지야",
+          47.03,
+          48.912
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 멍멍",
+      "section": "Chorus",
+      "words": [
+        [
+          "나랑 같이 멍멍",
+          48.982,
+          50.982
+        ]
+      ]
+    },
+    {
+      "text": "고양이야, 야옹",
+      "section": "Playful sung answers",
+      "words": [
+        [
+          "고양이야, 야옹",
+          51.506,
+          53.356
+        ]
+      ]
+    },
+    {
+      "text": "강아지야, 멍멍",
+      "section": "Playful sung answers",
+      "words": [
+        [
+          "강아지야, 멍멍",
+          53.426,
+          55.426
+        ]
+      ]
+    },
+    {
+      "text": "고양이야, 야옹",
+      "section": "Playful sung answers",
+      "words": [
+        [
+          "고양이야, 야옹",
+          55.683,
+          57.526
+        ]
+      ]
+    },
+    {
+      "text": "강아지야, 멍멍",
+      "section": "Playful sung answers",
+      "words": [
+        [
+          "강아지야, 멍멍",
+          57.596,
+          59.596
+        ]
+      ]
+    },
+    {
+      "text": "야옹, 고양이!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "야옹, 고양이!",
+          59.894,
+          61.666
+        ]
+      ]
+    },
+    {
+      "text": "멍멍, 강아지!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "멍멍, 강아지!",
+          61.736,
+          63.736
+        ]
+      ]
+    },
+    {
+      "text": "야옹, 고양이!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "야옹, 고양이!",
+          64.1,
+          65.824
+        ]
+      ]
+    },
+    {
+      "text": "멍멍, 강아지!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "멍멍, 강아지!",
+          65.894,
+          67.894
+        ]
+      ]
+    },
+    {
+      "text": "고양이야",
+      "section": "Final chorus",
+      "words": [
+        [
+          "고양이야",
+          68.315,
+          69.893
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 야옹",
+      "section": "Final chorus",
+      "words": [
+        [
+          "나랑 같이 야옹",
+          69.963,
+          71.963
+        ]
+      ]
+    },
+    {
+      "text": "강아지야",
+      "section": "Final chorus",
+      "words": [
+        [
+          "강아지야",
+          72.223,
+          74.064
+        ]
+      ]
+    },
+    {
+      "text": "다음에 또 놀자",
+      "section": "Final chorus",
+      "words": [
+        [
+          "다음에 또 놀자",
+          74.134,
+          75.85
+        ]
+      ]
+    }
+  ],
+  "review": {
+    "method": "Phrase-level video cue timing, not word-level karaoke. Official timestamps reconciled with independent ASR, repeated musical sections and vocal-stem inspection; whole-phrase tokens deliberately used because only two keyword labels are rendered.",
+    "independent_asr": {
+      "lyric_words": 68,
+      "heard_words": 68,
+      "matched": 0.971,
+      "lines_missing": [],
+      "lines_interpolated": [],
+      "unmatched_heard_runs": []
+    },
+    "complete_final_phrase_confirmed_by_independent_asr": true,
+    "last_vocal_latest_estimate": 75.85,
+    "tail_edit": {
+      "end": 78.5,
+      "fade_starts": 77.3,
+      "removes": "instrumental tail only"
+    },
+    "limitations": [
+      "Independent ASR confuses repeated sound words; its match percentage is not a music-quality or comprehension score.",
+      "Automated listening describes arrangement but does not establish user satisfaction."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+  "title": "야옹 고양이, 멍멍 강아지",
+  "lyrics": "[Verse 1]\n고양이야\n야옹 야옹\n고양이야\n같이 놀아요\n\n[Chorus]\n야옹, 고양이!\n멍멍, 강아지!\n야옹, 고양이!\n멍멍, 강아지!\n고양이야\n나랑 같이 야옹\n강아지야\n나랑 같이 멍멍\n\n[Verse 2]\n강아지야\n멍멍 멍멍\n강아지야\n같이 놀아요\n\n[Chorus]\n야옹, 고양이!\n멍멍, 강아지!\n야옹, 고양이!\n멍멍, 강아지!\n고양이야\n나랑 같이 야옹\n강아지야\n나랑 같이 멍멍\n\n[Playful sung answers]\n고양이야, 야옹\n강아지야, 멍멍\n고양이야, 야옹\n강아지야, 멍멍\n\n[Final chorus]\n야옹, 고양이!\n멍멍, 강아지!\n야옹, 고양이!\n멍멍, 강아지!\n고양이야\n나랑 같이 야옹\n강아지야\n다음에 또 놀자\n[Short resolved ending]",
+  "style": "Preserve THIS SOURCE's actual bright friendly feminine voice, natural sung melodic contours, rhythmic guitar, rounded bass and clap backbeat. Korean adaptation in the same musical feel and113-114BPM tempo region. Keep the verse and hook lengths musically natural. Five-syllable 야옹 고양이 and 멍멍 강아지 phrases should be sung with flowing notes and completed vowels, not chopped or shouted. Longer Korean lines get space, no rushed syllables or vocal-chop effect. Retain the source's inviting singalong melody and verse-to-hook lift. Let breaths fall naturally while the groove keeps going. No new infant/high-formant voice or replacement marimba beat. No instrumental bridge or long empty ending; complete the final sung phrase then resolve. About85-90seconds.",
+  "negative_style": "different singer, extreme baby voice, hard vocal chop, stuttering words, shouting, rapid syllables, monotone spoken chant, long instrumental break, abrupt cutoff",
+  "duration": 90,
+  "model": "v6",
+  "max_mode": false,
+  "controls": {
+    "audio_influence": 0.82,
+    "style_influence": 0.5,
+    "weirdness": 0.08,
+    "variety": 0
+  },
+  "idempotency_key": "momo-ep18-c2-remake-20261116-v2"
+}

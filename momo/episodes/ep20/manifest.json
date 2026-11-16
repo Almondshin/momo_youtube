@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep20",
-  "status": "planning",
+  "status": "assembled",
   "topic": {
     "en": "Ball and Car — Korean remake",
     "ko": "통통 공 · 빵빵 자동차"
@@ -15,40 +15,40 @@
     "momo"
   ],
   "title": {
-    "en": "",
-    "ko": ""
+    "ko": "통통 공이랑 빵빵 자동차 ⚽🚗 | 같이 놀아요 동요 | 모모타임"
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c02",
     "text": {
-      "en": "",
-      "ko": ""
+      "ko": "공 · 자동차"
     },
-    "text_pos": "top"
+    "text_pos": "bottom"
   },
   "bgm": null,
   "upload": {
-    "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
-    },
     "ko": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
+      "title": "통통 공이랑 빵빵 자동차 ⚽🚗 | 같이 놀아요 동요 | 모모타임",
+      "description": "통통 튀는 공, 빵빵 자동차! 모모와 같이 놀아요.\n짧은 후렴을 따라 부르고 통통 리듬에 맞춰 몸을 흔들어 보세요.\n\n2~4세 아이들을 위한 한국어 동요. 오늘의 두 단어: 공 · 자동차.\n\n#모모타임 #장난감동요 #공 #자동차 #유아동요 #따라부르기",
+      "tags": [
+        "Momo Time",
+        "모모타임",
+        "toddler songs",
+        "sing along",
+        "nursery rhymes",
+        "공",
+        "자동차"
+      ],
+      "playlist_id": "PLHfQPAU3ZVb8"
     }
   },
   "credits": {
-    "estimate": null,
+    "estimate": 0,
     "spent": 0,
     "generations": 0,
     "regenerations": 0
   },
   "notes": {
-    "v_over_reason": null,
+    "v_over_reason": "34 playback cuts reuse six approved sources; no new Higgsfield jobs. New cue timings follow replacement audio. No lip sync or freeze extension.",
     "approvals": [],
     "next_time": [],
     "replaces_episode": "ep17",
@@ -63,39 +63,1681 @@
       "reuse_source_episode": "ep17",
       "caption_mode": "keywords",
       "lipsync": false
+    },
+    "selected_song": {
+      "id": "ba4e8175-ccf7-4461-8e35-091b0a36112d",
+      "url": "https://suno.com/song/ba4e8175-ccf7-4461-8e35-091b0a36112d",
+      "selected_by": "agent",
+      "source_audio_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+      "duration": 85.96,
+      "download_credits_used": 1,
+      "download_authorization": "standing2026-11-16",
+      "reference_comparison": "Same114BPM region and bright feminine lead/buoyant bass-clap groove as accepted C2; longer connecting phrases retain sung melody. Not a user satisfaction score.",
+      "alternative_not_selected": "4a149cf9-b54d-48f1-8b47-9db27b14d8af",
+      "edit_needed": "Remove long instrumental tail after complete final vocal; inspect original stems first.",
+      "generation_credits_used": 10,
+      "download_status": "downloaded"
+    },
+    "alignment_review": {
+      "method": "Phrase-level video cue timing, not word-level karaoke. Official timestamps reconciled with independent ASR, repeated musical sections and vocal-stem inspection; whole-phrase tokens deliberately used because only two keyword labels are rendered.",
+      "independent_asr": {
+        "lyric_words": 80,
+        "heard_words": 77,
+        "matched": 0.925,
+        "lines_missing": [
+          "빵빵, 자동차!"
+        ],
+        "lines_interpolated": [],
+        "unmatched_heard_runs": [
+          {
+            "t0": 10.420000000000002,
+            "t1": 14.620000000000001,
+            "words": "방방제 동창 통통통고"
+          }
+        ]
+      },
+      "complete_final_phrase_confirmed_by_independent_asr": true,
+      "last_vocal_latest_estimate": 75.85,
+      "tail_edit": {
+        "end": 78.5,
+        "fade_starts": 77.3,
+        "removes": "instrumental tail only"
+      },
+      "limitations": [
+        "Independent ASR confuses repeated sound words; its match percentage is not a music-quality or comprehension score.",
+        "Automated listening describes arrangement but does not establish user satisfaction."
+      ]
+    },
+    "reviewer": "agent under standing authorization 2026-11-16",
+    "final_review": {
+      "status": "passed",
+      "reviewer": "agent",
+      "visual_frames_viewed": 34,
+      "audio_correlation": 0.9980174454501695,
+      "ending_rms_db": -78.86274719238281,
+      "no_freeze_extension": true,
+      "keyword_subject_match": true,
+      "user_satisfaction_not_assumed": true
     }
   },
   "cuts": [
     {
       "id": "c01",
       "scene": 1,
-      "type": "L",
-      "library_clip": "intro_wave",
-      "library_audio": "intro",
+      "type": "V",
+      "bars": 1,
       "narration": {
-        "en": "Hi friends! It's Momo!"
+        "ko": ""
       },
       "keyword": {
-        "en": "",
         "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dance; ",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c01"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c01"
+        }
       }
     },
     {
       "id": "c02",
-      "scene": 5,
-      "type": "L",
-      "library_clip": "outro_bye",
-      "library_audio": "outro",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
       "narration": {
-        "en": "Bye-bye, friends! See you next time!"
+        "ko": ""
       },
       "keyword": {
-        "en": "",
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d9a5418e-1b37-4a30-8b93-00727aa4e345",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014743_d9a5418e-1b37-4a30-8b93-00727aa4e345.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "off_model_ok": true,
+          "source_episode": "ep16",
+          "source_cut": "c02"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "4536faf5-b617-448d-9158-31052eae8b73",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014923_4536faf5-b617-448d-9158-31052eae8b73.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c02"
+        }
+      },
+      "notes": "Remake source role ball_wide; 공이 통통 / 내 공이 통통",
+      "cut_at": 1.236
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
         "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c03"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c03"
+        }
+      },
+      "notes": "Remake source role ball_close; 공이 통통 / 같이 놀아요",
+      "cut_at": 5.414
+    },
+    {
+      "id": "c04",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_wide; 통통통, 공!",
+      "cut_at": 9.16,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "1e75d38d-7de0-4b52-8aec-9d040a943015",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014856_1e75d38d-7de0-4b52-8aec-9d040a943015.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "off_model_ok": true,
+          "source_episode": "ep16",
+          "source_cut": "c04"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "edcb63f9-56ae-457d-9ff3-2e81929914da",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015032_edcb63f9-56ae-457d-9ff3-2e81929914da.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c04"
+        }
+      },
+      "usable_seconds": 4.0,
+      "notes": "Remake source role car_wide; 빵빵, 자동차!",
+      "cut_at": 11.084
+    },
+    {
+      "id": "c06",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_close; 통통통, 공!",
+      "cut_at": 13.32,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c07",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "640b50e7-8c2c-4161-908c-458cc2bba469",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015016_640b50e7-8c2c-4161-908c-458cc2bba469.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c05"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015536_c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c05"
+        }
+      },
+      "notes": "Remake source role car_close; 빵빵, 자동차!",
+      "cut_at": 15.314
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_wide; 통통 튀는 공",
+      "cut_at": 17.56,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dance; 나랑 같이 놀자",
+      "cut_at": 19.213,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Remake source role car_wide; 빵빵 자동차",
+      "cut_at": 21.635,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role clap; 나랑 같이 놀자",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060250_381658a6-82f7-4480-a941-17c4834e74ae.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c08"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep16",
+          "source_cut": "c08"
+        }
+      },
+      "cut_at": 23.444
+    },
+    {
+      "id": "c12",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role car_close; 자동차야 / 빵빵 자동차",
+      "cut_at": 25.888,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role car_close; 자동차야 / 같이 놀아요",
+      "cut_at": 30.064,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_wide; 통통통, 공!",
+      "cut_at": 34.333,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c15",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Remake source role car_wide; 빵빵, 자동차!",
+      "cut_at": 36.328,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_close; 통통통, 공!",
+      "cut_at": 38.574,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c17",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role car_close; 빵빵, 자동차!",
+      "cut_at": 40.556,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c18",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_wide; 통통 튀는 공",
+      "cut_at": 42.814,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c19",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dance; 나랑 같이 놀자",
+      "cut_at": 44.455,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      }
+    },
+    {
+      "id": "c20",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Remake source role car_wide; 빵빵 자동차",
+      "cut_at": 46.877,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c21",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role clap; 나랑 같이 놀자",
+      "cut_at": 48.695,
+      "clip_from": {
+        "cut": "c11",
+        "at": 0
+      }
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_wide; 공아, 통통!",
+      "cut_at": 51.202,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Remake source role car_wide; 자동차, 빵빵!",
+      "cut_at": 53.073,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_close; 공아, 통통!",
+      "cut_at": 55.437,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role car_close; 자동차, 빵빵!",
+      "cut_at": 57.319,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c26",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_wide; 통통통, 공!",
+      "cut_at": 59.61,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c27",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Remake source role car_wide; 빵빵, 자동차!",
+      "cut_at": 61.52,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c28",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_close; 통통통, 공!",
+      "cut_at": 63.82,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role car_close; 빵빵, 자동차!",
+      "cut_at": 65.767,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c30",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "공"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role ball_wide; 통통 튀는 공",
+      "cut_at": 68.013,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dance; 나랑 같이 놀자",
+      "cut_at": 69.681,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      }
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "자동차"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Remake source role car_wide; 빵빵 자동차",
+      "cut_at": 72.085,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role clap; 다음에 또 놀자!",
+      "cut_at": 73.918,
+      "clip_from": {
+        "cut": "c11",
+        "at": 0
+      }
+    },
+    {
+      "id": "c34",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role clap; ",
+      "cut_at": 76.9,
+      "clip_from": {
+        "cut": "c11",
+        "at": 0
       }
     }
   ],
   "languages": [
     "ko"
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:e5d2e7dee4db",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep20/ep20_song_e5d2e7de.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing authorization 2026-11-16: actual accepted C2 source cover, source groove retained, no target-word truncation reported, independent final phrase confirmation; subjective user acceptance not assumed.",
+      "sha1": "e5d2e7dee4dbacd369bef4eac93429b7c5d1248c",
+      "tool": "suno",
+      "source_file": "remake_original.wav",
+      "note": "C2 actual-audio cover remake; standing autonomous publication authorization 2026-11-16",
+      "duration": 85.96,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:e5d2e7dee4db",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep20/ep20_song_e5d2e7de.flac",
+          "status": "approved",
+          "reason": "Agent review under standing authorization 2026-11-16: actual accepted C2 source cover, source groove retained, no target-word truncation reported, independent final phrase confirmation; subjective user acceptance not assumed.",
+          "at": "2026-11-16T05:06Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 113.9888,
+        "beat0": 0.3338,
+        "downbeat0": 0.8602,
+        "confidence": 1.656,
+        "downbeats": [
+          0.8629,
+          2.9681,
+          5.0736,
+          7.1828,
+          9.288,
+          11.3894,
+          13.4949,
+          15.6038,
+          17.7093,
+          19.8143,
+          21.9196,
+          24.0286,
+          26.1341,
+          28.2356,
+          30.3409,
+          32.4497,
+          34.5472,
+          36.6565,
+          38.7582,
+          40.8671,
+          42.9726,
+          45.0776,
+          47.1674,
+          49.1799,
+          51.2572,
+          53.322,
+          55.3869,
+          57.4537,
+          59.5516,
+          61.6529,
+          63.7543,
+          65.8593,
+          67.9686,
+          70.0738,
+          72.1791,
+          74.2808,
+          76.3861,
+          78.4949,
+          80.5965,
+          82.698,
+          84.8024
+        ],
+        "grid": {
+          "refined": true,
+          "beats_found": "136/163",
+          "max_drift_ms": 276.9,
+          "section_offsets_ms": [
+            1.9,
+            5.0,
+            2.5,
+            -2.2,
+            -4.9
+          ],
+          "trend_ms": -8.3
+        },
+        "source": "instrumental stem"
+      },
+      "end": 78.5,
+      "lyrics_sha1": "e5d2e7dee4dbacd369bef4eac93429b7c5d1248c"
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:f844a09c0d0d",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep20/ep20_song_vocals_f844a09c.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing authorization 2026-11-16: actual accepted C2 source cover, source groove retained, no target-word truncation reported, independent final phrase confirmation; subjective user acceptance not assumed.",
+      "sha1": "f844a09c0d0d4847d2a28c655a5c1206ccde3612",
+      "of": "e5d2e7dee4dbacd369bef4eac93429b7c5d1248c",
+      "history": [
+        {
+          "job_id": "local:f844a09c0d0d",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep20/ep20_song_vocals_f844a09c.flac",
+          "status": "approved",
+          "reason": "Agent review under standing authorization 2026-11-16: actual accepted C2 source cover, source groove retained, no target-word truncation reported, independent final phrase confirmation; subjective user acceptance not assumed.",
+          "at": "2026-11-16T05:06Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 113.9888,
+    "lyrics": [
+      {
+        "text": "공이 통통",
+        "section": "Verse 1",
+        "words": [
+          [
+            "공이 통통",
+            1.356,
+            2.679
+          ]
+        ]
+      },
+      {
+        "text": "내 공이 통통",
+        "section": "Verse 1",
+        "words": [
+          [
+            "내 공이 통통",
+            2.749,
+            4.749
+          ]
+        ]
+      },
+      {
+        "text": "공이 통통",
+        "section": "Verse 1",
+        "words": [
+          [
+            "공이 통통",
+            5.534,
+            7.098
+          ]
+        ]
+      },
+      {
+        "text": "같이 놀아요",
+        "section": "Verse 1",
+        "words": [
+          [
+            "같이 놀아요",
+            7.168,
+            9.168
+          ]
+        ]
+      },
+      {
+        "text": "통통통, 공!",
+        "section": "Chorus",
+        "words": [
+          [
+            "통통통, 공!",
+            9.28,
+            11.134
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 자동차!",
+        "section": "Chorus",
+        "words": [
+          [
+            "빵빵, 자동차!",
+            11.204,
+            13.204
+          ]
+        ]
+      },
+      {
+        "text": "통통통, 공!",
+        "section": "Chorus",
+        "words": [
+          [
+            "통통통, 공!",
+            13.44,
+            15.364
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 자동차!",
+        "section": "Chorus",
+        "words": [
+          [
+            "빵빵, 자동차!",
+            15.434,
+            17.434
+          ]
+        ]
+      },
+      {
+        "text": "통통 튀는 공",
+        "section": "Chorus",
+        "words": [
+          [
+            "통통 튀는 공",
+            17.68,
+            19.263
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 놀자",
+        "section": "Chorus",
+        "words": [
+          [
+            "나랑 같이 놀자",
+            19.333,
+            21.333
+          ]
+        ]
+      },
+      {
+        "text": "빵빵 자동차",
+        "section": "Chorus",
+        "words": [
+          [
+            "빵빵 자동차",
+            21.755,
+            23.494
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 놀자",
+        "section": "Chorus",
+        "words": [
+          [
+            "나랑 같이 놀자",
+            23.564,
+            25.564
+          ]
+        ]
+      },
+      {
+        "text": "자동차야",
+        "section": "Verse 2",
+        "words": [
+          [
+            "자동차야",
+            26.008,
+            27.975
+          ]
+        ]
+      },
+      {
+        "text": "빵빵 자동차",
+        "section": "Verse 2",
+        "words": [
+          [
+            "빵빵 자동차",
+            28.045,
+            30.045
+          ]
+        ]
+      },
+      {
+        "text": "자동차야",
+        "section": "Verse 2",
+        "words": [
+          [
+            "자동차야",
+            30.184,
+            32.106
+          ]
+        ]
+      },
+      {
+        "text": "같이 놀아요",
+        "section": "Verse 2",
+        "words": [
+          [
+            "같이 놀아요",
+            32.176,
+            34.176
+          ]
+        ]
+      },
+      {
+        "text": "통통통, 공!",
+        "section": "Chorus",
+        "words": [
+          [
+            "통통통, 공!",
+            34.453,
+            36.378
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 자동차!",
+        "section": "Chorus",
+        "words": [
+          [
+            "빵빵, 자동차!",
+            36.448,
+            38.448
+          ]
+        ]
+      },
+      {
+        "text": "통통통, 공!",
+        "section": "Chorus",
+        "words": [
+          [
+            "통통통, 공!",
+            38.694,
+            40.606
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 자동차!",
+        "section": "Chorus",
+        "words": [
+          [
+            "빵빵, 자동차!",
+            40.676,
+            42.676
+          ]
+        ]
+      },
+      {
+        "text": "통통 튀는 공",
+        "section": "Chorus",
+        "words": [
+          [
+            "통통 튀는 공",
+            42.934,
+            44.505
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 놀자",
+        "section": "Chorus",
+        "words": [
+          [
+            "나랑 같이 놀자",
+            44.575,
+            46.575
+          ]
+        ]
+      },
+      {
+        "text": "빵빵 자동차",
+        "section": "Chorus",
+        "words": [
+          [
+            "빵빵 자동차",
+            46.997,
+            48.745
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 놀자",
+        "section": "Chorus",
+        "words": [
+          [
+            "나랑 같이 놀자",
+            48.815,
+            50.815
+          ]
+        ]
+      },
+      {
+        "text": "공아, 통통!",
+        "section": "Playful sung echo",
+        "words": [
+          [
+            "공아, 통통!",
+            51.322,
+            53.123
+          ]
+        ]
+      },
+      {
+        "text": "자동차, 빵빵!",
+        "section": "Playful sung echo",
+        "words": [
+          [
+            "자동차, 빵빵!",
+            53.193,
+            55.193
+          ]
+        ]
+      },
+      {
+        "text": "공아, 통통!",
+        "section": "Playful sung echo",
+        "words": [
+          [
+            "공아, 통통!",
+            55.557,
+            57.369
+          ]
+        ]
+      },
+      {
+        "text": "자동차, 빵빵!",
+        "section": "Playful sung echo",
+        "words": [
+          [
+            "자동차, 빵빵!",
+            57.439,
+            59.439
+          ]
+        ]
+      },
+      {
+        "text": "통통통, 공!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "통통통, 공!",
+            59.73,
+            61.57
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 자동차!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "빵빵, 자동차!",
+            61.64,
+            63.64
+          ]
+        ]
+      },
+      {
+        "text": "통통통, 공!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "통통통, 공!",
+            63.94,
+            65.817
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 자동차!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "빵빵, 자동차!",
+            65.887,
+            67.887
+          ]
+        ]
+      },
+      {
+        "text": "통통 튀는 공",
+        "section": "Final chorus",
+        "words": [
+          [
+            "통통 튀는 공",
+            68.133,
+            69.731
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 놀자",
+        "section": "Final chorus",
+        "words": [
+          [
+            "나랑 같이 놀자",
+            69.801,
+            71.801
+          ]
+        ]
+      },
+      {
+        "text": "빵빵 자동차",
+        "section": "Final chorus",
+        "words": [
+          [
+            "빵빵 자동차",
+            72.205,
+            73.968
+          ]
+        ]
+      },
+      {
+        "text": "다음에 또 놀자!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "다음에 또 놀자!",
+            74.038,
+            75.85
+          ]
+        ]
+      }
+    ],
+    "caption_mode": "keywords",
+    "refs_urls": {}
+  }
 }

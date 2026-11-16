@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-16",
+  "reviewer": "agent under standing authorization",
+  "duration_seconds": 78.5,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "cuts": 34,
+  "unique_video_sources": 6,
+  "new_higgsfield_credits": 0,
+  "all_sources_present": true,
+  "all_cut_render_modes": [
+    "trim"
+  ],
+  "freeze_extension_used": false,
+  "keyword_set": [
+    "공",
+    "자동차"
+  ],
+  "no_labels_on_momo_only": true,
+  "visual_review": "All34 rendered cut frames directly inspected; subject and keyword match, no extra keyword labels. Approved source clips reused. Car wide shots shorter than4s.",
+  "audio_correlation_to_original_before_fade": 0.9980174454501695,
+  "ending_last_100ms_rms_db": -78.86274719238281,
+  "loudness_lufs": -13.95,
+  "alignment_review": {
+    "method": "Phrase-level video cue timing, not word-level karaoke. Official timestamps reconciled with independent ASR, repeated musical sections and vocal-stem inspection; whole-phrase tokens deliberately used because only two keyword labels are rendered.",
+    "independent_asr": {
+      "lyric_words": 80,
+      "heard_words": 77,
+      "matched": 0.925,
+      "lines_missing": [
+        "빵빵, 자동차!"
+      ],
+      "lines_interpolated": [],
+      "unmatched_heard_runs": [
+        {
+          "t0": 10.420000000000002,
+          "t1": 14.620000000000001,
+          "words": "방방제 동창 통통통고"
+        }
+      ]
+    },
+    "complete_final_phrase_confirmed_by_independent_asr": true,
+    "last_vocal_latest_estimate": 75.85,
+    "tail_edit": {
+      "end": 78.5,
+      "fade_starts": 77.3,
+      "removes": "instrumental tail only"
+    },
+    "limitations": [
+      "Independent ASR confuses repeated sound words; its match percentage is not a music-quality or comprehension score.",
+      "Automated listening describes arrangement but does not establish user satisfaction."
+    ]
+  },
+  "final_vocal_before_fade": true,
+  "user_satisfaction": "Not measured; agent selection is not individual user acceptance.",
+  "upload_status": "ready"
+}

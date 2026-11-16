@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep18",
-  "status": "planning",
+  "status": "assembled",
   "topic": {
     "en": "Cat and Dog — Korean remake",
     "ko": "야옹 야옹 고양이 · 멍멍 강아지"
@@ -15,47 +15,47 @@
     "momo"
   ],
   "title": {
-    "en": "",
-    "ko": ""
+    "ko": "야옹 고양이, 멍멍 강아지 🐱🐶 | 따라 부르는 동물 동요 | 모모타임"
   },
   "thumbnail": {
-    "cut": null,
+    "cut": "c02",
     "text": {
-      "en": "",
-      "ko": ""
+      "ko": "고양이 · 강아지"
     },
-    "text_pos": "top"
+    "text_pos": "bottom"
   },
   "bgm": null,
   "upload": {
-    "en": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
-    },
     "ko": {
-      "title": "",
-      "description": "",
-      "tags": [],
-      "playlist_id": null
+      "title": "야옹 고양이, 멍멍 강아지 🐱🐶 | 따라 부르는 동물 동요 | 모모타임",
+      "description": "모모와 고양이, 강아지를 만나 보아요!\n야옹, 고양이! 멍멍, 강아지! 짧은 후렴을 따라 부르고 신나는 리듬에 몸을 흔들어 보세요.\n\n2~4세 아이들을 위한 한국어 동요. 오늘의 두 단어: 고양이 · 강아지.\n\n#모모타임 #동물동요 #고양이 #강아지 #유아동요 #따라부르기",
+      "tags": [
+        "Momo Time",
+        "모모타임",
+        "toddler songs",
+        "sing along",
+        "nursery rhymes",
+        "고양이",
+        "강아지"
+      ],
+      "playlist_id": "PLHfQPAU3ZVb8"
     }
   },
   "credits": {
-    "estimate": null,
+    "estimate": 0,
     "spent": 0,
     "generations": 0,
     "regenerations": 0
   },
   "notes": {
-    "v_over_reason": null,
+    "v_over_reason": "34 playback cuts reuse six approved sources; no new Higgsfield jobs. New cue timings follow replacement audio. No lip sync or freeze extension.",
     "approvals": [],
     "next_time": [],
     "replaces_episode": "ep15",
     "production_request": "2026-11-16 3곡 전부 수정해서 올리고 지금올라간거 내려",
     "standing_authorization": "agent review and public upload; normal one-credit download",
     "musical_reference": {
-      "id": "5ec245c8-5ecd-4c9f-9a0f-59e2f80b9be4",
+      "id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
       "user_selected": true
     },
     "visual_plan": {
@@ -63,39 +63,1662 @@
       "reuse_source_episode": "ep15",
       "caption_mode": "keywords",
       "lipsync": false
+    },
+    "selected_song": {
+      "id": "a2c1cfcd-13b7-4ff5-8182-1c9d6fdd7bbb",
+      "url": "https://suno.com/song/a2c1cfcd-13b7-4ff5-8182-1c9d6fdd7bbb",
+      "source_audio_id": "be54e10b-d0df-4b15-ad38-a6d81faa2f47",
+      "duration": 86.76,
+      "selected_by": "agent",
+      "download_authorization": "standing2026-11-16",
+      "reference_comparison": "C2 groove, rounded bass, rhythm guitar and feminine sung phrasing retained;114.3BPM versus113.8 source. Both v1 adaptations from cat/dog source had rushed/chopped phrasing and were not selected. v2 take2 selected for continuous flowing phrasing and no long middle gap. Final lyric completion to check independently.",
+      "download_credits_used": 1,
+      "generation_credits_used": 20,
+      "download_status": "downloaded"
+    },
+    "alignment_review": {
+      "method": "Phrase-level video cue timing, not word-level karaoke. Official timestamps reconciled with independent ASR, repeated musical sections and vocal-stem inspection; whole-phrase tokens deliberately used because only two keyword labels are rendered.",
+      "independent_asr": {
+        "lyric_words": 68,
+        "heard_words": 68,
+        "matched": 0.971,
+        "lines_missing": [],
+        "lines_interpolated": [],
+        "unmatched_heard_runs": []
+      },
+      "complete_final_phrase_confirmed_by_independent_asr": true,
+      "last_vocal_latest_estimate": 75.85,
+      "tail_edit": {
+        "end": 78.5,
+        "fade_starts": 77.3,
+        "removes": "instrumental tail only"
+      },
+      "limitations": [
+        "Independent ASR confuses repeated sound words; its match percentage is not a music-quality or comprehension score.",
+        "Automated listening describes arrangement but does not establish user satisfaction."
+      ]
+    },
+    "reviewer": "agent under standing authorization 2026-11-16",
+    "final_review": {
+      "status": "passed",
+      "reviewer": "agent",
+      "visual_frames_viewed": 34,
+      "audio_correlation": 0.998533945487087,
+      "ending_rms_db": -70.818115234375,
+      "no_freeze_extension": true,
+      "keyword_subject_match": true,
+      "user_satisfaction_not_assumed": true
     }
   },
   "cuts": [
     {
       "id": "c01",
       "scene": 1,
-      "type": "L",
-      "library_clip": "intro_wave",
-      "library_audio": "intro",
+      "type": "V",
+      "bars": 1,
       "narration": {
-        "en": "Hi friends! It's Momo!"
+        "ko": ""
       },
       "keyword": {
-        "en": "",
         "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dance; ",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c01"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c01"
+        }
       }
     },
     {
       "id": "c02",
-      "scene": 5,
-      "type": "L",
-      "library_clip": "outro_bye",
-      "library_audio": "outro",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
       "narration": {
-        "en": "Bye-bye, friends! See you next time!"
+        "ko": ""
       },
       "keyword": {
-        "en": "",
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_wide; 고양이야 / 야옹 야옹",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "dcc0574e-dc74-4799-95e6-d4077160cef5",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022121_dcc0574e-dc74-4799-95e6-d4077160cef5.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c03"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "c51967fa-1279-4400-b91d-cf0b2bb1633e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022345_c51967fa-1279-4400-b91d-cf0b2bb1633e.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c03"
+        }
+      },
+      "cut_at": 1.483
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
         "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_close; 고양이야 / 같이 놀아요",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d9e25f86-cf9a-46b1-9ffa-e6303307e97f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022308_d9e25f86-cf9a-46b1-9ffa-e6303307e97f.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c02"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "6ba83cb7-bc27-4b31-a732-a2ab9719ec31",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022513_6ba83cb7-bc27-4b31-a732-a2ab9719ec31.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c02"
+        }
+      },
+      "cut_at": 5.719
+    },
+    {
+      "id": "c04",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_wide; 야옹, 고양이!",
+      "cut_at": 9.37,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_wide; 멍멍, 강아지!",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "ed4e10ae-5afa-4bbf-ae02-3db00cba5f25",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022307_ed4e10ae-5afa-4bbf-ae02-3db00cba5f25.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c05"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "6c0032cd-0adc-4883-9891-d953291f0c06",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022510_6c0032cd-0adc-4883-9891-d953291f0c06.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c05"
+        }
+      },
+      "cut_at": 11.28
+    },
+    {
+      "id": "c06",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_close; 야옹, 고양이!",
+      "cut_at": 13.576,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c07",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a single short tail resting still, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame. Clean single tail silhouette without motion streaks or floating marks.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_close; 멍멍, 강아지!",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d2283ddd-2aea-41a6-8375-ed6c359663a4",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022455_d2283ddd-2aea-41a6-8375-ed6c359663a4.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c04"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "d52315c5-8184-4084-bbf8-efca201ed36f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261106_022705_d52315c5-8184-4084-bbf8-efca201ed36f.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c04"
+        }
+      },
+      "cut_at": 15.48
+    },
+    {
+      "id": "c08",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_wide; 고양이야",
+      "cut_at": 17.818,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dance; 나랑 같이 야옹",
+      "cut_at": 19.444,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_wide; 강아지야",
+      "cut_at": 21.742,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role clap; 나랑 같이 멍멍",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060250_381658a6-82f7-4480-a941-17c4834e74ae.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c10"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Reuse approved visual asset; audio rejection does not imply this asset was rejected.",
+          "source_episode": "ep15",
+          "source_cut": "c10"
+        }
+      },
+      "cut_at": 23.618
+    },
+    {
+      "id": "c12",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a single short tail resting still, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame. Clean single tail silhouette without motion streaks or floating marks.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_close; 강아지야 / 멍멍 멍멍",
+      "cut_at": 25.903,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a single short tail resting still, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame. Clean single tail silhouette without motion streaks or floating marks.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_close; 강아지야 / 같이 놀아요",
+      "cut_at": 30.112,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_wide; 야옹, 고양이!",
+      "cut_at": 34.625,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c15",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_wide; 멍멍, 강아지!",
+      "cut_at": 36.494,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_close; 야옹, 고양이!",
+      "cut_at": 38.814,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c17",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a single short tail resting still, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame. Clean single tail silhouette without motion streaks or floating marks.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_close; 멍멍, 강아지!",
+      "cut_at": 40.653,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c18",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_wide; 고양이야",
+      "cut_at": 42.99,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c19",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dance; 나랑 같이 야옹",
+      "cut_at": 44.628,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      }
+    },
+    {
+      "id": "c20",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_wide; 강아지야",
+      "cut_at": 46.91,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c21",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role clap; 나랑 같이 멍멍",
+      "cut_at": 48.862,
+      "clip_from": {
+        "cut": "c11",
+        "at": 0
+      }
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_wide; 고양이야, 야옹",
+      "cut_at": 51.386,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_wide; 강아지야, 멍멍",
+      "cut_at": 53.306,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_close; 고양이야, 야옹",
+      "cut_at": 55.563,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a single short tail resting still, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame. Clean single tail silhouette without motion streaks or floating marks.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_close; 강아지야, 멍멍",
+      "cut_at": 57.476,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c26",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_wide; 야옹, 고양이!",
+      "cut_at": 59.774,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c27",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_wide; 멍멍, 강아지!",
+      "cut_at": 61.616,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c28",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the kitten markings and proportions in the reference. Entire head, both ears, front paws and curved tail visible. Kitten centered, uncluttered lower foreground. Only the kitten in frame.",
+      "motion": "The seated kitten blinks slowly and gently curls its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_close; 야옹, 고양이!",
+      "cut_at": 63.98,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a single short tail resting still, sitting on the cream floor in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. Match the puppy markings and proportions in the reference. Entire head, both ears, front paws and short tail visible. Puppy centered, uncluttered lower foreground. Only the puppy in frame. Clean single tail silhouette without motion streaks or floating marks.",
+      "motion": "The seated puppy blinks slowly and gently wags its tail. Its shape and markings stay unchanged. Keep the mouth closed.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_close; 멍멍, 강아지!",
+      "cut_at": 65.774,
+      "clip_from": {
+        "cut": "c07",
+        "at": 0
+      }
+    },
+    {
+      "id": "c30",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "고양이"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round orange kitten with two softly pointed ears, a cream muzzle and belly, gentle round eyes and a curved orange tail. Momo gently presents the kitten with one low open paw. Both yellow buttons and both long floppy ears fully visible. The kitten is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated kitten and blinks. The kitten blinks once and gently curls its tail. Preserve the same facial expression and mouth shape as the starting image; no speaking, singing or repeated mouth movements.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role cat_wide; 고양이야",
+      "cut_at": 68.195,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dance; 나랑 같이 야옹",
+      "cut_at": 69.843,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      }
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "강아지"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint furniture and a clean cream floor, soft even lighting. On the right sits one small round golden puppy with short floppy tan ears, a cream muzzle and belly, a small rounded brown nose and a short wagging tail. Momo gently presents the puppy with one low open paw. Match the same bunny proportions and room as the reference. Both yellow buttons and both long floppy ears fully visible. The puppy is the sole learning subject. Full bodies visible, open lower foreground. Gentle closed-mouth smiles.",
+      "motion": "Momo makes one small welcoming paw gesture toward the seated puppy and blinks. The puppy blinks once and gently wags its tail. All mouths stay closed; no singing or talking. The puppy has exactly one continuous tail; no detached tail pieces or drawn motion streaks.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role dog_wide; 강아지야",
+      "cut_at": 72.103,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role clap; 다음에 또 놀자",
+      "cut_at": 74.014,
+      "clip_from": {
+        "cut": "c11",
+        "at": 0
+      }
+    },
+    {
+      "id": "c34",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Remake source role clap; ",
+      "cut_at": 76.9,
+      "clip_from": {
+        "cut": "c11",
+        "at": 0
       }
     }
   ],
   "languages": [
     "ko"
-  ]
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:481c752a78e3",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep18/ep18_song_481c752a.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing authorization 2026-11-16: actual accepted C2 source cover, source groove retained, no target-word truncation reported, independent final phrase confirmation; subjective user acceptance not assumed.",
+      "sha1": "481c752a78e3ffe392b3b950ad78e84669ee92e6",
+      "tool": "suno",
+      "source_file": "remake_original.wav",
+      "note": "C2 actual-audio cover remake; standing autonomous publication authorization 2026-11-16",
+      "duration": 86.76,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:481c752a78e3",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep18/ep18_song_481c752a.flac",
+          "status": "approved",
+          "reason": "Agent review under standing authorization 2026-11-16: actual accepted C2 source cover, source groove retained, no target-word truncation reported, independent final phrase confirmation; subjective user acceptance not assumed.",
+          "at": "2026-11-16T05:06Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 114.2724,
+        "beat0": 0.0871,
+        "downbeat0": 1.1372,
+        "confidence": 1.608,
+        "downbeats": [
+          1.1372,
+          3.2374,
+          5.3377,
+          7.4379,
+          9.5382,
+          11.6384,
+          13.7387,
+          15.8389,
+          17.9392,
+          20.0394,
+          22.1396,
+          24.2399,
+          26.3401,
+          28.4404,
+          30.5406,
+          32.6409,
+          34.7411,
+          36.8414,
+          38.9416,
+          41.0418,
+          43.1421,
+          45.2423,
+          47.3426,
+          49.4428,
+          51.5431,
+          53.6433,
+          55.7436,
+          57.8438,
+          59.9441,
+          62.0443,
+          64.1445,
+          66.2448,
+          68.345,
+          70.4453,
+          72.5455,
+          74.6458,
+          76.746,
+          78.8463,
+          80.9465,
+          83.0467,
+          85.147
+        ],
+        "grid": {
+          "refined": false,
+          "beats_found": "151/163",
+          "max_drift_ms": 21.5,
+          "section_offsets_ms": [
+            -9.0,
+            -0.7,
+            6.8,
+            9.3,
+            -4.1
+          ],
+          "trend_ms": 7.9
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_sha1": "481c752a78e3ffe392b3b950ad78e84669ee92e6",
+      "end": 78.5
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:75e7a6e7e890",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep18/ep18_song_vocals_75e7a6e7.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing authorization 2026-11-16: actual accepted C2 source cover, source groove retained, no target-word truncation reported, independent final phrase confirmation; subjective user acceptance not assumed.",
+      "sha1": "75e7a6e7e890f6c4eb7d82f00b526742faf922d8",
+      "of": "481c752a78e3ffe392b3b950ad78e84669ee92e6",
+      "history": [
+        {
+          "job_id": "local:75e7a6e7e890",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep18/ep18_song_vocals_75e7a6e7.flac",
+          "status": "approved",
+          "reason": "Agent review under standing authorization 2026-11-16: actual accepted C2 source cover, source groove retained, no target-word truncation reported, independent final phrase confirmation; subjective user acceptance not assumed.",
+          "at": "2026-11-16T05:06Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 114.2724,
+    "lyrics": [
+      {
+        "text": "고양이야",
+        "section": "Verse 1",
+        "words": [
+          [
+            "고양이야",
+            1.603,
+            3.167
+          ]
+        ]
+      },
+      {
+        "text": "야옹 야옹",
+        "section": "Verse 1",
+        "words": [
+          [
+            "야옹 야옹",
+            3.237,
+            5.237
+          ]
+        ]
+      },
+      {
+        "text": "고양이야",
+        "section": "Verse 1",
+        "words": [
+          [
+            "고양이야",
+            5.839,
+            7.254
+          ]
+        ]
+      },
+      {
+        "text": "같이 놀아요",
+        "section": "Verse 1",
+        "words": [
+          [
+            "같이 놀아요",
+            7.324,
+            9.324
+          ]
+        ]
+      },
+      {
+        "text": "야옹, 고양이!",
+        "section": "Chorus",
+        "words": [
+          [
+            "야옹, 고양이!",
+            9.49,
+            11.33
+          ]
+        ]
+      },
+      {
+        "text": "멍멍, 강아지!",
+        "section": "Chorus",
+        "words": [
+          [
+            "멍멍, 강아지!",
+            11.4,
+            13.4
+          ]
+        ]
+      },
+      {
+        "text": "야옹, 고양이!",
+        "section": "Chorus",
+        "words": [
+          [
+            "야옹, 고양이!",
+            13.696,
+            15.53
+          ]
+        ]
+      },
+      {
+        "text": "멍멍, 강아지!",
+        "section": "Chorus",
+        "words": [
+          [
+            "멍멍, 강아지!",
+            15.6,
+            17.6
+          ]
+        ]
+      },
+      {
+        "text": "고양이야",
+        "section": "Chorus",
+        "words": [
+          [
+            "고양이야",
+            17.938,
+            19.494
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 야옹",
+        "section": "Chorus",
+        "words": [
+          [
+            "나랑 같이 야옹",
+            19.564,
+            21.564
+          ]
+        ]
+      },
+      {
+        "text": "강아지야",
+        "section": "Chorus",
+        "words": [
+          [
+            "강아지야",
+            21.862,
+            23.668
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 멍멍",
+        "section": "Chorus",
+        "words": [
+          [
+            "나랑 같이 멍멍",
+            23.738,
+            25.738
+          ]
+        ]
+      },
+      {
+        "text": "강아지야",
+        "section": "Verse 2",
+        "words": [
+          [
+            "강아지야",
+            26.023,
+            28.023
+          ]
+        ]
+      },
+      {
+        "text": "멍멍 멍멍",
+        "section": "Verse 2",
+        "words": [
+          [
+            "멍멍 멍멍",
+            28.213,
+            30.162
+          ]
+        ]
+      },
+      {
+        "text": "강아지야",
+        "section": "Verse 2",
+        "words": [
+          [
+            "강아지야",
+            30.232,
+            32.232
+          ]
+        ]
+      },
+      {
+        "text": "같이 놀아요",
+        "section": "Verse 2",
+        "words": [
+          [
+            "같이 놀아요",
+            32.42,
+            34.42
+          ]
+        ]
+      },
+      {
+        "text": "야옹, 고양이!",
+        "section": "Chorus",
+        "words": [
+          [
+            "야옹, 고양이!",
+            34.745,
+            36.544
+          ]
+        ]
+      },
+      {
+        "text": "멍멍, 강아지!",
+        "section": "Chorus",
+        "words": [
+          [
+            "멍멍, 강아지!",
+            36.614,
+            38.614
+          ]
+        ]
+      },
+      {
+        "text": "야옹, 고양이!",
+        "section": "Chorus",
+        "words": [
+          [
+            "야옹, 고양이!",
+            38.934,
+            40.703
+          ]
+        ]
+      },
+      {
+        "text": "멍멍, 강아지!",
+        "section": "Chorus",
+        "words": [
+          [
+            "멍멍, 강아지!",
+            40.773,
+            42.773
+          ]
+        ]
+      },
+      {
+        "text": "고양이야",
+        "section": "Chorus",
+        "words": [
+          [
+            "고양이야",
+            43.11,
+            44.678
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 야옹",
+        "section": "Chorus",
+        "words": [
+          [
+            "나랑 같이 야옹",
+            44.748,
+            46.748
+          ]
+        ]
+      },
+      {
+        "text": "강아지야",
+        "section": "Chorus",
+        "words": [
+          [
+            "강아지야",
+            47.03,
+            48.912
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 멍멍",
+        "section": "Chorus",
+        "words": [
+          [
+            "나랑 같이 멍멍",
+            48.982,
+            50.982
+          ]
+        ]
+      },
+      {
+        "text": "고양이야, 야옹",
+        "section": "Playful sung answers",
+        "words": [
+          [
+            "고양이야, 야옹",
+            51.506,
+            53.356
+          ]
+        ]
+      },
+      {
+        "text": "강아지야, 멍멍",
+        "section": "Playful sung answers",
+        "words": [
+          [
+            "강아지야, 멍멍",
+            53.426,
+            55.426
+          ]
+        ]
+      },
+      {
+        "text": "고양이야, 야옹",
+        "section": "Playful sung answers",
+        "words": [
+          [
+            "고양이야, 야옹",
+            55.683,
+            57.526
+          ]
+        ]
+      },
+      {
+        "text": "강아지야, 멍멍",
+        "section": "Playful sung answers",
+        "words": [
+          [
+            "강아지야, 멍멍",
+            57.596,
+            59.596
+          ]
+        ]
+      },
+      {
+        "text": "야옹, 고양이!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "야옹, 고양이!",
+            59.894,
+            61.666
+          ]
+        ]
+      },
+      {
+        "text": "멍멍, 강아지!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "멍멍, 강아지!",
+            61.736,
+            63.736
+          ]
+        ]
+      },
+      {
+        "text": "야옹, 고양이!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "야옹, 고양이!",
+            64.1,
+            65.824
+          ]
+        ]
+      },
+      {
+        "text": "멍멍, 강아지!",
+        "section": "Final chorus",
+        "words": [
+          [
+            "멍멍, 강아지!",
+            65.894,
+            67.894
+          ]
+        ]
+      },
+      {
+        "text": "고양이야",
+        "section": "Final chorus",
+        "words": [
+          [
+            "고양이야",
+            68.315,
+            69.893
+          ]
+        ]
+      },
+      {
+        "text": "나랑 같이 야옹",
+        "section": "Final chorus",
+        "words": [
+          [
+            "나랑 같이 야옹",
+            69.963,
+            71.963
+          ]
+        ]
+      },
+      {
+        "text": "강아지야",
+        "section": "Final chorus",
+        "words": [
+          [
+            "강아지야",
+            72.223,
+            74.064
+          ]
+        ]
+      },
+      {
+        "text": "다음에 또 놀자",
+        "section": "Final chorus",
+        "words": [
+          [
+            "다음에 또 놀자",
+            74.134,
+            75.85
+          ]
+        ]
+      }
+    ],
+    "caption_mode": "keywords",
+    "refs_urls": {}
+  }
 }

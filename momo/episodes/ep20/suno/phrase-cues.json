@@ -1,0 +1,430 @@
+{
+  "lines": [
+    {
+      "text": "공이 통통",
+      "section": "Verse 1",
+      "words": [
+        [
+          "공이 통통",
+          1.356,
+          2.679
+        ]
+      ]
+    },
+    {
+      "text": "내 공이 통통",
+      "section": "Verse 1",
+      "words": [
+        [
+          "내 공이 통통",
+          2.749,
+          4.749
+        ]
+      ]
+    },
+    {
+      "text": "공이 통통",
+      "section": "Verse 1",
+      "words": [
+        [
+          "공이 통통",
+          5.534,
+          7.098
+        ]
+      ]
+    },
+    {
+      "text": "같이 놀아요",
+      "section": "Verse 1",
+      "words": [
+        [
+          "같이 놀아요",
+          7.168,
+          9.168
+        ]
+      ]
+    },
+    {
+      "text": "통통통, 공!",
+      "section": "Chorus",
+      "words": [
+        [
+          "통통통, 공!",
+          9.28,
+          11.134
+        ]
+      ]
+    },
+    {
+      "text": "빵빵, 자동차!",
+      "section": "Chorus",
+      "words": [
+        [
+          "빵빵, 자동차!",
+          11.204,
+          13.204
+        ]
+      ]
+    },
+    {
+      "text": "통통통, 공!",
+      "section": "Chorus",
+      "words": [
+        [
+          "통통통, 공!",
+          13.44,
+          15.364
+        ]
+      ]
+    },
+    {
+      "text": "빵빵, 자동차!",
+      "section": "Chorus",
+      "words": [
+        [
+          "빵빵, 자동차!",
+          15.434,
+          17.434
+        ]
+      ]
+    },
+    {
+      "text": "통통 튀는 공",
+      "section": "Chorus",
+      "words": [
+        [
+          "통통 튀는 공",
+          17.68,
+          19.263
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 놀자",
+      "section": "Chorus",
+      "words": [
+        [
+          "나랑 같이 놀자",
+          19.333,
+          21.333
+        ]
+      ]
+    },
+    {
+      "text": "빵빵 자동차",
+      "section": "Chorus",
+      "words": [
+        [
+          "빵빵 자동차",
+          21.755,
+          23.494
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 놀자",
+      "section": "Chorus",
+      "words": [
+        [
+          "나랑 같이 놀자",
+          23.564,
+          25.564
+        ]
+      ]
+    },
+    {
+      "text": "자동차야",
+      "section": "Verse 2",
+      "words": [
+        [
+          "자동차야",
+          26.008,
+          27.975
+        ]
+      ]
+    },
+    {
+      "text": "빵빵 자동차",
+      "section": "Verse 2",
+      "words": [
+        [
+          "빵빵 자동차",
+          28.045,
+          30.045
+        ]
+      ]
+    },
+    {
+      "text": "자동차야",
+      "section": "Verse 2",
+      "words": [
+        [
+          "자동차야",
+          30.184,
+          32.106
+        ]
+      ]
+    },
+    {
+      "text": "같이 놀아요",
+      "section": "Verse 2",
+      "words": [
+        [
+          "같이 놀아요",
+          32.176,
+          34.176
+        ]
+      ]
+    },
+    {
+      "text": "통통통, 공!",
+      "section": "Chorus",
+      "words": [
+        [
+          "통통통, 공!",
+          34.453,
+          36.378
+        ]
+      ]
+    },
+    {
+      "text": "빵빵, 자동차!",
+      "section": "Chorus",
+      "words": [
+        [
+          "빵빵, 자동차!",
+          36.448,
+          38.448
+        ]
+      ]
+    },
+    {
+      "text": "통통통, 공!",
+      "section": "Chorus",
+      "words": [
+        [
+          "통통통, 공!",
+          38.694,
+          40.606
+        ]
+      ]
+    },
+    {
+      "text": "빵빵, 자동차!",
+      "section": "Chorus",
+      "words": [
+        [
+          "빵빵, 자동차!",
+          40.676,
+          42.676
+        ]
+      ]
+    },
+    {
+      "text": "통통 튀는 공",
+      "section": "Chorus",
+      "words": [
+        [
+          "통통 튀는 공",
+          42.934,
+          44.505
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 놀자",
+      "section": "Chorus",
+      "words": [
+        [
+          "나랑 같이 놀자",
+          44.575,
+          46.575
+        ]
+      ]
+    },
+    {
+      "text": "빵빵 자동차",
+      "section": "Chorus",
+      "words": [
+        [
+          "빵빵 자동차",
+          46.997,
+          48.745
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 놀자",
+      "section": "Chorus",
+      "words": [
+        [
+          "나랑 같이 놀자",
+          48.815,
+          50.815
+        ]
+      ]
+    },
+    {
+      "text": "공아, 통통!",
+      "section": "Playful sung echo",
+      "words": [
+        [
+          "공아, 통통!",
+          51.322,
+          53.123
+        ]
+      ]
+    },
+    {
+      "text": "자동차, 빵빵!",
+      "section": "Playful sung echo",
+      "words": [
+        [
+          "자동차, 빵빵!",
+          53.193,
+          55.193
+        ]
+      ]
+    },
+    {
+      "text": "공아, 통통!",
+      "section": "Playful sung echo",
+      "words": [
+        [
+          "공아, 통통!",
+          55.557,
+          57.369
+        ]
+      ]
+    },
+    {
+      "text": "자동차, 빵빵!",
+      "section": "Playful sung echo",
+      "words": [
+        [
+          "자동차, 빵빵!",
+          57.439,
+          59.439
+        ]
+      ]
+    },
+    {
+      "text": "통통통, 공!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "통통통, 공!",
+          59.73,
+          61.57
+        ]
+      ]
+    },
+    {
+      "text": "빵빵, 자동차!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "빵빵, 자동차!",
+          61.64,
+          63.64
+        ]
+      ]
+    },
+    {
+      "text": "통통통, 공!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "통통통, 공!",
+          63.94,
+          65.817
+        ]
+      ]
+    },
+    {
+      "text": "빵빵, 자동차!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "빵빵, 자동차!",
+          65.887,
+          67.887
+        ]
+      ]
+    },
+    {
+      "text": "통통 튀는 공",
+      "section": "Final chorus",
+      "words": [
+        [
+          "통통 튀는 공",
+          68.133,
+          69.731
+        ]
+      ]
+    },
+    {
+      "text": "나랑 같이 놀자",
+      "section": "Final chorus",
+      "words": [
+        [
+          "나랑 같이 놀자",
+          69.801,
+          71.801
+        ]
+      ]
+    },
+    {
+      "text": "빵빵 자동차",
+      "section": "Final chorus",
+      "words": [
+        [
+          "빵빵 자동차",
+          72.205,
+          73.968
+        ]
+      ]
+    },
+    {
+      "text": "다음에 또 놀자!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "다음에 또 놀자!",
+          74.038,
+          75.85
+        ]
+      ]
+    }
+  ],
+  "review": {
+    "method": "Phrase-level video cue timing, not word-level karaoke. Official timestamps reconciled with independent ASR, repeated musical sections and vocal-stem inspection; whole-phrase tokens deliberately used because only two keyword labels are rendered.",
+    "independent_asr": {
+      "lyric_words": 80,
+      "heard_words": 77,
+      "matched": 0.925,
+      "lines_missing": [
+        "빵빵, 자동차!"
+      ],
+      "lines_interpolated": [],
+      "unmatched_heard_runs": [
+        {
+          "t0": 10.420000000000002,
+          "t1": 14.620000000000001,
+          "words": "방방제 동창 통통통고"
+        }
+      ]
+    },
+    "complete_final_phrase_confirmed_by_independent_asr": true,
+    "last_vocal_latest_estimate": 75.85,
+    "tail_edit": {
+      "end": 78.5,
+      "fade_starts": 77.3,
+      "removes": "instrumental tail only"
+    },
+    "limitations": [
+      "Independent ASR confuses repeated sound words; its match percentage is not a music-quality or comprehension score.",
+      "Automated listening describes arrangement but does not establish user satisfaction."
+    ]
+  }
+}

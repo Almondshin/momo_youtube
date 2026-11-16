@@ -1,0 +1,1364 @@
+{
+  "audio_id": "a2c1cfcd-13b7-4ff5-8182-1c9d6fdd7bbb",
+  "status": "complete",
+  "words": [
+    {
+      "word": "[Verse 1]\n고",
+      "start_s": 1.603,
+      "end_s": 1.92,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 1.943,
+      "end_s": 2.476,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 2.476,
+      "end_s": 2.651,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 3.193,
+      "end_s": 3.237,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n야",
+      "start_s": 3.237,
+      "end_s": 3.459,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 3.562,
+      "end_s": 3.828,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 야",
+      "start_s": 4.279,
+      "end_s": 4.64,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 4.682,
+      "end_s": 4.964,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n고",
+      "start_s": 5.839,
+      "end_s": 6.08,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 6.112,
+      "end_s": 6.799,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이야",
+      "start_s": 6.799,
+      "end_s": 6.959,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n같",
+      "start_s": 7.324,
+      "end_s": 7.759,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 8,
+      "end_s": 8.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 놀",
+      "start_s": 8.053,
+      "end_s": 8.24,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 8.247,
+      "end_s": 8.341,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "요",
+      "start_s": 8.378,
+      "end_s": 8.552,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n[Playful sung answers]\n고양이야",
+      "start_s": 9.52,
+      "end_s": 9.567,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 야",
+      "start_s": 9.567,
+      "end_s": 9.647,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 9.824,
+      "end_s": 9.904,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강아지야, 멍멍\n고",
+      "start_s": 10.04,
+      "end_s": 10.247,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 10.247,
+      "end_s": 10.48,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 10.54,
+      "end_s": 10.706,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 11.44,
+      "end_s": 11.486,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 야",
+      "start_s": 11.486,
+      "end_s": 11.777,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 11.942,
+      "end_s": 12.228,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 12.41,
+      "end_s": 12.72,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 12.775,
+      "end_s": 13.039,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 13.039,
+      "end_s": 13.237,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 13.76,
+      "end_s": 13.802,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 멍멍\n\n[Final chorus]\n야",
+      "start_s": 13.802,
+      "end_s": 14.042,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 14.057,
+      "end_s": 14.137,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 고",
+      "start_s": 14.255,
+      "end_s": 14.48,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 14.481,
+      "end_s": 14.72,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 14.776,
+      "end_s": 14.931,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n멍",
+      "start_s": 15.6,
+      "end_s": 15.647,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 15.647,
+      "end_s": 15.993,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 강아지!\n멍",
+      "start_s": 16.118,
+      "end_s": 16.189,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 16.189,
+      "end_s": 16.446,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 강",
+      "start_s": 16.646,
+      "end_s": 16.88,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 16.942,
+      "end_s": 17.272,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 17.272,
+      "end_s": 17.432,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n고",
+      "start_s": 17.938,
+      "end_s": 18.24,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 18.25,
+      "end_s": 18.835,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이야",
+      "start_s": 18.835,
+      "end_s": 19.043,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n나",
+      "start_s": 19.564,
+      "end_s": 19.68,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "랑",
+      "start_s": 19.772,
+      "end_s": 19.92,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 같",
+      "start_s": 19.944,
+      "end_s": 20.709,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이 ",
+      "start_s": 20.956,
+      "end_s": 21.026,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 21.026,
+      "end_s": 21.106,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 21.414,
+      "end_s": 21.494,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 21.862,
+      "end_s": 22.08,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 22.14,
+      "end_s": 22.8,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 22.83,
+      "end_s": 23.077,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 23.141,
+      "end_s": 23.307,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n나",
+      "start_s": 23.738,
+      "end_s": 23.818,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "랑",
+      "start_s": 24.011,
+      "end_s": 24.091,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 같",
+      "start_s": 24.27,
+      "end_s": 24.72,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 24.8,
+      "end_s": 24.842,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 멍",
+      "start_s": 24.842,
+      "end_s": 25.08,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 25.157,
+      "end_s": 25.461,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n[Verse 2]\n강",
+      "start_s": 26.023,
+      "end_s": 26.24,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 26.292,
+      "end_s": 26.632,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 26.632,
+      "end_s": 26.77,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 27.322,
+      "end_s": 27.509,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n멍",
+      "start_s": 28.213,
+      "end_s": 28.258,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 28.258,
+      "end_s": 28.545,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 멍",
+      "start_s": 28.725,
+      "end_s": 28.98,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 29.253,
+      "end_s": 29.295,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n멍",
+      "start_s": 29.295,
+      "end_s": 29.364,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 29.364,
+      "end_s": 29.575,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 멍",
+      "start_s": 29.763,
+      "end_s": 29.833,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 29.833,
+      "end_s": 29.996,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 30.232,
+      "end_s": 30.453,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 30.507,
+      "end_s": 30.773,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 30.784,
+      "end_s": 30.947,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 31.466,
+      "end_s": 31.686,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n같이",
+      "start_s": 32.42,
+      "end_s": 32.965,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 놀",
+      "start_s": 33.226,
+      "end_s": 33.591,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 33.622,
+      "end_s": 33.874,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "요",
+      "start_s": 34.694,
+      "end_s": 34.745,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n[Chorus]\n야",
+      "start_s": 34.745,
+      "end_s": 34.949,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 35.056,
+      "end_s": 35.254,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 고",
+      "start_s": 35.255,
+      "end_s": 35.413,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 35.433,
+      "end_s": 35.654,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 35.716,
+      "end_s": 35.894,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n멍",
+      "start_s": 36.614,
+      "end_s": 36.659,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 36.659,
+      "end_s": 36.719,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 멍",
+      "start_s": 36.719,
+      "end_s": 36.974,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 37.121,
+      "end_s": 37.42,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 37.588,
+      "end_s": 37.894,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 37.949,
+      "end_s": 38.214,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 38.222,
+      "end_s": 38.45,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야\n같이",
+      "start_s": 38.934,
+      "end_s": 38.979,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 놀아요\n\n[Chorus]\n야",
+      "start_s": 38.979,
+      "end_s": 39.226,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 39.226,
+      "end_s": 39.306,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 고",
+      "start_s": 39.434,
+      "end_s": 39.654,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 39.667,
+      "end_s": 39.894,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 39.952,
+      "end_s": 40.128,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n멍",
+      "start_s": 40.773,
+      "end_s": 40.817,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 40.817,
+      "end_s": 41.173,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 강아지!\n야옹, 고양이",
+      "start_s": 41.247,
+      "end_s": 41.357,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n멍",
+      "start_s": 41.357,
+      "end_s": 41.426,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 41.426,
+      "end_s": 41.669,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 강",
+      "start_s": 41.819,
+      "end_s": 42.133,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 42.181,
+      "end_s": 42.453,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 42.456,
+      "end_s": 42.666,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n고",
+      "start_s": 43.11,
+      "end_s": 43.413,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 43.431,
+      "end_s": 44.051,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이야",
+      "start_s": 44.051,
+      "end_s": 44.237,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n나",
+      "start_s": 44.748,
+      "end_s": 44.853,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "랑",
+      "start_s": 44.929,
+      "end_s": 45.173,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 같",
+      "start_s": 45.179,
+      "end_s": 45.896,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이 ",
+      "start_s": 46.214,
+      "end_s": 46.249,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 46.249,
+      "end_s": 46.478,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 46.576,
+      "end_s": 46.831,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 47.03,
+      "end_s": 47.254,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 47.31,
+      "end_s": 48.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 48.072,
+      "end_s": 48.294,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 48.326,
+      "end_s": 48.505,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n나",
+      "start_s": 48.982,
+      "end_s": 49.093,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "랑",
+      "start_s": 49.168,
+      "end_s": 49.413,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 같",
+      "start_s": 49.436,
+      "end_s": 49.893,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 49.974,
+      "end_s": 50.006,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 멍",
+      "start_s": 50.006,
+      "end_s": 50.373,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 50.384,
+      "end_s": 50.654,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n[Playful sung answers]\n고",
+      "start_s": 51.506,
+      "end_s": 51.813,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 51.83,
+      "end_s": 52.293,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 52.294,
+      "end_s": 52.453,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 52.533,
+      "end_s": 52.567,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 야",
+      "start_s": 52.567,
+      "end_s": 52.78,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 52.895,
+      "end_s": 53.145,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 53.426,
+      "end_s": 53.813,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 53.877,
+      "end_s": 54.133,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 54.133,
+      "end_s": 54.373,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 54.418,
+      "end_s": 54.537,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 멍",
+      "start_s": 54.64,
+      "end_s": 54.934,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 54.954,
+      "end_s": 55.24,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n고",
+      "start_s": 55.683,
+      "end_s": 55.974,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 55.999,
+      "end_s": 56.532,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 56.532,
+      "end_s": 56.693,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 56.773,
+      "end_s": 56.773,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 야",
+      "start_s": 56.773,
+      "end_s": 56.805,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 56.805,
+      "end_s": 57.008,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 57.596,
+      "end_s": 58.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 58.101,
+      "end_s": 58.285,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 58.285,
+      "end_s": 58.582,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 58.934,
+      "end_s": 58.975,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 멍",
+      "start_s": 58.975,
+      "end_s": 59.253,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 59.441,
+      "end_s": 59.682,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n[Playful sung answers]\n고",
+      "start_s": 59.894,
+      "end_s": 59.974,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양이야",
+      "start_s": 59.974,
+      "end_s": 60.015,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 야",
+      "start_s": 60.015,
+      "end_s": 60.107,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 60.275,
+      "end_s": 60.355,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강아지야, 멍멍\n고",
+      "start_s": 60.456,
+      "end_s": 60.63,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 60.63,
+      "end_s": 60.854,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 60.915,
+      "end_s": 61.105,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 61.813,
+      "end_s": 61.858,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 야",
+      "start_s": 61.858,
+      "end_s": 62.161,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 62.313,
+      "end_s": 62.621,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 62.782,
+      "end_s": 63.093,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 63.141,
+      "end_s": 63.395,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 63.395,
+      "end_s": 63.66,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 64.133,
+      "end_s": 64.183,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 멍멍\n\n[Final chorus]\n야",
+      "start_s": 64.183,
+      "end_s": 64.423,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 64.436,
+      "end_s": 64.516,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 고",
+      "start_s": 64.631,
+      "end_s": 64.853,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 64.861,
+      "end_s": 65.093,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 65.148,
+      "end_s": 65.322,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n멍멍, 강아지!\n야",
+      "start_s": 65.894,
+      "end_s": 65.974,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹, 고양이",
+      "start_s": 65.974,
+      "end_s": 66.026,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n멍",
+      "start_s": 66.026,
+      "end_s": 66.39,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "멍",
+      "start_s": 66.555,
+      "end_s": 66.865,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": ", 강",
+      "start_s": 67.024,
+      "end_s": 67.333,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 67.378,
+      "end_s": 67.639,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 67.639,
+      "end_s": 67.851,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "!\n고",
+      "start_s": 68.315,
+      "end_s": 68.613,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "양",
+      "start_s": 68.629,
+      "end_s": 69.245,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이야",
+      "start_s": 69.245,
+      "end_s": 69.446,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n나",
+      "start_s": 69.963,
+      "end_s": 70.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "랑",
+      "start_s": 70.132,
+      "end_s": 70.293,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 같",
+      "start_s": 70.328,
+      "end_s": 71.123,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이 ",
+      "start_s": 71.334,
+      "end_s": 71.384,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 71.384,
+      "end_s": 71.602,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "옹",
+      "start_s": 71.787,
+      "end_s": 71.867,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n강",
+      "start_s": 72.223,
+      "end_s": 72.453,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 72.499,
+      "end_s": 73.253,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "지",
+      "start_s": 73.253,
+      "end_s": 73.493,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 73.522,
+      "end_s": 73.793,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n다",
+      "start_s": 74.134,
+      "end_s": 74.214,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "음",
+      "start_s": 74.356,
+      "end_s": 74.546,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "에",
+      "start_s": 74.992,
+      "end_s": 75.072,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 또",
+      "start_s": 75.174,
+      "end_s": 75.224,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 놀",
+      "start_s": 75.224,
+      "end_s": 75.492,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "자\n\n[Short resolved ending]\n\n\n",
+      "start_s": 75.492,
+      "end_s": 75.77,
+      "success": true,
+      "p_align": 1
+    }
+  ]
+}

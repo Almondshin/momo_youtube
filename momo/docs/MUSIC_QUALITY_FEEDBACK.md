@@ -5,7 +5,7 @@ User rejected the music of all three latest uploads:
 - ep17 공 통통 자동차 빵빵: “아주아주 별로”
 - ep16 Ball Bounce! Car Go!: “아주 별로”
 
-These remain uploaded; this feedback does not itself request deletion, privacy changes or scheduler cancellation.
+Follow-up user instruction: “3곡 전부 수정해서 올리고 지금올라간거 내려”. Old ep15–17 uploads were made private and verified; replacements are ep18–20. No scheduler cancellation was requested.
 They must not be used as successful musical precedents. Existing technical QA results remain historical facts,
 but do not indicate musical acceptance. No user review request is reintroduced.
 
@@ -23,3 +23,9 @@ The likely process failures are losing the accepted musical reference, reducing 
 Future musical choices must explicitly compare against the user-selected C2 and English cat/dog revision1 before spending on visuals. Preserve what worked in vocal character, rhythmic feel and singable phrasing while making a new song; simply reusing their melody is not required. Korean phrasing must suit Korean syllables and stresses. Two learning words do not require a whole song consisting solely of isolated words and onomatopoeia.
 
 Automatic listening can flag faults; ASR can help check words; waveform/render checks can establish technical integrity. None of these by itself establishes a memorable tune, an enjoyable groove or a match to the user's taste. Do not label their scores as user satisfaction, or describe technical completion as proven musical quality.
+
+## Replacement implementation
+
+ep18–20 use the actual accepted C2 recording as the official cover source. ep18 first tried the accepted English cat/dog recording, but those Korean adaptations were rejected internally for rushed phrasing; the final selected take uses C2. The three replacements retain its approximately114BPM groove and feminine lead, with short connecting phrases between two learning words. Long instrumental endings are trimmed after the complete final vocal. Existing approved visuals are recut to the new audio; new Higgsfield cost0.
+
+These are agent-selected replacements under delegated review, not newly user-approved music. Independent ASR checks lyrics and final phrase completion; keyword-only captions avoid claiming exact word-level karaoke alignment. User satisfaction remains unmeasured.

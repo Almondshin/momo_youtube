@@ -1,0 +1,24 @@
+{
+  "method": "Phrase-level video cue timing, not word-level karaoke. Official timestamps reconciled with independent ASR, repeated musical sections and vocal-stem inspection; whole-phrase tokens deliberately used because only two keyword labels are rendered.",
+  "independent_asr": {
+    "lyric_words": 111,
+    "heard_words": 110,
+    "matched": 0.937,
+    "lines_missing": [
+      "Here is my ball."
+    ],
+    "lines_interpolated": [],
+    "unmatched_heard_runs": []
+  },
+  "complete_final_phrase_confirmed_by_independent_asr": true,
+  "last_vocal_latest_estimate": 76.124,
+  "tail_edit": {
+    "end": 78.5,
+    "fade_starts": 77.3,
+    "removes": "instrumental tail only"
+  },
+  "limitations": [
+    "Independent ASR confuses repeated sound words; its match percentage is not a music-quality or comprehension score.",
+    "Automated listening describes arrangement but does not establish user satisfaction."
+  ]
+}
