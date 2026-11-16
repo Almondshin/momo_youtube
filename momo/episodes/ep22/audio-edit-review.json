@@ -1,0 +1,47 @@
+{
+  "original_duration": 89.56,
+  "removed_instrumental_ranges": [
+    [
+      72.5012,
+      74.3619
+    ]
+  ],
+  "silence_guard_report": [
+    {
+      "gap": [
+        52.974,
+        57.548
+      ],
+      "removed": [],
+      "refused": [
+        [
+          53.775,
+          55.664,
+          "보컬 스템 -6 dB (기준 -30)"
+        ]
+      ],
+      "left": 4.574
+    },
+    {
+      "gap": [
+        71.873,
+        75.314
+      ],
+      "removed": [
+        [
+          72.501,
+          74.362
+        ]
+      ],
+      "refused": [],
+      "left": 1.58
+    }
+  ],
+  "start": 0.0,
+  "end": 80.1393,
+  "render_duration": 80.139,
+  "fade_starts": 78.939,
+  "latest_vocal_end": 78.0193,
+  "method": "Existing whole-bar edit utility with contiguous ranges merged; vocal-quiet guard,30ms crossfade; original WAV retained.",
+  "alignment_correction": "Bye-bye ball provider cue restored75.314–76.165; selected cut72.5012–74.3619 ends before that vocal. Vocal guard prevented cuts across singing."
+}

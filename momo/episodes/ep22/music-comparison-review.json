@@ -1,0 +1,17 @@
+{
+  "user_requirement": "Same appealing feeling, different songs. Preserve ep20.",
+  "source_audio_input": null,
+  "method": "New custom composition, no cover, no source audio or shared melody seed.",
+  "audible_description_source": "suno/candidate-1-review.json",
+  "baseline_ep20": {
+    "bpm": 114,
+    "hook": "Alternating short target-word calls, straight guitar/bass/clap pop"
+  },
+  "new_recording": {
+    "bpm": 127.6,
+    "hook": "Four longer melodic sentences with rising/falling answers, electronic dance pulse"
+  },
+  "melodic_evidence": "../ep21/melody-comparison.json: local vocal pitch contours differ; diagnostic only, subject to octave/transcription errors, not a taste or originality score.",
+  "qa_limits": "Provider listening is fallible: ep21 instrumental gap missed and corrected by stem/timing analysis. ep22 final car confirmed by independent ASR and provider word alignment despite listening-text mismatch.",
+  "ep20_preserved": true
+}

@@ -1,0 +1,291 @@
+{
+  "lines": [
+    {
+      "text": "Bounce with me, my little ball!",
+      "section": "Chorus",
+      "words": [
+        [
+          "Bounce with me, my little ball!",
+          0.939,
+          3.811
+        ]
+      ]
+    },
+    {
+      "text": "Up you go, then down you fall.",
+      "section": "Chorus",
+      "words": [
+        [
+          "Up you go, then down you fall.",
+          4.72,
+          7.9
+        ]
+      ]
+    },
+    {
+      "text": "Roll with me, my little car!",
+      "section": "Chorus",
+      "words": [
+        [
+          "Roll with me, my little car!",
+          8.465,
+          11.38
+        ]
+      ]
+    },
+    {
+      "text": "Here we go! There you are!",
+      "section": "Chorus",
+      "words": [
+        [
+          "Here we go! There you are!",
+          12.245,
+          15.423
+        ]
+      ]
+    },
+    {
+      "text": "My ball is ready.",
+      "section": "Verse 1",
+      "words": [
+        [
+          "My ball is ready.",
+          16.303,
+          17.474
+        ]
+      ]
+    },
+    {
+      "text": "One little bounce.",
+      "section": "Verse 1",
+      "words": [
+        [
+          "One little bounce.",
+          18.181,
+          19.475
+        ]
+      ]
+    },
+    {
+      "text": "I bounce my ball,",
+      "section": "Verse 1",
+      "words": [
+        [
+          "I bounce my ball,",
+          20.068,
+          21.204
+        ]
+      ]
+    },
+    {
+      "text": "And catch it now!",
+      "section": "Verse 1",
+      "words": [
+        [
+          "And catch it now!",
+          21.302,
+          22.718
+        ]
+      ]
+    },
+    {
+      "text": "Bounce with me, my little ball!",
+      "section": "Chorus",
+      "words": [
+        [
+          "Bounce with me, my little ball!",
+          23.733,
+          26.617
+        ]
+      ]
+    },
+    {
+      "text": "Up you go, then down you fall.",
+      "section": "Chorus",
+      "words": [
+        [
+          "Up you go, then down you fall.",
+          27.494,
+          30.264
+        ]
+      ]
+    },
+    {
+      "text": "Roll with me, my little car!",
+      "section": "Chorus",
+      "words": [
+        [
+          "Roll with me, my little car!",
+          31.144,
+          34.081
+        ]
+      ]
+    },
+    {
+      "text": "Here we go! There you are!",
+      "section": "Chorus",
+      "words": [
+        [
+          "Here we go! There you are!",
+          34.937,
+          38.1
+        ]
+      ]
+    },
+    {
+      "text": "My car is ready.",
+      "section": "Verse 2",
+      "words": [
+        [
+          "My car is ready.",
+          38.924,
+          40.097
+        ]
+      ]
+    },
+    {
+      "text": "Let's take a ride.",
+      "section": "Verse 2",
+      "words": [
+        [
+          "Let's take a ride.",
+          40.789,
+          41.899
+        ]
+      ]
+    },
+    {
+      "text": "I roll my car,",
+      "section": "Verse 2",
+      "words": [
+        [
+          "I roll my car,",
+          42.732,
+          43.729
+        ]
+      ]
+    },
+    {
+      "text": "Right by my side!",
+      "section": "Verse 2",
+      "words": [
+        [
+          "Right by my side!",
+          43.886,
+          45.257
+        ]
+      ]
+    },
+    {
+      "text": "Ball goes up!",
+      "section": "Playful break",
+      "words": [
+        [
+          "Ball goes up!",
+          46.248,
+          47.477
+        ]
+      ]
+    },
+    {
+      "text": "Ball comes down!",
+      "section": "Playful break",
+      "words": [
+        [
+          "Ball comes down!",
+          47.926,
+          49.188
+        ]
+      ]
+    },
+    {
+      "text": "Car rolls by!",
+      "section": "Playful break",
+      "words": [
+        [
+          "Car rolls by!",
+          50.061,
+          51.131
+        ]
+      ]
+    },
+    {
+      "text": "Round and round!",
+      "section": "Playful break",
+      "words": [
+        [
+          "Round and round!",
+          51.622,
+          52.974
+        ]
+      ]
+    },
+    {
+      "text": "Bounce with me, my little ball!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "Bounce with me, my little ball!",
+          57.548,
+          60.4
+        ]
+      ]
+    },
+    {
+      "text": "Up you go, then down you fall.",
+      "section": "Final chorus",
+      "words": [
+        [
+          "Up you go, then down you fall.",
+          61.315,
+          64.177
+        ]
+      ]
+    },
+    {
+      "text": "Roll with me, my little car!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "Roll with me, my little car!",
+          64.996,
+          67.907
+        ]
+      ]
+    },
+    {
+      "text": "Here we go! There you are!",
+      "section": "Final chorus",
+      "words": [
+        [
+          "Here we go! There you are!",
+          68.7,
+          71.873
+        ]
+      ]
+    },
+    {
+      "text": "Bye-bye, ball!",
+      "section": "Very short sung ending",
+      "words": [
+        [
+          "Bye-bye, ball!",
+          75.314,
+          76.165
+        ]
+      ]
+    },
+    {
+      "text": "Bye-bye, car!",
+      "section": "Very short sung ending",
+      "words": [
+        [
+          "Bye-bye, car!",
+          79.076,
+          79.88
+        ]
+      ]
+    }
+  ],
+  "method": "Phrase-level provider cues reconciled with independent ASR and repeated phrase structure; keyword-only captions, not word karaoke."
+}

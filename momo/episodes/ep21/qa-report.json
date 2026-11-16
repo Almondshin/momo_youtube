@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-16",
+  "reviewer": "agent under standing authorization",
+  "duration_seconds": 67.9,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "cuts": 24,
+  "unique_video_sources": 6,
+  "new_higgsfield_credits": 0,
+  "all_sources_present": true,
+  "all_cut_render_modes": [
+    "trim"
+  ],
+  "freeze_extension_used": false,
+  "keyword_set": [
+    "강아지",
+    "고양이"
+  ],
+  "no_labels_on_momo_only": true,
+  "audio_correlation_to_edited_master_before_fade": 0.9970536889122603,
+  "ending_last_100ms_rms_db": -72.27460479736328,
+  "loudness_lufs": -13.88,
+  "final_vocal_before_fade": true,
+  "alignment_review": {
+    "independent_asr": {
+      "lyric_words": 62,
+      "heard_words": 61,
+      "matched": 1.0,
+      "lines_missing": [],
+      "lines_interpolated": [],
+      "unmatched_heard_runs": []
+    },
+    "method": "Official phrase cue times reconciled with independent ASR and vocal onsets; only two keyword labels, no word-level karaoke.",
+    "no_user_satisfaction_score": true
+  },
+  "audio_edits": {
+    "original_duration": 88.64,
+    "removed_instrumental_ranges": [
+      [
+        38.0266,
+        44.8191
+      ]
+    ],
+    "silence_guard_report": [
+      {
+        "gap": [
+          36.259,
+          45.702
+        ],
+        "removed": [
+          [
+            38.027,
+            40.291
+          ],
+          [
+            40.291,
+            42.555
+          ],
+          [
+            42.555,
+            44.819
+          ]
+        ],
+        "refused": [],
+        "left": 2.651
+      }
+    ],
+    "start": 8.6,
+    "end": 76.5075,
+    "render_duration": 67.907,
+    "fade_starts": 75.307,
+    "latest_vocal_end": 74.8235,
+    "method": "Existing whole-bar edit utility with contiguous ranges merged; vocal-quiet guard,30ms crossfade; original WAV retained."
+  },
+  "user_satisfaction": "Not yet measured; distinct composition and technical QA do not imply user approval",
+  "upload_status": "ready",
+  "visual_review": "All24 rendered cut frames and thumbnail directly inspected; keyword-subject matches; no labels on Momo-only shots.",
+  "thumbnail_directly_viewed": true
+}

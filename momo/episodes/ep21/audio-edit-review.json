@@ -1,0 +1,39 @@
+{
+  "original_duration": 88.64,
+  "removed_instrumental_ranges": [
+    [
+      38.0266,
+      44.8191
+    ]
+  ],
+  "silence_guard_report": [
+    {
+      "gap": [
+        36.259,
+        45.702
+      ],
+      "removed": [
+        [
+          38.027,
+          40.291
+        ],
+        [
+          40.291,
+          42.555
+        ],
+        [
+          42.555,
+          44.819
+        ]
+      ],
+      "refused": [],
+      "left": 2.651
+    }
+  ],
+  "start": 8.6,
+  "end": 76.5075,
+  "render_duration": 67.907,
+  "fade_starts": 75.307,
+  "latest_vocal_end": 74.8235,
+  "method": "Existing whole-bar edit utility with contiguous ranges merged; vocal-quiet guard,30ms crossfade; original WAV retained."
+}

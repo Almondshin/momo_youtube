@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-16",
+  "reviewer": "agent under standing authorization",
+  "duration_seconds": 80.1333,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "cuts": 27,
+  "unique_video_sources": 6,
+  "new_higgsfield_credits": 0,
+  "all_sources_present": true,
+  "all_cut_render_modes": [
+    "trim"
+  ],
+  "freeze_extension_used": false,
+  "keyword_set": [
+    "BALL",
+    "CAR"
+  ],
+  "no_labels_on_momo_only": true,
+  "audio_correlation_to_edited_master_before_fade": 0.9988441181331631,
+  "ending_last_100ms_rms_db": -60.65525817871094,
+  "loudness_lufs": -13.96,
+  "final_vocal_before_fade": true,
+  "alignment_review": {
+    "independent_asr": {
+      "lyric_words": 124,
+      "heard_words": 126,
+      "matched": 0.984,
+      "lines_missing": [],
+      "lines_interpolated": [],
+      "unmatched_heard_runs": []
+    },
+    "method": "Official phrase cue times reconciled with independent ASR and vocal onsets; only two keyword labels, no word-level karaoke.",
+    "no_user_satisfaction_score": true
+  },
+  "audio_edits": {
+    "original_duration": 89.56,
+    "removed_instrumental_ranges": [
+      [
+        72.5012,
+        74.3619
+      ]
+    ],
+    "silence_guard_report": [
+      {
+        "gap": [
+          52.974,
+          57.548
+        ],
+        "removed": [],
+        "refused": [
+          [
+            53.775,
+            55.664,
+            "보컬 스템 -6 dB (기준 -30)"
+          ]
+        ],
+        "left": 4.574
+      },
+      {
+        "gap": [
+          71.873,
+          75.314
+        ],
+        "removed": [
+          [
+            72.501,
+            74.362
+          ]
+        ],
+        "refused": [],
+        "left": 1.58
+      }
+    ],
+    "start": 0.0,
+    "end": 80.1393,
+    "render_duration": 80.139,
+    "fade_starts": 78.939,
+    "latest_vocal_end": 78.0193,
+    "method": "Existing whole-bar edit utility with contiguous ranges merged; vocal-quiet guard,30ms crossfade; original WAV retained.",
+    "alignment_correction": "Bye-bye ball provider cue restored75.314–76.165; selected cut72.5012–74.3619 ends before that vocal. Vocal guard prevented cuts across singing."
+  },
+  "user_satisfaction": "Not yet measured; distinct composition and technical QA do not imply user approval",
+  "upload_status": "ready",
+  "visual_review": "All27 rendered cut frames and thumbnail directly inspected; keyword-subject matches; no labels on Momo-only shots.",
+  "thumbnail_directly_viewed": true
+}
