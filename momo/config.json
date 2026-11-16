@@ -239,6 +239,22 @@
       "preflight_required": true,
       "no_extra_purchase": true
     },
-    "user_instruction": "이제 앞으로 나한테 검사받지말고 계속 그냥 올려줘; 이것도 전부 다 자동으로 알아서해"
+    "user_instruction": "이제 앞으로 나한테 검사받지말고 계속 그냥 올려줘; 이것도 전부 다 자동으로 알아서해",
+    "music_quality_feedback": {
+      "date": "2026-11-16",
+      "record": "docs/MUSIC_QUALITY_FEEDBACK.md",
+      "rejected_positive_reference_episodes": [
+        "ep15",
+        "ep16",
+        "ep17"
+      ],
+      "positive_reference_candidates": [
+        "ep12 C2 selected by user",
+        "ep14 revision02 take1 selected by user"
+      ],
+      "automatic_listen_scores_are_not_user_preference_scores": true,
+      "asr_and_render_checks_are_technical_only": true,
+      "do_not_infer_user_acceptance_from_agent_qa": true
+    }
   }
 }

@@ -270,6 +270,12 @@
       "made_for_kids": true,
       "processing_status": "succeeded",
       "date": "2026-11-16"
+    },
+    "user_quality_feedback_2026_11_16": {
+      "rating": "아주 별로",
+      "music_accepted": false,
+      "use_as_positive_music_reference": false,
+      "technical_checks_do_not_override_user_feedback": true
     }
   },
   "cuts": [

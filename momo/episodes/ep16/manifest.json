@@ -112,6 +112,12 @@
       "full_video": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep16/ep16_en.mp4",
       "preview": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep16/ep16_en_preview720.mp4",
       "thumbnail": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep16/ep16_en_thumb.jpg"
+    },
+    "user_quality_feedback_2026_11_16": {
+      "rating": "아주 별로",
+      "music_accepted": false,
+      "use_as_positive_music_reference": false,
+      "technical_checks_do_not_override_user_feedback": true
     }
   },
   "cuts": [
