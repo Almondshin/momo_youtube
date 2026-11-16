@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep17",
-  "status": "assembled",
+  "status": "uploaded",
   "topic": {
     "en": "Ball and Toy Car",
     "ko": "공과 장난감 자동차"
@@ -106,7 +106,14 @@
       "keyword_only": true,
       "freeze_extension": false,
       "audio_correlation": 0.9984970106374551,
-      "ending_rms_db": -62.90315628051758
+      "ending_rms_db": -62.90315628051758,
+      "upload_status": "public_processed_verified",
+      "youtube_url": "https://www.youtube.com/watch?v=IH70yQgdIME"
+    },
+    "media_release": {
+      "full_video": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep17/ep17_ko.mp4",
+      "preview": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep17/ep17_ko_preview720.mp4",
+      "thumbnail": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep17/ep17_ko_thumb.jpg"
     }
   },
   "cuts": [

@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-16",
+  "trigger": "explicit user request 오늘 도 두곡 만들어서 올려",
+  "status": "complete",
+  "review_policy": "agent under standing authorization2026-11-16",
+  "episodes": [
+    {
+      "ep": "ep16",
+      "language": "en",
+      "url": "https://www.youtube.com/watch?v=Y4bqwpZBMo4",
+      "privacy": "public",
+      "processing_status": "succeeded"
+    },
+    {
+      "ep": "ep17",
+      "language": "ko",
+      "url": "https://www.youtube.com/watch?v=IH70yQgdIME",
+      "privacy": "public",
+      "processing_status": "succeeded"
+    }
+  ],
+  "shared_visual_sets": 1,
+  "credits": {
+    "suno_generation": 30,
+    "suno_download": 2,
+    "higgsfield": 33
+  },
+  "remaining_balances": {
+    "suno_generation": 2290,
+    "suno_download": 14,
+    "higgsfield": 1177.37
+  },
+  "additional_purchase": false,
+  "separate_scheduler_execution_verified": false
+}

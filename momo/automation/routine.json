@@ -29,9 +29,29 @@
   "today": {
     "date": "2026-11-16",
     "uploaded_episodes": [
-      "ep15"
+      "ep15",
+      "ep16",
+      "ep17"
     ],
-    "production_type": "Finish previously requested Korean companion; not a full scheduled EN/KO batch."
+    "production_type": "ep15 previously requested Korean companion finished; user then requested two additional songs, completed as ep16 English + ep17 Korean with one shared visual set. Manual request, not proof of the separate scheduled worker.",
+    "new_pair": [
+      {
+        "ep": "ep16",
+        "language": "en",
+        "url": "https://www.youtube.com/watch?v=Y4bqwpZBMo4",
+        "privacy": "public",
+        "processing_status": "succeeded"
+      },
+      {
+        "ep": "ep17",
+        "language": "ko",
+        "url": "https://www.youtube.com/watch?v=IH70yQgdIME",
+        "privacy": "public",
+        "processing_status": "succeeded"
+      }
+    ],
+    "new_pair_complete": true,
+    "avoid_duplicate_today": true
   },
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "enabled": true,

@@ -16,4 +16,4 @@ Shared Higgsfield33credits (4images +5clips including1replacement), below33.6 co
 
 ## Final local checks
 
-Built1920×1080/30fps with all29cuts using trim and no freeze extension; all media present. Agent inspected every rendered cut frame and thumbnail. Only the two learning words appear, matched to subjects. Audio correlation to original before final fade: 0.997258. Final100ms RMS: -84.36dB. Public upload/server processing verification remains pending.
+Built1920×1080/30fps with all29cuts using trim and no freeze extension; all media present. Agent inspected every rendered cut frame and thumbnail. Only the two learning words appear, matched to subjects. Audio correlation to original before final fade: 0.997258. Final100ms RMS: -84.36dB. Public upload verified through YouTube Data API: processed/succeeded, made for kids, thumbnail and language playlist attached. https://www.youtube.com/watch?v=Y4bqwpZBMo4
