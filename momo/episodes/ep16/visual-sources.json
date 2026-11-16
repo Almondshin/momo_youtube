@@ -66,7 +66,47 @@
     "momo": true,
     "lipsync": false,
     "clip_model": "seedance_2_0_mini",
-    "clip_seconds": 5
+    "clip_seconds": 5,
+    "gen": {
+      "image": {
+        "status": "approved",
+        "job_id": "d9a5418e-1b37-4a30-8b93-00727aa4e345",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014743_d9a5418e-1b37-4a30-8b93-00727aa4e345.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "d9a5418e-1b37-4a30-8b93-00727aa4e345",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014743_d9a5418e-1b37-4a30-8b93-00727aa4e345.png",
+            "status": "approved",
+            "reason": "Agent direct visual review: consistent Momo, two buttons, clear single ball, clean frame.",
+            "at": "2026-11-16T01:47Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": "Agent direct visual review: consistent Momo, two buttons, clear single ball, clean frame.",
+        "off_model_ok": true
+      },
+      "clip": {
+        "status": "approved",
+        "job_id": "4536faf5-b617-448d-9158-31052eae8b73",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014923_4536faf5-b617-448d-9158-31052eae8b73.mp4",
+        "attempts": 1,
+        "credits": 5.0,
+        "history": [
+          {
+            "job_id": "4536faf5-b617-448d-9158-31052eae8b73",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014923_4536faf5-b617-448d-9158-31052eae8b73.mp4",
+            "status": "approved",
+            "reason": "Agent inspected 20 sampled frames: consistent bunny, gentle gesture, stationary ball, no freeze or deformation.",
+            "at": "2026-11-16T01:49Z",
+            "credits": 5.0,
+            "start_image": "d9a5418e-1b37-4a30-8b93-00727aa4e345"
+          }
+        ],
+        "reason": "Agent inspected 20 sampled frames: consistent bunny, gentle gesture, stationary ball, no freeze or deformation."
+      }
+    }
   },
   {
     "id": "c03",
@@ -89,7 +129,48 @@
     "momo": true,
     "lipsync": false,
     "clip_model": "seedance_2_0_mini",
-    "clip_seconds": 5
+    "clip_seconds": 5,
+    "gen": {
+      "image": {
+        "status": "approved",
+        "job_id": "1e75d38d-7de0-4b52-8aec-9d040a943015",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014856_1e75d38d-7de0-4b52-8aec-9d040a943015.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "1e75d38d-7de0-4b52-8aec-9d040a943015",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014856_1e75d38d-7de0-4b52-8aec-9d040a943015.png",
+            "status": "approved",
+            "reason": "Agent direct image review: consistent bunny, two buttons, one recognizable yellow toy car, no ball.",
+            "at": "2026-11-16T01:48Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": "Agent direct image review: consistent bunny, two buttons, one recognizable yellow toy car, no ball.",
+        "off_model_ok": true
+      },
+      "clip": {
+        "status": "approved",
+        "job_id": "edcb63f9-56ae-457d-9ff3-2e81929914da",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015032_edcb63f9-56ae-457d-9ff3-2e81929914da.mp4",
+        "attempts": 1,
+        "credits": 5.0,
+        "history": [
+          {
+            "job_id": "edcb63f9-56ae-457d-9ff3-2e81929914da",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015032_edcb63f9-56ae-457d-9ff3-2e81929914da.mp4",
+            "status": "approved",
+            "reason": "Agent inspected20frames; stable bunny/car. Use first4seconds only: car approaches frame edge near end; planned phrases fit4s.",
+            "at": "2026-11-16T01:50Z",
+            "credits": 5.0,
+            "start_image": "1e75d38d-7de0-4b52-8aec-9d040a943015"
+          }
+        ],
+        "reason": "Agent inspected20frames; stable bunny/car. Use first4seconds only: car approaches frame edge near end; planned phrases fit4s."
+      }
+    },
+    "usable_seconds": 4.0
   },
   {
     "id": "c04",
@@ -112,7 +193,46 @@
     "momo": false,
     "lipsync": false,
     "clip_model": "seedance_2_0_mini",
-    "clip_seconds": 5
+    "clip_seconds": 5,
+    "gen": {
+      "image": {
+        "status": "approved",
+        "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
+            "status": "approved",
+            "reason": "Agent direct image review: single round coral-blue ball, matching room, clean silhouette.",
+            "at": "2026-11-16T01:49Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": "Agent direct image review: single round coral-blue ball, matching room, clean silhouette."
+      },
+      "clip": {
+        "status": "approved",
+        "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
+        "attempts": 1,
+        "credits": 5.0,
+        "history": [
+          {
+            "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
+            "status": "approved",
+            "reason": "Agent inspected20frames: single ball bounces smoothly, remains in frame with stable panels; no deformation or frozen tail.",
+            "at": "2026-11-16T01:50Z",
+            "credits": 5.0,
+            "start_image": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb"
+          }
+        ],
+        "reason": "Agent inspected20frames: single ball bounces smoothly, remains in frame with stable panels; no deformation or frozen tail."
+      }
+    }
   },
   {
     "id": "c05",
@@ -131,11 +251,59 @@
     "text_color": "white",
     "inset": 0,
     "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
-    "motion": "The single toy car rolls smoothly a short distance from left to right on the floor, wheels rotate naturally, body shape stays rigid. Entire car stays in frame, no new objects.",
+    "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
     "momo": false,
     "lipsync": false,
     "clip_model": "seedance_2_0_mini",
-    "clip_seconds": 5
+    "clip_seconds": 5,
+    "gen": {
+      "image": {
+        "status": "approved",
+        "job_id": "640b50e7-8c2c-4161-908c-458cc2bba469",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015016_640b50e7-8c2c-4161-908c-458cc2bba469.png",
+        "attempts": 1,
+        "credits": 2.0,
+        "history": [
+          {
+            "job_id": "640b50e7-8c2c-4161-908c-458cc2bba469",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015016_640b50e7-8c2c-4161-908c-458cc2bba469.png",
+            "status": "approved",
+            "reason": "Agent direct visual review: matching yellow toy car, two side wheels, clean rounded shape, no text.",
+            "at": "2026-11-16T01:50Z",
+            "credits": 2.0
+          }
+        ],
+        "reason": "Agent direct visual review: matching yellow toy car, two side wheels, clean rounded shape, no text."
+      },
+      "clip": {
+        "status": "approved",
+        "job_id": "c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015536_c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9.mp4",
+        "attempts": 2,
+        "credits": 10.0,
+        "history": [
+          {
+            "job_id": "b5cda38c-9301-45dd-b4ca-4e2439682a6f",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015142_b5cda38c-9301-45dd-b4ca-4e2439682a6f.mp4",
+            "status": "rejected",
+            "reason": "Agent20-frame review: car changes facing direction and position in early sequence; unsuitable for smooth toddler playback.",
+            "at": "2026-11-16T01:51Z",
+            "credits": 5.0,
+            "start_image": "640b50e7-8c2c-4161-908c-458cc2bba469"
+          },
+          {
+            "job_id": "c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9",
+            "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015536_c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9.mp4",
+            "status": "approved",
+            "reason": "Agent20-frame review: corrected stable left-facing toy car, subtle wheel motion, no position jumps, preserved silhouette.",
+            "at": "2026-11-16T01:55Z",
+            "credits": 5.0,
+            "start_image": "640b50e7-8c2c-4161-908c-458cc2bba469"
+          }
+        ],
+        "reason": "Agent20-frame review: corrected stable left-facing toy car, subtle wheel motion, no position jumps, preserved silhouette."
+      }
+    }
   },
   {
     "id": "c06",

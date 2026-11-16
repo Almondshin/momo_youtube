@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-16",
+  "reviewer": "agent",
+  "duration_seconds": 60.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "cuts": 29,
+  "unique_video_sources": 6,
+  "new_higgsfield_credits": 0,
+  "all_sources_present": true,
+  "all_cut_render_modes": [
+    "trim"
+  ],
+  "freeze_extension_used": false,
+  "keyword_set": [
+    "공",
+    "자동차"
+  ],
+  "no_labels_on_momo_only": true,
+  "visual_review": "Four new images,20frames per new clip including replacement,29 rendered cut frames and thumbnail inspected directly. Car-wide playback limited to first4s.",
+  "audio_correlation_to_original_before_fade": 0.9984970106374551,
+  "ending_last_100ms_rms_db": -62.90315628051758,
+  "loudness_lufs": -13.9,
+  "local_asr_match": 0.685,
+  "asr_caveat": {
+    "source": "Agent phrase starts reconciled between official alignment and independent overlapping ASR chunks. Whole-line token: not word-level timing. Keywords only.",
+    "whole_song_asr_match": 0.685,
+    "asr_limitations": "Repetitive onomatopoeia caused misplaced repeated sections; provider also hallucinated duplicated lines18–41s. Neither directly used unchanged. Independent chunks confirmed actual short verse18–26s and chorus26–41s; final 야호 confirmed55.8–56.54. Silent outro ASR hallucination58s excluded."
+  },
+  "upload_status": "ready_for_public_upload"
+}

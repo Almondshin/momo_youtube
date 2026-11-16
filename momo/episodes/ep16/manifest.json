@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep16",
-  "status": "producing",
+  "status": "assembled",
   "topic": {
     "en": "Ball and Toy Car",
     "ko": "공과 장난감 자동차"
@@ -53,13 +53,13 @@
     }
   },
   "credits": {
-    "estimate": 28,
+    "estimate": 33,
     "spent": 33.0,
     "generations": 9,
     "regenerations": 1
   },
   "notes": {
-    "v_over_reason": "Planning six shared sources; final phrase cuts follow selected WAV. Four new images/clips, two approved reuses.",
+    "v_over_reason": "29 playback cuts use six shared sources: four new toy clips plus approved Momo dance/clap. No lip sync. Verse call/echo pairs combined; no freeze extension.",
     "approvals": [],
     "next_time": [],
     "production_request": "2026-11-16 오늘도 두 곡 만들어서 올려: new English/Korean pair in addition to ep15 completion.",
@@ -92,6 +92,19 @@
     "alignment_review": {
       "whole_song_asr_match": 0.953,
       "source": "Official word alignment refined to vocal onset; independent ASR confirms32lines, provider preferred for repeated-phrase timestamp ambiguity."
+    },
+    "shared_source_index": "ep16/visual-sources.json (original source IDs before timeline remap)",
+    "final_review": {
+      "reviewer": "agent under standing authorization 2026-11-16",
+      "status": "passed",
+      "manifest_validation": "passed; legacy narrative/cut-count warnings reviewed for six-source song format",
+      "new_images_directly_viewed": 4,
+      "new_clips_sampled_frames_each": 20,
+      "full_render_cut_frames_viewed": 29,
+      "keyword_only": true,
+      "freeze_extension": false,
+      "audio_correlation": 0.9972584526104911,
+      "ending_rms_db": -84.36157989501953
     }
   },
   "cuts": [
@@ -117,7 +130,7 @@
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
-      "notes": "Reuse approved ep15/c01",
+      "notes": "Shared source ep16/c01; Short instrumental introduction",
       "gen": {
         "image": {
           "status": "approved",
@@ -202,10 +215,76 @@
           ],
           "reason": "Agent inspected 20 sampled frames: consistent bunny, gentle gesture, stationary ball, no freeze or deformation."
         }
-      }
+      },
+      "notes": "Shared source ep16/c02; Ball ball bounce",
+      "cut_at": 4.23
     },
     {
       "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
+              "status": "approved",
+              "reason": "Agent direct image review: single round coral-blue ball, matching room, clean silhouette.",
+              "at": "2026-11-16T01:49Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent direct image review: single round coral-blue ball, matching room, clean silhouette."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
+              "status": "approved",
+              "reason": "Agent inspected20frames: single ball bounces smoothly, remains in frame with stable panels; no deformation or frozen tail.",
+              "at": "2026-11-16T01:50Z",
+              "credits": 5.0,
+              "start_image": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb"
+            }
+          ],
+          "reason": "Agent inspected20frames: single ball bounces smoothly, remains in frame with stable panels; no deformation or frozen tail."
+        }
+      },
+      "notes": "Shared source ep16/c04; Bounce bounce ball",
+      "cut_at": 6.023
+    },
+    {
+      "id": "c04",
       "scene": 1,
       "type": "V",
       "bars": 1,
@@ -266,69 +345,9 @@
           "reason": "Agent inspected20frames; stable bunny/car. Use first4seconds only: car approaches frame edge near end; planned phrases fit4s."
         }
       },
-      "usable_seconds": 4.0
-    },
-    {
-      "id": "c04",
-      "scene": 1,
-      "type": "V",
-      "bars": 1,
-      "narration": {
-        "en": ""
-      },
-      "keyword": {
-        "en": "BALL"
-      },
-      "transition": "cut",
-      "text_at": 0,
-      "text_pos": "bottom",
-      "text_color": "white",
-      "inset": 0,
-      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
-      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
-      "momo": false,
-      "lipsync": false,
-      "clip_model": "seedance_2_0_mini",
-      "clip_seconds": 5,
-      "gen": {
-        "image": {
-          "status": "approved",
-          "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
-          "attempts": 1,
-          "credits": 2.0,
-          "history": [
-            {
-              "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
-              "status": "approved",
-              "reason": "Agent direct image review: single round coral-blue ball, matching room, clean silhouette.",
-              "at": "2026-11-16T01:49Z",
-              "credits": 2.0
-            }
-          ],
-          "reason": "Agent direct image review: single round coral-blue ball, matching room, clean silhouette."
-        },
-        "clip": {
-          "status": "approved",
-          "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
-          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
-          "attempts": 1,
-          "credits": 5.0,
-          "history": [
-            {
-              "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
-              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
-              "status": "approved",
-              "reason": "Agent inspected20frames: single ball bounces smoothly, remains in frame with stable panels; no deformation or frozen tail.",
-              "at": "2026-11-16T01:50Z",
-              "credits": 5.0,
-              "start_image": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb"
-            }
-          ],
-          "reason": "Agent inspected20frames: single ball bounces smoothly, remains in frame with stable panels; no deformation or frozen tail."
-        }
-      }
+      "usable_seconds": 4.0,
+      "notes": "Shared source ep16/c03; Car car go",
+      "cut_at": 8.253
     },
     {
       "id": "c05",
@@ -372,9 +391,9 @@
           "reason": "Agent direct visual review: matching yellow toy car, two side wheels, clean rounded shape, no text."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015536_c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9.mp4",
           "attempts": 2,
           "credits": 10.0,
           "history": [
@@ -389,20 +408,81 @@
             },
             {
               "job_id": "c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9",
-              "url": null,
-              "status": "generated",
-              "reason": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015536_c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9.mp4",
+              "status": "approved",
+              "reason": "Agent20-frame review: corrected stable left-facing toy car, subtle wheel motion, no position jumps, preserved silhouette.",
               "at": "2026-11-16T01:55Z",
               "credits": 5.0,
               "start_image": "640b50e7-8c2c-4161-908c-458cc2bba469"
             }
           ],
-          "reason": null
+          "reason": "Agent20-frame review: corrected stable left-facing toy car, subtle wheel motion, no position jumps, preserved silhouette."
         }
-      }
+      },
+      "notes": "Shared source ep16/c05; Go go car",
+      "cut_at": 9.99
     },
     {
       "id": "c06",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c02; Ball ball bounce",
+      "cut_at": 12.205,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c07",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Shared source ep16/c03; Car c ar go",
+      "cut_at": 13.991,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c08",
       "scene": 2,
       "type": "V",
       "bars": 1,
@@ -423,7 +503,7 @@
       "lipsync": false,
       "clip_model": "seedance_2_0_mini",
       "clip_seconds": 5,
-      "notes": "Reuse approved ep15/c10",
+      "notes": "Shared source ep16/c06; Clap clap clap",
       "gen": {
         "image": {
           "status": "approved",
@@ -445,6 +525,621 @@
           "source_episode": "ep15",
           "source_cut": "c10"
         }
+      },
+      "cut_at": 16.247
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c01; Here we go",
+      "cut_at": 17.943,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c02; Ball ball / Bounce bounce",
+      "cut_at": 20.209,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c04; Ball ball / Bounce bounce",
+      "cut_at": 24.214,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Shared source ep16/c03; Car car / Go go",
+      "cut_at": 28.283,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c05; Car car / Go go",
+      "cut_at": 32.281,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c02; Ball ball bounce",
+      "cut_at": 36.214,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c15",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c04; Bounce bounce ball",
+      "cut_at": 38.001,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Shared source ep16/c03; Car car go",
+      "cut_at": 40.289,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c05; Go go car",
+      "cut_at": 42.0,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c02; Ball ball bounce",
+      "cut_at": 44.276,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c19",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Shared source ep16/c03; Car car go",
+      "cut_at": 46.048,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c20",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c06; Clap clap clap",
+      "cut_at": 48.248,
+      "clip_from": {
+        "cut": "c08",
+        "at": 0
+      }
+    },
+    {
+      "id": "c21",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c01; Here we go",
+      "cut_at": 49.932,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
+      }
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c02; Ball ball bounce",
+      "cut_at": 52.212,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c04; Bounce bounce ball",
+      "cut_at": 53.999,
+      "clip_from": {
+        "cut": "c03",
+        "at": 0
+      }
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Shared source ep16/c03; Car car go",
+      "cut_at": 56.292,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c25",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c05; Go go car",
+      "cut_at": 57.992,
+      "clip_from": {
+        "cut": "c05",
+        "at": 0
+      }
+    },
+    {
+      "id": "c26",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c02; Ball ball bounce",
+      "cut_at": 60.275,
+      "clip_from": {
+        "cut": "c02",
+        "at": 0
+      }
+    },
+    {
+      "id": "c27",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "usable_seconds": 4.0,
+      "notes": "Shared source ep16/c03; Car car go",
+      "cut_at": 62.046,
+      "clip_from": {
+        "cut": "c04",
+        "at": 0
+      }
+    },
+    {
+      "id": "c28",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c06; Clap clap clap",
+      "cut_at": 64.252,
+      "clip_from": {
+        "cut": "c08",
+        "at": 0
+      }
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Shared source ep16/c01; Yay",
+      "cut_at": 66.007,
+      "clip_from": {
+        "cut": "c01",
+        "at": 0
       }
     }
   ],

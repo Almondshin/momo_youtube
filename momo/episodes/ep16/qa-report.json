@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-16",
+  "reviewer": "agent",
+  "duration_seconds": 69.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "cuts": 29,
+  "unique_video_sources": 6,
+  "new_higgsfield_credits": 33,
+  "all_sources_present": true,
+  "all_cut_render_modes": [
+    "trim"
+  ],
+  "freeze_extension_used": false,
+  "keyword_set": [
+    "BALL",
+    "CAR"
+  ],
+  "no_labels_on_momo_only": true,
+  "visual_review": "Four new images,20frames per new clip including replacement,29 rendered cut frames and thumbnail inspected directly. Car-wide playback limited to first4s.",
+  "audio_correlation_to_original_before_fade": 0.9972584526104911,
+  "ending_last_100ms_rms_db": -84.36157989501953,
+  "loudness_lufs": -13.95,
+  "local_asr_match": 0.953,
+  "asr_caveat": {
+    "whole_song_asr_match": 0.953,
+    "source": "Official word alignment refined to vocal onset; independent ASR confirms32lines, provider preferred for repeated-phrase timestamp ambiguity."
+  },
+  "upload_status": "ready_for_public_upload"
+}
