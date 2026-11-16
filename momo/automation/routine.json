@@ -8,22 +8,24 @@
   },
   "shared_visual_sets_per_run": 1,
   "expected_runtime": "current Mac awake and Orca running",
-  "activation_status": "disabled_pending_technical_verification",
+  "activation_status": "disabled_pending_youtube_reauthentication",
   "authorizations": [
-    "User requested fully automated Monday/Friday production at 09:00 KST, completion-based upload, one channel with language playlists."
+    "User requested fully automated Monday/Friday production at 09:00 KST, completion-based upload, one channel with language playlists.",
+    "2026-11-16: User explicitly delegates all content selection and review; upload without asking for inspection.",
+    "2026-11-16: User approves normal one-credit Suno downloads within existing balance and asks these to proceed automatically too."
   ],
   "verified": [
     "Official Suno generation and authenticated WAV download",
     "Local assembly and keyword-only rendering",
-    "YouTube private uploads, thumbnails and Korean playlist"
+    "YouTube private uploads, thumbnails and Korean playlist",
+    "2026-11-16: Suno reconnected; ep15 revision03 take1 WAV downloaded after explicit one-credit approval."
   ],
   "blocking_checks": [
-    "Suno requires user approval of each requires_credit download response; cannot silently confirm future downloads.",
-    "Unattended Higgsfield subscription tool access from scheduled provider session has not been verified.",
-    "YouTube OAuth app remains Testing, token long-term renewal and public transition unverified.",
-    "Scheduled provider run and result notification have not been tested."
+    "YouTube token refresh currently fails invalid_grant; local reauthentication is in progress.",
+    "Unattended Higgsfield subscription tool access from scheduled session is not verified; reuse approved assets when suitable and stop before unsupported generation.",
+    "A complete scheduled provider production/upload run is not yet verified."
   ],
-  "last_checked": "2026-11-06",
+  "last_checked": "2026-11-16",
   "today": {
     "date": "2026-11-06",
     "uploaded_episodes": [
@@ -36,5 +38,12 @@
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "enabled": false,
   "scheduler": "Orca local_host_service",
-  "next_scheduled_slot_if_enabled": "2026-11-09T09:00:00+09:00"
+  "next_scheduled_slot_if_enabled": "2026-11-20T09:00:00+09:00",
+  "review_policy": "agent_only",
+  "upload_privacy": "public",
+  "suno_download_policy": {
+    "preflight": true,
+    "normal_one_credit_download": "standing_authorized_2026-11-16",
+    "extra_purchase": false
+  }
 }

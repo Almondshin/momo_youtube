@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-16",
+  "reviewer": "agent under standing authorization",
+  "duration_seconds": 73.8,
+  "resolution": "1920x1080",
+  "fps": 30,
+  "cuts": 37,
+  "unique_video_sources": 6,
+  "new_higgsfield_credits": 0,
+  "all_sources_present": true,
+  "all_cut_render_modes": "trim",
+  "freeze_extension_used": false,
+  "keyword_set": [
+    "고양이",
+    "강아지"
+  ],
+  "no_labels_on_momo_only": true,
+  "visual_review": [
+    "per-cut check sheet",
+    "full two-second contact sheet",
+    "thumbnail"
+  ],
+  "audio_correlation_to_original_until_71_5s": 0.99741,
+  "ending_last_100ms_rms_db": -78.51,
+  "loudness_lufs": -13.99,
+  "local_asr_match": 0.985,
+  "asr_caveat": "Final clap heard as 자 자 자; only two vocabulary keywords are displayed.",
+  "end_edit": "End at 73.8s; existing mixer fades last 1.2s, preserving all vocal lines.",
+  "pipeline_tests": "18 PASS / 0 FAIL / 0 WARN with project venv; initial system Python lacked numpy",
+  "upload_status": "ready; YouTube OAuth refresh failed invalid_grant, reauthentication pending"
+}

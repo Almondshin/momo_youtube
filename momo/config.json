@@ -206,7 +206,7 @@
   "youtube": {
     "made_for_kids": true,
     "category_id": "27",
-    "default_privacy": "private",
+    "default_privacy": "public",
     "contains_synthetic_media": false,
     "notify_subscribers": true,
     "languages": {
@@ -223,5 +223,22 @@
     "_note": "모모 모습 검사 (momolib/onmodel.py): 눈 크기 ÷ 눈 사이 거리, 승인된 캐릭터 시트 정면 = canon. ep04 c33(구슬 눈) 0.42, 승인된 컷 ≥ 0.76",
     "canon_eye_ratio": 0.486,
     "eye_ratio_min": 0.65
+  },
+  "production_policy": {
+    "updated_at": "2026-11-16",
+    "content_review": "agent",
+    "ask_user_to_select_takes": false,
+    "ask_user_to_review_media": false,
+    "upload_after_agent_qa": true,
+    "upload_privacy": "public",
+    "suno_download_credit_authorization": {
+      "type": "standing",
+      "date": "2026-11-16",
+      "normal_credits_per_song": 1,
+      "existing_balance_only": true,
+      "preflight_required": true,
+      "no_extra_purchase": true
+    },
+    "user_instruction": "이제 앞으로 나한테 검사받지말고 계속 그냥 올려줘; 이것도 전부 다 자동으로 알아서해"
   }
 }
