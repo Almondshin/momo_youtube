@@ -30,7 +30,10 @@
     "whole_song_asr_match": 0.685,
     "asr_limitations": "Repetitive onomatopoeia caused misplaced repeated sections; provider also hallucinated duplicated lines18–41s. Neither directly used unchanged. Independent chunks confirmed actual short verse18–26s and chorus26–41s; final 야호 confirmed55.8–56.54. Silent outro ASR hallucination58s excluded."
   },
-  "upload_status": "public_processed_verified",
+  "upload_status": "withdrawn_private",
   "youtube_url": "https://www.youtube.com/watch?v=IH70yQgdIME",
-  "youtube_verified_at": "2026-11-16T02:02:38.920429+00:00"
+  "youtube_verified_at": "2026-11-16T02:02:38.920429+00:00",
+  "replacement_episode": "ep20",
+  "replacement_url": "https://www.youtube.com/watch?v=3E47mSRHaj0",
+  "music_user_feedback": "rejected"
 }

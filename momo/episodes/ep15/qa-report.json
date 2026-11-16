@@ -27,6 +27,9 @@
   "asr_caveat": "Final clap heard as 자 자 자; only two vocabulary keywords are displayed.",
   "end_edit": "End at 73.8s; existing mixer fades last 1.2s, preserving all vocal lines.",
   "pipeline_tests": "18 PASS / 0 FAIL / 0 WARN with project venv; initial system Python lacked numpy",
-  "upload_status": "public, processed, made for kids, Korean playlist and thumbnail verified",
-  "youtube_url": "https://www.youtube.com/watch?v=bqUPUKlE3uE"
+  "upload_status": "withdrawn_private",
+  "youtube_url": "https://www.youtube.com/watch?v=bqUPUKlE3uE",
+  "replacement_episode": "ep18",
+  "replacement_url": "https://www.youtube.com/watch?v=GHZBvl9LzV0",
+  "music_user_feedback": "rejected"
 }

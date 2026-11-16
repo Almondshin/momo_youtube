@@ -1,6 +1,6 @@
 # ep16 — 공과 장난감 자동차 (Ball and Toy Car)
 
-> episode_readme.py 가 생성 (2026-11-16 02:03 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-11-16 05:13 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
@@ -24,7 +24,7 @@
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
-| EN | [Y4bqwpZBMo4](https://www.youtube.com/watch?v=Y4bqwpZBMo4) | public | — | 2026-11-16T02:00:57Z | ✔ | PLTOO0Q-QSj5I |
+| EN | [Y4bqwpZBMo4](https://www.youtube.com/watch?v=Y4bqwpZBMo4) | private | — | 2026-11-16T02:00:57Z | ✔ | PLTOO0Q-QSj5I |
 
 ## 제목·설명·태그
 
@@ -55,4 +55,4 @@ Sing the short repeating chorus, copy the sounds and clap along.
 
 ## 다음 편에 반영할 점
 
-- (아직 없음 — manifest.notes.next_time 에 적기)
+- 2026-11-16 사용자 음악 거절로 기존 영상 비공개. 수정본 ep19: https://www.youtube.com/watch?v=7pgsXXmQ5xw

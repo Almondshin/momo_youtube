@@ -61,7 +61,9 @@
   "notes": {
     "v_over_reason": "29 playback cuts use six shared sources: four new toy clips plus approved Momo dance/clap. No lip sync. Verse call/echo pairs combined; no freeze extension.",
     "approvals": [],
-    "next_time": [],
+    "next_time": [
+      "2026-11-16 사용자 음악 거절로 기존 영상 비공개. 수정본 ep19: https://www.youtube.com/watch?v=7pgsXXmQ5xw"
+    ],
     "production_request": "2026-11-16 오늘도 두 곡 만들어서 올려: new English/Korean pair in addition to ep15 completion.",
     "standing_authorization": "2026-11-16",
     "reviewer": "agent",
@@ -105,7 +107,7 @@
       "freeze_extension": false,
       "audio_correlation": 0.9972584526104911,
       "ending_rms_db": -84.36157989501953,
-      "upload_status": "public_processed_verified",
+      "upload_status": "withdrawn_private",
       "youtube_url": "https://www.youtube.com/watch?v=Y4bqwpZBMo4"
     },
     "media_release": {
@@ -125,7 +127,9 @@
       "old_video_id": "Y4bqwpZBMo4",
       "old_video_privacy": "private",
       "new_episode": "ep19",
-      "verified_at": "2026-11-16T04:55:03.604278+00:00"
+      "verified_at": "2026-11-16T04:55:03.604278+00:00",
+      "new_video_id": "7pgsXXmQ5xw",
+      "new_url": "https://www.youtube.com/watch?v=7pgsXXmQ5xw"
     }
   },
   "cuts": [

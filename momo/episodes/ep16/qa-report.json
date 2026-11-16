@@ -29,7 +29,10 @@
     "whole_song_asr_match": 0.953,
     "source": "Official word alignment refined to vocal onset; independent ASR confirms32lines, provider preferred for repeated-phrase timestamp ambiguity."
   },
-  "upload_status": "public_processed_verified",
+  "upload_status": "withdrawn_private",
   "youtube_url": "https://www.youtube.com/watch?v=Y4bqwpZBMo4",
-  "youtube_verified_at": "2026-11-16T02:02:38.919563+00:00"
+  "youtube_verified_at": "2026-11-16T02:02:38.919563+00:00",
+  "replacement_episode": "ep19",
+  "replacement_url": "https://www.youtube.com/watch?v=7pgsXXmQ5xw",
+  "music_user_feedback": "rejected"
 }

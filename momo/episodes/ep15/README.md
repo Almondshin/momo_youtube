@@ -1,6 +1,6 @@
 # ep15 — 야옹 멍멍 짝짝 (Cat and Dog — Korean Song)
 
-> episode_readme.py 가 생성 (2026-11-16 01:38 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
+> episode_readme.py 가 생성 (2026-11-16 05:13 UTC). 다시 실행하면 덮어쓴다 — 메모는 manifest.notes 에.
 
 ## 요약
 
@@ -24,7 +24,7 @@
 
 | 언어 | 영상 | 공개 상태 | 예약 공개 | 업로드 시각 | 썸네일 | 재생목록 |
 |---|---|---|---|---|---|---|
-| KO | [bqUPUKlE3uE](https://www.youtube.com/watch?v=bqUPUKlE3uE) | public | — | 2026-11-16T01:35:54Z | ✔ | PLHfQPAU3ZVb8 |
+| KO | [bqUPUKlE3uE](https://www.youtube.com/watch?v=bqUPUKlE3uE) | private | — | 2026-11-16T01:35:54Z | ✔ | PLHfQPAU3ZVb8 |
 
 ## 제목·설명·태그
 
@@ -66,4 +66,4 @@
 
 ## 다음 편에 반영할 점
 
-- (아직 없음 — manifest.notes.next_time 에 적기)
+- 2026-11-16 사용자 음악 거절로 기존 영상 비공개. 수정본 ep18: https://www.youtube.com/watch?v=GHZBvl9LzV0

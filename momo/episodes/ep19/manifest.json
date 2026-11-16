@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep19",
-  "status": "assembled",
+  "status": "uploaded",
   "topic": {
     "en": "Ball and Car — reference remake",
     "ko": "공과 자동차 영어 수정곡"
@@ -50,7 +50,10 @@
   "notes": {
     "v_over_reason": "34 playback cuts reuse six approved sources; no new Higgsfield jobs. New cue timings follow replacement audio. No lip sync or freeze extension.",
     "approvals": [],
-    "next_time": [],
+    "next_time": [
+      "Use accepted audio recordings as actual musical references. This replacement is agent-selected; do not label it user-approved unless the user later says so.",
+      "Keep two target words within melodic phrases. Automated scores do not establish musical enjoyment."
+    ],
     "replaces_episode": "ep16",
     "production_request": "2026-11-16 3곡 전부 수정해서 올리고 지금올라간거 내려",
     "standing_authorization": "agent review and public upload; normal one-credit download",
@@ -111,7 +114,16 @@
       "ending_rms_db": -81.31175994873047,
       "no_freeze_extension": true,
       "keyword_subject_match": true,
-      "user_satisfaction_not_assumed": true
+      "user_satisfaction_not_assumed": true,
+      "youtube_url": "https://www.youtube.com/watch?v=7pgsXXmQ5xw",
+      "thumbnail_directly_viewed": true,
+      "upload_status": "public_processed_verified",
+      "youtube_verified_at": "2026-11-16T05:14:23.385879+00:00"
+    },
+    "media_release": {
+      "full_video": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep19/ep19_en.mp4",
+      "preview": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep19/ep19_en_preview720.mp4",
+      "thumbnail": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep19/ep19_en_thumb.jpg"
     }
   },
   "cuts": [

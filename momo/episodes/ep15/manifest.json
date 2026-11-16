@@ -63,7 +63,9 @@
       "2026-11-16 사용자: 수정 1번 WAV 다운로드 1크레딧 사용해 제작 계속; 향후 동일 다운로드도 자동으로 알아서 처리.",
       "2026-11-16: Google reauthentication completed; existing Momo Time channel verified; standing upload authorization used without another content review."
     ],
-    "next_time": [],
+    "next_time": [
+      "2026-11-16 사용자 음악 거절로 기존 영상 비공개. 수정본 ep18: https://www.youtube.com/watch?v=GHZBvl9LzV0"
+    ],
     "production_request": "2026-11-06 사용자: 한국어도 가야지 — ep14 고양이·강아지의 한국어 짝곡 제작 요청.",
     "production_direction": "2~4세, 고양이·강아지 두 단어, 쉬운 단문·야옹/멍멍 반복·짝짝 박수. 밝고 가벼운 여성 보컬, 이전 톡톡 통통 챈트 선호 반영. 영어곡과 다른 한국어 원곡.",
     "visual_reuse": "Reuse six approved ep14 source scenes; zero new Higgsfield generations. No lip sync; 고양이/강아지 one keyword per animal shot; no label on Momo dance/clap.",
@@ -283,7 +285,12 @@
       "old_video_id": "bqUPUKlE3uE",
       "old_video_privacy": "private",
       "new_episode": "ep18",
-      "verified_at": "2026-11-16T04:55:01.938390+00:00"
+      "verified_at": "2026-11-16T04:55:01.938390+00:00",
+      "new_video_id": "GHZBvl9LzV0",
+      "new_url": "https://www.youtube.com/watch?v=GHZBvl9LzV0"
+    },
+    "final_review": {
+      "upload_status": "withdrawn_private"
     }
   },
   "cuts": [

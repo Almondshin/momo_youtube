@@ -3,12 +3,15 @@
   "url": "https://www.youtube.com/watch?v=bqUPUKlE3uE",
   "channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA",
   "title": "야옹 멍멍 짝짝 🐱🐶 | 고양이 강아지 동요 | 모모타임",
-  "privacy": "public",
+  "privacy": "private",
   "made_for_kids": true,
   "upload_status": "processed",
   "processing_status": "succeeded",
   "duration": "PT1M14S",
   "korean_playlist_verified": true,
   "thumbnail_set": true,
-  "verified_at": "2026-11-16T01:37:37.510159+00:00"
+  "verified_at": "2026-11-16T05:14:23.385879+00:00",
+  "withdrawal_reason": "User rejected song and requested removal",
+  "replacement_url": "https://www.youtube.com/watch?v=GHZBvl9LzV0",
+  "replacement_episode": "ep18"
 }

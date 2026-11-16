@@ -29,29 +29,62 @@
   "today": {
     "date": "2026-11-16",
     "uploaded_episodes": [
-      "ep15",
-      "ep16",
-      "ep17"
+      "ep18",
+      "ep19",
+      "ep20"
     ],
-    "production_type": "ep15 previously requested Korean companion finished; user then requested two additional songs, completed as ep16 English + ep17 Korean with one shared visual set. Manual request, not proof of the separate scheduled worker.",
+    "production_type": "User-requested three remakes; old uploads private, replacements public. Manual request, not proof of separate scheduled worker.",
     "new_pair": [
       {
-        "ep": "ep16",
+        "ep": "ep19",
+        "replaces": "ep16",
         "language": "en",
-        "url": "https://www.youtube.com/watch?v=Y4bqwpZBMo4",
+        "url": "https://www.youtube.com/watch?v=7pgsXXmQ5xw",
         "privacy": "public",
         "processing_status": "succeeded"
       },
       {
-        "ep": "ep17",
+        "ep": "ep20",
+        "replaces": "ep17",
         "language": "ko",
-        "url": "https://www.youtube.com/watch?v=IH70yQgdIME",
+        "url": "https://www.youtube.com/watch?v=3E47mSRHaj0",
         "privacy": "public",
         "processing_status": "succeeded"
       }
     ],
     "new_pair_complete": true,
-    "avoid_duplicate_today": true
+    "avoid_duplicate_today": true,
+    "withdrawn_episodes": [
+      "ep15",
+      "ep16",
+      "ep17"
+    ],
+    "replacement_results": [
+      {
+        "ep": "ep18",
+        "replaces": "ep15",
+        "language": "ko",
+        "url": "https://www.youtube.com/watch?v=GHZBvl9LzV0",
+        "privacy": "public",
+        "processing_status": "succeeded"
+      },
+      {
+        "ep": "ep19",
+        "replaces": "ep16",
+        "language": "en",
+        "url": "https://www.youtube.com/watch?v=7pgsXXmQ5xw",
+        "privacy": "public",
+        "processing_status": "succeeded"
+      },
+      {
+        "ep": "ep20",
+        "replaces": "ep17",
+        "language": "ko",
+        "url": "https://www.youtube.com/watch?v=3E47mSRHaj0",
+        "privacy": "public",
+        "processing_status": "succeeded"
+      }
+    ]
   },
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "enabled": true,
