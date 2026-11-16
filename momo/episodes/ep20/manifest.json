@@ -130,6 +130,11 @@
       "full_video": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep20/ep20_ko.mp4",
       "preview": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep20/ep20_ko_preview720.mp4",
       "thumbnail": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep20/ep20_ko_thumb.jpg"
+    },
+    "explicit_user_acceptance": {
+      "date": "2026-11-16",
+      "quote": "통통 공 빵빵 자동차 이건 좋으니 그대로 두도록",
+      "preserve_current_audio_video_and_publication": true
     }
   },
   "cuts": [

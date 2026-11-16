@@ -1,0 +1,22 @@
+{
+  "status": "producing",
+  "keep_unchanged": {
+    "episode": "ep20",
+    "video_id": "3E47mSRHaj0",
+    "quote": "통통 공 빵빵 자동차 이건 좋으니 그대로 두도록"
+  },
+  "replacements": [
+    {
+      "old": "ep18",
+      "new": "ep21"
+    },
+    {
+      "old": "ep19",
+      "new": "ep22"
+    }
+  ],
+  "scope": "new independent compositions; same feeling does not mean same song",
+  "suno_generation_credits": 20,
+  "download_credits": 2,
+  "higgsfield_credits": 0
+}

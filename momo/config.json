@@ -246,15 +246,22 @@
       "rejected_positive_reference_episodes": [
         "ep15",
         "ep16",
-        "ep17"
+        "ep17",
+        "ep18",
+        "ep19"
       ],
       "positive_reference_candidates": [
         "ep12 C2 selected by user",
-        "ep14 revision02 take1 selected by user"
+        "ep14 revision02 take1 selected by user",
+        "ep20 통통 공이랑 빵빵 자동차 explicitly liked; keep current recording and upload unchanged"
       ],
       "automatic_listen_scores_are_not_user_preference_scores": true,
       "asr_and_render_checks_are_technical_only": true,
-      "do_not_infer_user_acceptance_from_agent_qa": true
+      "do_not_infer_user_acceptance_from_agent_qa": true,
+      "latest_clarification": "2026-11-16: 이런느낌으로 노래를 만들라는거지 실제로 같은 노래로 하면 어떡해? 통통 공 빵빵 자동차 이건 좋으니 그대로 두도록",
+      "reference_use": "Extract appealing energy, singability and vocal qualities. New songs require independent melodies, hook rhythms and phrase forms. Do not use the same recording as a cover source across new titles.",
+      "accepted_keep_episode": "ep20",
+      "require_cross_song_comparison": true
     }
   }
 }

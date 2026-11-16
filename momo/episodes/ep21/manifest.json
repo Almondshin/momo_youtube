@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "ep": "ep21",
+  "status": "producing",
+  "topic": {
+    "en": "Original Cat and Dog Song",
+    "ko": "고양이·강아지 새 멜로디"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "",
+    "ko": ""
+  },
+  "thumbnail": {
+    "cut": null,
+    "text": {
+      "en": "",
+      "ko": ""
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [],
+    "next_time": [],
+    "replaces_episode": "ep18",
+    "standing_authorization": "2026-11-16 agent selection and public upload",
+    "user_feedback": "Same feeling, not same composition. Keep ep20 unchanged.",
+    "visual_plan": {
+      "reuse_sources_from": "ep18",
+      "new_higgsfield_credits": 0,
+      "lipsync": false
+    },
+    "composition": {
+      "mode": "audio_create custom, no reference audio",
+      "independent_melody_required": true,
+      "contrast_against": [
+        "ep20",
+        "ep22"
+      ]
+    },
+    "selected_song": {
+      "id": "ba22e0fa-2cf7-4297-aa44-44f2dbfd92f2",
+      "url": "https://suno.com/song/ba22e0fa-2cf7-4297-aa44-44f2dbfd92f2",
+      "take": 2,
+      "duration": 88.64,
+      "mode": "generate",
+      "no_reference_audio": true,
+      "reviewer": "agent",
+      "user_individual_approval": false,
+      "generation_credits_used": 10,
+      "download_credits_used": 1,
+      "standing_authorization": "2026-11-16"
+    },
+    "rejected_alternative_reason": "Take1 had a9second instrumental gap"
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "library_clip": "intro_wave",
+      "library_audio": "intro",
+      "narration": {
+        "ko": "안녕, 친구들! 나는 모모야!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 5,
+      "type": "L",
+      "library_clip": "outro_bye",
+      "library_audio": "outro",
+      "narration": {
+        "ko": "친구들, 안녕! 다음에 또 만나!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    }
+  ],
+  "languages": [
+    "ko"
+  ]
+}

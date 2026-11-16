@@ -1,0 +1,17 @@
+{
+  "title": "Bounce With Me, Roll With Me",
+  "lyrics": "[Chorus - immediate singing]\nBounce with me, my little ball!\nUp you go, then down you fall.\nRoll with me, my little car!\nHere we go! There you are!\n\n[Verse 1 - playful rising tune]\nMy ball is ready.\nOne little bounce.\nI bounce my ball,\nAnd catch it now!\n\n[Chorus]\nBounce with me, my little ball!\nUp you go, then down you fall.\nRoll with me, my little car!\nHere we go! There you are!\n\n[Verse 2 - playful rising tune]\nMy car is ready.\nLet's take a ride.\nI roll my car,\nRight by my side!\n\n[Playful break - sung over the beat]\nBall goes up!\nBall comes down!\nCar rolls by!\nRound and round!\n\n[Final chorus]\nBounce with me, my little ball!\nUp you go, then down you fall.\nRoll with me, my little car!\nHere we go! There you are!\n[Very short sung ending]\nBye-bye, ball!\nBye-bye, car!",
+  "style": "Original preschool dance-pop at124BPM for ages2-4. Clear straight four-on-the-floor soft kick, buoyant rubbery synth bass, crisp clap on2and4, a tiny bright plucked synth riff and restrained shaker. Small friendly toy-dance sound, not adult EDM. Bright warm light feminine lead, naturally high but not squeaky, confident tuneful singing, clear BALL and CAR. Chorus is a distinct four-line eight-bar melody: long SHORT-SHORT-LONG pickup on Bounce with me, sustained end-word ball, then a falling answer for down you fall; a related rising car phrase and a decisive melodic resolution. Real flowing seven/eight-syllable lines, comfortable2bars each, child's breathing room. Verse has a contrasting stepped-up melody and lighter drums; a short up/down sung action break, then the chorus returns. Fresh diatonic melody. Enter with hook within2seconds, continuous playful pulse, no instrumental bridge and a short complete ending, about80-95seconds.",
+  "negative_style": "acoustic funk guitar, accordion polka, sleepy lullaby, hard EDM drops, harsh club drums, adult belting, extreme baby voice, monotone chant, rapid syllables, long instrumental break, long outro",
+  "duration": 90,
+  "model": "v6",
+  "max_mode": false,
+  "vocal_gender": "female",
+  "controls": {
+    "style_influence": 0.75,
+    "weirdness": 0.22
+  },
+  "idempotency_key": "momo-ep22-independent-original-20261116-v1",
+  "duration_guidance": true,
+  "duration_strict": false
+}
