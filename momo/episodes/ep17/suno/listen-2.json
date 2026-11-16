@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"cb3d7848-5095-43f7-91ad-d933a0b36b3e\",\"audio_id\":\"5b26907e-e33e-409f-aa89-2d9fa7961e1d\",\"status\":\"complete\",\"created_at\":\"2026-11-16T01:45:10Z\",\"answer\":\"The track is a bouncy Korean toddler song with a bright, light female-sounding voice, and “공” and “자동차” are prominent; however, the lyric transcription repeatedly cuts off “부릉” as “부,” so some words sound malformed or incomplete. Repeated short phrases and sound-play make the hook memorable, but 120 BPM is lively and may feel a little brisk for the youngest children. Vocals begin at about 0:01 and the last detected sung phrase ends around 1:04. There is a substantial mid-song instrumental break from about 0:41 to 0:49 (roughly 8.7 seconds); there is also an instrumental tail after the last vocal. The repeated “통통/부릉” and brief “야호” feel playful, not excessive. The ending has an instrumental tail rather than an abrupt music cutoff, although the final vocal phrase appears cut short (“야”). Scores: hook 8/10, clarity 6/10, imitation ease 7/10.\\n```json\\n{\\\"bpm\\\":120,\\\"first_vocal_s\\\":1.36,\\\"last_vocal_s\\\":63.588,\\\"long_gaps\\\":[{\\\"start_s\\\":40.67,\\\"end_s\\\":49.376}],\\\"clarity\\\":6,\\\"hook\\\":8,\\\"ease\\\":7,\\\"ending\\\":\\\"Instrumental tail; final vocal phrase appears cut short\\\"}\\n```\"}"
+    }
+  ]
+}

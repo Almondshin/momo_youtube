@@ -1,0 +1,1336 @@
+{
+  "schema": 1,
+  "ep": "ep16",
+  "status": "producing",
+  "topic": {
+    "en": "Ball and Toy Car",
+    "ko": "공과 장난감 자동차"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "Ball Bounce! Car Go! 🏀🚗 | Toy Song for Toddlers | Momo Time",
+    "ko": ""
+  },
+  "thumbnail": {
+    "cut": "c02",
+    "text": {
+      "en": "BALL & CAR"
+    },
+    "text_pos": "bottom"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "Ball Bounce! Car Go! 🏀🚗 | Toy Song for Toddlers | Momo Time",
+      "description": "Bounce with a ball and roll a toy car with Momo! A cheerful English sing-along for toddlers ages 2–4.\n\nLearn two easy words: BALL and CAR.\nSing the short repeating chorus, copy the sounds and clap along.\n\n#MomoTime #BallAndCar #ToySong #ToddlerSongs #NurseryRhymes #KidsSongs #PreschoolSongs #SingAlong",
+      "tags": [
+        "Momo Time",
+        "ball and car song",
+        "toy song",
+        "ball song",
+        "car song",
+        "toddler songs",
+        "nursery rhymes",
+        "kids songs",
+        "preschool songs",
+        "English words for kids",
+        "sing along"
+      ],
+      "playlist_id": "PLTOO0Q-QSj5I"
+    },
+    "ko": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    }
+  },
+  "credits": {
+    "estimate": 28,
+    "spent": 33.0,
+    "generations": 9,
+    "regenerations": 1
+  },
+  "notes": {
+    "v_over_reason": "Planning six shared sources; final phrase cuts follow selected WAV. Four new images/clips, two approved reuses.",
+    "approvals": [],
+    "next_time": [],
+    "production_request": "2026-11-16 오늘도 두 곡 만들어서 올려: new English/Korean pair in addition to ep15 completion.",
+    "standing_authorization": "2026-11-16",
+    "reviewer": "agent",
+    "visual_plan": {
+      "new_images": 4,
+      "new_clips": 4,
+      "shared_with": "ep17",
+      "base_credits": 28,
+      "contingency_cap": 33.6,
+      "lipsync": false,
+      "words": [
+        "BALL",
+        "CAR"
+      ]
+    },
+    "selected_song": {
+      "id": "677895bb-0a3b-415d-895d-e588c98574c2",
+      "url": "https://suno.com/song/677895bb-0a3b-415d-895d-e588c98574c2",
+      "duration": 69.56,
+      "selected_by": "agent",
+      "standing_authorization": "2026-11-16",
+      "download_credits_authorized": 1,
+      "generation_credits_used": 10,
+      "download_status": "downloaded",
+      "download_credits_used": 1,
+      "download_authorization": "standing_authorization:2026-11-16"
+    },
+    "alignment_review": {
+      "whole_song_asr_match": 0.953,
+      "source": "Official word alignment refined to vocal onset; independent ASR confirms32lines, provider preferred for repeated-phrase timestamp ambiguity."
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+      "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Reuse approved ep15/c01",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Agent reuse of approved asset, no generation.",
+          "source_episode": "ep15",
+          "source_cut": "c01"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Agent reuse of approved asset, no generation.",
+          "source_episode": "ep15",
+          "source_cut": "c01"
+        }
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "d9a5418e-1b37-4a30-8b93-00727aa4e345",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014743_d9a5418e-1b37-4a30-8b93-00727aa4e345.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "d9a5418e-1b37-4a30-8b93-00727aa4e345",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014743_d9a5418e-1b37-4a30-8b93-00727aa4e345.png",
+              "status": "approved",
+              "reason": "Agent direct visual review: consistent Momo, two buttons, clear single ball, clean frame.",
+              "at": "2026-11-16T01:47Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent direct visual review: consistent Momo, two buttons, clear single ball, clean frame.",
+          "off_model_ok": true
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "4536faf5-b617-448d-9158-31052eae8b73",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014923_4536faf5-b617-448d-9158-31052eae8b73.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "4536faf5-b617-448d-9158-31052eae8b73",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014923_4536faf5-b617-448d-9158-31052eae8b73.mp4",
+              "status": "approved",
+              "reason": "Agent inspected 20 sampled frames: consistent bunny, gentle gesture, stationary ball, no freeze or deformation.",
+              "at": "2026-11-16T01:49Z",
+              "credits": 5.0,
+              "start_image": "d9a5418e-1b37-4a30-8b93-00727aa4e345"
+            }
+          ],
+          "reason": "Agent inspected 20 sampled frames: consistent bunny, gentle gesture, stationary ball, no freeze or deformation."
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+      "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "1e75d38d-7de0-4b52-8aec-9d040a943015",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014856_1e75d38d-7de0-4b52-8aec-9d040a943015.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "1e75d38d-7de0-4b52-8aec-9d040a943015",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014856_1e75d38d-7de0-4b52-8aec-9d040a943015.png",
+              "status": "approved",
+              "reason": "Agent direct image review: consistent bunny, two buttons, one recognizable yellow toy car, no ball.",
+              "at": "2026-11-16T01:48Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent direct image review: consistent bunny, two buttons, one recognizable yellow toy car, no ball.",
+          "off_model_ok": true
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "edcb63f9-56ae-457d-9ff3-2e81929914da",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015032_edcb63f9-56ae-457d-9ff3-2e81929914da.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "edcb63f9-56ae-457d-9ff3-2e81929914da",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015032_edcb63f9-56ae-457d-9ff3-2e81929914da.mp4",
+              "status": "approved",
+              "reason": "Agent inspected20frames; stable bunny/car. Use first4seconds only: car approaches frame edge near end; planned phrases fit4s.",
+              "at": "2026-11-16T01:50Z",
+              "credits": 5.0,
+              "start_image": "1e75d38d-7de0-4b52-8aec-9d040a943015"
+            }
+          ],
+          "reason": "Agent inspected20frames; stable bunny/car. Use first4seconds only: car approaches frame edge near end; planned phrases fit4s."
+        }
+      },
+      "usable_seconds": 4.0
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BALL"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+      "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_014859_b0ae4a87-d69a-4003-b164-a5ff33d1a8fb.png",
+              "status": "approved",
+              "reason": "Agent direct image review: single round coral-blue ball, matching room, clean silhouette.",
+              "at": "2026-11-16T01:49Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent direct image review: single round coral-blue ball, matching room, clean silhouette."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
+          "attempts": 1,
+          "credits": 5.0,
+          "history": [
+            {
+              "job_id": "dcb8d000-fce5-4ad7-905d-217e51c58f9d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015036_dcb8d000-fce5-4ad7-905d-217e51c58f9d.mp4",
+              "status": "approved",
+              "reason": "Agent inspected20frames: single ball bounces smoothly, remains in frame with stable panels; no deformation or frozen tail.",
+              "at": "2026-11-16T01:50Z",
+              "credits": 5.0,
+              "start_image": "b0ae4a87-d69a-4003-b164-a5ff33d1a8fb"
+            }
+          ],
+          "reason": "Agent inspected20frames: single ball bounces smoothly, remains in frame with stable panels; no deformation or frozen tail."
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CAR"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+      "motion": "One uninterrupted static-camera shot. The exact same yellow toy car stays centered at the exact same position, facing left throughout. Only its two visible wheels turn very slowly in place. No translation, no turning, no change in viewpoint, no flipping, no cuts, no new objects. Preserve the identical car body, windows, wheel size and soft lighting from the first frame.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "640b50e7-8c2c-4161-908c-458cc2bba469",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015016_640b50e7-8c2c-4161-908c-458cc2bba469.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "640b50e7-8c2c-4161-908c-458cc2bba469",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015016_640b50e7-8c2c-4161-908c-458cc2bba469.png",
+              "status": "approved",
+              "reason": "Agent direct visual review: matching yellow toy car, two side wheels, clean rounded shape, no text.",
+              "at": "2026-11-16T01:50Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent direct visual review: matching yellow toy car, two side wheels, clean rounded shape, no text."
+        },
+        "clip": {
+          "status": "generated",
+          "job_id": "c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9",
+          "url": null,
+          "attempts": 2,
+          "credits": 10.0,
+          "history": [
+            {
+              "job_id": "b5cda38c-9301-45dd-b4ca-4e2439682a6f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261116_015142_b5cda38c-9301-45dd-b4ca-4e2439682a6f.mp4",
+              "status": "rejected",
+              "reason": "Agent20-frame review: car changes facing direction and position in early sequence; unsuitable for smooth toddler playback.",
+              "at": "2026-11-16T01:51Z",
+              "credits": 5.0,
+              "start_image": "640b50e7-8c2c-4161-908c-458cc2bba469"
+            },
+            {
+              "job_id": "c82dcbc4-ee32-47b3-8ebc-d7ef10862ec9",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-16T01:55Z",
+              "credits": 5.0,
+              "start_image": "640b50e7-8c2c-4161-908c-458cc2bba469"
+            }
+          ],
+          "reason": null
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+      "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 5,
+      "notes": "Reuse approved ep15/c10",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060250_381658a6-82f7-4480-a941-17c4834e74ae.png",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Agent reuse of approved asset, no generation.",
+          "source_episode": "ep15",
+          "source_cut": "c10"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "reason": "Agent reuse of approved asset, no generation.",
+          "source_episode": "ep15",
+          "source_cut": "c10"
+        }
+      }
+    }
+  ],
+  "languages": [
+    "en"
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:72b23ca67145",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep16/ep16_song_72b23ca6.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent selected English take2; official listening8/10, independent ASR95.3%;32lines and no long mid-song gap; keyword-only timing verified.",
+      "sha1": "72b23ca671457e4af69e21c2e8de717bd7aa4db6",
+      "tool": "suno",
+      "source_file": "ball_car_original.wav",
+      "note": "Agent selected take 2; standing authorization 2026-11-16; official Suno v6",
+      "duration": 69.56,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:72b23ca67145",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep16/ep16_song_72b23ca6.flac",
+          "status": "approved",
+          "reason": "Agent selected English take2; official listening8/10, independent ASR95.3%;32lines and no long mid-song gap; keyword-only timing verified.",
+          "at": "2026-11-16T01:48Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 120.0053,
+        "beat0": 0.1103,
+        "downbeat0": 0.1103,
+        "confidence": 1.094,
+        "downbeats": [
+          0.1103,
+          2.1102,
+          4.1101,
+          6.11,
+          8.1099,
+          10.1099,
+          12.1098,
+          14.1097,
+          16.1096,
+          18.1095,
+          20.1094,
+          22.1093,
+          24.1092,
+          26.1092,
+          28.1091,
+          30.109,
+          32.1089,
+          34.1088,
+          36.1087,
+          38.1086,
+          40.1085,
+          42.1084,
+          44.1084,
+          46.1083,
+          48.1082,
+          50.1081,
+          52.108,
+          54.1079,
+          56.1078,
+          58.1077,
+          60.1077,
+          62.1076,
+          64.1075,
+          66.1074,
+          68.1073
+        ],
+        "grid": {
+          "refined": false,
+          "beats_found": "133/139",
+          "max_drift_ms": 6.9,
+          "section_offsets_ms": [
+            1.9,
+            -1.1,
+            1.1,
+            1.1,
+            0.9
+          ],
+          "trend_ms": 0.1
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "08df6c13894347bb75ec3988557be2143a2a3438",
+        "moved": 13,
+        "loose": 7,
+        "flags": [
+          {
+            "kind": "phase",
+            "line": 9,
+            "t": 21.328,
+            "section": "Provider alignment cross-checked with ASR",
+            "beat": 2.44,
+            "median": 0.11,
+            "beats": -1.67,
+            "text": "Bounce bounce"
+          },
+          {
+            "kind": "phase",
+            "line": 11,
+            "t": 25.329,
+            "section": "Provider alignment cross-checked with ASR",
+            "beat": 2.44,
+            "median": 0.11,
+            "beats": -1.67,
+            "text": "Bounce bounce"
+          },
+          {
+            "kind": "phase",
+            "line": 13,
+            "t": 29.365,
+            "section": "Provider alignment cross-checked with ASR",
+            "beat": 2.51,
+            "median": 0.11,
+            "beats": -1.6,
+            "text": "Go go"
+          },
+          {
+            "kind": "phase",
+            "line": 15,
+            "t": 33.356,
+            "section": "Provider alignment cross-checked with ASR",
+            "beat": 2.49,
+            "median": 0.11,
+            "beats": -1.62,
+            "text": "Go go"
+          },
+          {
+            "kind": "lag",
+            "line": 20,
+            "t": 43.852,
+            "word": "Ball",
+            "t0": 44.311,
+            "ms": 459,
+            "text": "Ball ball bounce"
+          }
+        ]
+      },
+      "lyrics_sha1": "72b23ca671457e4af69e21c2e8de717bd7aa4db6",
+      "end": 69.0
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:08df6c138943",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep16/ep16_song_vocals_08df6c13.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent selected English take2; official listening8/10, independent ASR95.3%;32lines and no long mid-song gap; keyword-only timing verified.",
+      "sha1": "08df6c13894347bb75ec3988557be2143a2a3438",
+      "of": "72b23ca671457e4af69e21c2e8de717bd7aa4db6",
+      "history": [
+        {
+          "job_id": "local:08df6c138943",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep16/ep16_song_vocals_08df6c13.flac",
+          "status": "approved",
+          "reason": "Agent selected English take2; official listening8/10, independent ASR95.3%;32lines and no long mid-song gap; keyword-only timing verified.",
+          "at": "2026-11-16T01:48Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 120.0053,
+    "lyrics": [
+      {
+        "text": "Ball ball bounce",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Ball",
+            4.307,
+            4.842,
+            4.35
+          ],
+          [
+            "ball",
+            4.856,
+            5.359,
+            4.885
+          ],
+          [
+            "bounce",
+            5.359,
+            5.664,
+            5.395
+          ]
+        ]
+      },
+      {
+        "text": "Bounce bounce ball",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Bounce",
+            6.083,
+            6.607,
+            6.143
+          ],
+          [
+            "bounce",
+            6.607,
+            7.06,
+            6.685
+          ],
+          [
+            "ball",
+            7.11,
+            7.485,
+            7.138
+          ]
+        ]
+      },
+      {
+        "text": "Car car go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Car",
+            8.298,
+            8.817,
+            8.373
+          ],
+          [
+            "car",
+            8.822,
+            9.247,
+            8.892
+          ],
+          [
+            "go",
+            9.35,
+            9.794,
+            9.317
+          ]
+        ]
+      },
+      {
+        "text": "Go go car",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Go",
+            10.069,
+            10.546,
+            10.11
+          ],
+          [
+            "go",
+            10.598,
+            11.061,
+            10.587
+          ],
+          [
+            "car",
+            11.061,
+            11.58,
+            11.117
+          ]
+        ]
+      },
+      {
+        "text": "Ball ball bounce",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Ball",
+            12.309,
+            12.839,
+            12.325
+          ],
+          [
+            "ball",
+            12.862,
+            13.366,
+            12.855
+          ],
+          [
+            "bounce",
+            13.366,
+            13.81,
+            13.379
+          ]
+        ]
+      },
+      {
+        "text": "Car c ar go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Car",
+            14.07,
+            14.569,
+            14.111
+          ],
+          [
+            "c",
+            14.569,
+            14.63,
+            14.627
+          ],
+          [
+            "ar",
+            14.883,
+            15.107,
+            14.688
+          ],
+          [
+            "go",
+            15.107,
+            15.536,
+            15.055
+          ]
+        ]
+      },
+      {
+        "text": "Clap clap clap",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Clap",
+            16.225,
+            16.716,
+            16.367
+          ],
+          [
+            "clap",
+            16.793,
+            17.271,
+            16.858
+          ],
+          [
+            "clap",
+            17.282,
+            17.557,
+            17.336
+          ]
+        ]
+      },
+      {
+        "text": "Here we go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Here",
+            18.036,
+            18.539,
+            18.063
+          ],
+          [
+            "we",
+            18.609,
+            19.088,
+            18.566
+          ],
+          [
+            "go",
+            19.088,
+            19.487,
+            19.074
+          ]
+        ]
+      },
+      {
+        "text": "Ball ball",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Ball",
+            20.3,
+            20.837,
+            20.329
+          ],
+          [
+            "ball",
+            20.859,
+            21.253,
+            20.866
+          ]
+        ]
+      },
+      {
+        "text": "Bounce bounce",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Bounce",
+            21.328,
+            21.568,
+            21.388
+          ],
+          [
+            "bounce",
+            21.568,
+            22.017,
+            21.787
+          ]
+        ]
+      },
+      {
+        "text": "Ball ball",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Ball",
+            24.306,
+            24.839,
+            24.334
+          ],
+          [
+            "ball",
+            24.86,
+            25.259,
+            24.867
+          ]
+        ]
+      },
+      {
+        "text": "Bounce bounce",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Bounce",
+            25.329,
+            25.569,
+            25.387
+          ],
+          [
+            "bounce",
+            25.569,
+            26.013,
+            25.786
+          ]
+        ]
+      },
+      {
+        "text": "Car car",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Car",
+            28.257,
+            28.714,
+            28.403
+          ],
+          [
+            "car",
+            28.806,
+            29.275,
+            28.86
+          ]
+        ]
+      },
+      {
+        "text": "Go go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Go",
+            29.365,
+            29.699,
+            29.376
+          ],
+          [
+            "go",
+            29.729,
+            30.083,
+            29.71
+          ]
+        ]
+      },
+      {
+        "text": "Car car",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Car",
+            32.263,
+            32.722,
+            32.401
+          ],
+          [
+            "car",
+            32.772,
+            33.286,
+            32.86
+          ]
+        ]
+      },
+      {
+        "text": "Go go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Go",
+            33.356,
+            33.687,
+            33.374
+          ],
+          [
+            "go",
+            33.735,
+            34.064,
+            33.705
+          ]
+        ]
+      },
+      {
+        "text": "Ball ball bounce",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Ball",
+            36.304,
+            36.835,
+            36.334
+          ],
+          [
+            "ball",
+            36.838,
+            37.347,
+            36.865
+          ],
+          [
+            "bounce",
+            37.347,
+            37.686,
+            37.387
+          ]
+        ]
+      },
+      {
+        "text": "Bounce bounce ball",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Bounce",
+            38.095,
+            38.579,
+            38.121
+          ],
+          [
+            "bounce",
+            38.579,
+            39.032,
+            38.668
+          ],
+          [
+            "ball",
+            39.108,
+            39.482,
+            39.121
+          ]
+        ]
+      },
+      {
+        "text": "Car car go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Car",
+            40.27,
+            40.729,
+            40.409
+          ],
+          [
+            "car",
+            40.804,
+            41.236,
+            40.868
+          ],
+          [
+            "go",
+            41.328,
+            41.807,
+            41.3
+          ]
+        ]
+      },
+      {
+        "text": "Go go car",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Go",
+            42.091,
+            42.567,
+            42.12
+          ],
+          [
+            "go",
+            42.605,
+            43.054,
+            42.596
+          ],
+          [
+            "car",
+            43.054,
+            43.583,
+            43.12
+          ]
+        ]
+      },
+      {
+        "text": "Ball ball bounce",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Ball",
+            44.311,
+            44.779,
+            44.396
+          ],
+          [
+            "ball",
+            44.865,
+            45.369,
+            44.864
+          ],
+          [
+            "bounce",
+            45.369,
+            45.822,
+            45.381
+          ]
+        ]
+      },
+      {
+        "text": "Car car go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Car",
+            46.057,
+            46.52,
+            46.168
+          ],
+          [
+            "car",
+            46.571,
+            46.992,
+            46.631
+          ],
+          [
+            "go",
+            47.105,
+            47.529,
+            47.052
+          ]
+        ]
+      },
+      {
+        "text": "Clap clap clap",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Clap",
+            48.227,
+            48.722,
+            48.368
+          ],
+          [
+            "clap",
+            48.771,
+            49.253,
+            48.863
+          ],
+          [
+            "clap",
+            49.29,
+            49.549,
+            49.345
+          ]
+        ]
+      },
+      {
+        "text": "Here we go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Here",
+            50.043,
+            50.593,
+            50.052
+          ],
+          [
+            "we",
+            50.612,
+            51.08,
+            50.602
+          ],
+          [
+            "go",
+            51.091,
+            51.5,
+            51.07
+          ]
+        ]
+      },
+      {
+        "text": "Ball ball bounce",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Ball",
+            52.318,
+            52.832,
+            52.332
+          ],
+          [
+            "ball",
+            52.832,
+            53.345,
+            52.859
+          ],
+          [
+            "bounce",
+            53.345,
+            53.74,
+            53.381
+          ]
+        ]
+      },
+      {
+        "text": "Bounce bounce ball",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Bounce",
+            54.109,
+            54.578,
+            54.119
+          ],
+          [
+            "bounce",
+            54.578,
+            55.025,
+            54.668
+          ],
+          [
+            "ball",
+            55.111,
+            55.481,
+            55.115
+          ]
+        ]
+      },
+      {
+        "text": "Car car go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Car",
+            56.279,
+            56.736,
+            56.412
+          ],
+          [
+            "car",
+            56.808,
+            57.239,
+            56.869
+          ],
+          [
+            "go",
+            57.331,
+            57.81,
+            57.3
+          ]
+        ]
+      },
+      {
+        "text": "Go go car",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Go",
+            58.1,
+            58.578,
+            58.112
+          ],
+          [
+            "go",
+            58.603,
+            59.052,
+            58.59
+          ],
+          [
+            "car",
+            59.052,
+            59.581,
+            59.122
+          ]
+        ]
+      },
+      {
+        "text": "Ball ball bounce",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Ball",
+            60.315,
+            60.782,
+            60.395
+          ],
+          [
+            "ball",
+            60.873,
+            61.367,
+            60.862
+          ],
+          [
+            "bounce",
+            61.367,
+            61.821,
+            61.38
+          ]
+        ]
+      },
+      {
+        "text": "Car car go",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Car",
+            62.041,
+            62.504,
+            62.166
+          ],
+          [
+            "car",
+            62.564,
+            62.991,
+            62.629
+          ],
+          [
+            "go",
+            63.073,
+            63.527,
+            63.056
+          ]
+        ]
+      },
+      {
+        "text": "Clap clap clap",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Clap",
+            64.216,
+            64.708,
+            64.372
+          ],
+          [
+            "clap",
+            64.794,
+            65.276,
+            64.864
+          ],
+          [
+            "clap",
+            65.283,
+            65.553,
+            65.346
+          ]
+        ]
+      },
+      {
+        "text": "Yay",
+        "section": "Provider alignment cross-checked with ASR",
+        "words": [
+          [
+            "Yay",
+            65.972,
+            67.369,
+            66.127
+          ]
+        ]
+      }
+    ],
+    "caption_mode": "keywords",
+    "refs_urls": {}
+  }
+}

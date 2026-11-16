@@ -1,0 +1,186 @@
+[
+  {
+    "id": "c01",
+    "scene": 1,
+    "type": "V",
+    "bars": 1,
+    "narration": {
+      "en": ""
+    },
+    "keyword": {
+      "en": ""
+    },
+    "transition": "cut",
+    "text_at": 0,
+    "text_pos": "bottom",
+    "text_color": "white",
+    "inset": 0,
+    "image_prompt": "[Momo] full body in a bright pastel playroom with a soft peach wall, mint accent furniture and a low round cream table, softly lit, single full-bleed scene. The table is out of frame. Feet grounded, arms relaxed, body and both yellow shoulder buttons clearly visible, happy gentle closed-mouth smile. No fruit or other characters. Match the exact bunny face, overalls and peach-mint playroom from the reference. Both feet and both floppy ears fully visible. Remove the table and fruit; keep the same room.",
+    "motion": "Momo gently sways left and right, feet stay on the floor, tiny ear sway. Small rhythmic body movement, gentle closed-mouth smile throughout, no singing or talking.",
+    "momo": true,
+    "lipsync": false,
+    "clip_model": "seedance_2_0_mini",
+    "clip_seconds": 5,
+    "notes": "Reuse approved ep15/c01",
+    "gen": {
+      "image": {
+        "status": "approved",
+        "job_id": "8084be21-9f38-4efe-805a-9eba1a47d7fe",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_055753_8084be21-9f38-4efe-805a-9eba1a47d7fe.png",
+        "attempts": 0,
+        "credits": 0,
+        "reason": "Agent reuse of approved asset, no generation.",
+        "source_episode": "ep15",
+        "source_cut": "c01"
+      },
+      "clip": {
+        "status": "approved",
+        "job_id": "8e186a6e-523d-49b5-98fb-e066da3e8e1b",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060655_8e186a6e-523d-49b5-98fb-e066da3e8e1b.mp4",
+        "attempts": 0,
+        "credits": 0,
+        "reason": "Agent reuse of approved asset, no generation.",
+        "source_episode": "ep15",
+        "source_cut": "c01"
+      }
+    }
+  },
+  {
+    "id": "c02",
+    "scene": 1,
+    "type": "V",
+    "bars": 1,
+    "narration": {
+      "en": ""
+    },
+    "keyword": {
+      "en": "BALL"
+    },
+    "transition": "cut",
+    "text_at": 0,
+    "text_pos": "bottom",
+    "text_color": "white",
+    "inset": 0,
+    "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns. Momo presents the ball with one low open paw, both yellow overall buttons and both long floppy ears fully visible. Full bodies, entire ball, clear lower foreground. Gentle closed-mouth smile.",
+    "motion": "Momo gently blinks and makes a small presenting gesture. The ball stays still on the floor. Both feet grounded; mouth stays closed, no singing or talking.",
+    "momo": true,
+    "lipsync": false,
+    "clip_model": "seedance_2_0_mini",
+    "clip_seconds": 5
+  },
+  {
+    "id": "c03",
+    "scene": 1,
+    "type": "V",
+    "bars": 1,
+    "narration": {
+      "en": ""
+    },
+    "keyword": {
+      "en": "CAR"
+    },
+    "transition": "cut",
+    "text_at": 0,
+    "text_pos": "bottom",
+    "text_color": "white",
+    "inset": 0,
+    "image_prompt": "[Momo] seated on the left in a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. On the right is one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos. Momo presents the toy with one low open paw, both yellow overall buttons and long floppy ears visible. Full bodies, entire toy, clear lower foreground. Gentle closed-mouth smile.",
+    "motion": "Momo gently nudges the toy car forward a small distance on the floor, then watches it. The car rolls smoothly with consistent wheels, never transforms. Momo stays seated, mouth closed.",
+    "momo": true,
+    "lipsync": false,
+    "clip_model": "seedance_2_0_mini",
+    "clip_seconds": 5
+  },
+  {
+    "id": "c04",
+    "scene": 1,
+    "type": "V",
+    "bars": 1,
+    "narration": {
+      "en": ""
+    },
+    "keyword": {
+      "en": "BALL"
+    },
+    "transition": "cut",
+    "text_at": 0,
+    "text_pos": "bottom",
+    "text_color": "white",
+    "inset": 0,
+    "image_prompt": "Medium close-up of one large smooth round toy ball with alternating coral-red and sky-blue curved panels, no face or patterns resting on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire ball centered, recognizable round silhouette, uncluttered lower foreground. No other toys or characters.",
+    "motion": "The single round ball bounces gently up and down twice, slow smooth motion with a soft ground shadow. Preserve its round shape and colored panels. It stays entirely in frame.",
+    "momo": false,
+    "lipsync": false,
+    "clip_model": "seedance_2_0_mini",
+    "clip_seconds": 5
+  },
+  {
+    "id": "c05",
+    "scene": 1,
+    "type": "V",
+    "bars": 1,
+    "narration": {
+      "en": ""
+    },
+    "keyword": {
+      "en": "CAR"
+    },
+    "transition": "cut",
+    "text_at": 0,
+    "text_pos": "bottom",
+    "text_color": "white",
+    "inset": 0,
+    "image_prompt": "Medium close-up side view of one chunky rounded yellow toy car with four black wheels, two visible on this side, pale blue windows, no face, no letters, no logos on the cream floor of a bright pastel playroom with a soft peach wall, mint accent furniture and a clean cream floor, soft even lighting. Entire car centered, recognizable car silhouette, all visible wheels fully shown, uncluttered lower foreground. No other toys or characters.",
+    "motion": "The single toy car rolls smoothly a short distance from left to right on the floor, wheels rotate naturally, body shape stays rigid. Entire car stays in frame, no new objects.",
+    "momo": false,
+    "lipsync": false,
+    "clip_model": "seedance_2_0_mini",
+    "clip_seconds": 5
+  },
+  {
+    "id": "c06",
+    "scene": 2,
+    "type": "V",
+    "bars": 1,
+    "narration": {
+      "en": ""
+    },
+    "keyword": {
+      "en": ""
+    },
+    "transition": "cut",
+    "text_at": 0,
+    "text_pos": "bottom",
+    "text_color": "white",
+    "inset": 0,
+    "image_prompt": "[Momo] standing upright at the center of the same peach and mint playroom as the reference. Wide full-body framing from the top of both ears down to both feet, with generous visible floor below the feet and headroom above the ears. Both feet planted on the floor. Both hands are separated in front of the lower belly below the overall pocket, ready for a clap; both yellow shoulder strap buttons are clearly visible above the hands. Lips gently closed with a small soft smile, no open mouth. Head upright. The same exact face and outfit as the reference. No fruit or extra characters. No table in the foreground.",
+    "motion": "Momo performs three clearly separated claps at waist height: paws open apart, touch briefly, then open apart again, repeating smoothly. Keep elbows down and paws low in front of the shorts throughout; both yellow shoulder buttons stay fully visible above the paws. Each contact is brief, with an obvious open position between claps. The feet stay planted, head upright, lips closed with a gentle smile. Preserve exactly the face, floppy ears, outfit and body proportions of the first frame.",
+    "momo": true,
+    "lipsync": false,
+    "clip_model": "seedance_2_0_mini",
+    "clip_seconds": 5,
+    "notes": "Reuse approved ep15/c10",
+    "gen": {
+      "image": {
+        "status": "approved",
+        "job_id": "381658a6-82f7-4480-a941-17c4834e74ae",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_060250_381658a6-82f7-4480-a941-17c4834e74ae.png",
+        "attempts": 0,
+        "credits": 0,
+        "reason": "Agent reuse of approved asset, no generation.",
+        "source_episode": "ep15",
+        "source_cut": "c10"
+      },
+      "clip": {
+        "status": "approved",
+        "job_id": "340dd3f7-8ce9-4317-ab2b-927c94e10e6c",
+        "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261105_061333_340dd3f7-8ce9-4317-ab2b-927c94e10e6c.mp4",
+        "attempts": 0,
+        "credits": 0,
+        "reason": "Agent reuse of approved asset, no generation.",
+        "source_episode": "ep15",
+        "source_cut": "c10"
+      }
+    }
+  }
+]

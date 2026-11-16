@@ -1,0 +1,17 @@
+{
+  "model": "v6",
+  "title": "공 통통! 자동차 부릉!",
+  "lyrics": "[Chorus - 바로 노래 시작]\n공, 공, 통통!\n통통, 통통, 공!\n자동차, 부릉!\n부릉, 부릉, 붕!\n공, 공, 통통!\n자동차, 부릉!\n짝짝, 짝짝!\n신나게 놀자!\n\n[Verse - 또박또박 짧게, 따라 할 틈]\n공, 공!\n통통, 통통!\n공, 공!\n통통, 통통!\n자동차!\n부릉, 부릉!\n자동차!\n부릉, 부릉!\n\n[Chorus - 같은 멜로디 반복]\n공, 공, 통통!\n통통, 통통, 공!\n자동차, 부릉!\n부릉, 부릉, 붕!\n공, 공, 통통!\n자동차, 부릉!\n짝짝, 짝짝!\n신나게 놀자!\n\n[Final chorus - 신나고 간단하게]\n공, 공, 통통!\n통통, 통통, 공!\n자동차, 부릉!\n부릉, 부릉, 붕!\n공, 공, 통통!\n자동차, 부릉!\n짝짝, 짝짝!\n야호!\n[짧고 자연스러운 마무리]",
+  "style": "맑고 가볍고 귀여운 여자아이 같은 여성 솔로, 자연스러운 발음, 성인 발라드 창법 금지. 2~4세 한국어 동요, 오리지널 토이박스 댄스팝, 120 BPM. 통통 튀는 뮤트 마림바 리프, 짧은 피치카토, 단단한 킥, 가벼운 박수, 둥근 베이스. 짧게 짧게 길게의 3음 후렴, 좁은 음역, 한 번에 따라 할 쉬운 음형과 반복 리듬. 단어마다 또박또박, 각 짧은 구절 뒤 작은 빈 박자. 매번 같은 후렴 멜로디. 노래가 1초 안에 시작, 중간 기악 간주 없음, 75초 정도, 끝은 보컬을 자르지 말고 짧고 명확하게 종지. 과한 애드리브, 빠른 랩, 고음 벨팅 없음.",
+  "negative_style": "adult diva, belting, fast rap, long instrumental intro, instrumental break, excessive adlibs, distorted voice, chipmunk pitch",
+  "vocal_gender": "female",
+  "duration": 76,
+  "duration_guidance": true,
+  "duration_strict": false,
+  "max_mode": false,
+  "controls": {
+    "style_influence": 0.75,
+    "weirdness": 0.25
+  },
+  "idempotency_key": "momo-ep17-20261116-v1"
+}

@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"39f0d016-270e-443b-87c0-b80d796db222\",\"audio_id\":\"249094e3-00ae-428f-9207-7baf37cdcf2e\",\"status\":\"complete\",\"created_at\":\"2026-11-16T01:47:03Z\",\"answer\":\"The key words are audible and recur in clear, short patterns: 공 and 자동차 are repeated, with 통통 and 빵빵 paired to the ball-bouncing and car-honking ideas. The vocals are bright and playful; the steady, bouncy beat (122 bpm) and recurring tune support participation. The repeated sound words are mostly easy to imitate, though the rapid strings make some repetitions less distinct than a slower call-and-response would. The lyric alignment indicates the final “야호” may be cut short—only “야” aligns—so I wouldn’t count it as a confirmed complete exclamation. The audio description reports an approximately 8-second instrumental outro after the vocal, but there is no clear evidence of a \\u003e4-second instrumental break before that; apparent interior gaps in alignment are not proof of instrumental passages. Overall: clarity 7/10, hook 8/10, imitation ease 7/10, ending 5/10.\\n\\n```json\\n{\\\"bpm\\\":122,\\\"first_vocal_s\\\":2.32,\\\"last_vocal_s\\\":56.63,\\\"long_gaps\\\":[],\\\"clarity\\\":7,\\\"hook\\\":8,\\\"ease\\\":7,\\\"ending\\\":5}```\"}"
+    }
+  ]
+}

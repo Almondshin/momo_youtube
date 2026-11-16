@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"10c56322-51ed-4658-8618-f012ab85dacd\",\"audio_id\":\"abcafceb-b040-4b37-8974-7e2aeeacb69c\",\"status\":\"complete\",\"created_at\":\"2026-11-16T01:47:04Z\",\"answer\":\"The Korean keywords are clear and recur in short, consistent patterns: 공 and 자동차 are easy to pick out, and 통통 and 빵빵 are complete, emphatic sound words that toddlers can imitate. The bright, cheerful voice sits over a steady, bouncy rhythm (about 122 BPM) and a simple, repetitive melody, making the hook highly learnable. The final 야호 sounds complete and the musical close feels natural. There is a real instrumental-only outro after the last vocal, roughly 1:00–1:07 (about 7 seconds), not merely an alignment gap. One caveat: lyric alignment records the final word as just “야,” but listening indicates the sung word is 야호; its last-vocal timing is therefore approximate.\\n\\n```json\\n{\\\"bpm\\\":122.1,\\\"first_vocal_s\\\":2.33,\\\"last_vocal_s\\\":60,\\\"long_gaps\\\":[{\\\"start_s\\\":60,\\\"end_s\\\":67.6}],\\\"clarity\\\":9,\\\"hook\\\":9,\\\"ease\\\":9,\\\"ending\\\":\\\"complete 야호; natural resolved instrumental outro\\\"}\\n```\"}"
+    }
+  ]
+}

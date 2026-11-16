@@ -1,0 +1,797 @@
+{
+  "schema": 1,
+  "ep": "ep17",
+  "status": "producing",
+  "topic": {
+    "en": "Ball and Toy Car",
+    "ko": "공과 장난감 자동차"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "",
+    "ko": "공 통통! 자동차 빵빵! 🏀🚗 | 따라 부르는 장난감 동요 | 모모타임"
+  },
+  "thumbnail": {
+    "cut": "c04",
+    "text": {
+      "ko": "공 통통! 자동차 빵빵!"
+    },
+    "text_pos": "bottom"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "",
+      "description": "",
+      "tags": [],
+      "playlist_id": null
+    },
+    "ko": {
+      "title": "공 통통! 자동차 빵빵! 🏀🚗 | 따라 부르는 장난감 동요 | 모모타임",
+      "description": "통통 튀는 공, 빵빵 자동차! 모모와 함께 따라 부르고 짝짝 박수 쳐요.\n\n2~4세 아이들이 짧은 후렴을 따라 부르며 공과 자동차 두 단어를 익히는 한국어 동요입니다.\n공, 공, 통통! 자동차, 빵빵!\n\n#모모타임 #MomoTime #유아동요 #장난감동요 #자동차동요 #공놀이 #따라부르는동요 #아기동요",
+      "tags": [
+        "모모타임",
+        "Momo Time",
+        "유아동요",
+        "아기동요",
+        "장난감 동요",
+        "자동차 동요",
+        "공 놀이",
+        "따라 부르는 동요",
+        "한국어 동요",
+        "2세 동요",
+        "3세 동요",
+        "4세 동요"
+      ],
+      "playlist_id": "PLHfQPAU3ZVb8"
+    }
+  },
+  "credits": {
+    "estimate": null,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0
+  },
+  "notes": {
+    "v_over_reason": null,
+    "approvals": [],
+    "next_time": [],
+    "production_request": "2026-11-16 오늘도 두 곡 만들어서 올려: new English/Korean pair in addition to ep15 completion.",
+    "standing_authorization": "2026-11-16",
+    "reviewer": "agent",
+    "visual_plan": {
+      "new_images": 0,
+      "new_clips": 0,
+      "shared_with": "ep16",
+      "base_credits": 0,
+      "contingency_cap": 33.6,
+      "lipsync": false,
+      "words": [
+        "공",
+        "자동차"
+      ]
+    },
+    "selected_song": {
+      "id": "abcafceb-b040-4b37-8974-7e2aeeacb69c",
+      "url": "https://suno.com/song/abcafceb-b040-4b37-8974-7e2aeeacb69c",
+      "duration": 67.6,
+      "selected_by": "agent",
+      "standing_authorization": "2026-11-16",
+      "download_credits_authorized": 1,
+      "generation_credits_used": 20,
+      "download_status": "downloaded",
+      "download_credits_used": 1,
+      "download_authorization": "standing_authorization:2026-11-16"
+    },
+    "alignment_review": {
+      "source": "Agent phrase starts reconciled between official alignment and independent overlapping ASR chunks. Whole-line token: not word-level timing. Keywords only.",
+      "whole_song_asr_match": 0.685,
+      "asr_limitations": "Repetitive onomatopoeia caused misplaced repeated sections; provider also hallucinated duplicated lines18–41s. Neither directly used unchanged. Independent chunks confirmed actual short verse18–26s and chorus26–41s; final 야호 confirmed55.8–56.54. Silent outro ASR hallucination58s excluded."
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "L",
+      "library_clip": "intro_wave",
+      "library_audio": "intro",
+      "narration": {
+        "en": "Hi friends! It's Momo!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 5,
+      "type": "L",
+      "library_clip": "outro_bye",
+      "library_audio": "outro",
+      "narration": {
+        "en": "Bye-bye, friends! See you next time!"
+      },
+      "keyword": {
+        "en": "",
+        "ko": ""
+      }
+    }
+  ],
+  "languages": [
+    "ko"
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:bdd891eda7e7",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep17/ep17_song_bdd891ed.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent selected Korean revision take2; official listening9/10 clarity/hook/ease; independent ASR chunks confirm words and complete 야호. Original global ASR68.5% retained; reconciled phrase timing, no full-lyric subtitles.",
+      "sha1": "bdd891eda7e74937a9dfdd3ba0e4c9ffe6a49514",
+      "tool": "suno",
+      "source_file": "ball_car_original.wav",
+      "note": "Agent selected revision take 2; standing authorization 2026-11-16",
+      "duration": 67.6,
+      "start": 0.0,
+      "history": [
+        {
+          "job_id": "local:bdd891eda7e7",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep17/ep17_song_bdd891ed.flac",
+          "status": "approved",
+          "reason": "Agent selected Korean revision take2; official listening9/10 clarity/hook/ease; independent ASR chunks confirm words and complete 야호. Original global ASR68.5% retained; reconciled phrase timing, no full-lyric subtitles.",
+          "at": "2026-11-16T01:49Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 122.1309,
+        "beat0": 0.4209,
+        "downbeat0": 0.4209,
+        "confidence": 1.105,
+        "downbeats": [
+          0.4209,
+          2.386,
+          4.3511,
+          6.3162,
+          8.2813,
+          10.2464,
+          12.2115,
+          14.1766,
+          16.1417,
+          18.1068,
+          20.0719,
+          22.0371,
+          24.0022,
+          25.9673,
+          27.9324,
+          29.8975,
+          31.8626,
+          33.8277,
+          35.7928,
+          37.7579,
+          39.723,
+          41.6881,
+          43.6532,
+          45.6183,
+          47.5834,
+          49.5485,
+          51.5136,
+          53.4787,
+          55.4438,
+          57.4089,
+          59.374,
+          61.3391,
+          63.3042,
+          65.2694,
+          67.2345
+        ],
+        "grid": {
+          "refined": false,
+          "beats_found": "127/139",
+          "max_drift_ms": 18.2,
+          "section_offsets_ms": [
+            -1.6,
+            0.8,
+            3.2,
+            -0.3,
+            3.1
+          ],
+          "trend_ms": 3.3
+        },
+        "source": "instrumental stem"
+      },
+      "end": 60.0,
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "cdee4ca4ab47235e5a5bca5e645872cefae781f0",
+        "moved": 7,
+        "loose": 1,
+        "flags": [
+          {
+            "kind": "lag",
+            "line": 3,
+            "t": 7.764,
+            "word": "빵빵, 빵빵, 빵!",
+            "t0": 8.258,
+            "ms": 494,
+            "text": "빵빵, 빵빵, 빵!"
+          },
+          {
+            "kind": "lag",
+            "line": 6,
+            "t": 13.661,
+            "word": "짝짝, 짝짝!",
+            "t0": 14.135,
+            "ms": 474,
+            "text": "짝짝, 짝짝!"
+          },
+          {
+            "kind": "lag",
+            "line": 7,
+            "t": 14.643,
+            "word": "신나게 놀자!",
+            "t0": 15.626,
+            "ms": 983,
+            "text": "신나게 놀자!"
+          },
+          {
+            "kind": "lag",
+            "line": 7,
+            "t": 15.117,
+            "word": "신나게 놀자!",
+            "t0": 15.626,
+            "ms": 509,
+            "text": "신나게 놀자!"
+          },
+          {
+            "kind": "phase",
+            "line": 7,
+            "t": 15.626,
+            "section": "Agent phrase alignment",
+            "beat": 2.95,
+            "median": 3.95,
+            "beats": -1.0,
+            "text": "신나게 놀자!"
+          },
+          {
+            "kind": "phase",
+            "line": 9,
+            "t": 19.048,
+            "section": "Agent phrase alignment",
+            "beat": 1.92,
+            "median": 3.95,
+            "beats": 1.96,
+            "text": "통통, 통통!"
+          },
+          {
+            "kind": "phase",
+            "line": 11,
+            "t": 21.278,
+            "section": "Agent phrase alignment",
+            "beat": 2.45,
+            "median": 3.95,
+            "beats": -1.5,
+            "text": "통통, 통통!"
+          },
+          {
+            "kind": "phase",
+            "line": 12,
+            "t": 22.286,
+            "section": "Agent phrase alignment",
+            "beat": 0.51,
+            "median": 3.95,
+            "beats": 0.55,
+            "text": "자동차!"
+          },
+          {
+            "kind": "phase",
+            "line": 13,
+            "t": 23.259,
+            "section": "Agent phrase alignment",
+            "beat": 2.49,
+            "median": 3.95,
+            "beats": -1.47,
+            "text": "빵빵, 빵빵!"
+          },
+          {
+            "kind": "phase",
+            "line": 14,
+            "t": 24.247,
+            "section": "Agent phrase alignment",
+            "beat": 0.5,
+            "median": 3.95,
+            "beats": 0.55,
+            "text": "자동차!"
+          },
+          {
+            "kind": "phase",
+            "line": 15,
+            "t": 25.219,
+            "section": "Agent phrase alignment",
+            "beat": 2.48,
+            "median": 3.95,
+            "beats": -1.48,
+            "text": "빵빵, 빵빵!"
+          },
+          {
+            "kind": "lag",
+            "line": 19,
+            "t": 31.35,
+            "word": "빵빵, 빵빵, 빵!",
+            "t0": 31.839,
+            "ms": 489,
+            "text": "빵빵, 빵빵, 빵!"
+          },
+          {
+            "kind": "lag",
+            "line": 23,
+            "t": 39.208,
+            "word": "신나게 놀자!",
+            "t0": 39.746,
+            "ms": 538,
+            "text": "신나게 놀자!"
+          },
+          {
+            "kind": "lag",
+            "line": 27,
+            "t": 47.095,
+            "word": "빵빵, 빵빵, 빵!",
+            "t0": 47.588,
+            "ms": 493,
+            "text": "빵빵, 빵빵, 빵!"
+          },
+          {
+            "kind": "phase",
+            "line": 30,
+            "t": 53.949,
+            "section": "Agent phrase alignment",
+            "beat": 0.96,
+            "median": 3.95,
+            "beats": 1.01,
+            "text": "짝짝, 짝짝!"
+          },
+          {
+            "kind": "lag",
+            "line": 31,
+            "t": 54.927,
+            "word": "야호!",
+            "t0": 55.845,
+            "ms": 918,
+            "text": "야호!"
+          },
+          {
+            "kind": "phase",
+            "line": 31,
+            "t": 55.845,
+            "section": "Agent phrase alignment",
+            "beat": 0.82,
+            "median": 3.95,
+            "beats": 0.86,
+            "text": "야호!"
+          }
+        ]
+      },
+      "lyrics_sha1": "bdd891eda7e74937a9dfdd3ba0e4c9ffe6a49514"
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:cdee4ca4ab47",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep17/ep17_song_vocals_cdee4ca4.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent selected Korean revision take2; official listening9/10 clarity/hook/ease; independent ASR chunks confirm words and complete 야호. Original global ASR68.5% retained; reconciled phrase timing, no full-lyric subtitles.",
+      "sha1": "cdee4ca4ab47235e5a5bca5e645872cefae781f0",
+      "of": "bdd891eda7e74937a9dfdd3ba0e4c9ffe6a49514",
+      "history": [
+        {
+          "job_id": "local:cdee4ca4ab47",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep17/ep17_song_vocals_cdee4ca4.flac",
+          "status": "approved",
+          "reason": "Agent selected Korean revision take2; official listening9/10 clarity/hook/ease; independent ASR chunks confirm words and complete 야호. Original global ASR68.5% retained; reconciled phrase timing, no full-lyric subtitles.",
+          "at": "2026-11-16T01:49Z",
+          "credits": 0
+        }
+      ]
+    },
+    "beats_per_bar": 4,
+    "bpm": 122.1309,
+    "caption_mode": "keywords",
+    "lyrics": [
+      {
+        "text": "공, 공, 통통!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "공, 공, 통통!",
+            2.301,
+            2.83,
+            2.33
+          ]
+        ]
+      },
+      {
+        "text": "통통, 통통, 공!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "통통, 통통, 공!",
+            4.342,
+            4.546,
+            4.347
+          ]
+        ]
+      },
+      {
+        "text": "자동차, 빵빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "자동차, 빵빵!",
+            6.272,
+            6.522,
+            6.267
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 빵빵, 빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "빵빵, 빵빵, 빵!",
+            8.258,
+            8.677,
+            8.2
+          ]
+        ]
+      },
+      {
+        "text": "공, 공, 통통!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "공, 공, 통통!",
+            10.144,
+            10.687,
+            10.193
+          ]
+        ]
+      },
+      {
+        "text": "자동차, 빵빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "자동차, 빵빵!",
+            12.179,
+            12.413,
+            12.191
+          ]
+        ]
+      },
+      {
+        "text": "짝짝, 짝짝!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "짝짝, 짝짝!",
+            14.135,
+            14.284,
+            14.12
+          ]
+        ]
+      },
+      {
+        "text": "신나게 놀자!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "신나게 놀자!",
+            15.626,
+            15.781,
+            15.979
+          ]
+        ]
+      },
+      {
+        "text": "공, 공!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "공, 공!",
+            18.046,
+            18.485,
+            18.084
+          ]
+        ]
+      },
+      {
+        "text": "통통, 통통!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "통통, 통통!",
+            19.048,
+            19.263,
+            19.088
+          ]
+        ]
+      },
+      {
+        "text": "공, 공!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "공, 공!",
+            20.096,
+            20.5,
+            20.101
+          ]
+        ]
+      },
+      {
+        "text": "통통, 통통!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "통통, 통통!",
+            21.278,
+            21.488,
+            21.318
+          ]
+        ]
+      },
+      {
+        "text": "자동차!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "자동차!",
+            22.286,
+            22.605,
+            22.115
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 빵빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "빵빵, 빵빵!",
+            23.259,
+            23.448,
+            23.106
+          ]
+        ]
+      },
+      {
+        "text": "자동차!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "자동차!",
+            24.247,
+            24.571,
+            24.035
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 빵빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "빵빵, 빵빵!",
+            25.219,
+            25.409,
+            25.275
+          ]
+        ]
+      },
+      {
+        "text": "공, 공, 통통!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "공, 공, 통통!",
+            25.993,
+            26.407,
+            26.013
+          ]
+        ]
+      },
+      {
+        "text": "통통, 통통, 공!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "통통, 통통, 공!",
+            27.913,
+            28.372,
+            27.98
+          ]
+        ]
+      },
+      {
+        "text": "자동차, 빵빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "자동차, 빵빵!",
+            29.844,
+            30.098,
+            29.874
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 빵빵, 빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "빵빵, 빵빵, 빵!",
+            31.839,
+            32.034,
+            31.773
+          ]
+        ]
+      },
+      {
+        "text": "공, 공, 통통!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "공, 공, 통통!",
+            33.765,
+            34.274,
+            33.773
+          ]
+        ]
+      },
+      {
+        "text": "자동차, 빵빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "자동차, 빵빵!",
+            35.785,
+            36.0,
+            35.797
+          ]
+        ]
+      },
+      {
+        "text": "짝짝, 짝짝!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "짝짝, 짝짝!",
+            37.741,
+            37.881,
+            37.795
+          ]
+        ]
+      },
+      {
+        "text": "신나게 놀자!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "신나게 놀자!",
+            39.746,
+            40.629,
+            39.58
+          ]
+        ]
+      },
+      {
+        "text": "공, 공, 통통!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "공, 공, 통통!",
+            41.617,
+            42.161,
+            41.62
+          ]
+        ]
+      },
+      {
+        "text": "통통, 통통, 공!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "통통, 통통, 공!",
+            43.642,
+            44.111,
+            43.639
+          ]
+        ]
+      },
+      {
+        "text": "자동차, 빵빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "자동차, 빵빵!",
+            45.573,
+            45.832,
+            45.561
+          ]
+        ]
+      },
+      {
+        "text": "빵빵, 빵빵, 빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "빵빵, 빵빵, 빵!",
+            47.588,
+            48.027,
+            47.593
+          ]
+        ]
+      },
+      {
+        "text": "공, 공, 통통!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "공, 공, 통통!",
+            49.504,
+            49.983,
+            49.526
+          ]
+        ]
+      },
+      {
+        "text": "자동차, 빵빵!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "자동차, 빵빵!",
+            51.51,
+            51.719,
+            51.476
+          ]
+        ]
+      },
+      {
+        "text": "짝짝, 짝짝!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "짝짝, 짝짝!",
+            53.949,
+            54.134,
+            53.453
+          ]
+        ]
+      },
+      {
+        "text": "야호!",
+        "section": "Agent phrase alignment",
+        "words": [
+          [
+            "야호!",
+            55.845,
+            56.109,
+            55.967
+          ]
+        ]
+      }
+    ],
+    "refs_urls": {}
+  }
+}

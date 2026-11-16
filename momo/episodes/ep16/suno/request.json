@@ -1,0 +1,17 @@
+{
+  "model": "v6",
+  "title": "Ball Bounce! Car Go!",
+  "lyrics": "[Chorus - start singing immediately]\nBall, ball, bounce!\nBounce, bounce, ball!\nCar, car, go!\nGo, go, car!\nBall, ball, bounce!\nCar, car, go!\nClap, clap, clap!\nHere we go!\n\n[Verse - small clear phrases, leave an echo gap]\nBall, ball!\nBounce, bounce!\nBall, ball!\nBounce, bounce!\nCar, car!\nGo, go!\nCar, car!\nGo, go!\n\n[Chorus - same catchy melody]\nBall, ball, bounce!\nBounce, bounce, ball!\nCar, car, go!\nGo, go, car!\nBall, ball, bounce!\nCar, car, go!\nClap, clap, clap!\nHere we go!\n\n[Final chorus - playful lift, then a clean ending]\nBall, ball, bounce!\nBounce, bounce, ball!\nCar, car, go!\nGo, go, car!\nBall, ball, bounce!\nCar, car, go!\nClap, clap, clap!\nYay!\n[Short musical button ending]",
+  "style": "Bright clear light girl-like female solo, friendly naturally youthful tone, no adult diva delivery. Original toddler nursery dance song for ages 2-4, 120 BPM, sunny toybox bubblegum pop with muted marimba riff, rubbery bass, crisp kick and handclaps, tiny pizzicato strings. Distinct three-note short-short-long hook, easy narrow-range melody, strong bouncy rhythmic accents. Sing each short line clearly then leave a small imitation gap. Same memorable chorus melody each time. Voice always upfront, restrained accompaniment. Start singing within one second, keep singing through every section, no instrumental breaks, clean musical ending. English pronunciation clear and unhurried. About 75 seconds.",
+  "negative_style": "adult diva, belting, fast rap, long instrumental intro, instrumental break, excessive adlibs, distorted voice, chipmunk pitch",
+  "vocal_gender": "female",
+  "duration": 76,
+  "duration_guidance": true,
+  "duration_strict": false,
+  "max_mode": false,
+  "controls": {
+    "style_influence": 0.75,
+    "weirdness": 0.25
+  },
+  "idempotency_key": "momo-ep16-20261116-v1"
+}
