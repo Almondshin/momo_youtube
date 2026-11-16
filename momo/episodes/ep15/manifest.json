@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "ep": "ep15",
-  "status": "assembled",
+  "status": "uploaded",
   "topic": {
     "en": "Cat and Dog — Korean Song",
     "ko": "야옹 멍멍 짝짝"
@@ -60,7 +60,8 @@
     "approvals": [
       "2026-11-06 사용자: 한국어도 가야지 — 같은 동물 주제의 한국어판 제작 요청.",
       "2026-11-16 사용자: 콘텐츠 검사 없이 담당자가 선택·검수하고 계속 업로드.",
-      "2026-11-16 사용자: 수정 1번 WAV 다운로드 1크레딧 사용해 제작 계속; 향후 동일 다운로드도 자동으로 알아서 처리."
+      "2026-11-16 사용자: 수정 1번 WAV 다운로드 1크레딧 사용해 제작 계속; 향후 동일 다운로드도 자동으로 알아서 처리.",
+      "2026-11-16: Google reauthentication completed; existing Momo Time channel verified; standing upload authorization used without another content review."
     ],
     "next_time": [],
     "production_request": "2026-11-06 사용자: 한국어도 가야지 — ep14 고양이·강아지의 한국어 짝곡 제작 요청.",
@@ -261,9 +262,15 @@
       "user_review_required": false
     },
     "agent_media_review": "2026-11-16: inspected every cut contact sheet, full 2s contact sheet, thumbnail, and vocal timing plot. Correct animal keywords, no labels on Momo-only shots, all clips trimmed without holds. See qa-report.json.",
-    "ready_for_upload": true,
-    "upload_blocker": "YouTube OAuth invalid_grant; local reauthentication pending.",
-    "public_preview_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep15/ep15_ko_preview720.mp4"
+    "ready_for_upload": false,
+    "public_preview_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep15/ep15_ko_preview720.mp4",
+    "youtube_upload": {
+      "url": "https://www.youtube.com/watch?v=bqUPUKlE3uE",
+      "privacy": "public",
+      "made_for_kids": true,
+      "processing_status": "succeeded",
+      "date": "2026-11-16"
+    }
   },
   "cuts": [
     {

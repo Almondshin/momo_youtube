@@ -1,5 +1,5 @@
 {
-  "name": "모모타임 월·금 제작",
+  "name": "모모타임 월·금 자동 제작·업로드",
   "timezone": "Asia/Seoul",
   "cron": "0 9 * * 1,5",
   "tracks_per_run": {
@@ -8,7 +8,7 @@
   },
   "shared_visual_sets_per_run": 1,
   "expected_runtime": "current Mac awake and Orca running",
-  "activation_status": "disabled_pending_youtube_reauthentication",
+  "activation_status": "enabled_with_precheck_first_scheduled_run_unverified",
   "authorizations": [
     "User requested fully automated Monday/Friday production at 09:00 KST, completion-based upload, one channel with language playlists.",
     "2026-11-16: User explicitly delegates all content selection and review; upload without asking for inspection.",
@@ -18,25 +18,23 @@
     "Official Suno generation and authenticated WAV download",
     "Local assembly and keyword-only rendering",
     "YouTube private uploads, thumbnails and Korean playlist",
-    "2026-11-16: Suno reconnected; ep15 revision03 take1 WAV downloaded after explicit one-credit approval."
+    "2026-11-16: Suno reconnected; ep15 revision03 take1 WAV downloaded after explicit one-credit approval.",
+    "2026-11-16: YouTube reauthentication completed and existing Momo Time channel matched for en/ko.",
+    "2026-11-16: ep15 uploaded as public, made for kids, thumbnail and Korean playlist attached.",
+    "2026-11-16: Official Suno usage and Higgsfield subscription balance readable in the current session.",
+    "2026-11-16: Existing Orca automation enabled, Monday/Friday 09:00 Asia/Seoul, with YouTube credential precheck."
   ],
-  "blocking_checks": [
-    "YouTube token refresh currently fails invalid_grant; local reauthentication is in progress.",
-    "Unattended Higgsfield subscription tool access from scheduled session is not verified; reuse approved assets when suitable and stop before unsupported generation.",
-    "A complete scheduled provider production/upload run is not yet verified."
-  ],
+  "blocking_checks": [],
   "last_checked": "2026-11-16",
   "today": {
-    "date": "2026-11-06",
+    "date": "2026-11-16",
     "uploaded_episodes": [
-      "ep13"
+      "ep15"
     ],
-    "extra_episode": "ep14",
-    "english_ep12_uploaded_previous_day": true,
-    "regular_topic_pair_exception": "Launch week continuation: ep13 Korean fruit companion uploaded today; ep14 is a newly requested topic."
+    "production_type": "Finish previously requested Korean companion; not a full scheduled EN/KO batch."
   },
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
-  "enabled": false,
+  "enabled": true,
   "scheduler": "Orca local_host_service",
   "next_scheduled_slot_if_enabled": "2026-11-20T09:00:00+09:00",
   "review_policy": "agent_only",
@@ -45,5 +43,12 @@
     "preflight": true,
     "normal_one_credit_download": "standing_authorized_2026-11-16",
     "extra_purchase": false
-  }
+  },
+  "next_run_at": "2026-11-20T09:00:00+09:00",
+  "precheck": "/Users/dream/dev/momo_youtube/.venv/bin/python -c 'import sys; sys.path.insert(0,\"/Users/dream/dev/momo_youtube/momo\"); from youtube_check import main; sys.exit(max(main([\"--root\",\"/Users/dream/dev/momo_youtube/momo\",\"--lang\",lang]) for lang in (\"en\",\"ko\")))'",
+  "verification_pending": [
+    "First full scheduled production run in its separate provider session has not yet occurred.",
+    "Higgsfield subscription tools must be checked in each scheduled run; current-session balance check is not proof of scheduled-session access.",
+    "Long-term YouTube OAuth renewal after this reauthentication is not yet proven; precheck stops a run if credentials fail."
+  ]
 }
