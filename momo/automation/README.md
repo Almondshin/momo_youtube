@@ -1,5 +1,11 @@
 # 모모타임 정기 제작
 
+## Higgsfield 연결 복구 (2026-11-23)
+
+사용자가 제공한 공식 주소 `https://mcp.higgsfield.ai/mcp`를 `codex mcp add higgsfield --url …`로 등록하고 OAuth 로그인을 완료했다. CLI `Successfully logged in.`, `enabled: true`, `auth_status: o_auth`를 확인했다. 별도 새 로컬 Codex MCP 런타임에서도 서버 초기화·도구 217개·`toolsError: null`을 확인하고 `balance`를 실제 호출했다: **Plus, 1,177.37크레딧**. 기존 앱 연결 설치 여부와 별개로 이 공식 MCP 경로를 사용할 수 있다.
+
+비과금 견적: Nano Banana Pro 2K 이미지 2크레딧, Kling 3.0 Turbo 5초 720p 영상 7.5크레딧, 1080p 영상 10크레딧. 생성·다운로드·업로드는 실행하지 않았으며 비용은 0이다. 오늘 상태는 `pending_production_connection_restored`로 갱신했다. 아래의 최초 연결 중단은 해소되었지만, 훅 검토 문제의 영구 해결과 다음 예약 세션의 전체 무인 제작 성공은 아직 검증되지 않았다. OAuth 비밀값은 Codex가 관리하며 저장소에 보존하지 않는다. 증거: [공식 MCP 연결 확인](higgsfield-connection-2026-11-23.json).
+
 ## 최근 실행 점검 (2026-11-23)
 
 오늘 09:00 KST 실행은 **Higgsfield 구독 도구 연결을 확인하지 못해 생성 전 중단**했다. 현재 세션의 호출 가능 도구와 로컬 MCP 등록 목록에 Higgsfield가 없으며, 검색된 Higgsfield 연결은 설치·인증되지 않았다. 공급자 호출 자체를 하지 못했으므로 이를 인증 거절이나 잔액 부족 응답으로 기록하지 않는다. 공식 Suno와 YouTube 한국어·영어 계정 연결은 정상이며, 두 YouTube 자격증명 모두 기존 Momo Time 채널을 가리킨다. 추가 생성·다운로드·업로드 및 사용 크레딧은 모두 0이다.

@@ -8,7 +8,7 @@
   },
   "shared_visual_sets_per_run": 1,
   "expected_runtime": "current Mac awake and Orca running",
-  "activation_status": "enabled_but_current_run_blocked_preflight_full_run_unverified",
+  "activation_status": "enabled_connection_restored_full_production_unverified",
   "authorizations": [
     "User requested fully automated Monday/Friday production at 09:00 KST, completion-based upload, one channel with language playlists.",
     "2026-11-16: User explicitly delegates all content selection and review; upload without asking for inspection.",
@@ -23,15 +23,14 @@
     "2026-11-16: ep15 uploaded as public, made for kids, thumbnail and Korean playlist attached.",
     "2026-11-16: Official Suno usage and Higgsfield subscription balance readable in the current session.",
     "2026-11-16: Existing Orca automation enabled, Monday/Friday 09:00 Asia/Seoul, with YouTube credential precheck.",
-    "2026-11-23: Official Suno account/usage and YouTube en/ko channel checks passed. API verified 20 recent uploads; latest upload remains ep22 on 2026-11-16. No new generation or upload performed."
+    "2026-11-23: Official Suno account/usage and YouTube en/ko channel checks passed. API verified 20 recent uploads; latest upload remains ep22 on 2026-11-16. No new generation or upload performed.",
+    "2026-11-23: User-supplied official Higgsfield MCP endpoint registered globally in Codex and OAuth login succeeded. Fresh local Codex MCP runtime discovered 217 tools and successfully read Plus balance 1177.37 and image/video cost estimates; zero generation credits spent."
   ],
-  "blocking_checks": [
-    "The prior working Codex Apps Higgsfield subscription tools are unavailable in this scheduled provider session. Plugin discovery reports installed=false; current balance and prices cannot be checked. A standalone MCP registration is not required by the prior working route."
-  ],
+  "blocking_checks": [],
   "last_checked": "2026-11-23",
   "today": {
     "date": "2026-11-23",
-    "status": "blocked_preflight",
+    "status": "pending_production_connection_restored",
     "run_record": "run-2026-11-23.json",
     "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
     "uploaded_episodes": [],
@@ -62,8 +61,8 @@
   "verification_pending": [
     "No complete unattended scheduled production/upload has been verified.",
     "2026-11-20 and 2026-11-23 scheduler launch records show hooksReviewBlocked. The current session is run 2 and is now executing; no hook trust change or permanent scheduler fix was performed by this session.",
-    "Higgsfield subscription tools are unavailable in the current session; balance and prices were not verified.",
-    "YouTube en/ko refresh and channel checks passed on 2026-11-23; future OAuth renewal is not guaranteed by this check."
+    "YouTube en/ko refresh and channel checks passed on 2026-11-23; future OAuth renewal is not guaranteed by this check.",
+    "Higgsfield authentication, discovery and read-only calls passed in a fresh local Codex runtime; the next scheduler-launched session and full production/upload still require end-to-end verification."
   ],
   "last_completed_production": {
     "date": "2026-11-16",
@@ -121,5 +120,6 @@
   },
   "last_run_record": "run-2026-11-23.json",
   "scheduler_audit": "scheduler-audit-2026-11-23.json",
-  "higgsfield_connection_recheck": "higgsfield-recheck-2026-11-23.json"
+  "higgsfield_connection_recheck": "higgsfield-recheck-2026-11-23.json",
+  "higgsfield_connection_record": "higgsfield-connection-2026-11-23.json"
 }

@@ -92,6 +92,12 @@
         "kling3_0": 1.5,
         "kling3_0_turbo": 1.5,
         "sonilo_music": 0.0625
+      },
+      "verified_subset_2026_11_23": {
+        "image": 2,
+        "video_720p_5s": 7.5,
+        "video_1080p_5s": 10,
+        "evidence": "automation/higgsfield-connection-2026-11-23.json"
       }
     },
     "element_ids": {
@@ -116,6 +122,13 @@
         "mode": "std",
         "sound": "off"
       }
+    },
+    "mcp_connection": {
+      "name": "higgsfield",
+      "url": "https://mcp.higgsfield.ai/mcp",
+      "transport": "streamable_http",
+      "oauth_verified_at": "2026-11-23T00:18:03.837093+00:00",
+      "scope": "local Codex user configuration"
     }
   },
   "voices": {

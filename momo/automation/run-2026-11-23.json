@@ -2,15 +2,15 @@
   "run_date": "2026-11-23",
   "timezone": "Asia/Seoul",
   "scheduled_for": "2026-11-23T09:00:00+09:00",
-  "checked_at": "2026-11-23T00:05:05Z",
+  "checked_at": "2026-11-23T00:18:03.837093+00:00",
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
-  "status": "blocked_preflight",
-  "stage": "subscription_tool_availability",
-  "reason": "No callable Higgsfield subscription MCP tools in this provider session, no Higgsfield entry in codex mcp list, and the discoverable Higgsfield plugin is not installed/connected.",
+  "status": "pending_production_connection_restored",
+  "stage": "preflight_connection_verified",
+  "reason": null,
   "provider_error": null,
   "provider_error_note": "No Higgsfield call was possible, so no HTTP/authentication/quota error is asserted.",
-  "stop_basis": "momo/docs/PRODUCTION.md section 0, Higgsfield MCP check: missing mcp__higgsfield__* tools requires stop.",
+  "stop_basis": null,
   "authorizations": {
     "content_review": "agent",
     "suno_download": {
@@ -97,19 +97,32 @@
       }
     },
     "higgsfield": {
-      "status": "unavailable_in_current_session",
-      "callable_tools": 0,
-      "local_mcp_registered": false,
+      "status": "connected_verified",
+      "callable_tools": 217,
+      "local_mcp_registered": true,
       "plugin_discovery": {
         "display_name": "Higgsfield",
         "installed": false,
         "installation_policy": "AVAILABLE"
       },
-      "balance_verified": false,
-      "unit_costs_verified": false,
+      "balance_verified": true,
+      "unit_costs_verified": true,
       "recheck_at": "2026-11-23T00:10:24Z",
       "previous_working_route": "Codex Apps Higgsfield subscription integration, verified from 2026-11-16 tool-call history",
-      "local_mcp_absence_is_not_sufficient_evidence": true
+      "local_mcp_absence_is_not_sufficient_evidence": true,
+      "tool_verification_scope": "fresh local Codex app-server MCP runtime; no model turn started",
+      "registered_name": "higgsfield",
+      "url": "https://mcp.higgsfield.ai/mcp",
+      "auth_status": "o_auth",
+      "credits": 1177.37,
+      "plan": "plus",
+      "verified_unit_costs": {
+        "image_2k": 2,
+        "video_720p_5s": 7.5,
+        "video_1080p_5s": 10
+      },
+      "connection_verified_at": "2026-11-23T00:18:03.837093+00:00",
+      "active_chat_tool_catalog_refresh_verified": false
     },
     "estimate_credits": {
       "status": "not_run",
@@ -134,7 +147,7 @@
     "extra_payment": 0
   },
   "resumption": {
-    "step": "Install/connect the official Higgsfield app with the existing subscription account in the environment used by the scheduled agent; verify callable balance and price-estimate tools in that same provider session before generation.",
+    "step": "Connection restored. Before paid production, recheck run/episode/channel state and pass episode credit estimate; use the registered official higgsfield MCP connection. No duplicate run was launched.",
     "must_recheck_duplicate": true,
     "content_inspection_request_required": false,
     "older_run_1": "Still waiting at Hooks need review. Do not start or resume duplicate content production.",
@@ -144,6 +157,13 @@
   "evidence": {
     "scheduler": "scheduler-audit-2026-11-23.json",
     "youtube": "youtube-audit-2026-11-23.json",
-    "higgsfield_recheck": "higgsfield-recheck-2026-11-23.json"
+    "higgsfield_recheck": "higgsfield-recheck-2026-11-23.json",
+    "higgsfield_connection": "higgsfield-connection-2026-11-23.json"
+  },
+  "initial_preflight_blocker": {
+    "status": "blocked_preflight",
+    "reason": "No callable Higgsfield subscription MCP tools in this provider session, no Higgsfield entry in codex mcp list, and the discoverable Higgsfield plugin is not installed/connected.",
+    "checked_at": "2026-11-23T00:05:05Z",
+    "resolved_at": "2026-11-23T00:18:03.837093+00:00"
   }
 }
