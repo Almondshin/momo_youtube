@@ -5,8 +5,8 @@
   "checked_at": "2026-11-23T00:18:03.837093+00:00",
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
-  "status": "pending_production_connection_restored",
-  "stage": "preflight_connection_verified",
+  "status": "in_progress",
+  "stage": "music_generation",
   "reason": null,
   "provider_error": null,
   "provider_error_note": "No Higgsfield call was possible, so no HTTP/authentication/quota error is asserted.",
@@ -130,19 +130,27 @@
     }
   },
   "production": {
-    "episodes": [],
-    "ko": "not_started",
-    "en": "not_started",
-    "shared_visual_set": "not_started",
-    "generation_job_ids": [],
+    "episodes": [
+      "ep23",
+      "ep24"
+    ],
+    "ko": "audio_qa",
+    "en": "audio_qa",
+    "shared_visual_set": "ep23 owns shared sources",
+    "generation_job_ids": [
+      "655e0109-51d4-498e-9ad3-890631bbeaf6",
+      "09daa235-40ad-4051-8ebf-47ad245a0970",
+      "e2187533-f64e-4e5a-82e6-43f742efd9ea",
+      "631e1a7d-fad0-499e-82c7-7fe55632bac7"
+    ],
     "downloads": [],
     "uploads": [],
     "existing_assets_preserved": true,
     "existing_video_visibility_changes": []
   },
   "costs": {
-    "suno_generation_credits": 0,
-    "suno_download_credits": 0,
+    "suno_generation_credits": 20,
+    "suno_download_credits": 2,
     "higgsfield_credits": 0,
     "extra_payment": 0
   },
@@ -165,5 +173,11 @@
     "reason": "No callable Higgsfield subscription MCP tools in this provider session, no Higgsfield entry in codex mcp list, and the discoverable Higgsfield plugin is not installed/connected.",
     "checked_at": "2026-11-23T00:05:05Z",
     "resolved_at": "2026-11-23T00:18:03.837093+00:00"
-  }
+  },
+  "topic": {
+    "ko": "나비와 꽃",
+    "en": "Butterfly and Flower"
+  },
+  "resumed_at": "2026-11-23T00:27:00.725Z",
+  "execution_mode": "Existing scheduled run resumed after interactive OAuth repair; not an unattended run"
 }

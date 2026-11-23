@@ -1,0 +1,820 @@
+{
+  "lines": [
+    {
+      "text": "Butterfly, flutter by,",
+      "section": "Hook",
+      "words": [
+        [
+          "Butterfly,",
+          2.04,
+          3.08
+        ],
+        [
+          "flutter",
+          3.48,
+          4.52
+        ],
+        [
+          "by,",
+          4.52,
+          5.02
+        ]
+      ],
+      "heard": 3,
+      "of": 3
+    },
+    {
+      "text": "Little wings up in the sky!",
+      "section": "Hook",
+      "words": [
+        [
+          "Little",
+          5.42,
+          6.46
+        ],
+        [
+          "wings",
+          6.46,
+          6.98
+        ],
+        [
+          "up",
+          6.98,
+          7.74
+        ],
+        [
+          "in",
+          7.74,
+          8.08
+        ],
+        [
+          "the",
+          8.08,
+          8.42
+        ],
+        [
+          "sky!",
+          8.42,
+          8.94
+        ]
+      ],
+      "heard": 6,
+      "of": 6
+    },
+    {
+      "text": "Hello, flower, pink and bright,",
+      "section": "Hook",
+      "words": [
+        [
+          "Hello,",
+          9.6,
+          10.3
+        ],
+        [
+          "flower,",
+          10.3,
+          11.1
+        ],
+        [
+          "pink",
+          11.1,
+          11.78
+        ],
+        [
+          "and",
+          11.78,
+          12.32
+        ],
+        [
+          "bright,",
+          12.32,
+          12.78
+        ]
+      ],
+      "heard": 5,
+      "of": 5
+    },
+    {
+      "text": "Sway with me from left to right!",
+      "section": "Hook",
+      "words": [
+        [
+          "Sway",
+          13.4,
+          13.88
+        ],
+        [
+          "with",
+          13.88,
+          14.24
+        ],
+        [
+          "me",
+          14.24,
+          14.6
+        ],
+        [
+          "from",
+          14.6,
+          15.1
+        ],
+        [
+          "left",
+          15.1,
+          15.66
+        ],
+        [
+          "to",
+          15.66,
+          16.02
+        ],
+        [
+          "right!",
+          16.02,
+          16.58
+        ]
+      ],
+      "heard": 7,
+      "of": 7
+    },
+    {
+      "text": "Butterfly goes round and round,",
+      "section": "Verse 1",
+      "words": [
+        [
+          "Butterfly",
+          17.7,
+          18.74
+        ],
+        [
+          "goes",
+          18.74,
+          19.24
+        ],
+        [
+          "round",
+          19.24,
+          19.64
+        ],
+        [
+          "and",
+          19.64,
+          19.98
+        ],
+        [
+          "round,",
+          19.98,
+          20.5
+        ]
+      ],
+      "heard": 5,
+      "of": 5
+    },
+    {
+      "text": "Little feet stay on the ground.",
+      "section": "Verse 1",
+      "words": [
+        [
+          "Little",
+          21.32,
+          22.12
+        ],
+        [
+          "feet",
+          22.12,
+          22.46
+        ],
+        [
+          "stay",
+          22.46,
+          23.0
+        ],
+        [
+          "on",
+          23.0,
+          23.44
+        ],
+        [
+          "the",
+          23.44,
+          23.7
+        ],
+        [
+          "ground.",
+          23.7,
+          24.32
+        ]
+      ],
+      "heard": 6,
+      "of": 6
+    },
+    {
+      "text": "Open arms and flutter too,",
+      "section": "Verse 1",
+      "words": [
+        [
+          "Open",
+          25.12,
+          25.98
+        ],
+        [
+          "arms",
+          25.98,
+          26.5
+        ],
+        [
+          "and",
+          26.5,
+          26.84
+        ],
+        [
+          "flutter",
+          26.84,
+          27.46
+        ],
+        [
+          "too,",
+          27.46,
+          27.96
+        ]
+      ],
+      "heard": 5,
+      "of": 5
+    },
+    {
+      "text": "Butterfly, I dance with you!",
+      "section": "Verse 1",
+      "words": [
+        [
+          "Butterfly,",
+          28.86,
+          29.9
+        ],
+        [
+          "I",
+          29.98,
+          30.28
+        ],
+        [
+          "dance",
+          30.28,
+          30.98
+        ],
+        [
+          "with",
+          30.98,
+          31.34
+        ],
+        [
+          "you!",
+          31.34,
+          31.96
+        ]
+      ],
+      "heard": 5,
+      "of": 5
+    },
+    {
+      "text": "Butterfly, flutter by,",
+      "section": "Hook",
+      "words": [
+        [
+          "Butterfly,",
+          31.96,
+          33.58
+        ],
+        [
+          "flutter",
+          34.16,
+          35.0
+        ],
+        [
+          "by,",
+          35.0,
+          35.4
+        ]
+      ],
+      "heard": 3,
+      "of": 3
+    },
+    {
+      "text": "Little wings up in the sky!",
+      "section": "Hook",
+      "words": [
+        [
+          "Little",
+          35.4,
+          36.86
+        ],
+        [
+          "wings",
+          36.86,
+          37.42
+        ],
+        [
+          "up",
+          37.42,
+          38.06
+        ],
+        [
+          "in",
+          38.06,
+          38.56
+        ],
+        [
+          "the",
+          38.56,
+          38.88
+        ],
+        [
+          "sky!",
+          38.88,
+          39.44
+        ]
+      ],
+      "heard": 6,
+      "of": 6
+    },
+    {
+      "text": "Hello, flower, pink and bright,",
+      "section": "Hook",
+      "words": [
+        [
+          "Hello,",
+          39.44,
+          40.72
+        ],
+        [
+          "flower,",
+          40.72,
+          41.6
+        ],
+        [
+          "pink",
+          42.04,
+          42.26
+        ],
+        [
+          "and",
+          42.26,
+          42.76
+        ],
+        [
+          "bright,",
+          42.76,
+          43.22
+        ]
+      ],
+      "heard": 5,
+      "of": 5
+    },
+    {
+      "text": "Sway with me from left to right!",
+      "section": "Hook",
+      "words": [
+        [
+          "Sway",
+          43.22,
+          44.32
+        ],
+        [
+          "with",
+          44.32,
+          44.72
+        ],
+        [
+          "me",
+          44.72,
+          45.04
+        ],
+        [
+          "from",
+          45.04,
+          45.56
+        ],
+        [
+          "left",
+          45.56,
+          46.12
+        ],
+        [
+          "to",
+          46.12,
+          46.5
+        ],
+        [
+          "right!",
+          46.5,
+          47.06
+        ]
+      ],
+      "heard": 7,
+      "of": 7
+    },
+    {
+      "text": "Flower gives a little sway,",
+      "section": "Verse 2",
+      "words": [
+        [
+          "Flower",
+          47.06,
+          48.76
+        ],
+        [
+          "gives",
+          48.76,
+          49.3
+        ],
+        [
+          "a",
+          49.3,
+          49.64
+        ],
+        [
+          "little",
+          49.64,
+          50.18
+        ],
+        [
+          "sway,",
+          50.18,
+          50.8
+        ]
+      ],
+      "heard": 5,
+      "of": 5
+    },
+    {
+      "text": "I can smell and smile today.",
+      "section": "Verse 2",
+      "words": [
+        [
+          "I",
+          50.8,
+          51.96
+        ],
+        [
+          "can",
+          51.96,
+          52.4
+        ],
+        [
+          "smell",
+          52.4,
+          52.92
+        ],
+        [
+          "and",
+          52.92,
+          53.24
+        ],
+        [
+          "smile",
+          53.24,
+          53.84
+        ],
+        [
+          "today.",
+          53.84,
+          54.54
+        ]
+      ],
+      "heard": 6,
+      "of": 6
+    },
+    {
+      "text": "One step here and one step there,",
+      "section": "Verse 2",
+      "words": [
+        [
+          "One",
+          54.54,
+          55.7
+        ],
+        [
+          "step",
+          55.7,
+          56.04
+        ],
+        [
+          "here",
+          56.04,
+          56.62
+        ],
+        [
+          "and",
+          56.84,
+          57.38
+        ],
+        [
+          "one",
+          57.38,
+          57.6
+        ],
+        [
+          "step",
+          57.6,
+          57.94
+        ],
+        [
+          "there,",
+          57.94,
+          58.52
+        ]
+      ],
+      "heard": 7,
+      "of": 7
+    },
+    {
+      "text": "Happy flower, gentle air!",
+      "section": "Verse 2",
+      "words": [
+        [
+          "Happy",
+          58.52,
+          59.74
+        ],
+        [
+          "flower,",
+          59.74,
+          60.58
+        ],
+        [
+          "gentle",
+          61.08,
+          61.6
+        ],
+        [
+          "air!",
+          61.6,
+          62.56
+        ]
+      ],
+      "heard": 4,
+      "of": 4
+    },
+    {
+      "text": "Flutter, butterfly, flutter slow,",
+      "section": "Short sung action",
+      "words": [
+        [
+          "Flutter,",
+          64.42,
+          65.46
+        ],
+        [
+          "butterfly,",
+          65.74,
+          66.4
+        ],
+        [
+          "flutter",
+          66.98,
+          67.34
+        ],
+        [
+          "slow,",
+          67.34,
+          67.92
+        ]
+      ],
+      "heard": 4,
+      "of": 4
+    },
+    {
+      "text": "Flower, flower, say hello!",
+      "section": "Short sung action",
+      "words": [
+        [
+          "Flower,",
+          67.92,
+          69.2
+        ],
+        [
+          "flower,",
+          69.6,
+          70.06
+        ],
+        [
+          "say",
+          70.52,
+          71.0
+        ],
+        [
+          "hello!",
+          71.0,
+          71.68
+        ]
+      ],
+      "heard": 4,
+      "of": 4
+    },
+    {
+      "text": "Butterfly, flutter by,",
+      "section": "Final hook",
+      "words": [
+        [
+          "Butterfly,",
+          71.68,
+          73.54
+        ],
+        [
+          "flutter",
+          74.34,
+          74.88
+        ],
+        [
+          "by,",
+          74.88,
+          75.36
+        ]
+      ],
+      "heard": 3,
+      "of": 3
+    },
+    {
+      "text": "Little wings up in the sky!",
+      "section": "Final hook",
+      "words": [
+        [
+          "Little",
+          75.36,
+          76.82
+        ],
+        [
+          "wings",
+          76.82,
+          77.36
+        ],
+        [
+          "up",
+          77.36,
+          77.98
+        ],
+        [
+          "in",
+          77.98,
+          78.46
+        ],
+        [
+          "the",
+          78.46,
+          78.8
+        ],
+        [
+          "sky!",
+          78.8,
+          79.42
+        ]
+      ],
+      "heard": 6,
+      "of": 6
+    },
+    {
+      "text": "Hello, flower, pink and bright,",
+      "section": "Final hook",
+      "words": [
+        [
+          "Hello,",
+          79.42,
+          80.64
+        ],
+        [
+          "flower,",
+          80.64,
+          81.52
+        ],
+        [
+          "pink",
+          81.96,
+          82.2
+        ],
+        [
+          "and",
+          82.2,
+          82.68
+        ],
+        [
+          "bright,",
+          82.68,
+          83.2
+        ]
+      ],
+      "heard": 5,
+      "of": 5
+    },
+    {
+      "text": "Sway with me from left to right!",
+      "section": "Final hook",
+      "words": [
+        [
+          "Sway",
+          83.2,
+          84.24
+        ],
+        [
+          "with",
+          84.24,
+          84.64
+        ],
+        [
+          "me",
+          84.64,
+          84.98
+        ],
+        [
+          "from",
+          84.98,
+          85.48
+        ],
+        [
+          "left",
+          85.48,
+          86.0
+        ],
+        [
+          "to",
+          86.0,
+          86.44
+        ],
+        [
+          "right!",
+          86.44,
+          86.92
+        ]
+      ],
+      "heard": 7,
+      "of": 7
+    },
+    {
+      "text": "Bye, butterfly! Bye, flower!",
+      "section": "Short complete ending",
+      "words": [
+        [
+          "Bye,",
+          86.92,
+          87.56
+        ],
+        [
+          "butterfly!",
+          87.56,
+          88.34
+        ],
+        [
+          "Bye,",
+          90.06,
+          90.26
+        ],
+        [
+          "flower!",
+          90.26,
+          91.0
+        ]
+      ],
+      "heard": 4,
+      "of": 4
+    },
+    {
+      "text": "We will play another hour!",
+      "section": "Short complete ending",
+      "words": [
+        [
+          "We",
+          91.72,
+          91.86
+        ],
+        [
+          "will",
+          91.86,
+          92.18
+        ],
+        [
+          "play",
+          92.18,
+          92.72
+        ],
+        [
+          "another",
+          92.72,
+          93.86
+        ],
+        [
+          "hour!",
+          93.86,
+          94.78
+        ]
+      ],
+      "heard": 5,
+      "of": 5
+    }
+  ],
+  "report": {
+    "lyric_words": 123,
+    "heard_words": 125,
+    "matched": 1.0,
+    "lines_missing": [],
+    "lines_interpolated": [],
+    "unmatched_heard_runs": [],
+    "parser_metadata_excluded": true
+  }
+}

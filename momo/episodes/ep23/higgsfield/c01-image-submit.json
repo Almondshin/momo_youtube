@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "id": "b06ce4e9-3095-45f2-8048-f42d83daa1e1",
+      "type": "image",
+      "status": "pending",
+      "model": "nano_banana_pro",
+      "params": {
+        "prompt": "Momo, a chubby round baby bunny, soft cream-white fur, oversized floppy ears with pale pink inner ears, huge sparkly dark eyes, small pink nose, rosy cheeks, mint-green overalls with two small yellow buttons on the shoulder straps, big expressive smile. both long floppy ears always hang down beside the cheeks, the ears never stand upright. Match the approved reference character exactly; two yellow strap buttons, closed smile. Momo stands at the left of a cream garden path, watching one friendly golden-yellow butterfly hover at paw height on the right. The butterfly has two symmetrical rounded pairs of wings with small coral tips and a tiny brown body. No flowers in this shot. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects. bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks",
+        "aspect_ratio": "16:9",
+        "reference_images": [
+          "6eb095ec-8b17-46a3-97da-f5ecaa7a6bd4"
+        ],
+        "resolution": "2k"
+      }
+    }
+  ],
+  "references_read": [
+    {
+      "ref": "quote:RnpRdacN-GJbqI04pfWgUg",
+      "chars": 1526,
+      "sha256": "9013a487c27fe911679d9ace7d28f4ee72254f6482328be3f22a4eb4dba68cab"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "cover_image_large_url": "https://cdn2.suno.ai/image_large_e2187533-f64e-4e5a-82e6-43f742efd9ea.jpeg",
+    "cover_image_url": "https://cdn2.suno.ai/image_e2187533-f64e-4e5a-82e6-43f742efd9ea.jpeg",
+    "created_at": "2026-11-23T00:27:26Z",
+    "error": null,
+    "id": "e2187533-f64e-4e5a-82e6-43f742efd9ea",
+    "metadata": {
+      "controls": {
+        "style_influence": 0.75,
+        "weirdness": 0.22
+      },
+      "description": null,
+      "duration": 95.96,
+      "lyrics": "[Hook - singing immediately]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Verse 1]\nButterfly goes round and round,\nLittle feet stay on the ground.\nOpen arms and flutter too,\nButterfly, I dance with you!\n\n[Hook]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Verse 2]\nFlower gives a little sway,\nI can smell and smile today.\nOne step here and one step there,\nHappy flower, gentle air!\n\n[Short sung action]\nFlutter, butterfly, flutter slow,\nFlower, flower, say hello!\n\n[Final hook]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Short complete ending]\nBye, butterfly! Bye, flower!\nWe will play another hour!",
+      "model": "v6",
+      "negative_style": "steel pan calypso, four-on-floor synth dance, march, polka, adult jazz crooning, male lead, choir, breathy low voice, belting, rapid speech, rap, EDM, instrumental break, long ending",
+      "style": "Upbeat preschool bossa nova garden singalong, 124 BPM in easy straight 4/4. Clear light smiling female solo voice, sweet high register without baby affectation, precise unhurried English. Nylon-string guitar playing soft syncopated bossa rhythm, feather-light brushed kit and shaker, round bass, tiny flute answers only between vocal phrases. An independent original melody with a held high note on butterfly, a descending flutter-by answer, and a gently climbing flower phrase; eight-bar refrain with memorable breathing spaces, contrast to conversational stepwise verses. Friendly acoustic sway and a danceable child-sized pulse, ages two to four. Sing within one second, no spoken intro, no instrumental bridge or solo, turnarounds at most one bar, concise fully sung ending. About 85 to 100 seconds; full lyrics, no rush. Original composition.",
+      "type": "generate"
+    },
+    "song_url": "https://suno.com/song/e2187533-f64e-4e5a-82e6-43f742efd9ea",
+    "status": "complete",
+    "title": "Butterfly, Flutter By!"
+  },
+  {
+    "cover_image_large_url": "https://cdn2.suno.ai/image_large_631e1a7d-fad0-499e-82c7-7fe55632bac7.jpeg",
+    "cover_image_url": "https://cdn2.suno.ai/image_631e1a7d-fad0-499e-82c7-7fe55632bac7.jpeg",
+    "created_at": "2026-11-23T00:27:26Z",
+    "error": null,
+    "id": "631e1a7d-fad0-499e-82c7-7fe55632bac7",
+    "metadata": {
+      "controls": {
+        "style_influence": 0.75,
+        "weirdness": 0.22
+      },
+      "description": null,
+      "duration": 94.76,
+      "lyrics": "[Hook - singing immediately]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Verse 1]\nButterfly goes round and round,\nLittle feet stay on the ground.\nOpen arms and flutter too,\nButterfly, I dance with you!\n\n[Hook]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Verse 2]\nFlower gives a little sway,\nI can smell and smile today.\nOne step here and one step there,\nHappy flower, gentle air!\n\n[Short sung action]\nFlutter, butterfly, flutter slow,\nFlower, flower, say hello!\n\n[Final hook]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Short complete ending]\nBye, butterfly! Bye, flower!\nWe will play another hour!",
+      "model": "v6",
+      "negative_style": "steel pan calypso, four-on-floor synth dance, march, polka, adult jazz crooning, male lead, choir, breathy low voice, belting, rapid speech, rap, EDM, instrumental break, long ending",
+      "style": "Upbeat preschool bossa nova garden singalong, 124 BPM in easy straight 4/4. Clear light smiling female solo voice, sweet high register without baby affectation, precise unhurried English. Nylon-string guitar playing soft syncopated bossa rhythm, feather-light brushed kit and shaker, round bass, tiny flute answers only between vocal phrases. An independent original melody with a held high note on butterfly, a descending flutter-by answer, and a gently climbing flower phrase; eight-bar refrain with memorable breathing spaces, contrast to conversational stepwise verses. Friendly acoustic sway and a danceable child-sized pulse, ages two to four. Sing within one second, no spoken intro, no instrumental bridge or solo, turnarounds at most one bar, concise fully sung ending. About 85 to 100 seconds; full lyrics, no rush. Original composition.",
+      "type": "generate"
+    },
+    "song_url": "https://suno.com/song/631e1a7d-fad0-499e-82c7-7fe55632bac7",
+    "status": "complete",
+    "title": "Butterfly, Flutter By!"
+  }
+]

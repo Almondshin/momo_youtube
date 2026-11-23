@@ -1,0 +1,17 @@
+{
+  "title": "Butterfly, Flutter By!",
+  "lyrics": "[Hook - singing immediately]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Verse 1]\nButterfly goes round and round,\nLittle feet stay on the ground.\nOpen arms and flutter too,\nButterfly, I dance with you!\n\n[Hook]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Verse 2]\nFlower gives a little sway,\nI can smell and smile today.\nOne step here and one step there,\nHappy flower, gentle air!\n\n[Short sung action]\nFlutter, butterfly, flutter slow,\nFlower, flower, say hello!\n\n[Final hook]\nButterfly, flutter by,\nLittle wings up in the sky!\nHello, flower, pink and bright,\nSway with me from left to right!\n\n[Short complete ending]\nBye, butterfly! Bye, flower!\nWe will play another hour!",
+  "style": "Upbeat preschool bossa nova garden singalong, 124 BPM in easy straight 4/4. Clear light smiling female solo voice, sweet high register without baby affectation, precise unhurried English. Nylon-string guitar playing soft syncopated bossa rhythm, feather-light brushed kit and shaker, round bass, tiny flute answers only between vocal phrases. An independent original melody with a held high note on butterfly, a descending flutter-by answer, and a gently climbing flower phrase; eight-bar refrain with memorable breathing spaces, contrast to conversational stepwise verses. Friendly acoustic sway and a danceable child-sized pulse, ages two to four. Sing within one second, no spoken intro, no instrumental bridge or solo, turnarounds at most one bar, concise fully sung ending. About 85 to 100 seconds; full lyrics, no rush. Original composition.",
+  "negative_style": "steel pan calypso, four-on-floor synth dance, march, polka, adult jazz crooning, male lead, choir, breathy low voice, belting, rapid speech, rap, EDM, instrumental break, long ending",
+  "duration": 95,
+  "model": "v6",
+  "max_mode": false,
+  "vocal_gender": "female",
+  "controls": {
+    "style_influence": 0.75,
+    "weirdness": 0.22
+  },
+  "duration_guidance": true,
+  "duration_strict": false,
+  "idempotency_key": "momo-20261123-ep24-butterfly-flower-original-v1"
+}

@@ -30,7 +30,7 @@
   "last_checked": "2026-11-23",
   "today": {
     "date": "2026-11-23",
-    "status": "pending_production_connection_restored",
+    "status": "in_progress",
     "run_record": "run-2026-11-23.json",
     "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
     "uploaded_episodes": [],
@@ -39,11 +39,15 @@
     "avoid_duplicate_today": true,
     "resume_existing_record": true,
     "costs": {
-      "suno_generation_credits": 0,
-      "suno_download_credits": 0,
-      "higgsfield_credits": 0,
+      "suno_generation_credits": 20,
+      "suno_download_credits": 2,
+      "higgsfield_credits": 2,
       "extra_payment": 0
-    }
+    },
+    "episodes": [
+      "ep23",
+      "ep24"
+    ]
   },
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "enabled": true,

@@ -1,0 +1,89 @@
+{
+  "shared_with": "ep24",
+  "sources": [
+    {
+      "id": "c01",
+      "role": "butterfly_welcome",
+      "subject": "butterfly",
+      "momo": true,
+      "image_prompt": "Momo stands at the left of a cream garden path, watching one friendly golden-yellow butterfly hover at paw height on the right. The butterfly has two symmetrical rounded pairs of wings with small coral tips and a tiny brown body. No flowers in this shot. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo takes two gentle bouncing steps toward the butterfly and lifts one paw to greet it. Butterfly traces a small smooth arc. Ears bounce naturally, mouth stays in a closed smile. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c02",
+      "role": "butterfly_close",
+      "subject": "butterfly",
+      "momo": false,
+      "image_prompt": "One single golden-yellow butterfly with coral-tipped rounded wings hovers over a soft mint-green meadow. Its whole wings and small body are clearly visible, no flower or character. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "The butterfly flutters its symmetrical wings and floats in one graceful shallow figure-eight, remaining centered and entirely visible. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c03",
+      "role": "flower_welcome",
+      "subject": "flower",
+      "momo": true,
+      "image_prompt": "Momo stands beside one large simple coral-pink daisy with a warm yellow center, a sturdy green stem and exactly two green leaves growing from a small soil patch. The flower is at Momo waist height. No butterfly. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo steps sideways twice to the beat and warmly presents the flower with an open paw. The flower gently sways in the breeze; feet lift and land naturally. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c04",
+      "role": "flower_close",
+      "subject": "flower",
+      "momo": false,
+      "image_prompt": "Close view of one large coral-pink daisy with a round warm yellow center, simple thick petals, a green stem and two leaves. Plain mint meadow and soft sky behind it. No characters or insects. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "The flower makes a smooth gentle left-right sway with a subtle bob, keeping its petals and stem shape consistent. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c05",
+      "role": "butterfly_dance",
+      "subject": "butterfly",
+      "momo": true,
+      "image_prompt": "Full-body Momo on the cream garden path, paws spread low like wings, one golden-yellow coral-tipped butterfly floating to the right. Clear space around all limbs and ears. No flowers. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo performs a clear child-friendly wing dance: two side steps while both paws lift and lower together, a tiny soft hop, then settles. The butterfly flutters nearby. No talking or singing. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c06",
+      "role": "flower_smell",
+      "subject": "flower",
+      "momo": true,
+      "image_prompt": "Momo crouches comfortably to the left of the single coral-pink daisy, both eyes visible in three-quarter view. Two yellow overall buttons visible, nose near but not touching the flower. No butterfly. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo gently leans forward to smell the flower, then straightens with a happy closed smile and a small delighted body bounce. The flower nods softly. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c07",
+      "role": "butterfly_follow",
+      "subject": "butterfly",
+      "momo": true,
+      "image_prompt": "Momo full-body in three-quarter view at the left, on a broad cream garden path, one golden-yellow butterfly ahead on the right at eye height. No flowers. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo walks three small springy steps following the butterfly along the path, with natural alternating feet and arm swing. Butterfly drifts ahead. Gentle slow lateral camera follow, both remain fully visible. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c08",
+      "role": "flower_dance",
+      "subject": "flower",
+      "momo": true,
+      "image_prompt": "Full-body Momo beside the single coral-pink daisy, arms relaxed, generous empty space around the character and flower. No butterfly. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo dances a clear two-step side to side and makes one little quarter turn back toward the flower, ears and overalls following the body naturally. Flower sways to the beat. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c09",
+      "role": "butterfly_goodbye",
+      "subject": "butterfly",
+      "momo": true,
+      "image_prompt": "Momo stands on the cream garden path with one paw raised at shoulder height, one golden-yellow butterfly hovering above the other low open paw. No flowers. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "The butterfly rises in a gentle arc while Momo follows it with the eyes and waves one paw twice, then takes one soft happy step. Keep mouth closed and both buttons visible. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    },
+    {
+      "id": "c10",
+      "role": "flower_goodbye",
+      "subject": "flower",
+      "momo": true,
+      "image_prompt": "Momo next to one coral-pink daisy, facing the viewer in a friendly full-body pose, both feet and long floppy ears visible. No butterfly. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo makes two small cheerful bounces on both feet then waves to the viewer, while the daisy sways softly. Natural ear follow-through, no lip movement. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts."
+    }
+  ],
+  "base_credits": 95,
+  "pair_cap": 150,
+  "new_character_sheet": false,
+  "reuse_review": "Recent lip-sync farm clips unsuitable; reuse approved character sheet, create fresh garden actions. Existing subject-free playroom shots conflict with this setting."
+}

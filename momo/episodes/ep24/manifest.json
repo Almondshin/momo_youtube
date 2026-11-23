@@ -1,0 +1,1222 @@
+{
+  "schema": 1,
+  "ep": "ep24",
+  "status": "planning",
+  "topic": {
+    "en": "Butterfly and Flower",
+    "ko": "나비와 꽃"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo"
+  ],
+  "title": {
+    "en": "Butterfly, Flutter By! 🦋🌸 | Garden Dance Song for Toddlers | Momo Time"
+  },
+  "thumbnail": {
+    "cut": "c01",
+    "text": {
+      "en": "BUTTERFLY & FLOWER"
+    },
+    "text_pos": "bottom"
+  },
+  "bgm": null,
+  "upload": {},
+  "credits": {
+    "estimate": 0,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0,
+    "cap": 150
+  },
+  "notes": {
+    "approvals": [],
+    "v_over_reason": "Agent plan under standing authorization: ten unique five-second sources, recut and reused to song phrases. No lip sync or freeze extension. Pair-wide cap 150; ep23 owns all shared generation spend.",
+    "standing_authorization": "2026-11-16",
+    "run_date": "2026-11-23",
+    "paired_episode": "ep23",
+    "composition": {
+      "mode": "independent audio_create, no source audio",
+      "comparison_targets": [
+        "ep20",
+        "ep21",
+        "ep22",
+        "ep23"
+      ]
+    },
+    "reviewer": "agent; no new individual user approval",
+    "visual_plan": {
+      "shared_visual_owner": "ep23",
+      "unique_sources": 10,
+      "planned_base_credits": 95,
+      "pair_cap": 150
+    },
+    "next_time": [],
+    "selected_song": {
+      "id": "e2187533-f64e-4e5a-82e6-43f742efd9ea",
+      "url": "https://suno.com/song/e2187533-f64e-4e5a-82e6-43f742efd9ea",
+      "take": 1,
+      "duration": 95.96,
+      "selected_by": "agent",
+      "generation_credits_used": 10,
+      "download_credits_used": 1,
+      "standing_authorization": "2026-11-16",
+      "no_reference_audio": true,
+      "review_status": "selected_by_agent",
+      "ending_check": "Both independent stem ASR and official alignment recognize complete last words; vocal ends before backing decay. Provider listen cutoff claim contradicted by waveform."
+    }
+  },
+  "cuts": [],
+  "languages": [
+    "en"
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:c3d948b53060",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep24/ep24_song_c3d948b5.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing_authorization 2026-11-16: clear female singing, two clear keywords, contrasting bossa hook; complete ending verified with independent stem ASR, official alignment and signal decay.",
+      "sha1": "c3d948b5306062d9cb6f8a35491e9a2693b1ba54",
+      "tool": "suno",
+      "source_file": "ep24_original.wav",
+      "note": "Official Suno independent original; no reference audio. Ending verified by stem ASR, official alignment and waveform.",
+      "duration": 95.96,
+      "start": 1.8,
+      "history": [
+        {
+          "job_id": "local:c3d948b53060",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep24/ep24_song_c3d948b5.flac",
+          "status": "approved",
+          "reason": "Agent review under standing_authorization 2026-11-16: clear female singing, two clear keywords, contrasting bossa hook; complete ending verified with independent stem ASR, official alignment and signal decay.",
+          "at": "2026-11-23T00:34Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 126.1742,
+        "beat0": 0.4238,
+        "downbeat0": 1.3748,
+        "confidence": 1.347,
+        "downbeats": [
+          1.3748,
+          3.2769,
+          5.1791,
+          7.0812,
+          8.9833,
+          10.8855,
+          12.7876,
+          14.6897,
+          16.5919,
+          18.494,
+          20.3961,
+          22.2983,
+          24.2004,
+          26.1025,
+          28.0046,
+          29.9068,
+          31.8089,
+          33.711,
+          35.6132,
+          37.5153,
+          39.4174,
+          41.3196,
+          43.2217,
+          45.1238,
+          47.026,
+          48.9281,
+          50.8302,
+          52.7324,
+          54.6345,
+          56.5366,
+          58.4388,
+          60.3409,
+          62.243,
+          64.1452,
+          66.0473,
+          67.9494,
+          69.8516,
+          71.7537,
+          73.6558,
+          75.558,
+          77.4601,
+          79.3622,
+          81.2643,
+          83.1665,
+          85.0686,
+          86.9707,
+          88.8729,
+          90.775,
+          92.6771,
+          94.5793
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            -16.8,
+            1.7,
+            7.7,
+            10.8,
+            -1.6,
+            -18.0
+          ],
+          "trend_ms": -1.8
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "bebc4713568eb804054461c0bca59dfcbd2eca22",
+        "moved": 90,
+        "loose": 80,
+        "flags": [
+          {
+            "kind": "phase",
+            "line": 7,
+            "t": 28.901,
+            "section": "Verse 1",
+            "beat": 1.88,
+            "median": 2.74,
+            "beats": -0.85,
+            "text": "Butterfly, I dance with you!"
+          },
+          {
+            "kind": "phase",
+            "line": 9,
+            "t": 35.132,
+            "section": "Hook",
+            "beat": 2.99,
+            "median": 1.79,
+            "beats": 1.2,
+            "text": "Little wings up in the sky!"
+          },
+          {
+            "kind": "phase",
+            "line": 12,
+            "t": 47.201,
+            "section": "Verse 2",
+            "beat": 0.37,
+            "median": 1.04,
+            "beats": -0.68,
+            "text": "Flower gives a little sway,"
+          },
+          {
+            "kind": "phase",
+            "line": 13,
+            "t": 51.684,
+            "section": "Verse 2",
+            "beat": 1.8,
+            "median": 1.04,
+            "beats": 0.75,
+            "text": "I can smell and smile today."
+          },
+          {
+            "kind": "phase",
+            "line": 14,
+            "t": 54.428,
+            "section": "Verse 2",
+            "beat": 3.57,
+            "median": 1.04,
+            "beats": -1.48,
+            "text": "One step here and one step there,"
+          },
+          {
+            "kind": "lag",
+            "line": 14,
+            "t": 55.505,
+            "word": "step",
+            "t0": 55.7,
+            "ms": 195,
+            "text": "One step here and one step there,"
+          },
+          {
+            "kind": "phase",
+            "line": 15,
+            "t": 59.257,
+            "section": "Verse 2",
+            "beat": 1.72,
+            "median": 1.04,
+            "beats": 0.68,
+            "text": "Happy flower, gentle air!"
+          },
+          {
+            "kind": "phase",
+            "line": 18,
+            "t": 71.509,
+            "section": "Final hook",
+            "beat": 3.49,
+            "median": 2.3,
+            "beats": 1.18,
+            "text": "Butterfly, flutter by,"
+          },
+          {
+            "kind": "phase",
+            "line": 19,
+            "t": 75.061,
+            "section": "Final hook",
+            "beat": 2.95,
+            "median": 2.3,
+            "beats": 0.65,
+            "text": "Little wings up in the sky!"
+          },
+          {
+            "kind": "lag",
+            "line": 19,
+            "t": 76.408,
+            "word": "wings",
+            "t0": 76.732,
+            "ms": 324,
+            "text": "Little wings up in the sky!"
+          },
+          {
+            "kind": "phase",
+            "line": 20,
+            "t": 80.149,
+            "section": "Final hook",
+            "beat": 1.65,
+            "median": 2.3,
+            "beats": -0.65,
+            "text": "Hello, flower, pink and bright,"
+          },
+          {
+            "kind": "phase",
+            "line": 21,
+            "t": 83.871,
+            "section": "Final hook",
+            "beat": 1.48,
+            "median": 2.3,
+            "beats": -0.82,
+            "text": "Sway with me from left to right!"
+          }
+        ]
+      },
+      "lyrics_sha1": "c3d948b5306062d9cb6f8a35491e9a2693b1ba54",
+      "end": 95.96
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:bebc4713568e",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep24/ep24_song_vocals_bebc4713.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing_authorization 2026-11-16: clear female singing, two clear keywords, contrasting bossa hook; complete ending verified with independent stem ASR, official alignment and signal decay.",
+      "sha1": "bebc4713568eb804054461c0bca59dfcbd2eca22",
+      "of": "c3d948b5306062d9cb6f8a35491e9a2693b1ba54",
+      "history": [
+        {
+          "job_id": "local:bebc4713568e",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep24/ep24_song_vocals_bebc4713.flac",
+          "status": "approved",
+          "reason": "Agent review under standing_authorization 2026-11-16: clear female singing, two clear keywords, contrasting bossa hook; complete ending verified with independent stem ASR, official alignment and signal decay.",
+          "at": "2026-11-23T00:34Z",
+          "credits": 0
+        }
+      ]
+    },
+    "bpm": 126.1742,
+    "beats_per_bar": 4,
+    "caption_mode": "keywords",
+    "history": [
+      {
+        "track": {
+          "status": "pending",
+          "tool": "suno"
+        },
+        "vocals": {
+          "status": "pending"
+        },
+        "replaced_at": "2026-11-23T00:34Z"
+      }
+    ],
+    "lyrics": [
+      {
+        "text": "Butterfly, flutter by,",
+        "section": "Hook",
+        "words": [
+          [
+            "Butterfly,",
+            2.261,
+            3.701,
+            2.04
+          ],
+          [
+            "flutter",
+            3.893,
+            4.681,
+            3.48
+          ],
+          [
+            "by,",
+            4.681,
+            5.1,
+            4.52
+          ]
+        ]
+      },
+      {
+        "text": "Little wings up in the sky!",
+        "section": "Hook",
+        "words": [
+          [
+            "Little",
+            6.018,
+            6.352,
+            5.42
+          ],
+          [
+            "wings",
+            6.352,
+            6.872,
+            6.46
+          ],
+          [
+            "up",
+            7.28,
+            7.754,
+            6.98
+          ],
+          [
+            "in",
+            7.754,
+            8.094,
+            7.74
+          ],
+          [
+            "the",
+            8.253,
+            8.462,
+            8.08
+          ],
+          [
+            "sky!",
+            8.462,
+            9.181,
+            8.42
+          ]
+        ]
+      },
+      {
+        "text": "Hello, flower, pink and bright,",
+        "section": "Hook",
+        "words": [
+          [
+            "Hello,",
+            9.824,
+            10.443,
+            9.6
+          ],
+          [
+            "flower,",
+            10.443,
+            11.101,
+            10.3
+          ],
+          [
+            "pink",
+            11.101,
+            11.781,
+            11.1
+          ],
+          [
+            "and",
+            12.019,
+            12.508,
+            11.78
+          ],
+          [
+            "bright,",
+            12.508,
+            12.882,
+            12.32
+          ]
+        ]
+      },
+      {
+        "text": "Sway with me from left to right!",
+        "section": "Hook",
+        "words": [
+          [
+            "Sway",
+            13.501,
+            13.981,
+            13.4
+          ],
+          [
+            "with",
+            14.015,
+            14.375,
+            13.88
+          ],
+          [
+            "me",
+            14.404,
+            14.764,
+            14.24
+          ],
+          [
+            "from",
+            14.853,
+            15.353,
+            14.6
+          ],
+          [
+            "left",
+            15.392,
+            15.796,
+            15.1
+          ],
+          [
+            "to",
+            15.796,
+            16.156,
+            15.66
+          ],
+          [
+            "right!",
+            16.34,
+            16.594,
+            16.02
+          ]
+        ]
+      },
+      {
+        "text": "Butterfly goes round and round,",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Butterfly",
+            17.946,
+            18.959,
+            17.7
+          ],
+          [
+            "goes",
+            18.959,
+            19.427,
+            18.74
+          ],
+          [
+            "round",
+            19.427,
+            19.697,
+            19.24
+          ],
+          [
+            "and",
+            19.697,
+            20.037,
+            19.64
+          ],
+          [
+            "round,",
+            20.146,
+            20.774,
+            19.98
+          ]
+        ]
+      },
+      {
+        "text": "Little feet stay on the ground.",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Little",
+            21.647,
+            22.166,
+            21.32
+          ],
+          [
+            "feet",
+            22.166,
+            22.506,
+            22.12
+          ],
+          [
+            "stay",
+            22.605,
+            23.145,
+            22.46
+          ],
+          [
+            "on",
+            23.249,
+            23.543,
+            23.0
+          ],
+          [
+            "the",
+            23.543,
+            23.803,
+            23.44
+          ],
+          [
+            "ground.",
+            23.917,
+            24.671,
+            23.7
+          ]
+        ]
+      },
+      {
+        "text": "Open arms and flutter too,",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Open",
+            25.574,
+            26.087,
+            25.12
+          ],
+          [
+            "arms",
+            26.087,
+            26.576,
+            25.98
+          ],
+          [
+            "and",
+            26.576,
+            26.866,
+            26.5
+          ],
+          [
+            "flutter",
+            26.866,
+            27.486,
+            26.84
+          ],
+          [
+            "too,",
+            27.689,
+            28.447,
+            27.46
+          ]
+        ]
+      },
+      {
+        "text": "Butterfly, I dance with you!",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Butterfly,",
+            28.901,
+            30.021,
+            28.86
+          ],
+          [
+            "I",
+            30.118,
+            30.418,
+            29.98
+          ],
+          [
+            "dance",
+            30.587,
+            31.106,
+            30.28
+          ],
+          [
+            "with",
+            31.106,
+            31.466,
+            30.98
+          ],
+          [
+            "you!",
+            31.545,
+            32.124,
+            31.34
+          ]
+        ]
+      },
+      {
+        "text": "Butterfly, flutter by,",
+        "section": "Hook",
+        "words": [
+          [
+            "Butterfly,",
+            32.692,
+            34.339,
+            31.96
+          ],
+          [
+            "flutter",
+            34.339,
+            34.907,
+            34.16
+          ],
+          [
+            "by,",
+            34.907,
+            35.042,
+            35.0
+          ]
+        ]
+      },
+      {
+        "text": "Little wings up in the sky!",
+        "section": "Hook",
+        "words": [
+          [
+            "Little",
+            35.132,
+            36.592,
+            35.4
+          ],
+          [
+            "wings",
+            36.813,
+            37.373,
+            36.86
+          ],
+          [
+            "up",
+            37.736,
+            38.225,
+            37.42
+          ],
+          [
+            "in",
+            38.225,
+            38.704,
+            38.06
+          ],
+          [
+            "the",
+            38.704,
+            38.908,
+            38.56
+          ],
+          [
+            "sky!",
+            38.908,
+            39.612,
+            38.88
+          ]
+        ]
+      },
+      {
+        "text": "Hello, flower, pink and bright,",
+        "section": "Hook",
+        "words": [
+          [
+            "Hello,",
+            40.28,
+            40.874,
+            39.44
+          ],
+          [
+            "flower,",
+            40.874,
+            42.006,
+            40.72
+          ],
+          [
+            "pink",
+            42.006,
+            42.226,
+            42.04
+          ],
+          [
+            "and",
+            42.495,
+            42.969,
+            42.26
+          ],
+          [
+            "bright,",
+            42.969,
+            43.258,
+            42.76
+          ]
+        ]
+      },
+      {
+        "text": "Sway with me from left to right!",
+        "section": "Hook",
+        "words": [
+          [
+            "Sway",
+            43.927,
+            44.466,
+            43.22
+          ],
+          [
+            "with",
+            44.466,
+            44.845,
+            44.32
+          ],
+          [
+            "me",
+            44.845,
+            45.165,
+            44.72
+          ],
+          [
+            "from",
+            45.354,
+            45.837,
+            45.04
+          ],
+          [
+            "left",
+            45.837,
+            46.257,
+            45.56
+          ],
+          [
+            "to",
+            46.257,
+            46.637,
+            46.12
+          ],
+          [
+            "right!",
+            46.712,
+            47.1,
+            46.5
+          ]
+        ]
+      },
+      {
+        "text": "Flower gives a little sway,",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Flower",
+            47.201,
+            48.901,
+            47.06
+          ],
+          [
+            "gives",
+            48.94,
+            49.434,
+            48.76
+          ],
+          [
+            "a",
+            49.434,
+            49.679,
+            49.3
+          ],
+          [
+            "little",
+            49.679,
+            50.219,
+            49.64
+          ],
+          [
+            "sway,",
+            50.327,
+            51.23,
+            50.18
+          ]
+        ]
+      },
+      {
+        "text": "I can smell and smile today.",
+        "section": "Verse 2",
+        "words": [
+          [
+            "I",
+            51.684,
+            52.213,
+            50.8
+          ],
+          [
+            "can",
+            52.213,
+            52.432,
+            51.96
+          ],
+          [
+            "smell",
+            52.432,
+            52.952,
+            52.4
+          ],
+          [
+            "and",
+            52.981,
+            53.161,
+            52.92
+          ],
+          [
+            "smile",
+            53.161,
+            53.761,
+            53.24
+          ],
+          [
+            "today.",
+            54.089,
+            54.408,
+            53.84
+          ]
+        ]
+      },
+      {
+        "text": "One step here and one step there,",
+        "section": "Verse 2",
+        "words": [
+          [
+            "One",
+            54.428,
+            55.588,
+            54.54
+          ],
+          [
+            "step",
+            55.7,
+            56.04,
+            55.7
+          ],
+          [
+            "here",
+            56.334,
+            57.134,
+            56.04
+          ],
+          [
+            "and",
+            57.232,
+            57.476,
+            56.84
+          ],
+          [
+            "one",
+            57.476,
+            57.596,
+            57.38
+          ],
+          [
+            "step",
+            57.596,
+            57.936,
+            57.6
+          ],
+          [
+            "there,",
+            58.169,
+            58.569,
+            57.94
+          ]
+        ]
+      },
+      {
+        "text": "Happy flower, gentle air!",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Happy",
+            59.257,
+            59.876,
+            58.52
+          ],
+          [
+            "flower,",
+            59.876,
+            61.148,
+            59.74
+          ],
+          [
+            "gentle",
+            61.148,
+            61.612,
+            61.08
+          ],
+          [
+            "air!",
+            61.612,
+            61.861,
+            61.6
+          ]
+        ]
+      },
+      {
+        "text": "Flutter, butterfly, flutter slow,",
+        "section": "Short sung action",
+        "words": [
+          [
+            "Flutter,",
+            64.884,
+            65.812,
+            64.42
+          ],
+          [
+            "butterfly,",
+            65.812,
+            67.009,
+            65.74
+          ],
+          [
+            "flutter",
+            67.009,
+            67.369,
+            66.98
+          ],
+          [
+            "slow,",
+            67.428,
+            67.972,
+            67.34
+          ]
+        ]
+      },
+      {
+        "text": "Flower, flower, say hello!",
+        "section": "Short sung action",
+        "words": [
+          [
+            "Flower,",
+            68.681,
+            69.454,
+            67.92
+          ],
+          [
+            "flower,",
+            69.454,
+            70.374,
+            69.6
+          ],
+          [
+            "say",
+            70.486,
+            70.966,
+            70.52
+          ],
+          [
+            "hello!",
+            71.185,
+            71.509,
+            71.0
+          ]
+        ]
+      },
+      {
+        "text": "Butterfly, flutter by,",
+        "section": "Final hook",
+        "words": [
+          [
+            "Butterfly,",
+            71.509,
+            73.509,
+            71.68
+          ],
+          [
+            "flutter",
+            74.238,
+            74.778,
+            74.34
+          ],
+          [
+            "by,",
+            74.842,
+            74.991,
+            74.88
+          ]
+        ]
+      },
+      {
+        "text": "Little wings up in the sky!",
+        "section": "Final hook",
+        "words": [
+          [
+            "Little",
+            75.061,
+            76.521,
+            75.36
+          ],
+          [
+            "wings",
+            76.732,
+            77.272,
+            76.82
+          ],
+          [
+            "up",
+            77.695,
+            78.154,
+            77.36
+          ],
+          [
+            "in",
+            78.154,
+            78.634,
+            77.98
+          ],
+          [
+            "the",
+            78.658,
+            78.842,
+            78.46
+          ],
+          [
+            "sky!",
+            78.842,
+            79.521,
+            78.8
+          ]
+        ]
+      },
+      {
+        "text": "Hello, flower, pink and bright,",
+        "section": "Final hook",
+        "words": [
+          [
+            "Hello,",
+            80.149,
+            80.788,
+            79.42
+          ],
+          [
+            "flower,",
+            80.788,
+            81.93,
+            80.64
+          ],
+          [
+            "pink",
+            81.93,
+            82.17,
+            81.96
+          ],
+          [
+            "and",
+            82.399,
+            82.878,
+            82.2
+          ],
+          [
+            "bright,",
+            82.878,
+            83.242,
+            82.68
+          ]
+        ]
+      },
+      {
+        "text": "Sway with me from left to right!",
+        "section": "Final hook",
+        "words": [
+          [
+            "Sway",
+            83.871,
+            84.375,
+            83.2
+          ],
+          [
+            "with",
+            84.375,
+            84.734,
+            84.24
+          ],
+          [
+            "me",
+            84.734,
+            85.074,
+            84.64
+          ],
+          [
+            "from",
+            85.088,
+            85.588,
+            84.98
+          ],
+          [
+            "left",
+            86.061,
+            86.181,
+            85.48
+          ],
+          [
+            "to",
+            86.181,
+            86.281,
+            86.0
+          ],
+          [
+            "right!",
+            86.281,
+            86.939,
+            86.44
+          ]
+        ]
+      },
+      {
+        "text": "Bye, butterfly! Bye, flower!",
+        "section": "Short complete ending",
+        "words": [
+          [
+            "Bye,",
+            87.179,
+            87.819,
+            86.92
+          ],
+          [
+            "butterfly!",
+            87.897,
+            89.897,
+            87.56
+          ],
+          [
+            "Bye,",
+            89.992,
+            90.192,
+            90.06
+          ],
+          [
+            "flower!",
+            90.336,
+            91.891,
+            90.26
+          ]
+        ]
+      },
+      {
+        "text": "We will play another hour!",
+        "section": "Short complete ending",
+        "words": [
+          [
+            "We",
+            91.891,
+            92.031,
+            91.72
+          ],
+          [
+            "will",
+            92.031,
+            92.351,
+            91.86
+          ],
+          [
+            "play",
+            92.437,
+            92.891,
+            92.18
+          ],
+          [
+            "another",
+            92.891,
+            93.848,
+            92.72
+          ],
+          [
+            "hour!",
+            93.848,
+            94.143,
+            93.86
+          ]
+        ]
+      }
+    ],
+    "refs_urls": {}
+  }
+}

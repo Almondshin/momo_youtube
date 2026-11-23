@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"id\":\"4090ffe1-7896-4317-810e-80b9dc644747\",\"audio_id\":\"ba4e8175-ccf7-4461-8e35-091b0a36112d\",\"status\":\"complete\",\"created_at\":\"2026-11-23T00:28:04Z\",\"answer\":\"The lead has a very youthful, childlike female-vocal impression, delivered brightly and playfully. The groove is a steady, bouncy four-on-the-floor pop feel at 114 BPM. The hook uses short, symmetrical two-bar call-and-response phrases, with a bouncing, mostly stepwise contour and little scalar dips; it is clearly sung and highly repetitive, so it sounds easy to repeat. Energy is high and buoyant.\\n```json\\n{\\\"bpm\\\":114,\\\"voice\\\":\\\"youthful, childlike female-sounding lead; bright and playful\\\",\\\"groove\\\":\\\"steady, bouncy four-on-the-floor pop\\\",\\\"hook_contour\\\":\\\"bouncing stepwise motion with gentle scalar dips\\\",\\\"phrase_form\\\":\\\"short, symmetrical two-bar call-and-response phrases; repetitive\\\",\\\"energy\\\":\\\"high, buoyant, lively\\\"}\\n```\"}"
+    }
+  ]
+}

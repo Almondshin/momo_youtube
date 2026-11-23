@@ -1,0 +1,14 @@
+{
+  "audio_id": "e2187533-f64e-4e5a-82e6-43f742efd9ea",
+  "preflight": {
+    "status": "requires_credit",
+    "format": "wav",
+    "credits_remaining": 9,
+    "message": "Downloading this song uses one of the user's suno.com download credits. Ask them first, then call again with confirm: true."
+  },
+  "normal_download_credits": 1,
+  "standing_authorization": "2026-11-16",
+  "user_individual_approval": false,
+  "selected_by": "agent",
+  "reason": "Strong clear target words and fewer reported gaps; final phrase requires local vocal/ASR verification."
+}
