@@ -1,0 +1,145 @@
+{
+  "run_date": "2026-11-23",
+  "timezone": "Asia/Seoul",
+  "scheduled_for": "2026-11-23T09:00:00+09:00",
+  "checked_at": "2026-11-23T00:05:05Z",
+  "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
+  "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
+  "status": "blocked_preflight",
+  "stage": "subscription_tool_availability",
+  "reason": "No callable Higgsfield subscription MCP tools in this provider session, no Higgsfield entry in codex mcp list, and the discoverable Higgsfield plugin is not installed/connected.",
+  "provider_error": null,
+  "provider_error_note": "No Higgsfield call was possible, so no HTTP/authentication/quota error is asserted.",
+  "stop_basis": "momo/docs/PRODUCTION.md section 0, Higgsfield MCP check: missing mcp__higgsfield__* tools requires stop.",
+  "authorizations": {
+    "content_review": "agent",
+    "suno_download": {
+      "standing_authorization": "2026-11-16",
+      "normal_credits_per_song": 1,
+      "download_preflight_performed": false,
+      "credit_consumed": false
+    },
+    "new_user_approval": false
+  },
+  "duplicate_check": {
+    "last_local_episode": "ep22",
+    "last_local_production_date": "2026-11-16",
+    "channel_recent_videos_checked": 20,
+    "latest_api_video_id": "x-f9kYeFEJI",
+    "latest_api_published_at": "2026-11-16T07:29:14Z",
+    "no_new_videos_for_current_run": true,
+    "current_session_is_existing_run_2": true,
+    "new_run_started": false
+  },
+  "prechecks": {
+    "git_pull": "Already up to date.",
+    "doctor": {
+      "errors": 0,
+      "warnings": 1,
+      "warning": "yt-dlp 2026.08.19 is 96 days old; no yt-dlp-dependent operation performed.",
+      "approved_library_clips_present": 5,
+      "approved_library_audio_present": 2
+    },
+    "suno": {
+      "status": "connected",
+      "profile": {
+        "avatar_url": "https://cdn2.suno.ai/image_e484c3ad-c386-4803-aae5-28380735fc36.jpeg",
+        "display_name": "Null구리",
+        "handle": "nullguri",
+        "profile_url": "https://suno.com/@nullguri"
+      },
+      "usage": {
+        "allowed_models": [
+          "v6-mini",
+          "v6",
+          "v6-wild"
+        ],
+        "features": [
+          "generate.simple",
+          "generate.cover",
+          "generate.extend",
+          "audio.upload",
+          "audio.download",
+          "controls.advanced",
+          "speech",
+          "audio.midi",
+          "voices",
+          "generate.stems",
+          "generate.mashup",
+          "generate.custom"
+        ],
+        "metered_features": {},
+        "suno_account": {
+          "cancel_on": null,
+          "credits_remaining": 2230,
+          "download_credits_remaining": 9,
+          "monthly_limit": 2500,
+          "monthly_usage": 270,
+          "plan": {
+            "name": "Pro Plan",
+            "period": "month"
+          },
+          "renews_on": "2026-11-30T07:22:58Z",
+          "visuals_credits_remaining": 225
+        }
+      }
+    },
+    "youtube": {
+      "en": {
+        "status": "connected",
+        "channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA",
+        "title": "Momo Time"
+      },
+      "ko": {
+        "status": "connected",
+        "channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA",
+        "title": "Momo Time"
+      }
+    },
+    "higgsfield": {
+      "status": "unavailable_in_current_session",
+      "callable_tools": 0,
+      "local_mcp_registered": false,
+      "plugin_discovery": {
+        "display_name": "Higgsfield",
+        "installed": false,
+        "installation_policy": "AVAILABLE"
+      },
+      "balance_verified": false,
+      "unit_costs_verified": false
+    },
+    "estimate_credits": {
+      "status": "not_run",
+      "reason": "Stopped before episode planning or paid generation; no new episode allocated."
+    }
+  },
+  "production": {
+    "episodes": [],
+    "ko": "not_started",
+    "en": "not_started",
+    "shared_visual_set": "not_started",
+    "generation_job_ids": [],
+    "downloads": [],
+    "uploads": [],
+    "existing_assets_preserved": true,
+    "existing_video_visibility_changes": []
+  },
+  "costs": {
+    "suno_generation_credits": 0,
+    "suno_download_credits": 0,
+    "higgsfield_credits": 0,
+    "extra_payment": 0
+  },
+  "resumption": {
+    "step": "Expose and authenticate Higgsfield subscription tools in the provider session; rerun non-charging prechecks and recheck this date's run record before generating.",
+    "must_recheck_duplicate": true,
+    "content_inspection_request_required": false,
+    "older_run_1": "Still waiting at Hooks need review. Do not start or resume duplicate content production.",
+    "scheduler_hook_fix_verified": false
+  },
+  "fully_unattended_production_verified": false,
+  "evidence": {
+    "scheduler": "scheduler-audit-2026-11-23.json",
+    "youtube": "youtube-audit-2026-11-23.json"
+  }
+}

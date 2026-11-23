@@ -8,7 +8,7 @@
   },
   "shared_visual_sets_per_run": 1,
   "expected_runtime": "current Mac awake and Orca running",
-  "activation_status": "enabled_with_precheck_first_scheduled_run_unverified",
+  "activation_status": "enabled_but_current_run_blocked_preflight_full_run_unverified",
   "authorizations": [
     "User requested fully automated Monday/Friday production at 09:00 KST, completion-based upload, one channel with language playlists.",
     "2026-11-16: User explicitly delegates all content selection and review; upload without asking for inspection.",
@@ -22,11 +22,50 @@
     "2026-11-16: YouTube reauthentication completed and existing Momo Time channel matched for en/ko.",
     "2026-11-16: ep15 uploaded as public, made for kids, thumbnail and Korean playlist attached.",
     "2026-11-16: Official Suno usage and Higgsfield subscription balance readable in the current session.",
-    "2026-11-16: Existing Orca automation enabled, Monday/Friday 09:00 Asia/Seoul, with YouTube credential precheck."
+    "2026-11-16: Existing Orca automation enabled, Monday/Friday 09:00 Asia/Seoul, with YouTube credential precheck.",
+    "2026-11-23: Official Suno account/usage and YouTube en/ko channel checks passed. API verified 20 recent uploads; latest upload remains ep22 on 2026-11-16. No new generation or upload performed."
   ],
-  "blocking_checks": [],
-  "last_checked": "2026-11-16",
+  "blocking_checks": [
+    "Higgsfield subscription tools are unavailable in the current provider session; no local Higgsfield MCP registration and discoverable plugin installed=false."
+  ],
+  "last_checked": "2026-11-23",
   "today": {
+    "date": "2026-11-23",
+    "status": "blocked_preflight",
+    "run_record": "run-2026-11-23.json",
+    "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
+    "uploaded_episodes": [],
+    "new_pair": [],
+    "new_pair_complete": false,
+    "avoid_duplicate_today": true,
+    "resume_existing_record": true,
+    "costs": {
+      "suno_generation_credits": 0,
+      "suno_download_credits": 0,
+      "higgsfield_credits": 0,
+      "extra_payment": 0
+    }
+  },
+  "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
+  "enabled": true,
+  "scheduler": "Orca local_host_service",
+  "next_scheduled_slot_if_enabled": "2026-11-27T09:00:00+09:00",
+  "review_policy": "agent_only",
+  "upload_privacy": "public",
+  "suno_download_policy": {
+    "preflight": true,
+    "normal_one_credit_download": "standing_authorized_2026-11-16",
+    "extra_purchase": false
+  },
+  "next_run_at": "2026-11-27T09:00:00+09:00",
+  "precheck": "/Users/dream/dev/momo_youtube/.venv/bin/python -c 'import sys; sys.path.insert(0,\"/Users/dream/dev/momo_youtube/momo\"); from youtube_check import main; sys.exit(max(main([\"--root\",\"/Users/dream/dev/momo_youtube/momo\",\"--lang\",lang]) for lang in (\"en\",\"ko\")))'",
+  "verification_pending": [
+    "No complete unattended scheduled production/upload has been verified.",
+    "2026-11-20 and 2026-11-23 scheduler launch records show hooksReviewBlocked. The current session is run 2 and is now executing; no hook trust change or permanent scheduler fix was performed by this session.",
+    "Higgsfield subscription tools are unavailable in the current session; balance and prices were not verified.",
+    "YouTube en/ko refresh and channel checks passed on 2026-11-23; future OAuth renewal is not guaranteed by this check."
+  ],
+  "last_completed_production": {
     "date": "2026-11-16",
     "uploaded_episodes": [
       "ep20",
@@ -80,22 +119,6 @@
     ],
     "preserved_user_selected_episode": "ep20"
   },
-  "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
-  "enabled": true,
-  "scheduler": "Orca local_host_service",
-  "next_scheduled_slot_if_enabled": "2026-11-20T09:00:00+09:00",
-  "review_policy": "agent_only",
-  "upload_privacy": "public",
-  "suno_download_policy": {
-    "preflight": true,
-    "normal_one_credit_download": "standing_authorized_2026-11-16",
-    "extra_purchase": false
-  },
-  "next_run_at": "2026-11-20T09:00:00+09:00",
-  "precheck": "/Users/dream/dev/momo_youtube/.venv/bin/python -c 'import sys; sys.path.insert(0,\"/Users/dream/dev/momo_youtube/momo\"); from youtube_check import main; sys.exit(max(main([\"--root\",\"/Users/dream/dev/momo_youtube/momo\",\"--lang\",lang]) for lang in (\"en\",\"ko\")))'",
-  "verification_pending": [
-    "First full scheduled production run in its separate provider session has not yet occurred.",
-    "Higgsfield subscription tools must be checked in each scheduled run; current-session balance check is not proof of scheduled-session access.",
-    "Long-term YouTube OAuth renewal after this reauthentication is not yet proven; precheck stops a run if credentials fail."
-  ]
+  "last_run_record": "run-2026-11-23.json",
+  "scheduler_audit": "scheduler-audit-2026-11-23.json"
 }

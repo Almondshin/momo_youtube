@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-11-23T00:05:05Z",
+  "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
+  "enabled": true,
+  "timezone": "Asia/Seoul",
+  "cron": "0 9 * * 1,5",
+  "next_run_at": "2026-11-27T00:00:00.000Z",
+  "runs": [
+    {
+      "run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
+      "run_number": 2,
+      "scheduled_for": "2026-11-23T00:00:00.000Z",
+      "status": "dispatch_failed",
+      "error_code": "hooksReviewBlocked",
+      "error": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+      "launch_screen": "Hooks need review\n  4 hooks are new or changed.\n  Hooks can run outside the sandbox after you trust them.\n› 1. Review hooks\n  2. Trust all and continue\n  3. Continue without trusting (hooks won't run)\n  enter confirm · esc skip",
+      "precheck_exit_code": 0
+    },
+    {
+      "run_id": "f16e63d7-c256-4185-a500-c49542c52fad",
+      "run_number": 1,
+      "scheduled_for": "2026-11-20T00:00:00.000Z",
+      "status": "dispatch_failed",
+      "error_code": "hooksReviewBlocked",
+      "error": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+      "launch_screen": "Hooks need review\n  4 hooks are new or changed.\n  Hooks can run outside the sandbox after you trust them.\n› 1. Review hooks\n  2. Trust all and continue\n  3. Continue without trusting (hooks won't run)\n  enter confirm · esc skip",
+      "precheck_exit_code": 0
+    }
+  ],
+  "current_session": {
+    "terminal_handle": "term_1ece4f59-5b76-4783-8e0b-36b0e559c380",
+    "same_as_run_number": 2,
+    "observed_state": "working",
+    "note": "The caller's ORCA_TERMINAL_HANDLE matches run 2, and its live terminal shows this audit. The scheduler still retains dispatch_failed at launch. No duplicate run was started. Hook trust was not changed by this audit."
+  },
+  "older_run": {
+    "run_number": 1,
+    "observed_state": "Hooks need review",
+    "note": "Left untouched; not generating."
+  },
+  "fully_unattended_production_verified": false
+}
