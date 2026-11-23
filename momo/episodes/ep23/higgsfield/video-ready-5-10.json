@@ -1,0 +1,56 @@
+{
+  "jobs": [
+    {
+      "index": 5,
+      "job_id": "65ce9fab-bf89-4396-8c1d-f6b28cbc1abc",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 6,
+      "job_id": "21d43890-9f53-4cb4-b2e4-f188ff1b3f0f",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 7,
+      "job_id": "8fe73dd5-08a6-4f68-99f3-fb7d43aa4068",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 8,
+      "job_id": "02d9e6ad-9bac-4d61-83ac-f28f28e13348",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 9,
+      "job_id": "ee87454d-48b4-4551-8bd8-05b06b89bdaf",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 10,
+      "job_id": "725e47f5-4193-4230-a43d-b793b6dc832e",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "completed": 0,
+    "failed": 0,
+    "active": 6,
+    "errors": 0
+  },
+  "all_terminal": false,
+  "timed_out": true,
+  "poll_after_seconds": 10
+}

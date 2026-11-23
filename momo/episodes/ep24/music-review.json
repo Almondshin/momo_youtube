@@ -1,0 +1,27 @@
+{
+  "reviewer": "agent",
+  "standing_authorization": "2026-11-16",
+  "selected_song": {
+    "id": "e2187533-f64e-4e5a-82e6-43f742efd9ea",
+    "url": "https://suno.com/song/e2187533-f64e-4e5a-82e6-43f742efd9ea",
+    "take": 1,
+    "duration": 95.96,
+    "selected_by": "agent",
+    "generation_credits_used": 10,
+    "download_credits_used": 1,
+    "standing_authorization": "2026-11-16",
+    "no_reference_audio": true,
+    "review_status": "selected_by_agent",
+    "ending_check": "Both independent stem ASR and official alignment recognize complete last words; vocal ends before backing decay. Provider listen cutoff claim contradicted by waveform."
+  },
+  "independent_lyrics_check": {
+    "matched_fraction": 1.0,
+    "recognized_lyric_words": 123,
+    "total_lyric_words": 123,
+    "all_24_lyric_lines_present": true
+  },
+  "ending": "Official alignment and independent ASR both contain complete last word. Vocal energy decays before final backing tail. Provider cutoff answer is contradicted by timestamps and signal.",
+  "display": "Only two learning nouns shown; no lyric subtitles and no lip sync.",
+  "review_scope": "Provider whole-song listening plus local vocal ASR, timing and signal checks; not user approval.",
+  "instrumental_gaps_review": "No whole quiet bar can safely be removed: automatic dry-run rejects proposed English gap because vocal stem has active voice. Original phrasing retained."
+}

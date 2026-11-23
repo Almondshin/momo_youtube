@@ -25,11 +25,32 @@
     "text_pos": "bottom"
   },
   "bgm": null,
-  "upload": {},
+  "upload": {
+    "ko": {
+      "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+      "description": "나비 따라 팔랑팔랑, 꽃 옆에서 살랑살랑! 모모와 함께 정원에서 춤추고 노래해요.\n\n2~4세 아이가 짧은 후렴으로 배우는 두 단어: 나비 · 꽃\n• 나비의 날갯짓을 따라 팔을 움직여요.\n• 꽃을 보고 향기 맡는 동작을 해봐요.\n• 같은 단어를 노래로 반복하며 익혀요.\n\n#모모타임 #동요 #유아동요 #나비 #꽃 #아기노래 #율동동요 #한국어동요 #유아교육 #MomoTime",
+      "tags": [
+        "모모타임",
+        "동요",
+        "유아동요",
+        "나비 노래",
+        "꽃 노래",
+        "아기 노래",
+        "율동 동요",
+        "한국어 동요",
+        "2세 동요",
+        "3세 동요",
+        "유아교육",
+        "따라 부르기",
+        "Momo Time"
+      ],
+      "playlist_id": "PLHfQPAU3ZVb8"
+    }
+  },
   "credits": {
     "estimate": 106.0,
-    "spent": 52.0,
-    "generations": 15,
+    "spent": 97.0,
+    "generations": 21,
     "regenerations": 1,
     "cap": 150
   },
@@ -68,6 +89,13 @@
       "no_reference_audio": true,
       "review_status": "selected_by_agent",
       "ending_check": "Both independent stem ASR and official alignment recognize complete last words; vocal ends before backing decay. Provider listen cutoff claim contradicted by waveform."
+    },
+    "review_summary": {
+      "reviewer": "agent",
+      "standing_authorization": "2026-11-16",
+      "song": "Light clear female solo and distinct tuneful hook accepted. Local full-lyric match and official alignments confirm completion.",
+      "melody_comparison": "ep23/melody-comparison.json; new hooks differ from ep20/21/22 and each other. Correlations are diagnostic, not a quality score.",
+      "unattended_execution_verified": false
     }
   },
   "cuts": [
@@ -177,23 +205,23 @@
           "reason": "Agent visual review: one clear learning object, matching pastel garden, Momo identity and two buttons correct where present."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "25599ce4-e8b8-4228-9771-60c7d46c873c",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_25599ce4-e8b8-4228-9771-60c7d46c873c.mp4",
           "attempts": 1,
           "credits": 7.5,
           "history": [
             {
               "job_id": "25599ce4-e8b8-4228-9771-60c7d46c873c",
-              "url": null,
-              "status": "generated",
-              "reason": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_25599ce4-e8b8-4228-9771-60c7d46c873c.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync.",
               "at": "2026-11-23T00:40Z",
               "credits": 7.5,
               "start_image": "b3c50b3e-40c4-4b5b-8f1a-be4b7354b024"
             }
           ],
-          "reason": null
+          "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync."
         }
       }
     },
@@ -240,23 +268,23 @@
           "reason": "Agent visual review: one clear learning object, matching pastel garden, Momo identity and two buttons correct where present."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "c2d12abe-5988-4889-8e06-6d0c36d46fda",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_c2d12abe-5988-4889-8e06-6d0c36d46fda.mp4",
           "attempts": 1,
           "credits": 7.5,
           "history": [
             {
               "job_id": "c2d12abe-5988-4889-8e06-6d0c36d46fda",
-              "url": null,
-              "status": "generated",
-              "reason": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_c2d12abe-5988-4889-8e06-6d0c36d46fda.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync.",
               "at": "2026-11-23T00:40Z",
               "credits": 7.5,
               "start_image": "8e849daa-16c2-42e4-86ae-04a564b8e61d"
             }
           ],
-          "reason": null
+          "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync."
         }
       }
     },
@@ -311,23 +339,23 @@
           "reason": "Agent visual inspection: canonical bunny and simple coral flower or yellow butterfly consistent; anatomy and caption clearance pass."
         },
         "clip": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "2066bf4f-bac0-495b-9896-166c0799a25b",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_2066bf4f-bac0-495b-9896-166c0799a25b.mp4",
           "attempts": 1,
           "credits": 7.5,
           "history": [
             {
               "job_id": "2066bf4f-bac0-495b-9896-166c0799a25b",
-              "url": null,
-              "status": "generated",
-              "reason": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_2066bf4f-bac0-495b-9896-166c0799a25b.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync.",
               "at": "2026-11-23T00:40Z",
               "credits": 7.5,
               "start_image": "aeb7f3a6-34f2-49fd-85cd-6b424fdf6751"
             }
           ],
-          "reason": null
+          "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync."
         }
       }
     },
@@ -375,7 +403,23 @@
           "off_model_ok": true
         },
         "clip": {
-          "status": "pending"
+          "status": "generated",
+          "job_id": "65ce9fab-bf89-4396-8c1d-f6b28cbc1abc",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "65ce9fab-bf89-4396-8c1d-f6b28cbc1abc",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "277f0ed9-c7d4-4d9b-8870-7b26a801454d"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -422,7 +466,23 @@
           "reason": "Agent inspected image: canonical colors, face, two buttons, floppy ears and single object match."
         },
         "clip": {
-          "status": "pending"
+          "status": "generated",
+          "job_id": "21d43890-9f53-4cb4-b2e4-f188ff1b3f0f",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "21d43890-9f53-4cb4-b2e4-f188ff1b3f0f",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "42064543-adb4-440d-b717-47893308639a"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -469,7 +529,23 @@
           "reason": "Agent inspected image: canonical colors, face, two buttons, floppy ears and single object match."
         },
         "clip": {
-          "status": "pending"
+          "status": "generated",
+          "job_id": "8fe73dd5-08a6-4f68-99f3-fb7d43aa4068",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "8fe73dd5-08a6-4f68-99f3-fb7d43aa4068",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "c5cda62a-67bc-417f-a725-8eaf157590aa"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -498,25 +574,41 @@
       "notes": "flower_dance",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "2a299442-b899-42df-b3c0-2b4ad376943d",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_2a299442-b899-42df-b3c0-2b4ad376943d.png",
           "attempts": 1,
           "credits": 2.0,
           "history": [
             {
               "job_id": "2a299442-b899-42df-b3c0-2b4ad376943d",
-              "url": null,
-              "status": "generated",
-              "reason": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_2a299442-b899-42df-b3c0-2b4ad376943d.png",
+              "status": "approved",
+              "reason": "Agent visual review: consistent character, two strap buttons, single flower or butterfly, clear lower caption zone.",
               "at": "2026-11-23T00:39Z",
               "credits": 2.0
             }
           ],
-          "reason": null
+          "reason": "Agent visual review: consistent character, two strap buttons, single flower or butterfly, clear lower caption zone."
         },
         "clip": {
-          "status": "pending"
+          "status": "generated",
+          "job_id": "02d9e6ad-9bac-4d61-83ac-f28f28e13348",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "02d9e6ad-9bac-4d61-83ac-f28f28e13348",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "2a299442-b899-42df-b3c0-2b4ad376943d"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -545,25 +637,41 @@
       "notes": "butterfly_goodbye",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "eff1f1ef-d22a-4183-9324-5d735fa13635",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_eff1f1ef-d22a-4183-9324-5d735fa13635.png",
           "attempts": 1,
           "credits": 2.0,
           "history": [
             {
               "job_id": "eff1f1ef-d22a-4183-9324-5d735fa13635",
-              "url": null,
-              "status": "generated",
-              "reason": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_eff1f1ef-d22a-4183-9324-5d735fa13635.png",
+              "status": "approved",
+              "reason": "Agent visual review: consistent character, two strap buttons, single flower or butterfly, clear lower caption zone.",
               "at": "2026-11-23T00:39Z",
               "credits": 2.0
             }
           ],
-          "reason": null
+          "reason": "Agent visual review: consistent character, two strap buttons, single flower or butterfly, clear lower caption zone."
         },
         "clip": {
-          "status": "pending"
+          "status": "generated",
+          "job_id": "ee87454d-48b4-4551-8bd8-05b06b89bdaf",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "ee87454d-48b4-4551-8bd8-05b06b89bdaf",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "eff1f1ef-d22a-4183-9324-5d735fa13635"
+            }
+          ],
+          "reason": null
         }
       }
     },
@@ -592,25 +700,41 @@
       "notes": "flower_goodbye",
       "gen": {
         "image": {
-          "status": "generated",
+          "status": "approved",
           "job_id": "db3eaa5f-fe9e-4950-add5-08d4a1895ba6",
-          "url": null,
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_db3eaa5f-fe9e-4950-add5-08d4a1895ba6.png",
           "attempts": 1,
           "credits": 2.0,
           "history": [
             {
               "job_id": "db3eaa5f-fe9e-4950-add5-08d4a1895ba6",
-              "url": null,
-              "status": "generated",
-              "reason": null,
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_db3eaa5f-fe9e-4950-add5-08d4a1895ba6.png",
+              "status": "approved",
+              "reason": "Agent full-resolution review: canonical bunny, two yellow buttons, both ears and feet, matching coral flower; clean render.",
               "at": "2026-11-23T00:39Z",
               "credits": 2.0
             }
           ],
-          "reason": null
+          "reason": "Agent full-resolution review: canonical bunny, two yellow buttons, both ears and feet, matching coral flower; clean render."
         },
         "clip": {
-          "status": "pending"
+          "status": "generated",
+          "job_id": "725e47f5-4193-4230-a43d-b793b6dc832e",
+          "url": null,
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "725e47f5-4193-4230-a43d-b793b6dc832e",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "db3eaa5f-fe9e-4950-add5-08d4a1895ba6"
+            }
+          ],
+          "reason": null
         }
       }
     }

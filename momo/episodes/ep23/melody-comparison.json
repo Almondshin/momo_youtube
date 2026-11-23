@@ -3004,11 +3004,6 @@
       "time_normalized_contour_correlation": 0.082
     },
     {
-      "a": "ep23",
-      "b": "ep22",
-      "time_normalized_contour_correlation": 0.082
-    },
-    {
       "a": "ep24",
       "b": "ep20",
       "time_normalized_contour_correlation": -0.064
@@ -3022,11 +3017,6 @@
       "a": "ep24",
       "b": "ep22",
       "time_normalized_contour_correlation": 0.322
-    },
-    {
-      "a": "ep24",
-      "b": "ep23",
-      "time_normalized_contour_correlation": -0.057
     },
     {
       "a": "ep24",

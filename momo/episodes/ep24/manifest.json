@@ -25,7 +25,28 @@
     "text_pos": "bottom"
   },
   "bgm": null,
-  "upload": {},
+  "upload": {
+    "en": {
+      "title": "Butterfly, Flutter By! 🦋🌸 | Garden Dance Song for Toddlers | Momo Time",
+      "description": "Flutter like a butterfly and sway beside a flower! Sing and dance in the garden with Momo.\n\nTwo simple learning words for toddlers ages 2–4: BUTTERFLY and FLOWER.\n• Open your arms and follow the butterfly.\n• Smell a flower and smile.\n• Sing the short repeating chorus and move from side to side.\n\n#MomoTime #ToddlerSongs #ButterflySong #FlowerSong #NurseryRhymes #KidsSongs #SingAlong #ToddlerDance #PreschoolSongs #GardenSong",
+      "tags": [
+        "Momo Time",
+        "toddler songs",
+        "butterfly song",
+        "flower song",
+        "nursery rhymes",
+        "preschool songs",
+        "kids dance",
+        "garden song",
+        "sing along",
+        "songs for toddlers",
+        "learning words",
+        "baby songs",
+        "butterfly and flower"
+      ],
+      "playlist_id": "PLTOO0Q-QSj5I"
+    }
+  },
   "credits": {
     "estimate": 0,
     "spent": 0,
@@ -68,6 +89,13 @@
       "no_reference_audio": true,
       "review_status": "selected_by_agent",
       "ending_check": "Both independent stem ASR and official alignment recognize complete last words; vocal ends before backing decay. Provider listen cutoff claim contradicted by waveform."
+    },
+    "review_summary": {
+      "reviewer": "agent",
+      "standing_authorization": "2026-11-16",
+      "song": "Light clear female solo and distinct tuneful hook accepted. Local full-lyric match and official alignments confirm completion.",
+      "melody_comparison": "ep23/melody-comparison.json; new hooks differ from ep20/21/22 and each other. Correlations are diagnostic, not a quality score.",
+      "unattended_execution_verified": false
     }
   },
   "cuts": [],

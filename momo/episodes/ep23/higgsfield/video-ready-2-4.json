@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "index": 2,
+      "job_id": "25599ce4-e8b8-4228-9771-60c7d46c873c",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 3,
+      "job_id": "c2d12abe-5988-4889-8e06-6d0c36d46fda",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 4,
+      "job_id": "2066bf4f-bac0-495b-9896-166c0799a25b",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "completed": 0,
+    "failed": 0,
+    "active": 3,
+    "errors": 0
+  },
+  "all_terminal": false,
+  "poll_after_seconds": 10
+}

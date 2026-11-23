@@ -1,0 +1,82 @@
+[
+  {
+    "cut": "c01",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      },
+      {
+        "codec_type": "video",
+        "width": 1284,
+        "height": 716,
+        "r_frame_rate": "24/1"
+      }
+    ],
+    "format": {
+      "duration": "5.041667"
+    }
+  },
+  {
+    "cut": "c02",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      },
+      {
+        "codec_type": "video",
+        "width": 1284,
+        "height": 716,
+        "r_frame_rate": "24/1"
+      }
+    ],
+    "format": {
+      "duration": "5.041667"
+    }
+  },
+  {
+    "cut": "c03",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      },
+      {
+        "codec_type": "video",
+        "width": 1284,
+        "height": 716,
+        "r_frame_rate": "24/1"
+      }
+    ],
+    "format": {
+      "duration": "5.041667"
+    }
+  },
+  {
+    "cut": "c04",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      },
+      {
+        "codec_type": "video",
+        "width": 1284,
+        "height": 716,
+        "r_frame_rate": "24/1"
+      }
+    ],
+    "format": {
+      "duration": "5.041667"
+    }
+  }
+]

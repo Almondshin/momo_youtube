@@ -1,0 +1,180 @@
+{
+  "basis": "Official word onsets cross-checked against isolated vocals; keyword-only captions; source windows never exceed 5 seconds.",
+  "rows": [
+    {
+      "start_song": 4,
+      "end_song": 8.95,
+      "source_cut": "c01",
+      "scene": 1,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 8.95,
+      "end_song": 13.2,
+      "source_cut": "c03",
+      "scene": 1,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 13.2,
+      "end_song": 17.4,
+      "source_cut": "c05",
+      "scene": 1,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 17.4,
+      "end_song": 21.65,
+      "source_cut": "c08",
+      "scene": 1,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 21.65,
+      "end_song": 25.9,
+      "source_cut": "c02",
+      "scene": 2,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 25.9,
+      "end_song": 30.2,
+      "source_cut": "c07",
+      "scene": 2,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 30.2,
+      "end_song": 34.5,
+      "source_cut": "c05",
+      "scene": 2,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 34.5,
+      "end_song": 38.65,
+      "source_cut": "c01",
+      "scene": 2,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 38.65,
+      "end_song": 42.95,
+      "source_cut": "c07",
+      "scene": 3,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 42.95,
+      "end_song": 47.2,
+      "source_cut": "c03",
+      "scene": 3,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 47.2,
+      "end_song": 51.45,
+      "source_cut": "c05",
+      "scene": 3,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 51.45,
+      "end_song": 55.65,
+      "source_cut": "c04",
+      "scene": 3,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 55.65,
+      "end_song": 59.85,
+      "source_cut": "c03",
+      "scene": 4,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 59.85,
+      "end_song": 64.15,
+      "source_cut": "c06",
+      "scene": 4,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 64.15,
+      "end_song": 68.4,
+      "source_cut": "c08",
+      "scene": 4,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 68.4,
+      "end_song": 72.65,
+      "source_cut": "c04",
+      "scene": 4,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 72.65,
+      "end_song": 74.82,
+      "source_cut": "c02",
+      "scene": 4,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 74.82,
+      "end_song": 77.1,
+      "source_cut": "c08",
+      "scene": 4,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 77.1,
+      "end_song": 81.15,
+      "source_cut": "c05",
+      "scene": 5,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 81.15,
+      "end_song": 85.4,
+      "source_cut": "c03",
+      "scene": 5,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 85.4,
+      "end_song": 89.6,
+      "source_cut": "c07",
+      "scene": 5,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 89.6,
+      "end_song": 93.9,
+      "source_cut": "c08",
+      "scene": 5,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 93.9,
+      "end_song": 95.95,
+      "source_cut": "c09",
+      "scene": 5,
+      "keyword": "나비"
+    },
+    {
+      "start_song": 95.95,
+      "end_song": 98.2,
+      "source_cut": "c10",
+      "scene": 5,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 98.2,
+      "end_song": 103.16,
+      "source_cut": "c03",
+      "scene": 5,
+      "keyword": "꽃"
+    }
+  ]
+}

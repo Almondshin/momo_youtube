@@ -1,0 +1,187 @@
+{
+  "basis": "Official word onsets cross-checked against isolated vocals; keyword-only captions; source windows never exceed 5 seconds.",
+  "rows": [
+    {
+      "start_song": 1.8,
+      "end_song": 5.9,
+      "source_cut": "c01",
+      "scene": 1,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 5.9,
+      "end_song": 9.65,
+      "source_cut": "c02",
+      "scene": 1,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 9.65,
+      "end_song": 13.35,
+      "source_cut": "c03",
+      "scene": 1,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 13.35,
+      "end_song": 17.8,
+      "source_cut": "c08",
+      "scene": 1,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 17.8,
+      "end_song": 21.55,
+      "source_cut": "c07",
+      "scene": 2,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 21.55,
+      "end_song": 25.4,
+      "source_cut": "c01",
+      "scene": 2,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 25.4,
+      "end_song": 28.8,
+      "source_cut": "c05",
+      "scene": 2,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 28.8,
+      "end_song": 32.55,
+      "source_cut": "c07",
+      "scene": 2,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 32.55,
+      "end_song": 36.35,
+      "source_cut": "c01",
+      "scene": 3,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 36.35,
+      "end_song": 40.1,
+      "source_cut": "c02",
+      "scene": 3,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 40.1,
+      "end_song": 43.8,
+      "source_cut": "c03",
+      "scene": 3,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 43.8,
+      "end_song": 48.1,
+      "source_cut": "c08",
+      "scene": 3,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 48.1,
+      "end_song": 51.6,
+      "source_cut": "c04",
+      "scene": 4,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 51.6,
+      "end_song": 55.3,
+      "source_cut": "c06",
+      "scene": 4,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 55.3,
+      "end_song": 59.15,
+      "source_cut": "c08",
+      "scene": 4,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 59.15,
+      "end_song": 62.25,
+      "source_cut": "c03",
+      "scene": 4,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 62.25,
+      "end_song": 64.8,
+      "source_cut": "c04",
+      "scene": 4,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 64.8,
+      "end_song": 68.6,
+      "source_cut": "c05",
+      "scene": 4,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 68.6,
+      "end_song": 72.5,
+      "source_cut": "c04",
+      "scene": 4,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 72.5,
+      "end_song": 76.25,
+      "source_cut": "c07",
+      "scene": 5,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 76.25,
+      "end_song": 80.1,
+      "source_cut": "c02",
+      "scene": 5,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 80.1,
+      "end_song": 83.75,
+      "source_cut": "c03",
+      "scene": 5,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 83.75,
+      "end_song": 87.1,
+      "source_cut": "c08",
+      "scene": 5,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 87.1,
+      "end_song": 89.9,
+      "source_cut": "c09",
+      "scene": 5,
+      "keyword": "BUTTERFLY"
+    },
+    {
+      "start_song": 89.9,
+      "end_song": 91.5,
+      "source_cut": "c10",
+      "scene": 5,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 91.5,
+      "end_song": 95.96,
+      "source_cut": "c08",
+      "scene": 5,
+      "keyword": "FLOWER"
+    }
+  ]
+}

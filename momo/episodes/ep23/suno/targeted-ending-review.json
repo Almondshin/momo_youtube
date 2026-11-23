@@ -1,0 +1,10 @@
+{
+  "provider_answer": {
+    "id": "b3a063eb-bcdb-4484-9dfd-a31c8cd3f542",
+    "audio_id": "655e0109-51d4-498e-9ad3-890631bbeaf6",
+    "status": "complete",
+    "created_at": "2026-11-23T00:30:50Z",
+    "answer": "The final lines begin around 1:34.8–1:37.0 (“나비 안녕”), 1:37.6–1:39.9 (“꽃도 안녕”), and 1:40.4 onward (“다음에 또 같이 놀자”). The final “자” starts near 1:42.5 but its vowel is sharply cut off at the recording’s end (1:43.16), so it does not clearly finish. The backing is cut off abruptly at the same point rather than resolving or fading. An earlier safe ending is the completed cadence on “꽃 옆에서 같이 춤춰요,” around 1:32.2–1:34.2; it finishes the sung phrase before the outro begins. Timestamps are approximate."
+  },
+  "agent_resolution": "Provider approximate timestamps conflict with official alignment and independent stem ASR. Full final words occur before tail; signal decays near zero. Original retained without deleting complete lyric."
+}

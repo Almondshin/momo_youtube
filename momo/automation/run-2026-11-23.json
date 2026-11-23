@@ -6,7 +6,7 @@
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
   "status": "in_progress",
-  "stage": "music_generation",
+  "stage": "shared_visual_generation",
   "reason": null,
   "provider_error": null,
   "provider_error_note": "No Higgsfield call was possible, so no HTTP/authentication/quota error is asserted.",
@@ -151,7 +151,7 @@
   "costs": {
     "suno_generation_credits": 20,
     "suno_download_credits": 2,
-    "higgsfield_credits": 0,
+    "higgsfield_credits": 97,
     "extra_payment": 0
   },
   "resumption": {
@@ -179,5 +179,9 @@
     "en": "Butterfly and Flower"
   },
   "resumed_at": "2026-11-23T00:27:00.725Z",
-  "execution_mode": "Existing scheduled run resumed after interactive OAuth repair; not an unattended run"
+  "execution_mode": "Existing scheduled run resumed after interactive OAuth repair; not an unattended run",
+  "planned_final_durations": {
+    "ep23_ko": 99.16,
+    "ep24_en": 94.16
+  }
 }

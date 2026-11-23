@@ -1,0 +1,37 @@
+{
+  "jobs": [
+    {
+      "index": 8,
+      "job_id": "2a299442-b899-42df-b3c0-2b4ad376943d",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_2a299442-b899-42df-b3c0-2b4ad376943d.png"
+    },
+    {
+      "index": 9,
+      "job_id": "eff1f1ef-d22a-4183-9324-5d735fa13635",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_eff1f1ef-d22a-4183-9324-5d735fa13635.png"
+    },
+    {
+      "index": 10,
+      "job_id": "db3eaa5f-fe9e-4950-add5-08d4a1895ba6",
+      "status": "in_progress",
+      "type": "image",
+      "model": "nano_banana_2"
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "completed": 2,
+    "failed": 0,
+    "active": 1,
+    "errors": 0
+  },
+  "all_terminal": false,
+  "timed_out": true,
+  "poll_after_seconds": 10
+}

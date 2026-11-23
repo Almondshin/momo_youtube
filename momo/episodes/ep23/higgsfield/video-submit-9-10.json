@@ -1,0 +1,44 @@
+{
+  "quotes": [
+    {
+      "index": 9,
+      "params": {
+        "ref": "quote:ERCgvSAU2TnTk_BOCkdQrA"
+      }
+    },
+    {
+      "index": 10,
+      "params": {
+        "ref": "quote:VSuizoHQiZLQxRymXcZOmw"
+      }
+    }
+  ],
+  "response": {
+    "jobs": [
+      {
+        "index": 9,
+        "job_id": "ee87454d-48b4-4551-8bd8-05b06b89bdaf",
+        "status": "pending"
+      },
+      {
+        "index": 10,
+        "job_id": "725e47f5-4193-4230-a43d-b793b6dc832e",
+        "status": "pending"
+      }
+    ],
+    "submitted_count": 2,
+    "failed_count": 0,
+    "references_read": [
+      {
+        "ref": "quote:ERCgvSAU2TnTk_BOCkdQrA",
+        "chars": 677,
+        "sha256": "1eed74975a7f95cea7d2124fba92bfba0764b65e93c09074e57c8338b87158da"
+      },
+      {
+        "ref": "quote:VSuizoHQiZLQxRymXcZOmw",
+        "chars": 656,
+        "sha256": "682e4fb5be7fa462aee742a58c8bbd8a8f1851a0b3f96abf8b5c863ce8f3e749"
+      }
+    ]
+  }
+}

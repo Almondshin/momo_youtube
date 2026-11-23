@@ -1,0 +1,80 @@
+{
+  "jobs": [
+    {
+      "index": 2,
+      "job_id": "25599ce4-e8b8-4228-9771-60c7d46c873c",
+      "status": "completed",
+      "type": "video",
+      "model": "kling3_0_turbo",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_25599ce4-e8b8-4228-9771-60c7d46c873c.mp4"
+    },
+    {
+      "index": 3,
+      "job_id": "c2d12abe-5988-4889-8e06-6d0c36d46fda",
+      "status": "completed",
+      "type": "video",
+      "model": "kling3_0_turbo",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_c2d12abe-5988-4889-8e06-6d0c36d46fda.mp4"
+    },
+    {
+      "index": 4,
+      "job_id": "2066bf4f-bac0-495b-9896-166c0799a25b",
+      "status": "completed",
+      "type": "video",
+      "model": "kling3_0_turbo",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_2066bf4f-bac0-495b-9896-166c0799a25b.mp4"
+    },
+    {
+      "index": 5,
+      "job_id": "65ce9fab-bf89-4396-8c1d-f6b28cbc1abc",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 6,
+      "job_id": "21d43890-9f53-4cb4-b2e4-f188ff1b3f0f",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 7,
+      "job_id": "8fe73dd5-08a6-4f68-99f3-fb7d43aa4068",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 8,
+      "job_id": "02d9e6ad-9bac-4d61-83ac-f28f28e13348",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 9,
+      "job_id": "ee87454d-48b4-4551-8bd8-05b06b89bdaf",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    },
+    {
+      "index": 10,
+      "job_id": "725e47f5-4193-4230-a43d-b793b6dc832e",
+      "status": "in_progress",
+      "type": "video",
+      "model": "kling3_0_turbo"
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "completed": 3,
+    "failed": 0,
+    "active": 6,
+    "errors": 0
+  },
+  "all_terminal": false,
+  "timed_out": true,
+  "poll_after_seconds": 10
+}

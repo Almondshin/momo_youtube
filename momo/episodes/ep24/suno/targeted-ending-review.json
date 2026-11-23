@@ -1,0 +1,10 @@
+{
+  "provider_answer": {
+    "id": "7ff40cad-e9aa-4a8e-aa9e-cd869f9e4372",
+    "audio_id": "e2187533-f64e-4e5a-82e6-43f742efd9ea",
+    "status": "complete",
+    "created_at": "2026-11-23T00:30:49Z",
+    "answer": "In the final 15 seconds, “Bye butterfly” is around 1:25–1:28, “Bye flower” around 1:28–1:31, and “We will play another hour” begins around 1:31. I hear only the onset of “hour” (an “ow” vowel) before the audio ends; it is not audibly completed. The last clearly complete vowel is the ending of “another,” just before that onset. Both the voice and backing are cut off abruptly, without a natural musical resolution. The exact word boundary is a little uncertain, but the cutoff is clear."
+  },
+  "agent_resolution": "Provider approximate timestamps conflict with official alignment and independent stem ASR. Full final words occur before tail; signal decays near zero. Original retained without deleting complete lyric."
+}
