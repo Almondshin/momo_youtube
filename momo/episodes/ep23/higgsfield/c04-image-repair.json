@@ -1,0 +1,34 @@
+{
+  "quote": {
+    "cost": {
+      "credits": 2,
+      "credits_exact": 2
+    },
+    "quote_ref": "quote:Nlq9ZXBo53SkhBBvQI5tXg"
+  },
+  "result": {
+    "results": [
+      {
+        "id": "aeb7f3a6-34f2-49fd-85cd-6b424fdf6751",
+        "type": "image",
+        "status": "pending",
+        "model": "nano_banana_pro",
+        "params": {
+          "prompt": " Close view of one large coral-pink daisy with a round warm yellow center, simple thick petals, a green stem and two leaves. Plain mint meadow and soft sky behind it. No characters or insects. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects. bright saturated 3D cartoon animation style, Pixar-like soft rounded shapes, clean simple background, one focal object per shot, eye-level or slightly low camera, soft even lighting, full-bleed edge-to-edge, no border, no frame, no vignette, no text, no letters, no numbers, no logos, no watermarks Match the single simple flower in the reference exactly, same small number of chunky rounded coral petals and smooth yellow center. Crop closer around the flower only; no bunny.",
+          "aspect_ratio": "16:9",
+          "reference_images": [
+            "8e849daa-16c2-42e4-86ae-04a564b8e61d"
+          ],
+          "resolution": "2k"
+        }
+      }
+    ],
+    "references_read": [
+      {
+        "ref": "quote:Nlq9ZXBo53SkhBBvQI5tXg",
+        "chars": 1212,
+        "sha256": "8c52021534916308fc5a1a1bdb508e1a5cd1cd1a80e791c1cd3c3b49f40e654e"
+      }
+    ]
+  }
+}

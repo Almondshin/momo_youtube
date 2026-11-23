@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "id": "f2fc2a4a-0a5f-4fd7-9599-c8777947de6b",
+      "type": "video",
+      "status": "pending",
+      "model": "kling3_0_turbo",
+      "params": {
+        "prompt": "Momo takes two gentle bouncing steps toward the butterfly and lifts one paw to greet it. Butterfly traces a small smooth arc. Ears bounce naturally, mouth stays in a closed smile. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts. Keep the same facial expression throughout. Silent animation. Maintain both floppy ears and two yellow buttons; no new characters, no text.",
+        "aspect_ratio": "16:9",
+        "duration": 5,
+        "reference_images": [
+          "b06ce4e9-3095-45f2-8048-f42d83daa1e1"
+        ],
+        "resolution": "720p"
+      }
+    }
+  ],
+  "references_read": [
+    {
+      "ref": "quote:DdMz7z0ZEz8pDm6HKsPOYQ",
+      "chars": 681,
+      "sha256": "29c4a7ff3133d34618f5fcf7e3a8af369af37fb57a1638b45fb77150dde7a613"
+    }
+  ]
+}

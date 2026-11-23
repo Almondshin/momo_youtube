@@ -1,0 +1,60 @@
+{
+  "quotes": [
+    {
+      "index": 8,
+      "params": {
+        "ref": "quote:YUL11OZI7jpcpkcAmS2H0Q"
+      }
+    },
+    {
+      "index": 9,
+      "params": {
+        "ref": "quote:iUoqwaU3mOLh89Jg_YnM3g"
+      }
+    },
+    {
+      "index": 10,
+      "params": {
+        "ref": "quote:DszUCfUy-KwlIeHykp-hyg"
+      }
+    }
+  ],
+  "response": {
+    "jobs": [
+      {
+        "index": 8,
+        "job_id": "2a299442-b899-42df-b3c0-2b4ad376943d",
+        "status": "pending"
+      },
+      {
+        "index": 9,
+        "job_id": "eff1f1ef-d22a-4183-9324-5d735fa13635",
+        "status": "pending"
+      },
+      {
+        "index": 10,
+        "job_id": "db3eaa5f-fe9e-4950-add5-08d4a1895ba6",
+        "status": "pending"
+      }
+    ],
+    "submitted_count": 3,
+    "failed_count": 0,
+    "references_read": [
+      {
+        "ref": "quote:YUL11OZI7jpcpkcAmS2H0Q",
+        "chars": 1588,
+        "sha256": "df2c5d967cf84cd202b9f71aa14e9c0c1589f0bf8eb043a5f14da356bee8cbf4"
+      },
+      {
+        "ref": "quote:iUoqwaU3mOLh89Jg_YnM3g",
+        "chars": 1611,
+        "sha256": "cf1a494bcdc740cf5611596b6e91bb8e973c382b8e30831b0473c4af60eec072"
+      },
+      {
+        "ref": "quote:DszUCfUy-KwlIeHykp-hyg",
+        "chars": 1592,
+        "sha256": "c6af6617fdb68464e68643fc05989d3809d3188752d09eedfc47b5a9b6214255"
+      }
+    ]
+  }
+}

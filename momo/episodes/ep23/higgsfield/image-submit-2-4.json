@@ -1,0 +1,38 @@
+{
+  "jobs": [
+    {
+      "index": 2,
+      "job_id": "b3c50b3e-40c4-4b5b-8f1a-be4b7354b024",
+      "status": "pending"
+    },
+    {
+      "index": 3,
+      "job_id": "8e849daa-16c2-42e4-86ae-04a564b8e61d",
+      "status": "pending"
+    },
+    {
+      "index": 4,
+      "job_id": "dc4850d7-14d1-463f-a269-497a7838d185",
+      "status": "pending"
+    }
+  ],
+  "submitted_count": 3,
+  "failed_count": 0,
+  "references_read": [
+    {
+      "ref": "quote:nznSTZo3gkJ1hLOz1vUYPw",
+      "chars": 1023,
+      "sha256": "9cfdc58a4e1c22486b49f0781ff2fbac379520108baf6475bbe0fc4bb2e6a42d"
+    },
+    {
+      "ref": "quote:RBatLn9Fsya_2eAXopVUiA",
+      "chars": 1488,
+      "sha256": "522a6392ea0696c1fbec5c52737851c7431476e66e86cf2cedde481026f0f209"
+    },
+    {
+      "ref": "quote:BUuJ9tAs8CHueACC3pEG0w",
+      "chars": 948,
+      "sha256": "41afea3ee8edce7958a42265aa9e6f63b30828fc0996fb699cedafe066e54063"
+    }
+  ]
+}
