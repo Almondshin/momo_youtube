@@ -5,8 +5,8 @@
   "checked_at": "2026-11-23T00:18:03.837093+00:00",
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
-  "status": "in_progress",
-  "stage": "shared_visual_generation",
+  "status": "completed",
+  "stage": "completed_public_upload_verified",
   "reason": null,
   "provider_error": null,
   "provider_error_note": "No Higgsfield call was possible, so no HTTP/authentication/quota error is asserted.",
@@ -183,5 +183,37 @@
   "planned_final_durations": {
     "ep23_ko": 99.16,
     "ep24_en": 94.16
-  }
+  },
+  "completed_at": "2026-11-23T00:56:26.991405+00:00",
+  "uploaded_episodes": [
+    "ep23",
+    "ep24"
+  ],
+  "new_pair": [
+    {
+      "ep": "ep23",
+      "language": "ko",
+      "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+      "url": "https://www.youtube.com/watch?v=1E3LvTennHI",
+      "privacy": "public",
+      "made_for_kids": true,
+      "processing_status": "succeeded",
+      "playlist_id": "PLHfQPAU3ZVb8",
+      "duration_seconds": 99.166667
+    },
+    {
+      "ep": "ep24",
+      "language": "en",
+      "title": "Butterfly, Flutter By! 🦋🌸 | Garden Dance Song for Toddlers | Momo Time",
+      "url": "https://www.youtube.com/watch?v=-BctWf5H7Gg",
+      "privacy": "public",
+      "made_for_kids": true,
+      "processing_status": "succeeded",
+      "playlist_id": "PLTOO0Q-QSj5I",
+      "duration_seconds": 94.166667
+    }
+  ],
+  "new_pair_complete": true,
+  "unattended_execution_verified": false,
+  "completion_note": "Resumed interactively after official Higgsfield OAuth repair; actual production and API processing passed. This does not verify a fresh unattended scheduler launch."
 }

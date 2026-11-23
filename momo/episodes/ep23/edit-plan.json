@@ -24,8 +24,15 @@
     },
     {
       "start_song": 17.4,
-      "end_song": 21.65,
+      "end_song": 19.525,
       "source_cut": "c08",
+      "scene": 1,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 19.525,
+      "end_song": 21.65,
+      "source_cut": "c10",
       "scene": 1,
       "keyword": "꽃"
     },
@@ -101,8 +108,15 @@
     },
     {
       "start_song": 64.15,
-      "end_song": 68.4,
+      "end_song": 66.275,
       "source_cut": "c08",
+      "scene": 4,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 66.275,
+      "end_song": 68.4,
+      "source_cut": "c10",
       "scene": 4,
       "keyword": "꽃"
     },
@@ -150,8 +164,15 @@
     },
     {
       "start_song": 89.6,
-      "end_song": 93.9,
+      "end_song": 91.75,
       "source_cut": "c08",
+      "scene": 5,
+      "keyword": "꽃"
+    },
+    {
+      "start_song": 91.75,
+      "end_song": 93.9,
+      "source_cut": "c10",
       "scene": 5,
       "keyword": "꽃"
     },
@@ -176,5 +197,11 @@
       "scene": 5,
       "keyword": "꽃"
     }
-  ]
+  ],
+  "limited_source_window": {
+    "c08": [
+      0,
+      3.8
+    ]
+  }
 }

@@ -24,8 +24,15 @@
     },
     {
       "start_song": 13.35,
-      "end_song": 17.8,
+      "end_song": 15.575,
       "source_cut": "c08",
+      "scene": 1,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 15.575,
+      "end_song": 17.8,
+      "source_cut": "c10",
       "scene": 1,
       "keyword": "FLOWER"
     },
@@ -80,8 +87,15 @@
     },
     {
       "start_song": 43.8,
-      "end_song": 48.1,
+      "end_song": 45.95,
       "source_cut": "c08",
+      "scene": 3,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 45.95,
+      "end_song": 48.1,
+      "source_cut": "c10",
       "scene": 3,
       "keyword": "FLOWER"
     },
@@ -101,8 +115,15 @@
     },
     {
       "start_song": 55.3,
-      "end_song": 59.15,
+      "end_song": 57.225,
       "source_cut": "c08",
+      "scene": 4,
+      "keyword": "FLOWER"
+    },
+    {
+      "start_song": 57.225,
+      "end_song": 59.15,
+      "source_cut": "c10",
       "scene": 4,
       "keyword": "FLOWER"
     },
@@ -178,10 +199,24 @@
     },
     {
       "start_song": 91.5,
-      "end_song": 95.96,
+      "end_song": 93.73,
       "source_cut": "c08",
       "scene": 5,
       "keyword": "FLOWER"
+    },
+    {
+      "start_song": 93.73,
+      "end_song": 95.96,
+      "source_cut": "c10",
+      "scene": 5,
+      "keyword": "FLOWER",
+      "source_offset": 2.7
     }
-  ]
+  ],
+  "limited_source_window": {
+    "c08": [
+      0,
+      3.8
+    ]
+  }
 }

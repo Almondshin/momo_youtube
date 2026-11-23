@@ -1,0 +1,153 @@
+{
+  "checked_at": "2026-11-23T00:55:48.561880+00:00",
+  "video": {
+    "kind": "youtube#video",
+    "etag": "sC8ijRFbD3HBnsilYuDsWUq8oiM",
+    "id": "1E3LvTennHI",
+    "snippet": {
+      "publishedAt": "2026-11-23T00:54:20Z",
+      "channelId": "UCAI7Voo0OwG-7sr1eZeN7dA",
+      "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+      "description": "나비 따라 팔랑팔랑, 꽃 옆에서 살랑살랑! 모모와 함께 정원에서 춤추고 노래해요.\n\n2~4세 아이가 짧은 후렴으로 배우는 두 단어: 나비 · 꽃\n• 나비의 날갯짓을 따라 팔을 움직여요.\n• 꽃을 보고 향기 맡는 동작을 해봐요.\n• 같은 단어를 노래로 반복하며 익혀요.\n\n#모모타임 #동요 #유아동요 #나비 #꽃 #아기노래 #율동동요 #한국어동요 #유아교육 #MomoTime",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/1E3LvTennHI/default.jpg",
+          "width": 120,
+          "height": 90
+        },
+        "medium": {
+          "url": "https://i.ytimg.com/vi/1E3LvTennHI/mqdefault.jpg",
+          "width": 320,
+          "height": 180
+        },
+        "high": {
+          "url": "https://i.ytimg.com/vi/1E3LvTennHI/hqdefault.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "standard": {
+          "url": "https://i.ytimg.com/vi/1E3LvTennHI/sddefault.jpg",
+          "width": 640,
+          "height": 480
+        },
+        "maxres": {
+          "url": "https://i.ytimg.com/vi/1E3LvTennHI/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "channelTitle": "Momo Time",
+      "tags": [
+        "2세 동요",
+        "3세 동요",
+        "Momo Time",
+        "꽃 노래",
+        "나비 노래",
+        "동요",
+        "따라 부르기",
+        "모모타임",
+        "아기 노래",
+        "유아교육",
+        "유아동요",
+        "율동 동요",
+        "한국어 동요"
+      ],
+      "categoryId": "27",
+      "liveBroadcastContent": "none",
+      "defaultLanguage": "ko",
+      "localized": {
+        "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+        "description": "나비 따라 팔랑팔랑, 꽃 옆에서 살랑살랑! 모모와 함께 정원에서 춤추고 노래해요.\n\n2~4세 아이가 짧은 후렴으로 배우는 두 단어: 나비 · 꽃\n• 나비의 날갯짓을 따라 팔을 움직여요.\n• 꽃을 보고 향기 맡는 동작을 해봐요.\n• 같은 단어를 노래로 반복하며 익혀요.\n\n#모모타임 #동요 #유아동요 #나비 #꽃 #아기노래 #율동동요 #한국어동요 #유아교육 #MomoTime"
+      },
+      "defaultAudioLanguage": "ko"
+    },
+    "contentDetails": {
+      "duration": "PT1M40S",
+      "dimension": "2d",
+      "definition": "hd",
+      "caption": "false",
+      "licensedContent": false,
+      "contentRating": {},
+      "projection": "rectangular",
+      "hasCustomThumbnail": true
+    },
+    "status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": true,
+      "selfDeclaredMadeForKids": true
+    },
+    "processingDetails": {
+      "processingStatus": "succeeded",
+      "fileDetailsAvailability": "available",
+      "processingIssuesAvailability": "available",
+      "tagSuggestionsAvailability": "inProgress",
+      "editorSuggestionsAvailability": "inProgress",
+      "thumbnailsAvailability": "available"
+    }
+  },
+  "playlist": {
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "R_ouxTbqPm8_c0QQcjP-zYP4YIg",
+    "items": [
+      {
+        "kind": "youtube#playlistItem",
+        "etag": "nYlvvZxNhcQtMxJsEtnkFaPxAhw",
+        "id": "UExIZlFQQVUzWlZiOC41MzJCQjBCNDIyRkJDN0VD",
+        "snippet": {
+          "publishedAt": "2026-11-23T00:53:56Z",
+          "channelId": "UCAI7Voo0OwG-7sr1eZeN7dA",
+          "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+          "description": "나비 따라 팔랑팔랑, 꽃 옆에서 살랑살랑! 모모와 함께 정원에서 춤추고 노래해요.\n\n2~4세 아이가 짧은 후렴으로 배우는 두 단어: 나비 · 꽃\n• 나비의 날갯짓을 따라 팔을 움직여요.\n• 꽃을 보고 향기 맡는 동작을 해봐요.\n• 같은 단어를 노래로 반복하며 익혀요.\n\n#모모타임 #동요 #유아동요 #나비 #꽃 #아기노래 #율동동요 #한국어동요 #유아교육 #MomoTime",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/1E3LvTennHI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/1E3LvTennHI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/1E3LvTennHI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/1E3LvTennHI/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/1E3LvTennHI/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Momo Time",
+          "playlistId": "PLHfQPAU3ZVb8",
+          "position": 6,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "1E3LvTennHI"
+          },
+          "videoOwnerChannelTitle": "Momo Time",
+          "videoOwnerChannelId": "UCAI7Voo0OwG-7sr1eZeN7dA"
+        },
+        "contentDetails": {
+          "videoId": "1E3LvTennHI",
+          "videoPublishedAt": "2026-11-23T00:54:20Z"
+        }
+      }
+    ],
+    "pageInfo": {
+      "totalResults": 1,
+      "resultsPerPage": 5
+    }
+  }
+}

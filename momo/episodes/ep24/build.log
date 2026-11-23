@@ -1,0 +1,11 @@
+▶ ep24 [en] 컷 30개, 총 1:34.17 (2825프레임), 폰트 NanumSquareRoundB.ttf
+세그먼트 30개 — 캐시 29개, 렌더 1개 (병렬 3)
+  [1/1] c30 V  2.23s trim (0.4s)
+오디오 믹스 (나레이션 + BGM 덕킹 + 효과음 → loudnorm)
+△ loudnorm 이 dynamic 모드로 동작 (피크가 높음)
+최종 인코딩 (xfade/concat 연결, crf 18, preset medium)
+
+✔ /Users/dream/dev/momo_youtube/momo/episodes/ep24/out/ep24_en.mp4 (51.2 MB, 1:34.17)
+  썸네일 ep24_en_thumb.jpg, 타임라인 ep24_en_timeline.json, 확인 시트 episodes/ep24/out/check_en/check_en.jpg
+  loudnorm: 입력 -16.21 → 출력 -14.0 LUFS (dynamic)
+  시간: 세그먼트 1.3s, 오디오 4.6s, 인코딩 13.8s, 전체 21.1s

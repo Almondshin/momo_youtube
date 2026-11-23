@@ -1,0 +1,653 @@
+{
+  "owner": "ep23",
+  "credits": {
+    "estimate": 106.0,
+    "spent": 97.0,
+    "generations": 21,
+    "regenerations": 1,
+    "cap": 150
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "나비"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Momo stands at the left of a cream garden path, watching one friendly golden-yellow butterfly hover at paw height on the right. The butterfly has two symmetrical rounded pairs of wings with small coral tips and a tiny brown body. No flowers in this shot. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo takes two gentle bouncing steps toward the butterfly and lifts one paw to greet it. Butterfly traces a small smooth arc. Ears bounce naturally, mouth stays in a closed smile. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "butterfly_welcome",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b06ce4e9-3095-45f2-8048-f42d83daa1e1",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003430_b06ce4e9-3095-45f2-8048-f42d83daa1e1.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b06ce4e9-3095-45f2-8048-f42d83daa1e1",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003430_b06ce4e9-3095-45f2-8048-f42d83daa1e1.png",
+              "status": "approved",
+              "reason": "Agent visual review: Momo matches approved sheet, two yellow buttons, floppy ears, one clear butterfly, clean keyword area. Static happy expression; video must not talk or lip-sync.",
+              "at": "2026-11-23T00:34Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent visual review: Momo matches approved sheet, two yellow buttons, floppy ears, one clear butterfly, clean keyword area. Static happy expression; video must not talk or lip-sync."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "f2fc2a4a-0a5f-4fd7-9599-c8777947de6b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003638_f2fc2a4a-0a5f-4fd7-9599-c8777947de6b.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "f2fc2a4a-0a5f-4fd7-9599-c8777947de6b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003638_f2fc2a4a-0a5f-4fd7-9599-c8777947de6b.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed 10 frames across five seconds: continuous walking and wing flutter, stable anatomy, no speech or lip sync.",
+              "at": "2026-11-23T00:36Z",
+              "credits": 7.5,
+              "start_image": "b06ce4e9-3095-45f2-8048-f42d83daa1e1"
+            }
+          ],
+          "reason": "Agent reviewed 10 frames across five seconds: continuous walking and wing flutter, stable anatomy, no speech or lip sync."
+        }
+      }
+    },
+    {
+      "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "나비"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "One single golden-yellow butterfly with coral-tipped rounded wings hovers over a soft mint-green meadow. Its whole wings and small body are clearly visible, no flower or character. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "The butterfly flutters its symmetrical wings and floats in one graceful shallow figure-eight, remaining centered and entirely visible. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "butterfly_close",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "b3c50b3e-40c4-4b5b-8f1a-be4b7354b024",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003602_b3c50b3e-40c4-4b5b-8f1a-be4b7354b024.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "b3c50b3e-40c4-4b5b-8f1a-be4b7354b024",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003602_b3c50b3e-40c4-4b5b-8f1a-be4b7354b024.png",
+              "status": "approved",
+              "reason": "Agent visual review: one clear learning object, matching pastel garden, Momo identity and two buttons correct where present.",
+              "at": "2026-11-23T00:36Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent visual review: one clear learning object, matching pastel garden, Momo identity and two buttons correct where present."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "25599ce4-e8b8-4228-9771-60c7d46c873c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_25599ce4-e8b8-4228-9771-60c7d46c873c.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "25599ce4-e8b8-4228-9771-60c7d46c873c",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_25599ce4-e8b8-4228-9771-60c7d46c873c.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync.",
+              "at": "2026-11-23T00:40Z",
+              "credits": 7.5,
+              "start_image": "b3c50b3e-40c4-4b5b-8f1a-be4b7354b024"
+            }
+          ],
+          "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync."
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "꽃"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Momo stands beside one large simple coral-pink daisy with a warm yellow center, a sturdy green stem and exactly two green leaves growing from a small soil patch. The flower is at Momo waist height. No butterfly. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo steps sideways twice to the beat and warmly presents the flower with an open paw. The flower gently sways in the breeze; feet lift and land naturally. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "flower_welcome",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8e849daa-16c2-42e4-86ae-04a564b8e61d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003601_8e849daa-16c2-42e4-86ae-04a564b8e61d.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "8e849daa-16c2-42e4-86ae-04a564b8e61d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003601_8e849daa-16c2-42e4-86ae-04a564b8e61d.png",
+              "status": "approved",
+              "reason": "Agent visual review: one clear learning object, matching pastel garden, Momo identity and two buttons correct where present.",
+              "at": "2026-11-23T00:36Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent visual review: one clear learning object, matching pastel garden, Momo identity and two buttons correct where present."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "c2d12abe-5988-4889-8e06-6d0c36d46fda",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_c2d12abe-5988-4889-8e06-6d0c36d46fda.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "c2d12abe-5988-4889-8e06-6d0c36d46fda",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_c2d12abe-5988-4889-8e06-6d0c36d46fda.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync.",
+              "at": "2026-11-23T00:40Z",
+              "credits": 7.5,
+              "start_image": "8e849daa-16c2-42e4-86ae-04a564b8e61d"
+            }
+          ],
+          "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync."
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "scene": 2,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "꽃"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Close view of one large coral-pink daisy with a round warm yellow center, simple thick petals, a green stem and two leaves. Plain mint meadow and soft sky behind it. No characters or insects. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "The flower makes a smooth gentle left-right sway with a subtle bob, keeping its petals and stem shape consistent. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": false,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "flower_close",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "aeb7f3a6-34f2-49fd-85cd-6b424fdf6751",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003728_aeb7f3a6-34f2-49fd-85cd-6b424fdf6751.png",
+          "attempts": 2,
+          "credits": 4.0,
+          "history": [
+            {
+              "job_id": "dc4850d7-14d1-463f-a269-497a7838d185",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003602_dc4850d7-14d1-463f-a269-497a7838d185.png",
+              "status": "rejected",
+              "reason": "Flower petal count and center texture differ from canonical c03 flower; repair using c03 reference within cap.",
+              "at": "2026-11-23T00:36Z",
+              "credits": 2.0
+            },
+            {
+              "job_id": "aeb7f3a6-34f2-49fd-85cd-6b424fdf6751",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003728_aeb7f3a6-34f2-49fd-85cd-6b424fdf6751.png",
+              "status": "approved",
+              "reason": "Agent visual inspection: canonical bunny and simple coral flower or yellow butterfly consistent; anatomy and caption clearance pass.",
+              "at": "2026-11-23T00:37Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent visual inspection: canonical bunny and simple coral flower or yellow butterfly consistent; anatomy and caption clearance pass."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "2066bf4f-bac0-495b-9896-166c0799a25b",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_2066bf4f-bac0-495b-9896-166c0799a25b.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "2066bf4f-bac0-495b-9896-166c0799a25b",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004016_2066bf4f-bac0-495b-9896-166c0799a25b.mp4",
+              "status": "approved",
+              "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync.",
+              "at": "2026-11-23T00:40Z",
+              "credits": 7.5,
+              "start_image": "aeb7f3a6-34f2-49fd-85cd-6b424fdf6751"
+            }
+          ],
+          "reason": "Agent reviewed temporal frames: continuous butterfly flight, Momo steps or gentle flower sway; no deformed anatomy, no unwanted text or lip sync."
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "나비"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Full-body Momo on the cream garden path, paws spread low like wings, one golden-yellow coral-tipped butterfly floating to the right. Clear space around all limbs and ears. No flowers. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo performs a clear child-friendly wing dance: two side steps while both paws lift and lower together, a tiny soft hop, then settles. The butterfly flutters nearby. No talking or singing. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "butterfly_dance",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "277f0ed9-c7d4-4d9b-8870-7b26a801454d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003753_277f0ed9-c7d4-4d9b-8870-7b26a801454d.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "277f0ed9-c7d4-4d9b-8870-7b26a801454d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003753_277f0ed9-c7d4-4d9b-8870-7b26a801454d.png",
+              "status": "approved",
+              "reason": "Agent inspected full-resolution image after detector warning: large round purple-dark eyes and round face match reference; two yellow buttons and floppy ears intact. Detector ratio is a false mismatch on three-quarter pose.",
+              "at": "2026-11-23T00:37Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent inspected full-resolution image after detector warning: large round purple-dark eyes and round face match reference; two yellow buttons and floppy ears intact. Detector ratio is a false mismatch on three-quarter pose.",
+          "off_model_ok": true
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "65ce9fab-bf89-4396-8c1d-f6b28cbc1abc",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004204_65ce9fab-bf89-4396-8c1d-f6b28cbc1abc.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "65ce9fab-bf89-4396-8c1d-f6b28cbc1abc",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004204_65ce9fab-bf89-4396-8c1d-f6b28cbc1abc.mp4",
+              "status": "approved",
+              "reason": "Agent temporal review: consistent bunny/object, continuous natural movement, no lip sync or freeze. Five sampled frames and freeze scan checked.",
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "277f0ed9-c7d4-4d9b-8870-7b26a801454d"
+            }
+          ],
+          "reason": "Agent temporal review: consistent bunny/object, continuous natural movement, no lip sync or freeze. Five sampled frames and freeze scan checked.",
+          "off_model_ok": true
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "scene": 3,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "꽃"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Momo crouches comfortably to the left of the single coral-pink daisy, both eyes visible in three-quarter view. Two yellow overall buttons visible, nose near but not touching the flower. No butterfly. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo gently leans forward to smell the flower, then straightens with a happy closed smile and a small delighted body bounce. The flower nods softly. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "flower_smell",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "42064543-adb4-440d-b717-47893308639a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003751_42064543-adb4-440d-b717-47893308639a.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "42064543-adb4-440d-b717-47893308639a",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003751_42064543-adb4-440d-b717-47893308639a.png",
+              "status": "approved",
+              "reason": "Agent inspected image: canonical colors, face, two buttons, floppy ears and single object match.",
+              "at": "2026-11-23T00:37Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent inspected image: canonical colors, face, two buttons, floppy ears and single object match."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "21d43890-9f53-4cb4-b2e4-f188ff1b3f0f",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004204_21d43890-9f53-4cb4-b2e4-f188ff1b3f0f.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "21d43890-9f53-4cb4-b2e4-f188ff1b3f0f",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004204_21d43890-9f53-4cb4-b2e4-f188ff1b3f0f.mp4",
+              "status": "approved",
+              "reason": "Agent temporal review: consistent bunny/object, continuous natural movement, no lip sync or freeze. Five sampled frames and freeze scan checked.",
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "42064543-adb4-440d-b717-47893308639a"
+            }
+          ],
+          "reason": "Agent temporal review: consistent bunny/object, continuous natural movement, no lip sync or freeze. Five sampled frames and freeze scan checked."
+        }
+      }
+    },
+    {
+      "id": "c07",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "나비"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Momo full-body in three-quarter view at the left, on a broad cream garden path, one golden-yellow butterfly ahead on the right at eye height. No flowers. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo walks three small springy steps following the butterfly along the path, with natural alternating feet and arm swing. Butterfly drifts ahead. Gentle slow lateral camera follow, both remain fully visible. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "butterfly_follow",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "c5cda62a-67bc-417f-a725-8eaf157590aa",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003751_c5cda62a-67bc-417f-a725-8eaf157590aa.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "c5cda62a-67bc-417f-a725-8eaf157590aa",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003751_c5cda62a-67bc-417f-a725-8eaf157590aa.png",
+              "status": "approved",
+              "reason": "Agent inspected image: canonical colors, face, two buttons, floppy ears and single object match.",
+              "at": "2026-11-23T00:37Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent inspected image: canonical colors, face, two buttons, floppy ears and single object match."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "8fe73dd5-08a6-4f68-99f3-fb7d43aa4068",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004203_8fe73dd5-08a6-4f68-99f3-fb7d43aa4068.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "8fe73dd5-08a6-4f68-99f3-fb7d43aa4068",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004203_8fe73dd5-08a6-4f68-99f3-fb7d43aa4068.mp4",
+              "status": "approved",
+              "reason": "Agent temporal review: consistent bunny/object, continuous natural movement, no lip sync or freeze. Five sampled frames and freeze scan checked.",
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "c5cda62a-67bc-417f-a725-8eaf157590aa"
+            }
+          ],
+          "reason": "Agent temporal review: consistent bunny/object, continuous natural movement, no lip sync or freeze. Five sampled frames and freeze scan checked."
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 4,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "꽃"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Full-body Momo beside the single coral-pink daisy, arms relaxed, generous empty space around the character and flower. No butterfly. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo dances a clear two-step side to side and makes one little quarter turn back toward the flower, ears and overalls following the body naturally. Flower sways to the beat. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "flower_dance",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "2a299442-b899-42df-b3c0-2b4ad376943d",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_2a299442-b899-42df-b3c0-2b4ad376943d.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "2a299442-b899-42df-b3c0-2b4ad376943d",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_2a299442-b899-42df-b3c0-2b4ad376943d.png",
+              "status": "approved",
+              "reason": "Agent visual review: consistent character, two strap buttons, single flower or butterfly, clear lower caption zone.",
+              "at": "2026-11-23T00:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent visual review: consistent character, two strap buttons, single flower or butterfly, clear lower caption zone."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "02d9e6ad-9bac-4d61-83ac-f28f28e13348",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004204_02d9e6ad-9bac-4d61-83ac-f28f28e13348.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "02d9e6ad-9bac-4d61-83ac-f28f28e13348",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004204_02d9e6ad-9bac-4d61-83ac-f28f28e13348.mp4",
+              "status": "approved",
+              "reason": "Agent temporal review: stable dance; use only 0–3.8 seconds because later turn hides overall buttons. No freeze; edit plan enforces approved window.",
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "2a299442-b899-42df-b3c0-2b4ad376943d"
+            }
+          ],
+          "reason": "Agent temporal review: stable dance; use only 0–3.8 seconds because later turn hides overall buttons. No freeze; edit plan enforces approved window."
+        }
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "나비"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Momo stands on the cream garden path with one paw raised at shoulder height, one golden-yellow butterfly hovering above the other low open paw. No flowers. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "The butterfly rises in a gentle arc while Momo follows it with the eyes and waves one paw twice, then takes one soft happy step. Keep mouth closed and both buttons visible. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "butterfly_goodbye",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "eff1f1ef-d22a-4183-9324-5d735fa13635",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_eff1f1ef-d22a-4183-9324-5d735fa13635.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "eff1f1ef-d22a-4183-9324-5d735fa13635",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_eff1f1ef-d22a-4183-9324-5d735fa13635.png",
+              "status": "approved",
+              "reason": "Agent visual review: consistent character, two strap buttons, single flower or butterfly, clear lower caption zone.",
+              "at": "2026-11-23T00:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent visual review: consistent character, two strap buttons, single flower or butterfly, clear lower caption zone."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "ee87454d-48b4-4551-8bd8-05b06b89bdaf",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004234_ee87454d-48b4-4551-8bd8-05b06b89bdaf.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "ee87454d-48b4-4551-8bd8-05b06b89bdaf",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004234_ee87454d-48b4-4551-8bd8-05b06b89bdaf.mp4",
+              "status": "approved",
+              "reason": "Agent inspected full-resolution frame at detector worst point 1.0s and temporal sheet: round face and large dark eyes remain intact; no squashed face. Perspective causes detector mismatch; bunny identity, ears and two buttons match.",
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "eff1f1ef-d22a-4183-9324-5d735fa13635"
+            }
+          ],
+          "reason": "Agent inspected full-resolution frame at detector worst point 1.0s and temporal sheet: round face and large dark eyes remain intact; no squashed face. Perspective causes detector mismatch; bunny identity, ears and two buttons match.",
+          "off_model_ok": true
+        }
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 5,
+      "type": "V",
+      "bars": 2,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "꽃"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "image_prompt": "Momo next to one coral-pink daisy, facing the viewer in a friendly full-body pose, both feet and long floppy ears visible. No butterfly. Bright clean pastel storybook garden, soft sky blue background, rolling mint hills, soft diffuse daylight, single continuous full-bleed 16:9 scene. Keep subjects above the bottom 22 percent, which is clear low-detail grass for a caption. No text, symbols, borders, watermark, extra animals or extra learning objects.",
+      "motion": "Momo makes two small cheerful bounces on both feet then waves to the viewer, while the daisy sways softly. Natural ear follow-through, no lip movement. Smooth preschool 3D animation, preserve anatomy and colors. No lip sync, speech, subtitles, fast camera motion or sudden cuts.",
+      "momo": true,
+      "lipsync": false,
+      "clip_model": "kling3_0_turbo",
+      "clip_seconds": 5,
+      "notes": "flower_goodbye",
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "db3eaa5f-fe9e-4950-add5-08d4a1895ba6",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_db3eaa5f-fe9e-4950-add5-08d4a1895ba6.png",
+          "attempts": 1,
+          "credits": 2.0,
+          "history": [
+            {
+              "job_id": "db3eaa5f-fe9e-4950-add5-08d4a1895ba6",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_003953_db3eaa5f-fe9e-4950-add5-08d4a1895ba6.png",
+              "status": "approved",
+              "reason": "Agent full-resolution review: canonical bunny, two yellow buttons, both ears and feet, matching coral flower; clean render.",
+              "at": "2026-11-23T00:39Z",
+              "credits": 2.0
+            }
+          ],
+          "reason": "Agent full-resolution review: canonical bunny, two yellow buttons, both ears and feet, matching coral flower; clean render."
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "725e47f5-4193-4230-a43d-b793b6dc832e",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004234_725e47f5-4193-4230-a43d-b793b6dc832e.mp4",
+          "attempts": 1,
+          "credits": 7.5,
+          "history": [
+            {
+              "job_id": "725e47f5-4193-4230-a43d-b793b6dc832e",
+              "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20261123_004234_725e47f5-4193-4230-a43d-b793b6dc832e.mp4",
+              "status": "approved",
+              "reason": "Agent temporal review: gentle bounces and wave, stable flower and bunny anatomy, both buttons, no lip sync or freeze.",
+              "at": "2026-11-23T00:42Z",
+              "credits": 7.5,
+              "start_image": "db3eaa5f-fe9e-4950-add5-08d4a1895ba6"
+            }
+          ],
+          "reason": "Agent temporal review: gentle bounces and wave, stable flower and bunny anatomy, both buttons, no lip sync or freeze."
+        }
+      }
+    }
+  ]
+}

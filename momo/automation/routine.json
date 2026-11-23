@@ -8,7 +8,7 @@
   },
   "shared_visual_sets_per_run": 1,
   "expected_runtime": "current Mac awake and Orca running",
-  "activation_status": "enabled_connection_restored_full_production_unverified",
+  "activation_status": "enabled_interactive_production_verified_unattended_pending",
   "authorizations": [
     "User requested fully automated Monday/Friday production at 09:00 KST, completion-based upload, one channel with language playlists.",
     "2026-11-16: User explicitly delegates all content selection and review; upload without asking for inspection.",
@@ -24,18 +24,45 @@
     "2026-11-16: Official Suno usage and Higgsfield subscription balance readable in the current session.",
     "2026-11-16: Existing Orca automation enabled, Monday/Friday 09:00 Asia/Seoul, with YouTube credential precheck.",
     "2026-11-23: Official Suno account/usage and YouTube en/ko channel checks passed. API verified 20 recent uploads; latest upload remains ep22 on 2026-11-16. No new generation or upload performed.",
-    "2026-11-23: User-supplied official Higgsfield MCP endpoint registered globally in Codex and OAuth login succeeded. Fresh local Codex MCP runtime discovered 217 tools and successfully read Plus balance 1177.37 and image/video cost estimates; zero generation credits spent."
+    "2026-11-23: User-supplied official Higgsfield MCP endpoint registered globally in Codex and OAuth login succeeded. Fresh local Codex MCP runtime discovered 217 tools and successfully read Plus balance 1177.37 and image/video cost estimates; zero generation credits spent.",
+    "2026-11-23: ep23 Korean and ep24 English completed; both API-verified public, made for kids, processing succeeded and present in language playlists. Higgsfield shared spend 97/150; Suno generation 20 and downloads 2. Interactive resumption, not unattended verification."
   ],
   "blocking_checks": [],
   "last_checked": "2026-11-23",
   "today": {
     "date": "2026-11-23",
-    "status": "in_progress",
+    "status": "completed",
     "run_record": "run-2026-11-23.json",
     "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
-    "uploaded_episodes": [],
-    "new_pair": [],
-    "new_pair_complete": false,
+    "uploaded_episodes": [
+      "ep23",
+      "ep24"
+    ],
+    "new_pair": [
+      {
+        "ep": "ep23",
+        "language": "ko",
+        "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+        "url": "https://www.youtube.com/watch?v=1E3LvTennHI",
+        "privacy": "public",
+        "made_for_kids": true,
+        "processing_status": "succeeded",
+        "playlist_id": "PLHfQPAU3ZVb8",
+        "duration_seconds": 99.166667
+      },
+      {
+        "ep": "ep24",
+        "language": "en",
+        "title": "Butterfly, Flutter By! 🦋🌸 | Garden Dance Song for Toddlers | Momo Time",
+        "url": "https://www.youtube.com/watch?v=-BctWf5H7Gg",
+        "privacy": "public",
+        "made_for_kids": true,
+        "processing_status": "succeeded",
+        "playlist_id": "PLTOO0Q-QSj5I",
+        "duration_seconds": 94.166667
+      }
+    ],
+    "new_pair_complete": true,
     "avoid_duplicate_today": true,
     "resume_existing_record": true,
     "costs": {
@@ -47,7 +74,8 @@
     "episodes": [
       "ep23",
       "ep24"
-    ]
+    ],
+    "completed_at": "2026-11-23T00:56:26.991405+00:00"
   },
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "enabled": true,
@@ -69,58 +97,38 @@
     "Higgsfield authentication, discovery and read-only calls passed in a fresh local Codex runtime; the next scheduler-launched session and full production/upload still require end-to-end verification."
   ],
   "last_completed_production": {
-    "date": "2026-11-16",
+    "date": "2026-11-23",
     "uploaded_episodes": [
-      "ep20",
-      "ep21",
-      "ep22"
+      "ep23",
+      "ep24"
     ],
-    "production_type": "User-requested independent-song correction: ep20 kept unchanged; ep18/19 private, ep21/22 public. Manual work, not proof of scheduled worker.",
+    "production_type": "Interactive resumption of today scheduled record after Higgsfield OAuth repair; bilingual independent originals and shared garden visuals.",
     "new_pair": [
       {
-        "ep": "ep20",
+        "ep": "ep23",
         "language": "ko",
-        "url": "https://www.youtube.com/watch?v=3E47mSRHaj0",
+        "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+        "url": "https://www.youtube.com/watch?v=1E3LvTennHI",
         "privacy": "public",
-        "processing_status": "succeeded"
+        "made_for_kids": true,
+        "processing_status": "succeeded",
+        "playlist_id": "PLHfQPAU3ZVb8",
+        "duration_seconds": 99.166667
       },
       {
-        "ep": "ep22",
-        "replaces": "ep19",
+        "ep": "ep24",
         "language": "en",
-        "url": "https://www.youtube.com/watch?v=x-f9kYeFEJI",
+        "title": "Butterfly, Flutter By! 🦋🌸 | Garden Dance Song for Toddlers | Momo Time",
+        "url": "https://www.youtube.com/watch?v=-BctWf5H7Gg",
         "privacy": "public",
-        "processing_status": "succeeded"
+        "made_for_kids": true,
+        "processing_status": "succeeded",
+        "playlist_id": "PLTOO0Q-QSj5I",
+        "duration_seconds": 94.166667
       }
     ],
     "new_pair_complete": true,
-    "avoid_duplicate_today": true,
-    "withdrawn_episodes": [
-      "ep15",
-      "ep16",
-      "ep17",
-      "ep18",
-      "ep19"
-    ],
-    "replacement_results": [
-      {
-        "ep": "ep21",
-        "replaces": "ep18",
-        "language": "ko",
-        "url": "https://www.youtube.com/watch?v=CI02d4S9fxw",
-        "privacy": "public",
-        "processing_status": "succeeded"
-      },
-      {
-        "ep": "ep22",
-        "replaces": "ep19",
-        "language": "en",
-        "url": "https://www.youtube.com/watch?v=x-f9kYeFEJI",
-        "privacy": "public",
-        "processing_status": "succeeded"
-      }
-    ],
-    "preserved_user_selected_episode": "ep20"
+    "unattended_execution_verified": false
   },
   "last_run_record": "run-2026-11-23.json",
   "scheduler_audit": "scheduler-audit-2026-11-23.json",

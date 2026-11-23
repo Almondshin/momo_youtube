@@ -1,0 +1,38 @@
+
+━━ ep23 [ko] — DRY RUN (자격증명·네트워크 사용 안 함)
+  영상: /Users/dream/dev/momo_youtube/momo/episodes/ep23/out/ep23_ko.mp4 (56.5 MB)
+  요청 videos.insert — part=snippet,status, notifySubscribers=true, resumable, 청크 8 MB, 재시도 최대 8회
+  body = {
+    "snippet": {
+      "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+      "description": "나비 따라 팔랑팔랑, 꽃 옆에서 살랑살랑! 모모와 함께 정원에서 춤추고 노래해요.\n\n2~4세 아이가 짧은 후렴으로 배우는 두 단어: 나비 · 꽃\n• 나비의 날갯짓을 따라 팔을 움직여요.\n• 꽃을 보고 향기 맡는 동작을 해봐요.\n• 같은 단어를 노래로 반복하며 익혀요.\n\n#모모타임 #동요 #유아동요 #나비 #꽃 #아기노래 #율동동요 #한국어동요 #유아교육 #MomoTime",
+      "categoryId": "27",
+      "defaultLanguage": "ko",
+      "defaultAudioLanguage": "ko",
+      "tags": [
+        "모모타임",
+        "동요",
+        "유아동요",
+        "나비 노래",
+        "꽃 노래",
+        "아기 노래",
+        "율동 동요",
+        "한국어 동요",
+        "2세 동요",
+        "3세 동요",
+        "유아교육",
+        "따라 부르기",
+        "Momo Time"
+      ]
+    },
+    "status": {
+      "privacyStatus": "public",
+      "selfDeclaredMadeForKids": true
+    }
+  }
+  요청 thumbnails.set — videoId=<업로드 후 ID>, 파일 /Users/dream/dev/momo_youtube/momo/episodes/ep23/out/ep23_ko_thumb.jpg (93 KB)
+  요청 playlistItems.insert — part=snippet, body = {"snippet": {"playlistId": "PLHfQPAU3ZVb8", "resourceId": {"kind": "youtube#video", "videoId": "<업로드 후 ID>"}}}
+  기록: /Users/dream/dev/momo_youtube/momo/episodes/ep23/youtube.json [ko]
+
+✔ DRY RUN 끝 — 아무것도 올리지 않음. 아동용(made for kids)=true 로 설정됨.
+  ※ API 프로젝트가 YouTube 감사(audit)를 통과하기 전이면 API 로 올린 영상은 비공개로 잠긴다 (공개/일부공개로 바꿀 수 없음) → docs/YOUTUBE_SETUP.md

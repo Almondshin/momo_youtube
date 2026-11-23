@@ -1,0 +1,66 @@
+{
+  "episode": "ep23",
+  "language": "ko",
+  "sha256": "f947c48acf4c190615245ca665b2c7fab951f9fca1f19e9917a78066d84c156f",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "99.166667",
+        "nb_frames": "2975"
+      },
+      {
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "duration": "99.166667",
+        "nb_frames": "4650"
+      }
+    ],
+    "format": {
+      "duration": "99.166667"
+    }
+  },
+  "frame_freeze_or_black_events": [],
+  "measured_encoded_audio": {
+    "input_i": "-14.05",
+    "input_tp": "-1.70",
+    "input_lra": "2.90",
+    "input_thresh": "-24.13",
+    "output_i": "-13.72",
+    "output_tp": "-1.50",
+    "output_lra": "2.40",
+    "output_thresh": "-23.76",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.28"
+  },
+  "timeline_audio": {
+    "speech_blocks": 0,
+    "bgm": null,
+    "sfx": 0,
+    "track": {
+      "file": "song.flac",
+      "start": 4.0,
+      "short_by": 0.01
+    },
+    "loudnorm": {
+      "input_i": -15.72,
+      "input_tp": -3.62,
+      "output_i": -13.94,
+      "output_tp": -1.91,
+      "normalization_type": "linear"
+    }
+  },
+  "allow_missing": false,
+  "render_methods": [
+    "trim"
+  ],
+  "all_sources_are_video": true,
+  "all_hold0_zero": true
+}
