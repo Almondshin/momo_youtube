@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-11-23T00:10:24Z",
+  "purpose": "User requested rechecking the Higgsfield subscription-tool connection for scheduled production.",
+  "status": "subscription_tools_unavailable_in_current_session",
+  "current_evidence": {
+    "callable_higgsfield_tools": 0,
+    "plugin_discovery": {
+      "display_name": "Higgsfield",
+      "installed": false,
+      "installation_policy": "AVAILABLE"
+    },
+    "workspace_connections_count": 0,
+    "local_codex_mcp_higgsfield_registered": false,
+    "local_claude_mcp_higgsfield_registered": false
+  },
+  "prior_working_connection": {
+    "date": "2026-11-16",
+    "route": "Codex Apps Higgsfield subscription tools",
+    "verified_historical_tool_names": [
+      "mcp__codex_apps__higgsfield_balance",
+      "mcp__codex_apps__higgsfield_models_get",
+      "mcp__codex_apps__higgsfield_estimate_video_cost",
+      "mcp__codex_apps__higgsfield_generate_video"
+    ],
+    "last_observed_balance_call_at": "2026-11-16T07:43:53.630Z",
+    "source": "Existing local Codex session transcript; only tool names and call timestamps were extracted."
+  },
+  "interpretation": "The prior successful route was the Higgsfield app integration, not a standalone local MCP entry. Its absence from the local MCP list alone would not establish an app connection failure. In this session, the app tool inventory is empty and plugin discovery independently reports installed=false.",
+  "subscription_validity": "unverified; do not infer expiration",
+  "current_balance": "unverified",
+  "current_prices": "unverified",
+  "provider_error": null,
+  "costs": {
+    "higgsfield_credits": 0,
+    "extra_payment": 0
+  },
+  "next_step": "Install/connect the official Higgsfield app with the existing subscription account in the environment used by the scheduled agent; verify callable balance and price-estimate tools in that same provider session before generation.",
+  "standalone_mcp_registration_required": false,
+  "no_duplicate_run_started": true,
+  "production_status": "blocked_preflight",
+  "fully_unattended_production_verified": false
+}

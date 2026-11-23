@@ -26,7 +26,7 @@
     "2026-11-23: Official Suno account/usage and YouTube en/ko channel checks passed. API verified 20 recent uploads; latest upload remains ep22 on 2026-11-16. No new generation or upload performed."
   ],
   "blocking_checks": [
-    "Higgsfield subscription tools are unavailable in the current provider session; no local Higgsfield MCP registration and discoverable plugin installed=false."
+    "The prior working Codex Apps Higgsfield subscription tools are unavailable in this scheduled provider session. Plugin discovery reports installed=false; current balance and prices cannot be checked. A standalone MCP registration is not required by the prior working route."
   ],
   "last_checked": "2026-11-23",
   "today": {
@@ -120,5 +120,6 @@
     "preserved_user_selected_episode": "ep20"
   },
   "last_run_record": "run-2026-11-23.json",
-  "scheduler_audit": "scheduler-audit-2026-11-23.json"
+  "scheduler_audit": "scheduler-audit-2026-11-23.json",
+  "higgsfield_connection_recheck": "higgsfield-recheck-2026-11-23.json"
 }
