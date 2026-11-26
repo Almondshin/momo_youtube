@@ -1,0 +1,48 @@
+{
+  "reviewed_at": "2026-11-26T23:24:48.167162+00:00",
+  "reviewer": "agent",
+  "standing_authorization": "2026-11-16",
+  "selected_take": 1,
+  "selected_id": "8ad5fd78-b9df-477e-a24d-4fee8b020341",
+  "all_candidates_reviewed": 2,
+  "candidate_decision": "Take 1 retained for clear light solo and shorter instrumental tail. Take 2 is recoverable in Suno; not downloaded.",
+  "audio_listening": [
+    {
+      "id": "8193c880-99a1-48dd-8126-71c1438aad89",
+      "audio_id": "8ad5fd78-b9df-477e-a24d-4fee8b020341",
+      "status": "complete",
+      "created_at": "2026-11-26T23:16:53Z",
+      "answer": "Yes—the track sounds well suited to ages 2–4: a clear, light, friendly female-presenting solo with occasional light doubling, distinct English “carrot,” “broccoli,” and “corn,” and a catchy, repetitive chorus. The hook has a simple, sing-song stepped rise and fall with bouncy, predictable short phrases; the beat feels lively without sounding frantic. The measured beat is 110 BPM in 2/4. In the last 10 seconds (1:14–1:24), the final lyric resolves on “sky” at about 1:18 and is sustained until roughly 1:22, followed by a short, intentional instrumental cadence/decay to the end at 1:24—not an unfinished word. I hear no clear artifact, rushed diction, deep voice, or missing final verse. Korean food words are not sung; the lyrics are in English.\n\n```json\n{\"bpm\":110,\"meter\":\"2/4\",\"vocal\":\"Clear, light, friendly female-presenting solo with occasional light doubling\",\"keyword_clarity\":\"Carrot, broccoli, and corn are distinct in English; Korean terms are absent\",\"hook\":\"Repetitive sing-song stepped rise and fall; short, bouncy phrases that are easy to repeat\",\"ending\":\"Final word 'sky' resolves at about 1:18 and sustains to about 1:22; instrumental cadence/decay to 1:24, not an unfinished word\",\"issues\":\"No clear artifacts, deep voice, rushed diction, or missing final verse heard\",\"recommended_for_toddlers\":true}\n```"
+    },
+    {
+      "id": "5b09153d-0c67-47fa-87a6-42b8fdd45c27",
+      "audio_id": "11b55463-993f-4dc2-9a78-68c3456a3d9d",
+      "status": "complete",
+      "created_at": "2026-11-26T23:16:52Z",
+      "answer": "Yes—the lead sounds like a clear, light, friendly feminine solo, and carrot, broccoli, and corn are distinct in English. The repeated chorus is simple and easy to echo: short, bouncy name-and-action phrases, with a playful rising/arching contour and a punchy rhythmic finish. The beat feels lively and buoyant. The measured pulse is 107.2 BPM in 2/4; the audio impression of a brisk bounce may make it feel quicker, but I favor the beat measurement over the conflicting rough listening estimate. In the last 10 seconds, the final line is completed: “sky” is sustained and tapers around 1:24.5, followed by a short bright instrumental flourish/decay, fading by about 1:29–1:29.5. There is no clear unfinished word, and I hear no notable artifacts, adult/deep voice, rushed unclear diction, or missing final verse. The ending-time estimate is approximate: transcription confirms the closing line but does not align “sky.”\n\n```json\n{\"bpm\":107.2,\"meter\":\"2/4\",\"vocal\":\"Clear, light, friendly feminine-sounding solo\",\"keyword_clarity\":\"Carrot, broccoli, and corn are distinct in English\",\"hook\":\"Simple, repeatable name-and-action phrases; playful rising/arching contour and punchy rhythmic finish\",\"ending\":\"Final ‘sky’ completes around 84.5s; instrumental flourish follows and fades around 89–89.5s; no apparent cut-off word\",\"issues\":[],\"recommended_for_toddlers\":true}\n```"
+    }
+  ],
+  "lyrics_checks": {
+    "local_asr": {
+      "lyric_words": 136,
+      "heard_words": 126,
+      "matched": 0.904,
+      "lines_missing": [
+        "Carrot, carrot, wiggle with me",
+        "Broccoli, bounce like a little tree"
+      ],
+      "lines_interpolated": [],
+      "unmatched_heard_runs": []
+    },
+    "official_alignment": "suno/official-alignment.json",
+    "secondary_first_hook_check": "suno/first-chorus-stem-check.json"
+  },
+  "melody_comparison": "../ep25/melody-comparison.json",
+  "original_ep20_modified": false,
+  "source_audio_references_used": false,
+  "no_individual_content_approval_requested": true,
+  "render_window": [
+    4.2,
+    84.08
+  ]
+}

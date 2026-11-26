@@ -1,0 +1,17 @@
+{
+  "standing_authorization": "2026-11-16",
+  "new_individual_user_approval": false,
+  "selected_by": "agent",
+  "clip_id": "6e016210-074b-40ac-beac-cd5268a0cc25",
+  "format": "wav",
+  "preflight": {
+    "status": "requires_credit",
+    "format": "wav",
+    "credits_remaining": 7,
+    "message": "Downloading this song uses one of the user's suno.com download credits. Ask them first, then call again with confirm: true."
+  },
+  "authorized_download_credits": 1,
+  "extra_purchase": false,
+  "download_completed": true,
+  "credits_used": 1
+}

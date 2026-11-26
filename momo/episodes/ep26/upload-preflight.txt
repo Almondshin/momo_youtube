@@ -1,0 +1,34 @@
+
+━━ ep26 [en] — DRY RUN (자격증명·네트워크 사용 안 함)
+  영상: /Users/dream/dev/momo_youtube/momo/episodes/ep26/out/ep26_en.mp4 (50.8 MB)
+  요청 videos.insert — part=snippet,status, notifySubscribers=true, resumable, 청크 8 MB, 재시도 최대 8회
+  body = {
+    "snippet": {
+      "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+      "description": "Wiggle with carrot, bounce with broccoli, and tap along with corn! Sing a short happy chorus with Momo.\n\nThree veggie words for ages 2–4: CARROT · BROCCOLI · CORN. Simple repeated singing and a cheerful dance.\n\n#MomoTime #ToddlerSongs #VegetableSong #Carrot #Broccoli #Corn #KidsSongs #SingAlong",
+      "categoryId": "27",
+      "defaultLanguage": "en",
+      "defaultAudioLanguage": "en",
+      "tags": [
+        "Momo Time",
+        "toddler songs",
+        "vegetable song",
+        "carrot",
+        "broccoli",
+        "corn",
+        "모모타임",
+        "채소 동요",
+        "유아 동요"
+      ]
+    },
+    "status": {
+      "privacyStatus": "public",
+      "selfDeclaredMadeForKids": true
+    }
+  }
+  요청 thumbnails.set — videoId=<업로드 후 ID>, 파일 /Users/dream/dev/momo_youtube/momo/episodes/ep26/out/ep26_en_thumb.jpg (110 KB)
+  요청 playlistItems.insert — part=snippet, body = {"snippet": {"playlistId": "PLTOO0Q-QSj5I", "resourceId": {"kind": "youtube#video", "videoId": "<업로드 후 ID>"}}}
+  기록: /Users/dream/dev/momo_youtube/momo/episodes/ep26/youtube.json [en]
+
+✔ DRY RUN 끝 — 아무것도 올리지 않음. 아동용(made for kids)=true 로 설정됨.
+  ※ API 프로젝트가 YouTube 감사(audit)를 통과하기 전이면 API 로 올린 영상은 비공개로 잠긴다 (공개/일부공개로 바꿀 수 없음) → docs/YOUTUBE_SETUP.md

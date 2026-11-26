@@ -1,0 +1,45 @@
+{
+  "reviewed_at": "2026-11-26T23:24:48.167162+00:00",
+  "reviewer": "agent",
+  "standing_authorization": "2026-11-16",
+  "selected_take": 1,
+  "selected_id": "6e016210-074b-40ac-beac-cd5268a0cc25",
+  "all_candidates_reviewed": 2,
+  "candidate_decision": "Take 1 retained for clear light solo and shorter instrumental tail. Take 2 is recoverable in Suno; not downloaded.",
+  "audio_listening": [
+    {
+      "id": "27e0eae0-de73-469e-9764-cc8cda66a2ae",
+      "audio_id": "6e016210-074b-40ac-beac-cd5268a0cc25",
+      "status": "complete",
+      "created_at": "2026-11-26T23:16:53Z",
+      "answer": "The track is a strong fit for ages 2–4: it has a clear, light, friendly female solo, and 당근, 브로콜리, and 옥수수 sound distinct. The chorus is repetitive and easy to echo, with a gently rising-and-falling hook and balanced, regular phrases; the beat is lively and bouncy at 119 BPM in 4/4. In the final 10 seconds (about 1:20–1:30), the sung goodbye resolves around 1:20–1:21, followed by a deliberate instrumental decay rather than an unfinished word. I hear no rushed diction or obvious audio artifacts, and the ending seems complete; the exact vocal cutoff is approximate. One technical caveat: the peak is close to full scale, though no clipping is detected.\n\n```json\n{\"bpm\":119,\"meter\":\"4/4\",\"vocal\":\"Clear, light, friendly female solo\",\"keyword_clarity\":\"당근, 브로콜리, 옥수수 are distinct\",\"hook\":\"Repetitive and easy to echo; gently rising-and-falling contour with balanced, regular phrases\",\"ending\":\"Final sung goodbye resolves around 80–81 s; instrumental decay follows to the end at 90.4 s; no unfinished word heard\",\"issues\":\"No obvious artifacts, rushed unclear diction, adult/deep voice, or missing final verse; peak is near full scale but no clipping detected\",\"recommended_for_toddlers\":true}\n```"
+    },
+    {
+      "id": "1a8bc200-8d16-4107-bb00-a59f7500519c",
+      "audio_id": "87c7b6ee-a9c3-45b8-9068-7f4d8c9ae5bc",
+      "status": "complete",
+      "created_at": "2026-11-26T23:16:53Z",
+      "answer": "Yes. The track has a bright, friendly feminine-sounding lead that is mostly solo, with some light doubling; the Korean food names—당근, 브로콜리, and 옥수수—sound distinct, and the chorus has an easy, repetitive, gently arching tune with bouncy syllabic phrasing. The beat is lively and steady at 118 BPM, in a 2-beat meter. In the final 10 seconds, the vocal has already finished on a complete farewell around 1:12–1:14; the remaining ending is an intentional instrumental outro (roughly 1:15–1:27), not an unfinished word. No notable artifacts, deep/adult-sounding vocal, rushed diction, or missing final verse were reported. Confidence is medium: the ending timings and lyric interpretation are approximate.\n\n```json\n{\"bpm\":118,\"meter\":\"2 beats per bar\",\"vocal\":\"Bright, friendly feminine-sounding mostly solo lead; lightly doubled\",\"keyword_clarity\":\"당근, 브로콜리, 옥수수 distinct\",\"hook\":\"Repetitive, gently arching melodic contour; bouncy, simple phrase rhythm\",\"ending\":\"Complete farewell vocal around 72–74s; deliberate instrumental outro around 75–87s, not a cut-off word\",\"issues\":\"No notable artifacts, deep voice, rushed diction, or missing final verse reported\",\"recommended_for_toddlers\":true}`"
+    }
+  ],
+  "lyrics_checks": {
+    "local_asr": {
+      "lyric_words": 69,
+      "heard_words": 65,
+      "matched": 0.971,
+      "lines_missing": [],
+      "lines_interpolated": [],
+      "unmatched_heard_runs": []
+    },
+    "official_alignment": "suno/official-alignment.json",
+    "secondary_first_hook_check": null
+  },
+  "melody_comparison": "../ep25/melody-comparison.json",
+  "original_ep20_modified": false,
+  "source_audio_references_used": false,
+  "no_individual_content_approval_requested": true,
+  "render_window": [
+    1.6,
+    82.4
+  ]
+}

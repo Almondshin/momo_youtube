@@ -1,0 +1,1259 @@
+{
+  "audio_id": "6e016210-074b-40ac-beac-cd5268a0cc25",
+  "status": "complete",
+  "words": [
+    {
+      "word": "당",
+      "start_s": 2.127,
+      "end_s": 2.207,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 2.383,
+      "end_s": 2.653,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 당",
+      "start_s": 2.672,
+      "end_s": 2.752,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 2.941,
+      "end_s": 3.17,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 아",
+      "start_s": 3.256,
+      "end_s": 3.428,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "삭",
+      "start_s": 3.428,
+      "end_s": 3.694,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 3.728,
+      "end_s": 3.931,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "삭",
+      "start_s": 3.931,
+      "end_s": 4.173,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n브",
+      "start_s": 4.238,
+      "end_s": 4.31,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "로",
+      "start_s": 4.31,
+      "end_s": 4.494,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "콜",
+      "start_s": 4.517,
+      "end_s": 4.894,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "리",
+      "start_s": 4.915,
+      "end_s": 5.114,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 쏙",
+      "start_s": 5.114,
+      "end_s": 5.373,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "쏙",
+      "start_s": 5.388,
+      "end_s": 5.676,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "쏙",
+      "start_s": 5.676,
+      "end_s": 5.95,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n옥",
+      "start_s": 6.195,
+      "end_s": 6.275,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 6.602,
+      "end_s": 6.894,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 6.909,
+      "end_s": 7.17,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 톡",
+      "start_s": 7.224,
+      "end_s": 7.454,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "톡",
+      "start_s": 7.475,
+      "end_s": 7.694,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 톡",
+      "start_s": 7.714,
+      "end_s": 7.794,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "톡",
+      "start_s": 7.959,
+      "end_s": 8.108,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n채",
+      "start_s": 8.244,
+      "end_s": 8.411,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "소",
+      "start_s": 8.411,
+      "end_s": 8.681,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 친구",
+      "start_s": 8.697,
+      "end_s": 9.213,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 냠",
+      "start_s": 9.256,
+      "end_s": 9.336,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 9.354,
+      "end_s": 9.454,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 9.508,
+      "end_s": 9.588,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n채소 친구 냠",
+      "start_s": 9.592,
+      "end_s": 9.822,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 9.822,
+      "end_s": 9.902,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 9.909,
+      "end_s": 10.017,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n당",
+      "start_s": 10.2,
+      "end_s": 10.28,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 10.468,
+      "end_s": 10.734,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 당",
+      "start_s": 10.763,
+      "end_s": 10.843,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 11.009,
+      "end_s": 11.167,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 반",
+      "start_s": 11.275,
+      "end_s": 11.355,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "가",
+      "start_s": 11.572,
+      "end_s": 11.897,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "워",
+      "start_s": 11.897,
+      "end_s": 12.173,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n길",
+      "start_s": 14.217,
+      "end_s": 14.494,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "쭉",
+      "start_s": 14.504,
+      "end_s": 14.584,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 당",
+      "start_s": 14.752,
+      "end_s": 14.832,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 15.014,
+      "end_s": 15.213,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 흔들",
+      "start_s": 15.256,
+      "end_s": 15.774,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "흔",
+      "start_s": 15.798,
+      "end_s": 16.014,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "들",
+      "start_s": 16.033,
+      "end_s": 16.337,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n브",
+      "start_s": 18.248,
+      "end_s": 18.41,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "로",
+      "start_s": 18.41,
+      "end_s": 18.733,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "콜",
+      "start_s": 18.755,
+      "end_s": 19.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "리",
+      "start_s": 19.064,
+      "end_s": 19.293,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 반",
+      "start_s": 19.353,
+      "end_s": 19.433,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "가",
+      "start_s": 19.58,
+      "end_s": 19.987,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "워",
+      "start_s": 19.987,
+      "end_s": 20.302,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n작은",
+      "start_s": 21.782,
+      "end_s": 22.284,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 나",
+      "start_s": 22.391,
+      "end_s": 22.797,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "무",
+      "start_s": 22.797,
+      "end_s": 23.068,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 흔들",
+      "start_s": 23.258,
+      "end_s": 23.773,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "흔",
+      "start_s": 23.804,
+      "end_s": 24.013,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "들",
+      "start_s": 24.045,
+      "end_s": 24.386,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n당",
+      "start_s": 26.352,
+      "end_s": 26.432,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 26.609,
+      "end_s": 26.846,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 당",
+      "start_s": 26.891,
+      "end_s": 27.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 27.105,
+      "end_s": 27.373,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 아",
+      "start_s": 27.425,
+      "end_s": 27.586,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "삭",
+      "start_s": 27.586,
+      "end_s": 27.853,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 27.887,
+      "end_s": 28.08,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "삭",
+      "start_s": 28.08,
+      "end_s": 28.278,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n브",
+      "start_s": 28.402,
+      "end_s": 28.487,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "로",
+      "start_s": 28.487,
+      "end_s": 28.654,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "콜",
+      "start_s": 28.682,
+      "end_s": 29.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "리",
+      "start_s": 29.069,
+      "end_s": 29.282,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 쏙",
+      "start_s": 29.282,
+      "end_s": 29.602,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "쏙",
+      "start_s": 29.602,
+      "end_s": 29.829,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "쏙",
+      "start_s": 29.829,
+      "end_s": 30.108,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n옥",
+      "start_s": 30.36,
+      "end_s": 30.44,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 30.755,
+      "end_s": 31.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 31.068,
+      "end_s": 31.318,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 톡",
+      "start_s": 31.391,
+      "end_s": 31.613,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "톡",
+      "start_s": 31.636,
+      "end_s": 31.853,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 톡",
+      "start_s": 31.887,
+      "end_s": 32.093,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "톡",
+      "start_s": 32.127,
+      "end_s": 32.28,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n채",
+      "start_s": 32.403,
+      "end_s": 32.653,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "소",
+      "start_s": 32.653,
+      "end_s": 32.837,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 친구",
+      "start_s": 32.861,
+      "end_s": 33.373,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 냠",
+      "start_s": 33.415,
+      "end_s": 33.495,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 33.512,
+      "end_s": 33.613,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 33.678,
+      "end_s": 33.727,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n채소",
+      "start_s": 33.727,
+      "end_s": 33.824,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 친구",
+      "start_s": 33.824,
+      "end_s": 33.979,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 냠",
+      "start_s": 33.979,
+      "end_s": 34.059,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 34.06,
+      "end_s": 34.193,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 34.334,
+      "end_s": 34.37,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n옥",
+      "start_s": 34.37,
+      "end_s": 34.45,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 34.667,
+      "end_s": 34.894,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 34.895,
+      "end_s": 35.134,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "야",
+      "start_s": 35.175,
+      "end_s": 35.347,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 반",
+      "start_s": 35.512,
+      "end_s": 35.592,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "가",
+      "start_s": 35.794,
+      "end_s": 36.153,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "워",
+      "start_s": 36.153,
+      "end_s": 36.383,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n노",
+      "start_s": 38.47,
+      "end_s": 38.654,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "란",
+      "start_s": 38.681,
+      "end_s": 39.214,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 알",
+      "start_s": 39.285,
+      "end_s": 39.373,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "이",
+      "start_s": 39.453,
+      "end_s": 39.479,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 톡",
+      "start_s": 39.479,
+      "end_s": 39.773,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "톡",
+      "start_s": 39.792,
+      "end_s": 40.173,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "톡",
+      "start_s": 40.186,
+      "end_s": 40.505,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n두",
+      "start_s": 42.472,
+      "end_s": 42.552,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 손",
+      "start_s": 42.775,
+      "end_s": 42.974,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 모",
+      "start_s": 42.977,
+      "end_s": 43.214,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 43.268,
+      "end_s": 43.454,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 짝",
+      "start_s": 43.463,
+      "end_s": 43.85,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "짝",
+      "start_s": 43.85,
+      "end_s": 44.252,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "짝",
+      "start_s": 44.252,
+      "end_s": 44.564,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n모",
+      "start_s": 46.551,
+      "end_s": 46.733,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "모",
+      "start_s": 46.766,
+      "end_s": 47.053,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "랑",
+      "start_s": 47.073,
+      "end_s": 47.453,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 춤",
+      "start_s": 47.464,
+      "end_s": 47.773,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "을",
+      "start_s": 47.806,
+      "end_s": 48.128,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 춰",
+      "start_s": 48.183,
+      "end_s": 48.493,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "요",
+      "start_s": 48.496,
+      "end_s": 48.715,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n당",
+      "start_s": 50.514,
+      "end_s": 50.594,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 50.792,
+      "end_s": 51.051,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 당",
+      "start_s": 51.051,
+      "end_s": 51.133,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 51.347,
+      "end_s": 51.555,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 아",
+      "start_s": 51.665,
+      "end_s": 51.733,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "삭",
+      "start_s": 51.733,
+      "end_s": 52.014,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "아",
+      "start_s": 52.06,
+      "end_s": 52.237,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "삭",
+      "start_s": 52.237,
+      "end_s": 52.494,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n브",
+      "start_s": 52.586,
+      "end_s": 52.666,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "로",
+      "start_s": 52.735,
+      "end_s": 52.893,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "콜",
+      "start_s": 52.918,
+      "end_s": 53.294,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "리",
+      "start_s": 53.306,
+      "end_s": 53.51,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 쏙",
+      "start_s": 53.51,
+      "end_s": 53.763,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "쏙",
+      "start_s": 53.763,
+      "end_s": 54.068,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "쏙",
+      "start_s": 54.068,
+      "end_s": 54.311,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n옥",
+      "start_s": 54.582,
+      "end_s": 54.662,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 54.93,
+      "end_s": 55.294,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 55.305,
+      "end_s": 55.534,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 톡",
+      "start_s": 55.556,
+      "end_s": 55.776,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "톡",
+      "start_s": 55.864,
+      "end_s": 56.093,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 톡",
+      "start_s": 56.112,
+      "end_s": 56.334,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "톡",
+      "start_s": 56.352,
+      "end_s": 56.574,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n채",
+      "start_s": 56.595,
+      "end_s": 56.814,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "소",
+      "start_s": 56.814,
+      "end_s": 57.035,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 친구",
+      "start_s": 57.035,
+      "end_s": 57.614,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 냠",
+      "start_s": 57.654,
+      "end_s": 57.734,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 57.753,
+      "end_s": 57.853,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 57.901,
+      "end_s": 57.981,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n채소 친구",
+      "start_s": 57.993,
+      "end_s": 58.157,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 냠",
+      "start_s": 58.157,
+      "end_s": 58.221,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 58.221,
+      "end_s": 58.3,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "냠",
+      "start_s": 58.3,
+      "end_s": 58.459,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n\n당",
+      "start_s": 66.669,
+      "end_s": 66.749,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 67.193,
+      "end_s": 67.514,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 브",
+      "start_s": 67.691,
+      "end_s": 67.83,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "로",
+      "start_s": 67.83,
+      "end_s": 68.093,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "콜",
+      "start_s": 68.111,
+      "end_s": 68.413,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "리",
+      "start_s": 68.438,
+      "end_s": 68.674,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 옥",
+      "start_s": 68.745,
+      "end_s": 68.825,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 69.137,
+      "end_s": 69.431,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 69.431,
+      "end_s": 69.755,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n다",
+      "start_s": 70.724,
+      "end_s": 70.922,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 같이",
+      "start_s": 71.039,
+      "end_s": 71.533,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 흔들",
+      "start_s": 71.725,
+      "end_s": 71.885,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "흔",
+      "start_s": 72.458,
+      "end_s": 72.733,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "들",
+      "start_s": 72.76,
+      "end_s": 73.061,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n당",
+      "start_s": 74.749,
+      "end_s": 74.829,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "근",
+      "start_s": 75.272,
+      "end_s": 75.599,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 브",
+      "start_s": 75.764,
+      "end_s": 75.847,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "로",
+      "start_s": 75.847,
+      "end_s": 76.173,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "콜",
+      "start_s": 76.195,
+      "end_s": 76.493,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "리",
+      "start_s": 76.52,
+      "end_s": 76.748,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 옥",
+      "start_s": 76.819,
+      "end_s": 76.899,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 77.155,
+      "end_s": 77.443,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "수",
+      "start_s": 77.443,
+      "end_s": 77.746,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "\n내일",
+      "start_s": 78.061,
+      "end_s": 78.493,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 또",
+      "start_s": 78.549,
+      "end_s": 78.629,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 만나",
+      "start_s": 79.293,
+      "end_s": 79.453,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": " 안",
+      "start_s": 80.27,
+      "end_s": 80.35,
+      "success": true,
+      "p_align": 1
+    },
+    {
+      "word": "녕\n\n",
+      "start_s": 80.585,
+      "end_s": 80.889,
+      "success": true,
+      "p_align": 1
+    }
+  ]
+}

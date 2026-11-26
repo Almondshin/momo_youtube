@@ -1,0 +1,13 @@
+{
+  "title": "아삭아삭 채소 친구",
+  "lyrics": "[Chorus]\n당근 당근 아삭아삭\n브로콜리 쏙쏙쏙\n옥수수 톡톡 톡톡\n채소 친구 냠냠냠\n\n[Verse 1]\n당근 당근 반가워\n길쭉 당근 흔들흔들\n브로콜리 반가워\n작은 나무 흔들흔들\n\n[Chorus]\n당근 당근 아삭아삭\n브로콜리 쏙쏙쏙\n옥수수 톡톡 톡톡\n채소 친구 냠냠냠\n\n[Verse 2]\n옥수수야 반가워\n노란 알이 톡톡톡\n두 손 모아 짝짝짝\n모모랑 춤을 춰요\n\n[Final chorus]\n당근 당근 아삭아삭\n브로콜리 쏙쏙쏙\n옥수수 톡톡 톡톡\n채소 친구 냠냠냠\n\n[Outro]\n당근 브로콜리 옥수수\n다 같이 흔들흔들\n당근 브로콜리 옥수수\n내일 또 만나 안녕",
+  "style": "Original Korean preschool singalong, cheerful acoustic swing shuffle at 118 BPM, major key. One clear light friendly female lead, natural child-friendly diction, small comfortable melodic range. Bouncy upright bass, brushed snare, handclaps, playful clarinet answers and light acoustic guitar. Catchy four-line hook with a rising three-note call and short descending answer, memorable separate phrases, sparse arrangement supporting the voice. Fully sung, not spoken or rap. Around 90 seconds, start singing within 2 seconds, concise sections, repeat supplied chorus, end with complete sung goodbye and 2-second resolved instrumental decay. No source melody or cover.",
+  "negative_style": "male vocal, deep voice, choir, harsh vocal, spoken narration, rap, trap, heavy drums, long intro, long instrumental solo, excessive melisma, shouting, abrupt cutoff",
+  "vocal_gender": "female",
+  "model": "v6",
+  "duration": 90,
+  "duration_guidance": true,
+  "duration_strict": true,
+  "max_mode": false,
+  "idempotency_key": "momo-2026-11-27-ep25-original-01"
+}

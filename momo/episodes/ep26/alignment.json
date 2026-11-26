@@ -1,0 +1,816 @@
+{
+ "lines": [
+  {
+   "text": "Corn, corn, tap, tap, tap",
+   "section": "Chorus",
+   "words": [
+    [
+     "Corn,",
+     3.18,
+     3.36
+    ],
+    [
+     "corn,",
+     3.38,
+     3.56
+    ],
+    [
+     "tap,",
+     3.58,
+     3.78
+    ],
+    [
+     "tap,",
+     3.92,
+     4.06
+    ],
+    [
+     "tap",
+     4.06,
+     4.32
+    ]
+   ],
+   "heard": 3,
+   "of": 5
+  },
+  {
+   "text": "Wiggle and bounce and clap, clap, clap",
+   "section": "Chorus",
+   "words": [
+    [
+     "Wiggle",
+     4.32,
+     5.12
+    ],
+    [
+     "and",
+     5.12,
+     7.12
+    ],
+    [
+     "bounce",
+     16.08,
+     16.42
+    ],
+    [
+     "and",
+     16.42,
+     16.62
+    ],
+    [
+     "clap,",
+     16.62,
+     16.9
+    ],
+    [
+     "clap,",
+     17.0,
+     17.16
+    ],
+    [
+     "clap",
+     17.26,
+     17.46
+    ]
+   ],
+   "heard": 7,
+   "of": 7
+  },
+  {
+   "text": "Carrot, carrot, long and bright",
+   "section": "Verse 1",
+   "words": [
+    [
+     "Carrot,",
+     20.52,
+     20.9
+    ],
+    [
+     "carrot,",
+     21.1,
+     21.18
+    ],
+    [
+     "long",
+     21.18,
+     21.38
+    ],
+    [
+     "and",
+     21.38,
+     21.54
+    ],
+    [
+     "bright",
+     21.54,
+     21.98
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Wiggle to the left, wiggle to the right",
+   "section": "Verse 1",
+   "words": [
+    [
+     "Wiggle",
+     21.98,
+     23.98
+    ],
+    [
+     "to",
+     24.58,
+     24.74
+    ],
+    [
+     "the",
+     24.74,
+     24.86
+    ],
+    [
+     "left,",
+     24.86,
+     25.24
+    ],
+    [
+     "wiggle",
+     25.38,
+     25.64
+    ],
+    [
+     "to",
+     25.64,
+     25.82
+    ],
+    [
+     "the",
+     25.82,
+     25.96
+    ],
+    [
+     "right",
+     25.96,
+     26.5
+    ]
+   ],
+   "heard": 8,
+   "of": 8
+  },
+  {
+   "text": "Broccoli, broccoli, little green tree",
+   "section": "Verse 1",
+   "words": [
+    [
+     "Broccoli,",
+     28.62,
+     29.14
+    ],
+    [
+     "broccoli,",
+     29.3,
+     29.56
+    ],
+    [
+     "little",
+     29.78,
+     30.04
+    ],
+    [
+     "green",
+     30.04,
+     30.28
+    ],
+    [
+     "tree",
+     30.28,
+     30.6
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Bounce, bounce, bounce with me",
+   "section": "Verse 1",
+   "words": [
+    [
+     "Bounce,",
+     30.98,
+     31.22
+    ],
+    [
+     "bounce,",
+     31.48,
+     31.72
+    ],
+    [
+     "bounce",
+     32.02,
+     32.16
+    ],
+    [
+     "with",
+     32.16,
+     32.46
+    ],
+    [
+     "me",
+     32.46,
+     32.82
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Carrot, carrot, wiggle with me",
+   "section": "Chorus",
+   "words": [
+    [
+     "Carrot,",
+     33.06,
+     33.56
+    ],
+    [
+     "carrot,",
+     33.68,
+     34.0
+    ],
+    [
+     "wiggle",
+     35.02,
+     35.6
+    ],
+    [
+     "with",
+     35.6,
+     36.08
+    ],
+    [
+     "me",
+     36.08,
+     36.62
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Broccoli, bounce like a little tree",
+   "section": "Chorus",
+   "words": [
+    [
+     "Broccoli,",
+     37.54,
+     38.06
+    ],
+    [
+     "bounce",
+     39.02,
+     39.07
+    ],
+    [
+     "like",
+     39.02,
+     39.64
+    ],
+    [
+     "a",
+     39.64,
+     40.18
+    ],
+    [
+     "little",
+     40.18,
+     40.56
+    ],
+    [
+     "tree",
+     40.56,
+     40.96
+    ]
+   ],
+   "heard": 6,
+   "of": 6
+  },
+  {
+   "text": "Corn, corn, tap, tap, tap",
+   "section": "Chorus",
+   "words": [
+    [
+     "Corn,",
+     41.68,
+     42.14
+    ],
+    [
+     "corn,",
+     42.38,
+     42.58
+    ],
+    [
+     "tap,",
+     42.88,
+     43.06
+    ],
+    [
+     "tap,",
+     43.18,
+     43.34
+    ],
+    [
+     "tap",
+     43.44,
+     43.58
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Wiggle and bounce and clap, clap, clap",
+   "section": "Chorus",
+   "words": [
+    [
+     "Wiggle",
+     43.82,
+     44.22
+    ],
+    [
+     "and",
+     44.22,
+     44.44
+    ],
+    [
+     "bounce",
+     44.44,
+     44.8
+    ],
+    [
+     "and",
+     44.8,
+     44.98
+    ],
+    [
+     "clap,",
+     44.98,
+     45.26
+    ],
+    [
+     "clap,",
+     45.32,
+     45.54
+    ],
+    [
+     "clap",
+     45.68,
+     45.78
+    ]
+   ],
+   "heard": 7,
+   "of": 7
+  },
+  {
+   "text": "Corn, corn, yellow and sweet",
+   "section": "Verse 2",
+   "words": [
+    [
+     "Corn,",
+     46.04,
+     46.5
+    ],
+    [
+     "corn,",
+     46.74,
+     46.96
+    ],
+    [
+     "yellow",
+     47.3,
+     47.48
+    ],
+    [
+     "and",
+     47.48,
+     47.72
+    ],
+    [
+     "sweet",
+     47.72,
+     48.1
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Tap, tap, tap your little feet",
+   "section": "Verse 2",
+   "words": [
+    [
+     "Tap,",
+     48.38,
+     48.54
+    ],
+    [
+     "tap,",
+     48.68,
+     48.8
+    ],
+    [
+     "tap",
+     48.92,
+     49.04
+    ],
+    [
+     "your",
+     49.04,
+     49.38
+    ],
+    [
+     "little",
+     49.38,
+     49.72
+    ],
+    [
+     "feet",
+     49.72,
+     50.1
+    ]
+   ],
+   "heard": 6,
+   "of": 6
+  },
+  {
+   "text": "Wiggle your shoulders, wave hello",
+   "section": "Verse 2",
+   "words": [
+    [
+     "Wiggle",
+     50.36,
+     50.78
+    ],
+    [
+     "your",
+     50.78,
+     50.96
+    ],
+    [
+     "shoulders,",
+     50.96,
+     51.48
+    ],
+    [
+     "wave",
+     51.68,
+     51.84
+    ],
+    [
+     "hello",
+     51.84,
+     52.24
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Clap your hands and here we go",
+   "section": "Verse 2",
+   "words": [
+    [
+     "Clap",
+     52.62,
+     52.84
+    ],
+    [
+     "your",
+     52.84,
+     53.1
+    ],
+    [
+     "hands",
+     53.1,
+     53.52
+    ],
+    [
+     "and",
+     53.52,
+     53.74
+    ],
+    [
+     "here",
+     53.74,
+     54.02
+    ],
+    [
+     "we",
+     54.02,
+     54.24
+    ],
+    [
+     "go",
+     54.24,
+     54.7
+    ]
+   ],
+   "heard": 7,
+   "of": 7
+  },
+  {
+   "text": "Carrot, carrot, wiggle with me",
+   "section": "Final chorus",
+   "words": [
+    [
+     "Carrot,",
+     56.96,
+     57.56
+    ],
+    [
+     "carrot,",
+     57.7,
+     57.96
+    ],
+    [
+     "wiggle",
+     58.42,
+     59.62
+    ],
+    [
+     "with",
+     59.62,
+     60.08
+    ],
+    [
+     "me",
+     60.08,
+     60.66
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Broccoli, bounce like a little tree",
+   "section": "Final chorus",
+   "words": [
+    [
+     "Broccoli,",
+     61.84,
+     62.44
+    ],
+    [
+     "bounce",
+     62.44,
+     63.04
+    ],
+    [
+     "like",
+     63.04,
+     63.64
+    ],
+    [
+     "a",
+     63.64,
+     64.1
+    ],
+    [
+     "little",
+     64.1,
+     64.56
+    ],
+    [
+     "tree",
+     64.56,
+     64.98
+    ]
+   ],
+   "heard": 6,
+   "of": 6
+  },
+  {
+   "text": "Corn, corn, tap, tap, tap",
+   "section": "Final chorus",
+   "words": [
+    [
+     "Corn,",
+     64.98,
+     66.08
+    ],
+    [
+     "corn,",
+     66.34,
+     66.64
+    ],
+    [
+     "tap,",
+     66.88,
+     67.08
+    ],
+    [
+     "tap,",
+     67.2,
+     67.36
+    ],
+    [
+     "tap",
+     67.42,
+     67.64
+    ]
+   ],
+   "heard": 5,
+   "of": 5
+  },
+  {
+   "text": "Wiggle and bounce and clap, clap, clap",
+   "section": "Final chorus",
+   "words": [
+    [
+     "Wiggle",
+     67.64,
+     68.26
+    ],
+    [
+     "and",
+     68.26,
+     68.44
+    ],
+    [
+     "bounce",
+     68.44,
+     68.82
+    ],
+    [
+     "and",
+     68.82,
+     68.98
+    ],
+    [
+     "clap,",
+     68.98,
+     69.26
+    ],
+    [
+     "clap,",
+     69.38,
+     69.52
+    ],
+    [
+     "clap",
+     69.64,
+     69.8
+    ]
+   ],
+   "heard": 7,
+   "of": 7
+  },
+  {
+   "text": "Carrot, broccoli, corn, hooray",
+   "section": "Outro",
+   "words": [
+    [
+     "Carrot,",
+     69.8,
+     70.64
+    ],
+    [
+     "broccoli,",
+     71.1,
+     71.15
+    ],
+    [
+     "corn,",
+     71.3,
+     71.5
+    ],
+    [
+     "hooray",
+     71.6,
+     72.2
+    ]
+   ],
+   "heard": 4,
+   "of": 4
+  },
+  {
+   "text": "Thank you for a happy day",
+   "section": "Outro",
+   "words": [
+    [
+     "Thank",
+     72.2,
+     72.5
+    ],
+    [
+     "you",
+     72.5,
+     72.78
+    ],
+    [
+     "for",
+     72.78,
+     73.14
+    ],
+    [
+     "a",
+     73.14,
+     73.44
+    ],
+    [
+     "happy",
+     73.44,
+     73.74
+    ],
+    [
+     "day",
+     73.74,
+     74.18
+    ]
+   ],
+   "heard": 6,
+   "of": 6
+  },
+  {
+   "text": "Carrot, broccoli, corn, goodbye",
+   "section": "Outro",
+   "words": [
+    [
+     "Carrot,",
+     74.18,
+     75.0
+    ],
+    [
+     "broccoli,",
+     75.08,
+     75.44
+    ],
+    [
+     "corn,",
+     75.66,
+     75.84
+    ],
+    [
+     "goodbye",
+     75.92,
+     76.36
+    ]
+   ],
+   "heard": 4,
+   "of": 4
+  },
+  {
+   "text": "Wave your hands up to the sky",
+   "section": "Outro",
+   "words": [
+    [
+     "Wave",
+     76.36,
+     76.96
+    ],
+    [
+     "your",
+     76.96,
+     77.18
+    ],
+    [
+     "hands",
+     77.18,
+     77.54
+    ],
+    [
+     "up",
+     77.54,
+     77.74
+    ],
+    [
+     "to",
+     77.74,
+     78.14
+    ],
+    [
+     "the",
+     78.14,
+     78.6
+    ],
+    [
+     "sky",
+     78.6,
+     79.2
+    ]
+   ],
+   "heard": 7,
+   "of": 7
+  }
+ ],
+ "report": {
+  "lyric_words": 136,
+  "heard_words": 126,
+  "matched": 0.904,
+  "lines_missing": [
+   "Carrot, carrot, wiggle with me",
+   "Broccoli, bounce like a little tree"
+  ],
+  "lines_interpolated": [],
+  "unmatched_heard_runs": []
+ }
+}

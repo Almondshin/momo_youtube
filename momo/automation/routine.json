@@ -25,41 +25,47 @@
     "2026-11-16: Existing Orca automation enabled, Monday/Friday 09:00 Asia/Seoul, with YouTube credential precheck.",
     "2026-11-23: Official Suno account/usage and YouTube en/ko channel checks passed. API verified 20 recent uploads; latest upload remains ep22 on 2026-11-16. No new generation or upload performed.",
     "2026-11-23: User-supplied official Higgsfield MCP endpoint registered globally in Codex and OAuth login succeeded. Fresh local Codex MCP runtime discovered 217 tools and successfully read Plus balance 1177.37 and image/video cost estimates; zero generation credits spent.",
-    "2026-11-23: ep23 Korean and ep24 English completed; both API-verified public, made for kids, processing succeeded and present in language playlists. Higgsfield shared spend 97/150; Suno generation 20 and downloads 2. Interactive resumption, not unattended verification."
+    "2026-11-23: ep23 Korean and ep24 English completed; both API-verified public, made for kids, processing succeeded and present in language playlists. Higgsfield shared spend 97/150; Suno generation 20 and downloads 2. Interactive resumption, not unattended verification.",
+    "2026-11-27: Suno Pro and Higgsfield Plus official tools connected; YouTube expired credentials reauthorized with existing Google session and same channel. Remote current-date duplicate check passed.",
+    "2026-11-27: ep25 KO and ep26 EN API-verified public, made for kids, processing succeeded and in language playlists. Six approved ep03 sources reused; Higgsfield 0/150. Suno generation 20 and downloads 2; balances verified."
   ],
   "blocking_checks": [],
-  "last_checked": "2026-11-23",
+  "last_checked": "2026-11-27",
   "today": {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "status": "completed",
-    "run_record": "run-2026-11-23.json",
-    "scheduler_run_id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
+    "run_record": "run-2026-11-27.json",
+    "scheduler_run_id": null,
+    "episodes": [
+      "ep25",
+      "ep26"
+    ],
     "uploaded_episodes": [
-      "ep23",
-      "ep24"
+      "ep25",
+      "ep26"
     ],
     "new_pair": [
       {
-        "ep": "ep23",
+        "ep": "ep25",
         "language": "ko",
-        "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
-        "url": "https://www.youtube.com/watch?v=1E3LvTennHI",
+        "title": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임",
+        "url": "https://www.youtube.com/watch?v=VHeoIVekMKQ",
         "privacy": "public",
         "made_for_kids": true,
         "processing_status": "succeeded",
         "playlist_id": "PLHfQPAU3ZVb8",
-        "duration_seconds": 99.166667
+        "duration_seconds": 80.8
       },
       {
-        "ep": "ep24",
+        "ep": "ep26",
         "language": "en",
-        "title": "Butterfly, Flutter By! 🦋🌸 | Garden Dance Song for Toddlers | Momo Time",
-        "url": "https://www.youtube.com/watch?v=-BctWf5H7Gg",
+        "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+        "url": "https://www.youtube.com/watch?v=qymFBaZr04w",
         "privacy": "public",
         "made_for_kids": true,
         "processing_status": "succeeded",
         "playlist_id": "PLTOO0Q-QSj5I",
-        "duration_seconds": 94.166667
+        "duration_seconds": 79.866667
       }
     ],
     "new_pair_complete": true,
@@ -68,14 +74,10 @@
     "costs": {
       "suno_generation_credits": 20,
       "suno_download_credits": 2,
-      "higgsfield_credits": 97,
+      "higgsfield_credits": 0,
       "extra_payment": 0
     },
-    "episodes": [
-      "ep23",
-      "ep24"
-    ],
-    "completed_at": "2026-11-23T00:56:26.991405+00:00"
+    "completed_at": "2026-11-26T23:30:34.740033+00:00"
   },
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "enabled": true,
@@ -93,45 +95,47 @@
   "verification_pending": [
     "No complete unattended scheduled production/upload has been verified.",
     "2026-11-20 and 2026-11-23 scheduler launch records show hooksReviewBlocked. The current session is run 2 and is now executing; no hook trust change or permanent scheduler fix was performed by this session.",
-    "YouTube en/ko refresh and channel checks passed on 2026-11-23; future OAuth renewal is not guaranteed by this check.",
-    "Higgsfield authentication, discovery and read-only calls passed in a fresh local Codex runtime; the next scheduler-launched session and full production/upload still require end-to-end verification."
+    "Higgsfield authentication, discovery and read-only calls passed in a fresh local Codex runtime; the next scheduler-launched session and full production/upload still require end-to-end verification.",
+    "2026-11-27: YouTube invalid_grant repaired using existing Google session and API checks passed. This user-requested run does not prove a fresh unattended scheduled launch or future OAuth renewal."
   ],
   "last_completed_production": {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "uploaded_episodes": [
-      "ep23",
-      "ep24"
+      "ep25",
+      "ep26"
     ],
-    "production_type": "Interactive resumption of today scheduled record after Higgsfield OAuth repair; bilingual independent originals and shared garden visuals.",
+    "production_type": "User-requested early bilingual production, independent original songs and one approved reused vegetable visual set.",
     "new_pair": [
       {
-        "ep": "ep23",
+        "ep": "ep25",
         "language": "ko",
-        "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
-        "url": "https://www.youtube.com/watch?v=1E3LvTennHI",
+        "title": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임",
+        "url": "https://www.youtube.com/watch?v=VHeoIVekMKQ",
         "privacy": "public",
         "made_for_kids": true,
         "processing_status": "succeeded",
         "playlist_id": "PLHfQPAU3ZVb8",
-        "duration_seconds": 99.166667
+        "duration_seconds": 80.8
       },
       {
-        "ep": "ep24",
+        "ep": "ep26",
         "language": "en",
-        "title": "Butterfly, Flutter By! 🦋🌸 | Garden Dance Song for Toddlers | Momo Time",
-        "url": "https://www.youtube.com/watch?v=-BctWf5H7Gg",
+        "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+        "url": "https://www.youtube.com/watch?v=qymFBaZr04w",
         "privacy": "public",
         "made_for_kids": true,
         "processing_status": "succeeded",
         "playlist_id": "PLTOO0Q-QSj5I",
-        "duration_seconds": 94.166667
+        "duration_seconds": 79.866667
       }
     ],
     "new_pair_complete": true,
     "unattended_execution_verified": false
   },
-  "last_run_record": "run-2026-11-23.json",
-  "scheduler_audit": "scheduler-audit-2026-11-23.json",
+  "last_run_record": "run-2026-11-27.json",
+  "scheduler_audit": "scheduler-audit-2026-11-27.json",
   "higgsfield_connection_recheck": "higgsfield-recheck-2026-11-23.json",
-  "higgsfield_connection_record": "higgsfield-connection-2026-11-23.json"
+  "higgsfield_connection_record": "higgsfield-connection-2026-11-27.json",
+  "next_new_production_slot": "2026-11-30T09:00:00+09:00",
+  "scheduled_today_duplicate_policy": "The 2026-11-27 09:00 scheduled slot must observe today completed and skip new generation/upload."
 }

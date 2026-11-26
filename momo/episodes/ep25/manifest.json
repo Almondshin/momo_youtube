@@ -1,0 +1,2689 @@
+{
+  "schema": 1,
+  "ep": "ep25",
+  "status": "uploaded",
+  "topic": {
+    "en": "Carrot, Broccoli and Corn",
+    "ko": "당근 브로콜리 옥수수"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo",
+    "ducky"
+  ],
+  "title": {
+    "ko": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임"
+  },
+  "thumbnail": {
+    "cut": "c01",
+    "text": {
+      "ko": "당근"
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "ko": {
+      "title": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임",
+      "description": "아삭아삭 당근, 쏙쏙 브로콜리, 톡톡 옥수수! 모모와 채소 친구들을 만나고 짧은 후렴을 따라 불러요.\n\n2~4세 아이를 위한 세 단어: 당근 · 브로콜리 · 옥수수\n화면에는 배우는 채소 이름만 나와요.\n\n#모모타임 #동요 #채소동요 #당근 #브로콜리 #옥수수 #유아동요 #MomoTime",
+      "tags": [
+        "Momo Time",
+        "toddler songs",
+        "vegetable song",
+        "carrot",
+        "broccoli",
+        "corn",
+        "모모타임",
+        "채소 동요",
+        "유아 동요"
+      ],
+      "playlist_id": "PLHfQPAU3ZVb8"
+    }
+  },
+  "credits": {
+    "estimate": 0,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0,
+    "cap": 150
+  },
+  "notes": {
+    "standing_authorization": "2026-11-16",
+    "run_date": "2026-11-27",
+    "paired_episode": "ep26",
+    "reviewer": "agent; no new individual user approval",
+    "visual_plan": {
+      "shared_visual_owner": "ep25",
+      "source_episode": "ep03",
+      "sources": [
+        "c03",
+        "c11",
+        "c20",
+        "c09",
+        "c16",
+        "c26"
+      ],
+      "new_generation": false,
+      "planned_base_credits": 0,
+      "pair_cap": 150,
+      "source_window_limits": {
+        "c03": [
+          0,
+          3.1
+        ],
+        "others": [
+          0,
+          4.0
+        ]
+      }
+    },
+    "v_over_reason": "Current short-song policy: reuse six approved non-lipsync sources, recut to the new song. No fixed spoken intro/outro.",
+    "approvals": [
+      "2026-11-27 agent visual review of ep03 approved sources; identity and moving food subjects suitable for current keyword-only production."
+    ],
+    "composition": {
+      "mode": "independent audio_create; no reference audio",
+      "style": "Original Korean preschool singalong, cheerful acoustic swing shuffle at 118 BPM, major key. One clear light friendly female lead, natural child-friendly diction, small comfortable melodic range. Bouncy upright bass, brushed snare, handclaps, playful clarinet answers and light acoustic guitar. Catchy four-line hook with a rising three-note call and short descending answer, memorable separate phrases, sparse arrangement supporting the voice. Fully sung, not spoken or rap. Around 90 seconds, start singing within 2 seconds, concise sections, repeat supplied chorus, end with complete sung goodbye and 2-second resolved instrumental decay. No source melody or cover.",
+      "compare_with": [
+        "ep20",
+        "ep23",
+        "ep24",
+        "ep26"
+      ]
+    },
+    "selected_song": {
+      "id": "6e016210-074b-40ac-beac-cd5268a0cc25",
+      "url": "https://suno.com/song/6e016210-074b-40ac-beac-cd5268a0cc25",
+      "take": 1,
+      "selected_by": "agent",
+      "standing_authorization": "2026-11-16",
+      "generation_credits_used": 10,
+      "download_credits_used": 1,
+      "no_reference_audio": true
+    },
+    "review_summary": {
+      "song": "Approved after official listening, stem alignment and melody-contour comparison. See music-review.json.",
+      "reviewer": "agent",
+      "standing_authorization": "2026-11-16",
+      "unattended_execution_verified": false
+    },
+    "validation_review": "No validation errors. Legacy V/S/L and intro/narration warnings superseded by current song-only no-lipsync policy. Object-only close-ups intentionally have momo:false. Combined keywords are three food nouns separated by dots; no sentence captions.",
+    "thumbnail_review": "Initial three-word thumbnail obscured vegetables. Revised to one clear learning word above an unobstructed carrot close-up.",
+    "final_qa": {
+      "status": "passed",
+      "reviewer": "agent",
+      "standing_authorization": "2026-11-16",
+      "duration": 80.8,
+      "size": [
+        1920,
+        1080
+      ],
+      "fps": 30,
+      "no_lipsync": true,
+      "all_clips_trimmed_without_freeze": true,
+      "measured_lufs": -14.41,
+      "measured_true_peak_dbtp": -1.77,
+      "last_frame_reviewed": true,
+      "evidence": [
+        "final-technical-review.json",
+        "music-review.json",
+        "clip-technical-check.json"
+      ],
+      "youtube_processing_status": "succeeded",
+      "public_made_for_kids_verified": true,
+      "playlist_verified": true
+    },
+    "final_assets": {
+      "video_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep25/ep25_ko.mp4",
+      "thumbnail_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep25/ep25_ko_thumb.jpg",
+      "source_original_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep25/ep25_original.wav",
+      "instrumental_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep25/song_inst.flac",
+      "sha256": "7d75af50c45013a58ce4efd58bb2dd031a5e16f4eef0ee6f601b8e9ba353c03b"
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "fbc8deb7-dc47-4551-a2c5-055fc6659a76",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_fbc8deb7-dc47-4551-a2c5-055fc6659a76.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c03"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "e2cafe31-750a-4b5d-b460-36a395e49381",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102121_e2cafe31-750a-4b5d-b460-36a395e49381.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c03"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "당근"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 1.6,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.000..2.482s. Lyric: 당근 당근 아삭아삭"
+    },
+    {
+      "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "5e65b2af-3023-481f-ac19-d6b5e460bc7a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092642_5e65b2af-3023-481f-ac19-d6b5e460bc7a.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c11"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "eb09cca5-8d2e-4c65-8bcb-54ceaffda3a3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102317_eb09cca5-8d2e-4c65-8bcb-54ceaffda3a3.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c11"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "브로콜리"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 4.082,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.000..1.976s. Lyric: 브로콜리 쏙쏙쏙"
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "a7d0b922-f2f7-4d62-a319-295f2e67a906",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093205_a7d0b922-f2f7-4d62-a319-295f2e67a906.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c20"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "bbb134ef-ff6a-4443-93b4-ac1f3eae5ca6",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102641_bbb134ef-ff6a-4443-93b4-ac1f3eae5ca6.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c20"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 6.058,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.000..1.801s. Lyric: 옥수수 톡톡 톡톡"
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "33f0d243-4886-4999-9dde-0bfa35dd2e14",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092643_33f0d243-4886-4999-9dde-0bfa35dd2e14.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c09"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "12d3ab1f-4568-44ae-b5d9-0b307a6490ff",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102315_12d3ab1f-4568-44ae-b5d9-0b307a6490ff.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c09"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 7.859,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..2.229s. Lyric: 채소 친구 냠냠냠"
+    },
+    {
+      "id": "c07",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "당근"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 10.088,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.180..2.664s. Lyric: 당근 당근 반가워",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c08",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "당근"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 12.572,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.360..3.134s. Lyric: 길쭉 당근 흔들흔들",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "당근"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 15.346,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..2.774s. Lyric: 길쭉 당근 흔들흔들",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "브로콜리"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 18.12,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.180..3.707s. Lyric: 브로콜리 반가워",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "브로콜리"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 21.647,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.360..2.633s. Lyric: 작은 나무 흔들흔들",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "브로콜리"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 23.9195,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..2.273s. Lyric: 작은 나무 흔들흔들",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "당근"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 26.192,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.180..2.245s. Lyric: 당근 당근 아삭아삭",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "브로콜리"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 28.257,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.360..1.887s. Lyric: 브로콜리 쏙쏙쏙",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c15",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 29.784,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.000..2.270s. Lyric: 옥수수 톡톡 톡톡",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 32.054,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.180..2.355s. Lyric: 채소 친구 냠냠냠",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 34.229,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.360..2.353s. Lyric: 옥수수야 반가워",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 36.222,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..1.993s. Lyric: 옥수수야 반가워",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 38.215,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.180..2.250s. Lyric: 노란 알이 톡톡톡",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 40.285,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.360..2.430s. Lyric: 노란 알이 톡톡톡",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c06",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "662a0e37-b504-44f8-9a2b-1e788b3ace8c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_662a0e37-b504-44f8-9a2b-1e788b3ace8c.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c26"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "c5f7ff9f-e34a-4a99-8a85-fc3961e0b437",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102700_c5f7ff9f-e34a-4a99-8a85-fc3961e0b437.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c26"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c26",
+      "cut_at": 42.355,
+      "source_generation_cut": "c06",
+      "notes": "Reviewed source c06; window 0.000..3.035s. Lyric: 두 손 모아 짝짝짝"
+    },
+    {
+      "id": "c05",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8e7614ae-747a-49e9-a163-44a06f419435",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093206_8e7614ae-747a-49e9-a163-44a06f419435.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c16"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "3544cd3a-8e3a-40e8-b834-4b383680c097",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102641_3544cd3a-8e3a-40e8-b834-4b383680c097.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c16"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 45.39,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.000..2.504s. Lyric: 모모랑 춤을 춰요"
+    },
+    {
+      "id": "c21",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c26",
+      "cut_at": 47.8935,
+      "source_generation_cut": "c06",
+      "notes": "Reviewed source c06; window 0.360..2.863s. Lyric: 모모랑 춤을 춰요",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c22",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "당근"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 50.397,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.000..2.060s. Lyric: 당근 당근 아삭아삭",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "브로콜리"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 52.457,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.180..1.707s. Lyric: 브로콜리 쏙쏙쏙",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 53.984,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.360..2.620s. Lyric: 옥수수 톡톡 톡톡",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 56.244,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..2.859s. Lyric: 채소 친구 냠냠냠",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 59.1031,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.180..3.039s. Lyric: 채소 친구 냠냠냠",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "당근 · 브로콜리 · 옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 61.9622,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.360..2.630s. Lyric: 당근 브로콜리 옥수수",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 64.2322,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.000..2.270s. Lyric: 당근 브로콜리 옥수수",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c29",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 66.5022,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.180..3.019s. Lyric: 다 같이 흔들흔들",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c30",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": "당근 · 브로콜리 · 옥수수"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 69.3412,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.179..3.970s. Lyric: 당근 브로콜리 옥수수",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.179
+      }
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 73.1322,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.000..3.089s. Lyric: 내일 또 만나 안녕",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c26",
+      "cut_at": 76.2215,
+      "source_generation_cut": "c06",
+      "notes": "Reviewed source c06; window 0.180..3.269s. Lyric: 내일 또 만나 안녕",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "ko": ""
+      },
+      "keyword": {
+        "ko": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c26",
+      "cut_at": 79.3107,
+      "source_generation_cut": "c06",
+      "notes": "Reviewed source c06; window 0.360..3.449s. Lyric: 내일 또 만나 안녕",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.36
+      }
+    }
+  ],
+  "languages": [
+    "ko"
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:e7b6d01490fb",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep25/ep25_song_e7b6d014.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing_authorization 2026-11-16: clear light female vocal, distinct food words and original swing hook. Vocal-stem ASR 97.1% plus official alignment confirms complete lyrics. Removed 4.0338s of unvoiced instrumental bars and shortened only the post-vocal tail with a 1.4s fade; source original retained.",
+      "sha1": "e7b6d01490fb471a8d031750ef3b5bfa057c0559",
+      "tool": "suno",
+      "source_file": "ep25_original.wav",
+      "note": "Official Suno independent original, take 1. Agent selection under standing authorization 2026-11-16.",
+      "duration": 82.4,
+      "start": 1.6,
+      "history": [
+        {
+          "job_id": "local:1ef2e0014169",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-11-26T23:19Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 118.9954,
+        "beat0": 0.1306,
+        "downbeat0": 0.1306,
+        "confidence": 1.01,
+        "downbeats": [
+          0.1306,
+          2.1475,
+          4.1644,
+          6.1813,
+          8.1981,
+          10.215,
+          12.2319,
+          14.2488,
+          16.2657,
+          18.2826,
+          20.2994,
+          22.3163,
+          24.3332,
+          26.3501,
+          28.367,
+          30.3839,
+          32.4008,
+          34.4176,
+          36.4345,
+          38.4514,
+          40.4683,
+          42.4852,
+          44.5021,
+          46.5189,
+          48.5358,
+          50.5527,
+          52.5696,
+          54.5865,
+          56.6034,
+          58.6203,
+          60.6371,
+          62.654,
+          64.6709,
+          66.6878,
+          68.7046,
+          70.7215,
+          72.7384,
+          74.7553,
+          76.7722,
+          78.7891,
+          80.806,
+          82.8228,
+          84.8397
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            11.8,
+            3.8,
+            3.9,
+            2.0,
+            -0.1,
+            0.1
+          ],
+          "trend_ms": -10.3
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "v": 1,
+        "vocals_sha1": "6d837be9348fe6b98383d0b08db9d587fec6462a",
+        "moved": 48,
+        "loose": 28,
+        "flags": [
+          {
+            "kind": "phase",
+            "line": 0,
+            "t": 1.25,
+            "section": "Chorus",
+            "beat": 2.22,
+            "median": 3.71,
+            "beats": -1.49,
+            "text": "당근 당근 아삭아삭"
+          },
+          {
+            "kind": "phase",
+            "line": 5,
+            "t": 12.672,
+            "section": "Verse 1",
+            "beat": 0.87,
+            "median": 3.91,
+            "beats": 0.96,
+            "text": "길쭉 당근 흔들흔들"
+          },
+          {
+            "kind": "phase",
+            "line": 7,
+            "t": 21.747,
+            "section": "Verse 1",
+            "beat": 2.87,
+            "median": 3.91,
+            "beats": -1.04,
+            "text": "작은 나무 흔들흔들"
+          },
+          {
+            "kind": "phase",
+            "line": 10,
+            "t": 29.884,
+            "section": "Chorus",
+            "beat": 3.01,
+            "median": 3.71,
+            "beats": -0.7,
+            "text": "옥수수 톡톡 톡톡"
+          },
+          {
+            "kind": "phase",
+            "line": 15,
+            "t": 45.49,
+            "section": "Verse 2",
+            "beat": 1.96,
+            "median": 3.78,
+            "beats": -1.82,
+            "text": "모모랑 춤을 춰요"
+          },
+          {
+            "kind": "phase",
+            "line": 18,
+            "t": 54.084,
+            "section": "Final chorus",
+            "beat": 3.0,
+            "median": 3.69,
+            "beats": -0.68,
+            "text": "옥수수 톡톡 톡톡"
+          },
+          {
+            "kind": "phase",
+            "line": 20,
+            "t": 62.0622,
+            "section": "Outro",
+            "beat": 2.83,
+            "median": 1.22,
+            "beats": 1.61,
+            "text": "당근 브로콜리 옥수수"
+          },
+          {
+            "kind": "phase",
+            "line": 21,
+            "t": 66.6022,
+            "section": "Outro",
+            "beat": 3.83,
+            "median": 1.22,
+            "beats": -1.39,
+            "text": "다 같이 흔들흔들"
+          },
+          {
+            "kind": "lag",
+            "line": 21,
+            "t": 67.3802,
+            "word": "흔들흔들",
+            "t0": 67.6952,
+            "ms": 315,
+            "text": "다 같이 흔들흔들"
+          }
+        ]
+      },
+      "lyrics_sha1": "e7b6d01490fb471a8d031750ef3b5bfa057c0559",
+      "edits": [
+        {
+          "from_sha1": "1ef2e0014169f6d82409276d6bfaac6dfe047b0f",
+          "removed": [
+            [
+              60.6371,
+              64.6709
+            ]
+          ]
+        }
+      ],
+      "outro_edit": {
+        "end": 82.4,
+        "fade_start": 81.0,
+        "fade_duration": 1.4,
+        "last_lyric_end": 76.8552,
+        "reason": "Remove long instrumental tail only; preserve complete goodbye and natural fade."
+      },
+      "end": 82.4
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:6d837be9348f",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep25/ep25_song_vocals_6d837be9.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing_authorization 2026-11-16: clear light female vocal, distinct food words and original swing hook. Vocal-stem ASR 97.1% plus official alignment confirms complete lyrics. Removed 4.0338s of unvoiced instrumental bars and shortened only the post-vocal tail with a 1.4s fade; source original retained.",
+      "sha1": "6d837be9348fe6b98383d0b08db9d587fec6462a",
+      "of": "e7b6d01490fb471a8d031750ef3b5bfa057c0559",
+      "history": [
+        {
+          "job_id": "local:5005bb391161",
+          "url": null,
+          "status": "generated",
+          "reason": null,
+          "at": "2026-11-26T23:19Z",
+          "credits": 0
+        }
+      ]
+    },
+    "bpm": 118.9954,
+    "beats_per_bar": 4,
+    "caption_mode": "keywords",
+    "history": [
+      {
+        "track": {
+          "status": "pending",
+          "tool": "suno"
+        },
+        "vocals": {
+          "status": "pending"
+        },
+        "replaced_at": "2026-11-26T23:19Z"
+      },
+      {
+        "track": {
+          "status": "generated",
+          "job_id": "local:1ef2e0014169",
+          "url": null,
+          "attempts": 1,
+          "credits": 0,
+          "reason": null,
+          "sha1": "1ef2e0014169f6d82409276d6bfaac6dfe047b0f",
+          "tool": "suno",
+          "source_file": "ep25_original.wav",
+          "note": "Official Suno independent original, take 1. Agent selection under standing authorization 2026-11-16.",
+          "duration": 90.4,
+          "start": 0.0,
+          "history": [
+            {
+              "job_id": "local:1ef2e0014169",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-26T23:19Z",
+              "credits": 0
+            }
+          ],
+          "analysis": {
+            "bpm": 118.9954,
+            "beat0": 0.1306,
+            "downbeat0": 0.1306,
+            "confidence": 1.01,
+            "downbeats": [
+              0.1306,
+              2.1475,
+              4.1644,
+              6.1813,
+              8.1981,
+              10.215,
+              12.2319,
+              14.2488,
+              16.2657,
+              18.2826,
+              20.2994,
+              22.3163,
+              24.3332,
+              26.3501,
+              28.367,
+              30.3839,
+              32.4008,
+              34.4176,
+              36.4345,
+              38.4514,
+              40.4683,
+              42.4852,
+              44.5021,
+              46.5189,
+              48.5358,
+              50.5527,
+              52.5696,
+              54.5865,
+              56.6034,
+              58.6203,
+              60.6371,
+              62.654,
+              64.6709,
+              66.6878,
+              68.7047,
+              70.7216,
+              72.7384,
+              74.7553,
+              76.7722,
+              78.7891,
+              80.806,
+              82.8229,
+              84.8398,
+              86.8566,
+              88.8735
+            ],
+            "grid": {
+              "refined": false,
+              "section_offsets_ms": [
+                11.8,
+                3.8,
+                3.9,
+                2.0,
+                -0.1,
+                0.1
+              ],
+              "trend_ms": -10.3
+            },
+            "source": "instrumental stem"
+          },
+          "lyrics_refine": {
+            "v": 1,
+            "vocals_sha1": "5005bb391161f8d3769f6a0afe62347478452ec7",
+            "moved": 48,
+            "loose": 28,
+            "flags": [
+              {
+                "kind": "phase",
+                "line": 0,
+                "t": 1.25,
+                "section": "Chorus",
+                "beat": 2.22,
+                "median": 3.71,
+                "beats": -1.49,
+                "text": "당근 당근 아삭아삭"
+              },
+              {
+                "kind": "phase",
+                "line": 5,
+                "t": 12.672,
+                "section": "Verse 1",
+                "beat": 0.87,
+                "median": 3.91,
+                "beats": 0.96,
+                "text": "길쭉 당근 흔들흔들"
+              },
+              {
+                "kind": "phase",
+                "line": 7,
+                "t": 21.747,
+                "section": "Verse 1",
+                "beat": 2.87,
+                "median": 3.91,
+                "beats": -1.04,
+                "text": "작은 나무 흔들흔들"
+              },
+              {
+                "kind": "phase",
+                "line": 10,
+                "t": 29.884,
+                "section": "Chorus",
+                "beat": 3.01,
+                "median": 3.71,
+                "beats": -0.7,
+                "text": "옥수수 톡톡 톡톡"
+              },
+              {
+                "kind": "phase",
+                "line": 15,
+                "t": 45.49,
+                "section": "Verse 2",
+                "beat": 1.96,
+                "median": 3.78,
+                "beats": -1.82,
+                "text": "모모랑 춤을 춰요"
+              },
+              {
+                "kind": "phase",
+                "line": 18,
+                "t": 54.084,
+                "section": "Final chorus",
+                "beat": 3.0,
+                "median": 3.69,
+                "beats": -0.68,
+                "text": "옥수수 톡톡 톡톡"
+              },
+              {
+                "kind": "phase",
+                "line": 20,
+                "t": 66.096,
+                "section": "Outro",
+                "beat": 2.83,
+                "median": 1.22,
+                "beats": 1.61,
+                "text": "당근 브로콜리 옥수수"
+              },
+              {
+                "kind": "phase",
+                "line": 21,
+                "t": 70.636,
+                "section": "Outro",
+                "beat": 3.83,
+                "median": 1.22,
+                "beats": -1.39,
+                "text": "다 같이 흔들흔들"
+              },
+              {
+                "kind": "lag",
+                "line": 21,
+                "t": 71.414,
+                "word": "흔들흔들",
+                "t0": 71.729,
+                "ms": 315,
+                "text": "다 같이 흔들흔들"
+              }
+            ]
+          },
+          "lyrics_sha1": "1ef2e0014169f6d82409276d6bfaac6dfe047b0f"
+        },
+        "vocals": {
+          "status": "generated",
+          "job_id": "local:5005bb391161",
+          "url": null,
+          "attempts": 1,
+          "credits": 0,
+          "reason": null,
+          "sha1": "5005bb391161f8d3769f6a0afe62347478452ec7",
+          "of": "1ef2e0014169f6d82409276d6bfaac6dfe047b0f",
+          "history": [
+            {
+              "job_id": "local:5005bb391161",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-26T23:19Z",
+              "credits": 0
+            }
+          ]
+        },
+        "why": "tighten adjacent whole bars as one interval"
+      },
+      {
+        "track": {
+          "status": "generated",
+          "job_id": "local:47304378a055",
+          "url": null,
+          "attempts": 1,
+          "credits": 0,
+          "reason": null,
+          "sha1": "47304378a0557c5a413dd013816eccf0ecf24091",
+          "tool": "suno",
+          "source_file": "ep25_original.wav",
+          "note": "Official Suno independent original, take 1. Agent selection under standing authorization 2026-11-16.",
+          "duration": 86.366,
+          "start": 0.0,
+          "history": [
+            {
+              "job_id": "local:1ef2e0014169",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-26T23:19Z",
+              "credits": 0
+            }
+          ],
+          "analysis": {
+            "bpm": 118.9954,
+            "beat0": 0.1306,
+            "downbeat0": 0.1306,
+            "confidence": 1.01,
+            "downbeats": [
+              0.1306,
+              2.1475,
+              4.1644,
+              6.1813,
+              8.1981,
+              10.215,
+              12.2319,
+              14.2488,
+              16.2657,
+              18.2826,
+              20.2994,
+              22.3163,
+              24.3332,
+              26.3501,
+              28.367,
+              30.3839,
+              32.4008,
+              34.4176,
+              36.4345,
+              38.4514,
+              40.4683,
+              42.4852,
+              44.5021,
+              46.5189,
+              48.5358,
+              50.5527,
+              52.5696,
+              54.5865,
+              56.6034,
+              58.6203,
+              60.6371,
+              62.654,
+              64.6709,
+              66.6878,
+              68.7046,
+              70.7215,
+              72.7384,
+              74.7553,
+              76.7722,
+              78.7891,
+              80.806,
+              82.8228,
+              84.8397
+            ],
+            "grid": {
+              "refined": false,
+              "section_offsets_ms": [
+                11.8,
+                3.8,
+                3.9,
+                2.0,
+                -0.1,
+                0.1
+              ],
+              "trend_ms": -10.3
+            },
+            "source": "instrumental stem"
+          },
+          "lyrics_refine": {
+            "v": 1,
+            "vocals_sha1": "bb57e80ffe2504ea2a85df1d199c7c6f068ccd1b",
+            "moved": 48,
+            "loose": 28,
+            "flags": [
+              {
+                "kind": "phase",
+                "line": 0,
+                "t": 1.25,
+                "section": "Chorus",
+                "beat": 2.22,
+                "median": 3.71,
+                "beats": -1.49,
+                "text": "당근 당근 아삭아삭"
+              },
+              {
+                "kind": "phase",
+                "line": 5,
+                "t": 12.672,
+                "section": "Verse 1",
+                "beat": 0.87,
+                "median": 3.91,
+                "beats": 0.96,
+                "text": "길쭉 당근 흔들흔들"
+              },
+              {
+                "kind": "phase",
+                "line": 7,
+                "t": 21.747,
+                "section": "Verse 1",
+                "beat": 2.87,
+                "median": 3.91,
+                "beats": -1.04,
+                "text": "작은 나무 흔들흔들"
+              },
+              {
+                "kind": "phase",
+                "line": 10,
+                "t": 29.884,
+                "section": "Chorus",
+                "beat": 3.01,
+                "median": 3.71,
+                "beats": -0.7,
+                "text": "옥수수 톡톡 톡톡"
+              },
+              {
+                "kind": "phase",
+                "line": 15,
+                "t": 45.49,
+                "section": "Verse 2",
+                "beat": 1.96,
+                "median": 3.78,
+                "beats": -1.82,
+                "text": "모모랑 춤을 춰요"
+              },
+              {
+                "kind": "phase",
+                "line": 18,
+                "t": 54.084,
+                "section": "Final chorus",
+                "beat": 3.0,
+                "median": 3.69,
+                "beats": -0.68,
+                "text": "옥수수 톡톡 톡톡"
+              },
+              {
+                "kind": "phase",
+                "line": 20,
+                "t": 62.0622,
+                "section": "Outro",
+                "beat": 2.83,
+                "median": 1.22,
+                "beats": 1.61,
+                "text": "당근 브로콜리 옥수수"
+              },
+              {
+                "kind": "phase",
+                "line": 21,
+                "t": 66.6022,
+                "section": "Outro",
+                "beat": 3.83,
+                "median": 1.22,
+                "beats": -1.39,
+                "text": "다 같이 흔들흔들"
+              },
+              {
+                "kind": "lag",
+                "line": 21,
+                "t": 67.3802,
+                "word": "흔들흔들",
+                "t0": 67.6952,
+                "ms": 315,
+                "text": "다 같이 흔들흔들"
+              }
+            ]
+          },
+          "lyrics_sha1": "47304378a0557c5a413dd013816eccf0ecf24091",
+          "edits": [
+            {
+              "from_sha1": "1ef2e0014169f6d82409276d6bfaac6dfe047b0f",
+              "removed": [
+                [
+                  60.6371,
+                  64.6709
+                ]
+              ]
+            }
+          ]
+        },
+        "vocals": {
+          "status": "generated",
+          "job_id": "local:bb57e80ffe25",
+          "url": null,
+          "attempts": 1,
+          "credits": 0,
+          "reason": null,
+          "sha1": "bb57e80ffe2504ea2a85df1d199c7c6f068ccd1b",
+          "of": "47304378a0557c5a413dd013816eccf0ecf24091",
+          "history": [
+            {
+              "job_id": "local:5005bb391161",
+              "url": null,
+              "status": "generated",
+              "reason": null,
+              "at": "2026-11-26T23:19Z",
+              "credits": 0
+            }
+          ]
+        },
+        "why": "Shorten instrumental outro only; full sung goodbye retained"
+      }
+    ],
+    "lyrics": [
+      {
+        "text": "당근 당근 아삭아삭",
+        "section": "Chorus",
+        "words": [
+          [
+            "당근",
+            1.25,
+            2.65,
+            1.16
+          ],
+          [
+            "당근",
+            2.666,
+            3.154,
+            2.56
+          ],
+          [
+            "아삭아삭",
+            3.154,
+            3.359,
+            3.08
+          ]
+        ]
+      },
+      {
+        "text": "브로콜리 쏙쏙쏙",
+        "section": "Chorus",
+        "words": [
+          [
+            "브로콜리",
+            4.182,
+            5.102,
+            4.14
+          ],
+          [
+            "쏙쏙쏙",
+            5.18,
+            5.26,
+            5.06
+          ]
+        ]
+      },
+      {
+        "text": "옥수수 톡톡 톡톡",
+        "section": "Chorus",
+        "words": [
+          [
+            "옥수수",
+            6.158,
+            7.205,
+            5.9
+          ],
+          [
+            "톡톡",
+            7.205,
+            7.255,
+            7.22
+          ],
+          [
+            "톡톡",
+            7.46,
+            7.554,
+            7.22
+          ]
+        ]
+      },
+      {
+        "text": "채소 친구 냠냠냠",
+        "section": "Chorus",
+        "words": [
+          [
+            "채소",
+            7.959,
+            8.419,
+            8.1
+          ],
+          [
+            "친구",
+            8.492,
+            8.662,
+            8.56
+          ],
+          [
+            "냠냠냠",
+            8.662,
+            9.964,
+            8.98
+          ]
+        ]
+      },
+      {
+        "text": "당근 당근 반가워",
+        "section": "Verse 1",
+        "words": [
+          [
+            "당근",
+            10.188,
+            10.742,
+            10.02
+          ],
+          [
+            "당근",
+            10.742,
+            11.242,
+            10.62
+          ],
+          [
+            "반가워",
+            11.251,
+            12.294,
+            11.12
+          ]
+        ]
+      },
+      {
+        "text": "길쭉 당근 흔들흔들",
+        "section": "Verse 1",
+        "words": [
+          [
+            "길쭉",
+            12.672,
+            13.272,
+            12.56
+          ],
+          [
+            "당근",
+            13.272,
+            15.272,
+            13.16
+          ],
+          [
+            "흔들흔들",
+            15.292,
+            16.025,
+            15.18
+          ]
+        ]
+      },
+      {
+        "text": "브로콜리 반가워",
+        "section": "Verse 1",
+        "words": [
+          [
+            "브로콜리",
+            18.22,
+            19.298,
+            17.82
+          ],
+          [
+            "반가워",
+            19.298,
+            20.4,
+            19.22
+          ]
+        ]
+      },
+      {
+        "text": "작은 나무 흔들흔들",
+        "section": "Verse 1",
+        "words": [
+          [
+            "작은",
+            21.747,
+            22.071,
+            21.12
+          ],
+          [
+            "나무",
+            22.071,
+            22.971,
+            22.2
+          ],
+          [
+            "흔들흔들",
+            23.264,
+            23.827,
+            23.1
+          ]
+        ]
+      },
+      {
+        "text": "당근 당근 아삭아삭",
+        "section": "Chorus",
+        "words": [
+          [
+            "당근",
+            26.292,
+            26.861,
+            25.42
+          ],
+          [
+            "당근",
+            26.861,
+            27.349,
+            26.76
+          ],
+          [
+            "아삭아삭",
+            27.349,
+            27.828,
+            27.26
+          ]
+        ]
+      },
+      {
+        "text": "브로콜리 쏙쏙쏙",
+        "section": "Chorus",
+        "words": [
+          [
+            "브로콜리",
+            28.357,
+            29.277,
+            28.32
+          ],
+          [
+            "쏙쏙쏙",
+            29.365,
+            29.709,
+            29.24
+          ]
+        ]
+      },
+      {
+        "text": "옥수수 톡톡 톡톡",
+        "section": "Chorus",
+        "words": [
+          [
+            "옥수수",
+            29.884,
+            31.156,
+            30.08
+          ],
+          [
+            "톡톡",
+            31.156,
+            31.206,
+            31.36
+          ],
+          [
+            "톡톡",
+            31.645,
+            31.749,
+            31.36
+          ]
+        ]
+      },
+      {
+        "text": "채소 친구 냠냠냠",
+        "section": "Chorus",
+        "words": [
+          [
+            "채소",
+            32.154,
+            32.614,
+            32.3
+          ],
+          [
+            "친구",
+            32.677,
+            32.852,
+            32.76
+          ],
+          [
+            "냠냠냠",
+            32.852,
+            34.199,
+            33.14
+          ]
+        ]
+      },
+      {
+        "text": "옥수수야 반가워",
+        "section": "Verse 2",
+        "words": [
+          [
+            "옥수수야",
+            34.329,
+            35.431,
+            34.16
+          ],
+          [
+            "반가워",
+            35.431,
+            35.82,
+            35.32
+          ]
+        ]
+      },
+      {
+        "text": "노란 알이 톡톡톡",
+        "section": "Verse 2",
+        "words": [
+          [
+            "노란",
+            38.315,
+            38.908,
+            37.48
+          ],
+          [
+            "알이",
+            38.908,
+            39.368,
+            38.92
+          ],
+          [
+            "톡톡톡",
+            39.761,
+            39.986,
+            39.38
+          ]
+        ]
+      },
+      {
+        "text": "두 손 모아 짝짝짝",
+        "section": "Verse 2",
+        "words": [
+          [
+            "두",
+            42.455,
+            42.735,
+            42.32
+          ],
+          [
+            "손",
+            42.744,
+            43.004,
+            42.6
+          ],
+          [
+            "모아",
+            43.508,
+            43.867,
+            42.86
+          ],
+          [
+            "짝짝짝",
+            43.867,
+            44.002,
+            43.46
+          ]
+        ]
+      },
+      {
+        "text": "모모랑 춤을 춰요",
+        "section": "Verse 2",
+        "words": [
+          [
+            "모모랑",
+            45.49,
+            47.39,
+            45.36
+          ],
+          [
+            "춤을",
+            47.429,
+            48.152,
+            47.26
+          ],
+          [
+            "춰요",
+            48.152,
+            48.761,
+            48.06
+          ]
+        ]
+      },
+      {
+        "text": "당근 당근 아삭아삭",
+        "section": "Final chorus",
+        "words": [
+          [
+            "당근",
+            50.497,
+            51.056,
+            49.66
+          ],
+          [
+            "당근",
+            51.056,
+            51.554,
+            50.96
+          ],
+          [
+            "아삭아삭",
+            51.554,
+            52.023,
+            51.46
+          ]
+        ]
+      },
+      {
+        "text": "브로콜리 쏙쏙쏙",
+        "section": "Final chorus",
+        "words": [
+          [
+            "브로콜리",
+            52.557,
+            53.457,
+            52.54
+          ],
+          [
+            "쏙쏙쏙",
+            53.565,
+            53.919,
+            53.44
+          ]
+        ]
+      },
+      {
+        "text": "옥수수 톡톡 톡톡",
+        "section": "Final chorus",
+        "words": [
+          [
+            "옥수수",
+            54.084,
+            55.356,
+            54.28
+          ],
+          [
+            "톡톡",
+            55.356,
+            55.406,
+            55.58
+          ],
+          [
+            "톡톡",
+            55.835,
+            55.94,
+            55.58
+          ]
+        ]
+      },
+      {
+        "text": "채소 친구 냠냠냠",
+        "section": "Final chorus",
+        "words": [
+          [
+            "채소",
+            56.344,
+            56.864,
+            56.44
+          ],
+          [
+            "친구",
+            56.877,
+            57.082,
+            56.96
+          ],
+          [
+            "냠냠냠",
+            57.082,
+            58.758,
+            57.3
+          ]
+        ]
+      },
+      {
+        "text": "당근 브로콜리 옥수수",
+        "section": "Outro",
+        "words": [
+          [
+            "당근",
+            62.0622,
+            63.4622,
+            62.0262
+          ],
+          [
+            "브로콜리",
+            63.6542,
+            64.8542,
+            63.4262
+          ],
+          [
+            "옥수수",
+            65.1552,
+            65.3152,
+            64.6262
+          ]
+        ]
+      },
+      {
+        "text": "다 같이 흔들흔들",
+        "section": "Outro",
+        "words": [
+          [
+            "다",
+            66.6022,
+            66.6522,
+            66.2062
+          ],
+          [
+            "같이",
+            66.9512,
+            67.6952,
+            66.2062
+          ],
+          [
+            "흔들흔들",
+            67.6952,
+            68.0692,
+            67.6862
+          ]
+        ]
+      },
+      {
+        "text": "당근 브로콜리 옥수수",
+        "section": "Outro",
+        "words": [
+          [
+            "당근",
+            69.4412,
+            71.4412,
+            69.0262
+          ],
+          [
+            "브로콜리",
+            71.7252,
+            72.7332,
+            71.7862
+          ],
+          [
+            "옥수수",
+            72.7332,
+            72.8932,
+            72.8062
+          ]
+        ]
+      },
+      {
+        "text": "내일 또 만나 안녕",
+        "section": "Outro",
+        "words": [
+          [
+            "내일",
+            73.2322,
+            73.8322,
+            73.4462
+          ],
+          [
+            "또",
+            73.9752,
+            74.9152,
+            74.0462
+          ],
+          [
+            "만나",
+            75.1232,
+            76.0832,
+            74.9862
+          ],
+          [
+            "안녕",
+            76.2002,
+            76.9042,
+            75.9462
+          ]
+        ]
+      }
+    ],
+    "refs_urls": {}
+  }
+}

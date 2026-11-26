@@ -1,0 +1,11 @@
+{
+  "source": "official Suno alignment",
+  "lines": 24,
+  "first_chorus_secondary_asr": "suno/first-chorus-stem-check.json",
+  "full_asr_missing_lines_retained_for_audit": true,
+  "meter": {
+    "planned": "6/8",
+    "actual_provider_measured": "2/4",
+    "bar_grid_used": "4/4 two measured pulses grouped for timeline only"
+  }
+}

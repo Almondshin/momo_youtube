@@ -1,0 +1,292 @@
+{
+  "start": 4.2,
+  "end": 84.08,
+  "duration": 79.88,
+  "segments": [
+    {
+      "start": 4.2,
+      "source": "c01",
+      "keyword": "CARROT",
+      "lyric": "Carrot, carrot, wiggle with me",
+      "section": "Chorus",
+      "end": 6.571
+    },
+    {
+      "start": 6.571,
+      "source": "c04",
+      "keyword": "CARROT",
+      "lyric": "Carrot, carrot, wiggle with me",
+      "section": "Chorus",
+      "end": 8.942
+    },
+    {
+      "start": 8.942,
+      "source": "c02",
+      "keyword": "BROCCOLI",
+      "lyric": "Broccoli, bounce like a little tree",
+      "section": "Chorus",
+      "end": 11.1485
+    },
+    {
+      "start": 11.1485,
+      "source": "c04",
+      "keyword": "BROCCOLI",
+      "lyric": "Broccoli, bounce like a little tree",
+      "section": "Chorus",
+      "end": 13.355
+    },
+    {
+      "start": 13.355,
+      "source": "c03",
+      "keyword": "CORN",
+      "lyric": "Corn, corn, tap, tap, tap",
+      "section": "Chorus",
+      "end": 15.507
+    },
+    {
+      "start": 15.507,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "Wiggle and bounce and clap, clap, clap",
+      "section": "Chorus",
+      "end": 17.723499999999998
+    },
+    {
+      "start": 17.723499999999998,
+      "source": "c06",
+      "keyword": "",
+      "lyric": "Wiggle and bounce and clap, clap, clap",
+      "section": "Chorus",
+      "end": 19.939999999999998
+    },
+    {
+      "start": 19.939999999999998,
+      "source": "c01",
+      "keyword": "CARROT",
+      "lyric": "Carrot, carrot, long and bright",
+      "section": "Verse 1",
+      "end": 22.083
+    },
+    {
+      "start": 22.083,
+      "source": "c04",
+      "keyword": "CARROT",
+      "lyric": "Carrot, carrot, long and bright",
+      "section": "Verse 1",
+      "end": 24.226
+    },
+    {
+      "start": 24.226,
+      "source": "c01",
+      "keyword": "CARROT",
+      "lyric": "Wiggle to the left, wiggle to the right",
+      "section": "Verse 1",
+      "end": 26.3925
+    },
+    {
+      "start": 26.3925,
+      "source": "c04",
+      "keyword": "CARROT",
+      "lyric": "Wiggle to the left, wiggle to the right",
+      "section": "Verse 1",
+      "end": 28.558999999999997
+    },
+    {
+      "start": 28.558999999999997,
+      "source": "c02",
+      "keyword": "BROCCOLI",
+      "lyric": "Broccoli, broccoli, little green tree",
+      "section": "Verse 1",
+      "end": 30.854999999999997
+    },
+    {
+      "start": 30.854999999999997,
+      "source": "c02",
+      "keyword": "BROCCOLI",
+      "lyric": "Bounce, bounce, bounce with me",
+      "section": "Verse 1",
+      "end": 33.073
+    },
+    {
+      "start": 33.073,
+      "source": "c01",
+      "keyword": "CARROT",
+      "lyric": "Carrot, carrot, wiggle with me",
+      "section": "Chorus",
+      "end": 35.211
+    },
+    {
+      "start": 35.211,
+      "source": "c04",
+      "keyword": "CARROT",
+      "lyric": "Carrot, carrot, wiggle with me",
+      "section": "Chorus",
+      "end": 37.349
+    },
+    {
+      "start": 37.349,
+      "source": "c02",
+      "keyword": "BROCCOLI",
+      "lyric": "Broccoli, bounce like a little tree",
+      "section": "Chorus",
+      "end": 39.521
+    },
+    {
+      "start": 39.521,
+      "source": "c04",
+      "keyword": "BROCCOLI",
+      "lyric": "Broccoli, bounce like a little tree",
+      "section": "Chorus",
+      "end": 41.693
+    },
+    {
+      "start": 41.693,
+      "source": "c03",
+      "keyword": "CORN",
+      "lyric": "Corn, corn, tap, tap, tap",
+      "section": "Chorus",
+      "end": 43.859
+    },
+    {
+      "start": 43.859,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "Wiggle and bounce and clap, clap, clap",
+      "section": "Chorus",
+      "end": 46.077999999999996
+    },
+    {
+      "start": 46.077999999999996,
+      "source": "c03",
+      "keyword": "CORN",
+      "lyric": "Corn, corn, yellow and sweet",
+      "section": "Verse 2",
+      "end": 48.272
+    },
+    {
+      "start": 48.272,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "Tap, tap, tap your little feet",
+      "section": "Verse 2",
+      "end": 50.419
+    },
+    {
+      "start": 50.419,
+      "source": "c06",
+      "keyword": "",
+      "lyric": "Wiggle your shoulders, wave hello",
+      "section": "Verse 2",
+      "end": 52.555
+    },
+    {
+      "start": 52.555,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "Clap your hands and here we go",
+      "section": "Verse 2",
+      "end": 54.801
+    },
+    {
+      "start": 54.801,
+      "source": "c06",
+      "keyword": "",
+      "lyric": "Clap your hands and here we go",
+      "section": "Verse 2",
+      "end": 57.047
+    },
+    {
+      "start": 57.047,
+      "source": "c01",
+      "keyword": "CARROT",
+      "lyric": "Carrot, carrot, wiggle with me",
+      "section": "Final chorus",
+      "end": 59.1995
+    },
+    {
+      "start": 59.1995,
+      "source": "c04",
+      "keyword": "CARROT",
+      "lyric": "Carrot, carrot, wiggle with me",
+      "section": "Final chorus",
+      "end": 61.352
+    },
+    {
+      "start": 61.352,
+      "source": "c02",
+      "keyword": "BROCCOLI",
+      "lyric": "Broccoli, bounce like a little tree",
+      "section": "Final chorus",
+      "end": 63.52550000000001
+    },
+    {
+      "start": 63.52550000000001,
+      "source": "c04",
+      "keyword": "BROCCOLI",
+      "lyric": "Broccoli, bounce like a little tree",
+      "section": "Final chorus",
+      "end": 65.69900000000001
+    },
+    {
+      "start": 65.69900000000001,
+      "source": "c03",
+      "keyword": "CORN",
+      "lyric": "Corn, corn, tap, tap, tap",
+      "section": "Final chorus",
+      "end": 67.863
+    },
+    {
+      "start": 67.863,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "Wiggle and bounce and clap, clap, clap",
+      "section": "Final chorus",
+      "end": 70.15400000000001
+    },
+    {
+      "start": 70.15400000000001,
+      "source": "c04",
+      "keyword": "CARROT · BROCCOLI · CORN",
+      "lyric": "Carrot, broccoli, corn, hooray",
+      "section": "Outro",
+      "end": 72.28
+    },
+    {
+      "start": 72.28,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "Thank you for a happy day",
+      "section": "Outro",
+      "end": 74.50200000000001
+    },
+    {
+      "start": 74.50200000000001,
+      "source": "c04",
+      "keyword": "CARROT · BROCCOLI · CORN",
+      "lyric": "Carrot, broccoli, corn, goodbye",
+      "section": "Outro",
+      "end": 76.638
+    },
+    {
+      "start": 76.638,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "Wave your hands up to the sky",
+      "section": "Outro",
+      "end": 80.35900000000001
+    },
+    {
+      "start": 80.35900000000001,
+      "source": "c06",
+      "keyword": "",
+      "lyric": "Wave your hands up to the sky",
+      "section": "Outro",
+      "end": 84.08
+    }
+  ],
+  "cuts": 35,
+  "source_count": 6,
+  "max_source_seconds": 4,
+  "corn_source_limit": 3.1,
+  "no_freeze_extension": true
+}

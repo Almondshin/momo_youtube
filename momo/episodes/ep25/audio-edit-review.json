@@ -1,0 +1,25 @@
+{
+  "unmerged_failure_reproduced": true,
+  "original_error": "\uc790\ub97c \uad6c\uac04 62.65\u201364.67s \uac00 \ud30c\uc77c \uacbd\uacc4\u00b7\ub2e4\ub978 \uad6c\uac04\uacfc \uacb9\uce68",
+  "root_cause": "Adjacent removal ranges overlap the crossfade guard at their shared boundary. No file was modified by failed command.",
+  "original_plan": [
+    [
+      60.6371,
+      62.654
+    ],
+    [
+      62.654,
+      64.6709
+    ]
+  ],
+  "applied_merged_interval": [
+    [
+      60.6371,
+      64.6709
+    ]
+  ],
+  "samples_verified": true,
+  "new_duration": 86.366,
+  "source_original_preserved": "audio/ep25_original.wav",
+  "pipeline_scripts_changed": false
+}

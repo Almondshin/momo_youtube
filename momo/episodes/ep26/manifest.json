@@ -1,0 +1,2470 @@
+{
+  "schema": 1,
+  "ep": "ep26",
+  "status": "uploaded",
+  "topic": {
+    "en": "Carrot, Broccoli and Corn",
+    "ko": "당근 브로콜리 옥수수"
+  },
+  "benchmark": {
+    "channel_url": "https://www.youtube.com/@CoComelon",
+    "research_dir": null,
+    "chosen_axis": null
+  },
+  "characters": [
+    "momo",
+    "ducky"
+  ],
+  "title": {
+    "en": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time"
+  },
+  "thumbnail": {
+    "cut": "c01",
+    "text": {
+      "en": "CARROT"
+    },
+    "text_pos": "top"
+  },
+  "bgm": null,
+  "upload": {
+    "en": {
+      "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+      "description": "Wiggle with carrot, bounce with broccoli, and tap along with corn! Sing a short happy chorus with Momo.\n\nThree veggie words for ages 2–4: CARROT · BROCCOLI · CORN. Simple repeated singing and a cheerful dance.\n\n#MomoTime #ToddlerSongs #VegetableSong #Carrot #Broccoli #Corn #KidsSongs #SingAlong",
+      "tags": [
+        "Momo Time",
+        "toddler songs",
+        "vegetable song",
+        "carrot",
+        "broccoli",
+        "corn",
+        "모모타임",
+        "채소 동요",
+        "유아 동요"
+      ],
+      "playlist_id": "PLTOO0Q-QSj5I"
+    }
+  },
+  "credits": {
+    "estimate": 0,
+    "spent": 0,
+    "generations": 0,
+    "regenerations": 0,
+    "cap": 150
+  },
+  "notes": {
+    "standing_authorization": "2026-11-16",
+    "run_date": "2026-11-27",
+    "paired_episode": "ep25",
+    "reviewer": "agent; no new individual user approval",
+    "visual_plan": {
+      "shared_visual_owner": "ep25",
+      "source_episode": "ep03",
+      "sources": [
+        "c03",
+        "c11",
+        "c20",
+        "c09",
+        "c16",
+        "c26"
+      ],
+      "new_generation": false,
+      "planned_base_credits": 0,
+      "pair_cap": 150,
+      "source_window_limits": {
+        "c03": [
+          0,
+          3.1
+        ],
+        "others": [
+          0,
+          4.0
+        ]
+      }
+    },
+    "v_over_reason": "Current short-song policy: reuse six approved non-lipsync sources, recut to the new song. No fixed spoken intro/outro.",
+    "approvals": [
+      "2026-11-27 agent visual review of ep03 approved sources; identity and moving food subjects suitable for current keyword-only production."
+    ],
+    "composition": {
+      "mode": "independent audio_create; no reference audio",
+      "style": "Original English preschool singalong in lively lilting 6/8 meter, dotted-quarter 104 BPM, sunny major key. One clear light warm female lead with crisp easy English. Bright pizzicato strings, small accordion, soft hand drum and wooden taps; natural gentle energy. Independent original melody, rocking two-beat phrases, a falling third then a bright upward skip in the hook. Short repeated four-line chorus with room for children to echo. Fully sung, not rap or spoken. Around 90 seconds, vocal entrance within 2 seconds, short intro, complete final phrase and resolved two-second musical ending. No source melody or cover.",
+      "compare_with": [
+        "ep20",
+        "ep23",
+        "ep24",
+        "ep25"
+      ]
+    },
+    "selected_song": {
+      "id": "8ad5fd78-b9df-477e-a24d-4fee8b020341",
+      "url": "https://suno.com/song/8ad5fd78-b9df-477e-a24d-4fee8b020341",
+      "take": 1,
+      "selected_by": "agent",
+      "standing_authorization": "2026-11-16",
+      "generation_credits_used": 10,
+      "download_credits_used": 1,
+      "no_reference_audio": true
+    },
+    "review_summary": {
+      "song": "Approved after official listening, stem alignment and melody-contour comparison. See music-review.json.",
+      "reviewer": "agent",
+      "standing_authorization": "2026-11-16",
+      "unattended_execution_verified": false
+    },
+    "validation_review": "No validation errors. Legacy V/S/L and intro/narration warnings superseded by current song-only no-lipsync policy. Object-only close-ups intentionally have momo:false. Combined keywords are three food nouns separated by dots; no sentence captions.",
+    "thumbnail_review": "Initial three-word thumbnail obscured vegetables. Revised to one clear learning word above an unobstructed carrot close-up.",
+    "final_frame_correction": "Agent final-frame correction: use c06 from 0.28 s so Momo and Ducky finish with feet down near source 3.98 s, without any frozen extension.",
+    "final_qa": {
+      "status": "passed",
+      "reviewer": "agent",
+      "standing_authorization": "2026-11-16",
+      "duration": 79.866667,
+      "size": [
+        1920,
+        1080
+      ],
+      "fps": 30,
+      "no_lipsync": true,
+      "all_clips_trimmed_without_freeze": true,
+      "measured_lufs": -14.08,
+      "measured_true_peak_dbtp": -2.07,
+      "last_frame_reviewed": true,
+      "evidence": [
+        "final-technical-review.json",
+        "music-review.json",
+        "../ep25/clip-technical-check.json"
+      ],
+      "youtube_processing_status": "succeeded",
+      "public_made_for_kids_verified": true,
+      "playlist_verified": true
+    },
+    "final_assets": {
+      "video_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep26/ep26_en.mp4",
+      "thumbnail_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep26/ep26_en_thumb.jpg",
+      "source_original_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep26/ep26_original.wav",
+      "instrumental_url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep26/song_inst.flac",
+      "sha256": "99cfc239614d39eb0e90608e7ccc517415d5bfdb2fd82f886b31465c54fa240c"
+    }
+  },
+  "cuts": [
+    {
+      "id": "c01",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "fbc8deb7-dc47-4551-a2c5-055fc6659a76",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_075729_fbc8deb7-dc47-4551-a2c5-055fc6659a76.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c03"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "e2cafe31-750a-4b5d-b460-36a395e49381",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102121_e2cafe31-750a-4b5d-b460-36a395e49381.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c03"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 4.2,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.000..2.371s. Lyric: Carrot, carrot, wiggle with me"
+    },
+    {
+      "id": "c04",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "33f0d243-4886-4999-9dde-0bfa35dd2e14",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092643_33f0d243-4886-4999-9dde-0bfa35dd2e14.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c09"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "12d3ab1f-4568-44ae-b5d9-0b307a6490ff",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102315_12d3ab1f-4568-44ae-b5d9-0b307a6490ff.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c09"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 6.571,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..2.371s. Lyric: Carrot, carrot, wiggle with me"
+    },
+    {
+      "id": "c02",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "5e65b2af-3023-481f-ac19-d6b5e460bc7a",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_092642_5e65b2af-3023-481f-ac19-d6b5e460bc7a.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c11"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "eb09cca5-8d2e-4c65-8bcb-54ceaffda3a3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102317_eb09cca5-8d2e-4c65-8bcb-54ceaffda3a3.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c11"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BROCCOLI"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 8.942,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.000..2.207s. Lyric: Broccoli, bounce like a little tree"
+    },
+    {
+      "id": "c07",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BROCCOLI"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 11.1485,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..2.207s. Lyric: Broccoli, bounce like a little tree",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c03",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "a7d0b922-f2f7-4d62-a319-295f2e67a906",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093205_a7d0b922-f2f7-4d62-a319-295f2e67a906.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c20"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "bbb134ef-ff6a-4443-93b4-ac1f3eae5ca6",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102641_bbb134ef-ff6a-4443-93b4-ac1f3eae5ca6.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c20"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CORN"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 13.355,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.000..2.152s. Lyric: Corn, corn, tap, tap, tap"
+    },
+    {
+      "id": "c05",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "8e7614ae-747a-49e9-a163-44a06f419435",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093206_8e7614ae-747a-49e9-a163-44a06f419435.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c16"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "3544cd3a-8e3a-40e8-b834-4b383680c097",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102641_3544cd3a-8e3a-40e8-b834-4b383680c097.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c16"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 15.507,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.000..2.216s. Lyric: Wiggle and bounce and clap, clap, clap"
+    },
+    {
+      "id": "c06",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {
+        "image": {
+          "status": "approved",
+          "job_id": "662a0e37-b504-44f8-9a2b-1e788b3ace8c",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_093349_662a0e37-b504-44f8-9a2b-1e788b3ace8c.png",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c26"
+        },
+        "clip": {
+          "status": "approved",
+          "job_id": "c5f7ff9f-e34a-4a99-8a85-fc3961e0b437",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JIKnCNAmeAdEDtu0K3LqCKTFnE/hf_20260930_102700_c5f7ff9f-e34a-4a99-8a85-fc3961e0b437.mp4",
+          "attempts": 0,
+          "credits": 0,
+          "history": [],
+          "reason": "Reused approved ep03 source; agent inspected sampled frames 2026-11-27. No new generation.",
+          "source_episode": "ep03",
+          "source_cut": "c26"
+        }
+      },
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c26",
+      "cut_at": 17.7235,
+      "source_generation_cut": "c06",
+      "notes": "Reviewed source c06; window 0.000..2.216s. Lyric: Wiggle and bounce and clap, clap, clap"
+    },
+    {
+      "id": "c08",
+      "scene": 1,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 19.94,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.180..2.323s. Lyric: Carrot, carrot, long and bright",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c09",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 22.083,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.360..2.503s. Lyric: Carrot, carrot, long and bright",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c10",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 24.226,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.000..2.166s. Lyric: Wiggle to the left, wiggle to the right",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c11",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 26.3925,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.180..2.346s. Lyric: Wiggle to the left, wiggle to the right",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c12",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BROCCOLI"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 28.559,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.360..2.656s. Lyric: Broccoli, broccoli, little green tree",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c13",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BROCCOLI"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 30.855,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.000..2.218s. Lyric: Bounce, bounce, bounce with me",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c14",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 33.073,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.180..2.318s. Lyric: Carrot, carrot, wiggle with me",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c15",
+      "scene": 2,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 35.211,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.360..2.498s. Lyric: Carrot, carrot, wiggle with me",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c16",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BROCCOLI"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 37.349,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.000..2.172s. Lyric: Broccoli, bounce like a little tree",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c17",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BROCCOLI"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 39.521,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.180..2.352s. Lyric: Broccoli, bounce like a little tree",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c18",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CORN"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 41.693,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.360..2.526s. Lyric: Corn, corn, tap, tap, tap",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c19",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 43.859,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.000..2.219s. Lyric: Wiggle and bounce and clap, clap, clap",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c20",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CORN"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 46.078,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.180..2.374s. Lyric: Corn, corn, yellow and sweet",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c21",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 48.272,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.360..2.507s. Lyric: Tap, tap, tap your little feet",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c22",
+      "scene": 3,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c26",
+      "cut_at": 50.419,
+      "source_generation_cut": "c06",
+      "notes": "Reviewed source c06; window 0.000..2.136s. Lyric: Wiggle your shoulders, wave hello",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c23",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 52.555,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.180..2.426s. Lyric: Clap your hands and here we go",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c24",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c26",
+      "cut_at": 54.801,
+      "source_generation_cut": "c06",
+      "notes": "Reviewed source c06; window 0.360..2.606s. Lyric: Clap your hands and here we go",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c25",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one bright orange carrot with fresh green leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the carrot gives a small happy wiggle, tiny sparkles twinkle around it",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "carrot",
+        "text": "Orange and crunchy!",
+        "pos": "left"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c03",
+      "cut_at": 57.047,
+      "source_generation_cut": "c01",
+      "notes": "Reviewed source c01; window 0.000..2.153s. Lyric: Carrot, carrot, wiggle with me",
+      "clip_from": {
+        "cut": "c01",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c26",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 59.1995,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.180..2.332s. Lyric: Carrot, carrot, wiggle with me",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c27",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one fresh green broccoli floret that looks like a tiny tree, standing on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the right side of the frame",
+      "motion": "the broccoli floret sways gently like a tiny tree in a soft breeze, tiny sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "broccoli",
+        "text": "It looks like a tiny tree!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BROCCOLI"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c11",
+      "cut_at": 61.352,
+      "source_generation_cut": "c02",
+      "notes": "Reviewed source c02; window 0.360..2.534s. Lyric: Broccoli, bounce like a little tree",
+      "clip_from": {
+        "cut": "c02",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c28",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "BROCCOLI"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 63.5255,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..2.174s. Lyric: Broccoli, bounce like a little tree",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c29",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one sweet yellow corn cob with green husk leaves on a small white plate on the round wooden table, the bright pastel kitchen with soft mint-green cabinets softly blurred behind, clear empty space on the left side of the frame",
+      "motion": "the corn cob gives a small happy wiggle, golden sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "card": {
+        "word": "corn",
+        "text": "Yellow and sweet!",
+        "pos": "right"
+      },
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CORN"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c20",
+      "cut_at": 65.699,
+      "source_generation_cut": "c03",
+      "notes": "Reviewed source c03; window 0.180..2.344s. Lyric: Corn, corn, tap, tap, tap",
+      "clip_from": {
+        "cut": "c03",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c30",
+      "scene": 4,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 67.863,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.360..2.651s. Lyric: Wiggle and bounce and clap, clap, clap",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c31",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT · BROCCOLI · CORN"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 70.154,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.000..2.126s. Lyric: Carrot, broccoli, corn, hooray",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c32",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 72.28,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.180..2.402s. Lyric: Thank you for a happy day",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.18
+      }
+    },
+    {
+      "id": "c33",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "close-up of one small white plate on the round wooden table holding exactly three vegetables side by side: one orange carrot, one green broccoli floret and one yellow corn cob, the bright pastel kitchen with soft mint-green cabinets softly blurred behind",
+      "motion": "the three vegetables give small happy wiggles one after another, soft sparkles twinkle",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "momo": false,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": "CARROT · BROCCOLI · CORN"
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c09",
+      "cut_at": 74.502,
+      "source_generation_cut": "c04",
+      "notes": "Reviewed source c04; window 0.360..2.496s. Lyric: Carrot, broccoli, corn, goodbye",
+      "clip_from": {
+        "cut": "c04",
+        "at": 0.36
+      }
+    },
+    {
+      "id": "c34",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, standing on a round soft rug, both arms up in excitement, clear empty pastel wall space in the upper third of the frame",
+      "motion": "does two small happy hops in place to the beat, arms swing gently, mouth in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c16",
+      "cut_at": 76.638,
+      "source_generation_cut": "c05",
+      "notes": "Reviewed source c05; window 0.000..3.721s. Lyric: Wave your hands up to the sky",
+      "clip_from": {
+        "cut": "c05",
+        "at": 0.0
+      }
+    },
+    {
+      "id": "c35",
+      "scene": 5,
+      "type": "V",
+      "bars": 1,
+      "image_prompt": "[Momo] and [Ducky] full body wide shot in a bright cheerful pastel kitchen with soft mint-green cabinets and a small round wooden table, warm morning light, both with arms and wings up in celebration, a bowl of colorful vegetables on the table behind, clear empty pastel wall space in the upper third of the frame",
+      "motion": "both do small happy hops in place to the beat, Ducky flaps its wings, soft sparkles, Momo's mouth stays in a closed smile, both long floppy ears stay hanging down beside the cheeks the whole time",
+      "clip_model": "seedance_2_0_mini",
+      "clip_seconds": 4,
+      "gen": {},
+      "lipsync": false,
+      "narration": {
+        "en": ""
+      },
+      "keyword": {
+        "en": ""
+      },
+      "transition": "cut",
+      "text_at": 0,
+      "text_pos": "bottom",
+      "text_color": "white",
+      "inset": 0,
+      "fill": "hold",
+      "source_episode": "ep03",
+      "source_cut": "c26",
+      "cut_at": 80.359,
+      "source_generation_cut": "c06",
+      "notes": "Agent final-frame correction: use c06 from 0.28 s so Momo and Ducky finish with feet down near source 3.98 s, without any frozen extension.",
+      "clip_from": {
+        "cut": "c06",
+        "at": 0.28
+      }
+    }
+  ],
+  "languages": [
+    "en"
+  ],
+  "song": {
+    "track": {
+      "status": "approved",
+      "job_id": "local:a807fd785ce5",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep26/ep26_song_a807fd78.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing_authorization 2026-11-16: clear light female vocal, distinct food words, independent lively hook. Full-song ASR misses first hook lines; official alignment plus separate vocal-stem transcription verifies them. Complete final sky and instrumental decay retained. No source melody used.",
+      "sha1": "a807fd785ce5ccddcd2a08aba6738349eea44e40",
+      "tool": "suno",
+      "source_file": "ep26_original.wav",
+      "note": "Official Suno independent original, take 1. Agent selection under standing authorization 2026-11-16.",
+      "duration": 84.08,
+      "start": 4.2,
+      "history": [
+        {
+          "job_id": "local:a807fd785ce5",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep26/ep26_song_a807fd78.flac",
+          "status": "approved",
+          "reason": "Agent review under standing_authorization 2026-11-16: clear light female vocal, distinct food words, independent lively hook. Full-song ASR misses first hook lines; official alignment plus separate vocal-stem transcription verifies them. Complete final sky and instrumental decay retained. No source melody used.",
+          "at": "2026-11-26T23:20Z",
+          "credits": 0
+        }
+      ],
+      "analysis": {
+        "bpm": 110.0118,
+        "beat0": 0.3802,
+        "downbeat0": 0.3802,
+        "confidence": 1.292,
+        "downbeats": [
+          0.3802,
+          2.5618,
+          4.7434,
+          6.925,
+          9.1065,
+          11.2881,
+          13.4697,
+          15.6513,
+          17.8329,
+          20.0145,
+          22.196,
+          24.3776,
+          26.5592,
+          28.7408,
+          30.9224,
+          33.104,
+          35.2855,
+          37.4671,
+          39.6487,
+          41.8303,
+          44.0119,
+          46.1935,
+          48.3751,
+          50.5566,
+          52.7382,
+          54.9198,
+          57.1014,
+          59.283,
+          61.4646,
+          63.6461,
+          65.8277,
+          68.0093,
+          70.1909,
+          72.3725,
+          74.5541,
+          76.7356,
+          78.9172,
+          81.0988,
+          83.2804
+        ],
+        "grid": {
+          "refined": false,
+          "section_offsets_ms": [
+            3.9,
+            4.6,
+            5.0,
+            1.7,
+            15.2
+          ],
+          "trend_ms": 7.9
+        },
+        "source": "instrumental stem"
+      },
+      "lyrics_refine": {
+        "source": "official alignment crosschecked with independent vocal-stem ASR",
+        "note": "Whole-track ASR omitted first two chorus lines. A separate 4–14s stem check recognized the first hook; official alignment and provider listening review confirmed target words. No user approval requested."
+      },
+      "lyrics_sha1": "a807fd785ce5ccddcd2a08aba6738349eea44e40",
+      "end": 84.08
+    },
+    "vocals": {
+      "status": "approved",
+      "job_id": "local:a161c01ed289",
+      "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep26/ep26_song_vocals_a161c01e.flac",
+      "attempts": 1,
+      "credits": 0,
+      "reason": "Agent review under standing_authorization 2026-11-16: clear light female vocal, distinct food words, independent lively hook. Full-song ASR misses first hook lines; official alignment plus separate vocal-stem transcription verifies them. Complete final sky and instrumental decay retained. No source melody used.",
+      "sha1": "a161c01ed289550f8d4b94aa5814d6ca7fdf981e",
+      "of": "a807fd785ce5ccddcd2a08aba6738349eea44e40",
+      "history": [
+        {
+          "job_id": "local:a161c01ed289",
+          "url": "https://github.com/Almondshin/momo_youtube/releases/download/media-ep26/ep26_song_vocals_a161c01e.flac",
+          "status": "approved",
+          "reason": "Agent review under standing_authorization 2026-11-16: clear light female vocal, distinct food words, independent lively hook. Full-song ASR misses first hook lines; official alignment plus separate vocal-stem transcription verifies them. Complete final sky and instrumental decay retained. No source melody used.",
+          "at": "2026-11-26T23:20Z",
+          "credits": 0
+        }
+      ]
+    },
+    "bpm": 110.0118,
+    "beats_per_bar": 4,
+    "caption_mode": "keywords",
+    "history": [
+      {
+        "track": {
+          "status": "pending",
+          "tool": "suno"
+        },
+        "vocals": {
+          "status": "pending"
+        },
+        "replaced_at": "2026-11-26T23:20Z"
+      }
+    ],
+    "lyrics": [
+      {
+        "text": "Carrot, carrot, wiggle with me",
+        "section": "Chorus",
+        "words": [
+          [
+            "Carrot,",
+            4.761,
+            5.562
+          ],
+          [
+            "carrot,",
+            5.322,
+            7.15
+          ],
+          [
+            "wiggle",
+            6.902,
+            7.44
+          ],
+          [
+            "with",
+            7.464,
+            7.957
+          ],
+          [
+            "me",
+            7.957,
+            8.23
+          ]
+        ]
+      },
+      {
+        "text": "Broccoli, bounce like a little tree",
+        "section": "Chorus",
+        "words": [
+          [
+            "Broccoli,",
+            9.042,
+            10.896
+          ],
+          [
+            "bounce",
+            10.211,
+            10.896
+          ],
+          [
+            "like",
+            10.956,
+            11.52
+          ],
+          [
+            "a",
+            11.555,
+            11.834
+          ],
+          [
+            "little",
+            11.834,
+            12.286
+          ],
+          [
+            "tree",
+            12.286,
+            12.606
+          ]
+        ]
+      },
+      {
+        "text": "Corn, corn, tap, tap, tap",
+        "section": "Chorus",
+        "words": [
+          [
+            "Corn,",
+            13.455,
+            14.326
+          ],
+          [
+            "corn,",
+            13.999,
+            14.754
+          ],
+          [
+            "tap,",
+            14.514,
+            15.076
+          ],
+          [
+            "tap,",
+            14.814,
+            15.356
+          ],
+          [
+            "tap",
+            15.112,
+            15.356
+          ]
+        ]
+      },
+      {
+        "text": "Wiggle and bounce and clap, clap, clap",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wiggle",
+            15.607,
+            15.947
+          ],
+          [
+            "and",
+            15.947,
+            16.187
+          ],
+          [
+            "bounce",
+            16.205,
+            16.494
+          ],
+          [
+            "and",
+            16.494,
+            16.728
+          ],
+          [
+            "clap,",
+            16.728,
+            17.301
+          ],
+          [
+            "clap,",
+            17.037,
+            17.621
+          ],
+          [
+            "clap",
+            17.301,
+            17.621
+          ]
+        ]
+      },
+      {
+        "text": "Carrot, carrot, long and bright",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Carrot,",
+            20.04,
+            20.838
+          ],
+          [
+            "carrot,",
+            20.598,
+            21.402
+          ],
+          [
+            "long",
+            21.108,
+            21.402
+          ],
+          [
+            "and",
+            21.402,
+            21.57
+          ],
+          [
+            "bright",
+            21.57,
+            22.05
+          ]
+        ]
+      },
+      {
+        "text": "Wiggle to the left, wiggle to the right",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Wiggle",
+            24.326,
+            24.663
+          ],
+          [
+            "to",
+            24.663,
+            24.823
+          ],
+          [
+            "the",
+            24.83,
+            24.916
+          ],
+          [
+            "left,",
+            24.916,
+            25.569
+          ],
+          [
+            "wiggle",
+            25.446,
+            25.77
+          ],
+          [
+            "to",
+            25.77,
+            25.933
+          ],
+          [
+            "the",
+            25.94,
+            26.04
+          ],
+          [
+            "right",
+            26.04,
+            26.481
+          ]
+        ]
+      },
+      {
+        "text": "Broccoli, broccoli, little green tree",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Broccoli,",
+            28.659,
+            29.406
+          ],
+          [
+            "broccoli,",
+            29.296,
+            30.136
+          ],
+          [
+            "little",
+            29.848,
+            30.136
+          ],
+          [
+            "green",
+            30.136,
+            30.361
+          ],
+          [
+            "tree",
+            30.361,
+            30.681
+          ]
+        ]
+      },
+      {
+        "text": "Bounce, bounce, bounce with me",
+        "section": "Verse 1",
+        "words": [
+          [
+            "Bounce,",
+            30.955,
+            31.99
+          ],
+          [
+            "bounce,",
+            31.51,
+            32.326
+          ],
+          [
+            "bounce",
+            31.998,
+            32.326
+          ],
+          [
+            "with",
+            32.326,
+            32.537
+          ],
+          [
+            "me",
+            32.537,
+            32.709
+          ]
+        ]
+      },
+      {
+        "text": "Carrot, carrot, wiggle with me",
+        "section": "Chorus",
+        "words": [
+          [
+            "Carrot,",
+            33.173,
+            33.953
+          ],
+          [
+            "carrot,",
+            33.713,
+            35.484
+          ],
+          [
+            "wiggle",
+            35.304,
+            35.853
+          ],
+          [
+            "with",
+            35.854,
+            36.303
+          ],
+          [
+            "me",
+            36.303,
+            36.558
+          ]
+        ]
+      },
+      {
+        "text": "Broccoli, bounce like a little tree",
+        "section": "Chorus",
+        "words": [
+          [
+            "Broccoli,",
+            37.449,
+            39.361
+          ],
+          [
+            "bounce",
+            38.616,
+            39.361
+          ],
+          [
+            "like",
+            39.361,
+            39.934
+          ],
+          [
+            "a",
+            39.942,
+            40.174
+          ],
+          [
+            "little",
+            40.186,
+            40.691
+          ],
+          [
+            "tree",
+            40.691,
+            41.011
+          ]
+        ]
+      },
+      {
+        "text": "Corn, corn, tap, tap, tap",
+        "section": "Chorus",
+        "words": [
+          [
+            "Corn,",
+            41.793,
+            42.692
+          ],
+          [
+            "corn,",
+            42.339,
+            43.145
+          ],
+          [
+            "tap,",
+            42.904,
+            43.453
+          ],
+          [
+            "tap,",
+            43.213,
+            43.71
+          ],
+          [
+            "tap",
+            43.458,
+            43.71
+          ]
+        ]
+      },
+      {
+        "text": "Wiggle and bounce and clap, clap, clap",
+        "section": "Chorus",
+        "words": [
+          [
+            "Wiggle",
+            43.959,
+            44.328
+          ],
+          [
+            "and",
+            44.328,
+            44.545
+          ],
+          [
+            "bounce",
+            44.545,
+            44.866
+          ],
+          [
+            "and",
+            44.866,
+            45.073
+          ],
+          [
+            "clap,",
+            45.073,
+            45.699
+          ],
+          [
+            "clap,",
+            45.391,
+            46.019
+          ],
+          [
+            "clap",
+            45.699,
+            46.019
+          ]
+        ]
+      },
+      {
+        "text": "Corn, corn, yellow and sweet",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Corn,",
+            46.178,
+            47.081
+          ],
+          [
+            "corn,",
+            46.728,
+            47.622
+          ],
+          [
+            "yellow",
+            47.207,
+            47.622
+          ],
+          [
+            "and",
+            47.622,
+            47.711
+          ],
+          [
+            "sweet",
+            47.711,
+            48.123
+          ]
+        ]
+      },
+      {
+        "text": "Tap, tap, tap your little feet",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Tap,",
+            48.372,
+            48.909
+          ],
+          [
+            "tap,",
+            48.669,
+            49.154
+          ],
+          [
+            "tap",
+            48.914,
+            49.154
+          ],
+          [
+            "your",
+            49.23,
+            49.489
+          ],
+          [
+            "little",
+            49.489,
+            49.855
+          ],
+          [
+            "feet",
+            49.855,
+            50.175
+          ]
+        ]
+      },
+      {
+        "text": "Wiggle your shoulders, wave hello",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Wiggle",
+            50.519,
+            50.868
+          ],
+          [
+            "your",
+            50.868,
+            50.993
+          ],
+          [
+            "shoulders,",
+            50.993,
+            51.905
+          ],
+          [
+            "wave",
+            51.663,
+            51.905
+          ],
+          [
+            "hello",
+            51.905,
+            52.353
+          ]
+        ]
+      },
+      {
+        "text": "Clap your hands and here we go",
+        "section": "Verse 2",
+        "words": [
+          [
+            "Clap",
+            52.655,
+            53.013
+          ],
+          [
+            "your",
+            53.013,
+            53.152
+          ],
+          [
+            "hands",
+            53.152,
+            53.614
+          ],
+          [
+            "and",
+            53.625,
+            53.768
+          ],
+          [
+            "here",
+            53.768,
+            54.15
+          ],
+          [
+            "we",
+            54.15,
+            54.384
+          ],
+          [
+            "go",
+            54.384,
+            55.181
+          ]
+        ]
+      },
+      {
+        "text": "Carrot, carrot, wiggle with me",
+        "section": "Final chorus",
+        "words": [
+          [
+            "Carrot,",
+            57.147,
+            57.947
+          ],
+          [
+            "carrot,",
+            57.712,
+            59.488
+          ],
+          [
+            "wiggle",
+            59.247,
+            59.853
+          ],
+          [
+            "with",
+            59.86,
+            60.306
+          ],
+          [
+            "me",
+            60.306,
+            60.619
+          ]
+        ]
+      },
+      {
+        "text": "Broccoli, bounce like a little tree",
+        "section": "Final chorus",
+        "words": [
+          [
+            "Broccoli,",
+            61.452,
+            63.356
+          ],
+          [
+            "bounce",
+            62.614,
+            63.356
+          ],
+          [
+            "like",
+            63.356,
+            63.853
+          ],
+          [
+            "a",
+            63.893,
+            64.173
+          ],
+          [
+            "little",
+            64.187,
+            64.641
+          ],
+          [
+            "tree",
+            64.641,
+            65.025
+          ]
+        ]
+      },
+      {
+        "text": "Corn, corn, tap, tap, tap",
+        "section": "Final chorus",
+        "words": [
+          [
+            "Corn,",
+            65.799,
+            66.711
+          ],
+          [
+            "corn,",
+            66.344,
+            67.213
+          ],
+          [
+            "tap,",
+            66.929,
+            67.476
+          ],
+          [
+            "tap,",
+            67.236,
+            67.737
+          ],
+          [
+            "tap",
+            67.478,
+            67.737
+          ]
+        ]
+      },
+      {
+        "text": "Wiggle and bounce and clap, clap, clap",
+        "section": "Final chorus",
+        "words": [
+          [
+            "Wiggle",
+            67.963,
+            68.325
+          ],
+          [
+            "and",
+            68.325,
+            68.549
+          ],
+          [
+            "bounce",
+            68.549,
+            68.849
+          ],
+          [
+            "and",
+            68.849,
+            69.075
+          ],
+          [
+            "clap,",
+            69.075,
+            69.706
+          ],
+          [
+            "clap,",
+            69.393,
+            70.026
+          ],
+          [
+            "clap",
+            69.706,
+            70.026
+          ]
+        ]
+      },
+      {
+        "text": "Carrot, broccoli, corn, hooray",
+        "section": "Outro",
+        "words": [
+          [
+            "Carrot,",
+            70.254,
+            70.851
+          ],
+          [
+            "broccoli,",
+            70.752,
+            71.533
+          ],
+          [
+            "corn,",
+            71.293,
+            71.699
+          ],
+          [
+            "hooray",
+            71.588,
+            72.153
+          ]
+        ]
+      },
+      {
+        "text": "Thank you for a happy day",
+        "section": "Outro",
+        "words": [
+          [
+            "Thank",
+            72.38,
+            72.628
+          ],
+          [
+            "you",
+            72.628,
+            72.89
+          ],
+          [
+            "for",
+            72.89,
+            73.213
+          ],
+          [
+            "a",
+            73.232,
+            73.427
+          ],
+          [
+            "happy",
+            73.427,
+            73.854
+          ],
+          [
+            "day",
+            73.868,
+            74.181
+          ]
+        ]
+      },
+      {
+        "text": "Carrot, broccoli, corn, goodbye",
+        "section": "Outro",
+        "words": [
+          [
+            "Carrot,",
+            74.602,
+            75.162
+          ],
+          [
+            "broccoli,",
+            75.133,
+            76.095
+          ],
+          [
+            "corn,",
+            75.609,
+            76.655
+          ],
+          [
+            "goodbye",
+            76.095,
+            76.655
+          ]
+        ]
+      },
+      {
+        "text": "Wave your hands up to the sky",
+        "section": "Outro",
+        "words": [
+          [
+            "Wave",
+            76.738,
+            77.05
+          ],
+          [
+            "your",
+            77.05,
+            77.25
+          ],
+          [
+            "hands",
+            77.25,
+            77.606
+          ],
+          [
+            "up",
+            77.606,
+            77.83
+          ],
+          [
+            "to",
+            77.83,
+            78.334
+          ],
+          [
+            "the",
+            78.337,
+            78.79
+          ],
+          [
+            "sky",
+            78.79,
+            79.398
+          ]
+        ]
+      }
+    ],
+    "refs_urls": {}
+  }
+}

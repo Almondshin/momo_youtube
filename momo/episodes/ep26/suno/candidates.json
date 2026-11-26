@@ -1,0 +1,40 @@
+[
+  {
+    "cover_image_large_url": "https://cdn2.suno.ai/image_large_8ad5fd78-b9df-477e-a24d-4fee8b020341.jpeg",
+    "cover_image_url": "https://cdn2.suno.ai/image_8ad5fd78-b9df-477e-a24d-4fee8b020341.jpeg",
+    "created_at": "2026-11-26T23:16:16Z",
+    "error": null,
+    "id": "8ad5fd78-b9df-477e-a24d-4fee8b020341",
+    "metadata": {
+      "description": null,
+      "duration": 84.08,
+      "lyrics": "[Chorus]\nCarrot, carrot, wiggle with me\nBroccoli, bounce like a little tree\nCorn, corn, tap, tap, tap\nWiggle and bounce and clap, clap, clap\n\n[Verse 1]\nCarrot, carrot, long and bright\nWiggle to the left, wiggle to the right\nBroccoli, broccoli, little green tree\nBounce, bounce, bounce with me\n\n[Chorus]\nCarrot, carrot, wiggle with me\nBroccoli, bounce like a little tree\nCorn, corn, tap, tap, tap\nWiggle and bounce and clap, clap, clap\n\n[Verse 2]\nCorn, corn, yellow and sweet\nTap, tap, tap your little feet\nWiggle your shoulders, wave hello\nClap your hands and here we go\n\n[Final chorus]\nCarrot, carrot, wiggle with me\nBroccoli, bounce like a little tree\nCorn, corn, tap, tap, tap\nWiggle and bounce and clap, clap, clap\n\n[Outro]\nCarrot, broccoli, corn, hooray\nThank you for a happy day\nCarrot, broccoli, corn, goodbye\nWave your hands up to the sky",
+      "model": "v6",
+      "negative_style": "male vocal, deep voice, choir, harsh vocal, spoken narration, rap, trap, heavy drums, long intro, long instrumental solo, excessive melisma, shouting, abrupt cutoff",
+      "style": "Original English preschool singalong in lively lilting 6/8 meter, dotted-quarter 104 BPM, sunny major key. One clear light warm female lead with crisp easy English. Bright pizzicato strings, small accordion, soft hand drum and wooden taps; natural gentle energy. Independent original melody, rocking two-beat phrases, a falling third then a bright upward skip in the hook. Short repeated four-line chorus with room for children to echo. Fully sung, not rap or spoken. Around 90 seconds, vocal entrance within 2 seconds, short intro, complete final phrase and resolved two-second musical ending. No source melody or cover.",
+      "type": "generate"
+    },
+    "song_url": "https://suno.com/song/8ad5fd78-b9df-477e-a24d-4fee8b020341",
+    "status": "complete",
+    "title": "Carrot, Broccoli, Corn!"
+  },
+  {
+    "cover_image_large_url": "https://cdn2.suno.ai/image_large_11b55463-993f-4dc2-9a78-68c3456a3d9d.jpeg",
+    "cover_image_url": "https://cdn2.suno.ai/image_11b55463-993f-4dc2-9a78-68c3456a3d9d.jpeg",
+    "created_at": "2026-11-26T23:16:16Z",
+    "error": null,
+    "id": "11b55463-993f-4dc2-9a78-68c3456a3d9d",
+    "metadata": {
+      "description": null,
+      "duration": 89.96,
+      "lyrics": "[Chorus]\nCarrot, carrot, wiggle with me\nBroccoli, bounce like a little tree\nCorn, corn, tap, tap, tap\nWiggle and bounce and clap, clap, clap\n\n[Verse 1]\nCarrot, carrot, long and bright\nWiggle to the left, wiggle to the right\nBroccoli, broccoli, little green tree\nBounce, bounce, bounce with me\n\n[Chorus]\nCarrot, carrot, wiggle with me\nBroccoli, bounce like a little tree\nCorn, corn, tap, tap, tap\nWiggle and bounce and clap, clap, clap\n\n[Verse 2]\nCorn, corn, yellow and sweet\nTap, tap, tap your little feet\nWiggle your shoulders, wave hello\nClap your hands and here we go\n\n[Final chorus]\nCarrot, carrot, wiggle with me\nBroccoli, bounce like a little tree\nCorn, corn, tap, tap, tap\nWiggle and bounce and clap, clap, clap\n\n[Outro]\nCarrot, broccoli, corn, hooray\nThank you for a happy day\nCarrot, broccoli, corn, goodbye\nWave your hands up to the sky",
+      "model": "v6",
+      "negative_style": "male vocal, deep voice, choir, harsh vocal, spoken narration, rap, trap, heavy drums, long intro, long instrumental solo, excessive melisma, shouting, abrupt cutoff",
+      "style": "Original English preschool singalong in lively lilting 6/8 meter, dotted-quarter 104 BPM, sunny major key. One clear light warm female lead with crisp easy English. Bright pizzicato strings, small accordion, soft hand drum and wooden taps; natural gentle energy. Independent original melody, rocking two-beat phrases, a falling third then a bright upward skip in the hook. Short repeated four-line chorus with room for children to echo. Fully sung, not rap or spoken. Around 90 seconds, vocal entrance within 2 seconds, short intro, complete final phrase and resolved two-second musical ending. No source melody or cover.",
+      "type": "generate"
+    },
+    "song_url": "https://suno.com/song/11b55463-993f-4dc2-9a78-68c3456a3d9d",
+    "status": "complete",
+    "title": "Carrot, Broccoli, Corn!"
+  }
+]

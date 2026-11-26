@@ -1,0 +1,257 @@
+{
+  "run_date": "2026-11-27",
+  "timezone": "Asia/Seoul",
+  "scheduled_for": "2026-11-27T09:00:00+09:00",
+  "started_at": "2026-11-26T23:11:51.331216+00:00",
+  "checked_at": "2026-11-26T23:30:34.740033+00:00",
+  "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
+  "scheduler_run_id": null,
+  "execution_mode": "User-requested early production run. Existing Google browser session restored OAuth; no new user login interaction or content approval required. Scheduled unattended launch not verified.",
+  "status": "completed",
+  "stage": "completed_public_upload_verified",
+  "reason": null,
+  "prechecks": {
+    "git_pull": "up to date",
+    "doctor": {
+      "errors": 0,
+      "warnings": 1,
+      "warning": "yt-dlp 2026.08.19 is 100 days old; not used by the API pipeline."
+    },
+    "suno": {
+      "status": "connected",
+      "plan": "Pro",
+      "song_credits_remaining": 2210,
+      "download_credits_remaining": 7
+    },
+    "higgsfield": {
+      "status": "connected",
+      "endpoint": "https://mcp.higgsfield.ai/mcp",
+      "tools_available": 241,
+      "tools_error": null,
+      "subscription_plan_type": "plus",
+      "credits_remaining": 1080.37,
+      "access_method": "Registered official OAuth MCP through fresh Codex app-server runtime"
+    },
+    "youtube": {
+      "ko": {
+        "status": "connected",
+        "channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA"
+      },
+      "en": {
+        "status": "connected",
+        "channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA"
+      },
+      "initial_failure": {
+        "ko": {
+          "status": "authentication_failed",
+          "error_raw": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+        },
+        "en": {
+          "status": "authentication_failed",
+          "error_raw": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+        }
+      },
+      "restored_at": "2026-11-26T23:14:11.785219+00:00",
+      "reauthentication": "Existing Google browser session, existing OAuth client and same scopes. No new content approval."
+    },
+    "credit_estimate": {
+      "ep25": 0,
+      "ep26": 0,
+      "shared_cap": 150,
+      "result": "passed; approved visual sources reused"
+    }
+  },
+  "duplicate_check": {
+    "last_local_episode": "ep24",
+    "last_completed_date": "2026-11-23",
+    "today_local_episode_or_upload_found": false,
+    "today_scheduler_run_found": false,
+    "remote_upload_check": {
+      "checked_at": "2026-11-26T23:14:11.785219+00:00",
+      "channel": {
+        "id": "UCAI7Voo0OwG-7sr1eZeN7dA",
+        "title": "Momo Time"
+      },
+      "videos": [
+        {
+          "id": "-BctWf5H7Gg",
+          "title": "Butterfly, Flutter By! 🦋🌸 | Garden Dance Song for Toddlers | Momo Time",
+          "published_at": "2026-11-23T00:55:37Z"
+        },
+        {
+          "id": "1E3LvTennHI",
+          "title": "팔랑 나비, 활짝 꽃 🦋🌸 | 따라 부르는 동요 | 모모타임",
+          "published_at": "2026-11-23T00:54:20Z"
+        },
+        {
+          "id": "x-f9kYeFEJI",
+          "title": "Bounce With Me, Roll With Me ⚽🚗 | Toddler Dance Song | Momo Time",
+          "published_at": "2026-11-16T07:29:14Z"
+        },
+        {
+          "id": "CI02d4S9fxw",
+          "title": "야옹 멍멍, 이리 와! 🐱🐶 | 고양이 강아지 동요 | 모모타임",
+          "published_at": "2026-11-16T07:29:00Z"
+        },
+        {
+          "id": "3E47mSRHaj0",
+          "title": "통통 공이랑 빵빵 자동차 ⚽🚗 | 같이 놀아요 동요 | 모모타임",
+          "published_at": "2026-11-16T05:13:50Z"
+        },
+        {
+          "id": "7pgsXXmQ5xw",
+          "title": "Bounce My Ball, Roll My Car ⚽🚗 | Sing Along with Momo | Momo Time",
+          "published_at": "2026-11-16T05:13:40Z"
+        }
+      ],
+      "today_video_found": false
+    },
+    "new_generation_started": false
+  },
+  "authorizations": {
+    "content_review": "agent",
+    "suno_download": {
+      "standing_authorization": "2026-11-16",
+      "normal_credits_per_song": 1,
+      "download_preflight_performed": true,
+      "credit_consumed": true
+    },
+    "new_user_content_approval": false
+  },
+  "production": {
+    "episodes": [
+      "ep25",
+      "ep26"
+    ],
+    "generation_job_ids": [
+      "6e016210-074b-40ac-beac-cd5268a0cc25",
+      "87c7b6ee-a9c3-45b8-9068-7f4d8c9ae5bc",
+      "8ad5fd78-b9df-477e-a24d-4fee8b020341",
+      "11b55463-993f-4dc2-9a78-68c3456a3d9d"
+    ],
+    "downloads": [
+      {
+        "ep": "ep25",
+        "credits": 1,
+        "standing_authorization": "2026-11-16"
+      },
+      {
+        "ep": "ep26",
+        "credits": 1,
+        "standing_authorization": "2026-11-16"
+      }
+    ],
+    "uploads": [
+      {
+        "ep": "ep25",
+        "video_id": "VHeoIVekMKQ",
+        "url": "https://www.youtube.com/watch?v=VHeoIVekMKQ",
+        "title": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임",
+        "privacy": "public",
+        "publish_at": null,
+        "uploaded_at": "2026-11-26T23:27:51Z",
+        "made_for_kids": true,
+        "thumbnail_set": true,
+        "playlist_id": "PLHfQPAU3ZVb8",
+        "file_sha256": "7d75af50c45013a58ce4efd58bb2dd031a5e16f4eef0ee6f601b8e9ba353c03b"
+      },
+      {
+        "ep": "ep26",
+        "video_id": "qymFBaZr04w",
+        "url": "https://www.youtube.com/watch?v=qymFBaZr04w",
+        "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+        "privacy": "public",
+        "publish_at": null,
+        "uploaded_at": "2026-11-26T23:28:38Z",
+        "made_for_kids": true,
+        "thumbnail_set": true,
+        "playlist_id": "PLTOO0Q-QSj5I",
+        "file_sha256": "99cfc239614d39eb0e90608e7ccc517415d5bfdb2fd82f886b31465c54fa240c"
+      }
+    ],
+    "existing_assets_preserved": true,
+    "existing_video_visibility_changes": [],
+    "shared_visual_set": {
+      "source_episode": "ep03",
+      "source_cuts": [
+        "c03",
+        "c11",
+        "c20",
+        "c09",
+        "c16",
+        "c26"
+      ],
+      "new_higgsfield_generations": 0,
+      "corn_limit_seconds": 3.1
+    },
+    "ko": "public_processing_succeeded",
+    "en": "public_processing_succeeded"
+  },
+  "costs": {
+    "suno_generation_credits": 20,
+    "suno_download_credits": 2,
+    "higgsfield_credits": 0,
+    "extra_payment": 0
+  },
+  "resumption": {
+    "resume_existing_record": true,
+    "content_approval_required": false,
+    "completed": "Do not generate or upload another pair for 2026-11-27. Both language uploads verified.",
+    "scheduled_0900_run": "Read this completed record and skip duplicate production."
+  },
+  "unattended_execution_verified": false,
+  "topic": {
+    "ko": "당근 브로콜리 옥수수",
+    "en": "Carrot, Broccoli and Corn"
+  },
+  "preflight_recoverable_error": {
+    "service": "Suno download preflight",
+    "code": "rate_limited",
+    "error": "Woah, too many downloads at once. Take a beat and try again.",
+    "retry_after_seconds": 1,
+    "recovery": "Sequential retry after interval; preflight and both downloads succeeded. No daily-limit or quota failure."
+  },
+  "balances_after": {
+    "suno_song_credits": 2190,
+    "suno_download_credits": 5,
+    "higgsfield_credits": 1080.37
+  },
+  "costs_verified_from_balance_delta": true,
+  "completed_at": "2026-11-26T23:30:34.740033+00:00",
+  "new_pair": [
+    {
+      "ep": "ep25",
+      "language": "ko",
+      "title": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임",
+      "url": "https://www.youtube.com/watch?v=VHeoIVekMKQ",
+      "privacy": "public",
+      "made_for_kids": true,
+      "processing_status": "succeeded",
+      "playlist_id": "PLHfQPAU3ZVb8",
+      "duration_seconds": 80.8
+    },
+    {
+      "ep": "ep26",
+      "language": "en",
+      "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+      "url": "https://www.youtube.com/watch?v=qymFBaZr04w",
+      "privacy": "public",
+      "made_for_kids": true,
+      "processing_status": "succeeded",
+      "playlist_id": "PLTOO0Q-QSj5I",
+      "duration_seconds": 79.866667
+    }
+  ],
+  "uploaded_episodes": [
+    "ep25",
+    "ep26"
+  ],
+  "new_pair_complete": true,
+  "evidence": {
+    "scheduler": "scheduler-audit-2026-11-27.json",
+    "youtube_preflight": "youtube-audit-2026-11-27.json",
+    "higgsfield": "higgsfield-connection-2026-11-27.json",
+    "ko_final_api": "../episodes/ep25/youtube-api-verification.json",
+    "en_final_api": "../episodes/ep26/youtube-api-verification.json"
+  }
+}

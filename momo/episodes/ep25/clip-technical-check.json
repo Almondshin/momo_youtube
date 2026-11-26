@@ -1,0 +1,70 @@
+{
+  "reviewer": "agent",
+  "standing_authorization": "2026-11-16",
+  "sources": "ep03 approved non-lipsync clips; reused with no generation",
+  "sampled_visual_review": "Four evenly-spaced frames per clip reviewed. Carrot/broccoli/corn silhouettes distinct, no baked text; Momo and Ducky stable. Use source windows at most 3.95 seconds.",
+  "technical": [
+    {
+      "cut": "c01",
+      "duration": 4.041667,
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "events": []
+    },
+    {
+      "cut": "c02",
+      "duration": 4.041667,
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "events": []
+    },
+    {
+      "cut": "c03",
+      "duration": 4.041667,
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "events": [
+        "[Parsed_freezedetect_0 @ 0x766cc3e100] lavfi.freezedetect.freeze_start: 3.208333",
+        "[Parsed_freezedetect_0 @ 0x766cc3e100] lavfi.freezedetect.freeze_end: 3.625"
+      ]
+    },
+    {
+      "cut": "c04",
+      "duration": 4.041667,
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "events": []
+    },
+    {
+      "cut": "c05",
+      "duration": 4.041667,
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "events": []
+    },
+    {
+      "cut": "c06",
+      "duration": 4.041667,
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "events": []
+    }
+  ],
+  "source_window_limits": {
+    "c03": [
+      0,
+      3.1
+    ],
+    "others": [
+      0,
+      3.95
+    ]
+  },
+  "issue_resolution": "The corn source contains a detected near-static interval at 3.208–3.625 s. All new edits will end its source window at or before 3.1 s; no regeneration."
+}

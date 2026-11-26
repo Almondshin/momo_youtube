@@ -1,0 +1,176 @@
+{
+  "checked_at": "2026-11-26T23:11:51.331216+00:00",
+  "response": {
+    "id": "baea3106-dd00-40eb-af0d-db8be7caf5c5",
+    "ok": true,
+    "result": {
+      "runs": [
+        {
+          "id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
+          "automationId": "0946f1d5-d7b6-4828-849c-556bb3797735",
+          "runNumber": 2,
+          "runContext": {
+            "kind": "workspace-run",
+            "projectId": "github:almondshin/momo_youtube",
+            "hostId": "local",
+            "projectHostSetupId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+            "repoId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+            "path": "/Users/dream/dev/momo_youtube"
+          },
+          "sourceContext": {
+            "kind": "task-source",
+            "provider": "github",
+            "projectId": "github:almondshin/momo_youtube",
+            "hostId": "local",
+            "projectHostSetupId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+            "repoId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+            "providerIdentity": {
+              "provider": "github",
+              "owner": "Almondshin",
+              "repo": "momo_youtube"
+            },
+            "accountLabel": null
+          },
+          "title": "모모타임 월·금 자동 제작·업로드 run 2",
+          "scheduledFor": 1795392000000,
+          "status": "dispatch_failed",
+          "trigger": "scheduled",
+          "workspaceId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e::/Users/dream/dev/momo_youtube",
+          "workspaceDisplayName": "claude/modest-brahmagupta-9mjppj",
+          "sessionKind": "terminal",
+          "chatSessionId": null,
+          "terminalSessionId": "fef520df-4178-4c39-a2b1-d4309a5309d8",
+          "terminalPaneKey": "fef520df-4178-4c39-a2b1-d4309a5309d8:9e1173fb-bbc5-4090-b4ec-af507195f09e",
+          "terminalPtyId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e::/Users/dream/dev/momo_youtube@@e9394be6",
+          "outputSnapshot": {
+            "format": "plain_text",
+            "content": "Hooks need review\n  4 hooks are new or changed.\n  Hooks can run outside the sandbox after you trust them.\n› 1. Review hooks\n  2. Trust all and continue\n  3. Continue without trusting (hooks won't run)\n  enter confirm · esc skip",
+            "capturedAt": 1795392033088,
+            "truncated": false
+          },
+          "precheckResult": {
+            "command": "/Users/dream/dev/momo_youtube/.venv/bin/python -c 'import sys; sys.path.insert(0,\"/Users/dream/dev/momo_youtube/momo\"); from youtube_check import main; sys.exit(max(main([\"--root\",\"/Users/dream/dev/momo_youtube/momo\",\"--lang\",lang]) for lang in (\"en\",\"ko\")))'",
+            "exitCode": 0,
+            "timedOut": false,
+            "durationMs": 1336,
+            "stdout": "✔ en: 채널 「Momo Time」 (UCAI7Voo0OwG-7sr1eZeN7dA) · 자격증명 /Users/dream/dev/momo_youtube/momo/.secrets/youtube_en.json · 채널 기본 시청자층 미설정 · 15분 초과 업로드 allowed\n✔ ko: 채널 「Momo Time」 (UCAI7Voo0OwG-7sr1eZeN7dA) · 자격증명 /Users/dream/dev/momo_youtube/momo/.secrets/youtube_ko.json · 채널 기본 시청자층 미설정 · 15분 초과 업로드 allowed\n",
+            "stderr": "",
+            "stdoutTruncated": false,
+            "stderrTruncated": false,
+            "error": null,
+            "startedAt": 1795392029655,
+            "completedAt": 1795392030991
+          },
+          "usage": {
+            "status": "unavailable",
+            "provider": "codex",
+            "model": null,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cacheReadTokens": null,
+            "cacheWriteTokens": null,
+            "reasoningOutputTokens": null,
+            "totalTokens": null,
+            "estimatedCostUsd": null,
+            "estimatedCostSource": null,
+            "providerSessionId": null,
+            "attribution": null,
+            "collectedAt": 1795392033092,
+            "unavailableReason": "run_not_finished",
+            "unavailableMessage": "Usage is only collected for completed automation runs."
+          },
+          "error": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+          "startedAt": 1795392029653,
+          "dispatchedAt": 1795392030991,
+          "createdAt": 1795392029641,
+          "launchedAt": 1795392030991,
+          "errorCode": "hooksReviewBlocked"
+        },
+        {
+          "id": "f16e63d7-c256-4185-a500-c49542c52fad",
+          "automationId": "0946f1d5-d7b6-4828-849c-556bb3797735",
+          "runNumber": 1,
+          "runContext": {
+            "kind": "workspace-run",
+            "projectId": "github:almondshin/momo_youtube",
+            "hostId": "local",
+            "projectHostSetupId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+            "repoId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+            "path": "/Users/dream/dev/momo_youtube"
+          },
+          "sourceContext": {
+            "kind": "task-source",
+            "provider": "github",
+            "projectId": "github:almondshin/momo_youtube",
+            "hostId": "local",
+            "projectHostSetupId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+            "repoId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e",
+            "providerIdentity": {
+              "provider": "github",
+              "owner": "Almondshin",
+              "repo": "momo_youtube"
+            },
+            "accountLabel": null
+          },
+          "title": "모모타임 월·금 자동 제작·업로드 run 1",
+          "scheduledFor": 1795132800000,
+          "status": "dispatch_failed",
+          "trigger": "scheduled",
+          "workspaceId": "c54391e7-1ebd-4388-b2dd-e8cbf5ebec9e::/Users/dream/dev/momo_youtube",
+          "workspaceDisplayName": "claude/modest-brahmagupta-9mjppj",
+          "sessionKind": "terminal",
+          "chatSessionId": null,
+          "terminalSessionId": null,
+          "terminalPaneKey": null,
+          "terminalPtyId": null,
+          "outputSnapshot": {
+            "format": "plain_text",
+            "content": "Hooks need review\n  4 hooks are new or changed.\n  Hooks can run outside the sandbox after you trust them.\n› 1. Review hooks\n  2. Trust all and continue\n  3. Continue without trusting (hooks won't run)\n  enter confirm · esc skip",
+            "capturedAt": 1795132847462,
+            "truncated": false
+          },
+          "precheckResult": {
+            "command": "/Users/dream/dev/momo_youtube/.venv/bin/python -c 'import sys; sys.path.insert(0,\"/Users/dream/dev/momo_youtube/momo\"); from youtube_check import main; sys.exit(max(main([\"--root\",\"/Users/dream/dev/momo_youtube/momo\",\"--lang\",lang]) for lang in (\"en\",\"ko\")))'",
+            "exitCode": 0,
+            "timedOut": false,
+            "durationMs": 1317,
+            "stdout": "✔ en: 채널 「Momo Time」 (UCAI7Voo0OwG-7sr1eZeN7dA) · 자격증명 /Users/dream/dev/momo_youtube/momo/.secrets/youtube_en.json · 채널 기본 시청자층 미설정 · 15분 초과 업로드 allowed\n✔ ko: 채널 「Momo Time」 (UCAI7Voo0OwG-7sr1eZeN7dA) · 자격증명 /Users/dream/dev/momo_youtube/momo/.secrets/youtube_ko.json · 채널 기본 시청자층 미설정 · 15분 초과 업로드 allowed\n",
+            "stderr": "",
+            "stdoutTruncated": false,
+            "stderrTruncated": false,
+            "error": null,
+            "startedAt": 1795132844042,
+            "completedAt": 1795132845359
+          },
+          "usage": {
+            "status": "unavailable",
+            "provider": "codex",
+            "model": null,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cacheReadTokens": null,
+            "cacheWriteTokens": null,
+            "reasoningOutputTokens": null,
+            "totalTokens": null,
+            "estimatedCostUsd": null,
+            "estimatedCostSource": null,
+            "providerSessionId": null,
+            "attribution": null,
+            "collectedAt": 1795132847470,
+            "unavailableReason": "run_not_finished",
+            "unavailableMessage": "Usage is only collected for completed automation runs."
+          },
+          "error": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+          "startedAt": 1795132844039,
+          "dispatchedAt": 1795132845359,
+          "createdAt": 1795132844028,
+          "launchedAt": 1795132845359,
+          "errorCode": "hooksReviewBlocked"
+        }
+      ]
+    },
+    "_meta": {
+      "runtimeId": "eb362620-2bee-4443-b3e1-5e82939b8d46"
+    }
+  }
+}

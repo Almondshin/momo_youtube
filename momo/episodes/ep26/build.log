@@ -1,0 +1,10 @@
+▶ ep26 [en] 컷 35개, 총 1:19.87 (2396프레임), 폰트 NanumSquareRoundB.ttf
+세그먼트 35개 — 캐시 34개, 렌더 1개 (병렬 3)
+  [1/1] c35 V  3.70s trim (0.4s)
+오디오 믹스 (나레이션 + BGM 덕킹 + 효과음 → loudnorm)
+최종 인코딩 (xfade/concat 연결, crf 18, preset medium)
+
+✔ /Users/dream/dev/momo_youtube/momo/episodes/ep26/out/ep26_en.mp4 (50.8 MB, 1:19.87)
+  썸네일 ep26_en_thumb.jpg, 타임라인 ep26_en_timeline.json, 확인 시트 episodes/ep26/out/check_en/check_en.jpg
+  loudnorm: 입력 -15.64 → 출력 -13.91 LUFS (linear)
+  시간: 세그먼트 1.2s, 오디오 2.0s, 인코딩 10.6s, 전체 14.9s

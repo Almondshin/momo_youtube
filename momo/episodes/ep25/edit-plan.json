@@ -1,0 +1,276 @@
+{
+  "start": 1.6,
+  "end": 82.4,
+  "duration": 80.80000000000001,
+  "segments": [
+    {
+      "start": 1.6,
+      "source": "c01",
+      "keyword": "당근",
+      "lyric": "당근 당근 아삭아삭",
+      "section": "Chorus",
+      "end": 4.082000000000001
+    },
+    {
+      "start": 4.082000000000001,
+      "source": "c02",
+      "keyword": "브로콜리",
+      "lyric": "브로콜리 쏙쏙쏙",
+      "section": "Chorus",
+      "end": 6.058000000000001
+    },
+    {
+      "start": 6.058000000000001,
+      "source": "c03",
+      "keyword": "옥수수",
+      "lyric": "옥수수 톡톡 톡톡",
+      "section": "Chorus",
+      "end": 7.859
+    },
+    {
+      "start": 7.859,
+      "source": "c04",
+      "keyword": "",
+      "lyric": "채소 친구 냠냠냠",
+      "section": "Chorus",
+      "end": 10.088000000000001
+    },
+    {
+      "start": 10.088000000000001,
+      "source": "c01",
+      "keyword": "당근",
+      "lyric": "당근 당근 반가워",
+      "section": "Verse 1",
+      "end": 12.572000000000001
+    },
+    {
+      "start": 12.572000000000001,
+      "source": "c01",
+      "keyword": "당근",
+      "lyric": "길쭉 당근 흔들흔들",
+      "section": "Verse 1",
+      "end": 15.346
+    },
+    {
+      "start": 15.346,
+      "source": "c04",
+      "keyword": "당근",
+      "lyric": "길쭉 당근 흔들흔들",
+      "section": "Verse 1",
+      "end": 18.119999999999997
+    },
+    {
+      "start": 18.119999999999997,
+      "source": "c02",
+      "keyword": "브로콜리",
+      "lyric": "브로콜리 반가워",
+      "section": "Verse 1",
+      "end": 21.647
+    },
+    {
+      "start": 21.647,
+      "source": "c02",
+      "keyword": "브로콜리",
+      "lyric": "작은 나무 흔들흔들",
+      "section": "Verse 1",
+      "end": 23.9195
+    },
+    {
+      "start": 23.9195,
+      "source": "c04",
+      "keyword": "브로콜리",
+      "lyric": "작은 나무 흔들흔들",
+      "section": "Verse 1",
+      "end": 26.192
+    },
+    {
+      "start": 26.192,
+      "source": "c01",
+      "keyword": "당근",
+      "lyric": "당근 당근 아삭아삭",
+      "section": "Chorus",
+      "end": 28.256999999999998
+    },
+    {
+      "start": 28.256999999999998,
+      "source": "c02",
+      "keyword": "브로콜리",
+      "lyric": "브로콜리 쏙쏙쏙",
+      "section": "Chorus",
+      "end": 29.784
+    },
+    {
+      "start": 29.784,
+      "source": "c03",
+      "keyword": "옥수수",
+      "lyric": "옥수수 톡톡 톡톡",
+      "section": "Chorus",
+      "end": 32.054
+    },
+    {
+      "start": 32.054,
+      "source": "c04",
+      "keyword": "",
+      "lyric": "채소 친구 냠냠냠",
+      "section": "Chorus",
+      "end": 34.229
+    },
+    {
+      "start": 34.229,
+      "source": "c03",
+      "keyword": "옥수수",
+      "lyric": "옥수수야 반가워",
+      "section": "Verse 2",
+      "end": 36.221999999999994
+    },
+    {
+      "start": 36.221999999999994,
+      "source": "c04",
+      "keyword": "옥수수",
+      "lyric": "옥수수야 반가워",
+      "section": "Verse 2",
+      "end": 38.214999999999996
+    },
+    {
+      "start": 38.214999999999996,
+      "source": "c03",
+      "keyword": "옥수수",
+      "lyric": "노란 알이 톡톡톡",
+      "section": "Verse 2",
+      "end": 40.285
+    },
+    {
+      "start": 40.285,
+      "source": "c04",
+      "keyword": "옥수수",
+      "lyric": "노란 알이 톡톡톡",
+      "section": "Verse 2",
+      "end": 42.355
+    },
+    {
+      "start": 42.355,
+      "source": "c06",
+      "keyword": "",
+      "lyric": "두 손 모아 짝짝짝",
+      "section": "Verse 2",
+      "end": 45.39
+    },
+    {
+      "start": 45.39,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "모모랑 춤을 춰요",
+      "section": "Verse 2",
+      "end": 47.8935
+    },
+    {
+      "start": 47.8935,
+      "source": "c06",
+      "keyword": "",
+      "lyric": "모모랑 춤을 춰요",
+      "section": "Verse 2",
+      "end": 50.397
+    },
+    {
+      "start": 50.397,
+      "source": "c01",
+      "keyword": "당근",
+      "lyric": "당근 당근 아삭아삭",
+      "section": "Final chorus",
+      "end": 52.457
+    },
+    {
+      "start": 52.457,
+      "source": "c02",
+      "keyword": "브로콜리",
+      "lyric": "브로콜리 쏙쏙쏙",
+      "section": "Final chorus",
+      "end": 53.984
+    },
+    {
+      "start": 53.984,
+      "source": "c03",
+      "keyword": "옥수수",
+      "lyric": "옥수수 톡톡 톡톡",
+      "section": "Final chorus",
+      "end": 56.244
+    },
+    {
+      "start": 56.244,
+      "source": "c04",
+      "keyword": "",
+      "lyric": "채소 친구 냠냠냠",
+      "section": "Final chorus",
+      "end": 59.1031
+    },
+    {
+      "start": 59.1031,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "채소 친구 냠냠냠",
+      "section": "Final chorus",
+      "end": 61.962199999999996
+    },
+    {
+      "start": 61.962199999999996,
+      "source": "c04",
+      "keyword": "당근 · 브로콜리 · 옥수수",
+      "lyric": "당근 브로콜리 옥수수",
+      "section": "Outro",
+      "end": 64.2322
+    },
+    {
+      "start": 64.2322,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "당근 브로콜리 옥수수",
+      "section": "Outro",
+      "end": 66.5022
+    },
+    {
+      "start": 66.5022,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "다 같이 흔들흔들",
+      "section": "Outro",
+      "end": 69.3412
+    },
+    {
+      "start": 69.3412,
+      "source": "c04",
+      "keyword": "당근 · 브로콜리 · 옥수수",
+      "lyric": "당근 브로콜리 옥수수",
+      "section": "Outro",
+      "end": 73.13220000000001
+    },
+    {
+      "start": 73.13220000000001,
+      "source": "c05",
+      "keyword": "",
+      "lyric": "내일 또 만나 안녕",
+      "section": "Outro",
+      "end": 76.22146666666667
+    },
+    {
+      "start": 76.22146666666667,
+      "source": "c06",
+      "keyword": "",
+      "lyric": "내일 또 만나 안녕",
+      "section": "Outro",
+      "end": 79.31073333333335
+    },
+    {
+      "start": 79.31073333333335,
+      "source": "c06",
+      "keyword": "",
+      "lyric": "내일 또 만나 안녕",
+      "section": "Outro",
+      "end": 82.4
+    }
+  ],
+  "cuts": 33,
+  "source_count": 6,
+  "max_source_seconds": 4,
+  "corn_source_limit": 3.1,
+  "no_freeze_extension": true
+}

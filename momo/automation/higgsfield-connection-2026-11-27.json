@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-26T23:24:48.167162+00:00",
+  "endpoint": "https://mcp.higgsfield.ai/mcp",
+  "tool_count": 241,
+  "tools_error": null,
+  "access_method": "Registered official OAuth MCP via fresh Codex app-server runtime",
+  "subscription_plan_type": "plus",
+  "balance_before": 1080.37,
+  "balance_after": 1080.37,
+  "credits_used": 0,
+  "new_generation": false,
+  "reason": "Suitable approved ep03 clips reused. No cost quote or generation required.",
+  "unattended_execution_verified": false
+}

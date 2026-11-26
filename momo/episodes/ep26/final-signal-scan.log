@@ -1,0 +1,51 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'momo/episodes/ep26/out/ep26_en.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.102
+  Duration: 00:01:19.87, start: 0.000000, bitrate: 5084 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 4879 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 196 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.102
+  Stream #0:0(und): Video: wrapped_avframe, yuv420p(tv, bt709/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+    Metadata:
+      encoder         : Lavc63.1.102 wrapped_avframe
+      handler_name    : VideoHandler
+  Stream #0:1(und): Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+      handler_name    : SoundHandler
+frame=  494 fps=0.0 q=-0.0 size=N/A time=00:00:16.46 bitrate=N/A speed=32.6x elapsed=0:00:00.50
+frame= 1010 fps=1000 q=-0.0 size=N/A time=00:00:33.66 bitrate=N/A speed=33.3x elapsed=0:00:01.01
+frame= 1521 fps=1006 q=-0.0 size=N/A time=00:00:50.70 bitrate=N/A speed=33.5x elapsed=0:00:01.51
+frame= 2022 fps=1005 q=-0.0 size=N/A time=00:01:07.40 bitrate=N/A speed=33.5x elapsed=0:00:02.01
+[Parsed_loudnorm_0 @ 0x7651051ec0]
+{
+	"input_i" : "-14.08",
+	"input_tp" : "-2.07",
+	"input_lra" : "3.10",
+	"input_thresh" : "-24.15",
+	"output_i" : "-13.44",
+	"output_tp" : "-1.50",
+	"output_lra" : "2.40",
+	"output_thresh" : "-23.48",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.56"
+}
+[out#0/null @ 0x7651050300] video:992KiB audio:59900KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 2396 fps=1004 q=-0.0 Lsize=N/A time=00:01:19.90 bitrate=N/A speed=33.5x elapsed=0:00:02.38
