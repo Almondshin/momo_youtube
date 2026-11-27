@@ -1,0 +1,141 @@
+{
+  "checked_at": "2026-11-27T00:05:14.943Z",
+  "run_date": "2026-11-27",
+  "purpose": "Recheck completed bilingual pair and skip all duplicate production",
+  "suno": {
+    "account": {
+      "avatar_url": "https://cdn2.suno.ai/image_e484c3ad-c386-4803-aae5-28380735fc36.jpeg",
+      "display_name": "Null구리",
+      "handle": "nullguri",
+      "profile_url": "https://suno.com/@nullguri"
+    },
+    "usage": {
+      "allowed_models": [
+        "v6-mini",
+        "v6",
+        "v6-wild"
+      ],
+      "features": [
+        "generate.simple",
+        "generate.cover",
+        "generate.extend",
+        "audio.upload",
+        "audio.download",
+        "controls.advanced",
+        "speech",
+        "audio.midi",
+        "voices",
+        "generate.stems",
+        "generate.mashup",
+        "generate.custom"
+      ],
+      "metered_features": {},
+      "suno_account": {
+        "cancel_on": null,
+        "credits_remaining": 2190,
+        "download_credits_remaining": 5,
+        "monthly_limit": 2500,
+        "monthly_usage": 310,
+        "plan": {
+          "name": "Pro Plan",
+          "period": "month"
+        },
+        "renews_on": "2026-11-30T07:22:58Z",
+        "visuals_credits_remaining": 225
+      }
+    },
+    "generation_calls": 0,
+    "download_calls": 0
+  },
+  "higgsfield": {
+    "balance": {
+      "credits": 1080.37,
+      "subscription_plan_type": "plus"
+    },
+    "generation_calls": 0,
+    "quote_required": false,
+    "quote_reason": "No new generation; today's completed pair used approved source clips"
+  },
+  "scheduler": {
+    "automation": {
+      "id": "0946f1d5-d7b6-4828-849c-556bb3797735",
+      "enabled": true,
+      "timezone": "Asia/Seoul",
+      "cron": "0 9 * * 1,5",
+      "next_run_at_utc": "2026-11-30T00:00:00.000Z",
+      "workspace_path": "/Users/dream/dev/momo_youtube"
+    },
+    "runs": [
+      {
+        "id": "4e0ac78a-d7a8-4f1b-96eb-05e8b765524f",
+        "run_number": 3,
+        "scheduled_for_utc": "2026-11-27T00:00:00.000Z",
+        "trigger": "scheduled",
+        "status": "dispatch_failed",
+        "error_code": "hooksReviewBlocked",
+        "error_raw": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+        "output_snapshot": {
+          "format": "plain_text",
+          "content": "Hooks need review\n  1 hook is new or changed.\n  Hooks can run outside the sandbox after you trust them.\n› 1. Review hooks\n  2. Trust all and continue\n  3. Continue without trusting (hooks won't run)\n  enter confirm · esc skip",
+          "capturedAt": 1795737660781,
+          "truncated": false
+        },
+        "precheck": {
+          "exit_code": 0,
+          "timed_out": false,
+          "completed_at_utc": "2026-11-27T00:00:56.629Z"
+        }
+      },
+      {
+        "id": "004a83bc-fdbc-4fbb-b28a-5ff2a90047a1",
+        "run_number": 2,
+        "scheduled_for_utc": "2026-11-23T00:00:00.000Z",
+        "trigger": "scheduled",
+        "status": "dispatch_failed",
+        "error_code": "hooksReviewBlocked",
+        "error_raw": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+        "output_snapshot": {
+          "format": "plain_text",
+          "content": "Hooks need review\n  4 hooks are new or changed.\n  Hooks can run outside the sandbox after you trust them.\n› 1. Review hooks\n  2. Trust all and continue\n  3. Continue without trusting (hooks won't run)\n  enter confirm · esc skip",
+          "capturedAt": 1795392033088,
+          "truncated": false
+        },
+        "precheck": {
+          "exit_code": 0,
+          "timed_out": false,
+          "completed_at_utc": "2026-11-23T00:00:30.991Z"
+        }
+      },
+      {
+        "id": "f16e63d7-c256-4185-a500-c49542c52fad",
+        "run_number": 1,
+        "scheduled_for_utc": "2026-11-20T00:00:00.000Z",
+        "trigger": "scheduled",
+        "status": "dispatch_failed",
+        "error_code": "hooksReviewBlocked",
+        "error_raw": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+        "output_snapshot": {
+          "format": "plain_text",
+          "content": "Hooks need review\n  4 hooks are new or changed.\n  Hooks can run outside the sandbox after you trust them.\n› 1. Review hooks\n  2. Trust all and continue\n  3. Continue without trusting (hooks won't run)\n  enter confirm · esc skip",
+          "capturedAt": 1795132847462,
+          "truncated": false
+        },
+        "precheck": {
+          "exit_code": 0,
+          "timed_out": false,
+          "completed_at_utc": "2026-11-20T00:00:45.359Z"
+        }
+      }
+    ],
+    "current_session_association": "Not asserted: scheduler reports today's run as dispatch_failed; this session only reverified existing uploads.",
+    "unattended_execution_verified": false
+  },
+  "incremental_costs": {
+    "suno_generation_credits": 0,
+    "suno_download_credits": 0,
+    "higgsfield_credits": 0,
+    "extra_payment": 0
+  },
+  "youtube_evidence": "duplicate-check-2026-11-27.json",
+  "new_user_content_approval": false
+}

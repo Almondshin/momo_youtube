@@ -27,9 +27,20 @@
     "2026-11-23: User-supplied official Higgsfield MCP endpoint registered globally in Codex and OAuth login succeeded. Fresh local Codex MCP runtime discovered 217 tools and successfully read Plus balance 1177.37 and image/video cost estimates; zero generation credits spent.",
     "2026-11-23: ep23 Korean and ep24 English completed; both API-verified public, made for kids, processing succeeded and present in language playlists. Higgsfield shared spend 97/150; Suno generation 20 and downloads 2. Interactive resumption, not unattended verification.",
     "2026-11-27: Suno Pro and Higgsfield Plus official tools connected; YouTube expired credentials reauthorized with existing Google session and same channel. Remote current-date duplicate check passed.",
-    "2026-11-27: ep25 KO and ep26 EN API-verified public, made for kids, processing succeeded and in language playlists. Six approved ep03 sources reused; Higgsfield 0/150. Suno generation 20 and downloads 2; balances verified."
+    "2026-11-27: ep25 KO and ep26 EN API-verified public, made for kids, processing succeeded and in language playlists. Six approved ep03 sources reused; Higgsfield 0/150. Suno generation 20 and downloads 2; balances verified.",
+    "2026-11-27 after 09:00: Completed ep25/ep26 reverified through YouTube API and local upload checksums; duplicate generation/upload skipped with zero incremental cost. Scheduler run 3 separately reports hooksReviewBlocked."
   ],
-  "blocking_checks": [],
+  "blocking_checks": [
+    {
+      "scope": "unattended_scheduler_launch",
+      "status": "blocked",
+      "error_code": "hooksReviewBlocked",
+      "error_raw": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+      "scheduled_for": "2026-11-27T09:00:00+09:00",
+      "evidence": "connection-recheck-2026-11-27.json",
+      "production_impact_today": "none; ep25 and ep26 were already completed and remain public"
+    }
+  ],
   "last_checked": "2026-11-27",
   "today": {
     "date": "2026-11-27",
@@ -77,12 +88,14 @@
       "higgsfield_credits": 0,
       "extra_payment": 0
     },
-    "completed_at": "2026-11-26T23:30:34.740033+00:00"
+    "completed_at": "2026-11-26T23:30:34.740033+00:00",
+    "last_verified_at": "2026-11-27T00:05:15.693750+00:00",
+    "duplicate_production_skipped": true
   },
   "automation_id": "0946f1d5-d7b6-4828-849c-556bb3797735",
   "enabled": true,
   "scheduler": "Orca local_host_service",
-  "next_scheduled_slot_if_enabled": "2026-11-27T09:00:00+09:00",
+  "next_scheduled_slot_if_enabled": "2026-11-30T09:00:00+09:00",
   "review_policy": "agent_only",
   "upload_privacy": "public",
   "suno_download_policy": {
@@ -90,13 +103,13 @@
     "normal_one_credit_download": "standing_authorized_2026-11-16",
     "extra_purchase": false
   },
-  "next_run_at": "2026-11-27T09:00:00+09:00",
+  "next_run_at": "2026-11-30T09:00:00+09:00",
   "precheck": "/Users/dream/dev/momo_youtube/.venv/bin/python -c 'import sys; sys.path.insert(0,\"/Users/dream/dev/momo_youtube/momo\"); from youtube_check import main; sys.exit(max(main([\"--root\",\"/Users/dream/dev/momo_youtube/momo\",\"--lang\",lang]) for lang in (\"en\",\"ko\")))'",
   "verification_pending": [
     "No complete unattended scheduled production/upload has been verified.",
-    "2026-11-20 and 2026-11-23 scheduler launch records show hooksReviewBlocked. The current session is run 2 and is now executing; no hook trust change or permanent scheduler fix was performed by this session.",
-    "Higgsfield authentication, discovery and read-only calls passed in a fresh local Codex runtime; the next scheduler-launched session and full production/upload still require end-to-end verification.",
-    "2026-11-27: YouTube invalid_grant repaired using existing Google session and API checks passed. This user-requested run does not prove a fresh unattended scheduled launch or future OAuth renewal."
+    "2026-11-20, 2026-11-23 and 2026-11-27 scheduled launch records show hooksReviewBlocked. Nov 27 run 3 passed the YouTube precheck but dispatch failed with one new or changed hook. No hook trust change was performed.",
+    "2026-11-27: Official Suno and Higgsfield tools and both YouTube language credentials passed this session. A fresh unattended scheduled production/upload still requires end-to-end verification.",
+    "2026-11-27: Early production repaired YouTube invalid_grant using the existing Google session. This recheck does not prove future unattended OAuth renewal."
   ],
   "last_completed_production": {
     "date": "2026-11-27",
@@ -137,5 +150,31 @@
   "higgsfield_connection_recheck": "higgsfield-recheck-2026-11-23.json",
   "higgsfield_connection_record": "higgsfield-connection-2026-11-27.json",
   "next_new_production_slot": "2026-11-30T09:00:00+09:00",
-  "scheduled_today_duplicate_policy": "The 2026-11-27 09:00 scheduled slot must observe today completed and skip new generation/upload."
+  "scheduled_today_duplicate_policy": "The 2026-11-27 09:00 scheduled slot must observe today completed and skip new generation/upload.",
+  "last_duplicate_recheck": {
+    "checked_at": "2026-11-27T00:05:15.693750+00:00",
+    "status": "skipped_duplicate_production",
+    "reason": "Both language videos already completed earlier on 2026-11-27; live API confirms public, made for kids, processing succeeded and playlist membership.",
+    "episodes": [
+      "ep25",
+      "ep26"
+    ],
+    "api_verified": true,
+    "local_final_hashes_match": true,
+    "new_generation_count": 0,
+    "new_upload_count": 0,
+    "incremental_costs": {
+      "suno_generation_credits": 0,
+      "suno_download_credits": 0,
+      "higgsfield_credits": 0,
+      "extra_payment": 0
+    },
+    "youtube_evidence": "duplicate-check-2026-11-27.json",
+    "connection_evidence": "connection-recheck-2026-11-27.json",
+    "scheduler_run_id": "4e0ac78a-d7a8-4f1b-96eb-05e8b765524f",
+    "scheduler_status": "dispatch_failed",
+    "scheduler_error_code": "hooksReviewBlocked",
+    "scheduler_error_raw": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+    "unattended_execution_verified": false
+  }
 }

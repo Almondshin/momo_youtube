@@ -1,0 +1,581 @@
+{
+  "checked_at": "2026-11-27T00:03:16.413314+00:00",
+  "run_date": "2026-11-27",
+  "purpose": "Read-only recheck of completed production; skip duplicate generation and upload",
+  "expected_channel_id": "UCAI7Voo0OwG-7sr1eZeN7dA",
+  "languages": {
+    "ko": {
+      "episode": "ep25",
+      "verified": true,
+      "checks": {
+        "credential_channel_matches": true,
+        "video_id_matches": true,
+        "video_channel_matches": true,
+        "public": true,
+        "self_declared_made_for_kids": true,
+        "upload_processed": true,
+        "processing_succeeded": true,
+        "playlist_channel_matches": true,
+        "playlist_member": true
+      },
+      "channel_response": {
+        "kind": "youtube#channelListResponse",
+        "etag": "sWe-m_VnkoHXDVL-znt7BkH4yqc",
+        "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 5
+        },
+        "items": [
+          {
+            "kind": "youtube#channel",
+            "etag": "i26yuT3cntPcoVZaiMzhzCkX65o",
+            "id": "UCAI7Voo0OwG-7sr1eZeN7dA",
+            "snippet": {
+              "title": "Momo Time",
+              "description": "",
+              "customUrl": "@momotimesong",
+              "publishedAt": "2024-04-20T09:09:03.029701Z",
+              "thumbnails": {
+                "default": {
+                  "url": "https://yt3.ggpht.com/TgKxPCJtz4bKb1_k2MD0fdIuh9UnFhAVAswH-Ons1PCTyorj0g5qluF9mxswso_WPfLmL7UxLA=s88-c-k-c0x00ffffff-no-rj",
+                  "width": 88,
+                  "height": 88
+                },
+                "medium": {
+                  "url": "https://yt3.ggpht.com/TgKxPCJtz4bKb1_k2MD0fdIuh9UnFhAVAswH-Ons1PCTyorj0g5qluF9mxswso_WPfLmL7UxLA=s240-c-k-c0x00ffffff-no-rj",
+                  "width": 240,
+                  "height": 240
+                },
+                "high": {
+                  "url": "https://yt3.ggpht.com/TgKxPCJtz4bKb1_k2MD0fdIuh9UnFhAVAswH-Ons1PCTyorj0g5qluF9mxswso_WPfLmL7UxLA=s800-c-k-c0x00ffffff-no-rj",
+                  "width": 800,
+                  "height": 800
+                }
+              },
+              "localized": {
+                "title": "Momo Time",
+                "description": ""
+              }
+            },
+            "status": {
+              "privacyStatus": "public",
+              "isLinked": true,
+              "longUploadsStatus": "allowed",
+              "isChannelMonetizationEnabled": false
+            }
+          }
+        ]
+      },
+      "video_response": {
+        "kind": "youtube#videoListResponse",
+        "etag": "x47ei03sNnLn2YMdg1xbZXz9Ons",
+        "items": [
+          {
+            "kind": "youtube#video",
+            "etag": "yBbBk-yEe9E12AnhgEm_PeNaWvg",
+            "id": "VHeoIVekMKQ",
+            "snippet": {
+              "publishedAt": "2026-11-26T23:28:26Z",
+              "channelId": "UCAI7Voo0OwG-7sr1eZeN7dA",
+              "title": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임",
+              "description": "아삭아삭 당근, 쏙쏙 브로콜리, 톡톡 옥수수! 모모와 채소 친구들을 만나고 짧은 후렴을 따라 불러요.\n\n2~4세 아이를 위한 세 단어: 당근 · 브로콜리 · 옥수수\n화면에는 배우는 채소 이름만 나와요.\n\n#모모타임 #동요 #채소동요 #당근 #브로콜리 #옥수수 #유아동요 #MomoTime",
+              "thumbnails": {
+                "default": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/default.jpg",
+                  "width": 120,
+                  "height": 90
+                },
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/mqdefault.jpg",
+                  "width": 320,
+                  "height": 180
+                },
+                "high": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/hqdefault.jpg",
+                  "width": 480,
+                  "height": 360
+                },
+                "standard": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/sddefault.jpg",
+                  "width": 640,
+                  "height": 480
+                },
+                "maxres": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/maxresdefault.jpg",
+                  "width": 1280,
+                  "height": 720
+                }
+              },
+              "channelTitle": "Momo Time",
+              "tags": [
+                "Momo Time",
+                "broccoli",
+                "carrot",
+                "corn",
+                "toddler songs",
+                "vegetable song",
+                "모모타임",
+                "유아 동요",
+                "채소 동요"
+              ],
+              "categoryId": "27",
+              "liveBroadcastContent": "none",
+              "defaultLanguage": "ko",
+              "localized": {
+                "title": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임",
+                "description": "아삭아삭 당근, 쏙쏙 브로콜리, 톡톡 옥수수! 모모와 채소 친구들을 만나고 짧은 후렴을 따라 불러요.\n\n2~4세 아이를 위한 세 단어: 당근 · 브로콜리 · 옥수수\n화면에는 배우는 채소 이름만 나와요.\n\n#모모타임 #동요 #채소동요 #당근 #브로콜리 #옥수수 #유아동요 #MomoTime"
+              },
+              "defaultAudioLanguage": "ko"
+            },
+            "contentDetails": {
+              "duration": "PT1M21S",
+              "dimension": "2d",
+              "definition": "hd",
+              "caption": "false",
+              "licensedContent": false,
+              "contentRating": {},
+              "projection": "rectangular",
+              "hasCustomThumbnail": true
+            },
+            "status": {
+              "uploadStatus": "processed",
+              "privacyStatus": "public",
+              "license": "youtube",
+              "embeddable": true,
+              "publicStatsViewable": true,
+              "madeForKids": true,
+              "selfDeclaredMadeForKids": true
+            },
+            "processingDetails": {
+              "processingStatus": "succeeded",
+              "fileDetailsAvailability": "available",
+              "processingIssuesAvailability": "available",
+              "tagSuggestionsAvailability": "inProgress",
+              "editorSuggestionsAvailability": "inProgress",
+              "thumbnailsAvailability": "available"
+            }
+          }
+        ],
+        "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+        }
+      },
+      "playlist_response": {
+        "kind": "youtube#playlistListResponse",
+        "etag": "8zv4VRJXqlvUZRMymt5p5ywO4mM",
+        "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 5
+        },
+        "items": [
+          {
+            "kind": "youtube#playlist",
+            "etag": "V9RBmpx4yMna1gfYID0OZDUkJDQ",
+            "id": "PLHfQPAU3ZVb8",
+            "snippet": {
+              "publishedAt": "2026-11-05T23:24:11.022218355Z",
+              "channelId": "UCAI7Voo0OwG-7sr1eZeN7dA",
+              "title": "한국어 동요 | 모모타임",
+              "description": "모모와 함께 사과, 바나나 등 쉬운 말을 배우고 따라 부르는 한국어 유아 동요입니다. 2~4세 아이들을 위한 노래와 율동을 만나보세요.",
+              "thumbnails": {
+                "default": {
+                  "url": "https://i.ytimg.com/vi/m_S3IK7BXpo/default.jpg",
+                  "width": 120,
+                  "height": 90
+                },
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/m_S3IK7BXpo/mqdefault.jpg",
+                  "width": 320,
+                  "height": 180
+                },
+                "high": {
+                  "url": "https://i.ytimg.com/vi/m_S3IK7BXpo/hqdefault.jpg",
+                  "width": 480,
+                  "height": 360
+                },
+                "standard": {
+                  "url": "https://i.ytimg.com/vi/m_S3IK7BXpo/sddefault.jpg",
+                  "width": 640,
+                  "height": 480
+                },
+                "maxres": {
+                  "url": "https://i.ytimg.com/vi/m_S3IK7BXpo/maxresdefault.jpg",
+                  "width": 1280,
+                  "height": 720
+                }
+              },
+              "channelTitle": "Momo Time",
+              "localized": {
+                "title": "한국어 동요 | 모모타임",
+                "description": "모모와 함께 사과, 바나나 등 쉬운 말을 배우고 따라 부르는 한국어 유아 동요입니다. 2~4세 아이들을 위한 노래와 율동을 만나보세요."
+              }
+            },
+            "status": {
+              "privacyStatus": "public"
+            }
+          }
+        ]
+      },
+      "playlist_membership_response": {
+        "kind": "youtube#playlistItemListResponse",
+        "etag": "g9a3mxVtQqelN71m3IXk32mw-tA",
+        "items": [
+          {
+            "kind": "youtube#playlistItem",
+            "etag": "jX9g0JPCJZTbFeu2W1njlO6qf2k",
+            "id": "UExIZlFQQVUzWlZiOC5DQUNERDQ2NkIzRUQxNTY1",
+            "snippet": {
+              "publishedAt": "2026-11-26T23:27:56Z",
+              "channelId": "UCAI7Voo0OwG-7sr1eZeN7dA",
+              "title": "아삭아삭 채소 친구 🥕🌽 | 따라 부르는 채소 동요 | 모모타임",
+              "description": "아삭아삭 당근, 쏙쏙 브로콜리, 톡톡 옥수수! 모모와 채소 친구들을 만나고 짧은 후렴을 따라 불러요.\n\n2~4세 아이를 위한 세 단어: 당근 · 브로콜리 · 옥수수\n화면에는 배우는 채소 이름만 나와요.\n\n#모모타임 #동요 #채소동요 #당근 #브로콜리 #옥수수 #유아동요 #MomoTime",
+              "thumbnails": {
+                "default": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/default.jpg",
+                  "width": 120,
+                  "height": 90
+                },
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/mqdefault.jpg",
+                  "width": 320,
+                  "height": 180
+                },
+                "high": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/hqdefault.jpg",
+                  "width": 480,
+                  "height": 360
+                },
+                "standard": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/sddefault.jpg",
+                  "width": 640,
+                  "height": 480
+                },
+                "maxres": {
+                  "url": "https://i.ytimg.com/vi/VHeoIVekMKQ/maxresdefault.jpg",
+                  "width": 1280,
+                  "height": 720
+                }
+              },
+              "channelTitle": "Momo Time",
+              "playlistId": "PLHfQPAU3ZVb8",
+              "position": 7,
+              "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "VHeoIVekMKQ"
+              },
+              "videoOwnerChannelTitle": "Momo Time",
+              "videoOwnerChannelId": "UCAI7Voo0OwG-7sr1eZeN7dA"
+            },
+            "contentDetails": {
+              "videoId": "VHeoIVekMKQ",
+              "videoPublishedAt": "2026-11-26T23:28:26Z"
+            }
+          }
+        ],
+        "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 50
+        }
+      }
+    },
+    "en": {
+      "episode": "ep26",
+      "verified": true,
+      "checks": {
+        "credential_channel_matches": true,
+        "video_id_matches": true,
+        "video_channel_matches": true,
+        "public": true,
+        "self_declared_made_for_kids": true,
+        "upload_processed": true,
+        "processing_succeeded": true,
+        "playlist_channel_matches": true,
+        "playlist_member": true
+      },
+      "channel_response": {
+        "kind": "youtube#channelListResponse",
+        "etag": "sWe-m_VnkoHXDVL-znt7BkH4yqc",
+        "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 5
+        },
+        "items": [
+          {
+            "kind": "youtube#channel",
+            "etag": "i26yuT3cntPcoVZaiMzhzCkX65o",
+            "id": "UCAI7Voo0OwG-7sr1eZeN7dA",
+            "snippet": {
+              "title": "Momo Time",
+              "description": "",
+              "customUrl": "@momotimesong",
+              "publishedAt": "2024-04-20T09:09:03.029701Z",
+              "thumbnails": {
+                "default": {
+                  "url": "https://yt3.ggpht.com/TgKxPCJtz4bKb1_k2MD0fdIuh9UnFhAVAswH-Ons1PCTyorj0g5qluF9mxswso_WPfLmL7UxLA=s88-c-k-c0x00ffffff-no-rj",
+                  "width": 88,
+                  "height": 88
+                },
+                "medium": {
+                  "url": "https://yt3.ggpht.com/TgKxPCJtz4bKb1_k2MD0fdIuh9UnFhAVAswH-Ons1PCTyorj0g5qluF9mxswso_WPfLmL7UxLA=s240-c-k-c0x00ffffff-no-rj",
+                  "width": 240,
+                  "height": 240
+                },
+                "high": {
+                  "url": "https://yt3.ggpht.com/TgKxPCJtz4bKb1_k2MD0fdIuh9UnFhAVAswH-Ons1PCTyorj0g5qluF9mxswso_WPfLmL7UxLA=s800-c-k-c0x00ffffff-no-rj",
+                  "width": 800,
+                  "height": 800
+                }
+              },
+              "localized": {
+                "title": "Momo Time",
+                "description": ""
+              }
+            },
+            "status": {
+              "privacyStatus": "public",
+              "isLinked": true,
+              "longUploadsStatus": "allowed",
+              "isChannelMonetizationEnabled": false
+            }
+          }
+        ]
+      },
+      "video_response": {
+        "kind": "youtube#videoListResponse",
+        "etag": "5tcovjfIuSNsT_FreBFi2tXIqUU",
+        "items": [
+          {
+            "kind": "youtube#video",
+            "etag": "ApdYvNOfmcScuriWNodQM8F-8CE",
+            "id": "qymFBaZr04w",
+            "snippet": {
+              "publishedAt": "2026-11-26T23:29:07Z",
+              "channelId": "UCAI7Voo0OwG-7sr1eZeN7dA",
+              "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+              "description": "Wiggle with carrot, bounce with broccoli, and tap along with corn! Sing a short happy chorus with Momo.\n\nThree veggie words for ages 2–4: CARROT · BROCCOLI · CORN. Simple repeated singing and a cheerful dance.\n\n#MomoTime #ToddlerSongs #VegetableSong #Carrot #Broccoli #Corn #KidsSongs #SingAlong",
+              "thumbnails": {
+                "default": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/default.jpg",
+                  "width": 120,
+                  "height": 90
+                },
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/mqdefault.jpg",
+                  "width": 320,
+                  "height": 180
+                },
+                "high": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/hqdefault.jpg",
+                  "width": 480,
+                  "height": 360
+                },
+                "standard": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/sddefault.jpg",
+                  "width": 640,
+                  "height": 480
+                },
+                "maxres": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/maxresdefault.jpg",
+                  "width": 1280,
+                  "height": 720
+                }
+              },
+              "channelTitle": "Momo Time",
+              "tags": [
+                "Momo Time",
+                "broccoli",
+                "carrot",
+                "corn",
+                "toddler songs",
+                "vegetable song",
+                "모모타임",
+                "유아 동요",
+                "채소 동요"
+              ],
+              "categoryId": "27",
+              "liveBroadcastContent": "none",
+              "defaultLanguage": "en",
+              "localized": {
+                "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+                "description": "Wiggle with carrot, bounce with broccoli, and tap along with corn! Sing a short happy chorus with Momo.\n\nThree veggie words for ages 2–4: CARROT · BROCCOLI · CORN. Simple repeated singing and a cheerful dance.\n\n#MomoTime #ToddlerSongs #VegetableSong #Carrot #Broccoli #Corn #KidsSongs #SingAlong"
+              },
+              "defaultAudioLanguage": "en"
+            },
+            "contentDetails": {
+              "duration": "PT1M20S",
+              "dimension": "2d",
+              "definition": "hd",
+              "caption": "false",
+              "licensedContent": false,
+              "contentRating": {},
+              "projection": "rectangular",
+              "hasCustomThumbnail": true
+            },
+            "status": {
+              "uploadStatus": "processed",
+              "privacyStatus": "public",
+              "license": "youtube",
+              "embeddable": true,
+              "publicStatsViewable": true,
+              "madeForKids": true,
+              "selfDeclaredMadeForKids": true
+            },
+            "processingDetails": {
+              "processingStatus": "succeeded",
+              "fileDetailsAvailability": "available",
+              "processingIssuesAvailability": "available",
+              "tagSuggestionsAvailability": "inProgress",
+              "editorSuggestionsAvailability": "inProgress",
+              "thumbnailsAvailability": "available"
+            }
+          }
+        ],
+        "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+        }
+      },
+      "playlist_response": {
+        "kind": "youtube#playlistListResponse",
+        "etag": "ew21ki9-eGkORPkJQEHTJ5FFUfc",
+        "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 5
+        },
+        "items": [
+          {
+            "kind": "youtube#playlist",
+            "etag": "Ymf5CBJ0EkJna9cXZW5DXLgkw7E",
+            "id": "PLTOO0Q-QSj5I",
+            "snippet": {
+              "publishedAt": "2026-11-06T02:28:11.669586846Z",
+              "channelId": "UCAI7Voo0OwG-7sr1eZeN7dA",
+              "title": "English Nursery Rhymes | Momo Time",
+              "description": "Simple English nursery rhymes and sing-along songs for toddlers with Momo Time.",
+              "thumbnails": {
+                "default": {
+                  "url": "https://i.ytimg.com/vi/zuj_D5y978A/default.jpg",
+                  "width": 120,
+                  "height": 90
+                },
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/zuj_D5y978A/mqdefault.jpg",
+                  "width": 320,
+                  "height": 180
+                },
+                "high": {
+                  "url": "https://i.ytimg.com/vi/zuj_D5y978A/hqdefault.jpg",
+                  "width": 480,
+                  "height": 360
+                },
+                "standard": {
+                  "url": "https://i.ytimg.com/vi/zuj_D5y978A/sddefault.jpg",
+                  "width": 640,
+                  "height": 480
+                },
+                "maxres": {
+                  "url": "https://i.ytimg.com/vi/zuj_D5y978A/maxresdefault.jpg",
+                  "width": 1280,
+                  "height": 720
+                }
+              },
+              "channelTitle": "Momo Time",
+              "localized": {
+                "title": "English Nursery Rhymes | Momo Time",
+                "description": "Simple English nursery rhymes and sing-along songs for toddlers with Momo Time."
+              }
+            },
+            "status": {
+              "privacyStatus": "public"
+            }
+          }
+        ]
+      },
+      "playlist_membership_response": {
+        "kind": "youtube#playlistItemListResponse",
+        "etag": "6Fk9oydLxmD_N8av-gyaOleUfmo",
+        "items": [
+          {
+            "kind": "youtube#playlistItem",
+            "etag": "bM8xuXUZn7_PnK5z4Ff6oyEfn4M",
+            "id": "UExUT08wUS1RU2o1SS41MzJCQjBCNDIyRkJDN0VD",
+            "snippet": {
+              "publishedAt": "2026-11-26T23:28:43Z",
+              "channelId": "UCAI7Voo0OwG-7sr1eZeN7dA",
+              "title": "Carrot, Broccoli, Corn! 🥕🌽 | Veggie Dance Song for Toddlers | Momo Time",
+              "description": "Wiggle with carrot, bounce with broccoli, and tap along with corn! Sing a short happy chorus with Momo.\n\nThree veggie words for ages 2–4: CARROT · BROCCOLI · CORN. Simple repeated singing and a cheerful dance.\n\n#MomoTime #ToddlerSongs #VegetableSong #Carrot #Broccoli #Corn #KidsSongs #SingAlong",
+              "thumbnails": {
+                "default": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/default.jpg",
+                  "width": 120,
+                  "height": 90
+                },
+                "medium": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/mqdefault.jpg",
+                  "width": 320,
+                  "height": 180
+                },
+                "high": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/hqdefault.jpg",
+                  "width": 480,
+                  "height": 360
+                },
+                "standard": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/sddefault.jpg",
+                  "width": 640,
+                  "height": 480
+                },
+                "maxres": {
+                  "url": "https://i.ytimg.com/vi/qymFBaZr04w/maxresdefault.jpg",
+                  "width": 1280,
+                  "height": 720
+                }
+              },
+              "channelTitle": "Momo Time",
+              "playlistId": "PLTOO0Q-QSj5I",
+              "position": 6,
+              "resourceId": {
+                "kind": "youtube#video",
+                "videoId": "qymFBaZr04w"
+              },
+              "videoOwnerChannelTitle": "Momo Time",
+              "videoOwnerChannelId": "UCAI7Voo0OwG-7sr1eZeN7dA"
+            },
+            "contentDetails": {
+              "videoId": "qymFBaZr04w",
+              "videoPublishedAt": "2026-11-26T23:29:07Z"
+            }
+          }
+        ],
+        "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 50
+        }
+      }
+    }
+  },
+  "new_generation_count": 0,
+  "new_upload_count": 0,
+  "visibility_changes": [],
+  "verified": true,
+  "local_final_integrity": {
+    "ep25": {
+      "sha256": "7d75af50c45013a58ce4efd58bb2dd031a5e16f4eef0ee6f601b8e9ba353c03b",
+      "matches_upload_record": true,
+      "previous_qa_status": "passed",
+      "duration_seconds": 80.8,
+      "previous_qa_record": "../episodes/ep25/final-technical-review.json",
+      "media_review_repeated": false
+    },
+    "ep26": {
+      "sha256": "99cfc239614d39eb0e90608e7ccc517415d5bfdb2fd82f886b31465c54fa240c",
+      "matches_upload_record": true,
+      "previous_qa_status": "passed",
+      "duration_seconds": 79.866667,
+      "previous_qa_record": "../episodes/ep26/final-technical-review.json",
+      "media_review_repeated": false
+    }
+  },
+  "connection_evidence": "connection-recheck-2026-11-27.json"
+}

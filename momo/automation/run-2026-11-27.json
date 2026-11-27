@@ -252,6 +252,34 @@
     "youtube_preflight": "youtube-audit-2026-11-27.json",
     "higgsfield": "higgsfield-connection-2026-11-27.json",
     "ko_final_api": "../episodes/ep25/youtube-api-verification.json",
-    "en_final_api": "../episodes/ep26/youtube-api-verification.json"
+    "en_final_api": "../episodes/ep26/youtube-api-verification.json",
+    "duplicate_recheck": "duplicate-check-2026-11-27.json",
+    "connection_recheck": "connection-recheck-2026-11-27.json"
+  },
+  "last_duplicate_recheck": {
+    "checked_at": "2026-11-27T00:05:15.693750+00:00",
+    "status": "skipped_duplicate_production",
+    "reason": "Both language videos already completed earlier on 2026-11-27; live API confirms public, made for kids, processing succeeded and playlist membership.",
+    "episodes": [
+      "ep25",
+      "ep26"
+    ],
+    "api_verified": true,
+    "local_final_hashes_match": true,
+    "new_generation_count": 0,
+    "new_upload_count": 0,
+    "incremental_costs": {
+      "suno_generation_credits": 0,
+      "suno_download_credits": 0,
+      "higgsfield_credits": 0,
+      "extra_payment": 0
+    },
+    "youtube_evidence": "duplicate-check-2026-11-27.json",
+    "connection_evidence": "connection-recheck-2026-11-27.json",
+    "scheduler_run_id": "4e0ac78a-d7a8-4f1b-96eb-05e8b765524f",
+    "scheduler_status": "dispatch_failed",
+    "scheduler_error_code": "hooksReviewBlocked",
+    "scheduler_error_raw": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
+    "unattended_execution_verified": false
   }
 }
